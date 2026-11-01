@@ -1,0 +1,5 @@
+[
+  {"name":"public-data","protects":"Credentials and private contacts stay out of the public repository","why":"R-REPO-01: public git history cannot retract a leak","kind":"safety","runs":"npm run validate; PR and main CI"},
+  {"name":"local-only","protects":"Papers never enter analytics, remote APIs or an unapproved SDK","why":"R-KID-01 and R-PRV-06: children's and medical records stay on the phone","kind":"safety","runs":"npm run validate; PR and main CI"},
+  {"name":"honest-claims","protects":"App and store content cannot advertise prohibited security or legal outcomes","why":"R-ADV-01/02: unsupported evidence and security claims","kind":"safety","runs":"npm run validate; PR and main CI"}
+]
