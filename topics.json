@@ -1,0 +1,650 @@
+{
+  "schema_version": 2,
+  "status": "approved_2026_11_01",
+  "date": "2026-11-01",
+  "canonical_use": "The one topic list. App folders, search-loop topics and store custom product pages are generated from this file; nothing keeps its own copy.",
+  "fields": {
+    "release": "launch | next | pages | pages_only | skip | later_v2",
+    "priority": "lead | support | skip",
+    "folder_order": "order on the app's home screen",
+    "page_order": "order the search loop builds pages in"
+  },
+  "languages": [
+    "en",
+    "es"
+  ],
+  "spanish_rule": "Spanish pages say 'en Estados Unidos' or name the state. App, checklists and store page fully translated at launch, reviewed by a native US Spanish reader before release.",
+  "community_lens_rule": "Black and Latino pages inside every folder, issue-based (CROWN Act, heirs' property, English-learner IEP, VA file, women and money). Never a race-labelled app, folder or store page; no 'Black-owned' messaging; every disparity fact sourced; no stereotypes; no promise to 'fight discrimination'.",
+  "store_keyword_note": "Candidate words for the 100-character keyword field and custom product pages; no competitor names. Spanish (Mexico) listing as a second keyword field is unverified until tested.",
+  "review_rule": "Monthly, Search Console decides: topics earning impressions get a folder; ones that don't come down.",
+  "launch_folder_count": 5,
+  "topics": [
+    {
+      "id": "divorce-prep",
+      "release": "launch",
+      "priority": "lead",
+      "folder_order": 1,
+      "page_order": 1,
+      "name": {
+        "en": "Divorce prep + co-parenting log",
+        "es": "Preparación para el divorcio y registro de crianza"
+      },
+      "short_name": {
+        "en": "Divorce prep",
+        "es": "Divorcio"
+      },
+      "checklist_items": [
+        {
+          "id": "financial-statements",
+          "name": {
+            "en": "Bank, retirement and debt statements",
+            "es": "Estados de cuenta del banco, jubilación y deudas"
+          }
+        },
+        {
+          "id": "income-papers",
+          "name": {
+            "en": "Pay stubs and tax returns",
+            "es": "Talones de pago y declaraciones de impuestos"
+          }
+        },
+        {
+          "id": "household-expenses",
+          "name": {
+            "en": "Household bills and expenses",
+            "es": "Facturas y gastos del hogar"
+          }
+        },
+        {
+          "id": "property-papers",
+          "name": {
+            "en": "Home, car and property papers",
+            "es": "Papeles de la casa, el auto y otros bienes"
+          }
+        },
+        {
+          "id": "agreements-orders",
+          "name": {
+            "en": "Agreements and court papers you have",
+            "es": "Acuerdos y papeles de la corte que tenga"
+          }
+        },
+        {
+          "id": "messages-received",
+          "name": {
+            "en": "Messages sent to you",
+            "es": "Mensajes que le enviaron"
+          }
+        },
+        {
+          "id": "parenting-log",
+          "name": {
+            "en": "Co-parenting log: dated handoff and visit notes",
+            "es": "Registro de crianza: notas con fecha de entregas y visitas"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "documents to gather before divorce",
+          "how to prepare for divorce in [state]",
+          "how to save text messages for divorce",
+          "co-parenting journal",
+          "how to document missed visitation",
+          "how to prove adultery in [state]"
+        ],
+        "es": [
+          "cómo prepararse para un divorcio en Estados Unidos",
+          "documentos para divorcio en [estado]"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "divorce",
+          "coparenting",
+          "custody",
+          "papers",
+          "organizer"
+        ],
+        "es": [
+          "divorcio",
+          "crianza",
+          "custodia",
+          "documentos",
+          "organizador"
+        ]
+      },
+      "scope_note": "Keeps copies and notes the user already has. No legal advice, no snooping on a spouse's phone or accounts, nothing about hiding money.",
+      "display_name": {
+        "en": "Divorce prep",
+        "es": "Preparación para el divorcio"
+      }
+    },
+    {
+      "id": "workplace-evidence",
+      "release": "launch",
+      "priority": "lead",
+      "folder_order": 5,
+      "page_order": 2,
+      "name": {
+        "en": "Workplace evidence",
+        "es": "Pruebas del trabajo"
+      },
+      "short_name": {
+        "en": "Workplace",
+        "es": "Trabajo"
+      },
+      "checklist_items": [
+        {
+          "id": "policies",
+          "name": {
+            "en": "Handbook and policies",
+            "es": "Manual y reglas de la empresa"
+          }
+        },
+        {
+          "id": "pay-records",
+          "name": {
+            "en": "Pay stubs, schedules and hours",
+            "es": "Talones de pago, horarios y horas"
+          }
+        },
+        {
+          "id": "messages-received",
+          "name": {
+            "en": "Messages sent to you",
+            "es": "Mensajes que le enviaron"
+          }
+        },
+        {
+          "id": "incident-notes",
+          "name": {
+            "en": "Dated notes of what happened",
+            "es": "Notas con fecha de lo que pasó"
+          }
+        },
+        {
+          "id": "reports-responses",
+          "name": {
+            "en": "Complaints you made and the replies",
+            "es": "Quejas que presentó y las respuestas"
+          }
+        },
+        {
+          "id": "reviews",
+          "name": {
+            "en": "Job reviews and warnings",
+            "es": "Evaluaciones y advertencias"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "how to document workplace harassment",
+          "hostile work environment evidence",
+          "proof of unpaid wages",
+          "what to save before quitting your job"
+        ],
+        "es": [
+          "cómo documentar acoso laboral en Estados Unidos",
+          "pruebas de acoso laboral",
+          "me deben salario qué hago [estado]"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "workplace",
+          "harassment",
+          "wages",
+          "evidence",
+          "records"
+        ],
+        "es": [
+          "trabajo",
+          "acoso",
+          "salario",
+          "pruebas",
+          "registros"
+        ]
+      },
+      "scope_note": "Keeps what the user received or wrote. Never records others in secret, never copies company systems the user may not take.",
+      "display_name": {
+        "en": "Workplace evidence",
+        "es": "Pruebas del trabajo"
+      }
+    },
+    {
+      "id": "va-disability-papers",
+      "release": "launch",
+      "priority": "lead",
+      "folder_order": 2,
+      "page_order": 3,
+      "name": {
+        "en": "VA disability claim papers",
+        "es": "Papeles del reclamo de discapacidad del VA"
+      },
+      "short_name": {
+        "en": "VA papers",
+        "es": "Papeles del VA"
+      },
+      "checklist_items": [
+        {
+          "id": "service-papers",
+          "name": {
+            "en": "DD-214 and service papers",
+            "es": "DD-214 y papeles de servicio"
+          }
+        },
+        {
+          "id": "medical-records",
+          "name": {
+            "en": "Medical records you have",
+            "es": "Expedientes médicos que tenga"
+          }
+        },
+        {
+          "id": "buddy-statements",
+          "name": {
+            "en": "Statements from people who know",
+            "es": "Declaraciones de personas que saben"
+          }
+        },
+        {
+          "id": "claim-copies",
+          "name": {
+            "en": "Copies of what you sent the VA",
+            "es": "Copias de lo que envió al VA"
+          }
+        },
+        {
+          "id": "va-letters",
+          "name": {
+            "en": "Letters and decisions from the VA",
+            "es": "Cartas y decisiones del VA"
+          }
+        },
+        {
+          "id": "appointment-notes",
+          "name": {
+            "en": "Dated notes from appointments and exams",
+            "es": "Notas con fecha de citas y exámenes"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "va disability claim checklist",
+          "how to get a nexus letter",
+          "what to bring to a c&p exam",
+          "va disability evidence",
+          "buddy statement for va claim"
+        ],
+        "es": [
+          "beneficios VA veteranos documentos"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "veteran",
+          "VA",
+          "DD214",
+          "papers",
+          "organizer"
+        ],
+        "es": [
+          "veterano",
+          "VA",
+          "documentos",
+          "carpeta"
+        ]
+      },
+      "scope_note": "Keeps papers and dates only. Never prepares, files, rates, judges eligibility or advises on a claim (VA rules on paid claim help, 38 CFR 14.636). Points to free accredited help on va.gov.",
+      "display_name": {
+        "en": "VA disability claim papers",
+        "es": "Papeles del reclamo del VA"
+      }
+    },
+    {
+      "id": "executor-papers",
+      "release": "launch",
+      "priority": "lead",
+      "folder_order": 3,
+      "page_order": 4,
+      "name": {
+        "en": "After a parent dies (executor papers)",
+        "es": "Cuando muere un padre o madre (papeles del albacea)"
+      },
+      "short_name": {
+        "en": "Executor papers",
+        "es": "Papeles del albacea"
+      },
+      "checklist_items": [
+        {
+          "id": "will-trust",
+          "name": {
+            "en": "Will or trust copies",
+            "es": "Copias del testamento o fideicomiso"
+          }
+        },
+        {
+          "id": "death-certificates",
+          "name": {
+            "en": "Death certificates",
+            "es": "Actas de defunción"
+          }
+        },
+        {
+          "id": "court-appointment",
+          "name": {
+            "en": "Court papers naming the executor",
+            "es": "Papeles de la corte que nombran al albacea"
+          }
+        },
+        {
+          "id": "accounts-property",
+          "name": {
+            "en": "Accounts and property papers",
+            "es": "Papeles de cuentas y bienes"
+          }
+        },
+        {
+          "id": "bills-letters",
+          "name": {
+            "en": "Bills and letters to close out",
+            "es": "Facturas y cartas por cerrar"
+          }
+        },
+        {
+          "id": "family-land",
+          "name": {
+            "en": "Family land papers (heirs' property)",
+            "es": "Papeles de tierras de la familia (propiedad heredada)"
+          },
+          "lens": "heirs-property"
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "executor of estate checklist [state]",
+          "what to do when someone dies checklist",
+          "documents needed after a death",
+          "how to close a deceased person's bank account"
+        ],
+        "es": [
+          "qué hacer cuando muere un familiar en Estados Unidos",
+          "albacea de herencia [estado]",
+          "documentos después de una muerte"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "executor",
+          "estate",
+          "probate",
+          "checklist",
+          "papers"
+        ],
+        "es": [
+          "albacea",
+          "herencia",
+          "testamento",
+          "documentos"
+        ]
+      },
+      "scope_note": "Keeps papers. No legal or tax advice, no deadlines calculated.",
+      "display_name": {
+        "en": "After a parent dies",
+        "es": "Cuando muere un padre o madre"
+      }
+    },
+    {
+      "id": "iep-binder",
+      "release": "launch",
+      "priority": "lead",
+      "folder_order": 4,
+      "page_order": 5,
+      "name": {
+        "en": "Special-ed (IEP) binder for parents",
+        "es": "Carpeta de educación especial (IEP) para padres"
+      },
+      "short_name": {
+        "en": "IEP binder",
+        "es": "Carpeta del IEP"
+      },
+      "checklist_items": [
+        {
+          "id": "current-iep",
+          "name": {
+            "en": "The current IEP",
+            "es": "El IEP actual"
+          }
+        },
+        {
+          "id": "evaluations",
+          "name": {
+            "en": "Evaluations and test reports",
+            "es": "Evaluaciones e informes de pruebas"
+          }
+        },
+        {
+          "id": "progress-reports",
+          "name": {
+            "en": "Progress reports and report cards",
+            "es": "Informes de progreso y calificaciones"
+          }
+        },
+        {
+          "id": "school-messages",
+          "name": {
+            "en": "Messages from school",
+            "es": "Mensajes de la escuela"
+          }
+        },
+        {
+          "id": "meeting-notes",
+          "name": {
+            "en": "Dated meeting notes",
+            "es": "Notas con fecha de reuniones"
+          }
+        },
+        {
+          "id": "discipline-records",
+          "name": {
+            "en": "Discipline records",
+            "es": "Registros de disciplina"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "iep binder for parents",
+          "how to prepare for an iep meeting",
+          "iep meeting checklist",
+          "how to document iep not being followed"
+        ],
+        "es": [
+          "plan de educación individualizado (IEP) documentos"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "IEP",
+          "special education",
+          "binder",
+          "school",
+          "parent"
+        ],
+        "es": [
+          "IEP",
+          "educación especial",
+          "escuela",
+          "padres"
+        ]
+      },
+      "scope_note": "A child's records stay on the parent's phone; never sent to any model, analytics or server. No advice about school services.",
+      "display_name": {
+        "en": "IEP binder",
+        "es": "Carpeta del IEP"
+      }
+    },
+    {
+      "id": "home-inventory",
+      "release": "next",
+      "priority": "support",
+      "name": {
+        "en": "Home inventory for insurance",
+        "es": "Inventario del hogar para el seguro"
+      }
+    },
+    {
+      "id": "tenant-repairs-deposit",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Tenant repairs and deposit"
+      },
+      "points_to_folder": null,
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "ssdi-records",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "SSDI records"
+      },
+      "points_to_folder": "va-disability-papers",
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "medical-bill-disputes",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Medical bill disputes"
+      },
+      "points_to_folder": null,
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "small-claims",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Small claims"
+      },
+      "points_to_folder": null,
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "contractor-disputes",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Contractor disputes"
+      },
+      "points_to_folder": null,
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "heirs-property",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Family land papers (heirs' property)"
+      },
+      "points_to_folder": "executor-papers",
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "marriage-green-card-evidence",
+      "release": "pages",
+      "priority": "support",
+      "name": {
+        "en": "Marriage green card evidence"
+      },
+      "points_to_folder": null,
+      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+    },
+    {
+      "id": "alternative-to",
+      "release": "pages_only",
+      "priority": "support",
+      "name": {
+        "en": "'Alternative to' pages"
+      }
+    },
+    {
+      "id": "private-photos",
+      "release": "pages_only",
+      "priority": "support",
+      "name": {
+        "en": "Private photos"
+      }
+    },
+    {
+      "id": "receipts-warranties",
+      "release": "pages_only",
+      "priority": "support",
+      "name": {
+        "en": "Receipts and warranties"
+      }
+    },
+    {
+      "id": "immigration-copies",
+      "release": "pages_only",
+      "priority": "support",
+      "name": {
+        "en": "Immigration copies"
+      }
+    },
+    {
+      "id": "secret-savings",
+      "release": "skip",
+      "priority": "skip",
+      "name": {
+        "en": "Secret savings / hiding money"
+      }
+    },
+    {
+      "id": "catch-a-cheater",
+      "release": "skip",
+      "priority": "skip",
+      "name": {
+        "en": "Catch a cheater on a phone"
+      }
+    },
+    {
+      "id": "car-accident-proof",
+      "release": "skip",
+      "priority": "skip",
+      "name": {
+        "en": "Car accident proof"
+      }
+    },
+    {
+      "id": "police-encounters",
+      "release": "skip",
+      "priority": "skip",
+      "name": {
+        "en": "Police encounters"
+      }
+    },
+    {
+      "id": "teens",
+      "release": "skip",
+      "priority": "skip",
+      "name": {
+        "en": "Teens"
+      }
+    },
+    {
+      "id": "abuse-documentation",
+      "release": "later_v2",
+      "priority": "skip",
+      "name": {
+        "en": "Abuse documentation"
+      }
+    }
+  ]
+}
