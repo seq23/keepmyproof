@@ -17,6 +17,10 @@ const cases=[
  ['PDF pages','src/core/export.ts','out.addPage(page);','void page;','tests/lock-billing-export.test.ts','PDF includes full'],
  ['temporary exports','src/core/cleanup.ts','await remove(directory);','void directory;','tests/vault.test.ts','cold startup removes'],
  ['originals archive','src/core/export.ts',"if (!Object.keys(files).length) throw Error('NO_ORIGINALS');","if (false) throw Error('NO_ORIGINALS');",'tests/lock-billing-export.test.ts','originals ZIP preserves'],
+ ['orphaned vault set aside','src/core/vault.ts','if (await store.read()) await store.archive();','void store;','tests/vault.test.ts','device-restored vault'],
+ ['launch only inside its week','src/billing/provider.ts','return activeLaunch(p, now)?.id ?? p.id;','return p.launch?.id ?? p.id;','tests/lock-billing-export.test.ts','launch-week lifetime'],
+ ['store key per platform',"src/billing/provider.ts","(os === 'ios' && key.startsWith('appl_'))","key.startsWith('appl_')",'tests/lock-billing-export.test.ts','store keys unlock'],
+ ['release gate device checks','scripts/release-gate.mjs','device?.checks?.[c] !== true','false','tests/lock-billing-export.test.ts','release gate stops'],
  ['date validation','src/core/dates.ts','editableDate(date.toISOString()) !== value','false','tests/lock-billing-export.test.ts','user dates reject'],
 ];
 for(const [name,path,before,after,test,pattern] of cases){

@@ -50,6 +50,10 @@ export const strings = {
     "← Back",
     "← Volver"
   ],
+  "backTo": [
+    "← Back to {folder}",
+    "← Volver a {folder}"
+  ],
   "backHome": [
     "← Back to My folders",
     "← Volver a Mis carpetas"
@@ -524,7 +528,7 @@ export const strings = {
   ],
   "lifetimeTerms": [
     "Lifetime. One payment, no renewal. Plus stays yours for life.",
-    "De por vida. Un solo pago, sin renovación."
+    "De por vida. Un solo pago, sin renovación. Plus es suyo de por vida."
   ],
   "annualTerms": [
     "Renews every year on the same date until you cancel. Cancel any time: iPhone Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",

@@ -116,3 +116,12 @@ test('cold startup removes interrupted plaintext SDK exports/imports while retai
     assert.deepEqual(await fs.readdir(cache),[]);assert.equal(await fs.readFile(path.join(docs,'vault.sqlite'),'utf8'),'fictional ciphertext');
   }finally{await fs.rm(root,{recursive:true,force:true});}
 });
+
+test('a device-restored vault without its this-phone key is set aside, never erased, so setup or restore can proceed',async()=>{
+  const {prepareInstall}=await import('../src/core/vault');
+  const {store,vault}=await fixture();await vault.add(draft(),false);const cipher=store.value;const archived:string[]=[];
+  const install=Object.assign(store,{archive:async()=>{archived.push(store.value!);store.value=null;}});
+  assert.equal(await prepareInstall(install,true),true);assert.equal(store.value,cipher);assert.deepEqual(archived,[]);
+  assert.equal(await prepareInstall(install,false),false);assert.equal(store.value,null);assert.deepEqual(archived,[cipher]);
+  assert.equal(await prepareInstall(install,false),false);assert.deepEqual(archived,[cipher]);
+});

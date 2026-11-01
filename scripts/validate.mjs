@@ -44,7 +44,10 @@ const checks={
   'honest-claims':()=>{
     const content=texts.filter(([f])=>f==='src/strings.ts'||f.startsWith('store/'));
     if(!content.length)throw Error('NO_APP_CONTENT');
-    for(const [f,s] of content)if(/court.admissible|unhackable|military.grade|proof that wins/iu.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
+    // EN and ES: prohibited evidence/security claims (R-ADV-01/02), competitor names in app or store
+    // copy (R-REPO-06; the website may compare, the store listing never), race-labelled branding.
+    const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?|vaultaire|proofnest/iu;
+    for(const [f,s] of content)if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
   },
 };
 const seen=new Set();

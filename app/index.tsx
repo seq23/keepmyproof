@@ -7,7 +7,7 @@ import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { checked, contentDigest, launchFolders, validate, type Item, type Lang } from '../src/core/model';
 import { userDate, editableDate, dateBoundary } from '../src/core/dates';
-import { Vault, mayAdd, type Draft } from '../src/core/vault';
+import { FREE_LIMIT, Vault, mayAdd, type Draft } from '../src/core/vault';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
@@ -59,7 +59,9 @@ export default function App() {
     void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
     if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
-      if (state !== 'active' && vaultRef.current) lock();
+      // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
+      // app switcher (whose preview is hidden); locking there would throw people out mid-task.
+      if (state === 'background' && vaultRef.current) lock();
     });
     return () => { mounted.current = false; listener.remove(); vaultRef.current?.lock(); };
   }, []);
@@ -251,7 +253,7 @@ export default function App() {
     {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}{btn('lockNow', lock,true)}</>;
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolder.trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }))}</>;
-  else if (screen === 'plus') body = <><P heading>{t(state.items.length >= 25 ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
+  else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
     {products.map(p => { const launch=activeLaunch(p);const price=launch?.price ?? p.price;
@@ -263,7 +265,7 @@ export default function App() {
   else body = <P>{t('empty')}</P>;
   return <Theme.Provider value={palette}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-      {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus'].includes(screen)?t('backHome'):t('back')} onPress={back} disabled={busy} />}
+      {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
       {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && <P muted>{t('working')}</P>}{body}
     </ScrollView>

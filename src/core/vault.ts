@@ -93,3 +93,12 @@ export class Vault {
     });
   }
 }
+export interface InstallStore extends AtomicStore { archive(): Promise<void> }
+// A device restore (iCloud / Android transfer) copies the encrypted vault file but never the
+// this-device-only key, so the ciphertext can't be opened here. Set it aside (never erase it)
+// so this phone can start fresh or restore from the user's own backup with the 12 words.
+export async function prepareInstall(store: InstallStore, hasLock: boolean): Promise<boolean> {
+  if (hasLock) return true;
+  if (await store.read()) await store.archive();
+  return false;
+}
