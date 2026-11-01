@@ -38,7 +38,7 @@ the phone. Losing both the phone and phrase makes the encrypted backup unusable.
 
 Backup creates a new encrypted `.kmp` file. Save it through the system share sheet
 to your own iCloud Drive or Google Drive. In Backup, tap **Check the saved backup**,
-choose that file, unlock when returning from the picker, then tap the check button
+choose that file, then tap the check button
 to verify it. Sharing alone never sets “last backup checked.” Every file hash and
 the complete current snapshot must match before that date changes.
 
@@ -80,32 +80,21 @@ a paid build option. Local native builds avoid hosted build usage.
 
 ## Purchases and launch offer
 
-`src/billing/provider.ts` is the only purchases interface. Without a supported key,
-the UI previews normal prices, disables buy buttons, and restore cannot grant Plus.
-Only `test_` RevenueCat **Test Store** keys are accepted in v0, injected through
-`EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY` or `EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY`.
-Do not put a key in git. Store-native sandbox keys require a separate release
-configuration and device receipt testing before enabling that route.
-
-The anonymous RevenueCat wrapper reads the `plus` entitlement, annual/lifetime
-packages from the current offering, localized store prices, expiry and management
-URL. Diagnostics and automatic device identifier collection are disabled. Annual
+`src/billing/provider.ts` is the only purchases interface. Without a key, the UI
+previews normal prices, disables buy buttons, and restore cannot grant Plus.
+Keys come from `EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY` / `..._ANDROID_KEY` (EAS
+secrets, never git): `test_` (RevenueCat Test Store) in any build, `appl_` on iOS,
+`goog_` on Android. Diagnostics and device identifier collection are off. Annual
 packages with trials or intro terms are rejected. No plan is preselected.
 
-The launch label uses a store-returned, eligible, one-payment lifetime intro plus
-RevenueCat offering `launchStartsAt` / `launchEndsAt` metadata. Those dates must
-span at most one week. Without that evidence, only normal pricing is shown. There
-is no local countdown or clock that invents an offer. The adapter re-reads products
-at purchase. USD normal prices must match the approved list prices.
-
-**Platform constraint:** Apple currently documents introductory/promotional offers
-for auto-renewable subscriptions; lifetime unlock is a non-consumable. The current
-RevenueCat product API does not provide an applicable standard lifetime promo
-purchase path. Do not fake a discount or lower the list price to mimic one. The
-owner's requested $29.99 lifetime launch promotion remains a named store-setup stop
-until a supported store mechanism supplies and redeems that offer. Relevant primary
-sources: [RevenueCat offers](https://www.revenuecat.com/docs/subscription-guidance/subscription-offers),
-[lifetime products](https://www.revenuecat.com/docs/platform-resources/non-subscriptions).
+**Launch week ($29.99 lifetime, then $39.99).** Stores have no intro offer for a
+one-time purchase, so the launch price is a second lifetime store product placed
+in a RevenueCat offering made current for launch week, with offering metadata
+`launchStartsAt` / `launchEndsAt` (at most 7 days). List prices always come from
+the `default` offering. Inside the dates the paywall says "$29.99 for life, launch
+week only, then $39.99" and sells the launch product; outside them it shows and
+sells the list product even if the launch offering is still current. No clock or
+countdown is in the app. USD list prices must equal $19.99 / $39.99.
 
 ## Checks and review
 
@@ -125,19 +114,19 @@ public disclosures. Human review must still reject real people/customer fixtures
 
 ## Named stops
 
-- **REVENUECAT_KEY_MISSING** — no key was available through the permitted environment.
-  The mock cannot buy or unlock Plus. No vault, Keychain CLI or account was accessed.
-- **LIFETIME_PROMO_STORE_SUPPORT** — lifetime intro/promo support must be verified in
-  the stores and SDK before the requested launch offer can actually be sold.
-- **DEVICE_RELEASE_GATE_PENDING** — this machine has Command Line Tools, no Xcode
-  simulator. No physical device was attached for this job. The specified day-long
-  encryption/backup/biometrics/file-provider checks and memory testing remain pending.
-- **EAS_STORE_SETUP_MISSING** — no Expo project, signing credentials, store accounts
-  or products were configured, and no native binary was built, deployed or submitted.
-- **LEGAL_URLS_UNREACHABLE** — Terms and Privacy links are wired to keepmyproof.com;
-  both live URL probes returned HTTP 000. Draft EN/ES policies are in `store/` for
-  publication in the separately planned website step. Native Spanish review and
-  privacy-label/store disclosure review must occur before release.
+Store builds are refused in code until these clear: `npm run release-gate` (also
+run by EAS through `eas-build-pre-install` when the profile is `production`)
+prints each `NAMED STOP [CODE]` and exits 2.
 
-These release stops are visible limitations, not skipped or failing tests. No
-hosted deployment or store launch is part of this repository's main CI.
+- **REVENUECAT_KEY_MISSING**: no `appl_` / `goog_` RevenueCat keys. Needs the
+  RevenueCat project and the App Store / Play accounts (the owner's $99 + $25).
+- **DEVICE_RELEASE_GATE_PENDING**: `release/device-gate.json` must record every
+  device check in `scripts/release-gate.mjs` as passed for the current version.
+- **PRICE_RECHECK_PENDING / PRICED_BELOW_INCUMBENT**: `release/price-check.json`
+  must hold the incumbent's App Store lifetime price, checked in the last 7 days;
+  our list price may never be below it.
+- **LEGAL_URLS_UNREACHABLE**: keepmyproof.com/terms and /privacy must answer 200.
+  Draft EN/ES policies are in `store/` for the website step.
+
+Without a key the app runs on the mock, which throws `REVENUECAT_KEY_MISSING` on
+any purchase. Nothing here creates accounts, builds binaries or submits to a store.

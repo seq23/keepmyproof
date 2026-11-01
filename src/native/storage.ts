@@ -6,22 +6,26 @@ import { File, Paths, Directory } from 'expo-file-system';
 import { AppLock, createLock, type LockRecord, type LockStore } from '../core/lock';
 import { b64, unb64, recoveryKey, type Random } from '../core/crypto';
 import { clearTemporary } from '../core/cleanup';
-import { Vault, type AtomicStore } from '../core/vault';
+import { Vault, prepareInstall, type InstallStore } from '../core/vault';
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
 const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1';
 let db: SQLite.SQLiteDatabase | undefined;
-export async function database(): Promise<AtomicStore> {
+export async function database(): Promise<InstallStore> {
   if (!db) {
     const directory = new Directory(Paths.document, 'vault'); directory.create({ intermediates: true, idempotent: true });
     db = await SQLite.openDatabaseAsync('vault.sqlite', {}, directory.uri);
-    await db.execAsync('PRAGMA journal_mode = WAL; PRAGMA synchronous = FULL; CREATE TABLE IF NOT EXISTS vault (id INTEGER PRIMARY KEY CHECK(id=1), ciphertext TEXT NOT NULL)');
+    await db.execAsync('PRAGMA journal_mode = WAL; PRAGMA synchronous = FULL; CREATE TABLE IF NOT EXISTS vault (id INTEGER PRIMARY KEY CHECK(id=1), ciphertext TEXT NOT NULL); CREATE TABLE IF NOT EXISTS orphaned (archivedOn TEXT NOT NULL, ciphertext TEXT NOT NULL)');
   }
   const connection = db;
   return {
     read: async () => (await connection.getFirstAsync<{ ciphertext: string }>('SELECT ciphertext FROM vault WHERE id=1'))?.ciphertext ?? null,
     write: async ciphertext => { await connection.withExclusiveTransactionAsync(async tx => {
       await tx.runAsync('INSERT INTO vault(id,ciphertext) VALUES(1,?) ON CONFLICT(id) DO UPDATE SET ciphertext=excluded.ciphertext', ciphertext);
+    }); },
+    archive: async () => { await connection.withExclusiveTransactionAsync(async tx => {
+      await tx.runAsync("INSERT INTO orphaned(archivedOn,ciphertext) SELECT ?, ciphertext FROM vault WHERE id=1", new Date().toISOString());
+      await tx.runAsync('DELETE FROM vault WHERE id=1');
     }); },
   };
 }
@@ -31,8 +35,7 @@ export const locks: LockStore = {
 };
 export const appLock = new AppLock(locks);
 export async function hasSetup() {
-  const store = await database(); const cipher = await store.read(); const auth = await SecureStore.getItemAsync(AUTH, options);
-  if (cipher && !auth) throw Error('DEVICE_KEY_MISSING'); return !!auth;
+  return prepareInstall(await database(), !!(await SecureStore.getItemAsync(AUTH, options)));
 }
 export async function biometricCheck(prompt: string): Promise<boolean> {
   if (!(await LocalAuth.hasHardwareAsync()) || !(await LocalAuth.isEnrolledAsync())) return false;
