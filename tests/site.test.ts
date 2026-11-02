@@ -2,7 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { SITE, PAGES } from '../site/config.mjs';
-import { render, legalSections } from '../site/build.mjs';
+import { render, renderAll, legalSections } from '../site/build.mjs';
+import { fixture } from './site-fixture';
 import { approvedListPrice } from '../src/billing/provider';
 import { FREE_LIMIT } from '../src/core/vault';
 import topics from '../topics.json';
@@ -25,35 +26,53 @@ test('every launch folder and checklist item from topics.json is on the English 
   }
 });
 
-test('every page has a self canonical, hreflang pairs that exist, and noindex only on utility pages; sitemap lists exactly the indexable pages', () => {
-  const files = render(), pages = html(files);
-  assert.equal(pages.length, PAGES.length * 2);
-  for (const p of PAGES) for (const lang of ['en', 'es'] as const) {
-    const s = files[fileOf(p[lang])];
-    assert.ok(s, `${p[lang]} emitted`);
-    assert.ok(s.includes(`<link rel="canonical" href="${SITE.origin}${p[lang]}">`), `${p[lang]} canonical`);
-    for (const l of ['en', 'es'] as const) assert.ok(s.includes(`hreflang="${l}" href="${SITE.origin}${p[l]}"`), `${p[lang]} hreflang ${l}`);
-    assert.equal(s.includes('noindex'), !p.index, `${p[lang]} robots`);
+test('every page has a self canonical and hreflang twins that exist and link back; noindex only on utility pages; the split sitemaps list exactly the indexable pages', () => {
+  const { files, pages } = renderAll(fixture());
+  assert.ok(pages.some((p) => p.state), 'fixture state pages rendered');
+  const byPath = new Map(pages.map((p) => [p.path, p]));
+  for (const p of pages.filter((x) => !x.external)) {
+    const s = files[p.file];
+    assert.ok(s, `${p.path} emitted`);
+    assert.ok(s.includes(`<link rel="canonical" href="${SITE.origin}${p.path}">`), `${p.path} canonical`);
+    for (const [l, path] of Object.entries(p.alt || {})) {
+      const twin = byPath.get(path as string);
+      assert.ok(twin, `${p.path} twin ${l} ${path} exists`);
+      assert.ok(s.includes(`hreflang="${l === 'zh' ? 'zh-Hans' : l}" href="${SITE.origin}${path}"`), `${p.path} hreflang ${l}`);
+      assert.equal(twin!.alt?.[Object.entries(p.alt!).find(([, v]) => v === p.path)![0]], p.path, `${path} links back to ${p.path}`);
+    }
+    const fixed = PAGES.find((x) => Object.values(x).includes(p.path));
+    assert.equal(s.includes('noindex'), fixed ? !fixed.index : false, `${p.path} robots`);
   }
-  const locs = [...files['sitemap.xml'].matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]).sort();
-  assert.deepEqual(locs, PAGES.filter(p => p.index).flatMap(p => [SITE.origin + p.en, SITE.origin + p.es]).sort());
+  const children = [...files['sitemap.xml'].matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1].replace(SITE.origin + '/', ''));
+  assert.ok(children.length >= 2 && children.every((c) => files[c]), 'sitemap index points at emitted sitemaps');
+  const locs = children.flatMap((c) => [...files[c].matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1])).sort();
+  assert.deepEqual(locs, pages.filter((p) => p.index).map((p) => SITE.origin + p.path).sort());
   assert.ok(files['robots.txt'].includes(`Sitemap: ${SITE.origin}/sitemap.xml`));
   assert.equal(files[`${SITE.indexNowKey}.txt`], SITE.indexNowKey);
 });
 
-test('before launch: "coming soon", no store link or badge, no app or offer schema; after: links and offers whose prices are on the page', () => {
-  const before = render();
-  for (const [p, s] of html(before)) {
-    assert.ok(!/apps\.apple\.com|play\.google\.com|MobileApplication|SoftwareApplication/.test(s), p);
+test('before launch: "coming soon to Google Play", no store link, no offers and never a rating; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
+  const before = renderAll(fixture());
+  for (const [p, s] of html(before.files)) {
+    // Competitor pages cite competitors' App Store pages; no page may link to a store for our own app.
+    assert.ok(!/play\.google\.com|apps\.apple\.com\/[^"]*keepmyproof|class="btn" href="https:\/\/apps\.apple/.test(s), p);
+    for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) assert.ok(!app.offers && !app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
   }
-  assert.ok(visible(before['index.html']).includes('Coming soon to the App Store and Google Play.'));
+  assert.ok(visible(before.files['index.html']).includes('Coming soon to Google Play.'));
+  const statePage = before.pages.find((p) => p.state && p.state.lang === 'en')!;
+  assert.ok(visible(before.files[statePage.file]).includes('Coming soon to Google Play.'));
   const saved = { ...SITE.stores };
   try {
-    SITE.stores.appStore = 'https://apps.apple.com/us/app/keepmyproof/id1'; SITE.stores.googlePlay = 'https://play.google.com/store/apps/details?id=com.keepmyproof.app';
+    SITE.stores.googlePlay = 'https://play.google.com/store/apps/details?id=com.keepmyproof.app';
+    const after = renderAll(fixture());
+    for (const p of [after.pages.find((x) => x.path === '/')!, after.pages.find((x) => x.state && x.state.lang === 'es')!]) {
+      const s = after.files[p.file];
+      assert.ok(s.includes(`href="${SITE.stores.googlePlay}"`), `${p.path} store link`);
+      assert.ok(!visible(s).includes('Coming soon') && !visible(s).includes('Muy pronto'), `${p.path} no coming soon`);
+    }
     for (const lang of ['en', 'es'] as const) {
-      const s = render()[fileOf(PAGES[0][lang])], app = graph(s).find(n => n['@type'] === 'MobileApplication');
-      assert.ok(s.includes(`href="${SITE.stores.appStore}"`) && s.includes(`href="${SITE.stores.googlePlay}"`));
-      assert.ok(!visible(s).includes('Coming soon') && !visible(s).includes('Muy pronto'));
+      const s = after.files[fileOf(PAGES[0][lang])], app = graph(s).find((n) => n['@type'] === 'SoftwareApplication');
+      assert.ok(!app.aggregateRating);
       for (const o of app.offers.filter((o: any) => o.price !== '0')) assert.ok(visible(s).includes(`$${o.price}`), `${lang} ${o.price}`);
     }
   } finally { Object.assign(SITE.stores, saved); }

@@ -18,6 +18,9 @@ export const SITE = {
   vaHelp: 'https://www.va.gov/get-help-from-accredited-representative/',
   parentOrg: { name: 'Spry Labs', id: 'https://billionairehighperformancecoach.com/spry-labs#organization', url: 'https://billionairehighperformancecoach.com/spry-labs' },
   indexNowKey: '4f1c9a7e2b6d4e8f9a3c5b7d1e2f4a6c',
+  // Google Search Console ownership file for the Boss OS search service account (Site Verification API,
+  // FILE method, 2 Nov 2026). scripts/ping-search.mjs verifies it and submits the sitemaps.
+  googleVerificationFile: 'google706548b58060eed8.html',
 };
 
 // Page paths per language; `pair` links each page to its translation (hreflang).
@@ -26,4 +29,8 @@ export const PAGES = [
   { id: 'terms', en: '/terms', es: '/es/terminos', index: false },
   { id: 'privacy', en: '/privacy', es: '/es/privacidad', index: false },
   { id: 'support', en: '/support', es: '/es/ayuda', index: false },
+  { id: 'checklists', en: '/checklists', es: '/es/listas', zh: '/zh/', ko: '/ko/', index: true },
+  { id: 'tools', en: '/tools', es: '/es/herramientas', index: true },
+  { id: 'facts', en: '/facts', es: '/es/datos', index: true },
+  { id: 'alternatives', en: '/alternatives', es: '/es/alternativas', index: true },
 ];

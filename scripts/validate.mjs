@@ -58,6 +58,31 @@ const checks={
     for(const [f,s] of [...content,...site])if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
     for(const [f,s] of content)if(competitors.test(s))throw Error(`COMPETITOR_IN_STORE_COPY ${f}`);
   },
+  'verified-facts':async()=>{
+    // The published site, offline: every state page carries 3+ facts from verified, official sources
+    // (site/data/verified/<folder>.json, written by scripts/verify-facts.mjs), an answer block, the
+    // not-legal-advice line and its US framing in each language; no page carries a banned claim word;
+    // no search-loop question page fails the legal and VA gate. Hard-fails on zero state pages.
+    const { renderAll } = await import('../site/build.mjs');
+    const { bannedWord, htmlText, officialSource } = await import('../site/lib/gate.mjs');
+    const { files, pages, stops } = renderAll();
+    const states = pages.filter(p => p.state);
+    if (!states.length) throw Error('NO_STATE_PAGES: the site publishes no state page (run scripts/verify-facts.mjs)');
+    const ADVICE = { en: /Not legal advice/, es: /No es asesoría legal/, zh: /不构成法律建议/, ko: /법률 자문이 아닙니다/ }, US = { en: /./, es: /Estados Unidos/, zh: /美国/, ko: /미국/ };
+    const bad = [];
+    for (const p of pages.filter(x => !x.external)) {
+      const body = files[p.file].replace(/<head>[\s\S]*?<\/head>/, ''), text = htmlText(body), b = bannedWord(text);
+      if (b) bad.push(`${p.path}: banned word "${b}"`);
+      if (!p.state) continue;
+      const l = p.state.lang, facts = [...body.matchAll(/<ul class="facts">([\s\S]*?)<\/ul>/g)].flatMap(m => [...m[1].matchAll(/<li>[\s\S]*?href="([^"]+)"/g)].map(x => x[1]));
+      if (facts.length < 3 || !facts.every(officialSource)) bad.push(`${p.path}: ${facts.length} sourced facts or a non-official source`);
+      if (!/class="definition answer"/.test(body)) bad.push(`${p.path}: no answer block`);
+      if (!ADVICE[l].test(text) || !US[l].test(text)) bad.push(`${p.path}: missing the not-legal-advice line or US framing`);
+    }
+    for (const s of stops.filter(x => x.includes('[QUESTION_GATE]'))) bad.push(s);
+    if (bad.length) throw Error(`FACTS_GATE ${bad.length}:\n${bad.slice(0, 20).join('\n')}`);
+    console.log(`  ${states.length} state pages, ${pages.length} pages checked`);
+  },
   'preview-screens':()=>{
     // Every app screen has a screenshot step in the simulator preview (docs/preview.md), or a stated reason.
     const problems=drift(readFileSync(APP,'utf8'),readFileSync(FLOW,'utf8'));
@@ -65,5 +90,5 @@ const checks={
   },
 };
 const seen=new Set();
-for(const row of registry){if(seen.has(row.name)||!checks[row.name])throw Error('UNKNOWN_VALIDATOR');seen.add(row.name);checks[row.name]();console.log(`PASS ${row.name}`);}
+for(const row of registry){if(seen.has(row.name)||!checks[row.name])throw Error('UNKNOWN_VALIDATOR');seen.add(row.name);await checks[row.name]();console.log(`PASS ${row.name}`);}
 if(Object.keys(checks).some(name=>!seen.has(name)))throw Error('UNREGISTERED_VALIDATOR');

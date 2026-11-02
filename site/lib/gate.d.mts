@@ -1,0 +1,10 @@
+export declare const MIN_FACTS: number;
+export declare const MIN_STATE_SPECIFIC: number;
+export declare function bannedWord(text: string): string | null;
+export declare function officialSource(url: string): boolean;
+export declare function htmlText(html: string, joiner?: string): string;
+export declare function sourceText(html: string): string;
+export declare function quoteOnPage(quote: string, pageText: string): boolean;
+export declare function factKey(f: { source_url: string; quote: string }): string;
+export declare function factProblems(f: any): [string, string][];
+export declare function gateState(entry: any, verified: Record<string, string>, counts: Map<string, number>): { facts?: any[]; stop?: [string, string] };

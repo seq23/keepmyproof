@@ -1,0 +1,132 @@
+{
+  "schema": "search-loop-config-v1",
+  "site": "keepmyproof.com",
+  "base_url": "https://keepmyproof.com",
+  "site_name": "KeepMyProof",
+  "publisher": {
+    "name": "Spry Labs",
+    "url": "https://billionairehighperformancecoach.com/spry-labs"
+  },
+  "audience": "people in the United States gathering their own papers for a divorce or custody matter, a problem at work, a VA disability claim, a parent's estate or a child's IEP; many are stressed and reading on a phone",
+  "voice": "plain, calm and factual; short sentences; second person. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts.",
+  "topics": [
+    "documents to gather before divorce",
+    "how to prepare for divorce in",
+    "how to save text messages for divorce",
+    "co-parenting journal",
+    "how to document missed visitation",
+    "how to prove adultery in",
+    "how to document workplace harassment",
+    "hostile work environment evidence",
+    "proof of unpaid wages",
+    "what to save before quitting your job",
+    "va disability claim checklist",
+    "how to get a nexus letter",
+    "what to bring to a c&p exam",
+    "va disability evidence",
+    "buddy statement for va claim",
+    "executor of estate checklist",
+    "what to do when someone dies checklist",
+    "documents needed after a death",
+    "how to close a deceased person's bank account",
+    "iep binder for parents",
+    "how to prepare for an iep meeting",
+    "iep meeting checklist",
+    "how to document iep not being followed"
+  ],
+  "find": {
+    "exclude_words": [
+      "best",
+      "top",
+      "lawyer near me",
+      "attorney near me",
+      "win",
+      "free lawyer",
+      "how to sue",
+      "hide money",
+      "spy",
+      "track spouse",
+      "record without consent",
+      "catch a cheater",
+      "increase va rating",
+      "va rating increase",
+      "west peek",
+      "roblox",
+      "executor script"
+    ]
+  },
+  "action": {
+    "label": "Get the free printable checklists",
+    "url": "https://keepmyproof.com/checklists"
+  },
+  "allowed_link_targets": [
+    "https://keepmyproof.com",
+    "https://www.va.gov"
+  ],
+  "mode": "normal",
+  "pace": {
+    "start_per_day": 10,
+    "step_per_week": 5,
+    "cap": 30
+  },
+  "menu_pages_need_approval": false,
+  "health_gate": "none",
+  "protected_paths": [
+    "site/build.mjs",
+    "site/config.mjs",
+    "site/copy.mjs",
+    "site/cluster-copy.mjs",
+    "site/copy-cjk.mjs",
+    "site/tools.mjs",
+    "site/data",
+    "site/lib",
+    "store",
+    "src",
+    "app"
+  ],
+  "output": {
+    "dir": "site/questions",
+    "format": "dir-index",
+    "url_prefix": "/questions/",
+    "redirects": {
+      "file": "site/_redirects",
+      "format": "lines"
+    }
+  },
+  "template": {
+    "section_name": "Questions",
+    "stylesheets": [
+      "/site.css"
+    ],
+    "og_image": {
+      "url": "https://keepmyproof.com/og.png",
+      "width": 1200,
+      "height": 630
+    },
+    "header_html": "<header><a class=\"mark\" href=\"/\"><img src=\"/icon-192.png\" alt=\"\" width=\"28\" height=\"28\">KeepMyProof</a><nav aria-label=\"Main\"><a class=\"lang\" href=\"/checklists\">Free checklists</a></nav></header>",
+    "footer_html": "<footer><p>Educational only. Not legal advice. KeepMyProof is not a law firm and is not affiliated with the VA, any court or any school.</p><p class=\"fact\">KeepMyProof is a private phone app for keeping copies of divorce, custody, workplace, VA claim, executor and IEP papers in folders with checklists. Papers stay encrypted on the phone, with no account and no ads. Free for 25 items. English and Spanish.</p><p>KeepMyProof is made by <a href=\"https://billionairehighperformancecoach.com/spry-labs\">Spry Labs</a>.</p></footer>"
+  },
+  "related": {
+    "max_pages_per_new_page": 2,
+    "scan_dirs": [
+      "site/questions"
+    ],
+    "skip_dirs": []
+  },
+  "gsc": {
+    "site_url_env": "GSC_SITE_URL"
+  },
+  "indexnow": {
+    "key": "4f1c9a7e2b6d4e8f9a3c5b7d1e2f4a6c",
+    "key_location": "https://keepmyproof.com/4f1c9a7e2b6d4e8f9a3c5b7d1e2f4a6c.txt"
+  },
+  "analytics": {
+    "ai_referrals": "none",
+    "ai_bot_hits": "none"
+  },
+  "conversions": {
+    "source": "none"
+  },
+  "shares_audience_with": [],
+  "ledger_dir": "data/search-loop"
+}

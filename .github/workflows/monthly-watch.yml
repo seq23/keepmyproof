@@ -1,0 +1,33 @@
+name: Monthly watch
+
+# 1st of each month: (1) diff Vaultaire's sitemap; new pages in our five folders become search-loop
+# seeds (scripts/vaultaire-diff.mjs); (2) re-count complaints in competitors' recent App Store reviews
+# for the dated "alternative to" pages (scripts/measure-complaints.mjs). Commits the results to main.
+on:
+  schedule:
+    - cron: "37 10 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: facts-commit
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node scripts/vaultaire-diff.mjs
+      - run: node scripts/measure-complaints.mjs
+      - name: Commit
+        run: |
+          git config user.name "keepmyproof-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/watch site/data/alternatives.json search-loop.config.json
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -q -m "Monthly watch: Vaultaire sitemap diff and competitor review counts $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i * 7)); done
+          echo "NAMED STOP [PUSH_FAILED] monthly watch not pushed"; exit 9

@@ -1,0 +1,15 @@
+{
+ "_about": "Federal facts the free tools use (the deadline calculators). Same rules as the state facts files: official source, the quote must be on the page (scripts/verify-facts.mjs checks it and writes site/data/verified/tools.json), no number that is not in the quote.",
+ "facts": [
+  {
+   "id": "va-intent-to-file-one-year",
+   "tool": "deadline-va-intent",
+   "claim_en": "After you notify VA of your intent to file, you have 1 year to complete and file your claim.",
+   "claim_es": "Después de avisar al VA de su intención de presentar, tiene 1 año para completar y presentar su reclamo.",
+   "source_url": "https://www.va.gov/resources/your-intent-to-file-a-va-claim/",
+   "source_name": "VA.gov: Your intent to file a VA claim",
+   "quote": "After you notify us of your intent to file, you have 1 year to complete and file your claim.",
+   "checked": "2026-11-02"
+  }
+ ]
+}

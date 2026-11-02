@@ -14,3 +14,5 @@ android/
 *.db
 *.sqlite
 .DS_Store
+.search-loop-engine/
+.search-loop-run.log

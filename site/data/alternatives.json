@@ -1,0 +1,84 @@
+{
+ "schema": "kmp-alternatives-v1",
+ "method": "Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts once per theme if its title or text matches the theme words in scripts/measure-complaints.mjs.",
+ "apps": [
+  {
+   "slug": "keepsafe",
+   "name": "Keepsafe",
+   "app": "Secret Photo Vault: Keepsafe",
+   "id": 510873505,
+   "kind": "photo vault",
+   "measured": "2026-11-02",
+   "sample": 150,
+   "counts": {
+    "lost": 19,
+    "price": 7
+   },
+   "store_url": "https://apps.apple.com/us/app/id510873505",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=510873505/sortby=mostrecent/json"
+  },
+  {
+   "slug": "private-photo-vault",
+   "name": "Private Photo Vault",
+   "app": "Private Photo Vault - Pic Safe",
+   "id": 417571834,
+   "kind": "photo vault",
+   "measured": "2026-11-02",
+   "sample": 150,
+   "counts": {
+    "lost": 3,
+    "price": 4
+   },
+   "store_url": "https://apps.apple.com/us/app/id417571834",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=417571834/sortby=mostrecent/json"
+  },
+  {
+   "slug": "timestamp-it",
+   "name": "Timestamp It",
+   "app": "Timestamp It - Proof Camera",
+   "id": 327756085,
+   "kind": "timestamp camera",
+   "measured": "2026-11-02",
+   "sample": 150,
+   "counts": {
+    "lost": 1,
+    "price": 6
+   },
+   "store_url": "https://apps.apple.com/us/app/id327756085",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=327756085/sortby=mostrecent/json"
+  },
+  {
+   "slug": "appclose",
+   "name": "AppClose",
+   "app": "AppClose",
+   "id": 1019290876,
+   "kind": "co-parenting app",
+   "measured": "2026-11-02",
+   "sample": 150,
+   "counts": {
+    "lost": 3,
+    "price": 52
+   },
+   "store_url": "https://apps.apple.com/us/app/id1019290876",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1019290876/sortby=mostrecent/json"
+  },
+  {
+   "slug": "ourfamilywizard",
+   "name": "OurFamilyWizard",
+   "app": "OurFamilyWizard Co-Parent App",
+   "id": 497405393,
+   "kind": "co-parenting app",
+   "measured": "2026-11-02",
+   "sample": 150,
+   "counts": {
+    "lost": 2,
+    "price": 23
+   },
+   "store_url": "https://apps.apple.com/us/app/id497405393",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=497405393/sortby=mostrecent/json"
+  }
+ ],
+ "stops": [
+  "NAMED STOP [SAMPLE_TOO_SMALL] Vaultaire: 11 recent reviews (< 20); no page"
+ ]
+}
