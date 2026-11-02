@@ -832,13 +832,70 @@
         }
       ],
       "official_links": []
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "In Connecticut, the fiduciary must file the inventory with the probate court within two months after qualifying.",
+          "claim_es": "En Connecticut, el fiduciario debe presentar el inventario ante el tribunal testamentario dentro de dos meses después de habilitarse.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "The fiduciary shall file the inventory in the court of probate having jurisdiction of the estate of the deceased person or insolvent debtor within two months after the acceptance of the bond or other qualification of the fiduciary.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, before selling estate real estate, the fiduciary files an inventory with the property's legal description.",
+          "claim_es": "En Connecticut, antes de vender un inmueble de la herencia, el fiduciario presenta un inventario con la descripción legal de la propiedad.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "The fiduciary shall file an inventory containing a legal description of any real estate of the decedent prior to a sale",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, if someone objects to the inventory, the court holds a hearing between fifteen and sixty days after the objections are filed.",
+          "claim_es": "En Connecticut, si alguien objeta el inventario, el tribunal fija una audiencia entre quince y sesenta días después de presentadas las objeciones.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "the court shall order a hearing on the acceptance of the inventory and appraisal to be had within sixty days and not less than fifteen days after the filing of the objections",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "In Wyoming, the personal representative files a sworn report within 120 days after filing the inventory.",
+          "claim_es": "En Wyoming, el representante personal presenta un informe bajo juramento dentro de 120 días después de presentar el inventario.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "Within one hundred twenty (120) days after the timely filing by the personal representative of the inventory of assets of the estate of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, final settlement can happen no sooner than 3 months after the first published notice of opening probate.",
+          "claim_es": "En Wyoming, la liquidación final puede hacerse no antes de 3 meses después del primer aviso publicado de apertura de la sucesión.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "but not less than three (3) months after the date of the first publication of the notice of opening the probate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, to close the estate the personal representative files a sworn final report, accounting and petition for distribution with the clerk of court.",
+          "claim_es": "En Wyoming, para cerrar la herencia el representante personal presenta ante el secretario un informe final, cuentas y petición de distribución bajo juramento.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "When the estate is ready to be closed, the personal representative shall file with the clerk of court, under oath, his final report and accounting and petition for distribution.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
     "AK": "no official source found",
     "AR": "no official source found",
     "CO": "no official source found",
-    "CT": "no official source found",
     "DE": "no official source found",
     "GA": "no official source found",
     "HI": "no official source found",
@@ -856,7 +913,6 @@
     "RI": "no official source found",
     "TN": "no official source found",
     "UT": "no official source found",
-    "VT": "no official source found",
-    "WY": "no official source found"
+    "VT": "no official source found"
   }
 }
