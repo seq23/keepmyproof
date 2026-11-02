@@ -1,0 +1,2392 @@
+{
+  "folder": "executor",
+  "subtopic": "death-certificates",
+  "title_en": "How to order a death certificate in {state}",
+  "title_es": "Cómo pedir un acta de defunción en {state_es}",
+  "search_intent_en": [
+    "how to get a death certificate in {state}",
+    "{state} death certificate cost",
+    "order death certificate {state} vital records"
+  ],
+  "search_intent_es": [
+    "cómo obtener un acta de defunción en {state_es}",
+    "costo del acta de defunción en {state_es}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Alabama death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Alabama, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Alabama death certificate go to: Alabama Center for Health Statistics Alabama Department of Public Health P.O. Box 5625 Montgomery, AL 36103-5625.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Alabama se envían a: Alabama Center for Health Statistics Alabama Department of Public Health P.O. Box 5625 Montgomery, AL 36103-5625.",
+          "quote": "Address: Alabama Center for Health Statistics Alabama Department of Public Health P.O. Box 5625 Montgomery, AL 36103-5625",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Alabama state vital records office has death records since January 1908.",
+          "claim_es": "La oficina estatal de registros vitales de Alabama tiene actas de defunción desde enero de 1908.",
+          "quote": "State office has records since January 1908",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, additional copies of the same death record ordered at the same time cost $6.00 each.",
+          "claim_es": "En Alabama, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $6.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $6.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Alabama, checks or money orders are made payable to Center for Health Statistics.",
+          "claim_es": "Para solicitudes por correo en Alabama, los cheques o giros postales se hacen a nombre de Center for Health Statistics.",
+          "quote": "Personal check or money order should be made payable to Center for Health Statistics.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, death records less than 25 years old are restricted.",
+          "claim_es": "En Alabama, el acceso a las actas de defunción de menos de 25 años está restringido.",
+          "quote": "Death records less than 25 years old are restricted",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Alabama)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Alabama)",
+          "url": "https://www.cdc.gov/nchs/w2w/alabama.htm"
+        },
+        {
+          "label_en": "Alabama vital records office",
+          "label_es": "Oficina de registros vitales de Alabama",
+          "url": "https://www.alabamapublichealth.gov/vitalrecords/index.html"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Alaska death certificate from the state vital records office is listed at $30.00.",
+          "claim_es": "En Alaska, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $30.00.",
+          "quote": "Event: Death Cost of copy: $30.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Alaska death certificate go to: Department of Health Alaska Health Analytics & Vital Records Section P.O. Box 110675 Juneau, AK 99811-0675.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Alaska se envían a: Department of Health Alaska Health Analytics & Vital Records Section P.O. Box 110675 Juneau, AK 99811-0675.",
+          "quote": "Address: Department of Health Alaska Health Analytics & Vital Records Section P.O. Box 110675 Juneau, AK 99811-0675",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Alaska state vital records office has death records since 1890's.",
+          "claim_es": "La oficina estatal de registros vitales de Alaska tiene actas de defunción desde 1890.",
+          "quote": "State office has records since 1890's",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alaska, additional copies of the same death record ordered at the same time cost $25.00. each.",
+          "claim_es": "En Alaska, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $25.00..",
+          "quote": "Additional copies of the same record ordered at the same time are $25.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Alaska, checks or money orders are made payable to Alaska Vital Records Office.",
+          "claim_es": "Para solicitudes por correo en Alaska, los cheques o giros postales se hacen a nombre de Alaska Vital Records Office.",
+          "quote": "Personal check or money order should be made payable to Alaska Vital Records Office.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Alaska)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Alaska)",
+          "url": "https://www.cdc.gov/nchs/w2w/alaska.htm"
+        },
+        {
+          "label_en": "Alaska vital records office",
+          "label_es": "Oficina de registros vitales de Alaska",
+          "url": "https://health.alaska.gov/en/services/vital-records-orders/"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Arizona death certificate from the state vital records office is listed at $20.",
+          "claim_es": "En Arizona, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.",
+          "quote": "Event: Death Cost of copy: $20",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arizona.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Arizona death certificate go to: The Bureau of Vital Records Arizona Department of Health Services P.O. Box 6018 Phoenix, AZ 85005.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Arizona se envían a: The Bureau of Vital Records Arizona Department of Health Services P.O. Box 6018 Phoenix, AZ 85005.",
+          "quote": "Address: The Bureau of Vital Records Arizona Department of Health Services P.O. Box 6018 Phoenix, AZ 85005",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arizona.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Arizona Bureau of Vital Records does not accept personal checks; a money order or cashier's check is made payable to the Bureau of Vital Records.",
+          "claim_es": "La Oficina de Registros Vitales de Arizona no acepta cheques personales; se paga con giro postal o cheque de caja a nombre de Bureau of Vital Records.",
+          "quote": "The Bureau of Vital Records does not accept personal checks. A money order or cashier's check should be made payable to Bureau of Vital Records",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arizona.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Some county offices in Arizona can also provide certified copies of death certificates.",
+          "claim_es": "Algunas oficinas de condado en Arizona también pueden entregar copias certificadas de actas de defunción.",
+          "quote": "Some county offices in Arizona are able to provide certified copies of death certificates.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arizona.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Arizona)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Arizona)",
+          "url": "https://www.cdc.gov/nchs/w2w/arizona.htm"
+        },
+        {
+          "label_en": "Arizona vital records office",
+          "label_es": "Oficina de registros vitales de Arizona",
+          "url": "http://www.azdhs.gov/licensing/vital-records/index.php"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Arkansas death certificate from the state vital records office is listed at $10.00.",
+          "claim_es": "En Arkansas, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $10.00.",
+          "quote": "Event: Death Cost of copy: $10.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Arkansas death certificate go to: Arkansas Department of Health Vital Records Section, Slot 44 4815 West Markham Street Little Rock, AR 72205.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Arkansas se envían a: Arkansas Department of Health Vital Records Section, Slot 44 4815 West Markham Street Little Rock, AR 72205.",
+          "quote": "Address: Arkansas Department of Health Vital Records Section, Slot 44 4815 West Markham Street Little Rock, AR 72205",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Arkansas state vital records office has death records since February 1914.",
+          "claim_es": "La oficina estatal de registros vitales de Arkansas tiene actas de defunción desde febrero de 1914.",
+          "quote": "State office has records since February 1914",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Arkansas, checks or money orders are made payable to Arkansas Department of Health.",
+          "claim_es": "Para solicitudes por correo en Arkansas, los cheques o giros postales se hacen a nombre de Arkansas Department of Health.",
+          "quote": "Personal check or money order should be made payable to Arkansas Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Arkansas)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Arkansas)",
+          "url": "https://www.cdc.gov/nchs/w2w/arkansas.htm"
+        },
+        {
+          "label_en": "Arkansas vital records office",
+          "label_es": "Oficina de registros vitales de Arkansas",
+          "url": "http://www.healthyarkansas.com"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a California death certificate from the state vital records office is listed at $24.00.",
+          "claim_es": "En California, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $24.00.",
+          "quote": "Event: Death Cost of copy: $24.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a California death certificate go to: CA Department of Public Health - Vital Records MS: 5103 P.O. Box 997410 Sacramento, CA 95899-7410.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de California se envían a: CA Department of Public Health - Vital Records MS: 5103 P.O. Box 997410 Sacramento, CA 95899-7410.",
+          "quote": "Address: CA Department of Public Health - Vital Records MS: 5103 P.O. Box 997410 Sacramento, CA 95899-7410",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The California state office has kept vital event records since July 1905; for earlier records, you contact the County Recorder where the death occurred.",
+          "claim_es": "La oficina estatal de California guarda registros vitales desde julio de 1905; para registros anteriores, se contacta al County Recorder del condado donde ocurrió la muerte.",
+          "quote": "The State Office has maintained vital event records since July 1905. For earlier records, contact the County Recorder in the county where the event occurred.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "To get a certified copy in California, you must complete and sign a sworn statement with the application, and the statement must be notarized.",
+          "claim_es": "Para obtener una copia certificada en California, debe completar y firmar una declaración jurada con la solicitud, y esa declaración debe estar notarizada.",
+          "quote": "In order to obtain a Certified Copy you MUST complete the sworn statement included with the death certificate application form, sign the statement under penalty of perjury, and your sworn statement must be notarize",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (California)",
+          "label_es": "CDC: Dónde solicitar registros vitales (California)",
+          "url": "https://www.cdc.gov/nchs/w2w/california.htm"
+        },
+        {
+          "label_en": "California vital records office",
+          "label_es": "Oficina de registros vitales de California",
+          "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records.aspx"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Colorado death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Colorado, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Colorado death certificate go to: Vital Records Section Colorado Department of Public Health and Environment 4300 Cherry Creek Drive South HSVRD-VS-A1 Denver, CO 80246-1530.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Colorado se envían a: Vital Records Section Colorado Department of Public Health and Environment 4300 Cherry Creek Drive South HSVRD-VS-A1 Denver, CO 80246-1530.",
+          "quote": "Address: Vital Records Section Colorado Department of Public Health and Environment 4300 Cherry Creek Drive South HSVRD-VS-A1 Denver, CO 80246-1530",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Colorado, additional copies of the same death record ordered at the same time cost $13.00 each.",
+          "claim_es": "En Colorado, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $13.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $13.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Colorado, checks or money orders are made payable to Vital Records Section.",
+          "claim_es": "Para solicitudes por correo en Colorado, los cheques o giros postales se hacen a nombre de Vital Records Section.",
+          "quote": "Personal check or money order should be made payable to Vital Records Section.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Colorado)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Colorado)",
+          "url": "https://www.cdc.gov/nchs/w2w/colorado.htm"
+        },
+        {
+          "label_en": "Colorado vital records office",
+          "label_es": "Oficina de registros vitales de Colorado",
+          "url": "https://cdphe.colorado.gov/contact-vital-records"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Connecticut death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Connecticut, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/connecticut.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Connecticut death certificate requests sent to the state office need a postal money order made payable to the Treasurer, State of Connecticut.",
+          "claim_es": "Las solicitudes de actas de defunción enviadas a la oficina estatal de Connecticut requieren un giro postal a nombre de Treasurer, State of Connecticut.",
+          "quote": "Requests sent to the State vital Records Office require a postal money order made payable to the Treasurer, State of Connecticut.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/connecticut.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, certified copies can come from the town or city, or from the State Vital Records Office.",
+          "claim_es": "En Connecticut, las copias certificadas se pueden pedir al pueblo o ciudad, o a la Oficina Estatal de Registros Vitales.",
+          "quote": "Requests for certified copies of a death certificate may also be submitted to the State vital Records Office.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/connecticut.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Connecticut)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Connecticut)",
+          "url": "https://www.cdc.gov/nchs/w2w/connecticut.htm"
+        },
+        {
+          "label_en": "Connecticut vital records office",
+          "label_es": "Oficina de registros vitales de Connecticut",
+          "url": "http://www.ct.gov/dph/site/default.asp"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Delaware death certificate from the state vital records office is listed at $25.00.",
+          "claim_es": "En Delaware, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
+          "quote": "Event: Death Cost of copy: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Delaware death certificate go to: Office of Vital Statistics Division of Public Health 417 Federal Street Dover, DE 19901.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Delaware se envían a: Office of Vital Statistics Division of Public Health 417 Federal Street Dover, DE 19901.",
+          "quote": "Address: Office of Vital Statistics Division of Public Health 417 Federal Street Dover, DE 19901",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Delaware, checks or money orders are made payable to Office of Vital Statistics.",
+          "claim_es": "Para solicitudes por correo en Delaware, los cheques o giros postales se hacen a nombre de Office of Vital Statistics.",
+          "quote": "Personal check or money order should be made payable to Office of Vital Statistics .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Delaware)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Delaware)",
+          "url": "https://www.cdc.gov/nchs/w2w/delaware.htm"
+        },
+        {
+          "label_en": "Delaware vital records office",
+          "label_es": "Oficina de registros vitales de Delaware",
+          "url": "http://www.dhss.delaware.gov/dhss/dph/ss/vitalstats.html"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a District of Columbia death certificate from the state vital records office is listed at $18.00.",
+          "claim_es": "En Distrito de Columbia, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $18.00.",
+          "quote": "Event: Death Cost of copy: $18.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a District of Columbia death certificate go to: Vital Records Division 2201 Shannon Pl SE, Washington, DC 20020.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Distrito de Columbia se envían a: Vital Records Division 2201 Shannon Pl SE, Washington, DC 20020.",
+          "quote": "Address: Vital Records Division 2201 Shannon Pl SE, Washington, DC 20020",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in District of Columbia, checks or money orders are made payable to DC Treasurer.",
+          "claim_es": "Para solicitudes por correo en Distrito de Columbia, los cheques o giros postales se hacen a nombre de DC Treasurer.",
+          "quote": "Personal check or money order should be made payable to DC Treasurer .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (District of Columbia)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Distrito de Columbia)",
+          "url": "https://www.cdc.gov/nchs/w2w/dc.htm"
+        },
+        {
+          "label_en": "District of Columbia vital records office",
+          "label_es": "Oficina de registros vitales de Distrito de Columbia",
+          "url": "http://www.dchealth.dc.gov/"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "Mail requests for a Florida death certificate go to: Department of Health Bureau of Vital Statistics P.O. Box 210 North 1217 Pearl Street Jacksonville, FL 32231-0042.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Florida se envían a: Department of Health Bureau of Vital Statistics P.O. Box 210 North 1217 Pearl Street Jacksonville, FL 32231-0042.",
+          "quote": "Address: Department of Health Bureau of Vital Statistics P.O. Box 210 North 1217 Pearl Street Jacksonville, FL 32231-0042",
+          "source_url": "https://www.cdc.gov/nchs/w2w/florida.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, cause-of-death information on death records less than 50 years old is confidential by law.",
+          "claim_es": "En Florida, la causa de muerte en actas de defunción de menos de 50 años es confidencial por ley.",
+          "quote": "Cause-of-death information on Florida death records less than 50 years old is confidential by law.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/florida.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Florida's fee is $5.00 for the first year searched and includes one certified copy; additional copies requested at the same time are $4.00 each.",
+          "claim_es": "En Florida, la tarifa es de $5.00 por el primer año de búsqueda e incluye una copia certificada; cada copia adicional pedida al mismo tiempo cuesta $4.00.",
+          "quote": "The fee is $5.00 for the first year searched and includes one certification of the record. Additional copies are $4.00 each when requested at the same time.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/florida.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Most Florida death records date from 1917, with limited records back to 1877.",
+          "claim_es": "La mayoría de las actas de defunción de Florida son de 1917 en adelante, con algunos registros desde 1877.",
+          "quote": "The Bureau of Vital Statistics has limited death records dating back to 1877. The majority of records date from 1917.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/florida.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Florida)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Florida)",
+          "url": "https://www.cdc.gov/nchs/w2w/florida.htm"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Georgia death certificate from the state vital records office is listed at $25.00.",
+          "claim_es": "En Georgia, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
+          "quote": "Event: Death Cost of copy: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Georgia death certificate go to: Georgia Department of Public Health Vital Records 1680 Phoenix Blvd., Suite 100 Atlanta, GA 30349.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Georgia se envían a: Georgia Department of Public Health Vital Records 1680 Phoenix Blvd., Suite 100 Atlanta, GA 30349.",
+          "quote": "Address: Georgia Department of Public Health Vital Records 1680 Phoenix Blvd., Suite 100 Atlanta, GA 30349",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Georgia state vital records office has death records since January 1919.",
+          "claim_es": "La oficina estatal de registros vitales de Georgia tiene actas de defunción desde enero de 1919.",
+          "quote": "State office has records since January 1919",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Georgia, additional copies of the same death record ordered at the same time cost $5.00 each.",
+          "claim_es": "En Georgia, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $5.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $5.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Georgia)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Georgia)",
+          "url": "https://www.cdc.gov/nchs/w2w/georgia.htm"
+        },
+        {
+          "label_en": "Georgia vital records office",
+          "label_es": "Oficina de registros vitales de Georgia",
+          "url": "http://dph.georgia.gov/VitalRecords"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Hawaii death certificate from the state vital records office is listed at $10.00.",
+          "claim_es": "En Hawái, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $10.00.",
+          "quote": "Event: Death Cost of copy: $10.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/hawaii.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Hawaii death certificate go to: State Department of Health Office of Health Status Monitoring Vital Records Section P.O. Box 3378 Honolulu, HI 96801-9984.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Hawái se envían a: State Department of Health Office of Health Status Monitoring Vital Records Section P.O. Box 3378 Honolulu, HI 96801-9984.",
+          "quote": "Address: State Department of Health Office of Health Status Monitoring Vital Records Section P.O. Box 3378 Honolulu, HI 96801-9984",
+          "source_url": "https://www.cdc.gov/nchs/w2w/hawaii.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Hawaii, additional copies ordered at the same time are $4.00 each.",
+          "claim_es": "En Hawái, cada copia adicional pedida al mismo tiempo cuesta $4.00.",
+          "quote": "Additional copies ordered at the same time are $4.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/hawaii.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Hawaii does not accept personal checks; payment is by cashier's check, certified check or money order made payable to the State Department of Health.",
+          "claim_es": "Hawái no acepta cheques personales; se paga con cheque de caja, cheque certificado o giro postal a nombre de State Department of Health.",
+          "quote": "Cashier's check, certified check, or money order should be made payable to State Department of Health. Personal checks are not accepted.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/hawaii.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Hawaii)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Hawái)",
+          "url": "https://www.cdc.gov/nchs/w2w/hawaii.htm"
+        },
+        {
+          "label_en": "Hawaii vital records office",
+          "label_es": "Oficina de registros vitales de Hawái",
+          "url": "http://health.hawaii.gov/vitalrecords/files/2013/05/death.pdf"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of an Idaho death certificate is listed at $16.00.",
+          "claim_es": "En Idaho, una copia certificada del acta de defunción cuesta $16.00.",
+          "quote": "Event: Death Cost of copy: $16.00 Computer Generated $16.00 Photo Static copy",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Idaho death certificate go to: Vital Records Unit Bureau of Vital Records and Health Statistics P.O. Box 83720 Boise, ID 83720-0036.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Idaho se envían a: Vital Records Unit Bureau of Vital Records and Health Statistics P.O. Box 83720 Boise, ID 83720-0036.",
+          "quote": "Address: Vital Records Unit Bureau of Vital Records and Health Statistics P.O. Box 83720 Boise, ID 83720-0036",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Idaho, checks or money orders are made payable to Idaho Vital Statistics.",
+          "claim_es": "Para solicitudes por correo en Idaho, los cheques o giros postales se hacen a nombre de Idaho Vital Statistics.",
+          "quote": "Personal check or money order should be made payable to Idaho Vital Statistics .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Idaho)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Idaho)",
+          "url": "https://www.cdc.gov/nchs/w2w/idaho.htm"
+        },
+        {
+          "label_en": "Idaho vital records office",
+          "label_es": "Oficina de registros vitales de Idaho",
+          "url": "http://www.healthandwelfare.idaho.gov/Health/VitalRecordsandHealthStatistics/Birth,Death,Marriage,Divorcecertificates/tabid/82/Default.aspx"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of an Illinois death certificate is listed at $19.00; a genealogical copy is $10.00.",
+          "claim_es": "En Illinois, una copia certificada del acta de defunción cuesta $19.00; una copia genealógica cuesta $10.00.",
+          "quote": "Event: Death Cost of copy: certified copy: $19.00 genealogical copy: $10.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/illinois.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Illinois death certificate go to: Division of Vital Records Illinois Department of Public Health 925 E Ridgely Avenue Springfield, IL 62702.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Illinois se envían a: Division of Vital Records Illinois Department of Public Health 925 E Ridgely Avenue Springfield, IL 62702.",
+          "quote": "Address: Division of Vital Records Illinois Department of Public Health 925 E Ridgely Avenue Springfield, IL 62702",
+          "source_url": "https://www.cdc.gov/nchs/w2w/illinois.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Illinois state vital records office has death records since January 1916.",
+          "claim_es": "La oficina estatal de registros vitales de Illinois tiene actas de defunción desde enero de 1916.",
+          "quote": "State office has records since January 1916",
+          "source_url": "https://www.cdc.gov/nchs/w2w/illinois.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Illinois, checks or money orders are made payable to Illinois Department of Public Health.",
+          "claim_es": "Para solicitudes por correo en Illinois, los cheques o giros postales se hacen a nombre de Illinois Department of Public Health.",
+          "quote": "Money orders, certified checks, or personal checks should be made payable to Illinois Department of Public Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/illinois.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Illinois)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Illinois)",
+          "url": "https://www.cdc.gov/nchs/w2w/illinois.htm"
+        },
+        {
+          "label_en": "Illinois vital records office",
+          "label_es": "Oficina de registros vitales de Illinois",
+          "url": "http://www.dph.illinois.gov"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Indiana death certificate from the state vital records office is listed at $8.00.",
+          "claim_es": "En Indiana, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $8.00.",
+          "quote": "Event: Death Cost of copy: $8.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/indiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Indiana death certificate go to: Vital Records Indiana State Department of Health P.O. Box 7125 Indianapolis, IN 46206-7125.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Indiana se envían a: Vital Records Indiana State Department of Health P.O. Box 7125 Indianapolis, IN 46206-7125.",
+          "quote": "Address: Vital Records Indiana State Department of Health P.O. Box 7125 Indianapolis, IN 46206-7125",
+          "source_url": "https://www.cdc.gov/nchs/w2w/indiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Indiana, additional copies of the same death record ordered at the same time cost $4.00 each.",
+          "claim_es": "En Indiana, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $4.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $4.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/indiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Indiana, checks or money orders are made payable to Indiana State Department of Health.",
+          "claim_es": "Para solicitudes por correo en Indiana, los cheques o giros postales se hacen a nombre de Indiana State Department of Health.",
+          "quote": "Personal check or money order should be made payable to Indiana State Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/indiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Indiana)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Indiana)",
+          "url": "https://www.cdc.gov/nchs/w2w/indiana.htm"
+        },
+        {
+          "label_en": "Indiana vital records office",
+          "label_es": "Oficina de registros vitales de Indiana",
+          "url": "http://www.in.gov/isdh/index.htm"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Iowa death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Iowa, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Iowa death certificate go to: Iowa Department of Health and Human Services Lucas Office Building 321 East 12th Street Des Moines, IA 50319-0075.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Iowa se envían a: Iowa Department of Health and Human Services Lucas Office Building 321 East 12th Street Des Moines, IA 50319-0075.",
+          "quote": "Address: Iowa Department of Health and Human Services Lucas Office Building 321 East 12th Street Des Moines, IA 50319-0075",
+          "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Iowa, checks or money orders are made payable to Iowa Department of Health and Human Services.",
+          "claim_es": "Para solicitudes por correo en Iowa, los cheques o giros postales se hacen a nombre de Iowa Department of Health and Human Services.",
+          "quote": "Personal check or money order should be made payable to Iowa Department of Health and Human Services .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Iowa)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Iowa)",
+          "url": "https://www.cdc.gov/nchs/w2w/iowa.htm"
+        },
+        {
+          "label_en": "Iowa vital records office",
+          "label_es": "Oficina de registros vitales de Iowa",
+          "url": "https://hhs.iowa.gov/programs/vital-records/how-request-certified-record"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Kansas death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Kansas, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Kansas death certificate go to: Office of Vital Statistics Curtis State Office Building 1000 SW Jackson Street, Suite 120 Topeka, Kansas 66612-2221.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Kansas se envían a: Office of Vital Statistics Curtis State Office Building 1000 SW Jackson Street, Suite 120 Topeka, Kansas 66612-2221.",
+          "quote": "Address: Office of Vital Statistics Curtis State Office Building 1000 SW Jackson Street, Suite 120 Topeka, Kansas 66612-2221",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Kansas state vital records office has death records since July 1911.",
+          "claim_es": "La oficina estatal de registros vitales de Kansas tiene actas de defunción desde julio de 1911.",
+          "quote": "State office has records since July 1911",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Kansas, checks or money orders are made payable to Vital Statistics.",
+          "claim_es": "Para solicitudes por correo en Kansas, los cheques o giros postales se hacen a nombre de Vital Statistics.",
+          "quote": "Personal check or money order should be made payable to Vital Statistics .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Kansas)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Kansas)",
+          "url": "https://www.cdc.gov/nchs/w2w/kansas.htm"
+        },
+        {
+          "label_en": "Kansas vital records office",
+          "label_es": "Oficina de registros vitales de Kansas",
+          "url": "http://www.kdheks.gov/vital"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Kentucky death certificate from the state vital records office is listed at $6.00.",
+          "claim_es": "En Kentucky, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $6.00.",
+          "quote": "Event: Death Cost of copy: $6.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kentucky.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Kentucky death certificate go to: Office of Vital Statistics Department for Public Health Cabinet for Health and Family Services 275 East Main Street 1E-A Frankfort, KY 40621.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Kentucky se envían a: Office of Vital Statistics Department for Public Health Cabinet for Health and Family Services 275 East Main Street 1E-A Frankfort, KY 40621.",
+          "quote": "Address: Office of Vital Statistics Department for Public Health Cabinet for Health and Family Services 275 East Main Street 1E-A Frankfort, KY 40621",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kentucky.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Kentucky state vital records office has death records since January 1911.",
+          "claim_es": "La oficina estatal de registros vitales de Kentucky tiene actas de defunción desde enero de 1911.",
+          "quote": "State office has records since January 1911",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kentucky.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Kentucky, checks or money orders are made payable to Kentucky State Treasurer.",
+          "claim_es": "Para solicitudes por correo en Kentucky, los cheques o giros postales se hacen a nombre de Kentucky State Treasurer.",
+          "quote": "Personal check or money order should be made payable to Kentucky State Treasurer .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kentucky.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Kentucky)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Kentucky)",
+          "url": "https://www.cdc.gov/nchs/w2w/kentucky.htm"
+        },
+        {
+          "label_en": "Kentucky vital records office",
+          "label_es": "Oficina de registros vitales de Kentucky",
+          "url": "https://chfs.ky.gov/agencies/dph/dehp/vsb/Pages/default.aspx"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Louisiana death certificate from the state vital records office is listed at $7.00.",
+          "claim_es": "En Luisiana, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $7.00.",
+          "quote": "Event: Death Cost of copy: $7.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/louisiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Louisiana death certificate go to: Center of Vital Records and Statistics P.O. Box 60630 New Orleans, LA 70160 Main Number: (504) 593-5100.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Luisiana se envían a: Center of Vital Records and Statistics P.O. Box 60630 New Orleans, LA 70160 Main Number: (504) 593-5100.",
+          "quote": "Address: Center of Vital Records and Statistics P.O. Box 60630 New Orleans, LA 70160 Main Number: (504) 593-5100",
+          "source_url": "https://www.cdc.gov/nchs/w2w/louisiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Louisiana death records are strictly confidential and are kept by the Center of Vital Records and Statistics for 50 years.",
+          "claim_es": "En Luisiana, las actas de defunción son estrictamente confidenciales y el Center of Vital Records and Statistics las guarda por 50 años.",
+          "quote": "Death records are strictly confidential and are maintained by the Center of Vital Records and Statistics for 50 years.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/louisiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Louisiana death records older than 50 years are kept at the Louisiana State Archives.",
+          "claim_es": "En Luisiana, las actas de defunción de más de 50 años se guardan en el Archivo Estatal de Luisiana.",
+          "quote": "Death records older than 50 years are retained at the Louisiana State Archives",
+          "source_url": "https://www.cdc.gov/nchs/w2w/louisiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Louisiana mail-in request needs a copy of a valid photo ID for the applicant.",
+          "claim_es": "Una solicitud por correo en Luisiana requiere una copia de una identificación válida con foto del solicitante.",
+          "quote": "A copy of a valid photo ID for the applicant is required.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/louisiana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Louisiana)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Luisiana)",
+          "url": "https://www.cdc.gov/nchs/w2w/louisiana.htm"
+        },
+        {
+          "label_en": "Louisiana vital records office",
+          "label_es": "Oficina de registros vitales de Luisiana",
+          "url": "http://new.dhh.louisiana.gov/index.cfm/subhome/21"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Maine death certificate is listed at $15.00; a non-certified copy is $10.00.",
+          "claim_es": "En Maine, una copia certificada del acta de defunción cuesta $15.00 y una copia no certificada, $10.00.",
+          "quote": "Event: Death Cost of copy: Certified $15.00 Non-Certified $10.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Maine death certificate go to: Maine Center for Disease Control and Prevention 11 State House Station 220 Capitol Street Augusta, ME 04333-0011.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Maine se envían a: Maine Center for Disease Control and Prevention 11 State House Station 220 Capitol Street Augusta, ME 04333-0011.",
+          "quote": "Address: Maine Center for Disease Control and Prevention 11 State House Station 220 Capitol Street Augusta, ME 04333-0011",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Maine, checks or money orders are made payable to Treasurer, State of Maine.",
+          "claim_es": "Para solicitudes por correo en Maine, los cheques o giros postales se hacen a nombre de Treasurer, State of Maine.",
+          "quote": "Personal check or money order should be made payable to Treasurer, State of Maine .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Maine)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Maine)",
+          "url": "https://www.cdc.gov/nchs/w2w/maine.htm"
+        },
+        {
+          "label_en": "Maine vital records office",
+          "label_es": "Oficina de registros vitales de Maine",
+          "url": "http://www.state.me.us"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "A Maryland death certificate is listed at $10.00 for the first copy and $12.00 for each additional copy ordered at the same time.",
+          "claim_es": "En Maryland, el acta de defunción cuesta $10.00 la primera copia y $12.00 cada copia adicional pedida al mismo tiempo.",
+          "quote": "Event: Death Cost of copy: $10.00 for the first copy, $12.00 for each additional copy ordered at the same time .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Maryland death certificate go to: Division of Vital Records Department of Health 6764-B Reisterstown Road P.O. Box 68760 Baltimore, MD 21215-2306.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Maryland se envían a: Division of Vital Records Department of Health 6764-B Reisterstown Road P.O. Box 68760 Baltimore, MD 21215-2306.",
+          "quote": "Address: Division of Vital Records Department of Health 6764-B Reisterstown Road P.O. Box 68760 Baltimore, MD 21215-2306",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Maryland state vital records office has death records since 1969.",
+          "claim_es": "La oficina estatal de registros vitales de Maryland tiene actas de defunción desde 1969.",
+          "quote": "State office has records since 1969",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Maryland, checks or money orders are made payable to Division of Vital Records.",
+          "claim_es": "Para solicitudes por correo en Maryland, los cheques o giros postales se hacen a nombre de Division of Vital Records.",
+          "quote": "Personal check or money order should be made payable to Division of Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Maryland)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Maryland)",
+          "url": "https://www.cdc.gov/nchs/w2w/maryland.htm"
+        },
+        {
+          "label_en": "Maryland vital records office",
+          "label_es": "Oficina de registros vitales de Maryland",
+          "url": "https://health.maryland.gov/vsa/Pages/Home.aspx"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "A Massachusetts death certificate is listed at $20.00 in person and $32.00 by mail request.",
+          "claim_es": "En Massachusetts, el acta de defunción cuesta $20.00 en persona y $32.00 por correo.",
+          "quote": "Event: Death Cost of copy: In person: $20.00 Mail request: $32.00 State Archives: $3.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Massachusetts death certificate go to: Registry of Vital Records and Statistics 150 Mount Vernon Street 1st Floor Dorchester, MA 02125-3105.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Massachusetts se envían a: Registry of Vital Records and Statistics 150 Mount Vernon Street 1st Floor Dorchester, MA 02125-3105.",
+          "quote": "Address: Registry of Vital Records and Statistics 150 Mount Vernon Street 1st Floor Dorchester, MA 02125-3105",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Massachusetts, checks or money orders are made payable to Commonwealth of Massachusetts.",
+          "claim_es": "Para solicitudes por correo en Massachusetts, los cheques o giros postales se hacen a nombre de Commonwealth of Massachusetts.",
+          "quote": "Personal check or money order should be made payable to Commonwealth of Massachusetts.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Massachusetts)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Massachusetts)",
+          "url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm"
+        },
+        {
+          "label_en": "Massachusetts vital records office",
+          "label_es": "Oficina de registros vitales de Massachusetts",
+          "url": "http://www.mass.gov/dph/rvrs"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "A Michigan death certificate is listed at $34.00, with an additional $12.00 rush fee.",
+          "claim_es": "En Michigan, el acta de defunción cuesta $34.00, y el servicio urgente cuesta $12.00 adicionales.",
+          "quote": "Event: Death Cost of copy: $34.00 (Rush fee additional $12.00)",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Michigan death certificate go to: Vital Records Request P.O. Box 30721 Lansing, MI 48909.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Míchigan se envían a: Vital Records Request P.O. Box 30721 Lansing, MI 48909.",
+          "quote": "Address: Vital Records Request P.O. Box 30721 Lansing, MI 48909",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Michigan, checks or money orders are made payable to State of Michigan.",
+          "claim_es": "Para solicitudes por correo en Míchigan, los cheques o giros postales se hacen a nombre de State of Michigan.",
+          "quote": "Personal check or money order should be made payable to State of Michigan .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Michigan)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Míchigan)",
+          "url": "https://www.cdc.gov/nchs/w2w/michigan.htm"
+        },
+        {
+          "label_en": "Michigan vital records office",
+          "label_es": "Oficina de registros vitales de Míchigan",
+          "url": "http://www.michigan.gov/mdch/0,1607,7-132-4645---,00.html"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Minnesota death certificate from the state vital records office is listed at $13.00.",
+          "claim_es": "En Minnesota, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $13.00.",
+          "quote": "Event: Death Cost of copy: $13.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Minnesota death certificate go to: Minnesota Department of Health Central Cashiering - Vital Records P.O. Box 64499 St Paul, MN 55164.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Minnesota se envían a: Minnesota Department of Health Central Cashiering - Vital Records P.O. Box 64499 St Paul, MN 55164.",
+          "quote": "Address: Minnesota Department of Health Central Cashiering - Vital Records P.O. Box 64499 St Paul, MN 55164",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Minnesota Department of Health has death records on file from January 1908 to the present.",
+          "claim_es": "El Departamento de Salud de Minnesota tiene actas de defunción desde enero de 1908 hasta hoy.",
+          "quote": "has death records on file from January 1908 to the present.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, you can get copies of death records from the state or any county office; additional copies ordered at once are $6.00 each.",
+          "claim_es": "En Minnesota, puede pedir copias de actas de defunción al estado o a cualquier oficina de condado; cada copia adicional pedida a la vez cuesta $6.00.",
+          "quote": "Obtain copies of death records from the state or any county office. If you order multiple copies at once, the additional copies are $6.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Minnesota)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Minnesota)",
+          "url": "https://www.cdc.gov/nchs/w2w/minnesota.htm"
+        },
+        {
+          "label_en": "Minnesota vital records office",
+          "label_es": "Oficina de registros vitales de Minnesota",
+          "url": "https://www.health.state.mn.us/people/vitalrecords/about.html"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Mississippi death certificate from the state vital records office is listed at $17.00.",
+          "claim_es": "En Misisipi, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $17.00.",
+          "quote": "Event: Death Cost of copy: $17.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Mississippi death certificate go to: Vital Records State Department of Health P.O. Box 1700 Jackson, MS 39215-1700.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Misisipi se envían a: Vital Records State Department of Health P.O. Box 1700 Jackson, MS 39215-1700.",
+          "quote": "Address: Vital Records State Department of Health P.O. Box 1700 Jackson, MS 39215-1700",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Mississippi state vital records office has death records since 1912.",
+          "claim_es": "La oficina estatal de registros vitales de Misisipi tiene actas de defunción desde 1912.",
+          "quote": "State office has records since 1912",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Mississippi)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Misisipi)",
+          "url": "https://www.cdc.gov/nchs/w2w/mississippi.htm"
+        },
+        {
+          "label_en": "Mississippi vital records office",
+          "label_es": "Oficina de registros vitales de Misisipi",
+          "url": "http://www.msdh.state.ms.us"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Missouri death certificate from the state vital records office is listed at $14.00.",
+          "claim_es": "En Misuri, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $14.00.",
+          "quote": "Event: Death Cost of copy: $14.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Missouri death certificate go to: Missouri Department of Health and Senior Services Bureau of Vital Records 930 Wildwood P.O. Box 570 Jefferson City, MO 65102-0570.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Misuri se envían a: Missouri Department of Health and Senior Services Bureau of Vital Records 930 Wildwood P.O. Box 570 Jefferson City, MO 65102-0570.",
+          "quote": "Address: Missouri Department of Health and Senior Services Bureau of Vital Records 930 Wildwood P.O. Box 570 Jefferson City, MO 65102-0570",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Missouri state vital records office has death records since January 1910.",
+          "claim_es": "La oficina estatal de registros vitales de Misuri tiene actas de defunción desde enero de 1910.",
+          "quote": "State office has records since January 1910",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, additional copies of the same death record ordered at the same time cost $11.00. each.",
+          "claim_es": "En Misuri, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $11.00..",
+          "quote": "Additional copies of the same record ordered at the same time are $11.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Missouri, checks or money orders are made payable to Missouri Department of Health and Senior Services.",
+          "claim_es": "Para solicitudes por correo en Misuri, los cheques o giros postales se hacen a nombre de Missouri Department of Health and Senior Services.",
+          "quote": "Personal check or money order should be made payable to Missouri Department of Health and Senior Services .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Missouri)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Misuri)",
+          "url": "https://www.cdc.gov/nchs/w2w/missouri.htm"
+        },
+        {
+          "label_en": "Missouri vital records office",
+          "label_es": "Oficina de registros vitales de Misuri",
+          "url": "http://www.dhss.mo.gov"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Montana death certificate from the state vital records office is listed at $16.00.",
+          "claim_es": "En Montana, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $16.00.",
+          "quote": "Event: Death Cost of copy: $16.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Montana death certificate go to: Office of Vital Statistics MT Dept. of Public Health and Human Services 111 N Sanders P.O. Box 4210 Helena, MT 59604.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Montana se envían a: Office of Vital Statistics MT Dept. of Public Health and Human Services 111 N Sanders P.O. Box 4210 Helena, MT 59604.",
+          "quote": "Address: Office of Vital Statistics MT Dept. of Public Health and Human Services 111 N Sanders P.O. Box 4210 Helena, MT 59604",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Montana, checks or money orders are made payable to Montana Vital Records.",
+          "claim_es": "Para solicitudes por correo en Montana, los cheques o giros postales se hacen a nombre de Montana Vital Records.",
+          "quote": "Personal check or money order should be made payable to Montana Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Montana)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Montana)",
+          "url": "https://www.cdc.gov/nchs/w2w/montana.htm"
+        },
+        {
+          "label_en": "Montana vital records office",
+          "label_es": "Oficina de registros vitales de Montana",
+          "url": "https://www.dphhs.mt.gov/vitalrecords/BirthDeathCertificates"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Nebraska death certificate from the state vital records office is listed at $16.00.",
+          "claim_es": "En Nebraska, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $16.00.",
+          "quote": "Event: Death Cost of copy: $16.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Nebraska death certificate go to: Nebraska Vital Records P.O. Box 95065 Lincoln, NE 68509-5065.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Nebraska se envían a: Nebraska Vital Records P.O. Box 95065 Lincoln, NE 68509-5065.",
+          "quote": "Address: Nebraska Vital Records P.O. Box 95065 Lincoln, NE 68509-5065",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Nebraska state vital records office has death records since late 1904.",
+          "claim_es": "La oficina estatal de registros vitales de Nebraska tiene actas de defunción desde finales de 1904.",
+          "quote": "State office has records since late 1904",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Nebraska, checks or money orders are made payable to Vital Records Office.",
+          "claim_es": "Para solicitudes por correo en Nebraska, los cheques o giros postales se hacen a nombre de Vital Records Office.",
+          "quote": "Personal check or money order should be made payable to Vital Records Office .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Nebraska)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nebraska)",
+          "url": "https://www.cdc.gov/nchs/w2w/nebraska.htm"
+        },
+        {
+          "label_en": "Nebraska vital records office",
+          "label_es": "Oficina de registros vitales de Nebraska",
+          "url": "http://dhhs.ne.gov/publichealth/pages/public_health_index.aspx"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Nevada death certificate from the state vital records office is listed at $25.00.",
+          "claim_es": "En Nevada, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
+          "quote": "Event: Death Cost of copy: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nevada.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Nevada death certificate go to: Office of Vital Records 4150 Technology Way, Suite 104 Carson City, NV 89706.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Nevada se envían a: Office of Vital Records 4150 Technology Way, Suite 104 Carson City, NV 89706.",
+          "quote": "Address: Office of Vital Records 4150 Technology Way, Suite 104 Carson City, NV 89706",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nevada.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Nevada state vital records office has death records since July 1911.",
+          "claim_es": "La oficina estatal de registros vitales de Nevada tiene actas de defunción desde julio de 1911.",
+          "quote": "State office has records since July 1911",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nevada.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Nevada, checks or money orders are made payable to Office of Vital Records.",
+          "claim_es": "Para solicitudes por correo en Nevada, los cheques o giros postales se hacen a nombre de Office of Vital Records.",
+          "quote": "Personal check or money order should be made payable to Office of Vital Records.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nevada.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Nevada)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nevada)",
+          "url": "https://www.cdc.gov/nchs/w2w/nevada.htm"
+        },
+        {
+          "label_en": "Nevada vital records office",
+          "label_es": "Oficina de registros vitales de Nevada",
+          "url": "http://dpbh.nv.gov/Programs/BirthDeath/Birth_and_Death_Vital_Records_-_Home"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a New Hampshire death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Nuevo Hampshire, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a New Hampshire death certificate go to: Division of Vital Records Administration Archives & Records Building 9 Ratification Way Concord, NH 03301-2455.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Nuevo Hampshire se envían a: Division of Vital Records Administration Archives & Records Building 9 Ratification Way Concord, NH 03301-2455.",
+          "quote": "Address: Division of Vital Records Administration Archives & Records Building 9 Ratification Way Concord, NH 03301-2455",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The New Hampshire state vital records office has death records since 1654.",
+          "claim_es": "La oficina estatal de registros vitales de Nuevo Hampshire tiene actas de defunción desde 1654.",
+          "quote": "State office has records since 1654",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in New Hampshire, checks or money orders are made payable to Treasurer, State of New Hampshire.",
+          "claim_es": "Para solicitudes por correo en Nuevo Hampshire, los cheques o giros postales se hacen a nombre de Treasurer, State of New Hampshire.",
+          "quote": "Personal check or money order should be made payable to Treasurer, State of New Hampshire .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (New Hampshire)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nuevo Hampshire)",
+          "url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm"
+        },
+        {
+          "label_en": "New Hampshire vital records office",
+          "label_es": "Oficina de registros vitales de Nuevo Hampshire",
+          "url": "http://www.sos.nh.gov/vitalrecords"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "A New Jersey death certificate is listed at $25.00 for the first copy.",
+          "claim_es": "En Nueva Jersey, el acta de defunción cuesta $25.00 la primera copia.",
+          "quote": "Event: Death Cost of copy: $25.00 for initial copy. Additional copies of the same record ordered at the same time are $2.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Jersey, additional copies of the same death record ordered at the same time are $2.00 each.",
+          "claim_es": "En Nueva Jersey, cada copia adicional de la misma acta de defunción pedida al mismo tiempo cuesta $2.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $2.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Jersey requests must include a copy of the requester's valid ID, the fee, and proof of relationship to the person on the record.",
+          "claim_es": "Las solicitudes en Nueva Jersey deben incluir una copia de la identificación válida del solicitante, la tarifa y prueba del parentesco con la persona del registro.",
+          "quote": "All requests must include a copy of the requestor's valid identification, payment of the appropriate fee and proof of relationship to the individual listed on the vital record.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (New Jersey)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nueva Jersey)",
+          "url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm"
+        },
+        {
+          "label_en": "New Jersey vital records office",
+          "label_es": "Oficina de registros vitales de Nueva Jersey",
+          "url": "http://www.state.nj.us/health/vital"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a New Mexico death certificate from the state vital records office is listed at $5.00.",
+          "claim_es": "En Nuevo México, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $5.00.",
+          "quote": "Event: Death Cost of copy: $5.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_mexico.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a New Mexico death certificate go to: New Mexico Vital Records P.O. Box 26110 Santa Fe, NM 87502.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Nuevo México se envían a: New Mexico Vital Records P.O. Box 26110 Santa Fe, NM 87502.",
+          "quote": "Address: New Mexico Vital Records P.O. Box 26110 Santa Fe, NM 87502",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_mexico.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The New Mexico state vital records office has death records since 1920.",
+          "claim_es": "La oficina estatal de registros vitales de Nuevo México tiene actas de defunción desde 1920.",
+          "quote": "State office has records since 1920",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_mexico.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in New Mexico, checks or money orders are made payable to NM Vital Records.",
+          "claim_es": "Para solicitudes por correo en Nuevo México, los cheques o giros postales se hacen a nombre de NM Vital Records.",
+          "quote": "Personal check or money order should be made payable to NM Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_mexico.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (New Mexico)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nuevo México)",
+          "url": "https://www.cdc.gov/nchs/w2w/new_mexico.htm"
+        },
+        {
+          "label_en": "New Mexico vital records office",
+          "label_es": "Oficina de registros vitales de Nuevo México",
+          "url": "https://www.nmhealth.org/about/erd/bvrhs/vrp/#:~:text=The%20National%20Center%20for%20Health%20Statistics%20provides%20a%20Vital%20Records#:~:text=The%20National%20Center%20for%20Health%20Statistics%20provides%20a%20Vital%20Records"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a New York death certificate from the state vital records office is listed at $30.00.",
+          "claim_es": "En Nueva York, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $30.00.",
+          "quote": "Event: Death Cost of copy: $30.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a New York death certificate go to: Certification Unit Vital Records Section/2nd floor 800 North Pearl Street Menands, NY 12204.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Nueva York se envían a: Certification Unit Vital Records Section/2nd floor 800 North Pearl Street Menands, NY 12204.",
+          "quote": "Address: Certification Unit Vital Records Section/2nd floor 800 North Pearl Street Menands, NY 12204",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The New York state vital records office has death records since 1881.",
+          "claim_es": "La oficina estatal de registros vitales de Nueva York tiene actas de defunción desde 1881.",
+          "quote": "State office has records since 1881",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in New York, checks or money orders are made payable to New York State Department of Health.",
+          "claim_es": "Para solicitudes por correo en Nueva York, los cheques o giros postales se hacen a nombre de New York State Department of Health.",
+          "quote": "Personal check or money order should be made payable to New York State Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (New York)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Nueva York)",
+          "url": "https://www.cdc.gov/nchs/w2w/new_york.htm"
+        },
+        {
+          "label_en": "New York vital records office",
+          "label_es": "Oficina de registros vitales de Nueva York",
+          "url": "http://www.health.ny.gov"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "A North Carolina death certificate is listed at $24.00 for the first copy and $15.00 for each additional copy.",
+          "claim_es": "En Carolina del Norte, el acta de defunción cuesta $24.00 la primera copia y $15.00 cada copia adicional.",
+          "quote": "Event: Death Cost of first copy: $24.00 Cost of each additional copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a North Carolina death certificate go to: NC Vital Records 1903 Mail Service Center Raleigh, NC 27699-1903.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Carolina del Norte se envían a: NC Vital Records 1903 Mail Service Center Raleigh, NC 27699-1903.",
+          "quote": "Address: NC Vital Records 1903 Mail Service Center Raleigh, NC 27699-1903",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The North Carolina state office has death records beginning with 1930.",
+          "claim_es": "La oficina estatal de Carolina del Norte tiene actas de defunción a partir de 1930.",
+          "quote": "The State office has death records beginning with 1930.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, the Register of Deeds in the county where the death occurred can also provide copies of death certificates.",
+          "claim_es": "En Carolina del Norte, el Register of Deeds del condado donde ocurrió la muerte también puede entregar copias de actas de defunción.",
+          "quote": "The Register of Deeds in the county where the death occurred can provide copies of death certificates upon request.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Carolina requires a copy of a valid photo ID and a signed application for all certificate requests.",
+          "claim_es": "Carolina del Norte exige una copia de una identificación válida con foto y una solicitud firmada para todo pedido de certificado.",
+          "quote": "A copy of a valid photo ID and a signed application are required for all certificate requests.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (North Carolina)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Carolina del Norte)",
+          "url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm"
+        },
+        {
+          "label_en": "North Carolina vital records office",
+          "label_es": "Oficina de registros vitales de Carolina del Norte",
+          "url": "http://vitalrecords.nc.gov/vitalrecords"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a North Dakota death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Dakota del Norte, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a North Dakota death certificate go to: ND Department of Health Division of Vital Records 600 East Boulevard Avenue, Dept. 301 Bismarck, ND 58505-0200.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Dakota del Norte se envían a: ND Department of Health Division of Vital Records 600 East Boulevard Avenue, Dept. 301 Bismarck, ND 58505-0200.",
+          "quote": "Address: ND Department of Health Division of Vital Records 600 East Boulevard Avenue, Dept. 301 Bismarck, ND 58505-0200",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in North Dakota, checks or money orders are made payable to ND Department of Health.",
+          "claim_es": "Para solicitudes por correo en Dakota del Norte, los cheques o giros postales se hacen a nombre de ND Department of Health.",
+          "quote": "Personal check or money order should be made payable to ND Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (North Dakota)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Dakota del Norte)",
+          "url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm"
+        },
+        {
+          "label_en": "North Dakota vital records office",
+          "label_es": "Oficina de registros vitales de Dakota del Norte",
+          "url": "https://www.hhs.nd.gov/vital/death"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Ohio death certificate from the state vital records office is listed at $21.50.",
+          "claim_es": "En Ohio, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $21.50.",
+          "quote": "Event: Death Cost of copy: $21.50",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Ohio death certificate go to: Vital Statistics Ohio Department of Health P.O. Box 15098 Columbus, OH 43215-0098.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Ohio se envían a: Vital Statistics Ohio Department of Health P.O. Box 15098 Columbus, OH 43215-0098.",
+          "quote": "Address: Vital Statistics Ohio Department of Health P.O. Box 15098 Columbus, OH 43215-0098",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Ohio, checks or money orders are made payable to Treasury, State of Ohio.",
+          "claim_es": "Para solicitudes por correo en Ohio, los cheques o giros postales se hacen a nombre de Treasury, State of Ohio.",
+          "quote": "Personal check or money order should be made payable to Treasury, State of Ohio .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Ohio)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Ohio)",
+          "url": "https://www.cdc.gov/nchs/w2w/ohio.htm"
+        },
+        {
+          "label_en": "Ohio vital records office",
+          "label_es": "Oficina de registros vitales de Ohio",
+          "url": "http://www.odh.ohio.gov/vs"
+        }
+      ]
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Oklahoma death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Oklahoma, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Oklahoma death certificate go to: Vital Records Service Oklahoma State Department of Health PO Box 248964 Oklahoma City, OK 73124-8964.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Oklahoma se envían a: Vital Records Service Oklahoma State Department of Health PO Box 248964 Oklahoma City, OK 73124-8964.",
+          "quote": "Address: Vital Records Service Oklahoma State Department of Health PO Box 248964 Oklahoma City, OK 73124-8964",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Oklahoma state vital records office has death records since October 1908.",
+          "claim_es": "La oficina estatal de registros vitales de Oklahoma tiene actas de defunción desde octubre de 1908.",
+          "quote": "State office has records since October 1908",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Oklahoma, checks or money orders are made payable to OSDH.",
+          "claim_es": "Para solicitudes por correo en Oklahoma, los cheques o giros postales se hacen a nombre de OSDH.",
+          "quote": "Personal check or money order should be made payable to OSDH .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Oklahoma)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Oklahoma)",
+          "url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm"
+        },
+        {
+          "label_en": "Oklahoma vital records office",
+          "label_es": "Oficina de registros vitales de Oklahoma",
+          "url": "https://oklahoma.gov/health/services/birth-and-death-certificates/death-certificates.html"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Oregon death certificate from the state vital records office is listed at $25.00.",
+          "claim_es": "En Oregón, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
+          "quote": "Event: Death Cost of copy: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An Oregon death certificate is listed at $25.00, and additional copies of the same record ordered at the same time are also $25.00 each.",
+          "claim_es": "En Oregón, el acta de defunción cuesta $25.00, y cada copia adicional del mismo registro pedida al mismo tiempo también cuesta $25.00.",
+          "quote": "Cost of copy: $25.00 Additional copies of the same record ordered at the same time are $25.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Oregon also offers a short-form death certificate without cause-of-death information for the same fee.",
+          "claim_es": "Oregón también ofrece un acta de defunción abreviada, sin la causa de muerte, por la misma tarifa.",
+          "quote": "Short form death certificates without cause of death data available for the same fee.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Oregon state vital records office has death records starting from 1903.",
+          "claim_es": "La oficina estatal de registros vitales de Oregón tiene actas de defunción desde 1903.",
+          "quote": "State vital records office has death records starting from 1903.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Oregon State Archives can provide non-certified copies of death records more than 50 years old.",
+          "claim_es": "El Archivo Estatal de Oregón puede entregar copias no certificadas de actas de defunción de más de 50 años.",
+          "quote": "The Oregon State Archives can provide non-certified copies of Death records that are more than 50 years old.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Oregon)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Oregón)",
+          "url": "https://www.cdc.gov/nchs/w2w/oregon.htm"
+        },
+        {
+          "label_en": "Oregon vital records office",
+          "label_es": "Oficina de registros vitales de Oregón",
+          "url": "http://public.health.oregon.gov/BirthDeathCertificates/GetVitalRecords/Pages/index.aspx"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Pennsylvania death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Pensilvania, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/pennsylvania.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Pennsylvania death certificate go to: Division of Vital Records P.O. Box 1528 New Castle, PA. 16103-1528.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Pensilvania se envían a: Division of Vital Records P.O. Box 1528 New Castle, PA. 16103-1528.",
+          "quote": "Address: Division of Vital Records P.O. Box 1528 New Castle, PA. 16103-1528",
+          "source_url": "https://www.cdc.gov/nchs/w2w/pennsylvania.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Pennsylvania state vital records office has death records since January 1906.",
+          "claim_es": "La oficina estatal de registros vitales de Pensilvania tiene actas de defunción desde enero de 1906.",
+          "quote": "State office has records since January 1906",
+          "source_url": "https://www.cdc.gov/nchs/w2w/pennsylvania.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Pennsylvania, checks or money orders are made payable to Vital Records.",
+          "claim_es": "Para solicitudes por correo en Pensilvania, los cheques o giros postales se hacen a nombre de Vital Records.",
+          "quote": "Personal check or money order should be made payable to Vital Records.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/pennsylvania.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Pennsylvania)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Pensilvania)",
+          "url": "https://www.cdc.gov/nchs/w2w/pennsylvania.htm"
+        },
+        {
+          "label_en": "Pennsylvania vital records office",
+          "label_es": "Oficina de registros vitales de Pensilvania",
+          "url": "https://www.health.pa.gov/topics/certificates/Pages/Vital%20Records.aspx"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "A Rhode Island death certificate is listed at $22.00 in person and $25.00 by mail.",
+          "claim_es": "En Rhode Island, el acta de defunción cuesta $22.00 en persona y $25.00 por correo.",
+          "quote": "Event: Death Cost of copy in-person: $22.00 Cost of copy mail-in: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/rhode_island.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Rhode Island death certificate go to: RI Department of Health Center for Vital Records Simpson Hall 6 Harrington Rd Cranston, RI 02920.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Rhode Island se envían a: RI Department of Health Center for Vital Records Simpson Hall 6 Harrington Rd Cranston, RI 02920.",
+          "quote": "Address: RI Department of Health Center for Vital Records Simpson Hall 6 Harrington Rd Cranston, RI 02920",
+          "source_url": "https://www.cdc.gov/nchs/w2w/rhode_island.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, additional copies of the same death record ordered at the same time cost $18.00 each.",
+          "claim_es": "En Rhode Island, cada copia adicional del mismo registro de defunción pedida al mismo tiempo cuesta $18.00.",
+          "quote": "Additional copies of the same record ordered at the same time are $18.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/rhode_island.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Rhode Island, checks or money orders are made payable to General Treasurer, State of Rhode Island.",
+          "claim_es": "Para solicitudes por correo en Rhode Island, los cheques o giros postales se hacen a nombre de General Treasurer, State of Rhode Island.",
+          "quote": "Personal check or money order should be made payable to General Treasurer, State of Rhode Island.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/rhode_island.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Rhode Island)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Rhode Island)",
+          "url": "https://www.cdc.gov/nchs/w2w/rhode_island.htm"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina charges a $12.00 non-refundable search fee for a death record, which includes one certified copy if the record is found.",
+          "claim_es": "Carolina del Sur cobra una tarifa de búsqueda no reembolsable de $12.00 por un acta de defunción, que incluye una copia certificada si se encuentra el registro.",
+          "quote": "Event: Death Search Fee: $12.00 - The $12 search fee is non-refundable. The required search fee includes one (1) certification, if record is located. Additional copies purchased at the same time are $3.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a South Carolina death certificate go to: Office of Vital Records DPH PO Box 2046 West Columbia, SC 29171.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Carolina del Sur se envían a: Office of Vital Records DPH PO Box 2046 West Columbia, SC 29171.",
+          "quote": "Address: Office of Vital Records DPH PO Box 2046 West Columbia, SC 29171",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The South Carolina state vital records office has death records since January 1915.",
+          "claim_es": "La oficina estatal de registros vitales de Carolina del Sur tiene actas de defunción desde enero de 1915.",
+          "quote": "State office has records since January 1915",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (South Carolina)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Carolina del Sur)",
+          "url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm"
+        },
+        {
+          "label_en": "South Carolina vital records office",
+          "label_es": "Oficina de registros vitales de Carolina del Sur",
+          "url": "https://dph.sc.gov/public/vital-records/death-certificates"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a South Dakota death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Dakota del Sur, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a South Dakota death certificate go to: Vital Records 221 W Capitol Ave Pierre SD 57501.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Dakota del Sur se envían a: Vital Records 221 W Capitol Ave Pierre SD 57501.",
+          "quote": "Address: Vital Records 221 W Capitol Ave Pierre SD 57501",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in South Dakota, checks or money orders are made payable to South Dakota Department of Health.",
+          "claim_es": "Para solicitudes por correo en Dakota del Sur, los cheques o giros postales se hacen a nombre de South Dakota Department of Health.",
+          "quote": "Personal check or money order should be made payable to South Dakota Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (South Dakota)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Dakota del Sur)",
+          "url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm"
+        },
+        {
+          "label_en": "South Dakota vital records office",
+          "label_es": "Oficina de registros vitales de Dakota del Sur",
+          "url": "https://doh.sd.gov/licensing-and-records/vital-records/"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Tennessee death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Tennessee, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Tennessee death certificate go to: Tennessee Vital Records 1st Floor, Andrew Johnson Tower 710 James Robertson Parkway Nashville, TN 37243.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Tennessee se envían a: Tennessee Vital Records 1st Floor, Andrew Johnson Tower 710 James Robertson Parkway Nashville, TN 37243.",
+          "quote": "Address: Tennessee Vital Records 1st Floor, Andrew Johnson Tower 710 James Robertson Parkway Nashville, TN 37243",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Tennessee, checks or money orders are made payable to Tennessee Vital Records.",
+          "claim_es": "Para solicitudes por correo en Tennessee, los cheques o giros postales se hacen a nombre de Tennessee Vital Records.",
+          "quote": "Personal check or money order should be made payable to Tennessee Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Tennessee)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Tennessee)",
+          "url": "https://www.cdc.gov/nchs/w2w/tennessee.htm"
+        },
+        {
+          "label_en": "Tennessee vital records office",
+          "label_es": "Oficina de registros vitales de Tennessee",
+          "url": "https://sos.tn.gov/tsla"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "A Texas death certificate is listed at $20.00 for the first copy.",
+          "claim_es": "En Texas, el acta de defunción cuesta $20.00 la primera copia.",
+          "quote": "Event: Death Cost of copy: $20.00 for 1 st copy. Additional copies of the same death record ordered at the same time are $3.00 each .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Texas death certificate go to: Department of State Health Services Vital Statistics Section P.O. Box 12040 Austin, TX 78711-2040.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Texas se envían a: Department of State Health Services Vital Statistics Section P.O. Box 12040 Austin, TX 78711-2040.",
+          "quote": "Address: Department of State Health Services Vital Statistics Section P.O. Box 12040 Austin, TX 78711-2040",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Texas lists $3.00 for each additional copy of the same death record ordered at the same time.",
+          "claim_es": "En Texas, cada copia adicional de la misma acta de defunción pedida al mismo tiempo cuesta $3.00.",
+          "quote": "Additional copies of the same death record ordered at the same time are $3.00 each",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Texas state office has recorded death records since 1903.",
+          "claim_es": "La oficina estatal de Texas registra actas de defunción desde 1903.",
+          "quote": "State office has recorded death records since 1903.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Texas death certificates can be requested online with a credit card through Texas.gov.",
+          "claim_es": "En Texas, las actas de defunción se pueden pedir por internet con tarjeta de crédito a través de Texas.gov.",
+          "quote": "Requests for certified copies of death certificates can be made via the internet, with a credit card, through Texas.gov",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Texas)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Texas)",
+          "url": "https://www.cdc.gov/nchs/w2w/texas.htm"
+        },
+        {
+          "label_en": "Texas vital records office",
+          "label_es": "Oficina de registros vitales de Texas",
+          "url": "https://texas.gov/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Utah death certificate from the state vital records office is listed at $30.00.",
+          "claim_es": "En Utah, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $30.00.",
+          "quote": "Event: Death Cost of copy: $30.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Utah death certificate go to: Office of Vital Records and Statistics Utah Department of Health and Human Services 288 North 1460 West P.O. Box 141012 Salt Lake City, UT 84114-1012.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Utah se envían a: Office of Vital Records and Statistics Utah Department of Health and Human Services 288 North 1460 West P.O. Box 141012 Salt Lake City, UT 84114-1012.",
+          "quote": "Address: Office of Vital Records and Statistics Utah Department of Health and Human Services 288 North 1460 West P.O. Box 141012 Salt Lake City, UT 84114-1012",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Utah state vital records office has death records since 1905.",
+          "claim_es": "La oficina estatal de registros vitales de Utah tiene actas de defunción desde 1905.",
+          "quote": "State office has records since 1905",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Utah, checks or money orders are made payable to Vital Records.",
+          "claim_es": "Para solicitudes por correo en Utah, los cheques o giros postales se hacen a nombre de Vital Records.",
+          "quote": "Personal check or money order should be made payable to Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Utah)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Utah)",
+          "url": "https://www.cdc.gov/nchs/w2w/utah.htm"
+        },
+        {
+          "label_en": "Utah vital records office",
+          "label_es": "Oficina de registros vitales de Utah",
+          "url": "https://vitalrecords.utah.gov/death"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Vermont death certificate from the state vital records office is listed at $10.00.",
+          "claim_es": "En Vermont, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $10.00.",
+          "quote": "Event: Death Cost of copy: $10.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Vermont death certificate go to: Vermont Department of Health Vital Records Section P.O. Box 70 108 Cherry Street Burlington, VT 05402-0070.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Vermont se envían a: Vermont Department of Health Vital Records Section P.O. Box 70 108 Cherry Street Burlington, VT 05402-0070.",
+          "quote": "Address: Vermont Department of Health Vital Records Section P.O. Box 70 108 Cherry Street Burlington, VT 05402-0070",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Vermont, checks or money orders are made payable to Vermont Department of Health.",
+          "claim_es": "Para solicitudes por correo en Vermont, los cheques o giros postales se hacen a nombre de Vermont Department of Health.",
+          "quote": "Personal check or money order should be made payable to Vermont Department of Health .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Vermont)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Vermont)",
+          "url": "https://www.cdc.gov/nchs/w2w/vermont.htm"
+        },
+        {
+          "label_en": "Vermont vital records office",
+          "label_es": "Oficina de registros vitales de Vermont",
+          "url": "http://healthvermont.gov/research/records/obtain_record.aspx"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Virginia death certificate from the state vital records office is listed at $15.00.",
+          "claim_es": "En Virginia, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
+          "quote": "Event: Death Cost of copy: $15.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Virginia death certificate go to: Office of Vital Records P.O. Box 1000 Richmond, VA 23218-1000.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Virginia se envían a: Office of Vital Records P.O. Box 1000 Richmond, VA 23218-1000.",
+          "quote": "Address: Office of Vital Records P.O. Box 1000 Richmond, VA 23218-1000",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Virginia state office has death records filed after June 14, 1912; the Library of Virginia may have earlier records.",
+          "claim_es": "La oficina estatal de Virginia tiene actas de defunción registradas después del 14 de junio de 1912; la Biblioteca de Virginia puede tener registros anteriores.",
+          "quote": "State office has records filed after June 14, 1912. The Library of Virginia may be in possession of records prior to 1912.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Virginia offers online, expedited, telephone and mail-in request options through its Office of Vital Records.",
+          "claim_es": "Virginia ofrece opciones para pedir por internet, de forma urgente, por teléfono y por correo a través de su Oficina de Registros Vitales.",
+          "quote": "Online, expedited, telephone and mail-in request options can be found on Virginia's Office of Vital Records website.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Virginia)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Virginia)",
+          "url": "https://www.cdc.gov/nchs/w2w/virginia.htm"
+        },
+        {
+          "label_en": "Virginia vital records office",
+          "label_es": "Oficina de registros vitales de Virginia",
+          "url": "https://www.lva.virginia.gov/"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Washington death certificate from the state vital records office is listed at $25.00.",
+          "claim_es": "En Washington, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
+          "quote": "Event: Death Cost of copy: $25.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Washington death certificate go to: Center for Health Statistics Department of Health PO Box 9709 Olympia, WA 98507.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Washington se envían a: Center for Health Statistics Department of Health PO Box 9709 Olympia, WA 98507.",
+          "quote": "Address: Center for Health Statistics Department of Health PO Box 9709 Olympia, WA 98507",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Washington state office has death records from July 1, 1907, to 2 months before the present date.",
+          "claim_es": "La oficina estatal de Washington tiene actas de defunción desde el 1 de julio de 1907 hasta 2 meses antes de la fecha actual.",
+          "quote": "The state vital records office has records from July 1, 1907, to 2 months before present date.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, you must provide documentation that proves your qualifying relationship, and fees start at $25 per certificate.",
+          "claim_es": "En Washington, debe presentar documentos que prueben su parentesco o relación válida, y las tarifas empiezan en $25 por certificado.",
+          "quote": "Provide documentation to prove your qualifying relationship . Pay for the certificate. Fees start at $25 per certificate.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Washington payments by personal check or money order are made payable to the Department of Health.",
+          "claim_es": "En Washington, los cheques personales o giros postales se hacen a nombre de Department of Health.",
+          "quote": "Make a personal check or money order payable to Department of Health",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Washington)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Washington)",
+          "url": "https://www.cdc.gov/nchs/w2w/washington.htm"
+        },
+        {
+          "label_en": "Washington vital records office",
+          "label_es": "Oficina de registros vitales de Washington",
+          "url": "https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs/422-177-AcceptableProofsOfIdentityDocuments.pdf"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a West Virginia death certificate from the state vital records office is listed at $12.00.",
+          "claim_es": "En Virginia Occidental, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $12.00.",
+          "quote": "Event: Death Cost of copy: $12.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a West Virginia death certificate go to: Vital Registration Office Room 165 350 Capitol Street Charleston, WV 25301-3701.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Virginia Occidental se envían a: Vital Registration Office Room 165 350 Capitol Street Charleston, WV 25301-3701.",
+          "quote": "Address: Vital Registration Office Room 165 350 Capitol Street Charleston, WV 25301-3701",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The West Virginia state vital records office has death records since January 1917.",
+          "claim_es": "La oficina estatal de registros vitales de Virginia Occidental tiene actas de defunción desde enero de 1917.",
+          "quote": "State office has records since January 1917",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in West Virginia, checks or money orders are made payable to Vital Registration.",
+          "claim_es": "Para solicitudes por correo en Virginia Occidental, los cheques o giros postales se hacen a nombre de Vital Registration.",
+          "quote": "Personal check or money order should be made payable to Vital Registration .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (West Virginia)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Virginia Occidental)",
+          "url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm"
+        },
+        {
+          "label_en": "West Virginia vital records office",
+          "label_es": "Oficina de registros vitales de Virginia Occidental",
+          "url": "http://www.dhhr.wv.gov/Pages/default.aspx"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "A certified copy of a Wisconsin death certificate from the state vital records office is listed at $20.00.",
+          "claim_es": "En Wisconsin, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
+          "quote": "Event: Death Cost of copy: $20.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Wisconsin death certificate go to: WI Vital Records Office P.O. Box 309 Madison, WI 53701-0309 Customer Service: 608-266-1373.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Wisconsin se envían a: WI Vital Records Office P.O. Box 309 Madison, WI 53701-0309 Customer Service: 608-266-1373.",
+          "quote": "Address: WI Vital Records Office P.O. Box 309 Madison, WI 53701-0309 Customer Service: 608-266-1373",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, additional copies of the same record ordered at the same time are $3.00 each.",
+          "claim_es": "En Wisconsin, cada copia adicional del mismo registro pedida al mismo tiempo cuesta $3.00.",
+          "quote": "If multiple copies of the same record are ordered at the same time, additional copies are $3.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, certified copies of vital records are only available to people with a direct and tangible interest in the record.",
+          "claim_es": "En Wisconsin, las copias certificadas de registros vitales solo se entregan a personas con un interés directo y tangible en el registro.",
+          "quote": "In Wisconsin, certified copies of vital records are only available to people with a direct and tangible interest in the record.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Wisconsin)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Wisconsin)",
+          "url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm"
+        },
+        {
+          "label_en": "Wisconsin vital records office",
+          "label_es": "Oficina de registros vitales de Wisconsin",
+          "url": "https://www.dhs.wisconsin.gov/vitalrecords/index.htm"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "A Wyoming death certificate is listed at $25.00 for the first copy and $20.00 for each additional copy.",
+          "claim_es": "En Wyoming, el acta de defunción cuesta $25.00 la primera copia y $20.00 cada copia adicional.",
+          "quote": "Event: Death Cost of copy: $25.00 for first copy and $20.00 for additional copy",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mail requests for a Wyoming death certificate go to: Vital Statistics Services Hathaway Building, 1st Floor 2300 Capitol Avenue Cheyenne, WY 82002.",
+          "claim_es": "Las solicitudes por correo de un acta de defunción de Wyoming se envían a: Vital Statistics Services Hathaway Building, 1st Floor 2300 Capitol Avenue Cheyenne, WY 82002.",
+          "quote": "Address: Vital Statistics Services Hathaway Building, 1st Floor 2300 Capitol Avenue Cheyenne, WY 82002",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wyoming state vital records office has death records since 1909.",
+          "claim_es": "La oficina estatal de registros vitales de Wyoming tiene actas de defunción desde 1909.",
+          "quote": "State office has records since 1909",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For mail requests in Wyoming, checks or money orders are made payable to Vital Statistics Services.",
+          "claim_es": "Para solicitudes por correo en Wyoming, los cheques o giros postales se hacen a nombre de Vital Statistics Services.",
+          "quote": "Personal check or money order should be made payable to Vital Statistics Services .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: Where to Write for Vital Records (Wyoming)",
+          "label_es": "CDC: Dónde solicitar registros vitales (Wyoming)",
+          "url": "https://www.cdc.gov/nchs/w2w/wyoming.htm"
+        },
+        {
+          "label_en": "Wyoming vital records office",
+          "label_es": "Oficina de registros vitales de Wyoming",
+          "url": "https://health.wyo.gov/admin/vitalstatistics/"
+        }
+      ]
+    }
+  },
+  "skips": {}
+}
