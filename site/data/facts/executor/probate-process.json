@@ -434,6 +434,35 @@
         }
       ],
       "official_links": []
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "In Wisconsin, anyone holding a will must file it in the proper court, or deliver it, within 30 days after learning of the death.",
+          "claim_es": "En Wisconsin, quien tenga un testamento debe presentarlo en el tribunal correspondiente, o entregarlo, dentro de 30 días después de saber de la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "having the custody of any will shall, within 30 days after he or she has knowledge of the death of the testator, file the will in the proper court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, a person named as personal representative must act on the will within 30 days after learning of the naming and the death.",
+          "claim_es": "En Wisconsin, la persona nombrada como representante personal debe actuar con el testamento dentro de 30 días después de saber del nombramiento y la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "Any person named in a will to act as personal representative shall, within 30 days after he or she has knowledge that he or she is named",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, if no one petitions within 30 days after the death, a guardian or creditor of the person may petition for administration.",
+          "claim_es": "En Wisconsin, si nadie lo pide dentro de 30 días después de la muerte, un tutor o acreedor de la persona puede pedir la administración.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "has petitioned within 30 days after the death of the decedent, petition for administration may be made by any person who was guardian of the decedent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -472,7 +501,6 @@
     "VA": "no official source found",
     "WA": "no official source found",
     "WV": "no official source found",
-    "WI": "no official source found",
     "WY": "no official source found"
   }
 }
