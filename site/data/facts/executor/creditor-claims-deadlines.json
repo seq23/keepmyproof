@@ -563,6 +563,122 @@
         }
       ],
       "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, creditors generally must file claims with the clerk within 90 days after the mailed notice or the first published notice to creditors.",
+          "claim_es": "En Nevada, los acreedores normalmente deben presentar sus reclamos ante el secretario dentro de 90 días después del aviso por correo o de la primera publicación del aviso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "must file the claim with the clerk within 90 days after the mailing for those required to be mailed, or 90 days after the first publication of the notice to creditors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, the 90-day claim period drops to 60 days when summary administration is granted.",
+          "claim_es": "En Nevada, el plazo de 90 días para reclamar baja a 60 días cuando se concede la administración sumaria.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "The period of 90 days prescribed by this section is reduced to 60 days if summary administration is granted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, a claim not filed with the clerk on time is barred, with a narrow exception for creditors who had no notice.",
+          "claim_es": "En Nevada, un reclamo no presentado a tiempo ante el secretario queda prohibido, con una excepción limitada para acreedores que no recibieron aviso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "If a claim is not filed with the clerk within the time allowed by subsection 1 or 2, the claim is forever barred",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, claims against an estate are barred 2 years after the death, whether or not an estate is opened.",
+          "claim_es": "En Illinois, los reclamos contra una herencia quedan prohibidos 2 años después de la muerte, se abra o no la sucesión.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-12",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-12",
+          "quote": "all claims which could have been barred under this Section are, in any event, barred 2 years after decedent's death, whether or not letters of office are issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, every claim except administration expenses and the spouse's or child's award can be barred under the claims statute.",
+          "claim_es": "En Illinois, todo reclamo, salvo los gastos de administración y la asignación del cónyuge o los hijos, puede quedar prohibido según la ley de reclamos.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-12",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-12",
+          "quote": "Every claim against the estate of a decedent, except expenses of administration and surviving spouse's or child's award, is barred as to all of the decedent's estate if",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, the notice to creditors is published in a newspaper in the county where the estate is being administered.",
+          "claim_es": "En Illinois, el aviso a los acreedores se publica en un periódico del condado donde se administra la herencia.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-3",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-3",
+          "quote": "must be published in a newspaper published in the county where the estate is being administered",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, creditors must present claims to the personal representative or file them with the Register of Wills within 6 months from the first published notice.",
+          "claim_es": "En DC, los acreedores deben presentar sus reclamos al representante personal o ante el Registro de Testamentos dentro de 6 meses desde el primer aviso publicado.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "All persons having claims against the decedent shall present their claims to the undersigned or file their claims with the Register of Wills on or before 6 months from the date of the first publication of this notice.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, the notice that starts the creditor period is published in a legal periodical or general-circulation newspaper.",
+          "claim_es": "En DC, el aviso que inicia el plazo para acreedores se publica en una publicación legal o un periódico de circulación general.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "publish a notice of the appointment in a legal periodical or newspaper of general circulation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, certain claims covered by insurance are not barred by the usual claim deadline.",
+          "claim_es": "En DC, ciertos reclamos cubiertos por un seguro no quedan prohibidos por el plazo habitual.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-903",
+          "source_name": "DC Code § 20-903",
+          "quote": "no claim that survives death shall be barred if",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, claims against the estate that are not filed on time are barred against the estate, the personal representative and the heirs.",
+          "claim_es": "En Iowa, los reclamos contra la herencia que no se presentan a tiempo quedan prohibidos frente a la herencia, el representante personal y los herederos.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.410.pdf",
+          "source_name": "Iowa Code § 633.410",
+          "quote": "are forever barred against the estate, the personal representative, and the distribu",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, Medicaid recovery claims are barred unless filed with the clerk within six months after notice is sent.",
+          "claim_es": "En Iowa, los reclamos de recuperación de Medicaid quedan prohibidos si no se presentan ante el secretario dentro de seis meses después de enviado el aviso.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.410.pdf",
+          "source_name": "Iowa Code § 633.410",
+          "quote": "shall be barred under this section unless filed with the clerk within six months after sending notice by electro",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, creditors file their claims with the clerk of the district court handling the estate.",
+          "claim_es": "En Iowa, los acreedores presentan sus reclamos ante el secretario del tribunal de distrito que lleva la herencia.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.230.pdf",
+          "source_name": "Iowa Code § 633.230",
+          "quote": "creditors having claims against the estate shall file them with the clerk of the above-named district court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -572,19 +688,15 @@
     "CA": "no official source found",
     "CO": "no official source found",
     "CT": "no official source found",
-    "DC": "no official source found",
     "GA": "no official source found",
     "HI": "no official source found",
-    "IL": "no official source found",
     "IN": "no official source found",
-    "IA": "no official source found",
     "KS": "no official source found",
     "KY": "no official source found",
     "LA": "no official source found",
     "MA": "no official source found",
     "MI": "no official source found",
     "MS": "no official source found",
-    "NV": "no official source found",
     "NH": "no official source found",
     "NJ": "no official source found",
     "NM": "no official source found",
