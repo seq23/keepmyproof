@@ -1,0 +1,282 @@
+{
+  "folder": "executor",
+  "subtopic": "probate-process",
+  "title_en": "How probate works in {state} after a parent dies",
+  "title_es": "Cómo funciona el proceso sucesorio en {state_es} después de que muere un padre o una madre",
+  "search_intent_en": [
+    "how does probate work in {state}",
+    "{state} probate court executor",
+    "how to open an estate in {state}"
+  ],
+  "search_intent_es": [
+    "cómo funciona el proceso sucesorio en {state_es}",
+    "albacea de una herencia en {state_es}"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "In Alaska, informal probate lets the personal representative transfer a person's property to the people who should receive it with minimal court supervision.",
+          "claim_es": "En Alaska, la sucesión informal permite que el representante personal transfiera los bienes de la persona fallecida a quienes deben recibirlos con poca supervisión del tribunal.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "Informal probate is a court process that allows the Personal Representative to transfer the property of a person who died to the persons who are supposed to receive it with minimal court supervision.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An Alaska informal probate includes notifying creditors and beneficiaries or heirs.",
+          "claim_es": "Una sucesión informal en Alaska incluye avisar a los acreedores y a los beneficiarios o herederos.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "Notifying creditors and beneficiaries or heirs.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska's court suggests asking for 3 to 5 extra certified copies of the Letters, because companies will ask to see them when you transfer property.",
+          "claim_es": "El tribunal de Alaska sugiere pedir de 3 a 5 copias certificadas adicionales de las cartas (Letters), porque las empresas pedirán verlas al transferir bienes.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "It is a good idea to ask for 3 to 5 extra certified copies of the Letters since you will need to show the Letters to companies when you transfer property owned by the person who died.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "In California, you open probate by going to court and asking a judge to appoint a personal representative.",
+          "claim_es": "En California, la sucesión se abre acudiendo al tribunal y pidiendo a un juez que nombre a un representante personal.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "To start a probate case (called opening probate), you go to court and ask a judge to appoint a personal representative.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, anyone who finds an original will must deliver it to the court.",
+          "claim_es": "En California, quien encuentre un testamento original debe entregarlo al tribunal.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "If you find an original will, you must deliver it to the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative collects the property, pays the bills, and distributes what is left to the people legally entitled to it.",
+          "claim_es": "En California, el representante personal reúne los bienes, paga las deudas y reparte lo que queda entre las personas con derecho legal a recibirlo.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "The personal representative collects all the property of the person that died, pays their bills, and then distributes any remaining property to the people with a legal right to receive the property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, if the person named in the will cannot serve or there is no will, an order of priority decides who may be appointed.",
+          "claim_es": "En California, si la persona nombrada en el testamento no puede actuar o no hay testamento, un orden de prioridad decide a quién se puede nombrar.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "If the person named in the will cannot act or there is no will, then there's an order of priority for who may be appointed a personal representative.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, after a Petition for Probate is filed, the Probate Division appoints a personal representative.",
+          "claim_es": "En DC, después de presentarse una petición de sucesión, la División Testamentaria nombra a un representante personal.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "After a Petition for Probate of the decedent's estate is filed, the Probate Division will appoint a Personal Representative",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "DC treats an estate as a small estate when the person had property worth $80,000 or less.",
+          "claim_es": "DC considera herencia pequeña la de una persona con bienes por $80,000 o menos.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "Small Estates For someone who had property worth $80,000 or less.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, a large estate case is for someone who owned real estate in DC or had more than $80,000 in property.",
+          "claim_es": "En DC, el caso de herencia grande es para quien tenía bienes inmuebles en DC o más de $80,000 en bienes.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "owned real estate in DC or had more than $80,000 in property",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "To open an estate in North Carolina, bring the will (if any), a certified death certificate, an application with a preliminary inventory, and a $120 filing fee.",
+          "claim_es": "Para abrir una herencia en Carolina del Norte, lleve el testamento (si existe), un acta de defunción certificada, una solicitud con un inventario preliminar y una tarifa de $120.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "You should bring: (1) the will if there was one, (2) a certified death certificate, (3) an application and preliminary inventory of the decedent's property; and (4) a $120 filing fee.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, an executor named in a valid will has the highest priority to receive letters.",
+          "claim_es": "En Carolina del Norte, el albacea nombrado en un testamento válido tiene la mayor prioridad para recibir las cartas.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "If there is a valid will, an executor named in the will has the highest priority to receive letters.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, out-of-state executors generally must post a bond to protect creditors and heirs.",
+          "claim_es": "En Carolina del Norte, los albaceas de otro estado normalmente deben pagar una fianza para proteger a los acreedores y herederos.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "Out-of-state executors generally must pay a bond to the court to protect creditors and heirs from potential losses.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont has 14 probate division judges, elected for four-year terms.",
+          "claim_es": "Vermont tiene 14 jueces de la división testamentaria, elegidos por períodos de cuatro años.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "There are 14 probate division judges who are elected for four-year terms.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Vermont, the probate division examines whether a will is legally valid.",
+          "claim_es": "En Vermont, la división testamentaria examina si un testamento es legalmente válido.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "The probate division examines the legality of a will.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Vermont's probate division oversees the estate to make sure the executor or administrator does the job correctly and honors the person's final wishes.",
+          "claim_es": "La división testamentaria de Vermont supervisa la herencia para que el albacea o administrador cumpla bien sus funciones y respete la última voluntad.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "It then oversees the administration of the estate to ensure that the executor or administrator correctly performs their duties, follows laws, and honors final wishes.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas probate, with court approval the will is validated, debts are paid, and the rest of the property passes to the heirs.",
+          "claim_es": "En la sucesión en Texas, con aprobación del tribunal se valida el testamento, se pagan las deudas y el resto de los bienes pasa a los herederos.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "With court approval, the will is validated, the debts are paid, and the rest of the property passes to the heirs.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Texas estate administration, the court appoints a specific person to manage the whole process.",
+          "claim_es": "En una administración de herencia en Texas, el tribunal nombra a una persona específica para manejar todo el proceso.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "In administration, the court appoints a specific person to manage the whole process.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, nonprobate property passes directly to the beneficiaries without court approval.",
+          "claim_es": "En Texas, los bienes no sujetos a sucesión pasan directamente a los beneficiarios sin aprobación del tribunal.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "Nonprobate property passes directly to the beneficiaries without court approval.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, after 15 months any party in the probate case can ask the executor for a detailed accounting.",
+          "claim_es": "En Texas, después de 15 meses cualquier parte del caso de sucesión puede pedir al albacea un informe de cuentas detallado.",
+          "source_url": "https://guides.sll.texas.gov/probate/estate-executors",
+          "source_name": "Texas State Law Library",
+          "quote": "After 15 months, any party involved in the probate proceedings can ask the executor for a detailed accounting report.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "In New Hampshire, estates that need a published notice pay a $55 publication fee (since December 28, 2021).",
+          "claim_es": "En Nuevo Hampshire, las herencias que requieren un aviso publicado pagan una tarifa de publicación de $55 (desde el 28 de diciembre de 2021).",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "For estates requiring a publication fee, the fee will be $55 starting on December 28, 2021.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire's courts publish a booklet, Administering an Estate, for estates filed in the probate division.",
+          "claim_es": "Los tribunales de Nuevo Hampshire publican un folleto, Administering an Estate, para las herencias presentadas en la división testamentaria.",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "please refer to this booklet Administering an Estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire's Administering an Estate booklet guides people serving as fiduciary of an estate.",
+          "claim_es": "El folleto Administering an Estate de Nuevo Hampshire orienta a quienes actúan como fiduciarios de una herencia.",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "It provides a guide to serving as a fiduciary of an estate.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "AL": "no official source found",
+    "AZ": "no official source found",
+    "AR": "no official source found",
+    "CO": "no official source found",
+    "CT": "no official source found",
+    "DE": "no official source found",
+    "FL": "no official source found",
+    "GA": "no official source found",
+    "HI": "no official source found",
+    "ID": "no official source found",
+    "IL": "no official source found",
+    "IN": "no official source found",
+    "IA": "no official source found",
+    "KS": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "ME": "no official source found",
+    "MD": "no official source found",
+    "MA": "no official source found",
+    "MI": "no official source found",
+    "MN": "no official source found",
+    "MS": "no official source found",
+    "MO": "no official source found",
+    "MT": "no official source found",
+    "NE": "no official source found",
+    "NV": "no official source found",
+    "NJ": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "ND": "no official source found",
+    "OH": "no official source found",
+    "OK": "no official source found",
+    "OR": "no official source found",
+    "PA": "no official source found",
+    "RI": "no official source found",
+    "SC": "no official source found",
+    "SD": "no official source found",
+    "TN": "no official source found",
+    "UT": "no official source found",
+    "VA": "no official source found",
+    "WA": "no official source found",
+    "WV": "no official source found",
+    "WI": "no official source found",
+    "WY": "no official source found"
+  }
+}
