@@ -60,9 +60,12 @@ appId: com.keepmyproof.app
     timeout: 30000
 
 # Sample papers: three in Divorce prep (one checklist line ticked), two in Workplace evidence.
+- scrollUntilVisible:
+    element: "Workplace evidence"
+    direction: DOWN
 - tapOn:
     text: "Open ›"
-    index: 1
+    below: "Workplace evidence"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -72,9 +75,12 @@ appId: com.keepmyproof.app
       TITLE: "Notes from the first lawyer call"
       NOTE: "Ask about the house appraisal and the school calendar."
 - tapOn: "← Back to My folders"
+- scrollUntilVisible:
+    element: "Divorce prep"
+    direction: DOWN
 - tapOn:
     text: "Open ›"
-    index: 0
+    below: "Divorce prep"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -96,9 +102,12 @@ appId: com.keepmyproof.app
 - takeScreenshot: 06-home
 
 # A folder, adding a paper (cancelled, so the folder keeps its three), a paper, the folder PDF.
+- scrollUntilVisible:
+    element: "Divorce prep"
+    direction: DOWN
 - tapOn:
     text: "Open ›"
-    index: 0
+    below: "Divorce prep"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -122,11 +131,11 @@ appId: com.keepmyproof.app
     visible: "Checklist"
     timeout: 15000
 - scrollUntilVisible:
-    element: "Open ›"
+    element: "Parenting schedule draft"
     direction: DOWN
 - tapOn:
     text: "Open ›"
-    index: 0
+    below: "Parenting schedule draft"
 - extendedWaitUntil:
     visible: "Your note"
     timeout: 15000
