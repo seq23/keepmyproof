@@ -9,7 +9,7 @@ The core Vault receives an AtomicStore, a random source and a 256-bit device key
 The native adapter stores one AES-256-GCM authenticated envelope in a SQLite row
 using an exclusive transaction, FULL synchronous commits and WAL. SQLite only sees
 ciphertext, including in journals. Metadata, original base64 file bytes, hashes,
-manual ticks, custom folders, hidden state and note revisions are inside the
+manual ticks, custom folders, custom checklist lines, hidden state and note revisions are inside the
 ciphertext. Keys and passcode state are in the platform secure store with
 WHEN_UNLOCKED_THIS_DEVICE_ONLY accessibility. Android automatic backup is disabled.
 
@@ -57,7 +57,7 @@ No restore path rewrites the prior backup. Each new backup gets a distinct filen
 ## Billing and data rights
 
 Entitlements are independent of the vault and never restored from backup. Plus
-checks gate adding above 25, creating custom folders/tags, or requesting a selected
+checks gate adding above 25, creating custom folders/tags/checklist lines, or requesting a selected
 PDF. Full-folder PDF, file reads, originals, viewing and backup/restore never need
 Plus. Existing custom-folder contents remain readable without Plus.
 

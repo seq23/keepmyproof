@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { b64, decode, hash, open, phrase, recoveryKey, seal, unb64, utf8 } from '../src/core/crypto';
-import { empty, validate } from '../src/core/model';
+import { checked, empty, homeButtons, launchFolders, tickedBy, validate } from '../src/core/model';
 import { Vault, FREE_LIMIT } from '../src/core/vault';
 import { MemoryStore, draft, fixture, fileDraft, random } from './helpers';
 
@@ -124,4 +124,28 @@ test('a device-restored vault without its this-phone key is set aside, never era
   assert.equal(await prepareInstall(install,true),true);assert.equal(store.value,cipher);assert.deepEqual(archived,[]);
   assert.equal(await prepareInstall(install,false),false);assert.equal(store.value,null);assert.deepEqual(archived,[cipher]);
   assert.equal(await prepareInstall(install,false),false);assert.deepEqual(archived,[cipher]);
+});
+
+test('Home lists every shown launch folder, own folders, then Make your own; a checklist line of your own is Plus only and files papers',async()=>{
+  const {store,key,vault}=await fixture();
+  const ids=(b:ReturnType<typeof homeButtons>)=>b.map(x=>x.kind==='folder'?x.id:'makeOwn');
+  assert.ok(launchFolders.length>=5);
+  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.map(f=>f.id),'makeOwn']);
+  const own=await vault.addFolder('Invented folder',true); await vault.hide(launchFolders[1].id,true);
+  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.filter((_,n)=>n!==1).map(f=>f.id),own,'makeOwn']);
+  const before=store.value;
+  await assert.rejects(vault.addLine('divorce-prep','Invented line',false),/PLUS_REQUIRED/);
+  assert.equal(store.value,before); assert.equal(vault.snapshot().lines,undefined);
+  await assert.rejects(vault.addLine('divorce-prep','  ',true),/LINE_EMPTY/);
+  const line=await vault.addLine('divorce-prep','Invented line',true);
+  const reloaded=new Vault(store,key,random); await reloaded.load();
+  assert.deepEqual(reloaded.snapshot().lines,{'divorce-prep':[{id:line,title:'Invented line'}]});
+  await vault.tick('divorce-prep',line,true); assert.equal(tickedBy(vault.snapshot(),'divorce-prep',line),'hand');
+  await vault.tick('divorce-prep',line,false); assert.equal(checked(vault.snapshot(),'divorce-prep',line),false);
+  await vault.add(draft({checklist:line}),false);
+  assert.equal(tickedBy(vault.snapshot(),'divorce-prep',line),'paper');
+  const home=homeButtons(vault.snapshot()).find(b=>b.kind==='folder'&&b.id==='divorce-prep');
+  assert.deepEqual(home&&home.kind==='folder'&&[home.done,home.items],[1,1]);
+  // A line id that belongs to another folder is not a line here.
+  assert.throws(()=>validate({...vault.snapshot(),items:[{...vault.snapshot().items[0],folder:'workplace-evidence'}]}),/FORMAT_INVALID/);
 });

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AppState, BackHandler, Image, Linking, Platform, ScrollView, Switch, View } from 'react-native';
+import { AppState, BackHandler, Image, Linking, Platform, Pressable, ScrollView, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getLocales } from 'expo-localization';
 import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
-import { checked, contentDigest, launchFolders, validate, type Item, type Lang } from '../src/core/model';
+import { checked, contentDigest, folderLines, homeButtons, launchFolders, tickedBy, validate, type Item, type Lang } from '../src/core/model';
 import { userDate, editableDate, dateBoundary } from '../src/core/dates';
 import { FREE_LIMIT, Vault, mayAdd, type Draft } from '../src/core/vault';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
@@ -14,6 +14,7 @@ import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import { Button, Card, Field, P, Theme, styles, usePalette } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
+import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
@@ -33,6 +34,7 @@ export default function App() {
   const [draft, setDraft] = useState<Draft>(blankDraft(launchFolders[0].id));
   const [dateInput, setDateInput] = useState(''), [unknown, setUnknown] = useState(true), [editing, setEditing] = useState(false);
   const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
+  const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
   const [restoreData, setRestoreData] = useState<string|null>(null);
   const [checkData, setCheckData] = useState<string|null>(null);
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
@@ -87,7 +89,7 @@ export default function App() {
   }
   const doRun = (job: () => Promise<void>) => () => { void run(job); };
   useEffect(() => { if (screen === 'plus') void billing.products().then(setProducts).catch(() => setError(t('error'))); }, [screen, billing]);
-  function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setScreen(next);
+  function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
   }
   function back() {
@@ -102,12 +104,12 @@ export default function App() {
     if (!['home','first','lock'].includes(screen)) { back(); return true; } return false;
   }); return () => sub.remove(); }, [screen, vault]);
   const state = vault?.snapshot();
-  const topic = launchFolders.find(f => f.id === folder);
   const folderName = (id: string) => {
     const f = launchFolders.find(x => x.id === id);
     return f ? f.display_name![lang] : state?.folders.find(x => x.id === id)?.title ?? '';
   };
   const title = folderName(folder);
+  const lines = state ? folderLines(state, folder, lang) : [];
   const folderItems = state?.items.filter(i => i.folder === folder).sort((a,b) => b.savedOn.localeCompare(a.savedOn)) ?? [];
   const item = state?.items.find(i => i.id === itemId);
   const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(lang === 'es' ? 'es-US':'en-US') : t('unknown');
@@ -192,18 +194,36 @@ export default function App() {
     }))}<P muted>{t('loss')}</P></>;
   else if (!state || !vault) body = <P>{t('locked')}</P>;
   else if (screen === 'home') body = <>
+    <P heading>KeepMyProof</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
     {backupStale && <Card tone="gold"><P>{t('newBackup', { n:state.items.length })}</P>{btn('backUp', () => navigate('backup'))}</Card>}
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
-    <P heading>{t('home')}</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
-    {[...launchFolders.map(f => ({ id:f.id, total:f.checklist_items!.length, done:f.checklist_items!.filter(c => checked(state,f.id,c.id)).length })),
-      ...state.folders.map(f => ({ id:f.id, total:0, done:0 }))].filter(f => !state.hidden.includes(f.id)).map(f => <Card key={f.id}>
-        <P>{folderName(f.id)}</P><P muted>{t('count', { done:f.done, total:f.total, n:state.items.filter(i => i.folder === f.id).length })}</P>
-        {btn('open', () => { setFolder(f.id); navigate('folder'); })}</Card>)}
-    <P muted>{t('hideHint')}</P>{btn('add', () => addTo(folder))}<P muted>{state.backup ? t('lastBackup',{ date:displayDate(state.backup.checkedOn) }):t('noBackup')}</P></>;
-  else if (screen === 'folder') body = <><P heading>{title}</P><P muted>{t('count',{ done:topic?.checklist_items?.filter(c => checked(state,folder,c.id)).length ?? 0, total:topic?.checklist_items?.length ?? 0, n:folderItems.length })}. {t('suggested')}</P>
+    <P section>{t('canKeep')}</P>
+    <View style={styles.tiles}>{([['page','keepLetters'],['phone','keepTexts'],['receipt','keepBills'],['camera','keepPhotos'],['calendar','keepNotes'],['medical','keepSchool']] as [GlyphName, StringKey][])
+      .map(([g,key]) => <View key={key} style={[styles.tile,{ backgroundColor:palette.tile }]}><Glyph name={g} bg={palette.tile} /><Text style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center' }}>{t(key)}</Text></View>)}</View>
+    <P section>{t('home')}</P>
+    {homeButtons(state).map(b => b.kind === 'folder'
+      ? <BigButton key={b.id} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
+          sub={b.done || b.items ? [b.done && t(b.done === 1 ? 'ticked1':'tickedN', { n:b.done }), b.items && t(b.items === 1 ? 'items1':'itemsN', { n:b.items })].filter(Boolean).join(' · ') : t('nothingYet')}
+          onPress={() => { setFolder(b.id); navigate('folder'); }} />
+      : <BigButton key="makeOwn" glyph="plus" dashed title={t('makeOwn')} tag={t('plusTag')} sub={t('makeOwnSub')} go={t('open')} disabled={busy}
+          onPress={() => navigate(ent.plus ? 'custom' : 'plus')} />)}
+    {btn('add', () => addTo(folder))}
+    <P muted>{state.backup ? t('lastBackup',{ date:displayDate(state.backup.checkedOn) }):t('noBackup')}</P><P muted>{t('hideHint')}</P></>;
+  else if (screen === 'folder') body = <><P heading>{title}</P><P muted>{t('suggested')}</P>
     {folder === 'va-disability-papers' && <Card><P>{t('vaScope')}</P><P>{t('vaHelp')}</P><Button title={t('vaLink')} onPress={() => void Linking.openURL('https://www.va.gov/get-help-from-accredited-representative/')} /></Card>}
-    <P heading>{t('checklist')}</P>{topic?.checklist_items?.map(c => <Button quiet key={c.id} title={`${checked(state,folder,c.id) ? '✓':'○'} ${c.name[lang]}`} checked={checked(state,folder,c.id)}
-      onPress={doRun(async () => vault.tick(folder,c.id,!checked(state,folder,c.id)))} />)}<P muted>{t('autoTick')}</P>
+    <P section>{t('checklist')}</P>
+    <View style={[styles.list,{ borderColor:palette.line, backgroundColor:palette.card }]}>
+      {lines.map((l, n) => { const how = tickedBy(state, folder, l.id);
+        return <TickRow key={l.id} first={n === 0} done={checked(state,folder,l.id)} title={l.name} disabled={busy}
+          sub={how === 'paper' ? t('byPaper') : how === 'hand' ? t('byHand') : undefined}
+          onPress={doRun(async () => vault.tick(folder,l.id,!checked(state,folder,l.id)))} />; })}
+      <TickRow add first={!lines.length} title={t('addLine')} tag={ent.plus ? undefined : t('plusTag')} disabled={busy}
+        onPress={() => ent.plus ? setLineOpen(true) : navigate('plus')} />
+    </View>
+    {lineOpen && ent.plus && <Card><Field label={t('lineName')} value={newLine} onChange={setNewLine} />
+      {btn('saveLine', doRun(async () => { await vault.addLine(folder, newLine, ent.plus); setNewLine(''); setLineOpen(false); }))}
+      {btn('cancel', () => { setNewLine(''); setLineOpen(false); }, true)}</Card>}
+    <P muted>{t('autoTick')}</P>
     <P heading>{t('newest')}</P>{folderItems.length ? folderItems.map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDate(i.happenedOn)}</P>
       {btn('open', () => { setItemId(i.id); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
     {btn('folderPdf', () => { setSelection(false); setCover(''); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder))}</>;
@@ -216,7 +236,7 @@ export default function App() {
     </>}
     <Field label={t('name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
-    {topic?.checklist_items?.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name[lang]}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
+    {lines.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
     {ent.plus && <Field label={t('tags')} value={draft.tags.join(',')} onChange={v => setDraft(d => ({...d,tags:v.split(',').map(s=>s.trim())}))} />}
     <P muted>{t('addingDate')}</P>
@@ -282,4 +302,31 @@ export default function App() {
       {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
     </View>}
   </SafeAreaView></Theme.Provider>;
+}
+
+// One big tappable folder door on Home: drawing, name, one grey sub line, "Open ›" on the right.
+function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
+  glyph: GlyphName; title: string; sub: string; go: string; tag?: string; dashed?: boolean; disabled?: boolean; onPress: () => void;
+}) {
+  const c = React.useContext(Theme);
+  return <Pressable accessibilityRole="button" accessibilityLabel={`${title}. ${sub}`} disabled={disabled} onPress={onPress}
+    style={({ pressed }) => [styles.big, { backgroundColor:c.card, borderColor: dashed ? c.muted : c.ok, borderStyle: dashed ? 'dashed' : 'solid', opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
+    <Glyph name={glyph} size={44} />
+    <View style={styles.flex}><Text style={{ color:c.fg, fontSize:16, fontWeight:'600' }}>{title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11 }}>{tag}</Text>}</Text>
+      <Text style={{ color:c.muted, fontSize:13, lineHeight:18 }}>{sub}</Text></View>
+    <Text style={{ color:c.ok, fontSize:15, fontWeight:'600' }}>{go}</Text>
+  </Pressable>;
+}
+// One compact checklist line: a small tick box and one line of text (a grey sub line says how it got ticked).
+function TickRow({ title, sub, done, add, tag, first, disabled, onPress }: {
+  title: string; first?: boolean; sub?: string; done?: boolean; add?: boolean; tag?: string; disabled?: boolean; onPress: () => void;
+}) {
+  const c = React.useContext(Theme);
+  return <Pressable accessibilityRole={add ? 'button' : 'checkbox'} accessibilityState={{ checked: add ? undefined : !!done, disabled }} accessibilityLabel={title}
+    disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.tickRow, { borderTopColor:c.line, borderTopWidth: first ? 0 : 1, opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
+    <View style={[styles.box, { borderColor: add || done ? c.ok : c.muted, borderStyle: add ? 'dashed' : 'solid', backgroundColor: done ? c.ok : 'transparent' }]}>
+      <Text style={{ color: done ? c.card : c.ok, fontSize:15, fontWeight:'700', lineHeight:18 }}>{done ? '✓' : add ? '+' : ''}</Text></View>
+    <View style={styles.flex}><Text style={{ color: add ? c.ok : c.fg, fontSize:15, lineHeight:20, fontWeight: add ? '600' : '400' }}>{add ? title.replace(/^\+\s*/, '') : title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11, fontWeight:'600' }}>{tag}</Text>}</Text>
+      {sub && <Text style={{ color:c.muted, fontSize:12, lineHeight:16 }}>{sub}</Text>}</View>
+  </Pressable>;
 }
