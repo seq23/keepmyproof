@@ -1,0 +1,155 @@
+{
+  "_about": "One hub page per launch folder (topics.json id), English and US Spanish. The checklist itself is never written here: it comes from topics.json. Every answer is 40-60 words (site/build.mjs refuses others). Links are official sources only.",
+  "hubs": {
+    "divorce-prep": {
+      "en": {
+        "slug": "divorce-document-checklist",
+        "title": "Divorce document checklist: papers to gather before a divorce",
+        "desc": "A free printable divorce document checklist: the statements, tax papers, bills, property papers and messages to gather before a divorce, and how to keep copies private.",
+        "h1": "Divorce document checklist",
+        "answer": "Before a divorce, gather copies of what you already have: bank, retirement and debt statements; pay stubs and tax returns; household bills; home, car and property papers; any agreements or court papers; messages sent to you; and a dated co-parenting log. Keep only what you are allowed to have, and ask your lawyer what to bring.",
+        "statesH": "Divorce rules by state",
+        "faq": [
+          ["Which documents should I gather before a divorce?", "Most people start with the last few years of bank, retirement and credit card statements, pay stubs and tax returns, household bills, deeds, titles and loan papers, and any agreements or court papers they already have. Your lawyer or your state court's self-help site can tell you what your court asks for.", null],
+          ["How do I keep a co-parenting log?", "Write each entry on the day it happens: the date, the time, what was planned, what happened and any message about it. Keep entries short and factual. KeepMyProof records the date you saved each note next to the date you say it happened.", null],
+          ["Does divorce change my taxes?", "Your filing status depends on whether you are married on the last day of the year. The IRS explains filing status, alimony and dependants for separated and divorced people in Publication 504.", {"url": "https://www.irs.gov/publications/p504", "label": "IRS Publication 504"}],
+          ["Can I save my spouse's messages or accounts?", "Keep the messages that were sent to you. Do not log in to your spouse's phone, email or accounts. Ask a lawyer before you copy anything that is not yours.", null]
+        ]
+      },
+      "es": {
+        "slug": "lista-documentos-divorcio",
+        "title": "Lista de documentos para el divorcio en Estados Unidos",
+        "desc": "Una lista gratis para imprimir con los papeles que conviene reunir antes de un divorcio en Estados Unidos: estados de cuenta, impuestos, facturas, bienes y mensajes.",
+        "h1": "Lista de documentos para el divorcio",
+        "answer": "Antes de un divorcio en Estados Unidos, reúna copias de lo que ya tiene: estados de cuenta del banco, la jubilación y las deudas; talones de pago y declaraciones de impuestos; facturas del hogar; papeles de la casa, el auto y otros bienes; acuerdos o papeles de la corte; mensajes que le enviaron; y un registro de crianza con fechas.",
+        "statesH": "El divorcio por estado",
+        "faq": [
+          ["¿Qué documentos debo reunir antes de un divorcio?", "Casi siempre se empieza por los estados de cuenta del banco, la jubilación y las tarjetas de los últimos años, los talones de pago y las declaraciones de impuestos, las facturas del hogar, las escrituras, los títulos y los préstamos, y los acuerdos o papeles de la corte que ya tenga. Su abogado o el sitio de ayuda de la corte de su estado le dirá qué pide su corte.", null],
+          ["¿Cómo llevo un registro de crianza?", "Anote cada cosa el mismo día: la fecha, la hora, lo que estaba previsto, lo que pasó y cualquier mensaje sobre eso. Escriba poco y solo los hechos. KeepMyProof guarda la fecha en que guardó cada nota junto a la fecha en que usted dice que pasó.", null],
+          ["¿El divorcio cambia mis impuestos?", "Su estado civil para los impuestos depende de si está casado el último día del año. El IRS lo explica, junto con la pensión alimenticia y los dependientes, en la Publicación 504 (en inglés).", {"url": "https://www.irs.gov/publications/p504", "label": "Publicación 504 del IRS"}],
+          ["¿Puedo guardar los mensajes o las cuentas de mi pareja?", "Guarde los mensajes que le enviaron a usted. No entre al teléfono, el correo ni las cuentas de su pareja. Pregunte a un abogado antes de copiar algo que no es suyo.", null]
+        ]
+      }
+    },
+    "workplace-evidence": {
+      "en": {
+        "slug": "workplace-evidence",
+        "title": "How to document problems at work: a workplace evidence checklist",
+        "desc": "A free printable checklist for documenting harassment, retaliation or unpaid wages at work: what to write down, what to keep, and where the EEOC explains deadlines.",
+        "h1": "How to document problems at work",
+        "answer": "Write down what happened the same day: the date, time, place, who was there and what was said. Keep copies of what was sent to you, such as pay stubs, schedules, reviews, messages, your complaints and the replies. Do not record people secretly or copy company systems. The EEOC website explains filing deadlines.",
+        "statesH": "Workplace rules by state",
+        "faq": [
+          ["Is there a deadline to file a discrimination charge?", "Yes. The EEOC says a charge generally must be filed within 180 calendar days of the event, extended to 300 days where a state or local agency enforces a similar law. Its page on time limits explains the details.", {"url": "https://www.eeoc.gov/time-limits-filing-charge", "label": "EEOC: time limits for filing a charge"}],
+          ["What counts as retaliation?", "The EEOC describes retaliation as punishing someone for asserting their rights, for example after a complaint about discrimination. Its retaliation page lists examples.", {"url": "https://www.eeoc.gov/retaliation", "label": "EEOC: retaliation"}],
+          ["What should a work incident note include?", "The date and time, the place, who was there, the words used as closely as you remember them, and anything you did afterwards, such as telling a manager. Write it the same day and do not change old notes; add a new one instead.", null],
+          ["Can I take company files home?", "Keep what was sent to you, like your pay stubs, schedule and messages to you. Do not copy company systems or other people's records you may not take, and do not record people secretly. A lawyer can tell you what applies to you.", null]
+        ]
+      },
+      "es": {
+        "slug": "pruebas-del-trabajo",
+        "title": "Cómo documentar problemas en el trabajo en Estados Unidos",
+        "desc": "Una lista gratis para imprimir para documentar acoso, represalias o salarios no pagados en el trabajo en Estados Unidos: qué anotar, qué guardar y dónde ver los plazos.",
+        "h1": "Cómo documentar problemas en el trabajo",
+        "answer": "Anote lo que pasó el mismo día: la fecha, la hora, el lugar, quién estaba y qué se dijo. Guarde copias de lo que le enviaron, como talones de pago, horarios, evaluaciones, mensajes, sus quejas y las respuestas. No grabe a nadie en secreto ni copie sistemas de la empresa. La EEOC explica los plazos.",
+        "statesH": "El trabajo por estado",
+        "faq": [
+          ["¿Hay un plazo para presentar un cargo por discriminación?", "Sí. La EEOC dice que, en general, el cargo se presenta dentro de los 180 días naturales del hecho, o 300 días donde una agencia estatal o local aplica una ley parecida. Su página sobre plazos (en inglés) lo explica.", {"url": "https://www.eeoc.gov/time-limits-filing-charge", "label": "EEOC: plazos para presentar un cargo"}],
+          ["¿Qué es una represalia?", "La EEOC describe la represalia como castigar a alguien por hacer valer sus derechos, por ejemplo después de quejarse de discriminación. La EEOC tiene información en español.", {"url": "https://www.eeoc.gov/es", "label": "EEOC en español"}],
+          ["¿Qué debe tener una nota sobre un incidente en el trabajo?", "La fecha y la hora, el lugar, quién estaba, las palabras que se dijeron lo más exactas que recuerde y lo que hizo después, como avisar a un gerente. Escríbala el mismo día y no cambie notas viejas; mejor agregue una nueva.", null],
+          ["¿Puedo llevarme archivos de la empresa?", "Guarde lo que le enviaron a usted, como sus talones de pago, su horario y los mensajes que recibió. No copie sistemas de la empresa ni registros de otras personas que no puede llevarse, y no grabe a nadie en secreto. Un abogado puede decirle qué aplica a su caso.", null]
+        ]
+      }
+    },
+    "va-disability-papers": {
+      "en": {
+        "slug": "va-claim-papers",
+        "title": "How to organize VA disability claim papers: a free checklist",
+        "desc": "A free printable checklist for keeping VA disability claim papers in order: DD-214, medical records, statements and VA letters. Not affiliated with the VA; no claim help.",
+        "h1": "How to organize VA claim papers",
+        "answer": "Sort your papers by each condition, then by date. Keep your DD-214, the medical records you have, statements from people who know you, copies of everything you sent the VA and every letter back. KeepMyProof only keeps papers; for help with a claim, VA.gov lists free, accredited representatives.",
+        "statesH": "Veterans offices by state",
+        "faq": [
+          ["Who can help me with a VA claim?", "VA.gov explains how to find a free, VA-accredited representative, such as a veterans service officer. KeepMyProof is not affiliated with the VA and does not prepare, file or judge a claim.", {"url": "https://www.va.gov/get-help-from-accredited-representative/", "label": "VA.gov: get help from an accredited representative"}],
+          ["What evidence does the VA ask for?", "VA.gov lists the evidence it describes for disability claims, such as service records and medical records. Read the VA's own page for your claim type.", {"url": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/", "label": "VA.gov: evidence needed"}],
+          ["Where do I get a copy of my DD-214?", "The National Archives explains how veterans request military service records, including the DD-214.", {"url": "https://www.archives.gov/veterans/military-service-records", "label": "National Archives: military service records"}],
+          ["What is a VA claim exam?", "VA.gov describes the claim exam (often called a C&P exam) and what to expect. Keep the letter that schedules it and your own dated notes in the same folder.", {"url": "https://www.va.gov/disability/va-claim-exam/", "label": "VA.gov: VA claim exam"}]
+        ]
+      },
+      "es": {
+        "slug": "papeles-reclamo-va",
+        "title": "Cómo ordenar los papeles del reclamo de discapacidad del VA",
+        "desc": "Una lista gratis para imprimir para tener en orden los papeles del reclamo de discapacidad del VA en Estados Unidos. No está afiliado al VA; no ayuda con reclamos.",
+        "h1": "Cómo ordenar los papeles del reclamo del VA",
+        "answer": "Ordene sus papeles por cada condición y luego por fecha. Guarde su DD-214, los expedientes médicos que tenga, las declaraciones de personas que lo conocen, copias de todo lo que envió al VA y cada carta de respuesta. KeepMyProof solo guarda papeles; para ayuda con un reclamo, VA.gov indica representantes acreditados gratis.",
+        "statesH": "Oficinas de veteranos por estado",
+        "faq": [
+          ["¿Quién me puede ayudar con un reclamo del VA?", "VA.gov explica (en inglés) cómo encontrar un representante acreditado por el VA, gratis, como un oficial de servicios para veteranos. KeepMyProof no está afiliado al VA y no prepara, presenta ni evalúa reclamos.", {"url": "https://www.va.gov/get-help-from-accredited-representative/", "label": "VA.gov: representantes acreditados"}],
+          ["¿Qué pruebas pide el VA?", "VA.gov indica (en inglés) las pruebas que describe para los reclamos de discapacidad, como los registros del servicio y los expedientes médicos. Lea la página del VA para su tipo de reclamo.", {"url": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/", "label": "VA.gov: pruebas necesarias"}],
+          ["¿Dónde consigo una copia de mi DD-214?", "El Archivo Nacional explica (en inglés) cómo los veteranos piden sus registros del servicio militar, incluido el DD-214.", {"url": "https://www.archives.gov/veterans/military-service-records", "label": "Archivo Nacional: registros militares"}],
+          ["¿Qué es el examen del reclamo del VA?", "VA.gov describe (en inglés) el examen del reclamo, que muchos llaman examen C&P, y qué esperar. Guarde la carta que lo programa y sus notas con fecha en la misma carpeta.", {"url": "https://www.va.gov/disability/va-claim-exam/", "label": "VA.gov: examen del reclamo"}]
+        ]
+      }
+    },
+    "executor-papers": {
+      "en": {
+        "slug": "executor-checklist",
+        "title": "Executor checklist: papers to gather after a parent dies",
+        "desc": "A free printable executor checklist: the will, death certificates, court papers, accounts, property and bills to gather after a parent dies, with links to official sources.",
+        "h1": "Executor checklist: papers after a parent dies",
+        "answer": "An executor usually gathers copies of the will or trust, several certified death certificates, the court papers naming the executor, account and property papers, and the bills and letters to close out. Rules differ by state, and your county probate court's website lists its own forms and steps.",
+        "statesH": "Probate by state",
+        "faq": [
+          ["How many death certificates will I need?", "Banks, insurers, pension plans and agencies often each ask for a certified copy. Many families order several from the state or county vital records office, then keep a list of who received one.", null],
+          ["Does the executor file a final tax return?", "The IRS explains that the person handling a deceased person's affairs files their final income tax return and, in some cases, a return for the estate.", {"url": "https://www.irs.gov/individuals/file-the-final-income-tax-returns-of-a-deceased-person", "label": "IRS: final tax returns of a deceased person"}],
+          ["What is probate?", "Probate is the court process that confirms who handles an estate and how it is settled. Each state sets its own rules, and many have a shorter process for small estates.", null],
+          ["What should I keep a record of?", "Every account you close, every bill you pay from the estate, and every letter you send or receive, each with its date. A dated record helps when the court or family asks what was done.", null]
+        ]
+      },
+      "es": {
+        "slug": "lista-del-albacea",
+        "title": "Lista del albacea: qué papeles reunir cuando muere un padre en Estados Unidos",
+        "desc": "Una lista gratis para imprimir para el albacea en Estados Unidos: testamento, actas de defunción, papeles de la corte, cuentas, bienes y facturas después de una muerte.",
+        "h1": "Lista del albacea: papeles cuando muere un padre o madre",
+        "answer": "En Estados Unidos, el albacea suele reunir copias del testamento o fideicomiso, varias actas de defunción certificadas, los papeles de la corte que lo nombran, los papeles de cuentas y bienes, y las facturas y cartas por cerrar. Las reglas cambian según el estado, y la corte de sucesiones del condado publica sus formularios.",
+        "statesH": "Sucesiones por estado",
+        "faq": [
+          ["¿Cuántas actas de defunción voy a necesitar?", "Los bancos, las aseguradoras, los planes de pensión y las agencias suelen pedir cada uno una copia certificada. Muchas familias piden varias a la oficina de registros vitales del estado o del condado y llevan una lista de quién recibió cada una.", null],
+          ["¿El albacea presenta una última declaración de impuestos?", "El IRS explica (en inglés) que la persona a cargo de los asuntos de quien murió presenta su última declaración de impuestos y, en algunos casos, una declaración del patrimonio.", {"url": "https://www.irs.gov/individuals/file-the-final-income-tax-returns-of-a-deceased-person", "label": "IRS: últimas declaraciones de una persona fallecida"}],
+          ["¿Qué es la sucesión (probate)?", "Es el proceso de la corte que confirma quién se encarga de la herencia y cómo se reparte. Cada estado pone sus reglas, y muchos tienen un trámite más corto para herencias pequeñas.", null],
+          ["¿De qué debo llevar registro?", "De cada cuenta que cierra, cada factura que paga con dinero de la herencia y cada carta que envía o recibe, con su fecha. Un registro con fechas ayuda cuando la corte o la familia preguntan qué se hizo.", null]
+        ]
+      }
+    },
+    "iep-binder": {
+      "en": {
+        "slug": "iep-binder",
+        "title": "IEP binder for parents: what to keep and a free printable checklist",
+        "desc": "A free printable IEP binder checklist for parents: the IEP, evaluations, progress reports, school messages and meeting notes, plus where to find your state's free parent center.",
+        "h1": "IEP binder for parents",
+        "answer": "An IEP binder keeps, in date order: the current IEP, evaluations and test reports, progress reports and report cards, messages from school, your dated meeting notes and any discipline records. Bring it to every meeting. Every state has at least one free Parent Training and Information Center that can help.",
+        "statesH": "Parent centers by state",
+        "faq": [
+          ["What goes in an IEP binder?", "The current IEP and older ones, evaluations and test reports, progress reports and report cards, messages to and from school, your dated meeting notes, and any discipline records, each in date order.", null],
+          ["Where can I get free help with an IEP?", "Every state has at least one Parent Training and Information Center funded under federal law. The Center for Parent Information and Resources lists them by state.", {"url": "https://www.parentcenterhub.org/find-your-center/", "label": "Find your parent center"}],
+          ["How do I prepare for an IEP meeting?", "Read the last IEP and progress reports, write your questions down beforehand, bring your binder, and take dated notes during the meeting. Ask for copies of anything the team shows you.", null],
+          ["Should my child's name be on the binder?", "Keep the binder private. When you share copies outside the school, share only what the reader needs. In KeepMyProof's samples the student is always called Sample student.", null]
+        ]
+      },
+      "es": {
+        "slug": "carpeta-iep",
+        "title": "Carpeta del IEP para padres en Estados Unidos: qué guardar",
+        "desc": "Una lista gratis para imprimir para la carpeta del IEP: el IEP, evaluaciones, informes de progreso, mensajes de la escuela y notas, y dónde encontrar el centro de padres de su estado.",
+        "h1": "Carpeta del IEP para padres",
+        "answer": "La carpeta del IEP guarda, en orden de fecha: el IEP actual, las evaluaciones y los resultados de pruebas, los informes de progreso y las calificaciones, los mensajes de la escuela, sus notas de reuniones con fecha y cualquier registro de disciplina. Llévela a cada reunión. Cada estado tiene al menos un centro gratis para padres.",
+        "statesH": "Centros para padres por estado",
+        "faq": [
+          ["¿Qué va en la carpeta del IEP?", "El IEP actual y los anteriores, las evaluaciones y los resultados de pruebas, los informes de progreso y las calificaciones, los mensajes con la escuela, sus notas de reuniones con fecha y cualquier registro de disciplina, cada cosa en orden de fecha.", null],
+          ["¿Dónde consigo ayuda gratis con el IEP?", "Cada estado tiene al menos un Centro de Capacitación e Información para Padres financiado por ley federal. El Centro de Información y Recursos para Padres los indica por estado (en inglés).", {"url": "https://www.parentcenterhub.org/find-your-center/", "label": "Encuentre su centro para padres"}],
+          ["¿Cómo me preparo para una reunión del IEP?", "Lea el último IEP y los informes de progreso, escriba sus preguntas antes, lleve su carpeta y tome notas con fecha durante la reunión. Pida copia de todo lo que el equipo le muestre.", null],
+          ["¿Debe ir el nombre de mi hijo en la carpeta?", "Mantenga la carpeta privada. Cuando comparta copias fuera de la escuela, comparta solo lo que la otra persona necesita. En los ejemplos de KeepMyProof el estudiante siempre se llama Estudiante de ejemplo.", null]
+        ]
+      }
+    }
+  }
+}
