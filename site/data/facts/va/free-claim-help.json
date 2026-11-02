@@ -1,0 +1,2766 @@
+{
+  "folder": "va",
+  "subtopic": "free-claim-help",
+  "title_en": "Free VA claim help in {state}: county and state veterans service officers",
+  "title_es": "Ayuda gratuita con reclamos del VA en {state_es}: oficiales de servicio para veteranos",
+  "search_intent_en": [
+    "county veterans service officer {state}",
+    "free help with VA disability claim {state}",
+    "veterans service officer near me {state}"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Alaska's Office of Veterans Affairs says its services, and those of Veterans Service Officers, are provided free of charge.",
+          "claim_es": "La Oficina de Asuntos de Veteranos de Alaska indica que sus servicios y los de los oficiales de servicio para veteranos son gratuitos.",
+          "source_url": "https://veterans.alaska.gov/about-us/",
+          "source_name": "Alaska Office of Veterans Affairs",
+          "quote": "Our services, as well as the services of the Veterans Service Officers are provided free of charge.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska's Office of Veterans Affairs works with four veteran service organizations that provide veteran service officers.",
+          "claim_es": "La Oficina de Asuntos de Veteranos de Alaska trabaja con cuatro organizaciones de servicio para veteranos que ofrecen oficiales de servicio.",
+          "source_url": "https://veterans.alaska.gov/vso/",
+          "source_name": "Alaska Office of Veterans Affairs",
+          "quote": "The State of Alaska, Office of Veterans Affairs works with four Veteran service organizations to assist Veterans by providing Veteran service officers.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Alaska's state veterans agency, the Alaska Office of Veterans Affairs, at 888-248-3682.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Alaska, Alaska Office of Veterans Affairs, atiende en el 888-248-3682.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "888-248-3682",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Office of Veterans Affairs (official site)",
+          "label_es": "Alaska Office of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.alaska.gov/home/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Alabama's state veterans agency, the Alabama Department of Veterans Affairs, at 334-242-5077.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Alabama, Alabama Department of Veterans Affairs, atiende en el 334-242-5077.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "334-242-5077",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alabama Department of Veterans Affairs (official site)",
+          "label_es": "Alabama Department of Veterans Affairs (sitio oficial)",
+          "url": "https://va.alabama.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "In Arkansas, your County Veteran Service Officer can help you understand state benefits and apply for them at no cost.",
+          "claim_es": "En Arkansas, su oficial de servicio para veteranos del condado puede ayudarle a entender los beneficios estatales y solicitarlos sin costo.",
+          "source_url": "https://www.veterans.arkansas.gov/state-benefits",
+          "source_name": "Arkansas Department of Veterans Affairs",
+          "quote": "Your County Veteran Service Officer can help you understand these benefits and apply for them at no cost.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Arkansas Department of Veterans Affairs has a county map to find your County Veteran Service Officer (CVSO).",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Arkansas tiene un mapa por condado para encontrar a su oficial de servicio para veteranos del condado (CVSO).",
+          "source_url": "https://www.veterans.arkansas.gov/veteran-services-map",
+          "source_name": "Arkansas Department of Veterans Affairs",
+          "quote": "Find your county and meet your CVSO below.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Arkansas's state veterans agency, the Arkansas Department of Veterans Affairs, at 501-683-2382.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Arkansas, Arkansas Department of Veterans Affairs, atiende en el 501-683-2382.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "501-683-2382",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas Department of Veterans Affairs (official site)",
+          "label_es": "Arkansas Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.veterans.arkansas.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Arizona's state veterans agency, the Arizona Department of Veterans Services, at 602-255-3373.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Arizona, Arizona Department of Veterans Services, atiende en el 602-255-3373.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "602-255-3373",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Department of Veterans Services (official site)",
+          "label_es": "Arizona Department of Veterans Services (sitio oficial)",
+          "url": "https://dvs.az.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists California's state veterans agency, the California Department of Veterans Affairs (CalVet), at 800-952-5626.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de California, California Department of Veterans Affairs (CalVet), atiende en el 800-952-5626.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-952-5626",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Department of Veterans Affairs (CalVet) (official site)",
+          "label_es": "California Department of Veterans Affairs (CalVet) (sitio oficial)",
+          "url": "https://www.calvet.ca.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "Colorado lists county veterans service officers on its CVSO webpage, where you choose your county.",
+          "claim_es": "Colorado publica a los oficiales de servicio para veteranos de cada condado en su página de CVSO, donde usted elige su condado.",
+          "source_url": "https://dmva.colorado.gov/archives",
+          "source_name": "National Archives",
+          "quote": "For Colorado County VSOs, please visit the CVSO webpage and click on your county.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Colorado Department of Military and Veterans Affairs as Colorado's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Colorado Department of Military and Veterans Affairs es la agencia estatal de veteranos de Colorado.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Colorado Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Department of Military and Veterans Affairs (official site)",
+          "label_es": "Colorado Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://vets.colorado.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Connecticut's state veterans agency, the Connecticut State Department of Veterans Affairs, at 860-616-2562.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Connecticut, Connecticut State Department of Veterans Affairs, atiende en el 860-616-2562.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "860-616-2562",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut State Department of Veterans Affairs (official site)",
+          "label_es": "Connecticut State Department of Veterans Affairs (sitio oficial)",
+          "url": "https://portal.ct.gov/dva"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "DC's Mayor's Office of Veterans Affairs (MOVA) helps DC veterans and their families with federal VA claims and benefits through its District Veteran Service Officers.",
+          "claim_es": "La Oficina del Alcalde para Asuntos de Veteranos (MOVA) ayuda a los veteranos de DC y sus familias con reclamos y beneficios federales del VA a través de sus oficiales de servicio.",
+          "source_url": "https://communityaffairs.dc.gov/mova",
+          "source_name": "Mayor’s Office of Veterans Affairs",
+          "quote": "Assist DC veterans and their family members with their federal VA claims and benefits through MOVA’s District Veteran Service Officers.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists District of Columbia's state veterans agency, the Mayor’s Office of Veterans Affairs, at 202-724-5454.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de el Distrito de Columbia, Mayor’s Office of Veterans Affairs, atiende en el 202-724-5454.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "202-724-5454",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mayor’s Office of Veterans Affairs (official site)",
+          "label_es": "Mayor’s Office of Veterans Affairs (sitio oficial)",
+          "url": "https://communityaffairs.dc.gov/mova"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Delaware's veterans service officers are State of Delaware employees who are specially trained and accredited.",
+          "claim_es": "Los oficiales de servicio para veteranos de Delaware son empleados del estado con capacitación especial y acreditación.",
+          "source_url": "https://vets.delaware.gov/service-officers/",
+          "source_name": "Delaware Office of Veterans Services",
+          "quote": "Our VSOs are State of Delaware employees who are specially trained and accredited by the U.S.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Delaware's Office of Veterans Services notes that an accredited Veteran Service Organization representative will never charge for claims services.",
+          "claim_es": "La Oficina de Servicios para Veteranos de Delaware señala que un representante acreditado de una organización de servicio para veteranos nunca cobra por ayudar con reclamos.",
+          "source_url": "https://vets.delaware.gov/service-officers/",
+          "source_name": "Delaware Office of Veterans Services",
+          "quote": "An accredited Veteran Service Organization Representative will never charge for claims services!",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Delaware you can schedule an appointment with your county service officer through the office's contact page.",
+          "claim_es": "En Delaware puede pedir una cita con el oficial de servicio de su condado a través de la página de contacto de la oficina.",
+          "source_url": "https://vets.delaware.gov/service-officers/",
+          "source_name": "Delaware Office of Veterans Services",
+          "quote": "To schedule an appointment with your county service officer, please visit our contact page",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Delaware's state veterans agency, the Delaware Office of Veterans Services, at 302-739-2792.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Delaware, Delaware Office of Veterans Services, atiende en el 302-739-2792.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "302-739-2792",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Office of Veterans Services (official site)",
+          "label_es": "Delaware Office of Veterans Services (sitio oficial)",
+          "url": "https://vets.delaware.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Florida's state veterans agency, the Florida Department of Veterans Affairs, at 844-693-5838.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Florida, Florida Department of Veterans Affairs, atiende en el 844-693-5838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "844-693-5838",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Department of Veterans Affairs (official site)",
+          "label_es": "Florida Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.floridavets.org/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Georgia's state veterans agency, the Georgia Department of Veterans Affairs, at 404-656-2300.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Georgia, Georgia Department of Veterans Affairs, atiende en el 404-656-2300.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "404-656-2300",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia Department of Veterans Affairs (official site)",
+          "label_es": "Georgia Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.georgia.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Hawaii's state veterans agency, the Hawai’i Office of Veterans’ Services, at 808-433-0420.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Hawái, Hawai’i Office of Veterans’ Services, atiende en el 808-433-0420.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "808-433-0420",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawai’i Office of Veterans’ Services (official site)",
+          "label_es": "Hawai’i Office of Veterans’ Services (sitio oficial)",
+          "url": "https://dod.hawaii.gov/ovs/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "Iowa's Department of Veterans Affairs tells veterans to start local with their County Veteran Affairs or Service Office.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Iowa recomienda empezar por la oficina de asuntos de veteranos de su condado.",
+          "source_url": "https://dva.iowa.gov/find-veteran-services",
+          "source_name": "Iowa Department of Veterans Affairs",
+          "quote": "start local with your County Veteran Affairs or Service Office",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Iowa's state veterans agency, the Iowa Department of Veterans Affairs, at 515-252-4698.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Iowa, Iowa Department of Veterans Affairs, atiende en el 515-252-4698.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "515-252-4698",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Department of Veterans Affairs (official site)",
+          "label_es": "Iowa Department of Veterans Affairs (sitio oficial)",
+          "url": "https://dva.iowa.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists the Idaho Division of Veterans Services as Idaho's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Idaho Division of Veterans Services es la agencia estatal de veteranos de Idaho.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Idaho Division of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Division of Veterans Services (official site)",
+          "label_es": "Idaho Division of Veterans Services (sitio oficial)",
+          "url": "https://veterans.idaho.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "Illinois Department of Veterans Affairs service officers are trained and accredited by the U.S. Department of Veterans Affairs to give free help to veterans, dependents and survivors.",
+          "claim_es": "Los oficiales de servicio del Departamento de Asuntos de Veteranos de Illinois tienen capacitación y acreditación del VA para dar ayuda gratuita a veteranos, dependientes y sobrevivientes.",
+          "source_url": "https://veterans.illinois.gov/serviceoffices.html",
+          "source_name": "Illinois Department of Veterans Affairs",
+          "quote": "Our VSOs are trained and accredited by the US Department of Veterans Affairs to provide free assistance to veterans and their dependents and survivors.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Illinois's state veterans agency, the Illinois Department of Veterans Affairs, at 800-437-9824.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Illinois, Illinois Department of Veterans Affairs, atiende en el 800-437-9824.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-437-9824",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois Department of Veterans Affairs (official site)",
+          "label_es": "Illinois Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.illinois.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Indiana's state veterans agency, the Indiana Department of Veterans Affairs, at 317-232-3910.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Indiana, Indiana Department of Veterans Affairs, atiende en el 317-232-3910.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "317-232-3910",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Indiana Department of Veterans Affairs (official site)",
+          "label_es": "Indiana Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.in.gov/dva/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Kansas's state veterans agency, the Kansas Commission on Veterans Affairs Office, at 785-296-3976.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kansas, Kansas Commission on Veterans Affairs Office, atiende en el 785-296-3976.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "785-296-3976",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Commission on Veterans Affairs Office (official site)",
+          "label_es": "Kansas Commission on Veterans Affairs Office (sitio oficial)",
+          "url": "https://kcva.ks.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "Kentucky's Department of Veterans Affairs says its accredited representatives can represent you through the Board of Veterans' Appeals at no charge.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Kentucky indica que sus representantes acreditados pueden representarle hasta la Junta de Apelaciones de Veteranos sin costo.",
+          "source_url": "https://veterans.ky.gov/Benefits/Pages/default.aspx",
+          "source_name": "Kentucky Department of Veterans Affairs",
+          "quote": "Accredited representatives can represent you all the way through a Board of Veterans Appeals at no charge.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Kentucky's state veterans agency, the Kentucky Department of Veterans Affairs, at 502-564-9203.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kentucky, Kentucky Department of Veterans Affairs, atiende en el 502-564-9203.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "502-564-9203",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Department of Veterans Affairs (official site)",
+          "label_es": "Kentucky Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.ky.gov/Pages/index.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "Louisiana's VA-accredited veterans assistance counselors, all veterans themselves, staff 74 service offices around the state.",
+          "claim_es": "Los consejeros de asistencia para veteranos de Luisiana, acreditados por el VA y veteranos ellos mismos, atienden 74 oficinas de servicio en todo el estado.",
+          "source_url": "https://vetaffairs.la.gov/benefits",
+          "source_name": "Louisiana Department of Veterans Affairs",
+          "quote": "Our federal VA-accredited veterans assistance counselors (VACs), all veterans themselves, staff our 74 service offices around the state to fulfill this mission.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Louisiana, federal and state benefits can be reached through a VA-accredited veterans assistance counselor.",
+          "claim_es": "En Luisiana, los beneficios federales y estatales se pueden tramitar con un consejero de asistencia para veteranos acreditado por el VA.",
+          "source_url": "https://vetaffairs.la.gov/benefits/federal",
+          "source_name": "Louisiana Department of Veterans Affairs",
+          "quote": "All benefits, federal and state, can be accessed through one of our federal, VA-accredited veterans assistance counselors (VACs).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Louisiana's state veterans agency, the Louisiana Department of Veterans Affairs, at 225-219-5000.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Luisiana, Louisiana Department of Veterans Affairs, atiende en el 225-219-5000.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "225-219-5000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Louisiana Department of Veterans Affairs (official site)",
+          "label_es": "Louisiana Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.vetaffairs.la.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Massachusetts's state veterans agency, the Massachusetts Executive Office of Veterans Services, at 617-210-5480.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Massachusetts, Massachusetts Executive Office of Veterans Services, atiende en el 617-210-5480.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "617-210-5480",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Massachusetts Executive Office of Veterans Services (official site)",
+          "label_es": "Massachusetts Executive Office of Veterans Services (sitio oficial)",
+          "url": "https://www.mass.gov/orgs/executive-office-of-veterans-services"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "Maryland's Department of Veterans and Military Families explains how to get free help from its accredited Benefits Specialists.",
+          "claim_es": "El Departamento de Veteranos y Familias Militares de Maryland explica cómo recibir ayuda gratuita de sus especialistas en beneficios acreditados.",
+          "source_url": "https://veterans.maryland.gov/benefits-services/how-apply-benefits",
+          "source_name": "Maryland Department of Veterans Affairs",
+          "quote": "how to receive free assistance from a DVMF-accredited Benefits Specialist",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maryland's accredited officers are trained to support all VA appeal pathways.",
+          "claim_es": "Los oficiales acreditados de Maryland están capacitados para apoyar todas las vías de apelación del VA.",
+          "source_url": "https://veterans.maryland.gov/benefits-services/how-apply-benefits",
+          "source_name": "Maryland Department of Veterans Affairs",
+          "quote": "Our accredited officers are trained to support all VA appeal pathways.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Maryland's state veterans agency, the Maryland Department of Veterans Affairs, at 410-260-3838.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Maryland, Maryland Department of Veterans Affairs, atiende en el 410-260-3838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "410-260-3838",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Department of Veterans Affairs (official site)",
+          "label_es": "Maryland Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.maryland.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine's Veteran Service Officers help veterans for free to enroll in the VA system and access earned benefits.",
+          "claim_es": "Los oficiales de servicio para veteranos de Maine ayudan gratis a inscribirse en el sistema del VA y a acceder a los beneficios ganados.",
+          "source_url": "https://www.maine.gov/veterans/veterans-services-offices",
+          "source_name": "Maine Bureau of Veterans’ Services",
+          "quote": "Our highly-trained Veteran Service Officers (VSOs) are available to help you – for free – enroll in the VA system and to help you access your earned benefits.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Maine's state veterans agency, the Maine Bureau of Veterans’ Services, at 207-287-7020.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Maine, Maine Bureau of Veterans’ Services, atiende en el 207-287-7020.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "207-287-7020",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Bureau of Veterans’ Services (official site)",
+          "label_es": "Maine Bureau of Veterans’ Services (sitio oficial)",
+          "url": "https://www.maine.gov/veterans/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, veterans and dependents can choose any Veteran Service Officer or VA Benefits Counselor listed for their county, regardless of affiliation.",
+          "claim_es": "En Míchigan, los veteranos y dependientes pueden elegir a cualquier oficial de servicio o consejero de beneficios del VA de la lista de su condado, sin importar su afiliación.",
+          "source_url": "https://www.michigan.gov/mvaa/county-filter-search-locations",
+          "source_name": "Michigan Veterans Affairs Agency",
+          "quote": "Veterans and dependents can choose any Veteran Service Officer or VA Benefits Counselor on the list for their county of residence, regardless of affiliation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Michigan's state veterans agency, the Michigan Veterans Affairs Agency, at 800-642-4838.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Michigan, Michigan Veterans Affairs Agency, atiende en el 800-642-4838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-642-4838",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan Veterans Affairs Agency (official site)",
+          "label_es": "Michigan Veterans Affairs Agency (sitio oficial)",
+          "url": "https://www.michigan.gov/mvaa"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Minnesota's state veterans agency, the Minnesota Department of Veterans Affairs, at 888-546-5838.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Minnesota, Minnesota Department of Veterans Affairs, atiende en el 888-546-5838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "888-546-5838",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota Department of Veterans Affairs (official site)",
+          "label_es": "Minnesota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://mn.gov/mdva/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "Missouri offers a Veterans Service Officer Locator to find help filing for benefits.",
+          "claim_es": "Misuri ofrece un localizador de oficiales de servicio para veteranos para encontrar ayuda al solicitar beneficios.",
+          "source_url": "https://veteranbenefits.mo.gov/",
+          "source_name": "Missouri Veterans Commission",
+          "quote": "Use the Veterans Service Officer Locator to get help with filing for benefits.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Missouri's state veterans agency, the Missouri Veterans Commission, at 573-751-3779.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Missouri, Missouri Veterans Commission, atiende en el 573-751-3779.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "573-751-3779",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Veterans Commission (official site)",
+          "label_es": "Missouri Veterans Commission (sitio oficial)",
+          "url": "https://mvc.dps.mo.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Mississippi's state veterans agency, the Mississippi Department of Veterans Affairs, at 601-576-4850.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Mississippi, Mississippi Department of Veterans Affairs, atiende en el 601-576-4850.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "601-576-4850",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mississippi Department of Veterans Affairs (official site)",
+          "label_es": "Mississippi Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.msva.ms.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Montana's state veterans agency, the Montana Veterans Affairs Division, at 406-542-2501.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Montana, Montana Veterans Affairs Division, atiende en el 406-542-2501.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "406-542-2501",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Veterans Affairs Division (official site)",
+          "label_es": "Montana Veterans Affairs Division (sitio oficial)",
+          "url": "https://dma.mt.gov/mvad/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "North Carolina has both County Veterans Service Offices and State Veterans Service Centers that can certify some veteran applications locally.",
+          "claim_es": "Carolina del Norte tiene oficinas de servicio para veteranos en los condados y centros estatales que pueden certificar algunas solicitudes localmente.",
+          "source_url": "https://www.milvets.nc.gov/benefits-services/military-and-veteran-license-plates",
+          "source_name": "North Carolina Department of Military and Veterans Affairs",
+          "quote": "This application can be certified locally at either your County Veterans Service Office or a State Veterans Service Center.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists North Carolina's state veterans agency, the North Carolina Department of Military and Veterans Affairs, at 844-624-8387.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Carolina del Norte, North Carolina Department of Military and Veterans Affairs, atiende en el 844-624-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "844-624-8387",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Department of Military and Veterans Affairs (official site)",
+          "label_es": "North Carolina Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.milvets.nc.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, a Veteran Service Officer can help at no cost to you.",
+          "claim_es": "En Dakota del Norte, un oficial de servicio para veteranos puede ayudarle sin costo.",
+          "source_url": "https://www.veterans.nd.gov/benefits-and-services/what-am-i-eligible",
+          "source_name": "North Dakota Department of Veterans Affairs",
+          "quote": "A Veteran Service Officer can assist at NO COST to you!",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota's Department of Veterans Affairs trains and supports Tribal and County Veterans Service Officers, with seminars twice a year.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Dakota del Norte capacita y apoya a los oficiales de servicio tribales y de condado, con seminarios dos veces al año.",
+          "source_url": "https://www.veterans.nd.gov/about",
+          "source_name": "North Dakota Department of Veterans Affairs",
+          "quote": "Training and support for Tribal and County Veterans Service Officers, with seminars conducted twice annually.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists North Dakota's state veterans agency, the North Dakota Department of Veterans Affairs, at 701-239-7165.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Dakota del Norte, North Dakota Department of Veterans Affairs, atiende en el 701-239-7165.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "701-239-7165",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Department of Veterans Affairs (official site)",
+          "label_es": "North Dakota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.veterans.nd.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "Nebraska's Department of Veterans' Affairs publishes contact information for County Veteran Service Officers.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Nebraska publica los datos de contacto de los oficiales de servicio para veteranos de cada condado.",
+          "source_url": "https://veterans.nebraska.gov/vehicletax",
+          "source_name": "Nebraska Department of Veterans’ Affairs",
+          "quote": "Find your County Veteran Service Officer's contact information.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Nebraska's state veterans agency, the Nebraska Department of Veterans’ Affairs, at 402-471-2458.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nebraska, Nebraska Department of Veterans’ Affairs, atiende en el 402-471-2458.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "402-471-2458",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Department of Veterans’ Affairs (official site)",
+          "label_es": "Nebraska Department of Veterans’ Affairs (sitio oficial)",
+          "url": "https://veterans.nebraska.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists New Hampshire's state veterans agency, the New Hampshire Department of Military Affairs and Veterans Services, at 603-225-1200.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de New Hampshire, New Hampshire Department of Military Affairs and Veterans Services, atiende en el 603-225-1200.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "603-225-1200",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire Department of Military Affairs and Veterans Services (official site)",
+          "label_es": "New Hampshire Department of Military Affairs and Veterans Services (sitio oficial)",
+          "url": "https://www.dmavs.nh.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists New Jersey's state veterans agency, the New Jersey Department of Military and Veterans Affairs, at 609-530-6892.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nueva Jersey, New Jersey Department of Military and Veterans Affairs, atiende en el 609-530-6892.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "609-530-6892",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey Department of Military and Veterans Affairs (official site)",
+          "label_es": "New Jersey Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.nj.gov/military/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists New Mexico's state veterans agency, the New Mexico Department of Veterans Services, at 866-433-8387.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nuevo México, New Mexico Department of Veterans Services, atiende en el 866-433-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "866-433-8387",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Department of Veterans Services (official site)",
+          "label_es": "New Mexico Department of Veterans Services (sitio oficial)",
+          "url": "https://www.nmdvs.org/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada Department of Veterans Services officers offer free help with benefits, claims and getting discharge documents.",
+          "claim_es": "Los oficiales de servicio del Departamento de Servicios para Veteranos de Nevada ofrecen ayuda gratuita con beneficios, reclamos y documentos de baja.",
+          "source_url": "https://veterans.nv.gov/health-wellness/survivor-resources/",
+          "source_name": "Nevada Department of Veterans Services",
+          "quote": "Our dedicated Veterans Service Officers offer free assistance with benefits, claims, and obtaining discharge documents.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Nevada's state veterans agency, the Nevada Department of Veterans Services, at 775-688-1653.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nevada, Nevada Department of Veterans Services, atiende en el 775-688-1653.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "775-688-1653",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Department of Veterans Services (official site)",
+          "label_es": "Nevada Department of Veterans Services (sitio oficial)",
+          "url": "https://veterans.nv.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists New York's state veterans agency, the New York State Department of Veterans’ Services, at 518-474-6114.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nueva York, New York State Department of Veterans’ Services, atiende en el 518-474-6114.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "518-474-6114",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York State Department of Veterans’ Services (official site)",
+          "label_es": "New York State Department of Veterans’ Services (sitio oficial)",
+          "url": "https://veterans.ny.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists the Ohio Department of Veterans Services as Ohio's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Ohio Department of Veterans Services es la agencia estatal de veteranos de Ohio.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Ohio Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Department of Veterans Services (official site)",
+          "label_es": "Ohio Department of Veterans Services (sitio oficial)",
+          "url": "https://dvs.ohio.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "The Oklahoma Department of Veterans Affairs lets you make an appointment with a Veteran Service Officer.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Oklahoma permite pedir una cita con un oficial de servicio para veteranos.",
+          "source_url": "https://oklahoma.gov/veterans/veterans-services/find-a-service-officer.html",
+          "source_name": "Oklahoma Department of Veterans Affairs",
+          "quote": "Make an Appointment with a Veteran Service Officer",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Oklahoma's state veterans agency, the Oklahoma Department of Veterans Affairs, at 405-523-4000.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Oklahoma, Oklahoma Department of Veterans Affairs, atiende en el 405-523-4000.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "405-523-4000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oklahoma Department of Veterans Affairs (official site)",
+          "label_es": "Oklahoma Department of Veterans Affairs (sitio oficial)",
+          "url": "https://oklahoma.gov/veterans.html"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "Oregon's Department of Veterans' Affairs says to find a veteran service officer near you to start a claim.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Oregón indica que, para iniciar un reclamo, busque un oficial de servicio para veteranos cerca de usted.",
+          "source_url": "https://www.oregon.gov/odva/Benefits/Pages/Records-Medals.aspx",
+          "source_name": "Oregon Department of Veterans Affairs",
+          "quote": "To start a claim, find a veteran service officer near you.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Oregon's state veterans agency, the Oregon Department of Veterans Affairs, at 503-373-2085.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Oregon, Oregon Department of Veterans Affairs, atiende en el 503-373-2085.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "503-373-2085",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon Department of Veterans Affairs (official site)",
+          "label_es": "Oregon Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.oregon.gov/ODVA/Pages/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists the Pennsylvania Department of Military and Veterans Affairs as Pennsylvania's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Pennsylvania Department of Military and Veterans Affairs es la agencia estatal de veteranos de Pensilvania.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Pennsylvania Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Pennsylvania Department of Military and Veterans Affairs (official site)",
+          "label_es": "Pennsylvania Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.dmva.pa.gov/Pages/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Rhode Island's state veterans agency, the Rhode Island Office of Veterans Services, at 401-921-2119.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Rhode Island, Rhode Island Office of Veterans Services, atiende en el 401-921-2119.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "401-921-2119",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island Office of Veterans Services (official site)",
+          "label_es": "Rhode Island Office of Veterans Services (sitio oficial)",
+          "url": "https://vets.ri.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina's Department of Veterans' Affairs points veterans to their local county Veterans' Affairs Office to start a claim.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Carolina del Sur remite a los veteranos a la oficina de asuntos de veteranos de su condado para iniciar un reclamo.",
+          "source_url": "https://scdva.sc.gov/benefits-claims",
+          "source_name": "South Carolina Department of Veterans’ Affairs",
+          "quote": "Start the claims filing process at your local county Veterans' Affairs Office",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "South Carolina's County Veterans Affairs Offices (CVAOs) are a local resource for navigating VA benefits.",
+          "claim_es": "Las oficinas de asuntos de veteranos de los condados de Carolina del Sur (CVAO) son un recurso local para orientarse en los beneficios del VA.",
+          "source_url": "https://scsmartstart.sc.gov/trainings/veteran-benefits-county-veterans-affairs",
+          "source_name": "South Carolina Department of Veterans’ Affairs",
+          "quote": "The County Veterans Affairs Offices (CVAOs) are your trusted local resource for navigating VA benefits",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists South Carolina's state veterans agency, the South Carolina Department of Veterans’ Affairs, at 803-734-0200.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Carolina del Sur, South Carolina Department of Veterans’ Affairs, atiende en el 803-734-0200.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "803-734-0200",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Carolina Department of Veterans’ Affairs (official site)",
+          "label_es": "South Carolina Department of Veterans’ Affairs (sitio oficial)",
+          "url": "https://scdva.sc.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota has a network of County and Tribal Veteran Service Officers who can assist veterans.",
+          "claim_es": "Dakota del Sur tiene una red de oficiales de servicio para veteranos de condados y tribus que pueden ayudar a los veteranos.",
+          "source_url": "https://vetaffairs.sd.gov/resources/FilingDD214.aspx",
+          "source_name": "South Dakota Department of Veterans Affairs",
+          "quote": "our network of County and Tribal Veteran Service Officers can assist you",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists South Dakota's state veterans agency, the South Dakota Department of Veterans Affairs, at 605-773-3269.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Dakota del Sur, South Dakota Department of Veterans Affairs, atiende en el 605-773-3269.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "605-773-3269",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Department of Veterans Affairs (official site)",
+          "label_es": "South Dakota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://vetaffairs.sd.gov/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The Tennessee Department of Veterans Services trains County Service Officers to file claims for veterans across the state.",
+          "claim_es": "El Departamento de Servicios para Veteranos de Tennessee capacita a los oficiales de servicio de los condados para presentar reclamos de veteranos en todo el estado.",
+          "source_url": "https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits.html",
+          "source_name": "Tennessee Department of Veterans Services",
+          "quote": "TDVS also trains County Service Officers to effectively and efficiently file claims for Veterans across the state.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Veterans Service Officers at Tennessee's State Veterans Services Offices help veterans and families file claims for federal benefits.",
+          "claim_es": "Los oficiales de servicio de las oficinas estatales de Tennessee ayudan a veteranos y familias a presentar reclamos de beneficios federales.",
+          "source_url": "https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits.html",
+          "source_name": "Tennessee Department of Veterans Services",
+          "quote": "Veterans Service Officers at the State Veterans Services Offices help Veterans and their families to file claims for federal benefits.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Tennessee relies on County Service Officer partnerships to serve all 95 counties.",
+          "claim_es": "Tennessee depende de su alianza con los oficiales de servicio de los condados para atender sus 95 condados.",
+          "source_url": "https://www.tn.gov/veteran/veteran-benefits/federal-veteran-benefits.html",
+          "source_name": "Tennessee Department of Veterans Services",
+          "quote": "We could not serve all 95 Tennessee counties without County Service Officer partnerships.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Tennessee's state veterans agency, the Tennessee Department of Veterans Services, at 615-741-2345.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Tennessee, Tennessee Department of Veterans Services, atiende en el 615-741-2345.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "615-741-2345",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Tennessee Department of Veterans Services (official site)",
+          "label_es": "Tennessee Department of Veterans Services (sitio oficial)",
+          "url": "https://www.tn.gov/veteran.html"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Texas's state veterans agency, the Texas Veterans Commission, at 512-463-6564.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Texas, Texas Veterans Commission, atiende en el 512-463-6564.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "512-463-6564",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Texas Veterans Commission (official site)",
+          "label_es": "Texas Veterans Commission (sitio oficial)",
+          "url": "https://www.tvc.texas.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "Utah's Department of Veterans and Military Affairs notes that anyone giving VA benefits claims help must be accredited by the VA.",
+          "claim_es": "El Departamento de Asuntos de Veteranos y Militares de Utah señala que toda persona que ayude con reclamos de beneficios del VA debe estar acreditada por el VA.",
+          "source_url": "https://veterans.utah.gov/va-claims-assistance/",
+          "source_name": "Utah Department of Veterans and Military Affairs",
+          "quote": "Any individual providing VA benefits claims assistance must be accredited by the VA.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Utah's Veteran Service Officers are trained and accredited to represent Utah veterans in VA claims and appeals.",
+          "claim_es": "Los oficiales de servicio para veteranos de Utah tienen capacitación y acreditación para representar a veteranos de Utah en reclamos y apelaciones ante el VA.",
+          "source_url": "https://veterans.utah.gov/va-claims-assistance/",
+          "source_name": "Utah Department of Veterans and Military Affairs",
+          "quote": "Our Veteran Service Officers (VSO) are trained and accredited to represent Utah Veterans in filing claims with the VA and during the appeals process.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Utah's state veterans agency, the Utah Department of Veterans and Military Affairs, at 801-326-2372.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Utah, Utah Department of Veterans and Military Affairs, atiende en el 801-326-2372.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "801-326-2372",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah Department of Veterans and Military Affairs (official site)",
+          "label_es": "Utah Department of Veterans and Military Affairs (sitio oficial)",
+          "url": "https://veterans.utah.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Virginia's state veterans agency, the Virginia Department of Veterans Services, at 804-786-0286.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Virginia, Virginia Department of Veterans Services, atiende en el 804-786-0286.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "804-786-0286",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia Department of Veterans Services (official site)",
+          "label_es": "Virginia Department of Veterans Services (sitio oficial)",
+          "url": "https://www.dvs.virginia.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont's Office of Veterans Affairs recommends working with a service officer to discuss your options.",
+          "claim_es": "La Oficina de Asuntos de Veteranos de Vermont recomienda hablar de sus opciones con un oficial de servicio.",
+          "source_url": "https://veterans.vermont.gov/benefits-and-services/special-groups/disabled-veterans",
+          "source_name": "Vermont Office of Veterans Affairs",
+          "quote": "We recommend you work with a service officer to discuss your options.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Vermont's state veterans agency, the Vermont Office of Veterans Affairs, at 802-828-3379.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Vermont, Vermont Office of Veterans Affairs, atiende en el 802-828-3379.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "802-828-3379",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Office of Veterans Affairs (official site)",
+          "label_es": "Vermont Office of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.vermont.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "Washington's Department of Veterans Affairs points families to their County Veterans Assistance Program.",
+          "claim_es": "El Departamento de Asuntos de Veteranos de Washington remite a las familias al programa de asistencia para veteranos de su condado.",
+          "source_url": "https://www.dva.wa.gov/veterans-service-members-and-their-families/benefits-veteranmilitary-spouses-and-family-members",
+          "source_name": "Washington Department of Veterans Affairs",
+          "quote": "Contact your County Veterans Assistance Program for more information.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Washington's state veterans agency, the Washington Department of Veterans Affairs, at 800-562-2308.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Washington, Washington Department of Veterans Affairs, atiende en el 800-562-2308.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-562-2308",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Washington Department of Veterans Affairs (official site)",
+          "label_es": "Washington Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.dva.wa.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "VA's directory lists Wisconsin's state veterans agency, the Wisconsin Department of Veterans Affairs, at 800-947-8387.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Wisconsin, Wisconsin Department of Veterans Affairs, atiende en el 800-947-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-947-8387",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin Department of Veterans Affairs (official site)",
+          "label_es": "Wisconsin Department of Veterans Affairs (sitio oficial)",
+          "url": "https://dva.wi.gov/Pages/Home.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "West Virginia's Veteran Service Officers can explain what benefits you have earned and help you claim them.",
+          "claim_es": "Los oficiales de servicio para veteranos de Virginia Occidental pueden explicarle qué beneficios ha ganado y ayudarle a reclamarlos.",
+          "source_url": "https://veterans.wv.gov/resources/economic-benefits-and-assistance",
+          "source_name": "West Virginia Department of Veterans Assistance",
+          "quote": "Veteran Service Officers (VSOs) can explain what benefits you’ve earned and can help you claim them.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists West Virginia's state veterans agency, the West Virginia Department of Veterans Assistance, at 304-558-3661.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Virginia Occidental, West Virginia Department of Veterans Assistance, atiende en el 304-558-3661.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "304-558-3661",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Department of Veterans Assistance (official site)",
+          "label_es": "West Virginia Department of Veterans Assistance (sitio oficial)",
+          "url": "https://veterans.wv.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "Wyoming has Veterans Service Officers located around the state.",
+          "claim_es": "Wyoming tiene oficiales de servicio para veteranos en distintas partes del estado.",
+          "source_url": "https://www.wyomilitary.wyo.gov/resources/veteran/benefits-resources-military-records/",
+          "source_name": "Wyoming Veterans Commission",
+          "quote": "please don’t hesitate to contact one of our Veterans Service Officers located around Wyoming",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists Wyoming's state veterans agency, the Wyoming Veterans Commission, at 307-777-8152.",
+          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Wyoming, Wyoming Veterans Commission, atiende en el 307-777-8152.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "307-777-8152",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA says the services an accredited VSO representative provides on your VA benefit claim are always free.",
+          "claim_es": "El VA indica que los servicios de un representante acreditado de una organización de servicio para veteranos (VSO) en su reclamo de beneficios son siempre gratuitos.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "The services that an accredited VSO representative provides on your VA benefit claim are always free.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "claim_es": "Un representante acreditado de una VSO puede ayudarle a reunir pruebas, presentar un reclamo o pedir una revisión de la decisión.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "An accredited VSO representative can help you gather evidence, file a claim, or request a decision review.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA advises making sure anyone helping with your claim is accredited with VA.",
+          "claim_es": "El VA aconseja verificar que cualquier persona que le ayude con su reclamo esté acreditada por el VA.",
+          "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+          "source_name": "VA.gov: VA Accredited Representative FAQs",
+          "quote": "Before choosing someone to help you with your claim, make sure they’re accredited with VA.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wyoming Veterans Commission (official site)",
+          "label_es": "Wyoming Veterans Commission (sitio oficial)",
+          "url": "https://www.wyomilitary.wyo.gov/resources/veteran/veterans-commission/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    }
+  },
+  "skips": {}
+}

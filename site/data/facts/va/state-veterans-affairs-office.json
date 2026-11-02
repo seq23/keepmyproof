@@ -249,6 +249,54 @@
         }
       ]
     },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Colorado listed in VA's directory of state veterans affairs offices is the Colorado Department of Military and Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Colorado que aparece en el directorio de oficinas estatales del VA es Colorado Department of Military and Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Colorado Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Centennial CO 80112.",
+          "claim_es": "La oficina aparece en Centennial CO 80112.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Centennial CO 80112",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory describes the Colorado Division of Veterans Affairs as a state agency mandated by state statute.",
+          "claim_es": "El directorio del VA describe a la División de Asuntos de Veteranos de Colorado como una agencia estatal creada por ley estatal.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "The Colorado Division of Veterans Affairs (DVA) is a state agency mandated by state statute.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "It offers advocacy to Colorado veterans, family members and survivors seeking benefits earned through military service, through trained service officers.",
+          "claim_es": "Ofrece apoyo a veteranos, familiares y sobrevivientes de Colorado que buscan beneficios ganados por su servicio militar, por medio de oficiales de servicio capacitados.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "We offer advocacy to Colorado Veterans, family members and survivors in securing benefits they may be entitled to through their military service",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Department of Military and Veterans Affairs (official site)",
+          "label_es": "Colorado Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://vets.colorado.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
     "CT": {
       "facts": [
         {
@@ -569,6 +617,46 @@
           "label_en": "Iowa Department of Veterans Affairs (official site)",
           "label_es": "Iowa Department of Veterans Affairs (sitio oficial)",
           "url": "https://dva.iowa.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Idaho listed in VA's directory of state veterans affairs offices is the Idaho Division of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Idaho que aparece en el directorio de oficinas estatales del VA es Idaho Division of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Idaho Division of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Boise ID 83702.",
+          "claim_es": "La oficina aparece en Boise ID 83702.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Boise ID 83702",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory says Idaho's Office of Veterans Advocacy is a full-service bureau that helps veterans, their family members and survivors.",
+          "claim_es": "El directorio del VA indica que la Oficina de Defensa de Veteranos de Idaho es una oficina de servicio completo que ayuda a veteranos, sus familiares y sobrevivientes.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "The Office of Veterans Advocacy is a full-service bureau that helps veterans, their family members and survivors.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Division of Veterans Services (official site)",
+          "label_es": "Idaho Division of Veterans Services (sitio oficial)",
+          "url": "https://veterans.idaho.gov/"
         },
         {
           "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
@@ -2338,8 +2426,5 @@
       ]
     }
   },
-  "skips": {
-    "CO": "only 2 quote-verified facts on official sources",
-    "ID": "only 2 quote-verified facts on official sources"
-  }
+  "skips": {}
 }
