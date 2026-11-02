@@ -7,9 +7,15 @@ import { AppLock, createLock, type LockRecord, type LockStore } from '../core/lo
 import { b64, unb64, recoveryKey, type Random } from '../core/crypto';
 import { clearTemporary } from '../core/cleanup';
 import { Vault, prepareInstall, type InstallStore } from '../core/vault';
+import { isLang, type Lang } from '../core/model';
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
-const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1';
+const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1', LANG = 'kmp-lang-v1';
+/** The language picked on the first screen or in Settings. null = follow the phone's language. */
+export const langChoice = {
+  read: async (): Promise<Lang | null> => { const v = await SecureStore.getItemAsync(LANG, options); return isLang(v) ? v : null; },
+  write: async (lang: Lang) => { await SecureStore.setItemAsync(LANG, lang, options); },
+};
 let db: SQLite.SQLiteDatabase | undefined;
 export async function database(): Promise<InstallStore> {
   if (!db) {

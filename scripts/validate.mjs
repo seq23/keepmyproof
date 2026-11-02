@@ -58,9 +58,14 @@ const checks={
     // app, store and website copy. Competitor names (R-REPO-06): never in app or store copy; the
     // website may compare.
     const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?/iu;
+    // App and store copy in all four languages (ZH and KO added 2 Nov 2026): the same claims in Chinese and
+    // Korean, plus "court-ready". The website has its own gate for these words (site/lib/gate.mjs), whose
+    // source quotes them, so this list reads app and store copy only.
+    const appClaims=/court.ready|listos? para (?:la )?corte|法庭(?:可)?(?:采纳|采信|认可)|可呈堂|法庭就绪|胜诉|打赢官司|无法(?:被)?(?:破解|入侵)|军用级|军事级|黑人(?:拥有|所有|创办)|법정(?:에서)?\s*(?:인정|채택|사용\s*가능)|법정용|증거\s*능력|승소|해킹\s*불가|군사\s*등급|군용\s*(?:등급|수준)|흑인\s*(?:소유|운영)/iu;
     const competitors=/vaultaire|proofnest/iu;
     for(const [f,s] of [...content,...site])if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
     for(const [f,s] of content)if(competitors.test(s))throw Error(`COMPETITOR_IN_STORE_COPY ${f}`);
+    for(const [f,s] of content)if(appClaims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
   },
   'verified-facts':async()=>{
     // The published site, offline: every state page carries 3+ facts from verified, official sources

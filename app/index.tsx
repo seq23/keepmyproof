@@ -5,23 +5,25 @@ import { getLocales } from 'expo-localization';
 import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
-import { checked, contentDigest, folderLines, homeButtons, launchFolders, tickedBy, validate, type Item, type Lang } from '../src/core/model';
+import { LANGS, LANG_NAME, LOCALE, checked, contentDigest, folderLines, homeButtons, launchFolders, phoneLang, tickedBy, validate, type Item, type Labels, type Lang } from '../src/core/model';
 import { userDate, editableDate, dateBoundary } from '../src/core/dates';
 import { FREE_LIMIT, Vault, mayAdd, type Draft } from '../src/core/vault';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
-import { Button, Card, Field, P, Theme, styles, usePalette } from '../src/ui';
+import { Button, Card, Field, LangContext, P, Theme, styles, textProps, usePalette } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
 const parseDate = (v: string) => userDate(v).toISOString();
+// First-launch picker: each choice in its own language.
+const CONTINUE: Labels = { en: 'Continue in English ›', es: 'Continuar en español ›', zh: '继续使用简体中文 ›', ko: '한국어로 계속하기 ›' };
 export default function App() {
   const palette = usePalette();
-  const [lang, setLang] = useState<Lang>(getLocales()[0]?.languageCode === 'es' ? 'es' : 'en');
+  const [lang, setLang] = useState<Lang>(phoneLang(getLocales()[0]));
   const t = copy(lang);
   const [screen, setScreen] = useState<Screen>('first');
   const [ready, setReady] = useState(false), [busy, setBusy] = useState(false);
@@ -55,6 +57,7 @@ export default function App() {
   }
   useEffect(() => {
     mounted.current = true;
+    void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
     void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
@@ -71,7 +74,7 @@ export default function App() {
   useEffect(() => {
     const listener = AppState.addEventListener('change', state => {
       if (state === 'active') {
-        setLang(getLocales()[0]?.languageCode === 'es' ? 'es':'en');
+        void device.langChoice.read().then(l => setLang(l ?? phoneLang(getLocales()[0]))).catch(() => {});
         void billing.entitlement().then(setEnt).catch(() => {});
       }
     }); return () => listener.remove();
@@ -88,6 +91,7 @@ export default function App() {
     } finally { busyRef.current = false; setBusy(false); }
   }
   const doRun = (job: () => Promise<void>) => () => { void run(job); };
+  function chooseLang(l: Lang) { setLang(l); void device.langChoice.write(l).catch(() => setError(copy(l)('error'))); }
   useEffect(() => { if (screen === 'plus') void billing.products().then(setProducts).catch(() => setError(t('error'))); }, [screen, billing]);
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
@@ -106,13 +110,13 @@ export default function App() {
   const state = vault?.snapshot();
   const folderName = (id: string) => {
     const f = launchFolders.find(x => x.id === id);
-    return f ? f.display_name![lang] : state?.folders.find(x => x.id === id)?.title ?? '';
+    return f ? (f.display_name as Labels)[lang] : state?.folders.find(x => x.id === id)?.title ?? '';
   };
   const title = folderName(folder);
   const lines = state ? folderLines(state, folder, lang) : [];
   const folderItems = state?.items.filter(i => i.folder === folder).sort((a,b) => b.savedOn.localeCompare(a.savedOn)) ?? [];
   const item = state?.items.find(i => i.id === itemId);
-  const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(lang === 'es' ? 'es-US':'en-US') : t('unknown');
+  const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(LOCALE[lang]) : t('unknown');
   const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={setDateInput} />
     <Button quiet title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => setUnknown(v => !v)} /></>;
   const backupStale = state && state.backup?.digest !== contentDigest(state);
@@ -150,8 +154,7 @@ export default function App() {
       for (const d of sampleVault()) await v.add(d, false);
       acceptVault(v);
     })} />}
-    <Button title="Continue in English ›" onPress={() => { setLang('en'); navigate('setup'); }} />
-    <Button title="Continuar en español ›" onPress={() => { setLang('es'); navigate('setup'); }} />
+    {LANGS.map(l => <Button key={l} title={CONTINUE[l]} onPress={() => { chooseLang(l); navigate('setup'); }} />)}
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
   else if (screen === 'setup') body = <><P muted>{t('step2')}</P><P heading>{t('lockTitle')}</P><P>{t('six')}</P>
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
@@ -199,7 +202,7 @@ export default function App() {
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
     <P section>{t('canKeep')}</P>
     <View style={styles.tiles}>{([['page','keepLetters'],['phone','keepTexts'],['receipt','keepBills'],['camera','keepPhotos'],['calendar','keepNotes'],['medical','keepSchool']] as [GlyphName, StringKey][])
-      .map(([g,key]) => <View key={key} style={[styles.tile,{ backgroundColor:palette.tile }]}><Glyph name={g} bg={palette.tile} /><Text style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center' }}>{t(key)}</Text></View>)}</View>
+      .map(([g,key]) => <View key={key} style={[styles.tile,{ backgroundColor:palette.tile }]}><Glyph name={g} bg={palette.tile} /><Text {...textProps(lang)} style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center' }}>{t(key)}</Text></View>)}</View>
     <P section>{t('home')}</P>
     {homeButtons(state).map(b => b.kind === 'folder'
       ? <BigButton key={b.id} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
@@ -275,6 +278,7 @@ export default function App() {
     <Card><P>{t('recovery')}</P><P muted>{t('confirmed')}</P></Card><P heading>{t('newPhone')}</P><P>{t('restoreHint')}</P><P muted>{t('loss')}</P>
     {btn('restore', () => {setRestoreData(null);setWordInput('');navigate('restore');})}<P muted>{t('restoreSafety')}</P></>;
   else if (screen === 'settings') body = <><P heading>{t('settings')}</P><P muted>{t('noAnalytics')}</P>
+    <Card><P>{t('language')}</P>{LANGS.map(l => <Button quiet key={l} checked={lang === l} title={`${lang === l ? '✓':'○'} ${LANG_NAME[l]}`} onPress={() => chooseLang(l)} />)}</Card>
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
     {[...launchFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
@@ -292,7 +296,7 @@ export default function App() {
     })}{btn('notNow', () => navigate('home'),true)}<P muted>{t('storeConfirm')}</P>
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
   else body = <P>{t('empty')}</P>;
-  return <Theme.Provider value={palette}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
+  return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
       {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
@@ -301,19 +305,19 @@ export default function App() {
     {vault && ['home','backup','settings'].includes(screen) && <View style={[styles.tabs,{backgroundColor:palette.card}]}>
       {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
     </View>}
-  </SafeAreaView></Theme.Provider>;
+  </SafeAreaView></LangContext.Provider></Theme.Provider>;
 }
 
 // One big tappable folder door on Home: drawing, name, one grey sub line, "Open ›" on the right.
 function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
   glyph: GlyphName; title: string; sub: string; go: string; tag?: string; dashed?: boolean; disabled?: boolean; onPress: () => void;
 }) {
-  const c = React.useContext(Theme);
+  const c = React.useContext(Theme), tp = textProps(React.useContext(LangContext));
   return <Pressable accessibilityRole="button" accessibilityLabel={`${title}. ${sub}`} disabled={disabled} onPress={onPress}
     style={({ pressed }) => [styles.big, { backgroundColor:c.card, borderColor: dashed ? c.muted : c.ok, borderStyle: dashed ? 'dashed' : 'solid', opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
     <Glyph name={glyph} size={44} />
-    <View style={styles.flex}><Text style={{ color:c.fg, fontSize:16, fontWeight:'600' }}>{title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11 }}>{tag}</Text>}</Text>
-      <Text style={{ color:c.muted, fontSize:13, lineHeight:18 }}>{sub}</Text></View>
+    <View style={styles.flex}><Text {...tp} style={{ color:c.fg, fontSize:16, fontWeight:'600' }}>{title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11 }}>{tag}</Text>}</Text>
+      <Text {...tp} style={{ color:c.muted, fontSize:13, lineHeight:18 }}>{sub}</Text></View>
     <Text style={{ color:c.ok, fontSize:15, fontWeight:'600' }}>{go}</Text>
   </Pressable>;
 }
@@ -321,12 +325,12 @@ function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
 function TickRow({ title, sub, done, add, tag, first, disabled, onPress }: {
   title: string; first?: boolean; sub?: string; done?: boolean; add?: boolean; tag?: string; disabled?: boolean; onPress: () => void;
 }) {
-  const c = React.useContext(Theme);
+  const c = React.useContext(Theme), tp = textProps(React.useContext(LangContext));
   return <Pressable accessibilityRole={add ? 'button' : 'checkbox'} accessibilityState={{ checked: add ? undefined : !!done, disabled }} accessibilityLabel={title}
     disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.tickRow, { borderTopColor:c.line, borderTopWidth: first ? 0 : 1, opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
     <View style={[styles.box, { borderColor: add || done ? c.ok : c.muted, borderStyle: add ? 'dashed' : 'solid', backgroundColor: done ? c.ok : 'transparent' }]}>
       <Text style={{ color: done ? c.card : c.ok, fontSize:15, fontWeight:'700', lineHeight:18 }}>{done ? '✓' : add ? '+' : ''}</Text></View>
-    <View style={styles.flex}><Text style={{ color: add ? c.ok : c.fg, fontSize:15, lineHeight:20, fontWeight: add ? '600' : '400' }}>{add ? title.replace(/^\+\s*/, '') : title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11, fontWeight:'600' }}>{tag}</Text>}</Text>
-      {sub && <Text style={{ color:c.muted, fontSize:12, lineHeight:16 }}>{sub}</Text>}</View>
+    <View style={styles.flex}><Text {...tp} style={{ color: add ? c.ok : c.fg, fontSize:15, lineHeight:20, fontWeight: add ? '600' : '400' }}>{add ? title.replace(/^\+\s*/, '') : title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11, fontWeight:'600' }}>{tag}</Text>}</Text>
+      {sub && <Text {...tp} style={{ color:c.muted, fontSize:12, lineHeight:16 }}>{sub}</Text>}</View>
   </Pressable>;
 }

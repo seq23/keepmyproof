@@ -1,9 +1,14 @@
 # KeepMyProof
 
 Private papers, photos and notes, organized on your phone. No account, ads,
-analytics, AI processing, inbox access or automatic sharing. English and US
-Spanish follow the phone. All five launch folders and suggested checklists come
-from **topics.json**, the single topic catalog.
+analytics, AI processing, inbox access or automatic sharing. English, US Spanish,
+Simplified Chinese and Korean (all written for US residents) follow the phone until
+a language is picked on the first screen or in Settings; the pick is kept. All five
+launch folders and suggested checklists come from **topics.json**, the single topic
+catalog. Spanish, Chinese and Korean are marked for a native reader before launch
+(`native_review` in topics.json); `tests/strings.test.ts` fails if any string, folder
+name or checklist line is missing in any language, or would overflow a 390pt phone.
+Chinese and Korean use the system fonts (no serif headings); Korean wraps by word.
 
 Free includes 25 items, app lock, both dates, checklist ticks, full-folder PDF,
 original-file export, encrypted backup and restore. The limit stops **adding**.
@@ -175,6 +180,9 @@ prints each `NAMED STOP [CODE]` and exits 2.
   our list price may never be below it.
 - **LEGAL_URLS_UNREACHABLE**: keepmyproof.com/terms and /privacy must answer 200
   (probed live on every run). The website publishes them from `store/`.
+- **NATIVE_REVIEW_PENDING**: every language in topics.json `languages` other
+  than English needs `native_review` set to "reviewed YYYY-MM-DD by …" after a
+  native US reader checks the app strings, checklists and `store/<lang>.md`.
 - **SUPPORT_ADDRESS_NOT_ON_DOMAIN**: `site/config.mjs` `supportEmail` must be an
   `@keepmyproof.com` address and the domain must have MX records (live lookup).
   support@keepmyproof.com forwards through Cloudflare Email Routing (set up 2 Nov 2026).
