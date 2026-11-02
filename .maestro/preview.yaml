@@ -59,7 +59,7 @@ appId: com.keepmyproof.app
     visible: "My folders"
     timeout: 30000
 
-# Sample papers: three in Divorce prep (one checklist line ticked), two in Workplace evidence.
+# Sample papers: two in Divorce prep (one checklist line ticked), one in Workplace evidence.
 - scrollUntilVisible:
     element: "Workplace evidence"
     direction: DOWN
@@ -101,7 +101,7 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd
 - takeScreenshot: 06-home
 
-# A folder, adding a paper (cancelled, so the folder keeps its three), a paper, the folder PDF.
+# A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
     element: "Divorce prep"
     direction: DOWN
@@ -131,7 +131,7 @@ appId: com.keepmyproof.app
     visible: "Checklist"
     timeout: 15000
 - scrollUntilVisible:
-    element: "Parenting schedule draft"
+    element: "Make a PDF of this folder ›"
     direction: DOWN
 - tapOn:
     text: "Open ›"
