@@ -679,6 +679,35 @@
         }
       ],
       "official_links": []
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "In Pennsylvania, a claim that would otherwise expire within one year after the death is not barred until a full year has passed.",
+          "claim_es": "En Pensilvania, un reclamo que de otro modo vencería dentro del primer año después de la muerte no queda prohibido hasta que pase un año completo.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "a claim which otherwise would be barred within one year after the death of the decedent shall not be barred until the expiration of one year",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, written notice of a claim given to the personal representative or their attorney before the claim is barred pauses the statute of limitations.",
+          "claim_es": "En Pensilvania, el aviso escrito de un reclamo dado al representante personal o a su abogado antes de que venza detiene el plazo de prescripción.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "Written notice of any claim against a decedent given to the personal representative or his attorney of record before the claim is barred shall toll the statute of limitations.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, claims against the person who died generally become unenforceable after one year, except for certain liens and judgments.",
+          "claim_es": "En Pensilvania, los reclamos contra la persona fallecida por lo general dejan de poder cobrarse después de un año, salvo ciertos gravámenes y sentencias.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "shall become unenforceable after one year from the",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -702,7 +731,6 @@
     "NM": "no official source found",
     "NY": "no official source found",
     "OK": "no official source found",
-    "PA": "no official source found",
     "SD": "no official source found",
     "TN": "no official source found",
     "TX": "no official source found",

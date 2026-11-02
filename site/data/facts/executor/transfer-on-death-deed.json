@@ -455,6 +455,64 @@
         }
       ],
       "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada's version of a transfer-on-death deed is called a \"deed upon death.\"",
+          "claim_es": "En Nevada, la escritura de transferencia al fallecer se llama \"deed upon death\" (escritura al fallecer).",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-111.html",
+          "source_name": "Nevada Revised Statutes, Chapter 111",
+          "quote": "A deed created pursuant to this section must be known as a deed upon death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, if the owner records more than one deed upon death for the same property, the last one recorded before death is the one that counts.",
+          "claim_es": "En Nevada, si el dueño registra más de una escritura al fallecer para la misma propiedad, vale la última registrada antes de la muerte.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-111.html",
+          "source_name": "Nevada Revised Statutes, Chapter 111",
+          "quote": "the deed upon death that is last recorded before the death of the owner is the effective d",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, making or revoking a deed upon death requires the same capacity as making a will.",
+          "claim_es": "En Nevada, hacer o revocar una escritura al fallecer requiere la misma capacidad que hacer un testamento.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-111.html",
+          "source_name": "Nevada Revised Statutes, Chapter 111",
+          "quote": "The capacity required to make or revoke a deed upon death is the same as the capacity required to make a will.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "Oregon allows a person to pass property to one or more named beneficiaries at death with a transfer on death deed.",
+          "claim_es": "Oregón permite que una persona deje bienes a uno o más beneficiarios nombrados al morir con una escritura de transferencia al fallecer.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors093.html",
+          "source_name": "Oregon Revised Statutes, Chapter 93",
+          "quote": "may transfer property to one or more designated beneficiaries effective at the",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, a transfer on death deed can be revoked even if the deed says otherwise.",
+          "claim_es": "En Oregón, la escritura de transferencia al fallecer se puede revocar aunque diga lo contrario.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors093.html",
+          "source_name": "Oregon Revised Statutes, Chapter 93",
+          "quote": "A transfer on death deed is revocable even if the deed or another instrument contains a contrary provision.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, an agent of the owner may revoke the deed only if the deed expressly gives that authority.",
+          "claim_es": "En Oregón, un agente del dueño puede revocar la escritura solo si la escritura le da expresamente esa facultad.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors093.html",
+          "source_name": "Oregon Revised Statutes, Chapter 93",
+          "quote": "If authority is expressly granted by the transfer on death deed, a designated agent of the transferor may revoke the transfer on death deed",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -477,14 +535,12 @@
     "MA": "no official source found",
     "MI": "no official source found",
     "MS": "no official source found",
-    "NV": "no official source found",
     "NH": "no official source found",
     "NJ": "no official source found",
     "NM": "no official source found",
     "NY": "no official source found",
     "NC": "no official source found",
     "OK": "no official source found",
-    "OR": "no official source found",
     "PA": "no official source found",
     "RI": "no official source found",
     "SC": "no official source found",
