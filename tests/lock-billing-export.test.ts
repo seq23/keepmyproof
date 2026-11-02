@@ -117,7 +117,7 @@ test('release gate stops a store build until keys, device test, price recheck an
   const {stops,DEVICE_CHECKS}=await import('../scripts/release-gate.mjs');const now=Date.parse('2026-12-01T00:00:00Z');
   const files:Record<string,unknown>={'release/device-gate.json':{version:'1.0.0',checks:Object.fromEntries(DEVICE_CHECKS.map(c=>[c,true]))},
     'release/price-check.json':{checkedOn:'2026-11-28',incumbentLifetimeUSD:39.99}};
-  const ready={env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},version:'1.0.0',readJson:(p:string)=>files[p]??null,probe:async()=>200,now};
+  const ready={env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},version:'1.0.0',readJson:(p:string)=>files[p]??null,probe:async()=>200,supportEmail:'support@keepmyproof.com',mx:async()=>1,now};
   assert.deepEqual(await stops(ready),[]);
   const codes=async(patch:object)=>(await stops({...ready,...patch})).map(s=>s.code);
   assert.deepEqual(await codes({env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}}),['REVENUECAT_KEY_MISSING']);
@@ -126,5 +126,7 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.deepEqual(await codes({now:now+30*86400_000}),['PRICE_RECHECK_PENDING']);
   assert.deepEqual(await codes({readJson:(p:string)=>p.includes('price')?{checkedOn:'2026-11-28',incumbentLifetimeUSD:49.99}:files[p]}),['PRICED_BELOW_INCUMBENT']);
   assert.deepEqual(await codes({probe:async()=>0}),['LEGAL_URLS_UNREACHABLE','LEGAL_URLS_UNREACHABLE']);
-  assert.equal((await stops({...ready,env:{},readJson:()=>null,probe:async()=>404})).length,5);
+  assert.deepEqual(await codes({supportEmail:'help@example.invalid'}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
+  assert.deepEqual(await codes({mx:async()=>0}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
+  assert.equal((await stops({...ready,env:{},readJson:()=>null,probe:async()=>404,supportEmail:undefined})).length,6);
 });

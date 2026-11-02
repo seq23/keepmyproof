@@ -112,6 +112,23 @@ CI validator. Safety checks live in `scripts/validate.mjs`, registered in
 Private identity fingerprints and email/credential checks help prevent accidental
 public disclosures. Human review must still reject real people/customer fixtures.
 
+## Website (keepmyproof.com)
+
+`site/` builds the static site with plain Node: `node site/build.mjs` writes
+`site/dist/`. Folder names and checklists come from `topics.json`; Terms and
+Privacy from `store/en.md` and `store/es.md`, so the app, store listing and site
+share one text. English at `/`, Spanish at `/es/`. Prices, the free limit, the
+support address and the store links live in `site/config.mjs`; until a store URL
+is set there the site says "coming soon" and shows no store badge, link or app
+schema. At launch: set both store URLs and replace `assets/site/og.png`.
+
+Hosting is the Cloudflare Pages git project `keepmyproof` (root `site`, build
+`node build.mjs`, output `dist`): every push to main deploys keepmyproof.com, and
+www redirects to it. No workflow deploys anything. After a content change, ping
+IndexNow with the key file the build publishes (`SITE.indexNowKey`).
+`tests/site.test.ts` checks folders, canonicals, hreflang, sitemap, store links
+and prices against the app's own constants.
+
 ## Named stops
 
 Store builds are refused in code until these clear: `npm run release-gate` (also
@@ -125,8 +142,11 @@ prints each `NAMED STOP [CODE]` and exits 2.
 - **PRICE_RECHECK_PENDING / PRICED_BELOW_INCUMBENT**: `release/price-check.json`
   must hold the incumbent's App Store lifetime price, checked in the last 7 days;
   our list price may never be below it.
-- **LEGAL_URLS_UNREACHABLE**: keepmyproof.com/terms and /privacy must answer 200.
-  Draft EN/ES policies are in `store/` for the website step.
+- **LEGAL_URLS_UNREACHABLE**: keepmyproof.com/terms and /privacy must answer 200
+  (probed live on every run). The website publishes them from `store/`.
+- **SUPPORT_ADDRESS_NOT_ON_DOMAIN**: `site/config.mjs` `supportEmail` must be an
+  `@keepmyproof.com` address and the domain must have MX records (live lookup). Until
+  Email Routing is set up on keepmyproof.com, the site shows the Spry Labs contact.
 
 Without a key the app runs on the mock, which throws `REVENUECAT_KEY_MISSING` on
 any purchase. Nothing here creates accounts, builds binaries or submits to a store.

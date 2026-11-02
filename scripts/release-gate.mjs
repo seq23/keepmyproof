@@ -3,6 +3,8 @@
 // Node only) and locally with `npm run release-gate`. Exit 2 + "NAMED STOP [CODE] …" lines = not ready.
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { resolveMx } from 'node:dns/promises';
+import { SITE } from '../site/config.mjs';
 
 // Spec "Release gate every version": each must be recorded true on a real device for this version.
 export const DEVICE_CHECKS = [
@@ -13,10 +15,11 @@ export const DEVICE_CHECKS = [
 ];
 export const LIST_LIFETIME_USD = 39.99;
 export const LEGAL_URLS = ['https://keepmyproof.com/terms', 'https://keepmyproof.com/privacy'];
+export const SUPPORT_DOMAIN = 'keepmyproof.com';
 const DAY = 86_400_000;
 
 /** Every stop that still applies, in order. `[]` = ready to build for the stores. */
-export async function stops({ env, version, readJson, probe, now = Date.now() }) {
+export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now() }) {
   const out = [];
   const stop = (code, why) => out.push({ code, why });
   if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_') || !env.EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY?.startsWith('goog_'))
@@ -33,6 +36,9 @@ export async function stops({ env, version, readJson, probe, now = Date.now() })
     stop('PRICED_BELOW_INCUMBENT', `our $${LIST_LIFETIME_USD} lifetime list price is below the incumbent's $${price.incumbentLifetimeUSD}; her ruling is never to undercut it.`);
   for (const url of LEGAL_URLS) if ((await probe(url)) !== 200)
     stop('LEGAL_URLS_UNREACHABLE', `${url} does not answer 200; the app and store link to it.`);
+  // The store listing's support address must be the app's own and receive mail (live MX lookup).
+  if (!supportEmail?.endsWith(`@${SUPPORT_DOMAIN}`) || (await mx(SUPPORT_DOMAIN)) < 1)
+    stop('SUPPORT_ADDRESS_NOT_ON_DOMAIN', `site/config.mjs supportEmail (${supportEmail ?? 'unset'}) is not a mail-receiving @${SUPPORT_DOMAIN} address; set up Email Routing on ${SUPPORT_DOMAIN} (no cost) and point supportEmail at it.`);
   return out;
 }
 
@@ -46,7 +52,8 @@ async function main() {
   if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
   const readJson = path => existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
   const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow' })).status; } catch { return 0; } };
-  const found = await stops({ env: process.env, version, readJson, probe });
+  const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
+  const found = await stops({ env: process.env, version, readJson, probe, supportEmail: SITE.supportEmail, mx });
   for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
   if (found.length) { process.exitCode = 2; return; }
   console.log(`release gate: ${version} is clear for a store build.`);

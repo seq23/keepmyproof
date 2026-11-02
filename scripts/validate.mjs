@@ -7,6 +7,9 @@ const files=execFileSync('git',['ls-files','--cached','--others','--exclude-stan
 if(!files.length)throw Error('NO_FILES');
 const texts=files.filter(f=>!f.endsWith('package-lock.json')&&!f.startsWith('assets/')).map(f=>[f,readFileSync(f,'utf8')]);
 const app=texts.filter(([f])=>/^(src|app)\//.test(f));
+// Public business addresses the website shows on purpose: the app's own domain, and the Spry Labs
+// contact used until a keepmyproof.com mailbox exists (release gate SUPPORT_ADDRESS_NOT_ON_DOMAIN).
+const PUBLIC_ADDRESS=e=>/@keepmyproof\.com$/i.test(e)||e.toLowerCase()==='hello@theindustryguides.com';
 const sha=s=>createHash('sha256').update(s.toLowerCase()).digest('hex');
 const privateHashes=JSON.parse(readFileSync('scripts/private-hashes.json','utf8'));
 const checks={
@@ -15,7 +18,7 @@ const checks={
     for(const [f,s] of texts){
       if(/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:ghp_|gho_|github_pat_|sk_live_|sk_test_)[A-Za-z0-9_]{16,}|\bAKIA[A-Z0-9]{16}\b/.test(s))bad.push(f);
       const emails=s.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi)||[];
-      if(emails.some(e=>!e.endsWith('@users.noreply.github.com')&&!e.endsWith('@example.invalid')))bad.push(f);
+      if(emails.some(e=>!e.endsWith('@users.noreply.github.com')&&!e.endsWith('@example.invalid')&&!PUBLIC_ADDRESS(e)))bad.push(f);
       if(/\(\d{3}\)\s*\d{3}[- ]\d{4}/.test(s))bad.push(f);
       if(s.split(/[^\p{L}\p{N}@._+-]+/u).some(w=>w.length>3&&privateHashes.includes(sha(w))))bad.push(f);
     }
@@ -44,10 +47,15 @@ const checks={
   'honest-claims':()=>{
     const content=texts.filter(([f])=>f==='src/strings.ts'||f.startsWith('store/'));
     if(!content.length)throw Error('NO_APP_CONTENT');
-    // EN and ES: prohibited evidence/security claims (R-ADV-01/02), competitor names in app or store
-    // copy (R-REPO-06; the website may compare, the store listing never), race-labelled branding.
-    const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?|vaultaire|proofnest/iu;
-    for(const [f,s] of content)if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
+    const site=texts.filter(([f])=>f.startsWith('site/')&&f.endsWith('.mjs'));
+    if(!site.length)throw Error('NO_SITE_CONTENT');
+    // EN and ES: prohibited evidence/security claims (R-ADV-01/02) and race-labelled branding, in the
+    // app, store and website copy. Competitor names (R-REPO-06): never in app or store copy; the
+    // website may compare.
+    const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?/iu;
+    const competitors=/vaultaire|proofnest/iu;
+    for(const [f,s] of [...content,...site])if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
+    for(const [f,s] of content)if(competitors.test(s))throw Error(`COMPETITOR_IN_STORE_COPY ${f}`);
   },
 };
 const seen=new Set();
