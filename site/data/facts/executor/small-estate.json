@@ -1135,8 +1135,8 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "In West Virginia, the county commission clerk may require a certified death certificate or other proof of death and residence.",
-          "claim_es": "En Virginia Occidental, el secretario de la comisión del condado puede exigir un acta de defunción certificada u otra prueba de la muerte y residencia.",
+          "claim_en": "In West Virginia, the county commission clerk may require a certified death certificate or other evidence of death and residence.",
+          "claim_es": "En Virginia Occidental, el secretario de la comisión del condado puede exigir un acta de defunción certificada u otro documento que acredite la muerte y la residencia.",
           "source_url": "https://code.wvlegislature.gov/44-1A-2/",
           "source_name": "West Virginia Code § 44-1A-2",
           "quote": "may require a certified copy of the decedent's death certificate or other proof of death and residence",

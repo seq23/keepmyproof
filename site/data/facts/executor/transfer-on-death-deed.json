@@ -1,0 +1,498 @@
+{
+  "folder": "executor",
+  "subtopic": "transfer-on-death-deed",
+  "title_en": "Transfer-on-death deeds for a home in {state}",
+  "title_es": "Escrituras de transferencia al fallecer (TOD) para una vivienda en {state_es}",
+  "search_intent_en": [
+    "{state} transfer on death deed",
+    "does {state} allow transfer on death deeds",
+    "{state} beneficiary deed for a house"
+  ],
+  "search_intent_es": [
+    "escritura de transferencia al fallecer en {state_es}",
+    "pasar una casa sin proceso sucesorio en {state_es}"
+  ],
+  "states": {
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "Arizona allows a \"beneficiary deed\" that conveys real property to a named beneficiary and states it takes effect on the owner's death.",
+          "claim_es": "Arizona permite una \"escritura de beneficiario\" (beneficiary deed) que transfiere un inmueble a un beneficiario nombrado y dice que tiene efecto al morir el dueño.",
+          "source_url": "https://www.azleg.gov/ars/33/00405.htm",
+          "source_name": "Arizona Revised Statutes § 33-405",
+          "quote": "expressly states that the deed is effective on the death of the own",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, a beneficiary deed may name several beneficiaries, who can take title as joint tenants with right of survivorship or as tenants in common, among other forms.",
+          "claim_es": "En Arizona, una escritura de beneficiario puede nombrar a varios beneficiarios, que pueden recibir la propiedad como copropietarios con derecho de supervivencia o en copropiedad, entre otras formas.",
+          "source_url": "https://www.azleg.gov/ars/33/00405.htm",
+          "source_name": "Arizona Revised Statutes § 33-405",
+          "quote": "A beneficiary deed may designate multiple grantees who take title as joint tenants with right of survivorship, tenants in common",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, if the beneficiary deed names a backup beneficiary, it must state the condition under which that person would receive the property.",
+          "claim_es": "En Arizona, si la escritura de beneficiario nombra a un beneficiario suplente, debe indicar la condición bajo la cual esa persona recibiría la propiedad.",
+          "source_url": "https://www.azleg.gov/ars/33/00405.htm",
+          "source_name": "Arizona Revised Statutes § 33-405",
+          "quote": "If the beneficiary deed designates a successor grantee beneficiary, the deed shall state the condition on which the interest of the successor grantee beneficiary would vest.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "DC allows a person to pass real property to one or more beneficiaries at death with a transfer on death deed.",
+          "claim_es": "DC permite que una persona deje bienes inmuebles a uno o más beneficiarios al morir mediante una escritura de transferencia al fallecer.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/19-604.05",
+          "source_name": "DC Code § 19-604.05",
+          "quote": "An individual may transfer property to one or more beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, a transfer on death deed must be recorded with the Office of Recorder of Deeds before the owner dies.",
+          "claim_es": "En DC, la escritura de transferencia al fallecer debe registrarse en la Oficina del Registrador de Escrituras antes de que muera el dueño.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/19-604.09",
+          "source_name": "DC Code § 19-604.09",
+          "quote": "A transfer on death deed shall be recorded before the transferor's death in the Office of Recorder of Deeds.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, the deed must state that the transfer to the beneficiary happens at the owner's death.",
+          "claim_es": "En DC, la escritura debe indicar que la transferencia al beneficiario ocurre al morir el dueño.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/19-604.09",
+          "source_name": "DC Code § 19-604.09",
+          "quote": "A transfer on death deed shall state that the transfer to the designated beneficiary is to occur at the transferor's death.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, a transfer on death instrument must be recorded with the county recorder before the owner's death.",
+          "claim_es": "En Illinois, el instrumento de transferencia al fallecer debe registrarse ante el registrador del condado antes de la muerte del dueño.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500270K40",
+          "source_name": "Illinois Residential Real Property Transfer on Death Instrument Act, 755 ILCS 27/40",
+          "quote": "must be recorded before the owner's death in the public records in the office of the recorder of the county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, missing a required step makes the transfer on death instrument void and unable to pass title at death.",
+          "claim_es": "En Illinois, no cumplir un requisito hace que el instrumento de transferencia al fallecer sea nulo y no pase la propiedad al morir.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500270K40",
+          "source_name": "Illinois Residential Real Property Transfer on Death Instrument Act, 755 ILCS 27/40",
+          "quote": "will render the transfer on death instrument void and ineffective to transfer title to the real property at the owner's death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, a transfer on death instrument must be signed in front of and attested by 2 or more credible witnesses.",
+          "claim_es": "En Illinois, el instrumento de transferencia al fallecer debe ser atestiguado por escrito por 2 o más testigos creíbles.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500270K45",
+          "source_name": "Illinois Residential Real Property Transfer on Death Instrument Act, 755 ILCS 27/45",
+          "quote": "shall be attested in writing by 2 or more credible witnesses",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "In Kansas, real estate can be put in transfer-on-death (TOD) form by recording a deed signed by the record owner.",
+          "claim_es": "En Kansas, un inmueble puede ponerse en forma de transferencia al fallecer (TOD) registrando una escritura firmada por el dueño registrado.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_035_0001.html",
+          "source_name": "Kansas Statutes § 59-3501",
+          "quote": "An interest in real estate may be titled in transfer-on-death, TOD, form by recording a deed signed by the record owner",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, a transfer-on-death deed does not need to be paid for (no consideration is required).",
+          "claim_es": "En Kansas, una escritura de transferencia al fallecer no requiere pago a cambio.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_035_0001.html",
+          "source_name": "Kansas Statutes § 59-3501",
+          "quote": "A transfer-on-death deed need not be supported by consideration.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, the beneficiary does not need to sign, agree or even be told about the deed while the owner is alive.",
+          "claim_es": "En Kansas, el beneficiario no tiene que firmar, aceptar ni ser avisado de la escritura mientras el dueño vive.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_035_0001.html",
+          "source_name": "Kansas Statutes § 59-3501",
+          "quote": "The signature, consent or agreement of or notice to a grantee beneficiary of a transfer-on-death deed shall not be required for any purpose during the lifetime of the record owner.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine allows a person to pass property to one or more beneficiaries at death with a transfer on death deed, with no payment required.",
+          "claim_es": "Maine permite que una persona deje bienes a uno o más beneficiarios al morir con una escritura de transferencia al fallecer, sin pago a cambio.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec6-405.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §6-405",
+          "quote": "An individual may transfer for no consideration property to one or more beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, the deed must be recorded at the county registry of deeds where the property sits before the owner dies.",
+          "claim_es": "En Maine, la escritura debe registrarse en el registro de escrituras del condado donde está la propiedad antes de que muera el dueño.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec6-409.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §6-409",
+          "quote": "Must be recorded before the transferor's death in the public records in the registry of deeds in the county where the property is located.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, a transfer on death deed can always be revoked, even if the deed says otherwise.",
+          "claim_es": "En Maine, una escritura de transferencia al fallecer siempre se puede revocar, aunque la escritura diga lo contrario.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec6-406.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §6-406",
+          "quote": "A transfer on death deed is revocable even if the deed or another instrument contains a contrary provision.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "In Minnesota, a transfer on death deed has no effect on title until it takes effect at death.",
+          "claim_es": "En Minnesota, la escritura de transferencia al fallecer no afecta la titularidad hasta que entra en vigor con la muerte.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/507.071",
+          "source_name": "Minnesota Statutes § 507.071",
+          "quote": "Until a transfer on death deed becomes effective, it has no effect on title to the real property described in the deed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, a transfer on death deed must follow all state rules that apply to real property deeds.",
+          "claim_es": "En Minnesota, la escritura de transferencia al fallecer debe cumplir todas las reglas estatales para escrituras de bienes inmuebles.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/507.071",
+          "source_name": "Minnesota Statutes § 507.071",
+          "quote": "A transfer on death deed must comply with all provisions of Minnesota law applicable to deeds of real property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, recording a transfer on death deed means recording it with the county recorder or registrar of titles.",
+          "claim_es": "En Minnesota, registrar la escritura significa inscribirla ante el registrador del condado o el registrador de títulos.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/507.071",
+          "source_name": "Minnesota Statutes § 507.071",
+          "quote": "\"Recorded\" means recorded in the office of the county recorder or registrar of titles",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "In Missouri, a beneficiary deed does not need payment and does not have to be delivered to the beneficiary.",
+          "claim_es": "En Misuri, una escritura de beneficiario no requiere pago ni tiene que entregarse al beneficiario.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=461.025",
+          "source_name": "Missouri Revised Statutes § 461.025",
+          "quote": "A beneficiary deed need not be supported by consideration or be delivered to the grantee beneficiary.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, a beneficiary deed can transfer real property to a trust, whether or not the trust is revocable.",
+          "claim_es": "En Misuri, una escritura de beneficiario puede transferir un inmueble a un fideicomiso, sea revocable o no.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=461.025",
+          "source_name": "Missouri Revised Statutes § 461.025",
+          "quote": "A beneficiary deed may be used to transfer an interest in real property to a trust estate, regardless of such trust's revocability.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Missouri's beneficiary deed expressly states that it does not take effect until the owner dies.",
+          "claim_es": "La escritura de beneficiario de Misuri dice expresamente que no tiene efecto hasta que muera el dueño.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=461.025",
+          "source_name": "Missouri Revised Statutes § 461.025",
+          "quote": "that expressly states that the deed is not to take effect until the death of the owner",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "In Montana, a transfer on death deed must be recorded with the county clerk and recorder before the owner dies.",
+          "claim_es": "En Montana, la escritura de transferencia al fallecer debe registrarse ante el secretario y registrador del condado antes de que muera el dueño.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0060/part_0040/section_0080/0720-0060-0040-0080.html",
+          "source_name": "Montana Code § 72-6-408",
+          "quote": "must be recorded before the transferor's death in the public records in the office of the county clerk and recorder",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, the deed must say the transfer to the beneficiary happens at the owner's death.",
+          "claim_es": "En Montana, la escritura debe decir que la transferencia al beneficiario ocurre al morir el dueño.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0060/part_0040/section_0080/0720-0060-0040-0080.html",
+          "source_name": "Montana Code § 72-6-408",
+          "quote": "must state that the transfer to the designated beneficiary is to occur at the transferor's death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, during the owner's life the deed does not affect the rights of the owner's creditors.",
+          "claim_es": "En Montana, mientras el dueño vive, la escritura no afecta los derechos de sus acreedores.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0060/part_0040/section_0110/0720-0060-0040-0110.html",
+          "source_name": "Montana Code § 72-6-411",
+          "quote": "affect an interest or right of a secured or unsecured creditor or future creditor of the transferor, even if the creditor has actual or constructive notice of the deed",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "In Nebraska, a transfer on death deed must be witnessed in writing by two or more disinterested witnesses.",
+          "claim_es": "En Nebraska, la escritura de transferencia al fallecer debe ser atestiguada por escrito por dos o más testigos sin interés.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=76-3409",
+          "source_name": "Nebraska Revised Statutes § 76-3409",
+          "quote": "shall be attested in writing by two or more disinterested witnesses",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, making or revoking a transfer on death deed requires the same mental capacity as making a will.",
+          "claim_es": "En Nebraska, hacer o revocar una escritura de transferencia al fallecer requiere la misma capacidad mental que hacer un testamento.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=76-3408",
+          "source_name": "Nebraska Revised Statutes § 76-3408",
+          "quote": "The capacity required to make or revoke a transfer on death deed is the same as the capacity required to make a will.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, a transfer on death deed works without notice to, delivery to, acceptance by, or payment from the beneficiary.",
+          "claim_es": "En Nebraska, la escritura funciona sin aviso, entrega, aceptación ni pago del beneficiario.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=76-3411",
+          "source_name": "Nebraska Revised Statutes § 76-3411",
+          "quote": "Notice, delivery, acceptance, consideration not required.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "North Dakota allows a person to pass property to one or more beneficiaries at death with a transfer on death deed.",
+          "claim_es": "Dakota del Norte permite que una persona deje bienes a uno o más beneficiarios al morir con una escritura de transferencia al fallecer.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c32-1.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-32.1",
+          "quote": "An individual may transfer property to one or more beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, a transfer on death deed can be revoked even if the deed says otherwise.",
+          "claim_es": "En Dakota del Norte, la escritura se puede revocar aunque diga lo contrario.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c32-1.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-32.1",
+          "quote": "A transfer on death deed is revocable even if the deed or another instrument contains a contrary provision.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, making or revoking the deed requires the same capacity as making a will.",
+          "claim_es": "En Dakota del Norte, hacer o revocar la escritura requiere la misma capacidad que hacer un testamento.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c32-1.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-32.1",
+          "quote": "The capacity required to make or revoke a transfer on death deed is the same as the capacity required to make a will.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "Ohio uses a transfer on death designation affidavit, recorded with the county recorder where the property is located.",
+          "claim_es": "Ohio usa una declaración jurada de designación de transferencia al fallecer, registrada ante el registrador del condado donde está la propiedad.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5302.22",
+          "source_name": "Ohio Revised Code § 5302.22",
+          "quote": "The affidavit shall be recorded in the office of the county recorder in the county in which the real property is located",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, the transfer on death designation affidavit must be sworn before a person authorized to give oaths.",
+          "claim_es": "En Ohio, la declaración jurada de designación debe jurarse ante una persona autorizada para tomar juramentos.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5302.22",
+          "source_name": "Ohio Revised Code § 5302.22",
+          "quote": "A transfer on death designation affidavit shall be verified before any person authorized to administer oaths",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, if the owner is married, the affidavit includes the spouse's statement that their dower rights are subordinate to the beneficiary's title.",
+          "claim_es": "En Ohio, si el dueño está casado, la declaración incluye una manifestación del cónyuge de que sus derechos de viudedad quedan subordinados al título del beneficiario.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5302.22",
+          "source_name": "Ohio Revised Code § 5302.22",
+          "quote": "If the owner is married, the affidavit shall include a statement by the owner's spouse stating that the spouse's dower rights are subordinate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, several transfer on death beneficiaries take equal shares as tenants in common unless the owner set different shares.",
+          "claim_es": "En Ohio, varios beneficiarios reciben partes iguales en copropiedad, salvo que el dueño haya fijado otras partes.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5302.23",
+          "source_name": "Ohio Revised Code § 5302.23",
+          "quote": "the beneficiaries shall take title to the interest in equal shares as tenants in common, unless the deceased owner has specifically designated other than equal shares",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "In South Dakota, a transfer on death deed must be recorded with the county register of deeds before the owner dies.",
+          "claim_es": "En Dakota del Sur, la escritura de transferencia al fallecer debe registrarse ante el registro de escrituras del condado antes de que muera el dueño.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-6-408.html",
+          "source_name": "South Dakota Codified Laws § 29A-6-408",
+          "quote": "Be recorded before the transferor's death in the public records in the office of the register of deeds in the county where th",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, making or revoking a transfer on death deed requires the same capacity as making a will.",
+          "claim_es": "En Dakota del Sur, hacer o revocar la escritura requiere la misma capacidad que hacer un testamento.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-6-407.html",
+          "source_name": "South Dakota Codified Laws § 29A-6-407",
+          "quote": "is the same as the capacity required to make a will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, the deed works without notice to, delivery to, acceptance by, or payment from the beneficiary.",
+          "claim_es": "En Dakota del Sur, la escritura funciona sin aviso, entrega, aceptación ni pago del beneficiario.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-6-409.html",
+          "source_name": "South Dakota Codified Laws § 29A-6-409",
+          "quote": "Notice, delivery, acceptance, consideration not required.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "Virginia allows a person to pass property to one or more beneficiaries at death with a transfer on death deed.",
+          "claim_es": "Virginia permite que una persona deje bienes a uno o más beneficiarios al morir con una escritura de transferencia al fallecer.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-624/",
+          "source_name": "Code of Virginia § 64.2-624",
+          "quote": "An individual may transfer property to one or more beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, the deed must be recorded in the land records of the circuit court clerk's office where the property is located before the owner dies.",
+          "claim_es": "En Virginia, la escritura debe registrarse en los registros de tierras de la secretaría del tribunal de circuito donde está la propiedad antes de que muera el dueño.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-628/",
+          "source_name": "Code of Virginia § 64.2-628",
+          "quote": "Shall be recorded before the transferor's death in the land records of the clerk's office of the circuit court in the jurisdiction where the property is located",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, the deed must state that the transfer happens at the owner's death.",
+          "claim_es": "En Virginia, la escritura debe indicar que la transferencia ocurre al morir el dueño.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-628/",
+          "source_name": "Code of Virginia § 64.2-628",
+          "quote": "Shall state that the transfer to the designated beneficiary is to occur at the transferor's death",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, making or revoking a transfer on death deed requires the same capacity as making a will.",
+          "claim_es": "En Washington, hacer o revocar la escritura requiere la misma capacidad que hacer un testamento.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=64.80.050",
+          "source_name": "Revised Code of Washington § 64.80.050",
+          "quote": "The capacity required to make or revoke a transfer on death deed is the same as the capacity required to make a will.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, a transfer on death deed must have all the elements of a regular recordable deed.",
+          "claim_es": "En Washington, la escritura de transferencia al fallecer debe tener todos los elementos de una escritura común registrable.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=64.80.060",
+          "source_name": "Revised Code of Washington § 64.80.060",
+          "quote": "must contain the essential elements and formalities of a properly recordable inter vivos deed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, the deed must state that the transfer happens at the owner's death.",
+          "claim_es": "En Washington, la escritura debe indicar que la transferencia ocurre al morir el dueño.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=64.80.060",
+          "source_name": "Revised Code of Washington § 64.80.060",
+          "quote": "must state that the transfer to the designated beneficiary is to occur at the transferor's death",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "West Virginia allows a person to pass property to beneficiaries or backup beneficiaries at death with a transfer on death deed.",
+          "claim_es": "Virginia Occidental permite dejar bienes a beneficiarios o beneficiarios suplentes al morir con una escritura de transferencia al fallecer.",
+          "source_url": "https://code.wvlegislature.gov/36-12-5/",
+          "source_name": "West Virginia Code § 36-12-5",
+          "quote": "An individual may transfer property to one or more beneficiaries or contingent beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the deed must be recorded with the county commission clerk before the owner dies.",
+          "claim_es": "En Virginia Occidental, la escritura debe registrarse ante el secretario de la comisión del condado antes de que muera el dueño.",
+          "source_url": "https://code.wvlegislature.gov/36-12-9/",
+          "source_name": "West Virginia Code § 36-12-9",
+          "quote": "Must be recorded before the transferor's death in the office of the clerk of the county commission in the county where t",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, a transfer on death deed is exempt from the real estate transfer excise tax.",
+          "claim_es": "En Virginia Occidental, la escritura de transferencia al fallecer está exenta del impuesto sobre la transferencia de bienes inmuebles.",
+          "source_url": "https://code.wvlegislature.gov/36-12-9/",
+          "source_name": "West Virginia Code § 36-12-9",
+          "quote": "a transfer on death deed is exempt from the payment of excise tax on the privilege of transferring real estate",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "AL": "no official source found",
+    "AK": "no official source found",
+    "AR": "no official source found",
+    "CA": "no official source found",
+    "CO": "no official source found",
+    "CT": "no official source found",
+    "DE": "no official source found",
+    "FL": "no official source found",
+    "GA": "no official source found",
+    "HI": "no official source found",
+    "ID": "no official source found",
+    "IN": "no official source found",
+    "IA": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "MD": "no official source found",
+    "MA": "no official source found",
+    "MI": "no official source found",
+    "MS": "no official source found",
+    "NV": "no official source found",
+    "NH": "no official source found",
+    "NJ": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "NC": "no official source found",
+    "OK": "no official source found",
+    "OR": "no official source found",
+    "PA": "no official source found",
+    "RI": "no official source found",
+    "SC": "no official source found",
+    "TN": "no official source found",
+    "TX": "no official source found",
+    "UT": "no official source found",
+    "VT": "no official source found",
+    "WI": "no official source found",
+    "WY": "no official source found"
+  }
+}
