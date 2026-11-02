@@ -120,20 +120,50 @@ public disclosures. Human review must still reject real people/customer fixtures
 
 ## Website (keepmyproof.com)
 
-`site/` builds the static site with plain Node: `node site/build.mjs` writes
-`site/dist/`. Folder names and checklists come from `topics.json`; Terms and
-Privacy from `store/en.md` and `store/es.md`, so the app, store listing and site
-share one text. English at `/`, Spanish at `/es/`. Prices, the free limit, the
-support address and the store links live in `site/config.mjs`; until a store URL
-is set there the site says "coming soon" and shows no store badge, link or app
-schema. At launch: set both store URLs and replace `assets/site/og.png`.
+`site/` builds the static site with plain Node and no network: `node site/build.mjs`
+writes `site/dist/`. Hosting is the Cloudflare Pages git project `keepmyproof`
+(root `site`, build `node build.mjs`, output `dist`): every push to main deploys,
+www redirects to the apex. Never a bare `wrangler deploy`.
 
-Hosting is the Cloudflare Pages git project `keepmyproof` (root `site`, build
-`node build.mjs`, output `dist`): every push to main deploys keepmyproof.com, and
-www redirects to it. No workflow deploys anything. After a content change, ping
-IndexNow with the key file the build publishes (`SITE.indexNowKey`).
-`tests/site.test.ts` checks folders, canonicals, hreflang, sitemap, store links
-and prices against the app's own constants.
+What it publishes, and from where:
+- Home, Terms, Privacy, Support (EN `/`, ES `/es/`): `topics.json`, `store/*.md`.
+- Five folder hubs with printable checklist PDFs in English, Spanish, Chinese
+  (`/zh/`) and Korean (`/ko/`): `site/data/hubs.json`, `site/copy-cjk.mjs`,
+  `site/pdf.mjs` (no email gate). Free checklists page: `/checklists`.
+- State pages, one per state and subtopic: `site/data/facts/<folder>/*.json`
+  (research files) + `site/data/verified/<folder>.json`. A fact is published only if
+  `scripts/verify-facts.mjs` found its quote on the official source (plain curl,
+  then a browser User-Agent; tags stripped, whitespace normalised). A state page
+  publishes only with ≥3 verified facts, ≥2 of them state-specific (a claim no other
+  state's page repeats; a state office's name and contact details count once),
+  and no banned claim word (`site/lib/gate.mjs`). Spanish twins always; Chinese
+  for divorce and Korean for executor once `scripts/translate-facts.mjs` (free
+  OpenRouter models only) has translated the facts. Every non-English page is
+  flagged for a native reader before the app launches.
+- Free tools (`/tools`, `/es/herramientas`; all in the browser, nothing uploaded):
+  photo location removal and redaction, photos into one dated PDF, deadline
+  calculators built only from verified facts (`site/tools.mjs`,
+  `site/data/tool-facts.json`), printable logs.
+- KeepMyProof facts page (`/facts`), "alternative to" pages from counted review
+  complaints (`scripts/measure-complaints.mjs` -> `site/data/alternatives.json`;
+  competitor names on the website only), `llms.txt`, sitemaps split by folder
+  (`/sitemap.xml` is the index), robots.
+- Search-loop question pages (`site/questions/`, written by the shared engine,
+  `search-loop.config.json`): published only if they pass the legal and VA gate
+  in `site/build.mjs` (`questionGate`).
+
+The one store switch is `SITE.stores` in `site/config.mjs`: until a URL is set,
+every page says "Coming soon to Google Play" and shows no store link, offer or
+rating; set it and every page shows the store button and the app schema gains
+offers.
+
+Jobs: `facts-refresh.yml` (weekly re-check of every source), `monthly-watch.yml`
+(Vaultaire sitemap diff -> search-loop seeds; competitor review counts),
+`ping-search.yml` (after a deploy is live: IndexNow, Bing, Search Console sitemap
+submission through `scripts/ping-search.mjs`), `search-loop.yml` (daily pages).
+`npm run validate` (`verified-facts`) and `tests/facts-gate.test.ts` guard the
+gate; `tests/site.test.ts` checks canonicals, hreflang twins, sitemaps, store
+switch and prices.
 
 ## Named stops
 

@@ -1,0 +1,36 @@
+name: Ping search engines
+
+# After each push to main that changes the site: wait (bounded, 20 min) until keepmyproof.com serves
+# this commit (site/build.mjs writes /build.txt from Cloudflare Pages' CF_PAGES_COMMIT_SHA), then
+# announce the live sitemaps: IndexNow, Bing Webmaster, Google Search Console (scripts/ping-search.mjs).
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'topics.json', 'store/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ping-search
+  cancel-in-progress: true
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Wait for the deploy of this commit
+        run: |
+          for i in $(seq 1 40); do
+            live=$(curl -s --max-time 10 "https://keepmyproof.com/build.txt?t=$i" || true)
+            [ "$live" = "$GITHUB_SHA" ] && { echo "live after ~$((i * 30))s"; exit 0; }
+            sleep 30
+          done
+          echo "NAMED STOP [DEPLOY_NOT_LIVE] keepmyproof.com does not serve $GITHUB_SHA after 20 minutes (live: $live)"; exit 2
+      - run: node scripts/ping-search.mjs
+        env:
+          BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}

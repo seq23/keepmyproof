@@ -1,0 +1,2107 @@
+{
+  "folder": "iep",
+  "subtopic": "evaluation-timeline",
+  "title_en": "Special education evaluation timeline in {state}: how long the school has to evaluate",
+  "title_es": "Plazo de la evaluación de educación especial en {state_es}: cuánto tiempo tiene la escuela",
+  "search_intent_en": [
+    "special education evaluation timeline {state}",
+    "how long does a school have to evaluate for an IEP in {state}",
+    "IEP evaluation 60 days {state}",
+    "initial evaluation timeline special education {state}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "Alabama uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Alabama usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alabama/",
+          "source_name": "U.S. Department of Education, Alabama IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama's federal fiscal year 2024 report, parents gave consent for 26,235 initial evaluations and 26,098 were completed within the timeline, or 99.48%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Alabama, los padres dieron su consentimiento para 26,235 evaluaciones iniciales y 26,098 se completaron dentro del plazo, es decir, el 99.48%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alabama/",
+          "source_name": "U.S. Department of Education, Alabama IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 26,235 26,098 99.65% 100% 99.48%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alabama on the U.S. Department of Education IDEA website",
+          "label_es": "Alabama en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/alabama"
+        },
+        {
+          "label_en": "Alabama IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Alabama (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alabama/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Alaska has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Alaska fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alaska/",
+          "source_name": "U.S. Department of Education, Alaska IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska's report describes its initial evaluation timeline as 90 calendar days.",
+          "claim_es": "El informe de Alaska describe su plazo para la evaluación inicial como 90 días calendario.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alaska/",
+          "source_name": "U.S. Department of Education, Alaska IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Alaska DEED's timeline for initial evaluations is within 90 calendar days of receiving parental consent for the initial evaluation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alaska's federal fiscal year 2024 report, parents gave consent for 2,929 initial evaluations and 2,842 were completed within the timeline, or 97.03%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Alaska, los padres dieron su consentimiento para 2,929 evaluaciones iniciales y 2,842 se completaron dentro del plazo, es decir, el 97.03%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alaska/",
+          "source_name": "U.S. Department of Education, Alaska IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 2,929 2,842 96.72% 100% 97.03%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska on the U.S. Department of Education IDEA website",
+          "label_es": "Alaska en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/alaska"
+        },
+        {
+          "label_en": "Alaska IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Alaska (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-alaska/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "Arizona has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Arizona fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arizona/",
+          "source_name": "U.S. Department of Education, Arizona IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona's federal fiscal year 2024 report, parents gave consent for 644 initial evaluations and 633 were completed within the timeline, or 98.29%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Arizona, los padres dieron su consentimiento para 644 evaluaciones iniciales y 633 se completaron dentro del plazo, es decir, el 98.29%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arizona/",
+          "source_name": "U.S. Department of Education, Arizona IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 644 633 97.45% 100% 98.29%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona on the U.S. Department of Education IDEA website",
+          "label_es": "Arizona en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/arizona"
+        },
+        {
+          "label_en": "Arizona IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Arizona (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arizona/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "Arkansas uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Arkansas usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arkansas/",
+          "source_name": "U.S. Department of Education, Arkansas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arkansas's federal fiscal year 2024 report, parents gave consent for 17,522 initial evaluations and 17,316 were completed within the timeline, or 98.82%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Arkansas, los padres dieron su consentimiento para 17,522 evaluaciones iniciales y 17,316 se completaron dentro del plazo, es decir, el 98.82%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arkansas/",
+          "source_name": "U.S. Department of Education, Arkansas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 17,522 17,316 99.35% 100% 98.82%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas on the U.S. Department of Education IDEA website",
+          "label_es": "Arkansas en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/arkansas"
+        },
+        {
+          "label_en": "Arkansas IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Arkansas (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-arkansas/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "California has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "California fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-california/",
+          "source_name": "U.S. Department of Education, California IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California's federal fiscal year 2024 report, parents gave consent for 147,431 initial evaluations and 138,515 were completed within the timeline, or 93.95%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de California, los padres dieron su consentimiento para 147,431 evaluaciones iniciales y 138,515 se completaron dentro del plazo, es decir, el 93.95%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-california/",
+          "source_name": "U.S. Department of Education, California IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 147,431 138,515 94.06% 100% 93.95%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California on the U.S. Department of Education IDEA website",
+          "label_es": "California en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/california"
+        },
+        {
+          "label_en": "California IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de California (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-california/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "Colorado uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Colorado usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-colorado/",
+          "source_name": "U.S. Department of Education, Colorado IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Colorado's federal fiscal year 2024 report, parents gave consent for 21,610 initial evaluations and 21,384 were completed within the timeline, or 98.95%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Colorado, los padres dieron su consentimiento para 21,610 evaluaciones iniciales y 21,384 se completaron dentro del plazo, es decir, el 98.95%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-colorado/",
+          "source_name": "U.S. Department of Education, Colorado IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 21,610 21,384 98.86% 100% 98.95%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado on the U.S. Department of Education IDEA website",
+          "label_es": "Colorado en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/colorado"
+        },
+        {
+          "label_en": "Colorado IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Colorado (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-colorado/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "Connecticut has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Connecticut fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-connecticut/",
+          "source_name": "U.S. Department of Education, Connecticut IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Connecticut's report describes its initial evaluation timeline as 45 school days.",
+          "claim_es": "El informe de Connecticut describe su plazo para la evaluación inicial como 45 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-connecticut/",
+          "source_name": "U.S. Department of Education, Connecticut IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Pursuant to Regulations of Connecticut State Agencies (RCSA) §10- 76d-13, once a district receives a written referral for special education evaluation, it has 45- school days to complete an initial evaluation, exclusive of the time required to obtain parenta l consent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut's federal fiscal year 2024 report, parents gave consent for 17,403 initial evaluations and 16,587 were completed within the timeline, or 95.31%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Connecticut, los padres dieron su consentimiento para 17,403 evaluaciones iniciales y 16,587 se completaron dentro del plazo, es decir, el 95.31%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-connecticut/",
+          "source_name": "U.S. Department of Education, Connecticut IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 17,403 16,587 88.16% 100% 95.31%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut on the U.S. Department of Education IDEA website",
+          "label_es": "Connecticut en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/connecticut"
+        },
+        {
+          "label_en": "Connecticut IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Connecticut (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-connecticut/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "District of Columbia uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Distrito de Columbia usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-district-of-columbia/",
+          "source_name": "U.S. Department of Education, District of Columbia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In District of Columbia's federal fiscal year 2024 report, parents gave consent for 3,302 initial evaluations and 2,638 were completed within the timeline, or 79.89%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Distrito de Columbia, los padres dieron su consentimiento para 3,302 evaluaciones iniciales y 2,638 se completaron dentro del plazo, es decir, el 79.89%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-district-of-columbia/",
+          "source_name": "U.S. Department of Education, District of Columbia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 3,302 2,638 73.29% 100% 79.89%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "District of Columbia on the U.S. Department of Education IDEA website",
+          "label_es": "Distrito de Columbia en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/district-of-columbia"
+        },
+        {
+          "label_en": "District of Columbia IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Distrito de Columbia (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-district-of-columbia/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "Florida uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Florida usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-florida/",
+          "source_name": "U.S. Department of Education, Florida IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida's federal fiscal year 2024 report, parents gave consent for 74,061 initial evaluations and 71,819 were completed within the timeline, or 96.97%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Florida, los padres dieron su consentimiento para 74,061 evaluaciones iniciales y 71,819 se completaron dentro del plazo, es decir, el 96.97%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-florida/",
+          "source_name": "U.S. Department of Education, Florida IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 74,061 71,819 97.49% 100% 96.97%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida on the U.S. Department of Education IDEA website",
+          "label_es": "Florida en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/florida"
+        },
+        {
+          "label_en": "Florida IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Florida (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-florida/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "Georgia uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Georgia usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-georgia/",
+          "source_name": "U.S. Department of Education, Georgia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Georgia's federal fiscal year 2024 report, parents gave consent for 38,184 initial evaluations and 37,139 were completed within the timeline, or 97.26%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Georgia, los padres dieron su consentimiento para 38,184 evaluaciones iniciales y 37,139 se completaron dentro del plazo, es decir, el 97.26%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-georgia/",
+          "source_name": "U.S. Department of Education, Georgia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 38,184 37,139 97.25% 100% 97.26%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia on the U.S. Department of Education IDEA website",
+          "label_es": "Georgia en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/georgia"
+        },
+        {
+          "label_en": "Georgia IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Georgia (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-georgia/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "Hawaii uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Hawái usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-hawaii/",
+          "source_name": "U.S. Department of Education, Hawaii IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Hawaii's federal fiscal year 2024 report, parents gave consent for 4,765 initial evaluations and 4,628 were completed within the timeline, or 97.12%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Hawái, los padres dieron su consentimiento para 4,765 evaluaciones iniciales y 4,628 se completaron dentro del plazo, es decir, el 97.12%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-hawaii/",
+          "source_name": "U.S. Department of Education, Hawaii IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 4,765 4,628 95.09% 100% 97.12%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii on the U.S. Department of Education IDEA website",
+          "label_es": "Hawái en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/hawaii"
+        },
+        {
+          "label_en": "Hawaii IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Hawái (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-hawaii/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "Idaho has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Idaho fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-idaho/",
+          "source_name": "U.S. Department of Education, Idaho IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho's report describes its initial evaluation timeline as 60 calendar days.",
+          "claim_es": "El informe de Idaho describe su plazo para la evaluación inicial como 60 días calendario.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-idaho/",
+          "source_name": "U.S. Department of Education, Idaho IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Idaho Code 08.02.03.109.03 states; The total timeline from the date of receipt of written parental consent for an initial evaluation to the date of determination of eligibility for special education and related services must not exceed sixty (60) calendar days, excluding periods when regular school is not in session for five (5) or more consecutive school days, unless all parties agree to an extension.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho's federal fiscal year 2024 report, parents gave consent for 7,084 initial evaluations and 6,937 were completed within the timeline, or 97.92%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Idaho, los padres dieron su consentimiento para 7,084 evaluaciones iniciales y 6,937 se completaron dentro del plazo, es decir, el 97.92%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-idaho/",
+          "source_name": "U.S. Department of Education, Idaho IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 7,084 6,937 96.61% 100% 97.92%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho on the U.S. Department of Education IDEA website",
+          "label_es": "Idaho en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/idaho"
+        },
+        {
+          "label_en": "Idaho IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Idaho (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-idaho/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "Illinois has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Illinois fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-illinois/",
+          "source_name": "U.S. Department of Education, Illinois IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Illinois's report describes its initial evaluation timeline as 60 school days.",
+          "claim_es": "El informe de Illinois describe su plazo para la evaluación inicial como 60 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-illinois/",
+          "source_name": "U.S. Department of Education, Illinois IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "The State established timeline in Illinois is 60 school days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois's federal fiscal year 2024 report, parents gave consent for 34,593 initial evaluations and 34,455 were completed within the timeline, or 99.60%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Illinois, los padres dieron su consentimiento para 34,593 evaluaciones iniciales y 34,455 se completaron dentro del plazo, es decir, el 99.60%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-illinois/",
+          "source_name": "U.S. Department of Education, Illinois IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 34,593 34,455 99.80% 100% 99.60%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois on the U.S. Department of Education IDEA website",
+          "label_es": "Illinois en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/illinois"
+        },
+        {
+          "label_en": "Illinois IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Illinois (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-illinois/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "Indiana has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Indiana fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-indiana/",
+          "source_name": "U.S. Department of Education, Indiana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Indiana's report describes its initial evaluation timeline as 50 instructional days.",
+          "claim_es": "El informe de Indiana describe su plazo para la evaluación inicial como 50 días de instrucción.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-indiana/",
+          "source_name": "U.S. Department of Education, Indiana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "The State’s timeline for initial evaluations is defined at Indiana Administrative Code 7-40- 5(d) requiring initial evaluation to be conducted and the case conference committee convened within fifty (50) instructional days of the date licensed personnel receive the written parental consent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Indiana's federal fiscal year 2024 report, parents gave consent for 23,121 initial evaluations and 23,038 were completed within the timeline, or 99.64%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Indiana, los padres dieron su consentimiento para 23,121 evaluaciones iniciales y 23,038 se completaron dentro del plazo, es decir, el 99.64%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-indiana/",
+          "source_name": "U.S. Department of Education, Indiana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 23,121 23,038 99.47% 100% 99.64%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Indiana on the U.S. Department of Education IDEA website",
+          "label_es": "Indiana en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/indiana"
+        },
+        {
+          "label_en": "Indiana IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Indiana (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-indiana/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "Iowa uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Iowa usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-iowa/",
+          "source_name": "U.S. Department of Education, Iowa IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa's federal fiscal year 2024 report, parents gave consent for 11,891 initial evaluations and 11,891 were completed within the timeline, or 100.00%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Iowa, los padres dieron su consentimiento para 11,891 evaluaciones iniciales y 11,891 se completaron dentro del plazo, es decir, el 100.00%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-iowa/",
+          "source_name": "U.S. Department of Education, Iowa IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 11,891 11,891 98.89% 100% 100.00%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa on the U.S. Department of Education IDEA website",
+          "label_es": "Iowa en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/iowa"
+        },
+        {
+          "label_en": "Iowa IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Iowa (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-iowa/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Kansas fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kansas/",
+          "source_name": "U.S. Department of Education, Kansas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Kansas's report describes its initial evaluation timeline as 60 school days.",
+          "claim_es": "El informe de Kansas describe su plazo para la evaluación inicial como 60 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kansas/",
+          "source_name": "U.S. Department of Education, Kansas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "The State’s timeline for initial evaluations is 60 school days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas's federal fiscal year 2024 report, parents gave consent for 110 initial evaluations and 108 were completed within the timeline, or 98.18%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Kansas, los padres dieron su consentimiento para 110 evaluaciones iniciales y 108 se completaron dentro del plazo, es decir, el 98.18%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kansas/",
+          "source_name": "U.S. Department of Education, Kansas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 110 108 99.52% 100% 98.18%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas on the U.S. Department of Education IDEA website",
+          "label_es": "Kansas en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/kansas"
+        },
+        {
+          "label_en": "Kansas IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Kansas (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kansas/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "Kentucky uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Kentucky usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kentucky/",
+          "source_name": "U.S. Department of Education, Kentucky IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kentucky's federal fiscal year 2024 report, parents gave consent for 2,544 initial evaluations and 2,533 were completed within the timeline, or 99.57%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Kentucky, los padres dieron su consentimiento para 2,544 evaluaciones iniciales y 2,533 se completaron dentro del plazo, es decir, el 99.57%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kentucky/",
+          "source_name": "U.S. Department of Education, Kentucky IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 2,544 2,533 99.84% 100% 99.57%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky on the U.S. Department of Education IDEA website",
+          "label_es": "Kentucky en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/kentucky"
+        },
+        {
+          "label_en": "Kentucky IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Kentucky (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-kentucky/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "Louisiana uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Luisiana usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-louisiana/",
+          "source_name": "U.S. Department of Education, Louisiana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Louisiana's federal fiscal year 2024 report, parents gave consent for 17,299 initial evaluations and 16,136 were completed within the timeline, or 93.28%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Luisiana, los padres dieron su consentimiento para 17,299 evaluaciones iniciales y 16,136 se completaron dentro del plazo, es decir, el 93.28%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-louisiana/",
+          "source_name": "U.S. Department of Education, Louisiana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 17,299 16,136 99.37% 100% 93.28%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Louisiana on the U.S. Department of Education IDEA website",
+          "label_es": "Luisiana en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/louisiana"
+        },
+        {
+          "label_en": "Louisiana IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Luisiana (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-louisiana/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Maine fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-maine/",
+          "source_name": "U.S. Department of Education, Maine IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine's federal fiscal year 2024 report, parents gave consent for 376 initial evaluations and 315 were completed within the timeline, or 83.78%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Maine, los padres dieron su consentimiento para 376 evaluaciones iniciales y 315 se completaron dentro del plazo, es decir, el 83.78%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-maine/",
+          "source_name": "U.S. Department of Education, Maine IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 376 315 82.23% 100% 83.78%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine on the U.S. Department of Education IDEA website",
+          "label_es": "Maine en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/maine"
+        },
+        {
+          "label_en": "Maine IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Maine (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-maine/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Massachusetts fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-massachusetts/",
+          "source_name": "U.S. Department of Education, Massachusetts IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Massachusetts's report describes its initial evaluation timeline as 30 school working days.",
+          "claim_es": "El informe de Massachusetts describe su plazo para la evaluación inicial como 30 días hábiles escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-massachusetts/",
+          "source_name": "U.S. Department of Education, Massachusetts IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "MA DESE’s timeline for completion of initial evaluations and assessments is 30 school working days after receipt of parental consent for evaluation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts's federal fiscal year 2024 report, parents gave consent for 1,357 initial evaluations and 986 were completed within the timeline, or 72.66%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Massachusetts, los padres dieron su consentimiento para 1,357 evaluaciones iniciales y 986 se completaron dentro del plazo, es decir, el 72.66%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-massachusetts/",
+          "source_name": "U.S. Department of Education, Massachusetts IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 1,357 986 85.75% 100% 72.66%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Massachusetts on the U.S. Department of Education IDEA website",
+          "label_es": "Massachusetts en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/massachusetts"
+        },
+        {
+          "label_en": "Massachusetts IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Massachusetts (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-massachusetts/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "Michigan has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Michigan fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-michigan/",
+          "source_name": "U.S. Department of Education, Michigan IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Michigan's report describes its initial evaluation timeline as 30 school days.",
+          "claim_es": "El informe de Michigan describe su plazo para la evaluación inicial como 30 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-michigan/",
+          "source_name": "U.S. Department of Education, Michigan IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "According to the MARSE R 340.1721b for special education, the established timeline for evaluation is within 30 school days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan on the U.S. Department of Education IDEA website",
+          "label_es": "Michigan en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/michigan"
+        },
+        {
+          "label_en": "Michigan IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Michigan (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-michigan/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Minnesota fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-minnesota/",
+          "source_name": "U.S. Department of Education, Minnesota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota's federal fiscal year 2024 report, parents gave consent for 524 initial evaluations and 495 were completed within the timeline, or 94.47%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Minnesota, los padres dieron su consentimiento para 524 evaluaciones iniciales y 495 se completaron dentro del plazo, es decir, el 94.47%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-minnesota/",
+          "source_name": "U.S. Department of Education, Minnesota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 524 495 96.67% 100% 94.47%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota on the U.S. Department of Education IDEA website",
+          "label_es": "Minnesota en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/minnesota"
+        },
+        {
+          "label_en": "Minnesota IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Minnesota (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-minnesota/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "Mississippi uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Mississippi usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-mississippi/",
+          "source_name": "U.S. Department of Education, Mississippi IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Mississippi's federal fiscal year 2024 report, parents gave consent for 9,061 initial evaluations and 8,920 were completed within the timeline, or 98.44%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Mississippi, los padres dieron su consentimiento para 9,061 evaluaciones iniciales y 8,920 se completaron dentro del plazo, es decir, el 98.44%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-mississippi/",
+          "source_name": "U.S. Department of Education, Mississippi IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 9,061 8,920 99.60% 100% 98.44%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mississippi on the U.S. Department of Education IDEA website",
+          "label_es": "Mississippi en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/mississippi"
+        },
+        {
+          "label_en": "Mississippi IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Mississippi (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-mississippi/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "Missouri has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Missouri fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-missouri/",
+          "source_name": "U.S. Department of Education, Missouri IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri's federal fiscal year 2024 report, parents gave consent for 5,725 initial evaluations and 5,636 were completed within the timeline, or 98.45%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Missouri, los padres dieron su consentimiento para 5,725 evaluaciones iniciales y 5,636 se completaron dentro del plazo, es decir, el 98.45%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-missouri/",
+          "source_name": "U.S. Department of Education, Missouri IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 5,725 5,636 99.18% 100% 98.45%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri on the U.S. Department of Education IDEA website",
+          "label_es": "Missouri en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/missouri"
+        },
+        {
+          "label_en": "Missouri IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Missouri (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-missouri/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "Montana uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Montana usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-montana/",
+          "source_name": "U.S. Department of Education, Montana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana's federal fiscal year 2024 report, parents gave consent for 35 initial evaluations and 35 were completed within the timeline, or 100.00%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Montana, los padres dieron su consentimiento para 35 evaluaciones iniciales y 35 se completaron dentro del plazo, es decir, el 100.00%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-montana/",
+          "source_name": "U.S. Department of Education, Montana IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 35 35 100.00% 100% 100.00%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana on the U.S. Department of Education IDEA website",
+          "label_es": "Montana en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/montana"
+        },
+        {
+          "label_en": "Montana IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Montana (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-montana/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Nevada fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-nevada/",
+          "source_name": "U.S. Department of Education, Nevada IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada's federal fiscal year 2024 report, parents gave consent for 43 initial evaluations and 35 were completed within the timeline, or 81.40%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Nevada, los padres dieron su consentimiento para 43 evaluaciones iniciales y 35 se completaron dentro del plazo, es decir, el 81.40%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-nevada/",
+          "source_name": "U.S. Department of Education, Nevada IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 43 35 83.02% 100% 81.40%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada on the U.S. Department of Education IDEA website",
+          "label_es": "Nevada en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/nevada"
+        },
+        {
+          "label_en": "Nevada IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Nevada (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-nevada/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "New Hampshire uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Nuevo Hampshire usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-hampshire/",
+          "source_name": "U.S. Department of Education, New Hampshire IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Hampshire's federal fiscal year 2024 report, parents gave consent for 5,576 initial evaluations and 5,349 were completed within the timeline, or 95.93%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Nuevo Hampshire, los padres dieron su consentimiento para 5,576 evaluaciones iniciales y 5,349 se completaron dentro del plazo, es decir, el 95.93%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-hampshire/",
+          "source_name": "U.S. Department of Education, New Hampshire IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 5,576 5,349 95.47% 100% 95.93%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire on the U.S. Department of Education IDEA website",
+          "label_es": "Nuevo Hampshire en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/new-hampshire"
+        },
+        {
+          "label_en": "New Hampshire IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Nuevo Hampshire (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-hampshire/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "New Jersey has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Nueva Jersey fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-jersey/",
+          "source_name": "U.S. Department of Education, New Jersey IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Jersey's federal fiscal year 2024 report, parents gave consent for 28,402 initial evaluations and 23,729 were completed within the timeline, or 83.55%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Nueva Jersey, los padres dieron su consentimiento para 28,402 evaluaciones iniciales y 23,729 se completaron dentro del plazo, es decir, el 83.55%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-jersey/",
+          "source_name": "U.S. Department of Education, New Jersey IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 28,402 23,729 77.42% 100% 83.55%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey on the U.S. Department of Education IDEA website",
+          "label_es": "Nueva Jersey en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/new-jersey"
+        },
+        {
+          "label_en": "New Jersey IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Nueva Jersey (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-jersey/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "New Mexico uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Nuevo México usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-mexico/",
+          "source_name": "U.S. Department of Education, New Mexico IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico's federal fiscal year 2024 report, parents gave consent for 9,825 initial evaluations and 9,816 were completed within the timeline, or 99.91%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Nuevo México, los padres dieron su consentimiento para 9,825 evaluaciones iniciales y 9,816 se completaron dentro del plazo, es decir, el 99.91%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-mexico/",
+          "source_name": "U.S. Department of Education, New Mexico IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 9,825 9,816 97.61% 100% 99.91%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico on the U.S. Department of Education IDEA website",
+          "label_es": "Nuevo México en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/new-mexico"
+        },
+        {
+          "label_en": "New Mexico IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Nuevo México (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-mexico/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "New York uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Nueva York usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-york/",
+          "source_name": "U.S. Department of Education, New York IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New York's federal fiscal year 2024 report, parents gave consent for 38,740 initial evaluations and 32,542 were completed within the timeline, or 84.00%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Nueva York, los padres dieron su consentimiento para 38,740 evaluaciones iniciales y 32,542 se completaron dentro del plazo, es decir, el 84.00%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-york/",
+          "source_name": "U.S. Department of Education, New York IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 38,740 32,542 88.33% 100% 84.00%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York on the U.S. Department of Education IDEA website",
+          "label_es": "Nueva York en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/new-york"
+        },
+        {
+          "label_en": "New York IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Nueva York (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-new-york/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "North Carolina has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Carolina del Norte fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-carolina/",
+          "source_name": "U.S. Department of Education, North Carolina IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Carolina's report describes its initial evaluation timeline as 90 calendar days.",
+          "claim_es": "El informe de Carolina del Norte describe su plazo para la evaluación inicial como 90 días calendario.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-carolina/",
+          "source_name": "U.S. Department of Education, North Carolina IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "North Carolina has an established timeline (90 calendar days) from receipt of the referral to the placement determination.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina's federal fiscal year 2024 report, parents gave consent for 65,644 initial evaluations and 48,608 were completed within the timeline, or 74.05%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Carolina del Norte, los padres dieron su consentimiento para 65,644 evaluaciones iniciales y 48,608 se completaron dentro del plazo, es decir, el 74.05%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-carolina/",
+          "source_name": "U.S. Department of Education, North Carolina IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 65,644 48,608 73.99% 100% 74.05%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina on the U.S. Department of Education IDEA website",
+          "label_es": "Carolina del Norte en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/north-carolina"
+        },
+        {
+          "label_en": "North Carolina IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Carolina del Norte (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-carolina/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "North Dakota uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Dakota del Norte usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-dakota/",
+          "source_name": "U.S. Department of Education, North Dakota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota's federal fiscal year 2024 report, parents gave consent for 3,739 initial evaluations and 3,706 were completed within the timeline, or 99.12%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Dakota del Norte, los padres dieron su consentimiento para 3,739 evaluaciones iniciales y 3,706 se completaron dentro del plazo, es decir, el 99.12%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-dakota/",
+          "source_name": "U.S. Department of Education, North Dakota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 3,739 3,706 98.29% 100% 99.12%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota on the U.S. Department of Education IDEA website",
+          "label_es": "Dakota del Norte en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/north-dakota"
+        },
+        {
+          "label_en": "North Dakota IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Dakota del Norte (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-north-dakota/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "Oregon has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Oregon fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-oregon/",
+          "source_name": "U.S. Department of Education, Oregon IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Oregon's report describes its initial evaluation timeline as 60 school days.",
+          "claim_es": "El informe de Oregon describe su plazo para la evaluación inicial como 60 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-oregon/",
+          "source_name": "U.S. Department of Education, Oregon IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "The State used 60 school days for the evaluation time frame.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon's federal fiscal year 2024 report, parents gave consent for 18,648 initial evaluations and 18,214 were completed within the timeline, or 97.67%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Oregon, los padres dieron su consentimiento para 18,648 evaluaciones iniciales y 18,214 se completaron dentro del plazo, es decir, el 97.67%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-oregon/",
+          "source_name": "U.S. Department of Education, Oregon IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 18,648 18,214 97.41% 100% 97.67%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon on the U.S. Department of Education IDEA website",
+          "label_es": "Oregon en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/oregon"
+        },
+        {
+          "label_en": "Oregon IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Oregon (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-oregon/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "Rhode Island uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Rhode Island usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-rhode-island/",
+          "source_name": "U.S. Department of Education, Rhode Island IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island's federal fiscal year 2024 report, parents gave consent for 4,228 initial evaluations and 4,180 were completed within the timeline, or 98.86%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Rhode Island, los padres dieron su consentimiento para 4,228 evaluaciones iniciales y 4,180 se completaron dentro del plazo, es decir, el 98.86%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-rhode-island/",
+          "source_name": "U.S. Department of Education, Rhode Island IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 4,228 4,180 97.30% 100% 98.86%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island on the U.S. Department of Education IDEA website",
+          "label_es": "Rhode Island en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/rhode-island"
+        },
+        {
+          "label_en": "Rhode Island IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Rhode Island (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-rhode-island/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Carolina del Sur usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-carolina/",
+          "source_name": "U.S. Department of Education, South Carolina IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina's federal fiscal year 2024 report, parents gave consent for 19,446 initial evaluations and 19,236 were completed within the timeline, or 98.92%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Carolina del Sur, los padres dieron su consentimiento para 19,446 evaluaciones iniciales y 19,236 se completaron dentro del plazo, es decir, el 98.92%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-carolina/",
+          "source_name": "U.S. Department of Education, South Carolina IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 19,446 19,236 98.94% 100% 98.92%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Carolina on the U.S. Department of Education IDEA website",
+          "label_es": "Carolina del Sur en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/south-carolina"
+        },
+        {
+          "label_en": "South Carolina IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Carolina del Sur (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-carolina/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Dakota del Sur fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-dakota/",
+          "source_name": "U.S. Department of Education, South Dakota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "South Dakota's report describes its initial evaluation timeline as 25 school days.",
+          "claim_es": "El informe de Dakota del Sur describe su plazo para la evaluación inicial como 25 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-dakota/",
+          "source_name": "U.S. Department of Education, South Dakota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "The SEA has defined the initial evaluation timeline as 25 school days from the date signed permission is received by the LEA, as documented by the LEA.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota's federal fiscal year 2024 report, parents gave consent for 5,521 initial evaluations and 5,500 were completed within the timeline, or 99.62%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Dakota del Sur, los padres dieron su consentimiento para 5,521 evaluaciones iniciales y 5,500 se completaron dentro del plazo, es decir, el 99.62%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-dakota/",
+          "source_name": "U.S. Department of Education, South Dakota IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 5,521 5,500 99.76% 100% 99.62%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota on the U.S. Department of Education IDEA website",
+          "label_es": "Dakota del Sur en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/south-dakota"
+        },
+        {
+          "label_en": "South Dakota IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Dakota del Sur (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-south-dakota/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "Tennessee uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Tennessee usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-tennessee/",
+          "source_name": "U.S. Department of Education, Tennessee IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Tennessee's federal fiscal year 2024 report, parents gave consent for 34,445 initial evaluations and 31,726 were completed within the timeline, or 92.11%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Tennessee, los padres dieron su consentimiento para 34,445 evaluaciones iniciales y 31,726 se completaron dentro del plazo, es decir, el 92.11%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-tennessee/",
+          "source_name": "U.S. Department of Education, Tennessee IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 34,445 31,726 91.52% 100% 92.11%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Tennessee on the U.S. Department of Education IDEA website",
+          "label_es": "Tennessee en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/tennessee"
+        },
+        {
+          "label_en": "Tennessee IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Tennessee (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-tennessee/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "Texas has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Texas fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-texas/",
+          "source_name": "U.S. Department of Education, Texas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas's federal fiscal year 2024 report, parents gave consent for 170,112 initial evaluations and 167,441 were completed within the timeline, or 98.43%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Texas, los padres dieron su consentimiento para 170,112 evaluaciones iniciales y 167,441 se completaron dentro del plazo, es decir, el 98.43%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-texas/",
+          "source_name": "U.S. Department of Education, Texas IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 170,112 167,441 97.28% 100% 98.43%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Texas on the U.S. Department of Education IDEA website",
+          "label_es": "Texas en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/texas"
+        },
+        {
+          "label_en": "Texas IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Texas (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-texas/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "Utah has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Utah fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-utah/",
+          "source_name": "U.S. Department of Education, Utah IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Utah's report describes its initial evaluation timeline as 45 school days.",
+          "claim_es": "El informe de Utah describe su plazo para la evaluación inicial como 45 días escolares.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-utah/",
+          "source_name": "U.S. Department of Education, Utah IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Rules II.D. establish that the initial evaluation must be conducted within 45 school days of receiving parental consent or student consent if the student is an adult.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Utah's federal fiscal year 2024 report, parents gave consent for 468 initial evaluations and 428 were completed within the timeline, or 91.45%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Utah, los padres dieron su consentimiento para 468 evaluaciones iniciales y 428 se completaron dentro del plazo, es decir, el 91.45%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-utah/",
+          "source_name": "U.S. Department of Education, Utah IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 468 428 87.06% 100% 91.45%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah on the U.S. Department of Education IDEA website",
+          "label_es": "Utah en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/utah"
+        },
+        {
+          "label_en": "Utah IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Utah (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-utah/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Vermont fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-vermont/",
+          "source_name": "U.S. Department of Education, Vermont IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Vermont's report describes its initial evaluation timeline as sixty days.",
+          "claim_es": "El informe de Vermont describe su plazo para la evaluación inicial como sesenta días.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-vermont/",
+          "source_name": "U.S. Department of Education, Vermont IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "2362.2.1 (c) Initial Evaluations (34 CFR §300.301) states that “the initial evaluation shall be completed, and the report issued within sixty days from either: 1.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Vermont's federal fiscal year 2024 report, parents gave consent for 433 initial evaluations and 404 were completed within the timeline, or 93.30%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Vermont, los padres dieron su consentimiento para 433 evaluaciones iniciales y 404 se completaron dentro del plazo, es decir, el 93.30%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-vermont/",
+          "source_name": "U.S. Department of Education, Vermont IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 433 404 97.90% 100% 93.30%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont on the U.S. Department of Education IDEA website",
+          "label_es": "Vermont en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/vermont"
+        },
+        {
+          "label_en": "Vermont IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Vermont (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-vermont/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "Washington has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Washington fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-washington/",
+          "source_name": "U.S. Department of Education, Washington IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington's federal fiscal year 2024 report, parents gave consent for 30,144 initial evaluations and 29,983 were completed within the timeline, or 99.47%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Washington, los padres dieron su consentimiento para 30,144 evaluaciones iniciales y 29,983 se completaron dentro del plazo, es decir, el 99.47%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-washington/",
+          "source_name": "U.S. Department of Education, Washington IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 30,144 29,983 99.31% 100% 99.47%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Washington on the U.S. Department of Education IDEA website",
+          "label_es": "Washington en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/washington"
+        },
+        {
+          "label_en": "Washington IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Washington (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-washington/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "West Virginia has set its own timeline for initial special education evaluations instead of using the federal default, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Virginia Occidental fijó su propio plazo para las evaluaciones iniciales de educación especial en lugar del plazo federal predeterminado, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-west-virginia/",
+          "source_name": "U.S. Department of Education, West Virginia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State established a timeline within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "West Virginia's report describes its initial evaluation timeline as 80 calendar days.",
+          "claim_es": "El informe de Virginia Occidental describe su plazo para la evaluación inicial como 80 días calendario.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-west-virginia/",
+          "source_name": "U.S. Department of Education, West Virginia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "WVBE Policy 2419 establishes a timeline of 80 calendar days by which initial evaluations and eligibility determinations must be completed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia's federal fiscal year 2024 report, parents gave consent for 9,836 initial evaluations and 9,747 were completed within the timeline, or 99.10%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Virginia Occidental, los padres dieron su consentimiento para 9,836 evaluaciones iniciales y 9,747 se completaron dentro del plazo, es decir, el 99.10%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-west-virginia/",
+          "source_name": "U.S. Department of Education, West Virginia IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 9,836 9,747 99.22% 100% 99.10%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia on the U.S. Department of Education IDEA website",
+          "label_es": "Virginia Occidental en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/west-virginia"
+        },
+        {
+          "label_en": "West Virginia IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Virginia Occidental (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-west-virginia/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Wisconsin uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Wisconsin usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wisconsin/",
+          "source_name": "U.S. Department of Education, Wisconsin IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin's federal fiscal year 2024 report, parents gave consent for 7,311 initial evaluations and 7,225 were completed within the timeline, or 98.82%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Wisconsin, los padres dieron su consentimiento para 7,311 evaluaciones iniciales y 7,225 se completaron dentro del plazo, es decir, el 98.82%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wisconsin/",
+          "source_name": "U.S. Department of Education, Wisconsin IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 7,311 7,225 97.61% 100% 98.82%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin on the U.S. Department of Education IDEA website",
+          "label_es": "Wisconsin en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/wisconsin"
+        },
+        {
+          "label_en": "Wisconsin IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Wisconsin (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wisconsin/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "Wyoming uses the federal 60-day timeline for initial special education evaluations, according to its latest report to the U.S. Department of Education.",
+          "claim_es": "Wyoming usa el plazo federal de 60 días para las evaluaciones iniciales de educación especial, según su informe más reciente al Departamento de Educación de EE. UU.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wyoming/",
+          "source_name": "U.S. Department of Education, Wyoming IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "Indicate the evaluation timeline used: The State used the 60 day timeframe within which the evaluation must be conducted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming's federal fiscal year 2024 report, parents gave consent for 3,472 initial evaluations and 3,433 were completed within the timeline, or 98.88%.",
+          "claim_es": "En el informe del año fiscal federal 2024 de Wyoming, los padres dieron su consentimiento para 3,472 evaluaciones iniciales y 3,433 se completaron dentro del plazo, es decir, el 98.88%.",
+          "source_url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wyoming/",
+          "source_name": "U.S. Department of Education, Wyoming IDEA Part B State Performance Plan/Annual Performance Report (FFY 2024)",
+          "quote": "(a) Number of children for whom parental consent to evaluate was received (b) Number of children whose evaluations were completed within 60 days (or State - established timeline) FFY 2023 Data FFY 2024 Target FFY 2024 Data Status Slippage 3,472 3,433 98.52% 100% 98.88%",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under federal IDEA rules, an initial evaluation must be done within 60 days of the parent's consent, unless the state sets its own timeframe.",
+          "claim_es": "Según las reglas federales de IDEA, la evaluación inicial debe hacerse dentro de los 60 días después del consentimiento de los padres, a menos que el estado fije su propio plazo.",
+          "source_url": "https://sites.ed.gov/idea/regs/b/d/300.301",
+          "source_name": "U.S. Department of Education, IDEA regulations, 34 CFR 300.301",
+          "quote": "(1) (i) Must be conducted within 60 days of receiving parental consent for the evaluation; or (ii) If the State establishes a timeframe within which the evaluation must be conducted, within that timeframe",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wyoming on the U.S. Department of Education IDEA website",
+          "label_es": "Wyoming en el sitio IDEA del Departamento de Educación de EE. UU.",
+          "url": "https://sites.ed.gov/idea/state/wyoming"
+        },
+        {
+          "label_en": "Wyoming IDEA Part B report (SPP/APR)",
+          "label_es": "Informe de la Parte B de IDEA de Wyoming (SPP/APR)",
+          "url": "https://sites.ed.gov/idea/idea-files/2026-spp-apr-and-state-determination-letters-part-b-wyoming/"
+        },
+        {
+          "label_en": "Find your Parent Training and Information Center",
+          "label_es": "Encuentre su Centro de Capacitación e Información para Padres",
+          "url": "https://www.parentcenterhub.org/find-your-center/"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "DE": "the sites.ed.gov SPP/APR page for Delaware shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "MD": "the sites.ed.gov SPP/APR page for Maryland shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "NE": "the sites.ed.gov SPP/APR page for Nebraska shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "OH": "the sites.ed.gov SPP/APR page for Ohio shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "OK": "the sites.ed.gov SPP/APR page for Oklahoma shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "PA": "the sites.ed.gov SPP/APR page for Pennsylvania shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified",
+    "VA": "the sites.ed.gov SPP/APR page for Virginia shows only part of the report text; Indicator 11 (initial evaluation timeline) is missing or has no numbers, so fewer than 3 facts could be quote-verified"
+  }
+}

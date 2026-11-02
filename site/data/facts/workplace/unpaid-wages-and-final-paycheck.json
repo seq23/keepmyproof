@@ -1,0 +1,2723 @@
+{
+  "folder": "workplace",
+  "subtopic": "unpaid-wages-and-final-paycheck",
+  "title_en": "Unpaid wages, paydays and your final paycheck in {state}",
+  "title_es": "Salarios no pagados, días de pago y su último cheque en {state_es}",
+  "search_intent_en": [
+    "{state} final paycheck law",
+    "how to file a wage claim in {state}",
+    "{state} unpaid wages complaint",
+    "{state} labor department phone number"
+  ],
+  "search_intent_es": [
+    "reclamo de salarios no pagados en {state_es}",
+    "último cheque de pago {state_es}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table lists no payday-frequency regulation for Alabama.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. no indica una regla de frecuencia de pago para Alabama.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Alabama and Florida. No regulations or not specified.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alabama Department of Labor as the state labor office for Alabama; its listed phone number is 334-309-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alabama es Alabama Department of Labor; su teléfono es 334-309-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Alabama Department of Labor 649 Monroe St Montgomery, AL 36131 334-309-9000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alabama Department of Labor",
+          "label_es": "Alabama Department of Labor",
+          "url": "https://www.labor.alabama.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Alaska's Department of Labor and Workforce Development says that if you are terminated, your employer must pay all money owed within three working days after termination, not counting weekends and holidays.",
+          "claim_es": "El Departamento de Trabajo y Desarrollo Laboral de Alaska indica que, si lo despiden, su empleador debe pagarle todo lo adeudado dentro de tres días hábiles después del despido, sin contar fines de semana ni feriados.",
+          "source_url": "https://www.labor.state.ak.us/lss/whfaq.htm",
+          "source_name": "Alaska state labor agency",
+          "quote": "If you are terminated by your employer, your employer must pay you all monies owed within three working days after the day of termination (not counting weekends and holidays).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same Alaska agency says that if you quit, you must be paid by the next regular payday that is at least three working days after your last day worked.",
+          "claim_es": "La misma agencia de Alaska indica que, si renuncia, deben pagarle a más tardar el siguiente día de pago regular que caiga al menos tres días hábiles después de su último día trabajado.",
+          "source_url": "https://www.labor.state.ak.us/lss/whfaq.htm",
+          "source_name": "Alaska state labor agency",
+          "quote": "If you quit, you must be paid by the next regular payday that is at least three working days after your last day worked.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Alaska: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Alaska: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Alaska X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alaska Department of Labor and Workforce Development as the state labor office for Alaska; its listed phone number is 907-465-2700.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alaska es Alaska Department of Labor and Workforce Development; su teléfono es 907-465-2700.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development PO Box 11149 Juneau, AK 99811-1149 907-465-2700",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska: official wage and final pay information",
+          "label_es": "Alaska: información oficial sobre salarios y pago final",
+          "url": "https://www.labor.state.ak.us/lss/whfaq.htm"
+        },
+        {
+          "label_en": "Alaska: official wage and final pay information",
+          "label_es": "Alaska: información oficial sobre salarios y pago final",
+          "url": "https://www.labor.state.ak.us/lss/whfaq.htm"
+        },
+        {
+          "label_en": "Alaska Department of Labor and Workforce Development",
+          "label_es": "Alaska Department of Labor and Workforce Development",
+          "url": "https://www.labor.state.ak.us"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Arizona: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Arizona: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Arizona X 3",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Industrial Commission of Arizona as the state labor office for Arizona; its listed phone number is 602-542-4661.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arizona es Industrial Commission of Arizona; su teléfono es 602-542-4661.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Industrial Commission of Arizona 800 W Washington St Phoenix, AZ 85007 602-542-4661",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Industrial Commission of Arizona",
+          "label_es": "Industrial Commission of Arizona",
+          "url": "https://www.azica.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Arkansas: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Arkansas: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Arkansas X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Arkansas Department of Labor & Licensing as the state labor office for Arkansas; its listed phone number is 501-682-4500.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arkansas es Arkansas Department of Labor & Licensing; su teléfono es 501-682-4500.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Arkansas Department of Labor & Licensing 900 West Capital Ave Ste 400 Little Rock, AR 72201 501-682-4500",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas Department of Labor & Licensing",
+          "label_es": "Arkansas Department of Labor & Licensing",
+          "url": "https://www.labor.arkansas.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for California: weekly, every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para California: semanal, cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "California X 10 X 10 X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the California Labor and Workforce Development Agency as the state labor office for California; its listed phone number is 833-526-4636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de California es California Labor and Workforce Development Agency; su teléfono es 833-526-4636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Labor and Workforce Development Agency 800 Capitol Mall, Suite 5000 (MIC-55) Sacramento, CA 95814 833-526-4636",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Labor and Workforce Development Agency",
+          "label_es": "California Labor and Workforce Development Agency",
+          "url": "https://www.dir.ca.gov/contactus.html"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Colorado: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Colorado: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Colorado X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Colorado Department of Labor and Employment as the state labor office for Colorado; its listed phone number is 303-318-8441.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Colorado es Colorado Department of Labor and Employment; su teléfono es 303-318-8441.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Employment 633 17th St Suite 201 Denver, CO 80202-3660 303-318-8441",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Department of Labor and Employment",
+          "label_es": "Colorado Department of Labor and Employment",
+          "url": "https://cdle.colorado.gov/dlss"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Connecticut: weekly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Connecticut: semanal.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Connecticut X 4",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Connecticut Department of Labor as the state labor office for Connecticut; its listed phone number is 860-263-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Connecticut es Connecticut Department of Labor; su teléfono es 860-263-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 200 Folly Brook Blvd Wethersfield, CT 06109-1114 860-263-6000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut Department of Labor",
+          "label_es": "Connecticut Department of Labor",
+          "url": "https://www.ct.gov/dol"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Delaware: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Delaware: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Delaware X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Delaware Department of Labor as the state labor office for Delaware; its listed phone number is 302-761-8176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Delaware es Delaware Department of Labor; su teléfono es 302-761-8176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4425 N Market St 4th Floor Wilmington, DE 19802 302-761-8176",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Department of Labor",
+          "label_es": "Delaware Department of Labor",
+          "url": "https://www.labor.delaware.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for District of Columbia: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Distrito de Columbia: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "District of Columbia X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the DC Department of Employment Services as the state labor office for District of Columbia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Distrito de Columbia es DC Department of Employment Services.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Services 4058 Minnesota Ave NE Washington, DC 20019",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "District of Columbia Department of Employment Services",
+          "label_es": "District of Columbia Department of Employment Services",
+          "url": "https://www.does.dc.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table lists no payday-frequency regulation for Florida.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. no indica una regla de frecuencia de pago para Florida.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Alabama and Florida. No regulations or not specified.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Florida Department of Business and Professional Regulation as the state labor office for Florida; its listed phone number is 850-487-1395.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Florida es Florida Department of Business and Professional Regulation; su teléfono es 850-487-1395.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Professional Regulation 2601 Blair Stone Road, Tallahassee, FL 32399 850-487-1395",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Department of Business and Professional Regulation",
+          "label_es": "Florida Department of Business and Professional Regulation",
+          "url": "https://www.myfloridalicense.com/DBPR/"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Georgia: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Georgia: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Georgia X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Georgia Department of Labor as the state labor office for Georgia; its listed phone number is 404-232-7300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Georgia es Georgia Department of Labor; su teléfono es 404-232-7300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 148 Andrew Young International Blvd NE Atlanta, GA 30303 404-232-7300",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia Department of Labor",
+          "label_es": "Georgia Department of Labor",
+          "url": "https://www.dol.georgia.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Hawaii: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Hawái: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Hawaii X X 5",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Hawaii Department of Labor & Industrial Relations as the state labor office for Hawaii; its listed phone number is 808-586-8844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Hawái es Hawaii Department of Labor & Industrial Relations; su teléfono es 808-586-8844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Industrial Relations Princess Ruth Ke'elikolani Building 830 Punchbowl St Honolulu, HI 96813 808-586-8844",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii Department of Labor & Industrial Relations",
+          "label_es": "Hawaii Department of Labor & Industrial Relations",
+          "url": "https://www.labor.hawaii.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Idaho: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Idaho: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Idaho X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Idaho Department of Labor as the state labor office for Idaho; its listed phone number is 208-332-3570.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Idaho es Idaho Department of Labor; su teléfono es 208-332-3570.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Idaho Department of Labor 317 W Main St Boise, ID 83735 208-332-3570",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Department of Labor",
+          "label_es": "Idaho Department of Labor",
+          "url": "https://www.labor.idaho.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The Illinois Department of Labor says employers must pay a departing employee's final compensation in full at separation if possible, and no later than the next regularly scheduled payday.",
+          "claim_es": "El Departamento de Trabajo de Illinois indica que el empleador debe pagar la compensación final completa al terminar la relación laboral si es posible, y a más tardar el siguiente día de pago programado.",
+          "source_url": "https://labor.illinois.gov/faqs/wage-payment-faq.html",
+          "source_name": "Illinois state labor agency",
+          "quote": "the employer is required to pay the final compensation of separated employees in full at the time of separation, if possible, but in no event later than the next regularly scheduled payday",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Illinois: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Illinois: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Illinois X X 2",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Illinois Department of Labor as the state labor office for Illinois; its listed phone number is 217-782-6206.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Illinois es Illinois Department of Labor; su teléfono es 217-782-6206.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 524 S. 2nd Street, Suite 400 Springfield, IL 62701 217-782-6206",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois: official wage and final pay information",
+          "label_es": "Illinois: información oficial sobre salarios y pago final",
+          "url": "https://labor.illinois.gov/faqs/wage-payment-faq.html"
+        },
+        {
+          "label_en": "Illinois Department of Labor",
+          "label_es": "Illinois Department of Labor",
+          "url": "https://www.labor.illinois.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "The Indiana Department of Labor says employees who believe they were fired or retaliated against for a protected activity may file a complaint with it within 30 calendar days of the alleged offense.",
+          "claim_es": "El Departamento de Trabajo de Indiana indica que los empleados que creen que fueron despedidos o sufrieron represalias por una actividad protegida pueden presentar una queja ante esa agencia dentro de 30 días calendario.",
+          "source_url": "https://www.in.gov/dol/iosha/whistleblower-protection-unit",
+          "source_name": "Indiana state labor agency",
+          "quote": "Employees who believe that they have been discharged or retaliated against for engaging in a protected activity, may, within 30 calendar days after the alleged offense, file a complaint with the Indiana Department of Labor (IDOL).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Indiana: every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Indiana: cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Indiana X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Indiana Department of Labor as the state labor office for Indiana; its listed phone number is 317-232-2655.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Indiana es Indiana Department of Labor; su teléfono es 317-232-2655.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 402 W. Washington St Room W195 Indianapolis, IN 46204 317-232-2655",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Indiana: official wage and final pay information",
+          "label_es": "Indiana: información oficial sobre salarios y pago final",
+          "url": "https://www.in.gov/dol/iosha/whistleblower-protection-unit"
+        },
+        {
+          "label_en": "Indiana Department of Labor",
+          "label_es": "Indiana Department of Labor",
+          "url": "https://www.in.gov/dol"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Iowa: weekly, every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Iowa: semanal, cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Iowa X X 6 X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Iowa Department of Inspections, Appeals and Licensing as the state labor office for Iowa; its listed phone number is 515-242-5870.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Iowa es Iowa Department of Inspections, Appeals and Licensing; su teléfono es 515-242-5870.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Inspections, Appeals and Licensing 6200 Park Avenue, Des Moines, Iowa 50321 515-242-5870",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Department of Inspections, Appeals and Licensing",
+          "label_es": "Iowa Department of Inspections, Appeals and Licensing",
+          "url": "https://www.iowadivisionoflabor.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Kansas: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Kansas: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Kansas X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kansas Department of Labor as the state labor office for Kansas; its listed phone number is 785-296-5000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kansas es Kansas Department of Labor; su teléfono es 785-296-5000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 401 SW Topeka Blvd Topeka, KS 66603-3182 785-296-5000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Department of Labor",
+          "label_es": "Kansas Department of Labor",
+          "url": "https://www.dol.ks.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Kentucky: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Kentucky: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Kentucky X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kentucky Education and Labor Cabinet as the state labor office for Kentucky; its listed phone number is 502-564-3534.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kentucky es Kentucky Education and Labor Cabinet; su teléfono es 502-564-3534.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Education and Labor Cabinet 500 Mero Street, Frankfort, Kentucky 40601 502-564-3534",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Education and Labor Cabinet",
+          "label_es": "Kentucky Education and Labor Cabinet",
+          "url": "https://elc.ky.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Louisiana: every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Luisiana: cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Louisiana X X 7",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Louisiana Workforce Commission as the state labor office for Louisiana; its listed phone number is 225-342-3111.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Luisiana es Louisiana Workforce Commission; su teléfono es 225-342-3111.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Louisiana Workforce Commission 1001 N 23rd St Baton Rouge, LA 70802 225-342-3111",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Louisiana Workforce Commission",
+          "label_es": "Louisiana Workforce Commission",
+          "url": "https://www.laworks.net/"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The Maine Department of Labor says all earned wages are due on the next regularly scheduled payday after employment ends.",
+          "claim_es": "El Departamento de Trabajo de Maine indica que todo el salario ganado se debe pagar el siguiente día de pago programado después de que termina el empleo.",
+          "source_url": "https://www.maine.gov/labor/labor_laws/faq/index.shtml",
+          "source_name": "Maine state labor agency",
+          "quote": "All earned wages are due on the next regularly scheduled payday after the termination of employment.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Maine: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Maine: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Maine X 8",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maine Department of Labor as the state labor office for Maine; its listed phone number is 207-623-7900.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maine es Maine Department of Labor; su teléfono es 207-623-7900.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 45 State House Station Augusta, ME 04333 207-623-7900",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine: official wage and final pay information",
+          "label_es": "Maine: información oficial sobre salarios y pago final",
+          "url": "https://www.maine.gov/labor/labor_laws/faq/index.shtml"
+        },
+        {
+          "label_en": "Maine Department of Labor",
+          "label_es": "Maine Department of Labor",
+          "url": "https://www.maine.gov/labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Maryland: every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Maryland: cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Maryland X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maryland Department of Labor as the state labor office for Maryland; its listed phone number is 410-230-6020.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maryland es Maryland Department of Labor; su teléfono es 410-230-6020.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 1100 North Eutaw Street Baltimore, MD 21201 410-230-6020",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Department of Labor",
+          "label_es": "Maryland Department of Labor",
+          "url": "https://www.labor.maryland.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says hourly employees in Massachusetts must be paid weekly or every two weeks.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que en Massachusetts a los empleados por hora se les debe pagar cada semana o cada dos semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Massachusetts. Hourly employees must be paid either weekly or biweekly.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Massachusetts: weekly, every two weeks.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Massachusetts: semanal, cada dos semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Massachusetts 9 X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Massachusetts Executive Office of Labor & Workforce Development as the state labor office for Massachusetts; its listed phone number is 617-626-7100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Massachusetts es Massachusetts Executive Office of Labor & Workforce Development; su teléfono es 617-626-7100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Executive Office of Labor & Workforce Development One Ashburton Pl Room 2112 Boston, MA 02108 617-626-7100",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Massachusetts Executive Office of Labor & Workforce Development",
+          "label_es": "Massachusetts Executive Office of Labor & Workforce Development",
+          "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "Michigan's Wage and Hour Division says that if you were not paid at least minimum wage or were not paid overtime, you may file a complaint up to 3 years from the date of the alleged violation.",
+          "claim_es": "La División de Horas y Salarios de Míchigan indica que, si no le pagaron al menos el salario mínimo o las horas extra, puede presentar una queja hasta 3 años después de la fecha de la violación alegada.",
+          "source_url": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/complaint",
+          "source_name": "Michigan state labor agency",
+          "quote": "If you have not been paid at least minimum wage or you have not been paid overtime, you may file a complaint up to 3 years from the date of the alleged violation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Michigan: weekly, every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Míchigan: semanal, cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Michigan 10 X X X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Michigan Department of Labor and Economic Opportunity as the state labor office for Michigan; its listed phone number is 517-284-7800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Míchigan es Michigan Department of Labor and Economic Opportunity; su teléfono es 517-284-7800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Economic Opportunity 105 W. Allegan St. Lansing, MI 48933 517-284-7800",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan: official wage and final pay information",
+          "label_es": "Míchigan: información oficial sobre salarios y pago final",
+          "url": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/complaint"
+        },
+        {
+          "label_en": "Michigan Department of Labor and Economic Opportunity",
+          "label_es": "Michigan Department of Labor and Economic Opportunity",
+          "url": "https://www.michigan.gov/leo"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota's Department of Labor and Industry says that in some circumstances final wages must be paid within 24 hours without the employee having to ask.",
+          "claim_es": "El Departamento de Trabajo e Industria de Minnesota indica que, en algunos casos, el salario final debe pagarse dentro de 24 horas sin que el empleado lo pida.",
+          "source_url": "https://www.dli.mn.gov/wage-claim",
+          "source_name": "Minnesota state labor agency",
+          "quote": "In some circumstances, final wages must be paid within 24 hours without the employee's demand.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same Minnesota agency says an employee who quits or resigns generally must be paid in full no later than the next regularly scheduled payday.",
+          "claim_es": "La misma agencia de Minnesota indica que, por lo general, a quien renuncia se le debe pagar todo a más tardar el siguiente día de pago programado.",
+          "source_url": "https://www.dli.mn.gov/wage-claim",
+          "source_name": "Minnesota state labor agency",
+          "quote": "Generally, an employee who quits or resigns must be paid in full no later than the next regularly scheduled payday",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Minnesota: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Minnesota: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Minnesota X 11 X 11",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Minnesota Department of Labor and Industry as the state labor office for Minnesota; its listed phone number is 651-284-5005.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Minnesota es Minnesota Department of Labor and Industry; su teléfono es 651-284-5005.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 443 Lafayette Rd N St. Paul, MN 55155 651-284-5005",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota: official wage and final pay information",
+          "label_es": "Minnesota: información oficial sobre salarios y pago final",
+          "url": "https://www.dli.mn.gov/wage-claim"
+        },
+        {
+          "label_en": "Minnesota: official wage and final pay information",
+          "label_es": "Minnesota: información oficial sobre salarios y pago final",
+          "url": "https://www.dli.mn.gov/wage-claim"
+        },
+        {
+          "label_en": "Minnesota Department of Labor and Industry",
+          "label_es": "Minnesota Department of Labor and Industry",
+          "url": "https://www.dli.mn.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Mississippi: every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Misisipi: cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Mississippi X 12 X 12",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Mississippi Department of Employment Security as the state labor office for Mississippi; its listed phone number is 601-321-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misisipi es Mississippi Department of Employment Security; su teléfono es 601-321-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Security 1235 Echelon Pkwy PO Box 1699 Jackson, MS 39215-1699 601-321-6000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mississippi Department of Employment Security",
+          "label_es": "Mississippi Department of Employment Security",
+          "url": "https://www.mdes.ms.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Missouri: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Misuri: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Missouri X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Missouri Department of Labor and Industrial Relations as the state labor office for Missouri; its listed phone number is 573-751-4091.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misuri es Missouri Department of Labor and Industrial Relations; su teléfono es 573-751-4091.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industrial Relations 421 E Dunklin St PO Box 504 Jefferson City, MO 65102-0504 573-751-4091",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Department of Labor and Industrial Relations",
+          "label_es": "Missouri Department of Labor and Industrial Relations",
+          "url": "https://www.labor.mo.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says that in Montana, if no pay period is set, the pay period is presumed to be twice a month.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que en Montana, si no hay un período de pago establecido, se presume que es dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Montana. If there is not an established time period or time when wages are due and payable, the pay period is presumed to be semimonthly in length.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Montana Department of Labor and Industry as the state labor office for Montana; its listed phone number is 406-444-2840.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Montana es Montana Department of Labor and Industry; su teléfono es 406-444-2840.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry PO Box 1728 Helena, MT 59624-1728 406-444-2840",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Department of Labor and Industry",
+          "label_es": "Montana Department of Labor and Industry",
+          "url": "https://www.dli.mt.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says that in Nebraska the payday is designated by the employer.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que en Nebraska el día de pago lo fija el empleador.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Nebraska. Payday designated by the employer.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nebraska Department of Labor as the state labor office for Nebraska; its listed phone number is 402-471-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nebraska es Nebraska Department of Labor; su teléfono es 402-471-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 550 S 16th St PO Box 94600 Lincoln, NE 68508-4600 402-471-9000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Department of Labor",
+          "label_es": "Nebraska Department of Labor",
+          "url": "https://www.dol.nebraska.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Nevada: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Nevada: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Nevada X X 2",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nevada Department of Business and Industry as the state labor office for Nevada; its listed phone number is 775-684-1890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nevada es Nevada Department of Business and Industry; su teléfono es 775-684-1890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Industry 1830 College Parkway, Suite 100 Carson City, NV 89706 775-684-1890",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Department of Business and Industry",
+          "label_es": "Nevada Department of Business and Industry",
+          "url": "https://labor.nv.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says New Hampshire requires weekly or every-two-weeks payment of wages.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que Nuevo Hampshire exige pagar el salario cada semana o cada dos semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "New Hampshire. Weekly or Bi-weekly payment of wages is required.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for New Hampshire: weekly, every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Nuevo Hampshire: semanal, cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "New Hampshire 15 X X X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Hampshire Department of Labor as the state labor office for New Hampshire; its listed phone number is 603-271-3176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo Hampshire es New Hampshire Department of Labor; su teléfono es 603-271-3176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 95 Pleasant St Concord, NH 03301 603-271-3176",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire Department of Labor",
+          "label_es": "New Hampshire Department of Labor",
+          "url": "https://dol.nh.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for New Jersey: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Nueva Jersey: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "New Jersey X X 16",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Jersey Department of Labor and Workforce Development as the state labor office for New Jersey; its listed phone number is 609-292-2305.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva Jersey es New Jersey Department of Labor and Workforce Development; su teléfono es 609-292-2305.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development 1 John Fitch Plaza 13th Floor, Suite D PO Box 110 Trenton, NJ 08625-0110 609-292-2305",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey Department of Labor and Workforce Development",
+          "label_es": "New Jersey Department of Labor and Workforce Development",
+          "url": "https://www.nj.gov/labor/"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for New Mexico: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Nuevo México: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "New Mexico X X 2",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Mexico Department of Workforce Solutions as the state labor office for New Mexico; its listed phone number is 505-841-8405.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo México es New Mexico Department of Workforce Solutions; su teléfono es 505-841-8405.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Solutions 401 Broadway Blvd NE PO Box 1928 Albuquerque, NM 87103 505-841-8405",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Department of Workforce Solutions",
+          "label_es": "New Mexico Department of Workforce Solutions",
+          "url": "https://www.dws.state.nm.us"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for New York: weekly, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Nueva York: semanal, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "New York X 17 X 17",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New York Department of Labor as the state labor office for New York; its listed phone number is 518-457-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva York es New York Department of Labor; su teléfono es 518-457-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor State Office Bldg # 12 W.A. Harriman Campus Albany, NY 12240 518-457-9000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York Department of Labor",
+          "label_es": "New York Department of Labor",
+          "url": "https://www.labor.ny.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says North Carolina specifies no pay period; pay periods may be daily, weekly, every two weeks, twice a month or monthly.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que Carolina del Norte no fija un período de pago; puede ser diario, semanal, cada dos semanas, dos veces al mes o mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "North Carolina. None specified, pay periods may be daily, weekly, bi-weekly, semi-monthly or monthly.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Carolina Department of Labor as the state labor office for North Carolina; its listed phone number is 800-625-2267.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Norte es North Carolina Department of Labor; su teléfono es 800-625-2267.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4 W Edenton St Raleigh, NC 27601 800-625-2267",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Department of Labor",
+          "label_es": "North Carolina Department of Labor",
+          "url": "https://www.labor.nc.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "North Dakota's Department of Labor and Human Rights says the time limit for a wage claim is two years from the date the wages were due.",
+          "claim_es": "El Departamento de Trabajo y Derechos Humanos de Dakota del Norte indica que el plazo para un reclamo de salarios es de dos años desde la fecha en que se debían los salarios.",
+          "source_url": "https://www.nd.gov/labor/wage-claim-process",
+          "source_name": "North Dakota state labor agency",
+          "quote": "The statute of limitations for a wage claim is two years from the date wages were due",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for North Dakota: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Dakota del Norte: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "North Dakota X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Dakota Department of Labor and Human Rights as the state labor office for North Dakota; its listed phone number is 701-328-2660.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Norte es North Dakota Department of Labor and Human Rights; su teléfono es 701-328-2660.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Human Rights 600 E Boulevard Ave Dept 406 Bismarck, ND 58505-0340 701-328-2660",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota: official wage and final pay information",
+          "label_es": "Dakota del Norte: información oficial sobre salarios y pago final",
+          "url": "https://www.nd.gov/labor/wage-claim-process"
+        },
+        {
+          "label_en": "North Dakota Department of Labor and Human Rights",
+          "label_es": "North Dakota Department of Labor and Human Rights",
+          "url": "https://www.nd.gov/labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Ohio: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Ohio: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Ohio X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Ohio Department of Commerce as the state labor office for Ohio; its listed phone number is 614-466-3636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Ohio es Ohio Department of Commerce; su teléfono es 614-466-3636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Commerce 77 S High St 23rd Floor Columbus, OH 43215 614-466-3636",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Department of Commerce",
+          "label_es": "Ohio Department of Commerce",
+          "url": "https://com.ohio.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "The Oklahoma Department of Labor says that whether you quit or are fired, your final paycheck is due on the next scheduled payday.",
+          "claim_es": "El Departamento de Trabajo de Oklahoma indica que, ya sea que renuncie o lo despidan, su último cheque se debe pagar el siguiente día de pago programado.",
+          "source_url": "https://www.oklahoma.gov/labor/workplace-rights/protect-your-pay.html",
+          "source_name": "Oklahoma state labor agency",
+          "quote": "Whether you quit or are fired, your final paycheck is due on the next scheduled payday.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Oklahoma: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Oklahoma: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Oklahoma X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oklahoma Department of Labor as the state labor office for Oklahoma; its listed phone number is 405-521-6100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oklahoma es Oklahoma Department of Labor; su teléfono es 405-521-6100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 409 NE 28th St 3rd Floor Oklahoma City, OK 73105 405-521-6100",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oklahoma: official wage and final pay information",
+          "label_es": "Oklahoma: información oficial sobre salarios y pago final",
+          "url": "https://www.oklahoma.gov/labor/workplace-rights/protect-your-pay.html"
+        },
+        {
+          "label_en": "Oklahoma Department of Labor",
+          "label_es": "Oklahoma Department of Labor",
+          "url": "https://www.oklahoma.gov/labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "Oregon's Bureau of Labor and Industries says that if you are let go or fired, your final paycheck is due by the end of the next business day.",
+          "claim_es": "La Oficina de Trabajo e Industrias de Oregón indica que, si lo despiden, su último cheque se debe pagar a más tardar al final del siguiente día hábil.",
+          "source_url": "https://www.oregon.gov/boli/workers/Pages/paychecks.aspx",
+          "source_name": "Oregon state labor agency",
+          "quote": "If you are let go or fired, your final paycheck is due by the end of the next business day.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same Oregon agency says that if you quit with less than 48 hours' notice, your pay is due within five business days or on the next regular payday, whichever comes first.",
+          "claim_es": "La misma agencia de Oregón indica que, si renuncia con menos de 48 horas de aviso, su pago vence dentro de cinco días hábiles o el siguiente día de pago regular, lo que ocurra primero.",
+          "source_url": "https://www.oregon.gov/boli/workers/Pages/paychecks.aspx",
+          "source_name": "Oregon state labor agency",
+          "quote": "If you quit with less than 48 hours’ notice (not including weekends and holidays) your paycheck and any wages owed are due within five business days or on the next regular payday, whichever comes first.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Oregon: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Oregón: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Oregon X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oregon Bureau of Labor and Industries as the state labor office for Oregon; its listed phone number is 971-245-3844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oregón es Oregon Bureau of Labor and Industries; su teléfono es 971-245-3844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Bureau of Labor and Industries 1800 SW 1st Ave, Suite 500 Portland, OR 97201 971-245-3844",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon: official wage and final pay information",
+          "label_es": "Oregón: información oficial sobre salarios y pago final",
+          "url": "https://www.oregon.gov/boli/workers/Pages/paychecks.aspx"
+        },
+        {
+          "label_en": "Oregon: official wage and final pay information",
+          "label_es": "Oregón: información oficial sobre salarios y pago final",
+          "url": "https://www.oregon.gov/boli/workers/Pages/paychecks.aspx"
+        },
+        {
+          "label_en": "Oregon Bureau of Labor and Industries",
+          "label_es": "Oregon Bureau of Labor and Industries",
+          "url": "https://www.oregon.gov/boli"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Rhode Island: weekly, every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Rhode Island: semanal, cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Rhode Island X 19 X 19 X 19",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Rhode Island Department of Labor and Training as the state labor office for Rhode Island; its listed phone number is 401-462-8550.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Rhode Island es Rhode Island Department of Labor and Training; su teléfono es 401-462-8550.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Training 1511 Pontiac Ave Cranston, RI 02920 401-462-8550",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island Department of Labor and Training",
+          "label_es": "Rhode Island Department of Labor and Training",
+          "url": "https://www.dlt.ri.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina's Department of Labor, Licensing and Regulation says employers must pay all wages due within 48 hours of separation or by the next regularly scheduled payday, not to exceed 30 days.",
+          "claim_es": "El Departamento de Trabajo, Licencias y Regulación de Carolina del Sur indica que el empleador debe pagar todo el salario adeudado dentro de 48 horas de la separación o el siguiente día de pago programado, sin exceder 30 días.",
+          "source_url": "https://llr.sc.gov/wage/faq.aspx",
+          "source_name": "South Carolina state labor agency",
+          "quote": "State law requires the employer to pay an employee all wages due him or her within 48 hours of the day of separation OR the next regularly-scheduled payday, not to exceed 30 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A note on the U.S. Department of Labor's payday table says South Carolina employers with 5 or more employees must give written notice at hiring of the agreed wages and the time and place of payment.",
+          "claim_es": "Una nota de la tabla de días de pago del Departamento de Trabajo de EE. UU. indica que en Carolina del Sur los empleadores con 5 o más empleados deben avisar por escrito al contratar el salario acordado y el momento y lugar de pago.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "South Carolina. Employers with 5 or more employees are required to give written notice at the time of hiring to all employees advising them of their wages agreed upon, and the time and place of payment",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Carolina Department of Labor, Licensing & Regulations as the state labor office for South Carolina; its listed phone number is 803-896-4300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Sur es South Carolina Department of Labor, Licensing & Regulations; su teléfono es 803-896-4300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor, Licensing & Regulations 110 Centerview Dr Columbia, SC 29210 803-896-4300",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Carolina: official wage and final pay information",
+          "label_es": "Carolina del Sur: información oficial sobre salarios y pago final",
+          "url": "https://llr.sc.gov/wage/faq.aspx"
+        },
+        {
+          "label_en": "South Carolina Department of Labor, Licensing & Regulations",
+          "label_es": "South Carolina Department of Labor, Licensing & Regulations",
+          "url": "https://llr.sc.gov/"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for South Dakota: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Dakota del Sur: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "South Dakota X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Dakota Department of Labor and Regulation as the state labor office for South Dakota; its listed phone number is 605-773-3101.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Sur es South Dakota Department of Labor and Regulation; su teléfono es 605-773-3101.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Regulation 123 W Missouri Ave Pierre, SD 57501 605-773-3101",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Department of Labor and Regulation",
+          "label_es": "South Dakota Department of Labor and Regulation",
+          "url": "https://www.dlr.sd.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Tennessee: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Tennessee: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Tennessee X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Tennessee Department of Labor & Workforce Development as the state labor office for Tennessee; its listed phone number is 844-224-5818.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Tennessee es Tennessee Department of Labor & Workforce Development; su teléfono es 844-224-5818.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Workforce Development 220 French Landing Dr Nashville, TN 37243 844-224-5818",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Tennessee Department of Labor & Workforce Development",
+          "label_es": "Tennessee Department of Labor & Workforce Development",
+          "url": "https://www.tn.gov/workforce"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "The Texas Workforce Commission says terminated employees must be paid in full within six days.",
+          "claim_es": "La Comisión de la Fuerza Laboral de Texas indica que a los empleados despedidos se les debe pagar todo dentro de seis días.",
+          "source_url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law",
+          "source_name": "Texas state labor agency",
+          "quote": "Terminated employees must be paid in full within six days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Texas Workforce Commission says an employee who quits must be paid in full at the next regular payday.",
+          "claim_es": "La Comisión de la Fuerza Laboral de Texas indica que a quien renuncia se le debe pagar todo el siguiente día de pago regular.",
+          "source_url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law",
+          "source_name": "Texas state labor agency",
+          "quote": "If an employee quits, they must be paid in full at the next regular payday.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Texas Workforce Commission says a wage claim must be filed no later than 180 days after the wages were originally due.",
+          "claim_es": "La Comisión de la Fuerza Laboral de Texas indica que el reclamo de salarios debe presentarse a más tardar 180 días después de la fecha en que se debían pagar.",
+          "source_url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law",
+          "source_name": "Texas state labor agency",
+          "quote": "The deadline for filing a wage claim is no later than 180 days after the date the wages were originally due to be paid.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Texas: every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Texas: cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Texas X 21 X X 21",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Texas Workforce Commission as the state labor office for Texas; its listed phone number is 800-628-5115.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Texas es Texas Workforce Commission; su teléfono es 800-628-5115.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Texas Workforce Commission 101 E 15th St Room 651 Austin, TX 78778 800-628-5115",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Texas: official wage and final pay information",
+          "label_es": "Texas: información oficial sobre salarios y pago final",
+          "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law"
+        },
+        {
+          "label_en": "Texas: official wage and final pay information",
+          "label_es": "Texas: información oficial sobre salarios y pago final",
+          "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law"
+        },
+        {
+          "label_en": "Texas: official wage and final pay information",
+          "label_es": "Texas: información oficial sobre salarios y pago final",
+          "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-payday-law"
+        },
+        {
+          "label_en": "Texas Workforce Commission",
+          "label_es": "Texas Workforce Commission",
+          "url": "https://www.twc.texas.gov/"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "The Utah Labor Commission says that if the employer separates the employee, all wages are due immediately and payable within 24 hours.",
+          "claim_es": "La Comisión Laboral de Utah indica que, si el empleador termina la relación, todo el salario se debe de inmediato y debe pagarse dentro de 24 horas.",
+          "source_url": "https://www.laborcommission.utah.gov/divisions/utah-antidiscrimination-and-labor-uald/wage-claim/",
+          "source_name": "Utah state labor agency",
+          "quote": "If the employee is separated by the employer, all wages are due immediately and payable within 24 hours of separation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Utah Labor Commission says that an employee without a written fixed-term contract who resigns is due wages on the next regular payday.",
+          "claim_es": "La Comisión Laboral de Utah indica que al empleado sin contrato escrito por un período fijo que renuncia se le debe pagar el siguiente día de pago regular.",
+          "source_url": "https://www.laborcommission.utah.gov/divisions/utah-antidiscrimination-and-labor-uald/wage-claim/",
+          "source_name": "Utah state labor agency",
+          "quote": "If the employee does not have a written contract for a definite period and resigns, the wages become due and payable on the next regular payday.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Utah: twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Utah: dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Utah X 22 X 22",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Utah Labor Commission as the state labor office for Utah; its listed phone number is 801-530-6800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Utah es Utah Labor Commission; su teléfono es 801-530-6800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Utah Labor Commission 160 E 300 S 3rd Floor Salt Lake City, UT 84111-6600 801-530-6800",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah: official wage and final pay information",
+          "label_es": "Utah: información oficial sobre salarios y pago final",
+          "url": "https://www.laborcommission.utah.gov/divisions/utah-antidiscrimination-and-labor-uald/wage-claim/"
+        },
+        {
+          "label_en": "Utah: official wage and final pay information",
+          "label_es": "Utah: información oficial sobre salarios y pago final",
+          "url": "https://www.laborcommission.utah.gov/divisions/utah-antidiscrimination-and-labor-uald/wage-claim/"
+        },
+        {
+          "label_en": "Utah Labor Commission",
+          "label_es": "Utah Labor Commission",
+          "url": "https://www.laborcommission.utah.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The Vermont Department of Labor says a wage claim cannot be filed more than two years after the wages were due.",
+          "claim_es": "El Departamento de Trabajo de Vermont indica que no se puede presentar un reclamo de salarios más de dos años después de la fecha en que se debían.",
+          "source_url": "https://www.labor.vermont.gov/form/online-wage-claim-form",
+          "source_name": "Vermont state labor agency",
+          "quote": "You cannot file a claim for wages more than two years after the date they are due.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Vermont: weekly, every two weeks, twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Vermont: semanal, cada dos semanas, dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Vermont X X 23 X 23",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Vermont Department of Labor as the state labor office for Vermont; its listed phone number is 802-828-4000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Vermont es Vermont Department of Labor; su teléfono es 802-828-4000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 5 Green Mountain Dr PO Box 488 Montpelier, VT 05601-0488 802-828-4000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont: official wage and final pay information",
+          "label_es": "Vermont: información oficial sobre salarios y pago final",
+          "url": "https://www.labor.vermont.gov/form/online-wage-claim-form"
+        },
+        {
+          "label_en": "Vermont Department of Labor",
+          "label_es": "Vermont Department of Labor",
+          "url": "https://www.labor.vermont.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Virginia: weekly, every two weeks, twice a month, monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Virginia: semanal, cada dos semanas, dos veces al mes, mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Virginia X 24 X 24 X 24 X 2",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Virginia Department of Labor and Industry as the state labor office for Virginia; its listed phone number is 804-371-2327.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia es Virginia Department of Labor and Industry; su teléfono es 804-371-2327.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 600 E Main St Suite 207 Richmond, VA 23219-4101 804-371-2327",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia Department of Labor and Industry",
+          "label_es": "Virginia Department of Labor and Industry",
+          "url": "https://www.doli.Virginia.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "Washington's Department of Labor and Industries says that if an employee quits or is fired, the final paycheck must be paid on or before the next regularly scheduled payday.",
+          "claim_es": "El Departamento de Trabajo e Industrias de Washington indica que, si el empleado renuncia o lo despiden, el último cheque debe pagarse a más tardar el siguiente día de pago programado.",
+          "source_url": "https://lni.wa.gov/workers-rights/wages/getting-paid/",
+          "source_name": "Washington state labor agency",
+          "quote": "If an employee quits or is fired, their final paycheck must be paid on or before the next regularly scheduled payday.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Washington: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Washington: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Washington X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Washington Department of Labor and Industries as the state labor office for Washington; its listed phone number is 360-902-5800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Washington es Washington Department of Labor and Industries; su teléfono es 360-902-5800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industries 7273 Linderson Way SW Tumwater, WA 98501-5414 360-902-5800",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Washington: official wage and final pay information",
+          "label_es": "Washington: información oficial sobre salarios y pago final",
+          "url": "https://lni.wa.gov/workers-rights/wages/getting-paid/"
+        },
+        {
+          "label_en": "Washington Department of Labor and Industries",
+          "label_es": "Washington Department of Labor and Industries",
+          "url": "https://www.lni.wa.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for West Virginia: every two weeks.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Virginia Occidental: cada dos semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "West Virginia X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the West Virginia Division of Labor as the state labor office for West Virginia; its listed phone number is 304-558-7890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia Occidental es West Virginia Division of Labor; su teléfono es 304-558-7890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Division of Labor 1900 Kanawha Blvd State Capitol Complex Building #3 Room 200 Charleston, WV 25305 304-558-7890",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Division of Labor",
+          "label_es": "West Virginia Division of Labor",
+          "url": "https://labor.wv.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Wisconsin's Department of Workforce Development says a wage complaint can be filed online or on paper with its Equal Rights Division within 2 years of when the wages were earned.",
+          "claim_es": "El Departamento de Desarrollo de la Fuerza Laboral de Wisconsin indica que una queja por salarios puede presentarse en línea o en papel ante su División dentro de 2 años desde que se ganaron los salarios.",
+          "source_url": "https://dwd.wisconsin.gov/er/laborstandards/wages.htm",
+          "source_name": "Wisconsin state labor agency",
+          "quote": "You can file a complaint online or paper (to be mailed) with the Division within 2 years of the date the wages were earned",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Wisconsin: monthly.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Wisconsin: mensual.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Wisconsin X 25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wisconsin Department of Workforce Development as the state labor office for Wisconsin; its listed phone number is 608-266-3131.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wisconsin es Wisconsin Department of Workforce Development; su teléfono es 608-266-3131.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Development 201 E Washington Ave Madison, WI 53703 PO Box 7946 Madison, WI 53707-7946 608-266-3131",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin: official wage and final pay information",
+          "label_es": "Wisconsin: información oficial sobre salarios y pago final",
+          "url": "https://dwd.wisconsin.gov/er/laborstandards/wages.htm"
+        },
+        {
+          "label_en": "Wisconsin Department of Workforce Development",
+          "label_es": "Wisconsin Department of Workforce Development",
+          "url": "https://dwd.wisconsin.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "Wyoming's Department of Workforce Services says that for wage claims filed with the State of Wyoming, you generally have two years from the date the wages were due.",
+          "claim_es": "El Departamento de Servicios de la Fuerza Laboral de Wyoming indica que, para reclamos de salarios ante el estado, generalmente hay dos años desde la fecha en que se debían los salarios.",
+          "source_url": "https://dws.wyo.gov/dws-division/labor-standards/workers-and-job-seekers/where-to-file-older-claims-and-out-of-state-work/",
+          "source_name": "Wyoming state labor agency",
+          "quote": "For claims filed specifically with the State of Wyoming, you generally have two years from the date the wages were due to file a claim.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Wyoming: twice a month.",
+          "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Wyoming: dos veces al mes.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/payday",
+          "source_name": "U.S. Department of Labor, State Payday Requirements",
+          "quote": "Wyoming X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wyoming Department of Workforce Services as the state labor office for Wyoming; its listed phone number is 307-777-8650.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wyoming es Wyoming Department of Workforce Services; su teléfono es 307-777-8650.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Services 5221 Yellowstone Road Cheyenne, WY 82002 307-777-8650",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's Wage and Hour Division says complaints to it are confidential.",
+          "claim_es": "La División de Horas y Salarios del Departamento de Trabajo de EE. UU. indica que las quejas que recibe son confidenciales.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "Many investigations are initiated by complaints, which are confidential.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Wage and Hour Division says an employer cannot retaliate against a worker for exercising their rights, filing a complaint or cooperating with an investigation.",
+          "claim_es": "La División de Horas y Salarios indica que el empleador no puede tomar represalias contra un trabajador por ejercer sus derechos, presentar una queja o cooperar con una investigación.",
+          "source_url": "https://www.dol.gov/agencies/whd/contact/complaints",
+          "source_name": "U.S. Department of Labor, Wage and Hour Division: How to File a Complaint",
+          "quote": "An employer cannot retaliate against a worker for exercising their rights , filing a complaint or cooperating with an investigation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wyoming: official wage and final pay information",
+          "label_es": "Wyoming: información oficial sobre salarios y pago final",
+          "url": "https://dws.wyo.gov/dws-division/labor-standards/workers-and-job-seekers/where-to-file-older-claims-and-out-of-state-work/"
+        },
+        {
+          "label_en": "Wyoming Department of Workforce Services",
+          "label_es": "Wyoming Department of Workforce Services",
+          "url": "https://dws.wyo.gov"
+        },
+        {
+          "label_en": "U.S. Department of Labor: how to file a wage complaint",
+          "label_es": "Departamento de Trabajo de EE. UU.: cómo presentar una queja de salarios",
+          "url": "https://www.dol.gov/agencies/whd/contact/complaints"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "PA": "fewer than 2 state-specific quote-verified facts (state labor site gave no final-pay or wage-claim text to curl; DOL payday table has no entry)"
+  }
+}

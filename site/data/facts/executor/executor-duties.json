@@ -1,0 +1,918 @@
+{
+  "folder": "executor",
+  "subtopic": "executor-duties",
+  "title_en": "Executor duties and deadlines in {state}",
+  "title_es": "Deberes y plazos del albacea en {state_es}",
+  "search_intent_en": [
+    "executor duties in {state}",
+    "{state} personal representative inventory deadline",
+    "what does an executor have to do in {state}"
+  ],
+  "search_intent_es": [
+    "deberes del albacea en {state_es}",
+    "plazo del inventario de la herencia en {state_es}"
+  ],
+  "states": {
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "In Arizona, a personal representative is a fiduciary who must meet the standards of care that apply to trustees.",
+          "claim_es": "En Arizona, el representante personal es un fiduciario que debe cumplir las normas de cuidado que se aplican a los fideicomisarios.",
+          "source_url": "https://www.azleg.gov/ars/14/03703.htm",
+          "source_name": "Arizona Revised Statutes § 14-3703",
+          "quote": "a personal representative is a fiduciary who shall observe the standards of care applicable to trustees",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, the personal representative must tell the heirs and beneficiaries about the appointment within thirty days.",
+          "claim_es": "En Arizona, el representante personal debe informar su nombramiento a los herederos y beneficiarios dentro de treinta días.",
+          "source_url": "https://www.azleg.gov/ars/14/03705.htm",
+          "source_name": "Arizona Revised Statutes § 14-3705",
+          "quote": "Not later than thirty days after appointment every personal representative, except any special administrator, shall give information of the appointment to the heirs and devi",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, the personal representative must prepare an inventory of the estate within ninety days after appointment.",
+          "claim_es": "En Arizona, el representante personal debe preparar un inventario de la herencia dentro de noventa días después del nombramiento.",
+          "source_url": "https://www.azleg.gov/ars/14/03706.htm",
+          "source_name": "Arizona Revised Statutes § 14-3706",
+          "quote": "Within ninety days after his appointment, a personal representative, who is not a special administrator or a successor to another representative who has previously discharged this duty, shall prepare an inventory",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "In Idaho, a personal representative is a fiduciary held to the standards of care that apply to trustees.",
+          "claim_es": "En Idaho, el representante personal es un fiduciario sujeto a las normas de cuidado de los fideicomisarios.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-703/",
+          "source_name": "Idaho Code § 15-3-703",
+          "quote": "A personal representative is a fiduciary who shall observe the standards of care applicable to trustees as described by section 15-7-302 of this code.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, the personal representative must prepare an inventory within 3 months after appointment.",
+          "claim_es": "En Idaho, el representante personal debe preparar un inventario dentro de 3 meses después del nombramiento.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-706/",
+          "source_name": "Idaho Code § 15-3-706",
+          "quote": "Within three (3) months after his appointment, a personal representative, except for a special administrator or a successor to another representative who has previously discharged this duty, shall prepare an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, the personal representative sends a copy of the inventory to interested persons who ask, and may file the original with the court.",
+          "claim_es": "En Idaho, el representante personal envía copia del inventario a las personas interesadas que la pidan, y puede presentar el original ante el tribunal.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-706/",
+          "source_name": "Idaho Code § 15-3-706",
+          "quote": "The personal representative shall send a copy of the inventory to interested persons who request it, and he may file the original of the inventory with the court.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "In Maine, a personal representative is a fiduciary who must meet the standards of care that apply to trustees.",
+          "claim_es": "En Maine, el representante personal es un fiduciario que debe cumplir las normas de cuidado de los fideicomisarios.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-703.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-703",
+          "quote": "A personal representative is a fiduciary who shall observe the standards of care applicable to trustees.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, the personal representative must inform the heirs and beneficiaries of the appointment within 30 days.",
+          "claim_es": "En Maine, el representante personal debe informar su nombramiento a los herederos y beneficiarios dentro de 30 días.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-705.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-705",
+          "quote": "Not later than 30 days after appointment every personal representative, except any special administrator, shall give information of the appointment to the heirs and devisees",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, the personal representative must prepare an inventory within 3 months after appointment and file it with the court or mail it to interested persons.",
+          "claim_es": "En Maine, el representante personal debe preparar un inventario dentro de 3 meses después del nombramiento y presentarlo ante el tribunal o enviarlo a los interesados.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-706.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-706",
+          "quote": "Within 3 months after appointment, a personal representative who is not a special administrator or a successor to another personal representative who has previously discharged this duty shall prepare and file with the court or mail to all i",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "In Minnesota, a personal representative must handle estate assets with the care a prudent person would use with someone else's property.",
+          "claim_es": "En Minnesota, el representante personal debe manejar los bienes de la herencia con el cuidado que usaría una persona prudente con bienes ajenos.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-703",
+          "source_name": "Minnesota Statutes § 524.3-703",
+          "quote": "shall observe the standards of care in dealing with the estate assets that would be observed by a prudent person dealing with the property of another",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, the inventory is due within six months after appointment or nine months after the death, whichever is later.",
+          "claim_es": "En Minnesota, el inventario vence dentro de seis meses después del nombramiento o nueve meses después de la muerte, lo que ocurra más tarde.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-706",
+          "source_name": "Minnesota Statutes § 524.3-706",
+          "quote": "Within six months after appointment, or nine months after the death of the decedent, whichever is later",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, the personal representative mails or delivers the inventory to the surviving spouse and to all residuary beneficiaries.",
+          "claim_es": "En Minnesota, el representante personal envía o entrega el inventario al cónyuge sobreviviente y a todos los beneficiarios residuales.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-706",
+          "source_name": "Minnesota Statutes § 524.3-706",
+          "quote": "The personal representative shall mail or deliver a copy of the inventory to the surviving spouse, if there be one, to all residuary distributees",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "In South Dakota, a personal representative must handle estate assets with the care a prudent person would use with someone else's property.",
+          "claim_es": "En Dakota del Sur, el representante personal debe manejar los bienes de la herencia con el cuidado de una persona prudente con bienes ajenos.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-703.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-703",
+          "quote": "shall observe the standards of care in dealing with the estate assets that would be observed by a prudent person dealing with the property of anothe",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, the inventory is due within six months after appointment or nine months after the death, whichever is later.",
+          "claim_es": "En Dakota del Sur, el inventario vence dentro de seis meses después del nombramiento o nueve meses después de la muerte, lo que ocurra más tarde.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-706.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-706",
+          "quote": "Within six months after appointment, or nine months after the decedent's death, whichever is later",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, the personal representative must promptly give a copy of the inventory to any interested person who asks.",
+          "claim_es": "En Dakota del Sur, el representante personal debe dar pronto una copia del inventario a cualquier persona interesada que la pida.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-706.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-706",
+          "quote": "The personal representative shall promptly make a copy of the inventory available, by mail or delivery, to any interested person who requests it.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, a personal representative is a fiduciary held to the standards of care that apply to trustees.",
+          "claim_es": "En Dakota del Norte, el representante personal es un fiduciario sujeto a las normas de cuidado de los fideicomisarios.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c18.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-18",
+          "quote": "A personal representative is a fiduciary who shall observe the standards of care applicable to trustees.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the inventory is due within six months after appointment or nine months after the death, whichever is later.",
+          "claim_es": "En Dakota del Norte, el inventario vence dentro de seis meses después del nombramiento o nueve meses después de la muerte, lo que ocurra más tarde.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c18.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-18",
+          "quote": "Within six months after appointment, or nine months after the death of the decedent, whichever is later",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the personal representative must inform the heirs and beneficiaries of the appointment within thirty days.",
+          "claim_es": "En Dakota del Norte, el representante personal debe informar su nombramiento a los herederos y beneficiarios dentro de treinta días.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c18.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-18",
+          "quote": "Not later than thirty days after appointment, every personal representative, except any special administrator, shall give information of the appointment to the heirs and devisees",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "In Massachusetts, a personal representative is a fiduciary held to the trustee standards of care in chapter 203C.",
+          "claim_es": "En Massachusetts, el representante personal es un fiduciario sujeto a las normas de cuidado de los fideicomisarios del capítulo 203C.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-703",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-703",
+          "quote": "A personal representative is a fiduciary who shall observe the standards of care applicable to trustees as described by chapter 203C.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, the personal representative must prepare an inventory within 3 months after appointment.",
+          "claim_es": "En Massachusetts, el representante personal debe preparar un inventario dentro de 3 meses después del nombramiento.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-706",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-706",
+          "quote": "(a) Within 3 months after appointment, a personal representative, who is not a successor to another re",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, the inventory lists each item with its fair market value as of the date of death.",
+          "claim_es": "En Massachusetts, el inventario indica el valor de mercado de cada bien a la fecha de la muerte.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-706",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-706",
+          "quote": "indicating the fair market value of each listed item as of the date o",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "In Nebraska, a personal representative is a fiduciary who must follow the prudent investor rule.",
+          "claim_es": "En Nebraska, el representante personal es un fiduciario que debe seguir la regla del inversionista prudente.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2464",
+          "source_name": "Nebraska Revised Statutes § 30-2464",
+          "quote": "A personal representative is a fiduciary who shall comply with the prudent investor rule",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, the personal representative must prepare and file an inventory within three months after appointment.",
+          "claim_es": "En Nebraska, el representante personal debe preparar y presentar un inventario dentro de tres meses después del nombramiento.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2467",
+          "source_name": "Nebraska Revised Statutes § 30-2467",
+          "quote": "Within three months after appointment, a personal representative, who is not a special administrator or a successor to another representative who has previously discharged this duty, shall prepare and file an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, the original inventory is filed with the court and a copy goes to interested persons who ask.",
+          "claim_es": "En Nebraska, el inventario original se presenta ante el tribunal y se envía copia a los interesados que la pidan.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2467",
+          "source_name": "Nebraska Revised Statutes § 30-2467",
+          "quote": "The personal representative shall send a copy of the inventory to interested persons who request it and shall file the original of the inventory with the court.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "In Montana, the personal representative must prepare an inventory within 9 months after appointment.",
+          "claim_es": "En Montana, el representante personal debe preparar un inventario dentro de 9 meses después del nombramiento.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0060/section_0070/0720-0030-0060-0070.html",
+          "source_name": "Montana Code § 72-3-607",
+          "quote": "Within 9 months after appointment, a personal representative who is not a special administrator or a successor to another representative who has previously discharged this duty shall prepare an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, the inventory must state the fair market value of the person's interest in every listed item.",
+          "claim_es": "En Montana, el inventario debe indicar el valor de mercado de la participación de la persona en cada bien.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0060/section_0070/0720-0030-0060-0070.html",
+          "source_name": "Montana Code § 72-3-607",
+          "quote": "The inventory must include a statement of the fair market value of the decedent's interest in every item listed in the inventory.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, a personal representative is a fiduciary held to the standards of care for trustees under Montana law.",
+          "claim_es": "En Montana, el representante personal es un fiduciario sujeto a las normas de cuidado de los fideicomisarios según la ley de Montana.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0060/section_0100/0720-0030-0060-0100.html",
+          "source_name": "Montana Code § 72-3-610",
+          "quote": "A personal representative is a fiduciary who shall observe the standards of care applicable to trustees under the laws of the state of Montana.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, the executor or administrator must file an inventory with the probate court within three months after appointment, unless the court extends the time.",
+          "claim_es": "En Ohio, el albacea o administrador debe presentar un inventario ante el tribunal testamentario dentro de tres meses después del nombramiento, salvo que el tribunal extienda el plazo.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2115.02",
+          "source_name": "Ohio Revised Code § 2115.02",
+          "quote": "Within three months after the date of the executor's or administrator's appointment, unless the probate court grants an extension of time for good cause shown, the executor or administrator shall file with the cou",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, the inventory lists values as of the date of death.",
+          "claim_es": "En Ohio, el inventario indica los valores a la fecha de la muerte.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2115.02",
+          "source_name": "Ohio Revised Code § 2115.02",
+          "quote": "The inventory shall set forth values as of the date of death of the decedent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, an executor or administrator who distributes estate assets within three months after the death can be personally liable to certain creditors.",
+          "claim_es": "En Ohio, el albacea o administrador que reparte bienes de la herencia dentro de tres meses después de la muerte puede responder personalmente ante ciertos acreedores.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2113.53",
+          "source_name": "Ohio Revised Code § 2113.53",
+          "quote": "If the executor or administrator distributes any part of the assets of the estate within three months after the death of the decedent, the executor or administrator shall be personally liable",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, the estate representative must file a verified inventory in court within 60 days after letters are issued.",
+          "claim_es": "En Illinois, el representante de la herencia debe presentar un inventario verificado ante el tribunal dentro de 60 días después de emitidas las cartas.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K14-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/14-1",
+          "quote": "Within 60 days after the issuance of his letters the representative of the estate of a decedent or ward shall file in the court a verified inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, property found after the inventory is filed must be added in a supplemental inventory within 60 days.",
+          "claim_es": "En Illinois, los bienes encontrados después del inventario deben agregarse en un inventario suplementario dentro de 60 días.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K14-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/14-1",
+          "quote": "he shall file a supplemental inventory thereof within 60 days after it comes to his knowledge",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, the representative must give an account within 60 days after the first 12 months from the issuance of letters.",
+          "claim_es": "En Illinois, el representante debe rendir cuentas dentro de 60 días después de los primeros 12 meses desde la emisión de las cartas.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K24-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/24-1",
+          "quote": "within 60 days after the expiration of 12 months after the issuance of letters",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, the personal representative must file a report and inventory with the clerk within ninety days after qualifying.",
+          "claim_es": "En Iowa, el representante personal debe presentar un informe e inventario ante el secretario dentro de noventa días después de habilitarse.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.361.pdf",
+          "source_name": "Iowa Code § 633.361",
+          "quote": "Within ninety days after qualification by the personal representative, unless a longer time is granted by the court, the personal representative shall file with the clerk a report and inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, the report and inventory are verified or affirmed under penalty of perjury.",
+          "claim_es": "En Iowa, el informe y el inventario se verifican o afirman bajo pena de perjurio.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.361.pdf",
+          "source_name": "Iowa Code § 633.361",
+          "quote": "The report and inventory shall be verified or affirmed under penalty of perjury.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, an action to set aside the probate of a will must be brought within four months after the second published notice or one month after mailing, whichever is later.",
+          "claim_es": "En Iowa, una acción para anular la validación de un testamento debe presentarse dentro de cuatro meses después del segundo aviso publicado o un mes después del envío, lo que ocurra más tarde.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.304.pdf",
+          "source_name": "Iowa Code § 633.304",
+          "quote": "must be brought within the later to occur of four months from the date of the second publication of the notice or one month from the date of maili",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "In Virginia, the personal representative must file an inventory with the commissioner of accounts within four months after qualifying.",
+          "claim_es": "En Virginia, el representante personal debe presentar un inventario ante el comisionado de cuentas (commissioner of accounts) dentro de cuatro meses después de habilitarse.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter13/section64.2-1300/",
+          "source_name": "Code of Virginia § 64.2-1300",
+          "quote": "Every personal representative or curator shall, within four months after the date of the order conferring his authority, return to the commissioner of accounts an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, the fiduciary accounts before the commissioner of accounts where they qualified.",
+          "claim_es": "En Virginia, el fiduciario rinde cuentas ante el comisionado de cuentas de la jurisdicción donde se habilitó.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter13/section64.2-1206/",
+          "source_name": "Code of Virginia § 64.2-1206",
+          "quote": "Every fiduciary referred to in this part shall account before the commissioner of accounts of the jurisdiction wherein he qualified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, beneficiaries who ask in writing must be mailed copies of the inventory and accounts, including a copy of the will.",
+          "claim_es": "En Virginia, a los beneficiarios que lo pidan por escrito se les deben enviar copias del inventario y las cuentas, incluida una copia del testamento.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-508/",
+          "source_name": "Code of Virginia § 64.2-508",
+          "quote": "they must mail copies of these documents (not including any supporting vouchers, but including a copy of the decedent's will) to you",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, the personal representative must prepare a verified inventory within 3 months of appointment.",
+          "claim_es": "En DC, el representante personal debe preparar un inventario verificado dentro de 3 meses del nombramiento.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-711",
+          "source_name": "DC Code § 20-711",
+          "quote": "a personal representative shall, within 3 months of appointment, prepare a verified inventory of property owned by the decedent at the time of his death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, the personal representative must publish a notice of the appointment within 20 days after appointment.",
+          "claim_es": "En DC, el representante personal debe publicar un aviso de su nombramiento dentro de 20 días después de ser nombrado.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "Within 20 days after appointment, the personal representative shall, unless notice has already been given under this subsection, publish a notice of the appointment",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, the personal representative must also send notice by registered or certified mail within 20 days after appointment.",
+          "claim_es": "En DC, el representante personal también debe enviar aviso por correo registrado o certificado dentro de 20 días después del nombramiento.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "Not later than 20 days after appointment, a personal representative (except when notice under this subsection has already been given) shall send, by registered or certified m",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "In South Carolina, the personal representative files the inventory and appraisement with the court within ninety days after appointment.",
+          "claim_es": "En Carolina del Sur, el representante personal presenta el inventario y avalúo ante el tribunal dentro de noventa días después del nombramiento.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "Within ninety days after his appointment he shall file with the court the inventory and appraisement",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, a personal representative who does not post a required bond within thirty days after notice can be removed.",
+          "claim_es": "En Carolina del Sur, el representante personal que no deposita la fianza requerida dentro de treinta días después del aviso puede ser removido.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "Failure of the personal representative to meet a requirement of bond by giving suitable bond within thirty days after receipt of notice is cause for his removal",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, after an informal probate is granted, the applicant must give written information about it to the heirs and beneficiaries within thirty days.",
+          "claim_es": "En Carolina del Sur, después de concederse una sucesión informal, el solicitante debe informar por escrito a los herederos y beneficiarios dentro de treinta días.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "within thirty days thereafter the applicant shall give written information of the probate to the heirs",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "In Florida, an interested person served with the personal representative's notice may ask for the representative's removal within 30 days.",
+          "claim_es": "En Florida, una persona interesada que recibe el aviso del representante personal puede pedir su remoción dentro de 30 días.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "may file a petition requesting the personal representative's removal within 30 days after the date on which such notice is served",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, the personal representative files a safe-deposit box inventory with the court within 10 days after the box is opened.",
+          "claim_es": "En Florida, el representante personal presenta ante el tribunal el inventario de la caja de seguridad dentro de 10 días después de abrirla.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "The personal representative shall file the safe-deposit box inventory, together with a copy of the box entry record from a date which is 6 months prior to the date of death to the date of inventory, with the court within 10 days after the box is opened.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, the personal representative must answer certain written requests from interested persons within 14 days.",
+          "claim_es": "En Florida, el representante personal debe responder ciertas solicitudes escritas de personas interesadas dentro de 14 días.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "Within 14 days after receipt of the written request of any interested person, the personal representative shall deliver to the requesting person",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In Oregon, within 30 days after appointment the personal representative files a record showing the required information was delivered or mailed to heirs and beneficiaries.",
+          "claim_es": "En Oregón, dentro de 30 días después del nombramiento el representante personal presenta constancia de que entregó o envió la información requerida a herederos y beneficiarios.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors113.html",
+          "source_name": "Oregon Revised Statutes, Chapter 113",
+          "quote": "Within 30 days after the date of appointment a personal representative shall cause to be filed in the estate proceeding proof of the delivery or mailing required by this section",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, if new assets turn up and no bond was required, the personal representative must act within 30 days after filing the inventory.",
+          "claim_es": "En Oregón, si aparecen bienes nuevos y no se exigió fianza, el representante personal debe actuar dentro de 30 días después de presentar el inventario.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors113.html",
+          "source_name": "Oregon Revised Statutes, Chapter 113",
+          "quote": "the personal representative shall, within 30 days after filing the inventory or supplementa",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, a special administrator must file an account and hand the assets to the personal representative within 30 days after letters are issued.",
+          "claim_es": "En Oregón, el administrador especial debe rendir cuentas y entregar los bienes al representante personal dentro de 30 días después de emitidas las cartas.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors113.html",
+          "source_name": "Oregon Revised Statutes, Chapter 113",
+          "quote": "Within 30 days after the issuance of letters testamentary or letters of administration to a personal representative, the special administrator shall make and file an account",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, every personal representative must file an inventory and appraisement of the estate's assets with the clerk.",
+          "claim_es": "En Nevada, todo representante personal debe presentar ante el secretario un inventario y avalúo de los bienes de la herencia.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-144.html",
+          "source_name": "Nevada Revised Statutes, Chapter 144",
+          "quote": "every personal representative shall prepare and file with the clerk a true inventory and appraisement or record of value of all the assets of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, the personal representative mails a copy of the inventory to interested heirs within 10 days after filing it, unless they already got a list of assets.",
+          "claim_es": "En Nevada, el representante personal envía copia del inventario a los herederos interesados dentro de 10 días después de presentarlo, salvo que ya hayan recibido una lista de bienes.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-144.html",
+          "source_name": "Nevada Revised Statutes, Chapter 144",
+          "quote": "within 10 days after filing the inventory with the clerk, shall mail a copy to all the interested heirs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, property found later goes on a supplementary inventory filed within 20 days after it is discovered.",
+          "claim_es": "En Nevada, los bienes encontrados después se incluyen en un inventario suplementario presentado dentro de 20 días después de descubrirse.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-144.html",
+          "source_name": "Nevada Revised Statutes, Chapter 144",
+          "quote": "the personal representative shall file a supplementary inventory of that property within 20 days after its discovery",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "In Maryland, the personal representative must prepare and file an inventory within 3 months after appointment.",
+          "claim_es": "En Maryland, el representante personal debe preparar y presentar un inventario dentro de 3 meses después del nombramiento.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=7-201&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 7-201",
+          "quote": "within 3 months after the appointment of a personal representative, the personal representative shall prepare and file an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maryland, the first account is due within 9 months from the personal representative's appointment.",
+          "claim_es": "En Maryland, la primera rendición de cuentas vence dentro de 9 meses desde el nombramiento del representante personal.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=7-305&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 7-305",
+          "quote": "Within 9 months from the date of the appointment of the personal representative",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maryland, later accounts are due every 6 months until the final account is filed.",
+          "claim_es": "En Maryland, las cuentas siguientes vencen cada 6 meses hasta presentar la cuenta final.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=7-305&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 7-305",
+          "quote": "Within 6 months after the account referred to in paragraph (1) of this subsection and within 6 months after each account thereafter until the filing of the final account",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, the personal representative must make a sworn inventory and appraisement within three months after appointment.",
+          "claim_es": "En Washington, el representante personal debe hacer un inventario y avalúo bajo juramento dentro de tres meses después del nombramiento.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.44.015",
+          "source_name": "Revised Code of Washington § 11.44.015",
+          "quote": "Within three months after appointment, unless a longer time shall be granted by the court, every personal representative shall make and verify by affidavit a true inventory and appraisement",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, the inventory states each item's fair net value as of the date of death, after debts secured by the item.",
+          "claim_es": "En Washington, el inventario indica el valor neto justo de cada bien a la fecha de la muerte, después de las deudas garantizadas.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.44.015",
+          "source_name": "Revised Code of Washington § 11.44.015",
+          "quote": "The personal representative shall determine the fair net value, as of the date of the decedent's death, of each item contained in the inventory after deducting the encumbrances",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, the inventory does not have to be filed with the court, but heirs, beneficiaries and creditors with filed claims can request a copy.",
+          "claim_es": "En Washington, el inventario no tiene que presentarse ante el tribunal, pero herederos, beneficiarios y acreedores con reclamos presentados pueden pedir copia.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.44.015",
+          "source_name": "Revised Code of Washington § 11.44.015",
+          "quote": "The inventory and appraisement may, but need not be, filed in the probate cause",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "In New Hampshire, the administrator must file an itemized inventory with the court within 90 days after appointment.",
+          "claim_es": "En Nuevo Hampshire, el administrador debe presentar un inventario detallado ante el tribunal dentro de 90 días después del nombramiento.",
+          "source_url": "https://gc.nh.gov/rsa/html/LVI/554/554-1.htm",
+          "source_name": "New Hampshire Revised Statutes § 554:1",
+          "quote": "within 90 days after the date of appointment, a full, true, and itemized inventory of all the estate of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Hampshire, an administrator who is 30 days late filing the inventory is in default.",
+          "claim_es": "En Nuevo Hampshire, el administrador que se atrasa 30 días en presentar el inventario queda en incumplimiento.",
+          "source_url": "https://gc.nh.gov/rsa/html/LVI/554/554-1.htm",
+          "source_name": "New Hampshire Revised Statutes § 554:1",
+          "quote": "If an administrator fails to file an inventory within 30 days after the required filing date, the administrator is in default.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Hampshire, the clerk mails a default notice to the administrator within 10 days after the default.",
+          "claim_es": "En Nuevo Hampshire, el secretario envía al administrador un aviso de incumplimiento dentro de 10 días.",
+          "source_url": "https://gc.nh.gov/rsa/html/LVI/554/554-1.htm",
+          "source_name": "New Hampshire Revised Statutes § 554:1",
+          "quote": "The clerk shall give notice of the default to the administrator by first class mail within 10 days after the default.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "In Wisconsin, the personal representative must file an inventory no later than 6 months after appointment, unless the court changes the time.",
+          "claim_es": "En Wisconsin, el representante personal debe presentar un inventario a más tardar 6 meses después del nombramiento, salvo que el tribunal cambie el plazo.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/858/13",
+          "source_name": "Wisconsin Statutes § 858.13",
+          "quote": "no later than 6 months after appointment unless the court has by order extended or shortened the time, shall file an inventory",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, the inventory shows which property is marital property, with values as of the date of death.",
+          "claim_es": "En Wisconsin, el inventario indica qué bienes son gananciales, con valores a la fecha de la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/858/13",
+          "source_name": "Wisconsin Statutes § 858.13",
+          "quote": "what property is marital property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, the personal representative must answer a request for the required statement within 5 days.",
+          "claim_es": "En Wisconsin, el representante personal debe responder una solicitud de la declaración requerida dentro de 5 días.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/858/13",
+          "source_name": "Wisconsin Statutes § 858.13",
+          "quote": "the personal representative shall comply within 5 days after receipt of the request",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "Alabama's probate court handbook tells estate administrators that, as fiduciaries, they must not personally profit from the role.",
+          "claim_es": "El manual del tribunal testamentario de Alabama indica que el administrador, como fiduciario, no debe beneficiarse personalmente de su cargo.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "You, as a fiduciary, must not personally profit by virtue of your position.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, the administrator must handle the estate cautiously and discreetly and may not speculate with it.",
+          "claim_es": "En Alabama, el administrador debe manejar la herencia con cautela y discreción y no puede especular con ella.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "You must be cautious and discreet in and about the handling of the Decedent's Estate, and you may not speculate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, a required bond premium is paid when the bond is signed and then every year until the estate is closed.",
+          "claim_es": "En Alabama, la prima de la fianza requerida se paga al firmarla y luego cada año hasta cerrar la herencia.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "The bond premium must be paid when the bond is executed, and there will be a premium due each year thereafter until the Estate is closed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "In California, the personal representative must file an inventory and appraisal with the court within four months after Letters are first issued.",
+          "claim_es": "En California, el representante personal debe presentar ante el tribunal un inventario y avalúo dentro de cuatro meses después de emitidas las cartas.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "Within four months after Letters are first issued to you as personal representative, you must file with the court an inventory and appraisal of all the assets in the estate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative must mail a notice of administration to each known creditor within four months after appointment.",
+          "claim_es": "En California, el representante personal debe enviar un aviso de administración a cada acreedor conocido dentro de cuatro meses después del nombramiento.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "You must mail a notice of administration to each known creditor of the decedent within four months after your appointment as personal representative.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, if the person received Medi-Cal, the personal representative must notify the State Director of Health Services within 90 days after appointment.",
+          "claim_es": "En California, si la persona recibía Medi-Cal, el representante personal debe avisar al Director Estatal de Servicios de Salud dentro de 90 días después del nombramiento.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "If the decedent received Medi-Cal assistance, you must notify the State Director of Health Services within 90 days after appointment.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative must keep estate money and property separate from everyone else's, including their own.",
+          "claim_es": "En California, el representante personal debe mantener el dinero y los bienes de la herencia separados de los de cualquier otra persona, incluidos los suyos.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "You must keep the money and property in this estate separate from anyone else's, including your own.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "In Pennsylvania, every personal representative files a verified inventory with the register of wills, covering all estate property except real estate outside Pennsylvania.",
+          "claim_es": "En Pensilvania, todo representante personal presenta ante el registro de testamentos un inventario verificado de todos los bienes, salvo inmuebles fuera de Pensilvania.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "Every personal representative shall file with the register a verified inventory of all real and personal estate of the decedent, except real estate outside of this Commonwealth.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, if an interested party asks in writing for an earlier inventory, it must be filed within three months after the request.",
+          "claim_es": "En Pensilvania, si una parte interesada pide por escrito un inventario antes, debe presentarse dentro de tres meses después de la solicitud.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "in which event an inventory shall be filed within three months after",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, property found after the inventory goes on a supplemental inventory filed within 30 days of its discovery.",
+          "claim_es": "En Pensilvania, los bienes encontrados después del inventario se incluyen en un inventario suplementario presentado dentro de 30 días de descubrirse.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "he shall file, within 30 days of its discovery, a supplemental inventory thereof with the register",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas, the personal representative must file the inventory before the 91st day after qualifying, unless the court allows longer.",
+          "claim_es": "En Texas, el representante personal debe presentar el inventario antes del día 91 después de habilitarse, salvo que el tribunal dé más tiempo.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.309.htm",
+          "source_name": "Texas Estates Code, Chapter 309",
+          "quote": "before the 91st day after the date the personal representative qualifies, the representative shall prepare and file wit",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, the personal representative must notify will beneficiaries no later than the 60th day after the will is admitted to probate.",
+          "claim_es": "En Texas, el representante personal debe avisar a los beneficiarios del testamento a más tardar el día 60 después de admitido el testamento.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.308.htm",
+          "source_name": "Texas Estates Code, Chapter 308",
+          "quote": "not later than the 60th day after the date of an order admitting a decedent's will to probate, the personal representative of the decedent's estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, the court can appoint from one to three disinterested appraisers for the estate.",
+          "claim_es": "En Texas, el tribunal puede nombrar de uno a tres tasadores sin interés en la herencia.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.309.htm",
+          "source_name": "Texas Estates Code, Chapter 309",
+          "quote": "shall appoint at least one but not more than three disinter",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, the personal representative must prepare an inventory within 91 days after appointment.",
+          "claim_es": "En Míchigan, el representante personal debe preparar un inventario dentro de 91 días después del nombramiento.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "Within 91 days after appointment or other time specified by court rule, a personal representative",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, a copy of the inventory goes to all presumptive heirs and beneficiaries and to interested persons who ask.",
+          "claim_es": "En Míchigan, se envía copia del inventario a todos los presuntos herederos y beneficiarios y a los interesados que la pidan.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "The personal representative shall send a copy of the inventory to all presumptive distributees and to all other interested persons who request it",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, the personal representative gives the court the information needed to calculate the probate inventory fee.",
+          "claim_es": "En Míchigan, el representante personal entrega al tribunal la información para calcular la tarifa del inventario sucesorio.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "The personal representative shall submit to the court on a timely basis information necessary to calculate the probate inventory fee.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "In West Virginia, the personal representative must appraise the person's real estate and personal probate property.",
+          "claim_es": "En Virginia Occidental, el representante personal debe tasar los inmuebles y bienes muebles sucesorios de la persona.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The personal representative of an estate of a deceased person shall appraise the deceased's real estate and personal probate property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the personal representative completes a sworn questionnaire on the Tax Commissioner's appraisement form about nonprobate property.",
+          "claim_es": "En Virginia Occidental, el representante personal llena bajo juramento un cuestionario del formulario de avalúo del Comisionado de Impuestos sobre bienes no sucesorios.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The personal representative shall complete, under oath, a questionnaire included in the appraisement form designed by the Tax Commissioner",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the nonprobate inventory form is treated as confidential tax information.",
+          "claim_es": "En Virginia Occidental, el formulario de inventario no sucesorio se trata como información tributaria confidencial.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The nonprobate inventory form is confidential tax return information",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "In Connecticut, the fiduciary must file the inventory with the probate court within two months after qualifying.",
+          "claim_es": "En Connecticut, el fiduciario debe presentar el inventario ante el tribunal testamentario dentro de dos meses después de habilitarse.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "The fiduciary shall file the inventory in the court of probate having jurisdiction of the estate of the deceased person or insolvent debtor within two months after the acceptance of the bond or other qualification of the fiduciary.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, before selling estate real estate, the fiduciary files an inventory with the property's legal description.",
+          "claim_es": "En Connecticut, antes de vender un inmueble de la herencia, el fiduciario presenta un inventario con la descripción legal de la propiedad.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "The fiduciary shall file an inventory containing a legal description of any real estate of the decedent prior to a sale",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, if someone objects to the inventory, the court holds a hearing between fifteen and sixty days after the objections are filed.",
+          "claim_es": "En Connecticut, si alguien objeta el inventario, el tribunal fija una audiencia entre quince y sesenta días después de presentadas las objeciones.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "the court shall order a hearing on the acceptance of the inventory and appraisal to be had within sixty days and not less than fifteen days after the filing of the objections",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "In Wyoming, the personal representative files a sworn report within 120 days after filing the inventory.",
+          "claim_es": "En Wyoming, el representante personal presenta un informe bajo juramento dentro de 120 días después de presentar el inventario.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "Within one hundred twenty (120) days after the timely filing by the personal representative of the inventory of assets of the estate of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, final settlement can happen no sooner than 3 months after the first published notice of opening probate.",
+          "claim_es": "En Wyoming, la liquidación final puede hacerse no antes de 3 meses después del primer aviso publicado de apertura de la sucesión.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "but not less than three (3) months after the date of the first publication of the notice of opening the probate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, to close the estate the personal representative files a sworn final report, accounting and petition for distribution with the clerk of court.",
+          "claim_es": "En Wyoming, para cerrar la herencia el representante personal presenta ante el secretario un informe final, cuentas y petición de distribución bajo juramento.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "When the estate is ready to be closed, the personal representative shall file with the clerk of court, under oath, his final report and accounting and petition for distribution.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "AK": "no official source found",
+    "AR": "no official source found",
+    "CO": "no official source found",
+    "DE": "no official source found",
+    "GA": "no official source found",
+    "HI": "no official source found",
+    "IN": "no official source found",
+    "KS": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "MS": "no official source found",
+    "MO": "no official source found",
+    "NJ": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "NC": "no official source found",
+    "OK": "no official source found",
+    "RI": "no official source found",
+    "TN": "no official source found",
+    "UT": "no official source found",
+    "VT": "no official source found"
+  }
+}

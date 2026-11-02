@@ -1,0 +1,2147 @@
+{
+  "folder": "workplace",
+  "subtopic": "teen-work-hours-and-permits",
+  "title_en": "Work hours, night limits and work permits for teens in {state}",
+  "title_es": "Horas de trabajo, límites nocturnos y permisos de trabajo para adolescentes en {state_es}",
+  "search_intent_en": [
+    "{state} child labor laws",
+    "how many hours can a 15 year old work in {state}",
+    "{state} work permit for minors",
+    "{state} teen work hours"
+  ],
+  "search_intent_es": [
+    "leyes de trabajo infantil en {state_es}",
+    "permiso de trabajo para menores {state_es}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Alabama: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Alabama: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Alabama 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Alabama from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Alabama se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Alabama 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Alabama, issued by the state labor department or schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Alabama, emitido por el departamento estatal de trabajo o las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Alabama Under 18 (M) 18 in mines 3 X X Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alabama Department of Labor as the state labor office for Alabama; its listed phone number is 334-309-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alabama es Alabama Department of Labor; su teléfono es 334-309-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Alabama Department of Labor 649 Monroe St Montgomery, AL 36131 334-309-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Alabama Department of Labor",
+          "label_es": "Alabama Department of Labor",
+          "url": "https://www.labor.alabama.gov"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Arizona: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Arizona: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Arizona 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Arizona.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Arizona.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Arizona Not issued Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Industrial Commission of Arizona as the state labor office for Arizona; its listed phone number is 602-542-4661.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arizona es Industrial Commission of Arizona; su teléfono es 602-542-4661.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Industrial Commission of Arizona 800 W Washington St Phoenix, AZ 85007 602-542-4661",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Industrial Commission of Arizona",
+          "label_es": "Industrial Commission of Arizona",
+          "url": "https://www.azica.gov"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Arkansas: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Arkansas: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Arkansas 8-48-6",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Arkansas from 7 p.m. (9 p.m. before non-school day) to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Arkansas se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. antes de un día sin clases) a 6 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Arkansas 8-48-6 16-year-old children cannot work more than 10 hours consecutive or more than 10 hours in a 24 hours period. 7 p.m. (9 p.m. before non-school day) to 6 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Arkansas.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Arkansas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Arkansas Not issued Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Arkansas Department of Labor & Licensing as the state labor office for Arkansas; its listed phone number is 501-682-4500.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arkansas es Arkansas Department of Labor & Licensing; su teléfono es 501-682-4500.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Arkansas Department of Labor & Licensing 900 West Capital Ave Ste 400 Little Rock, AR 72201 501-682-4500",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Arkansas Department of Labor & Licensing",
+          "label_es": "Arkansas Department of Labor & Licensing",
+          "url": "https://www.labor.arkansas.gov"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in California: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en California: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "California 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in California from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "California 8-40 non-school day/week 3-18 school day/week 8-48 non-school day/-week: 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for sixteen- and seventeen-year-olds in California from 10 p.m. (12:30 a.m. before non-school day) to 5 a.m.",
+          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a jóvenes de dieciséis y diecisiete años de 10 p.m. (12:30 a.m. antes de un día sin clases) a 5 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "California 8-40 non-school day/week 3-18 school day/week 8-48 non-school day/-week: 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m. 10 p.m. (12:30 a.m. before non-school day) to 5 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the California Labor and Workforce Development Agency as the state labor office for California; its listed phone number is 833-526-4636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de California es California Labor and Workforce Development Agency; su teléfono es 833-526-4636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Labor and Workforce Development Agency 800 Capitol Mall, Suite 5000 (MIC-55) Sacramento, CA 95814 833-526-4636",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "California Labor and Workforce Development Agency",
+          "label_es": "California Labor and Workforce Development Agency",
+          "url": "https://www.dir.ca.gov/contactus.html"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Colorado: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 40 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Colorado: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 40 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Colorado 8-40 non-school day/week 6-40 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Colorado: 8 hours a day and 40 hours a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Colorado: 8 horas al día y 40 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Colorado 8-40 non-school day/week 6-40 school day/week 8-40 9:30 p.m. to 5 a.m. before school day",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Colorado Department of Labor and Employment as the state labor office for Colorado; its listed phone number is 303-318-8441.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Colorado es Colorado Department of Labor and Employment; su teléfono es 303-318-8441.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Employment 633 17th St Suite 201 Denver, CO 80202-3660 303-318-8441",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Colorado Department of Labor and Employment",
+          "label_es": "Colorado Department of Labor and Employment",
+          "url": "https://cdle.colorado.gov/dlss"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Delaware: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Delaware: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Delaware 8-40-6 non-school day/week 4-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Delaware from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Delaware se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Delaware 8-40-6 non-school day/week 4-18-6 school day/week 12 c 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Delaware, issued by the state labor department or schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Delaware, emitido por el departamento estatal de trabajo o las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Delaware Under 18 (M) X X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Delaware Department of Labor as the state labor office for Delaware; its listed phone number is 302-761-8176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Delaware es Delaware Department of Labor; su teléfono es 302-761-8176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4425 N Market St 4th Floor Wilmington, DE 19802 302-761-8176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Delaware Department of Labor",
+          "label_es": "Delaware Department of Labor",
+          "url": "https://www.labor.delaware.gov"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "District of Columbia 8-48-6",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "District of Columbia 8-48-6 8-48-6 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for sixteen- and seventeen-year-olds in District of Columbia from 10 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Distrito de Columbia se prohíbe el trabajo nocturno a jóvenes de dieciséis y diecisiete años de 10 p.m. a 6 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "District of Columbia 8-48-6 8-48-6 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m. 10 p.m. to 6 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in District of Columbia, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Distrito de Columbia, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "District of Columbia Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the DC Department of Employment Services as the state labor office for District of Columbia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Distrito de Columbia es DC Department of Employment Services.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Services 4058 Minnesota Ave NE Washington, DC 20019",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "District of Columbia Department of Employment Services",
+          "label_es": "District of Columbia Department of Employment Services",
+          "url": "https://www.does.dc.gov"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Georgia: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 40 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Georgia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 40 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Georgia 8-40 non-school day/week 4-40 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Georgia from 9 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Georgia se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 6 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Georgia 8-40 non-school day/week 4-40 school day/week 9 p.m. to 6 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors ages 12-15 in Georgia, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 12 a 15 años en Georgia, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Georgia Ages 12-15 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Georgia Department of Labor as the state labor office for Georgia; its listed phone number is 404-232-7300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Georgia es Georgia Department of Labor; su teléfono es 404-232-7300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 148 Andrew Young International Blvd NE Atlanta, GA 30303 404-232-7300",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Georgia Department of Labor",
+          "label_es": "Georgia Department of Labor",
+          "url": "https://www.dol.georgia.gov"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Hawaii: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Hawái: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Hawaii 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Hawaii, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Hawái, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Hawaii Under 16 (M) X 16 and 17 (M) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Hawaii Department of Labor & Industrial Relations as the state labor office for Hawaii; its listed phone number is 808-586-8844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Hawái es Hawaii Department of Labor & Industrial Relations; su teléfono es 808-586-8844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Industrial Relations Princess Ruth Ke'elikolani Building 830 Punchbowl St Honolulu, HI 96813 808-586-8844",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Hawaii Department of Labor & Industrial Relations",
+          "label_es": "Hawaii Department of Labor & Industrial Relations",
+          "url": "https://www.labor.hawaii.gov"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Idaho: 9 hours a day and 54 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Idaho: 9 horas al día y 54 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Idaho 9-54",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Idaho from 9 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Idaho se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 6 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Idaho 9-54 9 p.m. to 6 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Idaho.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Idaho.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Idaho Not issued Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Idaho Department of Labor as the state labor office for Idaho; its listed phone number is 208-332-3570.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Idaho es Idaho Department of Labor; su teléfono es 208-332-3570.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Idaho Department of Labor 317 W Main St Boise, ID 83735 208-332-3570",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Idaho Department of Labor",
+          "label_es": "Idaho Department of Labor",
+          "url": "https://www.labor.idaho.gov"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Illinois: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Illinois: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Illinois 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Illinois from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Illinois se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Illinois 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Illinois, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Illinois, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Illinois Under 16 (M) X 16 to 20 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Illinois Department of Labor as the state labor office for Illinois; its listed phone number is 217-782-6206.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Illinois es Illinois Department of Labor; su teléfono es 217-782-6206.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 524 S. 2nd Street, Suite 400 Springfield, IL 62701 217-782-6206",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Illinois Department of Labor",
+          "label_es": "Illinois Department of Labor",
+          "url": "https://www.labor.illinois.gov"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Indiana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Indiana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Indiana 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Indiana.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Indiana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Indiana Not issued 9 X Not issued 9 X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Indiana Department of Labor as the state labor office for Indiana; its listed phone number is 317-232-2655.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Indiana es Indiana Department of Labor; su teléfono es 317-232-2655.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 402 W. Washington St Room W195 Indianapolis, IN 46204 317-232-2655",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Indiana Department of Labor",
+          "label_es": "Indiana Department of Labor",
+          "url": "https://www.in.gov/dol"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Iowa: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 28 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Iowa: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 28 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Iowa 8-40 non-school day/week 6-28 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Iowa from 9 p.m. (11 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Iowa se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. (11 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Iowa 8-40 non-school day/week 6-28 school day/week 9 p.m. (11 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Iowa, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Iowa, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Iowa Under 16 (M) 10 X Under 16 (P) X X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Iowa Department of Inspections, Appeals and Licensing as the state labor office for Iowa; its listed phone number is 515-242-5870.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Iowa es Iowa Department of Inspections, Appeals and Licensing; su teléfono es 515-242-5870.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Inspections, Appeals and Licensing 6200 Park Avenue, Des Moines, Iowa 50321 515-242-5870",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Iowa Department of Inspections, Appeals and Licensing",
+          "label_es": "Iowa Department of Inspections, Appeals and Licensing",
+          "url": "https://www.iowadivisionoflabor.gov"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Kansas: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Kansas: 8 horas al día y 40 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Kansas 8-40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Kansas from 10 p.m. before a school day to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Kansas se prohíbe el trabajo nocturno a menores de dieciséis años de 10 p.m. antes de un día de clases a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Kansas 8-40 10 p.m. before school day to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kansas Department of Labor as the state labor office for Kansas; its listed phone number is 785-296-5000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kansas es Kansas Department of Labor; su teléfono es 785-296-5000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 401 SW Topeka Blvd Topeka, KS 66603-3182 785-296-5000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Kansas Department of Labor",
+          "label_es": "Kansas Department of Labor",
+          "url": "https://www.dol.ks.gov"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Kentucky: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Kentucky: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Kentucky 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Kentucky from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Kentucky se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Kentucky 8-40 non-school day/week 3-18 school day/week 6-30 school day/week (6- 40 school day/week with parental permission and at least a 2.0 school grade point average) 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Kentucky.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Kentucky.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Kentucky Not issued Not issued 11",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kentucky Education and Labor Cabinet as the state labor office for Kentucky; its listed phone number is 502-564-3534.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kentucky es Kentucky Education and Labor Cabinet; su teléfono es 502-564-3534.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Education and Labor Cabinet 500 Mero Street, Frankfort, Kentucky 40601 502-564-3534",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Kentucky Education and Labor Cabinet",
+          "label_es": "Kentucky Education and Labor Cabinet",
+          "url": "https://elc.ky.gov"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Louisiana: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Luisiana: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Louisiana 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Louisiana, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Luisiana, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Louisiana Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Louisiana Workforce Commission as the state labor office for Louisiana; its listed phone number is 225-342-3111.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Luisiana es Louisiana Workforce Commission; su teléfono es 225-342-3111.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Louisiana Workforce Commission 1001 N 23rd St Baton Rouge, LA 70802 225-342-3111",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Louisiana Workforce Commission",
+          "label_es": "Louisiana Workforce Commission",
+          "url": "https://www.laworks.net/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Maine: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Maine: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Maine 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Maine from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Maine se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Maine 8-40-6 non-school day/week 3-18-6 school day/week If enrolled in school: 10-50-6 non-school day/week 6 (except 8 on last scheduled day of school week)- 24-6 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Maine, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Maine, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Maine Under 16 (M) X No Provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maine Department of Labor as the state labor office for Maine; its listed phone number is 207-623-7900.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maine es Maine Department of Labor; su teléfono es 207-623-7900.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 45 State House Station Augusta, ME 04333 207-623-7900",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Maine Department of Labor",
+          "label_es": "Maine Department of Labor",
+          "url": "https://www.maine.gov/labor"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Maryland: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 23 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Maryland: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 23 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Maryland 8-40 non-school day/week 4-23 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Maryland, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Maryland, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Maryland Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maryland Department of Labor as the state labor office for Maryland; its listed phone number is 410-230-6020.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maryland es Maryland Department of Labor; su teléfono es 410-230-6020.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 1100 North Eutaw Street Baltimore, MD 21201 410-230-6020",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Maryland Department of Labor",
+          "label_es": "Maryland Department of Labor",
+          "url": "https://www.labor.maryland.gov"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Massachusetts: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Massachusetts: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Massachusetts 8-48-6",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Massachusetts: 9 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Massachusetts: 9 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Massachusetts 8-48-6 9-48-6 Only between 6:30 a.m. and 7 p.m. during the school year. Only between 6:30 a.m. and 9 p.m. during the summer (from July 1 through Labor Day).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Massachusetts, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Massachusetts, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Massachusetts Under 18 (M) X Under 18 (M) as part of Employment Certificate X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Massachusetts Executive Office of Labor & Workforce Development as the state labor office for Massachusetts; its listed phone number is 617-626-7100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Massachusetts es Massachusetts Executive Office of Labor & Workforce Development; su teléfono es 617-626-7100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Executive Office of Labor & Workforce Development One Ashburton Pl Room 2112 Boston, MA 02108 617-626-7100",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Massachusetts Executive Office of Labor & Workforce Development",
+          "label_es": "Massachusetts Executive Office of Labor & Workforce Development",
+          "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Michigan from 7 p.m. (9 p.m. June 1 to Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Míchigan se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Michigan 40 non-school day/week 3-18 school day/week 10-48 non-school day/week 10/24 school day/week 7 p.m.(9 p.m. June 1 to Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Michigan, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Míchigan, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Michigan Under 18 (M) 12 X Under 18 (M) as part of Employment Certificate X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Michigan Department of Labor and Economic Opportunity as the state labor office for Michigan; its listed phone number is 517-284-7800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Míchigan es Michigan Department of Labor and Economic Opportunity; su teléfono es 517-284-7800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Economic Opportunity 105 W. Allegan St. Lansing, MI 48933 517-284-7800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Michigan Department of Labor and Economic Opportunity",
+          "label_es": "Michigan Department of Labor and Economic Opportunity",
+          "url": "https://www.michigan.gov/leo"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Minnesota: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Minnesota: 8 horas al día y 40 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Minnesota 8-40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Minnesota from 9 p.m. to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Minnesota se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Minnesota 8-40 9 p.m. to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Minnesota Department of Labor and Industry as the state labor office for Minnesota; its listed phone number is 651-284-5005.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Minnesota es Minnesota Department of Labor and Industry; su teléfono es 651-284-5005.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 443 Lafayette Rd N St. Paul, MN 55155 651-284-5005",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Minnesota Department of Labor and Industry",
+          "label_es": "Minnesota Department of Labor and Industry",
+          "url": "https://www.dli.mn.gov"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Missouri: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 40 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Misuri: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Missouri 8-40-6 non-school day/week 3-40-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Missouri, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Misuri, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Missouri Under 16 (M) X 16 and over (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Missouri Department of Labor and Industrial Relations as the state labor office for Missouri; its listed phone number is 573-751-4091.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misuri es Missouri Department of Labor and Industrial Relations; su teléfono es 573-751-4091.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industrial Relations 421 E Dunklin St PO Box 504 Jefferson City, MO 65102-0504 573-751-4091",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Missouri Department of Labor and Industrial Relations",
+          "label_es": "Missouri Department of Labor and Industrial Relations",
+          "url": "https://www.labor.mo.gov"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Montana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Montana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Montana 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Montana.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Montana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Montana Not issued 14 16 and over: in hazardous occupations (M); in other occupations (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Montana Department of Labor and Industry as the state labor office for Montana; its listed phone number is 406-444-2840.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Montana es Montana Department of Labor and Industry; su teléfono es 406-444-2840.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry PO Box 1728 Helena, MT 59624-1728 406-444-2840",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Montana Department of Labor and Industry",
+          "label_es": "Montana Department of Labor and Industry",
+          "url": "https://www.dli.mt.gov"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Nebraska: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nebraska: 8 horas al día y 48 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Nebraska 8-48",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Nebraska, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Nebraska, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Nebraska Under 16 (M) X 16 and over (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nebraska Department of Labor as the state labor office for Nebraska; its listed phone number is 402-471-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nebraska es Nebraska Department of Labor; su teléfono es 402-471-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 550 S 16th St PO Box 94600 Lincoln, NE 68508-4600 402-471-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Nebraska Department of Labor",
+          "label_es": "Nebraska Department of Labor",
+          "url": "https://www.dol.nebraska.gov"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Nevada: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nevada: 8 horas al día y 48 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Nevada 8-48",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 14 in Nevada.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 14 años en Nevada.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Nevada Under 14 (M) 15 Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nevada Department of Business and Industry as the state labor office for Nevada; its listed phone number is 775-684-1890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nevada es Nevada Department of Business and Industry; su teléfono es 775-684-1890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Industry 1830 College Parkway, Suite 100 Carson City, NV 89706 775-684-1890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Nevada Department of Business and Industry",
+          "label_es": "Nevada Department of Business and Industry",
+          "url": "https://labor.nv.gov"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New Hampshire: 8 hours a day and 48 hours a week on non-school days and weeks; 3 hours a day and 23 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nuevo Hampshire: 8 horas al día y 48 horas a la semana en días y semanas sin clases; 3 horas al día y 23 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "New Hampshire 8-48 non-school days/week 3-23 school days/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in New Hampshire from 9 p.m. to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Nuevo Hampshire se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "New Hampshire 8-48 non-school days/week 3-23 school days/week A 48-hour work week, with work up to 6-days per week, is permitted during vacation, if enrolled in school. A 30-hour work week, with work up to 6-days per week, is permitted if enrolled in school. 9 p.m. to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in New Hampshire, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Nuevo Hampshire, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "New Hampshire Under 16 (M) 16 X Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Hampshire Department of Labor as the state labor office for New Hampshire; its listed phone number is 603-271-3176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo Hampshire es New Hampshire Department of Labor; su teléfono es 603-271-3176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 95 Pleasant St Concord, NH 03301 603-271-3176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "New Hampshire Department of Labor",
+          "label_es": "New Hampshire Department of Labor",
+          "url": "https://dol.nh.gov"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New Jersey: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nueva Jersey: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "New Jersey 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in New Jersey, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Nueva Jersey, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "New Jersey Under 18 (M) X 18 to 21 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Jersey Department of Labor and Workforce Development as the state labor office for New Jersey; its listed phone number is 609-292-2305.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva Jersey es New Jersey Department of Labor and Workforce Development; su teléfono es 609-292-2305.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development 1 John Fitch Plaza 13th Floor, Suite D PO Box 110 Trenton, NJ 08625-0110 609-292-2305",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "New Jersey Department of Labor and Workforce Development",
+          "label_es": "New Jersey Department of Labor and Workforce Development",
+          "url": "https://www.nj.gov/labor/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New York: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nueva York: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "New York 8-40-6 non- school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in New York from 7 p.m. (9 p.m. June 21 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Nueva York se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 21 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "New York 8-40-6 non- school day/week 3-18-6 school day/week 8-48-6 school day/week: 4 before school day, 8 Friday, Saturday, Sunday or holiday-28, if enrolled in school. 7 p.m. (9 p.m. June 21 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in New York, issued by the state labor department or schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Nueva York, emitido por el departamento estatal de trabajo o las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "New York Under 18 (M) X - for child performers X 18 and over (P) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New York Department of Labor as the state labor office for New York; its listed phone number is 518-457-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva York es New York Department of Labor; su teléfono es 518-457-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor State Office Bldg # 12 W.A. Harriman Campus Albany, NY 12240 518-457-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "New York Department of Labor",
+          "label_es": "New York Department of Labor",
+          "url": "https://www.labor.ny.gov"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in North Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Carolina del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "North Carolina 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in North Carolina from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Carolina del Norte se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "North Carolina 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in North Carolina, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Carolina del Norte, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "North Carolina Under 18 (M) X 18 No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Carolina Department of Labor as the state labor office for North Carolina; its listed phone number is 800-625-2267.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Norte es North Carolina Department of Labor; su teléfono es 800-625-2267.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4 W Edenton St Raleigh, NC 27601 800-625-2267",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "North Carolina Department of Labor",
+          "label_es": "North Carolina Department of Labor",
+          "url": "https://www.labor.nc.gov"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in North Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Dakota del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "North Dakota 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in North Dakota from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Dakota del Norte se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "North Dakota 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in North Dakota, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Dakota del Norte, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "North Dakota Under 16 (M) X 16 and over (P) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Dakota Department of Labor and Human Rights as the state labor office for North Dakota; its listed phone number is 701-328-2660.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Norte es North Dakota Department of Labor and Human Rights; su teléfono es 701-328-2660.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Human Rights 600 E Boulevard Ave Dept 406 Bismarck, ND 58505-0340 701-328-2660",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "North Dakota Department of Labor and Human Rights",
+          "label_es": "North Dakota Department of Labor and Human Rights",
+          "url": "https://www.nd.gov/labor"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Oregon: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Oregón: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Oregon 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Oregon from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Oregón se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Oregon 8-40-6 non-school day/week 3-18-6 school day/week 44-hour week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Oregon, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Oregón, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Oregon Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oregon Bureau of Labor and Industries as the state labor office for Oregon; its listed phone number is 971-245-3844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oregón es Oregon Bureau of Labor and Industries; su teléfono es 971-245-3844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Bureau of Labor and Industries 1800 SW 1st Ave, Suite 500 Portland, OR 97201 971-245-3844",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Oregon Bureau of Labor and Industries",
+          "label_es": "Oregon Bureau of Labor and Industries",
+          "url": "https://www.oregon.gov/boli"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Pennsylvania: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Pensilvania: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Pennsylvania 8-40-6 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Pennsylvania: 10 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 8 hours a day and 28 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Pensilvania: 10 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 8 horas al día y 28 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Pennsylvania 8-40-6 non-school day/week 3-18 school day/week 10-48-6 non-school day/week 8-28-6 school day/week 7 p.m. (9 p.m. during vacation from June to Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Pennsylvania, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Pensilvania, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Pennsylvania Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Pennsylvania Department of Labor and Industry as the state labor office for Pennsylvania; its listed phone number is 717-787-5279.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Pensilvania es Pennsylvania Department of Labor and Industry; su teléfono es 717-787-5279.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 1700 Labor and Industry Bldg Harrisburg, PA 17121 717-787-5279",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Pennsylvania Department of Labor and Industry",
+          "label_es": "Pennsylvania Department of Labor and Industry",
+          "url": "https://www.pa.gov/agencies/dli"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Rhode Island: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Rhode Island: 8 horas al día y 40 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Rhode Island 8-40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Rhode Island: 9 hours a day and 48 hours a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Rhode Island: 9 horas al día y 48 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Rhode Island 8-40 9-48 7 p.m. (9 p.m. during school vacation) to 6 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Rhode Island, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Rhode Island, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Rhode Island Under 16 (M) X 16 and 17 (M) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Rhode Island Department of Labor and Training as the state labor office for Rhode Island; its listed phone number is 401-462-8550.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Rhode Island es Rhode Island Department of Labor and Training; su teléfono es 401-462-8550.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Training 1511 Pontiac Ave Cranston, RI 02920 401-462-8550",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Rhode Island Department of Labor and Training",
+          "label_es": "Rhode Island Department of Labor and Training",
+          "url": "https://www.dlt.ri.gov"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in South Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Carolina del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "South Carolina 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in South Carolina.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Carolina del Sur.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "South Carolina No provision Under 18 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Carolina Department of Labor, Licensing & Regulations as the state labor office for South Carolina; its listed phone number is 803-896-4300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Sur es South Carolina Department of Labor, Licensing & Regulations; su teléfono es 803-896-4300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor, Licensing & Regulations 110 Centerview Dr Columbia, SC 29210 803-896-4300",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "South Carolina Department of Labor, Licensing & Regulations",
+          "label_es": "South Carolina Department of Labor, Licensing & Regulations",
+          "url": "https://llr.sc.gov/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in South Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 20 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Dakota del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "South Dakota 8-40 non-school day/week 4-20 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in South Dakota.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Dakota del Sur.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "South Dakota Not issued Not issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Dakota Department of Labor and Regulation as the state labor office for South Dakota; its listed phone number is 605-773-3101.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Sur es South Dakota Department of Labor and Regulation; su teléfono es 605-773-3101.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Regulation 123 W Missouri Ave Pierre, SD 57501 605-773-3101",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "South Dakota Department of Labor and Regulation",
+          "label_es": "South Dakota Department of Labor and Regulation",
+          "url": "https://www.dlr.sd.gov"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Tennessee: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Tennessee: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Tennessee 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Tennessee.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Tennessee.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Tennessee Not issued 21 Not issued 21",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Tennessee Department of Labor & Workforce Development as the state labor office for Tennessee; its listed phone number is 844-224-5818.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Tennessee es Tennessee Department of Labor & Workforce Development; su teléfono es 844-224-5818.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Workforce Development 220 French Landing Dr Nashville, TN 37243 844-224-5818",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Tennessee Department of Labor & Workforce Development",
+          "label_es": "Tennessee Department of Labor & Workforce Development",
+          "url": "https://www.tn.gov/workforce"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Texas: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Texas: 8 horas al día y 48 horas a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Texas 8-48",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Texas.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Texas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Texas No provision Under 18 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Texas Workforce Commission as the state labor office for Texas; its listed phone number is 800-628-5115.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Texas es Texas Workforce Commission; su teléfono es 800-628-5115.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Texas Workforce Commission 101 E 15th St Room 651 Austin, TX 78778 800-628-5115",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Texas Workforce Commission",
+          "label_es": "Texas Workforce Commission",
+          "url": "https://www.twc.texas.gov/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Utah: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Utah: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Utah 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Utah from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Utah se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Utah 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists no employment certificate (work permit) requirement in Utah.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica ningún requisito de certificado de empleo (permiso de trabajo) en Utah.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Utah No provision Under 18 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Utah Labor Commission as the state labor office for Utah; its listed phone number is 801-530-6800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Utah es Utah Labor Commission; su teléfono es 801-530-6800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Utah Labor Commission 160 E 300 S 3rd Floor Salt Lake City, UT 84111-6600 801-530-6800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Utah Labor Commission",
+          "label_es": "Utah Labor Commission",
+          "url": "https://www.laborcommission.utah.gov"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Vermont: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Vermont: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Vermont 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Vermont from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Vermont se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Vermont 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Vermont Department of Labor as the state labor office for Vermont; its listed phone number is 802-828-4000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Vermont es Vermont Department of Labor; su teléfono es 802-828-4000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 5 Green Mountain Dr PO Box 488 Montpelier, VT 05601-0488 802-828-4000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Vermont Department of Labor",
+          "label_es": "Vermont Department of Labor",
+          "url": "https://www.labor.vermont.gov"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Virginia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Virginia 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Virginia from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Virginia se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Virginia 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in Virginia, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Virginia, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Virginia Under 16 (M) X 14 and 15 (M), Over 16 (R) X",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Virginia Department of Labor and Industry as the state labor office for Virginia; its listed phone number is 804-371-2327.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia es Virginia Department of Labor and Industry; su teléfono es 804-371-2327.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 600 E Main St Suite 207 Richmond, VA 23219-4101 804-371-2327",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Virginia Department of Labor and Industry",
+          "label_es": "Virginia Department of Labor and Industry",
+          "url": "https://www.doli.Virginia.gov"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Washington: 8 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 20 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Washington: 8 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Washington 8-40-6 non-school day/week 3 (8 Saturday and Sunday) 16-6 school day/week 8-48-6 non-school day/week 4-20-6 school day/week 7 p.m. (9 p.m. from June 1st to Labor Day) to 7 a.m. An adult must supervise minors working after 8 p.m. in service occupations, such as restaurants and retail businesses.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Washington, issued by the state labor department.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Washington, emitido por el departamento estatal de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Washington Under 18 (M) X No provision",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Washington Department of Labor and Industries as the state labor office for Washington; its listed phone number is 360-902-5800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Washington es Washington Department of Labor and Industries; su teléfono es 360-902-5800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industries 7273 Linderson Way SW Tumwater, WA 98501-5414 360-902-5800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Washington Department of Labor and Industries",
+          "label_es": "Washington Department of Labor and Industries",
+          "url": "https://www.lni.wa.gov"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in West Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Virginia Occidental: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "West Virginia 8-40 non-school day/week 3-18 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 16 in West Virginia, issued by schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 16 años en Virginia Occidental, emitido por las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "West Virginia Under 16 (M) X 16 and 17 (R) X 23",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the West Virginia Division of Labor as the state labor office for West Virginia; its listed phone number is 304-558-7890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia Occidental es West Virginia Division of Labor; su teléfono es 304-558-7890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Division of Labor 1900 Kanawha Blvd State Capitol Complex Building #3 Room 200 Charleston, WV 25305 304-558-7890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "West Virginia Division of Labor",
+          "label_es": "West Virginia Division of Labor",
+          "url": "https://labor.wv.gov"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Wisconsin: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Wisconsin: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Wisconsin 8-40-6 non-school day/week 3-18-6 school day/week",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Wisconsin from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Wisconsin se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
+          "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
+          "quote": "Wisconsin 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state employment and age certificates lists an employment certificate (work permit) required for minors under 18 in Wisconsin, issued by the state labor department or schools.",
+          "claim_es": "La tabla estatal de certificados de empleo y de edad del Departamento de Trabajo de EE. UU. indica un certificado de empleo (permiso de trabajo) obligatorio para menores de 18 años en Wisconsin, emitido por el departamento estatal de trabajo o las escuelas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/age-certificates",
+          "source_name": "U.S. Department of Labor, State Employment/Age Certificate Requirements",
+          "quote": "Wisconsin Under 18 (M) X Through permit officers 24 X 18 and over (R) X Through permit officers 24",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wisconsin Department of Workforce Development as the state labor office for Wisconsin; its listed phone number is 608-266-3131.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wisconsin es Wisconsin Department of Workforce Development; su teléfono es 608-266-3131.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Development 201 E Washington Ave Madison, WI 53703 PO Box 7946 Madison, WI 53707-7946 608-266-3131",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state child labor laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de trabajo infantil",
+          "url": "https://www.dol.gov/agencies/whd/state/child-labor"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state work permit (employment certificate) rules",
+          "label_es": "Departamento de Trabajo de EE. UU.: permisos de trabajo estatales",
+          "url": "https://www.dol.gov/agencies/whd/state/age-certificates"
+        },
+        {
+          "label_en": "Wisconsin Department of Workforce Development",
+          "label_es": "Wisconsin Department of Workforce Development",
+          "url": "https://dwd.wisconsin.gov"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AK": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "CT": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "FL": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "MS": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "NM": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "OH": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "OK": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts",
+    "WY": "the U.S. Department of Labor's child labor tables give this state's rules with conditions that cannot be stated plainly in three short facts"
+  }
+}

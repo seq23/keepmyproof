@@ -1,0 +1,798 @@
+{
+  "folder": "executor",
+  "subtopic": "creditor-claims-deadlines",
+  "title_en": "Creditor claim deadlines for an estate in {state}",
+  "title_es": "Plazos para que los acreedores reclamen contra una herencia en {state_es}",
+  "search_intent_en": [
+    "how long do creditors have to file a claim against an estate in {state}",
+    "{state} notice to creditors probate",
+    "{state} estate creditor claim deadline"
+  ],
+  "search_intent_es": [
+    "plazo de acreedores para reclamar a una herencia en {state_es}",
+    "aviso a acreedores en sucesión {state_es}"
+  ],
+  "states": {
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "In Arizona, the personal representative publishes a notice to creditors once a week for three weeks in a row in a county newspaper.",
+          "claim_es": "En Arizona, el representante personal publica un aviso a los acreedores una vez por semana durante tres semanas seguidas en un periódico del condado.",
+          "source_url": "https://www.azleg.gov/ars/14/03801.htm",
+          "source_name": "Arizona Revised Statutes § 14-3801",
+          "quote": "publish a notice to creditors once a week for three successive weeks in a newspaper of general circulation in the county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, known creditors must present claims within four months after the published notice or sixty days after a mailed notice, whichever is later, or the claim is barred.",
+          "claim_es": "En Arizona, los acreedores conocidos deben presentar sus reclamos dentro de cuatro meses después del aviso publicado o sesenta días después del aviso enviado por correo, lo que ocurra más tarde, o el reclamo queda prohibido.",
+          "source_url": "https://www.azleg.gov/ars/14/03801.htm",
+          "source_name": "Arizona Revised Statutes § 14-3801",
+          "quote": "present the creditor's claim within four months after the published notice, if notice is given as provided in subsection A, or within sixty days after the mailing or other delivery of the notice, whichever is later, or be forever barred",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, most claims that arise at or after the death must be presented within four months after they arise.",
+          "claim_es": "En Arizona, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de cuatro meses después de surgir.",
+          "source_url": "https://www.azleg.gov/ars/14/03803.htm",
+          "source_name": "Arizona Revised Statutes § 14-3803",
+          "quote": "Any other claim, within the later of four months after it arises",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "In Idaho, a personal representative may publish a notice to creditors once a week for 3 weeks in a row.",
+          "claim_es": "En Idaho, el representante personal puede publicar un aviso a los acreedores una vez por semana durante 3 semanas seguidas.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-801/",
+          "source_name": "Idaho Code § 15-3-801",
+          "quote": "a personal representative upon his appointment may publish a notice to creditors once a week for three (3) successive weeks",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, a mailed notice tells a creditor to present the claim within 4 months after the published notice or within 60 days after the mailing.",
+          "claim_es": "En Idaho, el aviso por correo indica al acreedor que presente su reclamo dentro de 4 meses después del aviso publicado o dentro de 60 días después del envío.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-801/",
+          "source_name": "Idaho Code § 15-3-801",
+          "quote": "notifying the creditor to present his claim within four (4) months after the published notice if given as provided in subsection (a) of this section or within sixty (60) days after the mailing",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, most claims that arise at or after the death must be presented within 4 months after they arise.",
+          "claim_es": "En Idaho, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de 4 meses después de surgir.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/title15/t15ch3/sect15-3-803/",
+          "source_name": "Idaho Code § 15-3-803",
+          "quote": "any other claim, within the later of four (4) months after it arises",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "In Maine, the published notice tells creditors to present their claims within 4 months.",
+          "claim_es": "En Maine, el aviso publicado indica a los acreedores que presenten sus reclamos dentro de 4 meses.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-801.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-801",
+          "quote": "notifying creditors of the estate to present their claims within 4 months after the date of",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, a creditor who gets a mailed notice may instead have 60 days after the mailing to present the claim.",
+          "claim_es": "En Maine, un acreedor que recibe un aviso por correo puede tener en cambio 60 días desde el envío para presentar su reclamo.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-801.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-801",
+          "quote": "or within 60 days after the mailing or other delivery of the notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, a claim filed within 4 months of the published or actual notice to creditors is considered on time.",
+          "claim_es": "En Maine, un reclamo presentado dentro de 4 meses del aviso publicado o real a los acreedores se considera a tiempo.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-803.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-803",
+          "quote": "if this claim is filed within 4 months of published or actual notice of creditors, the claim is considered timely filed",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "In Maryland, the claim deadline is tied to 6 months after the death or 2 months after the personal representative mails the creditor a notice.",
+          "claim_es": "En Maryland, el plazo para reclamar se basa en 6 meses después de la muerte o 2 meses después de que el representante personal envía un aviso al acreedor.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=8-103&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 8-103",
+          "quote": "(1) 6 months after the date of the decedent's death; or (2) 2 months after the personal representative mails or otherwise delivers to the creditor a copy of a notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maryland, a claim based on the personal representative's conduct or contract is barred unless a lawsuit starts within 6 months after the claim arose.",
+          "claim_es": "En Maryland, un reclamo basado en la conducta o un contrato del representante personal queda prohibido si no se inicia una demanda dentro de 6 meses después de surgir.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=8-103&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 8-103",
+          "quote": "A claim against the estate based on the conduct of or a contract with a personal representative is barred unless an action is commenced against the estate within 6 months after the date the claim arose.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maryland, objections to the personal representative's appointment are filed with the register of wills within 6 months of the appointment.",
+          "claim_es": "En Maryland, las objeciones al nombramiento del representante personal se presentan ante el registro de testamentos dentro de 6 meses desde el nombramiento.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=get&section=7-103&enactments=false",
+          "source_name": "Maryland Code, Estates and Trusts § 7-103",
+          "quote": "shall file the same with the register of wills on or before 6 months from the date of the appointment",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "In Minnesota, most claims that arise at or after the death must be presented within four months after they arise.",
+          "claim_es": "En Minnesota, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de cuatro meses después de surgir.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-803",
+          "source_name": "Minnesota Statutes § 524.3-803",
+          "quote": "any other claim, within four months after it arises.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, a claim based on a contract with the personal representative must be presented within four months after performance is due.",
+          "claim_es": "En Minnesota, un reclamo basado en un contrato con el representante personal debe presentarse dentro de cuatro meses después de la fecha de cumplimiento.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-803",
+          "source_name": "Minnesota Statutes § 524.3-803",
+          "quote": "a claim based on a contract with the personal representative, within four months after performance by the personal representative is due",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, certain state claims, such as medical assistance recovery, are not cut off by the one-year bar.",
+          "claim_es": "En Minnesota, ciertos reclamos del estado, como la recuperación de asistencia médica, no quedan cortados por el límite de un año.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-803",
+          "source_name": "Minnesota Statutes § 524.3-803",
+          "quote": "must not be barred after one year as provided in this clause",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "In Missouri, the notice tells creditors to file claims in court within six months from the first publication.",
+          "claim_es": "En Misuri, el aviso indica a los acreedores que presenten sus reclamos en el tribunal dentro de seis meses desde la primera publicación.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.033",
+          "source_name": "Missouri Revised Statutes § 473.033",
+          "quote": "All creditors of the decedent are notified to file claims in court within six months from the date of first publication of this notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, a creditor who was mailed or served the notice has two months from that date.",
+          "claim_es": "En Misuri, el acreedor que recibió el aviso por correo o en persona tiene dos meses desde esa fecha.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.033",
+          "source_name": "Missouri Revised Statutes § 473.033",
+          "quote": "then within two months from the date it was mailed or served",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, these notice periods do not extend the rule that bars claims one year after the death.",
+          "claim_es": "En Misuri, estos plazos del aviso no extienden la regla que prohíbe los reclamos un año después de la muerte.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.033",
+          "source_name": "Missouri Revised Statutes § 473.033",
+          "quote": "do not extend the limitation period that would bar claims one year after the decedent's death",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "In Montana, the personal representative publishes a notice once a week for 3 weeks in a row in a county newspaper.",
+          "claim_es": "En Montana, el representante personal publica un aviso una vez por semana durante 3 semanas seguidas en un periódico del condado.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0080/section_0010/0720-0030-0080-0010.html",
+          "source_name": "Montana Code § 72-3-801",
+          "quote": "publish a notice once a week for 3 successive weeks in a newspaper of general circulation in the county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, a creditor must present the claim within 4 months from the published notice or within 30 days from a mailed notice.",
+          "claim_es": "En Montana, el acreedor debe presentar su reclamo dentro de 4 meses desde el aviso publicado o dentro de 30 días desde el aviso enviado por correo.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0080/section_0010/0720-0030-0080-0010.html",
+          "source_name": "Montana Code § 72-3-801",
+          "quote": "within 4 months from the published notice if given as provided in subsection (1) or within 30 days from the mailing or other delivery of the notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, most claims that arise at or after the death must be presented within 4 months after they arise.",
+          "claim_es": "En Montana, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de 4 meses después de surgir.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0720/chapter_0030/part_0080/section_0030/0720-0030-0080-0030.html",
+          "source_name": "Montana Code § 72-3-803",
+          "quote": "any other claim, within the later of 4 months after it arises",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "In Nebraska, the clerk of the court publishes the notice to creditors once a week for three weeks after a personal representative is appointed.",
+          "claim_es": "En Nebraska, el secretario del tribunal publica el aviso a los acreedores una vez por semana durante tres semanas después de nombrarse un representante personal.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2483",
+          "source_name": "Nebraska Revised Statutes § 30-2483",
+          "quote": "the clerk of the court upon the appointment of a personal representative shall publish a notice once a week for three",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, claims that arose before the death must be presented within two months after the first publication of notice to creditors.",
+          "claim_es": "En Nebraska, los reclamos que surgieron antes de la muerte deben presentarse dentro de dos meses después de la primera publicación del aviso a los acreedores.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2485",
+          "source_name": "Nebraska Revised Statutes § 30-2485",
+          "quote": "Within two months after the date of the first publication of notice to creditors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, a claim based on a contract with the personal representative must be presented within four months after performance is due.",
+          "claim_es": "En Nebraska, un reclamo basado en un contrato con el representante personal debe presentarse dentro de cuatro meses después de la fecha de cumplimiento.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2485",
+          "source_name": "Nebraska Revised Statutes § 30-2485",
+          "quote": "A claim based on a contract with the personal representative, within four months after performance by the personal representative is due",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "In North Carolina, most claims that arise at or after the death must be presented within six months after they arise.",
+          "claim_es": "En Carolina del Norte, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de seis meses después de surgir.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-19-3.html",
+          "source_name": "North Carolina General Statutes § 28A-19-3",
+          "quote": "With respect to any claim other than a claim based on a contract with the personal representative or collector, within six months after the date on which the claim arises.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, claims are barred if the first notice to creditors is not published or posted within three years after the death.",
+          "claim_es": "En Carolina del Norte, los reclamos quedan prohibidos si el primer aviso a los acreedores no se publica o coloca dentro de tres años después de la muerte.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-19-3.html",
+          "source_name": "North Carolina General Statutes § 28A-19-3",
+          "quote": "be barred if the first publication or posting of the general notice to creditors as provided for in G.S. 28A-14-1 does not occur within three years after the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "After letters are granted in North Carolina, the personal representative must notify everyone with claims against the person who died to present them.",
+          "claim_es": "Después de otorgarse las cartas en Carolina del Norte, el representante personal debe avisar a todos los que tengan reclamos contra la persona fallecida que los presenten.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_28A/GS_28A-14-1.html",
+          "source_name": "North Carolina General Statutes § 28A-14-1",
+          "quote": "Every personal representative and collector after the granting of letters shall notify all persons, firms, and corporations having claims against the decedent to present their claims",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, the notice tells creditors to present claims within three months after the first publication or mailing, or be barred.",
+          "claim_es": "En Dakota del Norte, el aviso indica a los acreedores que presenten sus reclamos dentro de tres meses después de la primera publicación o envío, o quedarán prohibidos.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c19.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-19",
+          "quote": "notify creditors of the estate to present their claims within three months after the date of the first publication or mailing of the notice or be forever barred",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, certain statutes of limitations on claims against the person who died are paused for the three months after the death.",
+          "claim_es": "En Dakota del Norte, ciertos plazos de prescripción de reclamos contra la persona fallecida se suspenden durante los tres meses posteriores a la muerte.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c19.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-19",
+          "quote": "is suspended during the three months following the decedent's death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, a claim based on a contract with the personal representative must be presented within four months after performance is due.",
+          "claim_es": "En Dakota del Norte, un reclamo basado en un contrato con el representante personal debe presentarse dentro de cuatro meses después de la fecha de cumplimiento.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c19.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-19",
+          "quote": "A claim based on a contract with the personal representative, within four months after performance by the personal representative is due",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, claims must be presented within six months after the death, whether or not an executor or administrator has been appointed.",
+          "claim_es": "En Ohio, los reclamos deben presentarse dentro de seis meses después de la muerte, se haya nombrado o no un albacea o administrador.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2117.06",
+          "source_name": "Ohio Revised Code § 2117.06",
+          "quote": "all claims shall be presented within six months after the death of the decedent, whether or not the estate is released from administration or an executor or administrator is appointed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, a claim not presented within six months after the death is barred for good.",
+          "claim_es": "En Ohio, un reclamo no presentado dentro de seis meses después de la muerte queda prohibido para siempre.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2117.06",
+          "source_name": "Ohio Revised Code § 2117.06",
+          "quote": "a claim that is not presented within six months after the death of the decedent shall be forever barred as to all parties",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, the executor or administrator must allow or reject claims (other than tax assessments) within thirty days after they are presented.",
+          "claim_es": "En Ohio, el albacea o administrador debe aceptar o rechazar los reclamos (excepto los de impuestos) dentro de treinta días después de presentados.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2117.06",
+          "source_name": "Ohio Revised Code § 2117.06",
+          "quote": "the executor or administrator shall allow or reject all claims, except tax assessment claims, within thirty days after their presentation",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In Oregon, during the three months after appointment, the personal representative must make reasonably diligent efforts to review the financial records to find creditors.",
+          "claim_es": "En Oregón, durante los tres meses después del nombramiento, el representante personal debe hacer esfuerzos razonables para revisar los registros financieros y encontrar acreedores.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors115.html",
+          "source_name": "Oregon Revised Statutes, Chapter 115",
+          "quote": "during the three months following appointment, unless a longer time is allowed by the court, the personal representative shall make reasonably diligent efforts to investigate the financial records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, the general claim deadline is four months after notice to interested persons is published.",
+          "claim_es": "En Oregón, el plazo general para reclamar es de cuatro meses después de publicarse el aviso a las personas interesadas.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors115.html",
+          "source_name": "Oregon Revised Statutes, Chapter 115",
+          "quote": "(a) Four months after the date of publication of notice to interested persons",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, a creditor with an allowed claim that is not paid within six months after the notice may ask the court for an order.",
+          "claim_es": "En Oregón, un acreedor con un reclamo aceptado que no recibe pago dentro de seis meses después del aviso puede pedir una orden al tribunal.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors115.html",
+          "source_name": "Oregon Revised Statutes, Chapter 115",
+          "quote": "who has not received payment within six months after the date of publication of notice to interested persons, may apply to the court for an order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "In Rhode Island, claims must be presented within 6 months from the first publication, or they are barred.",
+          "claim_es": "En Rhode Island, los reclamos deben presentarse dentro de 6 meses desde la primera publicación, o quedan prohibidos.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE33/33-11/33-11-5.htm",
+          "source_name": "Rhode Island General Laws § 33-11-5",
+          "quote": "Claims shall be presented within six (6) months from the first publication or be forever barred",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, a creditor who missed the 6-month period because of accident, mistake, excusable neglect or lack of notice may ask the probate court, before distribution, to file late.",
+          "claim_es": "En Rhode Island, un acreedor que no cumplió el plazo de 6 meses por accidente, error, negligencia excusable o falta de aviso puede pedir al tribunal testamentario, antes de la distribución, presentar su reclamo tarde.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE33/33-11/33-11-5.htm",
+          "source_name": "Rhode Island General Laws § 33-11-5",
+          "quote": "by reason of accident, mistake, excusable neglect or lack of adequate notice of decedent's estate, failed to present a claim within six (6) months from the first publication, may before distribution of the estate, petition the probate court for leave to present a claim",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, notice given at least 60 days before the 6-month claim period ends is considered adequate.",
+          "claim_es": "En Rhode Island, el aviso dado al menos 60 días antes de que termine el plazo de 6 meses se considera adecuado.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE33/33-11/33-11-5.htm",
+          "source_name": "Rhode Island General Laws § 33-11-5",
+          "quote": "at least sixty (60) days before the expiration of the six (6) months claim period shall be deemed adequate",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "In South Carolina, the personal representative must publish a notice to creditors once a week for three weeks in a row in a county newspaper.",
+          "claim_es": "En Carolina del Sur, el representante personal debe publicar un aviso a los acreedores una vez por semana durante tres semanas seguidas en un periódico del condado.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "a personal representative upon his appointment must publish a notice to creditors once a week for three successive weeks in a newspaper of general circulation in the county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, most claims that arise at or after the death must be presented within eight months after they arise.",
+          "claim_es": "En Carolina del Sur, la mayoría de los reclamos que surgen al momento de la muerte o después deben presentarse dentro de ocho meses después de surgir.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "any other claim, within the later of eight months after it arises",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, a contest of an informally probated will may be started within eight months from informal probate or one year from the death, whichever is later.",
+          "claim_es": "En Carolina del Sur, una impugnación de un testamento validado de forma informal se puede iniciar dentro de ocho meses desde esa validación o un año desde la muerte, lo que ocurra más tarde.",
+          "source_url": "https://www.scstatehouse.gov/code/t62c003.php",
+          "source_name": "South Carolina Code, Title 62 Chapter 3",
+          "quote": "may be commenced within eight months from informal probate or one year from the decedent's death, whichever is later",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, a creditor who was not reasonably ascertainable must present the claim within four months after the first published notice.",
+          "claim_es": "En Washington, un acreedor que no era razonablemente identificable debe presentar su reclamo dentro de cuatro meses después del primer aviso publicado.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.40.051",
+          "source_name": "Revised Code of Washington § 11.40.051",
+          "quote": "the creditor must present the claim within four months after the date of first publication of notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In some Washington cases, a creditor has up to twenty-four months after the date of death to present a claim.",
+          "claim_es": "En algunos casos en Washington, un acreedor tiene hasta veinticuatro meses después de la muerte para presentar un reclamo.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.40.051",
+          "source_name": "Revised Code of Washington § 11.40.051",
+          "quote": "the creditor must present the claim within twenty-four months after the decedent's date of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, if no notice to creditors was given, the creditor still faces a set deadline counted from the date of death.",
+          "claim_es": "En Washington, si no se dio aviso a los acreedores, el acreedor igual tiene un plazo fijo contado desde la muerte.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.40.051",
+          "source_name": "Revised Code of Washington § 11.40.051",
+          "quote": "If notice was not provided under this chapter or chapter 11.42 RCW, the creditor must present the claim within tw",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "In Wisconsin, when an application for administration is filed, the court or probate registrar sets a deadline by order for filing claims.",
+          "claim_es": "En Wisconsin, cuando se presenta una solicitud de administración, el tribunal o el registrador testamentario fija por orden un plazo para presentar reclamos.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/859/01",
+          "source_name": "Wisconsin Statutes § 859.01",
+          "quote": "shall by order set a date as the deadline for filing a claim against the decedent's estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, the deadline for claims against an estate in probate cannot be waived.",
+          "claim_es": "En Wisconsin, el plazo para reclamos contra una herencia en sucesión no se puede renunciar.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/859/01",
+          "source_name": "Wisconsin Statutes § 859.01",
+          "quote": "The statute of limitations concerning claims filed against an estate in probate may not be waived.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, all claims are barred if administration is not started within 6 years after the death.",
+          "claim_es": "En Wisconsin, todos los reclamos quedan prohibidos si la administración no se inicia dentro de 6 años después de la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/859/01",
+          "source_name": "Wisconsin Statutes § 859.01",
+          "quote": "which bars all claims against a decedent or the estate if administration not commenced within 6 years after death",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "In Wyoming, creditors file claims with supporting vouchers at the clerk of court's office within 3 months of the published notice.",
+          "claim_es": "En Wyoming, los acreedores presentan sus reclamos con comprobantes en la oficina del secretario del tribunal dentro de 3 meses del aviso publicado.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "to file them with the necessary vouchers in the office of the clerk of court from which the letters were issued within three (3) months",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, creditors must file their claims in duplicate.",
+          "claim_es": "En Wyoming, los acreedores deben presentar sus reclamos por duplicado.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "Creditors having claims against the decedent or the estate are required to file them in duplicate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, a creditor who was mailed notice files within 3 months after first publication or within 30 days after the mailing.",
+          "claim_es": "En Wyoming, un acreedor que recibió aviso por correo presenta su reclamo dentro de 3 meses después de la primera publicación o dentro de 30 días después del envío.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title02.pdf",
+          "source_name": "Wyoming Statutes, Title 2",
+          "quote": "shall file his claim within three (3) months after the date of first publication of the notice in the newspaper, or before the expiration of thirty (30) days",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "In Florida, 2 years after a death, the estate, the personal representative and the beneficiaries are generally no longer liable for the person's claims.",
+          "claim_es": "En Florida, 2 años después de una muerte, la herencia, el representante personal y los beneficiarios por lo general ya no responden por los reclamos contra la persona.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "2 years after the death of a person, neither the decedent's estate, the personal representative, if any, nor the beneficiaries shall be",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, if the person was 55 or older, the personal representative serves the notice to creditors and a death certificate on the Agency for Health Care Administration within 3 months.",
+          "claim_es": "En Florida, si la persona tenía 55 años o más, el representante personal entrega el aviso a los acreedores y un acta de defunción a la Agency for Health Care Administration dentro de 3 meses.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "If a decedent at the time of death was 55 years of age or older, the personal representative shall promptly serve a copy of the notice to creditors and provide a copy of the death certificate on the Agency for Health Care Administration within 3 months",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, the personal representative may object to a claim within 4 months from first publication or 30 days after the claim is filed, whichever is later.",
+          "claim_es": "En Florida, el representante personal puede objetar un reclamo dentro de 4 meses desde la primera publicación o 30 días después de presentado el reclamo, lo que ocurra más tarde.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "On or before the expiration of 4 months from the first publication of notice to creditors or within 30 days from the timely filing or amendment of a claim, whichever occurs later, a personal representative or other interested person may file a written obje",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "In Delaware, a claim based on a contract with the personal representative must be presented within 6 months after performance is due.",
+          "claim_es": "En Delaware, un reclamo basado en un contrato con el representante personal debe presentarse dentro de 6 meses después de la fecha de cumplimiento.",
+          "source_url": "https://delcode.delaware.gov/title12/c021/index.html",
+          "source_name": "Delaware Code, Title 12 Chapter 21",
+          "quote": "A claim based on a contract with the personal representative, within 6 months after performance by the personal representative is due",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Delaware, most claims that arise after the death must be presented within 6 months after they arise.",
+          "claim_es": "En Delaware, la mayoría de los reclamos que surgen después de la muerte deben presentarse dentro de 6 meses después de surgir.",
+          "source_url": "https://delcode.delaware.gov/title12/c021/index.html",
+          "source_name": "Delaware Code, Title 12 Chapter 21",
+          "quote": "Any other claim, within 6 months after it arises.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Delaware law addresses paying claims after 3 months when there is no notice of a higher-priority claim.",
+          "claim_es": "La ley de Delaware regula el pago de reclamos después de 3 meses cuando no hay aviso de un reclamo con mayor prioridad.",
+          "source_url": "https://delcode.delaware.gov/title12/c021/index.html",
+          "source_name": "Delaware Code, Title 12 Chapter 21",
+          "quote": "Payment of claims after 3 months without notice of claim of higher priority.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, creditors generally must file claims with the clerk within 90 days after the mailed notice or the first published notice to creditors.",
+          "claim_es": "En Nevada, los acreedores normalmente deben presentar sus reclamos ante el secretario dentro de 90 días después del aviso por correo o de la primera publicación del aviso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "must file the claim with the clerk within 90 days after the mailing for those required to be mailed, or 90 days after the first publication of the notice to creditors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, the 90-day claim period drops to 60 days when summary administration is granted.",
+          "claim_es": "En Nevada, el plazo de 90 días para reclamar baja a 60 días cuando se concede la administración sumaria.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "The period of 90 days prescribed by this section is reduced to 60 days if summary administration is granted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, a claim not filed with the clerk on time is barred, with a narrow exception for creditors who had no notice.",
+          "claim_es": "En Nevada, un reclamo no presentado a tiempo ante el secretario queda prohibido, con una excepción limitada para acreedores que no recibieron aviso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-147.html",
+          "source_name": "Nevada Revised Statutes, Chapter 147",
+          "quote": "If a claim is not filed with the clerk within the time allowed by subsection 1 or 2, the claim is forever barred",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, claims against an estate are barred 2 years after the death, whether or not an estate is opened.",
+          "claim_es": "En Illinois, los reclamos contra una herencia quedan prohibidos 2 años después de la muerte, se abra o no la sucesión.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-12",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-12",
+          "quote": "all claims which could have been barred under this Section are, in any event, barred 2 years after decedent's death, whether or not letters of office are issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, every claim except administration expenses and the spouse's or child's award can be barred under the claims statute.",
+          "claim_es": "En Illinois, todo reclamo, salvo los gastos de administración y la asignación del cónyuge o los hijos, puede quedar prohibido según la ley de reclamos.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-12",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-12",
+          "quote": "Every claim against the estate of a decedent, except expenses of administration and surviving spouse's or child's award, is barred as to all of the decedent's estate if",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, the notice to creditors is published in a newspaper in the county where the estate is being administered.",
+          "claim_es": "En Illinois, el aviso a los acreedores se publica en un periódico del condado donde se administra la herencia.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K18-3",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/18-3",
+          "quote": "must be published in a newspaper published in the county where the estate is being administered",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, creditors must present claims to the personal representative or file them with the Register of Wills within 6 months from the first published notice.",
+          "claim_es": "En DC, los acreedores deben presentar sus reclamos al representante personal o ante el Registro de Testamentos dentro de 6 meses desde el primer aviso publicado.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "All persons having claims against the decedent shall present their claims to the undersigned or file their claims with the Register of Wills on or before 6 months from the date of the first publication of this notice.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, the notice that starts the creditor period is published in a legal periodical or general-circulation newspaper.",
+          "claim_es": "En DC, el aviso que inicia el plazo para acreedores se publica en una publicación legal o un periódico de circulación general.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-704",
+          "source_name": "DC Code § 20-704",
+          "quote": "publish a notice of the appointment in a legal periodical or newspaper of general circulation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, certain claims covered by insurance are not barred by the usual claim deadline.",
+          "claim_es": "En DC, ciertos reclamos cubiertos por un seguro no quedan prohibidos por el plazo habitual.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/20-903",
+          "source_name": "DC Code § 20-903",
+          "quote": "no claim that survives death shall be barred if",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, claims against the estate that are not filed on time are barred against the estate, the personal representative and the heirs.",
+          "claim_es": "En Iowa, los reclamos contra la herencia que no se presentan a tiempo quedan prohibidos frente a la herencia, el representante personal y los herederos.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.410.pdf",
+          "source_name": "Iowa Code § 633.410",
+          "quote": "are forever barred against the estate, the personal representative, and the distribu",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, Medicaid recovery claims are barred unless filed with the clerk within six months after notice is sent.",
+          "claim_es": "En Iowa, los reclamos de recuperación de Medicaid quedan prohibidos si no se presentan ante el secretario dentro de seis meses después de enviado el aviso.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.410.pdf",
+          "source_name": "Iowa Code § 633.410",
+          "quote": "shall be barred under this section unless filed with the clerk within six months after sending notice by electro",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, creditors file their claims with the clerk of the district court handling the estate.",
+          "claim_es": "En Iowa, los acreedores presentan sus reclamos ante el secretario del tribunal de distrito que lleva la herencia.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.230.pdf",
+          "source_name": "Iowa Code § 633.230",
+          "quote": "creditors having claims against the estate shall file them with the clerk of the above-named district court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "In Pennsylvania, a claim that would otherwise expire within one year after the death is not barred until a full year has passed.",
+          "claim_es": "En Pensilvania, un reclamo que de otro modo vencería dentro del primer año después de la muerte no queda prohibido hasta que pase un año completo.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "a claim which otherwise would be barred within one year after the death of the decedent shall not be barred until the expiration of one year",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, written notice of a claim given to the personal representative or their attorney before the claim is barred pauses the statute of limitations.",
+          "claim_es": "En Pensilvania, el aviso escrito de un reclamo dado al representante personal o a su abogado antes de que venza detiene el plazo de prescripción.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "Written notice of any claim against a decedent given to the personal representative or his attorney of record before the claim is barred shall toll the statute of limitations.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, claims against the person who died generally become unenforceable after one year, except for certain liens and judgments.",
+          "claim_es": "En Pensilvania, los reclamos contra la persona fallecida por lo general dejan de poder cobrarse después de un año, salvo ciertos gravámenes y sentencias.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "shall become unenforceable after one year from the",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas, a claim can be presented to the personal representative any time before the estate closes, as long as the general statute of limitations has not run.",
+          "claim_es": "En Texas, un reclamo se puede presentar al representante personal en cualquier momento antes de cerrar la herencia, si no ha vencido el plazo general de prescripción.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "A claim may be presented to a personal representative of an estate at any time before the estate is closed if suit on the claim has not been barred by the general statutes of limitation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a creditor can also present a claim by filing it with the clerk, with vouchers, exhibits and an affidavit.",
+          "claim_es": "En Texas, el acreedor también puede presentar su reclamo depositándolo ante el secretario con comprobantes, anexos y una declaración jurada.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "A claim may also be presented by depositing the claim with the clerk with vouchers and the necessary exhibits and affidavit attached to the claim.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a claim the personal representative does not act on within 30 days is presumed rejected.",
+          "claim_es": "En Texas, un reclamo sobre el que el representante personal no actúa dentro de 30 días se presume rechazado.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "the presumption of rejection because the personal representative does not act on the claim within the 30-",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, creditors generally must present claims within 4 months after the notice to creditors is published.",
+          "claim_es": "En Míchigan, los acreedores normalmente deben presentar sus reclamos dentro de 4 meses después de publicado el aviso.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3801",
+          "source_name": "Michigan Compiled Laws § 700.3801",
+          "quote": "Within 4 months after the date of the publication of notice to creditors.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, a creditor the personal representative learns of late gets 28 days from when the representative first knows of them.",
+          "claim_es": "En Míchigan, un acreedor del que el representante personal se entera tarde tiene 28 días desde que el representante lo conoce.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3801",
+          "source_name": "Michigan Compiled Laws § 700.3801",
+          "quote": "within 28 days after the personal representative first knows of the creditor",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, if the notice to creditors was not properly given, claims can be presented up to 3 years after the death.",
+          "claim_es": "En Míchigan, si no se dio bien el aviso a los acreedores, los reclamos se pueden presentar hasta 3 años después de la muerte.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3803",
+          "source_name": "Michigan Compiled Laws § 700.3803",
+          "quote": "If the notice requirements of section 3801 or 7608 have not been met, within 3 years after the decedent's death.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "AL": "no official source found",
+    "AK": "no official source found",
+    "AR": "no official source found",
+    "CA": "no official source found",
+    "CO": "no official source found",
+    "CT": "no official source found",
+    "GA": "no official source found",
+    "HI": "no official source found",
+    "IN": "no official source found",
+    "KS": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "MA": "no official source found",
+    "MS": "no official source found",
+    "NH": "no official source found",
+    "NJ": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "OK": "no official source found",
+    "SD": "no official source found",
+    "TN": "no official source found",
+    "UT": "no official source found",
+    "VT": "no official source found",
+    "VA": "no official source found",
+    "WV": "no official source found"
+  }
+}

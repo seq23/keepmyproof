@@ -1,0 +1,45 @@
+name: Search Loop
+
+# The shared search growth engine (seq23/search-loop) on keepmyproof.com, owner ruling 2 Nov 2026
+# ("SEO aeo geo is first priority"): find easy searches weekly, publish one gated question page per
+# search daily under /questions/ (site/questions/, built into the site by site/build.mjs), check every
+# page at 2/4/8 weeks, strengthen / undo / merge. Pace: 10 a day, +5 a week while pages get indexed,
+# cap 30 (the highest the engine allows). Strict legal and VA gate twice: the engine is told the rules
+# (search-loop.config.json voice + exclude_words), and site/build.mjs refuses to publish any question
+# page with a banned claim word, legal advice, VA claim help, or without "Not legal advice" / "not
+# affiliated with the VA"; scripts/validate.mjs turns main red on such a page.
+# The global switch SEARCH_LOOP_MODE on seq23/search-loop (normal | slow | off) throttles it.
+on:
+  schedule:
+    - cron: "7 14 * * *"  # 14:07 UTC: its own minute (no other caller uses :07)
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "auto | find | build | check"
+        required: false
+        default: auto
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: search-loop
+  cancel-in-progress: false
+
+jobs:
+  search-loop:
+    uses: seq23/search-loop/.github/workflows/search-loop.yml@v1
+    with:
+      engine_ref: v1
+      stage: ${{ inputs.stage || 'auto' }}
+    secrets:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+      GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+      BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.SEARCH_LOOP_CF_USAGE_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.SEARCH_LOOP_CF_ACCOUNT_ID }}
+      CLOUDFLARE_WORKERS_AI_TOKEN: ${{ secrets.SEARCH_LOOP_CF_WORKERS_AI_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.SEARCH_LOOP_GEMINI_API_KEY }}  # no-billing AI Studio project only

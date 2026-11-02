@@ -1,0 +1,35 @@
+name: Facts refresh
+
+# Weekly: re-fetch every official source behind the state pages and keep a fact only while its quote
+# is still on the page (scripts/verify-facts.mjs). A source that cannot be fetched at all keeps its
+# last check for that week (--keep-on-fetch-error); a source that answers without the quote drops the
+# fact, and a state left with fewer than 3 (or fewer than 2 state-specific) is unpublished on the next
+# deploy. Commits site/data/verified/ to main; Cloudflare Pages redeploys from main.
+on:
+  schedule:
+    - cron: "23 9 * * 1"  # Mondays 09:23 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: facts-commit
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - run: node scripts/verify-facts.mjs --keep-on-fetch-error
+      - name: Commit changed checks
+        run: |
+          git config user.name "keepmyproof-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/verified
+          if git diff --cached --quiet; then echo "facts unchanged"; exit 0; fi
+          git commit -q -m "Facts refresh: re-checked official sources $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i * 7)); done
+          echo "NAMED STOP [PUSH_FAILED] facts refresh not pushed"; exit 9

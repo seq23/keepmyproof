@@ -1,0 +1,850 @@
+{
+  "folder": "executor",
+  "subtopic": "probate-process",
+  "title_en": "How probate works in {state} after a parent dies",
+  "title_es": "Cómo funciona el proceso sucesorio en {state_es} después de que muere un padre o una madre",
+  "search_intent_en": [
+    "how does probate work in {state}",
+    "{state} probate court executor",
+    "how to open an estate in {state}"
+  ],
+  "search_intent_es": [
+    "cómo funciona el proceso sucesorio en {state_es}",
+    "albacea de una herencia en {state_es}"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "In Alaska, informal probate lets the personal representative transfer a person's property to the people who should receive it with minimal court supervision.",
+          "claim_es": "En Alaska, la sucesión informal permite que el representante personal transfiera los bienes de la persona fallecida a quienes deben recibirlos con poca supervisión del tribunal.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "Informal probate is a court process that allows the Personal Representative to transfer the property of a person who died to the persons who are supposed to receive it with minimal court supervision.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An Alaska informal probate includes notifying creditors and beneficiaries or heirs.",
+          "claim_es": "Una sucesión informal en Alaska incluye avisar a los acreedores y a los beneficiarios o herederos.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "Notifying creditors and beneficiaries or heirs.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska's court suggests asking for 3 to 5 extra certified copies of the Letters, because companies will ask to see them when you transfer property.",
+          "claim_es": "El tribunal de Alaska sugiere pedir de 3 a 5 copias certificadas adicionales de las cartas (Letters), porque las empresas pedirán verlas al transferir bienes.",
+          "source_url": "https://courts.alaska.gov/shc/probate/informal.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "It is a good idea to ask for 3 to 5 extra certified copies of the Letters since you will need to show the Letters to companies when you transfer property owned by the person who died.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "In California, you open probate by going to court and asking a judge to appoint a personal representative.",
+          "claim_es": "En California, la sucesión se abre acudiendo al tribunal y pidiendo a un juez que nombre a un representante personal.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "To start a probate case (called opening probate), you go to court and ask a judge to appoint a personal representative.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, anyone who finds an original will must deliver it to the court.",
+          "claim_es": "En California, quien encuentre un testamento original debe entregarlo al tribunal.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "If you find an original will, you must deliver it to the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative collects the property, pays the bills, and distributes what is left to the people legally entitled to it.",
+          "claim_es": "En California, el representante personal reúne los bienes, paga las deudas y reparte lo que queda entre las personas con derecho legal a recibirlo.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "The personal representative collects all the property of the person that died, pays their bills, and then distributes any remaining property to the people with a legal right to receive the property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, if the person named in the will cannot serve or there is no will, an order of priority decides who may be appointed.",
+          "claim_es": "En California, si la persona nombrada en el testamento no puede actuar o no hay testamento, un orden de prioridad decide a quién se puede nombrar.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "If the person named in the will cannot act or there is no will, then there's an order of priority for who may be appointed a personal representative.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, after a Petition for Probate is filed, the Probate Division appoints a personal representative.",
+          "claim_es": "En DC, después de presentarse una petición de sucesión, la División Testamentaria nombra a un representante personal.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "After a Petition for Probate of the decedent's estate is filed, the Probate Division will appoint a Personal Representative",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "DC treats an estate as a small estate when the person had property worth $80,000 or less.",
+          "claim_es": "DC considera herencia pequeña la de una persona con bienes por $80,000 o menos.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "Small Estates For someone who had property worth $80,000 or less.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, a large estate case is for someone who owned real estate in DC or had more than $80,000 in property.",
+          "claim_es": "En DC, el caso de herencia grande es para quien tenía bienes inmuebles en DC o más de $80,000 en bienes.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "owned real estate in DC or had more than $80,000 in property",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "To open an estate in North Carolina, bring the will (if any), a certified death certificate, an application with a preliminary inventory, and a $120 filing fee.",
+          "claim_es": "Para abrir una herencia en Carolina del Norte, lleve el testamento (si existe), un acta de defunción certificada, una solicitud con un inventario preliminar y una tarifa de $120.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "You should bring: (1) the will if there was one, (2) a certified death certificate, (3) an application and preliminary inventory of the decedent's property; and (4) a $120 filing fee.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, an executor named in a valid will has the highest priority to receive letters.",
+          "claim_es": "En Carolina del Norte, el albacea nombrado en un testamento válido tiene la mayor prioridad para recibir las cartas.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "If there is a valid will, an executor named in the will has the highest priority to receive letters.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, out-of-state executors generally must post a bond to protect creditors and heirs.",
+          "claim_es": "En Carolina del Norte, los albaceas de otro estado normalmente deben pagar una fianza para proteger a los acreedores y herederos.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "Out-of-state executors generally must pay a bond to the court to protect creditors and heirs from potential losses.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont has 14 probate division judges, elected for four-year terms.",
+          "claim_es": "Vermont tiene 14 jueces de la división testamentaria, elegidos por períodos de cuatro años.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "There are 14 probate division judges who are elected for four-year terms.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Vermont, the probate division examines whether a will is legally valid.",
+          "claim_es": "En Vermont, la división testamentaria examina si un testamento es legalmente válido.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "The probate division examines the legality of a will.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Vermont's probate division oversees the estate to make sure the executor or administrator does the job correctly and honors the person's final wishes.",
+          "claim_es": "La división testamentaria de Vermont supervisa la herencia para que el albacea o administrador cumpla bien sus funciones y respete la última voluntad.",
+          "source_url": "https://www.vermontjudiciary.org/probate",
+          "source_name": "Vermont Judiciary, Probate Division",
+          "quote": "It then oversees the administration of the estate to ensure that the executor or administrator correctly performs their duties, follows laws, and honors final wishes.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas probate, with court approval the will is validated, debts are paid, and the rest of the property passes to the heirs.",
+          "claim_es": "En la sucesión en Texas, con aprobación del tribunal se valida el testamento, se pagan las deudas y el resto de los bienes pasa a los herederos.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "With court approval, the will is validated, the debts are paid, and the rest of the property passes to the heirs.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Texas estate administration, the court appoints a specific person to manage the whole process.",
+          "claim_es": "En una administración de herencia en Texas, el tribunal nombra a una persona específica para manejar todo el proceso.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "In administration, the court appoints a specific person to manage the whole process.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, nonprobate property passes directly to the beneficiaries without court approval.",
+          "claim_es": "En Texas, los bienes no sujetos a sucesión pasan directamente a los beneficiarios sin aprobación del tribunal.",
+          "source_url": "https://guides.sll.texas.gov/probate",
+          "source_name": "Texas State Law Library",
+          "quote": "Nonprobate property passes directly to the beneficiaries without court approval.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, after 15 months any party in the probate case can ask the executor for a detailed accounting.",
+          "claim_es": "En Texas, después de 15 meses cualquier parte del caso de sucesión puede pedir al albacea un informe de cuentas detallado.",
+          "source_url": "https://guides.sll.texas.gov/probate/estate-executors",
+          "source_name": "Texas State Law Library",
+          "quote": "After 15 months, any party involved in the probate proceedings can ask the executor for a detailed accounting report.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "In New Hampshire, estates that need a published notice pay a $55 publication fee (since December 28, 2021).",
+          "claim_es": "En Nuevo Hampshire, las herencias que requieren un aviso publicado pagan una tarifa de publicación de $55 (desde el 28 de diciembre de 2021).",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "For estates requiring a publication fee, the fee will be $55 starting on December 28, 2021.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire's courts publish a booklet, Administering an Estate, for estates filed in the probate division.",
+          "claim_es": "Los tribunales de Nuevo Hampshire publican un folleto, Administering an Estate, para las herencias presentadas en la división testamentaria.",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "please refer to this booklet Administering an Estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire's Administering an Estate booklet guides people serving as fiduciary of an estate.",
+          "claim_es": "El folleto Administering an Estate de Nuevo Hampshire orienta a quienes actúan como fiduciarios de una herencia.",
+          "source_url": "https://www.courts.nh.gov/our-courts/circuit-court/probate-division/estates",
+          "source_name": "New Hampshire Judicial Branch, Probate Division",
+          "quote": "It provides a guide to serving as a fiduciary of an estate.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "In Arizona, probate is generally opened in the county where the person lived (was domiciled) at death.",
+          "claim_es": "En Arizona, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://www.azleg.gov/ars/14/03201.htm",
+          "source_name": "Arizona Revised Statutes § 14-3201",
+          "quote": "In the county where the decedent had his domicile at the time of his death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Arizona, probate can be opened in any Arizona county where they had property.",
+          "claim_es": "Si la persona no vivía en Arizona, la sucesión se puede abrir en cualquier condado de Arizona donde tenía bienes.",
+          "source_url": "https://www.azleg.gov/ars/14/03201.htm",
+          "source_name": "Arizona Revised Statutes § 14-3201",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of his death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona law sets an ultimate time limit for starting probate and appointment proceedings.",
+          "claim_es": "La ley de Arizona fija un plazo máximo para iniciar procesos sucesorios y de nombramiento.",
+          "source_url": "https://www.azleg.gov/ars/14/03108.htm",
+          "source_name": "Arizona Revised Statutes § 14-3108",
+          "quote": "Probate, testacy and appointment proceedings; ultimate time limit",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "In Maine, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Maine, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-201",
+          "quote": "In the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Maine, probate can be opened in any Maine county where they had property.",
+          "claim_es": "Si la persona no vivía en Maine, la sucesión se puede abrir en cualquier condado de Maine donde tenía bienes.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-201",
+          "quote": "If the decedent was not domiciled in this State, in any county where property of the decedent was located at the time of the decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, most probate and appointment proceedings may not be started more than 3 years after the death, with some exceptions.",
+          "claim_es": "En Maine, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de 3 años después de la muerte, con algunas excepciones.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-108.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-108",
+          "quote": "may not be commenced more than 3 years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "In Minnesota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Minnesota, la sucesión normalmente se abre en el condado del domicilio de la persona al morir.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-201",
+          "source_name": "Minnesota Statutes § 524.3-201",
+          "quote": "in the county of the decedent's domicile at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Minnesota, probate can be opened in any Minnesota county where they had property.",
+          "claim_es": "Si la persona no vivía en Minnesota, la sucesión se puede abrir en cualquier condado de Minnesota donde tenía bienes.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-201",
+          "source_name": "Minnesota Statutes § 524.3-201",
+          "quote": "if the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, probate for an absent or missing person may be brought within three years after their death is established.",
+          "claim_es": "En Minnesota, la sucesión de una persona ausente o desaparecida se puede iniciar dentro de tres años después de establecerse su muerte.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-108",
+          "source_name": "Minnesota Statutes § 524.3-108",
+          "quote": "at any time within three years after the death of the absentee",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "In South Dakota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Dakota del Sur, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-201.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-201",
+          "quote": "In the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in South Dakota, probate can be opened in any South Dakota county where they had property.",
+          "claim_es": "Si la persona no vivía en Dakota del Sur, la sucesión se puede abrir en cualquier condado de Dakota del Sur donde tenía bienes.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-201.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-201",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, most probate and appointment proceedings cannot be started more than three years after the death, with some exceptions.",
+          "claim_es": "En Dakota del Sur, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de tres años después de la muerte, con algunas excepciones.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-108.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-108",
+          "quote": "may be commenced more than three years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "In Massachusetts, probate is generally filed in the county where the person was domiciled at death.",
+          "claim_es": "En Massachusetts, la sucesión normalmente se presenta en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-201",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-201",
+          "quote": "in the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Massachusetts, probate can be filed in any county where they had property.",
+          "claim_es": "Si la persona no vivía en Massachusetts, la sucesión se puede presentar en cualquier condado donde tenía bienes.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-201",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-201",
+          "quote": "if the decedent was not domiciled in the commonwealth, in any county where property of the decedent was located at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, whoever holds a will must deliver it within thirty days after learning of the death to someone who can get it probated.",
+          "claim_es": "En Massachusetts, quien tenga un testamento debe entregarlo dentro de treinta días después de saber de la muerte a alguien que pueda tramitar su validación.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section2-516",
+          "source_name": "Massachusetts General Laws, Chapter 190B §2-516",
+          "quote": "a person having custody of a will of the testator shall deliver it within thirty days after notice of the death to a person able to secure its probate",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "In Nebraska, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Nebraska, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2410",
+          "source_name": "Nebraska Revised Statutes § 30-2410",
+          "quote": "in the county where the decedent had his domicile at the time of his death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Nebraska, probate can be opened in any Nebraska county where they had property.",
+          "claim_es": "Si la persona no vivía en Nebraska, la sucesión se puede abrir en cualquier condado de Nebraska donde tenía bienes.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2410",
+          "source_name": "Nebraska Revised Statutes § 30-2410",
+          "quote": "if the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of his death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, probate for a missing person who has a conservator can be brought within a three-year window set by law.",
+          "claim_es": "En Nebraska, la sucesión de una persona desaparecida que tiene un curador se puede iniciar dentro de un plazo de tres años fijado por la ley.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2408",
+          "source_name": "Nebraska Revised Statutes § 30-2408",
+          "quote": "may be maintained in relation to the estate of an absent, disappeared, or missing person for whose estate a conservator has been appointed, at any time within three year",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Dakota del Norte, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c13.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-13",
+          "quote": "In the county where the decedent was domiciled at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in North Dakota, probate can be opened in any North Dakota county where they had property.",
+          "claim_es": "Si la persona no vivía en Dakota del Norte, la sucesión se puede abrir en cualquier condado de Dakota del Norte donde tenía bienes.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c13.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-13",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, most probate and appointment proceedings cannot be started more than three years after the death, with some exceptions.",
+          "claim_es": "En Dakota del Norte, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de tres años después de la muerte, con algunas excepciones.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c12.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-12",
+          "quote": "may be commenced more than three years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "In Wisconsin, anyone holding a will must file it in the proper court, or deliver it, within 30 days after learning of the death.",
+          "claim_es": "En Wisconsin, quien tenga un testamento debe presentarlo en el tribunal correspondiente, o entregarlo, dentro de 30 días después de saber de la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "having the custody of any will shall, within 30 days after he or she has knowledge of the death of the testator, file the will in the proper court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, a person named as personal representative must act on the will within 30 days after learning of the naming and the death.",
+          "claim_es": "En Wisconsin, la persona nombrada como representante personal debe actuar con el testamento dentro de 30 días después de saber del nombramiento y la muerte.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "Any person named in a will to act as personal representative shall, within 30 days after he or she has knowledge that he or she is named",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, if no one petitions within 30 days after the death, a guardian or creditor of the person may petition for administration.",
+          "claim_es": "En Wisconsin, si nadie lo pide dentro de 30 días después de la muerte, un tutor o acreedor de la persona puede pedir la administración.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/856/05",
+          "source_name": "Wisconsin Statutes § 856.05",
+          "quote": "has petitioned within 30 days after the death of the decedent, petition for administration may be made by any person who was guardian of the decedent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "In Missouri, a will has no effect as a will until it is presented for and admitted to probate.",
+          "claim_es": "En Misuri, un testamento no tiene efecto como tal hasta que se presenta y se admite a sucesión.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "A will, to be effective as a will, must be presented for and admitted to probate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, when notice of letters has been published, a will must be presented within six months after the first publication of that notice.",
+          "claim_es": "En Misuri, cuando se ha publicado el aviso de las cartas, el testamento debe presentarse dentro de seis meses después de la primera publicación.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "within six months after the date of the first publication of the notice of granting",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, when no such notice was given, a will must be presented within one year after the death.",
+          "claim_es": "En Misuri, si no se dio ese aviso, el testamento debe presentarse dentro de un año después de la muerte.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "within one year after the date of death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, a will not presented within these time limits can never be admitted to probate.",
+          "claim_es": "En Misuri, un testamento no presentado dentro de estos plazos ya no puede admitirse a sucesión.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "A will not presented for probate within the time limitations provided in subsection 3 of this section is forever barred from admission to probate in this state.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "In Kansas, a will generally cannot pass property unless a petition to probate it is filed within six months after the death.",
+          "claim_es": "En Kansas, un testamento normalmente no puede transmitir bienes si no se presenta una petición de sucesión dentro de seis meses después de la muerte.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0017.html",
+          "source_name": "Kansas Statutes § 59-617",
+          "quote": "unless a petition is filed for the probate of such will within six months after the death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, if a will was knowingly withheld, an innocent beneficiary may petition to probate it within 90 days after learning of it and getting access.",
+          "claim_es": "En Kansas, si alguien ocultó un testamento, un beneficiario inocente puede pedir su validación dentro de 90 días después de conocerlo y tener acceso.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0018.html",
+          "source_name": "Kansas Statutes § 59-618",
+          "quote": "if such petition is filed within 90 days after such beneficiary has knowledge of such will and access to it",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Kansas law addresses anyone who knowingly withholds a will from the district court.",
+          "claim_es": "La ley de Kansas regula a quien oculta a sabiendas un testamento al tribunal de distrito.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0018.html",
+          "source_name": "Kansas Statutes § 59-618",
+          "quote": "Any person who has possession of the will of a testator dying a resident of this state, or has knowledge of such will and access to it for the purpose of probate, and knowingly withholds it from the district court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, anyone holding a will must deliver it to the district court clerk (or the named personal representative) within 30 days after learning of the death.",
+          "claim_es": "En Nevada, quien tenga un testamento debe entregarlo al secretario del tribunal de distrito (o al representante personal nombrado) dentro de 30 días después de saber de la muerte.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Any person having possession of a will shall, within 30 days after knowledge of the death of the person who executed the will, deliver it to the clerk of the district court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, the person named as personal representative must present the will to the court clerk within 30 days after the death or after learning they were named.",
+          "claim_es": "En Nevada, la persona nombrada como representante personal debe presentar el testamento al secretario dentro de 30 días después de la muerte o de saber de su nombramiento.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Any person named as personal representative in a will shall, within 30 days after the death of the testator, or within 30 days after knowledge of being named, present the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, estates are settled in the district court, and the law sets which county's court may take the case.",
+          "claim_es": "En Nevada, las herencias se resuelven en el tribunal de distrito, y la ley fija qué condado puede llevar el caso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Jurisdiction of the settlement of the estate of a decedent may be assumed in the district court of any county in this State if",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Míchigan, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "The county where the decedent was domiciled at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Michigan, probate can be opened in a Michigan county where they had property.",
+          "claim_es": "Si la persona no vivía en Míchigan, la sucesión se puede abrir en un condado de Míchigan donde tenía bienes.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "If the decedent was not domiciled in this state, in a county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, the court can move a probate case to another county for the convenience of the parties and witnesses.",
+          "claim_es": "En Míchigan, el tribunal puede trasladar el caso sucesorio a otro condado por conveniencia de las partes y testigos.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "a proceeding's venue may be changed to another county by court order for the convenience of the parties and witnesses",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, anyone holding a will must file it with the clerk of the court in the proper county immediately after the death.",
+          "claim_es": "En Illinois, quien tenga un testamento debe presentarlo de inmediato ante el secretario del tribunal del condado correspondiente después de la muerte.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-1",
+          "quote": "Immediately upon the death of the testator any person who has the testator's will in his possession shall file it with the clerk of the court of the proper county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, it is an offense to willfully hide a will for 30 days after learning of the death.",
+          "claim_es": "En Illinois, es delito ocultar a propósito un testamento durante 30 días después de saber de la muerte.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-1",
+          "quote": "wilfully secretes it for the period of 30 days after the death of the testator is known to him",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, notice must be mailed to heirs and beneficiaries no more than 14 days after the order admitting the will or appointing a representative.",
+          "claim_es": "En Illinois, el aviso debe enviarse a herederos y beneficiarios a más tardar 14 días después de la orden que admite el testamento o nombra al representante.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-10",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-10",
+          "quote": "Not more than 14 days after entry of an order admitting or denying admission of a will to probate or appointing a representative",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, after a will is admitted, the executor publishes notice once a week for two weeks in a row in a local newspaper.",
+          "claim_es": "En Iowa, después de admitirse el testamento, el albacea publica un aviso una vez por semana durante dos semanas seguidas en un periódico local.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.304.pdf",
+          "source_name": "Iowa Code § 633.304",
+          "quote": "shall cause notice to be published once each week for two consecutive weeks in a daily or weekly newspaper of general circulation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, the executor also mails notice to the surviving spouse, each heir and each beneficiary under the will.",
+          "claim_es": "En Iowa, el albacea también envía aviso por correo al cónyuge sobreviviente, a cada heredero y a cada beneficiario del testamento.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.304.pdf",
+          "source_name": "Iowa Code § 633.304",
+          "quote": "give notice, except to any executor, by ordinary mail to the surviving spouse, each heir of the decedent, and each devisee under the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, when there is no will, administration is granted to a qualified person on petition by those the law lists.",
+          "claim_es": "En Iowa, cuando no hay testamento, la administración se concede a una persona calificada a petición de quienes indica la ley.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.227.pdf",
+          "source_name": "Iowa Code § 633.227",
+          "quote": "Where there is no will, administration shall be granted to any qualified person on the petition of",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, if the person did not live in Ohio, the will can be admitted in any Ohio county where they had property.",
+          "claim_es": "En Ohio, si la persona no vivía en Ohio, el testamento se puede admitir en cualquier condado de Ohio donde tenía bienes.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2107.11",
+          "source_name": "Ohio Revised Code § 2107.11",
+          "quote": "In any county of this state where any real property or personal property of the testator is located if, at the time of the testator's death, the testator was not domiciled in this state",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, a beneficiary who knows of a will and keeps it from probate for one year after the death can lose their inheritance.",
+          "claim_es": "En Ohio, un beneficiario que conoce un testamento y no lo presenta durante un año después de la muerte puede perder su herencia.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2107.10",
+          "source_name": "Ohio Revised Code § 2107.10",
+          "quote": "No property or right, testate or intestate, shall pass to a beneficiary named in a will who knows of the existence of the will for one year after the death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, when there is no will, the law sets an order of priority for who is granted administration.",
+          "claim_es": "En Ohio, cuando no hay testamento, la ley fija un orden de prioridad para conceder la administración.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2113.06",
+          "source_name": "Ohio Revised Code § 2113.06",
+          "quote": "Administration of the estate of an intestate shall be granted to persons mentioned in this division, in the following order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, anyone holding a will must deliver it to the court or the named executor within thirty days after learning of the death.",
+          "claim_es": "En Washington, quien tenga un testamento debe entregarlo al tribunal o al albacea nombrado dentro de treinta días después de saber de la muerte.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.010",
+          "source_name": "Revised Code of Washington § 11.20.010",
+          "quote": "Any person having the custody or control of any will shall, within thirty days after he or she shall have received knowledge of the death of the testator, deliver said will to the court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, testimony supporting a will is put in writing, signed by the witnesses and certified by the judge.",
+          "claim_es": "En Washington, el testimonio que respalda un testamento se pone por escrito, lo firman los testigos y lo certifica el juez.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020",
+          "source_name": "Revised Code of Washington § 11.20.020",
+          "quote": "All testimony in support of the will shall be reduced to writing, signed by the witnesses, and certified by the judge of the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, if no personal representative is requested and the court establishes the will, no further administration may be needed.",
+          "claim_es": "En Washington, si no se pide un representante personal y el tribunal valida el testamento, puede no requerirse más administración.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020",
+          "source_name": "Revised Code of Washington § 11.20.020",
+          "quote": "If the application for probate of a will does not request the appointment of a personal representative and the court enters an adjudication of testacy establishing such will no further administration shall be required",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "In Virginia, after 30 days from the death, the court or clerk may grant administration to the first heir (or their designee) who applies.",
+          "claim_es": "En Virginia, después de 30 días desde la muerte, el tribunal o el secretario puede conceder la administración al primer heredero (o su designado) que la pida.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-502/",
+          "source_name": "Code of Virginia § 64.2-502",
+          "quote": "After 30 days have passed since the decedent's death, the court or the clerk may grant administration to the first distributee, or his designee, who applies",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, an heir who gives notice within the first 45 days of an intent to qualify later can hold off others' appointment.",
+          "claim_es": "En Virginia, un heredero que avisa en los primeros 45 días que piensa habilitarse después puede frenar el nombramiento de otros.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-502/",
+          "source_name": "Code of Virginia § 64.2-502",
+          "quote": "if, during the first 45 days following the decedent's death, any distributee notifies the court or the clerk of an intent to qualify after the 45-day period has elapsed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, within 30 days after qualifying or after the will is admitted, the personal representative sends notice to the people entitled to it.",
+          "claim_es": "En Virginia, dentro de 30 días después de habilitarse o de admitirse el testamento, el representante personal envía aviso a quienes tienen derecho.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-508/",
+          "source_name": "Code of Virginia § 64.2-508",
+          "quote": "Within 30 days after the date of qualification or admission of the will to probate, a personal representative or proponent of the will shall forward notice",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "In West Virginia, anyone holding a will must deliver it to the county clerk or the named executor within thirty days after learning of the death.",
+          "claim_es": "En Virginia Occidental, quien tenga un testamento debe entregarlo al secretario del condado o al albacea nombrado dentro de treinta días después de saber de la muerte.",
+          "source_url": "https://code.wvlegislature.gov/41-5-1/",
+          "source_name": "West Virginia Code § 41-5-1",
+          "quote": "A person having custody of a will shall, within thirty days after the death of the testator is known to him deliver such will to the clerk of the county court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, failing without reasonable cause to deliver a will is a misdemeanor with a fine of up to $200.",
+          "claim_es": "En Virginia Occidental, no entregar un testamento sin causa razonable es un delito menor con multa de hasta $200.",
+          "source_url": "https://code.wvlegislature.gov/41-5-1/",
+          "source_name": "West Virginia Code § 41-5-1",
+          "quote": "neglect so to deliver a will shall be guilty of a misdemeanor, and, on conviction, be punished by a fine not exceeding $200",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, estates appraised at $200,000 or less (not counting specifically devised real estate and nonprobate assets) can follow a shorter process.",
+          "claim_es": "En Virginia Occidental, las herencias tasadas en $200,000 o menos (sin contar inmuebles legados específicamente ni bienes no sucesorios) pueden seguir un proceso más corto.",
+          "source_url": "https://code.wvlegislature.gov/44-2-1/",
+          "source_name": "West Virginia Code § 44-2-1",
+          "quote": "If the personal representative delivers to the clerk an appraisement of the assets of the estate showing their value to be $200,000 or less",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "In Connecticut, a person named as executor must apply for probate of the will within thirty days after the death.",
+          "claim_es": "En Connecticut, la persona nombrada como albacea debe pedir la validación del testamento dentro de treinta días después de la muerte.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "within thirty days next after the death of the testator, apply for probate of the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, the small estate affidavit sections apply when no will or application is filed within thirty days after the death.",
+          "claim_es": "En Connecticut, las normas de declaración jurada de herencia pequeña aplican cuando no se presenta testamento ni solicitud dentro de treinta días después de la muerte.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "no will is presented for probate or no application for administration is filed within thirty days after death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, the probate court sends a copy of a small estate affidavit to the Department of Administrative Services.",
+          "claim_es": "En Connecticut, el tribunal testamentario envía copia de la declaración jurada de herencia pequeña al Departamento de Servicios Administrativos.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "On receipt of an affidavit, the court shall send a copy of the affidavit to the Department of Administrative Services.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "In Florida, probate is generally opened in the county where the person was domiciled.",
+          "claim_es": "En Florida, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "(a) In the county in this state where the decedent was domiciled.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, if the person neither lived nor had property in Florida, probate can be opened in a county where one of their debtors lives.",
+          "claim_es": "En Florida, si la persona no vivía ni tenía bienes en Florida, la sucesión se puede abrir en un condado donde viva uno de sus deudores.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "If the decedent had no domicile in this state and possessed no property in this state, then in the county where any debtor of the decedent resides.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, whoever holds a will must deposit it with the court clerk within 10 days after learning of the death.",
+          "claim_es": "En Florida, quien tenga un testamento debe depositarlo ante el secretario del tribunal dentro de 10 días después de saber de la muerte.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/0732.html",
+          "source_name": "Florida Statutes, Chapter 732",
+          "quote": "The custodian of a will must deposit the will with the clerk of the court having venue of the estate of the decedent within 10 days after receiving information that the",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "AL": "no official source found",
+    "AR": "no official source found",
+    "CO": "no official source found",
+    "DE": "no official source found",
+    "GA": "no official source found",
+    "HI": "no official source found",
+    "ID": "no official source found",
+    "IN": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "MD": "no official source found",
+    "MS": "no official source found",
+    "MT": "no official source found",
+    "NJ": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "OK": "no official source found",
+    "OR": "no official source found",
+    "PA": "no official source found",
+    "RI": "no official source found",
+    "SC": "no official source found",
+    "TN": "no official source found",
+    "UT": "no official source found",
+    "WY": "no official source found"
+  }
+}
