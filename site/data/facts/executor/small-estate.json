@@ -1,0 +1,1230 @@
+{
+  "folder": "executor",
+  "subtopic": "small-estate",
+  "title_en": "Small estates in {state}: collecting a parent's property without full probate",
+  "title_es": "Herencias pequeñas en {state_es}: cómo cobrar los bienes de un padre o madre sin un proceso sucesorio completo",
+  "search_intent_en": [
+    "{state} small estate affidavit",
+    "small estate limit {state}",
+    "how to avoid probate for a small estate in {state}"
+  ],
+  "search_intent_es": [
+    "declaración jurada de herencia pequeña en {state_es}",
+    "límite de herencia pequeña en {state_es}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "Alabama's Small Estates Act lets a probate court distribute a deceased person's personal property to a surviving spouse or other heirs through summary distribution, without full probate administration.",
+          "claim_es": "La Ley de Herencias Pequeñas de Alabama permite que un tribunal testamentario reparta los bienes muebles de una persona fallecida al cónyuge sobreviviente u otros herederos mediante una distribución sumaria, sin un proceso sucesorio completo.",
+          "source_url": "https://probate.mobilecountyal.gov/judicial/alabama-small-estates-act/",
+          "source_name": "Mobile County Probate Court (Alabama)",
+          "quote": "This Act provides a method, through a court proceeding, to distribute personal property of a deceased person in a summary distribution manner to a surviving spouse, or appropriate distributees of the decedent, without full probate administration.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, summary distribution is not available if the person who died left a minor child who is not the child of the surviving spouse.",
+          "claim_es": "En Alabama, la distribución sumaria no está disponible si la persona fallecida dejó un hijo menor de edad que no es hijo del cónyuge sobreviviente.",
+          "source_url": "https://probate.mobilecountyal.gov/judicial/alabama-small-estates-act/",
+          "source_name": "Mobile County Probate Court (Alabama)",
+          "quote": "Summary distribution is not available if the decedent is survived by a minor child not the child of the surviving spouse.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alabama's value limit for summary distribution of personal property is adjusted from time to time using a Consumer Price Index formula.",
+          "claim_es": "En Alabama, el límite de valor para la distribución sumaria de bienes muebles se ajusta periódicamente según una fórmula basada en el Índice de Precios al Consumidor.",
+          "source_url": "https://probate.mobilecountyal.gov/judicial/alabama-small-estates-act/",
+          "source_name": "Mobile County Probate Court (Alabama)",
+          "quote": "The value of the entire decedent's estate (personal property) shall not exceed the sum as adjusted from time to time based on the Consumer Price Index formula",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "In Alaska, the affidavit for collecting personal property can be used only when at least 30 days have passed since the person died.",
+          "claim_es": "En Alaska, la declaración jurada para cobrar bienes muebles solo se puede usar cuando han pasado al menos 30 días desde la muerte de la persona.",
+          "source_url": "https://courts.alaska.gov/shc/probate/affidavit.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "It has been at least 30 days since the person died.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For the Alaska affidavit, the vehicles registered in Alaska that the person owned must be worth $100,000 or less after debts and liens.",
+          "claim_es": "Para la declaración jurada de Alaska, los vehículos registrados en Alaska que eran de la persona deben valer $100,000 o menos después de restar deudas y gravámenes.",
+          "source_url": "https://courts.alaska.gov/shc/probate/affidavit.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "The value of all Alaska registered vehicles owned by the person who died is $100,000 or less, after subtracting all debts and liens against the vehicles.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For the Alaska affidavit, all other personal property must be worth $50,000 or less after debts and liens.",
+          "claim_es": "Para la declaración jurada de Alaska, todos los demás bienes muebles deben valer $50,000 o menos después de restar deudas y gravámenes.",
+          "source_url": "https://courts.alaska.gov/shc/probate/affidavit.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "The value of all other personal property owned by the person who died is $50,000 or less, after subtracting all debts and liens against the property.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alaska, when the estate qualifies, the heirs can sign a special affidavit to collect the property without filing anything with the court.",
+          "claim_es": "En Alaska, cuando la herencia califica, los herederos pueden firmar una declaración jurada especial para cobrar los bienes sin presentar nada ante el tribunal.",
+          "source_url": "https://courts.alaska.gov/shc/probate/affidavit.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "the successor(s) can sign a special affidavit to collect the property of the person who died without filing anything with the court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System: Small Estates",
+          "label_es": "Sistema Judicial de Alaska: herencias pequeñas",
+          "url": "https://courts.alaska.gov/shc/probate/small-estates.htm"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "In Arizona, the affidavit for personal property can be used when all personal property, minus amounts owed, is worth no more than $200,000 and at least 30 days have passed since the death.",
+          "claim_es": "En Arizona, la declaración jurada para bienes muebles se puede usar cuando todos los bienes muebles, menos lo que se debe, no valen más de $200,000 y han pasado al menos 30 días desde la muerte.",
+          "source_url": "https://superiorcourt.maricopa.gov/llrc/prob_pbse1/",
+          "source_name": "Superior Court of Arizona in Maricopa County, Law Library Resource Center",
+          "quote": "The value of all personal property (minus amounts owed) is not more than $200,000 AND at least 30 days have passed since they died.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona has a separate affidavit for real property when its assessed value, minus amounts owed, is no more than $300,000 and at least 6 months have passed since the death.",
+          "claim_es": "Arizona tiene otra declaración jurada para bienes inmuebles cuando su valor tasado, menos lo que se debe, no supera $300,000 y han pasado al menos 6 meses desde la muerte.",
+          "source_url": "https://superiorcourt.maricopa.gov/llrc/prob_pbse1/",
+          "source_name": "Superior Court of Arizona in Maricopa County, Law Library Resource Center",
+          "quote": "The assessed value of all real property (minus amounts owed on the real property) is not more than $300,000 AND at least 6 months have passed since they died.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arizona, a surviving spouse may use an affidavit to collect up to $5,000 in wages owed to the person who died.",
+          "claim_es": "En Arizona, el cónyuge sobreviviente puede usar una declaración jurada para cobrar hasta $5,000 en salarios que se le debían a la persona fallecida.",
+          "source_url": "https://superiorcourt.maricopa.gov/llrc/prob_pbse1/",
+          "source_name": "Superior Court of Arizona in Maricopa County, Law Library Resource Center",
+          "quote": "A surviving spouse may use this Affidavit to collect wages of up to $5,000 owed to the decedent.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Revised Statutes 14-3971",
+          "label_es": "Estatutos Revisados de Arizona 14-3971",
+          "url": "https://azleg.gov/ars/14/03971.htm"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "Arkansas's small estate affidavit is used when more than 45 days have passed since the death.",
+          "claim_es": "En Arkansas, la declaración jurada de herencia pequeña se usa cuando han pasado más de 45 días desde la muerte.",
+          "source_url": "https://arcourts.gov/sites/default/files/files-list/Form%2023.pdf",
+          "source_name": "Arkansas Judiciary, Probate Form 23",
+          "quote": "More than forty-five (45) days have elapsed since decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arkansas, the property's value, less debts and not counting the homestead and allowances for a surviving spouse or minor children, must not exceed $100,000.",
+          "claim_es": "En Arkansas, el valor de los bienes, menos deudas y sin contar la vivienda familiar ni las asignaciones para el cónyuge o hijos menores, no debe superar $100,000.",
+          "source_url": "https://arcourts.gov/sites/default/files/files-list/Form%2023.pdf",
+          "source_name": "Arkansas Judiciary, Probate Form 23",
+          "quote": "does not exceed one hundred thousand dollars ($100,000)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Arkansas, if the small estate includes real property, the heir may publish a notice after filing the affidavit so creditors can present claims.",
+          "claim_es": "En Arkansas, si la herencia pequeña incluye bienes inmuebles, el heredero puede publicar un aviso después de presentar la declaración jurada para que los acreedores presenten sus reclamos.",
+          "source_url": "https://arcourts.gov/sites/default/files/files-list/Form%2023.pdf",
+          "source_name": "Arkansas Judiciary, Probate Form 23",
+          "quote": "If an estate collected pursuant to this affidavit contains real property, the distributee, to allow for presentation of claims against the estate, may publish a notice promptly after the affidavit has been filed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "In California, you give the small estate affidavit to the person, company or bank holding the property so it can be transferred to your name.",
+          "claim_es": "En California, la declaración jurada de herencia pequeña se entrega a la persona, empresa o banco que tiene los bienes para que se transfieran a su nombre.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate/small-estate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "You give this Affidavit to the person, company, or financial institution (such as a bank) that has the property so that they can legally transfer it to your name.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "California's small estate affidavit cannot be used to transfer real property such as a house, building or land.",
+          "claim_es": "En California, la declaración jurada de herencia pequeña no sirve para transferir bienes inmuebles como una casa, un edificio o un terreno.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate/small-estate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "You cannot use this type of Affidavit to transfer real property (like a house, building, or land)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "California's small estate limit changes over time, and the courts advise checking the current limit for your situation.",
+          "claim_es": "El límite de herencia pequeña en California cambia con el tiempo, y los tribunales recomiendan revisar el límite vigente para su caso.",
+          "source_url": "https://selfhelp.courts.ca.gov/probate/small-estate",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "Check the current small estate limits to be sure what applies in your situation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "California's small estate affidavit requires that at least 40 days have passed since the death.",
+          "claim_es": "La declaración jurada de herencia pequeña de California exige que hayan pasado al menos 40 días desde la muerte.",
+          "source_url": "https://www.tehama.gov/wp-content/uploads/2024/01/Affidavit-for-Collection-of-Personal-Property-Probate-Code-13100.pdf",
+          "source_name": "County of Tehama, California (Probate Code 13100 affidavit)",
+          "quote": "At least 40 days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "In Colorado, the affidavit for collecting personal property is not filed with the court, so there is no filing fee.",
+          "claim_es": "En Colorado, la declaración jurada para cobrar bienes muebles no se presenta ante el tribunal, así que no hay tarifa de presentación.",
+          "source_url": "https://www.coloradojudicial.gov/media/8151",
+          "source_name": "Colorado Judicial Branch, JDF 999 instructions",
+          "quote": "No filing fee is required, as this document is not filed with the Court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Colorado, a person or company holding the property that refuses the affidavit without reasonable cause is liable for the heirs' costs, including reasonable attorney fees.",
+          "claim_es": "En Colorado, la persona o empresa que tiene los bienes y rechaza la declaración jurada sin causa razonable debe pagar los costos de los herederos, incluidos honorarios razonables de abogado.",
+          "source_url": "https://www.coloradojudicial.gov/media/8153",
+          "source_name": "Colorado Judicial Branch, JDF 999",
+          "quote": "If a person or entity holding property of a decedent refuses to honor this affidavit without reasonable cause, they will be liable for all costs, including reasonable attorney fees and costs, incurred by or on behalf of the persons entitled to such property.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Colorado, anyone who receives property through the affidavit must answer to a personal representative if one is appointed later.",
+          "claim_es": "En Colorado, quien recibe bienes mediante la declaración jurada debe rendir cuentas a un representante personal si se nombra uno más adelante.",
+          "source_url": "https://www.coloradojudicial.gov/media/8153",
+          "source_name": "Colorado Judicial Branch, JDF 999",
+          "quote": "any person who receives property under this affidavit is answerable and accountable to any subsequently appointed personal representative of the estate",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "Connecticut's small estates procedure can be used only if the person owned no real estate in their name alone and their personal property totals $40,000 or less.",
+          "claim_es": "En Connecticut, el procedimiento de herencias pequeñas solo se puede usar si la persona no tenía bienes inmuebles solo a su nombre y sus bienes muebles suman $40,000 o menos.",
+          "source_url": "https://www.ctprobate.gov/Forms/PC-212.pdf",
+          "source_name": "Connecticut Probate Courts, Form PC-212",
+          "quote": "the decedent had no solely owned real estate and (b) the total value of all of the decedent's personal property does not exceed $40,000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Connecticut's small estates procedure uses the Affidavit in Lieu of Probate of Will/Administration, form PC-212.",
+          "claim_es": "En Connecticut, el procedimiento de herencias pequeñas usa la declaración jurada en lugar de sucesión (Affidavit in Lieu of Probate of Will/Administration), formulario PC-212.",
+          "source_url": "https://www.ctprobate.gov/Forms/PC-212.pdf",
+          "source_name": "Connecticut Probate Courts, Form PC-212",
+          "quote": "Affidavit in Lieu of Probate of Will/ Administration PC-212",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Statements in Connecticut's small estate affidavit are made under penalty of false statement.",
+          "claim_es": "Las declaraciones en la declaración jurada de herencia pequeña de Connecticut se hacen bajo pena de declaración falsa.",
+          "source_url": "https://www.ctprobate.gov/Forms/PC-212.pdf",
+          "source_name": "Connecticut Probate Courts, Form PC-212",
+          "quote": "The representations made in this affidavit are made under penalty of false statement.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC, small estate cases generally take no more than 120 days from filing the petition to the final order.",
+          "claim_es": "En DC, los casos de herencia pequeña normalmente no tardan más de 120 días desde la presentación de la petición hasta la orden final.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates/small-estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "generally take no more than 120 days from the date of filing of the Petition for Administration of Small Estate to the issuance of the final order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a DC small estate, the published notice gives creditors and unknown heirs 30 days to file claims against the estate.",
+          "claim_es": "En una herencia pequeña de DC, el aviso publicado da a los acreedores y herederos desconocidos 30 días para presentar reclamos contra la herencia.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates/small-estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "gives creditors and unknown heirs 30 days to file claims against the estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In DC, a small estate generally needs a published notice if its assets are worth more than $1,500.00, with some exceptions for close family.",
+          "claim_es": "En DC, una herencia pequeña normalmente requiere un aviso publicado si sus bienes valen más de $1,500, con algunas excepciones para familiares cercanos.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/probate-division/estates/small-estates",
+          "source_name": "DC Courts, Probate Division",
+          "quote": "Publication is needed if the value of the estate's assets (real estate and personal property) is more than $1,500.00",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "Florida's summary administration is available when the estate, less exempt property, is worth $150,000 or less, or when the person has been dead more than 2 years.",
+          "claim_es": "En Florida, la administración sumaria está disponible cuando la herencia, sin contar los bienes exentos, vale $150,000 o menos, o cuando la persona lleva más de 2 años fallecida.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0735%2F0735.html",
+          "source_name": "Florida Statutes, Chapter 735",
+          "quote": "does not exceed $150,000 or that the decedent has been dead for more than 2 years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, any beneficiary, or the person named as personal representative in the will, may file a petition for summary administration.",
+          "claim_es": "En Florida, cualquier beneficiario, o la persona nombrada como representante personal en el testamento, puede presentar la petición de administración sumaria.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0735%2F0735.html",
+          "source_name": "Florida Statutes, Chapter 735",
+          "quote": "A petition for summary administration may be filed by any beneficiary or person nominated as personal representative in the decedent's will offered for probate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Before Florida's summary administration order, the petitioner must search diligently for creditors and serve them a copy of the petition.",
+          "claim_es": "Antes de la orden de administración sumaria en Florida, quien presenta la petición debe buscar con diligencia a los acreedores y entregarles una copia de la petición.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0735%2F0735.html",
+          "source_name": "Florida Statutes, Chapter 735",
+          "quote": "the petitioner shall make a diligent search and reasonable inquiry for any known or reasonably ascertainable creditors, serve a copy of the petition on those creditors",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "Hawaii's affidavit for collecting personal property is for estates in Hawaii worth $100,000 or less, not counting motor vehicles.",
+          "claim_es": "En Hawái, la declaración jurada para cobrar bienes muebles es para herencias en el estado que valen $100,000 o menos, sin contar vehículos.",
+          "source_url": "https://www.courts.state.hi.us/docs/form/hawaii/3CE210.pdf",
+          "source_name": "Hawaii State Judiciary, Form 3C-E-210",
+          "quote": "The gross value of the decedent's estate in this State (excluding the value of motor vehicles) does not exceed $100,000.00.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Hawaii, a certified copy of the death certificate is submitted with the affidavit.",
+          "claim_es": "En Hawái, se entrega una copia certificada del acta de defunción junto con la declaración jurada.",
+          "source_url": "https://www.courts.state.hi.us/docs/form/hawaii/3CE210.pdf",
+          "source_name": "Hawaii State Judiciary, Form 3C-E-210",
+          "quote": "A certified copy of the death certificate is submitted with this affidavit.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Hawaii, a bank or other holder that pays out under the affidavit is released as if it had dealt with a personal representative.",
+          "claim_es": "En Hawái, el banco u otra entidad que entrega bienes conforme a la declaración jurada queda liberado como si hubiera tratado con un representante personal.",
+          "source_url": "https://www.courts.state.hi.us/docs/form/hawaii/3CE210.pdf",
+          "source_name": "Hawaii State Judiciary, Form 3C-E-210",
+          "quote": "The person paying, delivering, transferring, or issuing personal property or the evidence thereof pursuant to affidavit is discharged and released to the same extent as if that person dealt with a personal representative of the decedent.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "In Idaho, the small estate affidavit is for estates subject to probate worth no more than $100,000 after liens.",
+          "claim_es": "En Idaho, la declaración jurada de herencia pequeña es para herencias sujetas a sucesión que no valen más de $100,000 después de gravámenes.",
+          "source_url": "https://itd.idaho.gov/wp-content/uploads/2025/04/3413.pdf",
+          "source_name": "Idaho Transportation Department, Small Estate Affidavit (ITD 3413)",
+          "quote": "does not exceed one hundred thousand dollars ($100,000)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho's small estate affidavit requires that more than 30 days have passed since the death.",
+          "claim_es": "En Idaho, la declaración jurada de herencia pequeña exige que hayan pasado más de 30 días desde la muerte.",
+          "source_url": "https://itd.idaho.gov/wp-content/uploads/2025/04/3413.pdf",
+          "source_name": "Idaho Transportation Department, Small Estate Affidavit (ITD 3413)",
+          "quote": "More than thirty (30) days have elapsed since the death of the decedent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, the affidavit can be used only if no request to appoint a personal representative or for summary administration is pending or granted anywhere.",
+          "claim_es": "En Idaho, la declaración jurada solo se puede usar si no hay una solicitud pendiente o aprobada en ningún lugar para nombrar un representante personal o para una administración sumaria.",
+          "source_url": "https://itd.idaho.gov/wp-content/uploads/2025/04/3413.pdf",
+          "source_name": "Idaho Transportation Department, Small Estate Affidavit (ITD 3413)",
+          "quote": "No application or petition for the appointment of a personal representative or for summary administration is pending or has been granted in any jurisdiction.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "Iowa's small estate affidavit requires that at least forty days have passed since the death, shown by an attached certified death certificate.",
+          "claim_es": "En Iowa, la declaración jurada de herencia pequeña exige que hayan pasado al menos cuarenta días desde la muerte, comprobado con una copia certificada del acta de defunción.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.356.pdf",
+          "source_name": "Iowa Code section 633.356",
+          "quote": "at least forty days have elapsed since the death of the decedent, as shown by an attached certified copy of the death certificate of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, the gross value of the personal property passing by will or by law must be fifty thousand dollars or less.",
+          "claim_es": "En Iowa, el valor bruto de los bienes muebles que pasan por testamento o por ley debe ser de cincuenta mil dólares o menos.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.356.pdf",
+          "source_name": "Iowa Code section 633.356",
+          "quote": "fifty thousand dollars or less",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, the bank or other holder of the property may return the certified death certificate to the person who signed the affidavit.",
+          "claim_es": "En Iowa, el banco u otra entidad que tiene los bienes puede devolver el acta de defunción certificada a quien firmó la declaración jurada.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.356.pdf",
+          "source_name": "Iowa Code section 633.356",
+          "quote": "The holder of the property may return the attached certified copy of the decedent's death certificate to the affiant.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine's small estate affidavit is for estates worth no more than $40,000 after liens, adjusted for inflation.",
+          "claim_es": "En Maine, la declaración jurada de herencia pequeña es para herencias que no valen más de $40,000 después de gravámenes, con ajuste por inflación.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-1201",
+          "quote": "does not exceed $40,000, adjusted for inflation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, the affidavit can be used once thirty days have passed since the death.",
+          "claim_es": "En Maine, la declaración jurada se puede usar cuando han pasado treinta días desde la muerte.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-1201",
+          "quote": "Thirty days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maine county probate courts must publish the inflation-adjusted small estate limit on their websites each year.",
+          "claim_es": "Los tribunales testamentarios de condado en Maine deben publicar cada año en su sitio web el límite de herencia pequeña ajustado por inflación.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-1201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-1201",
+          "quote": "A county probate court shall annually publish on the court's publicly accessible website the value described in subsection",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "In Maryland, an estate whose probate assets have a gross value of $50,000 or less is opened as a small estate.",
+          "claim_es": "En Maryland, una herencia cuyos bienes sujetos a sucesión tienen un valor bruto de $50,000 o menos se abre como herencia pequeña.",
+          "source_url": "https://registers.maryland.gov/main/seinfo.html",
+          "source_name": "Maryland Register of Wills",
+          "quote": "When the decedent's probate assets have a gross value of $50,000 or less, the estate will be opened as a",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Maryland small estate has no required fee to the Register of Wills.",
+          "claim_es": "Una herencia pequeña en Maryland no tiene una tarifa obligatoria ante el Registro de Testamentos (Register of Wills).",
+          "source_url": "https://registers.maryland.gov/main/seinfo.html",
+          "source_name": "Maryland Register of Wills",
+          "quote": "has no required fee to the Register of Wills",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Most Maryland small estates are opened and handled administratively under the supervision of the Register of Wills.",
+          "claim_es": "La mayoría de las herencias pequeñas en Maryland se abren y se tramitan de forma administrativa bajo la supervisión del Registro de Testamentos.",
+          "source_url": "https://registers.maryland.gov/main/seinfo.html",
+          "source_name": "Maryland Register of Wills",
+          "quote": "The overwhelming majority of small estates are opened and administered administratively under the guidance and supervision of the Register of Wills.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts voluntary administration can be used once at least 30 days have passed since the death.",
+          "claim_es": "En Massachusetts, la administración voluntaria se puede usar cuando han pasado al menos 30 días desde la muerte.",
+          "source_url": "https://courtforms.jud.state.ma.us/publicforms/PFC0007",
+          "source_name": "Massachusetts Probate and Family Court, Voluntary Administration Statement",
+          "quote": "At least 30 days have elapsed since the death of Decedent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, voluntary administration is for estates made up only of personal property worth $25,000 or less, not counting certain exclusions.",
+          "claim_es": "En Massachusetts, la administración voluntaria es para herencias compuestas solo de bienes muebles que valen $25,000 o menos, sin contar ciertas exclusiones.",
+          "source_url": "https://courtforms.jud.state.ma.us/publicforms/PFC0007",
+          "source_name": "Massachusetts Probate and Family Court, Voluntary Administration Statement",
+          "quote": "The probate estate consists entirely of personal property and the total value of all personal property owned by the Decedent and subject to disposition by will or intestate succession at the time of the Decedent's death does not exceed $25,000.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Massachusetts voluntary administration statement has a $100 filing fee plus a $15 surcharge.",
+          "claim_es": "La declaración de administración voluntaria en Massachusetts tiene una tarifa de presentación de $100 más un recargo de $15.",
+          "source_url": "https://www.mass.gov/guides/file-a-voluntary-administration-for-an-estate",
+          "source_name": "Massachusetts Probate and Family Court",
+          "quote": "Voluntary administration statement filing fee $100 Voluntary administration filing surcharge fee $15",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, you can mail the voluntary administration forms and fees to the Probate and Family Court in the county where the person lived.",
+          "claim_es": "En Massachusetts, puede enviar por correo los formularios y tarifas de administración voluntaria al Probate and Family Court del condado donde vivía la persona.",
+          "source_url": "https://www.mass.gov/guides/file-a-voluntary-administration-for-an-estate",
+          "source_name": "Massachusetts Probate and Family Court",
+          "quote": "You can mail the forms and fees to the Probate and Family Court in the county where the decedent lived at the time of death.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "Michigan's affidavit of decedent's successor requires that more than 28 days have passed since the death.",
+          "claim_es": "En Michigan, la declaración jurada del sucesor exige que hayan pasado más de 28 días desde la muerte.",
+          "source_url": "https://www.courts.michigan.gov/siteassets/forms/scao-approved/pc598.pdf",
+          "source_name": "Michigan Courts, Form PC 598",
+          "quote": "More than 28 days have passed since decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Michigan affidavit can be used only when the estate includes no real property.",
+          "claim_es": "En Michigan, la declaración jurada solo se puede usar cuando la herencia no incluye bienes inmuebles.",
+          "source_url": "https://www.courts.michigan.gov/siteassets/forms/scao-approved/pc598.pdf",
+          "source_name": "Michigan Courts, Form PC 598",
+          "quote": "No real property is included in the decedent's estate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, the estate's value after liens must not exceed $50,000, an amount adjusted every year.",
+          "claim_es": "En Michigan, el valor de la herencia después de gravámenes no debe superar $50,000, cantidad que se ajusta cada año.",
+          "source_url": "https://www.courts.michigan.gov/siteassets/forms/scao-approved/pc598.pdf",
+          "source_name": "Michigan Courts, Form PC 598",
+          "quote": "The value of the decedent's estate, less liens and encumbrances, does not exceed $50,000, adjusted annually",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota's affidavit for collection of personal property is for probate estates worth no more than $75,000 after liens.",
+          "claim_es": "En Minnesota, la declaración jurada para cobrar bienes muebles es para herencias sujetas a sucesión que no valen más de $75,000 después de gravámenes.",
+          "source_url": "https://mn.gov/mmb/assets/aff-collection_tcm1059-126297.pdf",
+          "source_name": "Minnesota Management and Budget, Affidavit for Collection of Personal Property",
+          "quote": "The value of the entire probate estate, wherever located, less liens and encumbrances, does not exceed $75,000.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, 30 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Minnesota, deben pasar 30 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://mn.gov/mmb/assets/aff-collection_tcm1059-126297.pdf",
+          "source_name": "Minnesota Management and Budget, Affidavit for Collection of Personal Property",
+          "quote": "Thirty (30) days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A certified death certificate is attached to the Minnesota affidavit.",
+          "claim_es": "Se adjunta un acta de defunción certificada a la declaración jurada de Minnesota.",
+          "source_url": "https://mn.gov/mmb/assets/aff-collection_tcm1059-126297.pdf",
+          "source_name": "Minnesota Management and Budget, Affidavit for Collection of Personal Property",
+          "quote": "Attached hereto is the certified death certificate.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "Mississippi's small estate affidavit is for estates worth no more than $75,000 after liens.",
+          "claim_es": "En Misisipi, la declaración jurada de herencia pequeña es para herencias que no valen más de $75,000 después de gravámenes.",
+          "source_url": "https://www.desotocountyms.gov/DocumentCenter/View/4306",
+          "source_name": "DeSoto County, Mississippi (Miss. Code § 91-7-322 affidavit)",
+          "quote": "does not exceed Seventy-Five Thousand Dollars ($75,000.00)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Mississippi, at least 30 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Misisipi, deben pasar al menos 30 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://www.desotocountyms.gov/DocumentCenter/View/4306",
+          "source_name": "DeSoto County, Mississippi (Miss. Code § 91-7-322 affidavit)",
+          "quote": "at least thirty (30) days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Mississippi affidavit can be used only if no personal representative has been requested or appointed anywhere.",
+          "claim_es": "En Misisipi, la declaración jurada solo se puede usar si no se ha pedido ni nombrado un representante personal en ningún lugar.",
+          "source_url": "https://www.desotocountyms.gov/DocumentCenter/View/4306",
+          "source_name": "DeSoto County, Mississippi (Miss. Code § 91-7-322 affidavit)",
+          "quote": "no application or petition for the appointment of a personal representative of the decedent is pending, nor has a personal representative of the decedent been appointed in any jurisdiction",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "In Missouri, a copy of the small estate affidavit is filed with the clerk of the probate division.",
+          "claim_es": "En Misuri, una copia de la declaración jurada de herencia pequeña se presenta ante el secretario de la división testamentaria.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.097",
+          "source_name": "Missouri Revised Statutes § 473.097",
+          "quote": "A copy of the affidavit and certificate shall be filed in the office of the clerk of the probate division",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, when the property listed is worth more than fifteen thousand dollars, the clerk publishes a notice to creditors in a newspaper.",
+          "claim_es": "En Misuri, cuando los bienes declarados valen más de quince mil dólares, el secretario publica un aviso a los acreedores en un periódico.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.097",
+          "source_name": "Missouri Revised Statutes § 473.097",
+          "quote": "When the value of the property listed in the affidavit is more than fifteen thousand dollars, the clerk shall cause to be published in a newspaper",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, heirs can establish their right to real estate by filing the affidavit and clerk's certificate with the county recorder of deeds.",
+          "claim_es": "En Misuri, los herederos pueden acreditar su derecho sobre bienes inmuebles presentando la declaración jurada y el certificado del secretario ante el registrador de escrituras del condado.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.097",
+          "source_name": "Missouri Revised Statutes § 473.097",
+          "quote": "may establish their right to succeed to the real estate of the decedent by filing a copy of the foregoing affidavit and certificate of the clerk in the office of the recorder of deeds",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "Nebraska's Affidavit for Transfer of Personal Property without Probate must be signed in front of a notary.",
+          "claim_es": "En Nebraska, la declaración jurada para transferir bienes muebles sin sucesión debe firmarse ante un notario.",
+          "source_url": "https://nebraskajudicial.gov/self-help/estates/affidavit-transfer-personal-property-without-probate",
+          "source_name": "Nebraska Judicial Branch Self-Help",
+          "quote": "The Affidavit for Transfer of Personal Property without Probate form must be signed in the presence of a notary.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, the personal property affidavit is not filed with a court.",
+          "claim_es": "En Nebraska, la declaración jurada de bienes muebles no se presenta ante un tribunal.",
+          "source_url": "https://nebraskajudicial.gov/self-help/estates/affidavit-transfer-personal-property-without-probate",
+          "source_name": "Nebraska Judicial Branch Self-Help",
+          "quote": "Do not file the Affidavit for Transfer of Personal Property with a court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, you may need a separate affidavit for each account, and each one needs an original signature and its own notarization.",
+          "claim_es": "En Nebraska, puede necesitar una declaración jurada para cada cuenta, y cada una requiere firma original y su propia notarización.",
+          "source_url": "https://nebraskajudicial.gov/self-help/estates/affidavit-transfer-personal-property-without-probate",
+          "source_name": "Nebraska Judicial Branch Self-Help",
+          "quote": "each must have an original signature and be individually notarized",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nebraska has a separate form for real property: the Affidavit for Transfer of Real Property without Probate (CC 15:41).",
+          "claim_es": "Nebraska tiene un formulario aparte para bienes inmuebles: la declaración jurada para transferir bienes inmuebles sin sucesión (CC 15:41).",
+          "source_url": "https://nebraskajudicial.gov/self-help/estates/affidavit-transfer-personal-property-without-probate",
+          "source_name": "Nebraska Judicial Branch Self-Help",
+          "quote": "If you want to transfer real property without probate proceedings, please see the Affidavit for Transfer of Real Property without Probate (CC 15:41)",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada's small estate affidavit requires that at least 40 days have passed since the death.",
+          "claim_es": "En Nevada, la declaración jurada de herencia pequeña exige que hayan pasado al menos 40 días desde la muerte.",
+          "source_url": "https://selfhelp.nvcourts.gov/pro/small-estates/entitlement",
+          "source_name": "Nevada Courts Self-Help Center",
+          "quote": "At least 40 days have passed since the person died.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, a surviving spouse can use the affidavit for estates under $150,000; other relatives can use it for estates under $25,000, not counting vehicles.",
+          "claim_es": "En Nevada, el cónyuge sobreviviente puede usar la declaración jurada para herencias de menos de $150,000; otros familiares, para herencias de menos de $25,000, sin contar vehículos.",
+          "source_url": "https://selfhelp.nvcourts.gov/pro/small-estates/entitlement",
+          "source_name": "Nevada Courts Self-Help Center",
+          "quote": "A surviving spouse can use this process if the value of the estate is less than $150,000, and other relatives can use this process if the value of the estate is less than $25,000 (value of vehicles is not included).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, if relatives have higher priority than you, you must notify them at least 14 days before signing the affidavit.",
+          "claim_es": "En Nevada, si hay familiares con más prioridad que usted, debe avisarles al menos 14 días antes de firmar la declaración jurada.",
+          "source_url": "https://selfhelp.nvcourts.gov/pro/small-estates/entitlement",
+          "source_name": "Nevada Courts Self-Help Center",
+          "quote": "you must give notice of your intention to those relatives with higher priority at least 14 days before signing the form",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nevada's \"set aside\" is a simplified probate process for estates under $150,000 when a court order is needed, usually because there is a house or land.",
+          "claim_es": "En Nevada, el \"set aside\" es un proceso sucesorio simplificado para herencias de menos de $150,000 cuando se necesita una orden judicial, normalmente porque hay una casa o terreno.",
+          "source_url": "https://selfhelp.nvcourts.gov/pro/small-estates",
+          "source_name": "Nevada Courts Self-Help Center",
+          "quote": "is a simplified probate process where the estate value is less than $150,000, but a court order is needed to transfer assets (usually because there is a house or land)",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "In New Jersey, a small estate is one worth less than $50,000 for a surviving spouse, or less than $20,000 for next of kin.",
+          "claim_es": "En Nueva Jersey, una herencia pequeña es la que vale menos de $50,000 para el cónyuge sobreviviente, o menos de $20,000 para los parientes más cercanos.",
+          "source_url": "https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate/when-a-loved-one-dies",
+          "source_name": "Middlesex County Surrogate's Court (New Jersey)",
+          "quote": "refers to estates that are valued at less than $50,000 for a surviving spouse or less than $20,000 for next of kin",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Jersey, the Small Estate Affidavit may be an option when there is no will and the estate is under a set value.",
+          "claim_es": "En Nueva Jersey, la declaración jurada de herencia pequeña puede ser una opción cuando no hay testamento y la herencia está por debajo de cierto valor.",
+          "source_url": "https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate/when-a-loved-one-dies",
+          "source_name": "Middlesex County Surrogate's Court (New Jersey)",
+          "quote": "A Small Estate Affidavit in lieu of administration may be an option when there is no will and the value of the estate does not reach a certain threshold.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Jersey, a spouse, civil union partner or domestic partner can receive the affidavit when assets in the person's name alone total less than $50,000.",
+          "claim_es": "En Nueva Jersey, el cónyuge, la pareja de unión civil o la pareja doméstica puede recibir la declaración jurada cuando los bienes solo a nombre de la persona suman menos de $50,000.",
+          "source_url": "https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate/when-a-loved-one-dies",
+          "source_name": "Middlesex County Surrogate's Court (New Jersey)",
+          "quote": "This affidavit can be issued to a spouse, civil union partner, or domestic partner (with proof) if the total assets are less than $50,000 and are solely in the decedent's name.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "In North Carolina, the elected Clerk of Superior Court in each county acts as the probate judge.",
+          "claim_es": "En Carolina del Norte, el secretario electo del Tribunal Superior (Clerk of Superior Court) de cada condado actúa como juez testamentario.",
+          "source_url": "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "The elected Clerk of Superior Court in each county acts as the probate judge in North Carolina.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina's small estate collection by affidavit, the final affidavit is due within 90 days of filing the first affidavit.",
+          "claim_es": "En Carolina del Norte, en el cobro de herencias pequeñas por declaración jurada, la declaración final se presenta dentro de 90 días desde la primera.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/ByArticle/Chapter_28A/Article_25.pdf",
+          "source_name": "North Carolina General Statutes, Chapter 28A Article 25",
+          "quote": "This final affidavit shall be filed within 90 days of the date of filing of the qualifying affidavit",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Carolina, the clerk may extend the deadline for the final affidavit up to one year from the first filing.",
+          "claim_es": "En Carolina del Norte, el secretario puede extender el plazo de la declaración final hasta un año desde la primera presentación.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/ByArticle/Chapter_28A/Article_25.pdf",
+          "source_name": "North Carolina General Statutes, Chapter 28A Article 25",
+          "quote": "the clerk may extend the time for filing up to one year from the date of filing the qualifying affidavit",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, the Affidavit for Collection of Personal Property does not require filing anything with a state court.",
+          "claim_es": "En Dakota del Norte, la declaración jurada para cobrar bienes muebles no requiere presentar nada ante un tribunal estatal.",
+          "source_url": "https://www.ndcourts.gov/legal-self-help/personal-property-affidavit",
+          "source_name": "North Dakota Courts Legal Self Help Center",
+          "quote": "doesn't require you to file anything with a North Dakota state court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the affidavit can be used once thirty days have passed since the death.",
+          "claim_es": "En Dakota del Norte, la declaración jurada se puede usar cuando han pasado treinta días desde la muerte.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c23.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-23",
+          "quote": "Thirty days have elapsed since the death of the decedent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The North Dakota Supreme Court publishes a guidebook, Informal Administration of an Estate, with forms to use with it.",
+          "claim_es": "La Corte Suprema de Dakota del Norte publica una guía, Informal Administration of an Estate, con formularios para usar con ella.",
+          "source_url": "https://www.ndcourts.gov/legal-self-help/personal-property-affidavit",
+          "source_name": "North Dakota Courts Legal Self Help Center",
+          "quote": "The North Dakota Supreme Court has assembled a guidebook, Informal Administration of an Estate, and a series of forms that may be used with it.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, release from administration is limited to $100,000 when a surviving spouse inherits and $35,000 for anyone else.",
+          "claim_es": "En Ohio, la liberación de administración tiene un límite de $100,000 cuando hereda el cónyuge sobreviviente y de $35,000 para cualquier otra persona.",
+          "source_url": "https://probate.franklincountyohio.gov/Departments/Estates-Small",
+          "source_name": "Franklin County Probate Court (Ohio)",
+          "quote": "The monetary limit is currently $100,000 for the surviving spouse and $35,000 for any one else.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, a person other than the spouse who paid, or agreed in writing to pay, the funeral and burial costs may apply for a summary release from administration.",
+          "claim_es": "En Ohio, una persona que no es el cónyuge y que pagó, o se comprometió por escrito a pagar, el funeral y el entierro puede pedir una liberación sumaria de administración.",
+          "source_url": "https://probate.franklincountyohio.gov/Departments/Estates-Small",
+          "source_name": "Franklin County Probate Court (Ohio)",
+          "quote": "A person who is not the surviving spouse of the decedent who has paid or is obligated in writing to pay the decedent's funeral and burial expenses may apply for an order granting summary release from",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Franklin County, Ohio, court costs for a summary release from administration are listed at $105.00.",
+          "claim_es": "En el condado de Franklin, Ohio, los costos judiciales de una liberación sumaria de administración son de $105.00.",
+          "source_url": "https://probate.franklincountyohio.gov/Departments/Estates-Small",
+          "source_name": "Franklin County Probate Court (Ohio)",
+          "quote": "Summary Release from Administration : $105.00",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "Oklahoma's small estate affidavit is for property in the state worth no more than $50,000 after liens.",
+          "claim_es": "En Oklahoma, la declaración jurada de herencia pequeña es para bienes en el estado que no valen más de $50,000 después de gravámenes.",
+          "source_url": "https://oklahoma.gov/content/dam/service-oklahoma/Documents/mv-forms/2023/405%20Small%20Estate%20Affidavit%20R01-2023.pdf",
+          "source_name": "Service Oklahoma, Small Estate Affidavit (Form 405)",
+          "quote": "does not exceed Fifty Thousand Dollars ($50,000.00)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oklahoma, someone who owed the person money must pay it, 10 or more days after the death, to a successor who presents the affidavit.",
+          "claim_es": "En Oklahoma, quien le debía dinero a la persona fallecida debe pagarlo, 10 días o más después de la muerte, al sucesor que presente la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315074",
+          "source_name": "Social Security Administration, POMS GN 02315.074 (Oklahoma)",
+          "quote": "A person indebted to the decedent must make payment of the debt 10 or more days after the decedent's death to a person who claims to be a successor of the decedent and presents an affidavit",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Oklahoma affidavit must state that no request to appoint a personal representative is pending or granted.",
+          "claim_es": "La declaración jurada de Oklahoma debe indicar que no hay una solicitud pendiente o aprobada para nombrar un representante personal.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315074",
+          "source_name": "Social Security Administration, POMS GN 02315.074 (Oklahoma)",
+          "quote": "No application or petition for the appointment of a personal representative i",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In Oregon, a small estate affidavit can be filed if the estate's fair market value is $275,000 or less.",
+          "claim_es": "En Oregón, se puede presentar una declaración jurada de herencia pequeña si el valor de mercado de la herencia es de $275,000 o menos.",
+          "source_url": "https://www.courts.oregon.gov/courts/lincoln/help/pages/probate.aspx",
+          "source_name": "Oregon Judicial Department, Lincoln County Circuit Court",
+          "quote": "An affidavit can be filed if the fair market value of the estate is $275,000 or less.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For the Oregon affidavit, no more than $200,000 can be real property and no more than $75,000 personal property.",
+          "claim_es": "Para la declaración jurada de Oregón, no más de $200,000 pueden ser bienes inmuebles y no más de $75,000 bienes muebles.",
+          "source_url": "https://www.courts.oregon.gov/courts/lincoln/help/pages/probate.aspx",
+          "source_name": "Oregon Judicial Department, Lincoln County Circuit Court",
+          "quote": "Of that amount, no more than $200,000 can be attributable to real property and no more than $75,000 can be attributable to personal property.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, heirs may file the affidavit with the probate court clerk no sooner than 30 days after the death.",
+          "claim_es": "En Oregón, los herederos pueden presentar la declaración jurada ante el secretario del tribunal testamentario no antes de 30 días después de la muerte.",
+          "source_url": "https://www.courts.oregon.gov/courts/lincoln/help/pages/probate.aspx",
+          "source_name": "Oregon Judicial Department, Lincoln County Circuit Court",
+          "quote": "Not less than 30 days after the death of the decedent, one or more the of the claiming successors may file an affidavit with the clerk of the probate court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "In Rhode Island, the small estate affidavit is filed after 30 days from the death.",
+          "claim_es": "En Rhode Island, la declaración jurada de herencia pequeña se presenta después de 30 días desde la muerte.",
+          "source_url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202315078",
+          "source_name": "Social Security Administration, POMS GN 02315.078 (Rhode Island)",
+          "quote": "Filing must be made after 30 days from the decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Rhode Island's voluntary executor process covers estates of only personal property worth no more than $15,000, not counting tangible personal property.",
+          "claim_es": "El proceso de albacea voluntario de Rhode Island cubre herencias solo de bienes muebles que no valen más de $15,000, sin contar bienes muebles tangibles.",
+          "source_url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202315078",
+          "source_name": "Social Security Administration, POMS GN 02315.078 (Rhode Island)",
+          "quote": "valued at no more than $15,000 (excluding tangible personal property)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, the process is available only if no one has petitioned the city or town probate court for letters testamentary or administration.",
+          "claim_es": "En Rhode Island, el proceso solo está disponible si nadie ha pedido cartas testamentarias o de administración al tribunal testamentario de la ciudad o pueblo.",
+          "source_url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0202315078",
+          "source_name": "Social Security Administration, POMS GN 02315.078 (Rhode Island)",
+          "quote": "provided no person filed petition for letters testamentary or letters of administration with the probate court of the city or town in which the decedent resided",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota allows small estates under $100,000 to be collected and distributed by affidavit.",
+          "claim_es": "Dakota del Sur permite cobrar y repartir por declaración jurada las herencias pequeñas de menos de $100,000.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315080",
+          "source_name": "Social Security Administration, POMS GN 02315.080 (South Dakota)",
+          "quote": "South Dakota law permits collection and distribution of small estates under $100,000 by affidavit.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, 30 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Dakota del Sur, deben pasar 30 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315080",
+          "source_name": "Social Security Administration, POMS GN 02315.080 (South Dakota)",
+          "quote": "Thirty (30) days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, anyone who owed the person money must pay it to a successor who presents the affidavit.",
+          "claim_es": "En Dakota del Sur, quien le debía dinero a la persona fallecida debe pagarlo al sucesor que presente la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315080",
+          "source_name": "Social Security Administration, POMS GN 02315.080 (South Dakota)",
+          "quote": "any person indebted to the decedent shall make payment of the indebtedness to a person claiming to be a successor of the decedent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Codified Laws 29A-3-1201",
+          "label_es": "Leyes Codificadas de Dakota del Sur 29A-3-1201",
+          "url": "https://sdlegislature.gov/Statutes/29A-3-1201"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "Tennessee's small estate affidavit has a 45-day waiting period after the date of death.",
+          "claim_es": "En Tennessee, la declaración jurada de herencia pequeña tiene un período de espera de 45 días después de la muerte.",
+          "source_url": "https://www.maurycounty-tn.gov/DocumentCenter/View/4117/Small-Estate-Affidavit-Instructions-and-costs",
+          "source_name": "Maury County Clerk and Master (Tennessee)",
+          "quote": "THERE IS A 45-DAY WAITING PERIOD AFTER THE DATE OF DEATH",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Tennessee's small estate affidavit has a $50,000 limit for transferring personal property.",
+          "claim_es": "En Tennessee, la declaración jurada de herencia pequeña tiene un límite de $50,000 para transferir bienes muebles.",
+          "source_url": "https://www.maurycounty-tn.gov/DocumentCenter/View/4117/Small-Estate-Affidavit-Instructions-and-costs",
+          "source_name": "Maury County Clerk and Master (Tennessee)",
+          "quote": "$50,000.00 LIMITATION --- this is for the transfer of personal property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Tennessee, real property cannot be transferred with the small estate affidavit.",
+          "claim_es": "En Tennessee, los bienes inmuebles no se pueden transferir con la declaración jurada de herencia pequeña.",
+          "source_url": "https://www.maurycounty-tn.gov/DocumentCenter/View/4117/Small-Estate-Affidavit-Instructions-and-costs",
+          "source_name": "Maury County Clerk and Master (Tennessee)",
+          "quote": "REAL PROPERTY IS NOT TO BE INCLUDED and CANNOT BE TRANSFERRED BY USE OF THE SMALL ESTATE AFFIDAVIT.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Tennessee, if the person left a will, the original is deposited with the clerk to support the small estate affidavit.",
+          "claim_es": "En Tennessee, si la persona dejó testamento, el original se deposita con el secretario para respaldar la declaración jurada.",
+          "source_url": "https://www.hawkinscountytn.gov/pdfs/small_estates_affidavit.pdf",
+          "source_name": "Hawkins County Clerk and Master (Tennessee)",
+          "quote": "If the Decedent left a last will, you are required to bring the original to be deposited without probate with the Clerk to support the Affidavit.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas, heirs can use a small estate affidavit to collect property directly from banks and other institutions.",
+          "claim_es": "En Texas, los herederos pueden usar una declaración jurada de herencia pequeña para cobrar bienes directamente de bancos y otras instituciones.",
+          "source_url": "https://guides.sll.texas.gov/probate/informal-methods",
+          "source_name": "Texas State Law Library",
+          "quote": "Heirs can use a small estate affidavit to collect property directly from banks and other institutions.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, if there is a homestead, the heirs record a copy of the court-approved affidavit in the property records.",
+          "claim_es": "En Texas, si hay una vivienda familiar (homestead), los herederos registran una copia de la declaración jurada aprobada por el tribunal en los registros de propiedad.",
+          "source_url": "https://guides.sll.texas.gov/probate/informal-methods",
+          "source_name": "Texas State Law Library",
+          "quote": "If there is a homestead, the heirs will need to record a copy of the court-approved affidavit in the property records.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Texas courts often have their own specific rules for small estate affidavits.",
+          "claim_es": "Los tribunales de Texas suelen tener reglas propias para las declaraciones juradas de herencia pequeña.",
+          "source_url": "https://guides.sll.texas.gov/probate/informal-methods",
+          "source_name": "Texas State Law Library",
+          "quote": "Courts often have specific rules about small estate affidavits.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, probating a will as a \"muniment of title\" is commonly used when the only asset passing under the will is real property.",
+          "claim_es": "En Texas, validar un testamento como \"muniment of title\" se usa a menudo cuando el único bien que pasa por el testamento es un inmueble.",
+          "source_url": "https://guides.sll.texas.gov/probate/informal-methods",
+          "source_name": "Texas State Law Library",
+          "quote": "Muniment of title is commonly used when the only asset transferred by the will is real property",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "Utah's small estate affidavit may be used when the estate is under $100,000, there is no real property, and at least 30 days have passed since the death.",
+          "claim_es": "En Utah, la declaración jurada de herencia pequeña se puede usar cuando la herencia vale menos de $100,000, no hay bienes inmuebles y han pasado al menos 30 días desde la muerte.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/probate/small-estates.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "the entire value of the estate is under $100,000, there is no real property, at least 30 days have passed since the death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Utah, the affidavit can be used only if no application to appoint a personal representative has been filed.",
+          "claim_es": "En Utah, la declaración jurada solo se puede usar si no se ha presentado una solicitud para nombrar un representante personal.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/probate/small-estates.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "no application for appointment of personal representative has been filed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Utah, the small estate affidavit is not filed with the court.",
+          "claim_es": "En Utah, la declaración jurada de herencia pequeña no se presenta ante el tribunal.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/probate/small-estates.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "A small estate affidavit is not filed with the court.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont's small estate process is for a person who left personal property worth $45,000 or less and no real estate.",
+          "claim_es": "En Vermont, el proceso de herencia pequeña es para una persona que dejó bienes muebles por $45,000 o menos y ningún bien inmueble.",
+          "source_url": "https://www.vtcourts.gov/sites/default/files/documents/700-00001SM_3.pdf",
+          "source_name": "Vermont Judiciary, small estate petition (form 700-00001SM)",
+          "quote": "leaving personal property valued at $45,000 or less and no real estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Vermont, an interested person who does not consent to the small estate case may file objections within 14 days after receiving notice.",
+          "claim_es": "En Vermont, una persona interesada que no da su consentimiento al caso de herencia pequeña puede presentar objeciones dentro de 14 días después de recibir el aviso.",
+          "source_url": "https://legislature.vermont.gov/statutes/fullchapter/14/081",
+          "source_name": "Vermont Statutes, Title 14 Chapter 81",
+          "quote": "may file any objections with the court within 14 days after receiving the notice",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Vermont small estate, the fiduciary must confirm, correct or add to the inventory within 60 days after letters of administration are issued.",
+          "claim_es": "En una herencia pequeña de Vermont, el fiduciario debe confirmar, corregir o completar el inventario dentro de 60 días después de recibir las cartas de administración.",
+          "source_url": "https://legislature.vermont.gov/statutes/fullchapter/14/081",
+          "source_name": "Vermont Statutes, Title 14 Chapter 81",
+          "quote": "Within 60 days after the issuance of letters of administration, and at any time thereafter if deemed necessary by the fiduciary, the fiduciary shall confirm, correct, or supplement the inventory filed with the petition.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "Virginia's small asset affidavit is for a personal probate estate worth no more than $75,000 at the date of death.",
+          "claim_es": "En Virginia, la declaración jurada de bienes pequeños es para una herencia de bienes muebles que no vale más de $75,000 a la fecha de la muerte.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-601/",
+          "source_name": "Code of Virginia § 64.2-601",
+          "quote": "That the value of the decedent's entire personal probate estate as of the date of the decedent's death, wherever located, does not exceed $75,000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, at least 60 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Virginia, deben pasar al menos 60 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-601/",
+          "source_name": "Code of Virginia § 64.2-601",
+          "quote": "That at least 60 days have elapsed since the decedent's death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, whoever holds a small asset must hand it over to the designated successor when shown an affidavit signed by all known successors.",
+          "claim_es": "En Virginia, quien tenga un bien pequeño debe entregarlo al sucesor designado cuando se le presente una declaración jurada firmada por todos los sucesores conocidos.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter6/section64.2-601/",
+          "source_name": "Code of Virginia § 64.2-601",
+          "quote": "Any person having possession of a small asset shall pay or deliver the small asset to the designated successor of the decedent upon being presented an affidavit made by all of the known successors",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "Washington's small estate affidavit applies only when the entire probate estate is worth $100,000 or less.",
+          "claim_es": "En Washington, la declaración jurada de herencia pequeña solo aplica cuando toda la herencia sujeta a sucesión vale $100,000 o menos.",
+          "source_url": "https://www.kitsap.gov/clerk/Documents/Sm%20Estate%20Affidavit%20and%20Procedures.pdf",
+          "source_name": "Kitsap County Clerk's Office (Washington)",
+          "quote": "The procedure applies only to small estates where the value of the decedent's entire probate estate does not exceed $100,000.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, title to real estate cannot be changed with the small estate affidavit.",
+          "claim_es": "En Washington, la titularidad de bienes inmuebles no se puede cambiar con la declaración jurada de herencia pequeña.",
+          "source_url": "https://www.kitsap.gov/clerk/Documents/Sm%20Estate%20Affidavit%20and%20Procedures.pdf",
+          "source_name": "Kitsap County Clerk's Office (Washington)",
+          "quote": "Title to real estate cannot be changed by this procedure.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, forty days must pass after the death and all other successors must get ten days' written notice.",
+          "claim_es": "En Washington, deben pasar cuarenta días desde la muerte y todos los demás sucesores deben recibir aviso por escrito con diez días de anticipación.",
+          "source_url": "https://www.kitsap.gov/clerk/Documents/Sm%20Estate%20Affidavit%20and%20Procedures.pdf",
+          "source_name": "Kitsap County Clerk's Office (Washington)",
+          "quote": "Forty days must pass after the decedent's death and ten days written notice must be given to all other successors.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, the estate counted includes the person's separate property and one-half of all community property.",
+          "claim_es": "En Washington, la herencia que se cuenta incluye los bienes propios de la persona y la mitad de todos los bienes gananciales.",
+          "source_url": "https://www.kitsap.gov/clerk/Documents/Sm%20Estate%20Affidavit%20and%20Procedures.pdf",
+          "source_name": "Kitsap County Clerk's Office (Washington)",
+          "quote": "The decedent's estate includes his or her separate property and one-half of all community property",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Revised Code of Washington, Chapter 11.62",
+          "label_es": "Código Revisado de Washington, capítulo 11.62",
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.62.010"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "West Virginia's small estate affidavit is for estates made up only of small assets worth $50,000 or less in total.",
+          "claim_es": "En Virginia Occidental, la declaración jurada de herencia pequeña es para herencias compuestas solo de bienes pequeños que suman $50,000 o menos.",
+          "source_url": "https://code.wvlegislature.gov/44-1A-2/",
+          "source_name": "West Virginia Code § 44-1A-2",
+          "quote": "consists only of small assets and the aggregate fair market value of the small assets does not exceed $50,000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the small estate affidavit process is for a person who did not own probate real property or any interest in it.",
+          "claim_es": "En Virginia Occidental, el proceso de declaración jurada de herencia pequeña es para una persona que no tenía bienes inmuebles sujetos a sucesión ni participación en ellos.",
+          "source_url": "https://code.wvlegislature.gov/44-1A-2/",
+          "source_name": "West Virginia Code § 44-1A-2",
+          "quote": "without owning any probate real property or without owning any interest in probate real property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the county commission clerk may require a certified death certificate or other proof of death and residence.",
+          "claim_es": "En Virginia Occidental, el secretario de la comisión del condado puede exigir un acta de defunción certificada u otra prueba de la muerte y residencia.",
+          "source_url": "https://code.wvlegislature.gov/44-1A-2/",
+          "source_name": "West Virginia Code § 44-1A-2",
+          "quote": "may require a certified copy of the decedent's death certificate or other proof of death and residence",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Wisconsin's transfer by affidavit is used for estates of $50,000 or less.",
+          "claim_es": "En Wisconsin, la transferencia por declaración jurada se usa para herencias de $50,000 o menos.",
+          "source_url": "https://www.wicourts.gov/forms/pr-1831.pdf",
+          "source_name": "Wisconsin Court System",
+          "quote": "which is used to transfer property of decedents with estates of $50,000 or less",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin's summary settlement, the will is filed with the petition.",
+          "claim_es": "En la liquidación sumaria de Wisconsin, el testamento se presenta junto con la petición.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/867/03",
+          "source_name": "Wisconsin Statutes, Chapter 867",
+          "quote": "The will of the decedent shall be filed with the petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Wisconsin summary assignment, the court orders the transfer of real estate, registered stocks or bonds, vehicle titles or other property.",
+          "claim_es": "En una asignación sumaria en Wisconsin, el tribunal ordena la transferencia de inmuebles, acciones o bonos registrados, títulos de vehículos u otros bienes.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/867/03",
+          "source_name": "Wisconsin Statutes, Chapter 867",
+          "quote": "It shall order the transfer of interests in real estate, stocks or bonds registered in the name of the decedent, the title of a licensed motor vehicle or any other form of property.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Wisconsin court can summarily assign an estate worth $50,000 or less, after secured debts, without appointing a personal representative.",
+          "claim_es": "Un tribunal de Wisconsin puede asignar de forma sumaria una herencia de $50,000 o menos, después de deudas garantizadas, sin nombrar un representante personal.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/867/03",
+          "source_name": "Wisconsin Statutes, Chapter 867",
+          "quote": "The court shall summarily assign the estate of a deceased person without the appointment of a personal representative if the estate, less the amount of the debts for which any property in the estate is security, does not exceed $50,000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "In Wyoming, a small estate is one where personal and real property together are worth no more than $400,000 after debts.",
+          "claim_es": "En Wyoming, una herencia pequeña es aquella cuyos bienes muebles e inmuebles juntos no valen más de $400,000 después de deudas.",
+          "source_url": "https://www.wyocourts.gov/legal-help-by-topic/small-estates-summary-distribution/",
+          "source_name": "Wyoming Judicial Branch",
+          "quote": "A small estate is one where a decedent's personal AND real property is no more than $400,000, after debts are subtracted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, you cannot file for summary distribution until 30 days after the death.",
+          "claim_es": "En Wyoming, no se puede pedir la distribución sumaria hasta 30 días después de la muerte.",
+          "source_url": "https://www.wyocourts.gov/legal-help-by-topic/small-estates-summary-distribution/",
+          "source_name": "Wyoming Judicial Branch",
+          "quote": "You cannot file for summary distribution until 30 days after the decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wyoming, the heirs must publish the summary distribution application once a week for two weeks in a row in the county newspaper.",
+          "claim_es": "En Wyoming, los herederos deben publicar la solicitud de distribución sumaria una vez por semana durante dos semanas seguidas en el periódico del condado.",
+          "source_url": "https://www.wyocourts.gov/legal-help-by-topic/small-estates-summary-distribution/",
+          "source_name": "Wyoming Judicial Branch",
+          "quote": "The distributee/distributees must publish the application once a week for two (2) consecutive weeks in the newspaper of the county where the application was filed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    }
+  },
+  "skips": {
+    "DE": "no official source found",
+    "GA": "no official source found",
+    "IL": "no official source found",
+    "IN": "no official source found",
+    "KS": "no official source found",
+    "KY": "no official source found",
+    "LA": "no official source found",
+    "MT": "no official source found",
+    "NH": "no official source found",
+    "NM": "no official source found",
+    "NY": "no official source found",
+    "PA": "no official source found",
+    "SC": "no official source found"
+  }
+}
