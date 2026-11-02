@@ -390,6 +390,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A photo ID is required for every Delaware death record request; mail requests need a copy of the ID.",
+          "claim_es": "Delaware exige identificación con foto para toda solicitud de acta de defunción; las solicitudes por correo necesitan una copia de la identificación.",
+          "quote": "A photo identification is REQUIRED for all transactions. If submitting by mail, a copy of ID IS REQUIRED.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For older Delaware death records, you write to the Archives Hall of Records in Dover.",
+          "claim_es": "Para actas de defunción antiguas de Delaware, se escribe al Archives Hall of Records en Dover.",
+          "quote": "For previous years, write to Archives Hall of Records, Dover",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -427,6 +443,22 @@
           "claim_en": "For mail requests in District of Columbia, checks or money orders are made payable to DC Treasurer.",
           "claim_es": "Para solicitudes por correo en Distrito de Columbia, los cheques o giros postales se hacen a nombre de DC Treasurer.",
           "quote": "Personal check or money order should be made payable to DC Treasurer .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "DC has death records since 1855, but no death records were filed during the Civil War.",
+          "claim_es": "DC tiene actas de defunción desde 1855, pero no se registraron defunciones durante la Guerra Civil.",
+          "quote": "Office has death records since 1855 but no death records were filed during the Civil War.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Each DC death record request must include a copy of a government-issued picture ID.",
+          "claim_es": "Cada solicitud de acta de defunción en DC debe incluir una copia de una identificación oficial con foto.",
+          "quote": "A copy of a government issued picture identification must accompany each request.",
           "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
@@ -609,6 +641,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho death records are legally confidential for 50 years.",
+          "claim_es": "En Idaho, las actas de defunción son confidenciales por ley durante 50 años.",
+          "quote": "Records are legally confidential for 50 years.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho applicants need a government-issued photo ID with a signature, or copies of two IDs with one signed.",
+          "claim_es": "En Idaho, el solicitante necesita una identificación oficial con foto y firma, o copias de dos identificaciones, una de ellas firmada.",
+          "quote": "Applicants must provide a government-issued photo identification with signature. If this is not available, the applicant must provide a copy of two forms of identification with one having a signature.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -742,6 +790,14 @@
           "claim_en": "For mail requests in Iowa, checks or money orders are made payable to Iowa Department of Health and Human Services.",
           "claim_es": "Para solicitudes por correo en Iowa, los cheques o giros postales se hacen a nombre de Iowa Department of Health and Human Services.",
           "quote": "Personal check or money order should be made payable to Iowa Department of Health and Human Services .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Iowa vital records office has birth, death and marriage records since July 1880.",
+          "claim_es": "La oficina de registros vitales de Iowa tiene actas de nacimiento, defunción y matrimonio desde julio de 1880.",
+          "quote": "The State of Iowa vital records office has Birth, Death & Marriage records since July 1880.",
           "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
@@ -937,6 +993,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maine's state office houses records since 1923; records from 1892-1922 are at the Maine State Archives.",
+          "claim_es": "La oficina estatal de Maine guarda registros desde 1923; los de 1892-1922 están en el Archivo Estatal de Maine.",
+          "quote": "State office physically houses records since 1923. Records from 1892-1922 housed at the Maine State Archives.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, additional copies of the same record ordered at the same time are $6.00 each.",
+          "claim_es": "En Maine, cada copia adicional del mismo registro pedida al mismo tiempo cuesta $6.00.",
+          "quote": "Additional copies of same record ordered at same time are $6.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -1025,6 +1097,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For earlier Massachusetts records, you write to the Massachusetts Archives at Columbia Point in Boston.",
+          "claim_es": "Para registros antiguos de Massachusetts, se escribe al Archivo de Massachusetts en Columbia Point, Boston.",
+          "quote": "For earlier records, write to The Massachusetts Archives at Columbia Point",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Massachusetts lists a $3.00 copy fee at the State Archives.",
+          "claim_es": "Massachusetts indica una tarifa de $3.00 por copia en el Archivo Estatal.",
+          "quote": "State Archives: $3.00",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -1062,6 +1150,22 @@
           "claim_en": "For mail requests in Michigan, checks or money orders are made payable to State of Michigan.",
           "claim_es": "Para solicitudes por correo en Míchigan, los cheques o giros postales se hacen a nombre de State of Michigan.",
           "quote": "Personal check or money order should be made payable to State of Michigan .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Michigan death records are not restricted, so anyone can order them.",
+          "claim_es": "En Michigan, las actas de defunción no tienen restricción, así que cualquier persona puede pedirlas.",
+          "quote": "Death records are not restricted so anyone can order.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, additional copies of a record ordered at the same time are $16.00 each.",
+          "claim_es": "En Michigan, cada copia adicional de un registro pedida al mismo tiempo cuesta $16.00.",
+          "quote": "Additional copies of any record ordered at the same time are $16.00 each.",
           "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
@@ -1249,6 +1353,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Montana applicants must send a clear copy of both sides of a current driver's license or other government ID with a signature.",
+          "claim_es": "En Montana, el solicitante debe enviar una copia clara de ambos lados de su licencia de conducir vigente u otra identificación oficial con firma.",
+          "quote": "Applicants MUST provide a clear and readable copy of both sides of their current driver's license or other current government issued identification with signature.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Montana state office has had records since late 1907.",
+          "claim_es": "La oficina estatal de Montana tiene registros desde finales de 1907.",
+          "quote": "State office has had records since late 1907.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -1427,8 +1547,8 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "New Jersey requests must include a copy of the requester's valid ID, the fee, and proof of relationship to the person on the record.",
-          "claim_es": "Las solicitudes en Nueva Jersey deben incluir una copia de la identificación válida del solicitante, la tarifa y prueba del parentesco con la persona del registro.",
+          "claim_en": "New Jersey requests must include a copy of the requester's valid ID, the fee, and documents showing their relationship to the person on the record.",
+          "claim_es": "Las solicitudes en Nueva Jersey deben incluir una copia de la identificación válida del solicitante, la tarifa y documentos que muestren el parentesco con la persona del registro.",
           "quote": "All requests must include a copy of the requestor's valid identification, payment of the appropriate fee and proof of relationship to the individual listed on the vital record.",
           "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
@@ -1625,6 +1745,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, additional copies of death records are $10.00 each.",
+          "claim_es": "En Dakota del Norte, cada copia adicional de un acta de defunción cuesta $10.00.",
+          "quote": "Additional copies of death records are $10.00 each.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota copies are generally processed within 3-5 working days after the request arrives.",
+          "claim_es": "En Dakota del Norte, las copias normalmente se procesan en 3 a 5 días hábiles después de recibir la solicitud.",
+          "quote": "Copies are generally processed within 3-5 working days after request is received.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -1662,6 +1798,22 @@
           "claim_en": "For mail requests in Ohio, checks or money orders are made payable to Treasury, State of Ohio.",
           "claim_es": "Para solicitudes por correo en Ohio, los cheques o giros postales se hacen a nombre de Treasury, State of Ohio.",
           "quote": "Personal check or money order should be made payable to Treasury, State of Ohio .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Ohio's state office can issue death records from 1971 to the present.",
+          "claim_es": "La oficina estatal de Ohio puede emitir actas de defunción desde 1971 hasta hoy.",
+          "quote": "The state office can issue death records from 1971 to the present.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Ohio death records from 1908-1970 come from the Ohio History Connection.",
+          "claim_es": "Las actas de defunción de Ohio de 1908 a 1970 se piden a Ohio History Connection.",
+          "quote": "deaths records from 1908-1970 can be obtained from: Ohio History Connection",
           "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
@@ -1940,6 +2092,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The South Dakota state office has records filed after July 1905.",
+          "claim_es": "La oficina estatal de Dakota del Sur tiene registros presentados después de julio de 1905.",
+          "quote": "State office has records filed after July 1905.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "South Dakota mail-in applicants must send a clear copy of a government photo ID or have their signature notarized.",
+          "claim_es": "En Dakota del Sur, quien pide por correo debe enviar una copia clara de una identificación oficial con foto o notarizar su firma.",
+          "quote": "Mail-in applicants must send in a clear copy of a government-issued photo ID OR have their signature notarized.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -1977,6 +2145,22 @@
           "claim_en": "For mail requests in Tennessee, checks or money orders are made payable to Tennessee Vital Records.",
           "claim_es": "Para solicitudes por correo en Tennessee, los cheques o giros postales se hacen a nombre de Tennessee Vital Records.",
           "quote": "Personal check or money order should be made payable to Tennessee Vital Records .",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Tennessee's Vital Records Office keeps death records for 50 years; older records are at the Tennessee Library and Archives.",
+          "claim_es": "La Oficina de Registros Vitales de Tennessee guarda las actas de defunción por 50 años; las más antiguas están en la Biblioteca y Archivo de Tennessee.",
+          "quote": "The Vital Records Office maintains death records for 50 years; older records are maintained by Tennessee Library and Archives",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Tennessee requests need a photocopy of a valid government ID that includes the requester's signature.",
+          "claim_es": "En Tennessee, la solicitud necesita una fotocopia de una identificación oficial válida con la firma del solicitante.",
+          "quote": "A photocopy of a valid government issued form of identification which includes the requestor's signature",
           "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
@@ -2124,6 +2308,22 @@
           "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Vermont state office has records back to 1909.",
+          "claim_es": "La oficina estatal de Vermont tiene registros desde 1909.",
+          "quote": "State office has records back to 1909.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Vermont, copies can come from the state office or from any city or town using the VRIMS system.",
+          "claim_es": "En Vermont, las copias se pueden pedir a la oficina estatal o a cualquier ciudad o pueblo que use el sistema VRIMS.",
+          "quote": "Copies of records may be obtained from State office or from ANY City or Town running the Vital Records Issuance Management System (VRIMS).",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "checked": "2026-11-02"
         }
       ],
       "official_links": [
@@ -2214,8 +2414,8 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "In Washington, you must provide documentation that proves your qualifying relationship, and fees start at $25 per certificate.",
-          "claim_es": "En Washington, debe presentar documentos que prueben su parentesco o relación válida, y las tarifas empiezan en $25 por certificado.",
+          "claim_en": "In Washington, you must provide documents showing your qualifying relationship, and fees start at $25 per certificate.",
+          "claim_es": "En Washington, debe presentar documentos que muestren su parentesco o relación válida, y las tarifas empiezan en $25 por certificado.",
           "quote": "Provide documentation to prove your qualifying relationship . Pay for the certificate. Fees start at $25 per certificate.",
           "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
