@@ -1,6 +1,6 @@
 # Data and trust boundaries
 
-The app is native Expo + TypeScript. Topic IDs, bilingual names and checklists
+The app is native Expo + TypeScript. Topic IDs, names and checklists in all four languages
 come from topics.json. UI copy is in src/strings.ts. No backend exists.
 
 ## Vault

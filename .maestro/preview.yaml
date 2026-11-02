@@ -16,7 +16,9 @@ appId: com.keepmyproof.app
 
 # Restore a backup (from the first screen), then back.
 # The first screen is now one swipe tall (the preview-only skip button made it longer); scrollUntilVisible's
-# 100%-visibility check missed a fully shown button on run 41444029917, so swipe once and wait for it instead.
+# 100%-visibility check missed a fully shown button on run 41444029917, so swipe and wait for it instead.
+# Two swipes since the first screen offers four languages (a swipe at the bottom is harmless).
+- scroll
 - scroll
 - extendedWaitUntil:
     visible: "Restore a backup ›"

@@ -1,7 +1,19 @@
 import topics from '../../topics.json';
 import { hash, unb64 } from './crypto';
-export type Lang = 'en' | 'es';
+/** App languages, in the order of every entry in src/strings.ts. zh = Simplified Chinese (zh-Hans). */
+export const LANGS = ['en', 'es', 'zh', 'ko'] as const;
+export type Lang = typeof LANGS[number];
 export type Labels = Record<Lang, string>;
+/** BCP 47 tag for dates and the PDF's lang attribute; US residents, so US regional formats. */
+export const LOCALE: Record<Lang, string> = { en: 'en-US', es: 'es-US', zh: 'zh-Hans-US', ko: 'ko-US' };
+/** Each language named in itself, for the first-launch picker and Settings. */
+export const LANG_NAME: Record<Lang, string> = { en: 'English', es: 'Español', zh: '简体中文', ko: '한국어' };
+/** The phone's language as an app language: any Chinese reads Simplified, anything unsupported reads English. */
+export function phoneLang(locale: { languageCode?: string | null } | undefined): Lang {
+  const code = locale?.languageCode?.toLowerCase();
+  return (LANGS as readonly string[]).includes(code ?? '') ? code as Lang : 'en';
+}
+export const isLang = (v: unknown): v is Lang => (LANGS as readonly unknown[]).includes(v);
 export const launchFolders = topics.topics.filter(t => t.release === 'launch').sort((a,b) => a.folder_order! - b.folder_order!);
 export interface CustomFolder { id: string; title: string }
 // A checklist line a Plus user added to a folder. Stored under Snapshot.lines, which older vaults
@@ -76,7 +88,7 @@ export function checked(s: Snapshot, folder: string, line: string): boolean {
 /** Every checklist line of a folder: the suggested ones from topics.json, then the user's own (Plus). */
 export function folderLines(s: Snapshot, folder: string, lang: Lang): { id: string; name: string; own: boolean }[] {
   const topic = launchFolders.find(f => f.id === folder);
-  return [...(topic?.checklist_items ?? []).map(c => ({ id: c.id, name: c.name[lang], own: false })),
+  return [...(topic?.checklist_items ?? []).map(c => ({ id: c.id, name: (c.name as Labels)[lang], own: false })),
     ...(s.lines?.[folder] ?? []).map(l => ({ id: l.id, name: l.title, own: true }))];
 }
 /** How a ticked line got its tick: filed papers ('paper'), or the user's own tap ('hand'). null = not ticked. */
