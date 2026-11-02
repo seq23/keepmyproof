@@ -3,16 +3,15 @@
 export const SITE = {
   origin: 'https://keepmyproof.com',
   name: 'KeepMyProof',
-  updated: '2026-11-01',
+  updated: '2026-11-02',
   // US list prices (spec, her ruling 1 Nov 2026). The launch-week offer is never written here:
   // the store shows it at checkout when it is live.
   prices: { yearlyUSD: '19.99', lifetimeUSD: '39.99' },
   freeItems: 25,
-  // Public support address. No mailbox exists on keepmyproof.com yet (Cloudflare Email Routing
-  // unconfigured, checked 1 Nov 2026), so this is the Spry Labs contact already used across her
-  // public sites. scripts/release-gate.mjs keeps SUPPORT_ADDRESS_NOT_ON_DOMAIN open until it is
-  // an @keepmyproof.com address that receives mail.
-  supportEmail: 'hello@theindustryguides.com',
+  // Public support address: Cloudflare Email Routing on keepmyproof.com (free, set up 2 Nov 2026)
+  // forwards it to a Spry Labs business mailbox (the destination lives only in Cloudflare, never here).
+  // scripts/release-gate.mjs checks it is @keepmyproof.com and the domain has live MX records.
+  supportEmail: 'support@keepmyproof.com',
   // Store listing URLs. null = not in that store yet: the site says "coming soon", shows no store
   // badge or link, and publishes no app/offer schema (search-readiness c5). Fill both at launch.
   stores: { appStore: null, googlePlay: null },

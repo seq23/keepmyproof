@@ -1,0 +1,10 @@
+{
+  "checkedOn": "2026-11-02",
+  "incumbent": "Vaultaire (Photo Vault - Vaultaire, Wraxle LLC)",
+  "source": "https://apps.apple.com/us/app/vaultaire/id6758529311 (US App Store page, In-App Purchases list; linked from vaultaire.app)",
+  "incumbentLifetimeUSD": 39.99,
+  "incumbentAnnualUSD": 19.99,
+  "otherListedUSD": { "weekly": 1.99, "monthly": 5.99, "annualOffer": 19.99, "familyAnnual": 49.99, "familyLifetime": 99.99 },
+  "ours": { "lifetimeUSD": 39.99, "annualUSD": 19.99 },
+  "verdict": "Match: our $39.99 lifetime and $19.99/year equal his individual Pro prices, so we are not below him (her ruling 1 Nov 2026). The gate needs this rechecked within 7 days of a store build."
+}
