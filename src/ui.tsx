@@ -27,7 +27,7 @@ export function Field({ label, value, onChange, secret, multiline, numeric, plac
   label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string;
 }) {
   const c = useContext(Theme);
-  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput accessibilityLabel={label} value={value} onChangeText={onChange}
+  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput accessibilityLabel={label} testID={label} value={value} onChangeText={onChange}
     secureTextEntry={secret} multiline={multiline} keyboardType={numeric ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
     placeholder={placeholder} placeholderTextColor={c.muted} maxLength={numeric ? 6 : undefined}
     style={{ minHeight:48, padding:12, borderRadius:10, borderWidth:1, borderColor:c.line, color:c.fg, backgroundColor:c.card, fontSize:15,

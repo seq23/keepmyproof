@@ -1,0 +1,29 @@
+# Adds one invented note to the folder that is open. Env: TITLE, NOTE. Used by preview.yaml.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- tapOn: "\\+ Add something"
+- tapOn:
+    id: "Name it"
+- inputText: ${TITLE}
+- tapOn: "Add to .*"
+- scrollUntilVisible:
+    element:
+      id: "Your note \\(optional\\)"
+    direction: DOWN
+- tapOn:
+    id: "Your note \\(optional\\)"
+- inputText: ${NOTE}
+- scrollUntilVisible:
+    element: "The app also notes when you saved this.*"
+    direction: DOWN
+- tapOn: "The app also notes when you saved this.*"
+- scrollUntilVisible:
+    element: "Save to .*"
+    direction: DOWN
+- tapOn: "Save to .*"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000

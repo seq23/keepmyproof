@@ -13,6 +13,7 @@ import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import { Button, Card, Field, P, Theme, styles, usePalette } from '../src/ui';
+import { PREVIEW_BUILD } from '../src/preview';
 
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
@@ -56,7 +57,7 @@ export default function App() {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
-    void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
+    if (!PREVIEW_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
     if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
@@ -264,7 +265,7 @@ export default function App() {
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
   else body = <P>{t('empty')}</P>;
   return <Theme.Provider value={palette}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
-    <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+    <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
       {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
       {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && <P muted>{t('working')}</P>}{body}

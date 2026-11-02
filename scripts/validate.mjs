@@ -2,6 +2,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import ts from 'typescript';
+import { drift, FLOW, APP } from './lib/preview-flow.mjs';
 const registry=JSON.parse(readFileSync('validators.registry.json','utf8'));
 const files=execFileSync('git',['ls-files','--cached','--others','--exclude-standard'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
 if(!files.length)throw Error('NO_FILES');
@@ -56,6 +57,11 @@ const checks={
     const competitors=/vaultaire|proofnest/iu;
     for(const [f,s] of [...content,...site])if(claims.test(s))throw Error(`UNSUPPORTED_CLAIM ${f}`);
     for(const [f,s] of content)if(competitors.test(s))throw Error(`COMPETITOR_IN_STORE_COPY ${f}`);
+  },
+  'preview-screens':()=>{
+    // Every app screen has a screenshot step in the simulator preview (docs/preview.md), or a stated reason.
+    const problems=drift(readFileSync(APP,'utf8'),readFileSync(FLOW,'utf8'));
+    if(problems.length)throw Error(problems.join('\n'));
   },
 };
 const seen=new Set();

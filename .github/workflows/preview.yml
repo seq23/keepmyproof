@@ -1,0 +1,119 @@
+# THE SIMULATOR PREVIEW (docs/preview.md): builds the iOS app for the simulator (no Apple account, no
+# signing), walks every screen in English with Maestro and keeps one PNG per screen, and puts the
+# build on Appetize when the owner's token is set. GitHub-hosted runners only (free for this public
+# repo). Not a merge gate: it runs after app changes reach main, on demand, and on PRs that change
+# the preview itself.
+name: Simulator preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
+      '.maestro/**', 'scripts/preview/**', 'scripts/lib/preview-flow.mjs', '.github/workflows/preview.yml']
+  pull_request:
+    paths: ['.maestro/**', 'scripts/preview/**', 'scripts/lib/preview-flow.mjs', '.github/workflows/preview.yml']
+permissions:
+  contents: read
+concurrency:
+  group: preview-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  preview:
+    runs-on: macos-26
+    timeout-minutes: 120
+    env:
+      EXPO_NO_TELEMETRY: '1'
+      CI: '1'
+      # Turns screenshot protection off so the screenshots are not blank (src/preview.ts); the
+      # release gate refuses any store build with it set (NAMED STOP PREVIEW_BUILD).
+      EXPO_PUBLIC_KMP_PREVIEW: '1'
+      MAESTRO_DRIVER_STARTUP_TIMEOUT: '240000'
+      MAESTRO_CLI_NO_ANALYTICS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Generate the iOS project
+        run: npx expo prebuild --platform ios --no-install > prebuild.log 2>&1 || { tail -40 prebuild.log; exit 1; }
+      - uses: actions/cache@v4
+        with:
+          path: ios/Pods
+          key: pods-${{ runner.os }}-${{ hashFiles('package-lock.json', 'app.config.ts') }}
+      - name: Install pods
+        run: cd ios && pod install > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
+      - name: Build for the simulator
+        id: build
+        run: |
+          xcodebuild -workspace ios/KeepMyProof.xcworkspace -scheme KeepMyProof -configuration Release \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build \
+            ARCHS=arm64 ONLY_ACTIVE_ARCH=NO CODE_SIGNING_ALLOWED=NO COMPILER_INDEX_STORE_ENABLE=NO build > xcodebuild.log 2>&1 \
+            || { grep -E 'error:|BUILD FAILED' xcodebuild.log | head -40; tail -40 xcodebuild.log; exit 1; }
+          app=build/Build/Products/Release-iphonesimulator/KeepMyProof.app
+          test -d "$app" || { echo "NAMED STOP [PREVIEW_NO_APP] $app was not built"; exit 1; }
+          ditto -c -k --sequesterRsrc --keepParent "$app" KeepMyProof-simulator.zip
+          echo "app=$app" >> "$GITHUB_OUTPUT"
+          echo "Simulator build: $(du -h KeepMyProof-simulator.zip | cut -f1) zipped, attached as **keepmyproof-simulator-build**." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: build-logs
+          path: '*.log'
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: keepmyproof-simulator-build
+          path: KeepMyProof-simulator.zip
+          retention-days: 30
+      - name: Put the build on Appetize
+        env:
+          APPETIZE_API_TOKEN: ${{ secrets.APPETIZE_API_TOKEN }}
+          APPETIZE_PUBLIC_KEY: ${{ vars.APPETIZE_PUBLIC_KEY }}
+        run: scripts/preview/appetize.sh KeepMyProof-simulator.zip
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install Maestro
+        run: |
+          curl -fsSL https://get.maestro.mobile.dev | bash > maestro-install.log 2>&1 || { tail -20 maestro-install.log; exit 1; }
+          echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
+      - name: Boot an iPhone simulator and install the build
+        id: sim
+        run: |
+          udid=$(xcrun simctl list devices available -j | jq -r '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[]
+            | select(.name | test("^iPhone [0-9]+( Pro)?$"))] | last | .udid // empty')
+          [ -n "$udid" ] || { echo "NAMED STOP [PREVIEW_NO_SIMULATOR] no iPhone simulator on this runner"; xcrun simctl list devices available | head -40; exit 1; }
+          xcrun simctl list devices available | grep "$udid"
+          xcrun simctl boot "$udid"; xcrun simctl bootstatus "$udid" -b > /dev/null
+          xcrun simctl ui "$udid" appearance light
+          xcrun simctl status_bar "$udid" override --time 9:41 --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3
+          xcrun simctl install "$udid" "${{ steps.build.outputs.app }}"
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+      - name: Walk every screen
+        run: |
+          mkdir -p preview-shots run && touch run/.start
+          status=0; cd run && { maestro --device "${{ steps.sim.outputs.udid }}" test ../.maestro/preview.yaml > ../maestro.log 2>&1 || status=$?; }
+          cd .. && tail -40 maestro.log
+          # Collect the PNGs wherever this Maestro version wrote them.
+          find run .maestro "$HOME/.maestro" -name '[0-9][0-9]-*.png' -newer run/.start -exec cp {} preview-shots/ \; 2>/dev/null || true
+          exit $status
+      - name: Check the screenshots (one per screen, none blank)
+        if: always() && steps.sim.outcome == 'success'
+        run: node scripts/preview/shots.mjs preview-shots
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.sim.outcome == 'success'
+        with:
+          name: keepmyproof-preview-screens
+          path: preview-shots/*.png
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure() && steps.sim.outcome == 'success'
+        with:
+          name: maestro-debug
+          path: |
+            maestro.log
+            ~/.maestro/tests/
+          retention-days: 7
