@@ -981,6 +981,14 @@
     "ME": {
       "facts": [
         {
+          "claim_en": "The Maine Department of Labor says all earned wages are due on the next regularly scheduled payday after employment ends.",
+          "claim_es": "El Departamento de Trabajo de Maine indica que todo el salario ganado se debe pagar el siguiente día de pago programado después de que termina el empleo.",
+          "source_url": "https://www.maine.gov/labor/labor_laws/faq/index.shtml",
+          "source_name": "Maine state labor agency",
+          "quote": "All earned wages are due on the next regularly scheduled payday after the termination of employment.",
+          "checked": "2026-11-02"
+        },
+        {
           "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Maine: twice a month.",
           "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Maine: dos veces al mes.",
           "source_url": "https://www.dol.gov/agencies/whd/state/payday",
@@ -1014,6 +1022,11 @@
         }
       ],
       "official_links": [
+        {
+          "label_en": "Maine: official wage and final pay information",
+          "label_es": "Maine: información oficial sobre salarios y pago final",
+          "url": "https://www.maine.gov/labor/labor_laws/faq/index.shtml"
+        },
         {
           "label_en": "Maine Department of Labor",
           "label_es": "Maine Department of Labor",
@@ -1133,6 +1146,14 @@
     "MI": {
       "facts": [
         {
+          "claim_en": "Michigan's Wage and Hour Division says that if you were not paid at least minimum wage or were not paid overtime, you may file a complaint up to 3 years from the date of the alleged violation.",
+          "claim_es": "La División de Horas y Salarios de Míchigan indica que, si no le pagaron al menos el salario mínimo o las horas extra, puede presentar una queja hasta 3 años después de la fecha de la violación alegada.",
+          "source_url": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/complaint",
+          "source_name": "Michigan state labor agency",
+          "quote": "If you have not been paid at least minimum wage or you have not been paid overtime, you may file a complaint up to 3 years from the date of the alleged violation.",
+          "checked": "2026-11-02"
+        },
+        {
           "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Michigan: weekly, every two weeks, twice a month, monthly.",
           "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Míchigan: semanal, cada dos semanas, dos veces al mes, mensual.",
           "source_url": "https://www.dol.gov/agencies/whd/state/payday",
@@ -1166,6 +1187,11 @@
         }
       ],
       "official_links": [
+        {
+          "label_en": "Michigan: official wage and final pay information",
+          "label_es": "Míchigan: información oficial sobre salarios y pago final",
+          "url": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/complaint"
+        },
         {
           "label_en": "Michigan Department of Labor and Economic Opportunity",
           "label_es": "Michigan Department of Labor and Economic Opportunity",
@@ -2353,6 +2379,14 @@
     "VT": {
       "facts": [
         {
+          "claim_en": "The Vermont Department of Labor says a wage claim cannot be filed more than two years after the wages were due.",
+          "claim_es": "El Departamento de Trabajo de Vermont indica que no se puede presentar un reclamo de salarios más de dos años después de la fecha en que se debían.",
+          "source_url": "https://www.labor.vermont.gov/form/online-wage-claim-form",
+          "source_name": "Vermont state labor agency",
+          "quote": "You cannot file a claim for wages more than two years after the date they are due.",
+          "checked": "2026-11-02"
+        },
+        {
           "claim_en": "The U.S. Department of Labor's state payday table marks these pay frequencies for Vermont: weekly, every two weeks, twice a month.",
           "claim_es": "La tabla estatal de días de pago del Departamento de Trabajo de EE. UU. marca estas frecuencias de pago para Vermont: semanal, cada dos semanas, dos veces al mes.",
           "source_url": "https://www.dol.gov/agencies/whd/state/payday",
@@ -2386,6 +2420,11 @@
         }
       ],
       "official_links": [
+        {
+          "label_en": "Vermont: official wage and final pay information",
+          "label_es": "Vermont: información oficial sobre salarios y pago final",
+          "url": "https://www.labor.vermont.gov/form/online-wage-claim-form"
+        },
         {
           "label_en": "Vermont Department of Labor",
           "label_es": "Vermont Department of Labor",
