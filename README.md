@@ -146,8 +146,8 @@ prints each `NAMED STOP [CODE]` and exits 2.
 - **LEGAL_URLS_UNREACHABLE**: keepmyproof.com/terms and /privacy must answer 200
   (probed live on every run). The website publishes them from `store/`.
 - **SUPPORT_ADDRESS_NOT_ON_DOMAIN**: `site/config.mjs` `supportEmail` must be an
-  `@keepmyproof.com` address and the domain must have MX records (live lookup). Until
-  Email Routing is set up on keepmyproof.com, the site shows the Spry Labs contact.
+  `@keepmyproof.com` address and the domain must have MX records (live lookup).
+  support@keepmyproof.com forwards through Cloudflare Email Routing (set up 2 Nov 2026).
 
 Without a key the app runs on the mock, which throws `REVENUECAT_KEY_MISSING` on
 any purchase. Nothing here creates accounts, builds binaries or submits to a store.
