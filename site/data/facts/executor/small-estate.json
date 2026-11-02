@@ -1210,21 +1210,301 @@
         }
       ],
       "official_links": []
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "In Georgia, after the probate court issues an order that no administration is necessary, the heirs take title to the property as set out in the agreement attached to the petition.",
+          "claim_es": "En Georgia, después de que el tribunal testamentario emite una orden de que no se necesita administración, los herederos reciben la titularidad de los bienes según el acuerdo adjunto a la petición.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315047",
+          "source_name": "Social Security Administration, POMS GN 02315.047 (Georgia)",
+          "quote": "Following the probate court issuing an order dispensing with administration of the decedent's estate, the decedent's heirs take title to the decedent's property as stated in the agreement attached to the petition",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Georgia, after a no-administration order, unpaid creditors can pursue the heirs up to the value of the property the heirs received.",
+          "claim_es": "En Georgia, después de una orden sin administración, los acreedores no pagados pueden reclamar a los herederos hasta el valor de los bienes que recibieron.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315047",
+          "source_name": "Social Security Administration, POMS GN 02315.047 (Georgia)",
+          "quote": "any creditor of the decedent shall have a right of action on the unsatisfied debts against the heirs, to the extent of the value of property that the heirs received",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Georgia's simplified route is a probate court order dispensing with administration, rather than a small estate affidavit.",
+          "claim_es": "En Georgia, la vía simplificada es una orden del tribunal testamentario que exime de la administración, no una declaración jurada de herencia pequeña.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315047",
+          "source_name": "Social Security Administration, POMS GN 02315.047 (Georgia)",
+          "quote": "if a probate court has issued an order dispensing with administration",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "Illinois's small estate affidavit is for a personal estate worth no more than $150,000, not counting motor vehicles registered with the Secretary of State.",
+          "claim_es": "En Illinois, la declaración jurada de herencia pequeña es para bienes muebles que no valen más de $150,000, sin contar vehículos registrados con la Secretaría de Estado.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K25-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/25-1",
+          "quote": "Excluding motor vehicles registered with the Secretary of State, the decedent's entire personal estate passing to any party either by intestacy or under a will does not exceed $150,000.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Illinois affidavit lists a surviving spouse's award of $20,000 plus $10,000 for each minor or adult dependent child who lived with the spouse.",
+          "claim_es": "La declaración jurada de Illinois incluye una asignación para el cónyuge sobreviviente de $20,000 más $10,000 por cada hijo menor o hijo adulto dependiente que vivía con el cónyuge.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K25-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/25-1",
+          "quote": "($20,000, plus $10,000 multiplied by the number of minor children and adult dependent children who resided with the surviving spouse at the time of the decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, anyone who owes the person money or holds their personal property must pay or deliver it when presented with a proper small estate affidavit.",
+          "claim_es": "En Illinois, quien le debe dinero a la persona fallecida o tiene sus bienes muebles debe pagarlos o entregarlos cuando se le presenta una declaración jurada de herencia pequeña válida.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315051",
+          "source_name": "Social Security Administration, POMS GN 02315.051 (Illinois)",
+          "quote": "a person indebted to or holding personal estate of the decedent must pay the indebtedness or deliver the personal estate when another person presents a",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "In Indiana, the small estate affidavit is for a gross probate estate of $100,000 or less (after liens and reasonable funeral costs) when the death was after June 30, 2022.",
+          "claim_es": "En Indiana, la declaración jurada de herencia pequeña es para una herencia bruta de $100,000 o menos (después de gravámenes y gastos razonables de funeral) cuando la muerte ocurrió después del 30 de junio de 2022.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315052",
+          "source_name": "Social Security Administration, POMS GN 02315.052 (Indiana)",
+          "quote": "does not exceed $100,000 if the decedent died after June 30, 2022",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Indiana's small estate affidavit requires that 45 days have passed since the death.",
+          "claim_es": "En Indiana, la declaración jurada de herencia pequeña exige que hayan pasado 45 días desde la muerte.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315052",
+          "source_name": "Social Security Administration, POMS GN 02315.052 (Indiana)",
+          "quote": "That 45 days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Indiana, the person signing must first notify each person named in the affidavit that they intend to present it.",
+          "claim_es": "En Indiana, quien firma debe avisar primero a cada persona nombrada en la declaración jurada que piensa presentarla.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315052",
+          "source_name": "Social Security Administration, POMS GN 02315.052 (Indiana)",
+          "quote": "That the affiant has notified each person identified in the affidavit of the affiant's intention to present an affidavit",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas allows small estates that have an executor or administrator to be summarily administered by court order because of their size.",
+          "claim_es": "Kansas permite que las herencias pequeñas con albacea o administrador se administren de forma sumaria por orden judicial debido a su tamaño.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315054",
+          "source_name": "Social Security Administration, POMS GN 02315.054 (Kansas)",
+          "quote": "deals with small estates which have executors or administrators but which, because of their size, may be summarily administered upon court order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, when the estate's real and personal property does not exceed $50,000, the affidavit procedure is open to any heir, beneficiary, creditor or other interested person.",
+          "claim_es": "En Kansas, cuando los bienes muebles e inmuebles de la herencia no superan $50,000, el procedimiento de declaración jurada está disponible para cualquier heredero, beneficiario, acreedor u otra persona interesada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315054",
+          "source_name": "Social Security Administration, POMS GN 02315.054 (Kansas)",
+          "quote": "and the real and personal property in the estate does not exceed $50,000.00, then this procedure is available to any heir, devisee, legatee, creditor, or other interested person",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Kansas affidavit states that no executor or administrator has qualified or been appointed.",
+          "claim_es": "La declaración jurada de Kansas indica que no se ha nombrado ni habilitado un albacea o administrador.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315054",
+          "source_name": "Social Security Administration, POMS GN 02315.054 (Kansas)",
+          "quote": "that no executor or administrator for the deceased has qualified or been appointed",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "In Louisiana, when a small succession does not need to be opened in court, an affidavit of small succession is enough to authorize the release of money or property.",
+          "claim_es": "En Luisiana, cuando no es necesario abrir judicialmente una sucesión pequeña, una declaración jurada de sucesión pequeña basta para autorizar la entrega de dinero o bienes.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315056",
+          "source_name": "Social Security Administration, POMS GN 02315.056 (Louisiana)",
+          "quote": "an affidavit of small succession meeting the requirements set forth in subsection C in this section is all that is necessary to authorize the release of any money or p",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Louisiana, a legatee who does not sign the affidavit must get 10 days' notice by U.S. mail before it is signed.",
+          "claim_es": "En Luisiana, un legatario que no firma la declaración jurada debe recibir aviso por correo postal con 10 días de anticipación antes de que se firme.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315056",
+          "source_name": "Social Security Administration, POMS GN 02315.056 (Louisiana)",
+          "quote": "was given ten (10) days' notice by U.S. mail of the affiants' intent to execute an affidavit for small succession and did not obje",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Louisiana small succession affidavit is signed under penalty of perjury.",
+          "claim_es": "La declaración jurada de sucesión pequeña de Luisiana se firma bajo pena de perjurio.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315056",
+          "source_name": "Social Security Administration, POMS GN 02315.056 (Louisiana)",
+          "quote": "the affiant swears under penalty of perjury that the information contained in the affidavit is true, correct, and complete",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "Montana allows small estates under $50,000 to be collected and distributed by affidavit.",
+          "claim_es": "Montana permite cobrar y repartir por declaración jurada las herencias pequeñas de menos de $50,000.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315064",
+          "source_name": "Social Security Administration, POMS GN 02315.064 (Montana)",
+          "quote": "Montana law permits collection and distribution of small estates under $50,000 by affidavit.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, 30 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Montana, deben pasar 30 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315064",
+          "source_name": "Social Security Administration, POMS GN 02315.064 (Montana)",
+          "quote": "Thirty (30) days have elapsed since the death of the decedent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, whoever pays a successor under the affidavit is released as if they had dealt with a personal representative.",
+          "claim_es": "En Montana, quien paga al sucesor conforme a la declaración jurada queda liberado como si hubiera tratado con un representante personal.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315064",
+          "source_name": "Social Security Administration, POMS GN 02315.064 (Montana)",
+          "quote": "the person paying the successor pursuant to an affidavit is discharged and released to the same extent as if the person dealt with a personal representative of decedent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "New Mexico's small estate affidavit is for estates worth no more than $50,000 after liens.",
+          "claim_es": "En Nuevo México, la declaración jurada de herencia pequeña es para herencias que no valen más de $50,000 después de gravámenes.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315069",
+          "source_name": "Social Security Administration, POMS GN 02315.069 (New Mexico)",
+          "quote": "does not exceed fifty thousand dollars ($50,000)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, 30 days must pass after the death before the affidavit is used.",
+          "claim_es": "En Nuevo México, deben pasar 30 días desde la muerte antes de usar la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315069",
+          "source_name": "Social Security Administration, POMS GN 02315.069 (New Mexico)",
+          "quote": "Thirty (30) days have elapsed since the decedent's death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, whoever pays a successor under the affidavit is released as if they had dealt with a personal representative.",
+          "claim_es": "En Nuevo México, quien paga al sucesor conforme a la declaración jurada queda liberado como si hubiera tratado con un representante personal.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315069",
+          "source_name": "Social Security Administration, POMS GN 02315.069 (New Mexico)",
+          "quote": "the person paying the successor pursuant to an affidavit is discharged and released to the same extent as if the person dealt with the decedent's personal representative",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "In New York, when there is a will and personal property of $50,000 or less, the named executor has the first right to act as voluntary administrator by filing an affidavit within 30 days after filing the will.",
+          "claim_es": "En Nueva York, cuando hay testamento y bienes muebles de $50,000 o menos, el albacea nombrado tiene el primer derecho a actuar como administrador voluntario presentando una declaración jurada dentro de 30 días después de presentar el testamento.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315070",
+          "source_name": "Social Security Administration, POMS GN 02315.070 (New York)",
+          "quote": "Where the decedent left a will and died leaving personal property of $50,000 or less, the named executor or alternate executor has the first right to act as voluntary administrator, by filing an affidavit within 30 days after filing the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New York, certain personal property is not counted toward the $50,000 limit when a qualified spouse or minor children survive.",
+          "claim_es": "En Nueva York, ciertos bienes muebles no cuentan para el límite de $50,000 cuando sobreviven un cónyuge calificado o hijos menores.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315070",
+          "source_name": "Social Security Administration, POMS GN 02315.070 (New York)",
+          "quote": "Personal property is exempt from the $50,000 limit if a qualified spouse or minor children survive the decedent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New York has public administrators in Bronx, Kings, New York, Queens, Richmond, Erie, Monroe, Nassau, Onondaga, Suffolk and Westchester counties.",
+          "claim_es": "Nueva York tiene administradores públicos en los condados de Bronx, Kings, New York, Queens, Richmond, Erie, Monroe, Nassau, Onondaga, Suffolk y Westchester.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315070",
+          "source_name": "Social Security Administration, POMS GN 02315.070 (New York)",
+          "quote": "Public administrators, who exist in the Counties of Bronx, Kings, New York, Queens, Richmond, Erie, Monroe, Nassau, Onondaga, Suffolk, and Westchester",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "In Pennsylvania, small estate procedures simplify probate for estates valued at $50,000 or less.",
+          "claim_es": "En Pensilvania, los procedimientos de herencia pequeña simplifican el proceso sucesorio para herencias de $50,000 o menos.",
+          "source_url": "https://www.phila.gov/documents/small-estate-affidavit/",
+          "source_name": "City of Philadelphia, Register of Wills",
+          "quote": "They're used to simplify the probate process for estates valued at $50,000 or less.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, the orphans' court of the county where the person lived may act on a petition from any interested party in a small estate.",
+          "claim_es": "En Pensilvania, el tribunal de huérfanos (orphans' court) del condado donde vivía la persona puede actuar a petición de cualquier parte interesada en una herencia pequeña.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315076",
+          "source_name": "Social Security Administration, POMS GN 02315.076 (Pennsylvania)",
+          "quote": "the orphan's court of the county wherein the decedent was domiciled may, on the petition of any party in interest",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Pennsylvania small estate, the court's decree of distribution directs the property to the people entitled to it.",
+          "claim_es": "En una herencia pequeña de Pensilvania, el decreto de distribución del tribunal indica a quién se entregan los bienes.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315076",
+          "source_name": "Social Security Administration, POMS GN 02315.076 (Pennsylvania)",
+          "quote": "which is entered by the court pursuant to this statute directs distribution of the property to the named parties entitled thereto",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "In South Carolina, a small estate may be handled without formal administration by using an affidavit.",
+          "claim_es": "En Carolina del Sur, una herencia pequeña se puede tramitar sin administración formal mediante una declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315079",
+          "source_name": "Social Security Administration, POMS GN 02315.079 (South Carolina)",
+          "quote": "a small estate may be handled without formal administration through the use of an affidavit",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, the small estate affidavit must be approved and countersigned by the probate judge of the county where the person lived.",
+          "claim_es": "En Carolina del Sur, la declaración jurada de herencia pequeña debe ser aprobada y firmada por el juez testamentario del condado donde vivía la persona.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315079",
+          "source_name": "Social Security Administration, POMS GN 02315.079 (South Carolina)",
+          "quote": "An affidavit attesting to these facts must be approved and countersigned by the probate judge of the county of the decedent's domicile",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Carolina, anyone holding money or personal property of the estate must turn it over under the affidavit.",
+          "claim_es": "En Carolina del Sur, quien tenga dinero o bienes muebles de la herencia debe entregarlos conforme a la declaración jurada.",
+          "source_url": "https://secure.ssa.gov/poms.nsf/lnx/0202315079",
+          "source_name": "Social Security Administration, POMS GN 02315.079 (South Carolina)",
+          "quote": "Any person owing money or other personal property belonging to such an estate shall turn it over pursuant to the affidavit.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
-    "DE": "official county pages blocked automated fetch; no verifiable official quote",
-    "GA": "Georgia has no small-estate affidavit; no official page fetched with quotable facts",
-    "IL": "only 2 quote-verified facts from official sources",
-    "IN": "official Indiana statute and court pages did not render for verification",
-    "KS": "official Kansas statute page did not render text for verification",
-    "KY": "official Kentucky form/statute did not yield quotable small-estate facts",
-    "LA": "official Louisiana statute pages did not yield 3 quotable facts",
-    "MT": "no official Montana small-estate page with quotable facts found",
-    "NH": "no official New Hampshire page with quotable small-estate facts found",
-    "NM": "official New Mexico statute site is script-rendered; no verifiable quote",
-    "NY": "official NY court pages script-rendered; no verifiable quote",
-    "PA": "only 1 quote-verified fact from official sources",
-    "SC": "no official South Carolina small-estate page with quotable facts found"
+    "DE": "only 2 quote-verified facts from official sources (no current dollar limit found on an official page)",
+    "KY": "official Kentucky pages did not yield 3 quotable current small-estate facts",
+    "NH": "official New Hampshire pages did not yield 3 quotable small-estate facts"
   }
 }
