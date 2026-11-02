@@ -1,0 +1,1003 @@
+{
+  "folder": "workplace",
+  "subtopic": "meal-and-rest-breaks",
+  "title_en": "Meal and rest break rules at work in {state}",
+  "title_es": "Reglas sobre descansos y períodos de comida en el trabajo en {state_es}",
+  "search_intent_en": [
+    "{state} meal break law",
+    "{state} lunch break law",
+    "does {state} require breaks at work",
+    "{state} rest break law"
+  ],
+  "search_intent_es": [
+    "ley de descanso para comer en {state_es}",
+    "descansos obligatorios en el trabajo {state_es}"
+  ],
+  "states": {
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for California, a half-hour meal period when work is more than 5 hours a day (with limited exceptions).",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para California, un período de comida de media hora cuando se trabaja más de 5 horas al día (con excepciones limitadas).",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, if work is for more than 5 hours per day",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for California, a paid 10-minute rest period for each 4 hours worked or major fraction of 4 hours.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para California, un descanso pagado de 10 minutos por cada 4 horas trabajadas o fracción mayor.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period for each 4 hours worked or major fraction thereof",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the California Labor and Workforce Development Agency as the state labor office for California; its listed phone number is 833-526-4636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de California es California Labor and Workforce Development Agency; su teléfono es 833-526-4636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Labor and Workforce Development Agency 800 Capitol Mall, Suite 5000 (MIC-55) Sacramento, CA 95814 833-526-4636",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "California Labor and Workforce Development Agency",
+          "label_es": "California Labor and Workforce Development Agency",
+          "url": "https://www.dir.ca.gov/contactus.html"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Colorado, a half-hour meal period when a shift exceeds 5 consecutive hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Colorado, un período de comida de media hora cuando el turno supera 5 horas consecutivas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour if work shift exceeds 5 consecutive hours.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Colorado, a paid 10-minute rest period for each 4 hours of work or major fraction.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Colorado, un descanso pagado de 10 minutos por cada 4 horas de trabajo o fracción mayor.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period for each 4 hours of work, or major fractions thereof.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Colorado Department of Labor and Employment as the state labor office for Colorado; its listed phone number is 303-318-8441.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Colorado es Colorado Department of Labor and Employment; su teléfono es 303-318-8441.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Employment 633 17th St Suite 201 Denver, CO 80202-3660 303-318-8441",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Colorado Department of Labor and Employment",
+          "label_es": "Colorado Department of Labor and Employment",
+          "url": "https://cdle.colorado.gov/dlss"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Connecticut, a half-hour meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Connecticut, un período de comida de media hora, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour at some time after first 2 hours and before last 2 hours for employees who work 7½ consecutive hours or more.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Connecticut's meal-period rule excludes certain professional employees certified by the State Board of Education.",
+          "claim_es": "La misma tabla indica que la regla de Connecticut sobre períodos de comida excluye a ciertos profesionales certificados por la Junta Estatal de Educación.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Excludes certain professional employees certified by the State Board of Education",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Connecticut Department of Labor as the state labor office for Connecticut; its listed phone number is 860-263-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Connecticut es Connecticut Department of Labor; su teléfono es 860-263-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 200 Folly Brook Blvd Wethersfield, CT 06109-1114 860-263-6000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Connecticut Department of Labor",
+          "label_es": "Connecticut Department of Labor",
+          "url": "https://www.ct.gov/dol"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Delaware, a half-hour meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Delaware, un período de comida de media hora, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, at some time, after first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Delaware's meal-period rule excludes certain professional employees certified by the State Board of Education and workplaces covered by a collective bargaining agreement.",
+          "claim_es": "La misma tabla indica que la regla de Delaware sobre períodos de comida excluye a ciertos profesionales certificados por la Junta Estatal de Educación y a lugares de trabajo con convenio colectivo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Excludes certain professional employees certified by the State Board of Education, and workplaces covered by a collective bargaining agreement",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Delaware Department of Labor as the state labor office for Delaware; its listed phone number is 302-761-8176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Delaware es Delaware Department of Labor; su teléfono es 302-761-8176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4425 N Market St 4th Floor Wilmington, DE 19802 302-761-8176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Delaware Department of Labor",
+          "label_es": "Delaware Department of Labor",
+          "url": "https://www.labor.delaware.gov"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Illinois, at least 20 minutes, no later than 5 hours into the work period, for employees who work 7½ continuous hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Illinois, al menos 20 minutos, a más tardar 5 horas después de comenzar, para quienes trabajan 7½ horas continuas o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "At least 20 minutes, no later than 5 hours after the start of the work period, to employees who work 7 ½ continuous hours or more.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Illinois's meal-period rule excludes employees whose meal periods are set by collective bargaining.",
+          "claim_es": "La misma tabla indica que la regla de Illinois sobre períodos de comida excluye a empleados cuyos períodos de comida se fijan por convenio colectivo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Excludes employees whose meal periods are established by collective bargaining.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Illinois, at least two paid 15-minute rest breaks for hotel room attendants (in counties of more than three million people).",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Illinois, al menos dos descansos pagados de 15 minutos para el personal de limpieza de habitaciones de hotel (en condados de más de tres millones de habitantes).",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "shall receive a minimum of two 15-minute paid rest break periods",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Illinois Department of Labor as the state labor office for Illinois; its listed phone number is 217-782-6206.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Illinois es Illinois Department of Labor; su teléfono es 217-782-6206.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 524 S. 2nd Street, Suite 400 Springfield, IL 62701 217-782-6206",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Illinois Department of Labor",
+          "label_es": "Illinois Department of Labor",
+          "url": "https://www.labor.illinois.gov"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Kentucky, a reasonable off-duty meal period, ordinarily half an hour, between the 3rd and 5th hour of work.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Kentucky, un período razonable libre de deberes para comer, normalmente de media hora, entre la 3.ª y la 5.ª hora de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Reasonable off-duty period, ordinarily ½ hour but shorter period permitted under special conditions, between 3rd and 5th hour of work.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Kentucky, a paid 10-minute rest period during each 4-hour work period.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Kentucky, un descanso pagado de 10 minutos en cada período de 4 horas de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period during each 4-hour work period",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kentucky Education and Labor Cabinet as the state labor office for Kentucky; its listed phone number is 502-564-3534.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kentucky es Kentucky Education and Labor Cabinet; su teléfono es 502-564-3534.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Education and Labor Cabinet 500 Mero Street, Frankfort, Kentucky 40601 502-564-3534",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Kentucky Education and Labor Cabinet",
+          "label_es": "Kentucky Education and Labor Cabinet",
+          "url": "https://elc.ky.gov"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Maine, 30 minutes after 6 consecutive hours of work, except in emergencies.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Maine, 30 minutos después de 6 horas consecutivas de trabajo, salvo en emergencias.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "30 minutes after 6 consecutive hours, except in cases of emergency.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Maine's meal-period rule does not apply where fewer than 3 employees are on duty at one time (and frequent paid breaks are allowed).",
+          "claim_es": "La misma tabla indica que la regla de Maine sobre períodos de comida no se aplica donde hay menos de 3 empleados de turno al mismo tiempo (y se permiten descansos pagados frecuentes).",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Not applicable to places of employment where there are fewer than 3 employees on duty at any one time",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maine Department of Labor as the state labor office for Maine; its listed phone number is 207-623-7900.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maine es Maine Department of Labor; su teléfono es 207-623-7900.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 45 State House Station Augusta, ME 04333 207-623-7900",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Maine Department of Labor",
+          "label_es": "Maine Department of Labor",
+          "url": "https://www.maine.gov/labor"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Maryland, a 15-minute break for 4 to 6 consecutive hours, or a 30-minute break for more than 6 consecutive hours (retail establishments).",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Maryland, un descanso de 15 minutos por 4 a 6 horas consecutivas, o de 30 minutos por más de 6 horas consecutivas (en comercios minoristas).",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "15 minute break for 4-6 consecutive hours or a 30 minute break for more than 6 consecutive hours.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Maryland's meal-period rule applies to retail establishments.",
+          "claim_es": "La misma tabla indica que la regla de Maryland sobre períodos de comida se aplica a comercios minoristas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applies to retail establishments.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maryland Department of Labor as the state labor office for Maryland; its listed phone number is 410-230-6020.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maryland es Maryland Department of Labor; su teléfono es 410-230-6020.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 1100 North Eutaw Street Baltimore, MD 21201 410-230-6020",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Maryland Department of Labor",
+          "label_es": "Maryland Department of Labor",
+          "url": "https://www.labor.maryland.gov"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Massachusetts, at least a 30-minute meal break for each 6 hours worked in a day.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Massachusetts, al menos un descanso de 30 minutos para comer por cada 6 horas trabajadas en un día.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Workers have a right to at least a 30-minute meal break or each 6 hours worked in a calendar day.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Massachusetts's meal-period rule excludes iron works, glass works, paper mills, letterpress and print works, and bleaching or dyeing works.",
+          "claim_es": "La misma tabla indica que la regla de Massachusetts sobre períodos de comida excluye fundiciones, fábricas de vidrio y de papel, imprentas y talleres de blanqueo o teñido.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Excludes iron works, glass works, paper mills, letter press establishments, print works, and bleaching or dyeing works.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Massachusetts Executive Office of Labor & Workforce Development as the state labor office for Massachusetts; its listed phone number is 617-626-7100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Massachusetts es Massachusetts Executive Office of Labor & Workforce Development; su teléfono es 617-626-7100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Executive Office of Labor & Workforce Development One Ashburton Pl Room 2112 Boston, MA 02108 617-626-7100",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Massachusetts Executive Office of Labor & Workforce Development",
+          "label_es": "Massachusetts Executive Office of Labor & Workforce Development",
+          "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Minnesota, sufficient unpaid meal time for employees who work 8 consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Minnesota, tiempo suficiente sin pago para comer a quienes trabajan 8 horas consecutivas o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Sufficient unpaid time for employees who work 8 consecutive hours or more.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Minnesota, a paid, adequate rest period within each 4 consecutive hours of work to use the nearest restroom.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Minnesota, un descanso pagado y adecuado dentro de cada 4 horas consecutivas de trabajo para usar el baño más cercano.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid adequate rest period within each 4 consecutive hours of work, to utilize nearest convenient restroom.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Minnesota Department of Labor and Industry as the state labor office for Minnesota; its listed phone number is 651-284-5005.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Minnesota es Minnesota Department of Labor and Industry; su teléfono es 651-284-5005.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 443 Lafayette Rd N St. Paul, MN 55155 651-284-5005",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Minnesota Department of Labor and Industry",
+          "label_es": "Minnesota Department of Labor and Industry",
+          "url": "https://www.dli.mn.gov"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nebraska, a half-hour lunch period, off premises, in each 8-hour shift (assembly plants, workshops and mechanical establishments).",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nebraska, un período de almuerzo de media hora, fuera del lugar de trabajo, en cada turno de 8 horas (en plantas de ensamblaje, talleres y establecimientos mecánicos).",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, off premises, for lunch in each 8-hour shift.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Nebraska's meal-period rule applies to assembly plants, workshops and mechanical establishments.",
+          "claim_es": "La misma tabla indica que la regla de Nebraska sobre períodos de comida se aplica a plantas de ensamblaje, talleres y establecimientos mecánicos.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applicable to assembly plant, workshop, or mechanical establishment",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nebraska Department of Labor as the state labor office for Nebraska; its listed phone number is 402-471-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nebraska es Nebraska Department of Labor; su teléfono es 402-471-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 550 S 16th St PO Box 94600 Lincoln, NE 68508-4600 402-471-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Nebraska Department of Labor",
+          "label_es": "Nebraska Department of Labor",
+          "url": "https://www.dol.nebraska.gov"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nevada, a half-hour meal period for 8 continuous hours of work.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nevada, un período de comida de media hora por 8 horas continuas de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, if work is for 8 continuous hours.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Nevada, a paid 10-minute rest period for each 4 hours worked or major fraction.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Nevada, un descanso pagado de 10 minutos por cada 4 horas trabajadas o fracción mayor.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period for each 4 hours worked or major fraction thereof",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nevada Department of Business and Industry as the state labor office for Nevada; its listed phone number is 775-684-1890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nevada es Nevada Department of Business and Industry; su teléfono es 775-684-1890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Industry 1830 College Parkway, Suite 100 Carson City, NV 89706 775-684-1890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Nevada Department of Business and Industry",
+          "label_es": "Nevada Department of Business and Industry",
+          "url": "https://labor.nv.gov"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for New Hampshire, a half-hour meal period after 5 consecutive hours, unless the employee can eat while working and the employer allows it.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nuevo Hampshire, un período de comida de media hora después de 5 horas consecutivas, a menos que el empleado pueda comer mientras trabaja y el empleador lo permita.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, after 5 consecutive hours, unless feasible for employee to eat while working and is permitted to do so by employer.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says New Hampshire's meal-period rule applies to any employer.",
+          "claim_es": "La misma tabla indica que la regla de Nuevo Hampshire sobre períodos de comida se aplica a cualquier empleador.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applicable to any employer.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Hampshire Department of Labor as the state labor office for New Hampshire; its listed phone number is 603-271-3176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo Hampshire es New Hampshire Department of Labor; su teléfono es 603-271-3176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 95 Pleasant St Concord, NH 03301 603-271-3176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "New Hampshire Department of Labor",
+          "label_es": "New Hampshire Department of Labor",
+          "url": "https://dol.nh.gov"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for New York, a 30-minute noonday meal period for shifts of more than 6 hours that extend over the noon meal period.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nueva York, un período de comida de media hora al mediodía para turnos de más de 6 horas que abarcan la hora del almuerzo.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "30 minute noonday period for employees who work shifts of more than 6 hours that extend over the noon day meal period.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says New York's meal-period rule also lists a 1-hour noonday period for factories.",
+          "claim_es": "La misma tabla indica que la regla de Nueva York sobre períodos de comida también indica un período de 1 hora al mediodía en fábricas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "1 hour noon-day period",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New York Department of Labor as the state labor office for New York; its listed phone number is 518-457-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva York es New York Department of Labor; su teléfono es 518-457-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor State Office Bldg # 12 W.A. Harriman Campus Albany, NY 12240 518-457-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "New York Department of Labor",
+          "label_es": "New York Department of Labor",
+          "url": "https://www.labor.ny.gov"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for North Dakota, a half-hour meal period, if the employee wants it, on each shift over 5 hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Dakota del Norte, un período de comida de media hora, si el empleado lo desea, en cada turno de más de 5 horas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, if desired, on each shift exceeding 5 hours.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says North Dakota's meal-period rule applies when two or more employees are on duty.",
+          "claim_es": "La misma tabla indica que la regla de Dakota del Norte sobre períodos de comida se aplica cuando hay dos o más empleados de turno.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applicable when two or more employees are on duty.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Dakota Department of Labor and Human Rights as the state labor office for North Dakota; its listed phone number is 701-328-2660.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Norte es North Dakota Department of Labor and Human Rights; su teléfono es 701-328-2660.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Human Rights 600 E Boulevard Ave Dept 406 Bismarck, ND 58505-0340 701-328-2660",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "North Dakota Department of Labor and Human Rights",
+          "label_es": "North Dakota Department of Labor and Human Rights",
+          "url": "https://www.nd.gov/labor"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Oregon, a half-hour meal period, relieved of all duty, for each work period of 6 to 8 hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Oregón, un período de comida de media hora, libre de todo deber, por cada período de trabajo de 6 a 8 horas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, with relief from all duty, for each work period of 6 to 8 hours",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Oregon, a paid 10-minute rest period for every 4 hours worked or major portion.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Oregón, un descanso pagado de 10 minutos por cada 4 horas trabajadas o la mayor parte.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period for every 4-hours worked or major portion thereof in one work period",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oregon Bureau of Labor and Industries as the state labor office for Oregon; its listed phone number is 971-245-3844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oregón es Oregon Bureau of Labor and Industries; su teléfono es 971-245-3844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Bureau of Labor and Industries 1800 SW 1st Ave, Suite 500 Portland, OR 97201 971-245-3844",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Oregon Bureau of Labor and Industries",
+          "label_es": "Oregon Bureau of Labor and Industries",
+          "url": "https://www.oregon.gov/boli"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Rhode Island, a 20-minute mealtime within a six-hour shift and a 30-minute mealtime within an eight-hour shift.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Rhode Island, 20 minutos para comer en un turno de seis horas y 30 minutos en un turno de ocho horas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "All employees are entitled to a 20 minute mealtime within a six hour work shift, and a 30 minute mealtime within an eight hour work shift.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Rhode Island's meal-period rule applies to all employees except at licensed health care facilities or where fewer than three people work a shift.",
+          "claim_es": "La misma tabla indica que la regla de Rhode Island sobre períodos de comida se aplica a todos los empleados, salvo en centros de salud con licencia o donde menos de tres personas trabajan en un turno.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Uniform application to all employees except to an employer of a licensed health care facility or an employer who employs less than three people on any shift at the worksite.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Rhode Island Department of Labor and Training as the state labor office for Rhode Island; its listed phone number is 401-462-8550.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Rhode Island es Rhode Island Department of Labor and Training; su teléfono es 401-462-8550.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Training 1511 Pontiac Ave Cranston, RI 02920 401-462-8550",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Rhode Island Department of Labor and Training",
+          "label_es": "Rhode Island Department of Labor and Training",
+          "url": "https://www.dlt.ri.gov"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Tennessee, a half-hour meal break for employees scheduled to work 6 consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Tennessee, un descanso de media hora para comer para quienes tienen programadas 6 horas consecutivas o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour for employees scheduled to work 6 consecutive hours or more.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Tennessee's meal-period rule applies to every employer except workplaces that by their nature give ample opportunity for a meal break.",
+          "claim_es": "La misma tabla indica que la regla de Tennessee sobre períodos de comida se aplica a todo empleador, salvo lugares de trabajo que por su naturaleza dan amplia oportunidad para comer.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applicable to every employer, except in workplace environments that by their nature of business provide ample opportunity to take an appropriate meal break.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Tennessee Department of Labor & Workforce Development as the state labor office for Tennessee; its listed phone number is 844-224-5818.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Tennessee es Tennessee Department of Labor & Workforce Development; su teléfono es 844-224-5818.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Workforce Development 220 French Landing Dr Nashville, TN 37243 844-224-5818",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Tennessee Department of Labor & Workforce Development",
+          "label_es": "Tennessee Department of Labor & Workforce Development",
+          "url": "https://www.tn.gov/workforce"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Vermont, \"reasonable opportunities\" during work periods to eat and use toilet facilities.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Vermont, \"oportunidades razonables\" durante el trabajo para comer y usar el baño.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Employees are to be given \"reasonable opportunities\" during work periods to eat and use toilet facilities",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Vermont, \"reasonable opportunities\" to eat and use toilet facilities, listed on its rest-period table as well, to protect employee health and hygiene.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Vermont, \"oportunidades razonables\" para comer y usar el baño (también en su tabla de descansos), para proteger la salud e higiene del empleado.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Employees are to be given \"reasonable opportunities\" during work periods to eat and use toilet facilities in order to protect the health and hygiene of the employee.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Vermont Department of Labor as the state labor office for Vermont; its listed phone number is 802-828-4000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Vermont es Vermont Department of Labor; su teléfono es 802-828-4000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 5 Green Mountain Dr PO Box 488 Montpelier, VT 05601-0488 802-828-4000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Vermont Department of Labor",
+          "label_es": "Vermont Department of Labor",
+          "url": "https://www.labor.vermont.gov"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Washington, a half-hour meal period when the work period is more than 5 consecutive hours, given between 2 and 5 hours after the shift starts.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Washington, un período de comida de media hora cuando se trabajan más de 5 horas consecutivas, entre 2 y 5 horas después del inicio del turno.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "½ hour, if work period is more than 5 consecutive hours, to be given not less than 2 hours nor more than 5 hours from beginning of shift.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's table of state rest-period laws lists, for Washington, a paid 10-minute rest period for each 4-hour work period, as near as possible to the middle of it.",
+          "claim_es": "La tabla de leyes estatales sobre descansos del Departamento de Trabajo de EE. UU. indica, para Washington, un descanso pagado de 10 minutos por cada período de 4 horas, lo más cerca posible de la mitad.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/rest-periods",
+          "source_name": "U.S. Department of Labor, Minimum Paid Rest Period Requirements Under State Law",
+          "quote": "Paid 10-minute rest period for each 4-hour work period, scheduled as near as possible to midpoint of each work period.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Washington Department of Labor and Industries as the state labor office for Washington; its listed phone number is 360-902-5800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Washington es Washington Department of Labor and Industries; su teléfono es 360-902-5800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industries 7273 Linderson Way SW Tumwater, WA 98501-5414 360-902-5800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "Washington Department of Labor and Industries",
+          "label_es": "Washington Department of Labor and Industries",
+          "url": "https://www.lni.wa.gov"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for West Virginia, 20 minutes for employees who work 6 hours or more in a workday.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Virginia Occidental, 20 minutos para quienes trabajan 6 horas o más en una jornada.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "20 minutes for employees who work 6 hours or more in a workday.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says West Virginia's meal-period rule applies to every employer.",
+          "claim_es": "La misma tabla indica que la regla de Virginia Occidental sobre períodos de comida se aplica a todo empleador.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
+          "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
+          "quote": "Applicable to every employer.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the West Virginia Division of Labor as the state labor office for West Virginia; its listed phone number is 304-558-7890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia Occidental es West Virginia Division of Labor; su teléfono es 304-558-7890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Division of Labor 1900 Kanawha Blvd State Capitol Complex Building #3 Room 200 Charleston, WV 25305 304-558-7890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state meal-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre períodos de comida",
+          "url": "https://www.dol.gov/agencies/whd/state/meal-breaks"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state rest-period laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales sobre descansos",
+          "url": "https://www.dol.gov/agencies/whd/state/rest-periods"
+        },
+        {
+          "label_en": "West Virginia Division of Labor",
+          "label_es": "West Virginia Division of Labor",
+          "url": "https://labor.wv.gov"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AL": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "AK": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "AZ": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "AR": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "DC": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "FL": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "GA": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "HI": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "ID": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "IN": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "IA": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "KS": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "LA": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "MI": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "MS": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "MO": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "MT": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "NJ": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "NM": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "NC": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "OH": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "OK": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "PA": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "SC": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "SD": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "TX": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "UT": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "VA": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "WI": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state",
+    "WY": "the U.S. Department of Labor's state tables list no general meal-period or paid rest-period requirement for adult private-sector workers in this state"
+  }
+}
