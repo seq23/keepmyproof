@@ -28,7 +28,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Alaska's state veterans agency, the Alaska Office of Veterans Affairs, at 888-248-3682.",
+          "claim_en": "VA's directory lists the Alaska Office of Veterans Affairs as Alaska's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Alaska Office of Veterans Affairs es la agencia estatal de veteranos de Alaska.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Alaska Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Alaska Office of Veterans Affairs as 888-248-3682.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Alaska, Alaska Office of Veterans Affairs, atiende en el 888-248-3682.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -76,7 +84,15 @@
     "AL": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Alabama's state veterans agency, the Alabama Department of Veterans Affairs, at 334-242-5077.",
+          "claim_en": "VA's directory lists the Alabama Department of Veterans Affairs as Alabama's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Alabama Department of Veterans Affairs es la agencia estatal de veteranos de Alabama.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Alabama Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Alabama Department of Veterans Affairs as 334-242-5077.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Alabama, Alabama Department of Veterans Affairs, atiende en el 334-242-5077.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -140,7 +156,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Arkansas's state veterans agency, the Arkansas Department of Veterans Affairs, at 501-683-2382.",
+          "claim_en": "VA's directory lists the Arkansas Department of Veterans Affairs as Arkansas's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Arkansas Department of Veterans Affairs es la agencia estatal de veteranos de Arkansas.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Arkansas Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Arkansas Department of Veterans Affairs as 501-683-2382.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Arkansas, Arkansas Department of Veterans Affairs, atiende en el 501-683-2382.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -188,7 +212,23 @@
     "AZ": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Arizona's state veterans agency, the Arizona Department of Veterans Services, at 602-255-3373.",
+          "claim_en": "VA's directory says the Arizona Department of Veterans' Services has 50+ professional benefit counselors around the state who help veterans connect with VA benefits.",
+          "claim_es": "El directorio del VA indica que el Departamento de Servicios para Veteranos de Arizona tiene más de 50 consejeros de beneficios en todo el estado que ayudan a los veteranos con sus beneficios del VA.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "provides direct services to Veterans through the administration of 50+ professional benefit counselors located throughout the state",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Arizona Department of Veterans Services as Arizona's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Arizona Department of Veterans Services es la agencia estatal de veteranos de Arizona.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Arizona Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Arizona Department of Veterans Services as 602-255-3373.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Arizona, Arizona Department of Veterans Services, atiende en el 602-255-3373.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -236,7 +276,23 @@
     "CA": {
       "facts": [
         {
-          "claim_en": "VA's directory lists California's state veterans agency, the California Department of Veterans Affairs (CalVet), at 800-952-5626.",
+          "claim_en": "VA's directory says CalVet works so California veterans of every era and their families get the state and federal benefits they have earned.",
+          "claim_es": "El directorio del VA indica que CalVet trabaja para que los veteranos de California de todas las épocas y sus familias reciban los beneficios estatales y federales que han ganado.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "CalVet strives to ensure that its veterans of every era and their families get the state and federal benefits and services they have earned",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the California Department of Veterans Affairs (CalVet) as California's state veterans agency.",
+          "claim_es": "El directorio del VA indica que California Department of Veterans Affairs (CalVet) es la agencia estatal de veteranos de California.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "California Department of Veterans Affairs (CalVet)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the California Department of Veterans Affairs (CalVet) as 800-952-5626.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de California, California Department of Veterans Affairs (CalVet), atiende en el 800-952-5626.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -340,7 +396,23 @@
     "CT": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Connecticut's state veterans agency, the Connecticut State Department of Veterans Affairs, at 860-616-2562.",
+          "claim_en": "Connecticut Veterans Affairs service officers help Connecticut veterans apply for programs the department runs.",
+          "claim_es": "Los oficiales de servicio de Asuntos de Veteranos de Connecticut ayudan a los veteranos del estado a solicitar los programas que administra el departamento.",
+          "source_url": "https://portal.ct.gov/dva/advocacy-and-assistance",
+          "source_name": "Connecticut State Department of Veterans Affairs",
+          "quote": "Our Veteran Service Officers help CT Veterans apply for several programs run by Connecticut Veterans Affairs.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Connecticut State Department of Veterans Affairs as Connecticut's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Connecticut State Department of Veterans Affairs es la agencia estatal de veteranos de Connecticut.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Connecticut State Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Connecticut State Department of Veterans Affairs as 860-616-2562.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Connecticut, Connecticut State Department of Veterans Affairs, atiende en el 860-616-2562.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -396,7 +468,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists District of Columbia's state veterans agency, the Mayor’s Office of Veterans Affairs, at 202-724-5454.",
+          "claim_en": "VA's directory lists the Mayor’s Office of Veterans Affairs as District of Columbia's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Mayor’s Office of Veterans Affairs es la agencia estatal de veteranos de el Distrito de Columbia.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Mayor’s Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Mayor’s Office of Veterans Affairs as 202-724-5454.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de el Distrito de Columbia, Mayor’s Office of Veterans Affairs, atiende en el 202-724-5454.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -468,7 +548,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Delaware's state veterans agency, the Delaware Office of Veterans Services, at 302-739-2792.",
+          "claim_en": "VA's directory lists the Delaware Office of Veterans Services as Delaware's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Delaware Office of Veterans Services es la agencia estatal de veteranos de Delaware.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Delaware Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Delaware Office of Veterans Services as 302-739-2792.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Delaware, Delaware Office of Veterans Services, atiende en el 302-739-2792.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -516,7 +604,23 @@
     "FL": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Florida's state veterans agency, the Florida Department of Veterans Affairs, at 844-693-5838.",
+          "claim_en": "VA's directory describes the Florida Department of Veterans' Affairs as a point of entry for Florida veterans to access earned services, benefits and support.",
+          "claim_es": "El directorio del VA describe al Departamento de Asuntos de Veteranos de Florida como un punto de acceso para que los veteranos del estado obtengan servicios, beneficios y apoyo.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "is the premier point of entry for Florida veterans to access earned services, benefits and support",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Florida Department of Veterans Affairs as Florida's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Florida Department of Veterans Affairs es la agencia estatal de veteranos de Florida.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Florida Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Florida Department of Veterans Affairs as 844-693-5838.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Florida, Florida Department of Veterans Affairs, atiende en el 844-693-5838.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -564,7 +668,23 @@
     "GA": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Georgia's state veterans agency, the Georgia Department of Veterans Affairs, at 404-656-2300.",
+          "claim_en": "VA's directory says the Georgia Department of Veterans Service advises, counsels and assists Georgia veterans and families in receiving their benefits.",
+          "claim_es": "El directorio del VA indica que el Departamento de Servicios para Veteranos de Georgia asesora y ayuda a los veteranos de Georgia y sus familias a recibir sus beneficios.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "created for the purpose of advising, counseling, and assisting Georgia’s veterans and their families in receiving their rightful benefits",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Georgia Department of Veterans Affairs as Georgia's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Georgia Department of Veterans Affairs es la agencia estatal de veteranos de Georgia.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Georgia Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Georgia Department of Veterans Affairs as 404-656-2300.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Georgia, Georgia Department of Veterans Affairs, atiende en el 404-656-2300.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -612,7 +732,23 @@
     "HI": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Hawaii's state veterans agency, the Hawai’i Office of Veterans’ Services, at 808-433-0420.",
+          "claim_en": "VA's directory says Hawaii's Office of Veterans' Services acts as a liaison between VA and individual veterans.",
+          "claim_es": "El directorio del VA indica que la Oficina de Servicios para Veteranos de Hawái sirve de enlace entre el VA y cada veterano.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "The OVS acts as a liaison between the Governor and veterans’ organizations and also between the Department of Veterans Affairs and individual veterans.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Hawai’i Office of Veterans’ Services as Hawaii's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Hawai’i Office of Veterans’ Services es la agencia estatal de veteranos de Hawái.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Hawai’i Office of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Hawai’i Office of Veterans’ Services as 808-433-0420.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Hawái, Hawai’i Office of Veterans’ Services, atiende en el 808-433-0420.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -668,7 +804,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Iowa's state veterans agency, the Iowa Department of Veterans Affairs, at 515-252-4698.",
+          "claim_en": "VA's directory lists the Iowa Department of Veterans Affairs as Iowa's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Iowa Department of Veterans Affairs es la agencia estatal de veteranos de Iowa.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Iowa Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Iowa Department of Veterans Affairs as 515-252-4698.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Iowa, Iowa Department of Veterans Affairs, atiende en el 515-252-4698.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -715,6 +859,14 @@
     },
     "ID": {
       "facts": [
+        {
+          "claim_en": "VA's directory says Idaho's Office of Veterans Advocacy pursues federal and state benefits on behalf of veterans, family members and survivors.",
+          "claim_es": "El directorio del VA indica que la Oficina de Defensa de Veteranos de Idaho gestiona beneficios federales y estatales en nombre de veteranos, familiares y sobrevivientes.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "As an advocate we aggressively pursue all federal and state benefits and entitlements on their behalf.",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the Idaho Division of Veterans Services as Idaho's state veterans agency.",
           "claim_es": "El directorio del VA indica que Idaho Division of Veterans Services es la agencia estatal de veteranos de Idaho.",
@@ -772,7 +924,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Illinois's state veterans agency, the Illinois Department of Veterans Affairs, at 800-437-9824.",
+          "claim_en": "VA's directory lists the Illinois Department of Veterans Affairs as Illinois's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Illinois Department of Veterans Affairs es la agencia estatal de veteranos de Illinois.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Illinois Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Illinois Department of Veterans Affairs as 800-437-9824.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Illinois, Illinois Department of Veterans Affairs, atiende en el 800-437-9824.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -820,7 +980,15 @@
     "IN": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Indiana's state veterans agency, the Indiana Department of Veterans Affairs, at 317-232-3910.",
+          "claim_en": "VA's directory lists the Indiana Department of Veterans Affairs as Indiana's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Indiana Department of Veterans Affairs es la agencia estatal de veteranos de Indiana.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Indiana Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Indiana Department of Veterans Affairs as 317-232-3910.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Indiana, Indiana Department of Veterans Affairs, atiende en el 317-232-3910.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -868,7 +1036,23 @@
     "KS": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Kansas's state veterans agency, the Kansas Commission on Veterans Affairs Office, at 785-296-3976.",
+          "claim_en": "VA's directory says the Kansas Commission on Veterans Affairs helps veterans file claims for education, medical or other benefits.",
+          "claim_es": "El directorio del VA indica que la Comisión de Asuntos de Veteranos de Kansas ayuda a los veteranos a presentar reclamos de educación, atención médica u otros beneficios.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "From helping Veterans to file claims for education, medical or other benefits",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Kansas Commission on Veterans Affairs Office as Kansas's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Kansas Commission on Veterans Affairs Office es la agencia estatal de veteranos de Kansas.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Kansas Commission on Veterans Affairs Office",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Kansas Commission on Veterans Affairs Office as 785-296-3976.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kansas, Kansas Commission on Veterans Affairs Office, atiende en el 785-296-3976.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -924,7 +1108,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Kentucky's state veterans agency, the Kentucky Department of Veterans Affairs, at 502-564-9203.",
+          "claim_en": "VA's directory lists the Kentucky Department of Veterans Affairs as Kentucky's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Kentucky Department of Veterans Affairs es la agencia estatal de veteranos de Kentucky.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Kentucky Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Kentucky Department of Veterans Affairs as 502-564-9203.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kentucky, Kentucky Department of Veterans Affairs, atiende en el 502-564-9203.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -988,7 +1180,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Louisiana's state veterans agency, the Louisiana Department of Veterans Affairs, at 225-219-5000.",
+          "claim_en": "VA's directory lists the Louisiana Department of Veterans Affairs as Louisiana's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Louisiana Department of Veterans Affairs es la agencia estatal de veteranos de Luisiana.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Louisiana Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Louisiana Department of Veterans Affairs as 225-219-5000.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Luisiana, Louisiana Department of Veterans Affairs, atiende en el 225-219-5000.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1036,7 +1236,23 @@
     "MA": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Massachusetts's state veterans agency, the Massachusetts Executive Office of Veterans Services, at 617-210-5480.",
+          "claim_en": "VA's directory says the Massachusetts Executive Office of Veterans Services provides programs, benefits and advocacy to Massachusetts veterans with federal and local partners.",
+          "claim_es": "El directorio del VA indica que la Oficina Ejecutiva de Servicios para Veteranos de Massachusetts ofrece programas, beneficios y apoyo a los veteranos del estado junto con aliados federales y locales.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "provide the highest quality programs, benefits, and advocacy to Massachusetts veterans alongside federal and local partners",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Massachusetts Executive Office of Veterans Services as Massachusetts's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Massachusetts Executive Office of Veterans Services es la agencia estatal de veteranos de Massachusetts.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Massachusetts Executive Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Massachusetts Executive Office of Veterans Services as 617-210-5480.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Massachusetts, Massachusetts Executive Office of Veterans Services, atiende en el 617-210-5480.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1100,7 +1316,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Maryland's state veterans agency, the Maryland Department of Veterans Affairs, at 410-260-3838.",
+          "claim_en": "VA's directory lists the Maryland Department of Veterans Affairs as Maryland's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Maryland Department of Veterans Affairs es la agencia estatal de veteranos de Maryland.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Maryland Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Maryland Department of Veterans Affairs as 410-260-3838.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Maryland, Maryland Department of Veterans Affairs, atiende en el 410-260-3838.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1156,7 +1380,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Maine's state veterans agency, the Maine Bureau of Veterans’ Services, at 207-287-7020.",
+          "claim_en": "VA's directory lists the Maine Bureau of Veterans’ Services as Maine's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Maine Bureau of Veterans’ Services es la agencia estatal de veteranos de Maine.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Maine Bureau of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Maine Bureau of Veterans’ Services as 207-287-7020.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Maine, Maine Bureau of Veterans’ Services, atiende en el 207-287-7020.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1212,7 +1444,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Michigan's state veterans agency, the Michigan Veterans Affairs Agency, at 800-642-4838.",
+          "claim_en": "VA's directory lists the Michigan Veterans Affairs Agency as Michigan's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Michigan Veterans Affairs Agency es la agencia estatal de veteranos de Michigan.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Michigan Veterans Affairs Agency",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Michigan Veterans Affairs Agency as 800-642-4838.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Michigan, Michigan Veterans Affairs Agency, atiende en el 800-642-4838.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1260,7 +1500,23 @@
     "MN": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Minnesota's state veterans agency, the Minnesota Department of Veterans Affairs, at 888-546-5838.",
+          "claim_en": "VA's directory says the Minnesota Department of Veterans Affairs assists Minnesota's 308,000 veterans and their dependents in getting VA benefits and services.",
+          "claim_es": "El directorio del VA indica que el Departamento de Asuntos de Veteranos de Minnesota ayuda a los 308,000 veteranos del estado y sus dependientes a obtener beneficios y servicios del VA.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "assists Minnesota’s 308,000 Veterans and their dependents to obtain the benefits and services provided by the United States Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Minnesota Department of Veterans Affairs as Minnesota's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Minnesota Department of Veterans Affairs es la agencia estatal de veteranos de Minnesota.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Minnesota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Minnesota Department of Veterans Affairs as 888-546-5838.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Minnesota, Minnesota Department of Veterans Affairs, atiende en el 888-546-5838.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1316,7 +1572,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Missouri's state veterans agency, the Missouri Veterans Commission, at 573-751-3779.",
+          "claim_en": "VA's directory lists the Missouri Veterans Commission as Missouri's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Missouri Veterans Commission es la agencia estatal de veteranos de Missouri.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Missouri Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Missouri Veterans Commission as 573-751-3779.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Missouri, Missouri Veterans Commission, atiende en el 573-751-3779.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1364,7 +1628,23 @@
     "MS": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Mississippi's state veterans agency, the Mississippi Department of Veterans Affairs, at 601-576-4850.",
+          "claim_en": "Mississippi's Veterans Benefits Specialists answer questions about a claim, benefits or other services at no cost to you.",
+          "claim_es": "Los especialistas en beneficios para veteranos de Misisipi responden preguntas sobre reclamos, beneficios u otros servicios sin costo para usted.",
+          "source_url": "https://www.msva.ms.gov/protect-benefits",
+          "source_name": "Mississippi Department of Veterans Affairs",
+          "quote": "Our Veterans Benefits Specialists are here to serve you and answer any questions you may have regarding a claim, benefits or other services at no cost to you.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Mississippi Department of Veterans Affairs as Mississippi's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Mississippi Department of Veterans Affairs es la agencia estatal de veteranos de Mississippi.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Mississippi Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Mississippi Department of Veterans Affairs as 601-576-4850.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Mississippi, Mississippi Department of Veterans Affairs, atiende en el 601-576-4850.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1412,7 +1692,15 @@
     "MT": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Montana's state veterans agency, the Montana Veterans Affairs Division, at 406-542-2501.",
+          "claim_en": "VA's directory lists the Montana Veterans Affairs Division as Montana's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Montana Veterans Affairs Division es la agencia estatal de veteranos de Montana.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Montana Veterans Affairs Division",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Montana Veterans Affairs Division as 406-542-2501.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Montana, Montana Veterans Affairs Division, atiende en el 406-542-2501.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1468,7 +1756,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists North Carolina's state veterans agency, the North Carolina Department of Military and Veterans Affairs, at 844-624-8387.",
+          "claim_en": "VA's directory lists the North Carolina Department of Military and Veterans Affairs as North Carolina's state veterans agency.",
+          "claim_es": "El directorio del VA indica que North Carolina Department of Military and Veterans Affairs es la agencia estatal de veteranos de Carolina del Norte.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "North Carolina Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the North Carolina Department of Military and Veterans Affairs as 844-624-8387.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Carolina del Norte, North Carolina Department of Military and Veterans Affairs, atiende en el 844-624-8387.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1532,7 +1828,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists North Dakota's state veterans agency, the North Dakota Department of Veterans Affairs, at 701-239-7165.",
+          "claim_en": "VA's directory lists the North Dakota Department of Veterans Affairs as North Dakota's state veterans agency.",
+          "claim_es": "El directorio del VA indica que North Dakota Department of Veterans Affairs es la agencia estatal de veteranos de Dakota del Norte.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "North Dakota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the North Dakota Department of Veterans Affairs as 701-239-7165.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Dakota del Norte, North Dakota Department of Veterans Affairs, atiende en el 701-239-7165.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1588,7 +1892,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Nebraska's state veterans agency, the Nebraska Department of Veterans’ Affairs, at 402-471-2458.",
+          "claim_en": "VA's directory lists the Nebraska Department of Veterans’ Affairs as Nebraska's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Nebraska Department of Veterans’ Affairs es la agencia estatal de veteranos de Nebraska.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Nebraska Department of Veterans’ Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Nebraska Department of Veterans’ Affairs as 402-471-2458.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nebraska, Nebraska Department of Veterans’ Affairs, atiende en el 402-471-2458.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1636,7 +1948,23 @@
     "NH": {
       "facts": [
         {
-          "claim_en": "VA's directory lists New Hampshire's state veterans agency, the New Hampshire Department of Military Affairs and Veterans Services, at 603-225-1200.",
+          "claim_en": "VA's directory says New Hampshire's Division of Veterans Services helps resident veterans and dependents secure state and federal benefits.",
+          "claim_es": "El directorio del VA indica que la División de Servicios para Veteranos de New Hampshire ayuda a veteranos residentes y sus dependientes a obtener beneficios estatales y federales.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "assists Veterans who are residents of New Hampshire or their dependents in securing all benefits or preferences to which they may be entitled under any state or federal laws or regulations",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the New Hampshire Department of Military Affairs and Veterans Services as New Hampshire's state veterans agency.",
+          "claim_es": "El directorio del VA indica que New Hampshire Department of Military Affairs and Veterans Services es la agencia estatal de veteranos de New Hampshire.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Hampshire Department of Military Affairs and Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the New Hampshire Department of Military Affairs and Veterans Services as 603-225-1200.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de New Hampshire, New Hampshire Department of Military Affairs and Veterans Services, atiende en el 603-225-1200.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1684,7 +2012,15 @@
     "NJ": {
       "facts": [
         {
-          "claim_en": "VA's directory lists New Jersey's state veterans agency, the New Jersey Department of Military and Veterans Affairs, at 609-530-6892.",
+          "claim_en": "VA's directory lists the New Jersey Department of Military and Veterans Affairs as New Jersey's state veterans agency.",
+          "claim_es": "El directorio del VA indica que New Jersey Department of Military and Veterans Affairs es la agencia estatal de veteranos de Nueva Jersey.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Jersey Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the New Jersey Department of Military and Veterans Affairs as 609-530-6892.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nueva Jersey, New Jersey Department of Military and Veterans Affairs, atiende en el 609-530-6892.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1732,7 +2068,39 @@
     "NM": {
       "facts": [
         {
-          "claim_en": "VA's directory lists New Mexico's state veterans agency, the New Mexico Department of Veterans Services, at 866-433-8387.",
+          "claim_en": "New Mexico Department of Veterans' Services service officers help veterans and eligible dependents file VA claims and get federal and state benefits.",
+          "claim_es": "Los oficiales de servicio del Departamento de Servicios para Veteranos de Nuevo México ayudan a veteranos y dependientes elegibles a presentar reclamos ante el VA y obtener beneficios federales y estatales.",
+          "source_url": "https://www.nmdvs.org/",
+          "source_name": "New Mexico Department of Veterans Services",
+          "quote": "Veterans service officers (VSOs) assist veterans and their eligible dependents with filing VA claims and obtaining federal and state benefits.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Mexico says to contact a Veteran Service Officer in your area to submit a claim.",
+          "claim_es": "Nuevo México indica que, para presentar un reclamo, se comunique con un oficial de servicio para veteranos de su zona.",
+          "source_url": "https://www.dvs.nm.gov/new-mexico-offices/",
+          "source_name": "New Mexico Department of Veterans Services",
+          "quote": "To submit a claim, contact a Veteran Service Officer in your area.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory says the New Mexico Department of Veterans' Services helps veterans and eligible family members understand and obtain federal and state benefits.",
+          "claim_es": "El directorio del VA indica que el Departamento de Servicios para Veteranos de Nuevo México ayuda a veteranos y familiares elegibles a entender y obtener beneficios federales y estatales.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "is here to help veterans and eligible family members understand, navigate, and obtain federal and state benefits",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the New Mexico Department of Veterans Services as New Mexico's state veterans agency.",
+          "claim_es": "El directorio del VA indica que New Mexico Department of Veterans Services es la agencia estatal de veteranos de Nuevo México.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Mexico Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the New Mexico Department of Veterans Services as 866-433-8387.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nuevo México, New Mexico Department of Veterans Services, atiende en el 866-433-8387.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1788,7 +2156,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Nevada's state veterans agency, the Nevada Department of Veterans Services, at 775-688-1653.",
+          "claim_en": "VA's directory lists the Nevada Department of Veterans Services as Nevada's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Nevada Department of Veterans Services es la agencia estatal de veteranos de Nevada.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Nevada Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Nevada Department of Veterans Services as 775-688-1653.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nevada, Nevada Department of Veterans Services, atiende en el 775-688-1653.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1836,7 +2212,23 @@
     "NY": {
       "facts": [
         {
-          "claim_en": "VA's directory lists New York's state veterans agency, the New York State Department of Veterans’ Services, at 518-474-6114.",
+          "claim_en": "VA's directory says New York's Department of Veterans' Services advocates for veterans and families so they receive the benefits granted by law.",
+          "claim_es": "El directorio del VA indica que el Departamento de Servicios para Veteranos de Nueva York aboga por los veteranos y sus familias para que reciban los beneficios que otorga la ley.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "advocates on behalf of New York’s Veterans and their families, as individuals and as a group, to ensure they receive benefits granted by law",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the New York State Department of Veterans’ Services as New York's state veterans agency.",
+          "claim_es": "El directorio del VA indica que New York State Department of Veterans’ Services es la agencia estatal de veteranos de Nueva York.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New York State Department of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the New York State Department of Veterans’ Services as 518-474-6114.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Nueva York, New York State Department of Veterans’ Services, atiende en el 518-474-6114.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1883,6 +2275,14 @@
     },
     "OH": {
       "facts": [
+        {
+          "claim_en": "The Ohio Department of Veterans Services site has a Find a CVSO tool for locating your County Veterans Service Office.",
+          "claim_es": "El sitio del Departamento de Servicios para Veteranos de Ohio tiene la herramienta Find a CVSO para ubicar la oficina de servicio para veteranos de su condado.",
+          "source_url": "https://dvs.ohio.gov/",
+          "source_name": "Ohio Department of Veterans Services",
+          "quote": "Find a CVSO",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the Ohio Department of Veterans Services as Ohio's state veterans agency.",
           "claim_es": "El directorio del VA indica que Ohio Department of Veterans Services es la agencia estatal de veteranos de Ohio.",
@@ -1940,7 +2340,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Oklahoma's state veterans agency, the Oklahoma Department of Veterans Affairs, at 405-523-4000.",
+          "claim_en": "VA's directory lists the Oklahoma Department of Veterans Affairs as Oklahoma's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Oklahoma Department of Veterans Affairs es la agencia estatal de veteranos de Oklahoma.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Oklahoma Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Oklahoma Department of Veterans Affairs as 405-523-4000.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Oklahoma, Oklahoma Department of Veterans Affairs, atiende en el 405-523-4000.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -1996,7 +2404,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Oregon's state veterans agency, the Oregon Department of Veterans Affairs, at 503-373-2085.",
+          "claim_en": "VA's directory lists the Oregon Department of Veterans Affairs as Oregon's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Oregon Department of Veterans Affairs es la agencia estatal de veteranos de Oregon.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Oregon Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Oregon Department of Veterans Affairs as 503-373-2085.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Oregon, Oregon Department of Veterans Affairs, atiende en el 503-373-2085.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2043,6 +2459,14 @@
     },
     "PA": {
       "facts": [
+        {
+          "claim_en": "VA's directory says Pennsylvania's Department of Military and Veterans Affairs serves the commonwealth's veterans and their families, alongside overseeing the Pennsylvania National Guard.",
+          "claim_es": "El directorio del VA indica que el Departamento de Asuntos Militares y de Veteranos de Pensilvania atiende a los veteranos del estado y sus familias, además de supervisar la Guardia Nacional.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "to provide quality service to the commonwealth’s veterans and their families",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the Pennsylvania Department of Military and Veterans Affairs as Pennsylvania's state veterans agency.",
           "claim_es": "El directorio del VA indica que Pennsylvania Department of Military and Veterans Affairs es la agencia estatal de veteranos de Pensilvania.",
@@ -2092,7 +2516,15 @@
     "RI": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Rhode Island's state veterans agency, the Rhode Island Office of Veterans Services, at 401-921-2119.",
+          "claim_en": "VA's directory lists the Rhode Island Office of Veterans Services as Rhode Island's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Rhode Island Office of Veterans Services es la agencia estatal de veteranos de Rhode Island.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Rhode Island Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Rhode Island Office of Veterans Services as 401-921-2119.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Rhode Island, Rhode Island Office of Veterans Services, atiende en el 401-921-2119.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2156,7 +2588,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists South Carolina's state veterans agency, the South Carolina Department of Veterans’ Affairs, at 803-734-0200.",
+          "claim_en": "VA's directory lists the South Carolina Department of Veterans’ Affairs as South Carolina's state veterans agency.",
+          "claim_es": "El directorio del VA indica que South Carolina Department of Veterans’ Affairs es la agencia estatal de veteranos de Carolina del Sur.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "South Carolina Department of Veterans’ Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the South Carolina Department of Veterans’ Affairs as 803-734-0200.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Carolina del Sur, South Carolina Department of Veterans’ Affairs, atiende en el 803-734-0200.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2212,7 +2652,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists South Dakota's state veterans agency, the South Dakota Department of Veterans Affairs, at 605-773-3269.",
+          "claim_en": "VA's directory lists the South Dakota Department of Veterans Affairs as South Dakota's state veterans agency.",
+          "claim_es": "El directorio del VA indica que South Dakota Department of Veterans Affairs es la agencia estatal de veteranos de Dakota del Sur.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "South Dakota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the South Dakota Department of Veterans Affairs as 605-773-3269.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Dakota del Sur, South Dakota Department of Veterans Affairs, atiende en el 605-773-3269.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2284,7 +2732,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Tennessee's state veterans agency, the Tennessee Department of Veterans Services, at 615-741-2345.",
+          "claim_en": "VA's directory lists the Tennessee Department of Veterans Services as Tennessee's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Tennessee Department of Veterans Services es la agencia estatal de veteranos de Tennessee.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Tennessee Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Tennessee Department of Veterans Services as 615-741-2345.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Tennessee, Tennessee Department of Veterans Services, atiende en el 615-741-2345.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2332,7 +2788,23 @@
     "TX": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Texas's state veterans agency, the Texas Veterans Commission, at 512-463-6564.",
+          "claim_en": "VA's directory lists a Claims Department among the Texas Veterans Commission's nine program areas.",
+          "claim_es": "El directorio del VA incluye un Departamento de Reclamos entre las nueve áreas de programas de la Comisión de Veteranos de Texas.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "The Texas Veterans Commission will provide quality service through nine program areas: Claims Department",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Texas Veterans Commission as Texas's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Texas Veterans Commission es la agencia estatal de veteranos de Texas.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Texas Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Texas Veterans Commission as 512-463-6564.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Texas, Texas Veterans Commission, atiende en el 512-463-6564.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2396,7 +2868,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Utah's state veterans agency, the Utah Department of Veterans and Military Affairs, at 801-326-2372.",
+          "claim_en": "VA's directory lists the Utah Department of Veterans and Military Affairs as Utah's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Utah Department of Veterans and Military Affairs es la agencia estatal de veteranos de Utah.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Utah Department of Veterans and Military Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Utah Department of Veterans and Military Affairs as 801-326-2372.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Utah, Utah Department of Veterans and Military Affairs, atiende en el 801-326-2372.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2444,7 +2924,23 @@
     "VA": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Virginia's state veterans agency, the Virginia Department of Veterans Services, at 804-786-0286.",
+          "claim_en": "VA's directory says Benefits is one of the Virginia Department of Veterans Services' six service sections.",
+          "claim_es": "El directorio del VA indica que Beneficios es una de las seis secciones de servicio del Departamento de Servicios para Veteranos de Virginia.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "is organized into six service delivery sections: benefits;",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Virginia Department of Veterans Services as Virginia's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Virginia Department of Veterans Services es la agencia estatal de veteranos de Virginia.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Virginia Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Virginia Department of Veterans Services as 804-786-0286.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Virginia, Virginia Department of Veterans Services, atiende en el 804-786-0286.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2500,7 +2996,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Vermont's state veterans agency, the Vermont Office of Veterans Affairs, at 802-828-3379.",
+          "claim_en": "VA's directory lists the Vermont Office of Veterans Affairs as Vermont's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Vermont Office of Veterans Affairs es la agencia estatal de veteranos de Vermont.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Vermont Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Vermont Office of Veterans Affairs as 802-828-3379.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Vermont, Vermont Office of Veterans Affairs, atiende en el 802-828-3379.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2556,7 +3060,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Washington's state veterans agency, the Washington Department of Veterans Affairs, at 800-562-2308.",
+          "claim_en": "VA's directory lists the Washington Department of Veterans Affairs as Washington's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Washington Department of Veterans Affairs es la agencia estatal de veteranos de Washington.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Washington Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Washington Department of Veterans Affairs as 800-562-2308.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Washington, Washington Department of Veterans Affairs, atiende en el 800-562-2308.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2604,7 +3116,31 @@
     "WI": {
       "facts": [
         {
-          "claim_en": "VA's directory lists Wisconsin's state veterans agency, the Wisconsin Department of Veterans Affairs, at 800-947-8387.",
+          "claim_en": "In Wisconsin, your local County or Tribal Veterans Service Officer (CVSO or TVSO) can help you apply for VA benefits.",
+          "claim_es": "En Wisconsin, el oficial de servicio para veteranos de su condado o tribu (CVSO o TVSO) puede ayudarle a solicitar beneficios del VA.",
+          "source_url": "https://dva.wi.gov/resources/find-my-cvso-tvso/",
+          "source_name": "Wisconsin Department of Veterans Affairs",
+          "quote": "Your local CVSO or TVSO can help by: Applying for VA Benefits",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory says the Wisconsin Department of Veterans Affairs provides grants and services to eligible Wisconsin veterans and their families.",
+          "claim_es": "El directorio del VA indica que el Departamento de Asuntos de Veteranos de Wisconsin ofrece subvenciones y servicios a veteranos elegibles de Wisconsin y sus familias.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "the WDVA provides grants and a variety of services to eligible Wisconsin veterans and their families",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the Wisconsin Department of Veterans Affairs as Wisconsin's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Wisconsin Department of Veterans Affairs es la agencia estatal de veteranos de Wisconsin.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Wisconsin Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Wisconsin Department of Veterans Affairs as 800-947-8387.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Wisconsin, Wisconsin Department of Veterans Affairs, atiende en el 800-947-8387.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2660,7 +3196,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists West Virginia's state veterans agency, the West Virginia Department of Veterans Assistance, at 304-558-3661.",
+          "claim_en": "VA's directory lists the West Virginia Department of Veterans Assistance as West Virginia's state veterans agency.",
+          "claim_es": "El directorio del VA indica que West Virginia Department of Veterans Assistance es la agencia estatal de veteranos de Virginia Occidental.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "West Virginia Department of Veterans Assistance",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the West Virginia Department of Veterans Assistance as 304-558-3661.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Virginia Occidental, West Virginia Department of Veterans Assistance, atiende en el 304-558-3661.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
@@ -2716,7 +3260,15 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "VA's directory lists Wyoming's state veterans agency, the Wyoming Veterans Commission, at 307-777-8152.",
+          "claim_en": "VA's directory lists the Wyoming Veterans Commission as Wyoming's state veterans agency.",
+          "claim_es": "El directorio del VA indica que Wyoming Veterans Commission es la agencia estatal de veteranos de Wyoming.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Wyoming Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "VA's directory lists the phone number of the Wyoming Veterans Commission as 307-777-8152.",
           "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Wyoming, Wyoming Veterans Commission, atiende en el 307-777-8152.",
           "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
           "source_name": "VA.gov Discover: State Veterans Affairs Offices",
