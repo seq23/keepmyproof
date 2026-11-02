@@ -1213,18 +1213,18 @@
     }
   },
   "skips": {
-    "DE": "no official source found",
-    "GA": "no official source found",
-    "IL": "no official source found",
-    "IN": "no official source found",
-    "KS": "no official source found",
-    "KY": "no official source found",
-    "LA": "no official source found",
-    "MT": "no official source found",
-    "NH": "no official source found",
-    "NM": "no official source found",
-    "NY": "no official source found",
-    "PA": "no official source found",
-    "SC": "no official source found"
+    "DE": "official county pages blocked automated fetch; no verifiable official quote",
+    "GA": "Georgia has no small-estate affidavit; no official page fetched with quotable facts",
+    "IL": "only 2 quote-verified facts from official sources",
+    "IN": "official Indiana statute and court pages did not render for verification",
+    "KS": "official Kansas statute page did not render text for verification",
+    "KY": "official Kentucky form/statute did not yield quotable small-estate facts",
+    "LA": "official Louisiana statute pages did not yield 3 quotable facts",
+    "MT": "no official Montana small-estate page with quotable facts found",
+    "NH": "no official New Hampshire page with quotable small-estate facts found",
+    "NM": "official New Mexico statute site is script-rendered; no verifiable quote",
+    "NY": "official NY court pages script-rendered; no verifiable quote",
+    "PA": "only 1 quote-verified fact from official sources",
+    "SC": "no official South Carolina small-estate page with quotable facts found"
   }
 }
