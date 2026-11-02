@@ -1,0 +1,2477 @@
+{
+  "schema": "search-loop-targets-v1",
+  "site": "keepmyproof.com",
+  "week": "2026-W45",
+  "generated_at": "2026-11-02T16:37:28.891Z",
+  "sources": {
+    "search_console": "not read: GSC_SERVICE_ACCOUNT_JSON is not set",
+    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "suggestqueries.google.com": "ok",
+    "api.bing.com": "ok",
+    "relevance_screen": "not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+  },
+  "targets": [
+    {
+      "query": "how to document workplace harassment",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "how to write a workplace harassment statement",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "how can you prove a hostile work environment",
+      "variants": [
+        "how to prove a hostile work environment",
+        "how to prove hostile work environment"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove a hostile work environment claim",
+      "variants": [
+        "how to prove hostile work environment claim"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "what is considered a hostile work environment",
+      "variants": [
+        "what is considered hostile work environment"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "how much to save before quitting your job",
+      "variants": [
+        "how much should i save before quitting my job"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 45,
+      "kind": "new"
+    },
+    {
+      "query": "va disability claim checklist",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 40,
+      "kind": "new"
+    },
+    {
+      "query": "va disability claim list",
+      "variants": [
+        "claims for va disability list",
+        "va disability list of claims",
+        "va claim disability list"
+      ],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 40,
+      "kind": "new"
+    },
+    {
+      "query": "va disability what to claim",
+      "variants": [
+        "va disability claim guide",
+        "how to do a va disability claim",
+        "what should you claim for va disability",
+        "va disability claim examples",
+        "when should i start my va disability claim",
+        "claims for va disability",
+        "va disability what can be claimed"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 40,
+      "kind": "new"
+    },
+    {
+      "query": "what documentation is needed for a divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what are discovery documents in a divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what to do before asking for a divorce",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare divorce documents yourself",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "can you get a consent order before divorce",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "does it matter who asks for a divorce first",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in texas",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in canada",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in california",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in florida",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in illinois",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in michigan",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in missouri",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in virginia",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in massachusetts",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce in georgia",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting journal",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to document missed visitation",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what happens if a parent misses visitation",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in divorce case",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in court",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in south carolina",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in virginia",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in louisiana",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in the military",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in nc",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in malaysia",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in the philippines",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery in court in india",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to document workplace bullying",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to document workplace abuse",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to document workplace violence",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to properly document workplace harassment",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to write a workplace harassment complaint",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to write a workplace harassment complaint letter",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to document sexual harassment at work",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how do you prove hostile workplace",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how hard is it to prove hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what evidence is needed to prove a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what is an example of hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what is an example of hostile environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "does hostile work environment require discrimination",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "is a hostile work environment illegal",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to get unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how much can you get for unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "how long does it take to get unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what to do before quitting a job you hate",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what to know before quitting your job",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what do i need to file a va disability claim",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "what documents do i need to file a va disability claim",
+      "variants": [],
+      "signals": {
+        "words": 11,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "can i add to my va disability claim",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "does the va investigate disability claims",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 30,
+      "kind": "new"
+    },
+    {
+      "query": "documents to gather before divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what documents to present for a divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what documents do i need for divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to get divorce documents",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what paperwork is needed for a divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what divorce papers do i need",
+      "variants": [
+        "i need divorce papers"
+      ],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what to know before filing for divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to get divorce paperwork",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to get divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare divorce papers yourself",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to write divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what to do when served divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what is included in divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what to know before a divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to handle your own divorce paperwork",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare divorce proof",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how do divorce papers work",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to serve divorce documents",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "are you required to sign divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "do i have to sign divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce court",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce men",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce mediation",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce as a woman",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce as a man",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce hearing",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce pretrial",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce trial",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce deposition",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prepare for divorce 6 12 month plan",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "can text messages be subpoenaed for divorce",
+      "variants": [
+        "subpoena text messages divorce"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save my text messages",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save a text message conversation",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save text messages to file",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to permanently save text messages",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "are text messages admissible in divorce court",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to download and save text messages",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "can a divorce lawyer subpoena text messages",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save a voice text message",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save an entire text conversation",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to save messages",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to document text messages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to receive your spouse text messages",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "can you divert text messages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting journal template",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting journal for kids",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting journal app",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting journal template free",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting diary app",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "high conflict co parenting journal",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "home sweet home co parenting journal",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting with different rules",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what is co parenting",
+      "variants": [
+        "definition of co parenting",
+        "co parenting definition and examples",
+        "meaning of co parenting",
+        "co parenting definition and tips",
+        "tips on co parenting"
+      ],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "why is co parenting important for children",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "does co parenting work",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "when co parenting is not working",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "is it co parenting or coparenting",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what is a co parenting family",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file court papers for visitation",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to get court ordered visitation",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to fill out child visitation papers",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what if a parent refuses visitation",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove adultery for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to not commit adultery",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file workplace harassment",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to report harassment in the workplace",
+      "variants": [
+        "reporting harassment in the workplace"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file harassment at work",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to handle workplace harassment",
+      "variants": [
+        "how to deal with workplace harassment"
+      ],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove harassment in the workplace",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to identify harassment in the workplace",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to report harassment at work",
+      "variants": [
+        "reporting harassment at work"
+      ],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove harassment at work",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "hostile work environment evidence",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to identify a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to determine a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to investigate a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to document a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what determines a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what hostile work environment means",
+      "variants": [
+        "hostile work environment means"
+      ],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what is a hostile environment workplace",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what makes a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "laws against hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what is a hostile work environment legally",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "when does a hostile work environment exist",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to address hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file a hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "proof of payment of wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "proof of online payment of wages",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "proof of lost wages",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to claim unpaid wages",
+      "variants": [
+        "claiming for unpaid wages",
+        "claim for unpaid wages"
+      ],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to report unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file for unpaid wages",
+      "variants": [
+        "file for unpaid wages"
+      ],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to claim unpaid wages from employer",
+      "variants": [
+        "claiming unpaid wages from employer"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to collect unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to file unpaid wages claim",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to recover unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to report wages not paid",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what works as proof of income",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what counts as unpaid work",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "where to report unpaid wages",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to prove loss of wages",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "how to recover unpaid wages uk",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what to do before quitting your job",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "what to do before leaving a job",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "va disability benefits percentage checklist",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "va disability claimable conditions",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "va disability claim rating",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 25,
+      "kind": "new"
+    },
+    {
+      "query": "documents to gather for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents needed to file for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents needed for a divorce",
+      "variants": [
+        "what documents needed for divorce"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents required for divorce",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "things to know before filing for divorce",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "list of documents needed for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents for filing for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "paperwork needed to file for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "various types of documents for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents required for divorce application",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "legal documents for divorce",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "papers to file for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "court documents for divorce",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "information needed to file for divorce",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "documents needed for divorce attorney",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "need divorce papers to print out",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "preparing divorce papers yourself",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "financial documents needed for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "free printable divorce documents",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "whats included in divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "help writing divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "need help filling out divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "divorce on paper for financial reasons",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "texting app for divorced parents",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "journaling prompts for parenting",
+      "variants": [
+        "journal prompts for parenting",
+        "journal prompts for parents"
+      ],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "parenting science and practice journal",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "books on co parenting",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting tips pdf",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "parent and child journal",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    },
+    {
+      "query": "co parenting resources pdf",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "score": 20,
+      "kind": "new"
+    }
+  ],
+  "strengthen": []
+}

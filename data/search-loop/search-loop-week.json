@@ -1,0 +1,22 @@
+{
+  "schema": "search-loop-week-v1",
+  "week": "2026-W45",
+  "site": "keepmyproof.com",
+  "generated_at": "2026-11-02T16:37:28.891Z",
+  "state": "running",
+  "published": 0,
+  "indexed": 0,
+  "pace": 10,
+  "ai_visitors": "not read: no day this week was collected",
+  "ai_bot_hits": "not read: no day this week was collected",
+  "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
+  "wins": 0,
+  "undone": 0,
+  "merged": 0,
+  "notes": [
+    "FIND search_console: not read: GSC_SERVICE_ACCOUNT_JSON is not set",
+    "FIND bing_webmaster: not read: BING_WEBMASTER_API_KEY is not set",
+    "FIND relevance_screen: not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+  ],
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41483271202"
+}

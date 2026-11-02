@@ -1,0 +1,39 @@
+{
+  "schema": "search-loop-discovery-v1",
+  "site": "keepmyproof.com",
+  "week": "2026-W45",
+  "generated_at": "2026-11-02T16:37:28.891Z",
+  "paid_calls": 0,
+  "cost_usd": 0,
+  "hosts": {
+    "suggestqueries.google.com": {
+      "calls": 40,
+      "ok": 40,
+      "failed": 0,
+      "cost_usd": 0
+    },
+    "api.bing.com": {
+      "calls": 40,
+      "ok": 40,
+      "failed": 0,
+      "cost_usd": 0
+    }
+  },
+  "sources": {
+    "search_console": "not read: GSC_SERVICE_ACCOUNT_JSON is not set",
+    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "suggestqueries.google.com": "ok",
+    "api.bing.com": "ok",
+    "relevance_screen": "not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+  },
+  "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)",
+  "notes": [
+    "autocomplete stopped at its budget of 80 calls"
+  ],
+  "counts": {
+    "candidates": 274,
+    "targets": 274,
+    "strengthen_candidates": 0,
+    "dropped_shared_audience": 0
+  }
+}
