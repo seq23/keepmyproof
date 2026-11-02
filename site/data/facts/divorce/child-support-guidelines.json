@@ -1,0 +1,808 @@
+{
+  "folder": "divorce",
+  "subtopic": "child-support-guidelines",
+  "title_en": "How child support works in {state}",
+  "title_es": "Cómo funciona la manutención de los hijos en {state_es}",
+  "search_intent_en": [
+    "{state} child support guidelines",
+    "how is child support calculated in {state}",
+    "when does child support end in {state}"
+  ],
+  "states": {
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The Arkansas courts' calculator estimates support and generates the Child Support Worksheet.",
+          "claim_es": "La calculadora de los tribunales de Arkansas estima la manutención y genera la Hoja de Cálculo de Manutención.",
+          "source_url": "https://arcourts.gov/child-support-calculator/ChildSupp.html",
+          "source_name": "Arkansas Judiciary: Child Support Calculator",
+          "quote": "The calculator will estimate the amount of child support that may be ordered in your case and generate the Child Support Worksheet",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The calculator gives only an estimate, not a guarantee of the amount ordered.",
+          "claim_es": "La calculadora solo da un estimado, no una garantía del monto que se ordenará.",
+          "source_url": "https://arcourts.gov/child-support-calculator/ChildSupp.html",
+          "source_name": "Arkansas Judiciary: Child Support Calculator",
+          "quote": "This calculator only provides an estimate and is not a guarantee of the amount of child support that will be ordered.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Either parent can get a support order reviewed at least every three years, or when circumstances change substantially.",
+          "claim_es": "Cualquiera de los padres puede pedir que se revise la orden al menos cada tres años, o cuando las circunstancias cambien de forma considerable.",
+          "source_url": "https://www.dfa.arkansas.gov/office/child-support-enforcement/child-support-faqs/review-of-order-amounts/",
+          "source_name": "Arkansas Office of Child Support Enforcement",
+          "quote": "Either parent can get help to have a child support order reviewed at least every three years, or whenever there is a substantial change in circumstances",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas Judiciary: Child Support Calculator",
+          "label_es": "Arkansas Judiciary: Child Support Calculator",
+          "url": "https://arcourts.gov/child-support-calculator/ChildSupp.html"
+        },
+        {
+          "label_en": "Arkansas Office of Child Support Enforcement",
+          "label_es": "Arkansas Office of Child Support Enforcement",
+          "url": "https://www.dfa.arkansas.gov/office/child-support-enforcement/child-support-faqs/review-of-order-amounts/"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "By law, both parents must support their children in California.",
+          "claim_es": "Por ley, ambos padres deben mantener a sus hijos en California.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-support",
+          "source_name": "California Courts Self-Help Guide: Child Support",
+          "quote": "By law, both parents must support their children",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "California child support generally ends when the child turns 18 and graduates high school, or turns 19, whichever is first.",
+          "claim_es": "En California, la manutención generalmente termina cuando el hijo cumple 18 años y se gradúa de la secundaria, o cumple 19, lo que ocurra primero.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-support",
+          "source_name": "California Courts Self-Help Guide: Child Support",
+          "quote": "Child support generally ends when the child turns 18 and graduates from high school, or turns 19, whichever happens first.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A free online calculator estimates how much support a parent pays.",
+          "claim_es": "Una calculadora en línea gratuita estima cuánto debe pagar un padre.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-support",
+          "source_name": "California Courts Self-Help Guide: Child Support",
+          "quote": "There is a free online child support calculator that figures out how much support a parent needs to pay",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Local Child Support Agency (LCSA) can help you ask for a child support order.",
+          "claim_es": "La Agencia Local de Manutención de Menores (LCSA) puede ayudarle a pedir una orden de manutención.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-support",
+          "source_name": "California Courts Self-Help Guide: Child Support",
+          "quote": "you can also ask the Local Child Support Agency (LCSA) to help you ask for a child support order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Courts Self-Help Guide: Child Support",
+          "label_es": "California Courts Self-Help Guide: Child Support",
+          "url": "https://selfhelp.courts.ca.gov/child-support"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "For Colorado orders, child support usually ends when the child turns 19.",
+          "claim_es": "En las órdenes de Colorado, la manutención suele terminar cuando el hijo cumple 19 años.",
+          "source_url": "https://childsupport.colorado.gov/about/faq",
+          "source_name": "Colorado Child Support Services FAQ",
+          "quote": "emancipation occurs and child support ends when the child reaches 19 years of age in most cases.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a child over 19 is still in high school, support continues until the month after graduation, but not past 21.",
+          "claim_es": "Si un hijo mayor de 19 sigue en la secundaria, la manutención sigue hasta el mes después de graduarse, pero no después de los 21.",
+          "source_url": "https://childsupport.colorado.gov/about/faq",
+          "source_name": "Colorado Child Support Services FAQ",
+          "quote": "support continues until the end of the month after graduation but not beyond the age of 21.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Support can continue past 19 by written agreement, or for a disabled child if the court orders it.",
+          "claim_es": "La manutención puede seguir después de los 19 por acuerdo escrito, o para un hijo con discapacidad si el tribunal lo ordena.",
+          "source_url": "https://childsupport.colorado.gov/about/faq",
+          "source_name": "Colorado Child Support Services FAQ",
+          "quote": "Child support can also continue past the age of 19 if both the paying parent and person receiving payments agree in writing or the child is mentally or physically disabled and continued support is ordered by the court.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Child Support Services FAQ",
+          "label_es": "Colorado Child Support Services FAQ",
+          "url": "https://childsupport.colorado.gov/about/faq"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "Connecticut's child support guidelines are based on the Income Shares Model.",
+          "claim_es": "Las pautas de manutención de Connecticut se basan en el modelo de ingresos compartidos.",
+          "source_url": "https://www.jud.ct.gov/publications/childsupport/csguidelines.pdf",
+          "source_name": "Connecticut Child Support and Arrearage Guidelines",
+          "quote": "The Connecticut Child Support Guidelines are based on the Income Shares Model.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Connecticut educational support order does not cover graduate or postgraduate education beyond a bachelor's degree.",
+          "claim_es": "En Connecticut, una orden de manutención educativa no cubre estudios de posgrado más allá de la licenciatura.",
+          "source_url": "https://www.cga.ct.gov/2023/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes, Chapter 815j",
+          "quote": "An educational support order under this section does not include support for graduate or postgraduate education beyond a bachelor's degree.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Agreements to support a child past 18 made on or after July 1, 2001 can be modified like other order terms.",
+          "claim_es": "Los acuerdos para mantener a un hijo después de los 18 hechos desde el 1 de julio de 2001 se pueden modificar como otras partes de la orden.",
+          "source_url": "https://www.cga.ct.gov/2023/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes, Chapter 815j",
+          "quote": "Agreements providing for the care, education, maintenance or support of a child beyond the age of eighteen entered into on or after July 1, 2001, shall be modifiable",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut Child Support and Arrearage Guidelines",
+          "label_es": "Connecticut Child Support and Arrearage Guidelines",
+          "url": "https://www.jud.ct.gov/publications/childsupport/csguidelines.pdf"
+        },
+        {
+          "label_en": "Connecticut General Statutes, Chapter 815j",
+          "label_es": "Connecticut General Statutes, Chapter 815j",
+          "url": "https://www.cga.ct.gov/2023/pub/chap_815j.htm"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Delaware support is set using the Delaware Child Support Formula, also called the Melson Formula.",
+          "claim_es": "En Delaware la manutención se fija con la Fórmula de Manutención de Delaware, también llamada Fórmula Melson.",
+          "source_url": "https://courts.delaware.gov/family/support/",
+          "source_name": "Delaware Family Court: Child Support",
+          "quote": "The amount of child support is set using the Delaware Child Support Formula, sometimes called the \"Melson Formula\".",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Both parents must support a child until 18, or until high school graduation or age 19, whichever comes first.",
+          "claim_es": "Ambos padres deben mantener al hijo hasta los 18 años, o hasta graduarse de la secundaria o cumplir 19, lo que ocurra primero.",
+          "source_url": "https://courts.delaware.gov/family/support/",
+          "source_name": "Delaware Family Court: Child Support",
+          "quote": "both parents have a duty to support their child until the child is 18 years of age, or, if the child is still in high school, until the child graduates or turns 19 years of age, whichever comes first.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The first time parents come to Family Court for a support order, they attend a mediation conference.",
+          "claim_es": "La primera vez que los padres van al Tribunal de Familia por una orden de manutención, asisten a una conferencia de mediación.",
+          "source_url": "https://courts.delaware.gov/family/support/",
+          "source_name": "Delaware Family Court: Child Support",
+          "quote": "the first time that individuals come to Family Court for a child support order, they must attend a mediation conference",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Wage attachment is the most common way support is enforced.",
+          "claim_es": "El embargo de salario es la forma más común de hacer cumplir la manutención.",
+          "source_url": "https://courts.delaware.gov/family/support/",
+          "source_name": "Delaware Family Court: Child Support",
+          "quote": "Attachment of wages is the most common remedy and will occur upon identification of an employer.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Family Court: Child Support",
+          "label_es": "Delaware Family Court: Child Support",
+          "url": "https://courts.delaware.gov/family/support/"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "Every 3 years, any parent can ask DC's Child Support Services Division for a review and adjustment conference.",
+          "claim_es": "Cada 3 años, cualquier padre puede pedir a la División de Servicios de Manutención de DC una conferencia de revisión y ajuste.",
+          "source_url": "https://oag.dc.gov/child-support-services/services/modifying-child-support-order",
+          "source_name": "DC Office of the Attorney General: Child Support Services",
+          "quote": "Every 3 years, any parent can ask the Child Support Services Division (CSSD) to schedule a review and adjustment conference.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the new amount differs from the old one by 15% or more, a motion to modify can be filed.",
+          "claim_es": "Si el nuevo monto difiere del anterior en un 15% o más, se puede presentar una moción para modificarlo.",
+          "source_url": "https://oag.dc.gov/child-support-services/services/modifying-child-support-order",
+          "source_name": "DC Office of the Attorney General: Child Support Services",
+          "quote": "If this new amount is different from the old amount by 15% or more, a motion to modify the order can be filed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The DC Child Support Guidelines set the ongoing amount paid by the parent ordered to pay.",
+          "claim_es": "Las Pautas de Manutención de DC fijan el monto continuo que paga el padre obligado.",
+          "source_url": "https://oag.dc.gov/child-support-services/services/modifying-child-support-order",
+          "source_name": "DC Office of the Attorney General: Child Support Services",
+          "quote": "The DC Child Support Guidelines determine the ongoing support amount to be paid by the parent ordered to pay support.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "DC Office of the Attorney General: Child Support Services",
+          "label_es": "DC Office of the Attorney General: Child Support Services",
+          "url": "https://oag.dc.gov/child-support-services/services/modifying-child-support-order"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "Hawaii calculates child support using the Child Support Guidelines.",
+          "claim_es": "Hawái calcula la manutención con las Pautas de Manutención de Menores.",
+          "source_url": "https://ag.hawaii.gov/csea/order-processing/",
+          "source_name": "Hawaii Child Support Enforcement Agency",
+          "quote": "The amount of child support payable by a parent is calculated using the Child Support Guidelines .",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The guidelines consider each parent's capacity to contribute income to support the children.",
+          "claim_es": "Las pautas consideran la capacidad de cada padre de aportar ingresos para mantener a los hijos.",
+          "source_url": "https://ag.hawaii.gov/csea/order-processing/",
+          "source_name": "Hawaii Child Support Enforcement Agency",
+          "quote": "The Guidelines take into account each parent’s capacity to contribute income toward the support of their children.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The calculation starts with both parents' gross monthly income and the children's minimum support needs.",
+          "claim_es": "El cálculo empieza con el ingreso mensual bruto de ambos padres y las necesidades mínimas de los hijos.",
+          "source_url": "https://ag.hawaii.gov/csea/order-processing/",
+          "source_name": "Hawaii Child Support Enforcement Agency",
+          "quote": "The calculations begin with a determination of both parents’ gross monthly income and the minimum support needs of the children.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii Child Support Enforcement Agency",
+          "label_es": "Hawaii Child Support Enforcement Agency",
+          "url": "https://ag.hawaii.gov/csea/order-processing/"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "Illinois sets child support with the income shares method, based on both parents' net income and the number of children.",
+          "claim_es": "Illinois fija la manutención con el método de ingresos compartidos, según el ingreso neto de ambos padres y el número de hijos.",
+          "source_url": "https://hfs.illinois.gov/childsupport/formsbrochures/hfs1759.html",
+          "source_name": "Illinois Department of Healthcare and Family Services: Child Support",
+          "quote": "the method used to set the amount of child support is income shares based on both parents' net income and the number of children",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Support is ordered until the youngest child reaches the state's legal age of emancipation.",
+          "claim_es": "La manutención se ordena hasta que el hijo menor llegue a la edad legal de emancipación del estado.",
+          "source_url": "https://hfs.illinois.gov/childsupport/formsbrochures/hfs1759.html",
+          "source_name": "Illinois Department of Healthcare and Family Services: Child Support",
+          "quote": "Child support is ordered until the youngest (or only) child reaches the state’s legal age of emancipation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Illinois child support program services are free.",
+          "claim_es": "Los servicios del programa de manutención de Illinois son gratuitos.",
+          "source_url": "https://hfs.illinois.gov/childsupport/formsbrochures/hfs1759.html",
+          "source_name": "Illinois Department of Healthcare and Family Services: Child Support",
+          "quote": "Illinois Child support program services are free",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois Department of Healthcare and Family Services: Child Support",
+          "label_es": "Illinois Department of Healthcare and Family Services: Child Support",
+          "url": "https://hfs.illinois.gov/childsupport/formsbrochures/hfs1759.html"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "If one of two or more children on an order is emancipated, support is NOT automatically reduced.",
+          "claim_es": "Si uno de dos o más hijos en una orden se emancipa, la manutención NO se reduce automáticamente.",
+          "source_url": "https://www.in.gov/dcs/child-support/custodial-party-information/general-information",
+          "source_name": "Indiana Department of Child Services: Child Support",
+          "quote": "If 2 or more children are covered by a child support order and one child is emancipated, the amount of the child support order is NOT automatically reduced.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "All Indiana child support is governed by the Child Support Rules and Guidelines issued by the Indiana Supreme Court.",
+          "claim_es": "Toda la manutención en Indiana se rige por las Reglas y Pautas de Manutención de la Corte Suprema de Indiana.",
+          "source_url": "https://www.in.gov/dcs/child-support/custodial-party-information/general-information",
+          "source_name": "Indiana Department of Child Services: Child Support",
+          "quote": "All child support obligations in Indiana are governed by the Indiana Child Support Rules and Guidelines issued by the Indiana Supreme Court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Generally, an Indiana child is emancipated at 19 and the obligation to pay current support ends.",
+          "claim_es": "Por lo general, en Indiana el hijo se emancipa a los 19 años y termina la obligación de pagar la manutención corriente.",
+          "source_url": "https://www.in.gov/dcs/child-support/custodial-party-information/general-information",
+          "source_name": "Indiana Department of Child Services: Child Support",
+          "quote": "Generally, when a child turns 19 years old, the child is emancipated by operation of law",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Indiana Department of Child Services: Child Support",
+          "label_es": "Indiana Department of Child Services: Child Support",
+          "url": "https://www.in.gov/dcs/child-support/custodial-party-information/general-information"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas Child Support Services calculates support using the Kansas Child Support Guidelines set by the Kansas Supreme Court.",
+          "claim_es": "Los Servicios de Manutención de Kansas calculan la manutención con las Pautas de Manutención de la Corte Suprema de Kansas.",
+          "source_url": "https://www.dcf.ks.gov/services/CSS/Pages/Information-for-Custodial-Parents.aspx",
+          "source_name": "Kansas DCF Child Support Services",
+          "quote": "CSS uses the Kansas Child Support Guidelines established by the Kansas Supreme Court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Once an order is in place, child support is owed until it is paid in full.",
+          "claim_es": "Una vez que hay una orden, la manutención se debe hasta que se pague por completo.",
+          "source_url": "https://www.dcf.ks.gov/services/CSS/Pages/Information-for-Custodial-Parents.aspx",
+          "source_name": "Kansas DCF Child Support Services",
+          "quote": "Once a child support order is in place, child support continues to be owed until it is paid in full.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Signing the enrollment form gives the Secretary of DCF the right to collect and manage past, current and future support.",
+          "claim_es": "Firmar el formulario de inscripción da al Secretario del DCF el derecho a cobrar y administrar la manutención pasada, actual y futura.",
+          "source_url": "https://www.dcf.ks.gov/services/CSS/Pages/Information-for-Custodial-Parents.aspx",
+          "source_name": "Kansas DCF Child Support Services",
+          "quote": "you give the Secretary of DCF the right to collect and manage your past, current, and future support.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas DCF Child Support Services",
+          "label_es": "Kansas DCF Child Support Services",
+          "url": "https://www.dcf.ks.gov/services/CSS/Pages/Information-for-Custodial-Parents.aspx"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "In Maine, child support is calculated the same way in a divorce or a parental rights case for unmarried parents.",
+          "claim_es": "En Maine, la manutención se calcula igual en un divorcio o en un caso de derechos parentales de padres no casados.",
+          "source_url": "https://www.courts.maine.gov/courts/family/divorce-separation/child-support.html",
+          "source_name": "Maine Judicial Branch: Child Support",
+          "quote": "The process of calculating child support is the same whether done in a Divorce or a Parental Rights & Responsibilities case (unmarried parents).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Child Support Worksheet is completed using the Child Support Table.",
+          "claim_es": "La Hoja de Cálculo de Manutención se llena con la Tabla de Manutención.",
+          "source_url": "https://www.courts.maine.gov/courts/family/divorce-separation/child-support.html",
+          "source_name": "Maine Judicial Branch: Child Support",
+          "quote": "Complete the Child Support Worksheet with information from the Child Support Table",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If more than three years have passed since the order, you can ask the court to recalculate it.",
+          "claim_es": "Si han pasado más de tres años desde la orden, puede pedir al tribunal que la recalcule.",
+          "source_url": "https://www.courts.maine.gov/courts/family/divorce-separation/child-support.html",
+          "source_name": "Maine Judicial Branch: Child Support",
+          "quote": "If it has been longer than three (3) years since the original child support order was issued, you can ask the court to re-examine the order and do new calculations.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The court can deviate from the guidelines if the evidence shows good reason.",
+          "claim_es": "El tribunal puede apartarse de las pautas si las pruebas muestran una buena razón.",
+          "source_url": "https://www.courts.maine.gov/courts/family/divorce-separation/child-support.html",
+          "source_name": "Maine Judicial Branch: Child Support",
+          "quote": "the court can order a different amount (“deviate” from the guidelines), if the evidence shows there is good reason to do so.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Judicial Branch: Child Support",
+          "label_es": "Maine Judicial Branch: Child Support",
+          "url": "https://www.courts.maine.gov/courts/family/divorce-separation/child-support.html"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "Mississippi DHS may still collect back child support (arrears) past age 21.",
+          "claim_es": "El Departamento de Servicios Humanos de Mississippi puede seguir cobrando manutención atrasada después de los 21 años.",
+          "source_url": "https://www.mdhs.ms.gov/childsupport/pay/",
+          "source_name": "Mississippi Department of Human Services: Child Support",
+          "quote": "MDHS may still pursue the collection of child support arrears (back child support) past the age of 21.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Many Mississippi parents pay through payroll deduction, called income withholding.",
+          "claim_es": "Muchos padres en Mississippi pagan mediante deducción de nómina, llamada retención de ingresos.",
+          "source_url": "https://www.mdhs.ms.gov/childsupport/pay/",
+          "source_name": "Mississippi Department of Human Services: Child Support",
+          "quote": "Many people pay their monthly child support obligation through payroll deductions, also known as “income withholding.”",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Child Support Call Center number is 877-882-4916.",
+          "claim_es": "El número del Centro de Llamadas de Manutención es 877-882-4916.",
+          "source_url": "https://www.mdhs.ms.gov/childsupport/pay/",
+          "source_name": "Mississippi Department of Human Services: Child Support",
+          "quote": "call the Child Support Call Center at 877-882-4916.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mississippi Department of Human Services: Child Support",
+          "label_es": "Mississippi Department of Human Services: Child Support",
+          "url": "https://www.mdhs.ms.gov/childsupport/pay/"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "You can ask Missouri's Family Support Division to review or change your order every 3 years.",
+          "claim_es": "Puede pedir a la División de Apoyo Familiar de Missouri que revise o cambie su orden cada 3 años.",
+          "source_url": "https://dss.mo.gov/child-support/noncustodial-parent",
+          "source_name": "Missouri Family Support Division: Child Support",
+          "quote": "You will have the chance to ask the Family Support Division to review or change your child support order every 3 years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Missouri support can end when the child turns 18 and does not continue education.",
+          "claim_es": "En Missouri la manutención puede terminar cuando el hijo cumple 18 años y no continúa sus estudios.",
+          "source_url": "https://dss.mo.gov/child-support/noncustodial-parent",
+          "source_name": "Missouri Family Support Division: Child Support",
+          "quote": "The child turns 18 if they do not continue their education",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the child continues education past high school, support can last until 21.",
+          "claim_es": "Si el hijo continúa estudiando después de la secundaria, la manutención puede durar hasta los 21.",
+          "source_url": "https://dss.mo.gov/child-support/noncustodial-parent",
+          "source_name": "Missouri Family Support Division: Child Support",
+          "quote": "The child turns 21 if they continue their education past high school",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Family Support Division: Child Support",
+          "label_es": "Missouri Family Support Division: Child Support",
+          "url": "https://dss.mo.gov/child-support/noncustodial-parent"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "You can ask Montana's CSSD to review an order if at least 36 months have passed since it was entered or last reviewed.",
+          "claim_es": "Puede pedir a la CSSD de Montana que revise una orden si han pasado al menos 36 meses desde que se dictó o se revisó.",
+          "source_url": "https://dphhs.mt.gov/CSSD/services/modification",
+          "source_name": "Montana DPHHS Child Support Services Division",
+          "quote": "You may ask the Child Support Services Division (CSSD) to review the existing support order terms if it has been at least 36 months since the date the order was entered or last reviewed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Before 36 months, you must show a significant change of circumstances.",
+          "claim_es": "Antes de 36 meses, debe demostrar un cambio importante de circunstancias.",
+          "source_url": "https://dphhs.mt.gov/CSSD/services/modification",
+          "source_name": "Montana DPHHS Child Support Services Division",
+          "quote": "If you request a review less than 36 months after the support order was established or last reviewed, you must show that a significant change of circumstances has occurred.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Montana changed from an income-shares model to a modified Melson formula after its 1991-1992 review.",
+          "claim_es": "Montana cambió de un modelo de ingresos compartidos a una fórmula Melson modificada después de su revisión de 1991-1992.",
+          "source_url": "https://dphhs.mt.gov/assets/cssd/GROC/2020QuadRpt.pdf",
+          "source_name": "Montana DPHHS 2020 Quadrennial Review of Child Support Guidelines",
+          "quote": "Montana changed from an income-shares model to a modified Melson",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana DPHHS Child Support Services Division",
+          "label_es": "Montana DPHHS Child Support Services Division",
+          "url": "https://dphhs.mt.gov/CSSD/services/modification"
+        },
+        {
+          "label_en": "Montana DPHHS 2020 Quadrennial Review of Child Support Guidelines",
+          "label_es": "Montana DPHHS 2020 Quadrennial Review of Child Support Guidelines",
+          "url": "https://dphhs.mt.gov/assets/cssd/GROC/2020QuadRpt.pdf"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "Nebraska child support is paid through the birth month of the child's 19th birthday, unless the order says otherwise.",
+          "claim_es": "En Nebraska la manutención se paga hasta el mes del cumpleaños 19 del hijo, salvo que la orden diga otra cosa.",
+          "source_url": "https://dhhs.ne.gov/Pages/Child-Support-FAQs.aspx",
+          "source_name": "Nebraska DHHS Child Support FAQs",
+          "quote": "Child support is paid through to the birth month of the child when they reach age 19, unless otherwise determined in the court order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Support can be terminated when the child turns 19, marries, dies or is emancipated by court order.",
+          "claim_es": "La manutención puede terminar cuando el hijo cumple 19, se casa, fallece o es emancipado por orden judicial.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/child-support-termination",
+          "source_name": "Nebraska Judicial Branch Self-Help",
+          "quote": "the child has reached the age of 19 years, the child has married, the child has died, or the child has been emancipated by court order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nebraska DHHS calls employer paycheck withholding the most effective way to pay.",
+          "claim_es": "El DHHS de Nebraska dice que la retención del cheque de pago por el empleador es la forma más efectiva de pagar.",
+          "source_url": "https://dhhs.ne.gov/Pages/Child-Support-FAQs.aspx",
+          "source_name": "Nebraska DHHS Child Support FAQs",
+          "quote": "The most effective method of payment is for your employer to automatically deduct the support payment from your paycheck.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska DHHS Child Support FAQs",
+          "label_es": "Nebraska DHHS Child Support FAQs",
+          "url": "https://dhhs.ne.gov/Pages/Child-Support-FAQs.aspx"
+        },
+        {
+          "label_en": "Nebraska Judicial Branch Self-Help",
+          "label_es": "Nebraska Judicial Branch Self-Help",
+          "url": "https://nebraskajudicial.gov/self-help/families-children/child-support-termination"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "A New Jersey support obligation may continue past age 19 in certain circumstances.",
+          "claim_es": "En Nueva Jersey, la obligación de manutención puede continuar después de los 19 años en ciertas circunstancias.",
+          "source_url": "https://www.njchildsupport.gov/getstarted",
+          "source_name": "New Jersey Child Support",
+          "quote": "An obligation may be continued past the age of 19 in the following circumstances:",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Every three years you receive a triennial review notice offering a review of your order.",
+          "claim_es": "Cada tres años recibe un aviso de revisión trienal que le ofrece revisar su orden.",
+          "source_url": "https://www.njchildsupport.gov/resources/faq",
+          "source_name": "New Jersey Child Support FAQ",
+          "quote": "You will receive a triennial review notice once every three years providing the option to request a review of your child support order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Jersey charges a one-time $6 fee to apply for child support services.",
+          "claim_es": "Nueva Jersey cobra una tarifa única de $6 para solicitar servicios de manutención.",
+          "source_url": "https://www.njchildsupport.gov/getstarted",
+          "source_name": "New Jersey Child Support",
+          "quote": "There is a one-time fee of $6 to apply for child support services.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The New Jersey Child Support Guidelines consider both parents' incomes and costs such as child care and health insurance.",
+          "claim_es": "Las Pautas de Manutención de Nueva Jersey consideran los ingresos de ambos padres y gastos como el cuidado infantil y el seguro médico.",
+          "source_url": "https://www.njchildsupport.gov/getstarted",
+          "source_name": "New Jersey Child Support",
+          "quote": "These legal guidelines consider both parents’ incomes and account for expenses such as child care and health insurance.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey Child Support",
+          "label_es": "New Jersey Child Support",
+          "url": "https://www.njchildsupport.gov/getstarted"
+        },
+        {
+          "label_en": "New Jersey Child Support FAQ",
+          "label_es": "New Jersey Child Support FAQ",
+          "url": "https://www.njchildsupport.gov/resources/faq"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "In general, North Carolina parents are not obligated to support a child once the child turns 18.",
+          "claim_es": "En general, en Carolina del Norte los padres no están obligados a mantener a un hijo después de que cumple 18 años.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-support",
+          "source_name": "North Carolina Judicial Branch: Child Support",
+          "quote": "In general, parents are not obligated to financially support a child once the child reaches the age of 18.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a parent is under 18, that parent's own parents can be obligated to pay support until the parent turns 18.",
+          "claim_es": "Si un padre es menor de 18 años, sus propios padres pueden estar obligados a pagar la manutención hasta que cumpla 18.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-support",
+          "source_name": "North Carolina Judicial Branch: Child Support",
+          "quote": "If a parent is under the age of 18, his or her parents can be obligated to pay child support until he or she reaches the age of 18.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Judges must order the Guidelines amount unless it would not meet or would exceed the child's reasonable needs, or would be unjust.",
+          "claim_es": "Los jueces deben ordenar el monto de las Pautas salvo que no cubra o exceda las necesidades razonables del hijo, o resulte injusto.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-support",
+          "source_name": "North Carolina Judicial Branch: Child Support",
+          "quote": "Judges must order the amount of child support set out in the Guidelines unless applying the Guidelines would not meet or would exceed the reasonable needs of the child",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Judicial Branch: Child Support",
+          "label_es": "North Carolina Judicial Branch: Child Support",
+          "url": "https://www.nccourts.gov/help-topics/family-and-children/child-support"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "Most North Dakota support obligations end when the youngest child turns 18 or the month they graduate high school, whichever is later.",
+          "claim_es": "La mayoría de las obligaciones de manutención en Dakota del Norte terminan cuando el hijo menor cumple 18 años o el mes en que se gradúa de la secundaria, lo que ocurra después.",
+          "source_url": "https://www.hhs.nd.gov/childsupport/my-child-support/my-child-support-forms-and-faqs",
+          "source_name": "North Dakota HHS Child Support",
+          "quote": "In North Dakota, most support obligations end when the youngest child turns 18 or the last day of the month the child graduates from high school, whichever happens later.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Some orders include a step-down amount as each child turns 18 and graduates; others do not.",
+          "claim_es": "Algunas órdenes incluyen una reducción escalonada cuando cada hijo cumple 18 y se gradúa; otras no.",
+          "source_url": "https://www.hhs.nd.gov/childsupport/my-child-support/my-child-support-forms-and-faqs",
+          "source_name": "North Dakota HHS Child Support",
+          "quote": "Some court orders provide for a 'step down' support amount as each child turns 18 and graduates and some orders do not include the 'step down'.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Check your court order to see whether the amount changed when your child turned 18 and graduated.",
+          "claim_es": "Revise su orden judicial para ver si el monto cambió cuando su hijo cumplió 18 y se graduó.",
+          "source_url": "https://www.hhs.nd.gov/childsupport/my-child-support/my-child-support-forms-and-faqs",
+          "source_name": "North Dakota HHS Child Support",
+          "quote": "Review your court order to see if the support amount changed when your child turned 18 and graduated from high school.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota HHS Child Support",
+          "label_es": "North Dakota HHS Child Support",
+          "url": "https://www.hhs.nd.gov/childsupport/my-child-support/my-child-support-forms-and-faqs"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "Ohio child support ends when the child turns 18 or graduates high school, whichever happens second.",
+          "claim_es": "En Ohio la manutención termina cuando el hijo cumple 18 años o se gradúa de la secundaria, lo que ocurra en segundo lugar.",
+          "source_url": "https://www.supremecourt.ohio.gov/courts/services-to-courts/domestic-relations-resource-guide/",
+          "source_name": "Supreme Court of Ohio: Domestic Relations Resource Guide",
+          "quote": "Child support terminates when the child reaches age 18 or graduates from high school, whichever occurs second.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Support continues up to age 19 if the child attends an accredited high school full time.",
+          "claim_es": "La manutención continúa hasta los 19 años si el hijo asiste a tiempo completo a una secundaria acreditada.",
+          "source_url": "https://www.supremecourt.ohio.gov/courts/services-to-courts/domestic-relations-resource-guide/",
+          "source_name": "Supreme Court of Ohio: Domestic Relations Resource Guide",
+          "quote": "Support will continue up to age 19 as long as the child attends an accredited high school on a continuous and full-time basis.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Ohio child support worksheet uses each parent's income share to divide cash medical support.",
+          "claim_es": "La hoja de cálculo de Ohio usa la proporción de ingresos de cada padre para dividir el apoyo médico en efectivo.",
+          "source_url": "https://www.supremecourt.ohio.gov/courts/services-to-courts/domestic-relations-resource-guide/",
+          "source_name": "Supreme Court of Ohio: Domestic Relations Resource Guide",
+          "quote": "based on the number of children and the income shares, each parent’s percentage of the cash medical support.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Supreme Court of Ohio: Domestic Relations Resource Guide",
+          "label_es": "Supreme Court of Ohio: Domestic Relations Resource Guide",
+          "url": "https://www.supremecourt.ohio.gov/courts/services-to-courts/domestic-relations-resource-guide/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota support is paid until 18, or until 19 or graduation for a full-time high school student, whichever is first.",
+          "claim_es": "En Dakota del Sur la manutención se paga hasta los 18 años, o hasta los 19 o la graduación si el hijo estudia a tiempo completo en la secundaria, lo que ocurra primero.",
+          "source_url": "https://dss.sd.gov/childsupport/parents.aspx",
+          "source_name": "South Dakota Department of Social Services: Child Support",
+          "quote": "South Dakota law requires child support to be paid until age 18, or until the age of 19 or graduation if the child is a full-time student in a secondary school (high school), whichever occurs first.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The most common way support is paid is an Income Withholding Order to the parent's employer.",
+          "claim_es": "La forma más común de pagar la manutención es una Orden de Retención de Ingresos al empleador del padre.",
+          "source_url": "https://dss.sd.gov/childsupport/parents.aspx",
+          "source_name": "South Dakota Department of Social Services: Child Support",
+          "quote": "The most common way for child support to be paid is for issuance of an Income Withholding Order to the parent’s employer.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Orders made before July 1, 2026 may be modified without showing a change in circumstances.",
+          "claim_es": "Las órdenes dictadas antes del 1 de julio de 2026 se pueden modificar sin demostrar un cambio de circunstancias.",
+          "source_url": "https://dss.sd.gov/childsupport/modifysupportorder.aspx",
+          "source_name": "South Dakota Department of Social Services: Modify a Support Order",
+          "quote": "If a child support order was made before July 1, 2026, an order may be modified without showing any change in circumstances",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Department of Social Services: Child Support",
+          "label_es": "South Dakota Department of Social Services: Child Support",
+          "url": "https://dss.sd.gov/childsupport/parents.aspx"
+        },
+        {
+          "label_en": "South Dakota Department of Social Services: Modify a Support Order",
+          "label_es": "South Dakota Department of Social Services: Modify a Support Order",
+          "url": "https://dss.sd.gov/childsupport/modifysupportorder.aspx"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AL": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "AK": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "AZ": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "FL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "GA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "ID": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IA": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MD": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "UT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "VA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WV": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
+  }
+}
