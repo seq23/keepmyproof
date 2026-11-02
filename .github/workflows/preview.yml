@@ -1,5 +1,5 @@
-# THE SIMULATOR PREVIEW (docs/preview.md): builds the iOS app for the simulator (no Apple account, no
-# signing), walks every screen in English with Maestro and keeps one PNG per screen, and puts the
+# THE SIMULATOR PREVIEW (docs/preview.md): builds the iOS app for the simulator (no Apple account; ad-hoc
+# signed), walks every screen in English with Maestro and keeps one PNG per screen, and puts the
 # build on Appetize when the owner's token is set. GitHub-hosted runners only (free for this public
 # repo). Not a merge gate: it runs after app changes reach main, on demand, and on PRs that change
 # the preview itself.
@@ -46,10 +46,13 @@ jobs:
         run: cd ios && pod install --repo-update > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
       - name: Build for the simulator
         id: build
+        # Ad-hoc signed ("sign to run locally", no Apple account): an unsigned app has no keychain
+        # entitlement on the simulator, so the passcode setup could not save its key.
         run: |
           xcodebuild -workspace ios/KeepMyProof.xcworkspace -scheme KeepMyProof -configuration Release \
             -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build \
-            ARCHS=arm64 ONLY_ACTIVE_ARCH=NO CODE_SIGNING_ALLOWED=NO COMPILER_INDEX_STORE_ENABLE=NO build > xcodebuild.log 2>&1 \
+            ARCHS=arm64 ONLY_ACTIVE_ARCH=NO COMPILER_INDEX_STORE_ENABLE=NO \
+            CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER= build > xcodebuild.log 2>&1 \
             || { grep -E 'error:|BUILD FAILED' xcodebuild.log | head -40; tail -40 xcodebuild.log; exit 1; }
           app=build/Build/Products/Release-iphonesimulator/KeepMyProof.app
           test -d "$app" || { echo "NAMED STOP [PREVIEW_NO_APP] $app was not built"; exit 1; }
