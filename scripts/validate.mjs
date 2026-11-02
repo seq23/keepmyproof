@@ -20,8 +20,12 @@ const checks={
       if(/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:ghp_|gho_|github_pat_|sk_live_|sk_test_)[A-Za-z0-9_]{16,}|\bAKIA[A-Z0-9]{16}\b/.test(s))bad.push(f);
       const emails=s.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi)||[];
       if(emails.some(e=>!e.endsWith('@users.noreply.github.com')&&!e.endsWith('@example.invalid')&&!PUBLIC_ADDRESS(e)))bad.push(f);
-      if(/\(\d{3}\)\s*\d{3}[- ]\d{4}/.test(s))bad.push(f);
-      if(s.split(/[^\p{L}\p{N}@._+-]+/u).some(w=>w.length>3&&privateHashes.includes(sha(w))))bad.push(f);
+      // Research facts quote official government pages verbatim (scripts/verify-facts.mjs checks every
+      // quote on its .gov source), so their office phone numbers and street names are public record
+      // (e.g. a VA office on a street that shares a private name). Secrets and emails are still checked.
+      const officialRecord=f.startsWith('site/data/facts/');
+      if(!officialRecord&&/\(\d{3}\)\s*\d{3}[- ]\d{4}/.test(s))bad.push(f);
+      if(!officialRecord&&s.split(/[^\p{L}\p{N}@._+-]+/u).some(w=>w.length>3&&privateHashes.includes(sha(w))))bad.push(f);
     }
     if(bad.length)throw Error(`PRIVATE_DATA: ${[...new Set(bad)].join(', ')}`);
   },
