@@ -120,7 +120,7 @@ appId: com.keepmyproof.app
 - tapOn:
     id: "Name it"
 - inputText: "Car title and loan papers"
-- tapOn: "Add to .*"
+- pressKey: Enter
 - waitForAnimationToEnd
 - takeScreenshot: 08-add
 - scrollUntilVisible:
