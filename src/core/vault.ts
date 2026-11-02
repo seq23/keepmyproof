@@ -55,6 +55,13 @@ export class Vault {
     if (!plus) throw Error('PLUS_REQUIRED');
     const id = hash(this.random(32)); await this.mutate(s => { s.folders.push({ id, title }); }); return id;
   }
+  async addLine(folder: string, title: string, plus: boolean) {
+    if (!plus) throw Error('PLUS_REQUIRED');
+    if (!title.trim()) throw Error('LINE_EMPTY');
+    const id = hash(this.random(32));
+    await this.mutate(s => { s.lines = { ...s.lines, [folder]: [...(s.lines?.[folder] ?? []), { id, title: title.trim() }] }; });
+    return id;
+  }
   items(folder: string, selection?: { ids?: string[]; from?: string; to?: string }, plus = false): Item[] {
     if (selection && !plus) throw Error('PLUS_REQUIRED');
     return this.snapshot().items.filter(i => i.folder === folder && (!selection ||
@@ -81,6 +88,11 @@ export class Vault {
         const existing = s.folders.find(x => x.id === f.id);
         if (existing && existing.title !== f.title) throw Error('RESTORE_CONFLICT');
         if (!existing) s.folders.push(f);
+      }
+      for (const [folder, lines] of Object.entries(restored.lines ?? {})) for (const l of lines) {
+        const existing = s.lines?.[folder]?.find(x => x.id === l.id);
+        if (existing && existing.title !== l.title) throw Error('RESTORE_CONFLICT');
+        if (!existing) s.lines = { ...s.lines, [folder]: [...(s.lines?.[folder] ?? []), l] };
       }
       for (const item of restored.items) {
         const existing = s.items.find(i => i.id === item.id);

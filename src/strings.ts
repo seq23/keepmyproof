@@ -1,6 +1,90 @@
 // Approved screen wording; additional flows use the same EN / usted ES voice.
 import type { Lang } from "./core/model";
 export const strings = {
+  "canKeep": [
+    "What you can keep here",
+    "Lo que puede guardar aquí"
+  ],
+  "keepLetters": [
+    "Letters and papers",
+    "Cartas y papeles"
+  ],
+  "keepTexts": [
+    "Screenshots of texts",
+    "Capturas de mensajes de texto"
+  ],
+  "keepBills": [
+    "Bills and receipts",
+    "Facturas y recibos"
+  ],
+  "keepPhotos": [
+    "Photos of damage or things",
+    "Fotos de daños o de cosas"
+  ],
+  "keepNotes": [
+    "Notes of what happened, and when",
+    "Notas de lo que pasó, y cuándo"
+  ],
+  "keepSchool": [
+    "School and medical papers",
+    "Papeles de la escuela y médicos"
+  ],
+  "nothingYet": [
+    "Nothing yet",
+    "Nada todavía"
+  ],
+  "ticked1": [
+    "1 line ticked",
+    "1 línea marcada"
+  ],
+  "tickedN": [
+    "{n} lines ticked",
+    "{n} líneas marcadas"
+  ],
+  "items1": [
+    "1 item",
+    "1 documento"
+  ],
+  "itemsN": [
+    "{n} items",
+    "{n} documentos"
+  ],
+  "makeOwn": [
+    "Make your own folder",
+    "Haga su propia carpeta"
+  ],
+  "makeOwnSub": [
+    "For anything the folders above don't cover",
+    "Para lo que no cubren las carpetas de arriba"
+  ],
+  "plusTag": [
+    "Plus",
+    "Plus"
+  ],
+  "byPaper": [
+    "Ticked when you added a paper",
+    "Marcada al añadir un documento"
+  ],
+  "byHand": [
+    "You ticked this",
+    "Usted la marcó"
+  ],
+  "addLine": [
+    "+ Add a line",
+    "+ Añadir una línea"
+  ],
+  "lineName": [
+    "Name the line",
+    "Nombre de la línea"
+  ],
+  "saveLine": [
+    "Add this line ›",
+    "Añadir esta línea ›"
+  ],
+  "LINE_EMPTY": [
+    "Give the line a name first.",
+    "Primero póngale un nombre a la línea."
+  ],
   "NO_ORIGINALS": ["This selection has notes only. Make a PDF to save them.", "Esta selección solo tiene notas. Haga un PDF para guardarlas."],
   "loading": [
     "Opening your papers…",
@@ -55,8 +139,8 @@ export const strings = {
     "← Volver a {folder}"
   ],
   "backHome": [
-    "← Back to My folders",
-    "← Volver a Mis carpetas"
+    "← Back to Home",
+    "← Volver al inicio"
   ],
   "lockTitle": [
     "Choose a passcode for this app",
@@ -135,20 +219,20 @@ export const strings = {
     "Escriba sus 12 palabras para confirmar"
   ],
   "finish": [
-    "Open My folders ›",
-    "Abrir Mis carpetas ›"
+    "Go to Home ›",
+    "Ir al inicio ›"
   ],
   "words": [
     "12 words, separated by spaces",
     "12 palabras, separadas por espacios"
   ],
   "folders": [
-    "Folders",
-    "Carpetas"
+    "Home",
+    "Inicio"
   ],
   "home": [
-    "My folders",
-    "Mis carpetas"
+    "Your folders",
+    "Sus carpetas"
   ],
   "backup": [
     "Backup",
@@ -159,16 +243,16 @@ export const strings = {
     "Ajustes"
   ],
   "homeIntro": [
-    "Add what you have, when you have it. Free plan: {n} of 25 items used.",
-    "Añada lo que tenga, cuando lo tenga. Plan gratis: {n} de 25 documentos usados."
+    "Free plan: {n} of 25 items used.",
+    "Plan gratis: {n} de 25 documentos usados."
   ],
   "plusCount": [
     "{n} items · Plus",
     "{n} documentos · Plus"
   ],
   "hideHint": [
-    "Don't need a folder? Hide it in Settings. Your own folders come with Plus.",
-    "¿No necesita una carpeta? Ocúltela en Ajustes. Con Plus puede crear las suyas."
+    "Don't need a folder? Hide it in Settings.",
+    "¿No necesita una carpeta? Ocúltela en Ajustes."
   ],
   "add": [
     "+ Add something",
@@ -182,13 +266,9 @@ export const strings = {
     "items",
     "documentos"
   ],
-  "count": [
-    "Checklist {done} of {total} · {n} items",
-    "Lista {done} de {total} · {n} documentos"
-  ],
   "suggested": [
-    "A suggested list: tick what you have, skip what doesn't apply.",
-    "Es una lista sugerida: marque lo que tenga y salte lo que no aplique."
+    "Start with whatever you have. Every line is optional.",
+    "Empiece con lo que tenga. Cada línea es opcional."
   ],
   "checklist": [
     "Checklist",
