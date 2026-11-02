@@ -216,67 +216,6 @@
         }
       ]
     },
-    "AZ": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Arizona Department of Veterans Services as Arizona's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Arizona Department of Veterans Services es la agencia estatal de veteranos de Arizona.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Arizona Department of Veterans Services",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Arizona Department of Veterans Services as 602-255-3373.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Arizona, Arizona Department of Veterans Services, atiende en el 602-255-3373.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "602-255-3373",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Arizona Department of Veterans Services (official site)",
-          "label_es": "Arizona Department of Veterans Services (sitio oficial)",
-          "url": "https://dvs.az.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "CA": {
       "facts": [
         {
@@ -1113,128 +1052,6 @@
         }
       ]
     },
-    "KS": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Kansas Commission on Veterans Affairs Office as Kansas's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Kansas Commission on Veterans Affairs Office es la agencia estatal de veteranos de Kansas.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Kansas Commission on Veterans Affairs Office",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Kansas Commission on Veterans Affairs Office as 785-296-3976.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kansas, Kansas Commission on Veterans Affairs Office, atiende en el 785-296-3976.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "785-296-3976",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Kansas Commission on Veterans Affairs Office (official site)",
-          "label_es": "Kansas Commission on Veterans Affairs Office (sitio oficial)",
-          "url": "https://kcva.ks.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
-    "KY": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Kentucky Department of Veterans Affairs as Kentucky's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Kentucky Department of Veterans Affairs es la agencia estatal de veteranos de Kentucky.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Kentucky Department of Veterans Affairs",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Kentucky Department of Veterans Affairs as 502-564-9203.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Kentucky, Kentucky Department of Veterans Affairs, atiende en el 502-564-9203.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "502-564-9203",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Kentucky Department of Veterans Affairs (official site)",
-          "label_es": "Kentucky Department of Veterans Affairs (sitio oficial)",
-          "url": "https://veterans.ky.gov/Pages/index.aspx"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "LA": {
       "facts": [
         {
@@ -1596,67 +1413,6 @@
         }
       ]
     },
-    "MN": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Minnesota Department of Veterans Affairs as Minnesota's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Minnesota Department of Veterans Affairs es la agencia estatal de veteranos de Minnesota.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Minnesota Department of Veterans Affairs",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Minnesota Department of Veterans Affairs as 888-546-5838.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Minnesota, Minnesota Department of Veterans Affairs, atiende en el 888-546-5838.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "888-546-5838",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Minnesota Department of Veterans Affairs (official site)",
-          "label_es": "Minnesota Department of Veterans Affairs (sitio oficial)",
-          "url": "https://mn.gov/mdva/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "MO": {
       "facts": [
         {
@@ -1782,67 +1538,6 @@
           "label_en": "Mississippi Department of Veterans Affairs (official site)",
           "label_es": "Mississippi Department of Veterans Affairs (sitio oficial)",
           "url": "https://www.msva.ms.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
-    "MT": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Montana Veterans Affairs Division as Montana's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Montana Veterans Affairs Division es la agencia estatal de veteranos de Montana.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Montana Veterans Affairs Division",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Montana Veterans Affairs Division as 406-542-2501.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Montana, Montana Veterans Affairs Division, atiende en el 406-542-2501.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "406-542-2501",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Montana Veterans Affairs Division (official site)",
-          "label_es": "Montana Veterans Affairs Division (sitio oficial)",
-          "url": "https://dma.mt.gov/mvad/"
         },
         {
           "label_en": "Request military service records (National Archives)",
@@ -2079,69 +1774,24 @@
         }
       ]
     },
-    "NH": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the New Hampshire Department of Military Affairs and Veterans Services as New Hampshire's state veterans agency.",
-          "claim_es": "El directorio del VA indica que New Hampshire Department of Military Affairs and Veterans Services es la agencia estatal de veteranos de New Hampshire.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "New Hampshire Department of Military Affairs and Veterans Services",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the New Hampshire Department of Military Affairs and Veterans Services as 603-225-1200.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de New Hampshire, New Hampshire Department of Military Affairs and Veterans Services, atiende en el 603-225-1200.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "603-225-1200",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "New Hampshire Department of Military Affairs and Veterans Services (official site)",
-          "label_es": "New Hampshire Department of Military Affairs and Veterans Services (sitio oficial)",
-          "url": "https://www.dmavs.nh.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "NJ": {
       "facts": [
+        {
+          "claim_en": "New Jersey's Department of Military and Veterans Affairs keeps and archives active-duty DD Form 214s.",
+          "claim_es": "El Departamento de Asuntos Militares y de Veteranos de Nueva Jersey conserva y archiva formularios DD 214 de servicio activo.",
+          "source_url": "https://www.nj.gov/military/veterans/services/",
+          "source_name": "New Jersey Department of Military and Veterans Affairs",
+          "quote": "Additionally, the Department maintains and archives Active Duty DD Form 214's.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A copy of the discharge form goes to New Jersey's department if the service member's home of record was New Jersey at discharge and they chose to send a copy to the state.",
+          "claim_es": "Una copia del documento de baja se envía al departamento de Nueva Jersey si el domicilio registrado del militar era Nueva Jersey y eligió enviar una copia al estado.",
+          "source_url": "https://www.nj.gov/military/veterans/services/",
+          "source_name": "New Jersey Department of Military and Veterans Affairs",
+          "quote": "is sent to the Department if the Servicemember's Home of Record (HOR) is New Jersey at the time of discharge and the Servicemember elected to have a copy sent to the state",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the New Jersey Department of Military and Veterans Affairs as New Jersey's state veterans agency.",
           "claim_es": "El directorio del VA indica que New Jersey Department of Military and Veterans Affairs es la agencia estatal de veteranos de Nueva Jersey.",
@@ -2349,6 +1999,14 @@
     },
     "NY": {
       "facts": [
+        {
+          "claim_en": "New York's Department of Veterans' Services site has a Request Separation Documents section for veterans who need their separation papers.",
+          "claim_es": "El sitio del Departamento de Servicios para Veteranos de Nueva York tiene una sección para pedir documentos de separación.",
+          "source_url": "https://veterans.ny.gov/",
+          "source_name": "New York State Department of Veterans’ Services",
+          "quote": "Request Separation Documents",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the New York State Department of Veterans’ Services as New York's state veterans agency.",
           "claim_es": "El directorio del VA indica que New York State Department of Veterans’ Services es la agencia estatal de veteranos de Nueva York.",
@@ -2676,67 +2334,6 @@
         }
       ]
     },
-    "SC": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the South Carolina Department of Veterans’ Affairs as South Carolina's state veterans agency.",
-          "claim_es": "El directorio del VA indica que South Carolina Department of Veterans’ Affairs es la agencia estatal de veteranos de Carolina del Sur.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "South Carolina Department of Veterans’ Affairs",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the South Carolina Department of Veterans’ Affairs as 803-734-0200.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Carolina del Sur, South Carolina Department of Veterans’ Affairs, atiende en el 803-734-0200.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "803-734-0200",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "South Carolina Department of Veterans’ Affairs (official site)",
-          "label_es": "South Carolina Department of Veterans’ Affairs (sitio oficial)",
-          "url": "https://scdva.sc.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "SD": {
       "facts": [
         {
@@ -2822,67 +2419,6 @@
         }
       ]
     },
-    "TN": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Tennessee Department of Veterans Services as Tennessee's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Tennessee Department of Veterans Services es la agencia estatal de veteranos de Tennessee.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Tennessee Department of Veterans Services",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Tennessee Department of Veterans Services as 615-741-2345.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Tennessee, Tennessee Department of Veterans Services, atiende en el 615-741-2345.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "615-741-2345",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Tennessee Department of Veterans Services (official site)",
-          "label_es": "Tennessee Department of Veterans Services (sitio oficial)",
-          "url": "https://www.tn.gov/veteran.html"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
     "TX": {
       "facts": [
         {
@@ -2939,67 +2475,6 @@
           "label_en": "Texas Veterans Commission (official site)",
           "label_es": "Texas Veterans Commission (sitio oficial)",
           "url": "https://www.tvc.texas.gov/"
-        },
-        {
-          "label_en": "Request military service records (National Archives)",
-          "label_es": "Pedir registros del servicio militar (Archivos Nacionales)",
-          "url": "https://www.archives.gov/veterans/military-service-records"
-        },
-        {
-          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
-          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
-          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
-        }
-      ]
-    },
-    "UT": {
-      "facts": [
-        {
-          "claim_en": "VA's directory lists the Utah Department of Veterans and Military Affairs as Utah's state veterans agency.",
-          "claim_es": "El directorio del VA indica que Utah Department of Veterans and Military Affairs es la agencia estatal de veteranos de Utah.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "Utah Department of Veterans and Military Affairs",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "VA's directory lists the phone number of the Utah Department of Veterans and Military Affairs as 801-326-2372.",
-          "claim_es": "El directorio del VA indica que la agencia estatal de veteranos de Utah, Utah Department of Veterans and Military Affairs, atiende en el 801-326-2372.",
-          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
-          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
-          "quote": "801-326-2372",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives says there is generally no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives.",
-          "claim_es": "Los Archivos Nacionales indican que, en general, no se cobra por la información básica del expediente militar y médico que se entrega a veteranos, familiares directos y representantes autorizados.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Generally there is no charge for basic military personnel and medical record information provided to veterans, next of kin and authorized representatives from Federal (non-archival) records.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives warns that some companies advertise DD Form 214 research services and charge a fee for copies.",
-          "claim_es": "Los Archivos Nacionales advierten que algunas empresas anuncian servicios de búsqueda del formulario DD 214 y cobran por las copias.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Some companies advertise DD Form 214 research services and will charge a fee for obtaining copies.",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The National Archives asks you not to send a follow-up request before 90 days have passed, because it may cause further delays.",
-          "claim_es": "Los Archivos Nacionales piden no enviar una segunda solicitud antes de que pasen 90 días, porque puede causar más demoras.",
-          "source_url": "https://www.archives.gov/veterans/military-service-records",
-          "source_name": "National Archives: Request Military Service Records",
-          "quote": "Please do not send a follow-up request before 90 days have elapsed, as it may cause further delays.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Utah Department of Veterans and Military Affairs (official site)",
-          "label_es": "Utah Department of Veterans and Military Affairs (sitio oficial)",
-          "url": "https://veterans.utah.gov/"
         },
         {
           "label_en": "Request military service records (National Archives)",
@@ -3153,6 +2628,22 @@
     },
     "WA": {
       "facts": [
+        {
+          "claim_en": "In Washington, veterans' discharge papers filed with county auditors after June 30, 2002, are no longer public records.",
+          "claim_es": "En Washington, los documentos de baja registrados con los auditores de condado después del 30 de junio de 2002 ya no son registros públicos.",
+          "source_url": "https://www.dva.wa.gov/veterans-service-members-and-their-families/veterans-benefits/veterans-records",
+          "source_name": "Washington Department of Veterans Affairs",
+          "quote": "Veterans’ discharge papers filed with county auditors after June 30, 2002, are no longer public records.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Washington's 2002 Legislature passed ESHB 2453, exempting veterans' records from public disclosure.",
+          "claim_es": "La Legislatura de Washington de 2002 aprobó la ley ESHB 2453, que exime los registros de veteranos de la divulgación pública.",
+          "source_url": "https://www.dva.wa.gov/veterans-service-members-and-their-families/veterans-benefits/veterans-records",
+          "source_name": "Washington Department of Veterans Affairs",
+          "quote": "The 2002 Legislature passed ESHB 2453, exempting veterans' records from public disclosure.",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "VA's directory lists the Washington Department of Veterans Affairs as Washington's state veterans agency.",
           "claim_es": "El directorio del VA indica que Washington Department of Veterans Affairs es la agencia estatal de veteranos de Washington.",
@@ -3421,6 +2912,15 @@
     }
   },
   "skips": {
-    "OH": "fewer than 2 state-specific records facts found on curl-readable official pages"
+    "AZ": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "KS": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "KY": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "MN": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "MT": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "NH": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "OH": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "SC": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "TN": "fewer than 2 state-specific records facts found on curl-readable official pages",
+    "UT": "fewer than 2 state-specific records facts found on curl-readable official pages"
   }
 }
