@@ -15,9 +15,12 @@ appId: com.keepmyproof.app
 - takeScreenshot: 01-first
 
 # Restore a backup (from the first screen), then back.
-- scrollUntilVisible:
-    element: "Restore a backup ›"
-    direction: DOWN
+# The first screen is now one swipe tall (the preview-only skip button made it longer); scrollUntilVisible's
+# 100%-visibility check missed a fully shown button on run 41444029917, so swipe once and wait for it instead.
+- scroll
+- extendedWaitUntil:
+    visible: "Restore a backup ›"
+    timeout: 20000
 - tapOn: "Restore a backup ›"
 - waitForAnimationToEnd
 - takeScreenshot: 02-restore
