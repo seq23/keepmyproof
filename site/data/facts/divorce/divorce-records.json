@@ -1,0 +1,1386 @@
+{
+  "folder": "divorce",
+  "subtopic": "divorce-records",
+  "title_en": "How to get a copy of your divorce record in {state}",
+  "title_es": "Cómo obtener una copia de su registro de divorcio en {state_es}",
+  "search_intent_en": [
+    "divorce certificate {state}",
+    "copy of divorce decree {state}",
+    "{state} divorce records"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 as the cost of a divorce record copy from the Alabama Center for Health Statistics.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del Centro de Estadísticas de Salud de Alabama cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alabama's state office has divorce records since January 1950.",
+          "claim_es": "La oficina estatal de Alabama tiene registros de divorcio desde enero de 1950.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records since January 1950.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alabama divorce records are not restricted, but the state office does not provide divorce decrees.",
+          "claim_es": "Los registros de divorcio de Alabama no son restringidos, pero la oficina estatal no entrega sentencias de divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Divorce records are not restricted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $6.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $6.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of the same record ordered at the same time are $6.00 each.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Alabama",
+          "label_es": "CDC: dónde solicitar registros vitales en Alabama",
+          "url": "https://www.cdc.gov/nchs/w2w/alabama.htm"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $30.00 as the cost of a divorce record copy from Alaska's state vital records office.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la oficina estatal de registros vitales de Alaska cuesta $30.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $30.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska's state office has divorce records since 1950.",
+          "claim_es": "La oficina estatal de Alaska tiene registros de divorcio desde 1950.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records since 1950.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $25.00.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $25.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of the same record ordered at the same time are $25.00.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Every request must include a copy of the applicant's picture ID.",
+          "claim_es": "Toda solicitud debe incluir una copia de la identificación con foto del solicitante.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "ALL REQUESTS MUST INCLUDE A COPY OF A PICTURE ID OF THE APPLICANT.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Alaska",
+          "label_es": "CDC: dónde solicitar registros vitales en Alaska",
+          "url": "https://www.cdc.gov/nchs/w2w/alaska.htm"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $10.00 as the cost of a divorce record copy from the Arkansas Department of Health.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del Departamento de Salud de Arkansas cuesta $10.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $10.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arkansas's state office has divorce coupons (records) since 1923.",
+          "claim_es": "La oficina estatal de Arkansas tiene cupones (registros) de divorcio desde 1923.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has coupons since 1923.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same divorce record requested at the same time cost $10.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro de divorcio pedidas al mismo tiempo cuestan $10.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of the same divorce record, when requested at the same time, are $10.00 each.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A photo ID of the person requesting the certificate is required.",
+          "claim_es": "Se requiere una identificación con foto de la persona que solicita el certificado.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "A photo ID of the person requesting the certificate is required",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Arkansas",
+          "label_es": "CDC: dónde solicitar registros vitales en Arkansas",
+          "url": "https://www.cdc.gov/nchs/w2w/arkansas.htm"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $14.00 for a California divorce Certificate of Record from the state Department of Public Health.",
+          "claim_es": "Según los CDC, un Certificado de Registro de divorcio del Departamento de Salud Pública de California cuesta $14.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $14.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A California Certificate of Record is not a certified copy of the divorce decree and does not show whether the divorce was finalized.",
+          "claim_es": "En California, el Certificado de Registro no es una copia certificada de la sentencia de divorcio y no indica si el divorcio se finalizó.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "It is not a certified copy of the divorce decree and does not indicate whether the divorce was ever finalized in court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The state office only has information for divorces filed between 1962 and June 1984.",
+          "claim_es": "La oficina estatal solo tiene información de divorcios presentados entre 1962 y junio de 1984.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/california.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "only has information for divorces that were filed with the court between 1962 and June, 1984",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in California",
+          "label_es": "CDC: dónde solicitar registros vitales en California",
+          "url": "https://www.cdc.gov/nchs/w2w/california.htm"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "Colorado's state health department does not issue certified copies of divorce records.",
+          "claim_es": "El departamento de salud estatal de Colorado no emite copias certificadas de registros de divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State Health Department.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The state fee for an index verification of a Colorado divorce is $17.00.",
+          "claim_es": "La tarifa estatal para verificar un divorcio en el índice de Colorado es de $17.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Fee for index verification is $17.00.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Copies come from the Clerk of District Court in the county where the divorce was granted.",
+          "claim_es": "Las copias se obtienen del Secretario del Tribunal de Distrito del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/colorado.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Copies available from Clerk of District Court in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Colorado",
+          "label_es": "CDC: dónde solicitar registros vitales en Colorado",
+          "url": "https://www.cdc.gov/nchs/w2w/colorado.htm"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Delaware's Office of Vital Statistics has divorce records since 1935.",
+          "claim_es": "La Oficina de Estadísticas Vitales de Delaware tiene registros de divorcio desde 1935.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since 1935.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from Delaware's state office.",
+          "claim_es": "La oficina estatal de Delaware no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State office.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For divorces granted after 1975, contact the Family Court in the county where the divorce was granted.",
+          "claim_es": "Para divorcios otorgados después de 1975, comuníquese con el Tribunal de Familia del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/delaware.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "For divorces granted after 1975, the parties concerned should contact Family Court in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Delaware",
+          "label_es": "CDC: dónde solicitar registros vitales en Delaware",
+          "url": "https://www.cdc.gov/nchs/w2w/delaware.htm"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $6.50 as the cost of a divorce record copy from DC Superior Court.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del Tribunal Superior de DC cuesta $6.50.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $6.50",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "DC Superior Court has divorce records since September 16, 1956.",
+          "claim_es": "El Tribunal Superior de DC tiene registros de divorcio desde el 16 de septiembre de 1956.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since September 16, 1956.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Records from before September 16, 1956 are with the Clerk of the U.S. District Court for the District of Columbia.",
+          "claim_es": "Los registros anteriores al 16 de septiembre de 1956 están con el Secretario del Tribunal de Distrito de EE. UU. para el Distrito de Columbia.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/dc.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records before September 16, 1956.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in District of Columbia",
+          "label_es": "CDC: dónde solicitar registros vitales en District of Columbia",
+          "url": "https://www.cdc.gov/nchs/w2w/dc.htm"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "Georgia's state office issues a $10.00 verification letter that confirms the date and county of a divorce.",
+          "claim_es": "La oficina estatal de Georgia emite una carta de verificación de $10.00 que confirma la fecha y el condado del divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "$10.00 for verification letter which verifies date and county of divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The State Office of Vital Records can confirm Georgia divorces from June 1952 to August 1996.",
+          "claim_es": "La Oficina Estatal de Registros Vitales puede confirmar divorcios en Georgia de junio de 1952 a agosto de 1996.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The State Office of Vital Records can search and confirm divorces that have taken place in the state of Georgia from June 1952 to August 1996.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For divorces before 1952 or after 1996, go to the Clerk of Superior Court in the county where the divorce was granted.",
+          "claim_es": "Para divorcios antes de 1952 o después de 1996, acuda al Secretario del Tribunal Superior del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/georgia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Verifications prior to 1952 and after 1996 are only available from the Clerk of Superior Court in the county where the divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Georgia",
+          "label_es": "CDC: dónde solicitar registros vitales en Georgia",
+          "url": "https://www.cdc.gov/nchs/w2w/georgia.htm"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "Idaho's Vital Records Unit has divorce records since May 1947.",
+          "claim_es": "La Unidad de Registros Vitales de Idaho tiene registros de divorcio desde mayo de 1947.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since May 1947.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Older Idaho divorce records are with the County Recorder in the county where the divorce was granted.",
+          "claim_es": "Los registros de divorcio más antiguos de Idaho están con el Registrador del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Earlier records are with County Recorder in county where divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho divorce records are legally confidential for 50 years.",
+          "claim_es": "En Idaho, los registros de divorcio son confidenciales por ley durante 50 años.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records are legally confidential for 50 years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The CDC lists $16.00 for a computer-generated copy.",
+          "claim_es": "Según los CDC, una copia generada por computadora cuesta $16.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/idaho.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "$16.00 Computer Generated",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Idaho",
+          "label_es": "CDC: dónde solicitar registros vitales en Idaho",
+          "url": "https://www.cdc.gov/nchs/w2w/idaho.htm"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $20.00 as the cost of a divorce record copy from the Kansas Office of Vital Statistics.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la Oficina de Estadísticas Vitales de Kansas cuesta $20.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $20.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Kansas's state office has divorce records since July 1951.",
+          "claim_es": "La oficina estatal de Kansas tiene registros de divorcio desde julio de 1951.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records since July 1951.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $20.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $20.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/kansas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of the same record ordered at the same time are $20.00 each.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Kansas",
+          "label_es": "CDC: dónde solicitar registros vitales en Kansas",
+          "url": "https://www.cdc.gov/nchs/w2w/kansas.htm"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 as the cost of a divorce record copy from the Maine CDC.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del CDC de Maine cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maine's state office physically houses divorce records since 1923.",
+          "claim_es": "La oficina estatal de Maine guarda físicamente registros de divorcio desde 1923.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office physically houses records since 1923.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Records from 1892 to 1922 are at the Maine State Archives.",
+          "claim_es": "Los registros de 1892 a 1922 están en los Archivos Estatales de Maine.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records from 1892-1922 housed at the Maine State Archives.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $6.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $6.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maine.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of same record ordered at same time are $6.00 each.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Maine",
+          "label_es": "CDC: dónde solicitar registros vitales en Maine",
+          "url": "https://www.cdc.gov/nchs/w2w/maine.htm"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $12.00 as the cost of a divorce record copy from Maryland's Division of Vital Records.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la División de Registros Vitales de Maryland cuesta $12.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $12.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maryland's state office has divorce records since January 1992.",
+          "claim_es": "La oficina estatal de Maryland tiene registros de divorcio desde enero de 1992.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since January, 1992.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified divorce decrees come from the Clerk of Circuit Court in the city or county where the divorce was granted.",
+          "claim_es": "Las sentencias de divorcio certificadas se obtienen del Secretario del Tribunal de Circuito de la ciudad o condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/maryland.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified divorce decrees may be obtained through the Clerk of Circuit Court in the city/county where the divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Maryland",
+          "label_es": "CDC: dónde solicitar registros vitales en Maryland",
+          "url": "https://www.cdc.gov/nchs/w2w/maryland.htm"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts's Registry of Vital Records has a divorce index only, since 1952.",
+          "claim_es": "El Registro de Registros Vitales de Massachusetts solo tiene un índice de divorcios desde 1952.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Index only since 1952.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from the Massachusetts state office.",
+          "claim_es": "La oficina estatal de Massachusetts no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State office.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce records are with the Register of Probate Court in the county where the divorce was granted.",
+          "claim_es": "Los registros de divorcio están con el Registrador del Tribunal de Sucesiones del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Register of Probate Court in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Massachusetts",
+          "label_es": "CDC: dónde solicitar registros vitales en Massachusetts",
+          "url": "https://www.cdc.gov/nchs/w2w/massachusetts.htm"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $34.00 for a Michigan divorce record, with a $12.00 rush fee extra.",
+          "claim_es": "Según los CDC, un registro de divorcio de Michigan cuesta $34.00, más $12.00 por servicio urgente.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $34.00 (Rush fee additional $12.00)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Michigan's state office has divorce records since 1897.",
+          "claim_es": "La oficina estatal de Michigan tiene registros de divorcio desde 1897.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since 1897.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Michigan divorce records are not restricted, so anyone can order one.",
+          "claim_es": "En Michigan, los registros de divorcio no son restringidos, así que cualquier persona puede pedir uno.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Divorce records are not restricted so anyone can order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The divorce judgment itself must be obtained from the court that finalized the divorce.",
+          "claim_es": "La sentencia de divorcio se debe obtener del tribunal que finalizó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/michigan.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Judgment must be obtained from the court that finalized.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Michigan",
+          "label_es": "CDC: dónde solicitar registros vitales en Michigan",
+          "url": "https://www.cdc.gov/nchs/w2w/michigan.htm"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota does not record divorces at the state level.",
+          "claim_es": "Minnesota no registra los divorcios a nivel estatal.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Divorce records are not recorded at the state level.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For a copy, contact the court administrator in the county where the divorce was granted.",
+          "claim_es": "Para una copia, comuníquese con el administrador del tribunal del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Contact the court administrator in the county where the divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The CDC lists $10.00 as the county cost of a divorce record copy in Minnesota.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio en el condado cuesta $10.00 en Minnesota.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/minnesota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $10.00",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Minnesota",
+          "label_es": "CDC: dónde solicitar registros vitales en Minnesota",
+          "url": "https://www.cdc.gov/nchs/w2w/minnesota.htm"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "Mississippi's state office has divorce records since January 1926.",
+          "claim_es": "La oficina estatal de Mississippi tiene registros de divorcio desde enero de 1926.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since January 1926.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An index search costs $17.00 for each 5-year period searched.",
+          "claim_es": "La búsqueda en el índice cuesta $17.00 por cada período de 5 años.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Index search only available at $17.00 for each 5-year increment.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies come from the Chancery Clerk in the county where the divorce was granted.",
+          "claim_es": "Las copias certificadas se obtienen del Secretario de la Cancillería del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Chancery Clerk in county where divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from Mississippi's state office.",
+          "claim_es": "La oficina estatal de Mississippi no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/mississippi.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State office.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Mississippi",
+          "label_es": "CDC: dónde solicitar registros vitales en Mississippi",
+          "url": "https://www.cdc.gov/nchs/w2w/mississippi.htm"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "Missouri has reports of divorce on file from July 1948 to the present.",
+          "claim_es": "Missouri tiene informes de divorcio archivados desde julio de 1948 hasta hoy.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Reports of divorce records are on file from July 1948 to the present.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are also available from the circuit clerk in the county where the divorce was granted.",
+          "claim_es": "También hay copias certificadas con el secretario del circuito del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies of Missouri divorce records are also available from the county circuit clerk where the divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies of reports of divorce cost $15.00 each.",
+          "claim_es": "Las copias certificadas de los informes de divorcio cuestan $15.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/missouri.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies of reports of divorce records are $15.00 each.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Missouri",
+          "label_es": "CDC: dónde solicitar registros vitales en Missouri",
+          "url": "https://www.cdc.gov/nchs/w2w/missouri.htm"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "Montana keeps indexes to locate divorce decrees since July 1943.",
+          "claim_es": "Montana tiene índices para localizar sentencias de divorcio desde julio de 1943.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Indexes to locate divorce decrees since July 1943.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from Montana's state office.",
+          "claim_es": "La oficina estatal de Montana no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State office.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A state search and verification costs $10.00 for the first five years searched.",
+          "claim_es": "La búsqueda y verificación estatal cuesta $10.00 por los primeros cinco años buscados.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Fee for search and verification of essential facts of divorce is $10.00 for the first five years being searched.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Copies come from the Clerk of District Court in the county where the divorce was granted.",
+          "claim_es": "Las copias se obtienen del Secretario del Tribunal de Distrito del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/montana.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Clerk of District Court in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Montana",
+          "label_es": "CDC: dónde solicitar registros vitales en Montana",
+          "url": "https://www.cdc.gov/nchs/w2w/montana.htm"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $16.00 as the cost of a divorce record copy from Nebraska Vital Records.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de Registros Vitales de Nebraska cuesta $16.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $16.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nebraska's state office has divorce records since January 1909.",
+          "claim_es": "La oficina estatal de Nebraska tiene registros de divorcio desde enero de 1909.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since January 1909.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Every request must include a photocopy of a valid government-issued photo ID.",
+          "claim_es": "Toda solicitud debe incluir una fotocopia de una identificación con foto válida emitida por el gobierno.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/nebraska.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "All requests must include a photocopy of the requestor’s valid government-issued photo identification",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Nebraska",
+          "label_es": "CDC: dónde solicitar registros vitales en Nebraska",
+          "url": "https://www.cdc.gov/nchs/w2w/nebraska.htm"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 for a New Hampshire divorce record, and $10.00 for each extra copy ordered at the same time.",
+          "claim_es": "Según los CDC, un registro de divorcio de New Hampshire cuesta $15.00 y cada copia adicional pedida al mismo tiempo cuesta $10.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "$15.00; Additional copies ordered at the same time are $10.00 each.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire's state office has divorce records since 1808.",
+          "claim_es": "La oficina estatal de New Hampshire tiene registros de divorcio desde 1808.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since 1808.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Copies are available from the state office or the Clerk of the Superior/Family Division Court in the county where the divorce was granted.",
+          "claim_es": "Hay copias en la oficina estatal o con el Secretario del Tribunal Superior o de la División de Familia del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Copies of records may be obtained from State office or Clerk of Superior/Family Division Court in the county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in New Hampshire",
+          "label_es": "CDC: dónde solicitar registros vitales en New Hampshire",
+          "url": "https://www.cdc.gov/nchs/w2w/new_hampshire.htm"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $10.00 for a New Jersey divorce record copy from the Clerk of the Superior Court.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de Nueva Jersey del Secretario del Tribunal Superior cuesta $10.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $10.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The fee is for a certified Blue Seal copy.",
+          "claim_es": "La tarifa corresponde a una copia certificada con Sello Azul (Blue Seal).",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The fee is for a certified Blue Seal copy.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Checks are made payable to the Clerk of the Superior Court.",
+          "claim_es": "Los cheques se emiten a nombre del Secretario del Tribunal Superior (Clerk of the Superior Court).",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Make check payable to Clerk of the Superior Court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in New Jersey",
+          "label_es": "CDC: dónde solicitar registros vitales en New Jersey",
+          "url": "https://www.cdc.gov/nchs/w2w/new_jersey.htm"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $30.00 as the cost of a divorce record copy from New York's state Vital Records Section.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la Sección de Registros Vitales del estado de Nueva York cuesta $30.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $30.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New York's state office has divorce records since January 1963.",
+          "claim_es": "La oficina estatal de Nueva York tiene registros de divorcio desde enero de 1963.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since January 1963.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce records are also with the County Clerk in the county where the divorce was granted.",
+          "claim_es": "Los registros de divorcio también están con el Secretario del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/new_york.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "County Clerk in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in New York",
+          "label_es": "CDC: dónde solicitar registros vitales en New York",
+          "url": "https://www.cdc.gov/nchs/w2w/new_york.htm"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $24.00 for the first copy of a North Carolina divorce record.",
+          "claim_es": "Según los CDC, la primera copia de un registro de divorcio de Carolina del Norte cuesta $24.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of first copy: $24.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Each additional copy costs $15.00.",
+          "claim_es": "Cada copia adicional cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of each additional copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Carolina's state office has divorce records beginning with 1958.",
+          "claim_es": "La oficina estatal de Carolina del Norte tiene registros de divorcio a partir de 1958.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The State Office has divorce records beginning with 1958.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A valid photo ID and a signed application are required for every request.",
+          "claim_es": "Se requiere una identificación con foto válida y una solicitud firmada para cada pedido.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "A copy of a valid photo ID and a signed application are required for all certificate requests.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in North Carolina",
+          "label_es": "CDC: dónde solicitar registros vitales en North Carolina",
+          "url": "https://www.cdc.gov/nchs/w2w/north_carolina.htm"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "Certified copies are not available from Ohio's state health department.",
+          "claim_es": "El departamento de salud estatal de Ohio no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from the State Health Department.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For certified copies, write to the county Clerk of Courts where the divorce was granted.",
+          "claim_es": "Para copias certificadas, escriba al Secretario de Tribunales del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "For certified copies of divorces, please write to county Clerk of Courts where the divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Ohio divorce records are with the Clerk of the Court of Common Pleas in the county where the divorce was granted.",
+          "claim_es": "En Ohio, los registros de divorcio están con el Secretario del Tribunal de Causas Comunes del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Clerk of Court of Common Pleas in county where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Ohio",
+          "label_es": "CDC: dónde solicitar registros vitales en Ohio",
+          "url": "https://www.cdc.gov/nchs/w2w/ohio.htm"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $25.00 for an Oregon divorce certificate from the state.",
+          "claim_es": "Según los CDC, un certificado de divorcio del estado de Oregón cuesta $25.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $25.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $25.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $25.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies of the same record ordered at the same time are $25.00 each.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Oregon State Archives can provide non-certified copies of divorce records more than 50 years old.",
+          "claim_es": "Los Archivos Estatales de Oregón pueden dar copias no certificadas de registros de divorcio de más de 50 años.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The Oregon State Archives can provide non-certified copies of Divorce records that are more than 50 years old.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Oregon",
+          "label_es": "CDC: dónde solicitar registros vitales en Oregon",
+          "url": "https://www.cdc.gov/nchs/w2w/oregon.htm"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina's $12 search fee is non-refundable and includes one certification if the record is found.",
+          "claim_es": "En Carolina del Sur, la tarifa de búsqueda de $12 no es reembolsable e incluye una certificación si se encuentra el registro.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The $12 search fee is non-refundable.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies purchased at the same time cost $3.00 each.",
+          "claim_es": "Las copias adicionales compradas al mismo tiempo cuestan $3.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Additional copies purchased at the same time are $3.00 each.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Reports of divorce are available starting July 1962.",
+          "claim_es": "Los informes de divorcio están disponibles desde julio de 1962.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Reports of Divorce are available starting July 1962.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The actual divorce decree comes from the Clerk of Court in the county where the final divorce was held.",
+          "claim_es": "La sentencia de divorcio se obtiene del Secretario del Tribunal del condado donde se dictó el divorcio final.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The actual divorce decree must be obtained from the Clerk of Court in the county where the final divorce was held.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in South Carolina",
+          "label_es": "CDC: dónde solicitar registros vitales en South Carolina",
+          "url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 as the cost of a divorce record copy from South Dakota Vital Records.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de Registros Vitales de Dakota del Sur cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "South Dakota's state office has divorce records since July 1905.",
+          "claim_es": "La oficina estatal de Dakota del Sur tiene registros de divorcio desde julio de 1905.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since July 1905.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce records can also come from the Clerk of Courts in the county where the divorce was granted.",
+          "claim_es": "Los registros de divorcio también se pueden obtener del Secretario de Tribunales del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Divorces can also be obtained from the Clerk of Courts in the county where the divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in South Dakota",
+          "label_es": "CDC: dónde solicitar registros vitales en South Dakota",
+          "url": "https://www.cdc.gov/nchs/w2w/south_dakota.htm"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 as the cost of a divorce record copy from Tennessee Vital Records.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de Registros Vitales de Tennessee cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Tennessee's Vital Records Office keeps divorce records for 50 years.",
+          "claim_es": "La Oficina de Registros Vitales de Tennessee guarda los registros de divorcio durante 50 años.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Vital Records Office keeps divorce records for 50 years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Older records are kept by the Tennessee Library and Archives.",
+          "claim_es": "Los registros más antiguos los guarda la Biblioteca y Archivos de Tennessee.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/tennessee.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Older records are maintained by Tennessee Library and Archives.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Tennessee",
+          "label_es": "CDC: dónde solicitar registros vitales en Tennessee",
+          "url": "https://www.cdc.gov/nchs/w2w/tennessee.htm"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "Texas's state Vital Statistics Section has divorce records since January 1968.",
+          "claim_es": "La Sección de Estadísticas Vitales de Texas tiene registros de divorcio desde enero de 1968.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records since January 1968.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from the Texas state office.",
+          "claim_es": "La oficina estatal de Texas no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from State office.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A state search and verification of a divorce costs $20.00.",
+          "claim_es": "La búsqueda y verificación estatal de un divorcio cuesta $20.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/texas.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Fee for search and verification of essential facts of divorce is $20.00 each.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Texas",
+          "label_es": "CDC: dónde solicitar registros vitales en Texas",
+          "url": "https://www.cdc.gov/nchs/w2w/texas.htm"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "Utah's state office has divorce records between 1978 and 2010.",
+          "claim_es": "La oficina estatal de Utah tiene registros de divorcio de 1978 a 2010.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records between 1978-2010.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Records outside that range are at the court where the divorce was granted.",
+          "claim_es": "Los registros fuera de ese período están en el tribunal donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records out of that range can be found at the court where the divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Only short-form certified copies are available from the state.",
+          "claim_es": "El estado solo entrega copias certificadas en formato corto.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/utah.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Only short form certified copies are available.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Utah",
+          "label_es": "CDC: dónde solicitar registros vitales en Utah",
+          "url": "https://www.cdc.gov/nchs/w2w/utah.htm"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $10.00 for a divorce record copy from the Vermont Department of Health.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del Departamento de Salud de Vermont cuesta $10.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $10.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Vermont's state office has divorce records for the most recent 5 years.",
+          "claim_es": "La oficina estatal de Vermont tiene registros de divorcio de los últimos 5 años.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records for the most recent 5 years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce records are also with the family court in the county where the divorce was granted.",
+          "claim_es": "Los registros de divorcio también están en el tribunal de familia del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Family court in county where divorce was granted.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Records for all years back to 1909 can be requested through the Vital Records Request Service.",
+          "claim_es": "Los registros de todos los años desde 1909 se pueden pedir mediante el Servicio de Solicitud de Registros Vitales.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/vermont.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Records for all years back to 1909 can be requested through the Vital Records Request Service",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Vermont",
+          "label_es": "CDC: dónde solicitar registros vitales en Vermont",
+          "url": "https://www.cdc.gov/nchs/w2w/vermont.htm"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $15.00 as the cost of a divorce record copy from Virginia's Office of Vital Records.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la Oficina de Registros Vitales de Virginia cuesta $15.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Virginia's state office has divorce records filed after 1918.",
+          "claim_es": "La oficina estatal de Virginia tiene registros de divorcio presentados después de 1918.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records filed after 1918.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Records from before 1918 may be with the Library of Virginia or the court that issued the divorce.",
+          "claim_es": "Los registros anteriores a 1918 pueden estar en la Biblioteca de Virginia o en el tribunal que otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The Library of Virginia or the court that issued the divorce may be in possession of records prior to 1918.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce records are also with the Clerk of Court in the county or city where the divorce was granted.",
+          "claim_es": "Los registros de divorcio también están con el Secretario del Tribunal del condado o ciudad donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Clerk of Court in county or city where divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Virginia",
+          "label_es": "CDC: dónde solicitar registros vitales en Virginia",
+          "url": "https://www.cdc.gov/nchs/w2w/virginia.htm"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $25.00 as the cost of a divorce record copy from Washington's Department of Health.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio del Departamento de Salud de Washington cuesta $25.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $25.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Washington's state vital records office has divorce records from January 1968 to the present.",
+          "claim_es": "La oficina estatal de registros vitales de Washington tiene registros de divorcio desde enero de 1968 hasta hoy.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "The state vital records office has records from January 1968 to present.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The application asks for the county where the court finalized the divorce.",
+          "claim_es": "La solicitud pide el condado donde el tribunal finalizó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/washington.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "County where the court finalized the divorce.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Washington",
+          "label_es": "CDC: dónde solicitar registros vitales en Washington",
+          "url": "https://www.cdc.gov/nchs/w2w/washington.htm"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "West Virginia's state office has divorce indexes only, since 1968.",
+          "claim_es": "La oficina estatal de Virginia Occidental solo tiene índices de divorcio desde 1968.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Indexes only since 1968.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies are not available from the West Virginia state office.",
+          "claim_es": "La oficina estatal de Virginia Occidental no entrega copias certificadas.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies are not available from state office.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Certified copies of divorce orders come from the Clerk of the Circuit Court in the county where the divorce was granted.",
+          "claim_es": "Las copias certificadas de las órdenes de divorcio se obtienen del Secretario del Tribunal de Circuito del condado donde se otorgó el divorcio.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Certified copies of divorce orders may be obtained from the Clerk of the Circuit Court in the county where the divorce was granted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in West Virginia",
+          "label_es": "CDC: dónde solicitar registros vitales en West Virginia",
+          "url": "https://www.cdc.gov/nchs/w2w/west_virginia.htm"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $20.00 as the cost of a divorce record copy from the Wisconsin Vital Records Office.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de la Oficina de Registros Vitales de Wisconsin cuesta $20.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $20.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Extra copies of the same record ordered at the same time cost $3.00 each.",
+          "claim_es": "Las copias adicionales del mismo registro pedidas al mismo tiempo cuestan $3.00 cada una.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "If multiple copies of the same record are ordered at the same time, additional copies are $3.00 each.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, certified copies are only available to people with a direct and tangible interest in the record.",
+          "claim_es": "En Wisconsin, las copias certificadas solo están disponibles para personas con un interés directo y tangible en el registro.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "In Wisconsin, certified copies of vital records are only available to people with a direct and tangible interest in the record.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Wisconsin",
+          "label_es": "CDC: dónde solicitar registros vitales en Wisconsin",
+          "url": "https://www.cdc.gov/nchs/w2w/wisconsin.htm"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "The CDC lists $25.00 as the cost of a divorce record copy from Wyoming Vital Statistics Services.",
+          "claim_es": "Según los CDC, una copia de un registro de divorcio de los Servicios de Estadísticas Vitales de Wyoming cuesta $25.00.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "Cost of copy: $25.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Wyoming's state office has divorce records since 1941.",
+          "claim_es": "La oficina estatal de Wyoming tiene registros de divorcio desde 1941.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "State office has records since 1941.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "After 50 years, Wyoming divorce records are open to the public.",
+          "claim_es": "Después de 50 años, los registros de divorcio de Wyoming son públicos.",
+          "source_url": "https://www.cdc.gov/nchs/w2w/wyoming.htm",
+          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
+          "quote": "After 50 years divorce records are open to the public.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "CDC: where to write for vital records in Wyoming",
+          "label_es": "CDC: dónde solicitar registros vitales en Wyoming",
+          "url": "https://www.cdc.gov/nchs/w2w/wyoming.htm"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AZ": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "CT": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "FL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "HI": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IN": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "IA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "KY": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "LA": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "NV": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "NM": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "ND": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "OK": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "PA": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "RI": "fewer than 3 quote-verified facts from official sources (1 verified)"
+  }
+}
