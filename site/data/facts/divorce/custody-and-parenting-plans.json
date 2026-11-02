@@ -1091,6 +1091,89 @@
         }
       ]
     },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "In Rhode Island custody orders, the court provides reasonable visitation for the parent without custody unless cause is shown why it should not be granted.",
+          "claim_es": "En las órdenes de custodia de Rhode Island, el tribunal concede visitas razonables al padre sin custodia, salvo que se demuestre causa para no concederlas.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-16.htm",
+          "source_name": "Rhode Island General Laws § 15-5-16",
+          "quote": "the court shall provide for the reasonable right of visitation by the natural parent not having custody of the children, except upon the showing of cause why the right should not be granted",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, the fact that a parent receives public assistance cannot be a factor in awarding custody.",
+          "claim_es": "En Rhode Island, que uno de los padres reciba asistencia pública no puede ser un factor al otorgar la custodia.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-16.htm",
+          "source_name": "Rhode Island General Laws § 15-5-16",
+          "quote": "the fact that a parent is receiving public assistance shall not be a factor in awarding custody",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a Rhode Island court denies visitation because of abuse, it reviews the case at least annually.",
+          "claim_es": "Si un tribunal de Rhode Island niega las visitas por abuso, revisa el caso al menos una vez al año.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-16.htm",
+          "source_name": "Rhode Island General Laws § 15-5-16",
+          "quote": "it shall review the case at least annually to determine what, if any, action the parent has taken to rehabilitate himself or herself",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island General Laws § 15-5-16",
+          "label_es": "Rhode Island General Laws § 15-5-16",
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-16.htm"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota law requires all parties in a child custody or parenting time action to complete a court-approved parenting course within sixty days of being served.",
+          "claim_es": "La ley de Dakota del Sur exige que todas las partes en un caso de custodia o tiempo de crianza completen un curso de crianza aprobado por el tribunal dentro de los sesenta días de ser notificadas.",
+          "source_url": "https://ujs.sd.gov/media/vhni1nix/ujs-180-checklist-for-paternity-action_05_2026.pdf",
+          "source_name": "South Dakota Unified Judicial System: Form UJS-180 checklist",
+          "quote": "all parties involved in an action related to child custody or parenting time, must complete a court-approved parenting course within sixty days of being served with the Summons and Complaint",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If South Dakota parents cannot agree, the judge can order them both to mediation with a court-approved mediator, and mediation is not binding.",
+          "claim_es": "Si los padres en Dakota del Sur no se ponen de acuerdo, el juez puede ordenarles mediación con un mediador aprobado por el tribunal, y la mediación no es vinculante.",
+          "source_url": "https://ujs.sd.gov/media/vhni1nix/ujs-180-checklist-for-paternity-action_05_2026.pdf",
+          "source_name": "South Dakota Unified Judicial System: Form UJS-180 checklist",
+          "quote": "the Judge can order them both to mediation. A Court-approved mediator will help the parties mutually agree on the various issues in your custody case. Mediation is not binding",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, a party who disagrees with the standard parenting time guidelines must file an objection within 10 days of receiving notice.",
+          "claim_es": "En Dakota del Sur, la parte que no esté de acuerdo con las pautas estándar de tiempo de crianza debe presentar una objeción dentro de los 10 días de recibir la notificación.",
+          "source_url": "https://ujs.sd.gov/self-help/family-law-help/shared-parenting-guidelines-plans/",
+          "source_name": "South Dakota Unified Judicial System: Shared Parenting Guidelines and Plans",
+          "quote": "You must complete the Objection within 10 days from the time you received notice of the action.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If no objection is filed within 10 days of service, a South Dakota parent may submit the proposed order implementing the state parenting time guidelines.",
+          "claim_es": "Si no se presenta una objeción dentro de los 10 días de la notificación, uno de los padres en Dakota del Sur puede presentar la orden propuesta que aplica las pautas estatales de tiempo de crianza.",
+          "source_url": "https://ujs.sd.gov/self-help/family-law-help/shared-parenting-guidelines-plans/",
+          "source_name": "South Dakota Unified Judicial System: Shared Parenting Guidelines and Plans",
+          "quote": "If after 10 days from the Service of Process, the opposing party does not file an objection, you may submit the Proposed Order Implementing South Dakota Parenting Time Guidelines",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Unified Judicial System: Form UJS-180 checklist",
+          "label_es": "South Dakota Unified Judicial System: Form UJS-180 checklist",
+          "url": "https://ujs.sd.gov/media/vhni1nix/ujs-180-checklist-for-paternity-action_05_2026.pdf"
+        },
+        {
+          "label_en": "South Dakota Unified Judicial System: Shared Parenting Guidelines and Plans",
+          "label_es": "South Dakota Unified Judicial System: Shared Parenting Guidelines and Plans",
+          "url": "https://ujs.sd.gov/self-help/family-law-help/shared-parenting-guidelines-plans/"
+        }
+      ]
+    },
     "UT": {
       "facts": [
         {
@@ -1314,9 +1397,7 @@
     "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"

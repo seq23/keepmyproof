@@ -9,6 +9,134 @@
     "when does child support end in {state}"
   ],
   "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "Alabama's child support guidelines are based on the income shares model.",
+          "claim_es": "Las pautas de manutención de Alabama se basan en el modelo de ingresos compartidos.",
+          "source_url": "https://www.alacourt.gov/ChildSupportInfo.aspx",
+          "source_name": "Alabama Judicial System: Child Support",
+          "quote": "These Guidelines are based on the income shares model",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alabama's current guidelines took effect May 1, 2022 for cases filed on or after that date.",
+          "claim_es": "Las pautas actuales de Alabama entraron en vigor el 1 de mayo de 2022 para casos presentados desde esa fecha.",
+          "source_url": "https://www.alacourt.gov/ChildSupportReview.aspx",
+          "source_name": "Alabama Judicial System: Child Support Guidelines Review",
+          "quote": "The current Guidelines were revised effective May 1, 2022 for cases filed on or after May 1, 2022.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under Rule 32(G) of the Alabama Rules of Judicial Administration, the child support guidelines and schedule are reviewed at least once every four years.",
+          "claim_es": "Según la Regla 32(G) de las Reglas de Administración Judicial de Alabama, las pautas de manutención y su tabla se revisan al menos una vez cada cuatro años.",
+          "source_url": "https://www.alacourt.gov/ChildSupportReview.aspx",
+          "source_name": "Alabama Judicial System: Child Support Guidelines Review",
+          "quote": "Rule 32(G), Alabama Rules of Judicial Administration, provides that at least once every four years, the child-support guidelines and the schedule of basic ch",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alabama Judicial System: Child Support",
+          "label_es": "Alabama Judicial System: Child Support",
+          "url": "https://www.alacourt.gov/ChildSupportInfo.aspx"
+        },
+        {
+          "label_en": "Alabama Judicial System: Child Support Guidelines Review",
+          "label_es": "Alabama Judicial System: Child Support Guidelines Review",
+          "url": "https://www.alacourt.gov/ChildSupportReview.aspx"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Parents in divorce and custody cases must fill out the Child Support Guidelines Affidavit, form DR-305.",
+          "claim_es": "Los padres en casos de divorcio y custodia deben llenar la Declaración Jurada de Pautas de Manutención, formulario DR-305.",
+          "source_url": "https://courts.alaska.gov/shc/family/supportfaq.htm",
+          "source_name": "Alaska Court System Self-Help: Calculate Child Support",
+          "quote": "Parents in cases involving child custody (divorce and custody cases) must fill out the Child Support Guidelines Affidavit DR-305",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska child support is calculated with the formula in Civil Rule 90.3, and variation from the rule is allowed only in very rare circumstances.",
+          "claim_es": "En Alaska, la manutención se calcula con la fórmula de la Regla Civil 90.3, y solo se permite apartarse de ella en circunstancias muy excepcionales.",
+          "source_url": "https://courts.alaska.gov/shc/family/supportfaq.htm",
+          "source_name": "Alaska Court System Self-Help: Calculate Child Support",
+          "quote": "Child support is calculated based on the formula in Civil Rule 90.3 . Variation from the rule is allowed only in very rare circumstances.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For primary custody in Alaska, support is adjusted income times 20% for one child, 27% for two, 33% for three, and 3% more for each additional child.",
+          "claim_es": "Para la custodia principal en Alaska, la manutención es el ingreso ajustado por el 20% para un hijo, 27% para dos, 33% para tres y 3% más por cada hijo adicional.",
+          "source_url": "https://courts.alaska.gov/shc/family/supportfaq.htm",
+          "source_name": "Alaska Court System Self-Help: Calculate Child Support",
+          "quote": "1 kid: 20% 2 kids: 27% 3 kids: 33% More kids: 3% for each",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The lowest child support amount someone can owe in Alaska is $50.00 a month.",
+          "claim_es": "El monto mínimo de manutención que alguien puede deber en Alaska es de $50.00 al mes.",
+          "source_url": "https://courts.alaska.gov/shc/family/supportfaq.htm",
+          "source_name": "Alaska Court System Self-Help: Calculate Child Support",
+          "quote": "the support amount will be $50.00 a month. The lowest amount of child support that someone can owe is $50.00.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System Self-Help: Calculate Child Support",
+          "label_es": "Alaska Court System Self-Help: Calculate Child Support",
+          "url": "https://courts.alaska.gov/shc/family/supportfaq.htm"
+        },
+        {
+          "label_en": "Alaska Court System form DR-10",
+          "label_es": "Alaska Court System form DR-10",
+          "url": "https://public.courts.alaska.gov/web/forms/docs/dr-10.pdf"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "The Arizona Supreme Court adopted guideline revisions on April 22, 2021, reflecting a quadrennial review and a minimum wage of $12.80 per hour.",
+          "claim_es": "La Corte Suprema de Arizona adoptó revisiones de las pautas el 22 de abril de 2021, que reflejan una revisión cuatrienal y un salario mínimo de $12.80 por hora.",
+          "source_url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/About-the-Child-Support-Calculator",
+          "source_name": "Arizona Judicial Branch: About the Child Support Calculator",
+          "quote": "On April 22, 2021, the Supreme Court adopted revisions to the Arizona Child Support Guidelines based upon the recommendations from the federally mandated quadrennial review and the minimum wage increase to $12.80/hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona's 2022 child support guidelines apply to original and modified orders entered after January 1, 2022, except in default cases or as the parties agree.",
+          "claim_es": "Las pautas de manutención de Arizona de 2022 se aplican a órdenes originales y modificadas dictadas después del 1 de enero de 2022, salvo en casos de rebeldía o según acuerden las partes.",
+          "source_url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/About-the-Child-Support-Calculator",
+          "source_name": "Arizona Judicial Branch: About the Child Support Calculator",
+          "quote": "The 2022 child support guidelines are effective for all child support orders, whether original orders or modifications of previous orders, entered after January 1, 2022, except in cases of default or as otherwise agreed upon by the parties.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona's current child support guidelines took effect January 1, 2022, and were revised September 21, 2022.",
+          "claim_es": "Las pautas de manutención vigentes de Arizona entraron en vigor el 1 de enero de 2022 y se revisaron el 21 de septiembre de 2022.",
+          "source_url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/Arizona-Child-Support-Guidelines",
+          "source_name": "Arizona Judicial Branch: Arizona Child Support Guidelines",
+          "quote": "New child support guidelines are available, effective January 1, 2022 (Revised September 21, 2022).",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Judicial Branch: About the Child Support Calculator",
+          "label_es": "Arizona Judicial Branch: About the Child Support Calculator",
+          "url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/About-the-Child-Support-Calculator"
+        },
+        {
+          "label_en": "Arizona Judicial Branch: Arizona Child Support Guidelines",
+          "label_es": "Arizona Judicial Branch: Arizona Child Support Guidelines",
+          "url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/Arizona-Child-Support-Guidelines"
+        }
+      ]
+    },
     "AR": {
       "facts": [
         {
@@ -277,6 +405,41 @@
           "label_en": "Florida Statutes § 61.30",
           "label_es": "Florida Statutes § 61.30",
           "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.30.html"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "Once the noncustodial parent is located, Georgia's Division of Child Support Services has 90 days to establish a court order.",
+          "claim_es": "Una vez ubicado el padre sin custodia, la División de Servicios de Manutención de Georgia tiene 90 días para obtener una orden judicial.",
+          "source_url": "https://childsupport.georgia.gov/about-us/frequently-asked-questions",
+          "source_name": "Georgia Division of Child Support Services: Frequently Asked Questions",
+          "quote": "Once the noncustodial parent has been located, the DCSS has 90 days to establish a court order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Georgia's child support agency follows the guidelines in state law, O.C.G.A. § 19-6-15, to set the amount.",
+          "claim_es": "La agencia de manutención de Georgia sigue las pautas de la ley estatal, O.C.G.A. § 19-6-15, para fijar el monto.",
+          "source_url": "https://childsupport.georgia.gov/about-us/frequently-asked-questions",
+          "source_name": "Georgia Division of Child Support Services: Frequently Asked Questions",
+          "quote": "In determining child support, DCSS follows the guidelines established by state law, O.C.G.A. § 19-6-15.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Georgia, a DNA test through the child support agency requires an open and active child support case.",
+          "claim_es": "En Georgia, una prueba de ADN a través de la agencia de manutención requiere un caso de manutención abierto y activo.",
+          "source_url": "https://childsupport.georgia.gov/about-us/frequently-asked-questions",
+          "source_name": "Georgia Division of Child Support Services: Frequently Asked Questions",
+          "quote": "In order for a DNA test to be completed, there must be an open and active case with DCSS.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia Division of Child Support Services: Frequently Asked Questions",
+          "label_es": "Georgia Division of Child Support Services: Frequently Asked Questions",
+          "url": "https://childsupport.georgia.gov/about-us/frequently-asked-questions"
         }
       ]
     },
@@ -678,6 +841,54 @@
           "label_en": "Maryland Department of Human Services: Child Support",
           "label_es": "Maryland Department of Human Services: Child Support",
           "url": "https://dhs.maryland.gov/child-support-services/"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts' 2025 Child Support Guidelines and forms took effect December 1, 2025.",
+          "claim_es": "Las Pautas de Manutención de Massachusetts de 2025 y sus formularios entraron en vigor el 1 de diciembre de 2025.",
+          "source_url": "https://www.mass.gov/info-details/child-support-guidelines",
+          "source_name": "Mass.gov: Child Support Guidelines",
+          "quote": "The 2025 Child Support Guidelines and forms are effective December 1, 2025.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Massachusetts child support guidelines apply to all child support orders and judgments by the justices of the Trial Court.",
+          "claim_es": "Las pautas de manutención de Massachusetts se aplican a todas las órdenes y sentencias de manutención de los jueces del Tribunal de Primera Instancia.",
+          "source_url": "https://www.mass.gov/info-details/child-support-guidelines",
+          "source_name": "Mass.gov: Child Support Guidelines",
+          "quote": "are applied to all child support orders and judgments to be used by the justices of the Trial Court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The previous Massachusetts guidelines were in effect from July 31, 2023 until November 30, 2025.",
+          "claim_es": "Las pautas anteriores de Massachusetts estuvieron vigentes del 31 de julio de 2023 al 30 de noviembre de 2025.",
+          "source_url": "https://www.mass.gov/info-details/child-support-guidelines",
+          "source_name": "Mass.gov: Child Support Guidelines",
+          "quote": "These guidelines are effective from July 31, 2023 until November 30, 2025",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In an uncontested Massachusetts modification, an agreement that deviates from the guidelines amount must state specific facts justifying the departure.",
+          "claim_es": "En una modificación no disputada en Massachusetts, un acuerdo que se aparta del monto de las pautas debe indicar hechos específicos que justifiquen la diferencia.",
+          "source_url": "https://www.mass.gov/supplemental-rules-of-the-probate-and-family-court/supplemental-probate-and-family-court-rule-412-uncontested-actions-to-modify-a-judgment-or-order",
+          "source_name": "Massachusetts Probate and Family Court Supplemental Rule 412",
+          "quote": "If child support is being modified and the parties deviate from the guidelines amount, the agreement must include specific facts that justify departure from the guidelines",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mass.gov: Child Support Guidelines",
+          "label_es": "Mass.gov: Child Support Guidelines",
+          "url": "https://www.mass.gov/info-details/child-support-guidelines"
+        },
+        {
+          "label_en": "Massachusetts Probate and Family Court Supplemental Rule 412",
+          "label_es": "Massachusetts Probate and Family Court Supplemental Rule 412",
+          "url": "https://www.mass.gov/supplemental-rules-of-the-probate-and-family-court/supplemental-probate-and-family-court-rule-412-uncontested-actions-to-modify-a-judgment-or-order"
         }
       ]
     },
@@ -1187,6 +1398,41 @@
         }
       ]
     },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In Oregon, students age 18 to 21 who are attending school may be eligible for child support services.",
+          "claim_es": "En Oregón, los estudiantes de 18 a 21 años que asisten a la escuela pueden tener derecho a servicios de manutención.",
+          "source_url": "https://www.doj.state.or.us/child-support/resources/child-support-faqs/",
+          "source_name": "Oregon Department of Justice Child Support Program: FAQs",
+          "quote": "Students, age 18 to 21, who are attending school may also be eligible for child support services.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Oregon, a parent whose income is below minimum wage may not be ordered to pay for health insurance or cash medical support.",
+          "claim_es": "En Oregón, a uno de los padres con ingresos inferiores al salario mínimo no se le puede ordenar pagar seguro médico ni manutención médica en efectivo.",
+          "source_url": "https://www.doj.state.or.us/child-support/resources/child-support-faqs/",
+          "source_name": "Oregon Department of Justice Child Support Program: FAQs",
+          "quote": "A parent whose income is below minimum wage may not be ordered to pay for or contribute to the cost of health insurance or cash medical support.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Oregon's guidelines give a parenting time credit; its FAQ notes that 125 overnights (34.24 percent of parenting time) produce a credit of 23.65 percent.",
+          "claim_es": "Las pautas de Oregón otorgan un crédito por tiempo de crianza; sus preguntas frecuentes señalan que 125 noches (34.24 por ciento del tiempo) dan un crédito del 23.65 por ciento.",
+          "source_url": "https://www.doj.state.or.us/child-support/resources/child-support-faqs/",
+          "source_name": "Oregon Department of Justice Child Support Program: FAQs",
+          "quote": "I have 125 overnights, which is 34.24 percent of the parenting time. Why is my parenting time credit percentage only 23.65 percent?",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon Department of Justice Child Support Program: FAQs",
+          "label_es": "Oregon Department of Justice Child Support Program: FAQs",
+          "url": "https://www.doj.state.or.us/child-support/resources/child-support-faqs/"
+        }
+      ]
+    },
     "SD": {
       "facts": [
         {
@@ -1520,14 +1766,8 @@
     }
   },
   "skips": {
-    "AL": "fewer than 3 quote-verified facts from official sources (2 verified)",
-    "AK": "fewer than 3 quote-verified facts from official sources (1 verified)",
-    "AZ": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "GA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",

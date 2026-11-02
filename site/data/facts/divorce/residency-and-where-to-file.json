@@ -407,41 +407,6 @@
         }
       ]
     },
-    "IL": {
-      "facts": [
-        {
-          "claim_en": "One spouse must have lived in Illinois, or been stationed there in the military, for 90 days.",
-          "claim_es": "Uno de los cónyuges debe haber vivido en Illinois, o haber estado destinado allí en el ejército, 90 días.",
-          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
-          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
-          "quote": "the residence or military presence had been maintained for 90 days next preceding the commencement of the action",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "Illinois grants divorce when irreconcilable differences have caused the irretrievable breakdown of the marriage.",
-          "claim_es": "Illinois concede el divorcio cuando las diferencias irreconciliables han causado la ruptura irremediable del matrimonio.",
-          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
-          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
-          "quote": "Irreconcilable differences have caused the irretrievable breakdown of the marriage",
-          "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "Living separate and apart for at least 6 months before the judgment creates an irrebuttable presumption of irreconcilable differences.",
-          "claim_es": "Vivir separados al menos 6 meses antes de la sentencia crea una presunción absoluta de diferencias irreconciliables.",
-          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
-          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
-          "quote": "If the parties live separate and apart for a continuous period of not less than 6 months immediately preceding the entry of the judgment dissolving the marriage, there is an irrebuttable presumption that the requirement of irreconcilable differences has been met.",
-          "checked": "2026-11-02"
-        }
-      ],
-      "official_links": [
-        {
-          "label_en": "Illinois Compiled Statutes, 750 ILCS 5/401",
-          "label_es": "Illinois Compiled Statutes, 750 ILCS 5/401",
-          "url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401"
-        }
-      ]
-    },
     "IA": {
       "facts": [
         {
@@ -1501,6 +1466,7 @@
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IL": "the Illinois statutes site (ilga.gov) blocks automated fact checks, and no other official Illinois page found states the residency rule",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
