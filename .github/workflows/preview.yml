@@ -43,7 +43,7 @@ jobs:
           path: ios/Pods
           key: pods-${{ runner.os }}-${{ hashFiles('package-lock.json', 'app.config.ts') }}
       - name: Install pods
-        run: cd ios && pod install > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
+        run: cd ios && pod install --repo-update > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
       - name: Build for the simulator
         id: build
         run: |
