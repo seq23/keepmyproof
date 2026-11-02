@@ -438,6 +438,49 @@
         }
       ]
     },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "There are no costs for a Nebraska protection order unless a judge finds you lied or asked for it for inappropriate reasons.",
+          "claim_es": "Una orden de protección en Nebraska no tiene costo, salvo que un juez determine que usted mintió o la pidió por razones indebidas.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "There are no costs unless a judge decides that you lied or asked for the protection order for inappropriate reasons.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An ex parte protection order lasts until you go to court.",
+          "claim_es": "Una orden de protección ex parte dura hasta que usted va al tribunal.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "An “ex parte” protection order lasts until you go to court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "At court, the judge decides whether to cancel the order or continue it for one year.",
+          "claim_es": "En el tribunal, el juez decide si cancela la orden o la extiende por un año.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "At court, the judge decides if the protection order will be canceled or continued for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Domestic Abuse Protection Order may include a custody order lasting up to 90 days.",
+          "claim_es": "Una Orden de Protección contra el Abuso Doméstico puede incluir una orden de custodia de hasta 90 días.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "If you qualify for a Domestic Abuse Protection Order, you may get an order for custody, which may last up to 90 days.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Judicial Branch: Protection Order FAQ",
+          "label_es": "Nebraska Judicial Branch: Protection Order FAQ",
+          "url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions"
+        }
+      ]
+    },
     "NJ": {
       "facts": [
         {
@@ -470,6 +513,76 @@
           "label_en": "New Jersey Courts: Domestic Violence FAQ",
           "label_es": "New Jersey Courts: Domestic Violence FAQ",
           "url": "https://www.njcourts.gov/self-help/domestic-violence/faq"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "A New York criminal court order of protection can only be issued against someone charged with a crime.",
+          "claim_es": "En Nueva York, una orden de protección del tribunal penal solo se puede dictar contra alguien acusado de un delito.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "A criminal court order of protection can only be issued against a person who has been charged with a crime.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You cannot violate your own order or be arrested for contacting the person you are protected from.",
+          "claim_es": "Usted no puede violar su propia orden ni ser arrestado por contactar a la persona de quien está protegido.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "You cannot violate your own order by contacting the person you are protected from, and you cannot be arrested for contacting them.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The District Attorney may be able to handle the case without you if there is other evidence.",
+          "claim_es": "El Fiscal de Distrito puede llevar el caso sin usted si hay otras pruebas.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "The District Attorney may be able to handle the case without you if there is other evidence of the crime.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "label_es": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "url": "https://opdv.ny.gov/orders-protection"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "A North Carolina permanent DVPO can last up to one year and can be renewed for up to two years at a time.",
+          "claim_es": "Una DVPO permanente en Carolina del Norte puede durar hasta un año y renovarse por hasta dos años cada vez.",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "a “permanent” DVPO can last for up to one year, but can be renewed for up to two years at a time.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A defendant can be arrested and criminally charged for violating a DVPO.",
+          "claim_es": "El demandado puede ser arrestado y acusado penalmente por violar una DVPO.",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "A defendant can be arrested and criminally charged for violating a DVPO.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Police will not arrest a defendant for violating a 50C (civil no-contact) order.",
+          "claim_es": "La policía no arrestará al demandado por violar una orden 50C (de no contacto civil).",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "the police will not arrest a defendant for violating a 50C order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "label_es": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order"
         }
       ]
     },
@@ -513,6 +626,41 @@
         }
       ]
     },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "There is no cost to file for a protection order in Pennsylvania.",
+          "claim_es": "No cuesta nada pedir una orden de protección en Pensilvania.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "There is no cost to file for a protection order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the order is violated, police can arrest the abuser and a contempt hearing will be held.",
+          "claim_es": "Si se viola la orden, la policía puede arrestar al agresor y se celebrará una audiencia por desacato.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "The police can arrest the abuser and a contempt hearing will be held.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal counsel can represent a victim at no cost, but it is not required.",
+          "claim_es": "Un abogado puede representar a la víctima sin costo, pero no es obligatorio.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "Legal counsel can represent a victim at no cost, but it is not required.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "label_es": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "url": "https://www.pacourts.us/learn/protection-orders"
+        }
+      ]
+    },
     "SD": {
       "facts": [
         {
@@ -545,6 +693,76 @@
           "label_en": "South Dakota Unified Judicial System: Protection Orders",
           "label_es": "South Dakota Unified Judicial System: Protection Orders",
           "url": "https://ujs.sd.gov/self-help/civil-law-help/protection-orders/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "If the respondent violates a Utah protective order or stalking injunction, they can be arrested and charged with a crime.",
+          "claim_es": "Si la parte demandada viola una orden de protección o un interdicto por acecho en Utah, puede ser arrestada y acusada de un delito.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "If the respondent violates a protective order or stalking injunction, they can be arrested and charged with a crime.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Utah domestic violence line is toll-free at 800-897-5465.",
+          "claim_es": "La línea de violencia doméstica de Utah es gratuita: 800-897-5465.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "Call toll-free: 800-897-5465",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal Aid Society of Salt Lake may offer free representation if you qualify.",
+          "claim_es": "La Sociedad de Ayuda Legal de Salt Lake puede ofrecer representación gratuita si usted califica.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "Contact Legal Aid Society of Salt Lake to see if you qualify for free representation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah State Courts Self-Help: Protective Orders",
+          "label_es": "Utah State Courts Self-Help: Protective Orders",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Child support in a Vermont relief from abuse case can be ordered for at most 90 days.",
+          "claim_es": "En un caso de alivio por abuso en Vermont, la manutención se puede ordenar por un máximo de 90 días.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "The maximum amount of time that child support can be ordered in a relief from abuse case is 90 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Custody or visitation terms in the order end when the order expires.",
+          "claim_es": "Los términos de custodia o visitas en la orden terminan cuando la orden vence.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "Any custody or visitation terms in this RFA order will end when the order expires.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Violating the order can lead to criminal charges.",
+          "claim_es": "Violar la orden puede llevar a cargos penales.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "You can be charged with a crime in criminal court if you violate this order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Judiciary: Relief from Abuse",
+          "label_es": "Vermont Judiciary: Relief from Abuse",
+          "url": "https://www.vtcourts.gov/family/relief-abuse"
         }
       ]
     },
@@ -601,22 +819,16 @@
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MO": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NE": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NC": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "ND": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "UT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WV": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",

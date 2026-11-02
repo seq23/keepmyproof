@@ -1,0 +1,298 @@
+{
+  "folder": "divorce",
+  "subtopic": "custody-and-parenting-plans",
+  "title_en": "Child custody and parenting plans in {state}",
+  "title_es": "Custodia de los hijos y planes de crianza en {state_es}",
+  "search_intent_en": [
+    "{state} child custody laws",
+    "{state} parenting plan",
+    "how is custody decided in {state}"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Unmarried Alaska parents file a custody case to set a parenting plan covering legal custody, physical custody and child support.",
+          "claim_es": "Los padres no casados en Alaska presentan un caso de custodia para fijar un plan de crianza con custodia legal, custodia física y manutención.",
+          "source_url": "https://courts.alaska.gov/shc/family/custody.htm",
+          "source_name": "Alaska Court System Self-Help: Custody",
+          "quote": "A custody case is filed by unmarried parents to figure out a parenting plan that includes legal custody , physical custody and child support .",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A custody and visitation or parenting plan must describe the legal and physical custody that is in the children's best interests.",
+          "claim_es": "Un plan de custodia y visitas o de crianza debe describir la custodia legal y física que sea en el mejor interés de los hijos.",
+          "source_url": "https://courts.alaska.gov/shc/family/glossary.htm",
+          "source_name": "Alaska Court System Self-Help: Family Law Glossary",
+          "quote": "The custody and visitation or parenting plan must describe the legal custody and physical custody that is in the child(ren)'s best interests .",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A custody investigator assesses the family and recommends a parenting plan to the judge.",
+          "claim_es": "Un investigador de custodia evalúa a la familia y recomienda un plan de crianza al juez.",
+          "source_url": "https://courts.alaska.gov/shc/family/glossary.htm",
+          "source_name": "Alaska Court System Self-Help: Family Law Glossary",
+          "quote": "The custody investigator assesses a family and recommends to the judge a parenting plan that is in the best interests of the children .",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System Self-Help: Custody",
+          "label_es": "Alaska Court System Self-Help: Custody",
+          "url": "https://courts.alaska.gov/shc/family/custody.htm"
+        },
+        {
+          "label_en": "Alaska Court System Self-Help: Family Law Glossary",
+          "label_es": "Alaska Court System Self-Help: Family Law Glossary",
+          "url": "https://courts.alaska.gov/shc/family/glossary.htm"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "When you separate from your child's other parent in California, you need a parenting plan.",
+          "claim_es": "Cuando se separa del otro padre de su hijo en California, necesita un plan de crianza.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-custody",
+          "source_name": "California Courts Self-Help Guide: Child Custody",
+          "quote": "When you separate from your child’s other parent, you need a parenting plan.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Parenting plans must be in the best interest of the children.",
+          "claim_es": "Los planes de crianza deben ser en el mejor interés de los hijos.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-custody",
+          "source_name": "California Courts Self-Help Guide: Child Custody",
+          "quote": "Parenting plans must be in the best interest of your children.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Parents with joint custody can set specific rules about certain decisions.",
+          "claim_es": "Los padres con custodia compartida pueden fijar reglas específicas sobre ciertas decisiones.",
+          "source_url": "https://selfhelp.courts.ca.gov/child-custody/enforce",
+          "source_name": "California Courts Self-Help Guide: Enforce a Custody Order",
+          "quote": "For parents with joint custody, this lets you make specific rules about certain decisions.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Courts Self-Help Guide: Child Custody",
+          "label_es": "California Courts Self-Help Guide: Child Custody",
+          "url": "https://selfhelp.courts.ca.gov/child-custody"
+        },
+        {
+          "label_en": "California Courts Self-Help Guide: Enforce a Custody Order",
+          "label_es": "California Courts Self-Help Guide: Enforce a Custody Order",
+          "url": "https://selfhelp.courts.ca.gov/child-custody/enforce"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Your child must have lived in Massachusetts for at least 6 months right before you file for custody.",
+          "claim_es": "Su hijo debe haber vivido en Massachusetts al menos 6 meses justo antes de pedir la custodia.",
+          "source_url": "https://www.mass.gov/info-details/filing-for-child-custody-or-parenting-time-in-massachusetts",
+          "source_name": "Mass.gov: Filing for child custody or parenting time",
+          "quote": "Your child must have lived in Massachusetts for at least 6 months immediately before you file for custody.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Parents who don't agree on custody or parenting time must take the four-hour online course 'Two Families Now' unless a judge waives it.",
+          "claim_es": "Los padres que no están de acuerdo en la custodia o el tiempo de crianza deben tomar el curso en línea de cuatro horas 'Two Families Now', salvo que un juez lo exima.",
+          "source_url": "https://www.mass.gov/info-details/filing-for-child-custody-or-parenting-time-in-massachusetts",
+          "source_name": "Mass.gov: Filing for child custody or parenting time",
+          "quote": "must attend the four-hour online co-parenting course “Two Families Now” unless a Judge waives the requirement.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "To change an order, one reason you can give is that the children's best interests aren't being met by the current arrangement.",
+          "claim_es": "Para cambiar una orden, una razón que puede dar es que el arreglo actual no cumple con el mejor interés de los hijos.",
+          "source_url": "https://www.mass.gov/how-to/request-to-change-a-child-custody-or-parenting-time-order",
+          "source_name": "Mass.gov: Request to change a custody or parenting time order",
+          "quote": "That the best interests of the children aren’t being met by the current arrangement",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mass.gov: Filing for child custody or parenting time",
+          "label_es": "Mass.gov: Filing for child custody or parenting time",
+          "url": "https://www.mass.gov/info-details/filing-for-child-custody-or-parenting-time-in-massachusetts"
+        },
+        {
+          "label_en": "Mass.gov: Request to change a custody or parenting time order",
+          "label_es": "Mass.gov: Request to change a custody or parenting time order",
+          "url": "https://www.mass.gov/how-to/request-to-change-a-child-custody-or-parenting-time-order"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "Nebraska spouses must develop a written parenting plan covering legal custody, physical custody and parenting time.",
+          "claim_es": "En Nebraska, los cónyuges deben preparar un plan de crianza por escrito que cubra la custodia legal, la custodia física y el tiempo de crianza.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "You and your spouse must develop a written parenting plan that addresses legal custody, physical custody, and parenting time.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal and physical custody can be awarded jointly or to one parent.",
+          "claim_es": "La custodia legal y la física se pueden otorgar en forma conjunta o a uno de los padres.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "There are two types of custody defined by statute – legal and physical – which can be awarded jointly to the parties or solely to one or the other.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Joint physical custody may affect the amount of child support.",
+          "claim_es": "La custodia física compartida puede afectar el monto de la manutención.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "The amount of child support may be affected by an award of joint physical custody.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Both spouses need to take a parenting education class.",
+          "claim_es": "Ambos cónyuges deben tomar una clase de educación para padres.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "Both you and your spouse need to take a parenting education class",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "label_es": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "When both Ohio parents jointly file a shared-parenting plan, the court reviews whether it is in the children's best interest.",
+          "claim_es": "Cuando ambos padres en Ohio presentan juntos un plan de crianza compartida, el tribunal revisa si es en el mejor interés de los hijos.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
+          "source_name": "Ohio Revised Code § 3109.04",
+          "quote": "the court shall review the parents' plan to determine if it is in the best interest of the c",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the court finds the plan is in the children's best interest, it approves it.",
+          "claim_es": "Si el tribunal determina que el plan es en el mejor interés de los hijos, lo aprueba.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
+          "source_name": "Ohio Revised Code § 3109.04",
+          "quote": "If the court determines that the plan is in the best interest of the children, the court shall approve it.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The court may determine the child's wishes and concerns if that is in the child's best interests.",
+          "claim_es": "El tribunal puede conocer los deseos e inquietudes del hijo si eso es en su mejor interés.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
+          "source_name": "Ohio Revised Code § 3109.04",
+          "quote": "If the court determines that it would be in the best interests of the child to determine the child's wishes and concerns with respect to the allocation, it shall proceed to make that determination.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Revised Code § 3109.04",
+          "label_es": "Ohio Revised Code § 3109.04",
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In every Oregon county, parents must take classes as part of custody and parenting time cases.",
+          "claim_es": "En todos los condados de Oregón, los padres deben tomar clases como parte de los casos de custodia y tiempo de crianza.",
+          "source_url": "https://www.courts.oregon.gov/programs/family/children/Pages/default.aspx",
+          "source_name": "Oregon Judicial Department: Children and Family",
+          "quote": "In all counties, parents must take classes as part of child custody and parenting time cases.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Parents may be required to attend a parenting class and meet with a mediator to resolve disagreements.",
+          "claim_es": "Los padres pueden tener que asistir a una clase de crianza y reunirse con un mediador para resolver desacuerdos.",
+          "source_url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx",
+          "source_name": "Oregon Judicial Department: Mediation",
+          "quote": "The parents may be required to attend a parenting class for separating or divorcing parents and also meet with a mediator to try to resolve any disagreements.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Some Oregon counties require mediation before the court holds a custody or parenting time hearing.",
+          "claim_es": "Algunos condados de Oregón exigen mediación antes de que el tribunal celebre una audiencia de custodia o tiempo de crianza.",
+          "source_url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx",
+          "source_name": "Oregon Judicial Department: Mediation",
+          "quote": "In some counties, the court requires parents to attend mediation before the court will hold a hearing on custody or parenting time.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon Judicial Department: Children and Family",
+          "label_es": "Oregon Judicial Department: Children and Family",
+          "url": "https://www.courts.oregon.gov/programs/family/children/Pages/default.aspx"
+        },
+        {
+          "label_en": "Oregon Judicial Department: Mediation",
+          "label_es": "Oregon Judicial Department: Mediation",
+          "url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "AZ": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "CO": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "DC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "FL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "GA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "ID": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "IA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "KS": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "ME": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MD": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MO": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "ND": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "UT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "VA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WV": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
+  }
+}
