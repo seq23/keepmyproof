@@ -39,3 +39,11 @@ otherwise (validator `preview-screens`).
 
 The preview build sets `EXPO_PUBLIC_KMP_PREVIEW=1`, which turns screenshot protection off so the
 screenshots are not black. The release gate refuses a store build with it set (`PREVIEW_BUILD`).
+
+## Appetize's 3-minute sessions
+
+Appetize's free plan ends each session after about 3 minutes and starts the app fresh every time, which
+is too short to set a passcode and confirm 12 words by hand. The preview build's first screen has
+**"Preview only: skip to a sample vault ›"**: it sets up a vault (passcode 123456) with a few invented
+papers and opens on My folders. It exists only when `EXPO_PUBLIC_KMP_PREVIEW=1`; the release gate
+refuses a store build with that set (NAMED STOP `PREVIEW_BUILD`). Guard: `tests/preview-sample.test.ts`.
