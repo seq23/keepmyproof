@@ -1,0 +1,1675 @@
+{
+  "folder": "divorce",
+  "subtopic": "protective-orders",
+  "title_en": "Protective orders for domestic violence in {state}",
+  "title_es": "Órdenes de protección por violencia doméstica en {state_es}",
+  "search_intent_en": [
+    "how to get a protective order in {state}",
+    "{state} restraining order domestic violence",
+    "how long does a protective order last in {state}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "In Alabama, a first violation of a protection order is a Class A misdemeanor punishable by up to a year in jail and a fine up to $2,000.",
+          "claim_es": "En Alabama, una primera violación de una orden de protección es un delito menor de clase A castigado con hasta un año de cárcel y una multa de hasta $2,000.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "the first violation is a Class A misdemeanor punishable by up to a year in jail and a fine of up to $2,000.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, a second violation requires at least 48 hours in jail, and a third violation requires 30 days in jail.",
+          "claim_es": "En Alabama, una segunda violación exige al menos 48 horas de cárcel, y una tercera violación exige 30 días de cárcel.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "A finding of a second violation of a protection order requires, in addition to any fine and sentence imposed a minimum of 48 hours in jail. On a finding of a third violation, the defendant must spend 30 days in jail.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "There is no charge to ask for an Alabama protection order, though the judge may order fees paid at the end of the case.",
+          "claim_es": "No se cobra por pedir una orden de protección en Alabama, aunque el juez puede ordenar el pago de tarifas al final del caso.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "Is there a charge for a Protection Order? No. However, the judge may order that the fees be paid at the conclusion of the case.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Temporary Alabama protection orders last only until the final hearing unless the judge extends them.",
+          "claim_es": "Las órdenes de protección temporales en Alabama duran solo hasta la audiencia final, salvo que el juez las prorrogue.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "they are good only until the final hearing unless otherwise extended by the judge",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "label_es": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "url": "https://jackson.alacourt.gov/protection-from-abuse/"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "In Alaska, an ex parte protective order lasts 20 days and a long-term protective order lasts 1 year.",
+          "claim_es": "En Alaska, una orden de protección ex parte dura 20 días y una orden de protección a largo plazo dura 1 año.",
+          "source_url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "quote": "To request an Ex Parte Protective Order (lasts 20 days) or a Long Term Protective Order (lasts 1 year)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you ask only for a long-term order, the court sets a hearing within 20 days.",
+          "claim_es": "Si solo pide una orden a largo plazo, el tribunal fija una audiencia dentro de 20 días.",
+          "source_url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "quote": "court will set a hearing within 20 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska has three kinds of domestic violence protective orders: emergency orders lasting 72 hours, ex parte orders lasting 20 days, and long-term orders lasting one year.",
+          "claim_es": "Alaska tiene tres tipos de órdenes de protección por violencia doméstica: de emergencia por 72 horas, ex parte por 20 días y de largo plazo por un año.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "emergency protective orders which last for 72 hours; ex parte protective orders which last for 20 days; long term protective orders which last for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you ask for a long-term Alaska order, the judge sets a hearing about twenty days later.",
+          "claim_es": "Si pide una orden de largo plazo en Alaska, el juez fija una audiencia unos veinte días después.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "If you request a long term order, the judge will set a date approximately twenty days later for a hearing.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In an Alaska long-term order, the ban on committing or threatening domestic violence stays in effect until a judge dissolves it, while other provisions last one year.",
+          "claim_es": "En una orden de largo plazo en Alaska, la prohibición de cometer o amenazar con violencia doméstica sigue vigente hasta que un juez la anule, y las demás disposiciones duran un año.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "All provisions in a long-term protective order will be in effect for one year, except for the prohibition against committing or threatening to commit domestic violence which remains in effect indefinitely until dissolved by a j",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "label_es": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf"
+        },
+        {
+          "label_en": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "label_es": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "There is no fee to file a petition for an Arizona Order of Protection or to have it served.",
+          "claim_es": "No hay que pagar para presentar una petición de Orden de Protección en Arizona ni para que se notifique.",
+          "source_url": "https://www.azcourts.gov/legalinfohub/Legal-Info-FAQs/Domestic-Violence-Information",
+          "source_name": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "quote": "There is no fee to file a petition for an Order of Protection or to have it served on the person from whom you are seeking protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "AZPOINT is a free online tool that helps you fill out protective order paperwork.",
+          "claim_es": "AZPOINT es una herramienta en línea gratuita que le ayuda a llenar los documentos de la orden de protección.",
+          "source_url": "https://www.azcourts.gov/legalinfohub/Legal-Info-FAQs/Domestic-Violence-Information",
+          "source_name": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "quote": "is a free application that’s designed to help you fill out the paperwork for a protective order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona law lists 30 crimes that count as domestic violence when committed within a family or intimate relationship.",
+          "claim_es": "La ley de Arizona enumera 30 delitos que cuentan como violencia doméstica cuando ocurren dentro de una relación familiar o íntima.",
+          "source_url": "https://www.azcourts.gov/legalinfohub/Legal-Info-FAQs/Domestic-Violence-Information",
+          "source_name": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "quote": "Arizona law currently includes 30 crimes that, when combined with an intimate partner, a family, or a romantic or sexual relationship, equal domestic violence.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you file on paper, the court provides the forms at no cost.",
+          "claim_es": "Si presenta en papel, el tribunal le da los formularios sin costo.",
+          "source_url": "https://www.azcourts.gov/legalinfohub/Legal-Info-FAQs/Domestic-Violence-Information",
+          "source_name": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "quote": "If you wish to file your documents on paper, the court will provide the forms to you at no cost.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "label_es": "Arizona Judicial Branch Legal Info Hub: Domestic Violence",
+          "url": "https://www.azcourts.gov/legalinfohub/Legal-Info-FAQs/Domestic-Violence-Information"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "An Arkansas judge can issue a temporary order with a hearing set within 30 days.",
+          "claim_es": "Un juez de Arkansas puede dictar una orden temporal con una audiencia dentro de 30 días.",
+          "source_url": "https://arcourts.gov/sites/default/files/2022-Revised-OP-Packet-Fillable-Form.pdf",
+          "source_name": "Arkansas Judiciary: Order of Protection packet",
+          "quote": "The Judge has the ability to issue a Temporary Protective Order that includes a hearing date to be held within 30 days",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Violating an Arkansas order of protection is a Class A misdemeanor.",
+          "claim_es": "Violar una orden de protección en Arkansas es un delito menor de Clase A.",
+          "source_url": "https://arcourts.gov/sites/default/files/formatted-files/ExParteOrderofProtection_.pdf",
+          "source_name": "Arkansas Judiciary: Ex Parte Order of Protection form",
+          "quote": "A violation of the order of protection is a Class A misdemeanor",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A violation after a prior conviction for violating an order is a Class D felony.",
+          "claim_es": "Una violación después de una condena previa por violar una orden es un delito grave de Clase D.",
+          "source_url": "https://arcourts.gov/sites/default/files/formatted-files/ExParteOrderofProtection_.pdf",
+          "source_name": "Arkansas Judiciary: Ex Parte Order of Protection form",
+          "quote": "previous conviction for violation of an order of protection is a Class D felony",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas Judiciary: Order of Protection packet",
+          "label_es": "Arkansas Judiciary: Order of Protection packet",
+          "url": "https://arcourts.gov/sites/default/files/2022-Revised-OP-Packet-Fillable-Form.pdf"
+        },
+        {
+          "label_en": "Arkansas Judiciary: Ex Parte Order of Protection form",
+          "label_es": "Arkansas Judiciary: Ex Parte Order of Protection form",
+          "url": "https://arcourts.gov/sites/default/files/formatted-files/ExParteOrderofProtection_.pdf"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "A judge decides quickly whether to grant temporary protection (a temporary restraining order).",
+          "claim_es": "Un juez decide rápidamente si concede protección temporal (una orden de restricción temporal).",
+          "source_url": "https://selfhelp.courts.ca.gov/DV-restraining-order/process",
+          "source_name": "California Courts Self-Help Guide: Domestic Violence Restraining Orders",
+          "quote": "A judge will decide whether to grant you temporary protection right away.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A long-term domestic violence restraining order can last up to 5 years.",
+          "claim_es": "Una orden de restricción por violencia doméstica a largo plazo puede durar hasta 5 años.",
+          "source_url": "https://selfhelp.courts.ca.gov/DV-restraining-order/process",
+          "source_name": "California Courts Self-Help Guide: Domestic Violence Restraining Orders",
+          "quote": "If the judge grants you a long-term restraining order, it can last up to 5 years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The person you want protection from must be served with the court papers.",
+          "claim_es": "La persona de quien quiere protección debe ser notificada con los documentos del tribunal.",
+          "source_url": "https://selfhelp.courts.ca.gov/DV-restraining-order/process",
+          "source_name": "California Courts Self-Help Guide: Domestic Violence Restraining Orders",
+          "quote": "The other side (person you want protection from) must be served with (given) the court papers filed with the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "There is no fee to ask the court to renew your order.",
+          "claim_es": "No hay que pagar para pedir al tribunal que renueve su orden.",
+          "source_url": "https://selfhelp.courts.ca.gov/DV-restraining-order/renew",
+          "source_name": "California Courts Self-Help Guide: Renew a Domestic Violence Restraining Order",
+          "quote": "There is no fee to ask the court to renew your order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Courts Self-Help Guide: Domestic Violence Restraining Orders",
+          "label_es": "California Courts Self-Help Guide: Domestic Violence Restraining Orders",
+          "url": "https://selfhelp.courts.ca.gov/DV-restraining-order/process"
+        },
+        {
+          "label_en": "California Courts Self-Help Guide: Renew a Domestic Violence Restraining Order",
+          "label_es": "California Courts Self-Help Guide: Renew a Domestic Violence Restraining Order",
+          "url": "https://selfhelp.courts.ca.gov/DV-restraining-order/renew"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The Permanent Protection Order hearing is usually set within 14 days of the Temporary Protection Order hearing.",
+          "claim_es": "La audiencia de la Orden de Protección Permanente suele fijarse dentro de los 14 días de la audiencia de la Orden Temporal.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/getting-protection-order",
+          "source_name": "Colorado Judicial Branch: Getting a Protection Order",
+          "quote": "The Permanent Protection Order hearing is usually set within 14 days from your Temporary Protection Order hearing",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For orders filed on or after July 1, 2013, a restrained person must wait 2 years after the permanent order before asking to dismiss it.",
+          "claim_es": "Para órdenes presentadas desde el 1 de julio de 2013, la persona restringida debe esperar 2 años después de la orden permanente antes de pedir que se anule.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/getting-protection-order",
+          "source_name": "Colorado Judicial Branch: Getting a Protection Order",
+          "quote": "If the Protection Order was filed on or after July 1, 2013, you must wait 2 years after issuance of the Permanent Protection Order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For orders filed before July 1, 2013, the wait is 4 years.",
+          "claim_es": "Para órdenes presentadas antes del 1 de julio de 2013, la espera es de 4 años.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/getting-protection-order",
+          "source_name": "Colorado Judicial Branch: Getting a Protection Order",
+          "quote": "If the Protection Order was filed before July 1, 2013, you must wait 4 years after the issuance of the Permanent Protection Order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Judicial Branch: Getting a Protection Order",
+          "label_es": "Colorado Judicial Branch: Getting a Protection Order",
+          "url": "https://www.coloradojudicial.gov/self-help/getting-protection-order"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "A state marshal works to serve a restraining order no later than 3 days before the hearing.",
+          "claim_es": "Un alguacil estatal procura notificar la orden de restricción a más tardar 3 días antes de la audiencia.",
+          "source_url": "https://www.jud.ct.gov/Publications/FM259.pdf",
+          "source_name": "Connecticut Judicial Branch: Restraining order guide (FM-259)",
+          "quote": "The state marshal will work to do a service of the restraining order no later than 3 days before the hearing date",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Civil protection order papers are served no later than 5 days before the hearing.",
+          "claim_es": "Los documentos de una orden de protección civil se notifican a más tardar 5 días antes de la audiencia.",
+          "source_url": "https://www.jud.ct.gov/Publications/FM259.pdf",
+          "source_name": "Connecticut Judicial Branch: Restraining order guide (FM-259)",
+          "quote": "civil protection order papers no later than 5 days before the hearing date.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Give the papers to a marshal as soon as possible because time is short.",
+          "claim_es": "Entregue los documentos a un alguacil lo antes posible porque el tiempo es corto.",
+          "source_url": "https://www.jud.ct.gov/Publications/FM259.pdf",
+          "source_name": "Connecticut Judicial Branch: Restraining order guide (FM-259)",
+          "quote": "Because time is short, give the papers to a marshal as soon as possible.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut Judicial Branch: Restraining order guide (FM-259)",
+          "label_es": "Connecticut Judicial Branch: Restraining order guide (FM-259)",
+          "url": "https://www.jud.ct.gov/Publications/FM259.pdf"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Violating a Delaware PFA order is a crime punishable by up to one year in jail and/or a fine up to $2,300.",
+          "claim_es": "Violar una orden PFA en Delaware es un delito que se castiga con hasta un año de cárcel y/o una multa de hasta $2,300.",
+          "source_url": "https://courts.delaware.gov/family/pfa/",
+          "source_name": "Delaware Family Court: Protection From Abuse",
+          "quote": "The violation of a PFA Order is a crime punishable by up to one year in jail and/or a fine of up to $2,300.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you believe you are in immediate danger, you may ask for an emergency (ex parte) hearing the same day.",
+          "claim_es": "Si cree que corre peligro inmediato, puede pedir una audiencia de emergencia (ex parte) el mismo día.",
+          "source_url": "https://courts.delaware.gov/family/pfa/",
+          "source_name": "Delaware Family Court: Protection From Abuse",
+          "quote": "If the person filing believes they are in immediate danger of abuse, they may ask for an emergency (ex parte) hearing that same day.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Emergency requests filed after 3:30pm are heard the next business morning.",
+          "claim_es": "Las solicitudes de emergencia presentadas después de las 3:30 p. m. se atienden la mañana del siguiente día hábil.",
+          "source_url": "https://courts.delaware.gov/family/pfa/",
+          "source_name": "Delaware Family Court: Protection From Abuse",
+          "quote": "requests for an emergency PFA hearing filed after 3:30pm will be heard the morning of the next business day.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Family Court: Protection From Abuse",
+          "label_es": "Delaware Family Court: Protection From Abuse",
+          "url": "https://courts.delaware.gov/family/pfa/"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "A DC civil protection order is issued by a judge and can last up to one year.",
+          "claim_es": "Una orden de protección civil en DC la dicta un juez y puede durar hasta un año.",
+          "source_url": "https://mpdc.dc.gov/redflaglaw",
+          "source_name": "DC Metropolitan Police Department",
+          "quote": "A civil protection order is a court order issued by a judge, lasting up to one year",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In D.C., a temporary protection order lasts up to 14 days at first, to allow service and the hearing.",
+          "claim_es": "En D.C., una orden de protección temporal dura inicialmente hasta 14 días para permitir la notificación y la audiencia.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-1004",
+          "source_name": "D.C. Code § 16-1004",
+          "quote": "A temporary protection order shall remain in effect for an initial period not to exceed 14 days as necessary to complete service and the hearing on the petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A D.C. civil protection order lasts for an initial period of up to 2 years.",
+          "claim_es": "En D.C., una orden de protección civil dura un período inicial de hasta 2 años.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-1005",
+          "source_name": "D.C. Code § 16-1005",
+          "quote": "A civil protection order issued pursuant to this section shall remain in effect for an initial period not to exceed 2 years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In D.C., violating a protection order can be punished by up to 180 days in jail, a fine, or both.",
+          "claim_es": "En D.C., violar una orden de protección puede castigarse con hasta 180 días de cárcel, una multa o ambas.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-1005",
+          "source_name": "D.C. Code § 16-1005",
+          "quote": "imprisonment for not more than 180 days, or both",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "DC Metropolitan Police Department",
+          "label_es": "DC Metropolitan Police Department",
+          "url": "https://mpdc.dc.gov/redflaglaw"
+        },
+        {
+          "label_en": "D.C. Code § 16-1004",
+          "label_es": "D.C. Code § 16-1004",
+          "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-1004"
+        },
+        {
+          "label_en": "D.C. Code § 16-1005",
+          "label_es": "D.C. Code § 16-1005",
+          "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-1005"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "Florida has no minimum residency requirement to petition for a domestic violence injunction.",
+          "claim_es": "Florida no exige un tiempo mínimo de residencia para pedir una orden judicial de protección por violencia doméstica.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0741/Sections/0741.30.html",
+          "source_name": "Florida Statutes § 741.30",
+          "quote": "There is no minimum requirement of residency to petition for an injunction for protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Florida law prohibits charging a filing fee for a domestic violence injunction petition.",
+          "claim_es": "La ley de Florida prohíbe cobrar una tarifa de presentación por una petición de orden de protección por violencia doméstica.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0741/Sections/0741.30.html",
+          "source_name": "Florida Statutes § 741.30",
+          "quote": "the assessment of a filing fee for a petition for protection against domestic violence is prohibited",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Florida temporary injunction issued without notice (ex parte) lasts no more than 15 days, and a full hearing is set before it ends.",
+          "claim_es": "En Florida, una orden temporal emitida sin aviso (ex parte) dura como máximo 15 días, y se fija una audiencia completa antes de que venza.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0741/Sections/0741.30.html",
+          "source_name": "Florida Statutes § 741.30",
+          "quote": "Any such ex parte temporary injunction shall be effective for a fixed period not to exceed 15 days. A full hearing, as provided by this section, shall be set for a dat",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Florida final injunction restraining the respondent stays in effect until a court modifies or dissolves it.",
+          "claim_es": "En Florida, una orden judicial final que restringe al demandado sigue vigente hasta que el tribunal la modifique o la anule.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0741/Sections/0741.30.html",
+          "source_name": "Florida Statutes § 741.30",
+          "quote": "shall remain in effect until modified or dissolved",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Statutes § 741.30",
+          "label_es": "Florida Statutes § 741.30",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0741/Sections/0741.30.html"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "There is no cost to file for a protective order under Georgia's Family Violence Act.",
+          "claim_es": "No cuesta nada pedir una orden de protección bajo la Ley de Violencia Familiar de Georgia.",
+          "source_url": "https://georgia.gov/get-protective-order",
+          "source_name": "Georgia.gov: Get a Protective Order",
+          "quote": "There is no cost to file a petition for a protective order under Georgia's Family Violence Act.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Your first court appearance may be an ex parte hearing, as soon as the day you file.",
+          "claim_es": "Su primera comparecencia puede ser una audiencia ex parte, incluso el mismo día en que presenta.",
+          "source_url": "https://georgia.gov/get-protective-order",
+          "source_name": "Georgia.gov: Get a Protective Order",
+          "quote": "Your first court appearance may be an ex parte hearing, which can occur as soon as the day you file your petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A full hearing is generally scheduled within 30 days after the petition is filed.",
+          "claim_es": "La audiencia completa generalmente se fija dentro de los 30 días después de presentar la petición.",
+          "source_url": "https://georgia.gov/get-protective-order",
+          "source_name": "Georgia.gov: Get a Protective Order",
+          "quote": "A full hearing is generally scheduled within 30 days after the petition is filed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Temporary protective orders typically last six to 12 months, unless the court orders otherwise.",
+          "claim_es": "Las órdenes de protección temporales suelen durar de seis a 12 meses, salvo que el tribunal ordene otra cosa.",
+          "source_url": "https://georgia.gov/get-protective-order",
+          "source_name": "Georgia.gov: Get a Protective Order",
+          "quote": "Temporary protective orders typically remain in effect for six to 12 months",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia.gov: Get a Protective Order",
+          "label_es": "Georgia.gov: Get a Protective Order",
+          "url": "https://georgia.gov/get-protective-order"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "Violating a Hawaii court order is contempt of court and a misdemeanor.",
+          "claim_es": "Violar una orden judicial en Hawái es desacato y un delito menor.",
+          "source_url": "https://www.courts.state.hi.us/self-help/protective_orders/violations/order_violations",
+          "source_name": "Hawaii State Judiciary: Protective Order Violations",
+          "quote": "Violating a court order is called contempt of court and is a misdemeanor criminal offense.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A first temporary restraining order violation can bring 48 hours in jail; later violations, 30 days.",
+          "claim_es": "Una primera violación de una orden de restricción temporal puede conllevar 48 horas de cárcel; las siguientes, 30 días.",
+          "source_url": "https://www.courts.state.hi.us/self-help/protective_orders/violations/going_to_trial",
+          "source_name": "Hawaii State Judiciary: Going to Trial",
+          "quote": "may be sentenced to 48 hours in jail for the first temporary restraining order violation and 30 days in jail for subsequent violations.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Hawaii temporary restraining order is valid for 180 days unless the court orders otherwise.",
+          "claim_es": "Una orden de restricción temporal en Hawái es válida por 180 días, salvo que el tribunal ordene otra cosa.",
+          "source_url": "https://www.courts.state.hi.us/self-help/protective_orders/family/extending_your_tro",
+          "source_name": "Hawaii State Judiciary: Extending Your TRO",
+          "quote": "A temporary restraining order (TRO) is valid for 180 days from the time the TRO is granted and filed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii State Judiciary: Protective Order Violations",
+          "label_es": "Hawaii State Judiciary: Protective Order Violations",
+          "url": "https://www.courts.state.hi.us/self-help/protective_orders/violations/order_violations"
+        },
+        {
+          "label_en": "Hawaii State Judiciary: Going to Trial",
+          "label_es": "Hawaii State Judiciary: Going to Trial",
+          "url": "https://www.courts.state.hi.us/self-help/protective_orders/violations/going_to_trial"
+        },
+        {
+          "label_en": "Hawaii State Judiciary: Extending Your TRO",
+          "label_es": "Hawaii State Judiciary: Extending Your TRO",
+          "url": "https://www.courts.state.hi.us/self-help/protective_orders/family/extending_your_tro"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "Idaho charges no filing, service or hearing fee for a petition seeking only a domestic violence protection order.",
+          "claim_es": "Idaho no cobra tarifas de presentación, notificación ni audiencia por una petición que solo pide una orden de protección por violencia doméstica.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6305/",
+          "source_name": "Idaho Code § 39-6305",
+          "quote": "No filing fee, service fee, hearing fee or bond shall be charged for proceedings seeking only the relief provided under this chapter.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "After a sworn petition is filed, an Idaho court holds a hearing on the protection order within 14 days.",
+          "claim_es": "Después de presentar una petición jurada, un tribunal de Idaho celebra una audiencia sobre la orden de protección dentro de 14 días.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6306/",
+          "source_name": "Idaho Code § 39-6306",
+          "quote": "the court shall hold a hearing to determine whether the relief sought shall be granted within fourteen (14) days",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Relief in an Idaho protection order, other than costs, lasts a fixed period of up to one year, and can be continued on motion for good cause.",
+          "claim_es": "La protección de una orden en Idaho, salvo las costas, dura un período fijo de hasta un año y puede prolongarse a solicitud con causa justificada.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6306/",
+          "source_name": "Idaho Code § 39-6306",
+          "quote": "Any relief granted by the protection order, other than a judgment for costs, shall be for a fixed period not to exceed one (1) year; provided, that an order obtained pursuant to this chapter may, upon motion and upon good cause shown, continue",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, violating a protection order after notice is a misdemeanor punishable by up to one year in jail and a fine up to $5,000.",
+          "claim_es": "En Idaho, violar una orden de protección después de ser notificado es un delito menor castigado con hasta un año de cárcel y una multa de hasta $5,000.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6312/",
+          "source_name": "Idaho Code § 39-6312",
+          "quote": "a violation of the provisions of the order or of a provision excluding the person from a residence shall be a misdemeanor punishable by not to exceed one (l) year in jail and a fine not to exceed five thousand dollars ($5,000)",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Code § 39-6305",
+          "label_es": "Idaho Code § 39-6305",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6305/"
+        },
+        {
+          "label_en": "Idaho Code § 39-6306",
+          "label_es": "Idaho Code § 39-6306",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6306/"
+        },
+        {
+          "label_en": "Idaho Code § 39-6312",
+          "label_es": "Idaho Code § 39-6312",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH63/SECT39-6312/"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "In Indiana, a permanent protective order granted after a hearing stays in effect for two years from the date the judge signs it.",
+          "claim_es": "En Indiana, una orden de protección permanente concedida tras una audiencia sigue vigente dos años desde la fecha en que el juez la firma.",
+          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
+          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "quote": "that order will remain in effect for two (2) years from the date the judge signs the order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An Indiana temporary protective order stays in effect until the permanent protective order hearing.",
+          "claim_es": "En Indiana, una orden de protección temporal sigue vigente hasta la audiencia de la orden de protección permanente.",
+          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
+          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "quote": "The temporary order will remain in effect until the time of a permanent Protective Order Hearing.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Indiana charges no fee to file for a protective order.",
+          "claim_es": "Indiana no cobra tarifa por presentar una solicitud de orden de protección.",
+          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
+          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "quote": "There is no fee for the filing of a protective order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Indiana, a protective order is a civil case not connected to a criminal case.",
+          "claim_es": "En Indiana, una orden de protección es un caso civil no vinculado a un caso penal.",
+          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
+          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "quote": "A protective order is a civil suit not connected to a criminal case.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "label_es": "Morgan County, Indiana Prosecutor: Protection Orders",
+          "url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "An Iowa domestic abuse protective order is for a fixed period of up to one year, and the court may extend it after notice and a hearing.",
+          "claim_es": "Una orden de protección por abuso doméstico en Iowa dura un período fijo de hasta un año, y el tribunal puede prorrogarla tras notificación y audiencia.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/236.5.pdf",
+          "source_name": "Iowa Code § 236.5",
+          "quote": "a protective order, or approved consent agreement shall be for a fixed period of time not to exceed one year. The court may amend or extend its order or a consent agreement at any time upon a petition filed by either party and after notice and hear",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An Iowa court can issue temporary orders, including temporary custody or visitation, before the hearing in an ex parte proceeding when there is good cause.",
+          "claim_es": "Un tribunal de Iowa puede dictar órdenes temporales, incluida la custodia o las visitas temporales, antes de la audiencia en un procedimiento ex parte cuando hay causa justificada.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/236.4.pdf",
+          "source_name": "Iowa Code § 236.4",
+          "quote": "including temporary custody or visitation orders pursuant to subsection 3, upon good cause shown in an ex parte proceeding",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, violating a domestic abuse protective order is a simple misdemeanor, or the court may hold the person in contempt instead.",
+          "claim_es": "En Iowa, violar una orden de protección por abuso doméstico es un delito menor simple, o el tribunal puede declarar a la persona en desacato.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/664A.7.pdf",
+          "source_name": "Iowa Code § 664A.7",
+          "quote": "constitutes a public offense and is punishable as a simple misdemeanor. Alternatively, the court may hold a person in contempt of court for such a violation",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Code § 236.5",
+          "label_es": "Iowa Code § 236.5",
+          "url": "https://www.legis.iowa.gov/docs/code/236.5.pdf"
+        },
+        {
+          "label_en": "Iowa Code § 236.4",
+          "label_es": "Iowa Code § 236.4",
+          "url": "https://www.legis.iowa.gov/docs/code/236.4.pdf"
+        },
+        {
+          "label_en": "Iowa Code § 664A.7",
+          "label_es": "Iowa Code § 664A.7",
+          "url": "https://www.legis.iowa.gov/docs/code/664A.7.pdf"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas charges no docket fee for a protection from abuse case.",
+          "claim_es": "Kansas no cobra tarifa de registro por un caso de protección contra el abuso.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0004_section/060_031_0004_k/",
+          "source_name": "Kansas Statutes § 60-3104",
+          "quote": "No docket fee shall be required for proceedings under the protection from abuse act.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, a hearing is held within 21 days of filing a protection from abuse petition.",
+          "claim_es": "En Kansas, se celebra una audiencia dentro de los 21 días de presentar una petición de protección contra el abuso.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0006_section/060_031_0006_k/",
+          "source_name": "Kansas Statutes § 60-3106",
+          "quote": "Within 21 days of the filing of a petition under this act a hearing shall be held",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Kansas protective order lasts a fixed period of at least one year and no more than two years.",
+          "claim_es": "Una orden de protección en Kansas dura un período fijo de al menos un año y no más de dos años.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0007_section/060_031_0007_k/",
+          "source_name": "Kansas Statutes § 60-3107",
+          "quote": "shall be for a fixed period of time not less than one year and not more than two years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "On the plaintiff's motion, a Kansas order may be extended for at least one more year and up to three years.",
+          "claim_es": "A solicitud de la parte demandante, una orden en Kansas puede prorrogarse por al menos un año más y hasta tres años.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0007_section/060_031_0007_k/",
+          "source_name": "Kansas Statutes § 60-3107",
+          "quote": "Upon motion of the plaintiff, such period may be extended for an additional period of not less than one year and not more than three years.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Statutes § 60-3104",
+          "label_es": "Kansas Statutes § 60-3104",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0004_section/060_031_0004_k/"
+        },
+        {
+          "label_en": "Kansas Statutes § 60-3106",
+          "label_es": "Kansas Statutes § 60-3106",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0006_section/060_031_0006_k/"
+        },
+        {
+          "label_en": "Kansas Statutes § 60-3107",
+          "label_es": "Kansas Statutes § 60-3107",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/060_000_0000_chapter/060_031_0000_article/060_031_0007_section/060_031_0007_k/"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "In Kentucky you can get a protective order 24 hours a day.",
+          "claim_es": "En Kentucky puede obtener una orden de protección las 24 horas del día.",
+          "source_url": "https://www.kycourts.gov/Legal-Help/Documents/P123ProtectiveOrderBooklet.pdf",
+          "source_name": "Kentucky Court of Justice: Protective Orders booklet",
+          "quote": "You can obtain a protective order 24 hours a day.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "There are no fees or costs to file a petition.",
+          "claim_es": "No hay tarifas ni costos para presentar una petición.",
+          "source_url": "https://www.kycourts.gov/Legal-Help/Documents/P123ProtectiveOrderBooklet.pdf",
+          "source_name": "Kentucky Court of Justice: Protective Orders booklet",
+          "quote": "There are no fees or costs for filing a petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A hearing is held within 14 days to decide whether a long-term order is needed.",
+          "claim_es": "Se celebra una audiencia dentro de 14 días para decidir si se necesita una orden a largo plazo.",
+          "source_url": "https://www.kycourts.gov/Legal-Help/Documents/P123ProtectiveOrderBooklet.pdf",
+          "source_name": "Kentucky Court of Justice: Protective Orders booklet",
+          "quote": "within 14 days to determine whether a long-term order is needed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Court of Justice: Protective Orders booklet",
+          "label_es": "Kentucky Court of Justice: Protective Orders booklet",
+          "url": "https://www.kycourts.gov/Legal-Help/Documents/P123ProtectiveOrderBooklet.pdf"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "A final protection from abuse order in Maine may last up to two years.",
+          "claim_es": "Una orden final de protección contra el abuso en Maine puede durar hasta dos años.",
+          "source_url": "https://mjbportal.courts.maine.gov/CourtForms/FormsLists/DownloadForm?strFormNumber=PUB-001",
+          "source_name": "Maine Judicial Branch: Protection from Abuse guide (PUB-001)",
+          "quote": "A final protection from abuse order may last up to two years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Defendants who violate a temporary order are subject to arrest.",
+          "claim_es": "Los demandados que violan una orden temporal pueden ser arrestados.",
+          "source_url": "https://mjbportal.courts.maine.gov/CourtForms/FormsLists/DownloadForm?strFormNumber=PUB-001",
+          "source_name": "Maine Judicial Branch: Protection from Abuse guide (PUB-001)",
+          "quote": "Defendants who violate the temporary order are subject to arrest",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Violating a temporary protection order is always a Class D crime.",
+          "claim_es": "Violar una orden de protección temporal es siempre un delito de Clase D.",
+          "source_url": "https://mjbportal.courts.maine.gov/CourtForms/FormsLists/DownloadForm?strFormNumber=PUB-001",
+          "source_name": "Maine Judicial Branch: Protection from Abuse guide (PUB-001)",
+          "quote": "Violation of a temporary protection order is always a Class D crime",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Judicial Branch: Protection from Abuse guide (PUB-001)",
+          "label_es": "Maine Judicial Branch: Protection from Abuse guide (PUB-001)",
+          "url": "https://mjbportal.courts.maine.gov/CourtForms/FormsLists/DownloadForm?strFormNumber=PUB-001"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The Protective Order hearing is held within 7 days of the ex parte order.",
+          "claim_es": "La audiencia de la Orden de Protección se celebra dentro de los 7 días de la orden ex parte.",
+          "source_url": "https://www.mdcourts.gov/clerks/charles/family",
+          "source_name": "Maryland Judiciary: Charles County Circuit Court Family",
+          "quote": "called a Protective Order hearing, which will be held within 7 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Relief under a Maryland Protective Order can last up to 1 year.",
+          "claim_es": "Las medidas de una Orden de Protección en Maryland pueden durar hasta 1 año.",
+          "source_url": "https://www.mdcourts.gov/clerks/charles/family",
+          "source_name": "Maryland Judiciary: Charles County Circuit Court Family",
+          "quote": "Relief granted under the Protective Order can be up to 1 year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Violating the Protective Order is a crime.",
+          "claim_es": "Violar la Orden de Protección es un delito.",
+          "source_url": "https://www.mdcourts.gov/clerks/charles/family",
+          "source_name": "Maryland Judiciary: Charles County Circuit Court Family",
+          "quote": "Violation of the Protective Order is a crime.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Judiciary: Charles County Circuit Court Family",
+          "label_es": "Maryland Judiciary: Charles County Circuit Court Family",
+          "url": "https://www.mdcourts.gov/clerks/charles/family"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, an adult found guilty of criminal contempt for violating a personal protection order faces up to 93 days in jail and a fine up to $500.",
+          "claim_es": "En Michigan, un adulto declarado culpable de desacato penal por violar una orden de protección personal enfrenta hasta 93 días de cárcel y una multa de hasta $500.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-2950",
+          "source_name": "Michigan Compiled Laws § 600.2950",
+          "quote": "imprisonment for not more than 93 days and a fine of not more than $500.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The restrained person in Michigan may file a motion to modify or rescind the order and request a hearing within 14 days after being served or notified.",
+          "claim_es": "En Michigan, la persona restringida puede presentar una moción para modificar o anular la orden y pedir una audiencia dentro de los 14 días después de ser notificada.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-2950",
+          "source_name": "Michigan Compiled Laws § 600.2950",
+          "quote": "may file a motion to modify or rescind the personal protection order and request a hearing within 14 days after the individual restrained or enjoined has been served or has received actual notice of the order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Michigan personal protection order issued without prior notice (ex parte) is valid for at least 182 days.",
+          "claim_es": "En Michigan, una orden de protección personal emitida sin aviso previo (ex parte) es válida por al menos 182 días.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-2950",
+          "source_name": "Michigan Compiled Laws § 600.2950",
+          "quote": "A personal protection order issued under subsection (12) is valid for not less than 182 days.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan Compiled Laws § 600.2950",
+          "label_es": "Michigan Compiled Laws § 600.2950",
+          "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-2950"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota waives the filing fees for an order for protection for both the petitioner and the respondent.",
+          "claim_es": "Minnesota exime de las tarifas de presentación de una orden de protección tanto a la parte peticionaria como a la parte demandada.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518B.01",
+          "source_name": "Minnesota Statutes § 518B.01",
+          "quote": "The filing fees for an order for protection under this section are waived for the petitioner and respondent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Unless an ex parte order is issued, a Minnesota court holds the hearing no later than 14 days after ordering it.",
+          "claim_es": "Salvo que se dicte una orden ex parte, un tribunal de Minnesota celebra la audiencia a más tardar 14 días después de ordenarla.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518B.01",
+          "source_name": "Minnesota Statutes § 518B.01",
+          "quote": "the court shall order a hearing which shall be held not later than 14 days from the date of the order for hearing unless an ex parte order is issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, a respondent served fewer than five days before the hearing may ask for a continuance of up to five days.",
+          "claim_es": "En Minnesota, la parte demandada notificada menos de cinco días antes de la audiencia puede pedir un aplazamiento de hasta cinco días.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518B.01",
+          "source_name": "Minnesota Statutes § 518B.01",
+          "quote": "the respondent at the hearing may request a continuance of up to five days if served fewer than five days prior to the hearing",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota Statutes § 518B.01",
+          "label_es": "Minnesota Statutes § 518B.01",
+          "url": "https://www.revisor.mn.gov/statutes/cite/518B.01"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "A Missouri full order of protection is valid for at least 180 days and no more than one year.",
+          "claim_es": "En Misuri, una orden de protección completa es válida por al menos 180 días y no más de un año.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=455.040",
+          "source_name": "Missouri Revised Statutes § 455.040",
+          "quote": "the protective order shall be valid for at least one hundred eighty days and not more than one year",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a Missouri court finds in writing that the respondent poses a serious danger, the order can last from two to ten years.",
+          "claim_es": "Si un tribunal de Misuri determina por escrito que la parte demandada representa un peligro grave, la orden puede durar de dos a diez años.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=455.040",
+          "source_name": "Missouri Revised Statutes § 455.040",
+          "quote": "the protective order shall be valid for at least two years and not more than ten years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Missouri full order of protection can be renewed after a hearing, on the petitioner's motion.",
+          "claim_es": "En Misuri, una orden de protección completa puede renovarse después de una audiencia, a solicitud de la parte peticionaria.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=455.040",
+          "source_name": "Missouri Revised Statutes § 455.040",
+          "quote": "Upon motion by the petitioner, and after a hearing by the court, the full order of protection ma",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Revised Statutes § 455.040",
+          "label_es": "Missouri Revised Statutes § 455.040",
+          "url": "https://revisor.mo.gov/main/OneSection.aspx?section=455.040"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "A Montana court can issue an immediate temporary order of protection for up to 20 days without prior notice to the respondent.",
+          "claim_es": "Un tribunal de Montana puede dictar una orden temporal de protección inmediata por hasta 20 días sin aviso previo a la parte demandada.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0010/0400-0150-0020-0010.html",
+          "source_name": "Montana Code Annotated § 40-15-201",
+          "quote": "issue an immediate temporary order of protection for up to 20 days",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, the hearing must be held within 20 days from the date the court issues the temporary order of protection.",
+          "claim_es": "En Montana, la audiencia debe celebrarse dentro de los 20 días desde que el tribunal dicta la orden temporal de protección.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0020/0400-0150-0020-0020.html",
+          "source_name": "Montana Code Annotated § 40-15-202",
+          "quote": "A hearing must be conducted within 20 days from the date that the court issues a temporary order of protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Montana charges nothing to file a petition for an order of protection or to serve it.",
+          "claim_es": "En Montana no se cobra por presentar una petición de orden de protección ni por notificarla.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0040/0400-0150-0020-0040.html",
+          "source_name": "Montana Code Annotated § 40-15-204",
+          "quote": "There is no cost to file a petition for an order of protection or for service of an order of protection",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Code Annotated § 40-15-201",
+          "label_es": "Montana Code Annotated § 40-15-201",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0010/0400-0150-0020-0010.html"
+        },
+        {
+          "label_en": "Montana Code Annotated § 40-15-202",
+          "label_es": "Montana Code Annotated § 40-15-202",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0020/0400-0150-0020-0020.html"
+        },
+        {
+          "label_en": "Montana Code Annotated § 40-15-204",
+          "label_es": "Montana Code Annotated § 40-15-204",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0040/0400-0150-0020-0040.html"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "There are no costs for a Nebraska protection order unless a judge finds you lied or asked for it for inappropriate reasons.",
+          "claim_es": "Una orden de protección en Nebraska no tiene costo, salvo que un juez determine que usted mintió o la pidió por razones indebidas.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "There are no costs unless a judge decides that you lied or asked for the protection order for inappropriate reasons.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An ex parte protection order lasts until you go to court.",
+          "claim_es": "Una orden de protección ex parte dura hasta que usted va al tribunal.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "An “ex parte” protection order lasts until you go to court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "At court, the judge decides whether to cancel the order or continue it for one year.",
+          "claim_es": "En el tribunal, el juez decide si cancela la orden o la extiende por un año.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "At court, the judge decides if the protection order will be canceled or continued for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Domestic Abuse Protection Order may include a custody order lasting up to 90 days.",
+          "claim_es": "Una Orden de Protección contra el Abuso Doméstico puede incluir una orden de custodia de hasta 90 días.",
+          "source_url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions",
+          "source_name": "Nebraska Judicial Branch: Protection Order FAQ",
+          "quote": "If you qualify for a Domestic Abuse Protection Order, you may get an order for custody, which may last up to 90 days.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Judicial Branch: Protection Order FAQ",
+          "label_es": "Nebraska Judicial Branch: Protection Order FAQ",
+          "url": "https://nebraskajudicial.gov/self-help/protection-order-information/frequently-asked-questions"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "A Nevada temporary protection order against domestic violence lasts no more than 45 days, as the court sets.",
+          "claim_es": "En Nevada, una orden temporal de protección contra la violencia doméstica dura como máximo 45 días, según fije el tribunal.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-033.html",
+          "source_name": "Nevada Revised Statutes chapter 33",
+          "quote": "A temporary order expires within such time, not to exceed 45 days, as the court fixes.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Nevada extended order lasts no more than 2 years, as the court sets.",
+          "claim_es": "En Nevada, una orden extendida dura como máximo 2 años, según fije el tribunal.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-033.html",
+          "source_name": "Nevada Revised Statutes chapter 33",
+          "quote": "An extended order expires within such time, not to exceed 2 years, as the court fixes.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, a hearing on an extended order must be held within 45 days after the application is filed.",
+          "claim_es": "En Nevada, la audiencia sobre una orden extendida debe celebrarse dentro de los 45 días después de presentar la solicitud.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-033.html",
+          "source_name": "Nevada Revised Statutes chapter 33",
+          "quote": "A hearing on an application for an extended order must be held within 45 days after the date on which the application for the extended order is filed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Nevada court clerk does not charge an applicant for a certified copy of the temporary or extended order.",
+          "claim_es": "En Nevada, el secretario del tribunal no cobra al solicitante por una copia certificada de la orden temporal o extendida.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-033.html",
+          "source_name": "Nevada Revised Statutes chapter 33",
+          "quote": "The clerk of the court shall not charge an applicant for a temporary or extended order for providing the applicant with a certified copy of the temporary or extended order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Revised Statutes chapter 33",
+          "label_es": "Nevada Revised Statutes chapter 33",
+          "url": "https://www.leg.state.nv.us/nrs/NRS-033.html"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "A New Hampshire domestic violence protective order is for a fixed period of up to one year.",
+          "claim_es": "En Nuevo Hampshire, una orden de protección por violencia doméstica dura un período fijo de hasta un año.",
+          "source_url": "https://gc.nh.gov/rsa/html/XII/173-B/173-B-5.htm",
+          "source_name": "New Hampshire RSA 173-B:5",
+          "quote": "Any order under this section shall be for a fixed period of time not to exceed one year",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Hampshire, the first extension is for one year, and later extensions may be for up to 5 years.",
+          "claim_es": "En Nuevo Hampshire, la primera prórroga es de un año, y las siguientes pueden ser de hasta 5 años.",
+          "source_url": "https://gc.nh.gov/rsa/html/XII/173-B/173-B-5.htm",
+          "source_name": "New Hampshire RSA 173-B:5",
+          "quote": "for one year after the expiration of the first order and thereafter each extension may be for up to 5 years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A New Hampshire defendant can have a hearing on an extension within 30 days.",
+          "claim_es": "En Nuevo Hampshire, la parte demandada puede tener una audiencia sobre la prórroga dentro de 30 días.",
+          "source_url": "https://gc.nh.gov/rsa/html/XII/173-B/173-B-5.htm",
+          "source_name": "New Hampshire RSA 173-B:5",
+          "quote": "A defendant shall have the right to a hearing on the extension of any order under this paragraph to be held within 30 days of the extension.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire RSA 173-B:5",
+          "label_es": "New Hampshire RSA 173-B:5",
+          "url": "https://gc.nh.gov/rsa/html/XII/173-B/173-B-5.htm"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "After a temporary restraining order (TRO), the plaintiff gets a final restraining order hearing date within 10 days.",
+          "claim_es": "Después de una orden de restricción temporal (TRO), la parte demandante recibe una fecha de audiencia para la orden final dentro de 10 días.",
+          "source_url": "https://www.njcourts.gov/self-help/domestic-violence/faq",
+          "source_name": "New Jersey Courts: Domestic Violence FAQ",
+          "quote": "the plaintiff will be given a date to return for a final restraining order (FRO) hearing within 10 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "On weekends, evenings and holidays, you can go to your local police department to file a complaint.",
+          "claim_es": "Los fines de semana, por la noche y en días feriados, puede ir a la policía local para presentar una denuncia.",
+          "source_url": "https://www.njcourts.gov/self-help/domestic-violence/faq",
+          "source_name": "New Jersey Courts: Domestic Violence FAQ",
+          "quote": "Weekend, evenings, and holidays, go to your local police department to file a complaint.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Jersey's 1991 Prevention of Domestic Violence Act lists the crimes that count as domestic violence.",
+          "claim_es": "La Ley de Prevención de la Violencia Doméstica de 1991 de Nueva Jersey enumera los delitos que cuentan como violencia doméstica.",
+          "source_url": "https://www.njcourts.gov/self-help/domestic-violence/faq",
+          "source_name": "New Jersey Courts: Domestic Violence FAQ",
+          "quote": "Domestic violence occurs when one of the crimes listed below is committed against a person protected under the 1991 Prevention of Domestic Violence Act (PDVA).",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey Courts: Domestic Violence FAQ",
+          "label_es": "New Jersey Courts: Domestic Violence FAQ",
+          "url": "https://www.njcourts.gov/self-help/domestic-violence/faq"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "New Mexico charges no cost or fees to file for an order of protection.",
+          "claim_es": "Nuevo México no cobra costos ni tarifas por solicitar una orden de protección.",
+          "source_url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/",
+          "source_name": "New Mexico Courts: Court Process for Orders of Protection",
+          "quote": "There is no cost or fees to file for an Order of Protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, the local sheriff's office serves the other party for free.",
+          "claim_es": "En Nuevo México, la oficina del sheriff local notifica a la otra parte gratis.",
+          "source_url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/",
+          "source_name": "New Mexico Courts: Court Process for Orders of Protection",
+          "quote": "will also serve the other party for free",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, an Order of Protection is issued by a District Court, and you can file in the county where the abuse occurred or where you live.",
+          "claim_es": "En Nuevo México, la Orden de Protección la emite un Tribunal de Distrito, y puede presentarla en el condado donde ocurrió el abuso o donde vive.",
+          "source_url": "https://domesticviolence.nmcourts.gov/orders-of-protection/",
+          "source_name": "New Mexico Courts: Orders of Protection FAQs",
+          "quote": "Find the District Court in the county where the abuse occurred OR where you currently live.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under New Mexico law, you do not have to live with the other party to be considered a household member.",
+          "claim_es": "Según la ley de Nuevo México, no tiene que vivir con la otra parte para ser considerado miembro del hogar.",
+          "source_url": "https://domesticviolence.nmcourts.gov/about/",
+          "source_name": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "quote": "You and the other party do not have to live together to be considered a household member.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, a roommate is not a household member just because you live together; the law requires an intimate or close family relationship.",
+          "claim_es": "En Nuevo México, un compañero de vivienda no es miembro del hogar solo por vivir juntos; la ley exige una relación íntima o familiar cercana.",
+          "source_url": "https://domesticviolence.nmcourts.gov/about/",
+          "source_name": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "quote": "Only individuals that have an intimate or close family relationship to each other are considered a",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Courts: Court Process for Orders of Protection",
+          "label_es": "New Mexico Courts: Court Process for Orders of Protection",
+          "url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/"
+        },
+        {
+          "label_en": "New Mexico Courts: Orders of Protection FAQs",
+          "label_es": "New Mexico Courts: Orders of Protection FAQs",
+          "url": "https://domesticviolence.nmcourts.gov/orders-of-protection/"
+        },
+        {
+          "label_en": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "label_es": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "url": "https://domesticviolence.nmcourts.gov/about/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "A New York criminal court order of protection can only be issued against someone charged with a crime.",
+          "claim_es": "En Nueva York, una orden de protección del tribunal penal solo se puede dictar contra alguien acusado de un delito.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "A criminal court order of protection can only be issued against a person who has been charged with a crime.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You cannot violate your own order or be arrested for contacting the person you are protected from.",
+          "claim_es": "Usted no puede violar su propia orden ni ser arrestado por contactar a la persona de quien está protegido.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "You cannot violate your own order by contacting the person you are protected from, and you cannot be arrested for contacting them.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The District Attorney may be able to handle the case without you if there is other evidence.",
+          "claim_es": "El Fiscal de Distrito puede llevar el caso sin usted si hay otras pruebas.",
+          "source_url": "https://opdv.ny.gov/orders-protection",
+          "source_name": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "quote": "The District Attorney may be able to handle the case without you if there is other evidence of the crime.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "label_es": "New York State Office for the Prevention of Domestic Violence: Orders of Protection",
+          "url": "https://opdv.ny.gov/orders-protection"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "A North Carolina permanent DVPO can last up to one year and can be renewed for up to two years at a time.",
+          "claim_es": "Una DVPO permanente en Carolina del Norte puede durar hasta un año y renovarse por hasta dos años cada vez.",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "a “permanent” DVPO can last for up to one year, but can be renewed for up to two years at a time.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A defendant can be arrested and criminally charged for violating a DVPO.",
+          "claim_es": "El demandado puede ser arrestado y acusado penalmente por violar una DVPO.",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "A defendant can be arrested and criminally charged for violating a DVPO.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Police will not arrest a defendant for violating a 50C (civil no-contact) order.",
+          "claim_es": "La policía no arrestará al demandado por violar una orden 50C (de no contacto civil).",
+          "source_url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order",
+          "source_name": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "quote": "the police will not arrest a defendant for violating a 50C order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "label_es": "North Carolina Judicial Branch: How to Get a Protection Order",
+          "url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, a hearing on a domestic violence protection order is scheduled no later than 14 days after the temporary order is issued.",
+          "claim_es": "En Dakota del Norte, la audiencia sobre una orden de protección por violencia doméstica se fija a más tardar 14 días después de emitir la orden temporal.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "A hearing is scheduled on the petition for a domestic violence protection order not later than fourteen (14) days after the Judge or Judicial Referee issues the temporary domestic violence protection order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota charges no filing fee to victims seeking a civil protection order.",
+          "claim_es": "Dakota del Norte no cobra tarifa de presentación a las víctimas que piden una orden de protección civil.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "no filing fee for victims seeking a civil protection order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the respondent must be served at least five days before the hearing.",
+          "claim_es": "En Dakota del Norte, la parte demandada debe ser notificada al menos cinco días antes de la audiencia.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "Service must be made on the Respondent at least five days prior to the hearing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "label_es": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, violating a protection order is generally a first-degree misdemeanor.",
+          "claim_es": "En Ohio, violar una orden de protección es generalmente un delito menor de primer grado.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2919.27",
+          "source_name": "Ohio Revised Code § 2919.27",
+          "quote": "violating a protection order is a misdemeanor of the first degree.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "It is a third-degree felony if the order is violated while committing a felony.",
+          "claim_es": "Es un delito grave de tercer grado si la orden se viola mientras se comete un delito grave.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2919.27",
+          "source_name": "Ohio Revised Code § 2919.27",
+          "quote": "If the offender violates a protection order or consent agreement while committing a felony offense, violating a protection order is a felony of the third degree.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A protection order under this section lasts until a set date no later than five years from issuance.",
+          "claim_es": "Una orden de protección bajo esta sección dura hasta una fecha fija, no más de cinco años desde su emisión.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2903.214",
+          "source_name": "Ohio Revised Code § 2903.214",
+          "quote": "Any protection order issued pursuant to this section shall be valid until a date certain but not later than five years from the date of its issuance.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Revised Code § 2919.27",
+          "label_es": "Ohio Revised Code § 2919.27",
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-2919.27"
+        },
+        {
+          "label_en": "Ohio Revised Code § 2903.214",
+          "label_es": "Ohio Revised Code § 2903.214",
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-2903.214"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "There is no cost to file for a protection order in Pennsylvania.",
+          "claim_es": "No cuesta nada pedir una orden de protección en Pensilvania.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "There is no cost to file for a protection order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the order is violated, police can arrest the abuser and a contempt hearing will be held.",
+          "claim_es": "Si se viola la orden, la policía puede arrestar al agresor y se celebrará una audiencia por desacato.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "The police can arrest the abuser and a contempt hearing will be held.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal counsel can represent a victim at no cost, but it is not required.",
+          "claim_es": "Un abogado puede representar a la víctima sin costo, pero no es obligatorio.",
+          "source_url": "https://www.pacourts.us/learn/protection-orders",
+          "source_name": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "quote": "Legal counsel can represent a victim at no cost, but it is not required.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "label_es": "Unified Judicial System of Pennsylvania: Protection Orders",
+          "url": "https://www.pacourts.us/learn/protection-orders"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "Under Rhode Island law, knowingly violating the firearm ban in a protective order is a felony with a fine up to $1,000, one to five years in prison, or both.",
+          "claim_es": "Según la ley de Rhode Island, violar a sabiendas la prohibición de armas de fuego de una orden de protección es un delito grave con multa de hasta $1,000, de uno a cinco años de prisión, o ambas.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-15/15-15-3.htm",
+          "source_name": "Rhode Island General Laws § 15-15-3",
+          "quote": "Any knowing violation of this subsection is a felony that shall be punishable by a fine of not more than one thousand dollars ($1,000), or by imprisonment for a term of not less than one year and not more than five (5) years, or both.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Rhode Island protective order can require child support for up to 90 days.",
+          "claim_es": "Una orden de protección en Rhode Island puede exigir manutención infantil por hasta 90 días.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-15/15-15-3.htm",
+          "source_name": "Rhode Island General Laws § 15-15-3",
+          "quote": "to make payments for the support of a minor child or children of the parties as required by law for a period not to exceed ninety (90) days",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Rhode Island, a hearing on firearm restrictions is held within 15 days of surrendering the firearms.",
+          "claim_es": "En Rhode Island, la audiencia sobre restricciones de armas de fuego se celebra dentro de los 15 días de la entrega de las armas.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-15/15-15-3.htm",
+          "source_name": "Rhode Island General Laws § 15-15-3",
+          "quote": "which shall be held within fifteen (15) days of surrendering said firearms",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island General Laws § 15-15-3",
+          "label_es": "Rhode Island General Laws § 15-15-3",
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-15/15-15-3.htm"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "A South Dakota protection order can last at most five years.",
+          "claim_es": "Una orden de protección en Dakota del Sur puede durar como máximo cinco años.",
+          "source_url": "https://ujs.sd.gov/self-help/civil-law-help/protection-orders/",
+          "source_name": "South Dakota Unified Judicial System: Protection Orders",
+          "quote": "The maximum time for a protection order is five years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The person filing must appear at the hearing and be ready to give evidence or bring witnesses.",
+          "claim_es": "Quien presenta debe comparecer a la audiencia y estar listo para presentar pruebas o testigos.",
+          "source_url": "https://ujs.sd.gov/self-help/civil-law-help/protection-orders/",
+          "source_name": "South Dakota Unified Judicial System: Protection Orders",
+          "quote": "the person filing must appear and be prepared to give evidence or have witnesses to explain to the judge why the protection order is needed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The judge may also make a decision about firearms.",
+          "claim_es": "El juez también puede tomar una decisión sobre armas de fuego.",
+          "source_url": "https://ujs.sd.gov/self-help/civil-law-help/protection-orders/",
+          "source_name": "South Dakota Unified Judicial System: Protection Orders",
+          "quote": "The judge may also make a determination regarding firearms.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Unified Judicial System: Protection Orders",
+          "label_es": "South Dakota Unified Judicial System: Protection Orders",
+          "url": "https://ujs.sd.gov/self-help/civil-law-help/protection-orders/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "If the respondent violates a Utah protective order or stalking injunction, they can be arrested and charged with a crime.",
+          "claim_es": "Si la parte demandada viola una orden de protección o un interdicto por acecho en Utah, puede ser arrestada y acusada de un delito.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "If the respondent violates a protective order or stalking injunction, they can be arrested and charged with a crime.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Utah domestic violence line is toll-free at 800-897-5465.",
+          "claim_es": "La línea de violencia doméstica de Utah es gratuita: 800-897-5465.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "Call toll-free: 800-897-5465",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal Aid Society of Salt Lake may offer free representation if you qualify.",
+          "claim_es": "La Sociedad de Ayuda Legal de Salt Lake puede ofrecer representación gratuita si usted califica.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html",
+          "source_name": "Utah State Courts Self-Help: Protective Orders",
+          "quote": "Contact Legal Aid Society of Salt Lake to see if you qualify for free representation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah State Courts Self-Help: Protective Orders",
+          "label_es": "Utah State Courts Self-Help: Protective Orders",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/protect-order.html"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Child support in a Vermont relief from abuse case can be ordered for at most 90 days.",
+          "claim_es": "En un caso de alivio por abuso en Vermont, la manutención se puede ordenar por un máximo de 90 días.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "The maximum amount of time that child support can be ordered in a relief from abuse case is 90 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Custody or visitation terms in the order end when the order expires.",
+          "claim_es": "Los términos de custodia o visitas en la orden terminan cuando la orden vence.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "Any custody or visitation terms in this RFA order will end when the order expires.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Violating the order can lead to criminal charges.",
+          "claim_es": "Violar la orden puede llevar a cargos penales.",
+          "source_url": "https://www.vtcourts.gov/family/relief-abuse",
+          "source_name": "Vermont Judiciary: Relief from Abuse",
+          "quote": "You can be charged with a crime in criminal court if you violate this order.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Judiciary: Relief from Abuse",
+          "label_es": "Vermont Judiciary: Relief from Abuse",
+          "url": "https://www.vtcourts.gov/family/relief-abuse"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "A Virginia permanent (full) protective order can be issued for up to two years.",
+          "claim_es": "Una orden de protección permanente en Virginia puede dictarse por hasta dos años.",
+          "source_url": "https://www.vacourts.gov/static/courtadmin/aoc/djs/programs/afapo/protective_orders_in_va_gd.pdf",
+          "source_name": "Virginia Judicial System: Protective Orders in Virginia guide",
+          "quote": "Permanent Protective Order--a full protective order can be issued for up to two years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Virginia VINE Protective Order provides free notifications about protective orders.",
+          "claim_es": "Virginia VINE Protective Order envía notificaciones gratuitas sobre órdenes de protección.",
+          "source_url": "https://www.vacourts.gov/static/courtadmin/aoc/djs/programs/afapo/protective_orders_in_va_gd.pdf",
+          "source_name": "Virginia Judicial System: Protective Orders in Virginia guide",
+          "quote": "Virginia VINE Protective Order (VPO) - provides free notifications about preliminary and",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A final protective order must be issued for 12 months or longer to apply for certain benefits listed in the guide.",
+          "claim_es": "Una orden de protección final debe ser de 12 meses o más para solicitar ciertos beneficios que indica la guía.",
+          "source_url": "https://www.vacourts.gov/static/courtadmin/aoc/djs/programs/afapo/protective_orders_in_va_gd.pdf",
+          "source_name": "Virginia Judicial System: Protective Orders in Virginia guide",
+          "quote": "Your final protective order must be issued for 12 months or longer to apply for and receive",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia Judicial System: Protective Orders in Virginia guide",
+          "label_es": "Virginia Judicial System: Protective Orders in Virginia guide",
+          "url": "https://www.vacourts.gov/static/courtadmin/aoc/djs/programs/afapo/protective_orders_in_va_gd.pdf"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, a petitioner does not have to post a bond to get a protection order.",
+          "claim_es": "En Washington, la parte peticionaria no tiene que depositar una fianza para obtener una orden de protección.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=7.105.105",
+          "source_name": "Revised Code of Washington § 7.105.105",
+          "quote": "A petitioner is not required to post a bond to obtain relief in any proceeding for a protection order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Washington courts and public agencies may not charge petitioners fees for service of process on a protection order.",
+          "claim_es": "En Washington, los tribunales y las agencias públicas no pueden cobrar a las partes peticionarias por la notificación de una orden de protección.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=7.105.105",
+          "source_name": "Revised Code of Washington § 7.105.105",
+          "quote": "No fees for service of process may be charged by a court or any public agency to petitioners seeking relief under this chapter.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Except for antiharassment orders, a Washington court does not grant a protection order for less than one year unless the petitioner asks for a shorter period.",
+          "claim_es": "Salvo en órdenes contra el acoso, un tribunal de Washington no concede una orden de protección por menos de un año a menos que la parte peticionaria pida un plazo más corto.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=7.105.315",
+          "source_name": "Revised Code of Washington § 7.105.315",
+          "quote": "Other than for antiharassment orders, the court shall not grant relief for less than one year unless the petitioner has specifically requested relief for a shorter period of time.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Revised Code of Washington § 7.105.105",
+          "label_es": "Revised Code of Washington § 7.105.105",
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=7.105.105"
+        },
+        {
+          "label_en": "Revised Code of Washington § 7.105.315",
+          "label_es": "Revised Code of Washington § 7.105.315",
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=7.105.315"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "A West Virginia family court protective order lasts either 90 days or 180 days, at the court's discretion.",
+          "claim_es": "En Virginia Occidental, una orden de protección del tribunal de familia dura 90 o 180 días, a criterio del tribunal.",
+          "source_url": "https://code.wvlegislature.gov/48-27-505/",
+          "source_name": "West Virginia Code § 48-27-505",
+          "quote": "is effective for either ninety days or one hundred eighty days, in the discretion of the court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the petitioner asks in writing before it expires, the West Virginia family court extends the order for another 90 days.",
+          "claim_es": "Si la parte peticionaria lo pide por escrito antes del vencimiento, el tribunal de familia de Virginia Occidental prorroga la orden por otros 90 días.",
+          "source_url": "https://code.wvlegislature.gov/48-27-505/",
+          "source_name": "West Virginia Code § 48-27-505",
+          "quote": "Upon receipt of a written request for renewal from the petitioner prior to the expiration of the original order, the family court shall extend its order for an additional ninety-day period.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A West Virginia court may enter a one-year protective order after a hearing if it finds aggravating factors.",
+          "claim_es": "Un tribunal de Virginia Occidental puede dictar una orden de protección de un año después de una audiencia si encuentra factores agravantes.",
+          "source_url": "https://code.wvlegislature.gov/48-27-505/",
+          "source_name": "West Virginia Code § 48-27-505",
+          "quote": "the court may enter a protective order for a period of one year if the court finds by a preponderance of the evidence, after a hearing that any of the following aggravating factors are present",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Code § 48-27-505",
+          "label_es": "West Virginia Code § 48-27-505",
+          "url": "https://code.wvlegislature.gov/48-27-505/"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "In Wisconsin, a hearing on a domestic abuse injunction is held within 14 days after the temporary restraining order is issued, unless extended.",
+          "claim_es": "En Wisconsin, la audiencia sobre una orden judicial por abuso doméstico se celebra dentro de los 14 días después de emitir la orden de restricción temporal, salvo prórroga.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/813/12",
+          "source_name": "Wisconsin Statutes § 813.12",
+          "quote": "shall hold a hearing on issuance of an injunction within 14 days after the temporary restraining order is issued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Wisconsin domestic abuse injunction lasts for the period the petitioner requests, up to 4 years.",
+          "claim_es": "En Wisconsin, una orden judicial por abuso doméstico dura el tiempo que pida la parte peticionaria, hasta 4 años.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/813/12",
+          "source_name": "Wisconsin Statutes § 813.12",
+          "quote": "is effective according to its terms, for the period of time that the petitioner requests, but not more than 4 years",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Wisconsin court can make a domestic abuse injunction last up to 10 years if it finds certain conditions on the record.",
+          "claim_es": "Un tribunal de Wisconsin puede hacer que una orden judicial por abuso doméstico dure hasta 10 años si constata ciertas condiciones en el expediente.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/813/12",
+          "source_name": "Wisconsin Statutes § 813.12",
+          "quote": "order that the injunction is in effect for not more than 10 years, if the court finds, by a preponderance of the evidence stated on the record",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin Statutes § 813.12",
+          "label_es": "Wisconsin Statutes § 813.12",
+          "url": "https://docs.legis.wisconsin.gov/statutes/statutes/813/12"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
+  }
+}
