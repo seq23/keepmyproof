@@ -20,7 +20,7 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "A custody and visitation or parenting plan must describe the legal and physical custody that is in the children's best interests.",
+          "claim_en": "A custody and visitation or parenting plan must describe the legal and physical custody that serves the children's interests.",
           "claim_es": "Un plan de custodia y visitas o de crianza debe describir la custodia legal y física que sea en el mejor interés de los hijos.",
           "source_url": "https://courts.alaska.gov/shc/family/glossary.htm",
           "source_name": "Alaska Court System Self-Help: Family Law Glossary",
@@ -60,7 +60,7 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "Parenting plans must be in the best interest of the children.",
+          "claim_en": "Parenting plans must serve the children's interests.",
           "claim_es": "Los planes de crianza deben ser en el mejor interés de los hijos.",
           "source_url": "https://selfhelp.courts.ca.gov/child-custody",
           "source_name": "California Courts Self-Help Guide: Child Custody",
@@ -108,7 +108,7 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "To change an order, one reason you can give is that the children's best interests aren't being met by the current arrangement.",
+          "claim_en": "To change an order, one reason you can give is that the current arrangement isn't serving the children's interests.",
           "claim_es": "Para cambiar una orden, una razón que puede dar es que el arreglo actual no cumple con el mejor interés de los hijos.",
           "source_url": "https://www.mass.gov/how-to/request-to-change-a-child-custody-or-parenting-time-order",
           "source_name": "Mass.gov: Request to change a custody or parenting time order",
@@ -172,10 +172,80 @@
         }
       ]
     },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "In New Mexico, physical custody decides where the child lives and legal custody covers decision-making.",
+          "claim_es": "En Nuevo México, la custodia física decide dónde vive el hijo y la custodia legal cubre la toma de decisiones.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/child-support/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "Physical custody decides where the child will live, and legal custody decides decision-making regarding the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A parenting plan is a court-approved document that sets each parent's responsibilities.",
+          "claim_es": "Un plan de crianza es un documento aprobado por el tribunal que fija las responsabilidades de cada padre.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/child-support/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "A parenting plan is a court-approved document that sets each parent’s responsibilities.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If joint custody won't work or you need help with a schedule, you can ask the court for a referral to mediation.",
+          "claim_es": "Si la custodia compartida no funciona o necesita ayuda con un horario, puede pedir al tribunal que lo remita a mediación.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/child-support/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "you should ask the court for a referral to mediation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Courts Self-Representation",
+          "label_es": "New Mexico Courts Self-Representation",
+          "url": "https://selfrepresentation.nmcourts.gov/child-support/"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "In North Carolina, legal custody is the right to make major decisions about the child.",
+          "claim_es": "En Carolina del Norte, la custodia legal es el derecho a tomar las decisiones importantes sobre el hijo.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-custody",
+          "source_name": "North Carolina Judicial Branch: Child Custody",
+          "quote": "Legal custody is the right to make major decisions about the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Physical custody is the right to have the child in your care all or part of the time.",
+          "claim_es": "La custodia física es el derecho a tener al hijo bajo su cuidado todo o parte del tiempo.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-custody",
+          "source_name": "North Carolina Judicial Branch: Child Custody",
+          "quote": "Physical custody means the right to have the child in your physical care, either all the time or part of the time.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Visitation is a secondary form of custody, with visits at times set in a court order.",
+          "claim_es": "Las visitas son una forma secundaria de custodia, con visitas en los horarios que fija una orden judicial.",
+          "source_url": "https://www.nccourts.gov/help-topics/family-and-children/child-custody",
+          "source_name": "North Carolina Judicial Branch: Child Custody",
+          "quote": "Visitation is a secondary form of custody, which includes the right to visit with a child at times set forth in a court order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Judicial Branch: Child Custody",
+          "label_es": "North Carolina Judicial Branch: Child Custody",
+          "url": "https://www.nccourts.gov/help-topics/family-and-children/child-custody"
+        }
+      ]
+    },
     "OH": {
       "facts": [
         {
-          "claim_en": "When both Ohio parents jointly file a shared-parenting plan, the court reviews whether it is in the children's best interest.",
+          "claim_en": "When both Ohio parents jointly file a shared-parenting plan, the court reviews whether it serves the children's interests.",
           "claim_es": "Cuando ambos padres en Ohio presentan juntos un plan de crianza compartida, el tribunal revisa si es en el mejor interés de los hijos.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
@@ -183,7 +253,7 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "If the court finds the plan is in the children's best interest, it approves it.",
+          "claim_en": "If the court finds the plan serves the children's interests, it approves it.",
           "claim_es": "Si el tribunal determina que el plan es en el mejor interés de los hijos, lo aprueba.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
@@ -191,7 +261,7 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The court may determine the child's wishes and concerns if that is in the child's best interests.",
+          "claim_en": "The court may determine the child's wishes and concerns if that serves the child's interests.",
           "claim_es": "El tribunal puede conocer los deseos e inquietudes del hijo si eso es en su mejor interés.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
@@ -276,9 +346,7 @@
     "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NC": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "ND": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",

@@ -578,7 +578,7 @@
           "claim_es": "Para divorcios anteriores a junio de 1958, llame al secretario del tribunal de circuito del condado donde se otorgó la sentencia.",
           "source_url": "https://www.chfs.ky.gov/agencies/dph/dehp/vsb/Pages/marriage-divorce.aspx",
           "source_name": "Kentucky Cabinet for Health and Family Services: Office of Vital Statistics",
-          "quote": "the circuit court clerk in the county where the divorce decree was granted.",
+          "quote": "To inquire about marriage or divorce records prior to June 1958, please call the county clerk in the county where the marriage license was issued or the circuit court clerk in the county where the divorce decree was granted.",
           "checked": "2026-11-02"
         }
       ],
@@ -1236,8 +1236,8 @@
     "SC": {
       "facts": [
         {
-          "claim_en": "South Carolina's $12 search fee is non-refundable and includes one certification if the record is found.",
-          "claim_es": "En Carolina del Sur, la tarifa de búsqueda de $12 no es reembolsable e incluye una certificación si se encuentra el registro.",
+          "claim_en": "South Carolina's $12 search fee is non-refundable.",
+          "claim_es": "En Carolina del Sur, la tarifa de búsqueda de $12 no es reembolsable.",
           "source_url": "https://www.cdc.gov/nchs/w2w/south_carolina.htm",
           "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
           "quote": "The $12 search fee is non-refundable.",

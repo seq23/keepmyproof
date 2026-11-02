@@ -191,8 +191,8 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "DC Code § 16-902 sets the same six-month bona fide residency rule for divorce and legal separation.",
-          "claim_es": "El Código de DC § 16-902 fija la misma regla de seis meses de residencia de buena fe para el divorcio y la separación legal.",
+          "claim_en": "DC law sets the same six-month bona fide residency rule for divorce and legal separation.",
+          "claim_es": "La ley de DC fija la misma regla de seis meses de residencia de buena fe para el divorcio y la separación legal.",
           "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-902",
           "source_name": "Code of the District of Columbia § 16-902",
           "quote": "no action for divorce or legal separation shall be maintainable unless one of the parties to the marriage has been a bona fide resident of the District of Columbia for at least 6 months",
@@ -385,7 +385,7 @@
           "claim_es": "Quien vive o está destinado en una base militar de EE. UU. en Kansas por 60 días puede presentar en un condado vecino a la base.",
           "source_url": "https://www.ksrevisor.org/statutes/chapters/ch23/023_027_0003.html",
           "source_name": "Kansas Statutes § 23-2703",
-          "quote": "may file an action for divorce in any county adjacent to the post or reservation.",
+          "quote": "for 60 days immediately preceding the filing of the petition may file an action for divorce in any county adjacent to the post or reservation.",
           "checked": "2026-11-02"
         },
         {
@@ -678,6 +678,81 @@
         }
       ]
     },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "You or your spouse must be a Nebraska resident for at least one year before filing.",
+          "claim_es": "Usted o su cónyuge deben ser residentes de Nebraska al menos un año antes de presentar.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "You or your spouse must be a resident of Nebraska for at least one (1) year before filing your divorce with the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Both spouses need to take a parenting education class when there are children.",
+          "claim_es": "Ambos cónyuges deben tomar una clase de educación para padres cuando hay hijos.",
+          "source_url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children",
+          "source_name": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "quote": "Both you and your spouse need to take a parenting education class",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nebraska has a sixty-day waiting period between filing and the final decree.",
+          "claim_es": "Nebraska tiene un período de espera de sesenta días entre la presentación y la sentencia final.",
+          "source_url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/divorce-no-children",
+          "source_name": "Nebraska Judicial Branch: Divorce with No Children",
+          "quote": "there is a sixty-day waiting period between filing and the final decree",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "label_es": "Nebraska Judicial Branch Self-Help: Divorce with Children",
+          "url": "https://nebraskajudicial.gov/self-help/families-children/simple-divorce-children"
+        },
+        {
+          "label_en": "Nebraska Judicial Branch: Divorce with No Children",
+          "label_es": "Nebraska Judicial Branch: Divorce with No Children",
+          "url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/divorce-no-children"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "One or both spouses must live in Nevada for at least 6 weeks before filing for divorce.",
+          "claim_es": "Uno o ambos cónyuges deben vivir en Nevada al menos 6 semanas antes de pedir el divorcio.",
+          "source_url": "https://selfhelp.nvcourts.gov/self-help/divorce/overview",
+          "source_name": "Nevada Courts Self-Help Center: Divorce Overview",
+          "quote": "One spouse (or both) must live in Nevada for at least 6 weeks before filing for divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A friend, relative or co-worker must sign an affidavit, under penalty of perjury, that the spouse is a Nevada resident.",
+          "claim_es": "Un amigo, familiar o compañero de trabajo debe firmar una declaración jurada, bajo pena de perjurio, de que el cónyuge reside en Nevada.",
+          "source_url": "https://selfhelp.nvcourts.gov/self-help/divorce/overview",
+          "source_name": "Nevada Courts Self-Help Center: Divorce Overview",
+          "quote": "A friend, family member, or co-worker will have to sign an affidavit stating under penalty of perjury that they know that the spouse is indeed a Nevada resident.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nevada is a no-fault divorce state.",
+          "claim_es": "Nevada es un estado de divorcio sin culpa.",
+          "source_url": "https://selfhelp.nvcourts.gov/self-help/divorce/overview",
+          "source_name": "Nevada Courts Self-Help Center: Divorce Overview",
+          "quote": "Nevada is a “no fault” divorce state",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Courts Self-Help Center: Divorce Overview",
+          "label_es": "Nevada Courts Self-Help Center: Divorce Overview",
+          "url": "https://selfhelp.nvcourts.gov/self-help/divorce/overview"
+        }
+      ]
+    },
     "NH": {
       "facts": [
         {
@@ -903,6 +978,46 @@
         }
       ]
     },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "In almost all cases, you or your spouse must have lived in Oregon for six months before filing.",
+          "claim_es": "En casi todos los casos, usted o su cónyuge deben haber vivido en Oregón seis meses antes de presentar.",
+          "source_url": "https://www.courts.oregon.gov/programs/family/selfhelp/Pages/faqs.aspx",
+          "source_name": "Oregon Judicial Department: Family Law Self-Help FAQs",
+          "quote": "must have lived in Oregon for six months before filing the dissolution.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You must file in a county where you or your spouse currently lives.",
+          "claim_es": "Debe presentar en un condado donde usted o su cónyuge viven actualmente.",
+          "source_url": "https://www.courts.oregon.gov/programs/family/selfhelp/Pages/faqs.aspx",
+          "source_name": "Oregon Judicial Department: Family Law Self-Help FAQs",
+          "quote": "You must file in a county where you or your spouse/partner currently lives.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Oregon grants dissolution or separation based on irreconcilable differences.",
+          "claim_es": "Oregón concede la disolución o separación por diferencias irreconciliables.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors107.html",
+          "source_name": "Oregon Revised Statutes Chapter 107",
+          "quote": "Irreconcilable differences as grounds for dissolution or separation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon Judicial Department: Family Law Self-Help FAQs",
+          "label_es": "Oregon Judicial Department: Family Law Self-Help FAQs",
+          "url": "https://www.courts.oregon.gov/programs/family/selfhelp/Pages/faqs.aspx"
+        },
+        {
+          "label_en": "Oregon Revised Statutes Chapter 107",
+          "label_es": "Oregon Revised Statutes Chapter 107",
+          "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors107.html"
+        }
+      ]
+    },
     "RI": {
       "facts": [
         {
@@ -940,6 +1055,41 @@
           "label_en": "Rhode Island General Laws § 15-5-3.1",
           "label_es": "Rhode Island General Laws § 15-5-3.1",
           "url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-3.1.htm"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "A Texas divorce can be filed in the county where either spouse has lived for the last 90 days, if they have lived in Texas for the last 6 months.",
+          "claim_es": "Un divorcio en Texas se puede presentar en el condado donde cualquiera de los cónyuges vivió los últimos 90 días, si vivió en Texas los últimos 6 meses.",
+          "source_url": "https://guides.sll.texas.gov/divorce/filing-for-divorce",
+          "source_name": "Texas State Law Library: Filing for Divorce",
+          "quote": "The divorce can be filed in the district court county where either party has lived for the last 90 days, as long as they have also lived in Texas for at least the last 6 months.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A spouse living outside Texas can file in the Texas county where the other spouse lives.",
+          "claim_es": "Un cónyuge que vive fuera de Texas puede presentar en el condado de Texas donde vive el otro cónyuge.",
+          "source_url": "https://guides.sll.texas.gov/divorce/filing-for-divorce",
+          "source_name": "Texas State Law Library: Filing for Divorce",
+          "quote": "they can still file the suit in the county in Texas where the other person lives",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nonresident spouses can file in Texas if their spouse has lived there for at least the last six months.",
+          "claim_es": "Los cónyuges no residentes pueden presentar en Texas si su cónyuge ha vivido allí al menos los últimos seis meses.",
+          "source_url": "https://guides.sll.texas.gov/divorce/filing-for-divorce",
+          "source_name": "Texas State Law Library: Filing for Divorce",
+          "quote": "allows \"nonresident\" spouses to file for divorce in Texas as long as their spouse has lived in Texas for at least the last six months.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Texas State Law Library: Filing for Divorce",
+          "label_es": "Texas State Law Library: Filing for Divorce",
+          "url": "https://guides.sll.texas.gov/divorce/filing-for-divorce"
         }
       ]
     },
@@ -1141,7 +1291,7 @@
   },
   "skips": {
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "AR": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
@@ -1150,16 +1300,12 @@
     "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NE": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NJ": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WV": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }

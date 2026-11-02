@@ -107,7 +107,7 @@
           "claim_es": "Si un hijo mayor de 19 sigue en la secundaria, la manutención sigue hasta el mes después de graduarse, pero no después de los 21.",
           "source_url": "https://childsupport.colorado.gov/about/faq",
           "source_name": "Colorado Child Support Services FAQ",
-          "quote": "support continues until the end of the month after graduation but not beyond the age of 21.",
+          "quote": "if a child is over the age of 19 and still in high school or an equivalent program, support continues until the end of the month after graduation but not beyond the age of 21.",
           "checked": "2026-11-02"
         },
         {
@@ -428,6 +428,46 @@
         }
       ]
     },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "Maryland's Child Support Administration has an online calculator that estimates support under current guidelines.",
+          "claim_es": "La Administración de Manutención de Maryland tiene una calculadora en línea que estima la manutención según las pautas vigentes.",
+          "source_url": "https://www.mdcourts.gov/legalhelp/family/childsupport",
+          "source_name": "Maryland Judiciary: Child Support",
+          "quote": "The Child Support Administration (CSA) has an online calculator that will estimate the amount of child support that the court may approve under current guidelines.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The CSA calculator does not reflect deviations and adjustments a court may allow.",
+          "claim_es": "La calculadora de la CSA no refleja las desviaciones y ajustes que un tribunal puede permitir.",
+          "source_url": "https://www.mdcourts.gov/legalhelp/family/childsupport",
+          "source_name": "Maryland Judiciary: Child Support",
+          "quote": "The CSA calculator does not reflect deviations and adjustments a court may allow.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A new Maryland law changes how support guidelines treat parents with children in multiple households.",
+          "claim_es": "Una nueva ley de Maryland cambia cómo las pautas tratan a los padres con hijos en varios hogares.",
+          "source_url": "https://dhs.maryland.gov/child-support-services/",
+          "source_name": "Maryland Department of Human Services: Child Support",
+          "quote": "This new law changes how a parent’s financial responsibilities are factored into the child support guidelines, especially when they have children in multiple households.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Judiciary: Child Support",
+          "label_es": "Maryland Judiciary: Child Support",
+          "url": "https://www.mdcourts.gov/legalhelp/family/childsupport"
+        },
+        {
+          "label_en": "Maryland Department of Human Services: Child Support",
+          "label_es": "Maryland Department of Human Services: Child Support",
+          "url": "https://dhs.maryland.gov/child-support-services/"
+        }
+      ]
+    },
     "MS": {
       "facts": [
         {
@@ -521,7 +561,7 @@
           "claim_es": "Montana cambió de un modelo de ingresos compartidos a una fórmula Melson modificada después de su revisión de 1991-1992.",
           "source_url": "https://dphhs.mt.gov/assets/cssd/GROC/2020QuadRpt.pdf",
           "source_name": "Montana DPHHS 2020 Quadrennial Review of Child Support Guidelines",
-          "quote": "Montana changed from an income-shares model to a modified Melson",
+          "quote": "1991-1992 review, Montana changed from an income-shares model to a modified Melson",
           "checked": "2026-11-02"
         }
       ],
@@ -782,7 +822,6 @@
     "IA": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
