@@ -803,6 +803,35 @@
         }
       ],
       "official_links": []
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "In West Virginia, the personal representative must appraise the person's real estate and personal probate property.",
+          "claim_es": "En Virginia Occidental, el representante personal debe tasar los inmuebles y bienes muebles sucesorios de la persona.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The personal representative of an estate of a deceased person shall appraise the deceased's real estate and personal probate property",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the personal representative completes a sworn questionnaire on the Tax Commissioner's appraisement form about nonprobate property.",
+          "claim_es": "En Virginia Occidental, el representante personal llena bajo juramento un cuestionario del formulario de avalúo del Comisionado de Impuestos sobre bienes no sucesorios.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The personal representative shall complete, under oath, a questionnaire included in the appraisement form designed by the Tax Commissioner",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, the nonprobate inventory form is treated as confidential tax information.",
+          "claim_es": "En Virginia Occidental, el formulario de inventario no sucesorio se trata como información tributaria confidencial.",
+          "source_url": "https://code.wvlegislature.gov/44-1-14/",
+          "source_name": "West Virginia Code § 44-1-14",
+          "quote": "The nonprobate inventory form is confidential tax return information",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -828,7 +857,6 @@
     "TN": "no official source found",
     "UT": "no official source found",
     "VT": "no official source found",
-    "WV": "no official source found",
     "WY": "no official source found"
   }
 }

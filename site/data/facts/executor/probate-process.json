@@ -587,21 +587,249 @@
         }
       ],
       "official_links": []
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "In Illinois, anyone holding a will must file it with the clerk of the court in the proper county immediately after the death.",
+          "claim_es": "En Illinois, quien tenga un testamento debe presentarlo de inmediato ante el secretario del tribunal del condado correspondiente después de la muerte.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-1",
+          "quote": "Immediately upon the death of the testator any person who has the testator's will in his possession shall file it with the clerk of the court of the proper county",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, it is an offense to willfully hide a will for 30 days after learning of the death.",
+          "claim_es": "En Illinois, es delito ocultar a propósito un testamento durante 30 días después de saber de la muerte.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-1",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-1",
+          "quote": "wilfully secretes it for the period of 30 days after the death of the testator is known to him",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Illinois, notice must be mailed to heirs and beneficiaries no more than 14 days after the order admitting the will or appointing a representative.",
+          "claim_es": "En Illinois, el aviso debe enviarse a herederos y beneficiarios a más tardar 14 días después de la orden que admite el testamento o nombra al representante.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075500050K6-10",
+          "source_name": "Illinois Compiled Statutes, 755 ILCS 5/6-10",
+          "quote": "Not more than 14 days after entry of an order admitting or denying admission of a will to probate or appointing a representative",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, after a will is admitted, the executor publishes notice once a week for two weeks in a row in a local newspaper.",
+          "claim_es": "En Iowa, después de admitirse el testamento, el albacea publica un aviso una vez por semana durante dos semanas seguidas en un periódico local.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.304.pdf",
+          "source_name": "Iowa Code § 633.304",
+          "quote": "shall cause notice to be published once each week for two consecutive weeks in a daily or weekly newspaper of general circulation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, the executor also mails notice to the surviving spouse, each heir and each beneficiary under the will.",
+          "claim_es": "En Iowa, el albacea también envía aviso por correo al cónyuge sobreviviente, a cada heredero y a cada beneficiario del testamento.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.304.pdf",
+          "source_name": "Iowa Code § 633.304",
+          "quote": "give notice, except to any executor, by ordinary mail to the surviving spouse, each heir of the decedent, and each devisee under the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Iowa, when there is no will, administration is granted to a qualified person on petition by those the law lists.",
+          "claim_es": "En Iowa, cuando no hay testamento, la administración se concede a una persona calificada a petición de quienes indica la ley.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/633.227.pdf",
+          "source_name": "Iowa Code § 633.227",
+          "quote": "Where there is no will, administration shall be granted to any qualified person on the petition of",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "In Ohio, if the person did not live in Ohio, the will can be admitted in any Ohio county where they had property.",
+          "claim_es": "En Ohio, si la persona no vivía en Ohio, el testamento se puede admitir en cualquier condado de Ohio donde tenía bienes.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2107.11",
+          "source_name": "Ohio Revised Code § 2107.11",
+          "quote": "In any county of this state where any real property or personal property of the testator is located if, at the time of the testator's death, the testator was not domiciled in this state",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, a beneficiary who knows of a will and keeps it from probate for one year after the death can lose their inheritance.",
+          "claim_es": "En Ohio, un beneficiario que conoce un testamento y no lo presenta durante un año después de la muerte puede perder su herencia.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2107.10",
+          "source_name": "Ohio Revised Code § 2107.10",
+          "quote": "No property or right, testate or intestate, shall pass to a beneficiary named in a will who knows of the existence of the will for one year after the death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Ohio, when there is no will, the law sets an order of priority for who is granted administration.",
+          "claim_es": "En Ohio, cuando no hay testamento, la ley fija un orden de prioridad para conceder la administración.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2113.06",
+          "source_name": "Ohio Revised Code § 2113.06",
+          "quote": "Administration of the estate of an intestate shall be granted to persons mentioned in this division, in the following order",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, anyone holding a will must deliver it to the court or the named executor within thirty days after learning of the death.",
+          "claim_es": "En Washington, quien tenga un testamento debe entregarlo al tribunal o al albacea nombrado dentro de treinta días después de saber de la muerte.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.010",
+          "source_name": "Revised Code of Washington § 11.20.010",
+          "quote": "Any person having the custody or control of any will shall, within thirty days after he or she shall have received knowledge of the death of the testator, deliver said will to the court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, testimony supporting a will is put in writing, signed by the witnesses and certified by the judge.",
+          "claim_es": "En Washington, el testimonio que respalda un testamento se pone por escrito, lo firman los testigos y lo certifica el juez.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020",
+          "source_name": "Revised Code of Washington § 11.20.020",
+          "quote": "All testimony in support of the will shall be reduced to writing, signed by the witnesses, and certified by the judge of the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Washington, if no personal representative is requested and the court establishes the will, no further administration may be needed.",
+          "claim_es": "En Washington, si no se pide un representante personal y el tribunal valida el testamento, puede no requerirse más administración.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=11.20.020",
+          "source_name": "Revised Code of Washington § 11.20.020",
+          "quote": "If the application for probate of a will does not request the appointment of a personal representative and the court enters an adjudication of testacy establishing such will no further administration shall be required",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "In Virginia, after 30 days from the death, the court or clerk may grant administration to the first heir (or their designee) who applies.",
+          "claim_es": "En Virginia, después de 30 días desde la muerte, el tribunal o el secretario puede conceder la administración al primer heredero (o su designado) que la pida.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-502/",
+          "source_name": "Code of Virginia § 64.2-502",
+          "quote": "After 30 days have passed since the decedent's death, the court or the clerk may grant administration to the first distributee, or his designee, who applies",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, an heir who gives notice within the first 45 days of an intent to qualify later can hold off others' appointment.",
+          "claim_es": "En Virginia, un heredero que avisa en los primeros 45 días que piensa habilitarse después puede frenar el nombramiento de otros.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-502/",
+          "source_name": "Code of Virginia § 64.2-502",
+          "quote": "if, during the first 45 days following the decedent's death, any distributee notifies the court or the clerk of an intent to qualify after the 45-day period has elapsed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Virginia, within 30 days after qualifying or after the will is admitted, the personal representative sends notice to the people entitled to it.",
+          "claim_es": "En Virginia, dentro de 30 días después de habilitarse o de admitirse el testamento, el representante personal envía aviso a quienes tienen derecho.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title64.2/chapter5/section64.2-508/",
+          "source_name": "Code of Virginia § 64.2-508",
+          "quote": "Within 30 days after the date of qualification or admission of the will to probate, a personal representative or proponent of the will shall forward notice",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "In West Virginia, anyone holding a will must deliver it to the county clerk or the named executor within thirty days after learning of the death.",
+          "claim_es": "En Virginia Occidental, quien tenga un testamento debe entregarlo al secretario del condado o al albacea nombrado dentro de treinta días después de saber de la muerte.",
+          "source_url": "https://code.wvlegislature.gov/41-5-1/",
+          "source_name": "West Virginia Code § 41-5-1",
+          "quote": "A person having custody of a will shall, within thirty days after the death of the testator is known to him deliver such will to the clerk of the county court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, failing without reasonable cause to deliver a will is a misdemeanor with a fine of up to $200.",
+          "claim_es": "En Virginia Occidental, no entregar un testamento sin causa razonable es un delito menor con multa de hasta $200.",
+          "source_url": "https://code.wvlegislature.gov/41-5-1/",
+          "source_name": "West Virginia Code § 41-5-1",
+          "quote": "neglect so to deliver a will shall be guilty of a misdemeanor, and, on conviction, be punished by a fine not exceeding $200",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, estates appraised at $200,000 or less (not counting specifically devised real estate and nonprobate assets) can follow a shorter process.",
+          "claim_es": "En Virginia Occidental, las herencias tasadas en $200,000 o menos (sin contar inmuebles legados específicamente ni bienes no sucesorios) pueden seguir un proceso más corto.",
+          "source_url": "https://code.wvlegislature.gov/44-2-1/",
+          "source_name": "West Virginia Code § 44-2-1",
+          "quote": "If the personal representative delivers to the clerk an appraisement of the assets of the estate showing their value to be $200,000 or less",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "In Connecticut, a person named as executor must apply for probate of the will within thirty days after the death.",
+          "claim_es": "En Connecticut, la persona nombrada como albacea debe pedir la validación del testamento dentro de treinta días después de la muerte.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "within thirty days next after the death of the testator, apply for probate of the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, the small estate affidavit sections apply when no will or application is filed within thirty days after the death.",
+          "claim_es": "En Connecticut, las normas de declaración jurada de herencia pequeña aplican cuando no se presenta testamento ni solicitud dentro de treinta días después de la muerte.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "no will is presented for probate or no application for administration is filed within thirty days after death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, the probate court sends a copy of a small estate affidavit to the Department of Administrative Services.",
+          "claim_es": "En Connecticut, el tribunal testamentario envía copia de la declaración jurada de herencia pequeña al Departamento de Servicios Administrativos.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_802b.htm",
+          "source_name": "Connecticut General Statutes, Chapter 802b",
+          "quote": "On receipt of an affidavit, the court shall send a copy of the affidavit to the Department of Administrative Services.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "In Florida, probate is generally opened in the county where the person was domiciled.",
+          "claim_es": "En Florida, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "(a) In the county in this state where the decedent was domiciled.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, if the person neither lived nor had property in Florida, probate can be opened in a county where one of their debtors lives.",
+          "claim_es": "En Florida, si la persona no vivía ni tenía bienes en Florida, la sucesión se puede abrir en un condado donde viva uno de sus deudores.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/0733.html",
+          "source_name": "Florida Statutes, Chapter 733",
+          "quote": "If the decedent had no domicile in this state and possessed no property in this state, then in the county where any debtor of the decedent resides.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Florida, whoever holds a will must deposit it with the court clerk within 10 days after learning of the death.",
+          "claim_es": "En Florida, quien tenga un testamento debe depositarlo ante el secretario del tribunal dentro de 10 días después de saber de la muerte.",
+          "source_url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0732/0732.html",
+          "source_name": "Florida Statutes, Chapter 732",
+          "quote": "The custodian of a will must deposit the will with the clerk of the court having venue of the estate of the decedent within 10 days after receiving information that the",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
     "AL": "no official source found",
     "AR": "no official source found",
     "CO": "no official source found",
-    "CT": "no official source found",
     "DE": "no official source found",
-    "FL": "no official source found",
     "GA": "no official source found",
     "HI": "no official source found",
     "ID": "no official source found",
-    "IL": "no official source found",
     "IN": "no official source found",
-    "IA": "no official source found",
     "KY": "no official source found",
     "LA": "no official source found",
     "MD": "no official source found",
@@ -610,7 +838,6 @@
     "NJ": "no official source found",
     "NM": "no official source found",
     "NY": "no official source found",
-    "OH": "no official source found",
     "OK": "no official source found",
     "OR": "no official source found",
     "PA": "no official source found",
@@ -618,9 +845,6 @@
     "SC": "no official source found",
     "TN": "no official source found",
     "UT": "no official source found",
-    "VA": "no official source found",
-    "WA": "no official source found",
-    "WV": "no official source found",
     "WY": "no official source found"
   }
 }
