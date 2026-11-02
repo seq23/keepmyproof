@@ -1,0 +1,2345 @@
+{
+  "folder": "va",
+  "subtopic": "state-veterans-affairs-office",
+  "title_en": "{state} veterans affairs office: how to reach it",
+  "title_es": "Oficina de asuntos de veteranos de {state_es}: cómo comunicarse",
+  "search_intent_en": [
+    "{state} department of veterans affairs",
+    "{state} veterans affairs office phone number",
+    "{state} state veterans office address"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Alaska listed in VA's directory of state veterans affairs offices is the Alaska Office of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Alaska que aparece en el directorio de oficinas estatales del VA es Alaska Office of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Alaska Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 4600 DeBarr Rd, Suite 180, Anchorage AK 99508.",
+          "claim_es": "Su dirección es 4600 DeBarr Rd, Suite 180, Anchorage AK 99508.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "4600 DeBarr Rd, Suite 180",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Anchorage AK 99508.",
+          "claim_es": "La oficina aparece en Anchorage AK 99508.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Anchorage AK 99508",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 888-248-3682.",
+          "claim_es": "Su número de teléfono es 888-248-3682.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "888-248-3682",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Office of Veterans Affairs (official site)",
+          "label_es": "Alaska Office of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.alaska.gov/home/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Alabama listed in VA's directory of state veterans affairs offices is the Alabama Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Alabama que aparece en el directorio de oficinas estatales del VA es Alabama Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Alabama Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 100 North Union Street, Montgomery AL 36104.",
+          "claim_es": "Su dirección es 100 North Union Street, Montgomery AL 36104.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "100 North Union Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Montgomery AL 36104.",
+          "claim_es": "La oficina aparece en Montgomery AL 36104.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Montgomery AL 36104",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 334-242-5077.",
+          "claim_es": "Su número de teléfono es 334-242-5077.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "334-242-5077",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alabama Department of Veterans Affairs (official site)",
+          "label_es": "Alabama Department of Veterans Affairs (sitio oficial)",
+          "url": "https://va.alabama.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Arkansas listed in VA's directory of state veterans affairs offices is the Arkansas Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Arkansas que aparece en el directorio de oficinas estatales del VA es Arkansas Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Arkansas Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 501 Woodlane Street, Little Rock AR 72201.",
+          "claim_es": "Su dirección es 501 Woodlane Street, Little Rock AR 72201.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "501 Woodlane Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Little Rock AR 72201.",
+          "claim_es": "La oficina aparece en Little Rock AR 72201.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Little Rock AR 72201",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 501-683-2382.",
+          "claim_es": "Su número de teléfono es 501-683-2382.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "501-683-2382",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arkansas Department of Veterans Affairs (official site)",
+          "label_es": "Arkansas Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.veterans.arkansas.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Arizona listed in VA's directory of state veterans affairs offices is the Arizona Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Arizona que aparece en el directorio de oficinas estatales del VA es Arizona Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Arizona Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 3839 N. 3rd Street, Phoenix AZ 85012.",
+          "claim_es": "Su dirección es 3839 N. 3rd Street, Phoenix AZ 85012.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "3839 N. 3rd Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Phoenix AZ 85012.",
+          "claim_es": "La oficina aparece en Phoenix AZ 85012.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Phoenix AZ 85012",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 602-255-3373.",
+          "claim_es": "Su número de teléfono es 602-255-3373.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "602-255-3373",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Department of Veterans Services (official site)",
+          "label_es": "Arizona Department of Veterans Services (sitio oficial)",
+          "url": "https://dvs.az.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for California listed in VA's directory of state veterans affairs offices is the California Department of Veterans Affairs (CalVet).",
+          "claim_es": "La agencia estatal de veteranos de California que aparece en el directorio de oficinas estatales del VA es California Department of Veterans Affairs (CalVet).",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "California Department of Veterans Affairs (CalVet)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1227 O Street, Sacramento CA 95814.",
+          "claim_es": "Su dirección es 1227 O Street, Sacramento CA 95814.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1227 O Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Sacramento CA 95814.",
+          "claim_es": "La oficina aparece en Sacramento CA 95814.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Sacramento CA 95814",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 800-952-5626.",
+          "claim_es": "Su número de teléfono es 800-952-5626.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-952-5626",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Department of Veterans Affairs (CalVet) (official site)",
+          "label_es": "California Department of Veterans Affairs (CalVet) (sitio oficial)",
+          "url": "https://www.calvet.ca.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Connecticut listed in VA's directory of state veterans affairs offices is the Connecticut State Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Connecticut que aparece en el directorio de oficinas estatales del VA es Connecticut State Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Connecticut State Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 287 West Street, Rocky Hill CT 06067.",
+          "claim_es": "Su dirección es 287 West Street, Rocky Hill CT 06067.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "287 West Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Rocky Hill CT 06067.",
+          "claim_es": "La oficina aparece en Rocky Hill CT 06067.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Rocky Hill CT 06067",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 860-616-2562.",
+          "claim_es": "Su número de teléfono es 860-616-2562.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "860-616-2562",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut State Department of Veterans Affairs (official site)",
+          "label_es": "Connecticut State Department of Veterans Affairs (sitio oficial)",
+          "url": "https://portal.ct.gov/dva"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for District of Columbia listed in VA's directory of state veterans affairs offices is the Mayor’s Office of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de el Distrito de Columbia que aparece en el directorio de oficinas estatales del VA es Mayor’s Office of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Mayor’s Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Washington DC 20001.",
+          "claim_es": "La oficina aparece en Washington DC 20001.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Washington DC 20001",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 202-724-5454.",
+          "claim_es": "Su número de teléfono es 202-724-5454.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "202-724-5454",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mayor’s Office of Veterans Affairs (official site)",
+          "label_es": "Mayor’s Office of Veterans Affairs (sitio oficial)",
+          "url": "https://communityaffairs.dc.gov/mova"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Delaware listed in VA's directory of state veterans affairs offices is the Delaware Office of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Delaware que aparece en el directorio de oficinas estatales del VA es Delaware Office of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Delaware Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 802 Silver Lake Boulevard, Dover DE 19904.",
+          "claim_es": "Su dirección es 802 Silver Lake Boulevard, Dover DE 19904.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "802 Silver Lake Boulevard",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Dover DE 19904.",
+          "claim_es": "La oficina aparece en Dover DE 19904.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Dover DE 19904",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 302-739-2792.",
+          "claim_es": "Su número de teléfono es 302-739-2792.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "302-739-2792",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Office of Veterans Services (official site)",
+          "label_es": "Delaware Office of Veterans Services (sitio oficial)",
+          "url": "https://vets.delaware.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Florida listed in VA's directory of state veterans affairs offices is the Florida Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Florida que aparece en el directorio de oficinas estatales del VA es Florida Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Florida Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 11351 Ulmerton Road, Largo FL 33778-1630.",
+          "claim_es": "Su dirección es 11351 Ulmerton Road, Largo FL 33778-1630.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "11351 Ulmerton Road",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Largo FL 33778-1630.",
+          "claim_es": "La oficina aparece en Largo FL 33778-1630.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Largo FL 33778-1630",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 844-693-5838.",
+          "claim_es": "Su número de teléfono es 844-693-5838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "844-693-5838",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Department of Veterans Affairs (official site)",
+          "label_es": "Florida Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.floridavets.org/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Georgia listed in VA's directory of state veterans affairs offices is the Georgia Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Georgia que aparece en el directorio de oficinas estatales del VA es Georgia Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Georgia Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 2 MLK Jr Drive SE, Atlanta GA 30334.",
+          "claim_es": "Su dirección es 2 MLK Jr Drive SE, Atlanta GA 30334.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "2 MLK Jr Drive SE",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Atlanta GA 30334.",
+          "claim_es": "La oficina aparece en Atlanta GA 30334.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Atlanta GA 30334",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 404-656-2300.",
+          "claim_es": "Su número de teléfono es 404-656-2300.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "404-656-2300",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia Department of Veterans Affairs (official site)",
+          "label_es": "Georgia Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.georgia.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Hawaii listed in VA's directory of state veterans affairs offices is the Hawai’i Office of Veterans’ Services.",
+          "claim_es": "La agencia estatal de veteranos de Hawái que aparece en el directorio de oficinas estatales del VA es Hawai’i Office of Veterans’ Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Hawai’i Office of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 459 Patterson Road, Honolulu HI 96819-1522.",
+          "claim_es": "Su dirección es 459 Patterson Road, Honolulu HI 96819-1522.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "459 Patterson Road",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Honolulu HI 96819-1522.",
+          "claim_es": "La oficina aparece en Honolulu HI 96819-1522.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Honolulu HI 96819-1522",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 808-433-0420.",
+          "claim_es": "Su número de teléfono es 808-433-0420.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "808-433-0420",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawai’i Office of Veterans’ Services (official site)",
+          "label_es": "Hawai’i Office of Veterans’ Services (sitio oficial)",
+          "url": "https://dod.hawaii.gov/ovs/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Iowa listed in VA's directory of state veterans affairs offices is the Iowa Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Iowa que aparece en el directorio de oficinas estatales del VA es Iowa Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Iowa Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 7105 NW 70th Avenue, Johnston IA 50131.",
+          "claim_es": "Su dirección es 7105 NW 70th Avenue, Johnston IA 50131.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "7105 NW 70th Avenue",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Johnston IA 50131.",
+          "claim_es": "La oficina aparece en Johnston IA 50131.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Johnston IA 50131",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 515-252-4698.",
+          "claim_es": "Su número de teléfono es 515-252-4698.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "515-252-4698",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Department of Veterans Affairs (official site)",
+          "label_es": "Iowa Department of Veterans Affairs (sitio oficial)",
+          "url": "https://dva.iowa.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Illinois listed in VA's directory of state veterans affairs offices is the Illinois Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Illinois que aparece en el directorio de oficinas estatales del VA es Illinois Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Illinois Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 833 South Spring Street, Springfield IL 62704.",
+          "claim_es": "Su dirección es 833 South Spring Street, Springfield IL 62704.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "833 South Spring Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Springfield IL 62704.",
+          "claim_es": "La oficina aparece en Springfield IL 62704.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Springfield IL 62704",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 800-437-9824.",
+          "claim_es": "Su número de teléfono es 800-437-9824.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-437-9824",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois Department of Veterans Affairs (official site)",
+          "label_es": "Illinois Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.illinois.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Indiana listed in VA's directory of state veterans affairs offices is the Indiana Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Indiana que aparece en el directorio de oficinas estatales del VA es Indiana Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Indiana Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 777 North Meridian Street, Indianapolis IN 46204-2738.",
+          "claim_es": "Su dirección es 777 North Meridian Street, Indianapolis IN 46204-2738.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "777 North Meridian Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Indianapolis IN 46204-2738.",
+          "claim_es": "La oficina aparece en Indianapolis IN 46204-2738.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Indianapolis IN 46204-2738",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 317-232-3910.",
+          "claim_es": "Su número de teléfono es 317-232-3910.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "317-232-3910",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Indiana Department of Veterans Affairs (official site)",
+          "label_es": "Indiana Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.in.gov/dva/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Kansas listed in VA's directory of state veterans affairs offices is the Kansas Commission on Veterans Affairs Office.",
+          "claim_es": "La agencia estatal de veteranos de Kansas que aparece en el directorio de oficinas estatales del VA es Kansas Commission on Veterans Affairs Office.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Kansas Commission on Veterans Affairs Office",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 700 SW Jackson, Topeka KS 66603-3743.",
+          "claim_es": "Su dirección es 700 SW Jackson, Topeka KS 66603-3743.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "700 SW Jackson",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Topeka KS 66603-3743.",
+          "claim_es": "La oficina aparece en Topeka KS 66603-3743.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Topeka KS 66603-3743",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 785-296-3976.",
+          "claim_es": "Su número de teléfono es 785-296-3976.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "785-296-3976",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Commission on Veterans Affairs Office (official site)",
+          "label_es": "Kansas Commission on Veterans Affairs Office (sitio oficial)",
+          "url": "https://kcva.ks.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Kentucky listed in VA's directory of state veterans affairs offices is the Kentucky Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Kentucky que aparece en el directorio de oficinas estatales del VA es Kentucky Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Kentucky Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1111B Louisville Road, Frankfort KY 40601.",
+          "claim_es": "Su dirección es 1111B Louisville Road, Frankfort KY 40601.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1111B Louisville Road",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Frankfort KY 40601.",
+          "claim_es": "La oficina aparece en Frankfort KY 40601.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Frankfort KY 40601",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 502-564-9203.",
+          "claim_es": "Su número de teléfono es 502-564-9203.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "502-564-9203",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Department of Veterans Affairs (official site)",
+          "label_es": "Kentucky Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.ky.gov/Pages/index.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Louisiana listed in VA's directory of state veterans affairs offices is the Louisiana Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Luisiana que aparece en el directorio de oficinas estatales del VA es Louisiana Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Louisiana Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 602 N. Fifth Street, Baton Rouge LA 70802.",
+          "claim_es": "Su dirección es 602 N. Fifth Street, Baton Rouge LA 70802.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "602 N. Fifth Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Baton Rouge LA 70802.",
+          "claim_es": "La oficina aparece en Baton Rouge LA 70802.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Baton Rouge LA 70802",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 225-219-5000.",
+          "claim_es": "Su número de teléfono es 225-219-5000.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "225-219-5000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Louisiana Department of Veterans Affairs (official site)",
+          "label_es": "Louisiana Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.vetaffairs.la.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Massachusetts listed in VA's directory of state veterans affairs offices is the Massachusetts Executive Office of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Massachusetts que aparece en el directorio de oficinas estatales del VA es Massachusetts Executive Office of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Massachusetts Executive Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 600 Washington Street, Boston MA 02111.",
+          "claim_es": "Su dirección es 600 Washington Street, Boston MA 02111.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "600 Washington Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Boston MA 02111.",
+          "claim_es": "La oficina aparece en Boston MA 02111.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Boston MA 02111",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 617-210-5480.",
+          "claim_es": "Su número de teléfono es 617-210-5480.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "617-210-5480",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Massachusetts Executive Office of Veterans Services (official site)",
+          "label_es": "Massachusetts Executive Office of Veterans Services (sitio oficial)",
+          "url": "https://www.mass.gov/orgs/executive-office-of-veterans-services"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Maryland listed in VA's directory of state veterans affairs offices is the Maryland Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Maryland que aparece en el directorio de oficinas estatales del VA es Maryland Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Maryland Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 16 Francis Street, Annapolis MD 21401.",
+          "claim_es": "Su dirección es 16 Francis Street, Annapolis MD 21401.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "16 Francis Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Annapolis MD 21401.",
+          "claim_es": "La oficina aparece en Annapolis MD 21401.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Annapolis MD 21401",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 410-260-3838.",
+          "claim_es": "Su número de teléfono es 410-260-3838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "410-260-3838",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Department of Veterans Affairs (official site)",
+          "label_es": "Maryland Department of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.maryland.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Maine listed in VA's directory of state veterans affairs offices is the Maine Bureau of Veterans’ Services.",
+          "claim_es": "La agencia estatal de veteranos de Maine que aparece en el directorio de oficinas estatales del VA es Maine Bureau of Veterans’ Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Maine Bureau of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 117 State House Station, Augusta ME 04333-0117.",
+          "claim_es": "Su dirección es 117 State House Station, Augusta ME 04333-0117.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "117 State House Station",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Augusta ME 04333-0117.",
+          "claim_es": "La oficina aparece en Augusta ME 04333-0117.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Augusta ME 04333-0117",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 207-287-7020.",
+          "claim_es": "Su número de teléfono es 207-287-7020.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "207-287-7020",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Bureau of Veterans’ Services (official site)",
+          "label_es": "Maine Bureau of Veterans’ Services (sitio oficial)",
+          "url": "https://www.maine.gov/veterans/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Michigan listed in VA's directory of state veterans affairs offices is the Michigan Veterans Affairs Agency.",
+          "claim_es": "La agencia estatal de veteranos de Michigan que aparece en el directorio de oficinas estatales del VA es Michigan Veterans Affairs Agency.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Michigan Veterans Affairs Agency",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 423 N. Martin Luther King Jr. Blvd., Lansing MI 48906.",
+          "claim_es": "Su dirección es 423 N. Martin Luther King Jr. Blvd., Lansing MI 48906.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "423 N. Martin Luther King Jr. Blvd.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Lansing MI 48906.",
+          "claim_es": "La oficina aparece en Lansing MI 48906.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Lansing MI 48906",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 800-642-4838.",
+          "claim_es": "Su número de teléfono es 800-642-4838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-642-4838",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan Veterans Affairs Agency (official site)",
+          "label_es": "Michigan Veterans Affairs Agency (sitio oficial)",
+          "url": "https://www.michigan.gov/mvaa"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Minnesota listed in VA's directory of state veterans affairs offices is the Minnesota Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Minnesota que aparece en el directorio de oficinas estatales del VA es Minnesota Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Minnesota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 20 W 12th Street, St. Paul MN 55155.",
+          "claim_es": "Su dirección es 20 W 12th Street, St. Paul MN 55155.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "20 W 12th Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in St. Paul MN 55155.",
+          "claim_es": "La oficina aparece en St. Paul MN 55155.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "St. Paul MN 55155",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 888-546-5838.",
+          "claim_es": "Su número de teléfono es 888-546-5838.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "888-546-5838",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota Department of Veterans Affairs (official site)",
+          "label_es": "Minnesota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://mn.gov/mdva/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Missouri listed in VA's directory of state veterans affairs offices is the Missouri Veterans Commission.",
+          "claim_es": "La agencia estatal de veteranos de Missouri que aparece en el directorio de oficinas estatales del VA es Missouri Veterans Commission.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Missouri Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 205 Jefferson Street, Jefferson City MO 65102.",
+          "claim_es": "Su dirección es 205 Jefferson Street, Jefferson City MO 65102.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "205 Jefferson Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Jefferson City MO 65102.",
+          "claim_es": "La oficina aparece en Jefferson City MO 65102.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Jefferson City MO 65102",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 573-751-3779.",
+          "claim_es": "Su número de teléfono es 573-751-3779.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "573-751-3779",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Veterans Commission (official site)",
+          "label_es": "Missouri Veterans Commission (sitio oficial)",
+          "url": "https://mvc.dps.mo.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Mississippi listed in VA's directory of state veterans affairs offices is the Mississippi Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Mississippi que aparece en el directorio de oficinas estatales del VA es Mississippi Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Mississippi Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 120 North State Street, Jackson MS 39207.",
+          "claim_es": "Su dirección es 120 North State Street, Jackson MS 39207.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "120 North State Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Jackson MS 39207.",
+          "claim_es": "La oficina aparece en Jackson MS 39207.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Jackson MS 39207",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 601-576-4850.",
+          "claim_es": "Su número de teléfono es 601-576-4850.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "601-576-4850",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mississippi Department of Veterans Affairs (official site)",
+          "label_es": "Mississippi Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.msva.ms.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Montana listed in VA's directory of state veterans affairs offices is the Montana Veterans Affairs Division.",
+          "claim_es": "La agencia estatal de veteranos de Montana que aparece en el directorio de oficinas estatales del VA es Montana Veterans Affairs Division.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Montana Veterans Affairs Division",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1911 Tower Street, Missoula MT 59804.",
+          "claim_es": "Su dirección es 1911 Tower Street, Missoula MT 59804.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1911 Tower Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Missoula MT 59804.",
+          "claim_es": "La oficina aparece en Missoula MT 59804.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Missoula MT 59804",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 406-542-2501.",
+          "claim_es": "Su número de teléfono es 406-542-2501.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "406-542-2501",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Veterans Affairs Division (official site)",
+          "label_es": "Montana Veterans Affairs Division (sitio oficial)",
+          "url": "https://dma.mt.gov/mvad/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for North Carolina listed in VA's directory of state veterans affairs offices is the North Carolina Department of Military and Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Carolina del Norte que aparece en el directorio de oficinas estatales del VA es North Carolina Department of Military and Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "North Carolina Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 413 North Salisbury Street, Raleigh NC 27603.",
+          "claim_es": "Su dirección es 413 North Salisbury Street, Raleigh NC 27603.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "413 North Salisbury Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Raleigh NC 27603.",
+          "claim_es": "La oficina aparece en Raleigh NC 27603.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Raleigh NC 27603",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 844-624-8387.",
+          "claim_es": "Su número de teléfono es 844-624-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "844-624-8387",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Department of Military and Veterans Affairs (official site)",
+          "label_es": "North Carolina Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.milvets.nc.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for North Dakota listed in VA's directory of state veterans affairs offices is the North Dakota Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Dakota del Norte que aparece en el directorio de oficinas estatales del VA es North Dakota Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "North Dakota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 4201 38th Street S, Fargo ND 58104-7535.",
+          "claim_es": "Su dirección es 4201 38th Street S, Fargo ND 58104-7535.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "4201 38th Street S",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Fargo ND 58104-7535.",
+          "claim_es": "La oficina aparece en Fargo ND 58104-7535.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Fargo ND 58104-7535",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 701-239-7165.",
+          "claim_es": "Su número de teléfono es 701-239-7165.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "701-239-7165",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Department of Veterans Affairs (official site)",
+          "label_es": "North Dakota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.veterans.nd.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Nebraska listed in VA's directory of state veterans affairs offices is the Nebraska Department of Veterans’ Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Nebraska que aparece en el directorio de oficinas estatales del VA es Nebraska Department of Veterans’ Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Nebraska Department of Veterans’ Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 301 Centennial Mall South, 4th Floor, Lincoln NE 68509-5083.",
+          "claim_es": "Su dirección es 301 Centennial Mall South, 4th Floor, Lincoln NE 68509-5083.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "301 Centennial Mall South, 4th Floor",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Lincoln NE 68509-5083.",
+          "claim_es": "La oficina aparece en Lincoln NE 68509-5083.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Lincoln NE 68509-5083",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 402-471-2458.",
+          "claim_es": "Su número de teléfono es 402-471-2458.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "402-471-2458",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nebraska Department of Veterans’ Affairs (official site)",
+          "label_es": "Nebraska Department of Veterans’ Affairs (sitio oficial)",
+          "url": "https://veterans.nebraska.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for New Hampshire listed in VA's directory of state veterans affairs offices is the New Hampshire Department of Military Affairs and Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de New Hampshire que aparece en el directorio de oficinas estatales del VA es New Hampshire Department of Military Affairs and Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Hampshire Department of Military Affairs and Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1 Minuteman Way, Concord NH 03301.",
+          "claim_es": "Su dirección es 1 Minuteman Way, Concord NH 03301.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1 Minuteman Way",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Concord NH 03301.",
+          "claim_es": "La oficina aparece en Concord NH 03301.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Concord NH 03301",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 603-225-1200.",
+          "claim_es": "Su número de teléfono es 603-225-1200.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "603-225-1200",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire Department of Military Affairs and Veterans Services (official site)",
+          "label_es": "New Hampshire Department of Military Affairs and Veterans Services (sitio oficial)",
+          "url": "https://www.dmavs.nh.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for New Jersey listed in VA's directory of state veterans affairs offices is the New Jersey Department of Military and Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Nueva Jersey que aparece en el directorio de oficinas estatales del VA es New Jersey Department of Military and Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Jersey Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 101 Eggert Crossing Road, Lawrenceville NJ 08648.",
+          "claim_es": "Su dirección es 101 Eggert Crossing Road, Lawrenceville NJ 08648.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "101 Eggert Crossing Road",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Lawrenceville NJ 08648.",
+          "claim_es": "La oficina aparece en Lawrenceville NJ 08648.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Lawrenceville NJ 08648",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 609-530-6892.",
+          "claim_es": "Su número de teléfono es 609-530-6892.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "609-530-6892",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Jersey Department of Military and Veterans Affairs (official site)",
+          "label_es": "New Jersey Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.nj.gov/military/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for New Mexico listed in VA's directory of state veterans affairs offices is the New Mexico Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Nuevo México que aparece en el directorio de oficinas estatales del VA es New Mexico Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New Mexico Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 500 Gold Avenue, SW, Albuquerque NM 87102.",
+          "claim_es": "Su dirección es 500 Gold Avenue, SW, Albuquerque NM 87102.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "500 Gold Avenue, SW",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Albuquerque NM 87102.",
+          "claim_es": "La oficina aparece en Albuquerque NM 87102.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Albuquerque NM 87102",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 866-433-8387.",
+          "claim_es": "Su número de teléfono es 866-433-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "866-433-8387",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Department of Veterans Services (official site)",
+          "label_es": "New Mexico Department of Veterans Services (sitio oficial)",
+          "url": "https://www.nmdvs.org/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Nevada listed in VA's directory of state veterans affairs offices is the Nevada Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Nevada que aparece en el directorio de oficinas estatales del VA es Nevada Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Nevada Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 6630 S. McCarran Boulevard, Reno NV 89509.",
+          "claim_es": "Su dirección es 6630 S. McCarran Boulevard, Reno NV 89509.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "6630 S. McCarran Boulevard",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Reno NV 89509.",
+          "claim_es": "La oficina aparece en Reno NV 89509.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Reno NV 89509",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 775-688-1653.",
+          "claim_es": "Su número de teléfono es 775-688-1653.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "775-688-1653",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Department of Veterans Services (official site)",
+          "label_es": "Nevada Department of Veterans Services (sitio oficial)",
+          "url": "https://veterans.nv.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for New York listed in VA's directory of state veterans affairs offices is the New York State Department of Veterans’ Services.",
+          "claim_es": "La agencia estatal de veteranos de Nueva York que aparece en el directorio de oficinas estatales del VA es New York State Department of Veterans’ Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "New York State Department of Veterans’ Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 2 Empire State Plaza, Albany NY 12223.",
+          "claim_es": "Su dirección es 2 Empire State Plaza, Albany NY 12223.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "2 Empire State Plaza",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Albany NY 12223.",
+          "claim_es": "La oficina aparece en Albany NY 12223.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Albany NY 12223",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 518-474-6114.",
+          "claim_es": "Su número de teléfono es 518-474-6114.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "518-474-6114",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York State Department of Veterans’ Services (official site)",
+          "label_es": "New York State Department of Veterans’ Services (sitio oficial)",
+          "url": "https://veterans.ny.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Ohio listed in VA's directory of state veterans affairs offices is the Ohio Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Ohio que aparece en el directorio de oficinas estatales del VA es Ohio Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Ohio Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 77 South High Street, Columbus OH 43215.",
+          "claim_es": "Su dirección es 77 South High Street, Columbus OH 43215.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "77 South High Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Columbus OH 43215.",
+          "claim_es": "La oficina aparece en Columbus OH 43215.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Columbus OH 43215",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Department of Veterans Services (official site)",
+          "label_es": "Ohio Department of Veterans Services (sitio oficial)",
+          "url": "https://dvs.ohio.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Oklahoma listed in VA's directory of state veterans affairs offices is the Oklahoma Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Oklahoma que aparece en el directorio de oficinas estatales del VA es Oklahoma Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Oklahoma Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 2132 NE 36th Street, Oklahoma City OK 73111.",
+          "claim_es": "Su dirección es 2132 NE 36th Street, Oklahoma City OK 73111.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "2132 NE 36th Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Oklahoma City OK 73111.",
+          "claim_es": "La oficina aparece en Oklahoma City OK 73111.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Oklahoma City OK 73111",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 405-523-4000.",
+          "claim_es": "Su número de teléfono es 405-523-4000.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "405-523-4000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oklahoma Department of Veterans Affairs (official site)",
+          "label_es": "Oklahoma Department of Veterans Affairs (sitio oficial)",
+          "url": "https://oklahoma.gov/veterans.html"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Oregon listed in VA's directory of state veterans affairs offices is the Oregon Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Oregon que aparece en el directorio de oficinas estatales del VA es Oregon Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Oregon Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 700 Summer Street NE, Salem OR 97301.",
+          "claim_es": "Su dirección es 700 Summer Street NE, Salem OR 97301.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "700 Summer Street NE",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Salem OR 97301.",
+          "claim_es": "La oficina aparece en Salem OR 97301.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Salem OR 97301",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 503-373-2085.",
+          "claim_es": "Su número de teléfono es 503-373-2085.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "503-373-2085",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oregon Department of Veterans Affairs (official site)",
+          "label_es": "Oregon Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.oregon.gov/ODVA/Pages/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Pennsylvania listed in VA's directory of state veterans affairs offices is the Pennsylvania Department of Military and Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Pensilvania que aparece en el directorio de oficinas estatales del VA es Pennsylvania Department of Military and Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Pennsylvania Department of Military and Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is Bldg. 0-47, Annville PA 17003-5002.",
+          "claim_es": "Su dirección es Bldg. 0-47, Annville PA 17003-5002.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Bldg. 0-47",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Annville PA 17003-5002.",
+          "claim_es": "La oficina aparece en Annville PA 17003-5002.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Annville PA 17003-5002",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Pennsylvania Department of Military and Veterans Affairs (official site)",
+          "label_es": "Pennsylvania Department of Military and Veterans Affairs (sitio oficial)",
+          "url": "https://www.dmva.pa.gov/Pages/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Rhode Island listed in VA's directory of state veterans affairs offices is the Rhode Island Office of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Rhode Island que aparece en el directorio de oficinas estatales del VA es Rhode Island Office of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Rhode Island Office of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 560 Jefferson Boulevard, Warwick RI 02886.",
+          "claim_es": "Su dirección es 560 Jefferson Boulevard, Warwick RI 02886.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "560 Jefferson Boulevard",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Warwick RI 02886.",
+          "claim_es": "La oficina aparece en Warwick RI 02886.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Warwick RI 02886",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 401-921-2119.",
+          "claim_es": "Su número de teléfono es 401-921-2119.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "401-921-2119",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island Office of Veterans Services (official site)",
+          "label_es": "Rhode Island Office of Veterans Services (sitio oficial)",
+          "url": "https://vets.ri.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for South Carolina listed in VA's directory of state veterans affairs offices is the South Carolina Department of Veterans’ Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Carolina del Sur que aparece en el directorio de oficinas estatales del VA es South Carolina Department of Veterans’ Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "South Carolina Department of Veterans’ Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1800 St. Julian Place, Columbia SC 29204.",
+          "claim_es": "Su dirección es 1800 St. Julian Place, Columbia SC 29204.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1800 St. Julian Place",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Columbia SC 29204.",
+          "claim_es": "La oficina aparece en Columbia SC 29204.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Columbia SC 29204",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 803-734-0200.",
+          "claim_es": "Su número de teléfono es 803-734-0200.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "803-734-0200",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Carolina Department of Veterans’ Affairs (official site)",
+          "label_es": "South Carolina Department of Veterans’ Affairs (sitio oficial)",
+          "url": "https://scdva.sc.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for South Dakota listed in VA's directory of state veterans affairs offices is the South Dakota Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Dakota del Sur que aparece en el directorio de oficinas estatales del VA es South Dakota Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "South Dakota Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 425 E. Capitol Avenue, Pierre SD 57501.",
+          "claim_es": "Su dirección es 425 E. Capitol Avenue, Pierre SD 57501.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "425 E. Capitol Avenue",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Pierre SD 57501.",
+          "claim_es": "La oficina aparece en Pierre SD 57501.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Pierre SD 57501",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 605-773-3269.",
+          "claim_es": "Su número de teléfono es 605-773-3269.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "605-773-3269",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "South Dakota Department of Veterans Affairs (official site)",
+          "label_es": "South Dakota Department of Veterans Affairs (sitio oficial)",
+          "url": "https://vetaffairs.sd.gov/default.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Tennessee listed in VA's directory of state veterans affairs offices is the Tennessee Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Tennessee que aparece en el directorio de oficinas estatales del VA es Tennessee Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Tennessee Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 312 Rosa L. Parks Avenue, Nashville TN 37243.",
+          "claim_es": "Su dirección es 312 Rosa L. Parks Avenue, Nashville TN 37243.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "312 Rosa L. Parks Avenue",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Nashville TN 37243.",
+          "claim_es": "La oficina aparece en Nashville TN 37243.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Nashville TN 37243",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 615-741-2345.",
+          "claim_es": "Su número de teléfono es 615-741-2345.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "615-741-2345",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Tennessee Department of Veterans Services (official site)",
+          "label_es": "Tennessee Department of Veterans Services (sitio oficial)",
+          "url": "https://www.tn.gov/veteran.html"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Texas listed in VA's directory of state veterans affairs offices is the Texas Veterans Commission.",
+          "claim_es": "La agencia estatal de veteranos de Texas que aparece en el directorio de oficinas estatales del VA es Texas Veterans Commission.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Texas Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is P.O. Box 12277, Austin TX 78711-2277.",
+          "claim_es": "Su dirección es P.O. Box 12277, Austin TX 78711-2277.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "P.O. Box 12277",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Austin TX 78711-2277.",
+          "claim_es": "La oficina aparece en Austin TX 78711-2277.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Austin TX 78711-2277",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 512-463-6564.",
+          "claim_es": "Su número de teléfono es 512-463-6564.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "512-463-6564",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Texas Veterans Commission (official site)",
+          "label_es": "Texas Veterans Commission (sitio oficial)",
+          "url": "https://www.tvc.texas.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Utah listed in VA's directory of state veterans affairs offices is the Utah Department of Veterans and Military Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Utah que aparece en el directorio de oficinas estatales del VA es Utah Department of Veterans and Military Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Utah Department of Veterans and Military Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 550 Foothill Drive, Salt Lake City UT 84148.",
+          "claim_es": "Su dirección es 550 Foothill Drive, Salt Lake City UT 84148.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "550 Foothill Drive",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Salt Lake City UT 84148.",
+          "claim_es": "La oficina aparece en Salt Lake City UT 84148.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Salt Lake City UT 84148",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 801-326-2372.",
+          "claim_es": "Su número de teléfono es 801-326-2372.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "801-326-2372",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah Department of Veterans and Military Affairs (official site)",
+          "label_es": "Utah Department of Veterans and Military Affairs (sitio oficial)",
+          "url": "https://veterans.utah.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Virginia listed in VA's directory of state veterans affairs offices is the Virginia Department of Veterans Services.",
+          "claim_es": "La agencia estatal de veteranos de Virginia que aparece en el directorio de oficinas estatales del VA es Virginia Department of Veterans Services.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Virginia Department of Veterans Services",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 101 North 14th Street, Richmond VA 23219.",
+          "claim_es": "Su dirección es 101 North 14th Street, Richmond VA 23219.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "101 North 14th Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Richmond VA 23219.",
+          "claim_es": "La oficina aparece en Richmond VA 23219.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Richmond VA 23219",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 804-786-0286.",
+          "claim_es": "Su número de teléfono es 804-786-0286.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "804-786-0286",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia Department of Veterans Services (official site)",
+          "label_es": "Virginia Department of Veterans Services (sitio oficial)",
+          "url": "https://www.dvs.virginia.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Vermont listed in VA's directory of state veterans affairs offices is the Vermont Office of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Vermont que aparece en el directorio de oficinas estatales del VA es Vermont Office of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Vermont Office of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 118 State Street, Montpelier VT 05620-4401.",
+          "claim_es": "Su dirección es 118 State Street, Montpelier VT 05620-4401.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "118 State Street",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Montpelier VT 05620-4401.",
+          "claim_es": "La oficina aparece en Montpelier VT 05620-4401.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Montpelier VT 05620-4401",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 802-828-3379.",
+          "claim_es": "Su número de teléfono es 802-828-3379.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "802-828-3379",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Office of Veterans Affairs (official site)",
+          "label_es": "Vermont Office of Veterans Affairs (sitio oficial)",
+          "url": "https://veterans.vermont.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Washington listed in VA's directory of state veterans affairs offices is the Washington Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Washington que aparece en el directorio de oficinas estatales del VA es Washington Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Washington Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 1102 Quince Street SE, Olympia WA 98504-1150.",
+          "claim_es": "Su dirección es 1102 Quince Street SE, Olympia WA 98504-1150.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "1102 Quince Street SE",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Olympia WA 98504-1150.",
+          "claim_es": "La oficina aparece en Olympia WA 98504-1150.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Olympia WA 98504-1150",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 800-562-2308.",
+          "claim_es": "Su número de teléfono es 800-562-2308.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-562-2308",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Washington Department of Veterans Affairs (official site)",
+          "label_es": "Washington Department of Veterans Affairs (sitio oficial)",
+          "url": "https://www.dva.wa.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Wisconsin listed in VA's directory of state veterans affairs offices is the Wisconsin Department of Veterans Affairs.",
+          "claim_es": "La agencia estatal de veteranos de Wisconsin que aparece en el directorio de oficinas estatales del VA es Wisconsin Department of Veterans Affairs.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Wisconsin Department of Veterans Affairs",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 2135 Rimrock Road, Madison WI 53707-7843.",
+          "claim_es": "Su dirección es 2135 Rimrock Road, Madison WI 53707-7843.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "2135 Rimrock Road",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Madison WI 53707-7843.",
+          "claim_es": "La oficina aparece en Madison WI 53707-7843.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Madison WI 53707-7843",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 800-947-8387.",
+          "claim_es": "Su número de teléfono es 800-947-8387.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "800-947-8387",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin Department of Veterans Affairs (official site)",
+          "label_es": "Wisconsin Department of Veterans Affairs (sitio oficial)",
+          "url": "https://dva.wi.gov/Pages/Home.aspx"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for West Virginia listed in VA's directory of state veterans affairs offices is the West Virginia Department of Veterans Assistance.",
+          "claim_es": "La agencia estatal de veteranos de Virginia Occidental que aparece en el directorio de oficinas estatales del VA es West Virginia Department of Veterans Assistance.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "West Virginia Department of Veterans Assistance",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 900 Kanawha Boulevard East, Charleston WV 25305.",
+          "claim_es": "Su dirección es 900 Kanawha Boulevard East, Charleston WV 25305.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "900 Kanawha Boulevard East",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Charleston WV 25305.",
+          "claim_es": "La oficina aparece en Charleston WV 25305.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Charleston WV 25305",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 304-558-3661.",
+          "claim_es": "Su número de teléfono es 304-558-3661.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "304-558-3661",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Department of Veterans Assistance (official site)",
+          "label_es": "West Virginia Department of Veterans Assistance (sitio oficial)",
+          "url": "https://veterans.wv.gov/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "The state veterans agency for Wyoming listed in VA's directory of state veterans affairs offices is the Wyoming Veterans Commission.",
+          "claim_es": "La agencia estatal de veteranos de Wyoming que aparece en el directorio de oficinas estatales del VA es Wyoming Veterans Commission.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Wyoming Veterans Commission",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed address is 5800 Central Avenue, Cheyenne WY 82009.",
+          "claim_es": "Su dirección es 5800 Central Avenue, Cheyenne WY 82009.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "5800 Central Avenue",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The office is listed in Cheyenne WY 82009.",
+          "claim_es": "La oficina aparece en Cheyenne WY 82009.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "Cheyenne WY 82009",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Its listed phone number is 307-777-8152.",
+          "claim_es": "Su número de teléfono es 307-777-8152.",
+          "source_url": "https://discover.va.gov/external-resources/?_resource_type=state-veterans-affairs-office&_per_page=100",
+          "source_name": "VA.gov Discover: State Veterans Affairs Offices",
+          "quote": "307-777-8152",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wyoming Veterans Commission (official site)",
+          "label_es": "Wyoming Veterans Commission (sitio oficial)",
+          "url": "https://www.wyomilitary.wyo.gov/resources/veteran/veterans-commission/"
+        },
+        {
+          "label_en": "Find a VA-accredited representative or VSO (free help on VA.gov)",
+          "label_es": "Buscar un representante acreditado por el VA o una VSO (ayuda gratuita en VA.gov)",
+          "url": "https://www.va.gov/get-help-from-accredited-representative/find-rep/"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "CO": "only 2 quote-verified facts on official sources",
+    "ID": "only 2 quote-verified facts on official sources"
+  }
+}
