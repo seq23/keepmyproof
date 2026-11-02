@@ -17,6 +17,14 @@
     "AL": {
       "facts": [
         {
+          "claim_en": "The EEOC's Mobile Local Office says a person in Alabama has 180 days from the date of alleged harm to file an age discrimination charge against an employer with 20 or more employees.",
+          "claim_es": "La Oficina Local de Mobile de la EEOC indica que una persona en Alabama tiene 180 días desde la fecha del daño alegado para presentar un cargo por discriminación por edad contra un empleador con 20 o más empleados.",
+          "source_url": "https://www.eeoc.gov/field-office/mobile/timeliness",
+          "source_name": "U.S. EEOC, Mobile Local Office: Timeliness",
+          "quote": "In the State of Alabama, an individual has 180 days from the date of alleged harm to file a charge with this office against an employer with 15 or more employees for discrimination based on race, color, national origin, sex, religion, and/or disability. An individual has 180 days from the date of alleged harm to file a charge with this office against an employer with 20 or more employees for discrimination based on age.",
+          "checked": "2026-11-02"
+        },
+        {
           "claim_en": "The EEOC's Mobile Local Office timeliness page says a person in Alabama has 180 days from the date of alleged harm to file a charge with the EEOC against an employer with 15 or more employees, for discrimination based on race, color, national origin, sex, religion or disability.",
           "claim_es": "La página de plazos de la oficina Mobile Local Office de la EEOC indica que una persona en Alabama tiene 180 días desde la fecha del daño alegado para presentar un cargo ante la EEOC contra un empleador con 15 o más empleados, por discriminación por raza, color, origen nacional, sexo, religión o discapacidad.",
           "source_url": "https://www.eeoc.gov/field-office/mobile/timeliness",
@@ -480,6 +488,22 @@
     "DC": {
       "facts": [
         {
+          "claim_en": "The EEOC's Washington Field Office says charges against the Washington Metropolitan Area Transit Authority, the Metropolitan Washington Airports Authority, the DC Courts, and foreign embassies or consulates must be filed within 180 days of the alleged harm.",
+          "claim_es": "La Oficina de Washington de la EEOC indica que los cargos contra la Autoridad de Tránsito del Área Metropolitana de Washington, la Autoridad de Aeropuertos Metropolitanos de Washington, los tribunales del Distrito de Columbia y embajadas o consulados extranjeros deben presentarse dentro de 180 días del daño alegado.",
+          "source_url": "https://www.eeoc.gov/field-office/washington/timeliness",
+          "source_name": "U.S. EEOC, Washington Field Office: Timeliness",
+          "quote": "The exception is charges against the Washington Metropolitan Area Transit Authority, the Metropolitan Washington Airports Authority, the DC Courts, and foreign Embassies/Consulates – these charges must be filed within 180 days of the alleged harm.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The EEOC's Washington Field Office says that, with some exceptions, a person in the District of Columbia has 300 days from the date of alleged harm to file a charge against an employer with 15 or more employees.",
+          "claim_es": "La Oficina de Washington de la EEOC indica que, con algunas excepciones, una persona en el Distrito de Columbia tiene 300 días desde la fecha del daño alegado para presentar un cargo contra un empleador con 15 o más empleados.",
+          "source_url": "https://www.eeoc.gov/field-office/washington/timeliness",
+          "source_name": "U.S. EEOC, Washington Field Office: Timeliness",
+          "quote": "Except as noted below, an individual has 300 days from the date of alleged harm to file a charge with this office against an employer with 15 or more employees for discrimination based on race, color, national origin, sex, religion, and/or disability in the District of Columbia",
+          "checked": "2026-11-02"
+        },
+        {
           "claim_en": "The DC Office of Human Rights says a complaint must be filed with it within one year of when the alleged act happened or was discovered.",
           "claim_es": "La Oficina de Derechos Humanos del Distrito de Columbia indica que la queja debe presentarse ante esa oficina dentro de un año desde que ocurrió o se descubrió el acto alegado.",
           "source_url": "https://ohr.dc.gov/service/file-discrimination-complaint",
@@ -601,6 +625,14 @@
     },
     "GA": {
       "facts": [
+        {
+          "claim_en": "The EEOC's Atlanta District Office says a person in Georgia has 300 days from the date of alleged harm to file an age discrimination charge against an employer with 20 or more employees.",
+          "claim_es": "La Oficina de Distrito de Atlanta de la EEOC indica que una persona en Georgia tiene 300 días desde la fecha del daño alegado para presentar un cargo por discriminación por edad contra un empleador con 20 o más empleados.",
+          "source_url": "https://www.eeoc.gov/field-office/atlanta/timeliness",
+          "source_name": "U.S. EEOC, Atlanta District Office: Timeliness",
+          "quote": "In the State of Georgia, an individual has 300 days from the date of alleged harm to file a charge with this office against an employer with 15 or more employees for discrimination based on race, color, national origin, sex, religion, and/or disability. An individual has 300 days from the date of alleged harm to file a charge with this office against an employer with 20 or more employees for discrimination based on age.",
+          "checked": "2026-11-02"
+        },
         {
           "claim_en": "The EEOC's Atlanta District Office timeliness page says a person in Georgia has 300 days from the date of alleged harm to file a charge with the EEOC against an employer with 15 or more employees, for discrimination based on race, color, national origin, sex, religion or disability.",
           "claim_es": "La página de plazos de la oficina Atlanta District Office de la EEOC indica que una persona en Georgia tiene 300 días desde la fecha del daño alegado para presentar un cargo ante la EEOC contra un empleador con 15 o más empleados, por discriminación por raza, color, origen nacional, sexo, religión o discapacidad.",
