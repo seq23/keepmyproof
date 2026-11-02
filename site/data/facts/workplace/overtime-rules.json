@@ -1,0 +1,1847 @@
+{
+  "folder": "workplace",
+  "subtopic": "overtime-rules",
+  "title_en": "Overtime pay rules in {state}",
+  "title_es": "Reglas de pago de horas extra en {state_es}",
+  "search_intent_en": [
+    "{state} overtime law",
+    "{state} daily overtime",
+    "is overtime after 8 hours in {state}",
+    "{state} overtime pay complaint"
+  ],
+  "search_intent_es": [
+    "ley de horas extra en {state_es}",
+    "pago de horas extra {state_es}"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Alaska that starts after 8 hours in a day and 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Alaska tiene una regla estatal de horas extra (pago adicional) que empieza después de 8 horas en un día y 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $14.00 Premium Pay After Designated Hours 1 : Daily - 8, Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says that under a voluntary flexible-hours plan approved by the Alaska Department of Labor, a 10-hour day and 40-hour week may be used, with premium pay after 10 hours a day.",
+          "claim_es": "La misma tabla indica que, con un plan voluntario de horario flexible aprobado por el Departamento de Trabajo de Alaska, se puede usar una jornada de 10 horas y una semana de 40, con pago adicional después de 10 horas al día.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Under a voluntary flexible work hour plan approved by the Alaska Department of Labor, a 10 hour day, 40 hour workweek may be instituted with premium pay after 10 hours a day.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Alaska's daily and weekly overtime requirement does not apply to employers with fewer than 4 employees.",
+          "claim_es": "La misma tabla indica que la regla de horas extra diaria y semanal de Alaska no se aplica a empleadores con menos de 4 empleados.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "The premium overtime pay requirement on either a daily or weekly basis is not applicable to employers of fewer than 4 employees.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alaska Department of Labor and Workforce Development as the state labor office for Alaska; its listed phone number is 907-465-2700.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alaska es Alaska Department of Labor and Workforce Development; su teléfono es 907-465-2700.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development PO Box 11149 Juneau, AK 99811-1149 907-465-2700",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Alaska Department of Labor and Workforce Development",
+          "label_es": "Alaska Department of Labor and Workforce Development",
+          "url": "https://www.labor.state.ak.us"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Arkansas that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Arkansas tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Arkansas Department of Labor & Licensing as the state labor office for Arkansas; its listed phone number is 501-682-4500.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arkansas es Arkansas Department of Labor & Licensing; su teléfono es 501-682-4500.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Arkansas Department of Labor & Licensing 900 West Capital Ave Ste 400 Little Rock, AR 72201 501-682-4500",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Arkansas Department of Labor & Licensing",
+          "label_es": "Arkansas Department of Labor & Licensing",
+          "url": "https://www.labor.arkansas.gov"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says that in California, work over 8 hours in a workday, over 40 hours in a workweek, or in the first 8 hours on the seventh day of work in a workweek is paid at one and one-half times the regular rate.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que en California el trabajo de más de 8 horas en un día, más de 40 horas en una semana, o las primeras 8 horas del séptimo día de trabajo en una semana se paga a una vez y media la tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Any work in excess of eight hours in one workday, in excess of 40 hours in one workweek, or in the first eight hours worked on the seventh day of work in any one workweek shall be at the rate of one and one-half times the regular rate of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says California requires double the regular rate for work over 12 hours in one day.",
+          "claim_es": "La misma tabla indica que California exige el doble de la tarifa regular por el trabajo de más de 12 horas en un día.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Any work in excess of 12 hours in one day",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the California Labor and Workforce Development Agency as the state labor office for California; its listed phone number is 833-526-4636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de California es California Labor and Workforce Development Agency; su teléfono es 833-526-4636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Labor and Workforce Development Agency 800 Capitol Mall, Suite 5000 (MIC-55) Sacramento, CA 95814 833-526-4636",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "California Labor and Workforce Development Agency",
+          "label_es": "California Labor and Workforce Development Agency",
+          "url": "https://www.dir.ca.gov/contactus.html"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Colorado that starts after 12 hours in a day and 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Colorado tiene una regla estatal de horas extra (pago adicional) que empieza después de 12 horas en un día y 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.16 Premium Pay After Designated Hours 1 : Daily - 12, Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Colorado's listed minimum wage and overtime provisions apply to retail and service, commercial support service, food and beverage, and health and medical industries.",
+          "claim_es": "La misma tabla indica que las disposiciones de salario mínimo y horas extra de Colorado se aplican a los sectores de comercio y servicios, servicios de apoyo comercial, alimentos y bebidas, y salud y medicina.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Minimum wage rate and overtime provisions applicable to retail and service, commercial support service, food and beverage, and health and medical industries.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Colorado Department of Labor and Employment as the state labor office for Colorado; its listed phone number is 303-318-8441.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Colorado es Colorado Department of Labor and Employment; su teléfono es 303-318-8441.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Employment 633 17th St Suite 201 Denver, CO 80202-3660 303-318-8441",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Colorado Department of Labor and Employment",
+          "label_es": "Colorado Department of Labor and Employment",
+          "url": "https://cdle.colorado.gov/dlss"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Connecticut that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Connecticut tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.94 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says that in Connecticut restaurants and hotel restaurants, premium pay at time and one-half the minimum rate is required for the 7th consecutive day of work.",
+          "claim_es": "La misma tabla indica que en restaurantes y restaurantes de hotel de Connecticut se exige pago adicional de una vez y media la tarifa mínima por el 7.º día consecutivo de trabajo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "In restaurants and hotel restaurants, for the 7th consecutive day of work, premium pay is required at time and one half the minimum rate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Connecticut Department of Labor as the state labor office for Connecticut; its listed phone number is 860-263-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Connecticut es Connecticut Department of Labor; su teléfono es 860-263-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 200 Folly Brook Blvd Wethersfield, CT 06109-1114 860-263-6000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Connecticut Department of Labor",
+          "label_es": "Connecticut Department of Labor",
+          "url": "https://www.ct.gov/dol"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for District of Columbia that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Distrito de Columbia tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $18.40 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the DC Department of Employment Services as the state labor office for District of Columbia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Distrito de Columbia es DC Department of Employment Services.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Services 4058 Minnesota Ave NE Washington, DC 20019",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "District of Columbia Department of Employment Services",
+          "label_es": "District of Columbia Department of Employment Services",
+          "url": "https://www.does.dc.gov"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Hawaii that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Hawái tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says a Hawaii employee with guaranteed monthly pay of $4,000 or more is exempt from the state minimum wage and overtime law.",
+          "claim_es": "La misma tabla indica que en Hawái el empleado con un pago mensual garantizado de $4,000 o más está exento de la ley estatal de salario mínimo y horas extra.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "An employee earning a guaranteed monthly compensation of $4,000 or more is exempt from the State minimum wage and overtime law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Hawaii Department of Labor & Industrial Relations as the state labor office for Hawaii; its listed phone number is 808-586-8844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Hawái es Hawaii Department of Labor & Industrial Relations; su teléfono es 808-586-8844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Industrial Relations Princess Ruth Ke'elikolani Building 830 Punchbowl St Honolulu, HI 96813 808-586-8844",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Hawaii Department of Labor & Industrial Relations",
+          "label_es": "Hawaii Department of Labor & Industrial Relations",
+          "url": "https://www.labor.hawaii.gov"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Illinois that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Illinois tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Illinois Department of Labor as the state labor office for Illinois; its listed phone number is 217-782-6206.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Illinois es Illinois Department of Labor; su teléfono es 217-782-6206.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 524 S. 2nd Street, Suite 400 Springfield, IL 62701 217-782-6206",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Illinois Department of Labor",
+          "label_es": "Illinois Department of Labor",
+          "url": "https://www.labor.illinois.gov"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Indiana that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Indiana tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Indiana Department of Labor as the state labor office for Indiana; its listed phone number is 317-232-2655.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Indiana es Indiana Department of Labor; su teléfono es 317-232-2655.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 402 W. Washington St Room W195 Indianapolis, IN 46204 317-232-2655",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Indiana Department of Labor",
+          "label_es": "Indiana Department of Labor",
+          "url": "https://www.in.gov/dol"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Kentucky that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Kentucky tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Kentucky Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40, 7th day",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Kentucky's 7th-day overtime law requires time and one-half for hours worked on the seventh day when a covered employee works all seven days of a workweek.",
+          "claim_es": "La misma tabla indica que la ley de Kentucky sobre el 7.º día exige pagar una vez y media por las horas del séptimo día cuando un empleado cubierto trabaja los siete días de la semana laboral.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "requires employers who permit covered employees to work seven days in any one workweek to pay the employee at a rate of time and one-half for hours worked on the seventh day",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kentucky Education and Labor Cabinet as the state labor office for Kentucky; its listed phone number is 502-564-3534.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kentucky es Kentucky Education and Labor Cabinet; su teléfono es 502-564-3534.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Education and Labor Cabinet 500 Mero Street, Frankfort, Kentucky 40601 502-564-3534",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Kentucky Education and Labor Cabinet",
+          "label_es": "Kentucky Education and Labor Cabinet",
+          "url": "https://elc.ky.gov"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Maine that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Maine tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.10 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maine Department of Labor as the state labor office for Maine; its listed phone number is 207-623-7900.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maine es Maine Department of Labor; su teléfono es 207-623-7900.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 45 State House Station Augusta, ME 04333 207-623-7900",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Maine Department of Labor",
+          "label_es": "Maine Department of Labor",
+          "url": "https://www.maine.gov/labor"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Maryland that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Maryland tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maryland Department of Labor as the state labor office for Maryland; its listed phone number is 410-230-6020.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maryland es Maryland Department of Labor; su teléfono es 410-230-6020.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 1100 North Eutaw Street Baltimore, MD 21201 410-230-6020",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Maryland Department of Labor",
+          "label_es": "Maryland Department of Labor",
+          "url": "https://www.labor.maryland.gov"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Massachusetts that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Massachusetts tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Massachusetts Executive Office of Labor & Workforce Development as the state labor office for Massachusetts; its listed phone number is 617-626-7100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Massachusetts es Massachusetts Executive Office of Labor & Workforce Development; su teléfono es 617-626-7100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Executive Office of Labor & Workforce Development One Ashburton Pl Room 2112 Boston, MA 02108 617-626-7100",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Massachusetts Executive Office of Labor & Workforce Development",
+          "label_es": "Massachusetts Executive Office of Labor & Workforce Development",
+          "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Michigan that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Míchigan tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "then will be adjusted annually based on a set formula. Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Michigan Department of Labor and Economic Opportunity as the state labor office for Michigan; its listed phone number is 517-284-7800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Míchigan es Michigan Department of Labor and Economic Opportunity; su teléfono es 517-284-7800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Economic Opportunity 105 W. Allegan St. Lansing, MI 48933 517-284-7800",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Michigan Department of Labor and Economic Opportunity",
+          "label_es": "Michigan Department of Labor and Economic Opportunity",
+          "url": "https://www.michigan.gov/leo"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Minnesota that starts after 48 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Minnesota tiene una regla estatal de horas extra (pago adicional) que empieza después de 48 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $11.41 Premium Pay After Designated Hours 1 : Weekly - 48",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Minnesota Department of Labor and Industry as the state labor office for Minnesota; its listed phone number is 651-284-5005.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Minnesota es Minnesota Department of Labor and Industry; su teléfono es 651-284-5005.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 443 Lafayette Rd N St. Paul, MN 55155 651-284-5005",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Minnesota Department of Labor and Industry",
+          "label_es": "Minnesota Department of Labor and Industry",
+          "url": "https://www.dli.mn.gov"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Missouri that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Misuri tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 2 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Missouri requires premium pay after 52 hours in seasonal amusement or recreation businesses.",
+          "claim_es": "La misma tabla indica que Misuri exige pago adicional después de 52 horas en negocios de entretenimiento o recreación de temporada.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Premium pay required after 52 hours in seasonal amusement or recreation businesses.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Missouri Department of Labor and Industrial Relations as the state labor office for Missouri; its listed phone number is 573-751-4091.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misuri es Missouri Department of Labor and Industrial Relations; su teléfono es 573-751-4091.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industrial Relations 421 E Dunklin St PO Box 504 Jefferson City, MO 65102-0504 573-751-4091",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Missouri Department of Labor and Industrial Relations",
+          "label_es": "Missouri Department of Labor and Industrial Relations",
+          "url": "https://www.labor.mo.gov"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Montana that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Montana tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $10.85 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Montana Department of Labor and Industry as the state labor office for Montana; its listed phone number is 406-444-2840.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Montana es Montana Department of Labor and Industry; su teléfono es 406-444-2840.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry PO Box 1728 Helena, MT 59624-1728 406-444-2840",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Montana Department of Labor and Industry",
+          "label_es": "Montana Department of Labor and Industry",
+          "url": "https://www.dli.mt.gov"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says Nevada employees earning less than 1.5 times the state minimum wage get premium pay for hours over 8 in a day or 40 in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que en Nevada los empleados que ganan menos de 1.5 veces el salario mínimo estatal reciben pago adicional por las horas de más de 8 al día o 40 a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Employees earning less than 1.5 times the state minimum wage are entitled to premium pay for hours worked in excess of 8 in a single day or 40 in a single week.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Nevada employees earning at least 1.5 times the state minimum wage get premium pay for hours over 40 in a week.",
+          "claim_es": "La misma tabla indica que en Nevada los empleados que ganan al menos 1.5 veces el salario mínimo estatal reciben pago adicional por las horas de más de 40 a la semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Employees earning at least 1.5 times the state minimum wage are entitled to premium pay for hours worked in excess of 40 in a single week.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nevada Department of Business and Industry as the state labor office for Nevada; its listed phone number is 775-684-1890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nevada es Nevada Department of Business and Industry; su teléfono es 775-684-1890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Industry 1830 College Parkway, Suite 100 Carson City, NV 89706 775-684-1890",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Nevada Department of Business and Industry",
+          "label_es": "Nevada Department of Business and Industry",
+          "url": "https://labor.nv.gov"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for New Hampshire that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Nuevo Hampshire tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Hampshire Department of Labor as the state labor office for New Hampshire; its listed phone number is 603-271-3176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo Hampshire es New Hampshire Department of Labor; su teléfono es 603-271-3176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 95 Pleasant St Concord, NH 03301 603-271-3176",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Hampshire Department of Labor",
+          "label_es": "New Hampshire Department of Labor",
+          "url": "https://dol.nh.gov"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for New Jersey that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Nueva Jersey tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.92 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Jersey Department of Labor and Workforce Development as the state labor office for New Jersey; its listed phone number is 609-292-2305.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva Jersey es New Jersey Department of Labor and Workforce Development; su teléfono es 609-292-2305.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development 1 John Fitch Plaza 13th Floor, Suite D PO Box 110 Trenton, NJ 08625-0110 609-292-2305",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Jersey Department of Labor and Workforce Development",
+          "label_es": "New Jersey Department of Labor and Workforce Development",
+          "url": "https://www.nj.gov/labor/"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for New Mexico that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Nuevo México tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $12.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Mexico Department of Workforce Solutions as the state labor office for New Mexico; its listed phone number is 505-841-8405.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo México es New Mexico Department of Workforce Solutions; su teléfono es 505-841-8405.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Solutions 401 Broadway Blvd NE PO Box 1928 Albuquerque, NM 87103 505-841-8405",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Mexico Department of Workforce Solutions",
+          "label_es": "New Mexico Department of Workforce Solutions",
+          "url": "https://www.dws.state.nm.us"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for New York that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Nueva York tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "$16.00 (remainder of the state) Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says New York residential (live-in) workers receive premium pay for hours over 44 in a payroll week.",
+          "claim_es": "La misma tabla indica que en Nueva York los trabajadores residenciales (que viven en el lugar de trabajo) reciben pago adicional por las horas de más de 44 en una semana de nómina.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Residential workers (\"live-in workers\") receive premium pay for hours worked over 44 in a payroll week.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New York Department of Labor as the state labor office for New York; its listed phone number is 518-457-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva York es New York Department of Labor; su teléfono es 518-457-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor State Office Bldg # 12 W.A. Harriman Campus Albany, NY 12240 518-457-9000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New York Department of Labor",
+          "label_es": "New York Department of Labor",
+          "url": "https://www.labor.ny.gov"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for North Carolina that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Carolina del Norte tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says North Carolina requires premium pay after 45 hours a week in seasonal amusements or recreational establishments.",
+          "claim_es": "La misma tabla indica que Carolina del Norte exige pago adicional después de 45 horas semanales en atracciones o centros recreativos de temporada.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Premium pay is required after 45 hours a week in seasonal amusements or recreational establishments.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Carolina Department of Labor as the state labor office for North Carolina; its listed phone number is 800-625-2267.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Norte es North Carolina Department of Labor; su teléfono es 800-625-2267.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4 W Edenton St Raleigh, NC 27601 800-625-2267",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "North Carolina Department of Labor",
+          "label_es": "North Carolina Department of Labor",
+          "url": "https://www.labor.nc.gov"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for North Dakota that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Dakota del Norte tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Dakota Department of Labor and Human Rights as the state labor office for North Dakota; its listed phone number is 701-328-2660.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Norte es North Dakota Department of Labor and Human Rights; su teléfono es 701-328-2660.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Human Rights 600 E Boulevard Ave Dept 406 Bismarck, ND 58505-0340 701-328-2660",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "North Dakota Department of Labor and Human Rights",
+          "label_es": "North Dakota Department of Labor and Human Rights",
+          "url": "https://www.nd.gov/labor"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Ohio that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Ohio tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Ohio Department of Commerce as the state labor office for Ohio; its listed phone number is 614-466-3636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Ohio es Ohio Department of Commerce; su teléfono es 614-466-3636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Commerce 77 S High St 23rd Floor Columbus, OH 43215 614-466-3636",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Ohio Department of Commerce",
+          "label_es": "Ohio Department of Commerce",
+          "url": "https://com.ohio.gov"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Oregon that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Oregón tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "$14.55 (Non-Urban counties) Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Oregon requires premium pay after 10 hours a day in nonfarm canneries, driers and packing plants, and in mills, factories and manufacturing establishments (with listed exceptions).",
+          "claim_es": "La misma tabla indica que Oregón exige pago adicional después de 10 horas al día en enlatadoras, secaderos y empacadoras no agrícolas, y en molinos, fábricas y plantas de manufactura (con excepciones).",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Premium pay required after 10 hours a day in nonfarm canneries, driers, or packing plants and in mills, factories or manufacturing establishments",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oregon Bureau of Labor and Industries as the state labor office for Oregon; its listed phone number is 971-245-3844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oregón es Oregon Bureau of Labor and Industries; su teléfono es 971-245-3844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Bureau of Labor and Industries 1800 SW 1st Ave, Suite 500 Portland, OR 97201 971-245-3844",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Oregon Bureau of Labor and Industries",
+          "label_es": "Oregon Bureau of Labor and Industries",
+          "url": "https://www.oregon.gov/boli"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Pennsylvania that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Pensilvania tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Pennsylvania Department of Labor and Industry as the state labor office for Pennsylvania; its listed phone number is 717-787-5279.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Pensilvania es Pennsylvania Department of Labor and Industry; su teléfono es 717-787-5279.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 1700 Labor and Industry Bldg Harrisburg, PA 17121 717-787-5279",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Pennsylvania Department of Labor and Industry",
+          "label_es": "Pennsylvania Department of Labor and Industry",
+          "url": "https://www.pa.gov/agencies/dli"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Rhode Island that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Rhode Island tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Rhode Island requires time and one-half for work on Sundays and holidays in retail and certain other businesses, under two laws separate from the minimum wage law.",
+          "claim_es": "La misma tabla indica que Rhode Island exige pagar una vez y media por el trabajo en domingos y feriados en comercios y otros negocios, bajo dos leyes distintas de la ley de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Time and one-half premium pay for work on Sundays and holidays in retail and certain other businesses is required under two laws that are separate from the minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Rhode Island Department of Labor and Training as the state labor office for Rhode Island; its listed phone number is 401-462-8550.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Rhode Island es Rhode Island Department of Labor and Training; su teléfono es 401-462-8550.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Training 1511 Pontiac Ave Cranston, RI 02920 401-462-8550",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Rhode Island Department of Labor and Training",
+          "label_es": "Rhode Island Department of Labor and Training",
+          "url": "https://www.dlt.ri.gov"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Vermont that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Vermont tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $14.42 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Vermont Department of Labor as the state labor office for Vermont; its listed phone number is 802-828-4000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Vermont es Vermont Department of Labor; su teléfono es 802-828-4000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 5 Green Mountain Dr PO Box 488 Montpelier, VT 05601-0488 802-828-4000",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Vermont Department of Labor",
+          "label_es": "Vermont Department of Labor",
+          "url": "https://www.labor.vermont.gov"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Washington that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Washington tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $17.13 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same table says Washington's premium pay rule does not apply to employees who ask for compensating time off instead of premium pay.",
+          "claim_es": "La misma tabla indica que la regla de pago adicional de Washington no se aplica a los empleados que piden tiempo libre compensatorio en lugar del pago adicional.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Premium pay not applicable to employees who request compensating time off in lieu of premium pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Washington Department of Labor and Industries as the state labor office for Washington; its listed phone number is 360-902-5800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Washington es Washington Department of Labor and Industries; su teléfono es 360-902-5800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industries 7273 Linderson Way SW Tumwater, WA 98501-5414 360-902-5800",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Washington Department of Labor and Industries",
+          "label_es": "Washington Department of Labor and Industries",
+          "url": "https://www.lni.wa.gov"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for West Virginia that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Virginia Occidental tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $8.75 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the West Virginia Division of Labor as the state labor office for West Virginia; its listed phone number is 304-558-7890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia Occidental es West Virginia Division of Labor; su teléfono es 304-558-7890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Division of Labor 1900 Kanawha Blvd State Capitol Complex Building #3 Room 200 Charleston, WV 25305 304-558-7890",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "West Virginia Division of Labor",
+          "label_es": "West Virginia Division of Labor",
+          "url": "https://labor.wv.gov"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table lists a state overtime (premium pay) rule for Wisconsin that starts after 40 hours in a week.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Wisconsin tiene una regla estatal de horas extra (pago adicional) que empieza después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wisconsin Department of Workforce Development as the state labor office for Wisconsin; its listed phone number is 608-266-3131.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wisconsin es Wisconsin Department of Workforce Development; su teléfono es 608-266-3131.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Development 201 E Washington Ave Madison, WI 53703 PO Box 7946 Madison, WI 53707-7946 608-266-3131",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says that under the federal Fair Labor Standards Act, covered employees who are not exempt must get overtime pay for hours over 40 in a workweek at no less than time and one-half their regular rate.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que, bajo la ley federal de normas laborales justas (FLSA), los empleados cubiertos y no exentos deben recibir pago de horas extra por las horas de más de 40 en una semana laboral, a no menos de una vez y media su tarifa regular.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Unless exempt, employees covered by the Act must receive overtime pay for hours worked over 40 in a workweek at a rate not less than time and one-half their regular rates of pay.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor says the federal law applies on a workweek basis and that averaging hours over two or more weeks is not permitted.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la ley federal se aplica por semana laboral y que no se permite promediar las horas de dos o más semanas.",
+          "source_url": "https://www.dol.gov/agencies/whd/overtime",
+          "source_name": "U.S. Department of Labor, Overtime Pay",
+          "quote": "Averaging of hours over two or more weeks is not permitted.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: overtime pay",
+          "label_es": "Departamento de Trabajo de EE. UU.: pago de horas extra",
+          "url": "https://www.dol.gov/agencies/whd/overtime"
+        },
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage and overtime table",
+          "label_es": "Departamento de Trabajo de EE. UU.: tabla estatal de salario mínimo y horas extra",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Wisconsin Department of Workforce Development",
+          "label_es": "Wisconsin Department of Workforce Development",
+          "url": "https://dwd.wisconsin.gov"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AL": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "AZ": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "DE": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "FL": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "GA": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "ID": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "IA": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "KS": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "LA": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "MS": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "NE": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "OK": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "SC": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "SD": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "TN": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "TX": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "UT": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "VA": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts",
+    "WY": "the U.S. Department of Labor's state table lists no state overtime rule for this state (the federal FLSA rule applies), so there are not enough state-specific facts"
+  }
+}
