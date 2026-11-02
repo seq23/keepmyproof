@@ -1,11 +1,16 @@
 # THE SIMULATOR PREVIEW (docs/preview.md): builds the iOS app for the simulator (no Apple account; ad-hoc
-# signed), walks every screen in English with Maestro and keeps one PNG per screen, and puts the
-# build on Appetize when the owner's token is set. GitHub-hosted runners only (free for this public
+# signed) and puts the build on Appetize. The Maestro screen walk runs only on a manual run with
+# screens=true (owner, 2 Nov 2026: "we don't need them", the Appetize link is the look). GitHub-hosted runners only (free for this public
 # repo). Not a merge gate: it runs after app changes reach main, on demand, and on PRs that change
 # the preview itself.
 name: Simulator preview
 on:
   workflow_dispatch:
+    inputs:
+      screens:
+        description: Also walk every screen with Maestro and keep one PNG per screen
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
@@ -76,14 +81,17 @@ jobs:
           APPETIZE_PUBLIC_KEY: ${{ vars.APPETIZE_PUBLIC_KEY }}
         run: scripts/preview/appetize.sh KeepMyProof-simulator.zip
       - uses: actions/setup-java@v4
+        if: inputs.screens
         with:
           distribution: temurin
           java-version: '17'
       - name: Install Maestro
+        if: inputs.screens
         run: |
           curl -fsSL https://get.maestro.mobile.dev | bash > maestro-install.log 2>&1 || { tail -20 maestro-install.log; exit 1; }
           echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
       - name: Boot an iPhone simulator and install the build
+        if: inputs.screens
         id: sim
         run: |
           udid=$(xcrun simctl list devices available -j | jq -r '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[]
@@ -96,6 +104,7 @@ jobs:
           xcrun simctl install "$udid" "${{ steps.build.outputs.app }}"
           echo "udid=$udid" >> "$GITHUB_OUTPUT"
       - name: Walk every screen
+        if: inputs.screens
         run: |
           mkdir -p preview-shots run && touch run/.start
           status=0; cd run && { maestro --device "${{ steps.sim.outputs.udid }}" test ../.maestro/preview.yaml > ../maestro.log 2>&1 || status=$?; }
@@ -104,16 +113,16 @@ jobs:
           find run .maestro "$HOME/.maestro" -name '[0-9][0-9]-*.png' -newer run/.start -exec cp {} preview-shots/ \; 2>/dev/null || true
           exit $status
       - name: Check the screenshots (one per screen, none blank)
-        if: always() && steps.sim.outcome == 'success'
+        if: inputs.screens && (always() && steps.sim.outcome == 'success')
         run: node scripts/preview/shots.mjs preview-shots
       - uses: actions/upload-artifact@v4
-        if: always() && steps.sim.outcome == 'success'
+        if: inputs.screens && (always() && steps.sim.outcome == 'success')
         with:
           name: keepmyproof-preview-screens
           path: preview-shots/*.png
           retention-days: 30
       - uses: actions/upload-artifact@v4
-        if: failure() && steps.sim.outcome == 'success'
+        if: inputs.screens && (failure() && steps.sim.outcome == 'success')
         with:
           name: maestro-debug
           path: |
