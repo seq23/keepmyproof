@@ -41,6 +41,8 @@ async function main() {
   if (!bing) console.log('NAMED NOTE [SECRET_MISSING_BING_WEBMASTER_API_KEY] Bing covered by IndexNow only');
   else {
     const call = (m, body) => fetch(`https://ssl.bing.com/webmaster/api.svc/json/${m}?apikey=${encodeURIComponent(bing)}`, { method: 'POST', headers: { 'content-type': 'application/json; charset=utf-8' }, body: JSON.stringify(body) }).then(async (r) => `${r.status}${r.ok ? '' : ` ${(await r.text()).slice(0, 120)}`}`);
+    // The site serves /BingSiteAuth.xml (assets/site); ask Bing to verify it before submitting (idempotent).
+    console.log(`Bing VerifySite: ${await call('VerifySite', { siteUrl: `${SITE.origin}/` })}`);
     for (const feed of [`${SITE.origin}/sitemap.xml`, ...sitemaps]) console.log(`Bing SubmitFeed ${feed.replace(SITE.origin, '')}: ${await call('SubmitFeed', { siteUrl: `${SITE.origin}/`, feedUrl: feed })}`);
     const top = urls.filter((u) => !/\/[a-z-]+\/[a-z0-9-]+\/[a-z-]+$/.test(u.replace(SITE.origin, ''))).slice(0, 100);
     console.log(`Bing SubmitUrlbatch (${top.length} hub and core URLs): ${await call('SubmitUrlbatch', { siteUrl: `${SITE.origin}/`, urlList: top })}`);
