@@ -15,14 +15,14 @@
     "zh",
     "ko"
   ],
-  "spanish_rule": "Spanish pages say 'en Estados Unidos' or name the state. App, checklists and store page fully translated at launch, reviewed by a native US Spanish reader before release.",
+  "spanish_rule": "Spanish pages say 'en Estados Unidos' or name the state. App, checklists and store page fully translated at launch.",
   "cjk_rule": "Simplified Chinese (zh, written zh-Hans) and Korean (ko) for US residents: app, checklists and store listing fully translated (owner, 2 Nov 2026). Same risk wording as English: not legal advice, not affiliated with the VA, no court-ready or admissible claims. IEP is always explained (special education plan).",
-  "native_review": {
-    "es": "pending",
-    "zh": "pending",
-    "ko": "pending"
+  "language_status": {
+    "es": "launched",
+    "zh": "launched",
+    "ko": "launched"
   },
-  "native_review_rule": "A native US reader of each language reads the app strings (src/strings.ts), these folder names and checklists, and store/<lang>.md before the first store build, then sets that language to the reviewer note (\"reviewed YYYY-MM-DD by <role>\"). The release gate refuses a store build while any language is pending (NAMED STOP NATIVE_REVIEW_PENDING).",
+  "language_status_rule": "Spanish, Chinese and Korean launch as written, without a native reader (owner ruling 2 Nov 2026: \"we're gonna skip getting a native Reader and just go ahead and launch it\"). The honest-claims checks still read every language.",
   "community_lens_rule": "Black and Latino pages inside every folder, issue-based (CROWN Act, heirs' property, English-learner IEP, VA file, women and money). Never a race-labelled app, folder or store page; no 'Black-owned' messaging; every disparity fact sourced; no stereotypes; no promise to 'fight discrimination'.",
   "store_keyword_note": "Candidate words for the 100-character keyword field and custom product pages; no competitor names. Spanish (Mexico) listing as a second keyword field is unverified until tested.",
   "review_rule": "Monthly, Search Console decides: topics earning impressions get a folder; ones that don't come down.",

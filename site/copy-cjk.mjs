@@ -1,10 +1,9 @@
 // Simplified Chinese (zh-Hans) and Korean (ko) for US residents (owner's yes, 2 Nov 2026): the five
 // folder hubs and checklist PDFs in both, state pages in Chinese for divorce and in Korean for
-// executor (the topics with US-specific search signal). Flagged for a native reader before the app
-// launches, as Spanish is. Same gate and banned words as every language (site/lib/gate.mjs).
+// executor (the topics with US-specific search signal). Launched without a native reader, as Spanish
+// is (owner ruling 2 Nov 2026). Same gate and banned words as every language (site/lib/gate.mjs).
 export const LANG_NAME = { en: 'English', es: 'Español', zh: '中文', ko: '한국어' };
 export const HREFLANG = { en: 'en', es: 'es', zh: 'zh-Hans', ko: 'ko' };
-export const NATIVE_REVIEW = { zh: 'pending', ko: 'pending', es: 'pending' };
 
 export const COPY_CJK = {
   zh: {
