@@ -1,0 +1,31 @@
+# Adds one invented note to the folder that is open. Env: TITLE, NOTE. Used by preview.yaml.
+# The note (multiline) is typed first; Enter on the one-line title then closes the keyboard, so
+# it never covers the save button.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- tapOn: "\\+ Add something"
+- scrollUntilVisible:
+    element:
+      id: "Your note \\(optional\\)"
+    direction: DOWN
+- tapOn:
+    id: "Your note \\(optional\\)"
+- inputText: ${NOTE}
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: UP
+- tapOn:
+    id: "Name it"
+- inputText: ${TITLE}
+- pressKey: Enter
+- scrollUntilVisible:
+    element: "Save to .*"
+    direction: DOWN
+- tapOn: "Save to .*"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000

@@ -26,6 +26,7 @@ export const STOP_WORDS = {
   PRICE_RECHECK_PENDING: { title: "KeepMyProof: recheck the other app's lifetime price", next_step: "Recheck the other vault app's App Store lifetime price in launch week." },
   PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
   LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
+  PREVIEW_BUILD: { title: 'KeepMyProof: a store build had the simulator preview switch on', next_step: 'Remove EXPO_PUBLIC_KMP_PREVIEW from the store build; it turns screenshot protection off.' },
   SUPPORT_ADDRESS_NOT_ON_DOMAIN: { title: 'KeepMyProof: support mailbox on keepmyproof.com', next_step: 'Set up free email forwarding on keepmyproof.com and point the support address at it.' },
 };
 export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof: live in both stores, selling' };
@@ -38,6 +39,9 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   const stop = (code, why) => out.push({ code, why });
   if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_') || !env.EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY?.startsWith('goog_'))
     stop('REVENUECAT_KEY_MISSING', 'the App Store (appl_) and Play (goog_) RevenueCat keys are not set as EAS secrets, so the build could not sell Plus.');
+  // The simulator preview switch turns screenshot protection off; it never ships to a store.
+  if (env.EXPO_PUBLIC_KMP_PREVIEW)
+    stop('PREVIEW_BUILD', 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.');
   const device = readJson('release/device-gate.json');
   const missing = DEVICE_CHECKS.filter(c => device?.checks?.[c] !== true);
   if (!device || device.version !== version || missing.length)

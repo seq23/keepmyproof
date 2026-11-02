@@ -408,8 +408,8 @@
         "es": "Carpeta de educación especial (IEP) para padres"
       },
       "short_name": {
-        "en": "IEP binder",
-        "es": "Carpeta del IEP"
+        "en": "IEP (special education plan)",
+        "es": "IEP (plan de educación especial)"
       },
       "checklist_items": [
         {
@@ -483,8 +483,8 @@
       },
       "scope_note": "A child's records stay on the parent's phone; never sent to any model, analytics or server. No advice about school services.",
       "display_name": {
-        "en": "IEP binder",
-        "es": "Carpeta del IEP"
+        "en": "IEP (special education plan)",
+        "es": "IEP (plan de educación especial)"
       }
     },
     {

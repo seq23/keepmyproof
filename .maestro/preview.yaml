@@ -1,0 +1,193 @@
+# THE SIMULATOR PREVIEW (docs/preview.md): walks every screen in English and saves one PNG per
+# screen, numbered in order. scripts/validate.mjs ("preview-screens") fails if a screen in
+# app/index.tsx has no takeScreenshot step here and no "not-shown" line; scripts/preview/shots.mjs
+# fails the run if a PNG is missing or blank. Sample data is invented (AGENTS.md).
+# not-shown: custom — Plus only; the preview build cannot buy Plus, so "Make your own folder" opens the Plus page
+appId: com.keepmyproof.app
+---
+- launchApp:
+    clearState: true
+    clearKeychain: true
+- extendedWaitUntil:
+    visible: "Continue in English ›"
+    timeout: 90000
+- waitForAnimationToEnd
+- takeScreenshot: 01-first
+
+# Restore a backup (from the first screen), then back.
+# The first screen is now one swipe tall (the preview-only skip button made it longer); scrollUntilVisible's
+# 100%-visibility check missed a fully shown button on run 41444029917, so swipe once and wait for it instead.
+- scroll
+- extendedWaitUntil:
+    visible: "Restore a backup ›"
+    timeout: 20000
+- tapOn: "Restore a backup ›"
+- waitForAnimationToEnd
+- takeScreenshot: 02-restore
+- tapOn: "← Back"
+
+# Passcode, recovery phrase, confirm.
+- scrollUntilVisible:
+    element: "Continue in English ›"
+    direction: DOWN
+- tapOn: "Continue in English ›"
+- tapOn:
+    id: "Passcode"
+- inputText: "123456"
+- tapOn:
+    id: "Enter the same six numbers again"
+- inputText: "123456"
+- tapOn: "Choose a passcode for this app"
+- waitForAnimationToEnd
+- takeScreenshot: 03-setup
+- scrollUntilVisible:
+    element: "Save passcode ›"
+    direction: DOWN
+- tapOn: "Save passcode ›"
+- extendedWaitUntil:
+    visible: "Your 12-word recovery phrase"
+    timeout: 15000
+- waitForAnimationToEnd
+- takeScreenshot: 04-phrase
+- copyTextFrom: "([a-z]+ ){11}[a-z]+"
+- tapOn: "I.ve written them down ›"
+- tapOn:
+    id: "12 words, separated by spaces"
+- inputText: ${maestro.copiedText}
+- tapOn: "Type your 12 words to confirm"
+- waitForAnimationToEnd
+- takeScreenshot: 05-confirmPhrase
+- tapOn: "Open My folders ›"
+- waitForAnimationToEnd
+# "My folders" is on the screen twice (heading + its label), and the check flaked on that
+# (failed 2 of 3 runs with the heading showing); the line under it is unique.
+- extendedWaitUntil:
+    visible: "Add what you have, when you have it.*"
+    timeout: 30000
+
+# Sample papers: two in Divorce prep (one checklist line ticked), one in Workplace evidence.
+- scrollUntilVisible:
+    element: "Workplace evidence"
+    direction: DOWN
+- tapOn:
+    text: "Open ›"
+    below: "Workplace evidence"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- runFlow:
+    file: add-note.yaml
+    env:
+      TITLE: "Notes from the first lawyer call"
+      NOTE: "Ask about the house appraisal and the school calendar."
+- tapOn: "← Back to My folders"
+- scrollUntilVisible:
+    element: "Divorce prep"
+    direction: DOWN
+- tapOn:
+    text: "Open ›"
+    below: "Divorce prep"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- runFlow:
+    file: add-note.yaml
+    env:
+      TITLE: "Joint bank statement, March"
+      NOTE: "Page 2 shows the transfer on the 14th."
+- runFlow:
+    file: add-note.yaml
+    env:
+      TITLE: "Parenting schedule draft"
+      NOTE: "Weekdays with me, alternate weekends."
+- tapOn:
+    text: "○ .*"
+    index: 0
+- tapOn: "← Back to My folders"
+- waitForAnimationToEnd
+- takeScreenshot: 06-home
+
+# A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
+- scrollUntilVisible:
+    element: "Divorce prep"
+    direction: DOWN
+- tapOn:
+    text: "Open ›"
+    below: "Divorce prep"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- waitForAnimationToEnd
+- takeScreenshot: 07-folder
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- tapOn: "\\+ Add something"
+- tapOn:
+    id: "Name it"
+- inputText: "Car title and loan papers"
+- pressKey: Enter
+- waitForAnimationToEnd
+- takeScreenshot: 08-add
+- scrollUntilVisible:
+    element: "Cancel"
+    direction: DOWN
+- tapOn: "Cancel"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- scrollUntilVisible:
+    element: "Make a PDF of this folder ›"
+    direction: DOWN
+- tapOn:
+    text: "Open ›"
+    below: "Parenting schedule draft"
+- extendedWaitUntil:
+    visible: "Your note"
+    timeout: 15000
+- waitForAnimationToEnd
+- takeScreenshot: 09-detail
+- scrollUntilVisible:
+    element: "Make a PDF of this folder ›"
+    direction: DOWN
+- tapOn: "Make a PDF of this folder ›"
+- waitForAnimationToEnd
+- takeScreenshot: 10-pdf
+- tapOn: "← Back to .*"
+- tapOn: "← Back to My folders"
+
+# Backup, Settings, Plus.
+- tapOn: "Backup"
+- waitForAnimationToEnd
+- takeScreenshot: 11-backup
+- tapOn: "Settings"
+- waitForAnimationToEnd
+- takeScreenshot: 12-settings
+- scrollUntilVisible:
+    element: "See Plus ›"
+    direction: DOWN
+- tapOn: "See Plus ›"
+- extendedWaitUntil:
+    visible: "KeepMyProof Plus"
+    timeout: 15000
+- waitForAnimationToEnd
+- takeScreenshot: 13-plus
+- scrollUntilVisible:
+    element: "Not now"
+    direction: DOWN
+- tapOn: "Not now"
+
+# Lock, and the forgotten-passcode reset.
+- tapOn: "Settings"
+- scrollUntilVisible:
+    element: "Lock my papers ›"
+    direction: DOWN
+- tapOn: "Lock my papers ›"
+- extendedWaitUntil:
+    visible: "Your papers are locked"
+    timeout: 15000
+- waitForAnimationToEnd
+- takeScreenshot: 14-lock
+- tapOn: "Forgot the passcode\\? ›"
+- waitForAnimationToEnd
+- takeScreenshot: 15-reset

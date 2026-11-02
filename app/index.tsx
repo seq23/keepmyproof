@@ -13,6 +13,7 @@ import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import { Button, Card, Field, P, Theme, styles, usePalette } from '../src/ui';
+import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
@@ -56,7 +57,7 @@ export default function App() {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
-    void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
+    if (!PREVIEW_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
     if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
@@ -139,6 +140,14 @@ export default function App() {
   else if (screen === 'first') body = <><P muted>{t('step1')}</P><P heading>KeepMyProof</P><P heading>{t('firstTitle')}</P>
     <Card><P>{t('noAccount')}</P><P muted>{t('start')}</P></Card><Card><P>{t('stays')}</P><P muted>{t('local')}</P></Card>
     <Card><P>{t('firstFree')}</P><P muted>{t('five')}</P></Card>
+    {PREVIEW_BUILD && <Button title="Preview only: skip to a sample vault ›" onPress={doRun(async () => {
+      // Appetize's free sessions last 3 minutes, too short to set up a vault by hand. Preview builds only:
+      // the release gate refuses a store build with PREVIEW_BUILD set (NAMED STOP PREVIEW_BUILD).
+      setLang('en'); resume.current = 'home';
+      const v = await device.setup('123456', phrase(device.random), false);
+      for (const d of sampleVault()) await v.add(d, false);
+      acceptVault(v);
+    })} />}
     <Button title="Continue in English ›" onPress={() => { setLang('en'); navigate('setup'); }} />
     <Button title="Continuar en español ›" onPress={() => { setLang('es'); navigate('setup'); }} />
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
@@ -264,7 +273,7 @@ export default function App() {
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
   else body = <P>{t('empty')}</P>;
   return <Theme.Provider value={palette}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
-    <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+    <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
       {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
       {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && <P muted>{t('working')}</P>}{body}

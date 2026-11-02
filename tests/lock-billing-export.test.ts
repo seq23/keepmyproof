@@ -128,5 +128,6 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.deepEqual(await codes({probe:async()=>0}),['LEGAL_URLS_UNREACHABLE','LEGAL_URLS_UNREACHABLE']);
   assert.deepEqual(await codes({supportEmail:'help@example.invalid'}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
   assert.deepEqual(await codes({mx:async()=>0}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
+  assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_PREVIEW:'1'}}),['PREVIEW_BUILD']);
   assert.equal((await stops({...ready,env:{},readJson:()=>null,probe:async()=>404,supportEmail:undefined})).length,6);
 });
