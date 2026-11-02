@@ -650,13 +650,106 @@
         }
       ],
       "official_links": []
+    },
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "Alabama's probate court handbook tells estate administrators that, as fiduciaries, they must not personally profit from the role.",
+          "claim_es": "El manual del tribunal testamentario de Alabama indica que el administrador, como fiduciario, no debe beneficiarse personalmente de su cargo.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "You, as a fiduciary, must not personally profit by virtue of your position.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, the administrator must handle the estate cautiously and discreetly and may not speculate with it.",
+          "claim_es": "En Alabama, el administrador debe manejar la herencia con cautela y discreción y no puede especular con ella.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "You must be cautious and discreet in and about the handling of the Decedent's Estate, and you may not speculate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, a required bond premium is paid when the bond is signed and then every year until the estate is closed.",
+          "claim_es": "En Alabama, la prima de la fianza requerida se paga al firmarla y luego cada año hasta cerrar la herencia.",
+          "source_url": "https://probate.mobilecountyal.gov/uploads/AdministratorHandbook2025.pdf",
+          "source_name": "Mobile County Probate Court (Alabama), Administrator Handbook",
+          "quote": "The bond premium must be paid when the bond is executed, and there will be a premium due each year thereafter until the Estate is closed.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "In California, the personal representative must file an inventory and appraisal with the court within four months after Letters are first issued.",
+          "claim_es": "En California, el representante personal debe presentar ante el tribunal un inventario y avalúo dentro de cuatro meses después de emitidas las cartas.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "Within four months after Letters are first issued to you as personal representative, you must file with the court an inventory and appraisal of all the assets in the estate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative must mail a notice of administration to each known creditor within four months after appointment.",
+          "claim_es": "En California, el representante personal debe enviar un aviso de administración a cada acreedor conocido dentro de cuatro meses después del nombramiento.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "You must mail a notice of administration to each known creditor of the decedent within four months after your appointment as personal representative.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, if the person received Medi-Cal, the personal representative must notify the State Director of Health Services within 90 days after appointment.",
+          "claim_es": "En California, si la persona recibía Medi-Cal, el representante personal debe avisar al Director Estatal de Servicios de Salud dentro de 90 días después del nombramiento.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "If the decedent received Medi-Cal assistance, you must notify the State Director of Health Services within 90 days after appointment.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In California, the personal representative must keep estate money and property separate from everyone else's, including their own.",
+          "claim_es": "En California, el representante personal debe mantener el dinero y los bienes de la herencia separados de los de cualquier otra persona, incluidos los suyos.",
+          "source_url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/de147.pdf",
+          "source_name": "Judicial Council of California, form DE-147 (Duties and Liabilities of Personal Representative)",
+          "quote": "You must keep the money and property in this estate separate from anyone else's, including your own.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "In Pennsylvania, every personal representative files a verified inventory with the register of wills, covering all estate property except real estate outside Pennsylvania.",
+          "claim_es": "En Pensilvania, todo representante personal presenta ante el registro de testamentos un inventario verificado de todos los bienes, salvo inmuebles fuera de Pensilvania.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "Every personal representative shall file with the register a verified inventory of all real and personal estate of the decedent, except real estate outside of this Commonwealth.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, if an interested party asks in writing for an earlier inventory, it must be filed within three months after the request.",
+          "claim_es": "En Pensilvania, si una parte interesada pide por escrito un inventario antes, debe presentarse dentro de tres meses después de la solicitud.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "in which event an inventory shall be filed within three months after",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Pennsylvania, property found after the inventory goes on a supplemental inventory filed within 30 days of its discovery.",
+          "claim_es": "En Pensilvania, los bienes encontrados después del inventario se incluyen en un inventario suplementario presentado dentro de 30 días de descubrirse.",
+          "source_url": "https://www.palegis.us/statutes/consolidated/view-statute?iFrame=true&txtType=HTM&ttl=20&div=0&chpt=33",
+          "source_name": "Pennsylvania Consolidated Statutes, Title 20 Chapter 33",
+          "quote": "he shall file, within 30 days of its discovery, a supplemental inventory thereof with the register",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
-    "AL": "no official source found",
     "AK": "no official source found",
     "AR": "no official source found",
-    "CA": "no official source found",
     "CO": "no official source found",
     "CT": "no official source found",
     "DE": "no official source found",
@@ -674,7 +767,6 @@
     "NY": "no official source found",
     "NC": "no official source found",
     "OK": "no official source found",
-    "PA": "no official source found",
     "RI": "no official source found",
     "TN": "no official source found",
     "TX": "no official source found",
