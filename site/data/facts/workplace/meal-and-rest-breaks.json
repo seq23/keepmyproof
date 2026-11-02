@@ -790,8 +790,8 @@
     "TN": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Tennessee, a 30-minute meal break for employees scheduled to work 6 consecutive hours or more.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Tennessee, un descanso de 30 minutos para comer para quienes tienen programadas 6 horas consecutivas o más.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Tennessee, a half-hour meal break for employees scheduled to work 6 consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Tennessee, un descanso de media hora para comer para quienes tienen programadas 6 horas consecutivas o más.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour for employees scheduled to work 6 consecutive hours or more.",
