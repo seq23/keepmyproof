@@ -463,6 +463,101 @@
         }
       ],
       "official_links": []
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "In Missouri, a will has no effect as a will until it is presented for and admitted to probate.",
+          "claim_es": "En Misuri, un testamento no tiene efecto como tal hasta que se presenta y se admite a sucesión.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "A will, to be effective as a will, must be presented for and admitted to probate.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, when notice of letters has been published, a will must be presented within six months after the first publication of that notice.",
+          "claim_es": "En Misuri, cuando se ha publicado el aviso de las cartas, el testamento debe presentarse dentro de seis meses después de la primera publicación.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "within six months after the date of the first publication of the notice of granting",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, when no such notice was given, a will must be presented within one year after the death.",
+          "claim_es": "En Misuri, si no se dio ese aviso, el testamento debe presentarse dentro de un año después de la muerte.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "within one year after the date of death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, a will not presented within these time limits can never be admitted to probate.",
+          "claim_es": "En Misuri, un testamento no presentado dentro de estos plazos ya no puede admitirse a sucesión.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=473.050",
+          "source_name": "Missouri Revised Statutes § 473.050",
+          "quote": "A will not presented for probate within the time limitations provided in subsection 3 of this section is forever barred from admission to probate in this state.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "In Kansas, a will generally cannot pass property unless a petition to probate it is filed within six months after the death.",
+          "claim_es": "En Kansas, un testamento normalmente no puede transmitir bienes si no se presenta una petición de sucesión dentro de seis meses después de la muerte.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0017.html",
+          "source_name": "Kansas Statutes § 59-617",
+          "quote": "unless a petition is filed for the probate of such will within six months after the death of the testator",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, if a will was knowingly withheld, an innocent beneficiary may petition to probate it within 90 days after learning of it and getting access.",
+          "claim_es": "En Kansas, si alguien ocultó un testamento, un beneficiario inocente puede pedir su validación dentro de 90 días después de conocerlo y tener acceso.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0018.html",
+          "source_name": "Kansas Statutes § 59-618",
+          "quote": "if such petition is filed within 90 days after such beneficiary has knowledge of such will and access to it",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Kansas law addresses anyone who knowingly withholds a will from the district court.",
+          "claim_es": "La ley de Kansas regula a quien oculta a sabiendas un testamento al tribunal de distrito.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch59/059_006_0018.html",
+          "source_name": "Kansas Statutes § 59-618",
+          "quote": "Any person who has possession of the will of a testator dying a resident of this state, or has knowledge of such will and access to it for the purpose of probate, and knowingly withholds it from the district court",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, anyone holding a will must deliver it to the district court clerk (or the named personal representative) within 30 days after learning of the death.",
+          "claim_es": "En Nevada, quien tenga un testamento debe entregarlo al secretario del tribunal de distrito (o al representante personal nombrado) dentro de 30 días después de saber de la muerte.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Any person having possession of a will shall, within 30 days after knowledge of the death of the person who executed the will, deliver it to the clerk of the district court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, the person named as personal representative must present the will to the court clerk within 30 days after the death or after learning they were named.",
+          "claim_es": "En Nevada, la persona nombrada como representante personal debe presentar el testamento al secretario dentro de 30 días después de la muerte o de saber de su nombramiento.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Any person named as personal representative in a will shall, within 30 days after the death of the testator, or within 30 days after knowledge of being named, present the will",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, estates are settled in the district court, and the law sets which county's court may take the case.",
+          "claim_es": "En Nevada, las herencias se resuelven en el tribunal de distrito, y la ley fija qué condado puede llevar el caso.",
+          "source_url": "https://www.leg.state.nv.us/NRS/NRS-136.html",
+          "source_name": "Nevada Revised Statutes, Chapter 136",
+          "quote": "Jurisdiction of the settlement of the estate of a decedent may be assumed in the district court of any county in this State if",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -478,15 +573,12 @@
     "IL": "no official source found",
     "IN": "no official source found",
     "IA": "no official source found",
-    "KS": "no official source found",
     "KY": "no official source found",
     "LA": "no official source found",
     "MD": "no official source found",
     "MI": "no official source found",
     "MS": "no official source found",
-    "MO": "no official source found",
     "MT": "no official source found",
-    "NV": "no official source found",
     "NJ": "no official source found",
     "NM": "no official source found",
     "NY": "no official source found",
