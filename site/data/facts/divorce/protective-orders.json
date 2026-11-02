@@ -9,6 +9,105 @@
     "how long does a protective order last in {state}"
   ],
   "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "In Alabama, a first violation of a protection order is a Class A misdemeanor punishable by up to a year in jail and a fine up to $2,000.",
+          "claim_es": "En Alabama, una primera violación de una orden de protección es un delito menor de clase A castigado con hasta un año de cárcel y una multa de hasta $2,000.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "the first violation is a Class A misdemeanor punishable by up to a year in jail and a fine of up to $2,000.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Alabama, a second violation requires at least 48 hours in jail, and a third violation requires 30 days in jail.",
+          "claim_es": "En Alabama, una segunda violación exige al menos 48 horas de cárcel, y una tercera violación exige 30 días de cárcel.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "A finding of a second violation of a protection order requires, in addition to any fine and sentence imposed a minimum of 48 hours in jail. On a finding of a third violation, the defendant must spend 30 days in jail.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "There is no charge to ask for an Alabama protection order, though the judge may order fees paid at the end of the case.",
+          "claim_es": "No se cobra por pedir una orden de protección en Alabama, aunque el juez puede ordenar el pago de tarifas al final del caso.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "Is there a charge for a Protection Order? No. However, the judge may order that the fees be paid at the conclusion of the case.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Temporary Alabama protection orders last only until the final hearing unless the judge extends them.",
+          "claim_es": "Las órdenes de protección temporales en Alabama duran solo hasta la audiencia final, salvo que el juez las prorrogue.",
+          "source_url": "https://jackson.alacourt.gov/protection-from-abuse/",
+          "source_name": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "quote": "they are good only until the final hearing unless otherwise extended by the judge",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "label_es": "Jackson County, Alabama Circuit Clerk: Protection from Abuse",
+          "url": "https://jackson.alacourt.gov/protection-from-abuse/"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "In Alaska, an ex parte protective order lasts 20 days and a long-term protective order lasts 1 year.",
+          "claim_es": "En Alaska, una orden de protección ex parte dura 20 días y una orden de protección a largo plazo dura 1 año.",
+          "source_url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "quote": "To request an Ex Parte Protective Order (lasts 20 days) or a Long Term Protective Order (lasts 1 year)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you ask only for a long-term order, the court sets a hearing within 20 days.",
+          "claim_es": "Si solo pide una orden a largo plazo, el tribunal fija una audiencia dentro de 20 días.",
+          "source_url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "quote": "court will set a hearing within 20 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alaska has three kinds of domestic violence protective orders: emergency orders lasting 72 hours, ex parte orders lasting 20 days, and long-term orders lasting one year.",
+          "claim_es": "Alaska tiene tres tipos de órdenes de protección por violencia doméstica: de emergencia por 72 horas, ex parte por 20 días y de largo plazo por un año.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "emergency protective orders which last for 72 hours; ex parte protective orders which last for 20 days; long term protective orders which last for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you ask for a long-term Alaska order, the judge sets a hearing about twenty days later.",
+          "claim_es": "Si pide una orden de largo plazo en Alaska, el juez fija una audiencia unos veinte días después.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "If you request a long term order, the judge will set a date approximately twenty days later for a hearing.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In an Alaska long-term order, the ban on committing or threatening domestic violence stays in effect until a judge dissolves it, while other provisions last one year.",
+          "claim_es": "En una orden de largo plazo en Alaska, la prohibición de cometer o amenazar con violencia doméstica sigue vigente hasta que un juez la anule, y las demás disposiciones duran un año.",
+          "source_url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf",
+          "source_name": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "quote": "All provisions in a long-term protective order will be in effect for one year, except for the prohibition against committing or threatening to commit domestic violence which remains in effect indefinitely until dissolved by a j",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "label_es": "Alaska Court System: Domestic Violence Protective Orders handout",
+          "url": "https://courts.alaska.gov/shc/family/docs/shc-3200n.pdf"
+        },
+        {
+          "label_en": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "label_es": "Alaska Court System: Domestic Violence Protective Orders (PUB-22)",
+          "url": "https://public.courts.alaska.gov/web/forms/docs/pub-22.pdf"
+        }
+      ]
+    },
     "AZ": {
       "facts": [
         {
@@ -790,6 +889,51 @@
         }
       ]
     },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "A Montana court can issue an immediate temporary order of protection for up to 20 days without prior notice to the respondent.",
+          "claim_es": "Un tribunal de Montana puede dictar una orden temporal de protección inmediata por hasta 20 días sin aviso previo a la parte demandada.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0010/0400-0150-0020-0010.html",
+          "source_name": "Montana Code Annotated § 40-15-201",
+          "quote": "issue an immediate temporary order of protection for up to 20 days",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Montana, the hearing must be held within 20 days from the date the court issues the temporary order of protection.",
+          "claim_es": "En Montana, la audiencia debe celebrarse dentro de los 20 días desde que el tribunal dicta la orden temporal de protección.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0020/0400-0150-0020-0020.html",
+          "source_name": "Montana Code Annotated § 40-15-202",
+          "quote": "A hearing must be conducted within 20 days from the date that the court issues a temporary order of protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Montana charges nothing to file a petition for an order of protection or to serve it.",
+          "claim_es": "En Montana no se cobra por presentar una petición de orden de protección ni por notificarla.",
+          "source_url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0040/0400-0150-0020-0040.html",
+          "source_name": "Montana Code Annotated § 40-15-204",
+          "quote": "There is no cost to file a petition for an order of protection or for service of an order of protection",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Code Annotated § 40-15-201",
+          "label_es": "Montana Code Annotated § 40-15-201",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0010/0400-0150-0020-0010.html"
+        },
+        {
+          "label_en": "Montana Code Annotated § 40-15-202",
+          "label_es": "Montana Code Annotated § 40-15-202",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0020/0400-0150-0020-0020.html"
+        },
+        {
+          "label_en": "Montana Code Annotated § 40-15-204",
+          "label_es": "Montana Code Annotated § 40-15-204",
+          "url": "https://mca.legmt.gov/bills/mca/title_0400/chapter_0150/part_0020/section_0040/0400-0150-0020-0040.html"
+        }
+      ]
+    },
     "NE": {
       "facts": [
         {
@@ -1013,6 +1157,41 @@
           "label_en": "North Carolina Judicial Branch: How to Get a Protection Order",
           "label_es": "North Carolina Judicial Branch: How to Get a Protection Order",
           "url": "https://www.nccourts.gov/help-topics/domestic-violence/how-to-get-a-protection-order"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, a hearing on a domestic violence protection order is scheduled no later than 14 days after the temporary order is issued.",
+          "claim_es": "En Dakota del Norte, la audiencia sobre una orden de protección por violencia doméstica se fija a más tardar 14 días después de emitir la orden temporal.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "A hearing is scheduled on the petition for a domestic violence protection order not later than fourteen (14) days after the Judge or Judicial Referee issues the temporary domestic violence protection order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota charges no filing fee to victims seeking a civil protection order.",
+          "claim_es": "Dakota del Norte no cobra tarifa de presentación a las víctimas que piden una orden de protección civil.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "no filing fee for victims seeking a civil protection order",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the respondent must be served at least five days before the hearing.",
+          "claim_es": "En Dakota del Norte, la parte demandada debe ser notificada al menos cinco días antes de la audiencia.",
+          "source_url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf",
+          "source_name": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "quote": "Service must be made on the Respondent at least five days prior to the hearing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "label_es": "North Dakota Courts: Instructions for a Domestic Violence Protection Order",
+          "url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Protective%20Orders/Instructions-Domestic-Violence-Protection-Order.pdf"
         }
       ]
     },
@@ -1378,16 +1557,12 @@
     }
   },
   "skips": {
-    "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "AK": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ND": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NM": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",

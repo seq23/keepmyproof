@@ -172,6 +172,76 @@
         }
       ]
     },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "A Connecticut divorce decree may be entered if one spouse has lived in the state for at least the twelve months before filing or before the decree.",
+          "claim_es": "En Connecticut, se puede dictar la sentencia de divorcio si uno de los cónyuges ha vivido en el estado al menos los doce meses anteriores a la presentación o a la sentencia.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "One of the parties to the marriage has been a resident of this state for at least the twelve months next preceding the date of the filing of the complaint or next preceding the date of the decree",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Connecticut also allows a divorce when a spouse was domiciled in the state at marriage and returned intending to stay before filing.",
+          "claim_es": "Connecticut también permite el divorcio cuando uno de los cónyuges tenía domicilio en el estado al casarse y regresó con intención de quedarse antes de presentar.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "one of the parties was domiciled in this state at the time of the marriage and returned to this state with the intention of permanently remaining before the filing of the",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Connecticut, a divorce can be granted when the marriage has broken down irretrievably.",
+          "claim_es": "En Connecticut, se puede conceder el divorcio cuando el matrimonio se ha roto de forma irreparable.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "A decree of dissolution of a marriage or a decree of legal separation shall be granted upon a finding that one of the following causes has occurred: (1) The marriage has broken down irretrievably",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut General Statutes chapter 815j",
+          "label_es": "Connecticut General Statutes chapter 815j",
+          "url": "https://www.cga.ct.gov/current/pub/chap_815j.htm"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Delaware Family Court can hear a divorce if either spouse actually lived in Delaware, or was stationed there in the armed services, for 6 or more months before filing.",
+          "claim_es": "El Tribunal de Familia de Delaware puede tramitar un divorcio si uno de los cónyuges vivió en Delaware, o estuvo destinado allí en las fuerzas armadas, durante 6 meses o más antes de presentar.",
+          "source_url": "https://delcode.delaware.gov/title13/c015/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 15",
+          "quote": "actually resided in this State, or was stationed in this State as a member of the armed services of the United States, continuously for 6 or more months immediately preceding the commencement of the a",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Delaware law makes irretrievable breakdown of the marriage the sole basis for divorce.",
+          "claim_es": "La ley de Delaware establece la ruptura irreparable del matrimonio como la única base para el divorcio.",
+          "source_url": "https://delcode.delaware.gov/title13/c015/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 15",
+          "quote": "making irretrievable breakdown of the marriage relationship the sole basis for divorce",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For a Delaware divorce, separation means living separate and apart for 6 or more months before the court rules on the petition.",
+          "claim_es": "Para un divorcio en Delaware, la separación significa vivir separados 6 meses o más antes de que el tribunal decida sobre la petición.",
+          "source_url": "https://delcode.delaware.gov/title13/c015/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 15",
+          "quote": "means living separate and apart for 6 or more months immediately preceding the ruling upon the petition for a decree of divorce",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Code Title 13, Chapter 15",
+          "label_es": "Delaware Code Title 13, Chapter 15",
+          "url": "https://delcode.delaware.gov/title13/c015/index.html"
+        }
+      ]
+    },
     "DC": {
       "facts": [
         {
@@ -292,6 +362,51 @@
         }
       ]
     },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "An Idaho divorce requires the filer to have been a state resident for six full weeks before filing.",
+          "claim_es": "Un divorcio en Idaho exige que quien presenta haya sido residente del estado seis semanas completas antes de presentar.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-701",
+          "source_name": "Idaho Code § 32-701",
+          "quote": "A divorce must not be granted unless the plaintiff has been a resident of the state for six (6) full weeks next preceding the commencement of the action.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Irreconcilable differences is one of the grounds for divorce listed in Idaho law.",
+          "claim_es": "Las diferencias irreconciliables son una de las causales de divorcio que enumera la ley de Idaho.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH6/SECT32-603/",
+          "source_name": "Idaho Code § 32-603",
+          "quote": "8. Irreconcilable differences.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, spouses who have lived separate and apart without cohabitation for five years or more can get a divorce on that ground.",
+          "claim_es": "En Idaho, los cónyuges que han vivido separados sin convivir durante cinco años o más pueden divorciarse por esa causal.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH6/SECT32-610/",
+          "source_name": "Idaho Code § 32-610",
+          "quote": "live separate and apart for a period of five (5) years or more without cohabitation, either party to the marriage contract may sue for a divorce",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Code § 32-701",
+          "label_es": "Idaho Code § 32-701",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-701"
+        },
+        {
+          "label_en": "Idaho Code § 32-603",
+          "label_es": "Idaho Code § 32-603",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH6/SECT32-603/"
+        },
+        {
+          "label_en": "Idaho Code § 32-610",
+          "label_es": "Idaho Code § 32-610",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH6/SECT32-610/"
+        }
+      ]
+    },
     "IL": {
       "facts": [
         {
@@ -402,6 +517,46 @@
           "label_en": "Kansas Statutes § 23-2703",
           "label_es": "Kansas Statutes § 23-2703",
           "url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_027_0000_article/023_027_0003_section/023_027_0003_k/"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "To get a Kentucky divorce, one spouse must have lived in the state, or been stationed there in the armed services, for 180 days before filing.",
+          "claim_es": "Para divorciarse en Kentucky, uno de los cónyuges debe haber vivido en el estado, o estado destinado allí en las fuerzas armadas, durante 180 días antes de presentar.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=1447",
+          "source_name": "Kentucky Revised Statutes § 403.140",
+          "quote": "the residence or military presence has been maintained for 180 days next preceding the filing of the petition",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Kentucky Circuit Court grants a dissolution when it finds the marriage is irretrievably broken.",
+          "claim_es": "Un Tribunal de Circuito de Kentucky concede la disolución cuando determina que el matrimonio está irreparablemente roto.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=1447",
+          "source_name": "Kentucky Revised Statutes § 403.140",
+          "quote": "The court finds that the marriage is irretrievably broken",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kentucky, no divorce decree is entered until the spouses have lived apart for 60 days, which can include living under the same roof without sexual cohabitation.",
+          "claim_es": "En Kentucky, no se dicta la sentencia de divorcio hasta que los cónyuges hayan vivido separados 60 días, lo que puede incluir vivir bajo el mismo techo sin relaciones sexuales.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=1450",
+          "source_name": "Kentucky Revised Statutes § 403.170",
+          "quote": "No decree shall be entered until the parties have lived apart for 60 days. Living apart shall include living under the same roof without sexual cohabitation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Revised Statutes § 403.140",
+          "label_es": "Kentucky Revised Statutes § 403.140",
+          "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=1447"
+        },
+        {
+          "label_en": "Kentucky Revised Statutes § 403.170",
+          "label_es": "Kentucky Revised Statutes § 403.170",
+          "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=1450"
         }
       ]
     },
@@ -1248,6 +1403,59 @@
         }
       ]
     },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "If you married in West Virginia, you can file if one spouse is a bona fide resident when filing, no matter how long.",
+          "claim_es": "Si se casaron en Virginia Occidental, puede presentar si uno de los cónyuges es residente de buena fe al presentar, sin importar cuánto tiempo.",
+          "source_url": "https://code.wvlegislature.gov/48-5-105/",
+          "source_name": "West Virginia Code § 48-5-105",
+          "quote": "an action for divorce is maintainable if one of the parties is an actual bona fide resident of this state at the time of commencement of the action, without regard to the length of time residency has continued",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the other spouse lives out of state and cannot be served in West Virginia, the filer must have lived there at least one year.",
+          "claim_es": "Si el otro cónyuge vive fuera del estado y no puede ser notificado en Virginia Occidental, quien presenta debe haber vivido allí al menos un año.",
+          "source_url": "https://code.wvlegislature.gov/48-5-105/",
+          "source_name": "West Virginia Code § 48-5-105",
+          "quote": "the action is not maintainable unless the petitioner has been an actual bona fide resident of this state for at least one year next preceding the commencement of the action",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A West Virginia court may order a divorce for irreconcilable differences when the answer admits that allegation.",
+          "claim_es": "Un tribunal de Virginia Occidental puede ordenar un divorcio por diferencias irreconciliables cuando la contestación admite esa alegación.",
+          "source_url": "https://code.wvlegislature.gov/48-5-201/",
+          "source_name": "West Virginia Code § 48-5-201",
+          "quote": "The court may order a divorce if the complaint alleges that irreconcilable differences exist between the parties and an answer is filed admitting that allegation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In West Virginia, a divorce may be ordered when the spouses have lived separate and apart without cohabitation and without interruption for one year.",
+          "claim_es": "En Virginia Occidental, se puede ordenar un divorcio cuando los cónyuges han vivido separados, sin convivir y sin interrupción, durante un año.",
+          "source_url": "https://code.wvlegislature.gov/48-5-202/",
+          "source_name": "West Virginia Code § 48-5-202",
+          "quote": "A divorce may be ordered when the parties have lived separate and apart in separate places of abode without any cohabitation and without interruption for one year.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Code § 48-5-105",
+          "label_es": "West Virginia Code § 48-5-105",
+          "url": "https://code.wvlegislature.gov/48-5-105/"
+        },
+        {
+          "label_en": "West Virginia Code § 48-5-201",
+          "label_es": "West Virginia Code § 48-5-201",
+          "url": "https://code.wvlegislature.gov/48-5-201/"
+        },
+        {
+          "label_en": "West Virginia Code § 48-5-202",
+          "label_es": "West Virginia Code § 48-5-202",
+          "url": "https://code.wvlegislature.gov/48-5-202/"
+        }
+      ]
+    },
     "WI": {
       "facts": [
         {
@@ -1292,12 +1500,8 @@
   "skips": {
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (1 verified)",
-    "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ID": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NJ": "fewer than 3 quote-verified facts from official sources (2 verified)",
@@ -1306,7 +1510,6 @@
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "WV": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }
 }

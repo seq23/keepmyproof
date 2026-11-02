@@ -134,6 +134,41 @@
         }
       ]
     },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "Connecticut courts consider the child's best interests in custody orders, and may weigh factors such as the child's physical and emotional safety.",
+          "claim_es": "Los tribunales de Connecticut consideran el interés superior del menor en las órdenes de custodia y pueden evaluar factores como la seguridad física y emocional del menor.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "the court shall consider the best interests of the child, and in doing so, may consider, but shall not be limited to, one or more of the following factors: (1) The physical and emotional safety of the",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Connecticut presumes joint custody is in the child's best interests when the parents have agreed to it.",
+          "claim_es": "Connecticut presume que la custodia compartida sirve al interés superior del menor cuando los padres la han acordado.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "There shall be a presumption, affecting the burden of proof, that joint custody is in the best interests of a minor child where the parents have agreed to an award of joint custody",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Connecticut court cannot modify a final custody or visitation order until ninety days after a parent's military deployment ends, unless the deploying parent agrees.",
+          "claim_es": "Un tribunal de Connecticut no puede modificar una orden final de custodia o visitas hasta noventa días después de que termine el despliegue militar de uno de los padres, salvo que ese padre lo acepte.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_815j.htm",
+          "source_name": "Connecticut General Statutes chapter 815j",
+          "quote": "until ninety days after such parent's deployment or mobilization ends, unless such modification is agreed to by the deploying parent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Connecticut General Statutes chapter 815j",
+          "label_es": "Connecticut General Statutes chapter 815j",
+          "url": "https://www.cga.ct.gov/current/pub/chap_815j.htm"
+        }
+      ]
+    },
     "DE": {
       "facts": [
         {
@@ -201,6 +236,59 @@
           "label_en": "Code of the District of Columbia § 16-914",
           "label_es": "Code of the District of Columbia § 16-914",
           "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-914"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "In Florida, a parenting course must be completed before the final judgment.",
+          "claim_es": "En Florida, se debe completar un curso para padres antes de la sentencia final.",
+          "source_url": "https://flcourts-media.flcourts.gov/content/download/685808/7661154",
+          "source_name": "Florida Courts: Family Law Form Instructions",
+          "quote": "A parenting course must be completed prior to entry of the final judgment.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Florida courts order shared parental responsibility unless they find it would be detrimental to the child.",
+          "claim_es": "Los tribunales de Florida ordenan la responsabilidad parental compartida salvo que determinen que perjudicaría al menor.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.13.html",
+          "source_name": "Florida Statutes § 61.13",
+          "quote": "The court shall order that the parental responsibility for a minor child be shared by both parents unless the court finds that shared parental responsibility would be detrimental to the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Florida court-approved parenting plan must describe how parents will share the daily tasks of raising the child and include the time-sharing schedule.",
+          "claim_es": "En Florida, un plan de crianza aprobado por el tribunal debe describir cómo los padres compartirán las tareas diarias de crianza e incluir el calendario de tiempo compartido.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.13.html",
+          "source_name": "Florida Statutes § 61.13",
+          "quote": "A parenting plan approved by the court must, at a minimum, do all of the following: 1. Describe in adequate detail how the parents will share and be responsible for the daily tasks associated with the upbringing of the child. 2. Include the time-sharing schedule",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Florida's Parent Education and Family Stabilization Course for divorcing parents must be at least 4 hours long.",
+          "claim_es": "El curso de Educación para Padres y Estabilización Familiar de Florida para padres que se divorcian debe durar al menos 4 horas.",
+          "source_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.21.html",
+          "source_name": "Florida Statutes § 61.21",
+          "quote": "shall approve a parenting course which must be a minimum of 4 hours",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Courts: Family Law Form Instructions",
+          "label_es": "Florida Courts: Family Law Form Instructions",
+          "url": "https://flcourts-media.flcourts.gov/content/download/685808/7661154"
+        },
+        {
+          "label_en": "Florida Statutes § 61.13",
+          "label_es": "Florida Statutes § 61.13",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.13.html"
+        },
+        {
+          "label_en": "Florida Statutes § 61.21",
+          "label_es": "Florida Statutes § 61.21",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.21.html"
         }
       ]
     },
@@ -359,6 +447,41 @@
         }
       ]
     },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "Kentucky law presumes, unless rebutted by a preponderance of evidence, that joint custody and equally shared parenting time are in the child's best interests.",
+          "claim_es": "La ley de Kentucky presume, salvo prueba en contrario por preponderancia, que la custodia compartida y el tiempo de crianza igual sirven al interés superior del menor.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57567",
+          "source_name": "Kentucky Revised Statutes § 403.270",
+          "quote": "there shall be a presumption, rebuttable by a preponderance of evidence, that joint custody and equally shared parenting time is in the best interests of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a Kentucky court departs from equal parenting time, it must set a schedule that maximizes each parent's time with the child consistent with the child's welfare.",
+          "claim_es": "Si un tribunal de Kentucky se aparta del tiempo de crianza igual, debe fijar un calendario que maximice el tiempo de cada padre con el menor, compatible con su bienestar.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57567",
+          "source_name": "Kentucky Revised Statutes § 403.270",
+          "quote": "If a deviation from equal parenting time is warranted, the court shall construct a parenting time schedule which maximizes the time each parent or de facto custodian has with the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Before other factors, a Kentucky court deciding custody must consider any allegations of domestic violence and abuse.",
+          "claim_es": "Antes de otros factores, un tribunal de Kentucky que decide la custodia debe considerar cualquier alegación de violencia doméstica y abuso.",
+          "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57567",
+          "source_name": "Kentucky Revised Statutes § 403.270",
+          "quote": "In making a determination of custody, the court shall, prior to consideration of any other factors enumerated in subsection (4) of this section: (a) Consider any allegations of: 1. Domestic violence and abuse",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kentucky Revised Statutes § 403.270",
+          "label_es": "Kentucky Revised Statutes § 403.270",
+          "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57567"
+        }
+      ]
+    },
     "ME": {
       "facts": [
         {
@@ -480,7 +603,7 @@
     "MI": {
       "facts": [
         {
-          "claim_en": "Michigan's custody law lists the reasonable preference of the child, if the court finds the child old enough, as one best-interests factor.",
+          "claim_en": "Michigan's custody law lists the reasonable preference of the child, if the court finds the child old enough, as one factor in the child's best interests.",
           "claim_es": "La ley de custodia de Michigan incluye la preferencia razonable del menor, si el tribunal lo considera con edad suficiente, como un factor del interés superior.",
           "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-23",
           "source_name": "Michigan Compiled Laws § 722.23",
@@ -528,7 +651,7 @@
     "MN": {
       "facts": [
         {
-          "claim_en": "Minnesota courts must make detailed findings on each best-interests factor when deciding custody and parenting time.",
+          "claim_en": "Minnesota courts must make detailed findings on each factor of the child's best interests when deciding custody and parenting time.",
           "claim_es": "Los tribunales de Minnesota deben hacer constataciones detalladas sobre cada factor del interés superior del menor al decidir la custodia y el tiempo de crianza.",
           "source_url": "https://www.revisor.mn.gov/statutes/cite/518.17",
           "source_name": "Minnesota Statutes § 518.17",
@@ -1142,18 +1265,50 @@
           "url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-practice-procedure-family-court"
         }
       ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Except in limited cases, Wisconsin courts presume joint legal custody is in the child's best interest.",
+          "claim_es": "Salvo en casos limitados, los tribunales de Wisconsin presumen que la custodia legal compartida sirve al interés superior del menor.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/v/41",
+          "source_name": "Wisconsin Statutes § 767.41",
+          "quote": "the court shall presume that joint legal custody is in the best interest of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, a required proposed parenting plan is filed within 60 days after mediation is waived or the mediator reports no agreement, unless the court orders otherwise.",
+          "claim_es": "En Wisconsin, el plan de crianza propuesto se presenta dentro de los 60 días después de que se exime la mediación o el mediador informa que no hubo acuerdo, salvo otra orden del tribunal.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/v/41",
+          "source_name": "Wisconsin Statutes § 767.41",
+          "quote": "Unless the court orders otherwise, the proposed parenting plan shall be filed within 60 days after the court waives the mediation requirement or the mediator notifies the court that no agreement has been reached.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Wisconsin court may give sole legal custody only if it finds that doing so is in the child's best interest and certain conditions apply.",
+          "claim_es": "Un tribunal de Wisconsin puede dar la custodia legal exclusiva solo si determina que sirve al interés superior del menor y se cumplen ciertas condiciones.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/v/41",
+          "source_name": "Wisconsin Statutes § 767.41",
+          "quote": "the court may give sole legal custody only if it finds that doing so is in the child",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin Statutes § 767.41",
+          "label_es": "Wisconsin Statutes § 767.41",
+          "url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/v/41"
+        }
+      ]
     }
   },
   "skips": {
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CO": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "FL": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
@@ -1164,7 +1319,6 @@
     "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }
 }
