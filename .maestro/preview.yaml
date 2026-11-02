@@ -55,8 +55,11 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd
 - takeScreenshot: 05-confirmPhrase
 - tapOn: "Open My folders ›"
+- waitForAnimationToEnd
+# "My folders" is on the screen twice (heading + its label), and the check flaked on that
+# (failed 2 of 3 runs with the heading showing); the line under it is unique.
 - extendedWaitUntil:
-    visible: "My folders"
+    visible: "Add what you have, when you have it.*"
     timeout: 30000
 
 # Sample papers: two in Divorce prep (one checklist line ticked), one in Workplace evidence.
