@@ -49,6 +49,51 @@
         }
       ]
     },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "Arizona requires a written parenting plan whenever parents ask the court to order joint custody.",
+          "claim_es": "Arizona exige un plan de crianza por escrito cuando los padres piden al tribunal la custodia compartida.",
+          "source_url": "https://www.azcourts.gov/domesticviolencelaw/Glossary.aspx",
+          "source_name": "Arizona Judicial Branch: Glossary",
+          "quote": "A written parenting plan is required whenever parents ask the court to order joint custody.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A parent living outside Arizona may meet the parent education class requirement with a comparable class where they live.",
+          "claim_es": "Un padre que vive fuera de Arizona puede cumplir el requisito de la clase de educación para padres con una clase similar donde vive.",
+          "source_url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/Parent-Education-Program/Parent-Education-Questions",
+          "source_name": "Arizona Judicial Branch: Parent Education Program",
+          "quote": "they may be able to satisfy the requirements of the parent education class by attending a comparable class in the area where the other parent lives",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For a case involving a minor child, the child must have lived in Arizona for at least 6 months before filing.",
+          "claim_es": "En un caso con un hijo menor, el niño debe haber vivido en Arizona al menos 6 meses antes de presentar.",
+          "source_url": "https://www.azcourts.gov/familylaw",
+          "source_name": "Arizona Judicial Branch: Family Law",
+          "quote": "If the action involves a minor child, that child must have lived in Arizona for at least 6 months prior to filing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Judicial Branch: Glossary",
+          "label_es": "Arizona Judicial Branch: Glossary",
+          "url": "https://www.azcourts.gov/domesticviolencelaw/Glossary.aspx"
+        },
+        {
+          "label_en": "Arizona Judicial Branch: Parent Education Program",
+          "label_es": "Arizona Judicial Branch: Parent Education Program",
+          "url": "https://www.azcourts.gov/familylaw/Child-Support-Family-Law-Information/Parent-Education-Program/Parent-Education-Questions"
+        },
+        {
+          "label_en": "Arizona Judicial Branch: Family Law",
+          "label_es": "Arizona Judicial Branch: Family Law",
+          "url": "https://www.azcourts.gov/familylaw"
+        }
+      ]
+    },
     "CA": {
       "facts": [
         {
@@ -86,6 +131,146 @@
           "label_en": "California Courts Self-Help Guide: Enforce a Custody Order",
           "label_es": "California Courts Self-Help Guide: Enforce a Custody Order",
           "url": "https://selfhelp.courts.ca.gov/child-custody/enforce"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "In DC custody cases between parents, the child's interest is the primary consideration under the law's 'best interest' standard.",
+          "claim_es": "En los casos de custodia entre padres en DC, el interés del hijo es la consideración principal según la norma legal.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-914",
+          "source_name": "Code of the District of Columbia § 16-914",
+          "quote": "In any proceeding between parents in which the custody of a child is raised as an issue, the best interest of the child shall be the primary consideration.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The DC court considers all relevant factors when deciding custody.",
+          "claim_es": "El tribunal de DC considera todos los factores pertinentes al decidir la custodia.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-914",
+          "source_name": "Code of the District of Columbia § 16-914",
+          "quote": "the court shall consider all relevant factors, including, but not limited to:",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same standard applies when the court decides a child's care and custody.",
+          "claim_es": "La misma norma se aplica cuando el tribunal decide el cuidado y la custodia de un hijo.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-914",
+          "source_name": "Code of the District of Columbia § 16-914",
+          "quote": "In determining the care and custody of a child, the best interest of the child shall be the primary consideration.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Code of the District of Columbia § 16-914",
+          "label_es": "Code of the District of Columbia § 16-914",
+          "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-914"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "In Georgia, when one parent gets both physical and legal custody, it is called sole custody.",
+          "claim_es": "En Georgia, cuando un padre recibe la custodia física y la legal, se llama custodia exclusiva.",
+          "source_url": "https://georgiacourts.gov/a2j/self-help-resources/family-law/child-custody/",
+          "source_name": "Georgia Courts Access to Justice: Child Custody",
+          "quote": "When one parent is awarded both physical and legal custody, this is called sole custody.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The parent who does not get physical custody is usually awarded visitation.",
+          "claim_es": "El padre que no recibe la custodia física generalmente recibe derecho de visitas.",
+          "source_url": "https://georgiacourts.gov/a2j/self-help-resources/family-law/child-custody/",
+          "source_name": "Georgia Courts Access to Justice: Child Custody",
+          "quote": "The parent who does not get physical custody is usually awarded visitation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the parents are married, they have equal rights to visitation and custody.",
+          "claim_es": "Si los padres están casados, tienen los mismos derechos de visitas y custodia.",
+          "source_url": "https://georgiacourts.gov/a2j/self-help-resources/family-law/child-custody/",
+          "source_name": "Georgia Courts Access to Justice: Child Custody",
+          "quote": "If the parents are married, they have equal rights to visitation and custody.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia Courts Access to Justice: Child Custody",
+          "label_es": "Georgia Courts Access to Justice: Child Custody",
+          "url": "https://georgiacourts.gov/a2j/self-help-resources/family-law/child-custody/"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "In Iowa, joint custody does not necessarily mean the child spends equal time with both parents.",
+          "claim_es": "En Iowa, la custodia compartida no significa necesariamente que el hijo pase el mismo tiempo con ambos padres.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/child-custody",
+          "source_name": "Iowa Judicial Branch: Child Custody",
+          "quote": "Joint custody does not necessarily mean that the child must spend equal time with or live with both parents.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Sole legal custody means only one parent has legal responsibility for the child.",
+          "claim_es": "La custodia legal exclusiva significa que solo un padre tiene la responsabilidad legal del hijo.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/child-custody",
+          "source_name": "Iowa Judicial Branch: Child Custody",
+          "quote": "Sole legal custody means that only one parent has the legal responsibility of a minor child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Sole legal custody is granted if the court decides it is better for one parent to make the decisions.",
+          "claim_es": "La custodia legal exclusiva se concede si el tribunal decide que es mejor que un solo padre tome las decisiones.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/child-custody",
+          "source_name": "Iowa Judicial Branch: Child Custody",
+          "quote": "Sole legal custody is granted if a court determines that it would be better for just one parent to make the decisions for the child.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Judicial Branch: Child Custody",
+          "label_es": "Iowa Judicial Branch: Child Custody",
+          "url": "https://www.iowacourts.gov/for-the-public/representing-yourself/child-custody"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "Maryland requires a parenting plan in any case asking the court for custody or to change custody.",
+          "claim_es": "Maryland exige un plan de crianza en todo caso en que se pida la custodia o cambiarla.",
+          "source_url": "https://www.mdcourts.gov/family/parentingplans",
+          "source_name": "Maryland Judiciary: Parenting Plans",
+          "quote": "A parenting plan is required in any case a party asks the court for custody or to modify custody of a child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A parenting plan is a written document that outlines how the parties will raise a child.",
+          "claim_es": "Un plan de crianza es un documento escrito que describe cómo las partes criarán al hijo.",
+          "source_url": "https://www.mdcourts.gov/family/parentingplans",
+          "source_name": "Maryland Judiciary: Parenting Plans",
+          "quote": "A parenting plan is a written document that outlines how parties will raise a child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A parenting plan is not required in Child in Need of Assistance (CINA) cases.",
+          "claim_es": "No se requiere un plan de crianza en los casos de Menores que Necesitan Asistencia (CINA).",
+          "source_url": "https://www.mdcourts.gov/family/parentingplans",
+          "source_name": "Maryland Judiciary: Parenting Plans",
+          "quote": "A parenting plan is not required in Child in Need of Assistance (CINA) cases.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Judiciary: Parenting Plans",
+          "label_es": "Maryland Judiciary: Parenting Plans",
+          "url": "https://www.mdcourts.gov/family/parentingplans"
         }
       ]
     },
@@ -316,28 +501,163 @@
           "url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx"
         }
       ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "In Utah, legal custody is about who has the right to make important decisions about the children.",
+          "claim_es": "En Utah, la custodia legal se refiere a quién tiene derecho a tomar las decisiones importantes sobre los hijos.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/custody.html",
+          "source_name": "Utah State Courts Self-Help: Custody",
+          "quote": "Legal custody is about who has the right to make important decisions about the children.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Joint legal custody means both parents work together on major decisions.",
+          "claim_es": "La custodia legal compartida significa que ambos padres deciden juntos los temas importantes.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/custody.html",
+          "source_name": "Utah State Courts Self-Help: Custody",
+          "quote": "Joint legal custody means both parents work together to make decisions about major issues affecting the children.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Joint physical custody means the children live at least 111 nights a year with each parent.",
+          "claim_es": "La custodia física compartida significa que los hijos viven al menos 111 noches al año con cada padre.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/custody.html",
+          "source_name": "Utah State Courts Self-Help: Custody",
+          "quote": "Joint physical custody means the children live at least 111 nights a year in the home of each parent.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah State Courts Self-Help: Custody",
+          "label_es": "Utah State Courts Self-Help: Custody",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/custody.html"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "In Virginia, joint legal custody means both parents share responsibility and authority to make decisions about the child.",
+          "claim_es": "En Virginia, la custodia legal compartida significa que ambos padres comparten la responsabilidad y la autoridad para decidir sobre el hijo.",
+          "source_url": "https://www.vacourts.gov/courts/jdr/Lynchburg/custody",
+          "source_name": "Virginia Judicial System: Lynchburg JDR Court, Custody",
+          "quote": "Joint legal custody is when both parents retain joint responsibility for the care and control of the child and joint authority to make decisions concerning the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Joint physical custody is where both parents share physical care of the child.",
+          "claim_es": "La custodia física compartida es cuando ambos padres comparten el cuidado físico del hijo.",
+          "source_url": "https://www.vacourts.gov/courts/jdr/Lynchburg/custody",
+          "source_name": "Virginia Judicial System: Lynchburg JDR Court, Custody",
+          "quote": "Joint physical custody is where both parents share physical and custodial care of the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Sole custody gives one parent primary responsibility for the child's care.",
+          "claim_es": "La custodia exclusiva da a un padre la responsabilidad principal del cuidado del hijo.",
+          "source_url": "https://www.vacourts.gov/courts/jdr/Lynchburg/custody",
+          "source_name": "Virginia Judicial System: Lynchburg JDR Court, Custody",
+          "quote": "Sole custody gives a parent the primary responsibility for the care of the child.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia Judicial System: Lynchburg JDR Court, Custody",
+          "label_es": "Virginia Judicial System: Lynchburg JDR Court, Custody",
+          "url": "https://www.vacourts.gov/courts/jdr/Lynchburg/custody"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "In Washington, a parenting plan is a legal document that explains the basic arrangements for the children.",
+          "claim_es": "En Washington, un plan de crianza es un documento legal que explica los arreglos básicos para los hijos.",
+          "source_url": "https://www.courts.wa.gov/newsinfo/content/pdf/flhbmarriageedition.pdf",
+          "source_name": "Washington Courts: Family Law Handbook",
+          "quote": "A parenting plan is a legal document that explains the basic arrangements for",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Mediation on parenting plan issues is usually not appropriate if there has been a history of domestic violence.",
+          "claim_es": "La mediación sobre el plan de crianza generalmente no es apropiada si hay antecedentes de violencia doméstica.",
+          "source_url": "https://www.courts.wa.gov/newsinfo/content/pdf/flhbmarriageedition.pdf",
+          "source_name": "Washington Courts: Family Law Handbook",
+          "quote": "Mediation to resolve parenting plan issues is usually not appropriate if there has been a history of domestic violence.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The handbook covers what happens when a parent wants to move with the children under a parenting plan.",
+          "claim_es": "El manual explica qué pasa cuando un padre quiere mudarse con los hijos y hay un plan de crianza.",
+          "source_url": "https://www.courts.wa.gov/newsinfo/content/pdf/flhbmarriageedition.pdf",
+          "source_name": "Washington Courts: Family Law Handbook",
+          "quote": "If a parent wants to move with the children, and a parenting plan is in place, that",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Washington Courts: Family Law Handbook",
+          "label_es": "Washington Courts: Family Law Handbook",
+          "url": "https://www.courts.wa.gov/newsinfo/content/pdf/flhbmarriageedition.pdf"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "A West Virginia court may waive parent education for good cause, stating its reasons on the record.",
+          "claim_es": "Un tribunal de Virginia Occidental puede eximir la educación para padres por causa justificada, indicando sus razones.",
+          "source_url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-practice-procedure-family-court",
+          "source_name": "West Virginia Rules of Practice and Procedure for Family Court",
+          "quote": "For good cause shown, parent education may be waived if the court places on the record a finding attendance is not necessary",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "An order for an advanced child-focused parent education class sets the fee each party pays.",
+          "claim_es": "Una orden para una clase avanzada de educación para padres fija la tarifa que paga cada parte.",
+          "source_url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-practice-procedure-family-court",
+          "source_name": "West Virginia Rules of Practice and Procedure for Family Court",
+          "quote": "The order requiring parties to attend an advanced child-focused parent education class shall specify the fee each party shall pay",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "When paternity is determined, each parent is ordered to complete parent education by a set date.",
+          "claim_es": "Cuando se determina la paternidad, se ordena a cada padre completar la educación para padres antes de una fecha fija.",
+          "source_url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-practice-procedure-family-court",
+          "source_name": "West Virginia Rules of Practice and Procedure for Family Court",
+          "quote": "each parent or custodian shall be ordered to complete parent education by a date certain",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "West Virginia Rules of Practice and Procedure for Family Court",
+          "label_es": "West Virginia Rules of Practice and Procedure for Family Court",
+          "url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-practice-procedure-family-court"
+        }
+      ]
     }
   },
   "skips": {
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "AZ": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CO": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "DC": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "FL": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "GA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "FL": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "ID": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "IA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "KS": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "ME": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
@@ -355,11 +675,7 @@
     "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "UT": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "VA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "WA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "WV": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }
