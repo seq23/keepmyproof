@@ -1,0 +1,1166 @@
+{
+  "folder": "divorce",
+  "subtopic": "residency-and-where-to-file",
+  "title_en": "Divorce residency rules and where to file in {state}",
+  "title_es": "Requisitos de residencia para el divorcio y dónde presentarlo en {state_es}",
+  "search_intent_en": [
+    "divorce residency requirement {state}",
+    "where to file for divorce in {state}",
+    "how long do you have to live in {state} to get divorced"
+  ],
+  "states": {
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "Military members continuously stationed at an Alaska base for at least 30 days count as Alaska residents for filing a divorce.",
+          "claim_es": "Los militares destinados de forma continua en una base de Alaska por al menos 30 días cuentan como residentes de Alaska para presentar un divorcio.",
+          "source_url": "https://courts.alaska.gov/shc/family/start.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "If you are serving in the military and are continuously stationed at a military base in Alaska for at least 30 days, you are an Alaskan resident for the purposes of filing a divorce case.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Children need to live in Alaska for six months before you start a divorce case that decides custody.",
+          "claim_es": "Los hijos deben vivir en Alaska seis meses antes de iniciar un caso de divorcio que decida la custodia.",
+          "source_url": "https://courts.alaska.gov/shc/family/start.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "Children need to live in Alaska for six months before you start your divorce case.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The court has authority over the spouses if the couple lived in Alaska for at least six consecutive months within the six years before filing.",
+          "claim_es": "El tribunal tiene autoridad sobre los cónyuges si la pareja vivió en Alaska al menos seis meses consecutivos dentro de los seis años previos a presentar.",
+          "source_url": "https://courts.alaska.gov/shc/family/answer.htm",
+          "source_name": "Alaska Court System Self-Help Center",
+          "quote": "the court has jurisdiction or authority over the people in the divorce case if the married couple lived in Alaska for at least six consecutive months within the six years before filing for divorce.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Alaska Court System Self-Help Center",
+          "label_es": "Alaska Court System Self-Help Center",
+          "url": "https://courts.alaska.gov/shc/family/start.htm"
+        },
+        {
+          "label_en": "Alaska Court System Self-Help Center",
+          "label_es": "Alaska Court System Self-Help Center",
+          "url": "https://courts.alaska.gov/shc/family/answer.htm"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "Arizona family law cases are filed in the superior court of the county where one of the spouses lives.",
+          "claim_es": "En Arizona, los casos de derecho familiar se presentan en el tribunal superior del condado donde vive uno de los cónyuges.",
+          "source_url": "https://www.azcourts.gov/familylaw",
+          "source_name": "Arizona Judicial Branch: Family Law",
+          "quote": "Family law actions must be filed in the superior court of the county in which one of the spouses resides",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "At least one spouse must have lived in Arizona for at least 90 days.",
+          "claim_es": "Al menos uno de los cónyuges debe haber vivido en Arizona por lo menos 90 días.",
+          "source_url": "https://www.azcourts.gov/familylaw",
+          "source_name": "Arizona Judicial Branch: Family Law",
+          "quote": "at least one of the spouses has lived in Arizona for at least 90 days.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the case involves a minor child, the child must have lived in Arizona for at least 6 months before filing.",
+          "claim_es": "Si el caso incluye a un hijo menor, el niño debe haber vivido en Arizona al menos 6 meses antes de presentar.",
+          "source_url": "https://www.azcourts.gov/familylaw",
+          "source_name": "Arizona Judicial Branch: Family Law",
+          "quote": "If the action involves a minor child, that child must have lived in Arizona for at least 6 months prior to filing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Arizona Judicial Branch: Family Law",
+          "label_es": "Arizona Judicial Branch: Family Law",
+          "url": "https://www.azcourts.gov/familylaw"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "Before filing for divorce, one spouse must have lived in California for the past 6 months and in the filing county for at least 3 months.",
+          "claim_es": "Antes de pedir el divorcio, uno de los cónyuges debe haber vivido en California los últimos 6 meses y al menos 3 meses en el condado donde se presenta.",
+          "source_url": "https://selfhelp.courts.ca.gov/divorce-california/legal-separation",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "Before filing for divorce, one of the spouses must have lived in California for the past 6 months and at least 3 months in a county where the case is to be filed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Legal separation does not have the same 6-month California residency requirement as divorce.",
+          "claim_es": "La separación legal no tiene el mismo requisito de 6 meses de residencia en California que el divorcio.",
+          "source_url": "https://selfhelp.courts.ca.gov/divorce-california/legal-separation",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "Legal separation does not have the same residency requirements (6 months in California) as a divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a divorce, you must wait 6 months after your spouse is served before the case can be finished; annulments do not have this wait.",
+          "claim_es": "En un divorcio hay que esperar 6 meses después de notificar al cónyuge antes de que el caso termine; la anulación no tiene esta espera.",
+          "source_url": "https://selfhelp.courts.ca.gov/divorce-california/annulment",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "Unlike in a divorce, you do not need to wait 6 months after your spouse was served papers for the case to be finished",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For a summary dissolution, one spouse must have lived in California for the last 6 months and in the filing county for the last 3 months.",
+          "claim_es": "Para una disolución sumaria, uno de los cónyuges debe haber vivido en California los últimos 6 meses y en el condado donde se presenta los últimos 3 meses.",
+          "source_url": "https://selfhelp.courts.ca.gov/divorce-california/summary-dissolution/qualifications",
+          "source_name": "California Courts Self-Help Guide",
+          "quote": "One of you must have lived in California for the last 6 months and in the county where you file for summary dissolution for the last 3 months.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "California Courts Self-Help Guide",
+          "label_es": "California Courts Self-Help Guide",
+          "url": "https://selfhelp.courts.ca.gov/divorce-california/legal-separation"
+        },
+        {
+          "label_en": "California Courts Self-Help Guide",
+          "label_es": "California Courts Self-Help Guide",
+          "url": "https://selfhelp.courts.ca.gov/divorce-california/annulment"
+        },
+        {
+          "label_en": "California Courts Self-Help Guide",
+          "label_es": "California Courts Self-Help Guide",
+          "url": "https://selfhelp.courts.ca.gov/divorce-california/summary-dissolution/qualifications"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "You or your spouse must have lived in Colorado for at least 91 days before filing a divorce case there.",
+          "claim_es": "Usted o su cónyuge deben haber vivido en Colorado al menos 91 días antes de presentar un caso de divorcio allí.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/divorce-and-separation/divorce-or-legal-separation",
+          "source_name": "Colorado Judicial Branch Self-Help",
+          "quote": "You or your spouse must have lived in Colorado for at least 91 days before you can file a divorce case in Colorado.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For custody decisions, children must have lived in Colorado for at least 182 days, or since birth.",
+          "claim_es": "Para decidir la custodia, los hijos deben haber vivido en Colorado al menos 182 días, o desde su nacimiento.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/divorce-and-separation/divorce-or-legal-separation",
+          "source_name": "Colorado Judicial Branch Self-Help",
+          "quote": "Children must have lived in Colorado for at least 182 days (or since birth).",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You file in the county where you or your spouse lives.",
+          "claim_es": "Se presenta en el condado donde vive usted o su cónyuge.",
+          "source_url": "https://www.coloradojudicial.gov/self-help/divorce-and-separation/divorce-or-legal-separation",
+          "source_name": "Colorado Judicial Branch Self-Help",
+          "quote": "File in the county where you or your spouse lives.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Colorado Judicial Branch Self-Help",
+          "label_es": "Colorado Judicial Branch Self-Help",
+          "url": "https://www.coloradojudicial.gov/self-help/divorce-and-separation/divorce-or-legal-separation"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "You can file for divorce in DC if you or your spouse has been a DC resident for six months before filing.",
+          "claim_es": "Puede pedir el divorcio en DC si usted o su cónyuge ha sido residente de DC durante seis meses antes de presentar.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/family-court-operations-division/divorce",
+          "source_name": "DC Courts: Divorce",
+          "quote": "You can file for divorce in DC if either you or your spouse has been a resident of DC for six months before the date you file the divorce papers with the court.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Only one spouse has to meet the DC residency requirement.",
+          "claim_es": "Solo uno de los cónyuges tiene que cumplir el requisito de residencia de DC.",
+          "source_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/family-court-operations-division/divorce",
+          "source_name": "DC Courts: Divorce",
+          "quote": "Only one of you has to meet the DC residency requirement.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "DC Code § 16-902 sets the same six-month bona fide residency rule for divorce and legal separation.",
+          "claim_es": "El Código de DC § 16-902 fija la misma regla de seis meses de residencia de buena fe para el divorcio y la separación legal.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-902",
+          "source_name": "Code of the District of Columbia § 16-902",
+          "quote": "no action for divorce or legal separation shall be maintainable unless one of the parties to the marriage has been a bona fide resident of the District of Columbia for at least 6 months",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "DC Courts: Divorce",
+          "label_es": "DC Courts: Divorce",
+          "url": "https://www.dccourts.gov/superior-court/superior-court-divisions/family-court-operations-division/divorce"
+        },
+        {
+          "label_en": "Code of the District of Columbia § 16-902",
+          "label_es": "Code of the District of Columbia § 16-902",
+          "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-902"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "To get a divorce (dissolution of marriage) in Florida, one spouse must live in the state for 6 months before filing.",
+          "claim_es": "Para obtener el divorcio (disolución del matrimonio) en Florida, uno de los cónyuges debe vivir en el estado 6 meses antes de presentar.",
+          "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.021.html",
+          "source_name": "Florida Statutes § 61.021",
+          "quote": "one of the parties to the marriage must reside 6 months in the state before the filing of the petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Florida grants a divorce when the marriage is irretrievably broken.",
+          "claim_es": "Florida concede el divorcio cuando el matrimonio está irremediablemente roto.",
+          "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.052.html",
+          "source_name": "Florida Statutes § 61.052",
+          "quote": "If, at any time, the court finds that the marriage is irretrievably broken, the court shall enter a judgment of dissolution of the marriage.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A final divorce judgment cannot be entered until at least 20 days after the petition is filed, unless the court finds the delay would cause injustice.",
+          "claim_es": "No se puede dictar la sentencia final de divorcio hasta que pasen al menos 20 días desde la presentación, salvo que el tribunal considere que la espera causaría una injusticia.",
+          "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.19.html",
+          "source_name": "Florida Statutes § 61.19",
+          "quote": "No final judgment of dissolution of marriage may be entered until at least 20 days have elapsed from the date of filing the original petition for dissolution of marriage",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Florida Statutes § 61.021",
+          "label_es": "Florida Statutes § 61.021",
+          "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.021.html"
+        },
+        {
+          "label_en": "Florida Statutes § 61.052",
+          "label_es": "Florida Statutes § 61.052",
+          "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.052.html"
+        },
+        {
+          "label_en": "Florida Statutes § 61.19",
+          "label_es": "Florida Statutes § 61.19",
+          "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0061/Sections/0061.19.html"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "You file for divorce with the Clerk of the Superior Court in the county where you or your spouse have lived for at least 6 months.",
+          "claim_es": "Se presenta el divorcio ante el Secretario del Tribunal Superior del condado donde usted o su cónyuge han vivido al menos 6 meses.",
+          "source_url": "https://georgia.gov/file-divorce",
+          "source_name": "Georgia.gov: File for Divorce",
+          "quote": "You must file for divorce with the Clerk of the Superior Court in the county where you or your spouse have lived for at least 6 months.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You start by filing a complaint or petition for divorce that states the legal grounds and the issues you want decided.",
+          "claim_es": "Se empieza presentando una demanda o petición de divorcio que indique las causales legales y los temas que quiere que se decidan.",
+          "source_url": "https://georgia.gov/file-divorce",
+          "source_name": "Georgia.gov: File for Divorce",
+          "quote": "You’ll start by filing a complaint for divorce, or petition for divorce, with the legal grounds for your divorce and what issues you want the court to address.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In an uncontested divorce, both spouses agree on terms such as custody, division of assets or alimony.",
+          "claim_es": "En un divorcio de mutuo acuerdo, ambos cónyuges están de acuerdo en temas como la custodia, la división de bienes o la pensión.",
+          "source_url": "https://georgia.gov/file-divorce",
+          "source_name": "Georgia.gov: File for Divorce",
+          "quote": "In uncontested divorces, both parties agree to the terms of divorce, such as child custody, the division of assets, or alimony.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Georgia.gov: File for Divorce",
+          "label_es": "Georgia.gov: File for Divorce",
+          "url": "https://georgia.gov/file-divorce"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have lived in Illinois, or been stationed there in the military, for 90 days.",
+          "claim_es": "Uno de los cónyuges debe haber vivido en Illinois, o haber estado destinado allí en el ejército, 90 días.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
+          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
+          "quote": "the residence or military presence had been maintained for 90 days next preceding the commencement of the action",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Illinois grants divorce when irreconcilable differences have caused the irretrievable breakdown of the marriage.",
+          "claim_es": "Illinois concede el divorcio cuando las diferencias irreconciliables han causado la ruptura irremediable del matrimonio.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
+          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
+          "quote": "Irreconcilable differences have caused the irretrievable breakdown of the marriage",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Living separate and apart for at least 6 months before the judgment creates an irrebuttable presumption of irreconcilable differences.",
+          "claim_es": "Vivir separados al menos 6 meses antes de la sentencia crea una presunción absoluta de diferencias irreconciliables.",
+          "source_url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401",
+          "source_name": "Illinois Compiled Statutes, 750 ILCS 5/401",
+          "quote": "If the parties live separate and apart for a continuous period of not less than 6 months immediately preceding the entry of the judgment dissolving the marriage, there is an irrebuttable presumption that the requirement of irreconcilable differences has been met.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Illinois Compiled Statutes, 750 ILCS 5/401",
+          "label_es": "Illinois Compiled Statutes, 750 ILCS 5/401",
+          "url": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=075000050K401"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "If the respondent lives in Iowa and is personally served, Iowa has no residency requirement; otherwise the petitioner must have lived in Iowa for one year.",
+          "claim_es": "Si la parte demandada vive en Iowa y recibe la notificación en persona, no hay requisito de residencia; si no, quien presenta debe haber vivido en Iowa un año.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/divorce",
+          "source_name": "Iowa Judicial Branch: Divorce",
+          "quote": "Otherwise, the petitioner must have lived in Iowa for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Iowa has a ninety-day waiting period from service before the court may enter a final decree.",
+          "claim_es": "Iowa tiene un período de espera de noventa días desde la notificación antes de que el tribunal dicte la sentencia final.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/divorce",
+          "source_name": "Iowa Judicial Branch: Divorce",
+          "quote": "Iowa law requires a ninety-day waiting period, from the date the respondent is served dissolution of marriage papers, before the court may enter a final decree.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The petition is filed electronically, with a $285 filing fee.",
+          "claim_es": "La petición se presenta en forma electrónica, con una tarifa de $285.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/divorce",
+          "source_name": "Iowa Judicial Branch: Divorce",
+          "quote": "You will need to electronically file a Petition for Dissolution of Marriage and pay the $285 filing fee.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Iowa recognizes no-fault divorce.",
+          "claim_es": "Iowa reconoce el divorcio sin culpa.",
+          "source_url": "https://www.iowacourts.gov/for-the-public/representing-yourself/divorce",
+          "source_name": "Iowa Judicial Branch: Divorce",
+          "quote": "Iowa recognizes \"no fault divorce,\"",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Iowa Judicial Branch: Divorce",
+          "label_es": "Iowa Judicial Branch: Divorce",
+          "url": "https://www.iowacourts.gov/for-the-public/representing-yourself/divorce"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have lived in Kansas for 60 days before the divorce petition is filed.",
+          "claim_es": "Uno de los cónyuges debe haber vivido en Kansas 60 días antes de presentar la petición de divorcio.",
+          "source_url": "https://www.ksrevisor.org/statutes/chapters/ch23/023_027_0003.html",
+          "source_name": "Kansas Statutes § 23-2703",
+          "quote": "The petitioner or respondent in an action for divorce must have been an actual resident of the state for 60 days immediately preceding the filing of the petition.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Someone living or stationed at a U.S. military post in Kansas for 60 days may file in a county next to the post.",
+          "claim_es": "Quien vive o está destinado en una base militar de EE. UU. en Kansas por 60 días puede presentar en un condado vecino a la base.",
+          "source_url": "https://www.ksrevisor.org/statutes/chapters/ch23/023_027_0003.html",
+          "source_name": "Kansas Statutes § 23-2703",
+          "quote": "may file an action for divorce in any county adjacent to the post or reservation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A spouse may have a Kansas residence separate from the other spouse.",
+          "claim_es": "Un cónyuge puede tener una residencia en Kansas distinta de la del otro cónyuge.",
+          "source_url": "https://www.ksrevisor.org/statutes/chapters/ch23/023_027_0003.html",
+          "source_name": "Kansas Statutes § 23-2703",
+          "quote": "a spouse may have a residence in this state separate and apart from the residence of the other spouse.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Statutes § 23-2703",
+          "label_es": "Kansas Statutes § 23-2703",
+          "url": "https://www.ksrevisor.org/statutes/chapters/ch23/023_027_0003.html"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The filer can qualify by living in Maine in good faith for 6 months before filing.",
+          "claim_es": "Quien presenta puede cumplir viviendo de buena fe en Maine 6 meses antes de presentar.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec901.html",
+          "source_name": "Maine Revised Statutes, Title 19-A § 901",
+          "quote": "The plaintiff has resided in good faith in this State for 6 months prior to the commencement of the action;",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The filer can also qualify by being a Maine resident who married in Maine.",
+          "claim_es": "También puede cumplir siendo residente de Maine y habiéndose casado en Maine.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec901.html",
+          "source_name": "Maine Revised Statutes, Title 19-A § 901",
+          "quote": "The plaintiff is a resident of this State and the parties were married in this State;",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Or by being a Maine resident when the couple lived in Maine when the cause of divorce arose.",
+          "claim_es": "O siendo residente de Maine si la pareja vivía en Maine cuando surgió la causa del divorcio.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec901.html",
+          "source_name": "Maine Revised Statutes, Title 19-A § 901",
+          "quote": "The plaintiff is a resident of this State and the parties resided in this State when the cause of divorce accrued; or",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Revised Statutes, Title 19-A § 901",
+          "label_es": "Maine Revised Statutes, Title 19-A § 901",
+          "url": "https://legislature.maine.gov/statutes/19-A/title19-Asec901.html"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "If you and your spouse live separate lives for at least six months, you can file on the ground of a 6-month separation.",
+          "claim_es": "Si usted y su cónyuge viven vidas separadas por al menos seis meses, puede presentar por la causal de separación de 6 meses.",
+          "source_url": "https://www.mdcourts.gov/legalhelp/family/divorce",
+          "source_name": "Maryland Judiciary",
+          "quote": "If you and your spouse live separate lives for at least six months, you can file for divorce based on the ground (legal reason) of a",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The separation must be without interruption for at least six months before the complaint for absolute divorce is filed.",
+          "claim_es": "La separación debe ser sin interrupción durante al menos seis meses antes de presentar la demanda de divorcio absoluto.",
+          "source_url": "https://www.mdcourts.gov/legalhelp/family/divorce",
+          "source_name": "Maryland Judiciary",
+          "quote": "You and your spouse have lived separate and apart, without interruption, for at least six months before filing a complaint for absolute divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the ground for divorce happened outside Maryland, one spouse must have been a Maryland resident for at least six months when filing.",
+          "claim_es": "Si la causal del divorcio ocurrió fuera de Maryland, uno de los cónyuges debe haber sido residente de Maryland al menos seis meses al presentar.",
+          "source_url": "https://www.mdcourts.gov/legalhelp/family/divorce",
+          "source_name": "Maryland Judiciary",
+          "quote": "If the ground for divorce happened outside of Maryland, one of you must have been a Maryland resident for at least six months at the time of filing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maryland Judiciary",
+          "label_es": "Maryland Judiciary",
+          "url": "https://www.mdcourts.gov/legalhelp/family/divorce"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts' 1-year residence requirement means continuous residence in the state for 12 months right before filing.",
+          "claim_es": "El requisito de residencia de 1 año en Massachusetts significa vivir de forma continua en el estado durante los 12 meses previos a presentar.",
+          "source_url": "https://www.mass.gov/info-details/massachusetts-law-about-divorce",
+          "source_name": "Mass.gov (Commonwealth of Massachusetts)",
+          "quote": "The 1-year residence requirement to get a divorce in Massachusetts means \"an actual, continuous residence in the Commonwealth for twelve months immediately prior to filing for divorce.\"",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You can also file in Massachusetts if the reason the marriage ended happened there and you lived there as a couple.",
+          "claim_es": "También puede presentar en Massachusetts si la causa del fin del matrimonio ocurrió allí y vivieron allí como pareja.",
+          "source_url": "https://www.mass.gov/divorce",
+          "source_name": "Mass.gov (Commonwealth of Massachusetts)",
+          "quote": "You can file for divorce in Massachusetts if you have lived in the state for one year, or if the reason the marriage ended happened in Massachusetts and you have lived in Massachusetts as a couple.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You file where you and your spouse last lived together, if at least one of you still lives in that county.",
+          "claim_es": "Se presenta donde usted y su cónyuge vivieron juntos por última vez, si al menos uno de ustedes sigue viviendo en ese condado.",
+          "source_url": "https://www.mass.gov/how-to/get-a-child-support-order",
+          "source_name": "Mass.gov (Commonwealth of Massachusetts)",
+          "quote": "If you're married and seeking a divorce, you file where you last lived together with your spouse if at least one of you still lives in that county.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Divorce cases are filed at the Probate and Family Court.",
+          "claim_es": "Los casos de divorcio se presentan en el Tribunal de Sucesiones y Familia (Probate and Family Court).",
+          "source_url": "https://www.mass.gov/how-to/get-an-immediate-child-custody-or-parenting-time-order",
+          "source_name": "Mass.gov (Commonwealth of Massachusetts)",
+          "quote": "file for divorce at the Probate and Family Court in that county.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Mass.gov (Commonwealth of Massachusetts)",
+          "label_es": "Mass.gov (Commonwealth of Massachusetts)",
+          "url": "https://www.mass.gov/info-details/massachusetts-law-about-divorce"
+        },
+        {
+          "label_en": "Mass.gov (Commonwealth of Massachusetts)",
+          "label_es": "Mass.gov (Commonwealth of Massachusetts)",
+          "url": "https://www.mass.gov/divorce"
+        },
+        {
+          "label_en": "Mass.gov (Commonwealth of Massachusetts)",
+          "label_es": "Mass.gov (Commonwealth of Massachusetts)",
+          "url": "https://www.mass.gov/how-to/get-a-child-support-order"
+        },
+        {
+          "label_en": "Mass.gov (Commonwealth of Massachusetts)",
+          "label_es": "Mass.gov (Commonwealth of Massachusetts)",
+          "url": "https://www.mass.gov/how-to/get-an-immediate-child-custody-or-parenting-time-order"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have lived in Michigan for 180 days before filing for divorce.",
+          "claim_es": "Uno de los cónyuges debe haber vivido en Michigan 180 días antes de pedir el divorcio.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-552-9",
+          "source_name": "Michigan Compiled Laws § 552.9",
+          "quote": "has resided in this state for 180 days immediately preceding the filing of the complaint",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "One spouse must also have lived in the filing county for 10 days before filing, with some exceptions.",
+          "claim_es": "Uno de los cónyuges también debe haber vivido en el condado donde se presenta 10 días antes, con algunas excepciones.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-552-9",
+          "source_name": "Michigan Compiled Laws § 552.9",
+          "quote": "has resided in the county in which the complaint is filed for 10 days immediately preceding the filing of the complaint",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In certain cases set out in the law, a person may file in any Michigan county without meeting the 10-day rule.",
+          "claim_es": "En ciertos casos que fija la ley, una persona puede presentar en cualquier condado de Michigan sin cumplir la regla de 10 días.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-552-9",
+          "source_name": "Michigan Compiled Laws § 552.9",
+          "quote": "A person may file a complaint for divorce in any county in the state without meeting the 10-day requirement",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan Compiled Laws § 552.9",
+          "label_es": "Michigan Compiled Laws § 552.9",
+          "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-552-9"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have lived in Minnesota, or been stationed there in the armed services, for at least 180 days before filing.",
+          "claim_es": "Uno de los cónyuges debe haber vivido en Minnesota, o haber estado destinado allí en las fuerzas armadas, al menos 180 días antes de presentar.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.07",
+          "source_name": "Minnesota Statutes § 518.07",
+          "quote": "one of the parties has resided in this state, or has been a member of the armed services stationed in this state, for not less than 180 days immediately preceding the commencement of the proceeding",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Being domiciled in Minnesota for at least 180 days before filing also qualifies.",
+          "claim_es": "Tener domicilio en Minnesota al menos 180 días antes de presentar también cumple el requisito.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.07",
+          "source_name": "Minnesota Statutes § 518.07",
+          "quote": "one of the parties has been a domiciliary of this state for not less than 180 days immediately preceding commencement of the proceeding.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Minnesota divorce is granted when the court finds an irretrievable breakdown of the marriage.",
+          "claim_es": "En Minnesota se concede el divorcio cuando el tribunal determina que hay una ruptura irremediable del matrimonio.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.06",
+          "source_name": "Minnesota Statutes § 518.06",
+          "quote": "A dissolution of a marriage shall be granted by a county or district court when the court finds that there has been an irretrievable breakdown of the marriage relationship.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota Statutes § 518.07",
+          "label_es": "Minnesota Statutes § 518.07",
+          "url": "https://www.revisor.mn.gov/statutes/cite/518.07"
+        },
+        {
+          "label_en": "Minnesota Statutes § 518.06",
+          "label_es": "Minnesota Statutes § 518.06",
+          "url": "https://www.revisor.mn.gov/statutes/cite/518.06"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have lived in Missouri, or been stationed there in the armed services, for ninety days before filing.",
+          "claim_es": "Uno de los cónyuges debe haber vivido en Missouri, o haber estado destinado allí en las fuerzas armadas, noventa días antes de presentar.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.305",
+          "source_name": "Revised Statutes of Missouri § 452.305",
+          "quote": "has been a resident of this state, or is a member of the armed services who has been stationed in this state, for ninety days immediately preceding the commencement of the proceeding",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "At least thirty days must pass after the petition is filed before the divorce is granted.",
+          "claim_es": "Deben pasar al menos treinta días desde la presentación antes de que se conceda el divorcio.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.305",
+          "source_name": "Revised Statutes of Missouri § 452.305",
+          "quote": "thirty days have elapsed since the filing of the petition",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The court must find no reasonable likelihood that the marriage can be preserved.",
+          "claim_es": "El tribunal debe determinar que no hay una probabilidad razonable de salvar el matrimonio.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.305",
+          "source_name": "Revised Statutes of Missouri § 452.305",
+          "quote": "The court finds that there remains no reasonable likelihood that the marriage can be preserved and that therefore the marriage is irretrievably broken",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Revised Statutes of Missouri § 452.305",
+          "label_es": "Revised Statutes of Missouri § 452.305",
+          "url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.305"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have been domiciled or stationed in Montana for 90 days before filing.",
+          "claim_es": "Uno de los cónyuges debe haber tenido domicilio o estar destinado en Montana 90 días antes de presentar.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0010/section_0040/0400-0040-0010-0040.html",
+          "source_name": "Montana Code Annotated § 40-4-104",
+          "quote": "the domicile or military presence has been maintained for 90 days preceding the filing of the action",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The court must find the marriage irretrievably broken.",
+          "claim_es": "El tribunal debe determinar que el matrimonio está irremediablemente roto.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0010/section_0040/0400-0040-0010-0040.html",
+          "source_name": "Montana Code Annotated § 40-4-104",
+          "quote": "the court finds that the marriage is irretrievably broken",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Living separate and apart for more than 180 days before filing is one way to show that.",
+          "claim_es": "Vivir separados más de 180 días antes de presentar es una forma de demostrarlo.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0010/section_0040/0400-0040-0010-0040.html",
+          "source_name": "Montana Code Annotated § 40-4-104",
+          "quote": "that the parties have lived separate and apart for a period of more than 180 days preceding the commencement of this proceeding",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Code Annotated § 40-4-104",
+          "label_es": "Montana Code Annotated § 40-4-104",
+          "url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0010/section_0040/0400-0040-0010-0040.html"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "New Hampshire courts can hear a divorce when both spouses were domiciled in the state when the case started.",
+          "claim_es": "Los tribunales de New Hampshire pueden ver un divorcio cuando ambos cónyuges tenían domicilio en el estado al iniciar el caso.",
+          "source_url": "https://gencourt.state.nh.us/rsa/html/XLIII/458/458-5.htm",
+          "source_name": "New Hampshire RSA 458:5",
+          "quote": "Where both parties were domiciled in the state when the action was commenced.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "They can also hear it when the filer was domiciled in the state for one year before filing.",
+          "claim_es": "También pueden verlo cuando quien presenta tuvo domicilio en el estado durante un año antes de presentar.",
+          "source_url": "https://gencourt.state.nh.us/rsa/html/XLIII/458/458-5.htm",
+          "source_name": "New Hampshire RSA 458:5",
+          "quote": "Where the plaintiff was domiciled in the state for one year next preceding the time when the action was commenced.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New Hampshire grants divorce for irreconcilable differences, regardless of fault.",
+          "claim_es": "New Hampshire concede el divorcio por diferencias irreconciliables, sin importar la culpa.",
+          "source_url": "https://gencourt.state.nh.us/rsa/html/XLIII/458/458-7-a.htm",
+          "source_name": "New Hampshire RSA 458:7-a",
+          "quote": "A divorce from the bonds of matrimony shall be decreed, irrespective of the fault of either party, on the ground of irreconcilable differences which have caused the irremediable breakdown of the marriage.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire RSA 458:5",
+          "label_es": "New Hampshire RSA 458:5",
+          "url": "https://gencourt.state.nh.us/rsa/html/XLIII/458/458-5.htm"
+        },
+        {
+          "label_en": "New Hampshire RSA 458:7-a",
+          "label_es": "New Hampshire RSA 458:7-a",
+          "url": "https://gencourt.state.nh.us/rsa/html/XLIII/458/458-7-a.htm"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "Either spouse can file if one of them has resided in New Mexico for at least 6 months before filing and has a domicile there.",
+          "claim_es": "Cualquiera de los cónyuges puede presentar si uno de ellos ha residido en Nuevo México al menos 6 meses antes de presentar y tiene allí su domicilio.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/divorce/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "has “resided” in New Mexico for at least 6 months before the divorce petition is filed and has what is known as a “domicile” in New Mexico.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A New Mexico divorce starts with a petition in the district court of the county where either spouse lives.",
+          "claim_es": "Un divorcio en Nuevo México empieza con una petición en el tribunal de distrito del condado donde vive cualquiera de los cónyuges.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/divorce/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "To begin a divorce, you must first file a petition and other papers in the district court in the county where you live or where your spouse lives.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If your spouse lives out of state, you can still file in New Mexico if one of you has lived there for the last six months.",
+          "claim_es": "Si su cónyuge vive en otro estado, aún puede presentar en Nuevo México si uno de ustedes vivió allí los últimos seis meses.",
+          "source_url": "https://selfrepresentation.nmcourts.gov/divorce/",
+          "source_name": "New Mexico Courts Self-Representation",
+          "quote": "To get a divorce in New Mexico when your spouse lives out of state, you can file a petition in New Mexico where either you or your spouse lives, as long as one of you has lived in New Mexico for the last six months.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Courts Self-Representation",
+          "label_es": "New Mexico Courts Self-Representation",
+          "url": "https://selfrepresentation.nmcourts.gov/divorce/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "If you married in New York, either spouse must be a resident when filing and for one continuous year before.",
+          "claim_es": "Si se casaron en Nueva York, uno de los cónyuges debe ser residente al presentar y durante un año continuo antes.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/230",
+          "source_name": "New York Domestic Relations Law § 230",
+          "quote": "The parties were married in the state and either party is a resident thereof when the action is commenced and has been a resident for a continuous period of one year immediately preceding",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the cause of the divorce happened in New York and both spouses live there when filing, there is no minimum time.",
+          "claim_es": "Si la causa del divorcio ocurrió en Nueva York y ambos cónyuges viven allí al presentar, no hay tiempo mínimo.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/230",
+          "source_name": "New York Domestic Relations Law § 230",
+          "quote": "The cause occurred in the state and both parties are residents thereof at the time of the commencement of the action",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New York allows divorce when the relationship has broken down irretrievably for at least six months, stated under oath by one spouse.",
+          "claim_es": "Nueva York permite el divorcio cuando la relación se ha roto de forma irremediable durante al menos seis meses, declarado bajo juramento por uno de los cónyuges.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/170",
+          "source_name": "New York Domestic Relations Law § 170",
+          "quote": "The relationship between husband and wife has broken down irretrievably for a period of at least six months, provided that one party has so stated under oath.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York Domestic Relations Law § 230",
+          "label_es": "New York Domestic Relations Law § 230",
+          "url": "https://www.nysenate.gov/legislation/laws/DOM/230"
+        },
+        {
+          "label_en": "New York Domestic Relations Law § 170",
+          "label_es": "New York Domestic Relations Law § 170",
+          "url": "https://www.nysenate.gov/legislation/laws/DOM/170"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "To file for divorce in North Carolina, you or your spouse must live in the state now and for at least six months before filing.",
+          "claim_es": "Para pedir el divorcio en Carolina del Norte, usted o su cónyuge deben vivir en el estado ahora y haber vivido allí al menos seis meses antes de presentar.",
+          "source_url": "https://www.nccourts.gov/help-topics/divorce-and-marriage/separation-and-divorce",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "To file for a divorce in North Carolina, either you or your spouse must currently live in North Carolina and must have lived in the state for at least six months before the divorce case is filed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Carolina only allows no-fault divorce, which requires at least one year of separation.",
+          "claim_es": "Carolina del Norte solo permite el divorcio sin culpa, que requiere al menos un año de separación.",
+          "source_url": "https://www.nccourts.gov/help-topics/divorce-and-marriage/separation-and-divorce",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "North Carolina only allows for no-fault divorce, which requires at least one year of separation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You can get a simple absolute divorce in North Carolina wherever your spouse lives, if you lived in the state for the six months before filing.",
+          "claim_es": "Puede obtener un divorcio absoluto simple en Carolina del Norte sin importar dónde viva su cónyuge, si usted vivió en el estado los seis meses previos a presentar.",
+          "source_url": "https://www.nccourts.gov/help-topics/divorce-and-marriage/separation-and-divorce",
+          "source_name": "North Carolina Judicial Branch",
+          "quote": "absolute divorce in North Carolina no matter where your spouse lives, as long as you live in North Carolina at the time you file for divorce and have lived in North Carolina for the six months immediately before filing.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Carolina Judicial Branch",
+          "label_es": "North Carolina Judicial Branch",
+          "url": "https://www.nccourts.gov/help-topics/divorce-and-marriage/separation-and-divorce"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The person starting a North Dakota divorce must be a resident for at least 6 months before starting it.",
+          "claim_es": "La persona que inicia un divorcio en Dakota del Norte debe ser residente al menos 6 meses antes de iniciarlo.",
+          "source_url": "https://www.ndcourts.gov/legal-self-help/divorce",
+          "source_name": "North Dakota Courts Legal Self Help Center",
+          "quote": "The Plaintiff or Petitioner be a resident of North Dakota at least 6 months before starting the divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Alternatively, the person must be a resident for 6 months immediately before the District Court grants the divorce judgment.",
+          "claim_es": "Otra opción es ser residente durante los 6 meses inmediatamente anteriores a que el Tribunal de Distrito dicte la sentencia de divorcio.",
+          "source_url": "https://www.ndcourts.gov/legal-self-help/divorce",
+          "source_name": "North Dakota Courts Legal Self Help Center",
+          "quote": "Or, the Plaintiff or Petitioner be a resident of North Dakota for 6 months immediately before the District Court grants the judgment of divorce.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota is a no-fault divorce state; the ground is irreconcilable differences.",
+          "claim_es": "Dakota del Norte es un estado de divorcio sin culpa; la causal es diferencias irreconciliables.",
+          "source_url": "https://www.ndcourts.gov/legal-self-help/divorce",
+          "source_name": "North Dakota Courts Legal Self Help Center",
+          "quote": "The grounds (reasons) for a no fault divorce is “irreconcilable differences.”",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Courts Legal Self Help Center",
+          "label_es": "North Dakota Courts Legal Self Help Center",
+          "url": "https://www.ndcourts.gov/legal-self-help/divorce"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "The spouse filing for divorce in Ohio must have been a state resident for at least six months right before filing.",
+          "claim_es": "El cónyuge que pide el divorcio en Ohio debe haber sido residente del estado al menos seis meses justo antes de presentar.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3105.03",
+          "source_name": "Ohio Revised Code § 3105.03",
+          "quote": "The plaintiff in actions for divorce and annulment shall have been a resident of the state at least six months immediately before filing the complaint.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Living separate and apart without interruption for one year is a ground for divorce in Ohio.",
+          "claim_es": "Vivir separados sin interrupción durante un año es una causal de divorcio en Ohio.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3105.01",
+          "source_name": "Ohio Revised Code § 3105.01",
+          "quote": "when husband and wife have, without interruption for one year, lived separate and apart without cohabitation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Incompatibility is a ground for divorce unless either spouse denies it.",
+          "claim_es": "La incompatibilidad es una causal de divorcio, salvo que uno de los cónyuges la niegue.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3105.01",
+          "source_name": "Ohio Revised Code § 3105.01",
+          "quote": "Incompatibility, unless denied by either party.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Ohio Revised Code § 3105.03",
+          "label_es": "Ohio Revised Code § 3105.03",
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-3105.03"
+        },
+        {
+          "label_en": "Ohio Revised Code § 3105.01",
+          "label_es": "Ohio Revised Code § 3105.01",
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-3105.01"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The filer must have been domiciled in and lived in Rhode Island for one year before filing for divorce.",
+          "claim_es": "Quien presenta debe haber tenido domicilio y vivido en Rhode Island un año antes de pedir el divorcio.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-12.htm",
+          "source_name": "Rhode Island General Laws § 15-5-12",
+          "quote": "No complaint for divorce from the bond of marriage shall be granted unless the plaintiff has been a domiciled inhabitant of this state and has resided in this state for a period of one year next before the filing of the complaint",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Rhode Island allows divorce on the ground of irreconcilable differences.",
+          "claim_es": "Rhode Island permite el divorcio por diferencias irreconciliables.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-3.1.htm",
+          "source_name": "Rhode Island General Laws § 15-5-3.1",
+          "quote": "Divorce on grounds of irreconcilable differences.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the other spouse has lived in Rhode Island for one year and is served there, the filer's residency requirement is treated as met.",
+          "claim_es": "Si el otro cónyuge ha vivido en Rhode Island un año y es notificado allí, se considera cumplido el requisito de residencia de quien presenta.",
+          "source_url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-12.htm",
+          "source_name": "Rhode Island General Laws § 15-5-12",
+          "quote": "is actually served with process, the requirement of this subsection as to domicile and residence on the part of the plaintiff is deemed satisfied and fulfilled.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Rhode Island General Laws § 15-5-12",
+          "label_es": "Rhode Island General Laws § 15-5-12",
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-12.htm"
+        },
+        {
+          "label_en": "Rhode Island General Laws § 15-5-3.1",
+          "label_es": "Rhode Island General Laws § 15-5-3.1",
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE15/15-5/15-5-3.1.htm"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "Generally, you or your spouse must have lived in a single Utah county for 3 months or more right before filing.",
+          "claim_es": "Por lo general, usted o su cónyuge deben haber vivido en un mismo condado de Utah 3 meses o más justo antes de presentar.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "Generally, to file for divorce in Utah, you or your spouse must have lived in a single Utah county for 3 months or more right before filing.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The in-person Divorce Orientation course fee is discounted $15 if you attend within 30 days of filing the petition.",
+          "claim_es": "La tarifa del curso presencial de Orientación sobre el Divorcio tiene un descuento de $15 si asiste dentro de los 30 días de presentar la petición.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/dived.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "The fee for the in-person Divorce Orientation course will be discounted $15 for a petitioner who attends an in-person class within 30 days of filing the petition",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If you file for divorce within one year of filing for temporary separation, the temporary separation fee is credited toward the divorce filing fee.",
+          "claim_es": "Si presenta el divorcio dentro de un año de haber pedido la separación temporal, esa tarifa se acredita a la tarifa de divorcio.",
+          "source_url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/temporary-separation.html",
+          "source_name": "Utah State Courts Self-Help",
+          "quote": "If either party files a petition for divorce within one year after the date of filing the petition for temporary separation, the amount of the temporary separation filing fee is credited towards the divorce filing fee.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah State Courts Self-Help",
+          "label_es": "Utah State Courts Self-Help",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce.html"
+        },
+        {
+          "label_en": "Utah State Courts Self-Help",
+          "label_es": "Utah State Courts Self-Help",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/family/dived.html"
+        },
+        {
+          "label_en": "Utah State Courts Self-Help",
+          "label_es": "Utah State Courts Self-Help",
+          "url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/temporary-separation.html"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "You can file for divorce in Vermont if either spouse has lived there for six months or more.",
+          "claim_es": "Puede pedir el divorcio en Vermont si alguno de los cónyuges ha vivido allí seis meses o más.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00592",
+          "source_name": "Vermont Statutes, 15 V.S.A. § 592",
+          "quote": "A complaint for divorce or annulment of civil marriage may be brought if either party to the marriage has resided within the State for a period of six months or more",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A divorce is not granted unless one spouse has lived in Vermont for the year before the final hearing.",
+          "claim_es": "No se concede el divorcio a menos que uno de los cónyuges haya vivido en Vermont el año previo a la audiencia final.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00592",
+          "source_name": "Vermont Statutes, 15 V.S.A. § 592",
+          "quote": "has resided in the State one year next preceding the date of final hearing.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Temporary absence for illness, work out of state or military service does not break these residency periods.",
+          "claim_es": "Una ausencia temporal por enfermedad, trabajo fuera del estado o servicio militar no interrumpe estos períodos de residencia.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00592",
+          "source_name": "Vermont Statutes, 15 V.S.A. § 592",
+          "quote": "Temporary absence from the State because of illness, employment without the State, service as a member of the U.S. Armed Forces, or other legitimate and bona fide cause shall not affect the six months’ period or the one-year period",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Statutes, 15 V.S.A. § 592",
+          "label_es": "Vermont Statutes, 15 V.S.A. § 592",
+          "url": "https://legislature.vermont.gov/statutes/section/15/011/00592"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "One spouse must have been a bona fide resident and domiciliary of Virginia for at least six months before filing.",
+          "claim_es": "Uno de los cónyuges debe haber sido residente y domiciliado de buena fe en Virginia al menos seis meses antes de presentar.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title20/chapter6/section20-97/",
+          "source_name": "Code of Virginia § 20-97",
+          "quote": "had been for at least six months preceding the filing of the suit an actual bona fide resident and domiciliary of the Commonwealth",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Living separate and apart without cohabitation for one year is a ground for divorce in Virginia.",
+          "claim_es": "Vivir separados sin convivencia durante un año es una causal de divorcio en Virginia.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title20/chapter6/section20-91/",
+          "source_name": "Code of Virginia § 20-91",
+          "quote": "On the application of either party if and when they have lived separate and apart without any cohabitation and without interruption for one year.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "With a separation agreement and no minor children, a shorter separation period can apply.",
+          "claim_es": "Con un acuerdo de separación y sin hijos menores, puede aplicarse un período de separación más corto.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title20/chapter6/section20-91/",
+          "source_name": "Code of Virginia § 20-91",
+          "quote": "In any case where the parties have entered into a separation agreement and there are no minor children",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Code of Virginia § 20-97",
+          "label_es": "Code of Virginia § 20-97",
+          "url": "https://law.lis.virginia.gov/vacode/title20/chapter6/section20-97/"
+        },
+        {
+          "label_en": "Code of Virginia § 20-91",
+          "label_es": "Code of Virginia § 20-91",
+          "url": "https://law.lis.virginia.gov/vacode/title20/chapter6/section20-91/"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "A Washington divorce can be granted once ninety days have passed since the petition was filed and the other spouse was served.",
+          "claim_es": "En Washington se puede conceder el divorcio cuando han pasado noventa días desde la presentación y la notificación al otro cónyuge.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=26.09.030",
+          "source_name": "Revised Code of Washington § 26.09.030",
+          "quote": "ninety days have elapsed since the petition was filed and from the date when service of summons was made upon the respondent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the other spouse joins the petition or does not deny the marriage is irretrievably broken, the court enters the decree.",
+          "claim_es": "Si el otro cónyuge se une a la petición o no niega que el matrimonio está irremediablemente roto, el tribunal dicta la sentencia.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=26.09.030",
+          "source_name": "Revised Code of Washington § 26.09.030",
+          "quote": "If the other party joins in the petition or does not deny that the marriage or domestic partnership is irretrievably broken, the court shall enter a decree of dissolution.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the other spouse denies it, the court considers all relevant factors, including the prospects for reconciliation.",
+          "claim_es": "Si el otro cónyuge lo niega, el tribunal considera todos los factores pertinentes, incluida la posibilidad de reconciliación.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=26.09.030",
+          "source_name": "Revised Code of Washington § 26.09.030",
+          "quote": "the court shall consider all relevant factors, including the circumstances that gave rise to the filing of the petition and the prospects for reconciliation",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Revised Code of Washington § 26.09.030",
+          "label_es": "Revised Code of Washington § 26.09.030",
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=26.09.030"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "At least one spouse must have lived in Wisconsin for at least 6 months before filing for divorce.",
+          "claim_es": "Al menos uno de los cónyuges debe haber vivido en Wisconsin al menos 6 meses antes de pedir el divorcio.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/iv/301",
+          "source_name": "Wisconsin Statutes § 767.301",
+          "quote": "No action for divorce under s. 767.001 (1) (c) may be brought unless at least one of the parties has been a bona fide resident of this state for not less than 6 months next preceding the commencement of the action.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "At least one spouse must have lived in the filing county for at least 30 days.",
+          "claim_es": "Al menos uno de los cónyuges debe haber vivido en el condado donde se presenta al menos 30 días.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/iv/301",
+          "source_name": "Wisconsin Statutes § 767.301",
+          "quote": "at least one of the parties has been a bona fide resident of the county in which the action is brought for not less than 30 days next preceding the commencement of the action.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the court sees a reasonable chance of reconciliation, it can continue the case for 30 to 60 days and suggest counseling.",
+          "claim_es": "Si el tribunal ve una posibilidad razonable de reconciliación, puede aplazar el caso de 30 a 60 días y sugerir consejería.",
+          "source_url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/iv/335",
+          "source_name": "Wisconsin Statutes § 767.335",
+          "quote": "it shall continue the matter for further hearing not fewer than 30 nor more than 60 days later",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin Statutes § 767.301",
+          "label_es": "Wisconsin Statutes § 767.301",
+          "url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/iv/301"
+        },
+        {
+          "label_en": "Wisconsin Statutes § 767.335",
+          "label_es": "Wisconsin Statutes § 767.335",
+          "url": "https://docs.legis.wisconsin.gov/statutes/statutes/767/iv/335"
+        }
+      ]
+    }
+  },
+  "skips": {
+    "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "ID": "fewer than 3 quote-verified facts from official sources (1 verified)",
+    "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NE": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
+    "WV": "fewer than 3 quote-verified facts from official sources (2 verified)",
+    "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
+  }
+}
