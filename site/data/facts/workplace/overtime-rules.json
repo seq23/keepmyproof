@@ -139,8 +139,8 @@
     "CA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state table says that in California, work over 8 hours in a workday, over 40 hours in a workweek, or in the first 8 hours on the seventh day of work in a workweek is paid at one and one-half times the regular rate.",
-          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que en California el trabajo de más de 8 horas en un día, más de 40 horas en una semana, o las primeras 8 horas del séptimo día de trabajo en una semana se paga a una vez y media la tarifa regular.",
+          "claim_en": "The U.S. Department of Labor's state table says that in California, work over eight hours in a workday, over 40 hours in a workweek, or in the first eight hours on the seventh day of work in a workweek is paid at one and one-half times the regular rate.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que en California el trabajo de más de ocho horas en un día, más de 40 horas en una semana, o las primeras ocho horas del séptimo día de trabajo en una semana se paga a una vez y media la tarifa regular.",
           "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
           "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
           "quote": "Any work in excess of eight hours in one workday, in excess of 40 hours in one workweek, or in the first eight hours worked on the seventh day of work in any one workweek shall be at the rate of one and one-half times the regular rate of pay.",
@@ -550,8 +550,8 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table says Kentucky's 7th-day overtime law requires time and one-half for hours worked on the seventh day when a covered employee works all seven days of a workweek.",
-          "claim_es": "La misma tabla indica que la ley de Kentucky sobre el 7.º día exige pagar una vez y media por las horas del séptimo día cuando un empleado cubierto trabaja los siete días de la semana laboral.",
+          "claim_en": "The same table says Kentucky's seventh-day overtime law requires time and one-half for hours worked on the seventh day when a covered employee works all seven days of a workweek.",
+          "claim_es": "La misma tabla indica que la ley de Kentucky sobre el séptimo día exige pagar una vez y media por las horas del séptimo día cuando un empleado cubierto trabaja los siete días de la semana laboral.",
           "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
           "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
           "quote": "requires employers who permit covered employees to work seven days in any one workweek to pay the employee at a rate of time and one-half for hours worked on the seventh day",

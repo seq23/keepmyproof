@@ -17,8 +17,8 @@
     "CA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for California, a 30-minute meal period when work is more than 5 hours a day (with limited exceptions).",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para California, un período de comida de 30 minutos cuando se trabaja más de 5 horas al día (con excepciones limitadas).",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for California, a half-hour meal period when work is more than 5 hours a day (with limited exceptions).",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para California, un período de comida de media hora cuando se trabaja más de 5 horas al día (con excepciones limitadas).",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, if work is for more than 5 hours per day",
@@ -62,8 +62,8 @@
     "CO": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Colorado, a 30-minute meal period when a shift exceeds 5 consecutive hours.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Colorado, un período de comida de 30 minutos cuando el turno supera 5 horas consecutivas.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Colorado, a half-hour meal period when a shift exceeds 5 consecutive hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Colorado, un período de comida de media hora cuando el turno supera 5 horas consecutivas.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour if work shift exceeds 5 consecutive hours.",
@@ -107,8 +107,8 @@
     "CT": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Connecticut, a 30-minute meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Connecticut, un período de comida de 30 minutos, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Connecticut, a half-hour meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Connecticut, un período de comida de media hora, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour at some time after first 2 hours and before last 2 hours for employees who work 7½ consecutive hours or more.",
@@ -152,8 +152,8 @@
     "DE": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Delaware, a 30-minute meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Delaware, un período de comida de 30 minutos, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Delaware, a half-hour meal period, after the first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Delaware, un período de comida de media hora, después de las 2 primeras horas y antes de las 2 últimas, para quienes trabajan 7½ horas consecutivas o más.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, at some time, after first 2 hours and before the last 2 hours, for employees who work 7½ consecutive hours or more.",
@@ -250,8 +250,8 @@
     "KY": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Kentucky, a reasonable off-duty meal period, ordinarily 30 minutes, between the 3rd and 5th hour of work.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Kentucky, un período razonable libre de deberes para comer, normalmente de 30 minutos, entre la 3.ª y la 5.ª hora de trabajo.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Kentucky, a reasonable off-duty meal period, ordinarily half an hour, between the 3rd and 5th hour of work.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Kentucky, un período razonable libre de deberes para comer, normalmente de media hora, entre la 3.ª y la 5.ª hora de trabajo.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "Reasonable off-duty period, ordinarily ½ hour but shorter period permitted under special conditions, between 3rd and 5th hour of work.",
@@ -475,8 +475,8 @@
     "NE": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nebraska, a 30-minute lunch period, off premises, in each 8-hour shift (assembly plants, workshops and mechanical establishments).",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nebraska, un período de almuerzo de 30 minutos, fuera del lugar de trabajo, en cada turno de 8 horas (en plantas de ensamblaje, talleres y establecimientos mecánicos).",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nebraska, a half-hour lunch period, off premises, in each 8-hour shift (assembly plants, workshops and mechanical establishments).",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nebraska, un período de almuerzo de media hora, fuera del lugar de trabajo, en cada turno de 8 horas (en plantas de ensamblaje, talleres y establecimientos mecánicos).",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, off premises, for lunch in each 8-hour shift.",
@@ -520,8 +520,8 @@
     "NV": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nevada, a 30-minute meal period for 8 continuous hours of work.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nevada, un período de comida de 30 minutos por 8 horas continuas de trabajo.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Nevada, a half-hour meal period for 8 continuous hours of work.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nevada, un período de comida de media hora por 8 horas continuas de trabajo.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, if work is for 8 continuous hours.",
@@ -565,8 +565,8 @@
     "NH": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for New Hampshire, a 30-minute meal period after 5 consecutive hours, unless the employee can eat while working and the employer allows it.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nuevo Hampshire, un período de comida de 30 minutos después de 5 horas consecutivas, a menos que el empleado pueda comer mientras trabaja y el empleador lo permita.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for New Hampshire, a half-hour meal period after 5 consecutive hours, unless the employee can eat while working and the employer allows it.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nuevo Hampshire, un período de comida de media hora después de 5 horas consecutivas, a menos que el empleado pueda comer mientras trabaja y el empleador lo permita.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, after 5 consecutive hours, unless feasible for employee to eat while working and is permitted to do so by employer.",
@@ -611,7 +611,7 @@
       "facts": [
         {
           "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for New York, a 30-minute noonday meal period for shifts of more than 6 hours that extend over the noon meal period.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nueva York, un período de comida de 30 minutos al mediodía para turnos de más de 6 horas que abarcan la hora del almuerzo.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Nueva York, un período de comida de media hora al mediodía para turnos de más de 6 horas que abarcan la hora del almuerzo.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "30 minute noonday period for employees who work shifts of more than 6 hours that extend over the noon day meal period.",
@@ -655,8 +655,8 @@
     "ND": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for North Dakota, a 30-minute meal period, if the employee wants it, on each shift over 5 hours.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Dakota del Norte, un período de comida de 30 minutos, si el empleado lo desea, en cada turno de más de 5 horas.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for North Dakota, a half-hour meal period, if the employee wants it, on each shift over 5 hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Dakota del Norte, un período de comida de media hora, si el empleado lo desea, en cada turno de más de 5 horas.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, if desired, on each shift exceeding 5 hours.",
@@ -700,8 +700,8 @@
     "OR": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Oregon, a 30-minute meal period, relieved of all duty, for each work period of 6 to 8 hours.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Oregón, un período de comida de 30 minutos, libre de todo deber, por cada período de trabajo de 6 a 8 horas.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Oregon, a half-hour meal period, relieved of all duty, for each work period of 6 to 8 hours.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Oregón, un período de comida de media hora, libre de todo deber, por cada período de trabajo de 6 a 8 horas.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, with relief from all duty, for each work period of 6 to 8 hours",
@@ -745,8 +745,8 @@
     "RI": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Rhode Island, a 20-minute mealtime within a 6-hour shift and a 30-minute mealtime within an 8-hour shift.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Rhode Island, 20 minutos para comer en un turno de 6 horas y 30 minutos en un turno de 8 horas.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Rhode Island, a 20-minute mealtime within a six-hour shift and a 30-minute mealtime within an eight-hour shift.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Rhode Island, 20 minutos para comer en un turno de seis horas y 30 minutos en un turno de ocho horas.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "All employees are entitled to a 20 minute mealtime within a six hour work shift, and a 30 minute mealtime within an eight hour work shift.",
@@ -880,8 +880,8 @@
     "WA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Washington, a 30-minute meal period when the work period is more than 5 consecutive hours, given between 2 and 5 hours after the shift starts.",
-          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Washington, un período de comida de 30 minutos cuando se trabajan más de 5 horas consecutivas, entre 2 y 5 horas después del inicio del turno.",
+          "claim_en": "The U.S. Department of Labor's table of state meal-period laws lists, for Washington, a half-hour meal period when the work period is more than 5 consecutive hours, given between 2 and 5 hours after the shift starts.",
+          "claim_es": "La tabla de leyes estatales sobre períodos de comida del Departamento de Trabajo de EE. UU. indica, para Washington, un período de comida de media hora cuando se trabajan más de 5 horas consecutivas, entre 2 y 5 horas después del inicio del turno.",
           "source_url": "https://www.dol.gov/agencies/whd/state/meal-breaks",
           "source_name": "U.S. Department of Labor, Minimum Length of Meal Period Required Under State Law",
           "quote": "½ hour, if work period is more than 5 consecutive hours, to be given not less than 2 hours nor more than 5 hours from beginning of shift.",
