@@ -5,6 +5,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { resolveMx } from 'node:dns/promises';
 import { SITE } from '../site/config.mjs';
+import { reportToOpenLoops } from './lib/open-loops.mjs';
 
 // Spec "Release gate every version": each must be recorded true on a real device for this version.
 export const DEVICE_CHECKS = [
@@ -17,6 +18,19 @@ export const LIST_LIFETIME_USD = 39.99;
 export const LEGAL_URLS = ['https://keepmyproof.com/terms', 'https://keepmyproof.com/privacy'];
 export const SUPPORT_DOMAIN = 'keepmyproof.com';
 const DAY = 86_400_000;
+
+// Every stop this gate can raise, and its plain words on Boss OS's Open Loops list (boss-os docs/open-loops.md).
+export const STOP_WORDS = {
+  REVENUECAT_KEY_MISSING: { title: 'KeepMyProof: store keys and Plus products in RevenueCat', next_step: 'Set the App Store and Play keys and the Plus products in RevenueCat, then the store build can sell Plus.' },
+  DEVICE_RELEASE_GATE_PENDING: { title: 'KeepMyProof: the real-phone test', next_step: 'Run every release check on a real phone for this version and record it.' },
+  PRICE_RECHECK_PENDING: { title: "KeepMyProof: recheck the other app's lifetime price", next_step: "Recheck the other vault app's App Store lifetime price in launch week." },
+  PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
+  LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
+  SUPPORT_ADDRESS_NOT_ON_DOMAIN: { title: 'KeepMyProof: support mailbox on keepmyproof.com', next_step: 'Set up free email forwarding on keepmyproof.com and point the support address at it.' },
+};
+export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof: live in both stores, selling' };
+// The store keys are EAS secrets, so a run outside an EAS build cannot see them: it neither raises nor clears that stop.
+export const knownHere = (eas) => Object.keys(STOP_WORDS).filter(c => eas || c !== 'REVENUECAT_KEY_MISSING');
 
 /** Every stop that still applies, in order. `[]` = ready to build for the stores. */
 export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now() }) {
@@ -44,6 +58,7 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
 
 async function main() {
   const production = process.env.EAS_BUILD_PROFILE === 'production';
+  const report = process.argv.includes('--report');
   if (process.argv.includes('--if-production') && !production) {
     console.log(`release gate: not a store build (${process.env.EAS_BUILD_PROFILE ?? 'local'}); stops apply to production only.`);
     return;
@@ -55,7 +70,11 @@ async function main() {
   const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
   const found = await stops({ env: process.env, version, readJson, probe, supportEmail: SITE.supportEmail, mx });
   for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
-  if (found.length) { process.exitCode = 2; return; }
+  // Each stop is a row on Open Loops, closed by itself the day it clears (the daily report and every store build).
+  const known = knownHere(Boolean(process.env.EAS_BUILD));
+  await reportToOpenLoops({ ...OPEN_LOOPS, known, stops: found.filter(s => known.includes(s.code)), words: STOP_WORDS });
+  // --report (the daily workflow): the stops are the news, not a failure.
+  if (found.length) { if (!report) process.exitCode = 2; return; }
   console.log(`release gate: ${version} is clear for a store build.`);
 }
-if (process.argv[1] === fileURLToPath(import.meta.url)) await main();
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((e) => { console.error(e?.message ?? e); process.exitCode = 1; });

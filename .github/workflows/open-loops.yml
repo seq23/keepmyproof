@@ -1,0 +1,30 @@
+name: Release gate → Open Loops
+# Each named stop of the store release gate is a row on Boss OS's Open Loops list, closed by itself the
+# day it clears (boss-os docs/open-loops.md). Daily and on every push to main; never fails on a stop.
+on:
+  schedule:
+    - cron: '17 10 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: open-loops
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Report the gate's stops
+        env:
+          BOSS_OPEN_LOOPS_TOKEN: ${{ secrets.BOSS_OPEN_LOOPS_TOKEN }}
+        run: |
+          if [ -z "$BOSS_OPEN_LOOPS_TOKEN" ]; then echo "NAMED STOP [OPEN_LOOPS_TOKEN_MISSING] set the BOSS_OPEN_LOOPS_TOKEN secret from the Boss OS vault"; exit 1; fi
+          node scripts/release-gate.mjs --report | tee gate.log
+          grep -q "open loops: .* reported, 0 failed" gate.log || { echo "NAMED STOP [OPEN_LOOPS_NOT_REPORTED] the intake refused or was unreachable"; exit 1; }
