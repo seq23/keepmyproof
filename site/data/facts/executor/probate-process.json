@@ -231,11 +231,213 @@
         }
       ],
       "official_links": []
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "In Arizona, probate is generally opened in the county where the person lived (was domiciled) at death.",
+          "claim_es": "En Arizona, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://www.azleg.gov/ars/14/03201.htm",
+          "source_name": "Arizona Revised Statutes § 14-3201",
+          "quote": "In the county where the decedent had his domicile at the time of his death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Arizona, probate can be opened in any Arizona county where they had property.",
+          "claim_es": "Si la persona no vivía en Arizona, la sucesión se puede abrir en cualquier condado de Arizona donde tenía bienes.",
+          "source_url": "https://www.azleg.gov/ars/14/03201.htm",
+          "source_name": "Arizona Revised Statutes § 14-3201",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of his death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Arizona law sets an ultimate time limit for starting probate and appointment proceedings.",
+          "claim_es": "La ley de Arizona fija un plazo máximo para iniciar procesos sucesorios y de nombramiento.",
+          "source_url": "https://www.azleg.gov/ars/14/03108.htm",
+          "source_name": "Arizona Revised Statutes § 14-3108",
+          "quote": "Probate, testacy and appointment proceedings; ultimate time limit",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "In Maine, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Maine, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-201",
+          "quote": "In the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Maine, probate can be opened in any Maine county where they had property.",
+          "claim_es": "Si la persona no vivía en Maine, la sucesión se puede abrir en cualquier condado de Maine donde tenía bienes.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-201.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-201",
+          "quote": "If the decedent was not domiciled in this State, in any county where property of the decedent was located at the time of the decedent's death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, most probate and appointment proceedings may not be started more than 3 years after the death, with some exceptions.",
+          "claim_es": "En Maine, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de 3 años después de la muerte, con algunas excepciones.",
+          "source_url": "https://legislature.maine.gov/statutes/18-C/title18-Csec3-108.html",
+          "source_name": "Maine Revised Statutes, Title 18-C §3-108",
+          "quote": "may not be commenced more than 3 years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "In Minnesota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Minnesota, la sucesión normalmente se abre en el condado del domicilio de la persona al morir.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-201",
+          "source_name": "Minnesota Statutes § 524.3-201",
+          "quote": "in the county of the decedent's domicile at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Minnesota, probate can be opened in any Minnesota county where they had property.",
+          "claim_es": "Si la persona no vivía en Minnesota, la sucesión se puede abrir en cualquier condado de Minnesota donde tenía bienes.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-201",
+          "source_name": "Minnesota Statutes § 524.3-201",
+          "quote": "if the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Minnesota, probate for an absent or missing person may be brought within three years after their death is established.",
+          "claim_es": "En Minnesota, la sucesión de una persona ausente o desaparecida se puede iniciar dentro de tres años después de establecerse su muerte.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/524.3-108",
+          "source_name": "Minnesota Statutes § 524.3-108",
+          "quote": "at any time within three years after the death of the absentee",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "In South Dakota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Dakota del Sur, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-201.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-201",
+          "quote": "In the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in South Dakota, probate can be opened in any South Dakota county where they had property.",
+          "claim_es": "Si la persona no vivía en Dakota del Sur, la sucesión se puede abrir en cualquier condado de Dakota del Sur donde tenía bienes.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-201.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-201",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In South Dakota, most probate and appointment proceedings cannot be started more than three years after the death, with some exceptions.",
+          "claim_es": "En Dakota del Sur, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de tres años después de la muerte, con algunas excepciones.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/29A-3-108.html",
+          "source_name": "South Dakota Codified Laws § 29A-3-108",
+          "quote": "may be commenced more than three years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "In Massachusetts, probate is generally filed in the county where the person was domiciled at death.",
+          "claim_es": "En Massachusetts, la sucesión normalmente se presenta en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-201",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-201",
+          "quote": "in the county where the decedent was domiciled at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Massachusetts, probate can be filed in any county where they had property.",
+          "claim_es": "Si la persona no vivía en Massachusetts, la sucesión se puede presentar en cualquier condado donde tenía bienes.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section3-201",
+          "source_name": "Massachusetts General Laws, Chapter 190B §3-201",
+          "quote": "if the decedent was not domiciled in the commonwealth, in any county where property of the decedent was located at the time of death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Massachusetts, whoever holds a will must deliver it within thirty days after learning of the death to someone who can get it probated.",
+          "claim_es": "En Massachusetts, quien tenga un testamento debe entregarlo dentro de treinta días después de saber de la muerte a alguien que pueda tramitar su validación.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleII/Chapter190B/Section2-516",
+          "source_name": "Massachusetts General Laws, Chapter 190B §2-516",
+          "quote": "a person having custody of a will of the testator shall deliver it within thirty days after notice of the death to a person able to secure its probate",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "In Nebraska, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Nebraska, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2410",
+          "source_name": "Nebraska Revised Statutes § 30-2410",
+          "quote": "in the county where the decedent had his domicile at the time of his death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Nebraska, probate can be opened in any Nebraska county where they had property.",
+          "claim_es": "Si la persona no vivía en Nebraska, la sucesión se puede abrir en cualquier condado de Nebraska donde tenía bienes.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2410",
+          "source_name": "Nebraska Revised Statutes § 30-2410",
+          "quote": "if the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of his death",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nebraska, probate for a missing person who has a conservator can be brought within a three-year window set by law.",
+          "claim_es": "En Nebraska, la sucesión de una persona desaparecida que tiene un curador se puede iniciar dentro de un plazo de tres años fijado por la ley.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=30-2408",
+          "source_name": "Nebraska Revised Statutes § 30-2408",
+          "quote": "may be maintained in relation to the estate of an absent, disappeared, or missing person for whose estate a conservator has been appointed, at any time within three year",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "In North Dakota, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Dakota del Norte, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c13.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-13",
+          "quote": "In the county where the decedent was domiciled at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in North Dakota, probate can be opened in any North Dakota county where they had property.",
+          "claim_es": "Si la persona no vivía en Dakota del Norte, la sucesión se puede abrir en cualquier condado de Dakota del Norte donde tenía bienes.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c13.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-13",
+          "quote": "If the decedent was not domiciled in this state, in any county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, most probate and appointment proceedings cannot be started more than three years after the death, with some exceptions.",
+          "claim_es": "En Dakota del Norte, la mayoría de los procesos sucesorios y de nombramiento no se pueden iniciar más de tres años después de la muerte, con algunas excepciones.",
+          "source_url": "https://ndlegis.gov/cencode/t30-1c12.pdf",
+          "source_name": "North Dakota Century Code, Chapter 30.1-12",
+          "quote": "may be commenced more than three years after the decede",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
     "AL": "no official source found",
-    "AZ": "no official source found",
     "AR": "no official source found",
     "CO": "no official source found",
     "CT": "no official source found",
@@ -250,27 +452,21 @@
     "KS": "no official source found",
     "KY": "no official source found",
     "LA": "no official source found",
-    "ME": "no official source found",
     "MD": "no official source found",
-    "MA": "no official source found",
     "MI": "no official source found",
-    "MN": "no official source found",
     "MS": "no official source found",
     "MO": "no official source found",
     "MT": "no official source found",
-    "NE": "no official source found",
     "NV": "no official source found",
     "NJ": "no official source found",
     "NM": "no official source found",
     "NY": "no official source found",
-    "ND": "no official source found",
     "OH": "no official source found",
     "OK": "no official source found",
     "OR": "no official source found",
     "PA": "no official source found",
     "RI": "no official source found",
     "SC": "no official source found",
-    "SD": "no official source found",
     "TN": "no official source found",
     "UT": "no official source found",
     "VA": "no official source found",
