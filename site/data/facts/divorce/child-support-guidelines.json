@@ -280,6 +280,51 @@
         }
       ]
     },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "An Idaho support order is generally not eligible for review for a change for at least three years.",
+          "claim_es": "En Idaho, una orden de manutención por lo general no puede revisarse para cambiarla antes de tres años.",
+          "source_url": "https://healthandwelfare.idaho.gov/services-programs/children-families-older-adults/child-support-enforcement-services",
+          "source_name": "Idaho Department of Health and Welfare: Child Support",
+          "quote": "is generally not eligible to be reviewed for a change for at least three years.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the other parent misses or delays a payment, Child Support Services waits until it arrives to send the funds.",
+          "claim_es": "Si el otro padre no paga o se atrasa, los Servicios de Manutención esperan a que llegue el pago para enviar los fondos.",
+          "source_url": "https://healthandwelfare.idaho.gov/services-programs/children-families-older-adults/make-or-receive-child-support-payment",
+          "source_name": "Idaho Department of Health and Welfare: Child Support Payments",
+          "quote": "If another parent misses a payment, or pays later than expected, Child Support Services waits until a payment arrives to send the funds.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho's Guidelines calculate support for children under 18, or up to 19 while in high school.",
+          "claim_es": "Las Pautas de Idaho calculan la manutención para hijos menores de 18, o hasta los 19 si están en la secundaria.",
+          "source_url": "https://isc.idaho.gov/rules-procedure/irfl",
+          "source_name": "Idaho Supreme Court: Idaho Rules of Family Law Procedure",
+          "quote": "The Guidelines provide a method to calculate child support obligations for children under the age of 18 years or children pursuing high school education up to the age of 19 years.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Department of Health and Welfare: Child Support",
+          "label_es": "Idaho Department of Health and Welfare: Child Support",
+          "url": "https://healthandwelfare.idaho.gov/services-programs/children-families-older-adults/child-support-enforcement-services"
+        },
+        {
+          "label_en": "Idaho Department of Health and Welfare: Child Support Payments",
+          "label_es": "Idaho Department of Health and Welfare: Child Support Payments",
+          "url": "https://healthandwelfare.idaho.gov/services-programs/children-families-older-adults/make-or-receive-child-support-payment"
+        },
+        {
+          "label_en": "Idaho Supreme Court: Idaho Rules of Family Law Procedure",
+          "label_es": "Idaho Supreme Court: Idaho Rules of Family Law Procedure",
+          "url": "https://isc.idaho.gov/rules-procedure/irfl"
+        }
+      ]
+    },
     "IL": {
       "facts": [
         {
@@ -382,6 +427,46 @@
           "label_en": "Kansas DCF Child Support Services",
           "label_es": "Kansas DCF Child Support Services",
           "url": "https://www.dcf.ks.gov/services/CSS/Pages/Information-for-Custodial-Parents.aspx"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "In Louisiana, reviews of support orders are often available every three years regardless of circumstances.",
+          "claim_es": "En Luisiana, las revisiones de las órdenes suelen estar disponibles cada tres años sin importar las circunstancias.",
+          "source_url": "https://dcfs.louisiana.gov/child-support-enforcement/child-support-faqs/",
+          "source_name": "Louisiana DCFS Child Support FAQs",
+          "quote": "Reviews are often available every three years regardless of circumstances.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "There is no application fee for the Access and Visitation Program.",
+          "claim_es": "No hay tarifa de solicitud para el Programa de Acceso y Visitas.",
+          "source_url": "https://dcfs.louisiana.gov/child-support-enforcement/child-support-access-and-visitation/",
+          "source_name": "Louisiana DCFS: Access and Visitation Program",
+          "quote": "There is no application fee charged for the services of the Access and Visitation Program.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Louisiana enforcement can include income withholding, tax refund interception, license suspension and passport denial.",
+          "claim_es": "En Luisiana, el cobro puede incluir retención de ingresos, intercepción de reembolsos de impuestos, suspensión de licencias y negación de pasaporte.",
+          "source_url": "https://dcfs.louisiana.gov/child-support-enforcement/child-support-faqs/",
+          "source_name": "Louisiana DCFS Child Support FAQs",
+          "quote": "Enforcement actions can include income withholding, tax refund interception, license suspension (driver’s, professional, or recreational), passport denial",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Louisiana DCFS Child Support FAQs",
+          "label_es": "Louisiana DCFS Child Support FAQs",
+          "url": "https://dcfs.louisiana.gov/child-support-enforcement/child-support-faqs/"
+        },
+        {
+          "label_en": "Louisiana DCFS: Access and Visitation Program",
+          "label_es": "Louisiana DCFS: Access and Visitation Program",
+          "url": "https://dcfs.louisiana.gov/child-support-enforcement/child-support-access-and-visitation/"
         }
       ]
     },
@@ -618,6 +703,46 @@
         }
       ]
     },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada's Child Support Enforcement Program offers direct deposit free of charge.",
+          "claim_es": "El Programa de Manutención de Nevada ofrece depósito directo sin costo.",
+          "source_url": "https://www.dss.nv.gov/programs/child-support/payment-faqs/",
+          "source_name": "Nevada DSS Child Support Payment FAQs",
+          "quote": "The Child Support Enforcement Program offers direct deposit free of charge.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The program sends an electronic payment to your bank for the exact amount it received for you.",
+          "claim_es": "El programa envía un pago electrónico a su banco por el monto exacto que recibió para usted.",
+          "source_url": "https://www.dss.nv.gov/programs/child-support/payment-faqs/",
+          "source_name": "Nevada DSS Child Support Payment FAQs",
+          "quote": "The child support program sends an electronic payment to your bank account with the exact amount of the child support payment we received on your behalf.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Federal matching compares workers getting lump-sum payments with people who owe child support.",
+          "claim_es": "Un cruce federal compara a los trabajadores que reciben pagos únicos con personas que deben manutención.",
+          "source_url": "https://www.dss.nv.gov/programs/child-support/information-for-employers/",
+          "source_name": "Nevada DSS: Information for Employers",
+          "quote": "OCSE compares the employees who are receiving lump sum payments to individuals who owe child support",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada DSS Child Support Payment FAQs",
+          "label_es": "Nevada DSS Child Support Payment FAQs",
+          "url": "https://www.dss.nv.gov/programs/child-support/payment-faqs/"
+        },
+        {
+          "label_en": "Nevada DSS: Information for Employers",
+          "label_es": "Nevada DSS: Information for Employers",
+          "url": "https://www.dss.nv.gov/programs/child-support/information-for-employers/"
+        }
+      ]
+    },
     "NJ": {
       "facts": [
         {
@@ -771,6 +896,41 @@
         }
       ]
     },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "For an Oklahoma order, a child still in high school at 19 is supported until 20 or graduation, whichever is first.",
+          "claim_es": "En una orden de Oklahoma, el hijo que sigue en la secundaria a los 19 recibe manutención hasta los 20 o la graduación, lo que ocurra primero.",
+          "source_url": "https://oklahoma.gov/okdhs/services/child-support-services/faq.html",
+          "source_name": "Oklahoma Human Services: Child Support FAQ",
+          "quote": "if the child is still in high school at age 19, child support is payable until age 20, or the date of graduation, whichever comes first.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Oklahoma uses a calculation called the Child Support Guidelines to set the monthly obligation.",
+          "claim_es": "Oklahoma usa un cálculo llamado Pautas de Manutención para fijar la obligación mensual.",
+          "source_url": "https://oklahoma.gov/okdhs/services/child-support-services/faq.html",
+          "source_name": "Oklahoma Human Services: Child Support FAQ",
+          "quote": "is inserted into a calculation called the Child Support Guidelines and computed to determine the monthly child support obligation",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You can get a copy of the Child Support Guidelines Computation application at listed places.",
+          "claim_es": "Puede obtener una copia de la aplicación de Cálculo de Pautas de Manutención en los lugares indicados.",
+          "source_url": "https://oklahoma.gov/okdhs/services/child-support-services/faq.html",
+          "source_name": "Oklahoma Human Services: Child Support FAQ",
+          "quote": "You can obtain a copy of the Child Support Guidelines Computation application at the following places:",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Oklahoma Human Services: Child Support FAQ",
+          "label_es": "Oklahoma Human Services: Child Support FAQ",
+          "url": "https://oklahoma.gov/okdhs/services/child-support-services/faq.html"
+        }
+      ]
+    },
     "SD": {
       "facts": [
         {
@@ -810,6 +970,209 @@
           "url": "https://dss.sd.gov/childsupport/modifysupportorder.aspx"
         }
       ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "Tennessee replaced its flat percentage-of-income guidelines with an Income Shares version effective January 18, 2005.",
+          "claim_es": "Tennessee reemplazó sus pautas de porcentaje fijo del ingreso por una versión de Ingresos Compartidos desde el 18 de enero de 2005.",
+          "source_url": "https://www.tn.gov/content/dam/tn/human-services/documents/A%20Guide%20to%20Tennessee%27s%20Child%20Support%20Worksheet.pdf",
+          "source_name": "Tennessee DHS: A Guide to Tennessee's Child Support Worksheet",
+          "quote": "for child support with an Income Shares version, effective January 18, 2005.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The Income Shares rules use two worksheets to calculate the parents' financial obligation.",
+          "claim_es": "Las reglas de Ingresos Compartidos usan dos hojas de cálculo para calcular la obligación de los padres.",
+          "source_url": "https://www.tn.gov/content/dam/tn/human-services/documents/A%20Guide%20to%20Tennessee%27s%20Child%20Support%20Worksheet.pdf",
+          "source_name": "Tennessee DHS: A Guide to Tennessee's Child Support Worksheet",
+          "quote": "The Income Shares rules use two (2) Worksheets",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The change was made by the Tennessee Department of Human Services.",
+          "claim_es": "El cambio lo hizo el Departamento de Servicios Humanos de Tennessee.",
+          "source_url": "https://www.tn.gov/content/dam/tn/human-services/documents/A%20Guide%20to%20Tennessee%27s%20Child%20Support%20Worksheet.pdf",
+          "source_name": "Tennessee DHS: A Guide to Tennessee's Child Support Worksheet",
+          "quote": "The Department of Human Services replaced the Flat Percentage of income version of guidelines",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Tennessee DHS: A Guide to Tennessee's Child Support Worksheet",
+          "label_es": "Tennessee DHS: A Guide to Tennessee's Child Support Worksheet",
+          "url": "https://www.tn.gov/content/dam/tn/human-services/documents/A%20Guide%20to%20Tennessee%27s%20Child%20Support%20Worksheet.pdf"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "In Utah, current support usually ends when a child turns 18 or graduates high school with their normal class.",
+          "claim_es": "En Utah, la manutención corriente suele terminar cuando el hijo cumple 18 o se gradúa de la secundaria con su clase.",
+          "source_url": "https://ors.utah.gov/child-support/case-closure/",
+          "source_name": "Utah Office of Recovery Services: Case Closure",
+          "quote": "a parent’s obligation to pay current child support usually ends when a child turns 18 or graduates from high school with their normal graduating class.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a child graduates at 17, current support continues until 18.",
+          "claim_es": "Si el hijo se gradúa a los 17, la manutención continúa hasta los 18.",
+          "source_url": "https://ors.utah.gov/child-support/case-closure/",
+          "source_name": "Utah Office of Recovery Services: Case Closure",
+          "quote": "if a child graduates from high school at 17, the current child support continues until they turn 18.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "ORS cannot decide custody questions as part of a support review.",
+          "claim_es": "La ORS no puede decidir temas de custodia en una revisión de manutención.",
+          "source_url": "https://ors.utah.gov/child-support/change-child-support-orders/",
+          "source_name": "Utah Office of Recovery Services: Change a Child Support Order",
+          "quote": "No, ORS cannot decide about the best interests of the child in this process.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Utah Office of Recovery Services: Case Closure",
+          "label_es": "Utah Office of Recovery Services: Case Closure",
+          "url": "https://ors.utah.gov/child-support/case-closure/"
+        },
+        {
+          "label_en": "Utah Office of Recovery Services: Change a Child Support Order",
+          "label_es": "Utah Office of Recovery Services: Change a Child Support Order",
+          "url": "https://ors.utah.gov/child-support/change-child-support-orders/"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont child support services are free for parents and guardians of children under 18 or still in high school.",
+          "claim_es": "En Vermont, los servicios de manutención son gratuitos para padres y tutores de hijos menores de 18 o que siguen en la secundaria.",
+          "source_url": "https://dcf.vermont.gov/ocs",
+          "source_name": "Vermont Office of Child Support",
+          "quote": "Child support services are free for parents & guardians of children under 18 or still in high school.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If your case closes with the Office of Child Support, your support order does not end.",
+          "claim_es": "Si su caso se cierra con la Oficina de Manutención, su orden de manutención no termina.",
+          "source_url": "https://dcf.vermont.gov/ocs/dv",
+          "source_name": "Vermont Office of Child Support",
+          "quote": "if your case closes with OCS, it does not mean that your child support order ends.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "OCS services have no income restrictions.",
+          "claim_es": "Los servicios de la OCS no tienen límites de ingresos.",
+          "source_url": "https://dcf.vermont.gov/ocs/parents/CS-Order",
+          "source_name": "Vermont Office of Child Support",
+          "quote": "there are no income restrictions.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Office of Child Support",
+          "label_es": "Vermont Office of Child Support",
+          "url": "https://dcf.vermont.gov/ocs"
+        },
+        {
+          "label_en": "Vermont Office of Child Support",
+          "label_es": "Vermont Office of Child Support",
+          "url": "https://dcf.vermont.gov/ocs/dv"
+        },
+        {
+          "label_en": "Vermont Office of Child Support",
+          "label_es": "Vermont Office of Child Support",
+          "url": "https://dcf.vermont.gov/ocs/parents/CS-Order"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "Most Virginia support orders can be reviewed every three years.",
+          "claim_es": "La mayoría de las órdenes de manutención en Virginia se pueden revisar cada tres años.",
+          "source_url": "https://www.dss.virginia.gov/empowering-families/understanding-child-support-amounts/",
+          "source_name": "Virginia DSS: Understanding Child Support Amounts",
+          "quote": "Most orders can be reviewed every three years, based on when the order was first set or last reviewed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "You can estimate support with Virginia's online Child Support Guidelines Worksheet.",
+          "claim_es": "Puede estimar la manutención con la Hoja de Pautas de Manutención en línea de Virginia.",
+          "source_url": "https://www.dss.virginia.gov/empowering-families/understanding-child-support-amounts/",
+          "source_name": "Virginia DSS: Understanding Child Support Amounts",
+          "quote": "You can estimate your support amount using Virginia’s online Child Support Guidelines Worksheet",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Virginia reviews its child support guidelines every four years.",
+          "claim_es": "Virginia revisa sus pautas de manutención cada cuatro años.",
+          "source_url": "https://www.dss.virginia.gov/empowering-families/understanding-child-support-amounts/",
+          "source_name": "Virginia DSS: Understanding Child Support Amounts",
+          "quote": "Virginia reviews its child support guidelines every four years.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Virginia DSS: Understanding Child Support Amounts",
+          "label_es": "Virginia DSS: Understanding Child Support Amounts",
+          "url": "https://www.dss.virginia.gov/empowering-families/understanding-child-support-amounts/"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Wisconsin's guidelines are now called the Child Support Standard, formerly the Percentage of Income Standard.",
+          "claim_es": "Las pautas de Wisconsin ahora se llaman Estándar de Manutención, antes Estándar de Porcentaje del Ingreso.",
+          "source_url": "https://dcf.wisconsin.gov/cs/home",
+          "source_name": "Wisconsin DCF Child Support",
+          "quote": "The guidelines for setting child support have been renamed to Child Support Standard from Percentage of Income Standard.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Current support for an 18-year-old ends in the month the child graduates.",
+          "claim_es": "La manutención corriente de un hijo de 18 años termina el mes en que se gradúa.",
+          "source_url": "https://dcf.wisconsin.gov/cs/age-of-child-eligible-for-support",
+          "source_name": "Wisconsin DCF: When Child Support Ends",
+          "quote": "Your duty to pay current child support ends during the month that your 18-year-old daughter graduates.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Wisconsin, the duty to support continues until 18, or 19 if the child is still in high school or working on an equivalency.",
+          "claim_es": "En Wisconsin, la obligación de manutención sigue hasta los 18, o los 19 si el hijo sigue en la secundaria o en un programa equivalente.",
+          "source_url": "https://dcf.wisconsin.gov/cs/age-of-child-eligible-for-support",
+          "source_name": "Wisconsin DCF: When Child Support Ends",
+          "quote": "a parent's duty to support his or her child continues until the child turns 18, or age 19 if the child is still enrolled in high school",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Income withholding may continue until past-due support is paid in full.",
+          "claim_es": "La retención de ingresos puede continuar hasta que se pague por completo la manutención atrasada.",
+          "source_url": "https://dcf.wisconsin.gov/cs/age-of-child-eligible-for-support",
+          "source_name": "Wisconsin DCF: When Child Support Ends",
+          "quote": "Income withholding may continue at the same level of collection until past-due child support is paid in full.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Wisconsin DCF Child Support",
+          "label_es": "Wisconsin DCF Child Support",
+          "url": "https://dcf.wisconsin.gov/cs/home"
+        },
+        {
+          "label_en": "Wisconsin DCF: When Child Support Ends",
+          "label_es": "Wisconsin DCF: When Child Support Ends",
+          "url": "https://dcf.wisconsin.gov/cs/age-of-child-eligible-for-support"
+        }
+      ]
     }
   },
   "skips": {
@@ -818,30 +1181,21 @@
     "AZ": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "FL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "GA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ID": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IA": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NM": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "UT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "VA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WV": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }
 }
