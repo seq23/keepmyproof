@@ -327,6 +327,41 @@
         }
       ]
     },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "Hawaii courts award custody to either or both parents according to the child's best interests, and may consider frequent, continuing, and meaningful contact with each parent.",
+          "claim_es": "Los tribunales de Hawái otorgan la custodia a uno o ambos padres según el interés superior del menor, y pueden considerar el contacto frecuente, continuo y significativo con cada padre.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0571/HRS_0571-0046.htm",
+          "source_name": "Hawaii Revised Statutes § 571-46",
+          "quote": "Custody should be awarded to either parent or to both parents according to the best interests of the child, and the court also may consider frequent, continuing, and meaningful contact of each parent with the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Hawaii, if a child is old enough to form an intelligent preference, the child's wishes about custody are considered and given due weight.",
+          "claim_es": "En Hawái, si el menor tiene edad suficiente para formar una preferencia razonada, sus deseos sobre la custodia se consideran y se les da el peso debido.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0571/HRS_0571-0046.htm",
+          "source_name": "Hawaii Revised Statutes § 571-46",
+          "quote": "If a child is of sufficient age and capacity to reason, so as to form an intelligent preference, the child's wishes as to custody shall be considered and be given due weight by the court",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Hawaii law says a fit person who has had de facto custody of the child in a stable and wholesome home is entitled prima facie to an award of custody.",
+          "claim_es": "La ley de Hawái dice que una persona idónea que ha tenido la custodia de hecho del menor en un hogar estable y sano tiene derecho, en principio, a que se le otorgue la custodia.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0571/HRS_0571-0046.htm",
+          "source_name": "Hawaii Revised Statutes § 571-46",
+          "quote": "Any person who has had de facto custody of the child in a stable and wholesome home and is a fit and proper person shall be entitled prima facie to an award of custody",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii Revised Statutes § 571-46",
+          "label_es": "Hawaii Revised Statutes § 571-46",
+          "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0571/HRS_0571-0046.htm"
+        }
+      ]
+    },
     "ID": {
       "facts": [
         {
@@ -1389,7 +1424,6 @@
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CO": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",

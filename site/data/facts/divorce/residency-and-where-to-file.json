@@ -362,6 +362,46 @@
         }
       ]
     },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "In Hawaii, divorce cases go to the family court of the circuit where the applicant is domiciled when the application is filed.",
+          "claim_es": "En Hawái, los casos de divorcio se presentan ante el tribunal de familia del circuito donde la persona solicitante tiene su domicilio al presentar la solicitud.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0580/HRS_0580-0001.htm",
+          "source_name": "Hawaii Revised Statutes § 580-1",
+          "quote": "Exclusive original jurisdiction in matters of divorce, subject to section 603-37 as to change of venue, and also subject to appeal according to law, is conferred upon the family court of the circuit in which the applicant is domiciled at the time the application is filed",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Living on a military or federal base in Hawaii, or being there under military orders, does not by itself prevent meeting Hawaii's filing requirements.",
+          "claim_es": "Vivir en una base militar o federal en Hawái, o estar allí por órdenes militares, no impide por sí solo cumplir los requisitos de presentación de Hawái.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0580/HRS_0580-0001.htm",
+          "source_name": "Hawaii Revised Statutes § 580-1",
+          "quote": "A person who may be residing on any military or federal base, installation, or reservation within the State or who may be present in the State under military orders shall not thereby be prohibited from meeting the requirements of this section.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "On an uncontested Hawaii divorce complaint, the court may waive a hearing and accept proof by affidavit.",
+          "claim_es": "En una demanda de divorcio no disputada en Hawái, el tribunal puede prescindir de la audiencia y aceptar pruebas por declaración jurada.",
+          "source_url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0580/HRS_0580-0042.htm",
+          "source_name": "Hawaii Revised Statutes § 580-42",
+          "quote": "The court, in its discretion, may waive a hearing on an uncontested divorce complaint and admit proof by affidavit.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Hawaii Revised Statutes § 580-1",
+          "label_es": "Hawaii Revised Statutes § 580-1",
+          "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0580/HRS_0580-0001.htm"
+        },
+        {
+          "label_en": "Hawaii Revised Statutes § 580-42",
+          "label_es": "Hawaii Revised Statutes § 580-42",
+          "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0580/HRS_0580-0042.htm"
+        }
+      ]
+    },
     "ID": {
       "facts": [
         {
@@ -1465,7 +1505,6 @@
   "skips": {
     "AL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "AR": "fewer than 3 quote-verified facts from official sources (1 verified)",
-    "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IL": "the Illinois statutes site (ilga.gov) blocks automated fact checks, and no other official Illinois page found states the residency rule",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",

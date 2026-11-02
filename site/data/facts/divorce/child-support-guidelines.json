@@ -74,14 +74,6 @@
           "source_name": "Alaska Court System Self-Help: Calculate Child Support",
           "quote": "1 kid: 20% 2 kids: 27% 3 kids: 33% More kids: 3% for each",
           "checked": "2026-11-02"
-        },
-        {
-          "claim_en": "The lowest child support amount someone can owe in Alaska is $50.00 a month.",
-          "claim_es": "El monto mínimo de manutención que alguien puede deber en Alaska es de $50.00 al mes.",
-          "source_url": "https://courts.alaska.gov/shc/family/supportfaq.htm",
-          "source_name": "Alaska Court System Self-Help: Calculate Child Support",
-          "quote": "the support amount will be $50.00 a month. The lowest amount of child support that someone can owe is $50.00.",
-          "checked": "2026-11-02"
         }
       ],
       "official_links": [

@@ -1133,6 +1133,67 @@
         }
       ]
     },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "New Mexico charges no cost or fees to file for an order of protection.",
+          "claim_es": "Nuevo México no cobra costos ni tarifas por solicitar una orden de protección.",
+          "source_url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/",
+          "source_name": "New Mexico Courts: Court Process for Orders of Protection",
+          "quote": "There is no cost or fees to file for an Order of Protection.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, the local sheriff's office serves the other party for free.",
+          "claim_es": "En Nuevo México, la oficina del sheriff local notifica a la otra parte gratis.",
+          "source_url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/",
+          "source_name": "New Mexico Courts: Court Process for Orders of Protection",
+          "quote": "will also serve the other party for free",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, an Order of Protection is issued by a District Court, and you can file in the county where the abuse occurred or where you live.",
+          "claim_es": "En Nuevo México, la Orden de Protección la emite un Tribunal de Distrito, y puede presentarla en el condado donde ocurrió el abuso o donde vive.",
+          "source_url": "https://domesticviolence.nmcourts.gov/orders-of-protection/",
+          "source_name": "New Mexico Courts: Orders of Protection FAQs",
+          "quote": "Find the District Court in the county where the abuse occurred OR where you currently live.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under New Mexico law, you do not have to live with the other party to be considered a household member.",
+          "claim_es": "Según la ley de Nuevo México, no tiene que vivir con la otra parte para ser considerado miembro del hogar.",
+          "source_url": "https://domesticviolence.nmcourts.gov/about/",
+          "source_name": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "quote": "You and the other party do not have to live together to be considered a household member.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Mexico, a roommate is not a household member just because you live together; the law requires an intimate or close family relationship.",
+          "claim_es": "En Nuevo México, un compañero de vivienda no es miembro del hogar solo por vivir juntos; la ley exige una relación íntima o familiar cercana.",
+          "source_url": "https://domesticviolence.nmcourts.gov/about/",
+          "source_name": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "quote": "Only individuals that have an intimate or close family relationship to each other are considered a",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Mexico Courts: Court Process for Orders of Protection",
+          "label_es": "New Mexico Courts: Court Process for Orders of Protection",
+          "url": "https://domesticviolence.nmcourts.gov/court-process-orders-of-protection/"
+        },
+        {
+          "label_en": "New Mexico Courts: Orders of Protection FAQs",
+          "label_es": "New Mexico Courts: Orders of Protection FAQs",
+          "url": "https://domesticviolence.nmcourts.gov/orders-of-protection/"
+        },
+        {
+          "label_en": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "label_es": "New Mexico Courts: Order of Protection from Domestic Abuse",
+          "url": "https://domesticviolence.nmcourts.gov/about/"
+        }
+      ]
+    },
     "NY": {
       "facts": [
         {
@@ -1604,7 +1665,6 @@
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NM": "fewer than 3 quote-verified facts from official sources (2 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "SC": "fewer than 3 quote-verified facts from official sources (0 verified)",
