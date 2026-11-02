@@ -17,16 +17,16 @@
     "AL": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Alabama: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Alabama: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Alabama: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Alabama: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Alabama 8-40-6 non-school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Alabama from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Alabama se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Alabama from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Alabama se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Alabama 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
@@ -70,8 +70,8 @@
     "AZ": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Arizona: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Arizona: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Arizona: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Arizona: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Arizona 8-40 non-school day/week 3-18 school day/week",
@@ -115,16 +115,16 @@
     "AR": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Arkansas: 8 hours a day and 48 hours a week, 6 days a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Arkansas: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Arkansas: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Arkansas: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Arkansas 8-48-6",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Arkansas from 7 p.m. (9 p.m. before non-school day) to 6 a.m.",
-          "claim_es": "La misma tabla indica que en Arkansas se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. antes de un día sin clases) a 6 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Arkansas from 7 p.m. (9 p.m. before non-school day) to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Arkansas se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. antes de un día sin clases) a 6 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Arkansas 8-48-6 16-year-old children cannot work more than 10 hours consecutive or more than 10 hours in a 24 hours period. 7 p.m. (9 p.m. before non-school day) to 6 a.m.",
@@ -168,24 +168,24 @@
     "CA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in California: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en California: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in California: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en California: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "California 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in California from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in California from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "California 8-40 non-school day/week 3-18 school day/week 8-48 non-school day/-week: 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for 16- and 17-year-olds in California from 10 p.m. (12:30 a.m. before non-school day) to 5 a.m.",
-          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a jóvenes de 16 y 17 años de 10 p.m. (12:30 a.m. antes de un día sin clases) a 5 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for sixteen- and seventeen-year-olds in California from 10 p.m. (12:30 a.m. before non-school day) to 5 a.m.",
+          "claim_es": "La misma tabla indica que en California se prohíbe el trabajo nocturno a jóvenes de dieciséis y diecisiete años de 10 p.m. (12:30 a.m. antes de un día sin clases) a 5 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "California 8-40 non-school day/week 3-18 school day/week 8-48 non-school day/-week: 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m. 10 p.m. (12:30 a.m. before non-school day) to 5 a.m.",
@@ -221,16 +221,16 @@
     "CO": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Colorado: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 40 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Colorado: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 40 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Colorado: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 40 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Colorado: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 40 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Colorado 8-40 non-school day/week 6-40 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in Colorado: 8 hours a day and 40 hours a week.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Colorado: 8 horas al día y 40 horas a la semana.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Colorado: 8 hours a day and 40 hours a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Colorado: 8 horas al día y 40 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Colorado 8-40 non-school day/week 6-40 school day/week 8-40 9:30 p.m. to 5 a.m. before school day",
@@ -266,16 +266,16 @@
     "DE": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Delaware: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Delaware: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Delaware: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Delaware: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Delaware 8-40-6 non-school day/week 4-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Delaware from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Delaware se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Delaware from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Delaware se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Delaware 8-40-6 non-school day/week 4-18-6 school day/week 12 c 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -319,24 +319,24 @@
     "DC": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "District of Columbia 8-48-6",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in District of Columbia: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Distrito de Columbia: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "District of Columbia 8-48-6 8-48-6 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for 16- and 17-year-olds in District of Columbia from 10 p.m. to 6 a.m.",
-          "claim_es": "La misma tabla indica que en Distrito de Columbia se prohíbe el trabajo nocturno a jóvenes de 16 y 17 años de 10 p.m. a 6 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for sixteen- and seventeen-year-olds in District of Columbia from 10 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Distrito de Columbia se prohíbe el trabajo nocturno a jóvenes de dieciséis y diecisiete años de 10 p.m. a 6 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "District of Columbia 8-48-6 8-48-6 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m. 10 p.m. to 6 a.m.",
@@ -380,16 +380,16 @@
     "GA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Georgia: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 40 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Georgia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 40 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Georgia: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 40 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Georgia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 40 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Georgia 8-40 non-school day/week 4-40 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Georgia from 9 p.m. to 6 a.m.",
-          "claim_es": "La misma tabla indica que en Georgia se prohíbe el trabajo nocturno a menores de 16 años de 9 p.m. a 6 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Georgia from 9 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Georgia se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 6 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Georgia 8-40 non-school day/week 4-40 school day/week 9 p.m. to 6 a.m.",
@@ -433,8 +433,8 @@
     "HI": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Hawaii: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Hawái: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Hawaii: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Hawái: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Hawaii 8-40-6 non-school day/week 3-18-6 school day/week",
@@ -478,16 +478,16 @@
     "ID": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Idaho: 9 hours a day and 54 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Idaho: 9 horas al día y 54 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Idaho: 9 hours a day and 54 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Idaho: 9 horas al día y 54 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Idaho 9-54",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Idaho from 9 p.m. to 6 a.m.",
-          "claim_es": "La misma tabla indica que en Idaho se prohíbe el trabajo nocturno a menores de 16 años de 9 p.m. a 6 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Idaho from 9 p.m. to 6 a.m.",
+          "claim_es": "La misma tabla indica que en Idaho se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 6 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Idaho 9-54 9 p.m. to 6 a.m.",
@@ -531,16 +531,16 @@
     "IL": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Illinois: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Illinois: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Illinois: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Illinois: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Illinois 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Illinois from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Illinois se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Illinois from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Illinois se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Illinois 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -584,8 +584,8 @@
     "IN": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Indiana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Indiana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Indiana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Indiana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Indiana 8-40 non-school day/week 3-18 school day/week",
@@ -629,16 +629,16 @@
     "IA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Iowa: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 28 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Iowa: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 28 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Iowa: 8 hours a day and 40 hours a week on non-school days and weeks; 6 hours a day and 28 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Iowa: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 6 horas al día y 28 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Iowa 8-40 non-school day/week 6-28 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Iowa from 9 p.m. (11 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Iowa se prohíbe el trabajo nocturno a menores de 16 años de 9 p.m. (11 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Iowa from 9 p.m. (11 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Iowa se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. (11 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Iowa 8-40 non-school day/week 6-28 school day/week 9 p.m. (11 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -682,16 +682,16 @@
     "KS": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Kansas: 8 hours a day and 40 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Kansas: 8 horas al día y 40 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Kansas: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Kansas: 8 horas al día y 40 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Kansas 8-40",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Kansas from 10 p.m. before a school day to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Kansas se prohíbe el trabajo nocturno a menores de 16 años de 10 p.m. antes de un día de clases a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Kansas from 10 p.m. before a school day to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Kansas se prohíbe el trabajo nocturno a menores de dieciséis años de 10 p.m. antes de un día de clases a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Kansas 8-40 10 p.m. before school day to 7 a.m.",
@@ -727,16 +727,16 @@
     "KY": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Kentucky: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Kentucky: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Kentucky: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Kentucky: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Kentucky 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Kentucky from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Kentucky se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Kentucky from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Kentucky se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Kentucky 8-40 non-school day/week 3-18 school day/week 6-30 school day/week (6- 40 school day/week with parental permission and at least a 2.0 school grade point average) 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -780,8 +780,8 @@
     "LA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Louisiana: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Luisiana: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Louisiana: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Luisiana: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Louisiana 8-40-6 non-school day/week 3-18-6 school day/week",
@@ -825,16 +825,16 @@
     "ME": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Maine: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Maine: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Maine: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Maine: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Maine 8-40-6 non-school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Maine from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Maine se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Maine from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Maine se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Maine 8-40-6 non-school day/week 3-18-6 school day/week If enrolled in school: 10-50-6 non-school day/week 6 (except 8 on last scheduled day of school week)- 24-6 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
@@ -878,8 +878,8 @@
     "MD": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Maryland: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 23 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Maryland: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 23 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Maryland: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 23 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Maryland: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 23 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Maryland 8-40 non-school day/week 4-23 school day/week",
@@ -923,16 +923,16 @@
     "MA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Massachusetts: 8 hours a day and 48 hours a week, 6 days a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Massachusetts: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Massachusetts: 8 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Massachusetts: 8 horas al día y 48 horas a la semana, 6 días a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Massachusetts 8-48-6",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in Massachusetts: 9 hours a day and 48 hours a week, 6 days a week.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Massachusetts: 9 horas al día y 48 horas a la semana, 6 días a la semana.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Massachusetts: 9 hours a day and 48 hours a week, 6 days a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Massachusetts: 9 horas al día y 48 horas a la semana, 6 días a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Massachusetts 8-48-6 9-48-6 Only between 6:30 a.m. and 7 p.m. during the school year. Only between 6:30 a.m. and 9 p.m. during the summer (from July 1 through Labor Day).",
@@ -976,8 +976,8 @@
     "MI": {
       "facts": [
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Michigan from 7 p.m. (9 p.m. June 1 to Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Míchigan se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Michigan from 7 p.m. (9 p.m. June 1 to Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Míchigan se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Michigan 40 non-school day/week 3-18 school day/week 10-48 non-school day/week 10/24 school day/week 7 p.m.(9 p.m. June 1 to Labor Day) to 7 a.m.",
@@ -1021,16 +1021,16 @@
     "MN": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Minnesota: 8 hours a day and 40 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Minnesota: 8 horas al día y 40 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Minnesota: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Minnesota: 8 horas al día y 40 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Minnesota 8-40",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Minnesota from 9 p.m. to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Minnesota se prohíbe el trabajo nocturno a menores de 16 años de 9 p.m. a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Minnesota from 9 p.m. to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Minnesota se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Minnesota 8-40 9 p.m. to 7 a.m.",
@@ -1066,8 +1066,8 @@
     "MO": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Missouri: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 40 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Misuri: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Missouri: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 40 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Misuri: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Missouri 8-40-6 non-school day/week 3-40-6 school day/week",
@@ -1111,8 +1111,8 @@
     "MT": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Montana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Montana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Montana: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Montana: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Montana 8-40 non-school day/week 3-18 school day/week",
@@ -1156,8 +1156,8 @@
     "NE": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Nebraska: 8 hours a day and 48 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Nebraska: 8 horas al día y 48 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Nebraska: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nebraska: 8 horas al día y 48 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Nebraska 8-48",
@@ -1201,8 +1201,8 @@
     "NV": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Nevada: 8 hours a day and 48 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Nevada: 8 horas al día y 48 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Nevada: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nevada: 8 horas al día y 48 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Nevada 8-48",
@@ -1246,16 +1246,16 @@
     "NH": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in New Hampshire: 8 hours a day and 48 hours a week on non-school days and weeks; 3 hours a day and 23 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Nuevo Hampshire: 8 horas al día y 48 horas a la semana en días y semanas sin clases; 3 horas al día y 23 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New Hampshire: 8 hours a day and 48 hours a week on non-school days and weeks; 3 hours a day and 23 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nuevo Hampshire: 8 horas al día y 48 horas a la semana en días y semanas sin clases; 3 horas al día y 23 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "New Hampshire 8-48 non-school days/week 3-23 school days/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in New Hampshire from 9 p.m. to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Nuevo Hampshire se prohíbe el trabajo nocturno a menores de 16 años de 9 p.m. a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in New Hampshire from 9 p.m. to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Nuevo Hampshire se prohíbe el trabajo nocturno a menores de dieciséis años de 9 p.m. a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "New Hampshire 8-48 non-school days/week 3-23 school days/week A 48-hour work week, with work up to 6-days per week, is permitted during vacation, if enrolled in school. A 30-hour work week, with work up to 6-days per week, is permitted if enrolled in school. 9 p.m. to 7 a.m.",
@@ -1299,8 +1299,8 @@
     "NJ": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in New Jersey: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Nueva Jersey: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New Jersey: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nueva Jersey: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "New Jersey 8-40-6 non-school day/week 3-18-6 school day/week",
@@ -1344,16 +1344,16 @@
     "NY": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in New York: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Nueva York: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in New York: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Nueva York: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "New York 8-40-6 non- school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in New York from 7 p.m. (9 p.m. June 21 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Nueva York se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 21 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in New York from 7 p.m. (9 p.m. June 21 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Nueva York se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 21 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "New York 8-40-6 non- school day/week 3-18-6 school day/week 8-48-6 school day/week: 4 before school day, 8 Friday, Saturday, Sunday or holiday-28, if enrolled in school. 7 p.m. (9 p.m. June 21 through Labor Day) to 7 a.m.",
@@ -1397,16 +1397,16 @@
     "NC": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in North Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Carolina del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in North Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Carolina del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "North Carolina 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in North Carolina from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Carolina del Norte se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in North Carolina from 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Carolina del Norte se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. durante las vacaciones de verano) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "North Carolina 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. during summer vacation) to 7 a.m.",
@@ -1450,16 +1450,16 @@
     "ND": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in North Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Dakota del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in North Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Dakota del Norte: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "North Dakota 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in North Dakota from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Dakota del Norte se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in North Dakota from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Dakota del Norte se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "North Dakota 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -1503,16 +1503,16 @@
     "OR": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Oregon: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Oregón: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Oregon: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Oregón: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Oregon 8-40-6 non-school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Oregon from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Oregón se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Oregon from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Oregón se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Oregon 8-40-6 non-school day/week 3-18-6 school day/week 44-hour week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -1556,16 +1556,16 @@
     "PA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Pennsylvania: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Pensilvania: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Pennsylvania: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Pensilvania: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Pennsylvania 8-40-6 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in Pennsylvania: 10 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 8 hours a day and 28 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Pensilvania: 10 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 8 horas al día y 28 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Pennsylvania: 10 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 8 hours a day and 28 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Pensilvania: 10 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 8 horas al día y 28 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Pennsylvania 8-40-6 non-school day/week 3-18 school day/week 10-48-6 non-school day/week 8-28-6 school day/week 7 p.m. (9 p.m. during vacation from June to Labor Day) to 7 a.m.",
@@ -1609,16 +1609,16 @@
     "RI": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Rhode Island: 8 hours a day and 40 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Rhode Island: 8 horas al día y 40 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Rhode Island: 8 hours a day and 40 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Rhode Island: 8 horas al día y 40 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Rhode Island 8-40",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in Rhode Island: 9 hours a day and 48 hours a week.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Rhode Island: 9 horas al día y 48 horas a la semana.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Rhode Island: 9 hours a day and 48 hours a week.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Rhode Island: 9 horas al día y 48 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Rhode Island 8-40 9-48 7 p.m. (9 p.m. during school vacation) to 6 a.m.",
@@ -1662,8 +1662,8 @@
     "SC": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in South Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Carolina del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in South Carolina: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Carolina del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "South Carolina 8-40 non-school day/week 3-18 school day/week",
@@ -1707,8 +1707,8 @@
     "SD": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in South Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 20 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Dakota del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in South Dakota: 8 hours a day and 40 hours a week on non-school days and weeks; 4 hours a day and 20 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Dakota del Sur: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "South Dakota 8-40 non-school day/week 4-20 school day/week",
@@ -1752,8 +1752,8 @@
     "TN": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Tennessee: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Tennessee: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Tennessee: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Tennessee: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Tennessee 8-40 non-school day/week 3-18 school day/week",
@@ -1797,8 +1797,8 @@
     "TX": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Texas: 8 hours a day and 48 hours a week.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Texas: 8 horas al día y 48 horas a la semana.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Texas: 8 hours a day and 48 hours a week.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Texas: 8 horas al día y 48 horas a la semana.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Texas 8-48",
@@ -1842,16 +1842,16 @@
     "UT": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Utah: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Utah: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Utah: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Utah: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Utah 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Utah from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Utah se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Utah from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Utah se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Utah 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -1895,16 +1895,16 @@
     "VT": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Vermont: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Vermont: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Vermont: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Vermont: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Vermont 8-40-6 non-school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Vermont from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Vermont se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Vermont from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Vermont se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Vermont 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -1940,16 +1940,16 @@
     "VA": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Virginia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Virginia: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Virginia 8-40 non-school day/week 3-18 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Virginia from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Virginia se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Virginia from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Virginia se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Virginia 8-40 non-school day/week 3-18 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
@@ -1993,8 +1993,8 @@
     "WA": {
       "facts": [
         {
-          "claim_en": "The same table lists these maximum work hours for 16- and 17-year-olds in Washington: 8 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 20 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de 16 y 17 años en Washington: 8 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The same table lists these maximum work hours for sixteen- and seventeen-year-olds in Washington: 8 hours a day and 48 hours a week, 6 days a week on non-school days and weeks; 4 hours a day and 20 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La misma tabla indica estos máximos de horas para jóvenes de dieciséis y diecisiete años en Washington: 8 horas al día y 48 horas a la semana, 6 días a la semana en días y semanas sin clases; 4 horas al día y 20 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Washington 8-40-6 non-school day/week 3 (8 Saturday and Sunday) 16-6 school day/week 8-48-6 non-school day/week 4-20-6 school day/week 7 p.m. (9 p.m. from June 1st to Labor Day) to 7 a.m. An adult must supervise minors working after 8 p.m. in service occupations, such as restaurants and retail businesses.",
@@ -2038,8 +2038,8 @@
     "WV": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in West Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Virginia Occidental: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in West Virginia: 8 hours a day and 40 hours a week on non-school days and weeks; 3 hours a day and 18 hours a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Virginia Occidental: 8 horas al día y 40 horas a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "West Virginia 8-40 non-school day/week 3-18 school day/week",
@@ -2083,16 +2083,16 @@
     "WI": {
       "facts": [
         {
-          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under 16 in Wisconsin: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
-          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de 16 años en Wisconsin: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
+          "claim_en": "The U.S. Department of Labor's state child labor table lists these maximum work hours for minors under sixteen in Wisconsin: 8 hours a day and 40 hours a week, 6 days a week on non-school days and weeks; 3 hours a day and 18 hours a week, 6 days a week on school days and weeks.",
+          "claim_es": "La tabla estatal de trabajo infantil del Departamento de Trabajo de EE. UU. indica estos máximos de horas para menores de dieciséis años en Wisconsin: 8 horas al día y 40 horas a la semana, 6 días a la semana en días y semanas sin clases; 3 horas al día y 18 horas a la semana, 6 días a la semana en días y semanas con clases.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Wisconsin 8-40-6 non-school day/week 3-18-6 school day/week",
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "The same table lists nightwork as prohibited for minors under 16 in Wisconsin from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
-          "claim_es": "La misma tabla indica que en Wisconsin se prohíbe el trabajo nocturno a menores de 16 años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
+          "claim_en": "The same table lists nightwork as prohibited for minors under sixteen in Wisconsin from 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
+          "claim_es": "La misma tabla indica que en Wisconsin se prohíbe el trabajo nocturno a menores de dieciséis años de 7 p.m. (9 p.m. del 1 de junio al Día del Trabajo) a 7 a.m.",
           "source_url": "https://www.dol.gov/agencies/whd/state/child-labor",
           "source_name": "U.S. Department of Labor, State Child Labor Laws: Hours and Nightwork",
           "quote": "Wisconsin 8-40-6 non-school day/week 3-18-6 school day/week 7 p.m. (9 p.m. June 1 through Labor Day) to 7 a.m.",
