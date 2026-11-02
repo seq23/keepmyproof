@@ -23,7 +23,7 @@ const checks={
       // Research facts quote official government pages verbatim (scripts/verify-facts.mjs checks every
       // quote on its .gov source), so their office phone numbers and street names are public record
       // (e.g. a VA office on a street that shares a private name). Secrets and emails are still checked.
-      const officialRecord=f.startsWith('site/data/facts/');
+      const officialRecord=f.startsWith('site/data/facts/')||f.startsWith('site/data/translations/');
       if(!officialRecord&&/\(\d{3}\)\s*\d{3}[- ]\d{4}/.test(s))bad.push(f);
       if(!officialRecord&&s.split(/[^\p{L}\p{N}@._+-]+/u).some(w=>w.length>3&&privateHashes.includes(sha(w))))bad.push(f);
     }

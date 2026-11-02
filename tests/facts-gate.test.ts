@@ -49,3 +49,17 @@ test('verify-facts keeps a fact only if its quote is on the fetched page, and a 
     assert.ok(stops.some((s: string) => s.includes(`[${why}] iep/gate-fixture/${code}`)), `${code} refused as ${why}`);
   for (const p of pages.filter((x: any) => !x.external)) assert.equal(bannedWord(files[p.file].replace(/<head>[\s\S]*?<\/head>/, '').replace(/<[^>]+>/g, ' ')), null, p.path);
 });
+
+test('quote matching decodes double-encoded entities, so a dollar amount written as &amp;dollar; still matches its quote', async () => {
+  const { quoteOnPage, sourceText } = await import('../site/lib/gate.mjs');
+  assert.ok(quoteOnPage('a filing fee of $250', sourceText('<p>a filing fee of &amp;dollar;250</p>')));
+  assert.ok(quoteOnPage('fee & costs: $10', sourceText('<td>fee &amp;amp; costs: &#36;10</td>')));
+  assert.ok(!quoteOnPage('a filing fee of $300', sourceText('<p>a filing fee of &amp;dollar;250</p>')));
+});
+
+test('a Chinese or Korean fact that left ordinary English words untranslated never publishes; official names may stay in English', async () => {
+  const { untranslated } = await import('../site/lib/gate.mjs');
+  assert.equal(untranslated('Arizona에서 surviving spouse는 owing up to $5,000의 wages를 수집'), true);
+  assert.equal(untranslated('根据 Connecticut General Statutes，{state}的居住要求为十二个月。'), false);
+  assert.equal(untranslated('Superior Court of Arizona 법원 양식 DD-214'), false);
+});

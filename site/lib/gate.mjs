@@ -23,11 +23,13 @@ export function officialSource(url) {
   return /\.(?:gov|mil)$/.test(h) || /(?:^|\.)(?:state\.[a-z]{2}\.us|[a-z]{2}\.us)$/.test(h) || OFFICIAL_EXTRA.has(h);
 }
 
-const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '-', mdash: '-', rsquo: "'", lsquo: "'", rdquo: '"', ldquo: '"', sect: '§', hellip: '...' };
-export const decode = (s) => String(s).replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => {
+const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '-', mdash: '-', rsquo: "'", lsquo: "'", rdquo: '"', ldquo: '"', sect: '§', hellip: '...', dollar: '$', percnt: '%', comma: ',', period: '.', colon: ':', semi: ';', lpar: '(', rpar: ')', sol: '/', num: '#', excl: '!', quest: '?' };
+const decodeOnce = (s) => String(s).replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => {
   if (e[0] === '#') { const n = e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10); return Number.isFinite(n) ? String.fromCodePoint(n) : m; }
   return ENT[e.toLowerCase()] ?? m;
 });
+/** Entities decoded until stable (two rounds: some pages double-encode, e.g. &amp;dollar; for $). */
+export const decode = (s) => { const once = decodeOnce(s); return once === String(s) ? once : decodeOnce(once); };
 /** Visible-ish text of an HTML page (scripts, styles and tags removed, entities decoded). */
 export const htmlText = (html, joiner = ' ') => decode(String(html).replace(/<(script|style|noscript)[\s\S]*?<\/\1>/gi, ' ').replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]+>/g, joiner));
 /** Source text for quote matching: tags as spaces (quotes across table cells) and inline tags removed. */
@@ -113,3 +115,7 @@ export function gateState(entry, verified, counts) {
   const rank = (f) => (f.stateSpecific ? (isContact(f) ? 1 : 0) : 2);
   return { facts: facts.map((f, i) => [f, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([f]) => f) };
 }
+
+/** A Chinese or Korean translation that left English words untranslated (lowercase words; names of
+ * agencies, courts and forms are capitalised and allowed) is not natural writing and never publishes. */
+export const untranslated = (t) => /\b[a-z]{3,}\b/.test(String(t).replace(/https?:\S+/g, '').replace(/\{state(?:_es)?\}/g, ''));

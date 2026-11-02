@@ -11,9 +11,9 @@ import { fileURLToPath } from 'node:url';
 import { SITE, PAGES } from './config.mjs';
 import { COPY } from './copy.mjs';
 import { CC, FOLDERS, FACTS_PAGE, ALT } from './cluster-copy.mjs';
-import { COPY_CJK, CC_CJK, TOPICS_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './copy-cjk.mjs';
+import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './copy-cjk.mjs';
 import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
-import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts } from './lib/gate.mjs';
+import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 
@@ -209,11 +209,11 @@ const hubFor = (hubs, topicId, lang) => hubs[topicId][lang] ?? HUBS_CJK[topicId]
 const fill = (s, code, l = 'en') => String(s).replace(/\{state_es\}/g, stateName(code, l === 'en' ? 'es' : l)).replace(/\{state\}/g, stateName(code, l === 'es' ? 'es' : l));
 function subtopicLabel(t, lang) {
   const s = String(t).replace(/^\{state(?:_es)?\}(?:'s)?\s*/, '').replace(/\s+(?:in|en|de|for|para|del)\s+\{state(?:_es)?\}/g, '')
-    .replace(/\{state(?:_es)?\}\s*(?:的|의)?/g, lang === 'es' ? 'cada estado' : lang === 'en' ? 'each state' : '').replace(/\s*[:,：]\s*$/, '').trim();
+    .replace(/\{state(?:_es)?\}\s*(?:的|의)?/g, lang === 'es' ? 'cada estado' : lang === 'en' ? 'each state' : '').replace(/\s*[(（]\s*[)）]/g, '').replace(/\s*[:,：]\s*$/, '').trim();
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
-const folderName = (topic, l) => topic.display_name[l] ?? TOPICS_CJK[topic.id][l][0];
-const checklistItems = (topic, l) => (topic.checklist_items[0].name[l] ? topic.checklist_items.map((i) => i.name[l]) : TOPICS_CJK[topic.id][l][1]);
+const folderName = (topic, l) => topic.display_name[l];
+const checklistItems = (topic, l) => topic.checklist_items.map((i) => i.name[l]);
 
 /** A 40–60 word answer: the page's own facts first, then fixed true sentences to reach 40. */
 export function quotableAnswer(claims, tails, lang = 'en') {
@@ -261,7 +261,7 @@ export function clusterModel({ facts, verified, translations = {} }) {
       const titles = { en: data.title_en, es: data.title_es }, langs = ['en', 'es'];
       for (const l of STATE_LANGS[k] || []) {
         const tr = translations[k]?.[`${data.subtopic}.${l}`];
-        if (tr?.title && /\{state\}/.test(tr.title)) { titles[l] = tr.title; langs.push(l); }
+        if (tr?.title && /\{state\}/.test(tr.title) && !untranslated(tr.title)) { titles[l] = tr.title; langs.push(l); }
         else stops.push(`NAMED STOP [NOT_TRANSLATED] ${k}/${data.subtopic} ${l}: no translation file (scripts/translate-facts.mjs); ${l} pages not published`);
       }
       const states = [], counts = claimCounts(data);
@@ -275,7 +275,7 @@ export function clusterModel({ facts, verified, translations = {} }) {
         const byLang = { en: g.facts.map((f) => ({ ...f, claim: f.claim_en })), es: g.facts.map((f) => ({ ...f, claim: f.claim_es })) };
         for (const l of langs.slice(2)) {
           const tr = translations[k][`${data.subtopic}.${l}`].facts || {};
-          const fl = g.facts.filter((f) => tr[factKey(f)]).map((f) => ({ ...f, claim: tr[factKey(f)] }));
+          const fl = g.facts.filter((f) => tr[factKey(f)] && !untranslated(tr[factKey(f)])).map((f) => ({ ...f, claim: tr[factKey(f)] }));
           const stop = enoughFacts(fl) || (bannedWord(fl.map((f) => f.claim).join(' ') + fill(titles[l], code, l)) ? ['BANNED_WORD', l] : null);
           if (stop) stops.push(`NAMED SKIP [${l.toUpperCase()}_${stop[0]}] ${k}/${data.subtopic}/${code}: ${stop[1]}`);
           else byLang[l] = fl;
