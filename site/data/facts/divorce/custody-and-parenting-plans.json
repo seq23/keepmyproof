@@ -21,7 +21,7 @@
         },
         {
           "claim_en": "A custody and visitation or parenting plan must describe the legal and physical custody that serves the children's interests.",
-          "claim_es": "Un plan de custodia y visitas o de crianza debe describir la custodia legal y física que sea en el mejor interés de los hijos.",
+          "claim_es": "Un plan de custodia y visitas o de crianza debe describir la custodia legal y física que sirva al interés superior de los hijos.",
           "source_url": "https://courts.alaska.gov/shc/family/glossary.htm",
           "source_name": "Alaska Court System Self-Help: Family Law Glossary",
           "quote": "The custody and visitation or parenting plan must describe the legal custody and physical custody that is in the child(ren)'s best interests .",
@@ -106,7 +106,7 @@
         },
         {
           "claim_en": "Parenting plans must serve the children's interests.",
-          "claim_es": "Los planes de crianza deben ser en el mejor interés de los hijos.",
+          "claim_es": "Los planes de crianza deben servir al interés superior de los hijos.",
           "source_url": "https://selfhelp.courts.ca.gov/child-custody",
           "source_name": "California Courts Self-Help Guide: Child Custody",
           "quote": "Parenting plans must be in the best interest of your children.",
@@ -131,6 +131,41 @@
           "label_en": "California Courts Self-Help Guide: Enforce a Custody Order",
           "label_es": "California Courts Self-Help Guide: Enforce a Custody Order",
           "url": "https://selfhelp.courts.ca.gov/child-custody/enforce"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The Delaware Family Court decides legal custody and residential arrangements by the best interests of the child, considering all relevant factors.",
+          "claim_es": "El Tribunal de Familia de Delaware decide la custodia legal y la residencia del menor según su interés superior, considerando todos los factores pertinentes.",
+          "source_url": "https://delcode.delaware.gov/title13/c007/sc02/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 7, Subchapter II",
+          "quote": "The Court shall determine the legal custody and residential arrangements for a child in accordance with the best interests of the child. In determining the best interests of the child, the Court shall consider all relevant factors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Delaware's court may not presume either parent is better qualified to be a custodian because of the parent's sex.",
+          "claim_es": "El tribunal de Delaware no puede presumir que uno de los padres está mejor capacitado para la custodia por su sexo.",
+          "source_url": "https://delcode.delaware.gov/title13/c007/sc02/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 7, Subchapter II",
+          "quote": "is better qualified than the other parent to act as a joint or sole legal custodian for a child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Delaware, whether custody is joint or sole, each parent can request material information about the child's progress in school.",
+          "claim_es": "En Delaware, sea la custodia compartida o exclusiva, cada padre puede pedir información relevante sobre el progreso escolar del menor.",
+          "source_url": "https://delcode.delaware.gov/title13/c007/sc02/index.html",
+          "source_name": "Delaware Code Title 13, Chapter 7, Subchapter II",
+          "quote": "Whether the parents have joint legal custody or 1 parent has sole legal custody of a child, each parent has the right to receive, on request, from the other parent, whenever practicable in advance, all material information concerning the",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Delaware Code Title 13, Chapter 7, Subchapter II",
+          "label_es": "Delaware Code Title 13, Chapter 7, Subchapter II",
+          "url": "https://delcode.delaware.gov/title13/c007/sc02/index.html"
         }
       ]
     },
@@ -204,6 +239,46 @@
         }
       ]
     },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "Idaho courts decide custody, care and education of the children by the best interests of the children, considering all relevant factors.",
+          "claim_es": "Los tribunales de Idaho deciden la custodia, el cuidado y la educación de los hijos según el interés superior de los hijos, considerando todos los factores pertinentes.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-717/",
+          "source_name": "Idaho Code § 32-717",
+          "quote": "as may seem necessary or proper in the best interests of the children. The court shall consider all relevant factors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Idaho law presumes joint custody is in the child's best interests unless a preponderance of the evidence shows otherwise.",
+          "claim_es": "La ley de Idaho presume que la custodia compartida sirve al interés superior del menor, salvo que la preponderancia de la prueba indique lo contrario.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-717B/",
+          "source_name": "Idaho Code § 32-717B",
+          "quote": "absent a preponderance of the evidence to the contrary, there shall be a presumption that joint custody is in the best interests of a minor child or children",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Idaho, joint custody is presumed not to be in the child's best interests if a parent is found to be a habitual perpetrator of domestic violence.",
+          "claim_es": "En Idaho, se presume que la custodia compartida no sirve al interés superior del menor si se determina que uno de los padres comete violencia doméstica de forma habitual.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-717B/",
+          "source_name": "Idaho Code § 32-717B",
+          "quote": "There shall be a presumption that joint custody is not in the best interests of a minor child if one (1) of the parents is found by the court to be a habitual perpetrator of domestic violence",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Idaho Code § 32-717",
+          "label_es": "Idaho Code § 32-717",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-717/"
+        },
+        {
+          "label_en": "Idaho Code § 32-717B",
+          "label_es": "Idaho Code § 32-717B",
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title32/T32CH7/SECT32-717B/"
+        }
+      ]
+    },
     "IA": {
       "facts": [
         {
@@ -236,6 +311,94 @@
           "label_en": "Iowa Judicial Branch: Child Custody",
           "label_es": "Iowa Judicial Branch: Child Custody",
           "url": "https://www.iowacourts.gov/for-the-public/representing-yourself/child-custody"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas courts decide legal custody, residency and parenting time by the best interests of the child.",
+          "claim_es": "Los tribunales de Kansas deciden la custodia legal, la residencia y el tiempo de crianza según el interés superior del menor.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0001_section/023_032_0001_k/",
+          "source_name": "Kansas Statutes § 23-3201",
+          "quote": "The court shall determine legal custody, residency and parenting time of a child in accordance with the best interests of the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Kansas, a parenting plan the parties agree on is presumed to be in the child's best interests, unless the court makes specific findings otherwise.",
+          "claim_es": "En Kansas, se presume que un plan de crianza acordado por las partes sirve al interés superior del menor, salvo que el tribunal haga constataciones específicas en contrario.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0002_section/023_032_0002_k/",
+          "source_name": "Kansas Statutes § 23-3202",
+          "quote": "If the parties have entered into a parenting plan, it shall be presumed that the agreement is in the best interests of the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under Kansas law, neither parent has a vested interest in custody or residency over the other parent.",
+          "claim_es": "Según la ley de Kansas, ninguno de los padres tiene un derecho adquirido a la custodia o la residencia frente al otro.",
+          "source_url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0004_section/023_032_0004_k/",
+          "source_name": "Kansas Statutes § 23-3204",
+          "quote": "Neither parent shall be considered to have a vested interest in the custody or residency of any child",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Kansas Statutes § 23-3201",
+          "label_es": "Kansas Statutes § 23-3201",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0001_section/023_032_0001_k/"
+        },
+        {
+          "label_en": "Kansas Statutes § 23-3202",
+          "label_es": "Kansas Statutes § 23-3202",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0002_section/023_032_0002_k/"
+        },
+        {
+          "label_en": "Kansas Statutes § 23-3204",
+          "label_es": "Kansas Statutes § 23-3204",
+          "url": "https://kslegislature.gov/li/b2025_26/statute/023_000_0000_chapter/023_032_0000_article/023_032_0004_section/023_032_0004_k/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine courts award parental rights and responsibilities using the best interest of the child standard.",
+          "claim_es": "Los tribunales de Maine asignan los derechos y responsabilidades parentales con el criterio del interés superior del menor.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec1653.html",
+          "source_name": "Maine Revised Statutes Title 19-A § 1653",
+          "quote": "shall apply the standard of the best interest of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, the court treats the child's safety and well-being as primary when deciding residence and parent-child contact.",
+          "claim_es": "En Maine, el tribunal considera primordial la seguridad y el bienestar del menor al decidir la residencia y el contacto con los padres.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec1653.html",
+          "source_name": "Maine Revised Statutes Title 19-A § 1653",
+          "quote": "In making decisions regarding the child's residence and parent-child contact, the court shall consider as primary the safety and well-being of the child.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Maine's court can award allocated, shared, or sole parental rights and responsibilities.",
+          "claim_es": "El tribunal de Maine puede asignar derechos y responsabilidades parentales repartidos, compartidos o exclusivos.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec1653.html",
+          "source_name": "Maine Revised Statutes Title 19-A § 1653",
+          "quote": "Allocated parental rights and responsibilities, shared parental rights and responsibilities or sole parental rights and responsibilities, according to the best interest of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Maine, a parent must give the other parent notice at least 30 days before an intended relocation of the child.",
+          "claim_es": "En Maine, uno de los padres debe avisar al otro al menos 30 días antes de una mudanza prevista del menor.",
+          "source_url": "https://legislature.maine.gov/statutes/19-A/title19-Asec1653.html",
+          "source_name": "Maine Revised Statutes Title 19-A § 1653",
+          "quote": "At least 30 days before the intended relocation of a child by a parent, the parent shall provide notice to the other parent of the intended relocation.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Maine Revised Statutes Title 19-A § 1653",
+          "label_es": "Maine Revised Statutes Title 19-A § 1653",
+          "url": "https://legislature.maine.gov/statutes/19-A/title19-Asec1653.html"
         }
       ]
     },
@@ -294,7 +457,7 @@
         },
         {
           "claim_en": "To change an order, one reason you can give is that the current arrangement isn't serving the children's interests.",
-          "claim_es": "Para cambiar una orden, una razón que puede dar es que el arreglo actual no cumple con el mejor interés de los hijos.",
+          "claim_es": "Para cambiar una orden, una razón que puede dar es que el arreglo actual no sirve al interés superior de los hijos.",
           "source_url": "https://www.mass.gov/how-to/request-to-change-a-child-custody-or-parenting-time-order",
           "source_name": "Mass.gov: Request to change a custody or parenting time order",
           "quote": "That the best interests of the children aren’t being met by the current arrangement",
@@ -311,6 +474,164 @@
           "label_en": "Mass.gov: Request to change a custody or parenting time order",
           "label_es": "Mass.gov: Request to change a custody or parenting time order",
           "url": "https://www.mass.gov/how-to/request-to-change-a-child-custody-or-parenting-time-order"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "Michigan's custody law lists the reasonable preference of the child, if the court finds the child old enough, as one best-interests factor.",
+          "claim_es": "La ley de custodia de Michigan incluye la preferencia razonable del menor, si el tribunal lo considera con edad suficiente, como un factor del interés superior.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-23",
+          "source_name": "Michigan Compiled Laws § 722.23",
+          "quote": "The reasonable preference of the child, if the court considers the child to be of sufficient age to express preference.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Michigan law presumes it is in a child's best interests to have a strong relationship with both parents.",
+          "claim_es": "La ley de Michigan presume que sirve al interés superior del menor tener una relación sólida con ambos padres.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-27a",
+          "source_name": "Michigan Compiled Laws § 722.27a",
+          "quote": "It is presumed to be in the best interests of a child for the child to have a strong relationship with both of his or her parents.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If Michigan parents agree on parenting time terms, the court orders them unless clear and convincing evidence shows they are not in the child's best interests.",
+          "claim_es": "Si los padres en Michigan acuerdan el tiempo de crianza, el tribunal lo ordena salvo que haya prueba clara y convincente de que no sirve al interés superior del menor.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-27a",
+          "source_name": "Michigan Compiled Laws § 722.27a",
+          "quote": "If the parents of a child agree on parenting time terms, the court shall order the parenting time terms unless the court determines on the record by clear and convincing evidence",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Under Michigan law, a child has a right to parenting time with a parent unless clear and convincing evidence shows it would endanger the child.",
+          "claim_es": "Según la ley de Michigan, el menor tiene derecho a tiempo de crianza con cada padre salvo prueba clara y convincente de que lo pondría en peligro.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-27a",
+          "source_name": "Michigan Compiled Laws § 722.27a",
+          "quote": "A child has a right to parenting time with a parent unless it is shown on the record by clear and convincing evidence that it would endanger the child",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Michigan Compiled Laws § 722.23",
+          "label_es": "Michigan Compiled Laws § 722.23",
+          "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-23"
+        },
+        {
+          "label_en": "Michigan Compiled Laws § 722.27a",
+          "label_es": "Michigan Compiled Laws § 722.27a",
+          "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-722-27a"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota courts must make detailed findings on each best-interests factor when deciding custody and parenting time.",
+          "claim_es": "Los tribunales de Minnesota deben hacer constataciones detalladas sobre cada factor del interés superior del menor al decidir la custodia y el tiempo de crianza.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.17",
+          "source_name": "Minnesota Statutes § 518.17",
+          "quote": "The court must make detailed findings on each of the factors in paragraph (a) based on the ev",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Minnesota court must not prefer one parent over the other solely because of the parent's gender.",
+          "claim_es": "Un tribunal de Minnesota no debe preferir a uno de los padres sobre el otro solo por el género del padre o la madre.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.17",
+          "source_name": "Minnesota Statutes § 518.17",
+          "quote": "must not prefer one parent over the other solely on the basis of the gender of the parent",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In a Minnesota divorce or legal separation, the court grants parenting time on either parent's request so the child can keep a relationship with that parent.",
+          "claim_es": "En un divorcio o separación legal en Minnesota, el tribunal concede tiempo de crianza a pedido de cualquiera de los padres para que el menor mantenga la relación con ese padre.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/518.175",
+          "source_name": "Minnesota Statutes § 518.175",
+          "quote": "the court shall, upon the request of either parent, grant such parenting time on behalf of the child and a parent as will enable the child and the parent to maintain a child to parent relationship",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Minnesota Statutes § 518.17",
+          "label_es": "Minnesota Statutes § 518.17",
+          "url": "https://www.revisor.mn.gov/statutes/cite/518.17"
+        },
+        {
+          "label_en": "Minnesota Statutes § 518.175",
+          "label_es": "Minnesota Statutes § 518.175",
+          "url": "https://www.revisor.mn.gov/statutes/cite/518.175"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "Missouri's stated public policy is that frequent, continuing and meaningful contact with both parents after separation or divorce is in the child's best interest, with exceptions the court finds.",
+          "claim_es": "La política pública de Misuri es que el contacto frecuente, continuo y significativo con ambos padres tras la separación o el divorcio sirve al interés superior del menor, salvo excepciones que determine el tribunal.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.375&bid=26044",
+          "source_name": "Missouri Revised Statutes § 452.375",
+          "quote": "it is the public policy of this state that frequent, continuing and meaningful contact with both parents after the parents have separated or dissolved their marriage is in the best interest of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Missouri courts consider the wishes of the parents and the proposed parenting plan submitted by both parties.",
+          "claim_es": "Los tribunales de Misuri consideran los deseos de los padres y el plan de crianza propuesto por ambas partes.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.375&bid=26044",
+          "source_name": "Missouri Revised Statutes § 452.375",
+          "quote": "The wishes of the child's parents as to custody and the proposed parenting plan submitted by both parties",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Missouri, joint physical custody gives each parent significant, but not necessarily equal, time with the child.",
+          "claim_es": "En Misuri, la custodia física compartida da a cada padre períodos significativos, pero no necesariamente iguales, con el menor.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.375&bid=26044",
+          "source_name": "Missouri Revised Statutes § 452.375",
+          "quote": "an order awarding each of the parents significant, but not necessarily equal, periods of time during which a child resides with or is under the care and supervision of each of the parents",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Missouri Revised Statutes § 452.375",
+          "label_es": "Missouri Revised Statutes § 452.375",
+          "url": "https://revisor.mo.gov/main/OneSection.aspx?section=452.375&bid=26044"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "Montana courts decide the parenting plan by the best interest of the child, considering all relevant parenting factors.",
+          "claim_es": "Los tribunales de Montana deciden el plan de crianza según el interés superior del menor, considerando todos los factores pertinentes.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0020/section_0120/0400-0040-0020-0120.html",
+          "source_name": "Montana Code Annotated § 40-4-212",
+          "quote": "The court shall determine the parenting plan in accordance with the best interest of the child. The court shall consider all relevant parenting factors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A Montana court may not decide a child's best interest based only on a parent's military service.",
+          "claim_es": "Un tribunal de Montana no puede decidir el interés superior del menor basándose solo en el servicio militar de uno de los padres.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0020/section_0120/0400-0040-0020-0120.html",
+          "source_name": "Montana Code Annotated § 40-4-212",
+          "quote": "may not determine the best interest of the child based only upon the parent's military service",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Montana courts may consider adverse effects on the child from continuous and vexatious parenting plan amendment actions.",
+          "claim_es": "Los tribunales de Montana pueden considerar los efectos adversos en el menor de acciones continuas y abusivas para modificar el plan de crianza.",
+          "source_url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0020/section_0120/0400-0040-0020-0120.html",
+          "source_name": "Montana Code Annotated § 40-4-212",
+          "quote": "adverse effects on the child resulting from continuous and vexatious parenting plan amendment actions",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Montana Code Annotated § 40-4-212",
+          "label_es": "Montana Code Annotated § 40-4-212",
+          "url": "https://leg.mt.gov/bills/mca/title_0400/chapter_0040/part_0020/section_0120/0400-0040-0020-0120.html"
         }
       ]
     },
@@ -357,6 +678,81 @@
         }
       ]
     },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "In Nevada, until a court decides custody, each parent has joint legal and joint physical custody of the child.",
+          "claim_es": "En Nevada, hasta que un tribunal decida la custodia, cada padre tiene la custodia legal y física compartida del menor.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-125C.html",
+          "source_name": "Nevada Revised Statutes chapter 125C",
+          "quote": "If a court has not made a determination regarding the custody of a child, each parent has joint legal custody and joint physical custody of the child until otherwise ordered",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Nevada law says the parent and child relationship extends equally to every parent, whatever their marital status.",
+          "claim_es": "La ley de Nevada dice que la relación entre padres e hijos se extiende por igual a cada padre, sea cual sea su estado civil.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-125C.html",
+          "source_name": "Nevada Revised Statutes chapter 125C",
+          "quote": "The parent and child relationship extends equally to every child and to every parent, regardless of the marital status of the parents.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Nevada, joint physical custody is presumed not in the child's best interest if a parent cannot adequately care for the child at least 146 days a year.",
+          "claim_es": "En Nevada, se presume que la custodia física compartida no sirve al interés superior del menor si uno de los padres no puede cuidar adecuadamente al menor al menos 146 días al año.",
+          "source_url": "https://www.leg.state.nv.us/nrs/NRS-125C.html",
+          "source_name": "Nevada Revised Statutes chapter 125C",
+          "quote": "a parent is unable to adequately care for a minor child for at least 146 days of the year",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Nevada Revised Statutes chapter 125C",
+          "label_es": "Nevada Revised Statutes chapter 125C",
+          "url": "https://www.leg.state.nv.us/nrs/NRS-125C.html"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "New Hampshire courts decide parental rights and responsibilities by the best interests of the child, using factors listed in the law.",
+          "claim_es": "Los tribunales de Nuevo Hampshire deciden los derechos y responsabilidades parentales según el interés superior del menor, usando los factores que enumera la ley.",
+          "source_url": "https://gc.nh.gov/rsa/html/XLIII/461-A/461-A-6.htm",
+          "source_name": "New Hampshire RSA 461-A:6",
+          "quote": "In determining parental rights and responsibilities, the court shall be guided by the best interests of the child, and shall consider the following factors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If a New Hampshire court finds roughly equal parenting time is not in the child's best interest, it must make findings supporting its order.",
+          "claim_es": "Si un tribunal de Nuevo Hampshire determina que un tiempo de crianza aproximadamente igual no sirve al interés superior del menor, debe dar constataciones que respalden su orden.",
+          "source_url": "https://gc.nh.gov/rsa/html/XLIII/461-A/461-A-6.htm",
+          "source_name": "New Hampshire RSA 461-A:6",
+          "quote": "If the court concludes that approximately equal parenting time between each child and both parents is not in the best interest of the child, the court shall make findings supporting its order.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In New Hampshire, parents develop and file a parenting plan for the court's decree; if they cannot, the court may develop it.",
+          "claim_es": "En Nuevo Hampshire, los padres elaboran y presentan un plan de crianza para la sentencia; si no pueden, el tribunal puede elaborarlo.",
+          "source_url": "https://gc.nh.gov/rsa/html/XLIII/461-A/461-A-4.htm",
+          "source_name": "New Hampshire RSA 461-A:4",
+          "quote": "the parents shall develop and file with the court a parenting plan to be included in the court's decree. If the parents are unable to develop a parenting plan, the court may develop it.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New Hampshire RSA 461-A:6",
+          "label_es": "New Hampshire RSA 461-A:6",
+          "url": "https://gc.nh.gov/rsa/html/XLIII/461-A/461-A-6.htm"
+        },
+        {
+          "label_en": "New Hampshire RSA 461-A:4",
+          "label_es": "New Hampshire RSA 461-A:4",
+          "url": "https://gc.nh.gov/rsa/html/XLIII/461-A/461-A-4.htm"
+        }
+      ]
+    },
     "NM": {
       "facts": [
         {
@@ -389,6 +785,41 @@
           "label_en": "New Mexico Courts Self-Representation",
           "label_es": "New Mexico Courts Self-Representation",
           "url": "https://selfrepresentation.nmcourts.gov/child-support/"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "In New York, when domestic violence is proven by a preponderance of the evidence, the court must consider its effect on the child's best interests.",
+          "claim_es": "En Nueva York, cuando se prueba la violencia doméstica por preponderancia de la prueba, el tribunal debe considerar su efecto en el interés superior del menor.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/240",
+          "source_name": "New York Domestic Relations Law § 240",
+          "quote": "the court must consider the effect of such domestic violence upon the best interests of the child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "A New York court may not place a child in the custody of a parent who presents a substantial risk of harm to that child.",
+          "claim_es": "Un tribunal de Nueva York no puede dar la custodia de un menor a un padre que represente un riesgo sustancial de daño para ese menor.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/240",
+          "source_name": "New York Domestic Relations Law § 240",
+          "quote": "the court shall not place a child in the custody of a parent who presents a substantial risk of harm to that child",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "New York courts can issue a temporary emergency custody or visitation order in emergencies such as computer malfunctions.",
+          "claim_es": "Los tribunales de Nueva York pueden dictar una orden temporal de emergencia de custodia o visitas en emergencias, como fallas de computadora.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/DOM/240",
+          "source_name": "New York Domestic Relations Law § 240",
+          "quote": "upon emergency situations, including computer malfunctions, to serve the best interest of the child, the court may issue a temporary emergency order for custody or visitation",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "New York Domestic Relations Law § 240",
+          "label_es": "New York Domestic Relations Law § 240",
+          "url": "https://www.nysenate.gov/legislation/laws/DOM/240"
         }
       ]
     },
@@ -427,11 +858,46 @@
         }
       ]
     },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "North Dakota courts decide parental rights and responsibilities by evaluating all factors affecting the best interests and welfare of the child.",
+          "claim_es": "Los tribunales de Dakota del Norte deciden los derechos y responsabilidades parentales evaluando todos los factores que afectan el interés superior y el bienestar del menor.",
+          "source_url": "https://www.ndlegis.gov/cencode/t14c09.pdf",
+          "source_name": "North Dakota Century Code chapter 14-09",
+          "quote": "the best interests and welfare of the child is determined by the court's consideration and evaluation of all factors",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In North Dakota, the court must consider evidence of domestic violence when deciding parental rights and responsibilities.",
+          "claim_es": "En Dakota del Norte, el tribunal debe considerar la evidencia de violencia doméstica al decidir los derechos y responsabilidades parentales.",
+          "source_url": "https://www.ndlegis.gov/cencode/t14c09.pdf",
+          "source_name": "North Dakota Century Code chapter 14-09",
+          "quote": "In determining parental rights and responsibilities, the court shall consider evidence of domestic violence.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "North Dakota law defines a parenting plan as a written plan describing each parent's rights and responsibilities.",
+          "claim_es": "La ley de Dakota del Norte define el plan de crianza como un plan escrito que describe los derechos y responsabilidades de cada padre.",
+          "source_url": "https://www.ndlegis.gov/cencode/t14c09.pdf",
+          "source_name": "North Dakota Century Code chapter 14-09",
+          "quote": "\"Parenting plan\" means a written plan describing each parent's rights and responsibilities.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "North Dakota Century Code chapter 14-09",
+          "label_es": "North Dakota Century Code chapter 14-09",
+          "url": "https://www.ndlegis.gov/cencode/t14c09.pdf"
+        }
+      ]
+    },
     "OH": {
       "facts": [
         {
           "claim_en": "When both Ohio parents jointly file a shared-parenting plan, the court reviews whether it serves the children's interests.",
-          "claim_es": "Cuando ambos padres en Ohio presentan juntos un plan de crianza compartida, el tribunal revisa si es en el mejor interés de los hijos.",
+          "claim_es": "Cuando ambos padres en Ohio presentan juntos un plan de crianza compartida, el tribunal revisa si sirve al interés superior de los hijos.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
           "quote": "the court shall review the parents' plan to determine if it is in the best interest of the c",
@@ -439,7 +905,7 @@
         },
         {
           "claim_en": "If the court finds the plan serves the children's interests, it approves it.",
-          "claim_es": "Si el tribunal determina que el plan es en el mejor interés de los hijos, lo aprueba.",
+          "claim_es": "Si el tribunal determina que el plan sirve al interés superior de los hijos, lo aprueba.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
           "quote": "If the court determines that the plan is in the best interest of the children, the court shall approve it.",
@@ -447,7 +913,7 @@
         },
         {
           "claim_en": "The court may determine the child's wishes and concerns if that serves the child's interests.",
-          "claim_es": "El tribunal puede conocer los deseos e inquietudes del hijo si eso es en su mejor interés.",
+          "claim_es": "El tribunal puede conocer los deseos e inquietudes del hijo si eso sirve a su interés superior.",
           "source_url": "https://codes.ohio.gov/ohio-revised-code/section-3109.04",
           "source_name": "Ohio Revised Code § 3109.04",
           "quote": "If the court determines that it would be in the best interests of the child to determine the child's wishes and concerns with respect to the allocation, it shall proceed to make that determination.",
@@ -534,6 +1000,41 @@
           "label_en": "Utah State Courts Self-Help: Custody",
           "label_es": "Utah State Courts Self-Help: Custody",
           "url": "https://www.utcourts.gov/en/self-help/case-categories/family/divorce/custody.html"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "In a Vermont divorce, the court must make an order on parental rights and responsibilities for any minor child.",
+          "claim_es": "En un divorcio en Vermont, el tribunal debe dictar una orden sobre los derechos y responsabilidades parentales de cualquier hijo menor.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00665",
+          "source_name": "Vermont Statutes 15 V.S.A. § 665",
+          "quote": "the court shall make an order concerning parental rights and responsibilities of any minor child of the parties",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "When Vermont parents cannot agree to divide or share parental rights and responsibilities, the court awards them primarily or solely to one parent.",
+          "claim_es": "Cuando los padres en Vermont no se ponen de acuerdo en dividir o compartir los derechos y responsabilidades parentales, el tribunal los asigna principal o exclusivamente a uno.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00665",
+          "source_name": "Vermont Statutes 15 V.S.A. § 665",
+          "quote": "When the parents cannot agree to divide or share parental rights and responsibilities, the court shall award parental rights and responsibilities primarily or solely to one parent.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "Vermont's court is guided by the best interests of the child and must consider factors such as the child's relationship with each parent.",
+          "claim_es": "El tribunal de Vermont se guía por el interés superior del menor y debe considerar factores como la relación del menor con cada padre.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/15/011/00665",
+          "source_name": "Vermont Statutes 15 V.S.A. § 665",
+          "quote": "the court shall be guided by the best interests of the child and shall consider at least the following factors: (1) the relationship of the child with each parent",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "Vermont Statutes 15 V.S.A. § 665",
+          "label_es": "Vermont Statutes 15 V.S.A. § 665",
+          "url": "https://legislature.vermont.gov/statutes/section/15/011/00665"
         }
       ]
     },
@@ -648,26 +1149,14 @@
     "AR": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CO": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "CT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "DE": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "FL": "fewer than 3 quote-verified facts from official sources (1 verified)",
     "HI": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ID": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IL": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "IN": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "KS": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "KY": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "LA": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ME": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MI": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "MS": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MO": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "MT": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NV": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NH": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "NJ": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "NY": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "ND": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "OK": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "PA": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "RI": "fewer than 3 quote-verified facts from official sources (0 verified)",
@@ -675,7 +1164,6 @@
     "SD": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TN": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "TX": "fewer than 3 quote-verified facts from official sources (0 verified)",
-    "VT": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WI": "fewer than 3 quote-verified facts from official sources (0 verified)",
     "WY": "fewer than 3 quote-verified facts from official sources (0 verified)"
   }
