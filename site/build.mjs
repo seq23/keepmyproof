@@ -252,7 +252,10 @@ export function clusterModel({ facts, verified, translations = {} }) {
     const subs = [], usedEs = new Set();
     for (const data of files) {
       if (!data?.subtopic || !data.title_en || !data.title_es) { stops.push(`NAMED STOP [FILE_SHAPE] ${k}/${data?.subtopic}: needs subtopic, title_en and title_es`); continue; }
-      let es = slugify(subtopicLabel(data.title_es, 'es').replace(/\bcada estado\b/g, '')).split('-').slice(0, 8).join('-') || data.subtopic;
+      const STOP = new Set(['de', 'del', 'la', 'las', 'el', 'los', 'y', 'o', 'en', 'su', 'sus', 'para', 'con', 'a', 'por', 'un', 'una']);
+      const w = slugify(subtopicLabel(data.title_es, 'es').replace(/\bcada estado\b/g, '')).split('-').slice(0, 7);
+      while (w.length > 1 && STOP.has(w[w.length - 1])) w.pop();
+      let es = w.join('-') || data.subtopic;
       if (usedEs.has(es)) es = `${es}-${data.subtopic}`;
       usedEs.add(es);
       const titles = { en: data.title_en, es: data.title_es }, langs = ['en', 'es'];
