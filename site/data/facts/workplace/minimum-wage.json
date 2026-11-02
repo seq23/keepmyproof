@@ -1,0 +1,2243 @@
+{
+  "folder": "workplace",
+  "subtopic": "minimum-wage",
+  "title_en": "Minimum wage, overtime and tipped pay in {state}",
+  "title_es": "Salario mínimo, horas extra y salario con propinas en {state_es}",
+  "search_intent_en": [
+    "{state} minimum wage",
+    "{state} tipped minimum wage",
+    "{state} overtime law",
+    "{state} labor department wage complaint"
+  ],
+  "search_intent_es": [
+    "salario mínimo en {state_es}",
+    "salario mínimo con propinas {state_es}"
+  ],
+  "states": {
+    "AL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says Alabama has no state minimum wage law.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Alabama no tiene una ley estatal de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Alabama No state minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For Alabama, the same table says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "Para Alabama, la misma tabla indica que los empleadores cubiertos por la ley federal de normas laborales justas (FLSA) deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Alabama, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Alabama, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Alabama 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alabama Department of Labor as the state labor office for Alabama; its listed phone number is 334-309-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alabama es Alabama Department of Labor; su teléfono es 334-309-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Alabama Department of Labor 649 Monroe St Montgomery, AL 36131 334-309-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Alabama Department of Labor",
+          "label_es": "Alabama Department of Labor",
+          "url": "https://www.labor.alabama.gov"
+        }
+      ]
+    },
+    "AK": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $14.00 per hour for Alaska.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $14.00 por hora en Alaska.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Alaska Basic Minimum Rate (per hour): $14.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Alaska after 8 hours in a day and 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Alaska después de 8 horas en un día y 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $14.00 Premium Pay After Designated Hours 1 : Daily - 8, Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists Alaska among states that require employers to pay tipped employees the full state minimum wage before tips, shown as $14.00 per hour.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a Alaska entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas: $14.00 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Alaska $14.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Alaska Department of Labor and Workforce Development as the state labor office for Alaska; its listed phone number is 907-465-2700.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Alaska es Alaska Department of Labor and Workforce Development; su teléfono es 907-465-2700.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development PO Box 11149 Juneau, AK 99811-1149 907-465-2700",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Alaska Department of Labor and Workforce Development",
+          "label_es": "Alaska Department of Labor and Workforce Development",
+          "url": "https://www.labor.state.ak.us"
+        }
+      ]
+    },
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.15 per hour for Arizona.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.15 por hora en Arizona.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Arizona Basic Minimum Rate (per hour): $15.15",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $12.15 per hour for tipped employees in Arizona, with a combined cash-and-tip minimum of $15.15.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $12.15 por hora para empleados con propinas en Arizona, con un mínimo combinado (efectivo más propinas) de $15.15.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Arizona $15.15 $3.00 $12.15 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Industrial Commission of Arizona as the state labor office for Arizona; its listed phone number is 602-542-4661.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arizona es Industrial Commission of Arizona; su teléfono es 602-542-4661.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Industrial Commission of Arizona 800 W Washington St Phoenix, AZ 85007 602-542-4661",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Industrial Commission of Arizona",
+          "label_es": "Industrial Commission of Arizona",
+          "url": "https://www.azica.gov"
+        }
+      ]
+    },
+    "AR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $11.00 per hour for Arkansas. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $11.00 por hora en Arkansas. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Arkansas Applicable to employers with 4 or more employees Basic Minimum Rate (per hour): $11.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.63 per hour for tipped employees in Arkansas, with a combined cash-and-tip minimum of $11.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.63 por hora para empleados con propinas en Arkansas, con un mínimo combinado (efectivo más propinas) de $11.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Arkansas $11.00 $8.37 $2.63 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Arkansas Department of Labor & Licensing as the state labor office for Arkansas; its listed phone number is 501-682-4500.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Arkansas es Arkansas Department of Labor & Licensing; su teléfono es 501-682-4500.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Arkansas Department of Labor & Licensing 900 West Capital Ave Ste 400 Little Rock, AR 72201 501-682-4500",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Arkansas Department of Labor & Licensing",
+          "label_es": "Arkansas Department of Labor & Licensing",
+          "url": "https://www.labor.arkansas.gov"
+        }
+      ]
+    },
+    "CA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $16.90 per hour for California.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $16.90 por hora en California.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "California Basic Minimum Rate (per hour): $16.90",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists California among states that require employers to pay tipped employees the full state minimum wage before tips, shown as $16.90 per hour.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a California entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas: $16.90 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "California $16.90",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the California Labor and Workforce Development Agency as the state labor office for California; its listed phone number is 833-526-4636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de California es California Labor and Workforce Development Agency; su teléfono es 833-526-4636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Labor and Workforce Development Agency 800 Capitol Mall, Suite 5000 (MIC-55) Sacramento, CA 95814 833-526-4636",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "California Labor and Workforce Development Agency",
+          "label_es": "California Labor and Workforce Development Agency",
+          "url": "https://www.dir.ca.gov/contactus.html"
+        }
+      ]
+    },
+    "CO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.16 per hour for Colorado.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.16 por hora en Colorado.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Colorado Basic Minimum Rate (per hour): $15.16",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Colorado after 12 hours in a day and 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Colorado después de 12 horas en un día y 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.16 Premium Pay After Designated Hours 1 : Daily - 12, Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $12.14 per hour for tipped employees in Colorado, with a combined cash-and-tip minimum of $15.16.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $12.14 por hora para empleados con propinas en Colorado, con un mínimo combinado (efectivo más propinas) de $15.16.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Colorado $15.16 $3.02 $12.14 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Colorado Department of Labor and Employment as the state labor office for Colorado; its listed phone number is 303-318-8441.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Colorado es Colorado Department of Labor and Employment; su teléfono es 303-318-8441.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Employment 633 17th St Suite 201 Denver, CO 80202-3660 303-318-8441",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Colorado Department of Labor and Employment",
+          "label_es": "Colorado Department of Labor and Employment",
+          "url": "https://cdle.colorado.gov/dlss"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $16.94 per hour for Connecticut.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $16.94 por hora en Connecticut.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Connecticut Basic Minimum Rate (per hour): $16.94",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Connecticut after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Connecticut después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.94 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Connecticut Department of Labor as the state labor office for Connecticut; its listed phone number is 860-263-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Connecticut es Connecticut Department of Labor; su teléfono es 860-263-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 200 Folly Brook Blvd Wethersfield, CT 06109-1114 860-263-6000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Connecticut Department of Labor",
+          "label_es": "Connecticut Department of Labor",
+          "url": "https://www.ct.gov/dol"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Delaware.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Delaware.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Delaware Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.23 per hour for tipped employees in Delaware, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.23 por hora para empleados con propinas en Delaware, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Delaware $15.00 $12.77 $2.23 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Delaware Department of Labor as the state labor office for Delaware; its listed phone number is 302-761-8176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Delaware es Delaware Department of Labor; su teléfono es 302-761-8176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4425 N Market St 4th Floor Wilmington, DE 19802 302-761-8176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Delaware Department of Labor",
+          "label_es": "Delaware Department of Labor",
+          "url": "https://www.labor.delaware.gov"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $18.40 per hour for District of Columbia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $18.40 por hora en Distrito de Columbia.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "District of Columbia Basic Minimum Rate (per hour): $18.40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in District of Columbia after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Distrito de Columbia después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $18.40 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $10.30 per hour for tipped employees in District of Columbia, with a combined cash-and-tip minimum of $18.40.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $10.30 por hora para empleados con propinas en Distrito de Columbia, con un mínimo combinado (efectivo más propinas) de $18.40.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "District of Columbia 3 $18.40 $8.10 $10.30 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the DC Department of Employment Services as the state labor office for District of Columbia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Distrito de Columbia es DC Department of Employment Services.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Services 4058 Minnesota Ave NE Washington, DC 20019",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "District of Columbia Department of Employment Services",
+          "label_es": "District of Columbia Department of Employment Services",
+          "url": "https://www.does.dc.gov"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "A footnote on the U.S. Department of Labor's tipped-wage table says Florida's minimum wage was scheduled to rise by $1.00 each year on September 30 until reaching $15.00 on September 30, 2026.",
+          "claim_es": "Una nota de la tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica que el salario mínimo de Florida aumentaría $1.00 cada 30 de septiembre hasta llegar a $15.00 el 30 de septiembre de 2026.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "The Florida minimum wage is scheduled to increase by $1.00 every year on September 30th until reaching $15.00 on September 30, 2026.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $14.00 per hour for Florida.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $14.00 por hora en Florida.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Florida Basic Minimum Rate (per hour): $14.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $10.98 per hour for tipped employees in Florida, with a combined cash-and-tip minimum of $14.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $10.98 por hora para empleados con propinas en Florida, con un mínimo combinado (efectivo más propinas) de $14.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Florida 4 $14.00 $3.02 $10.98 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Florida Department of Business and Professional Regulation as the state labor office for Florida; its listed phone number is 850-487-1395.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Florida es Florida Department of Business and Professional Regulation; su teléfono es 850-487-1395.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Professional Regulation 2601 Blair Stone Road, Tallahassee, FL 32399 850-487-1395",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Florida Department of Business and Professional Regulation",
+          "label_es": "Florida Department of Business and Professional Regulation",
+          "url": "https://www.myfloridalicense.com/DBPR/"
+        }
+      ]
+    },
+    "GA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a state minimum rate of $5.15 per hour for Georgia, and says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica una tarifa mínima estatal de $5.15 por hora en Georgia y señala que los empleadores cubiertos por la ley federal FLSA deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Georgia Applicable to employers of 6 or more employees Basic Minimum Rate (per hour): $5.15 The State law excludes from coverage any employment that is subject to the federal Fair Labor Standards Act when the federal rate is greater than the State rate. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Georgia, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Georgia, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Georgia 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Georgia Department of Labor as the state labor office for Georgia; its listed phone number is 404-232-7300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Georgia es Georgia Department of Labor; su teléfono es 404-232-7300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 148 Andrew Young International Blvd NE Atlanta, GA 30303 404-232-7300",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Georgia Department of Labor",
+          "label_es": "Georgia Department of Labor",
+          "url": "https://www.dol.georgia.gov"
+        }
+      ]
+    },
+    "HI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $16.00 per hour for Hawaii.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $16.00 por hora en Hawái.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Hawaii Basic Minimum Rate (per hour): $16.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Hawaii after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Hawái después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $14.75 per hour for tipped employees in Hawaii, with a combined cash-and-tip minimum of $16.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $14.75 por hora para empleados con propinas en Hawái, con un mínimo combinado (efectivo más propinas) de $16.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Hawaii* $16.00 $1.25 $14.75",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Hawaii Department of Labor & Industrial Relations as the state labor office for Hawaii; its listed phone number is 808-586-8844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Hawái es Hawaii Department of Labor & Industrial Relations; su teléfono es 808-586-8844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Industrial Relations Princess Ruth Ke'elikolani Building 830 Punchbowl St Honolulu, HI 96813 808-586-8844",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Hawaii Department of Labor & Industrial Relations",
+          "label_es": "Hawaii Department of Labor & Industrial Relations",
+          "url": "https://www.labor.hawaii.gov"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Idaho.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Idaho.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Idaho Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $3.35 per hour for tipped employees in Idaho, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $3.35 por hora para empleados con propinas en Idaho, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Idaho $7.25 $3.90 $3.35 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Idaho Department of Labor as the state labor office for Idaho; its listed phone number is 208-332-3570.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Idaho es Idaho Department of Labor; su teléfono es 208-332-3570.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Idaho Department of Labor 317 W Main St Boise, ID 83735 208-332-3570",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Idaho Department of Labor",
+          "label_es": "Idaho Department of Labor",
+          "url": "https://www.labor.idaho.gov"
+        }
+      ]
+    },
+    "IL": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Illinois. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Illinois. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Illinois Applicable to employers of 4 or more employees, excluding family members Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $9.00 per hour for tipped employees in Illinois, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $9.00 por hora para empleados con propinas en Illinois, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Illinois $15.00 40% of the applicable minimum wage ($6.00) $9.00 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Illinois Department of Labor as the state labor office for Illinois; its listed phone number is 217-782-6206.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Illinois es Illinois Department of Labor; su teléfono es 217-782-6206.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 524 S. 2nd Street, Suite 400 Springfield, IL 62701 217-782-6206",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Illinois Department of Labor",
+          "label_es": "Illinois Department of Labor",
+          "url": "https://www.labor.illinois.gov"
+        }
+      ]
+    },
+    "IN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Indiana. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Indiana. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Indiana Applicable to employers of 2 or more employees Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Indiana, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Indiana, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Indiana $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Indiana Department of Labor as the state labor office for Indiana; its listed phone number is 317-232-2655.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Indiana es Indiana Department of Labor; su teléfono es 317-232-2655.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 402 W. Washington St Room W195 Indianapolis, IN 46204 317-232-2655",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Indiana Department of Labor",
+          "label_es": "Indiana Department of Labor",
+          "url": "https://www.in.gov/dol"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Iowa.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Iowa.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Iowa Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $4.35 per hour for tipped employees in Iowa, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $4.35 por hora para empleados con propinas en Iowa, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Iowa $7.25 40% of the applicable minimum wage ($2.90) $4.35 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Iowa Department of Inspections, Appeals and Licensing as the state labor office for Iowa; its listed phone number is 515-242-5870.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Iowa es Iowa Department of Inspections, Appeals and Licensing; su teléfono es 515-242-5870.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Inspections, Appeals and Licensing 6200 Park Avenue, Des Moines, Iowa 50321 515-242-5870",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Iowa Department of Inspections, Appeals and Licensing",
+          "label_es": "Iowa Department of Inspections, Appeals and Licensing",
+          "url": "https://www.iowadivisionoflabor.gov"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Kansas.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Kansas.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Kansas Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Kansas, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Kansas, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Kansas 12 $7.25 $5.12 $2.13 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kansas Department of Labor as the state labor office for Kansas; its listed phone number is 785-296-5000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kansas es Kansas Department of Labor; su teléfono es 785-296-5000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 401 SW Topeka Blvd Topeka, KS 66603-3182 785-296-5000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Kansas Department of Labor",
+          "label_es": "Kansas Department of Labor",
+          "url": "https://www.dol.ks.gov"
+        }
+      ]
+    },
+    "KY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Kentucky.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Kentucky.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Kentucky Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Kentucky, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Kentucky, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Kentucky $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Kentucky Education and Labor Cabinet as the state labor office for Kentucky; its listed phone number is 502-564-3534.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Kentucky es Kentucky Education and Labor Cabinet; su teléfono es 502-564-3534.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Education and Labor Cabinet 500 Mero Street, Frankfort, Kentucky 40601 502-564-3534",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Kentucky Education and Labor Cabinet",
+          "label_es": "Kentucky Education and Labor Cabinet",
+          "url": "https://elc.ky.gov"
+        }
+      ]
+    },
+    "LA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says Louisiana has no state minimum wage law.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Luisiana no tiene una ley estatal de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Louisiana No state minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For Louisiana, the same table says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "Para Luisiana, la misma tabla indica que los empleadores cubiertos por la ley federal de normas laborales justas (FLSA) deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Louisiana, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Luisiana, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Louisiana 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Louisiana Workforce Commission as the state labor office for Louisiana; its listed phone number is 225-342-3111.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Luisiana es Louisiana Workforce Commission; su teléfono es 225-342-3111.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Louisiana Workforce Commission 1001 N 23rd St Baton Rouge, LA 70802 225-342-3111",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Louisiana Workforce Commission",
+          "label_es": "Louisiana Workforce Commission",
+          "url": "https://www.laworks.net/"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.10 per hour for Maine.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.10 por hora en Maine.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Maine Basic Minimum Rate (per hour): $15.10",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Maine after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Maine después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.10 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $7.55 per hour for tipped employees in Maine, with a combined cash-and-tip minimum of $15.10.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $7.55 por hora para empleados con propinas en Maine, con un mínimo combinado (efectivo más propinas) de $15.10.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Maine $15.10 50% of the applicable minimum wage ($7.55) $7.55 More than $191",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maine Department of Labor as the state labor office for Maine; its listed phone number is 207-623-7900.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maine es Maine Department of Labor; su teléfono es 207-623-7900.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 45 State House Station Augusta, ME 04333 207-623-7900",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Maine Department of Labor",
+          "label_es": "Maine Department of Labor",
+          "url": "https://www.maine.gov/labor"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Maryland.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Maryland.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Maryland Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $3.63 per hour for tipped employees in Maryland, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $3.63 por hora para empleados con propinas en Maryland, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Maryland $15.00 $11.37 $3.63 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Maryland Department of Labor as the state labor office for Maryland; its listed phone number is 410-230-6020.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Maryland es Maryland Department of Labor; su teléfono es 410-230-6020.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 1100 North Eutaw Street Baltimore, MD 21201 410-230-6020",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Maryland Department of Labor",
+          "label_es": "Maryland Department of Labor",
+          "url": "https://www.labor.maryland.gov"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Massachusetts.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Massachusetts.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Massachusetts Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Massachusetts after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Massachusetts después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $6.75 per hour for tipped employees in Massachusetts, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $6.75 por hora para empleados con propinas en Massachusetts, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Massachusetts $15.00 $8.25 $6.75 More than $20",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Massachusetts Executive Office of Labor & Workforce Development as the state labor office for Massachusetts; its listed phone number is 617-626-7100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Massachusetts es Massachusetts Executive Office of Labor & Workforce Development; su teléfono es 617-626-7100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Executive Office of Labor & Workforce Development One Ashburton Pl Room 2112 Boston, MA 02108 617-626-7100",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Massachusetts Executive Office of Labor & Workforce Development",
+          "label_es": "Massachusetts Executive Office of Labor & Workforce Development",
+          "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $13.73 per hour for Michigan. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $13.73 por hora en Míchigan. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Michigan Applicable to employers of 2 or more employees Basic Minimum Rate (per hour): $13.73",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $5.49 per hour for tipped employees in Michigan, with a combined cash-and-tip minimum of $13.73.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $5.49 por hora para empleados con propinas en Míchigan, con un mínimo combinado (efectivo más propinas) de $13.73.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Michigan 15 $13.73 $8.24 $5.49 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Michigan Department of Labor and Economic Opportunity as the state labor office for Michigan; its listed phone number is 517-284-7800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Míchigan es Michigan Department of Labor and Economic Opportunity; su teléfono es 517-284-7800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Economic Opportunity 105 W. Allegan St. Lansing, MI 48933 517-284-7800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Michigan Department of Labor and Economic Opportunity",
+          "label_es": "Michigan Department of Labor and Economic Opportunity",
+          "url": "https://www.michigan.gov/leo"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $11.41 per hour for Minnesota.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $11.41 por hora en Minnesota.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Minnesota Basic Minimum Rate (per hour): $11.41",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Minnesota after 48 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Minnesota después de 48 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $11.41 Premium Pay After Designated Hours 1 : Weekly - 48",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists Minnesota among states that require employers to pay tipped employees the full state minimum wage before tips, shown as $11.41 per hour.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a Minnesota entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas: $11.41 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Minnesota $11.41",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Minnesota Department of Labor and Industry as the state labor office for Minnesota; its listed phone number is 651-284-5005.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Minnesota es Minnesota Department of Labor and Industry; su teléfono es 651-284-5005.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 443 Lafayette Rd N St. Paul, MN 55155 651-284-5005",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Minnesota Department of Labor and Industry",
+          "label_es": "Minnesota Department of Labor and Industry",
+          "url": "https://www.dli.mn.gov"
+        }
+      ]
+    },
+    "MS": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says Mississippi has no state minimum wage law.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Misisipi no tiene una ley estatal de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Mississippi No state minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For Mississippi, the same table says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "Para Misisipi, la misma tabla indica que los empleadores cubiertos por la ley federal de normas laborales justas (FLSA) deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Mississippi, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Misisipi, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Mississippi 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Mississippi Department of Employment Security as the state labor office for Mississippi; its listed phone number is 601-321-6000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misisipi es Mississippi Department of Employment Security; su teléfono es 601-321-6000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Employment Security 1235 Echelon Pkwy PO Box 1699 Jackson, MS 39215-1699 601-321-6000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Mississippi Department of Employment Security",
+          "label_es": "Mississippi Department of Employment Security",
+          "url": "https://www.mdes.ms.gov"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Missouri.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Misuri.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Missouri Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Missouri after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Misuri después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 2 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $7.50 per hour for tipped employees in Missouri, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $7.50 por hora para empleados con propinas en Misuri, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Missouri $15.00 50% of the applicable minimum wage ($7.50) $7.50 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Missouri Department of Labor and Industrial Relations as the state labor office for Missouri; its listed phone number is 573-751-4091.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Misuri es Missouri Department of Labor and Industrial Relations; su teléfono es 573-751-4091.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industrial Relations 421 E Dunklin St PO Box 504 Jefferson City, MO 65102-0504 573-751-4091",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Missouri Department of Labor and Industrial Relations",
+          "label_es": "Missouri Department of Labor and Industrial Relations",
+          "url": "https://www.labor.mo.gov"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists premium (overtime) pay in Montana after 40 hours in a week for businesses with gross annual sales of more than $110,000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Montana después de 40 horas en una semana para negocios con ventas brutas anuales de más de $110,000.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $10.85 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic minimum wage of $4.00 per hour for Montana businesses not covered by the federal Fair Labor Standards Act with gross annual sales of $110,000 or less.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo básico de $4.00 por hora para negocios de Montana no cubiertos por la ley federal FLSA con ventas brutas anuales de $110,000 o menos.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Businesses not covered by the Fair Labor Standards Act with gross annual sales of $110,000 or less Basic Minimum Rate (per hour): $4.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists Montana's basic minimum wage as $10.85 per hour for businesses with gross annual sales of more than $110,000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que el salario mínimo básico de Montana es de $10.85 por hora para negocios con ventas brutas anuales de más de $110,000.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Montana Businesses with gross annual sales of more than $110,000 Basic Minimum Rate (per hour): $10.85",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Montana Department of Labor and Industry as the state labor office for Montana; its listed phone number is 406-444-2840.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Montana es Montana Department of Labor and Industry; su teléfono es 406-444-2840.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry PO Box 1728 Helena, MT 59624-1728 406-444-2840",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Montana Department of Labor and Industry",
+          "label_es": "Montana Department of Labor and Industry",
+          "url": "https://www.dli.mt.gov"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.00 per hour for Nebraska. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.00 por hora en Nebraska. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Nebraska Applicable to employers of 4 or more employees Basic Minimum Rate (per hour): $15.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Nebraska, with a combined cash-and-tip minimum of $15.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Nebraska, con un mínimo combinado (efectivo más propinas) de $15.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Nebraska $15.00 $12.87 $2.13 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nebraska Department of Labor as the state labor office for Nebraska; its listed phone number is 402-471-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nebraska es Nebraska Department of Labor; su teléfono es 402-471-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 550 S 16th St PO Box 94600 Lincoln, NE 68508-4600 402-471-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Nebraska Department of Labor",
+          "label_es": "Nebraska Department of Labor",
+          "url": "https://www.dol.nebraska.gov"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $12.00 per hour for Nevada.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $12.00 por hora en Nevada.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Nevada Basic Minimum Rate (per hour): $12.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists Nevada among states that require employers to pay tipped employees the full state minimum wage before tips, shown as $12.00 per hour.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a Nevada entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas: $12.00 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Nevada $12.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Nevada Department of Business and Industry as the state labor office for Nevada; its listed phone number is 775-684-1890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nevada es Nevada Department of Business and Industry; su teléfono es 775-684-1890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Business and Industry 1830 College Parkway, Suite 100 Carson City, NV 89706 775-684-1890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Nevada Department of Business and Industry",
+          "label_es": "Nevada Department of Business and Industry",
+          "url": "https://labor.nv.gov"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for New Hampshire.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Nuevo Hampshire.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "New Hampshire Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in New Hampshire after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Nuevo Hampshire después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $3.27 per hour for tipped employees in New Hampshire, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $3.27 por hora para empleados con propinas en Nuevo Hampshire, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "New Hampshire $7.25 $3.98 $3.27 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Hampshire Department of Labor as the state labor office for New Hampshire; its listed phone number is 603-271-3176.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo Hampshire es New Hampshire Department of Labor; su teléfono es 603-271-3176.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 95 Pleasant St Concord, NH 03301 603-271-3176",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Hampshire Department of Labor",
+          "label_es": "New Hampshire Department of Labor",
+          "url": "https://dol.nh.gov"
+        }
+      ]
+    },
+    "NJ": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $15.92 per hour for New Jersey.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $15.92 por hora en Nueva Jersey.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "New Jersey Basic Minimum Rate (per hour): $15.92",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in New Jersey after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Nueva Jersey después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $15.92 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $6.05 per hour for tipped employees in New Jersey, with a combined cash-and-tip minimum of $15.92.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $6.05 por hora para empleados con propinas en Nueva Jersey, con un mínimo combinado (efectivo más propinas) de $15.92.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "New Jersey 6 $15.92 $9.87 $6.05 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Jersey Department of Labor and Workforce Development as the state labor office for New Jersey; its listed phone number is 609-292-2305.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva Jersey es New Jersey Department of Labor and Workforce Development; su teléfono es 609-292-2305.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Workforce Development 1 John Fitch Plaza 13th Floor, Suite D PO Box 110 Trenton, NJ 08625-0110 609-292-2305",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Jersey Department of Labor and Workforce Development",
+          "label_es": "New Jersey Department of Labor and Workforce Development",
+          "url": "https://www.nj.gov/labor/"
+        }
+      ]
+    },
+    "NM": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $12.00 per hour for New Mexico.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $12.00 por hora en Nuevo México.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "New Mexico Basic Minimum Rate (per hour): $12.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $3.00 per hour for tipped employees in New Mexico, with a combined cash-and-tip minimum of $12.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $3.00 por hora para empleados con propinas en Nuevo México, con un mínimo combinado (efectivo más propinas) de $12.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "New Mexico $12.00 $9.00 $3.00 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New Mexico Department of Workforce Solutions as the state labor office for New Mexico; its listed phone number is 505-841-8405.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nuevo México es New Mexico Department of Workforce Solutions; su teléfono es 505-841-8405.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Solutions 401 Broadway Blvd NE PO Box 1928 Albuquerque, NM 87103 505-841-8405",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New Mexico Department of Workforce Solutions",
+          "label_es": "New Mexico Department of Workforce Solutions",
+          "url": "https://www.dws.state.nm.us"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists premium (overtime) pay in New York after 40 hours in a week.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Nueva York después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "$16.00 (remainder of the state) Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists New York's basic minimum wage as $17.00 per hour in New York City, Nassau, Suffolk and Westchester counties and $16.00 per hour in the rest of the state.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que el salario mínimo básico de Nueva York es de $17.00 por hora en la ciudad de Nueva York y los condados de Nassau, Suffolk y Westchester, y de $16.00 por hora en el resto del estado.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "New York Basic Minimum Rate (per hour): $17.00 (New York City, Nassau County, Suffolk County, & Westchester County); $16.00 (remainder of the state)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the New York Department of Labor as the state labor office for New York; its listed phone number is 518-457-9000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Nueva York es New York Department of Labor; su teléfono es 518-457-9000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor State Office Bldg # 12 W.A. Harriman Campus Albany, NY 12240 518-457-9000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "New York Department of Labor",
+          "label_es": "New York Department of Labor",
+          "url": "https://www.labor.ny.gov"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for North Carolina.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Carolina del Norte.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "North Carolina Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in North Carolina after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Carolina del Norte después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in North Carolina, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Carolina del Norte, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "North Carolina 13 $7.25 $5.12 $2.13 More than $20",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Carolina Department of Labor as the state labor office for North Carolina; its listed phone number is 800-625-2267.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Norte es North Carolina Department of Labor; su teléfono es 800-625-2267.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 4 W Edenton St Raleigh, NC 27601 800-625-2267",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "North Carolina Department of Labor",
+          "label_es": "North Carolina Department of Labor",
+          "url": "https://www.labor.nc.gov"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for North Dakota.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Dakota del Norte.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "North Dakota Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $4.86 per hour for tipped employees in North Dakota, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $4.86 por hora para empleados con propinas en Dakota del Norte, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "North Dakota $7.25 33% of the applicable minimum wage ($2.39) $4.86 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the North Dakota Department of Labor and Human Rights as the state labor office for North Dakota; its listed phone number is 701-328-2660.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Norte es North Dakota Department of Labor and Human Rights; su teléfono es 701-328-2660.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Human Rights 600 E Boulevard Ave Dept 406 Bismarck, ND 58505-0340 701-328-2660",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "North Dakota Department of Labor and Human Rights",
+          "label_es": "North Dakota Department of Labor and Human Rights",
+          "url": "https://www.nd.gov/labor"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists premium (overtime) pay in Ohio after 40 hours in a week.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Ohio después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $5.50 per hour for tipped employees of Ohio employers with annual gross receipts of $405,000 or more.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $5.50 por hora para empleados con propinas de empleadores de Ohio con ingresos brutos anuales de $405,000 o más.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Ohio 7 Employers with annual gross receipts of $405,000 or more $11.00 $5.50 $5.50",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists Ohio's basic minimum wage as $11.00 per hour for employers with annual gross receipts of $405,000 or more, and $7.25 for employers under that amount.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que el salario mínimo básico de Ohio es de $11.00 por hora para empleadores con ingresos brutos anuales de $405,000 o más, y de $7.25 para los que están por debajo de esa cifra.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Ohio Employers with annual gross receipts of $405,000 or more Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40 Employers with annual gross receipts under $405,000 Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Ohio Department of Commerce as the state labor office for Ohio; its listed phone number is 614-466-3636.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Ohio es Ohio Department of Commerce; su teléfono es 614-466-3636.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Commerce 77 S High St 23rd Floor Columbus, OH 43215 614-466-3636",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Ohio Department of Commerce",
+          "label_es": "Ohio Department of Commerce",
+          "url": "https://com.ohio.gov"
+        }
+      ]
+    },
+    "OK": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists Oklahoma's basic minimum wage as $7.25 per hour for employers with ten or more full-time employees at one location or annual gross sales over $100,000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que el salario mínimo básico de Oklahoma es de $7.25 por hora para empleadores con diez o más empleados de tiempo completo en un mismo lugar o con ventas brutas anuales de más de $100,000.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Oklahoma Employers with ten or more full time employees at any one location or employers with annual gross sales over $100,000 irrespective of number of full time employees. Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Oklahoma, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Oklahoma, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Oklahoma 8 $7.25 $5.12 $2.13 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oklahoma Department of Labor as the state labor office for Oklahoma; its listed phone number is 405-521-6100.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oklahoma es Oklahoma Department of Labor; su teléfono es 405-521-6100.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 409 NE 28th St 3rd Floor Oklahoma City, OK 73105 405-521-6100",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Oklahoma Department of Labor",
+          "label_es": "Oklahoma Department of Labor",
+          "url": "https://www.oklahoma.gov/labor"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists Oregon among states that require employers to pay tipped employees the full state minimum wage before tips.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a Oregón entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Oregon The Oregon minimum wage varies by region. $15.55 (standard statewide); $16.80 (Portland metro); $14.55 (nonurban",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists premium (overtime) pay in Oregon after 40 hours in a week.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Oregón después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "$14.55 (Non-Urban counties) Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists Oregon's basic minimum wage as $15.55 per hour (standard), $16.80 in the Portland metro area and $14.55 in non-urban counties.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que el salario mínimo básico de Oregón es de $15.55 por hora (tarifa estándar), $16.80 en el área metropolitana de Portland y $14.55 en los condados no urbanos.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Oregon Basic Minimum Rate (per hour): $15.55 (standard state rate); $16.80 (Portland Metro Area); $14.55 (Non-Urban counties)",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Oregon Bureau of Labor and Industries as the state labor office for Oregon; its listed phone number is 971-245-3844.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Oregón es Oregon Bureau of Labor and Industries; su teléfono es 971-245-3844.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Bureau of Labor and Industries 1800 SW 1st Ave, Suite 500 Portland, OR 97201 971-245-3844",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Oregon Bureau of Labor and Industries",
+          "label_es": "Oregon Bureau of Labor and Industries",
+          "url": "https://www.oregon.gov/boli"
+        }
+      ]
+    },
+    "PA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Pennsylvania.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Pensilvania.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Pennsylvania Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.83 per hour for tipped employees in Pennsylvania, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.83 por hora para empleados con propinas en Pensilvania, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Pennsylvania $7.25 $4.42 $2.83 $135 per month",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Pennsylvania Department of Labor and Industry as the state labor office for Pennsylvania; its listed phone number is 717-787-5279.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Pensilvania es Pennsylvania Department of Labor and Industry; su teléfono es 717-787-5279.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 1700 Labor and Industry Bldg Harrisburg, PA 17121 717-787-5279",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Pennsylvania Department of Labor and Industry",
+          "label_es": "Pennsylvania Department of Labor and Industry",
+          "url": "https://www.pa.gov/agencies/dli"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $16.00 per hour for Rhode Island.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $16.00 por hora en Rhode Island.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Rhode Island Basic Minimum Rate (per hour): $16.00",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Rhode Island after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Rhode Island después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $3.89 per hour for tipped employees in Rhode Island, with a combined cash-and-tip minimum of $16.00.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $3.89 por hora para empleados con propinas en Rhode Island, con un mínimo combinado (efectivo más propinas) de $16.00.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Rhode Island $16.00 $12.11 $3.89 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Rhode Island Department of Labor and Training as the state labor office for Rhode Island; its listed phone number is 401-462-8550.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Rhode Island es Rhode Island Department of Labor and Training; su teléfono es 401-462-8550.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Training 1511 Pontiac Ave Cranston, RI 02920 401-462-8550",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Rhode Island Department of Labor and Training",
+          "label_es": "Rhode Island Department of Labor and Training",
+          "url": "https://www.dlt.ri.gov"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says South Carolina has no state minimum wage law.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Carolina del Sur no tiene una ley estatal de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "South Carolina No state minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For South Carolina, the same table says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "Para Carolina del Sur, la misma tabla indica que los empleadores cubiertos por la ley federal de normas laborales justas (FLSA) deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in South Carolina, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Carolina del Sur, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "South Carolina 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Carolina Department of Labor, Licensing & Regulations as the state labor office for South Carolina; its listed phone number is 803-896-4300.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Carolina del Sur es South Carolina Department of Labor, Licensing & Regulations; su teléfono es 803-896-4300.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor, Licensing & Regulations 110 Centerview Dr Columbia, SC 29210 803-896-4300",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "South Carolina Department of Labor, Licensing & Regulations",
+          "label_es": "South Carolina Department of Labor, Licensing & Regulations",
+          "url": "https://llr.sc.gov/"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $11.85 per hour for South Dakota.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $11.85 por hora en Dakota del Sur.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "South Dakota Basic Minimum Rate (per hour): $11.85",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $5.93 per hour for tipped employees in South Dakota, with a combined cash-and-tip minimum of $11.85.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $5.93 por hora para empleados con propinas en Dakota del Sur, con un mínimo combinado (efectivo más propinas) de $11.85.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "South Dakota $11.85 50% of the applicable minimum wage ($5.92) $5.93 More than $35",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the South Dakota Department of Labor and Regulation as the state labor office for South Dakota; its listed phone number is 605-773-3101.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Dakota del Sur es South Dakota Department of Labor and Regulation; su teléfono es 605-773-3101.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Regulation 123 W Missouri Ave Pierre, SD 57501 605-773-3101",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "South Dakota Department of Labor and Regulation",
+          "label_es": "South Dakota Department of Labor and Regulation",
+          "url": "https://www.dlr.sd.gov"
+        }
+      ]
+    },
+    "TN": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor's state table says Tennessee has no state minimum wage law.",
+          "claim_es": "La tabla estatal del Departamento de Trabajo de EE. UU. indica que Tennessee no tiene una ley estatal de salario mínimo.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Tennessee No state minimum wage law.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "For Tennessee, the same table says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "Para Tennessee, la misma tabla indica que los empleadores cubiertos por la ley federal de normas laborales justas (FLSA) deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Tennessee, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Tennessee, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Tennessee 11 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Tennessee Department of Labor & Workforce Development as the state labor office for Tennessee; its listed phone number is 844-224-5818.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Tennessee es Tennessee Department of Labor & Workforce Development; su teléfono es 844-224-5818.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor & Workforce Development 220 French Landing Dr Nashville, TN 37243 844-224-5818",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Tennessee Department of Labor & Workforce Development",
+          "label_es": "Tennessee Department of Labor & Workforce Development",
+          "url": "https://www.tn.gov/workforce"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Texas.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Texas.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Texas Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Texas, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Texas, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Texas 12 $7.25 $5.12 $2.13 More than $20",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Texas Workforce Commission as the state labor office for Texas; its listed phone number is 800-628-5115.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Texas es Texas Workforce Commission; su teléfono es 800-628-5115.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Texas Workforce Commission 101 E 15th St Room 651 Austin, TX 78778 800-628-5115",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Texas Workforce Commission",
+          "label_es": "Texas Workforce Commission",
+          "url": "https://www.twc.texas.gov/"
+        }
+      ]
+    },
+    "UT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Utah.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Utah.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Utah Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Utah, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Utah, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Utah 12 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Utah Labor Commission as the state labor office for Utah; its listed phone number is 801-530-6800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Utah es Utah Labor Commission; su teléfono es 801-530-6800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Utah Labor Commission 160 E 300 S 3rd Floor Salt Lake City, UT 84111-6600 801-530-6800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Utah Labor Commission",
+          "label_es": "Utah Labor Commission",
+          "url": "https://www.laborcommission.utah.gov"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $14.42 per hour for Vermont. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $14.42 por hora en Vermont. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Vermont Applicable to employers of two or more employees Basic Minimum Rate (per hour): $14.42",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Vermont after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Vermont después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $14.42 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $7.21 per hour for tipped employees in Vermont, with a combined cash-and-tip minimum of $14.42.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $7.21 por hora para empleados con propinas en Vermont, con un mínimo combinado (efectivo más propinas) de $14.42.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Vermont $14.42 50% of the applicable minimum wage ($7.21) $7.21 More than $120",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Vermont Department of Labor as the state labor office for Vermont; its listed phone number is 802-828-4000.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Vermont es Vermont Department of Labor; su teléfono es 802-828-4000.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor 5 Green Mountain Dr PO Box 488 Montpelier, VT 05601-0488 802-828-4000",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Vermont Department of Labor",
+          "label_es": "Vermont Department of Labor",
+          "url": "https://www.labor.vermont.gov"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $12.77 per hour for Virginia.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $12.77 por hora en Virginia.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Virginia Basic Minimum Rate (per hour): $12.77",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Virginia, with a combined cash-and-tip minimum of $12.77.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Virginia, con un mínimo combinado (efectivo más propinas) de $12.77.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Virginia $12.77 $10.64 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Virginia Department of Labor and Industry as the state labor office for Virginia; its listed phone number is 804-371-2327.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia es Virginia Department of Labor and Industry; su teléfono es 804-371-2327.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industry 600 E Main St Suite 207 Richmond, VA 23219-4101 804-371-2327",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Virginia Department of Labor and Industry",
+          "label_es": "Virginia Department of Labor and Industry",
+          "url": "https://www.doli.Virginia.gov"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $17.13 per hour for Washington.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $17.13 por hora en Washington.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Washington Basic Minimum Rate (per hour): $17.13",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The same U.S. Department of Labor table lists premium (overtime) pay in Washington after 40 hours in a week.",
+          "claim_es": "La misma tabla del Departamento de Trabajo de EE. UU. indica pago adicional (horas extra) en Washington después de 40 horas en una semana.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Basic Minimum Rate (per hour): $17.13 Premium Pay After Designated Hours 1 : Weekly - 40",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists Washington among states that require employers to pay tipped employees the full state minimum wage before tips, shown as $17.13 per hour.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. incluye a Washington entre los estados que exigen pagar a los empleados con propinas el salario mínimo estatal completo antes de propinas: $17.13 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Washington $17.13",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Washington Department of Labor and Industries as the state labor office for Washington; its listed phone number is 360-902-5800.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Washington es Washington Department of Labor and Industries; su teléfono es 360-902-5800.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Labor and Industries 7273 Linderson Way SW Tumwater, WA 98501-5414 360-902-5800",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Washington Department of Labor and Industries",
+          "label_es": "Washington Department of Labor and Industries",
+          "url": "https://www.lni.wa.gov"
+        }
+      ]
+    },
+    "WV": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $8.75 per hour for West Virginia. The table notes that coverage limits apply.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $8.75 por hora en Virginia Occidental. La tabla señala que hay límites de cobertura.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "West Virginia Applicable to employers of 6 or more employees at one location Basic Minimum Rate (per hour): $8.75",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.62 per hour for tipped employees in West Virginia, with a combined cash-and-tip minimum of $8.75.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.62 por hora para empleados con propinas en Virginia Occidental, con un mínimo combinado (efectivo más propinas) de $8.75.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "West Virginia 10 $8.75 70% of the applicable minimum wage ($6.13) $2.62 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the West Virginia Division of Labor as the state labor office for West Virginia; its listed phone number is 304-558-7890.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Virginia Occidental es West Virginia Division of Labor; su teléfono es 304-558-7890.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Division of Labor 1900 Kanawha Blvd State Capitol Complex Building #3 Room 200 Charleston, WV 25305 304-558-7890",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "West Virginia Division of Labor",
+          "label_es": "West Virginia Division of Labor",
+          "url": "https://labor.wv.gov"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a basic state minimum wage of $7.25 per hour for Wisconsin.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica un salario mínimo estatal básico de $7.25 por hora en Wisconsin.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Wisconsin Basic Minimum Rate (per hour): $7.25",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.33 per hour for tipped employees in Wisconsin, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.33 por hora para empleados con propinas en Wisconsin, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Wisconsin 9 $7.25 $4.92 $2.33 Not specified",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wisconsin Department of Workforce Development as the state labor office for Wisconsin; its listed phone number is 608-266-3131.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wisconsin es Wisconsin Department of Workforce Development; su teléfono es 608-266-3131.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Development 201 E Washington Ave Madison, WI 53703 PO Box 7946 Madison, WI 53707-7946 608-266-3131",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Wisconsin Department of Workforce Development",
+          "label_es": "Wisconsin Department of Workforce Development",
+          "url": "https://dwd.wisconsin.gov"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "The U.S. Department of Labor lists a state minimum rate of $5.15 per hour for Wyoming, and says employers covered by the federal Fair Labor Standards Act must pay the federal minimum wage of $7.25 per hour.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica una tarifa mínima estatal de $5.15 por hora en Wyoming y señala que los empleadores cubiertos por la ley federal FLSA deben pagar el salario mínimo federal de $7.25 por hora.",
+          "source_url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+          "source_name": "U.S. Department of Labor, State Minimum Wage Laws",
+          "quote": "Wyoming Basic Minimum Rate (per hour): $5.15 Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor's tipped-wage table lists a minimum cash wage of $2.13 per hour for tipped employees in Wyoming, with a combined cash-and-tip minimum of $7.25.",
+          "claim_es": "La tabla de salarios con propinas del Departamento de Trabajo de EE. UU. indica un salario mínimo en efectivo de $2.13 por hora para empleados con propinas en Wyoming, con un mínimo combinado (efectivo más propinas) de $7.25.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+          "source_name": "U.S. Department of Labor, Minimum Wages for Tipped Employees",
+          "quote": "Wyoming 14 $7.25 $5.12 $2.13 More than $30",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "The U.S. Department of Labor lists the Wyoming Department of Workforce Services as the state labor office for Wyoming; its listed phone number is 307-777-8650.",
+          "claim_es": "El Departamento de Trabajo de EE. UU. indica que la oficina estatal de trabajo de Wyoming es Wyoming Department of Workforce Services; su teléfono es 307-777-8650.",
+          "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+          "source_name": "U.S. Department of Labor, State Labor Offices",
+          "quote": "Department of Workforce Services 5221 Yellowstone Road Cheyenne, WY 82002 307-777-8650",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": [
+        {
+          "label_en": "U.S. Department of Labor: state minimum wage laws",
+          "label_es": "Departamento de Trabajo de EE. UU.: leyes estatales de salario mínimo",
+          "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+        },
+        {
+          "label_en": "Wyoming Department of Workforce Services",
+          "label_es": "Wyoming Department of Workforce Services",
+          "url": "https://dws.wyo.gov"
+        }
+      ]
+    }
+  },
+  "skips": {}
+}
