@@ -11,9 +11,18 @@
   },
   "languages": [
     "en",
-    "es"
+    "es",
+    "zh",
+    "ko"
   ],
   "spanish_rule": "Spanish pages say 'en Estados Unidos' or name the state. App, checklists and store page fully translated at launch, reviewed by a native US Spanish reader before release.",
+  "cjk_rule": "Simplified Chinese (zh, written zh-Hans) and Korean (ko) for US residents: app, checklists and store listing fully translated (owner, 2 Nov 2026). Same risk wording as English: not legal advice, not affiliated with the VA, no court-ready or admissible claims. IEP is always explained (special education plan).",
+  "native_review": {
+    "es": "pending",
+    "zh": "pending",
+    "ko": "pending"
+  },
+  "native_review_rule": "A native US reader of each language reads the app strings (src/strings.ts), these folder names and checklists, and store/<lang>.md before the first store build, then sets that language to the reviewer note (\"reviewed YYYY-MM-DD by <role>\"). The release gate refuses a store build while any language is pending (NAMED STOP NATIVE_REVIEW_PENDING).",
   "community_lens_rule": "Black and Latino pages inside every folder, issue-based (CROWN Act, heirs' property, English-learner IEP, VA file, women and money). Never a race-labelled app, folder or store page; no 'Black-owned' messaging; every disparity fact sourced; no stereotypes; no promise to 'fight discrimination'.",
   "store_keyword_note": "Candidate words for the 100-character keyword field and custom product pages; no competitor names. Spanish (Mexico) listing as a second keyword field is unverified until tested.",
   "review_rule": "Monthly, Search Console decides: topics earning impressions get a folder; ones that don't come down.",
@@ -27,60 +36,78 @@
       "page_order": 1,
       "name": {
         "en": "Divorce prep + co-parenting log",
-        "es": "Preparación para el divorcio y registro de crianza"
+        "es": "Preparación para el divorcio y registro de crianza",
+        "zh": "离婚准备和共同育儿记录",
+        "ko": "이혼 준비와 공동 양육 기록"
       },
       "short_name": {
         "en": "Divorce prep",
-        "es": "Divorcio"
+        "es": "Divorcio",
+        "zh": "离婚准备",
+        "ko": "이혼 준비"
       },
       "checklist_items": [
         {
           "id": "financial-statements",
           "name": {
             "en": "Bank, retirement and debt statements",
-            "es": "Estados de cuenta del banco, jubilación y deudas"
+            "es": "Estados de cuenta del banco, jubilación y deudas",
+            "zh": "银行、退休金和债务对账单",
+            "ko": "은행·퇴직연금·부채 명세서"
           }
         },
         {
           "id": "income-papers",
           "name": {
             "en": "Pay stubs and tax returns",
-            "es": "Talones de pago y declaraciones de impuestos"
+            "es": "Talones de pago y declaraciones de impuestos",
+            "zh": "工资单和报税表",
+            "ko": "급여 명세서와 세금 신고서"
           }
         },
         {
           "id": "household-expenses",
           "name": {
             "en": "Household bills and expenses",
-            "es": "Facturas y gastos del hogar"
+            "es": "Facturas y gastos del hogar",
+            "zh": "家庭账单和开支",
+            "ko": "가계 청구서와 지출"
           }
         },
         {
           "id": "property-papers",
           "name": {
             "en": "Home, car and property papers",
-            "es": "Papeles de la casa, el auto y otros bienes"
+            "es": "Papeles de la casa, el auto y otros bienes",
+            "zh": "房屋、汽车和财产文件",
+            "ko": "주택·자동차·재산 서류"
           }
         },
         {
           "id": "agreements-orders",
           "name": {
             "en": "Agreements and court papers you have",
-            "es": "Acuerdos y papeles de la corte que tenga"
+            "es": "Acuerdos y papeles de la corte que tenga",
+            "zh": "您已有的协议和法院文件",
+            "ko": "가지고 있는 합의서와 법원 서류"
           }
         },
         {
           "id": "messages-received",
           "name": {
             "en": "Messages sent to you",
-            "es": "Mensajes que le enviaron"
+            "es": "Mensajes que le enviaron",
+            "zh": "别人发给您的信息",
+            "ko": "받은 메시지"
           }
         },
         {
           "id": "parenting-log",
           "name": {
             "en": "Co-parenting log: dated handoff and visit notes",
-            "es": "Registro de crianza: notas con fecha de entregas y visitas"
+            "es": "Registro de crianza: notas con fecha de entregas y visitas",
+            "zh": "共同育儿记录：注明日期的交接和探视笔记",
+            "ko": "공동 양육 기록: 날짜를 적은 인계·면접 메모"
           }
         }
       ],
@@ -117,7 +144,9 @@
       "scope_note": "Keeps copies and notes the user already has. No legal advice, no snooping on a spouse's phone or accounts, nothing about hiding money.",
       "display_name": {
         "en": "Divorce prep",
-        "es": "Preparación para el divorcio"
+        "es": "Preparación para el divorcio",
+        "zh": "离婚准备",
+        "ko": "이혼 준비"
       }
     },
     {
@@ -128,53 +157,69 @@
       "page_order": 2,
       "name": {
         "en": "Workplace evidence",
-        "es": "Pruebas del trabajo"
+        "es": "Pruebas del trabajo",
+        "zh": "职场证据",
+        "ko": "직장 내 증거 기록"
       },
       "short_name": {
         "en": "Workplace",
-        "es": "Trabajo"
+        "es": "Trabajo",
+        "zh": "职场",
+        "ko": "직장"
       },
       "checklist_items": [
         {
           "id": "policies",
           "name": {
             "en": "Handbook and policies",
-            "es": "Manual y reglas de la empresa"
+            "es": "Manual y reglas de la empresa",
+            "zh": "员工手册和公司规定",
+            "ko": "직원 안내서와 회사 규정"
           }
         },
         {
           "id": "pay-records",
           "name": {
             "en": "Pay stubs, schedules and hours",
-            "es": "Talones de pago, horarios y horas"
+            "es": "Talones de pago, horarios y horas",
+            "zh": "工资单、排班表和工时",
+            "ko": "급여 명세서·근무 일정·근무 시간"
           }
         },
         {
           "id": "messages-received",
           "name": {
             "en": "Messages sent to you",
-            "es": "Mensajes que le enviaron"
+            "es": "Mensajes que le enviaron",
+            "zh": "别人发给您的信息",
+            "ko": "받은 메시지"
           }
         },
         {
           "id": "incident-notes",
           "name": {
             "en": "Dated notes of what happened",
-            "es": "Notas con fecha de lo que pasó"
+            "es": "Notas con fecha de lo que pasó",
+            "zh": "注明日期的事件记录",
+            "ko": "무슨 일이 있었는지 날짜를 적은 메모"
           }
         },
         {
           "id": "reports-responses",
           "name": {
             "en": "Complaints you made and the replies",
-            "es": "Quejas que presentó y las respuestas"
+            "es": "Quejas que presentó y las respuestas",
+            "zh": "您提出的投诉和回复",
+            "ko": "제기한 불만과 답변"
           }
         },
         {
           "id": "reviews",
           "name": {
             "en": "Job reviews and warnings",
-            "es": "Evaluaciones y advertencias"
+            "es": "Evaluaciones y advertencias",
+            "zh": "工作评估和警告",
+            "ko": "근무 평가와 경고"
           }
         }
       ],
@@ -210,7 +255,9 @@
       "scope_note": "Keeps what the user received or wrote. Never records others in secret, never copies company systems the user may not take.",
       "display_name": {
         "en": "Workplace evidence",
-        "es": "Pruebas del trabajo"
+        "es": "Pruebas del trabajo",
+        "zh": "职场证据",
+        "ko": "직장 내 증거 기록"
       }
     },
     {
@@ -221,53 +268,69 @@
       "page_order": 3,
       "name": {
         "en": "VA disability claim papers",
-        "es": "Papeles del reclamo de discapacidad del VA"
+        "es": "Papeles del reclamo de discapacidad del VA",
+        "zh": "VA 伤残索赔文件",
+        "ko": "VA 장애 보상 청구 서류"
       },
       "short_name": {
         "en": "VA papers",
-        "es": "Papeles del VA"
+        "es": "Papeles del VA",
+        "zh": "VA 文件",
+        "ko": "VA 서류"
       },
       "checklist_items": [
         {
           "id": "service-papers",
           "name": {
             "en": "DD-214 and service papers",
-            "es": "DD-214 y papeles de servicio"
+            "es": "DD-214 y papeles de servicio",
+            "zh": "DD-214 和服役文件",
+            "ko": "DD-214와 복무 서류"
           }
         },
         {
           "id": "medical-records",
           "name": {
             "en": "Medical records you have",
-            "es": "Expedientes médicos que tenga"
+            "es": "Expedientes médicos que tenga",
+            "zh": "您已有的医疗记录",
+            "ko": "가지고 있는 의료 기록"
           }
         },
         {
           "id": "buddy-statements",
           "name": {
             "en": "Statements from people who know",
-            "es": "Declaraciones de personas que saben"
+            "es": "Declaraciones de personas que saben",
+            "zh": "知情人的陈述",
+            "ko": "사정을 아는 사람들의 진술서"
           }
         },
         {
           "id": "claim-copies",
           "name": {
             "en": "Copies of what you sent the VA",
-            "es": "Copias de lo que envió al VA"
+            "es": "Copias de lo que envió al VA",
+            "zh": "您寄给 VA 的文件副本",
+            "ko": "VA에 보낸 서류 사본"
           }
         },
         {
           "id": "va-letters",
           "name": {
             "en": "Letters and decisions from the VA",
-            "es": "Cartas y decisiones del VA"
+            "es": "Cartas y decisiones del VA",
+            "zh": "VA 寄来的信件和决定",
+            "ko": "VA에서 받은 편지와 결정문"
           }
         },
         {
           "id": "appointment-notes",
           "name": {
             "en": "Dated notes from appointments and exams",
-            "es": "Notas con fecha de citas y exámenes"
+            "es": "Notas con fecha de citas y exámenes",
+            "zh": "预约和检查的日期笔记",
+            "ko": "진료·검사 날짜를 적은 메모"
           }
         }
       ],
@@ -301,7 +364,9 @@
       "scope_note": "Keeps papers and dates only. Never prepares, files, rates, judges eligibility or advises on a claim (VA rules on paid claim help, 38 CFR 14.636). Points to free accredited help on va.gov.",
       "display_name": {
         "en": "VA disability claim papers",
-        "es": "Papeles del reclamo del VA"
+        "es": "Papeles del reclamo del VA",
+        "zh": "VA 伤残索赔文件",
+        "ko": "VA 장애 보상 청구 서류"
       }
     },
     {
@@ -312,53 +377,69 @@
       "page_order": 4,
       "name": {
         "en": "After a parent dies (executor papers)",
-        "es": "Cuando muere un padre o madre (papeles del albacea)"
+        "es": "Cuando muere un padre o madre (papeles del albacea)",
+        "zh": "父母去世后（遗产执行人文件）",
+        "ko": "부모님이 돌아가신 후 (유언 집행인 서류)"
       },
       "short_name": {
         "en": "Executor papers",
-        "es": "Papeles del albacea"
+        "es": "Papeles del albacea",
+        "zh": "遗产执行人文件",
+        "ko": "유언 집행인 서류"
       },
       "checklist_items": [
         {
           "id": "will-trust",
           "name": {
             "en": "Will or trust copies",
-            "es": "Copias del testamento o fideicomiso"
+            "es": "Copias del testamento o fideicomiso",
+            "zh": "遗嘱或信托副本",
+            "ko": "유언장 또는 신탁 사본"
           }
         },
         {
           "id": "death-certificates",
           "name": {
             "en": "Death certificates",
-            "es": "Actas de defunción"
+            "es": "Actas de defunción",
+            "zh": "死亡证明",
+            "ko": "사망 증명서"
           }
         },
         {
           "id": "court-appointment",
           "name": {
             "en": "Court papers naming the executor",
-            "es": "Papeles de la corte que nombran al albacea"
+            "es": "Papeles de la corte que nombran al albacea",
+            "zh": "指定遗嘱执行人的法院文件",
+            "ko": "유언 집행인을 지정한 법원 서류"
           }
         },
         {
           "id": "accounts-property",
           "name": {
             "en": "Accounts and property papers",
-            "es": "Papeles de cuentas y bienes"
+            "es": "Papeles de cuentas y bienes",
+            "zh": "账户和财产文件",
+            "ko": "계좌와 재산 서류"
           }
         },
         {
           "id": "bills-letters",
           "name": {
             "en": "Bills and letters to close out",
-            "es": "Facturas y cartas por cerrar"
+            "es": "Facturas y cartas por cerrar",
+            "zh": "需要结清的账单和信件",
+            "ko": "정리해야 할 청구서와 편지"
           }
         },
         {
           "id": "family-land",
           "name": {
             "en": "Family land papers (heirs' property)",
-            "es": "Papeles de tierras de la familia (propiedad heredada)"
+            "es": "Papeles de tierras de la familia (propiedad heredada)",
+            "zh": "家族土地文件（继承人共有财产）",
+            "ko": "가족 토지 서류(상속인 공유 재산)"
           },
           "lens": "heirs-property"
         }
@@ -394,7 +475,9 @@
       "scope_note": "Keeps papers. No legal or tax advice, no deadlines calculated.",
       "display_name": {
         "en": "After a parent dies",
-        "es": "Cuando muere un padre o madre"
+        "es": "Cuando muere un padre o madre",
+        "zh": "父母去世后",
+        "ko": "부모님이 돌아가신 후"
       }
     },
     {
@@ -405,53 +488,69 @@
       "page_order": 5,
       "name": {
         "en": "Special-ed (IEP) binder for parents",
-        "es": "Carpeta de educación especial (IEP) para padres"
+        "es": "Carpeta de educación especial (IEP) para padres",
+        "zh": "家长的特殊教育（IEP）文件夹",
+        "ko": "부모를 위한 특수교육(IEP) 바인더"
       },
       "short_name": {
         "en": "IEP (special education plan)",
-        "es": "IEP (plan de educación especial)"
+        "es": "IEP (plan de educación especial)",
+        "zh": "IEP（特殊教育计划）",
+        "ko": "IEP(특수교육 계획)"
       },
       "checklist_items": [
         {
           "id": "current-iep",
           "name": {
             "en": "The current IEP",
-            "es": "El IEP actual"
+            "es": "El IEP actual",
+            "zh": "现行的 IEP",
+            "ko": "현재 IEP"
           }
         },
         {
           "id": "evaluations",
           "name": {
             "en": "Evaluations and test reports",
-            "es": "Evaluaciones e informes de pruebas"
+            "es": "Evaluaciones e informes de pruebas",
+            "zh": "评估和测试报告",
+            "ko": "평가 및 검사 보고서"
           }
         },
         {
           "id": "progress-reports",
           "name": {
             "en": "Progress reports and report cards",
-            "es": "Informes de progreso y calificaciones"
+            "es": "Informes de progreso y calificaciones",
+            "zh": "进度报告和成绩单",
+            "ko": "진도 보고서와 성적표"
           }
         },
         {
           "id": "school-messages",
           "name": {
             "en": "Messages from school",
-            "es": "Mensajes de la escuela"
+            "es": "Mensajes de la escuela",
+            "zh": "学校发来的信息",
+            "ko": "학교에서 받은 메시지"
           }
         },
         {
           "id": "meeting-notes",
           "name": {
             "en": "Dated meeting notes",
-            "es": "Notas con fecha de reuniones"
+            "es": "Notas con fecha de reuniones",
+            "zh": "注明日期的会议笔记",
+            "ko": "날짜를 적은 회의 메모"
           }
         },
         {
           "id": "discipline-records",
           "name": {
             "en": "Discipline records",
-            "es": "Registros de disciplina"
+            "es": "Registros de disciplina",
+            "zh": "纪律处分记录",
+            "ko": "징계 기록"
           }
         }
       ],
@@ -484,7 +583,9 @@
       "scope_note": "A child's records stay on the parent's phone; never sent to any model, analytics or server. No advice about school services.",
       "display_name": {
         "en": "IEP (special education plan)",
-        "es": "IEP (plan de educación especial)"
+        "es": "IEP (plan de educación especial)",
+        "zh": "IEP（特殊教育计划）",
+        "ko": "IEP(특수교육 계획)"
       }
     },
     {
