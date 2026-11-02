@@ -745,6 +745,64 @@
         }
       ],
       "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas, the personal representative must file the inventory before the 91st day after qualifying, unless the court allows longer.",
+          "claim_es": "En Texas, el representante personal debe presentar el inventario antes del día 91 después de habilitarse, salvo que el tribunal dé más tiempo.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.309.htm",
+          "source_name": "Texas Estates Code, Chapter 309",
+          "quote": "before the 91st day after the date the personal representative qualifies, the representative shall prepare and file wit",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, the personal representative must notify will beneficiaries no later than the 60th day after the will is admitted to probate.",
+          "claim_es": "En Texas, el representante personal debe avisar a los beneficiarios del testamento a más tardar el día 60 después de admitido el testamento.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.308.htm",
+          "source_name": "Texas Estates Code, Chapter 308",
+          "quote": "not later than the 60th day after the date of an order admitting a decedent's will to probate, the personal representative of the decedent's estate",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, the court can appoint from one to three disinterested appraisers for the estate.",
+          "claim_es": "En Texas, el tribunal puede nombrar de uno a tres tasadores sin interés en la herencia.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.309.htm",
+          "source_name": "Texas Estates Code, Chapter 309",
+          "quote": "shall appoint at least one but not more than three disinter",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, the personal representative must prepare an inventory within 91 days after appointment.",
+          "claim_es": "En Míchigan, el representante personal debe preparar un inventario dentro de 91 días después del nombramiento.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "Within 91 days after appointment or other time specified by court rule, a personal representative",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, a copy of the inventory goes to all presumptive heirs and beneficiaries and to interested persons who ask.",
+          "claim_es": "En Míchigan, se envía copia del inventario a todos los presuntos herederos y beneficiarios y a los interesados que la pidan.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "The personal representative shall send a copy of the inventory to all presumptive distributees and to all other interested persons who request it",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, the personal representative gives the court the information needed to calculate the probate inventory fee.",
+          "claim_es": "En Míchigan, el representante personal entrega al tribunal la información para calcular la tarifa del inventario sucesorio.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3706",
+          "source_name": "Michigan Compiled Laws § 700.3706",
+          "quote": "The personal representative shall submit to the court on a timely basis information necessary to calculate the probate inventory fee.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -759,7 +817,6 @@
     "KS": "no official source found",
     "KY": "no official source found",
     "LA": "no official source found",
-    "MI": "no official source found",
     "MS": "no official source found",
     "MO": "no official source found",
     "NJ": "no official source found",
@@ -769,7 +826,6 @@
     "OK": "no official source found",
     "RI": "no official source found",
     "TN": "no official source found",
-    "TX": "no official source found",
     "UT": "no official source found",
     "VT": "no official source found",
     "WV": "no official source found",

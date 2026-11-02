@@ -513,6 +513,35 @@
         }
       ],
       "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "Texas transfer on death deeds are governed by the Texas Real Property Transfer on Death Act.",
+          "claim_es": "En Texas, las escrituras de transferencia al fallecer se rigen por la Ley de Transferencia de Bienes Inmuebles al Fallecer de Texas.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.114.htm",
+          "source_name": "Texas Estates Code, Chapter 114",
+          "quote": "This chapter may be cited as the Texas Real Property Transfer on Death Act.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a person can pass their interest in real property to one or more beneficiaries at death with a transfer on death deed.",
+          "claim_es": "En Texas, una persona puede dejar su participación en un inmueble a uno o más beneficiarios al morir con una escritura de transferencia al fallecer.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.114.htm",
+          "source_name": "Texas Estates Code, Chapter 114",
+          "quote": "An individual may transfer the individual's interest in real property to one or more beneficiaries effective at the transferor's death by a transfer on death deed.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a transfer on death deed cannot be created by an agent using a power of attorney.",
+          "claim_es": "En Texas, no se puede crear una escritura de transferencia al fallecer mediante un poder notarial.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.114.htm",
+          "source_name": "Texas Estates Code, Chapter 114",
+          "quote": "A transfer on death deed may not be created through use of a power of attorney.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -545,7 +574,6 @@
     "RI": "no official source found",
     "SC": "no official source found",
     "TN": "no official source found",
-    "TX": "no official source found",
     "UT": "no official source found",
     "VT": "no official source found",
     "WI": "no official source found",

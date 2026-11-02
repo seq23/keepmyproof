@@ -708,6 +708,64 @@
         }
       ],
       "official_links": []
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "In Texas, a claim can be presented to the personal representative any time before the estate closes, as long as the general statute of limitations has not run.",
+          "claim_es": "En Texas, un reclamo se puede presentar al representante personal en cualquier momento antes de cerrar la herencia, si no ha vencido el plazo general de prescripción.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "A claim may be presented to a personal representative of an estate at any time before the estate is closed if suit on the claim has not been barred by the general statutes of limitation.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a creditor can also present a claim by filing it with the clerk, with vouchers, exhibits and an affidavit.",
+          "claim_es": "En Texas, el acreedor también puede presentar su reclamo depositándolo ante el secretario con comprobantes, anexos y una declaración jurada.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "A claim may also be presented by depositing the claim with the clerk with vouchers and the necessary exhibits and affidavit attached to the claim.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Texas, a claim the personal representative does not act on within 30 days is presumed rejected.",
+          "claim_es": "En Texas, un reclamo sobre el que el representante personal no actúa dentro de 30 días se presume rechazado.",
+          "source_url": "https://tcss.legis.texas.gov/resources/ES/htm/ES.355.htm",
+          "source_name": "Texas Estates Code, Chapter 355",
+          "quote": "the presumption of rejection because the personal representative does not act on the claim within the 30-",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, creditors generally must present claims within 4 months after the notice to creditors is published.",
+          "claim_es": "En Míchigan, los acreedores normalmente deben presentar sus reclamos dentro de 4 meses después de publicado el aviso.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3801",
+          "source_name": "Michigan Compiled Laws § 700.3801",
+          "quote": "Within 4 months after the date of the publication of notice to creditors.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, a creditor the personal representative learns of late gets 28 days from when the representative first knows of them.",
+          "claim_es": "En Míchigan, un acreedor del que el representante personal se entera tarde tiene 28 días desde que el representante lo conoce.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3801",
+          "source_name": "Michigan Compiled Laws § 700.3801",
+          "quote": "within 28 days after the personal representative first knows of the creditor",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, if the notice to creditors was not properly given, claims can be presented up to 3 years after the death.",
+          "claim_es": "En Míchigan, si no se dio bien el aviso a los acreedores, los reclamos se pueden presentar hasta 3 años después de la muerte.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3803",
+          "source_name": "Michigan Compiled Laws § 700.3803",
+          "quote": "If the notice requirements of section 3801 or 7608 have not been met, within 3 years after the decedent's death.",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -724,7 +782,6 @@
     "KY": "no official source found",
     "LA": "no official source found",
     "MA": "no official source found",
-    "MI": "no official source found",
     "MS": "no official source found",
     "NH": "no official source found",
     "NJ": "no official source found",
@@ -733,7 +790,6 @@
     "OK": "no official source found",
     "SD": "no official source found",
     "TN": "no official source found",
-    "TX": "no official source found",
     "UT": "no official source found",
     "VT": "no official source found",
     "VA": "no official source found",

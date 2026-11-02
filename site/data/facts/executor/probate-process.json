@@ -558,6 +558,35 @@
         }
       ],
       "official_links": []
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "In Michigan, probate is generally opened in the county where the person was domiciled at death.",
+          "claim_es": "En Míchigan, la sucesión normalmente se abre en el condado donde la persona tenía su domicilio al morir.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "The county where the decedent was domiciled at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "If the person did not live in Michigan, probate can be opened in a Michigan county where they had property.",
+          "claim_es": "Si la persona no vivía en Míchigan, la sucesión se puede abrir en un condado de Míchigan donde tenía bienes.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "If the decedent was not domiciled in this state, in a county where property of the decedent was located at the time of death.",
+          "checked": "2026-11-02"
+        },
+        {
+          "claim_en": "In Michigan, the court can move a probate case to another county for the convenience of the parties and witnesses.",
+          "claim_es": "En Míchigan, el tribunal puede trasladar el caso sucesorio a otro condado por conveniencia de las partes y testigos.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3201",
+          "source_name": "Michigan Compiled Laws § 700.3201",
+          "quote": "a proceeding's venue may be changed to another county by court order for the convenience of the parties and witnesses",
+          "checked": "2026-11-02"
+        }
+      ],
+      "official_links": []
     }
   },
   "skips": {
@@ -576,7 +605,6 @@
     "KY": "no official source found",
     "LA": "no official source found",
     "MD": "no official source found",
-    "MI": "no official source found",
     "MS": "no official source found",
     "MT": "no official source found",
     "NJ": "no official source found",
