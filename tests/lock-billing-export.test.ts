@@ -117,7 +117,7 @@ test('release gate stops a store build until keys, device test, price recheck an
   const {stops,DEVICE_CHECKS}=await import('../scripts/release-gate.mjs');const now=Date.parse('2026-12-01T00:00:00Z');
   const files:Record<string,unknown>={'release/device-gate.json':{version:'1.0.0',checks:Object.fromEntries(DEVICE_CHECKS.map(c=>[c,true]))},
     'release/price-check.json':{checkedOn:'2026-11-28',incumbentLifetimeUSD:39.99},
-    'topics.json':{languages:['en','es','zh','ko'],native_review:{es:'reviewed 2026-11-20 by a US Spanish reader',zh:'reviewed 2026-11-21 by a US Chinese reader',ko:'reviewed 2026-11-22 by a US Korean reader'}}};
+    'topics.json':{languages:['en','es','zh','ko'],language_status:{es:'launched',zh:'launched',ko:'launched'}}};
   const ready={env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},version:'1.0.0',readJson:(p:string)=>files[p]??null,probe:async()=>200,supportEmail:'support@keepmyproof.com',mx:async()=>1,now};
   assert.deepEqual(await stops(ready),[]);
   const codes=async(patch:object)=>(await stops({...ready,...patch})).map(s=>s.code);
@@ -130,9 +130,10 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.deepEqual(await codes({supportEmail:'help@example.invalid'}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
   assert.deepEqual(await codes({mx:async()=>0}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
   assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_PREVIEW:'1'}}),['PREVIEW_BUILD']);
-  const review=(native_review:object)=>codes({readJson:(p:string)=>p==='topics.json'?{languages:['en','es','zh','ko'],native_review}:files[p]});
-  assert.deepEqual(await review({es:'reviewed 2026-11-20',zh:'reviewed 2026-11-21',ko:'pending'}),['NATIVE_REVIEW_PENDING']);
-  assert.deepEqual(await review({es:'reviewed 2026-11-20',zh:'reviewed 2026-11-21'}),['NATIVE_REVIEW_PENDING']);
-  assert.deepEqual(await review({es:'reviewed 2026-11-20',zh:'reviewed 2026-11-21',ko:'reviewed 2026-11-22'}),[]);
-  assert.equal((await stops({...ready,env:{},readJson:()=>null,probe:async()=>404,supportEmail:undefined})).length,7);
+  // Owner ruling 2 Nov 2026: translations launch without a native reader, so no language state stops a store build.
+  const langs=(topics:unknown)=>codes({readJson:(p:string)=>p==='topics.json'?topics:files[p]});
+  for(const t of [{languages:['en','es','zh','ko'],native_review:{es:'pending',zh:'pending',ko:'pending'}},{languages:['en','es','zh','ko']},null]) assert.deepEqual(await langs(t),[]);
+  const all=(await stops({...ready,env:{},readJson:()=>null,probe:async()=>404,supportEmail:undefined})).map(s=>s.code);
+  assert.deepEqual([...new Set(all)].sort(),['DEVICE_RELEASE_GATE_PENDING','LEGAL_URLS_UNREACHABLE','PRICE_RECHECK_PENDING','REVENUECAT_KEY_MISSING','SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
+  assert.equal(all.length,6);
 });

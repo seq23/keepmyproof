@@ -1,6 +1,6 @@
 // Approved screen wording. One entry per language, in LANGS order: English, US Spanish (usted),
-// Simplified Chinese (zh-Hans, 您) and Korean (ko), all written for US residents. Spanish, Chinese and
-// Korean wait for a native reader before launch (topics.json native_review; release gate NATIVE_REVIEW_PENDING).
+// Simplified Chinese (zh-Hans, 您) and Korean (ko), all written for US residents. All four launch as
+// written, without a native reader (owner ruling 2 Nov 2026; topics.json language_status).
 import { LANGS, type Lang } from "./core/model";
 export const strings = {
   "canKeep": [

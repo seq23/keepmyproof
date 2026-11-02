@@ -1,6 +1,6 @@
 // Translates verified facts into Chinese (divorce) and Korean (executor) for US readers, through
 // OpenRouter ":free" models only ($0: a response with a non-zero usage.cost stops the run). Writes
-// site/data/translations/<folder>/<subtopic>.<lang>.json, keyed by fact key, marked for a native reader.
+// site/data/translations/<folder>/<subtopic>.<lang>.json, keyed by fact key (launched without a native reader: owner ruling 2 Nov 2026).
 // Every translation must keep exactly the numbers of the English claim and pass the banned-word gate,
 // or that fact stays untranslated (and the page may not publish in that language: the gate decides).
 //   OPENROUTER_API_KEY=… node scripts/translate-facts.mjs --folder divorce --lang zh
@@ -65,7 +65,7 @@ async function main() {
       for (const [k, en] of batch) { const t = r.out?.t?.[k]; if (typeof t === 'string' && t.trim() && nums(t) === nums(en) && !bannedWord(t) && !untranslated(t)) facts[k] = t.trim(); }
     }
     total += Object.keys(facts).length - Object.keys(prev.facts).length;
-    writeFileSync(file, JSON.stringify({ schema: 'kmp-translation-v1', folder, subtopic: data.subtopic, lang, review: 'pending native reader before the app launches', translated_on: new Date().toISOString().slice(0, 10), models: [...models], title, facts }, null, 1) + '\n');
+    writeFileSync(file, JSON.stringify({ schema: 'kmp-translation-v1', folder, subtopic: data.subtopic, lang, review: 'launched without a native reader (owner ruling 2 Nov 2026)', translated_on: new Date().toISOString().slice(0, 10), models: [...models], title, facts }, null, 1) + '\n');
     console.log(`${folder}/${data.subtopic} ${lang}: ${Object.keys(facts).length} facts translated (${todo.size} new asked), title ${title ? 'ok' : 'MISSING'}`);
   }
   if (!total && !process.argv.includes('--allow-none')) { console.error('NAMED STOP [NOTHING_TRANSLATED]'); process.exit(2); }

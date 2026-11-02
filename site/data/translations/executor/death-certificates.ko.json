@@ -3,7 +3,7 @@
  "folder": "executor",
  "subtopic": "death-certificates",
  "lang": "ko",
- "review": "pending native reader before the app launches",
+ "review": "launched without a native reader (owner ruling 2 Nov 2026)",
  "translated_on": "2026-11-02",
  "models": [
   "nvidia/nemotron-3-ultra-550b-a55b:free",

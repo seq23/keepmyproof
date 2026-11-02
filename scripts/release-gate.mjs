@@ -27,7 +27,6 @@ export const STOP_WORDS = {
   PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
   LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
   PREVIEW_BUILD: { title: 'KeepMyProof: a store build had the simulator preview switch on', next_step: 'Remove EXPO_PUBLIC_KMP_PREVIEW from the store build; it turns screenshot protection off.' },
-  NATIVE_REVIEW_PENDING: { title: 'KeepMyProof: a native reader checks the Spanish, Chinese and Korean', next_step: 'Have a native US reader of each language read the app, checklists and store listing, then mark it reviewed in topics.json.' },
   SUPPORT_ADDRESS_NOT_ON_DOMAIN: { title: 'KeepMyProof: support mailbox on keepmyproof.com', next_step: 'Set up free email forwarding on keepmyproof.com and point the support address at it.' },
 };
 export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof: live in both stores, selling' };
@@ -53,11 +52,8 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
     stop('PRICE_RECHECK_PENDING', "the incumbent app's App Store lifetime price was not rechecked in the last 7 days (release/price-check.json).");
   else if (LIST_LIFETIME_USD < price.incumbentLifetimeUSD)
     stop('PRICED_BELOW_INCUMBENT', `our $${LIST_LIFETIME_USD} lifetime list price is below the incumbent's $${price.incumbentLifetimeUSD}; her ruling is never to undercut it.`);
-  // Every non-English language is read by a native US reader before a store build (topics.json native_review).
-  const topics = readJson('topics.json');
-  const unread = (topics?.languages ?? ['es']).filter(l => l !== 'en' && !/^reviewed \d{4}-\d{2}-\d{2}\b/.test(topics?.native_review?.[l] ?? ''));
-  if (unread.length)
-    stop('NATIVE_REVIEW_PENDING', `no native reader has checked ${unread.join(', ')} (topics.json native_review); the app and store listing would ship unread translations.`);
+  // No native-reader stop: the owner launched Spanish, Chinese and Korean without one (2 Nov 2026,
+  // "we're gonna skip getting a native Reader and just go ahead and launch it"); topics.json language_status.
   for (const url of LEGAL_URLS) if ((await probe(url)) !== 200)
     stop('LEGAL_URLS_UNREACHABLE', `${url} does not answer 200; the app and store link to it.`);
   // The store listing's support address must be the app's own and receive mail (live MX lookup).
