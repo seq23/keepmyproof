@@ -2,21 +2,54 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W45",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-02T16:37:28.891Z",
-  "state": "running",
+  "generated_at": "2026-11-03T14:15:50.681Z",
+  "state": "stopped",
   "published": 0,
   "indexed": 0,
   "pace": 10,
-  "ai_visitors": "not read: no day this week was collected",
-  "ai_bot_hits": "not read: no day this week was collected",
+  "ai_visitors": "not read: no free analytics source configured for this site (analytics.ai_referrals)",
+  "ai_bot_hits": "not read: no free analytics source configured for this site (analytics.ai_referrals)",
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
   "merged": 0,
+  "held_by_cap": 0,
+  "redirected": [],
+  "cap": {
+    "max_live_pages": 20,
+    "live": 0,
+    "room": 20,
+    "why": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
+  },
   "notes": [
-    "FIND search_console: not read: GSC_SERVICE_ACCOUNT_JSON is not set",
-    "FIND bing_webmaster: not read: BING_WEBMASTER_API_KEY is not set",
-    "FIND relevance_screen: not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+    "NAMED NOTE [CAP_HELD_NO_DATA] cap held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data",
+    "NAMED STOP [FREE_MODEL_KEY_MISSING] no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*); BUILD wrote nothing, CHECK and the report still run"
   ],
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41483271202"
+  "lanes": {
+    "ratio": {
+      "can_be_one": 2,
+      "striking": 1
+    },
+    "can_be_one": {
+      "pages": 0,
+      "measured": 0,
+      "top3": 0,
+      "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
+    },
+    "striking": {
+      "pages": 0,
+      "measured": 0,
+      "top3": 0,
+      "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
+    },
+    "weights": {
+      "neighbour": 35,
+      "unanswered": 30,
+      "weak_top10": 40,
+      "demand": 10
+    },
+    "weight_changes": [],
+    "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+  },
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41651935543"
 }
