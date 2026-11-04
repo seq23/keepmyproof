@@ -2,7 +2,7 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W45",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-03T14:15:50.681Z",
+  "generated_at": "2026-11-04T14:16:20.339Z",
   "state": "stopped",
   "published": 0,
   "indexed": 0,
@@ -22,7 +22,6 @@
     "why": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
   },
   "notes": [
-    "NAMED NOTE [CAP_HELD_NO_DATA] cap held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data",
     "NAMED STOP [FREE_MODEL_KEY_MISSING] no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*); BUILD wrote nothing, CHECK and the report still run"
   ],
   "lanes": {
@@ -51,5 +50,5 @@
     "weight_changes": [],
     "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41651935543"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41845873843"
 }
