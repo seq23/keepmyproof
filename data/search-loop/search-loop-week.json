@@ -2,7 +2,7 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W45",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-04T14:16:20.339Z",
+  "generated_at": "2026-11-05T14:15:47.024Z",
   "state": "stopped",
   "published": 0,
   "indexed": 0,
@@ -50,5 +50,5 @@
     "weight_changes": [],
     "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/41845873843"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42043276414"
 }
