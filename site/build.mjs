@@ -56,34 +56,54 @@ export function legalSections(markdown) {
   return { privacy, terms };
 }
 
-const CSS = `:root{--bg:#f7f3ec;--fg:#1f1b16;--mut:#6d6458;--card:#fffdf9;--line:#e6ddcf;--gold:#b8923f;--golddeep:#7d611f;--goldbg:#f6eedb;--ok:#2e6b3f;--okbg:#e7f2ea;
---serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#16130f;--fg:#f2ece2;--mut:#b3a897;--card:#201c17;--line:#3a332a;--gold:#d8b46a;--golddeep:#e2c27f;--goldbg:#33290f;--ok:#8fd19e;--okbg:#1d2e22;color-scheme:dark}}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.55 var(--sans);overflow-x:hidden}
-a{color:var(--golddeep)}main,header,footer{max-width:720px;margin:0 auto;padding:0 18px}
-header{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:12px}
-.mark{font:600 21px/1 var(--serif);color:var(--fg);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;gap:8px}
-.mark img{width:28px;height:28px;border-radius:7px}
-.nav a,.lang{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
-h1{font:600 32px/1.15 var(--serif);margin:18px 0 12px}h2{font:600 21px/1.3 var(--serif);margin:36px 0 10px}h3{font:600 18px/1.3 var(--serif);margin:0 0 6px}
+// The KeepMyProof brand (approved 6 Nov 2026, design system https://claude.ai/artifact/MEf4smnGyZ6yHs3yYHdZKX):
+// archive ground, graphite text, lockbox green for what you act on, brass only for the seal and date stamps,
+// light and dark following the phone. Noto Serif 700 headings, Noto Sans body, Noto Sans Mono dates, self-hosted
+// (Latin subset; nothing is fetched from a font service). Chinese and Korean fall back to the system CJK fonts,
+// sans for headings too, as in the app.
+const FONT_RANGE = 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD';
+const CSS = `@font-face{font-family:"Noto Serif";font-weight:700;font-style:normal;font-display:swap;src:url(/noto-serif-700.woff2) format("woff2");unicode-range:${FONT_RANGE}}
+@font-face{font-family:"Noto Sans";font-weight:100 900;font-style:normal;font-display:swap;src:url(/noto-sans.woff2) format("woff2");unicode-range:${FONT_RANGE}}
+@font-face{font-family:"Noto Sans Mono";font-weight:500;font-style:normal;font-display:swap;src:url(/noto-sans-mono-500.woff2) format("woff2");unicode-range:${FONT_RANGE}}
+:root{--bg:#F3F4F1;--fg:#1E2326;--mut:#5B6266;--card:#FFFFFF;--line:#D9DDD8;--ok:#0B6E4F;--onok:#FFFFFF;--okbg:#E3F1EA;--brass:#D9A441;--brassink:#7A5512;--brassbg:#F6EBD3;--red:#B42318;
+--gold:var(--brass);--golddeep:var(--ok);--goldbg:var(--brassbg);
+--serif:"Noto Serif","Noto Serif SC","Noto Serif KR",Georgia,serif;--sans:"Noto Sans","Noto Sans SC","Noto Sans KR","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--mono:"Noto Sans Mono",ui-monospace,Menlo,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121615;--fg:#EEF0EC;--mut:#A9B0AC;--card:#1B201F;--line:#2E3533;--ok:#4FC197;--onok:#0B1F17;--okbg:#16291F;--brass:#E2B65E;--brassink:#F0CF8A;--brassbg:#33290F;--red:#FF8A80;color-scheme:dark}}
+:lang(zh),:lang(ko){--serif:var(--sans)}:lang(zh) .lbl,:lang(ko) .lbl{letter-spacing:0;font-family:var(--sans)}:lang(ko){word-break:keep-all}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+a{color:var(--ok);text-underline-offset:3px}a:focus-visible,summary:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+main,header,footer{max-width:720px;margin:0 auto;padding:0 16px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;min-height:64px;gap:4px 12px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.mark{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}.mark img{display:block;height:32px;width:auto}
+header nav{display:flex;flex-wrap:wrap;gap:0 8px}
+.nav a,.lang{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font-weight:600}
+h1{font:700 30px/1.2 var(--serif);margin:20px 0 12px;letter-spacing:-.005em}h2{font:700 21px/1.33 var(--serif);margin:36px 0 10px}h3{font:600 18px/1.35 var(--sans);margin:0 0 6px}
+h3 a{display:inline-flex;align-items:center;min-height:44px}
 p{margin:0 0 12px}ul{margin:6px 0 12px;padding-left:22px}li{margin:0 0 6px}
-.definition{font-size:18px}.lbl{font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:0}
-.sub{font-size:14px;color:var(--mut)}
-.soon{background:var(--goldbg);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;min-height:44px;margin:16px 0}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:10px;border:1.5px solid var(--ok);color:var(--ok);background:var(--card);font:600 16px/1.2 var(--sans);text-decoration:none;padding:0 16px;margin:4px 8px 4px 0}
+.definition{font-size:18px;line-height:1.55}.lbl{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:0}
+.sub{font-size:15px;color:var(--mut)}time{font-family:var(--mono);font-size:.92em}
+.soon{background:var(--brassbg);color:var(--fg);border:1.5px solid var(--brass);border-radius:12px;padding:12px 16px;min-height:44px;margin:16px 0;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;border:1.5px solid var(--ok);color:var(--ok);background:var(--card);font:600 16px/1.25 var(--sans);text-decoration:none;padding:8px 20px;margin:4px 8px 4px 0;cursor:pointer;text-align:center;max-width:100%}
+.btn.primary{background:var(--ok);color:var(--onok)}
 .box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 12px;overflow-wrap:anywhere}
 .box ul{margin-bottom:0}.grid{display:grid;gap:12px}@media (min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
-.price{font:600 18px/1.4 var(--serif)}
+.more{list-style:none;padding:0;margin:8px 0 0;border-top:1px solid var(--line)}.more li{margin:0}.more a{display:flex;align-items:center;min-height:44px;font-weight:600}
+.price{font:700 18px/1.4 var(--serif)}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 10px}
 summary{cursor:pointer;min-height:48px;display:flex;align-items:center;padding:8px 16px;font-weight:600}
 details p{padding:0 16px 14px;margin:0}
-footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:14px;color:var(--mut)}
-footer nav{display:flex;flex-wrap:wrap;gap:4px 16px}footer nav a{display:inline-flex;align-items:center;min-height:44px}`;
-const CSS_EXTRA = `.crumbs{font-size:14px;color:var(--mut);margin:8px 0 0}.crumbs a{color:var(--mut)}
-.answer{background:var(--card);border-left:4px solid var(--gold);border-radius:8px;padding:12px 14px}
-.facts li{margin:0 0 10px}.links{columns:2;column-gap:24px}@media (max-width:560px){.links{columns:1}}
-.fact{font-size:14px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}`;
+footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:15px;color:var(--mut)}
+footer nav{display:flex;flex-wrap:wrap;gap:0 16px}footer nav a{display:inline-flex;align-items:center;min-height:44px}
+@media (min-width:900px){h1{font-size:36px}main,header,footer{max-width:760px}.grid{grid-template-columns:1fr 1fr}}`;
+const CSS_EXTRA = `.crumbs{display:flex;flex-wrap:wrap;align-items:center;column-gap:6px;font-size:15px;color:var(--mut);margin:8px 0 0}.crumbs a{color:var(--mut);display:inline-flex;align-items:center;min-height:44px}
+.answer{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:12px;padding:12px 16px}
+.facts li{margin:0 0 10px}.links{columns:2;column-gap:24px}@media (max-width:560px){.links{columns:1}}.links a{display:inline-block;min-height:32px;padding:6px 0}
+.fact{font-size:15px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+input,select,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;min-height:44px;padding:6px 8px;max-width:100%}
+label{display:inline-block;margin:0 8px 8px 0}`;
 const STYLE = CSS + CSS_EXTRA;
+/** The approved logo (light and dark files, byte-identical to the design system); its alt keeps the header link's text "KeepMyProof". */
+const LOGO = '<picture><source srcset="/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/logo.svg" alt="KeepMyProof" width="199" height="32"></picture>';
 
 function fmtDate(lang, iso = SITE.updated) {
   return new Date(`${iso}T12:00:00Z`).toLocaleDateString({ es: 'es-US', zh: 'zh-CN', ko: 'ko-KR' }[lang] || 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
@@ -132,6 +152,7 @@ function shell({ lang, path, alt, title, desc, body, schema = [], crumbs = [], i
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
   const foot = ['home', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}">${c.nav[p]}</a>`).join('');
+  const vaultFoot = c.vault ? `<a href="${guidePath(VAULT_GUIDE, lang)}">${esc(c.vault.nav)}</a>` : '';
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
 ${index ? '' : '<meta name="robots" content="noindex,follow">'}
@@ -139,13 +160,14 @@ ${index ? '' : '<meta name="robots" content="noindex,follow">'}
 <meta property="og:image" content="${SITE.origin}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="KeepMyProof">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE.origin}/og.png">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F4F1" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121615" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/noto-sans.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/noto-serif-700.woff2" as="font" type="font/woff2" crossorigin>
 <style>${STYLE}</style>
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script></head>
-<body><header><a class="mark" href="${pathOf('home', lang)}"><img src="/icon-192.png" alt="" width="28" height="28">KeepMyProof</a>
+<body><header><a class="mark" href="${pathOf('home', lang)}">${LOGO}</a>
 <nav aria-label="Language">${langLinks}</nav></header>
 <main>${crumbHtml}${body}</main>
-<footer><nav aria-label="${esc(c.nav.home)}">${foot}${langLinks}</nav>
+<footer><nav aria-label="${esc(c.nav.home)}">${foot}${vaultFoot}${langLinks}</nav>
 <p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time>.</p></footer>
 </body></html>
 `;
@@ -160,13 +182,24 @@ function page({ lang, id, title, desc, body, schema = [] }) {
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
+/** The vault feature line (owner yes, 6 Nov 2026: a feature, not the lead): below the papers story, EN and ES only (the guides exist in those two). */
+function vaultSection(lang) {
+  const v = COPY[lang].vault; if (!v) return '';
+  const g = (id) => GUIDES.find((x) => x.id === id);
+  const links = [[VAULT_GUIDE[lang].h1, guidePath(VAULT_GUIDE, lang)], [v.altLabel, `${lang === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`],
+    ...['hide-screenshots-iphone', 'hide-documents-iphone', 'hide-screenshots-android', 'hide-documents-android', 'keep-texts-private'].map((id) => [g(id)[lang].h1, guidePath(g(id), lang)])];
+  return `<h2>${esc(v.h)}</h2><p class="answer">${esc(v.answer)}</p><p>${esc(v.iphone)}</p><ul class="more">${links.map(([t, href]) => `<li><a href="${href}">${esc(t)} ›</a></li>`).join('')}</ul>`;
+}
+
 function home(lang, folders, hubs) {
   const c = COPY[lang], n = SITE.freeItems, faq = c.faq(n);
   const folderHtml = folders.map((f) => `<div class="box"><h3><a href="${hubPath(hubs, f.id, lang)}">${esc(f.display_name[lang])}</a></h3><ul>${f.checklist_items.map((i) => `<li>${esc(i.name[lang])}</li>`).join('')}</ul>${
-    f.id === 'va-disability-papers' ? `<p class="sub">${esc(c.vaNote)} <a href="${SITE.vaHelp}" rel="noopener">${esc(c.vaLink)}</a></p>` : ''}</div>`).join('');
-  const body = `<h1>${esc(c.h1)}</h1><p class="definition">${esc(c.definition)}</p>${storeBlock(lang)}
+    f.id === 'va-disability-papers' ? `<p class="sub">${esc(c.vaNote)} <a href="${SITE.vaHelp}" rel="noopener">${esc(c.vaLink)}</a></p>` : ''}${
+    c.folderMore?.[f.id] ? `<ul class="more">${c.folderMore[f.id].map(([t, href]) => `<li><a href="${href}">${esc(t)}</a></li>`).join('')}</ul>` : ''}</div>`).join('');
+  const body = `<h1>${esc(c.h1)}</h1><p class="definition">${esc(c.definition)}</p>${c.useAs ? `<p>${esc(c.useAs)}</p>` : ''}${storeBlock(lang)}
 <h2>${esc(c.foldersH)}</h2><p class="sub">${esc(c.foldersSub)} <a href="${pathOf('checklists', lang)}">${esc(c.nav.checklists)}</a></p><div class="grid">${folderHtml}</div>
 <h2>${esc(c.privateH)}</h2>${list(c.privateList)}
+${vaultSection(lang)}
 <h2>${esc(c.datesH)}</h2>${list(c.datesList)}
 <h2>${esc(c.backupH)}</h2>${list(c.backupList)}
 <h2>${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
@@ -323,7 +356,7 @@ function clusterPages(topics, hubs, cm, add, stops) {
       }
     }
     const keep = (l) => { const c = CC[l]; return `<h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}
-<p><a class="btn" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>${storeBlock(l)}${vaBlock(l)}`; };
+<p><a class="btn primary" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>${storeBlock(l)}${vaBlock(l)}`; };
 
     // Hub in all four languages.
     const hubAlt = altOf(ALL_LANGS, P.hub);
@@ -332,7 +365,7 @@ function clusterPages(topics, hubs, cm, add, stops) {
       if (n < lo || n > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] hub ${k} ${l}: ${n} (allowed ${lo}-${hi})`);
       const own = subs.filter((s) => subLangs(s).includes(l));
       const body = `<p class="lbl">${esc(folderName(topic, l))}${esc(usTag(l))}</p><h1>${esc(h.h1)}</h1><p class="definition answer">${esc(h.answer)}</p><p class="sub">${esc(c.notAdvice)}</p>
-<p><a class="btn" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>
+<p><a class="btn primary" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>
 ${list(checklistItems(topic, l))}
 ${own.length ? `<h2>${esc(h.statesH)}</h2><ul>${own.map((s) => `<li><a href="${P.sub(s, l)}">${esc(s.label[l])}</a></li>`).join('')}</ul><p><a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>` : ''}
 <h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${storeBlock(l)}${vaBlock(l)}
@@ -625,11 +658,14 @@ export function renderAll(input = loadFacts()) {
   const fl = folders.map((f) => `- [${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))}): ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
   const census = Object.keys(FOLDERS).map((k) => `- ${hubs[FOLDERS[k].topic].en.h1}: ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'en').length} state pages in English, ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'es').length} in Spanish${STATE_LANGS[k] ? `, ${pages.filter((p) => p.state?.folder === k && p.state.lang === STATE_LANGS[k][0]).length} in ${LANG_NAME[STATE_LANGS[k][0]]}` : ''}${(model[k] || []).length ? ` ([by state](${url(FOLDERS[k].path.en)}))` : ''}`).join('\n');
   files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not pictures\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
-  files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: '#f7f3ec', theme_color: '#f7f3ec',
+  files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: "#F3F4F1", theme_color: "#0B6E4F",
     icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2);
   files[`${SITE.indexNowKey}.txt`] = SITE.indexNowKey;
   files['build.txt'] = process.env.CF_PAGES_COMMIT_SHA || 'local';
-  files['_headers'] = `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
+  // KMP_PREVIEW=1 (a branch preview, never production): every response says noindex, and robots.txt asks crawlers to stay out.
+  const preview = process.env.KMP_PREVIEW === '1';
+  if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
+  files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
   if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
   return { files, pages, stops, model };
 }
