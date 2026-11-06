@@ -234,18 +234,6 @@
       "kind": "new"
     },
     {
-      "query": "how to prepare for divorce in canada",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
       "query": "how to prepare for divorce in california",
       "variants": [],
       "signals": {
@@ -455,42 +443,6 @@
       "variants": [],
       "signals": {
         "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in malaysia",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in the philippines",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in court in india",
-      "variants": [],
-      "signals": {
-        "words": 8,
         "question": true,
         "google_suggest": true,
         "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
