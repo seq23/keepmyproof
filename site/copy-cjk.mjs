@@ -8,7 +8,11 @@ export const HREFLANG = { en: 'en', es: 'es', zh: 'zh-Hans', ko: 'ko' };
 export const COPY_CJK = {
   zh: {
     lang: 'zh-Hans', locale: 'zh_CN', dateLocale: 'zh-CN',
-    comingSoon: '即将登陆 Google Play。', getIt: '下载 KeepMyProof', appStore: '在 App Store 打开 ›', googlePlay: '在 Google Play 打开 ›',
+    comingSoon: '即将登陆 App Store（iPhone）和 Google Play（Android）。',
+    vaultBar: { badge: '🔒 照片和文件的私密保险箱', line: '您的照片和文件私密保险箱：用 Face ID 锁住，不留在相册里。',
+      see: '查看私密保险箱（英文）›', nav: '私密保险箱（英文）', chips: ['Face ID 锁定', '不留在相册里', '按日期整理文件、截图和短信的文件夹'],
+      stores: ['App Store（iPhone）', 'Google Play（Android）'], soonTag: '即将推出' },
+    getIt: '下载 KeepMyProof', appStore: '在 App Store 打开 ›', googlePlay: '在 Google Play 打开 ›',
     factSentence: (n) => `KeepMyProof 是一款私密手机应用，用来把离婚、子女监护、职场、VA 索赔、遗产执行和 IEP 文件的副本保存在带清单的文件夹里。文件加密保存在手机上，无需账户，没有广告。前 ${n} 项免费。应用界面有英文、西班牙文、中文和韩文。`,
     disclaimer: '仅供参考，不构成法律建议。KeepMyProof 不是律师事务所，与 VA、任何法院或学校均无关联。',
     vaNote: 'KeepMyProof 只保存您的文件，不准备、不提交、也不评估任何索赔，与 VA 无关联。', vaLink: '查找 VA 认可的免费代表 ›',
@@ -17,7 +21,11 @@ export const COPY_CJK = {
   },
   ko: {
     lang: 'ko', locale: 'ko_KR', dateLocale: 'ko-KR',
-    comingSoon: 'Google Play 출시 예정입니다.', getIt: 'KeepMyProof 받기', appStore: 'App Store에서 열기 ›', googlePlay: 'Google Play에서 열기 ›',
+    comingSoon: 'App Store(iPhone)와 Google Play(Android) 출시 예정입니다.',
+    vaultBar: { badge: '🔒 사진과 문서를 위한 비공개 보관함', line: '사진과 서류를 위한 비공개 보관함: Face ID로 잠그고 카메라 롤 밖에 보관합니다.',
+      see: '비공개 보관함 보기(영어) ›', nav: '비공개 보관함(영어)', chips: ['Face ID 잠금', '카메라 롤 밖에 보관', '서류, 스크린샷, 문자를 날짜별 폴더에'],
+      stores: ['App Store(iPhone)', 'Google Play(Android)'], soonTag: '출시 예정' },
+    getIt: 'KeepMyProof 받기', appStore: 'App Store에서 열기 ›', googlePlay: 'Google Play에서 열기 ›',
     factSentence: (n) => `KeepMyProof는 이혼, 양육권, 직장, VA 보상 청구, 유언 집행, IEP 서류의 사본을 체크리스트가 있는 폴더에 보관하는 비공개 휴대폰 앱입니다. 서류는 휴대폰에 암호화되어 저장되며 계정도 광고도 없습니다. ${n}개 항목까지 무료입니다. 앱은 영어, 스페인어, 중국어, 한국어로 제공됩니다.`,
     disclaimer: '교육용 정보일 뿐이며 법률 자문이 아닙니다. KeepMyProof는 법률 사무소가 아니며 VA, 법원, 학교와 관련이 없습니다.',
     vaNote: 'KeepMyProof는 서류만 보관합니다. 청구를 준비하거나 제출하거나 평가하지 않으며 VA와 관련이 없습니다.', vaLink: 'VA 공인 무료 대리인 찾기 ›',

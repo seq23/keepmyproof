@@ -73,9 +73,9 @@ test('before launch: "coming soon to Google Play", no store link, no offers and 
     assert.ok(!/play\.google\.com|apps\.apple\.com\/[^"]*keepmyproof|class="btn" href="https:\/\/apps\.apple/.test(s), p);
     for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) assert.ok(!app.offers && !app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
   }
-  assert.ok(visible(before.files['index.html']).includes('Coming soon to Google Play.'));
+  assert.ok(visible(before.files['index.html']).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
   const statePage = before.pages.find((p) => p.state && p.state.lang === 'en')!;
-  assert.ok(visible(before.files[statePage.file]).includes('Coming soon to Google Play.'));
+  assert.ok(visible(before.files[statePage.file]).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
   const saved = { ...SITE.stores };
   try {
     SITE.stores.googlePlay = 'https://play.google.com/store/apps/details?id=com.keepmyproof.app';
