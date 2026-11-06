@@ -13,7 +13,7 @@ export const COPY_CJK = {
     disclaimer: '仅供参考，不构成法律建议。KeepMyProof 不是律师事务所，与 VA、任何法院或学校均无关联。',
     vaNote: 'KeepMyProof 只保存您的文件，不准备、不提交、也不评估任何索赔，与 VA 无关联。', vaLink: '查找 VA 认可的免费代表 ›',
     madeBy: 'KeepMyProof 的制作方：', updated: '更新于', contactLine: '有问题请发邮件至', free: '免费', plus: 'KeepMyProof Plus',
-    nav: { home: 'KeepMyProof 中文', terms: '使用条款（英文）', privacy: '隐私政策（英文）', support: '帮助（英文）', checklists: '免费清单', tools: '免费工具（英文）', facts: 'KeepMyProof 简介（英文）', alternatives: '替代方案（英文）' },
+    nav: { home: 'KeepMyProof 中文', terms: '使用条款（英文）', privacy: '隐私政策（英文）', support: '帮助（英文）', checklists: '免费清单', tools: '免费工具（英文）', guides: '指南（英文）', facts: 'KeepMyProof 简介（英文）', alternatives: '替代方案（英文）' },
   },
   ko: {
     lang: 'ko', locale: 'ko_KR', dateLocale: 'ko-KR',
@@ -22,7 +22,7 @@ export const COPY_CJK = {
     disclaimer: '교육용 정보일 뿐이며 법률 자문이 아닙니다. KeepMyProof는 법률 사무소가 아니며 VA, 법원, 학교와 관련이 없습니다.',
     vaNote: 'KeepMyProof는 서류만 보관합니다. 청구를 준비하거나 제출하거나 평가하지 않으며 VA와 관련이 없습니다.', vaLink: 'VA 공인 무료 대리인 찾기 ›',
     madeBy: 'KeepMyProof 제작:', updated: '업데이트', contactLine: '문의 이메일:', free: '무료', plus: 'KeepMyProof Plus',
-    nav: { home: 'KeepMyProof 한국어', terms: '이용 약관(영어)', privacy: '개인정보 처리방침(영어)', support: '고객 지원(영어)', checklists: '무료 체크리스트', tools: '무료 도구(영어)', facts: 'KeepMyProof 소개(영어)', alternatives: '대안 비교(영어)' },
+    nav: { home: 'KeepMyProof 한국어', terms: '이용 약관(영어)', privacy: '개인정보 처리방침(영어)', support: '고객 지원(영어)', checklists: '무료 체크리스트', tools: '무료 도구(영어)', guides: '가이드(영어)', facts: 'KeepMyProof 소개(영어)', alternatives: '대안 비교(영어)' },
   },
 };
 

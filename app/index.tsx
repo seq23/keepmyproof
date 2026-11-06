@@ -12,6 +12,8 @@ import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
+import * as photos from '../src/native/photos';
+import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, type RemovePref } from '../src/core/original';
 import { Button, Card, Field, LangContext, P, Theme, styles, textProps, usePalette } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
@@ -37,6 +39,9 @@ export default function App() {
   const [dateInput, setDateInput] = useState(''), [unknown, setUnknown] = useState(true), [editing, setEditing] = useState(false);
   const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
   const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
+  // After a photo import: offer to remove the original from Photos (src/core/original.ts).
+  const [removePref, setRemovePref] = useState<RemovePref>(DEFAULT_REMOVE_PREF), [pickedAsset, setPickedAsset] = useState<string|null>(null);
+  const [offer, setOffer] = useState<{ assetId: string; itemId: string }|null>(null);
   const [restoreData, setRestoreData] = useState<string|null>(null);
   const [checkData, setCheckData] = useState<string|null>(null);
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
@@ -52,12 +57,13 @@ export default function App() {
   function lock() {
     resume.current = ['home','folder','add','detail','pdf','backup','restore','settings','plus','custom'].includes(screenRef.current) ? screenRef.current : 'home';
     vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setScreen('lock');
-    setCode(''); setCodeAgain(''); setWordInput(''); setError(''); setNotice(''); setConfirm(null);
+    setCode(''); setCodeAgain(''); setWordInput(''); setError(''); setNotice(''); setConfirm(null); setOffer(null); setPickedAsset(null);
     if (!sharing.current) void device.cleanTemps().catch(() => {});
   }
   useEffect(() => {
     mounted.current = true;
     void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
+    void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
     void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
@@ -93,7 +99,7 @@ export default function App() {
   const doRun = (job: () => Promise<void>) => () => { void run(job); };
   function chooseLang(l: Lang) { setLang(l); void device.langChoice.write(l).catch(() => setError(copy(l)('error'))); }
   useEffect(() => { if (screen === 'plus') void billing.products().then(setProducts).catch(() => setError(t('error'))); }, [screen, billing]);
-  function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setLineOpen(false); setNewLine(''); setScreen(next);
+  function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
   }
   function back() {
@@ -122,7 +128,7 @@ export default function App() {
   const backupStale = state && state.backup?.digest !== contentDigest(state);
   function addTo(id: string) {
     if (!state || !mayAdd(state.items.length, ent.plus)) { navigate('plus'); return; }
-    setFolder(id); setDraft(blankDraft(id)); setDateInput(''); setUnknown(true); setEditing(false); navigate('add');
+    setFolder(id); setDraft(blankDraft(id)); setPickedAsset(null); setDateInput(''); setUnknown(true); setEditing(false); navigate('add');
   }
   function startEdit(i: Item) {
     setDraft({ folder:i.folder, checklist:i.checklist, kind:i.kind, title:i.title, note:i.note, happenedOn:i.happenedOn,
@@ -134,8 +140,10 @@ export default function App() {
     if (!vault || !draft.title.trim() || (draft.kind !== 'note' && !draft.bytes)) throw Error('fileRequired');
     const happenedOn = unknown ? null : parseDate(dateInput);
     if (editing) { await vault.edit(itemId, { title:draft.title.trim(), note:draft.note, happenedOn, checklist:draft.checklist, tags:draft.tags.filter(Boolean) }, true, ent.plus); }
-    else await vault.add({ ...draft, title:draft.title.trim(), happenedOn, tags:draft.tags.filter(Boolean) }, ent.plus);
-    if (vaultRef.current === vault) { setDraft(blankDraft(folder)); navigate('folder'); }
+    const savedId = editing ? null : await vault.add({ ...draft, title:draft.title.trim(), happenedOn, tags:draft.tags.filter(Boolean) }, ent.plus);
+    const assetId = pickedAsset; setPickedAsset(null);
+    const ask = savedId !== null && assetId !== null && shouldOffer({ pref:removePref, kind:draft.kind, assetId, editing, systemConfirm:photos.systemConfirm });
+    if (vaultRef.current === vault) { setDraft(blankDraft(folder)); navigate('folder'); if (ask) setOffer({ assetId:assetId!, itemId:savedId! }); }
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
   const btn = (key: StringKey, action: () => void, quiet = false) => <Button title={t(key)} onPress={action} quiet={quiet} disabled={busy} />;
@@ -158,6 +166,8 @@ export default function App() {
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
   else if (screen === 'setup') body = <><P muted>{t('step2')}</P><P heading>{t('lockTitle')}</P><P>{t('six')}</P>
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
+    {photos.systemConfirm && <Card><P>{t('removeSetting')}</P><P muted>{t('removeSettingHint')}</P><Switch accessibilityLabel={t('removeSetting')} value={removePref === 'ask'}
+      onValueChange={v => void run(async () => { const next: RemovePref = v ? 'ask':'never'; await device.removePrefStore.write(next); setRemovePref(next); })} /></Card>}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
     <P muted>{t('wrongGuesses')}</P>{btn('saveCode', doRun(async () => {
       if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
@@ -212,7 +222,13 @@ export default function App() {
           onPress={() => navigate(ent.plus ? 'custom' : 'plus')} />)}
     {btn('add', () => addTo(folder))}
     <P muted>{state.backup ? t('lastBackup',{ date:displayDate(state.backup.checkedOn) }):t('noBackup')}</P><P muted>{t('hideHint')}</P></>;
-  else if (screen === 'folder') body = <><P heading>{title}</P><P muted>{t('suggested')}</P>
+  else if (screen === 'folder') body = <>{offer && <Card><P heading>{t('removeAsk')}</P><P muted>{t('removeWhy')}</P>
+      {btn('keepInPhotos', () => { setOffer(null); setNotice(t('keptNotice')); })}
+      {btn('removeFromPhotos', doRun(async () => {
+        const o = offer; setOffer(null);
+        const result = await removeOriginal(o.assetId, vault.snapshot().items.find(i => i.id === o.itemId), photos.deleteFromPhotos);
+        setNotice(t(result === 'removed' ? 'removedNotice' : 'keptNotice'));
+      }), true)}</Card>}<P heading>{title}</P><P muted>{t('suggested')}</P>
     {folder === 'va-disability-papers' && <Card><P>{t('vaScope')}</P><P>{t('vaHelp')}</P><Button title={t('vaLink')} onPress={() => void Linking.openURL('https://www.va.gov/get-help-from-accredited-representative/')} /></Card>}
     <P section>{t('checklist')}</P>
     <View style={[styles.list,{ borderColor:palette.line, backgroundColor:palette.card }]}>
@@ -232,9 +248,10 @@ export default function App() {
     {btn('folderPdf', () => { setSelection(false); setCover(''); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder))}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
     {!editing && <>{[...launchFolders.map(f => ({id:f.id})), ...state.folders].map(f => <Button quiet key={f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
-      <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null}))} /></View>)}</View>
+      <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPickedAsset(null); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>
       {draft.kind !== 'note' && <>{btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(async () => {
-        const picked = await files.pickAttachment(draft.kind === 'photo'); if (picked) setDraft(d => ({...d,...picked,title:d.title || picked.filename}));
+        const picked = await files.pickAttachment(draft.kind === 'photo'); if (!picked) return;
+        const { assetId, ...file } = picked; setPickedAsset(assetId ?? null); setDraft(d => ({...d,...file,title:d.title || file.filename}));
       }))}{draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     </>}
     <Field label={t('name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}

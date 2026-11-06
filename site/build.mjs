@@ -16,6 +16,7 @@ import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
 import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
 import { TOOLS, calcData } from './tools.mjs';
+import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -81,7 +82,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:4px 16px}footer nav a{display:inline-
 const CSS_EXTRA = `.crumbs{font-size:14px;color:var(--mut);margin:8px 0 0}.crumbs a{color:var(--mut)}
 .answer{background:var(--card);border-left:4px solid var(--gold);border-radius:8px;padding:12px 14px}
 .facts li{margin:0 0 10px}.links{columns:2;column-gap:24px}@media (max-width:560px){.links{columns:1}}
-.fact{font-size:14px;color:var(--mut)}`;
+.fact{font-size:14px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}`;
 const STYLE = CSS + CSS_EXTRA;
 
 function fmtDate(lang, iso = SITE.updated) {
@@ -130,7 +131,7 @@ function shell({ lang, path, alt, title, desc, body, schema = [], crumbs = [], i
   ];
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
-  const foot = ['home', 'checklists', 'tools', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}">${c.nav[p]}</a>`).join('');
+  const foot = ['home', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}">${c.nav[p]}</a>`).join('');
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
 ${index ? '' : '<meta name="robots" content="noindex,follow">'}
@@ -448,7 +449,7 @@ function alternativePages(add) {
 <details><summary>${esc(a.method)}</summary><p>${esc(data.method)}</p></details>
 <h2>${esc(a.handlesH)}</h2>${list(a.handles(SITE.freeItems, SITE.prices))}
 <h2>${esc(a.suitsH(app))}</h2><p>${esc(a.suits[app.kind])}</p>${storeBlock(l)}
-<p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('facts', l)}">${esc(COPY[l].nav.facts)}</a></p>
+<p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('facts', l)}">${esc(COPY[l].nav.facts)}</a> · <a href="${guidePath(VAULT_GUIDE, l)}">${esc(VAULT_GUIDE[l].h1)}</a></p>
 <p class="sub">${esc(a.tm(app))}</p>`;
       add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: a.title(app), desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
         schema: [article(l, path, a.h1(app), a.desc(app), app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
@@ -518,6 +519,40 @@ function toolPages(add, model, stops, toolFacts = []) {
   }
 }
 
+// ---------- how-to guides (vault feature line, site/guides.mjs) ----------
+
+const guidePath = (g, l) => (g.root ? (l === 'en' ? '/' : '/es/') : (l === 'en' ? '/guides/' : '/es/guias/')) + g.slug[l];
+const VAULT_GUIDE = GUIDES.find((g) => g.root);
+function guideSection(s) {
+  const steps = s.steps ? `<ol>${s.steps.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : '';
+  const table = s.table ? `<div style="overflow-x:auto"><table class="cmp" style="min-width:560px"><thead><tr>${s.table.head.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map((r) => `<tr>${r.map((c, i) => (i ? `<td>${esc(c)}</td>` : `<th scope="row">${esc(c)}</th>`)).join('')}</tr>`).join('')}</tbody></table></div>` : '';
+  return `<h2>${esc(s.h)}</h2><p>${esc(s.a)}</p>${steps}${s.list ? list(s.list) : ''}${table}`;
+}
+function guidePages(add) {
+  const hubAlt = { en: pathOf('guides', 'en'), es: pathOf('guides', 'es') };
+  for (const l of LANGS) {
+    const G = GUIDE_COPY[l], hub = pathOf('guides', l), [lo, hi] = RANGE[l];
+    for (const g of GUIDES) {
+      const x = g[l], path = guidePath(g, l), alt = { en: guidePath(g, 'en'), es: guidePath(g, 'es') };
+      if (words(x.answer) < lo || words(x.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] guide ${g.id} ${l}: ${words(x.answer)} words`);
+      if (!g.sources.length) throw Error(`NAMED STOP [GUIDE_UNSOURCED] ${g.id}: every phone step needs Apple's or Google's own help page`);
+      const others = GUIDES.filter((o) => o !== g);
+      const body = `<p class="lbl">${esc(G.nav)}</p><h1>${esc(x.h1)}</h1><p class="definition answer">${esc(x.answer)}</p><p class="sub">${esc(G.bestFor)} ${esc(x.bestFor)}</p>
+${x.sections.map(guideSection).join('\n')}
+${faqHtml(l, x.faq)}
+<h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}<p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>
+<h2>${esc(G.sourcesH)}</h2><ul>${g.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul><p class="sub">${esc(G.checked)}</p>
+<h2>${esc(G.related)}</h2><ul>${others.map((o) => `<li><a href="${guidePath(o, l)}">${esc(o[l].h1)}</a></li>`).join('')}</ul>
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
+      add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: x.title, desc: x.desc, body, speakable: true,
+        crumbs: [{ name: G.nav, path: hub }, { name: x.h1, path }],
+        schema: [article(l, path, x.h1, x.desc, GUIDE_DATES.published, GUIDE_DATES.modified, g.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, x.faq), appSchema(l)] }) });
+    }
+    const body = `<h1>${esc(G.hubH1)}</h1><p class="definition answer">${esc(G.hubAnswer)}</p><p class="sub">${esc(G.notAdvice)}</p><ul>${GUIDES.map((g) => `<li><a href="${guidePath(g, l)}">${esc(g[l].h1)}</a></li>`).join('')}</ul>${storeBlock(l)}`;
+    add({ path: hub, alt: hubAlt, group: 'core', html: page({ lang: l, id: 'guides', title: G.hubTitle, desc: G.hubDesc, body }) });
+  }
+}
+
 // ---------- search-loop question pages: the legal and VA gate ----------
 
 // Pages the engine writes under questions/ are published only if they pass this gate; a failing page
@@ -567,6 +602,7 @@ export function renderAll(input = loadFacts()) {
   checklistFiles(topics, hubs, add, files);
   toolPages(add, model, stops, input.toolFacts);
   factsPage(add);
+  guidePages(add);
   stops.push(...alternativePages(add));
   questionPages(add, files, stops);
 
@@ -588,7 +624,7 @@ export function renderAll(input = loadFacts()) {
 
   const fl = folders.map((f) => `- [${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))}): ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
   const census = Object.keys(FOLDERS).map((k) => `- ${hubs[FOLDERS[k].topic].en.h1}: ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'en').length} state pages in English, ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'es').length} in Spanish${STATE_LANGS[k] ? `, ${pages.filter((p) => p.state?.folder === k && p.state.lang === STATE_LANGS[k][0]).length} in ${LANG_NAME[STATE_LANGS[k][0]]}` : ''}${(model[k] || []).length ? ` ([by state](${url(FOLDERS[k].path.en)}))` : ''}`).join('\n');
-  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
+  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not pictures\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
   files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: '#f7f3ec', theme_color: '#f7f3ec',
     icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2);
   files[`${SITE.indexNowKey}.txt`] = SITE.indexNowKey;

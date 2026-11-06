@@ -9,7 +9,7 @@ import { assemblePdf, exportHtml, originalArchive, type ExportOptions } from '..
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
 const MAX_FILE = 25 * 1024 * 1024;
-export interface Picked { filename: string; mime: string; bytes: string }
+export interface Picked { filename: string; mime: string; bytes: string; assetId?: string | null }
 async function read(uri: string, filename: string, mime: string, size?: number): Promise<Picked> {
   const file = new File(uri);
   try {
@@ -22,7 +22,9 @@ export async function pickAttachment(photo: boolean): Promise<Picked | null> {
     const r = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ['images'], allowsEditing: false, quality: 1,
       preferredAssetRepresentationMode: ImagePicker.UIImagePickerPreferredAssetRepresentationMode.Current });
     if (r.canceled) return null;
-    const a = r.assets[0]; return read(a.uri, a.fileName ?? 'photo.jpg', a.mimeType ?? 'image/jpeg', a.fileSize);
+    const a = r.assets[0];
+    // assetId: the library id, used only if the person later asks to remove the original from Photos.
+    return { ...(await read(a.uri, a.fileName ?? 'photo.jpg', a.mimeType ?? 'image/jpeg', a.fileSize)), assetId: a.assetId ?? null };
   }
   const r = await DocumentPicker.getDocumentAsync({ copyToCacheDirectory: true }); if (r.canceled) return null;
   const a = r.assets[0]; return read(a.uri, a.name, a.mimeType ?? 'application/octet-stream', a.size);
