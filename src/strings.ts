@@ -231,6 +231,54 @@ export const strings = {
     "六位数字。请使用和手机解锁密码不同的数字，这样知道您手机密码的人也打不开您的文件。",
     "숫자 여섯 자리예요. 휴대폰 암호와 다른 숫자를 쓰세요. 그래야 휴대폰 암호를 아는 사람도 서류를 열 수 없어요."
   ],
+  "removeAsk": [
+    "Remove the original from Photos?",
+    "¿Quitar el original de Fotos?",
+    "要从“照片”中移除原图吗？",
+    "사진 앱에서 원본을 삭제할까요?"
+  ],
+  "removeWhy": [
+    "Your copy is saved here. The original is still in Photos, where anyone who opens Photos can see it. If you remove it, your iPhone asks you to confirm, and it stays in Recently Deleted for 30 days.",
+    "Su copia está guardada aquí. El original sigue en Fotos, donde cualquiera que abra Fotos puede verlo. Si lo quita, su iPhone le pedirá que lo confirme y quedará en el álbum Eliminado durante 30 días.",
+    "您的副本已保存在这里。原图仍在“照片”中，任何打开“照片”的人都能看到。如果您移除它，iPhone 会请您确认，照片会在“最近删除”中保留 30 天。",
+    "사본은 여기에 저장되었습니다. 원본은 아직 사진 앱에 있어 사진 앱을 여는 누구나 볼 수 있습니다. 삭제하면 iPhone이 확인을 요청하며, 사진은 30일 동안 '최근 삭제된 항목'에 남습니다."
+  ],
+  "keepInPhotos": [
+    "Keep it in Photos",
+    "Dejarlo en Fotos",
+    "保留在“照片”中",
+    "사진 앱에 그대로 두기"
+  ],
+  "removeFromPhotos": [
+    "Remove from Photos ›",
+    "Quitar de Fotos ›",
+    "从“照片”中移除 ›",
+    "사진 앱에서 삭제 ›"
+  ],
+  "removedNotice": [
+    "Removed from Photos. It stays in Recently Deleted for 30 days. Your copy is here.",
+    "Se quitó de Fotos. Queda en el álbum Eliminado durante 30 días. Su copia está aquí.",
+    "已从“照片”中移除。它会在“最近删除”中保留 30 天。您的副本在这里。",
+    "사진 앱에서 삭제했습니다. 30일 동안 '최근 삭제된 항목'에 남습니다. 사본은 여기에 있습니다."
+  ],
+  "keptNotice": [
+    "Still in Photos. Nothing was changed.",
+    "Sigue en Fotos. No se cambió nada.",
+    "仍在“照片”中。没有做任何更改。",
+    "사진 앱에 그대로 있습니다. 아무것도 바뀌지 않았습니다."
+  ],
+  "removeSetting": [
+    "After adding a photo, ask about removing the original from Photos",
+    "Después de agregar una foto, preguntar si quitar el original de Fotos",
+    "添加照片后，询问是否从“照片”中移除原图",
+    "사진을 추가한 뒤 사진 앱의 원본 삭제 여부 묻기"
+  ],
+  "removeSettingHint": [
+    "Nothing leaves Photos unless you tap Remove and confirm on your iPhone.",
+    "Nada sale de Fotos a menos que toque Quitar y lo confirme en su iPhone.",
+    "除非您点按“移除”并在 iPhone 上确认，否则不会从“照片”中移除任何内容。",
+    "'삭제'를 누르고 iPhone에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
+  ],
   "biometrics": [
     "Also open with Face ID",
     "Abrir también con Face ID",

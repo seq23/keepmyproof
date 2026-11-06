@@ -11,6 +11,6 @@ const config: ExpoConfig = {
   plugins: ['expo-router', 'expo-localization', 'expo-sqlite',
     ['expo-secure-store', { configureAndroidBackup: true, faceIDPermission: 'Open your papers with Face ID. / Abra sus documentos con Face ID.' }],
     ['expo-local-authentication', { faceIDPermission: 'Open your papers with Face ID. / Abra sus documentos con Face ID.' }],
-    ['expo-image-picker', { photosPermission: 'Choose a photo to keep on this phone. / Elija una foto para guardar en este teléfono.', cameraPermission: false, microphonePermission: false }]],
+    ['expo-image-picker', { photosPermission: 'Choose a photo to keep on this phone, and remove the original from Photos only if you ask. / Elija una foto para guardar en este teléfono; el original solo se quita de Fotos si usted lo pide.', cameraPermission: false, microphonePermission: false }]],
 };
 export default config;

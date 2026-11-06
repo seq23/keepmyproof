@@ -25,6 +25,10 @@
   "language_status_rule": "Spanish, Chinese and Korean launch as written, without a native reader (owner ruling 2 Nov 2026: \"we're gonna skip getting a native Reader and just go ahead and launch it\"). The honest-claims checks still read every language.",
   "community_lens_rule": "Black and Latino pages inside every folder, issue-based (CROWN Act, heirs' property, English-learner IEP, VA file, women and money). Never a race-labelled app, folder or store page; no 'Black-owned' messaging; every disparity fact sourced; no stereotypes; no promise to 'fight discrimination'.",
   "store_keyword_note": "Candidate words for the 100-character keyword field and custom product pages; no competitor names. Spanish (Mexico) listing as a second keyword field is unverified until tested.",
+  "store_keyword_field": {
+    "en": "custody,log,iep,binder,divorce,checklist,executor,estate,incident,evidence,papers,vault,hide,private",
+    "rule": "The App Store keyword field (100 characters max, commas, no spaces, no competitor names). Lead terms first (divorce and custody stay the lead); vault,hide,private added 6 Nov 2026 for the vault feature line (owner yes 6 Nov). Not submitted until the store listing is."
+  },
   "review_rule": "Monthly, Search Console decides: topics earning impressions get a folder; ones that don't come down.",
   "launch_folder_count": 5,
   "topics": [
