@@ -85,7 +85,7 @@ export const VAULT_HUB = {
     howH: '保险箱怎么用？', how: ['把照片、截图、文件或笔记加入一个文件夹（离婚、职场、VA、遗产执行或 IEP，或您自己的文件夹）。', '写下事情发生的日期；应用会在旁边记下您保存的日期。', '在 iPhone 上，可以选择是否从“照片”中删除原件。在 Android 上，请您自己在 Google 相册中删除原件。', '用密码、Face ID 或指纹打开保险箱。离开应用后会再次锁住。', '有人需要时，把一个文件夹做成带目录的 PDF，或导出原件。'],
     diffH: '它和照片保险箱有什么不同？', diff: '照片保险箱只藏照片；这个保险箱把记录整理好。',
     table: { head: ['', '照片保险箱应用', 'KeepMyProof'], rows: [['照片和截图', '是', '是'], ['文件、信件、扫描件和笔记', '因应用而异', '是'], ['为某件人生大事准备的带清单文件夹', '否', '是，五个文件夹'], ['发生日期和保存日期并列', '否', '是'], ['一个文件夹导出成一个 PDF', '否', '是'], ['伪装成其他应用', '常见', '否：普通的、上锁的应用']] },
-    limitsH: '保险箱不做什么', pagesH: '保险箱指南（英文）',
+    limitsH: '保险箱不做什么', pagesH: '保险箱指南和页面',
     iphone: '仅限 iPhone：从图库添加照片后，应用会问“要从照片中删除原件吗？”。默认选项是保留在照片中；如果您点“删除”，iPhone 会要求您确认，照片会在“最近删除”中保留 30 天。在 Android 上，请您自己在 Google 相册中删除原件。',
     limits: ['知道您密码的人可以打开应用，所以请使用只有您知道的密码。', '应用像普通应用一样显示在主屏幕上，并没有对手机隐藏。', '删除照片并不保证任何地方都没有副本：备份、共享相簿和其他设备可能仍有副本。'],
     faq: [
@@ -101,7 +101,7 @@ export const VAULT_HUB = {
     howH: '보관함은 어떻게 작동하나요?', how: ['사진, 스크린샷, 파일 또는 메모를 폴더(이혼, 직장, VA, 유언 집행, IEP 또는 직접 만든 폴더)에 추가합니다.', '일이 일어난 날짜를 적으면 앱이 저장한 날짜를 옆에 기록합니다.', 'iPhone에서는 사진 앱의 원본을 지울지 선택합니다. Android에서는 Google 포토에서 직접 원본을 지웁니다.', '암호, Face ID 또는 지문으로 보관함을 엽니다. 앱을 나가면 다시 잠깁니다.', '누군가 요청하면 폴더를 목차가 있는 PDF 하나로 만들거나 원본을 내보냅니다.'],
     diffH: '사진 보관함과 무엇이 다른가요?', diff: '사진 보관함은 사진을 숨기고, 이 보관함은 기록을 정리합니다.',
     table: { head: ['', '사진 보관함 앱', 'KeepMyProof'], rows: [['사진과 스크린샷', '예', '예'], ['파일, 편지, 스캔본, 메모', '앱마다 다름', '예'], ['인생의 한 사건을 위한 체크리스트 폴더', '아니요', '예, 다섯 개 폴더'], ['일어난 날짜와 저장한 날짜를 나란히', '아니요', '예'], ['폴더 하나를 PDF 하나로', '아니요', '예'], ['다른 앱으로 위장', '흔함', '아니요: 평범한 잠금 앱']] },
-    limitsH: '보관함이 하지 않는 일', pagesH: '보관함 가이드(영어)',
+    limitsH: '보관함이 하지 않는 일', pagesH: '보관함 가이드와 페이지',
     iphone: 'iPhone 전용: 사진 보관함에서 사진을 추가하면 앱이 "사진 앱에서 원본을 삭제할까요?"라고 묻습니다. 기본 선택은 사진 앱에 그대로 두기입니다. 삭제를 누르면 iPhone이 확인을 요청하고, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 Google 포토에서 직접 원본을 삭제하세요.',
     limits: ['암호를 아는 사람은 앱을 열 수 있으니 본인만 아는 암호를 쓰세요.', '앱은 다른 앱처럼 홈 화면에 보이며 휴대폰에서 숨겨지지 않습니다.', '사진을 삭제해도 어디에도 사본이 남지 않는다는 보장은 없습니다. 백업, 공유 앨범, 다른 기기에 사본이 있을 수 있습니다.'],
     faq: [
@@ -116,7 +116,7 @@ export const VAULT_HUB = {
  * Landing pages. kind: 'vault' (links up to /vault) or a folder key (divorce, iep, executor) whose hub,
  * printable and checklist PDF it links. path: { en, es }.
  */
-export const LANDINGS = [
+export const LANDINGS_BASE = [
   // ---------- photo-vault landing pages (section 7) ----------
   {
     id: 'private-photo-vault-app', kind: 'vault', path: { en: '/private-photo-vault-app', es: '/es/app-boveda-privada-de-fotos' },
@@ -601,3 +601,11 @@ export const LANDINGS = [
     },
   },
 ];
+
+// Chinese and Korean versions (site/landings-cjk.mjs): the same page at /zh/<path> and /ko/<path>.
+import { LANDINGS_CJK } from './landings-cjk.mjs';
+export const LANDINGS = LANDINGS_BASE.map((x) => {
+  const t = LANDINGS_CJK[x.id];
+  if (!t?.zh || !t?.ko) throw Error(`NAMED STOP [NOT_TRANSLATED] landing ${x.id}: no zh/ko in site/landings-cjk.mjs`);
+  return { ...x, zh: t.zh, ko: t.ko, path: { ...x.path, zh: `/zh${x.path.en}`, ko: `/ko${x.path.en}` } };
+});
