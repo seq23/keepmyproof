@@ -288,9 +288,9 @@ export const GUIDES = [
     id: 'vault-for-papers', slug: { en: 'private-document-vault', es: 'boveda-privada-de-documentos' }, root: true,
     sources: [src('Apple: Hide photos with the Hidden album', APPLE_HIDE), src('Google Photos Help: Hide sensitive photos and videos in Locked Folders (Android)', G_LOCKED), src('Files by Google Help: Protect your files with Safe folder', G_SAFE)],
     en: {
-      title: 'A private document vault: a vault for papers, not pictures | KeepMyProof',
+      title: 'A private document vault: a vault for papers, not just pictures | KeepMyProof',
       desc: 'Photo vaults hide pictures. A vault for papers keeps letters, screenshots and scans in folders with a checklist and dates, private on your phone.',
-      h1: 'A vault for papers, not pictures',
+      h1: 'A vault for papers, not just pictures',
       answer: 'A private document vault is an app that keeps copies of your papers, such as letters, screenshots of texts, receipts and scans, locked on your phone. A photo vault hides pictures. A vault for papers also sorts them: folders for a divorce, an IEP or an estate, a checklist of what to keep, and the date each thing happened.',
       bestFor: 'someone deciding between a hidden album, a photo vault app and a place built for the papers of one hard life event.',
       sections: [
@@ -312,9 +312,9 @@ export const GUIDES = [
       ],
     },
     es: {
-      title: 'Una bóveda privada de documentos: para papeles, no para fotos | KeepMyProof',
+      title: 'Una bóveda privada de documentos: para papeles, no solo para fotos | KeepMyProof',
       desc: 'Las bóvedas de fotos ocultan fotos. Una bóveda para papeles guarda cartas, capturas y escaneos en carpetas con lista y fechas, privados en su teléfono.',
-      h1: 'Una bóveda para papeles, no para fotos',
+      h1: 'Una bóveda para papeles, no solo para fotos',
       answer: 'Una bóveda privada de documentos es una app que guarda copias de papeles, como cartas, capturas de mensajes, recibos y escaneos, bloqueadas en su teléfono. Una bóveda de fotos oculta fotos. Una bóveda para papeles además los ordena: carpetas para un divorcio, un IEP o una herencia, una lista de qué guardar y la fecha en que pasó cada cosa.',
       bestFor: 'quien está decidiendo entre un álbum oculto, una app de bóveda de fotos y un lugar hecho para los papeles de un momento difícil.',
       sections: [
