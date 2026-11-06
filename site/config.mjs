@@ -29,6 +29,7 @@ export const PAGES = [
   { id: 'terms', en: '/terms', es: '/es/terminos', index: false },
   { id: 'privacy', en: '/privacy', es: '/es/privacidad', index: false },
   { id: 'support', en: '/support', es: '/es/ayuda', index: false },
+  { id: 'about', en: '/about', es: '/es/acerca', index: true },
   { id: 'checklists', en: '/checklists', es: '/es/listas', zh: '/zh/', ko: '/ko/', index: true },
   { id: 'tools', en: '/tools', es: '/es/herramientas', index: true },
   { id: 'guides', en: '/guides', es: '/es/guias', index: true },

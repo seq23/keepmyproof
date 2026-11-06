@@ -12,7 +12,9 @@ import { readFactsFiles } from './verify-facts.mjs';
 import { factKey, bannedWord, factProblems, untranslated } from '../site/lib/gate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MODELS = (process.env.KMP_FREE_MODELS || 'google/gemma-4-31b-it:free,google/gemma-4-26b-a4b-it:free,nvidia/nemotron-3-ultra-550b-a55b:free,nvidia/nemotron-3.5-lightning:free').split(',');
+// The $0 model list lives in config/llm_routing.json (docs/cost/zero-paid-llm.md); only ':free' ids are used.
+const ROUTING = JSON.parse(readFileSync(new URL('../config/llm_routing.json', import.meta.url), 'utf8'));
+const MODELS = (process.env.KMP_FREE_MODELS ? process.env.KMP_FREE_MODELS.split(',') : ROUTING.models.map((m) => m.id)).filter((m) => m.endsWith(':free'));
 const LANG = { zh: 'Simplified Chinese (zh-Hans) for Chinese speakers living in the United States', ko: 'Korean for Korean speakers living in the United States' };
 const nums = (s) => (String(s).match(/\d+(?:[.,]\d+)*/g) || []).map((n) => n.replace(/,/g, '')).sort().join('|');
 

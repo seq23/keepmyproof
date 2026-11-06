@@ -4,21 +4,12 @@
 // submission when GSC_SERVICE_ACCOUNT_JSON is set and has access to the property. Never prints a secret.
 //   node scripts/ping-search.mjs            (keys from the environment, e.g. Boss OS vault:run)
 // Exit 2 = NAMED STOP [SITEMAP_EMPTY] or [INDEXNOW_KEY_NOT_SERVED]; a missing optional key is a NAMED NOTE.
-import { createSign } from 'node:crypto';
+import { gscToken } from './lib/gsc.mjs';
 import { SITE } from '../site/config.mjs';
 
 const host = new URL(SITE.origin).host;
 async function get(url) { const r = await fetch(url, { signal: AbortSignal.timeout(30000) }); if (!r.ok) throw Error(`${url} HTTP ${r.status}`); return r.text(); }
 const locsOf = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-
-async function gscToken(sa) {
-  const now = Math.floor(Date.now() / 1000), b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
-  const unsigned = `${b64({ alg: 'RS256', typ: 'JWT' })}.${b64({ iss: sa.client_email, scope: 'https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/siteverification', aud: 'https://oauth2.googleapis.com/token', iat: now, exp: now + 3600 })}`;
-  const sig = createSign('RSA-SHA256').update(unsigned).sign(sa.private_key, 'base64url');
-  const r = await fetch('https://oauth2.googleapis.com/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${unsigned}.${sig}` });
-  if (!r.ok) throw Error(`token HTTP ${r.status}`);
-  return (await r.json()).access_token;
-}
 
 async function main() {
   const index = await get(`${SITE.origin}/sitemap.xml`), children = locsOf(index);
