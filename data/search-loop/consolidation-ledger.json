@@ -1,4 +1,21 @@
 {
   "schema": "search-loop-consolidation-v1",
-  "merges": []
+  "merges": [
+    {
+      "at": "2026-11-06",
+      "from": "/questions/how-to-prove-adultery-in-the-philippines/",
+      "into": "/divorce/",
+      "query": "how to prove adultery in the philippines",
+      "reason": "off-audience: not a US search",
+      "redirect": "/questions/how-to-prove-adultery-in-the-philippines/ /divorce/ 301"
+    },
+    {
+      "at": "2026-11-06",
+      "from": "/questions/how-to-prove-adultery-in-the-military/",
+      "into": "/divorce/",
+      "query": "how to prove adultery in the military",
+      "reason": "site gate refused it: banned word \"court-ready\"",
+      "redirect": "/questions/how-to-prove-adultery-in-the-military/ /divorce/ 301"
+    }
+  ]
 }

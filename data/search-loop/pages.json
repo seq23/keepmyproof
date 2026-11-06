@@ -47,7 +47,7 @@
       "route": "/questions/how-to-prove-adultery-in-the-military/",
       "url": "https://keepmyproof.com/questions/how-to-prove-adultery-in-the-military/",
       "published_at": "2026-11-06",
-      "status": "live",
+      "status": "merged",
       "hash": "96e7baa2660f3f1731961f658c8e00d6878d57c916e3dd10633e665a6b2515e6",
       "model": "free-route",
       "facts": [
@@ -60,7 +60,12 @@
         "b4 direct answer under the H1 is 38 words (aim 40-60)",
         "b5 FAQ answer is 37 words (aim 40-60): \"Can adultery charges be filed after a service memb\"",
         "b5 FAQ answer is 35 words (aim 40-60): \"Does adultery affect my VA disability rating?\""
-      ]
+      ],
+      "merged": {
+        "at": "2026-11-06",
+        "into": "/divorce/",
+        "reason": "site gate refused it: banned word \"court-ready\""
+      }
     },
     {
       "slug": "how-to-prove-adultery-in-the-philippines",
@@ -78,7 +83,7 @@
       "route": "/questions/how-to-prove-adultery-in-the-philippines/",
       "url": "https://keepmyproof.com/questions/how-to-prove-adultery-in-the-philippines/",
       "published_at": "2026-11-06",
-      "status": "live",
+      "status": "merged",
       "hash": "673696af1043cec4ed15f24d526042d21a45f73ed486fe63e3d6a23aaa86545d",
       "model": "free-route",
       "facts": [
@@ -92,7 +97,12 @@
         "b5 FAQ answer is 36 words (aim 40-60): \"Can text messages be used as proof of adultery?\"",
         "b5 FAQ answer is 35 words (aim 40-60): \"Is adultery a crime in the Philippines?\"",
         "b5 FAQ answer is 38 words (aim 40-60): \"What should I not do when gathering evidence?\""
-      ]
+      ],
+      "merged": {
+        "at": "2026-11-06",
+        "into": "/divorce/",
+        "reason": "off-audience: not a US search (site serves US residents)"
+      }
     }
   ],
   "dropped": [
