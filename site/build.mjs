@@ -69,7 +69,7 @@ const CSS = `@font-face{font-family:"Noto Serif";font-weight:700;font-style:norm
 --gold:var(--brass);--golddeep:var(--ok);--goldbg:var(--brassbg);
 --serif:"Noto Serif","Noto Serif SC","Noto Serif KR",Georgia,serif;--sans:"Noto Sans","Noto Sans SC","Noto Sans KR","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--mono:"Noto Sans Mono",ui-monospace,Menlo,Consolas,monospace;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#121615;--fg:#EEF0EC;--mut:#A9B0AC;--card:#1B201F;--line:#2E3533;--ok:#4FC197;--onok:#0B1F17;--okbg:#16291F;--brass:#E2B65E;--brassink:#F0CF8A;--brassbg:#33290F;--red:#FF8A80;color-scheme:dark}}
-:lang(zh),:lang(ko){--serif:var(--sans)}:lang(ko){word-break:keep-all}
+:lang(zh),:lang(ko){--serif:var(--sans)}:lang(zh) .lbl,:lang(ko) .lbl{letter-spacing:0}:lang(ko){word-break:keep-all}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
 a{color:var(--ok);text-underline-offset:3px}a:focus-visible,summary:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 main,header,footer{max-width:720px;margin:0 auto;padding:0 16px}
@@ -94,8 +94,8 @@ summary{cursor:pointer;min-height:48px;display:flex;align-items:center;padding:8
 details p{padding:0 16px 14px;margin:0}
 footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;padding-bottom:40px;font-size:15px;color:var(--mut)}
 footer nav{display:flex;flex-wrap:wrap;gap:0 16px}footer nav a{display:inline-flex;align-items:center;min-height:44px}
-@media (min-width:900px){h1{font-size:36px}main,header,footer{max-width:760px}}`;
-const CSS_EXTRA = `.crumbs{font-size:15px;color:var(--mut);margin:8px 0 0}.crumbs a{color:var(--mut);display:inline-flex;align-items:center;min-height:44px}
+@media (min-width:900px){h1{font-size:36px}main,header,footer{max-width:760px}.grid{grid-template-columns:1fr 1fr}}`;
+const CSS_EXTRA = `.crumbs{display:flex;flex-wrap:wrap;align-items:center;column-gap:6px;font-size:15px;color:var(--mut);margin:8px 0 0}.crumbs a{color:var(--mut);display:inline-flex;align-items:center;min-height:44px}
 .answer{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:12px;padding:12px 16px}
 .facts li{margin:0 0 10px}.links{columns:2;column-gap:24px}@media (max-width:560px){.links{columns:1}}.links a{display:inline-block;min-height:32px;padding:6px 0}
 .fact{font-size:15px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
