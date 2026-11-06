@@ -1,0 +1,27 @@
+{
+ "schema": "kmp-gsc-truth-v1",
+ "site": "https://keepmyproof.com",
+ "property": "https://keepmyproof.com/",
+ "window": {
+  "start": "2026-10-07",
+  "end": "2026-11-03"
+ },
+ "generated_at": "2026-11-06T22:17:05.114Z",
+ "totals": {
+  "rows": 1,
+  "clicks": 0,
+  "impressions": 1,
+  "queries": 1,
+  "pages": 1
+ },
+ "rows": [
+  {
+   "query": "executor duties checklist",
+   "page": "https://keepmyproof.com/executor-checklist",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  }
+ ]
+}

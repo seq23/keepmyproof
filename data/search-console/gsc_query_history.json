@@ -1,0 +1,14 @@
+{
+ "schema": "kmp-gsc-query-history-v1",
+ "queries": {
+  "executor duties checklist": {
+   "first_seen": "2026-11-03",
+   "best_position": 96,
+   "pages": [
+    "https://keepmyproof.com/executor-checklist"
+   ],
+   "last_seen": "2026-11-03"
+  }
+ },
+ "updated_at": "2026-11-06T22:17:05.114Z"
+}
