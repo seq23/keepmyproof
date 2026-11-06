@@ -1,0 +1,5 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": { "modules": ["KmpKdfModule"] },
+  "android": { "modules": ["expo.modules.kmpkdf.KmpKdfModule"] }
+}
