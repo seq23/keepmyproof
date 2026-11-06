@@ -1,7 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, type RemovePref } from '../src/core/original';
+import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
+import { copy, strings } from '../src/strings';
+import { LANGS } from '../src/core/model';
 import { utf8, b64 } from '../src/core/crypto';
 import { draft, fixture } from './helpers';
 
@@ -60,4 +62,30 @@ test('the app offers only after the save, keeps the library id out of the vault,
   assert.ok(card.indexOf("'keepInPhotos'") < card.indexOf("'removeFromPhotos'"), 'Keep comes first');
   assert.match(card, /btn\('keepInPhotos', \(\) => \{ setOffer\(null\);[^}]*\}\)\}/, 'Keep only closes the offer');
   assert.match(card, /'removeFromPhotos'[\s\S]*?, true\)/, 'Remove is the quiet button');
+});
+
+test('only a phone that can remove the original is told it can; Android is told to delete it in Google Photos', () => {
+  const ios = vaultLines(true), android = vaultLines(false);
+  for (const l of LANGS) {
+    const t = copy(l);
+    assert.notEqual(t(ios.photo), t(android.photo), l);
+    assert.notEqual(t(ios.lock), t(android.lock), l);
+  }
+  const en = copy('en');
+  assert.match(en(ios.photo), /remove the original from Photos/);
+  assert.match(en(ios.lock), /Face ID/);
+  assert.doesNotMatch(en(android.photo), /remove the original/i);
+  assert.match(en(android.photo), /stays in your Photos or Gallery app/);
+  assert.doesNotMatch(en(android.lock), /Face ID/);
+  // Android never gets the offer itself, whatever the setting.
+  assert.equal(shouldOffer({ ...base, systemConfirm: false }), false);
+});
+
+test('no app text, in any language, promises a hidden app, unrecoverable deletion or a court result', () => {
+  const claims = [/hid(e|es|den) (the|this) app/i, /invisible|undetectable|untraceable|forensic/i, /court[- ]ready|admissible|guarantee/i,
+    /oculta la app|indetectable|forense|garantiza|admisible/i, /隐藏应用|无法恢复|法庭认可|保证/, /앱(을|이) 숨|복구할 수 없|법원에서 인정|보장/];
+  const bad: string[] = [];
+  for (const [k, row] of Object.entries(strings)) for (const s of row as readonly string[]) for (const c of claims) if (c.test(s)) bad.push(`${k}: ${s}`);
+  assert.ok(Object.keys(strings).length > 100);
+  assert.deepEqual(bad, []);
 });

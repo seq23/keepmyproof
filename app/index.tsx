@@ -13,7 +13,8 @@ import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import * as photos from '../src/native/photos';
-import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, type RemovePref } from '../src/core/original';
+import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
+const vaultCopy = vaultLines(photos.systemConfirm);
 import { Button, Card, Field, LangContext, P, Theme, styles, textProps, usePalette } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
@@ -126,9 +127,9 @@ export default function App() {
   const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={setDateInput} />
     <Button quiet title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => setUnknown(v => !v)} /></>;
   const backupStale = state && state.backup?.digest !== contentDigest(state);
-  function addTo(id: string) {
+  function addTo(id: string, kind: Draft['kind'] = 'note') {
     if (!state || !mayAdd(state.items.length, ent.plus)) { navigate('plus'); return; }
-    setFolder(id); setDraft(blankDraft(id)); setPickedAsset(null); setDateInput(''); setUnknown(true); setEditing(false); navigate('add');
+    setFolder(id); setDraft({ ...blankDraft(id), kind }); setPickedAsset(null); setDateInput(''); setUnknown(true); setEditing(false); navigate('add');
   }
   function startEdit(i: Item) {
     setDraft({ folder:i.folder, checklist:i.checklist, kind:i.kind, title:i.title, note:i.note, happenedOn:i.happenedOn,
@@ -149,9 +150,11 @@ export default function App() {
   const btn = (key: StringKey, action: () => void, quiet = false) => <Button title={t(key)} onPress={action} quiet={quiet} disabled={busy} />;
   const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
     <Button quiet title={t('privacy')} onPress={() => void Linking.openURL('https://keepmyproof.com/privacy')} /></>;
+  const removeSwitch = <Card><P>{t('removeSetting')}</P><P muted>{t('removeSettingHint')}</P><Switch accessibilityLabel={t('removeSetting')} value={removePref === 'ask'}
+    onValueChange={v => void run(async () => { const next: RemovePref = v ? 'ask':'never'; await device.removePrefStore.write(next); setRemovePref(next); })} /></Card>;
   let body: React.ReactNode;
   if (!ready) body = <P>{t('loading')}</P>;
-  else if (screen === 'first') body = <><P muted>{t('step1')}</P><P heading>KeepMyProof</P><P heading>{t('firstTitle')}</P>
+  else if (screen === 'first') body = <><P muted>{t('step1')}</P><P muted>KeepMyProof</P><P heading>{t('vaultTitle')}</P><P muted>{t(vaultCopy.lock)}</P><P section>{t('firstTitle')}</P>
     <Card><P>{t('noAccount')}</P><P muted>{t('start')}</P></Card><Card><P>{t('stays')}</P><P muted>{t('local')}</P></Card>
     <Card><P>{t('firstFree')}</P><P muted>{t('five')}</P></Card>
     {PREVIEW_BUILD && <Button title="Preview only: skip to a sample vault ›" onPress={doRun(async () => {
@@ -166,8 +169,7 @@ export default function App() {
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
   else if (screen === 'setup') body = <><P muted>{t('step2')}</P><P heading>{t('lockTitle')}</P><P>{t('six')}</P>
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
-    {photos.systemConfirm && <Card><P>{t('removeSetting')}</P><P muted>{t('removeSettingHint')}</P><Switch accessibilityLabel={t('removeSetting')} value={removePref === 'ask'}
-      onValueChange={v => void run(async () => { const next: RemovePref = v ? 'ask':'never'; await device.removePrefStore.write(next); setRemovePref(next); })} /></Card>}
+    {photos.systemConfirm && removeSwitch}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
     <P muted>{t('wrongGuesses')}</P>{btn('saveCode', doRun(async () => {
       if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
@@ -181,7 +183,7 @@ export default function App() {
       if (!equal(b64(recoveryKey(words)), b64(recoveryKey(wordInput)))) throw Error('RECOVERY_INVALID');
       resume.current = 'home'; acceptVault(await device.setup(code, words, biometric));
     }))}</>;
-  else if (screen === 'lock') body = <><P heading>KeepMyProof</P><P heading>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
+  else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))))}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P></>;
@@ -210,6 +212,7 @@ export default function App() {
     <P heading>KeepMyProof</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
     {backupStale && <Card tone="gold"><P>{t('newBackup', { n:state.items.length })}</P>{btn('backUp', () => navigate('backup'))}</Card>}
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
+    <BigButton glyph="camera" title={t('addPhotos')} sub={t('addPhotosSub')} go={t('addGo')} disabled={busy} onPress={() => addTo(folder, 'photo')} />
     <P section>{t('canKeep')}</P>
     <View style={styles.tiles}>{([['page','keepLetters'],['phone','keepTexts'],['receipt','keepBills'],['camera','keepPhotos'],['calendar','keepNotes'],['medical','keepSchool']] as [GlyphName, StringKey][])
       .map(([g,key]) => <View key={key} style={[styles.tile,{ backgroundColor:palette.tile }]}><Glyph name={g} bg={palette.tile} /><Text {...textProps(lang)} style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center' }}>{t(key)}</Text></View>)}</View>
@@ -252,7 +255,7 @@ export default function App() {
       {draft.kind !== 'note' && <>{btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(async () => {
         const picked = await files.pickAttachment(draft.kind === 'photo'); if (!picked) return;
         const { assetId, ...file } = picked; setPickedAsset(assetId ?? null); setDraft(d => ({...d,...file,title:d.title || file.filename}));
-      }))}{draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
+      }))}{draft.kind === 'photo' && <P muted>{t(vaultCopy.photo)}</P>}{draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     </>}
     <Field label={t('name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
@@ -296,6 +299,8 @@ export default function App() {
     {btn('restore', () => {setRestoreData(null);setWordInput('');navigate('restore');})}<P muted>{t('restoreSafety')}</P></>;
   else if (screen === 'settings') body = <><P heading>{t('settings')}</P><P muted>{t('noAnalytics')}</P>
     <Card><P>{t('language')}</P>{LANGS.map(l => <Button quiet key={l} checked={lang === l} title={`${lang === l ? '✓':'○'} ${LANG_NAME[l]}`} onPress={() => chooseLang(l)} />)}</Card>
+    <P section>{t('vaultSection')}</P>
+    {photos.systemConfirm ? removeSwitch : <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
     {[...launchFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
