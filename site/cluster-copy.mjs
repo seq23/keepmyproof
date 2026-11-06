@@ -49,7 +49,7 @@ export const CC = {
     storeLine: (live) => (live ? 'It is on Google Play now.' : 'It is coming soon to Google Play.'),
     checklistsTitle: 'Free printable checklists: divorce, work, VA, executor, IEP | KeepMyProof',
     checklistsH1: 'Free printable checklists',
-    checklistsDesc: 'Five free one-page checklists to print: divorce papers, workplace evidence, VA claim papers, executor papers and an IEP binder. English and Spanish, no email needed.',
+    checklistsDesc: 'Five free one-page checklists to print: divorce papers, workplace evidence, VA claim papers, executor papers and an IEP binder. English, Spanish, Chinese and Korean, no email needed.',
     checklistsAnswer: 'These five one-page checklists list the papers people usually gather for a divorce, a problem at work, a VA disability claim, a parent\'s estate and a child\'s IEP. Print one, tick what you already have, and write the date you got each paper. They are free, with no email or account needed.',
     pdfLink: 'Printable checklist (PDF)',
     pdfIntro: 'Tick what you already have and write the date you got it. Keep copies only of papers you are allowed to have.',
@@ -121,7 +121,7 @@ export const FACTS_PAGE = {
     ['What it does not do', ['It does not give legal, tax or medical advice, and it is not a law firm.', 'It does not prepare, file or judge a VA claim, and it is not affiliated with the VA.', 'It does not send your papers to us, to analytics or to AI.', 'The saved date shows when you saved something on this phone. It does not show when an event happened.']],
     ['Price', [`Free for your first ${n} items. Viewing, full-folder PDFs, export, backup and restore never lock.`, `KeepMyProof Plus: US $${p.yearlyUSD} a year, or $${p.lifetimeUSD} once for life.`]],
     ['Privacy', ['No account, no ads, no analytics.', 'Papers are encrypted on the phone with an app passcode and optional Face ID.']],
-    ['Languages', ['English and Spanish (US).']],
+    ['Languages', ['App and folder checklists: English, Spanish, Simplified Chinese and Korean.', 'Website: English and Spanish (US), with folder guides in Chinese and Korean.']],
     ['Status', [live ? 'On Google Play.' : 'Coming soon to Google Play. iPhone after that.']],
   ],
   es: (n, p, live) => [
@@ -131,7 +131,7 @@ export const FACTS_PAGE = {
     ['Qué no hace', ['No da asesoría legal, de impuestos ni médica, y no es un bufete de abogados.', 'No prepara, presenta ni evalúa reclamos del VA, y no está afiliada al VA.', 'No nos envía sus papeles, ni a analíticas ni a IA.', 'La fecha de guardado muestra cuándo guardó algo en este teléfono. No muestra cuándo pasó un hecho.']],
     ['Precio', [`Gratis para sus primeros ${n} documentos. Ver, los PDF de carpetas completas, exportar, la copia y la restauración nunca se bloquean.`, `KeepMyProof Plus: US $${p.yearlyUSD} al año, o $${p.lifetimeUSD} una sola vez para siempre.`]],
     ['Privacidad', ['Sin cuenta, sin anuncios, sin analíticas.', 'Los papeles quedan cifrados en el teléfono, con un código de la app y Face ID si quiere.']],
-    ['Idiomas', ['Inglés y español (Estados Unidos).']],
+    ['Idiomas', ['App y listas de cada carpeta: inglés, español, chino simplificado y coreano.', 'Sitio web: inglés y español (Estados Unidos), con guías de cada carpeta en chino y coreano.']],
     ['Estado', [live ? 'En Google Play.' : 'Muy pronto en Google Play. Después, en iPhone.']],
   ],
 };

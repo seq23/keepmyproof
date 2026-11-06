@@ -26,6 +26,21 @@ test('every launch folder and checklist item from topics.json is on the English 
   }
 });
 
+test('every language home links to every other language home, and llms.txt links to all four', () => {
+  const { files, pages } = renderAll(fixture());
+  const langs = ['en', 'es', 'zh', 'ko'] as const;
+  const home = (l: string) => (PAGES.find((x) => x.id === 'home') as any)[l] ?? (PAGES.find((x) => x.id === 'checklists') as any)[l];
+  for (const l of langs) {
+    const s = files[fileOf(home(l))];
+    assert.ok(s, `${l} home ${home(l)} emitted`);
+    const hl = (o: string) => (o === 'zh' ? 'zh-Hans' : o);
+    // A page with a translation links to it (zh/ko homes pair with /checklists); otherwise to that language's home.
+    const target = (o: string) => pages.find((p: any) => p.path === home(l))?.alt?.[o] ?? home(o);
+    for (const o of langs.filter((x) => x !== l)) assert.ok(s.includes(`<a class="lang" href="${target(o)}" hreflang="${hl(o)}"`), `${l} home links to ${o} at ${target(o)}`);
+  }
+  for (const l of langs) assert.ok(files['llms.txt'].includes(`(${SITE.origin}${home(l)})`), `llms.txt links ${l} home`);
+});
+
 test('every page has a self canonical and hreflang twins that exist and link back; noindex only on utility pages; the split sitemaps list exactly the indexable pages', () => {
   const { files, pages } = renderAll(fixture());
   assert.ok(pages.some((p) => p.state), 'fixture state pages rendered');

@@ -8,7 +8,7 @@
     "url": "https://billionairehighperformancecoach.com/spry-labs"
   },
   "audience": "people in the United States gathering their own papers for a divorce or custody matter, a problem at work, a VA disability claim, a parent's estate or a child's IEP; many are stressed and reading on a phone",
-  "voice": "plain, calm and factual; short sentences; second person. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts.",
+  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts.",
   "topics": [
     "documents to gather before divorce",
     "how to prepare for divorce in",
@@ -52,7 +52,8 @@
       "va rating increase",
       "west peek",
       "roblox",
-      "executor script"
+      "executor script",
+      "canada"
     ]
   },
   "action": {
@@ -61,7 +62,8 @@
   },
   "allowed_link_targets": [
     "https://keepmyproof.com",
-    "https://www.va.gov"
+    "https://www.va.gov",
+    "https://billionairehighperformancecoach.com/spry-labs"
   ],
   "mode": "normal",
   "pace": {
@@ -103,8 +105,8 @@
       "width": 1200,
       "height": 630
     },
-    "header_html": "<header><a class=\"mark\" href=\"/\"><img src=\"/icon-192.png\" alt=\"\" width=\"28\" height=\"28\">KeepMyProof</a><nav aria-label=\"Main\"><a class=\"lang\" href=\"/checklists\">Free checklists</a></nav></header>",
-    "footer_html": "<footer><p>Educational only. Not legal advice. KeepMyProof is not a law firm and is not affiliated with the VA, any court or any school.</p><p class=\"fact\">KeepMyProof is a private phone app for keeping copies of divorce, custody, workplace, VA claim, executor and IEP papers in folders with checklists. Papers stay encrypted on the phone, with no account and no ads. Free for 25 items. English and Spanish.</p><p>KeepMyProof is made by <a href=\"https://billionairehighperformancecoach.com/spry-labs\">Spry Labs</a>.</p></footer>"
+    "header_html": "<header><a class=\"mark\" href=\"/\"><img src=\"/icon-192.png\" alt=\"\" role=\"presentation\" width=\"28\" height=\"28\">KeepMyProof</a><nav aria-label=\"Main\"><a class=\"lang\" href=\"/checklists\">Free checklists</a></nav></header>",
+    "footer_html": "<footer><p>Educational only. Not legal advice. KeepMyProof is not a law firm and is not affiliated with the VA, any court or any school.</p><p class=\"fact\">KeepMyProof is a private phone app for keeping copies of divorce, custody, workplace, VA claim, executor and IEP papers in folders with checklists. Papers stay encrypted on the phone, with no account and no ads. Free for 25 items. In English, Spanish, Chinese and Korean.</p><p>KeepMyProof is made by <a href=\"https://billionairehighperformancecoach.com/spry-labs\">Spry Labs</a>.</p></footer>"
   },
   "related": {
     "max_pages_per_new_page": 2,
@@ -128,5 +130,44 @@
     "source": "none"
   },
   "shares_audience_with": [],
-  "ledger_dir": "data/search-loop"
+  "ledger_dir": "data/search-loop",
+  "health": {
+    "real_facts": {
+      "about": "Official pages that answer the source check (checked 6 Nov 2026). For the facts list, cite at least two of these that fit the search; do not invent other URLs.",
+      "divorce": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.acf.hhs.gov/css/parents",
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States"
+      ],
+      "workplace": [
+        "https://www.eeoc.gov/harassment",
+        "https://www.eeoc.gov/time-limits-filing-charge",
+        "https://www.dol.gov/agencies/whd/contact/complaints",
+        "https://www.dol.gov/agencies/whd/overtime",
+        "https://www.dol.gov/agencies/whd/state/contacts"
+      ],
+      "va": [
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "https://www.va.gov/disability/va-claim-exam/",
+        "https://www.va.gov/resources/va-accredited-representative-faqs/",
+        "https://www.archives.gov/veterans/military-service-records"
+      ],
+      "executor": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.irs.gov/individuals/deceased-taxpayers-filing-the-estate-income-tax-return-form-1041",
+        "https://www.consumerfinance.gov/ask-cfpb/what-happens-to-my-debts-when-i-die-en-2049/",
+        "https://www.va.gov/burials-memorials/",
+        "https://en.wikipedia.org/wiki/Executor"
+      ],
+      "iep": [
+        "https://www.law.cornell.edu/cfr/text/34/300.320",
+        "https://www.law.cornell.edu/cfr/text/34/300.322",
+        "https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-300",
+        "https://www.parentcenterhub.org/iep-overview/",
+        "https://www.parentcenterhub.org/meetings/"
+      ]
+    }
+  }
 }
