@@ -1,6 +1,211 @@
 {
   "schema": "search-loop-pages-v1",
   "pages": [],
-  "dropped": [],
+  "dropped": [
+    {
+      "query": "how to document workplace harassment",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment statement",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 20 words (aim 40-60)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"What if I am afraid of retaliation?\"",
+        "b5 FAQ answer is 26 words (aim 40-60): \"How long should a harassment statement be?\"",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text"
+      ]
+    },
+    {
+      "query": "how can you prove a hostile work environment",
+      "at": "2026-11-06",
+      "reason": [
+        "b5 FAQ has 2 questions (aim 3-6)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "how to prove a hostile work environment claim",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 21 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "what is considered a hostile work environment",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "how much to save before quitting your job",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "va disability claim checklist",
+      "at": "2026-11-06",
+      "reason": [
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "va disability claim list",
+      "at": "2026-11-06",
+      "reason": [
+        "b5 FAQ answer is 28 words (aim 40-60): \"What is the difference between a claim list and a \"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Do I need a lawyer to make a VA disability claim l\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"How long does it take to process a VA disability c\"",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text"
+      ]
+    },
+    {
+      "query": "va disability what to claim",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 28 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "invented: unsourced statistic \"Injuries during active duty Illnesses from exposure to toxins Mental health cond\""
+      ]
+    },
+    {
+      "query": "what documentation is needed for a divorce",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 22 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "what are discovery documents in a divorce",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "what to do before asking for a divorce",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare divorce documents yourself",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "can you get a consent order before divorce",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "does it matter who asks for a divorce first",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 19 words (aim 40-60)",
+        "b5 FAQ answer is 25 words (aim 40-60): \"can i change my mind after i file\"",
+        "b5 FAQ answer is 25 words (aim 40-60): \"does filing first affect alimony\"",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in texas",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 22 words (aim 40-60)",
+        "b5 FAQ answer is 21 words (aim 40-60): \"Can I record my spouse to use in court?\"",
+        "b5 FAQ answer is 24 words (aim 40-60): \"What if I cannot afford a lawyer?\"",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in canada",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in california",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 21 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Do I need a lawyer to file for divorce in Californ\"",
+        "b5 FAQ answer is 28 words (aim 40-60): \"What is the waiting period for divorce in Californ\"",
+        "b5 FAQ answer is 26 words (aim 40-60): \"What if I cannot afford a lawyer?\"",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in florida",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in illinois",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in michigan",
+      "at": "2026-11-06",
+      "reason": [
+        "b5 FAQ has 2 questions (aim 3-6)",
+        "links: https://billionairehighperformancecoach.com/spry-labs is not an allowed link target",
+        "b8 image without alt text",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in missouri",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    }
+  ],
   "redirected": []
 }
