@@ -1,0 +1,20 @@
+{
+  "_note": "KeepMyProof's identity, and the only place its sameAs is written. site/build.mjs puts name, url, logo, sameAs and parentOrganization into the Organization node on every page. sameAs lists only profiles that resolve today and belong to KeepMyProof (never this site's own host, never a sibling's profile). A store listing or social profile goes in profiles_pending until it exists; scripts/entity-watch.mjs (weekly, .github/workflows/entity-backlink-watch.yml) fetches every URL here and fails by name on a dead one.",
+  "@id": "https://keepmyproof.com/#organization",
+  "name": "KeepMyProof",
+  "url": "https://keepmyproof.com/",
+  "logo": "https://keepmyproof.com/icon-512.png",
+  "description": "KeepMyProof is a private phone app for keeping copies of divorce, custody, workplace, VA claim, executor and IEP papers, photos and notes in folders with checklists, encrypted on the phone.",
+  "sameAs": [
+    "https://github.com/seq23/keepmyproof"
+  ],
+  "parentOrganization": {
+    "@id": "https://billionairehighperformancecoach.com/spry-labs#organization",
+    "name": "Spry Labs",
+    "url": "https://billionairehighperformancecoach.com/spry-labs"
+  },
+  "profiles_pending": [
+    { "name": "Google Play listing", "why": "not in the store yet (SITE.stores.googlePlay is null)" },
+    { "name": "App Store listing", "why": "not in the store yet (SITE.stores.appStore is null)" }
+  ]
+}

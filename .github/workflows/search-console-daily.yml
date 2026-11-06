@@ -1,0 +1,38 @@
+name: Search Console daily
+
+# Daily (search-readiness e4, e5, i6): writes gsc_truth.json (query x page, rolling 28 days),
+# gsc_query_history.json and index_coverage.json (URL Inspection, 150 URLs a day) into
+# data/search-console/ with scripts/search-console.mjs, and commits them to main.
+# A missing secret or property is a NAMED STOP that turns the run red.
+on:
+  schedule:
+    - cron: '23 11 * * *'  # 11:23 UTC daily
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: search-console-daily
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Read Search Console
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/search-console.mjs
+      - name: Commit the day's files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/search-console
+          git diff --cached --quiet && { echo "NAMED NOTE [NO_CHANGE] nothing new to commit"; exit 0; }
+          git commit -q -m "search console: daily query, page and index coverage data"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 10; done
+          echo "NAMED STOP [PUSH_FAILED] could not push data/search-console after 3 tries"; exit 1

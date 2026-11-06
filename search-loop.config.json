@@ -8,7 +8,7 @@
     "url": "https://billionairehighperformancecoach.com/spry-labs"
   },
   "audience": "people in the United States gathering their own papers for a divorce or custody matter, a problem at work, a VA disability claim, a parent's estate or a child's IEP; many are stressed and reading on a phone",
-  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts.",
+  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts. Vault and photo pages: KeepMyProof is a private vault for photos and documents, a normal locked app on the home screen; never say it is hidden from the phone, disguised, undetectable, or that deleted photos cannot be recovered; the iPhone-only offer is \"Remove the original from Photos?\" (the phone asks to confirm; Recently Deleted keeps it 30 days); on Android the reader deletes the original in Google Photos. Link the vault hub https://keepmyproof.com/vault.",
   "topics": [
     "documents to gather before divorce",
     "how to prepare for divorce in",
@@ -32,7 +32,19 @@
     "iep binder for parents",
     "how to prepare for an iep meeting",
     "iep meeting checklist",
-    "how to document iep not being followed"
+    "how to document iep not being followed",
+    "private photo vault app",
+    "photo vault for documents",
+    "hide photos on iphone",
+    "hide photos on android",
+    "secret photo vault",
+    "photo locker app",
+    "hide pictures from camera roll",
+    "hide screenshots from camera roll",
+    "keep screenshots private",
+    "how to hide documents on iphone",
+    "app to store important documents",
+    "private vault app"
   ],
   "find": {
     "exclude_words": [
@@ -77,7 +89,21 @@
       "ontario",
       "quebec",
       "british columbia",
-      "alberta"
+      "alberta",
+      "court-ready",
+      "court ready",
+      "admissible",
+      "of ex",
+      "from boyfriend",
+      "from girlfriend",
+      "from husband",
+      "from wife",
+      "from my parents",
+      "calculator vault",
+      "decoy",
+      "nudes",
+      "undetectable",
+      "forensic"
     ]
   },
   "action": {
@@ -87,7 +113,9 @@
   "allowed_link_targets": [
     "https://keepmyproof.com",
     "https://www.va.gov",
-    "https://billionairehighperformancecoach.com/spry-labs"
+    "https://billionairehighperformancecoach.com/spry-labs",
+    "https://support.apple.com",
+    "https://support.google.com"
   ],
   "mode": "normal",
   "pace": {
@@ -147,8 +175,9 @@
     "key_location": "https://keepmyproof.com/4f1c9a7e2b6d4e8f9a3c5b7d1e2f4a6c.txt"
   },
   "analytics": {
-    "ai_referrals": "none",
-    "ai_bot_hits": "none"
+    "ai_referrals": "cloudflare",
+    "ai_bot_hits": "cloudflare",
+    "zone": "keepmyproof.com"
   },
   "conversions": {
     "source": "none"
@@ -191,6 +220,12 @@
         "https://www.ecfr.gov/current/title-34/subtitle-B/chapter-III/part-300",
         "https://www.parentcenterhub.org/iep-overview/",
         "https://www.parentcenterhub.org/meetings/"
+      ],
+      "vault": [
+        "https://support.apple.com/en-us/104987",
+        "https://support.apple.com/en-us/118558",
+        "https://support.google.com/photos/answer/10694388",
+        "https://support.google.com/files/answer/9935264?hl=en"
       ]
     }
   }

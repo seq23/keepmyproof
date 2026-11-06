@@ -17,6 +17,7 @@ import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, 
 import { checklistPdf } from './pdf.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
+import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -37,6 +38,8 @@ const pathOf = (id, lang) => { const p = PAGES.find((x) => x.id === id); return 
 const words = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
 const live = () => Boolean(SITE.stores.googlePlay || SITE.stores.appStore);
 const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
+const ENTITY = JSON.parse(readFileSync(join(HERE, 'data', 'entity.json'), 'utf8'));
+const SHORT_TITLES = JSON.parse(readFileSync(join(HERE, 'data', 'short-titles.json'), 'utf8'));
 
 export function launchFolders(topics) {
   const folders = topics.topics.filter((t) => t.release === 'launch').sort((a, b) => a.folder_order - b.folder_order);
@@ -140,16 +143,46 @@ const article = (lang, path, headline, desc, published, modified, citations = []
   ...(citations.length ? { citation: citations.map((x) => ({ '@type': 'CreativeWork', name: x.name, url: x.url })) } : {}) });
 
 /**
+ * Search-readiness b1/b2/b10 (Boss OS checklist): every title 30–65 characters and naming KeepMyProof, every
+ * meta description 120–160 characters. A page passes a list of title candidates, longest wording first; the first
+ * that fits wins. A description too short is completed with the page's own extra sentences, then the fact sentence.
+ */
+const SUFFIX = ' | KeepMyProof';
+const withSite = (t) => (/KeepMyProof/.test(t) ? t : `${t}${SUFFIX}`);
+export function fitTitle(candidates, pads = []) {
+  const given = [].concat(candidates).filter(Boolean).map((t) => String(t).replace(SUFFIX, ''));
+  // Last resort: the same wording without its trailing clause (after a colon, a bracket or a comma).
+  const clauses = given.flatMap((t) => [/:\s/, /\s[(（]/, /,\s/, /：/].map((re) => { const i = t.search(re); return i > 0 ? t.slice(0, i) : null; })).filter(Boolean);
+  const all = [...given, ...clauses].map(withSite);
+  const ok = all.find((t) => t.length >= 30 && t.length <= 65);
+  if (ok) return ok;
+  for (const t of all) for (const p of pads) { const x = t.replace(SUFFIX, `${p}${SUFFIX}`); if (x.length >= 30 && x.length <= 65) return x; }
+  return all.filter((t) => t.length <= 65).sort((a, b) => b.length - a.length)[0] ?? all.sort((a, b) => a.length - b.length)[0];
+}
+export function fitDesc(desc, extras = []) {
+  let d = String(desc).trim();
+  const cjk = (s) => /[\u3000-\u9fff\uac00-\ud7af]/.test(s);
+  for (const x of extras.filter(Boolean)) { if (d.length >= 120) break; const y = `${d}${cjk(d) ? '' : ' '}${String(x).trim()}`; d = y; }
+  if (d.length > 160) {
+    const cut = d.slice(0, 159), sentence = cut.match(/^[\s\S]*[.!?。！？](?=\s|$)/)?.[0];
+    d = sentence && sentence.length >= 120 ? sentence : `${cut.replace(cjk(cut) ? /.$/ : /\s+\S*$/, '')}…`;
+  }
+  return d;
+}
+
+/**
  * One HTML page. alt = { en, es } paths of the page and its translation (null when it has none);
  * crumbs = [{ name, path }] after Home. Every page carries the disclaimer and the one fact sentence.
  */
-function shell({ lang, path, alt, title, desc, body, schema = [], crumbs = [], index = true, speakable = false }) {
+const TITLE_PADS = { en: [' | Private papers app'], es: [' | App privada de papeles'], zh: [' | 私密文件手机应用', ' | 私密文件应用'], ko: [' | 비공개 서류 휴대폰 앱', ' | 비공개 서류 앱'] };
+function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false }) {
   const c = COPY[lang];
+  const title = fitTitle(titles, TITLE_PADS[lang]), desc = fitDesc(rawDesc, [...descMore, c.factSentence(SITE.freeItems)]);
   const altLinks = alt ? ALL_LANGS.filter((l) => alt[l]).map((l) => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(alt[l])}">`).join('') + (alt.en ? `<link rel="alternate" hreflang="x-default" href="${url(alt.en)}">` : '') : '';
   // Language links: the page's own translations; every language's home is always reachable (zh/ko home = /zh/, /ko/).
   const langLinks = ALL_LANGS.filter((l) => l !== lang).map((l) => `<a class="lang" href="${alt?.[l] || pathOf('home', l)}" hreflang="${HREFLANG[l]}" lang="${HREFLANG[l]}">${LANG_NAME[l]}</a>`).join('');
   const graph = [
-    { '@type': 'Organization', '@id': `${SITE.origin}/#organization`, name: SITE.name, url: `${SITE.origin}/`, logo: `${SITE.origin}/icon-512.png`, email: SITE.supportEmail,
+    { '@type': 'Organization', '@id': `${SITE.origin}/#organization`, name: SITE.name, url: `${SITE.origin}/`, logo: `${SITE.origin}/icon-512.png`, email: SITE.supportEmail, sameAs: ENTITY.sameAs,
       parentOrganization: { '@type': 'Organization', '@id': SITE.parentOrg.id, name: SITE.parentOrg.name, url: SITE.parentOrg.url } },
     { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: SITE.updated,
       isPartOf: { '@id': `${SITE.origin}/#website` }, publisher: { '@id': `${SITE.origin}/#organization` },
@@ -158,8 +191,8 @@ function shell({ lang, path, alt, title, desc, body, schema = [], crumbs = [], i
   ];
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
-  const foot = ['home', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}">${c.nav[p]}</a>`).join('');
-  const vaultFoot = c.vault ? `<a href="${guidePath(VAULT_GUIDE, lang)}">${esc(c.vault.nav)}</a>` : '';
+  const foot = ['home', 'about', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}"${p === 'about' ? ' rel="author"' : ''}>${c.nav[p]}</a>`).join('');
+  const vaultFoot = c.vault ? `<a href="${VAULT_HUB.path[lang]}">${esc(c.vault.nav)}</a>` : '';
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
 ${index ? '' : '<meta name="robots" content="noindex,follow">'}
@@ -188,9 +221,9 @@ function page({ lang, id, title, desc, body, schema = [] }) {
 }
 
 // Where the vault links point. /vault (the vault hub) replaces these when it is built; zh/ko read the English page.
-const VAULT_HREF = { en: '/private-document-vault', es: '/es/boveda-privada-de-documentos', zh: '/private-document-vault', ko: '/private-document-vault' };
-const VAULT_CHIPS = { en: ['/private-document-vault', '/guides/remove-screenshots-from-camera-roll', '/guides/keep-screenshots-of-texts-private'],
-  es: ['/es/boveda-privada-de-documentos', '/es/guias/quitar-capturas-del-carrete', '/es/guias/mantener-privadas-capturas-de-mensajes'] };
+const VAULT_HREF = VAULT_HUB.path;
+const VAULT_CHIPS = { en: ['/vault', '/hide-pictures-from-camera-roll', '/keep-custody-screenshots-private'],
+  es: ['/es/boveda', '/es/ocultar-fotos-del-carrete', '/es/capturas-de-custodia-privadas'], zh: ['/zh/vault', '/zh/vault', '/zh/vault'], ko: ['/ko/vault', '/ko/vault', '/ko/vault'] };
 /** The vault badge, line, buttons and chips at the top of a home page (owner, 6 Nov 2026). primary = the main button [label, href] or null. */
 function vaultHero(lang, primary) {
   const v = COPY[lang].vaultBar; if (!v) return '';
@@ -206,7 +239,7 @@ const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 function vaultSection(lang) {
   const v = COPY[lang].vault; if (!v) return '';
   const g = (id) => GUIDES.find((x) => x.id === id);
-  const links = [[VAULT_GUIDE[lang].h1, guidePath(VAULT_GUIDE, lang)], [v.altLabel, `${lang === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`],
+  const links = [[VAULT_HUB[lang].h1, VAULT_HUB.path[lang]], [VAULT_GUIDE[lang].h1, guidePath(VAULT_GUIDE, lang)], [v.altLabel, `${lang === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`],
     ...['hide-screenshots-iphone', 'hide-documents-iphone', 'hide-screenshots-android', 'hide-documents-android', 'keep-texts-private'].map((id) => [g(id)[lang].h1, guidePath(g(id), lang)])];
   return `<h2>${esc(v.h)}</h2><p class="answer">${esc(v.answer)}</p><p>${esc(v.iphone)}</p><ul class="more">${links.map(([t, href]) => `<li><a href="${href}">${esc(t)} ›</a></li>`).join('')}</ul>`;
 }
@@ -246,6 +279,15 @@ function support(lang) {
 <p class="lbl">${esc(c.supportEmailLabel)}</p><p><a class="btn" href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a></p>
 ${c.supportTopics.map(([h, t]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(t)}</p></div>`).join('')}`;
   return page({ lang, id: 'support', title: c.supportTitle, desc: c.supportDesc, body });
+}
+
+function about(lang) {
+  const c = COPY[lang], a = c.about;
+  const body = `<h1>${esc(a.h1)}</h1><p class="definition answer">${esc(a.answer)}</p>
+${a.sections.map(([h, t, xs]) => `<h2>${esc(h)}</h2><p>${esc(t)}</p>${xs ? list(xs) : ''}`).join('\n')}
+<p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>. <a href="${SITE.parentOrg.url}">${esc(SITE.parentOrg.name)}</a> · <a href="${ENTITY.sameAs[0]}" rel="noopener">${esc(a.source)}</a></p>
+${faqHtml(lang, a.faq)}`;
+  return page({ lang, id: 'about', title: a.title, desc: a.desc, body, schema: [{ '@type': 'AboutPage', name: a.h1, about: { '@id': `${SITE.origin}/#organization` } }, faqSchema(lang, a.faq)] });
 }
 
 function notFound() {
@@ -415,7 +457,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
         const intro = c.subtopicIntro(s.label[l], n);
         const answer = quotableAnswer([intro], c.tails({ en: 'your state', es: 'su estado', zh: '您所在的州', ko: '거주하는 주' }[l]), l) || intro;
         const h1 = c.subH1 ? c.subH1(s.label[l]) : `${s.label[l]}${l === 'es' ? ' en Estados Unidos' : ''}`;
-        const title = `${l === 'en' ? `${s.label[l]}, state by state` : h1} | KeepMyProof`;
+        const title = [`${l === 'en' ? `${s.label[l]}, state by state` : h1}`, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => t.replace('{state}', l === 'en' ? 'every state' : 'Estados Unidos'))];
         const body = `<p class="lbl">${esc(folderName(topic, l))}${esc(usTag(l))}</p><h1>${esc(h1)}</h1><p class="definition answer">${esc(answer)}</p><p class="sub">${esc(c.notAdvice)}</p>
 <ul class="links">${pub.map((code) => `<li><a href="${P.state(s, code, l)}">${esc(stateName(code, l))}</a></li>`).join('')}</ul>
 <p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>${keep(l)}`;
@@ -430,7 +472,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           const facts = st.byLang[l], dates = facts.map((f) => f.verifiedOn).sort(), first = dates[0], last = dates[dates.length - 1];
           const c = CC[l], S = stateName(code, l), path = P.state(s, code, l), claims = facts.map((f) => f.claim);
           const answer = quotableAnswer(claims, [...c.tails(S), ...(va ? [c.vaTail] : [])], l);
-          const h1 = fill(s.titles[l], code, l), title = `${h1} | KeepMyProof`.length <= 70 ? `${h1} | KeepMyProof` : h1;
+          const h1 = fill(s.titles[l], code, l), title = [h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
           if (desc.length > 160) desc = `${claims[0].slice(0, 155 - tailDesc.length).replace(l === 'zh' ? /$/ : /\s+\S*$/, '')}…${tailDesc}`;
@@ -505,7 +547,7 @@ function alternativePages(add) {
 <h2>${esc(a.suitsH(app))}</h2><p>${esc(a.suits[app.kind])}</p>${storeBlock(l)}
 <p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('facts', l)}">${esc(COPY[l].nav.facts)}</a> · <a href="${guidePath(VAULT_GUIDE, l)}">${esc(VAULT_GUIDE[l].h1)}</a></p>
 <p class="sub">${esc(a.tm(app))}</p>`;
-      add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: a.title(app), desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
+      add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
         schema: [article(l, path, a.h1(app), a.desc(app), app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
     }
     const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc(a.h1(app))}</a></li>`).join('')}</ul>`;
@@ -607,6 +649,71 @@ ${faqHtml(l, x.faq)}
   }
 }
 
+// ---------- landing pages and the /vault hub (site/landings.mjs) ----------
+
+const VAULT_GUIDE_IDS = ['hide-screenshots-iphone', 'hide-documents-iphone', 'hide-screenshots-android', 'hide-documents-android', 'delete-after-saving', 'keep-texts-private'];
+const LP_COPY = {
+  en: { lbl: 'Private vault', keepH: 'Keep it in KeepMyProof', more: 'Related pages', hub: 'All vault guides and pages', compare: 'KeepMyProof and Private Photo Vault compared', printable: 'Free printable', pdf: 'Free checklist (PDF)' },
+  es: { lbl: 'Bóveda privada', keepH: 'Guárdelo en KeepMyProof', more: 'Páginas relacionadas', hub: 'Todas las guías y páginas de la bóveda', compare: 'KeepMyProof y Private Photo Vault comparadas', printable: 'Formato gratis para imprimir', pdf: 'Lista gratis (PDF)' },
+};
+const lpPath = (x, l) => x.path[l];
+/** The vault pages, in the order the hub lists them. */
+function vaultLinks(l) {
+  const own = LANDINGS.filter((x) => x.kind === 'vault').map((x) => [x[l].h1, lpPath(x, l)]);
+  const guides = VAULT_GUIDE_IDS.map((id) => GUIDES.find((g) => g.id === id)).filter(Boolean).map((g) => [g[l].h1, guidePath(g, l)]);
+  return [...own, [VAULT_GUIDE[l].h1, guidePath(VAULT_GUIDE, l)], ...guides, [LP_COPY[l].compare, `${l === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`]];
+}
+const linkList = (xs) => `<ul class="more">${xs.map(([t, href]) => `<li><a href="${href}">${esc(t)} ›</a></li>`).join('')}</ul>`;
+
+function landingPages(add, topics, hubs) {
+  const folders = launchFolders(topics);
+  // The hub, in all four languages.
+  const hubAlt = { ...VAULT_HUB.path };
+  for (const l of ALL_LANGS) {
+    const h = VAULT_HUB[l], path = VAULT_HUB.path[l], [lo, hi] = RANGE[l];
+    if (measure(l, h.answer) < lo || measure(l, h.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] vault hub ${l}: ${measure(l, h.answer)} (allowed ${lo}-${hi})`);
+    const limits = h.limits || LIMITS[l];
+    const pages = vaultLinks(l === 'zh' || l === 'ko' ? 'en' : l);
+    const body = `${vaultBadge(l)}<h1>${esc(h.h1)}</h1><p class="definition answer">${esc(h.answer)}</p><p>${esc(h.iphone)}</p>
+<h2>${esc(h.howH)}</h2><ol>${h.how.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
+${guideSection({ h: h.diffH, a: h.diff, table: h.table })}
+<h2>${esc(h.limitsH)}</h2>${list(limits)}
+<h2>${esc(h.pagesH)}</h2>${linkList(pages)}
+${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
+    add({ path, alt: hubAlt, group: 'vault', html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true, crumbs: [{ name: h.h1, path }],
+      schema: [article(l, path, h.h1, h.desc, GUIDE_DATES.published, GUIDE_DATES.modified), faqSchema(l, h.faq), appSchema(l)] }) });
+  }
+  // The landing pages, EN + ES.
+  for (const x of LANDINGS) {
+    const alt = { en: x.path.en, es: x.path.es };
+    for (const l of LANGS) {
+      const p = x[l], path = x.path[l], G = GUIDE_COPY[l], L = LP_COPY[l], [lo, hi] = RANGE[l];
+      if (words(p.answer) < lo || words(p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${words(p.answer)} words`);
+      if (!x.sources.length) throw Error(`NAMED STOP [LANDING_UNSOURCED] ${x.id}`);
+      const vault = x.kind === 'vault';
+      const F = vault ? null : FOLDERS[x.kind], topic = F && folders.find((t) => t.id === F.topic);
+      if (!vault && !topic) throw Error(`NAMED STOP [FOLDER_UNMAPPED] landing ${x.id}: no folder ${x.kind}`);
+      const lbl = vault ? L.lbl : folderName(topic, l);
+      const keep = vault
+        ? `<h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}`
+        : `<h2>${esc(L.keepH)}</h2><p>${esc(CC[l].keepBody)}</p>${list(checklistItems(topic, l))}<p><a class="btn primary" href="${F.pdf[l]}">${esc(L.pdf)}</a>${x.printable ? `<a class="btn" href="${x.printable[l]}">${esc(L.printable)}</a>` : ''}</p>${storeBlock(l)}`;
+      const related = vault
+        ? [[L.hub, VAULT_HUB.path[l]], ...vaultLinks(l).filter(([, href]) => href !== path)]
+        : [[hubFor(hubs, F.topic, l).h1, hubPath(hubs, F.topic, l)], ...LANDINGS.filter((o) => o.kind === x.kind && o !== x).map((o) => [o[l].h1, o.path[l]]), ...(x.printable ? [[L.printable, x.printable[l]]] : []), [VAULT_HUB[l].h1, VAULT_HUB.path[l]]];
+      const body = `${vault ? vaultBadge(l) : ''}<p class="lbl">${esc(lbl)}</p><h1>${esc(p.h1)}</h1><p class="definition answer">${esc(p.answer)}</p><p class="sub">${esc(G.bestFor)} ${esc(p.bestFor)}</p>
+${p.sections.map(guideSection).join('\n')}
+${faqHtml(l, p.faq)}
+${keep}
+<h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
+<h2>${esc(L.more)}</h2>${linkList(related)}
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
+      const crumbs = vault ? [{ name: VAULT_HUB[l].h1, path: VAULT_HUB.path[l] }, { name: p.h1, path }] : [{ name: hubFor(hubs, F.topic, l).h1, path: hubPath(hubs, F.topic, l) }, { name: p.h1, path }];
+      add({ path, alt, group: vault ? 'vault' : x.kind, html: shell({ lang: l, path, alt, title: p.title, desc: p.desc, body, speakable: true, crumbs,
+        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, p.faq), appSchema(l)] }) });
+    }
+  }
+}
+
 // ---------- search-loop question pages: the legal and VA gate ----------
 
 // Pages the engine writes under questions/ are published only if they pass this gate; a failing page
@@ -631,6 +738,8 @@ function questionPages(add, files, stops) {
     const rel = relative(HERE, f).split('\\').join('/'), html = readFileSync(f, 'utf8'), problems = questionGate(html);
     if (problems.length) { stops.push(`NAMED STOP [QUESTION_GATE] ${rel}: ${problems.join('; ')}; not published`); continue; }
     const path = '/' + rel.replace(/index\.html$/, '').replace(/\.html$/, '');
+    const own = LANDINGS.flatMap((x) => Object.values(x.path)).find((p) => p.replace(/\/$/, '') === path.replace(/\/$/, ''));
+    if (own) { stops.push(`NAMED SKIP [QUESTION_DUPLICATE] ${rel}: ${own} is a landing page (site/landings.mjs); the engine's copy is not published`); continue; }
     add({ path, alt: null, group: 'questions', html, external: true });
   }
 }
@@ -650,6 +759,7 @@ export function renderAll(input = loadFacts()) {
     add({ path: pathOf('terms', lang), alt: { en: pathOf('terms', 'en'), es: pathOf('terms', 'es') }, group: 'core', html: legal(lang, 'terms', terms) });
     add({ path: pathOf('privacy', lang), alt: { en: pathOf('privacy', 'en'), es: pathOf('privacy', 'es') }, group: 'core', html: legal(lang, 'privacy', privacy) });
     add({ path: pathOf('support', lang), alt: { en: pathOf('support', 'en'), es: pathOf('support', 'es') }, group: 'core', html: support(lang) });
+    add({ path: pathOf('about', lang), alt: { en: pathOf('about', 'en'), es: pathOf('about', 'es') }, group: 'core', html: about(lang) });
   }
   const { model, stops } = clusterModel(input);
   clusterPages(topics, hubs, model, add, stops);
@@ -657,6 +767,7 @@ export function renderAll(input = loadFacts()) {
   toolPages(add, model, stops, input.toolFacts);
   factsPage(add);
   guidePages(add);
+  landingPages(add, topics, hubs);
   stops.push(...alternativePages(add));
   questionPages(add, files, stops);
 
@@ -678,9 +789,12 @@ export function renderAll(input = loadFacts()) {
 
   const fl = folders.map((f) => `- [${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))}): ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
   const census = Object.keys(FOLDERS).map((k) => `- ${hubs[FOLDERS[k].topic].en.h1}: ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'en').length} state pages in English, ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'es').length} in Spanish${STATE_LANGS[k] ? `, ${pages.filter((p) => p.state?.folder === k && p.state.lang === STATE_LANGS[k][0]).length} in ${LANG_NAME[STATE_LANGS[k][0]]}` : ''}${(model[k] || []).length ? ` ([by state](${url(FOLDERS[k].path.en)}))` : ''}`).join('\n');
-  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
+  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Private vault for photos and documents](${url(VAULT_HUB.path.en)}): ${VAULT_HUB.en.answer}\n${LANDINGS.map((x) => `- [${x.en.h1}](${url(x.path.en)})`).join('\n')}\n- [About](${url('/about')}): who makes KeepMyProof and how the pages are checked\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
   files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: "#F3F4F1", theme_color: "#0B6E4F",
     icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2);
+  // The IndexNow key file is committed (assets/site/<key>.txt, search-readiness e3/i8) and copied with the assets.
+  const keyFile = join(ROOT, 'assets', 'site', `${SITE.indexNowKey}.txt`);
+  if (!existsSync(keyFile) || readFileSync(keyFile, 'utf8').trim() !== SITE.indexNowKey) throw Error(`NAMED STOP [INDEXNOW_KEY_FILE] assets/site/${SITE.indexNowKey}.txt is missing or does not hold the key`);
   files[`${SITE.indexNowKey}.txt`] = SITE.indexNowKey;
   files['build.txt'] = process.env.CF_PAGES_COMMIT_SHA || 'local';
   // KMP_PREVIEW=1 (a branch preview, never production): every response says noindex, and robots.txt asks crawlers to stay out.

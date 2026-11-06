@@ -13,7 +13,8 @@ const G_LOCKED = { en: 'https://support.google.com/photos/answer/10694388?hl=en&
 const G_ARCHIVE = { en: 'https://support.google.com/photos/answer/7362432?hl=en&co=GENIE.Platform%3DAndroid', es: 'https://support.google.com/photos/answer/7362432?hl=es&co=GENIE.Platform%3DAndroid' };
 const G_DELETE = { en: 'https://support.google.com/photos/answer/6128858?hl=en&co=GENIE.Platform%3DAndroid', es: 'https://support.google.com/photos/answer/6128858?hl=es&co=GENIE.Platform%3DAndroid' };
 const G_SAFE = { en: 'https://support.google.com/files/answer/9935264?hl=en', es: 'https://support.google.com/files/answer/9935264?hl=es' };
-const src = (name, urls) => ({ name, url: urls });
+export const src = (name, urls) => ({ name, url: urls });
+export const SRC = { APPLE_HIDE, APPLE_MISSING, APPLE_LOCK_APP, G_LOCKED, G_DELETE, G_SAFE };
 
 export const GUIDE_DATES = { published: '2026-11-06', modified: '2026-11-06' };
 
@@ -208,7 +209,7 @@ export const GUIDES = [
     id: 'delete-after-saving', slug: { en: 'remove-screenshots-from-camera-roll', es: 'quitar-capturas-del-carrete' },
     sources: [src('Apple: If you are missing photos or videos in the Photos app', APPLE_MISSING), src('Google Photos Help: Delete photos and videos (Android)', G_DELETE)],
     en: {
-      title: 'How to remove screenshots from your camera roll after saving a copy | KeepMyProof',
+      title: 'Remove screenshots from camera roll after saving | KeepMyProof',
       desc: 'Saved a copy of a screenshot somewhere private? Remove the original from your camera roll on iPhone or Android, and empty Recently Deleted or Trash.',
       h1: 'How to remove screenshots from your camera roll after saving a copy',
       answer: 'Once a copy is saved somewhere private, delete the original from your photos. On iPhone, deleted photos wait in Recently Deleted for 30 days, Apple says. On Android, Google Photos keeps them in Trash, 30 days on Google\'s Android help page. Check the copy opens first, then delete, then empty Recently Deleted or Trash if you want it gone sooner.',
@@ -226,7 +227,7 @@ export const GUIDES = [
       ],
     },
     es: {
-      title: 'Cómo quitar capturas del carrete después de guardar una copia | KeepMyProof',
+      title: 'Quitar capturas del carrete tras guardar una copia | KeepMyProof',
       desc: '¿Guardó una copia de una captura en un lugar privado? Quite el original del carrete en iPhone o Android y vacíe Eliminado o la Papelera.',
       h1: 'Cómo quitar capturas del carrete después de guardar una copia',
       answer: 'Con una copia ya guardada en un lugar privado, borre el original de sus fotos. En iPhone, lo borrado espera en el álbum Eliminado durante 30 días, dice Apple. En Android, Google Fotos lo deja en la Papelera, 30 días según su ayuda para Android. Revise primero que la copia abra; luego borre y vacíe Eliminado o la Papelera.',
@@ -288,7 +289,7 @@ export const GUIDES = [
     id: 'vault-for-papers', slug: { en: 'private-document-vault', es: 'boveda-privada-de-documentos' }, root: true,
     sources: [src('Apple: Hide photos with the Hidden album', APPLE_HIDE), src('Google Photos Help: Hide sensitive photos and videos in Locked Folders (Android)', G_LOCKED), src('Files by Google Help: Protect your files with Safe folder', G_SAFE)],
     en: {
-      title: 'A private document vault: a vault for papers, not just pictures | KeepMyProof',
+      title: 'Private document vault: papers, not just pictures | KeepMyProof',
       desc: 'Photo vaults hide pictures. A vault for papers keeps letters, screenshots and scans in folders with a checklist and dates, private on your phone.',
       h1: 'A vault for papers, not just pictures',
       answer: 'A private document vault is an app that keeps copies of your papers, such as letters, screenshots of texts, receipts and scans, locked on your phone. A photo vault hides pictures. A vault for papers also sorts them: folders for a divorce, an IEP or an estate, a checklist of what to keep, and the date each thing happened.',
@@ -312,7 +313,7 @@ export const GUIDES = [
       ],
     },
     es: {
-      title: 'Una bóveda privada de documentos: para papeles, no solo para fotos | KeepMyProof',
+      title: 'Bóveda de documentos: papeles, no solo fotos | KeepMyProof',
       desc: 'Las bóvedas de fotos ocultan fotos. Una bóveda para papeles guarda cartas, capturas y escaneos en carpetas con lista y fechas, privados en su teléfono.',
       h1: 'Una bóveda para papeles, no solo para fotos',
       answer: 'Una bóveda privada de documentos es una app que guarda copias de papeles, como cartas, capturas de mensajes, recibos y escaneos, bloqueadas en su teléfono. Una bóveda de fotos oculta fotos. Una bóveda para papeles además los ordena: carpetas para un divorcio, un IEP o una herencia, una lista de qué guardar y la fecha en que pasó cada cosa.',
