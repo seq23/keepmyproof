@@ -147,6 +147,78 @@ export const strings = {
     "把您已有的文件保存在这部手机上，保持私密。",
     "이미 가지고 있는 서류를 이 휴대폰에 비공개로 보관하세요."
   ],
+  "vaultTitle": [
+    "Your private vault for photos and documents",
+    "Su bóveda privada para fotos y documentos",
+    "您的私密保险箱，存放照片和文件",
+    "사진과 서류를 위한 나만의 비공개 금고"
+  ],
+  "vaultLock": [
+    "Locked with your passcode or Face ID. Nothing you keep here shows up in your camera roll.",
+    "Protegida con su código o Face ID. Nada de lo que guarde aquí aparece en el carrete de fotos.",
+    "用密码或 Face ID 上锁。保存在这里的内容不会出现在相册中。",
+    "암호나 Face ID로 잠겨요. 여기에 보관한 것은 사진 앱의 앨범에 나타나지 않아요."
+  ],
+  "vaultLockAndroid": [
+    "Locked with your passcode or fingerprint. Nothing you keep here shows up in your photo gallery.",
+    "Protegida con su código o huella digital. Nada de lo que guarde aquí aparece en su galería de fotos.",
+    "用密码或指纹上锁。保存在这里的内容不会出现在相册中。",
+    "암호나 지문으로 잠겨요. 여기에 보관한 것은 사진 갤러리에 나타나지 않아요."
+  ],
+  "lockVault": [
+    "Private vault",
+    "Bóveda privada",
+    "私密保险箱",
+    "비공개 금고"
+  ],
+  "vaultSection": [
+    "Vault",
+    "Bóveda",
+    "保险箱",
+    "금고"
+  ],
+  "addPhotos": [
+    "Add photos to your vault",
+    "Agregar fotos a su bóveda",
+    "把照片添加到保险箱",
+    "금고에 사진 추가"
+  ],
+  "addPhotosSub": [
+    "Photos and screenshots, kept private here.",
+    "Fotos y capturas de pantalla, guardadas en privado aquí.",
+    "照片和截图，私密保存在这里。",
+    "사진과 스크린샷을 여기에 비공개로 보관해요."
+  ],
+  "addGo": [
+    "Add ›",
+    "Agregar ›",
+    "添加 ›",
+    "추가 ›"
+  ],
+  "photoCopy": [
+    "Keeps a private copy here. On iPhone you can then remove the original from Photos.",
+    "Guarda una copia privada aquí. En iPhone, después puede quitar el original de Fotos.",
+    "在这里保存一份私密副本。在 iPhone 上，之后可以从“照片”中移除原图。",
+    "여기에 비공개 사본을 보관해요. iPhone에서는 그다음 사진 앱의 원본을 삭제할 수 있어요."
+  ],
+  "photoCopyAndroid": [
+    "Keeps a private copy here. The original stays in your Photos or Gallery app. Delete it there if you want it gone.",
+    "Guarda una copia privada aquí. El original sigue en su app Fotos o Galería. Bórrelo allí si quiere que desaparezca.",
+    "在这里保存一份私密副本。原图仍在您的 Google 相册或图库应用中。如需删除，请在那里删除。",
+    "여기에 비공개 사본을 보관해요. 원본은 사진 앱이나 갤러리에 그대로 남아 있어요. 없애려면 그 앱에서 삭제하세요."
+  ],
+  "androidOriginal": [
+    "Photos you add also stay in Google Photos",
+    "Las fotos que agregue también se quedan en Google Fotos",
+    "您添加的照片也会保留在 Google 相册中",
+    "추가한 사진은 Google 포토에도 그대로 남아 있어요"
+  ],
+  "androidOriginalHow": [
+    "On Android this app cannot remove them for you. To remove one: open Google Photos or your Gallery app, tap the photo, then tap Delete. It stays in that app's Trash until you empty it.",
+    "En Android esta app no puede quitarlas por usted. Para quitar una: abra Google Fotos o su app Galería, toque la foto y luego Eliminar. Se queda en la Papelera de esa app hasta que la vacíe.",
+    "在 Android 上，本应用无法替您移除。要移除一张：打开 Google 相册或图库应用，点按照片，然后点按“删除”。它会留在该应用的回收站中，直到您清空回收站。",
+    "Android에서는 이 앱이 대신 삭제할 수 없어요. 삭제하려면 Google 포토나 갤러리 앱을 열고 사진을 누른 뒤 삭제를 누르세요. 휴지통을 비울 때까지 그 앱의 휴지통에 남아 있어요."
+  ],
   "noAccount": [
     "No account. No ads.",
     "Sin cuenta. Sin anuncios.",
@@ -268,10 +340,10 @@ export const strings = {
     "사진 앱에 그대로 있습니다. 아무것도 바뀌지 않았습니다."
   ],
   "removeSetting": [
-    "After adding a photo, ask about removing the original from Photos",
-    "Después de agregar una foto, preguntar si quitar el original de Fotos",
-    "添加照片后，询问是否从“照片”中移除原图",
-    "사진을 추가한 뒤 사진 앱의 원본 삭제 여부 묻기"
+    "After adding a photo, offer to remove it from Photos (iPhone)",
+    "Después de agregar una foto, ofrecer quitarla de Fotos (iPhone)",
+    "添加照片后，提供从“照片”中移除原图的选项（iPhone）",
+    "사진을 추가한 뒤 사진 앱에서 삭제할지 묻기 (iPhone)"
   ],
   "removeSettingHint": [
     "Nothing leaves Photos unless you tap Remove and confirm on your iPhone.",

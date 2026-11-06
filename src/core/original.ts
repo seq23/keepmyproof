@@ -27,3 +27,13 @@ export async function removeOriginal(assetId: string, saved: { bytes: string | n
   if (!saved?.bytes) return 'kept';
   try { await systemDelete(assetId); return 'removed'; } catch { return 'kept'; }
 }
+/**
+ * Which vault lines a phone shows (owner ruling 6 Nov 2026: make the vault obvious, honestly). Only a phone
+ * that can remove the original (iOS, `systemConfirm`) is told it can; Android is told the original stays in
+ * Google Photos and how to delete it there, and its lock line says fingerprint, not Face ID.
+ */
+export function vaultLines(systemConfirm: boolean) {
+  return systemConfirm
+    ? { lock: 'vaultLock', photo: 'photoCopy' } as const
+    : { lock: 'vaultLockAndroid', photo: 'photoCopyAndroid' } as const;
+}
