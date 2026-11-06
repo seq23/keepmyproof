@@ -100,7 +100,13 @@ const CSS_EXTRA = `.crumbs{display:flex;flex-wrap:wrap;align-items:center;column
 .facts li{margin:0 0 10px}.links{columns:2;column-gap:24px}@media (max-width:560px){.links{columns:1}}.links a{display:inline-block;min-height:32px;padding:6px 0}
 .fact{font-size:15px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 input,select,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;min-height:44px;padding:6px 8px;max-width:100%}
-label{display:inline-block;margin:0 8px 8px 0}`;
+label{display:inline-block;margin:0 8px 8px 0}
+.pill{display:inline-flex;align-items:center;min-height:36px;padding:4px 14px;margin:14px 0 0;border-radius:999px;border:1.5px solid var(--ok);background:var(--okbg);color:var(--ok);font-weight:600;font-size:15px;text-decoration:none}
+.vline{font-weight:600}.hero{margin:4px 0 8px}.hero .btn{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:4px 0 12px}.chips li{margin:0}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font-size:14px;text-decoration:none}
+.stores{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}.store{display:inline-flex;align-items:center;min-height:32px;padding:2px 12px;border:1px solid var(--brass);border-radius:999px;background:var(--card);font-size:14px;font-weight:600}.store small{font:500 12px var(--mono);color:var(--mut);margin-left:6px;text-transform:uppercase;letter-spacing:.04em}
+.mainnav{display:flex}.mainnav a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font-weight:600}`;
 const STYLE = CSS + CSS_EXTRA;
 /** The approved logo (light and dark files, byte-identical to the design system); its alt keeps the header link's text "KeepMyProof". */
 const LOGO = '<picture><source srcset="/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/logo.svg" alt="KeepMyProof" width="199" height="32"></picture>';
@@ -113,7 +119,8 @@ function fmtDate(lang, iso = SITE.updated) {
 function storeBlock(lang) {
   const c = COPY[lang], s = SITE.stores;
   const links = [s.googlePlay && `<a class="btn" href="${esc(s.googlePlay)}">${c.googlePlay}</a>`, s.appStore && `<a class="btn" href="${esc(s.appStore)}">${c.appStore}</a>`].filter(Boolean);
-  return links.length ? `<p class="lbl">${c.getIt}</p><p>${links.join('')}</p>` : `<p class="soon">${esc(c.comingSoon)}</p>`;
+  return links.length ? `<p class="lbl">${c.getIt}</p><p>${links.join('')}</p>`
+    : `<div class="soon"><p style="margin:0">${esc(c.comingSoon)}</p>${c.vaultBar ? `<p class="stores">${c.vaultBar.stores.map((x) => `<span class="store">${esc(x)}<small>${esc(c.vaultBar.soonTag)}</small></span>`).join('')}</p>` : ''}</div>`;
 }
 
 /** SoftwareApplication with no rating ever; offers and install links only once it is in a store. */
@@ -165,10 +172,10 @@ ${index ? '' : '<meta name="robots" content="noindex,follow">'}
 <style>${STYLE}</style>
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script></head>
 <body><header><a class="mark" href="${pathOf('home', lang)}">${LOGO}</a>
-<nav aria-label="Language">${langLinks}</nav></header>
+${c.vaultBar ? `<nav class="mainnav" aria-label="${esc(c.vaultBar.nav)}"><a href="${VAULT_HREF[lang]}">${esc(c.vaultBar.nav)}</a></nav>` : ''}<nav aria-label="Language">${langLinks}</nav></header>
 <main>${crumbHtml}${body}</main>
 <footer><nav aria-label="${esc(c.nav.home)}">${foot}${vaultFoot}${langLinks}</nav>
-<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time>.</p></footer>
+<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}${live() ? '' : ` ${esc(c.comingSoon)}`}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time>.</p></footer>
 </body></html>
 `;
 }
@@ -179,6 +186,19 @@ function page({ lang, id, title, desc, body, schema = [] }) {
   return shell({ lang, path: p[lang], alt: Object.fromEntries(ALL_LANGS.filter((l) => p[l]).map((l) => [l, p[l]])), title, desc, body, schema, index: p.index, speakable: id === 'home' || id === 'facts',
     crumbs: id === 'home' ? [] : [{ name: COPY[lang].nav[id], path: p[lang] }] });
 }
+
+// Where the vault links point. /vault (the vault hub) replaces these when it is built; zh/ko read the English page.
+const VAULT_HREF = { en: '/private-document-vault', es: '/es/boveda-privada-de-documentos', zh: '/private-document-vault', ko: '/private-document-vault' };
+const VAULT_CHIPS = { en: ['/private-document-vault', '/guides/remove-screenshots-from-camera-roll', '/guides/keep-screenshots-of-texts-private'],
+  es: ['/es/boveda-privada-de-documentos', '/es/guias/quitar-capturas-del-carrete', '/es/guias/mantener-privadas-capturas-de-mensajes'] };
+/** The vault badge, line, buttons and chips at the top of a home page (owner, 6 Nov 2026). primary = the main button [label, href] or null. */
+function vaultHero(lang, primary) {
+  const v = COPY[lang].vaultBar; if (!v) return '';
+  const chips = VAULT_CHIPS[lang] || VAULT_CHIPS.en;
+  return `<p class="vline">${esc(v.line)}</p><p class="hero">${primary ? `<a class="btn primary" href="${primary[1]}">${esc(primary[0])}</a>` : ''}<a class="btn" href="${VAULT_HREF[lang]}">${esc(v.see)}</a></p>
+<ul class="chips">${v.chips.map((t, i) => `<li><a href="${chips[i]}">${esc(t)}</a></li>`).join('')}</ul>`;
+}
+const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}">${esc(v.badge)}</a>` : ''; };
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
@@ -196,7 +216,7 @@ function home(lang, folders, hubs) {
   const folderHtml = folders.map((f) => `<div class="box"><h3><a href="${hubPath(hubs, f.id, lang)}">${esc(f.display_name[lang])}</a></h3><ul>${f.checklist_items.map((i) => `<li>${esc(i.name[lang])}</li>`).join('')}</ul>${
     f.id === 'va-disability-papers' ? `<p class="sub">${esc(c.vaNote)} <a href="${SITE.vaHelp}" rel="noopener">${esc(c.vaLink)}</a></p>` : ''}${
     c.folderMore?.[f.id] ? `<ul class="more">${c.folderMore[f.id].map(([t, href]) => `<li><a href="${href}">${esc(t)}</a></li>`).join('')}</ul>` : ''}</div>`).join('');
-  const body = `<h1>${esc(c.h1)}</h1><p class="definition">${esc(c.definition)}</p>${c.useAs ? `<p>${esc(c.useAs)}</p>` : ''}${storeBlock(lang)}
+  const body = `${vaultBadge(lang)}<h1>${esc(c.h1)}</h1><p class="definition">${esc(c.definition)}</p>${c.useAs ? `<p>${esc(c.useAs)}</p>` : ''}${vaultHero(lang, [`${c.nav.checklists} ›`, pathOf('checklists', lang)])}${storeBlock(lang)}
 <h2>${esc(c.foldersH)}</h2><p class="sub">${esc(c.foldersSub)} <a href="${pathOf('checklists', lang)}">${esc(c.nav.checklists)}</a></p><div class="grid">${folderHtml}</div>
 <h2>${esc(c.privateH)}</h2>${list(c.privateList)}
 ${vaultSection(lang)}
@@ -448,7 +468,8 @@ function checklistFiles(topics, hubs, add, files) {
         footer: [cp.disclaimer, cp.factSentence(SITE.freeItems), `${SITE.origin.replace('https://', '')}${hubPath(hubs, F.topic, l)}`] });
     }
     const path = p[l];
-    const body = `<h1>${esc(c.checklistsH1)}</h1><p class="definition answer">${esc(c.checklistsAnswer)}</p><p class="sub">${esc(c.notAdvice)}</p>
+    const cjk = l === 'zh' || l === 'ko';
+    const body = `${cjk ? vaultBadge(l) : ''}<h1>${esc(c.checklistsH1)}</h1><p class="definition answer">${esc(c.checklistsAnswer)}</p>${cjk ? vaultHero(l, null) : ''}<p class="sub">${esc(c.notAdvice)}</p>
 <div class="grid two">${Object.values(FOLDERS).map((F) => { const t = folders.find((x) => x.id === F.topic); return `<div class="box"><h3>${esc(folderName(t, l))}</h3>${list(checklistItems(t, l))}<p><a class="btn" href="${F.pdf[l]}">${esc(c.pdfLink)}</a></p><p><a href="${hubPath(hubs, F.topic, l)}">${esc(c.hubLink(hubFor(hubs, F.topic, l).h1))}</a></p></div>`; }).join('')}</div>${storeBlock(l)}
 ${l === 'zh' || l === 'ko' ? `<p class="fact">${esc(cp.factSentence(SITE.freeItems))}</p>` : ''}`;
     add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: c.checklistsTitle, desc: c.checklistsDesc, body, speakable: l === 'zh' || l === 'ko',
