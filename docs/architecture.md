@@ -14,7 +14,10 @@ ciphertext. Keys and passcode state are in the platform secure store with
 WHEN_UNLOCKED_THIS_DEVICE_ONLY accessibility. Android automatic backup is disabled.
 
 A six-digit app passcode gates access to the device key. It does not derive the
-vault key. PBKDF2-SHA256 with a random salt and 210,000 iterations checks the code.
+vault key. PBKDF2-SHA256 with a random salt and 600,000 iterations (OWASP Password Storage
+Cheat Sheet) checks the code; records made before 6 Nov 2026 used 210,000 and are re-made at
+600,000 on the next correct unlock. The derivation runs in the phone's crypto library
+(`modules/kmp-kdf`: CommonCrypto / javax.crypto) off the UI thread; in Hermes JS it took ~25 s.
 Failed guesses persist exponential delay up to one hour, never deletion. Biometric
 unlock is opt-in and disables fallback to the phone's passcode. The biometric key
 copy also requires platform authentication. A verified biometric or the confirmed
