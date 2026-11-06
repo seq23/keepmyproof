@@ -152,6 +152,7 @@ function shell({ lang, path, alt, title, desc, body, schema = [], crumbs = [], i
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
   const foot = ['home', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}">${c.nav[p]}</a>`).join('');
+  const vaultFoot = c.vault ? `<a href="${guidePath(VAULT_GUIDE, lang)}">${esc(c.vault.nav)}</a>` : '';
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
 ${index ? '' : '<meta name="robots" content="noindex,follow">'}
@@ -166,7 +167,7 @@ ${index ? '' : '<meta name="robots" content="noindex,follow">'}
 <body><header><a class="mark" href="${pathOf('home', lang)}">${LOGO}</a>
 <nav aria-label="Language">${langLinks}</nav></header>
 <main>${crumbHtml}${body}</main>
-<footer><nav aria-label="${esc(c.nav.home)}">${foot}${langLinks}</nav>
+<footer><nav aria-label="${esc(c.nav.home)}">${foot}${vaultFoot}${langLinks}</nav>
 <p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time>.</p></footer>
 </body></html>
 `;
@@ -181,6 +182,15 @@ function page({ lang, id, title, desc, body, schema = [] }) {
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
+/** The vault feature line (owner yes, 6 Nov 2026: a feature, not the lead): below the papers story, EN and ES only (the guides exist in those two). */
+function vaultSection(lang) {
+  const v = COPY[lang].vault; if (!v) return '';
+  const g = (id) => GUIDES.find((x) => x.id === id);
+  const links = [[VAULT_GUIDE[lang].h1, guidePath(VAULT_GUIDE, lang)], [v.altLabel, `${lang === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`],
+    ...['hide-screenshots-iphone', 'hide-documents-iphone', 'hide-screenshots-android', 'hide-documents-android', 'keep-texts-private'].map((id) => [g(id)[lang].h1, guidePath(g(id), lang)])];
+  return `<h2>${esc(v.h)}</h2><p class="answer">${esc(v.answer)}</p><p>${esc(v.iphone)}</p><ul class="more">${links.map(([t, href]) => `<li><a href="${href}">${esc(t)} ›</a></li>`).join('')}</ul>`;
+}
+
 function home(lang, folders, hubs) {
   const c = COPY[lang], n = SITE.freeItems, faq = c.faq(n);
   const folderHtml = folders.map((f) => `<div class="box"><h3><a href="${hubPath(hubs, f.id, lang)}">${esc(f.display_name[lang])}</a></h3><ul>${f.checklist_items.map((i) => `<li>${esc(i.name[lang])}</li>`).join('')}</ul>${
@@ -189,6 +199,7 @@ function home(lang, folders, hubs) {
   const body = `<h1>${esc(c.h1)}</h1><p class="definition">${esc(c.definition)}</p>${c.useAs ? `<p>${esc(c.useAs)}</p>` : ''}${storeBlock(lang)}
 <h2>${esc(c.foldersH)}</h2><p class="sub">${esc(c.foldersSub)} <a href="${pathOf('checklists', lang)}">${esc(c.nav.checklists)}</a></p><div class="grid">${folderHtml}</div>
 <h2>${esc(c.privateH)}</h2>${list(c.privateList)}
+${vaultSection(lang)}
 <h2>${esc(c.datesH)}</h2>${list(c.datesList)}
 <h2>${esc(c.backupH)}</h2>${list(c.backupList)}
 <h2>${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
