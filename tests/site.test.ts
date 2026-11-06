@@ -106,3 +106,22 @@ test('site prices and free limit are the app\'s approved ones, and the published
   for (const [p, s] of html(files)) for (const q of graph(s).filter(n => n['@type'] === 'FAQPage').flatMap(n => n.mainEntity))
     assert.ok(visible(s).includes(q.name) && visible(s).includes(q.acceptedAnswer.text), `${p} FAQ visible`);
 });
+
+test('every hreflang, in the head or on a language link, points at an emitted page in that language', () => {
+  const { files } = renderAll(fixture());
+  const langOf = (s: string) => /<html lang="([^"]+)"/.exec(s)?.[1];
+  const fileFor = (href: string) => { const p = href.replace(SITE.origin, ''); return files[fileOf(p)] ?? files[`${p.replace(/^\//, '')}/index.html`]; };
+  let n = 0;
+  for (const [p, s] of html(files)) {
+    if (/<script type="application\/ld\+json">/.test(s) === false) continue;
+    const refs = [...s.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g), ...s.matchAll(/<a class="lang" href="([^"]+)" hreflang="([^"]+)"/g)]
+      .map((m) => (m[0].startsWith('<link') ? { lang: m[1], href: m[2] } : { lang: m[2], href: m[1] }));
+    for (const { lang, href } of refs) {
+      const target = fileFor(href);
+      assert.ok(target, `${p}: hreflang ${lang} -> ${href} is not an emitted page`);
+      if (lang !== 'x-default') assert.equal(langOf(target!), lang, `${p}: hreflang ${lang} -> ${href} is a ${langOf(target!)} page`);
+      n++;
+    }
+  }
+  assert.ok(n > 100, `only ${n} hreflang references read`);
+});

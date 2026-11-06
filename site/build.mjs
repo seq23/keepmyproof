@@ -18,6 +18,7 @@ import { checklistPdf } from './pdf.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
+import { CJK_COPY } from './landings-cjk.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -223,7 +224,7 @@ function page({ lang, id, title, desc, body, schema = [] }) {
 // Where the vault links point. /vault (the vault hub) replaces these when it is built; zh/ko read the English page.
 const VAULT_HREF = VAULT_HUB.path;
 const VAULT_CHIPS = { en: ['/vault', '/hide-pictures-from-camera-roll', '/keep-custody-screenshots-private'],
-  es: ['/es/boveda', '/es/ocultar-fotos-del-carrete', '/es/capturas-de-custodia-privadas'], zh: ['/zh/vault', '/zh/vault', '/zh/vault'], ko: ['/ko/vault', '/ko/vault', '/ko/vault'] };
+  es: ['/es/boveda', '/es/ocultar-fotos-del-carrete', '/es/capturas-de-custodia-privadas'], zh: ['/zh/vault', '/zh/hide-pictures-from-camera-roll', '/zh/keep-custody-screenshots-private'], ko: ['/ko/vault', '/ko/hide-pictures-from-camera-roll', '/ko/keep-custody-screenshots-private'] };
 /** The vault badge, line, buttons and chips at the top of a home page (owner, 6 Nov 2026). primary = the main button [label, href] or null. */
 function vaultHero(lang, primary) {
   const v = COPY[lang].vaultBar; if (!v) return '';
@@ -268,7 +269,7 @@ ${vaultSection(lang)}
 function legal(lang, id, paras) {
   const c = COPY[lang], key = id === 'terms' ? 'terms' : 'privacy';
   const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time></p>
-${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}
+${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}${key === 'privacy' && c.heardLine ? `\n<p>${esc(c.heardLine)}</p>` : ''}
 <p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
   return page({ lang, id, title: c[`${key}Title`], desc: c[`${key}Desc`], body });
 }
@@ -660,6 +661,8 @@ const lpPath = (x, l) => x.path[l];
 /** The vault pages, in the order the hub lists them. */
 function vaultLinks(l) {
   const own = LANDINGS.filter((x) => x.kind === 'vault').map((x) => [x[l].h1, lpPath(x, l)]);
+  // Chinese and Korean: their own vault pages, then the English guides (labelled in English).
+  if (l === 'zh' || l === 'ko') return [...own, ...vaultLinks('en').slice(own.length).map(([t, href]) => [`${t} (English)`, href])];
   const guides = VAULT_GUIDE_IDS.map((id) => GUIDES.find((g) => g.id === id)).filter(Boolean).map((g) => [g[l].h1, guidePath(g, l)]);
   return [...own, [VAULT_GUIDE[l].h1, guidePath(VAULT_GUIDE, l)], ...guides, [LP_COPY[l].compare, `${l === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`]];
 }
@@ -673,7 +676,7 @@ function landingPages(add, topics, hubs) {
     const h = VAULT_HUB[l], path = VAULT_HUB.path[l], [lo, hi] = RANGE[l];
     if (measure(l, h.answer) < lo || measure(l, h.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] vault hub ${l}: ${measure(l, h.answer)} (allowed ${lo}-${hi})`);
     const limits = h.limits || LIMITS[l];
-    const pages = vaultLinks(l === 'zh' || l === 'ko' ? 'en' : l);
+    const pages = vaultLinks(l);
     const body = `${vaultBadge(l)}<h1>${esc(h.h1)}</h1><p class="definition answer">${esc(h.answer)}</p><p>${esc(h.iphone)}</p>
 <h2>${esc(h.howH)}</h2><ol>${h.how.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
 ${guideSection({ h: h.diffH, a: h.diff, table: h.table })}
@@ -685,10 +688,11 @@ ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p
   }
   // The landing pages, EN + ES.
   for (const x of LANDINGS) {
-    const alt = { en: x.path.en, es: x.path.es };
-    for (const l of LANGS) {
-      const p = x[l], path = x.path[l], G = GUIDE_COPY[l], L = LP_COPY[l], [lo, hi] = RANGE[l];
-      if (words(p.answer) < lo || words(p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${words(p.answer)} words`);
+    const alt = { ...x.path };
+    for (const l of ALL_LANGS) {
+      const cjk = l === 'zh' || l === 'ko', p = x[l], path = x.path[l], [lo, hi] = RANGE[l];
+      const G = cjk ? CJK_COPY[l] : GUIDE_COPY[l], L = cjk ? CJK_COPY[l] : LP_COPY[l];
+      if (measure(l, p.answer) < lo || measure(l, p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${measure(l, p.answer)} (allowed ${lo}-${hi})`);
       if (!x.sources.length) throw Error(`NAMED STOP [LANDING_UNSOURCED] ${x.id}`);
       const vault = x.kind === 'vault';
       const F = vault ? null : FOLDERS[x.kind], topic = F && folders.find((t) => t.id === F.topic);
@@ -696,20 +700,20 @@ ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p
       const lbl = vault ? L.lbl : folderName(topic, l);
       const keep = vault
         ? `<h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}`
-        : `<h2>${esc(L.keepH)}</h2><p>${esc(CC[l].keepBody)}</p>${list(checklistItems(topic, l))}<p><a class="btn primary" href="${F.pdf[l]}">${esc(L.pdf)}</a>${x.printable ? `<a class="btn" href="${x.printable[l]}">${esc(L.printable)}</a>` : ''}</p>${storeBlock(l)}`;
+        : `<h2>${esc(cjk ? L.folderKeepH : L.keepH)}</h2><p>${esc(CC[l].keepBody)}</p>${list(checklistItems(topic, l))}<p><a class="btn primary" href="${F.pdf[l]}">${esc(L.pdf)}</a>${x.printable ? `<a class="btn" href="${x.printable[l] ?? x.printable.en}">${esc(L.printable)}</a>` : ''}</p>${storeBlock(l)}`;
       const related = vault
         ? [[L.hub, VAULT_HUB.path[l]], ...vaultLinks(l).filter(([, href]) => href !== path)]
-        : [[hubFor(hubs, F.topic, l).h1, hubPath(hubs, F.topic, l)], ...LANDINGS.filter((o) => o.kind === x.kind && o !== x).map((o) => [o[l].h1, o.path[l]]), ...(x.printable ? [[L.printable, x.printable[l]]] : []), [VAULT_HUB[l].h1, VAULT_HUB.path[l]]];
+        : [[hubFor(hubs, F.topic, l).h1, hubPath(hubs, F.topic, l)], ...LANDINGS.filter((o) => o.kind === x.kind && o !== x).map((o) => [o[l].h1, o.path[l]]), ...(x.printable ? [[L.printable, x.printable[l] ?? x.printable.en]] : []), [VAULT_HUB[l].h1, VAULT_HUB.path[l]]];
       const body = `${vault ? vaultBadge(l) : ''}<p class="lbl">${esc(lbl)}</p><h1>${esc(p.h1)}</h1><p class="definition answer">${esc(p.answer)}</p><p class="sub">${esc(G.bestFor)} ${esc(p.bestFor)}</p>
 ${p.sections.map(guideSection).join('\n')}
 ${faqHtml(l, p.faq)}
 ${keep}
-<h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
+<h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l] ?? s.url.en)}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
 <h2>${esc(L.more)}</h2>${linkList(related)}
 <p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
       const crumbs = vault ? [{ name: VAULT_HUB[l].h1, path: VAULT_HUB.path[l] }, { name: p.h1, path }] : [{ name: hubFor(hubs, F.topic, l).h1, path: hubPath(hubs, F.topic, l) }, { name: p.h1, path }];
       add({ path, alt, group: vault ? 'vault' : x.kind, html: shell({ lang: l, path, alt, title: p.title, desc: p.desc, body, speakable: true, crumbs,
-        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, p.faq), appSchema(l)] }) });
+        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
     }
   }
 }
