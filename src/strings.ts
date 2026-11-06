@@ -1262,6 +1262,102 @@ export const strings = {
     "Idioma",
     "语言",
     "언어"
+  ],
+  "heardTitle": [
+    "How did you hear about KeepMyProof?",
+    "¿Cómo supo de KeepMyProof?",
+    "您是怎么知道 KeepMyProof 的？",
+    "KeepMyProof를 어떻게 알게 되셨나요?"
+  ],
+  "heardOptional": [
+    "Optional. Your answer stays on this phone. It is sent only if you tap \"Send my answer\", from your own email.",
+    "Opcional. Su respuesta se queda en este teléfono. Solo se envía si toca \"Enviar mi respuesta\", desde su propio correo.",
+    "可选。您的回答只保存在这部手机上。只有您点\"发送我的回答\"，才会从您自己的邮箱发出。",
+    "선택 사항이에요. 답변은 이 휴대폰에만 남아요. \"내 답변 보내기\"를 누를 때만 본인의 이메일로 보내져요."
+  ],
+  "heardGoogle": [
+    "Google search",
+    "Búsqueda en Google",
+    "Google 搜索",
+    "Google 검색"
+  ],
+  "heardAi": [
+    "ChatGPT or another AI tool",
+    "ChatGPT u otra herramienta de IA",
+    "ChatGPT 或其他 AI 工具",
+    "ChatGPT 또는 다른 AI 도구"
+  ],
+  "heardStore": [
+    "App Store or Google Play search",
+    "Búsqueda en App Store o Google Play",
+    "App Store 或 Google Play 搜索",
+    "App Store 또는 Google Play 검색"
+  ],
+  "heardAdvocate": [
+    "A lawyer, advocate or counsellor",
+    "Un abogado, defensor o consejero",
+    "律师、维权人员或咨询师",
+    "변호사, 옹호 활동가 또는 상담사"
+  ],
+  "heardFriend": [
+    "A friend or family member",
+    "Un amigo o familiar",
+    "朋友或家人",
+    "친구나 가족"
+  ],
+  "heardSocial": [
+    "Social media",
+    "Redes sociales",
+    "社交媒体",
+    "소셜 미디어"
+  ],
+  "heardOther": [
+    "Other",
+    "Otro",
+    "其他",
+    "기타"
+  ],
+  "heardSend": [
+    "Send my answer ›",
+    "Enviar mi respuesta ›",
+    "发送我的回答 ›",
+    "내 답변 보내기 ›"
+  ],
+  "heardSkip": [
+    "Skip ›",
+    "Omitir ›",
+    "跳过 ›",
+    "건너뛰기 ›"
+  ],
+  "heardDone": [
+    "Done ›",
+    "Listo ›",
+    "完成 ›",
+    "완료 ›"
+  ],
+  "heardSettings": [
+    "How you found us",
+    "Cómo nos encontró",
+    "您是怎么找到我们的",
+    "저희를 알게 된 경로"
+  ],
+  "heardNone": [
+    "Not answered",
+    "Sin responder",
+    "未回答",
+    "답하지 않음"
+  ],
+  "heardChange": [
+    "Change ›",
+    "Cambiar ›",
+    "更改 ›",
+    "변경 ›"
+  ],
+  "heardNoMail": [
+    "No email app is set up on this phone. Your answer is saved here.",
+    "No hay una app de correo en este teléfono. Su respuesta quedó guardada aquí.",
+    "这部手机上没有设置邮件应用。您的回答已保存在这里。",
+    "이 휴대폰에 설정된 이메일 앱이 없어요. 답변은 여기에 저장됐어요."
   ]
 } as const satisfies Record<string, readonly [en: string, es: string, zh: string, ko: string]>;
 export type StringKey = keyof typeof strings;

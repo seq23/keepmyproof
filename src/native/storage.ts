@@ -9,9 +9,10 @@ import { clearTemporary } from '../core/cleanup';
 import { Vault, prepareInstall, type InstallStore } from '../core/vault';
 import { isLang, type Lang } from '../core/model';
 import type { PrefStore } from '../core/original';
+import type { HeardStore } from '../core/heard';
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
-const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1', LANG = 'kmp-lang-v1', REMOVE = 'kmp-remove-original-v1';
+const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1', LANG = 'kmp-lang-v1', REMOVE = 'kmp-remove-original-v1', HEARD = 'kmp-heard-v1';
 /** The language picked on the first screen or in Settings. null = follow the phone's language. */
 export const langChoice = {
   read: async (): Promise<Lang | null> => { const v = await SecureStore.getItemAsync(LANG, options); return isLang(v) ? v : null; },
@@ -21,6 +22,11 @@ export const langChoice = {
 export const removePrefStore: PrefStore = {
   read: () => SecureStore.getItemAsync(REMOVE, options),
   write: async v => { await SecureStore.setItemAsync(REMOVE, v, options); },
+};
+/** How the person found the app (src/core/heard.ts). Kept on this phone only. */
+export const heardStore: HeardStore = {
+  read: () => SecureStore.getItemAsync(HEARD, options),
+  write: async v => { await SecureStore.setItemAsync(HEARD, v, options); },
 };
 let db: SQLite.SQLiteDatabase | undefined;
 export async function database(): Promise<InstallStore> {
