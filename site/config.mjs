@@ -31,6 +31,7 @@ export const PAGES = [
   { id: 'support', en: '/support', es: '/es/ayuda', index: false },
   { id: 'checklists', en: '/checklists', es: '/es/listas', zh: '/zh/', ko: '/ko/', index: true },
   { id: 'tools', en: '/tools', es: '/es/herramientas', index: true },
+  { id: 'guides', en: '/guides', es: '/es/guias', index: true },
   { id: 'facts', en: '/facts', es: '/es/datos', index: true },
   { id: 'alternatives', en: '/alternatives', es: '/es/alternativas', index: true },
 ];
