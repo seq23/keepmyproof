@@ -1,0 +1,66 @@
+{
+  "h1": "How to prepare for divorce in Virginia",
+  "title_lead": "How to prepare for divorce in Virginia",
+  "meta_description": "Gather financial records, property deeds, and important documents before starting a Virginia divorce. Keep copies of your own papers to protect your rights.",
+  "direct_answer": "Divorce in Virginia is a legal end to a marriage that requires meeting residency rules and grounds. KeepMyProof helps you gather and organize your own papers for the process ahead.",
+  "sections": [
+    {
+      "heading": "What papers should I collect before filing?",
+      "paragraphs": [
+        "Start by gathering documents that show your income, expenses, and assets. Collect pay stubs, tax returns from the last two years, bank statements, and titles to vehicles or real estate. Find records of retirement accounts, credit card balances, and any loans you or your spouse owe. If you own a business, gather the last two years of business tax returns and profit-loss statements."
+      ],
+      "bullets": [
+        "Pay stubs and proof of income",
+        "Tax returns for the last two years",
+        "Bank and investment account statements",
+        "Deeds and titles to property",
+        "Retirement and pension account statements"
+      ]
+    },
+    {
+      "heading": "Do I need to record conversations with my spouse?",
+      "paragraphs": [
+        "Virginia law generally prohibits secretly recording private conversations. You may not record a spouse or partner without their consent if there is a reasonable expectation of privacy. KeepMyProof does not advise on recording methods. Focus on collecting documents you already have access to, such as emails, text message screenshots you saved, or financial records mailed to you."
+      ],
+      "bullets": [
+        "Do not secretly record private conversations",
+        "Save text messages or emails you already receive",
+        "Keep copies of financial statements you are sent"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to move out of the marital home?",
+      "a": "You are not required to move out just because a divorce has started. Who stays in the home depends on the situation and any court orders. If you leave, you still have rights to the property. Keep your own mail and documents in a safe place."
+    },
+    {
+      "q": "Can I get spousal support in Virginia?",
+      "a": "Spousal support, or alimony, may be awarded based on need and ability to pay. The court looks at the length of the marriage, each person's earning capacity, and standard of living during the marriage. Keep records of your expenses and income to help the court decide."
+    },
+    {
+      "q": "What is the difference between fault and no-fault divorce?",
+      "a": "No-fault divorce requires living separate and apart for one year without cohabitation, or six months if there are no minor children and a separation agreement is signed. Fault divorce allows filing based on adultery, cruelty, or desertion, but requires proof. KeepMyProof helps you gather papers, not testimony about fault."
+    },
+    {
+      "q": "How long does a Virginia divorce take?",
+      "a": "An uncontested divorce with a separation agreement can be finalized in a few months after the waiting period. A contested divorce may take a year or more if it goes to trial. The timeline depends on the court's docket and whether the parties can agree on property, support, or custody."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Virginia requires at least six months of residency before filing for divorce.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Virginia is an equitable distribution state for dividing marital property.",
+      "source_url": "https://www.acf.hhs.gov/css/parents",
+      "source_name": "ACF HHS",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

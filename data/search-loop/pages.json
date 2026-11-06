@@ -1,6 +1,100 @@
 {
   "schema": "search-loop-pages-v1",
-  "pages": [],
+  "pages": [
+    {
+      "slug": "how-to-prepare-for-divorce-in-virginia",
+      "query": "how to prepare for divorce in virginia",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-virginia/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-virginia/",
+      "published_at": "2026-11-06",
+      "status": "live",
+      "hash": "343ad80631946dbd07c4abcd687b5ce2ec956b9a6a0e9a0a4ae4d4e896ad68fb",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 30 words (aim 40-60)",
+        "b9 504 words of visible text (aim 600+)"
+      ]
+    },
+    {
+      "slug": "how-to-prove-adultery-in-the-military",
+      "query": "how to prove adultery in the military",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prove-adultery-in-the-military/index.html",
+      "route": "/questions/how-to-prove-adultery-in-the-military/",
+      "url": "https://keepmyproof.com/questions/how-to-prove-adultery-in-the-military/",
+      "published_at": "2026-11-06",
+      "status": "live",
+      "hash": "96e7baa2660f3f1731961f658c8e00d6878d57c916e3dd10633e665a6b2515e6",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Uniform_Code_of_Military_Justice",
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 38 words (aim 40-60)",
+        "b5 FAQ answer is 37 words (aim 40-60): \"Can adultery charges be filed after a service memb\"",
+        "b5 FAQ answer is 35 words (aim 40-60): \"Does adultery affect my VA disability rating?\""
+      ]
+    },
+    {
+      "slug": "how-to-prove-adultery-in-the-philippines",
+      "query": "how to prove adultery in the philippines",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prove-adultery-in-the-philippines/index.html",
+      "route": "/questions/how-to-prove-adultery-in-the-philippines/",
+      "url": "https://keepmyproof.com/questions/how-to-prove-adultery-in-the-philippines/",
+      "published_at": "2026-11-06",
+      "status": "live",
+      "hash": "673696af1043cec4ed15f24d526042d21a45f73ed486fe63e3d6a23aaa86545d",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Adultery",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_Philippines"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 35 words (aim 40-60)",
+        "b5 FAQ answer is 36 words (aim 40-60): \"Can text messages be used as proof of adultery?\"",
+        "b5 FAQ answer is 35 words (aim 40-60): \"Is adultery a crime in the Philippines?\"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"What should I not do when gathering evidence?\""
+      ]
+    }
+  ],
   "dropped": [
     {
       "query": "how to document workplace harassment",
@@ -204,6 +298,157 @@
       "at": "2026-11-06",
       "reason": [
         "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in massachusetts",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in georgia",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "co parenting journal",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to document missed visitation",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "what happens if a parent misses visitation",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prove adultery in divorce case",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 28 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in court",
+      "at": "2026-11-06",
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prove adultery in south carolina",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 16 words (aim 40-60)",
+        "b5 FAQ has 2 questions (aim 3-6)",
+        "b5 FAQ answer is 17 words (aim 40-60): \"Is text message enough to prove adultery?\"",
+        "b5 FAQ answer is 24 words (aim 40-60): \"What is the time limit to file for divorce based o\"",
+        "b9 416 words of visible text (under 450, 75% of the 600 aim) — thin"
+      ]
+    },
+    {
+      "query": "how to prove adultery in virginia",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in Virginia?\"",
+        "shape: the body needs at least one list or table (give one section \"bullets\")"
+      ]
+    },
+    {
+      "query": "how to prove adultery in louisiana",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 29 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in nc",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 29 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in North Carolina?\"",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in malaysia",
+      "at": "2026-11-06",
+      "reason": [
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in court in india",
+      "at": "2026-11-06",
+      "reason": [
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "how to document workplace bullying",
+      "at": "2026-11-06",
+      "reason": [
+        "b2 meta description is 76 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 28 words (aim 40-60)",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I record my boss yelling at me?\"",
+        "b5 FAQ answer is 26 words (aim 40-60): \"What should I do if HR ignores my complaint?\"",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I use my personal phone to take notes?\""
+      ]
+    },
+    {
+      "query": "how to document workplace abuse",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 29 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to document workplace violence",
+      "at": "2026-11-06",
+      "reason": [
+        "b2 meta description is 87 chars (aim 120-160)"
+      ]
+    },
+    {
+      "query": "how to properly document workplace harassment",
+      "at": "2026-11-06",
+      "reason": [
+        "b2 meta description is 71 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 27 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 27 words (aim 40-60): \"How long do I have to file a harassment claim?\""
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment complaint",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ has 2 questions (aim 3-6)"
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment complaint letter",
+      "at": "2026-11-06",
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"how long do i have to file a complaint\""
       ]
     }
   ],
