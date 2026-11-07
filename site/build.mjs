@@ -396,6 +396,17 @@ export function clusterModel({ facts, verified, translations = {} }) {
   return { model, stops };
 }
 
+/** Facts grouped by source, in first-seen order, so each source is named once under the facts, which point to it by number (naming it after every fact was template filler). */
+export function bySource(facts) {
+  const out = new Map();
+  for (const f of facts) {
+    if (!out.has(f.source_url)) out.set(f.source_url, { name: f.source_name, url: f.source_url, claims: [], verifiedOn: f.verifiedOn });
+    const g = out.get(f.source_url);
+    g.claims.push(f.claim); if (String(f.verifiedOn) > String(g.verifiedOn)) g.verifiedOn = f.verifiedOn;
+  }
+  return [...out.values()];
+}
+
 function neighbours(code, published) {
   const set = new Set(published), out = STATES[code].neighbours.filter((n) => set.has(n));
   const order = published.filter((c) => c !== code), i = STATE_CODES.indexOf(code);
@@ -451,7 +462,9 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
     const idxAlt = altOf(folderLangs, P.index);
     for (const l of folderLangs) {
       const c = CC[l], path = P.index(l), codes = [...new Set(subs.flatMap((s) => s.states.filter((x) => x.byLang[l]).map((x) => x.code)))];
-      const rows = codes.map((code) => `<div class="box"><h3>${esc(stateName(code, l))}</h3><ul>${subs.filter((s) => s.states.some((x) => x.code === code && x.byLang[l])).map((s) => `<li><a href="${P.state(s, code, l)}">${esc(fill(s.titles[l], code, l))}</a></li>`).join('')}</ul></div>`).join('');
+      // One box per subtopic linking to its own page, where every state is listed. A box per state repeated each
+      // subtopic title once per state, and a state list per subtopic repeated the same 51 names (template filler).
+      const rows = subs.map((s) => [s, s.states.filter((x) => x.byLang[l]).length]).filter(([, n]) => n).map(([s, n]) => `<div class="box"><h3><a href="${P.sub(s, l)}">${esc(s.label[l])}</a></h3><p><a href="${P.sub(s, l)}">${esc(c.allStates)} (${n}) ›</a></p></div>`).join('');
       const desc = c.byStateDesc(folderName(topic, l), codes.length - (codes.includes('DC') ? 1 : 0));
       const body = `<p class="lbl">${esc(folderName(topic, l))}</p><h1>${esc(c.byState(folderName(topic, l)))}</h1><p class="definition answer">${esc(desc)}</p><p>${esc(c.statesIntro)}</p>
 <p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><div class="grid two">${rows}</div>`;
@@ -486,17 +499,18 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
           if (desc.length > 160) desc = `${claims[0].slice(0, 155 - tailDesc.length).replace(l === 'zh' ? /$/ : /\s+\S*$/, '')}…${tailDesc}`;
-          const names = [...new Set(facts.map((f) => f.source_name))];
+          const names = [...new Set(facts.map((f) => f.source_name))]; const srcs = bySource(facts);
           const faq = c.faq({ state: S, names: names.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
           const body = `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>
 <p class="definition answer">${esc(answer)}</p><p class="sub">${esc(c.notAdvice)} ${esc(c.sourcesChecked(fmtDate(l, last)))}</p>
-<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f) => `<li>${esc(f.claim)} <a href="${esc(f.source_url)}" rel="noopener">${esc(f.source_name)}</a>. <span class="sub">${esc(c.checked(fmtDate(l, f.verifiedOn)))}</span></li>`).join('')}</ul>
+<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(f.claim)} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
+<p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span></li>`).join('')}</ol>
 ${st.links.length ? `<h2>${esc(c.linksH)}</h2><ul>${st.links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
 ${keep(l)}
 <h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(s.label[l])}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
-${near.length ? `<h2>${esc(c.nearby)}</h2><ul>${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(fill(s.titles[l], n, l))}</a></li>`).join('')}</ul>` : ''}
+${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           add({ path, alt, group: k, state: { folder: k, subtopic: s.data.subtopic, code, lang: l, facts: facts.length }, html: shell({ lang: l, path, alt, title, desc, body, speakable: true,
             crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path: P.sub(s, l) }, { name: S, path }],
