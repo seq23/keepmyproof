@@ -127,14 +127,23 @@ function storeBlock(lang) {
     : `<div class="soon"><p style="margin:0">${esc(c.comingSoon)}</p>${c.vaultBar ? `<p class="stores">${c.vaultBar.stores.map((x) => `<span class="store">${esc(x)}<small>${esc(c.vaultBar.soonTag)}</small></span>`).join('')}</p>` : ''}</div>`;
 }
 
-/** SoftwareApplication with no rating ever; offers and install links only once it is in a store. */
+/**
+ * SoftwareApplication with no rating ever. Offers carry the approved list prices from config.mjs (never typed here),
+ * the same prices the home page shows under "What it costs" (search-readiness c3). Before launch each Offer says it is
+ * coming soon and points at that price section, with no install link and no availability claim; install links and the
+ * store as the Offer url arrive only with the one store switch.
+ */
 function appSchema(lang) {
   const c = COPY[lang], s = SITE.stores;
   const os = [s.googlePlay && 'Android', s.appStore && 'iOS'].filter(Boolean);
   const node = { '@type': 'SoftwareApplication', '@id': `${SITE.origin}/#app`, name: SITE.name, applicationCategory: 'UtilitiesApplication', operatingSystem: os.length ? os.join(', ') : 'Android',
     description: c.factSentence(SITE.freeItems), inLanguage: LANGS, publisher: { '@id': `${SITE.origin}/#organization` }, url: `${SITE.origin}/` };
-  if (os.length) Object.assign(node, { installUrl: [s.googlePlay, s.appStore].filter(Boolean), offers: [{ '@type': 'Offer', name: c.free, price: '0', priceCurrency: 'USD' },
-    { '@type': 'Offer', name: `${c.plus} (yearly)`, price: SITE.prices.yearlyUSD, priceCurrency: 'USD' }, { '@type': 'Offer', name: `${c.plus} (lifetime)`, price: SITE.prices.lifetimeUSD, priceCurrency: 'USD' }] });
+  const store = s.googlePlay || s.appStore;
+  const terms = os.length ? { url: store } : { url: `${SITE.origin}/#price`, description: c.comingSoon ?? COPY.en.comingSoon };
+  node.offers = [{ '@type': 'Offer', name: c.free, price: '0', priceCurrency: 'USD', ...terms },
+    { '@type': 'Offer', name: `${c.plus} (yearly)`, price: SITE.prices.yearlyUSD, priceCurrency: 'USD', ...terms },
+    { '@type': 'Offer', name: `${c.plus} (lifetime)`, price: SITE.prices.lifetimeUSD, priceCurrency: 'USD', ...terms }];
+  if (os.length) node.installUrl = [s.googlePlay, s.appStore].filter(Boolean);
   return node;
 }
 const faqSchema = (lang, faq) => ({ '@type': 'FAQPage', inLanguage: lang, mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
@@ -256,7 +265,7 @@ function home(lang, folders, hubs) {
 ${vaultSection(lang)}
 <h2>${esc(c.datesH)}</h2>${list(c.datesList)}
 <h2>${esc(c.backupH)}</h2>${list(c.backupList)}
-<h2>${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
+<h2 id="price">${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
 <div class="box"><h3>${esc(c.plus)}</h3>${list(c.plusList)}<p class="price">${esc(c.plusPrice(SITE.prices))}</p></div></div>${c.priceNotes(n).map((p) => `<p class="sub">${esc(p)}</p>`).join('')}
 <h2>${esc(c.faqH)}</h2><div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>`;
   const schema = [

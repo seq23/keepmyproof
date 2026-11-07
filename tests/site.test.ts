@@ -66,13 +66,31 @@ test('every page has a self canonical and hreflang twins that exist and link bac
   assert.equal(files[`${SITE.indexNowKey}.txt`], SITE.indexNowKey);
 });
 
-test('before launch: "coming soon to Google Play", no store link, no offers and never a rating; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
+test('before launch: "coming soon to Google Play", no store link, no install link, never a rating, and only the approved list prices as coming-soon Offers; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
   const before = renderAll(fixture());
+  const listPrices = ['0', SITE.prices.yearlyUSD, SITE.prices.lifetimeUSD];
+  let apps = 0;
   for (const [p, s] of html(before.files)) {
     // Competitor pages cite competitors' App Store pages; no page may link to a store for our own app.
     assert.ok(!/play\.google\.com|apps\.apple\.com\/[^"]*keepmyproof|class="btn" href="https:\/\/apps\.apple/.test(s), p);
-    for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) assert.ok(!app.offers && !app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
+    for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) {
+      assert.ok(!app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
+      if (app['@type'] !== 'SoftwareApplication') { assert.ok(!app.offers, `${p} tool schema has no offers`); continue; }
+      apps++;
+      // Search-readiness c3: a priced Offer, never an invented price, never a claim it can be bought today.
+      assert.deepEqual(app.offers.map((o: any) => o.price), listPrices, `${p} offers are the approved list prices`);
+      for (const o of app.offers) {
+        assert.ok(o.priceCurrency === 'USD' && !o.availability, `${p} offer currency, no availability claim`);
+        assert.equal(o.url, `${SITE.origin}/#price`, `${p} offer points at the price section`);
+        assert.ok(o.description, `${p} offer says coming soon`);
+      }
+    }
   }
+  assert.ok(apps > 100, `every kind of page carries the app node (${apps})`);
+  const home = before.files['index.html'];
+  assert.ok(home.includes('<h2 id="price">'), 'home has the price section the offers point at');
+  for (const pr of listPrices.slice(1)) assert.ok(visible(home).includes(`$${pr}`), `home shows $${pr}`);
+  for (const o of graph(home).find((n) => n['@type'] === 'SoftwareApplication').offers) assert.ok(visible(home).includes(o.description), 'offer description is what the page says');
   assert.ok(visible(before.files['index.html']).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
   const statePage = before.pages.find((p) => p.state && p.state.lang === 'en')!;
   assert.ok(visible(before.files[statePage.file]).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
@@ -88,6 +106,8 @@ test('before launch: "coming soon to Google Play", no store link, no offers and 
     for (const lang of ['en', 'es'] as const) {
       const s = after.files[fileOf(PAGES[0][lang])], app = graph(s).find((n) => n['@type'] === 'SoftwareApplication');
       assert.ok(!app.aggregateRating);
+      assert.deepEqual(app.installUrl, [SITE.stores.googlePlay]);
+      for (const o of app.offers) assert.ok(o.url === SITE.stores.googlePlay && !o.description, `${lang} offer points at the store, no coming soon`);
       for (const o of app.offers.filter((o: any) => o.price !== '0')) assert.ok(visible(s).includes(`$${o.price}`), `${lang} ${o.price}`);
     }
   } finally { Object.assign(SITE.stores, saved); }
