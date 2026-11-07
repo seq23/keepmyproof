@@ -145,3 +145,27 @@ test('every hreflang, in the head or on a language link, points at an emitted pa
   }
   assert.ok(n > 100, `only ${n} hreflang references read`);
 });
+
+test('state pages name each source once and point facts to it by number; neighbour links and the state index never repeat a page title per state (template filler)', () => {
+  const fx = fixture();
+  // All three facts on a state page share one source, as most real executor and IEP pages do.
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) f.source_url = e.facts[0].source_url;
+  const verified: Record<string, string> = {};
+  const { factKey } = require('../site/lib/gate.mjs');
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) verified[factKey(f)] = '2026-11-02';
+  fx.verified.executor = verified;
+  const { files } = renderAll(fx);
+  const ca = files['executor/fixture-topic/california.html'];
+  assert.ok(ca, 'California state page emitted');
+  const factsUl = /<ul class="facts">([\s\S]*?)<\/ul>/.exec(ca)![1], sources = /<ol class="sources">([\s\S]*?)<\/ol>/.exec(ca)![1];
+  assert.equal((factsUl.match(/<li>/g) ?? []).length, 3, 'one list item per fact');
+  assert.equal((factsUl.match(/href="https:\/\/courts\.example\.gov\/ca\/rule-1"/g) ?? []).length, 3, 'each fact links its source');
+  assert.equal((sources.match(/<li>/g) ?? []).length, 1, 'the shared source is listed once');
+  assert.equal((visible(factsUl).match(/California Fixture Court/g) ?? []).length, 0, 'the source name is not repeated after each fact');
+  const near = /<h2>Neighbouring states<\/h2><ul class="links">([\s\S]*?)<\/ul>/.exec(ca)![1];
+  assert.ok(/>Oregon<\/a>/.test(near) || />Nevada<\/a>/.test(near), 'neighbour links name the state');
+  assert.ok(!/Fixture rules in/.test(near), 'neighbour links do not repeat the page title');
+  const index = visible(files['executor/index.html']);
+  assert.equal((index.match(/Fixture rules in/g) ?? []).length, 0, 'the state index does not repeat the subtopic title once per state');
+  assert.equal((index.match(/Fixture rules/g) ?? []).length, 1, 'the state index names the subtopic once');
+});
