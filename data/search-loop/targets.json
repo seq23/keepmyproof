@@ -2425,5 +2425,24 @@
       "kind": "new"
     }
   ],
-  "strengthen": []
+  "strengthen": [
+    {
+      "query": "what is considered a hostile work environment",
+      "page": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "score": 45,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-07"
+    },
+    {
+      "query": "how to prove a hostile work environment claim",
+      "page": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "score": 45,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.80 >= 0.6)",
+      "at": "2026-11-07"
+    }
+  ]
 }

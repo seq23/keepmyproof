@@ -1,0 +1,105 @@
+{
+  "h1": "How to prepare for divorce in Florida",
+  "title_lead": "How to prepare for divorce in Florida",
+  "meta_description": "Learn the steps to prepare for divorce in Florida, including residency rules, financial documents, parenting plans, and how KeepMyProof helps you organize.",
+  "direct_answer": "Preparing for divorce in Florida is the process of meeting residency requirements, gathering financial records, completing mandatory disclosures, and creating a parenting plan if you have minor children before filing a petition.",
+  "sections": [
+    {
+      "heading": "What are the residency requirements for a Florida divorce?",
+      "paragraphs": [
+        "You or your spouse must have lived in Florida for at least six months before filing. Proof of residency can include a driver's license, voter registration, or a utility bill in your name. The petition is filed in the circuit court of the county where either spouse lives. KeepMyProof lets you store a photo of your license and recent bills in a private vault so they are easy to find when you file."
+      ],
+      "bullets": [
+        "Six months continuous residence in Florida",
+        "Driver's license or state ID with Florida address",
+        "Voter registration card",
+        "Utility bill or lease in your name"
+      ]
+    },
+    {
+      "heading": "Which financial documents should you collect first?",
+      "paragraphs": [
+        "Florida requires full financial disclosure through a Financial Affidavit and a Certificate of Compliance with Mandatory Disclosure. Gather three years of tax returns, recent pay stubs, bank statements, retirement account statements, mortgage documents, credit card statements, and vehicle titles. Organize these by category in KeepMyProof so you can share them with your attorney or mediator without searching through email or paper piles."
+      ],
+      "bullets": [
+        "Federal and state tax returns for three years",
+        "Pay stubs for the last three months",
+        "Bank and investment account statements",
+        "Retirement account statements",
+        "Mortgage or lease documents",
+        "Credit card and loan statements",
+        "Vehicle titles and registration"
+      ]
+    },
+    {
+      "heading": "How does the parenting plan work if you have minor children?",
+      "paragraphs": [
+        "Florida law requires a Parenting Plan that covers time-sharing, decision-making, and communication. You must also complete a state-approved parenting course before the final hearing. Draft a proposed schedule, holiday plan, and method for sharing school and medical decisions. KeepMyProof can hold the course certificate, school records, and any written agreements so they are ready for mediation or court."
+      ],
+      "bullets": [
+        "Time-sharing schedule for weekdays, weekends, and holidays",
+        "Decision-making authority for education and healthcare",
+        "Communication methods between parents and children",
+        "Parenting course completion certificate"
+      ]
+    },
+    {
+      "heading": "What is the difference between simplified and regular dissolution?",
+      "paragraphs": [
+        "A simplified dissolution is available only when both spouses agree on all terms, have no minor children, and waive alimony and a trial. Both must attend the final hearing. A regular dissolution is used when there are disputes, children, or requests for alimony. It involves mandatory disclosure, possible mediation, and a trial if needed. KeepMyProof helps you track which path fits your situation by storing the required forms and correspondence."
+      ],
+      "bullets": [
+        "Simplified: no children, full agreement, no alimony, both attend hearing",
+        "Regular: disputes, children, alimony, or one spouse contests",
+        "Both require financial affidavits and residency proof"
+      ]
+    },
+    {
+      "heading": "How can KeepMyProof help you stay organized during the process?",
+      "paragraphs": [
+        "KeepMyProof is a private vault for photos and documents that appears as a normal locked app on your home screen. You can photograph documents, import PDFs, and add notes for each item. On iPhone, the app can remove the original from Photos after import; the phone asks to confirm and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault stores everything locally and in your iCloud or Google Drive backup, so you control access. Visit the vault hub to learn more."
+      ],
+      "bullets": [
+        "Locked app on home screen, not hidden or disguised",
+        "Import photos, PDFs, and add searchable notes",
+        "iPhone: option to remove original from Photos with 30-day recovery",
+        "Android: delete original in Google Photos manually",
+        "Data stored locally and in your personal cloud backup"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a lawyer to file for divorce in Florida?",
+      "a": "You can file without a lawyer, but the forms and rules are detailed. Many people use a lawyer for advice on property division, alimony, or parenting plans. The court provides self-help resources, and legal aid may be available if you qualify. KeepMyProof helps you organize the documents any lawyer or mediator will request."
+    },
+    {
+      "q": "How long does a Florida divorce take?",
+      "a": "A simplified dissolution can be final in about 30 days after filing if the court calendar allows. A regular dissolution often takes several months to over a year depending on disputes, discovery, and court scheduling. Mandatory disclosure and parenting courses add time. KeepMyProof keeps your timeline and documents in one place so you can respond quickly."
+    },
+    {
+      "q": "What is a simplified dissolution of marriage?",
+      "a": "A simplified dissolution is a streamlined process for couples with no minor children, no pregnancy, full agreement on property and debts, and no request for alimony. Both spouses must sign the petition and attend the final hearing. It skips mandatory disclosure and mediation. KeepMyProof can store the signed petition, financial affidavits, and hearing notice."
+    },
+    {
+      "q": "Can I change my name during the divorce?",
+      "a": "Yes, you can request a name restoration to a former name in the petition or counter-petition. The court includes the name change in the final judgment. You then update your Social Security record, driver's license, and other accounts. KeepMyProof can hold a copy of the final judgment and a checklist of agencies to notify."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Florida requires at least six months of residency before filing for divorce.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The IRS treats alimony payments differently for divorces finalized after 2018.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

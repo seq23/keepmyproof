@@ -1,0 +1,115 @@
+{
+  "h1": "How to Prepare Divorce Documents Yourself",
+  "title_lead": "How to Prepare Divorce Documents Yourself",
+  "meta_description": "Learn the steps to gather, organize, and file divorce paperwork on your own. KeepMyProof helps you store documents securely in a private vault.",
+  "direct_answer": "Preparing divorce documents yourself is the process of collecting financial records, completing court forms, and filing them without a lawyer. You must follow your state's rules for residency, service, and disclosure. KeepMyProof provides a private vault to store and organize these papers securely.",
+  "sections": [
+    {
+      "heading": "What papers do I need to start?",
+      "paragraphs": [
+        "You begin by locating the petition or complaint form required by your state. Most courts also require a summons, a financial affidavit, and a property declaration. If children are involved, you need a parenting plan and child support worksheets. Gather recent pay stubs, tax returns, bank statements, retirement account statements, and debt records. Make copies of everything before you file. KeepMyProof lets you photograph each document and store it in a private vault on your phone so you can find it quickly."
+      ],
+      "bullets": [
+        "Petition or complaint form",
+        "Summons",
+        "Financial affidavit",
+        "Property and debt declaration",
+        "Parenting plan (if children)",
+        "Child support worksheets (if children)"
+      ]
+    },
+    {
+      "heading": "How do I organize financial records?",
+      "paragraphs": [
+        "Create a master list of every asset and liability. Include real estate, vehicles, bank accounts, credit cards, loans, and retirement plans. Note the account numbers, balances, and ownership type. Separate marital property from separate property using dates of acquisition. Scan or photograph each statement and save the files in dated folders. KeepMyProof's vault stores photos and PDFs in one locked app on your home screen. You can add tags like \"marital\" or \"separate\" to filter later."
+      ],
+      "bullets": [
+        "List all assets with values",
+        "List all debts with balances",
+        "Mark marital vs. separate property",
+        "Save statements in dated folders",
+        "Tag items for quick filtering"
+      ]
+    },
+    {
+      "heading": "What are the filing and service steps?",
+      "paragraphs": [
+        "File the original forms with the clerk of court in the proper county. Pay the filing fee or request a fee waiver if you qualify. The clerk stamps your copies. You must then serve the other spouse according to state rules. This usually means personal delivery by a sheriff or process server, or certified mail with return receipt. File proof of service with the court. KeepMyProof stores the filed copies, receipts, and proof of service in your vault so nothing gets lost."
+      ],
+      "bullets": [
+        "File originals with the clerk",
+        "Pay fee or request waiver",
+        "Serve spouse per state rules",
+        "File proof of service",
+        "Store all copies in your vault"
+      ]
+    },
+    {
+      "heading": "How do I handle disclosure and discovery?",
+      "paragraphs": [
+        "Most states require mandatory financial disclosure within a set deadline. You exchange the financial affidavit, supporting documents, and any expert reports. If the other side does not respond, you can send formal discovery requests such as interrogatories or requests for production. Track every deadline on a calendar. KeepMyProof lets you save each disclosure packet and discovery response with a date tag so you can prove what was sent and when."
+      ],
+      "bullets": [
+        "Complete mandatory disclosure forms",
+        "Attach supporting documents",
+        "Send discovery requests if needed",
+        "Track all deadlines",
+        "Save packets with date tags"
+      ]
+    },
+    {
+      "heading": "Where can I find state-specific forms and help?",
+      "paragraphs": [
+        "Every state publishes self-help guides and fillable forms on its court website. California's self-help center offers a step-by-step divorce guide with all required forms. The IRS explains how divorce affects filing status and dependency exemptions. The federal Office of Child Support Enforcement provides resources for establishing orders. KeepMyProof is not affiliated with any court or agency. Use official sites for the latest forms and rules."
+      ],
+      "bullets": [
+        "State court self-help websites",
+        "IRS divorce tax guidance",
+        "Federal child support resources",
+        "Local law library assistance",
+        "Free legal aid clinics"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does it take to gather the paperwork?",
+      "a": "Gathering paperwork usually takes several weeks. You must request statements from banks, retirement plans, and creditors. Some institutions need ten business days to produce records. Start early and track each request in your vault. KeepMyProof helps you store incoming documents the moment they arrive."
+    },
+    {
+      "q": "Can I file for divorce online?",
+      "a": "Many states allow electronic filing through the court's e-filing portal. You register, upload PDFs, and pay fees by card. Some counties still require paper originals for certain documents. Check your local court website for current rules. KeepMyProof stores your filed PDFs and confirmation receipts in one place."
+    },
+    {
+      "q": "What if my spouse hides assets?",
+      "a": "You can use formal discovery tools like subpoenas and depositions to uncover hidden assets. Courts may impose sanctions for non-disclosure. Document every request and response carefully. KeepMyProof lets you save subpoenas, answers, and bank records with date tags so you have a clear timeline."
+    },
+    {
+      "q": "Do I need a lawyer to review my forms?",
+      "a": "You are not required to hire a lawyer. Many people use self-help centers or limited-scope representation for a single review. A lawyer can spot missing signatures or incorrect calculations. KeepMyProof stores every version of your forms so you can share a clean copy with any reviewer."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "California courts provide a free self-help guide with all forms needed for divorce.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help Center",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The IRS states that your marital status on December 31 determines your filing status for the entire tax year.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The federal Office of Child Support Enforcement helps parents establish and enforce support orders.",
+      "source_url": "https://www.acf.hhs.gov/css/parents",
+      "source_name": "Administration for Children and Families",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

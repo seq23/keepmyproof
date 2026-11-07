@@ -104,6 +104,345 @@
         "into": "/divorce/",
         "reason": "off-audience: not a US search (site serves US residents)"
       }
+    },
+    {
+      "slug": "how-can-you-prove-a-hostile-work-environment",
+      "query": "how can you prove a hostile work environment",
+      "lane": "striking",
+      "score": 45,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-can-you-prove-a-hostile-work-environment/index.html",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "4e65811954c7a503252f4819bb871f59b1cd48e9dee3abe3815a9fa2d98126f7",
+      "model": "free-route",
+      "facts": [
+        "https://www.eeoc.gov/harassment",
+        "https://www.eeoc.gov/time-limits-filing-charge"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 30 words (aim 40-60)"
+      ],
+      "extra_queries": [
+        "how to prove a hostile work environment claim",
+        "what is considered a hostile work environment"
+      ]
+    },
+    {
+      "slug": "va-disability-what-to-claim",
+      "query": "va disability what to claim",
+      "lane": "striking",
+      "score": 40,
+      "reasons": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/va-disability-what-to-claim/index.html",
+      "route": "/questions/va-disability-what-to-claim/",
+      "url": "https://keepmyproof.com/questions/va-disability-what-to-claim/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "e335fe67abfb0a407f2a094c009069c558d6d5aca9788c035c4e87383b8793f7",
+      "model": "free-route",
+      "facts": [
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "https://www.va.gov/resources/va-accredited-representative-faqs/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 115 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 39 words (aim 40-60)",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Do I need a separate claim for each condition?\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Can a VSO charge me for helping with the initial c\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"What if my condition is not on the presumptive lis\""
+      ]
+    },
+    {
+      "slug": "what-documentation-is-needed-for-a-divorce",
+      "query": "what documentation is needed for a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-documentation-is-needed-for-a-divorce/index.html",
+      "route": "/questions/what-documentation-is-needed-for-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-documentation-is-needed-for-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "b44530bd11c305f0fb17ef3a8620de7ec90ebbb4551d23e3cd50bda3d86339fb",
+      "model": "free-route",
+      "facts": [
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 34 words (aim 40-60)",
+        "b5 FAQ answer is 31 words (aim 40-60): \"Do I need a lawyer to tell me which documents to g\"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"What if my spouse hides financial documents?\"",
+        "b5 FAQ answer is 31 words (aim 40-60): \"How long should I keep divorce documents after the\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can I use photos of documents instead of originals\""
+      ]
+    },
+    {
+      "slug": "what-are-discovery-documents-in-a-divorce",
+      "query": "what are discovery documents in a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-are-discovery-documents-in-a-divorce/index.html",
+      "route": "/questions/what-are-discovery-documents-in-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-are-discovery-documents-in-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "b5e68770350802a1949e6a015bcd5da0e500579838f7307a90db776b1d27aa35",
+      "model": "free-route",
+      "facts": [
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 34 words (aim 40-60)",
+        "b5 FAQ answer is 33 words (aim 40-60): \"Do I have to answer every question?\"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"Can I use my own records instead of formal discove\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"How long does discovery take?\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Are discovery documents public record?\""
+      ]
+    },
+    {
+      "slug": "what-to-do-before-asking-for-a-divorce",
+      "query": "what to do before asking for a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-to-do-before-asking-for-a-divorce/index.html",
+      "route": "/questions/what-to-do-before-asking-for-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-to-do-before-asking-for-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "ec4611ef87ce6fee897328f8dece285f169c1d8ac191ca07707befbea7cdf9b6",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://support.apple.com/en-us/118558"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 62 words (aim 40-60): \"Do I need a lawyer before I file for divorce?\""
+      ]
+    },
+    {
+      "slug": "how-to-prepare-divorce-documents-yourself",
+      "query": "how to prepare divorce documents yourself",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+      "route": "/questions/how-to-prepare-divorce-documents-yourself/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-divorce-documents-yourself/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "f0e412815f35787b38c31cc028a52e11b717796919a8c96338dcc3a6c5780348",
+      "model": "free-route",
+      "facts": [
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "343ad80631946dbd07c4abcd687b5ce2ec956b9a6a0e9a0a4ae4d4e896ad68fb",
+          "after_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334"
+        }
+      ],
+      "checks": {}
+    },
+    {
+      "slug": "can-you-get-a-consent-order-before-divorce",
+      "query": "can you get a consent order before divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/can-you-get-a-consent-order-before-divorce/index.html",
+      "route": "/questions/can-you-get-a-consent-order-before-divorce/",
+      "url": "https://keepmyproof.com/questions/can-you-get-a-consent-order-before-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "32fd683765e31eafbe74228974dd63bc4c5160260cf16ae6fcfbb2fba6711010",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"Is a separation agreement the same as a consent or\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Can we file the consent order at the same time as \"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"What if we reconcile before the judge signs?\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"Do I need a lawyer to get a consent order?\""
+      ]
+    },
+    {
+      "slug": "does-it-matter-who-asks-for-a-divorce-first",
+      "query": "does it matter who asks for a divorce first",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/does-it-matter-who-asks-for-a-divorce-first/index.html",
+      "route": "/questions/does-it-matter-who-asks-for-a-divorce-first/",
+      "url": "https://keepmyproof.com/questions/does-it-matter-who-asks-for-a-divorce-first/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "fb7c5c2d5bdb369f91c9b78fb031cf0252a1e3b683d8f90d4a0c0a290283db15",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 39 words (aim 40-60)",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Does the petitioner pay more in court fees?\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can I stop the divorce after I file?\"",
+        "b5 FAQ answer is 31 words (aim 40-60): \"Does filing first affect temporary orders?\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"What if my spouse files in another state first?\""
+      ]
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-texas",
+      "query": "how to prepare for divorce in texas",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-texas/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-texas/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-texas/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "ee1785c5d1cc182596080e654503ea7a962168aabc26581eeb0de73459f82871",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334",
+          "after_hash": "083b4f23386686b6310dc63763ee912feb2831ed3dc4890b8ef2e7e927595591"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 31 words (aim 40-60)"
+      ]
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-florida",
+      "query": "how to prepare for divorce in florida",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-florida/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-florida/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "413640ac41f38e709ac9f112b74dc99af45db426f317b9702d2c842614b1b6e0",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "083b4f23386686b6310dc63763ee912feb2831ed3dc4890b8ef2e7e927595591",
+          "after_hash": "dcd5897cab3168fa5ed2441890ebaf0abd44588e2b3c51de16735816c256f038"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 32 words (aim 40-60)"
+      ]
     }
   ],
   "dropped": [
@@ -461,7 +800,83 @@
         "b5 FAQ has 1 questions (aim 3-6)",
         "b5 FAQ answer is 26 words (aim 40-60): \"how long do i have to file a complaint\""
       ]
+    },
+    {
+      "query": "how to document workplace harassment",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment statement",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how much to save before quitting your job",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 22 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"Should I quit without another job lined up?\"",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "va disability claim checklist",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "va disability claim list",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 87 chars (aim 120-160)",
+        "b5 FAQ answer is 2 words (aim 40-60): \"Can I file a VA claim without a list of evidence?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"What if my medical records are private?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"How often should I update my claim list?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"Does KeepMyProof store my VA claim documents?\""
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in california",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 27 words (aim 40-60)"
+      ]
     }
   ],
-  "redirected": []
+  "redirected": [
+    {
+      "query": "how to prove a hostile work environment claim",
+      "at": "2026-11-07",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.80 >= 0.6)",
+      "matched_text": "how can you prove a hostile work environment",
+      "stage": "search"
+    },
+    {
+      "query": "what is considered a hostile work environment",
+      "at": "2026-11-07",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "how can you prove a hostile work environment",
+      "stage": "search"
+    }
+  ]
 }

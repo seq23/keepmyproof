@@ -1,0 +1,113 @@
+{
+  "h1": "What Documentation Is Needed for a Divorce?",
+  "title_lead": "What Documentation Is Needed for a Divorce?",
+  "meta_description": "Learn the key documents you need to gather for a divorce. This guide covers financial records, property deeds, and personal identification to help you prepare.",
+  "direct_answer": "Divorce documentation is the collection of legal, financial, and personal records required to dissolve a marriage. You use these papers to prove income, assets, debts, and agreements so the court can issue fair orders.",
+  "sections": [
+    {
+      "heading": "Why do you need to gather documents early?",
+      "paragraphs": [
+        "Starting early gives you time to find missing records before deadlines hit. Courts require full financial disclosure from both spouses. Missing papers can delay hearings or lead to unfavorable temporary orders. Organized files also reduce legal fees because your attorney spends less time chasing data. You stay in control of the timeline when you have everything ready.",
+        "KeepMyProof acts as a private vault for photos and documents on your phone. You can scan papers, add notes, and sort them by category. The app sits on your home screen like any other locked app. On iPhone, you can remove the original from Photos after import; the system asks you to confirm and keeps it in Recently Deleted for 30 days. On Android, you delete the original in Google Photos. Visit the vault hub at https://keepmyproof.com/vault."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What financial records are usually required?",
+      "paragraphs": [
+        "Courts need a clear picture of marital finances. Gather tax returns for the last three to five years, including all schedules and W-2s. Collect recent pay stubs, bank statements, and credit card statements for every account. Include retirement account statements, investment summaries, and loan documents. If you own a business, bring profit-and-loss statements and balance sheets. These records support calculations for support and property division.",
+        "The IRS provides guidance on tax topics related to divorce, such as filing status and dependency exemptions. You can review Topic 452 on the IRS website for federal tax rules that affect your return. State courts also use these federal returns to verify income. Keep copies of everything you submit to the court."
+      ],
+      "bullets": [
+        "Federal and state tax returns (3-5 years)",
+        "Pay stubs and proof of all income sources",
+        "Bank, credit card, and investment statements",
+        "Retirement and pension account summaries",
+        "Mortgage, loan, and debt statements"
+      ]
+    },
+    {
+      "heading": "Which property and asset documents matter?",
+      "paragraphs": [
+        "You must show what you own and what you owe. Collect deeds for real estate, vehicle titles, and registration papers. Gather appraisals for valuable items like jewelry, art, or collectibles. List household furnishings and electronics with estimated values. If you have a safe deposit box, note the contents. Digital assets such as cryptocurrency wallets or online accounts should be documented. These records help the court divide property fairly.",
+        "The CDC maintains vital records resources that can help you locate marriage certificates or other official documents. The Administration for Children and Families oversees child support enforcement, which relies on accurate asset data. Having these papers organized speeds up the process."
+      ],
+      "bullets": [
+        "Real estate deeds and mortgage statements",
+        "Vehicle titles and registrations",
+        "Appraisals for high-value personal property",
+        "Household inventory with values",
+        "Digital asset access information"
+      ]
+    },
+    {
+      "heading": "What personal and family records should you keep?",
+      "paragraphs": [
+        "Personal identification proves who you are. Keep certified copies of birth certificates for you and your children. Have your marriage certificate, Social Security cards, and driver's licenses ready. If there are prior court orders for support, custody, or protection, include those. Health insurance policies and medical records for children are often needed. School records and IEP documents may affect custody schedules.",
+        "Wikipedia outlines the general legal framework for divorce in the United States, including residency requirements and grounds. California self-help courts publish detailed checklists for required forms and disclosures. These public resources confirm the types of personal records courts expect."
+      ],
+      "bullets": [
+        "Birth certificates and Social Security cards",
+        "Marriage certificate and prenuptial agreements",
+        "Prior court orders (support, custody, protection)",
+        "Health insurance and medical records",
+        "School and IEP records for children"
+      ]
+    },
+    {
+      "heading": "How do you organize and protect these documents?",
+      "paragraphs": [
+        "Create a master index listing every document and its location. Use folders labeled by category: income, assets, debts, personal, children. Store originals in a fireproof safe or secure location. Keep digital backups in an encrypted vault. Share access only with your attorney or a trusted agent. Update the index whenever you add new papers. This system prevents loss and makes handoffs smooth.",
+        "KeepMyProof is a private vault for photos and documents. It is a normal locked app on your home screen. You can import scans, add tags, and search by keyword. The app does not hide from the phone or disguise itself. Deleted photos can be recovered from Recently Deleted on iPhone or the trash in Google Photos on Android. Visit the vault hub at https://keepmyproof.com/vault."
+      ],
+      "bullets": [
+        "Master index with categories and locations",
+        "Fireproof safe for physical originals",
+        "Encrypted digital vault for backups",
+        "Controlled access for attorney or agent",
+        "Regular updates as new documents arrive"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a lawyer to tell me which documents to gather?",
+      "a": "You can start gathering standard records on your own using public checklists. A lawyer can later review your collection and request case-specific items. Many courts publish self-help guides listing required disclosures."
+    },
+    {
+      "q": "What if my spouse hides financial documents?",
+      "a": "You can request documents through formal discovery tools like subpoenas or interrogatories. Courts can compel production and sanction non-compliance. Keep a log of what you have asked for and when."
+    },
+    {
+      "q": "How long should I keep divorce documents after the case ends?",
+      "a": "Keep the final decree, property settlement, and tax-related records permanently. Retain support payment records until obligations end. Store custody agreements until children reach adulthood. Shred routine correspondence after a few years."
+    },
+    {
+      "q": "Can I use photos of documents instead of originals?",
+      "a": "Clear, legible photos or scans are usually acceptable for attorney review and negotiation. Courts may require certified copies of vital records like birth or marriage certificates. Always verify local rules for filing."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The IRS provides federal tax guidance for divorced or separated individuals under Topic 452.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "California courts publish self-help checklists for divorce financial disclosures and required forms.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help Center",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The Administration for Children and Families oversees the federal child support enforcement program.",
+      "source_url": "https://www.acf.hhs.gov/css/parents",
+      "source_name": "Administration for Children and Families",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}
