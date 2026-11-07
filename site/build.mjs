@@ -335,6 +335,14 @@ function subtopicLabel(t, lang) {
 const folderName = (topic, l) => topic.display_name[l];
 const checklistItems = (topic, l) => topic.checklist_items.map((i) => i.name[l]);
 
+/** True when some 8-word phrase appears more than three times (the weekly sample's filler line). */
+// Tokenised the way the Monday sample reads words (boss-os page-quality-sample.mjs wordsOf).
+export function repeatsPhrase(text, n = 8, max = 3) {
+  const w = String(text).toLowerCase().match(/[a-z0-9][\w'’-]*/g) || [], seen = new Map();
+  for (let i = 0; i + n <= w.length; i++) { const k = w.slice(i, i + n).join(' '); const c = (seen.get(k) || 0) + 1; if (c > max) return true; seen.set(k, c); }
+  return false;
+}
+
 /** A 40–60 word answer: the page's own facts first, then fixed true sentences to reach 40. */
 export function quotableAnswer(claims, tails, lang = 'en') {
   const [lo, hi] = RANGE[lang], sep = lang === 'zh' ? '' : ' ', m = (xs) => measure(lang, xs.join(sep));
@@ -508,13 +516,25 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
         for (const l of langs) {
           const facts = st.byLang[l], dates = facts.map((f) => f.verifiedOn).sort(), first = dates[0], last = dates[dates.length - 1];
           const c = CC[l], S = stateName(code, l), path = P.state(s, code, l), claims = facts.map((f) => f.claim);
-          const answer = quotableAnswer(claims, [...c.tails(S), ...(va ? [c.vaTail] : [])], l);
+          // The answer is built from the page's own facts, which the sourced list then states
+          // again. When that copy makes an 8-word phrase (usually the organisation's name in each
+          // fact) appear more than three times, the answer keeps only the first fact and fills to
+          // 40 words with the fixed true tails: the weekly sample's template-filler test failed
+          // iep/parent-training-center/new-mexico on it (7 Nov 2026). Pages without the repeat
+          // keep their fuller answer.
+          const tl = [...c.tails(S), ...(va ? [c.vaTail] : [])];
+          const full = quotableAnswer(claims, tl, l);
+          const answer = full && repeatsPhrase([full, ...claims].join(' ')) ? (quotableAnswer(claims.slice(0, 1), tl, l) ?? full) : full;
           const h1 = fill(s.titles[l], code, l), title = [h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
           if (desc.length > 160) desc = `${claims[0].slice(0, 155 - tailDesc.length).replace(l === 'zh' ? /$/ : /\s+\S*$/, '')}…${tailDesc}`;
           const names = [...new Set(facts.map((f) => f.source_name))]; const srcs = bySource(facts);
-          const faq = c.faq({ state: S, names: names.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
+          // The FAQ names each publisher once; the full source titles are already in the
+          // numbered sources list (four "U.S. Department of Education, IDEA regulations, 34 CFR"
+          // titles in both places was the template-filler repeat on iep/dispute-resolution).
+          const publishers = [...new Set(names.map((n) => n.split(/,\s|:\s/)[0].trim()))];
+          const faq = c.faq({ state: S, names: publishers.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
           const body = `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>

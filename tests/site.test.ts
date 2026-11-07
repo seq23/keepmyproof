@@ -174,3 +174,28 @@ test('state pages name each source once and point facts to it by number; neighbo
   assert.equal((index.match(/Fixture rules in/g) ?? []).length, 0, 'the state index does not repeat the subtopic title once per state');
   assert.equal((index.match(/Fixture rules/g) ?? []).length, 1, 'the state index names the subtopic once');
 });
+
+test('a state page answer stops copying its facts when the copy would repeat a phrase more than three times, and every fact stays listed with its source', async () => {
+  const { repeatsPhrase } = await import('../site/build.mjs');
+  assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(4)), true);
+  assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(3)), false);
+  const fx = fixture();
+  // Every California executor fact names the same long office, as real PTI and VA-office facts do.
+  const office = 'The Fixture County Probate Court Self Help Center of California';
+  for (const f of ((fx.facts.executor[0] as any).states.CA.facts as any[])) f.claim_en = `${office} says ${f.claim_en}`;
+  const { files, pages } = renderAll(fx);
+  const states = pages.filter((p) => p.state);
+  assert.ok(states.length > 0, 'the fixture builds state pages');
+  let guarded = 0;
+  for (const p of states) {
+    const main = /<main\b[\s\S]*?<\/main>/.exec(files[p.file])?.[0] ?? files[p.file];
+    const answer = visible(/<p class="definition answer">([\s\S]*?)<\/p>/.exec(main)![1]).trim();
+    const items = [...(/<ul class="facts">([\s\S]*?)<\/ul>/.exec(main)?.[1] ?? '').matchAll(/<li>([\s\S]*?) <a href="([^"]+)"/g)].map((m) => ({ claim: visible(m[1]).trim(), href: m[2] }));
+    assert.equal(items.length, p.state?.facts, `${p.file}: every fact is listed`);
+    assert.ok(items.every((m) => /^https:\/\//.test(m.href)), `${p.file}: each listed fact links its source`);
+    const copied = items.filter((m) => answer.includes(m.claim)).length;
+    if (copied > 1) assert.equal(repeatsPhrase([answer, ...items.map((m) => m.claim)].join(' ')), false, `${p.file}: a multi-fact answer only where it does not repeat`);
+    if (p.file === 'executor/fixture-topic/california.html') { guarded++; assert.ok(copied <= 1, 'the repeating page keeps one fact in its answer'); }
+  }
+  assert.equal(guarded, 1, 'the repeating fixture page was checked');
+});
