@@ -185,6 +185,20 @@ export function fitDesc(desc, extras = []) {
  * crumbs = [{ name, path }] after Home. Every page carries the disclaimer and the one fact sentence.
  */
 const TITLE_PADS = { en: [' | Private papers app'], es: [' | App privada de papeles'], zh: [' | 私密文件手机应用', ' | 私密文件应用'], ko: [' | 비공개 서류 휴대폰 앱', ' | 비공개 서류 앱'] };
+/**
+ * Search-readiness c5: no Offer price in the JSON-LD that the visible page does not show. A node keeps its offers only
+ * when every paid price is in the page's visible text (today the home and facts pages, which carry "What it costs");
+ * everywhere else the app node stays, without offers, so no page claims a price it does not print.
+ */
+const visibleText = (h) => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, ' ');
+export function offersShown(node, body) {
+  if (!node?.offers) return node;
+  const text = visibleText(body);
+  if (node.offers.every((o) => Number(o.price) === 0 || text.includes(o.price))) return node;
+  const { offers, ...rest } = node;
+  return rest;
+}
+
 function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false }) {
   const c = COPY[lang];
   const title = fitTitle(titles, TITLE_PADS[lang]), desc = fitDesc(rawDesc, [...descMore, c.factSentence(SITE.freeItems)]);
@@ -197,7 +211,7 @@ function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], b
     { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: SITE.updated,
       isPartOf: { '@id': `${SITE.origin}/#website` }, publisher: { '@id': `${SITE.origin}/#organization` },
       ...(speakable ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.definition', '.answer', '.faq'] } } : {}) },
-    ...schema,
+    ...schema.map((n) => offersShown(n, body)),
   ];
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';

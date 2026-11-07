@@ -69,7 +69,7 @@ test('every page has a self canonical and hreflang twins that exist and link bac
 test('before launch: "coming soon to Google Play", no store link, no install link, never a rating, and only the approved list prices as coming-soon Offers; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
   const before = renderAll(fixture());
   const listPrices = ['0', SITE.prices.yearlyUSD, SITE.prices.lifetimeUSD];
-  let apps = 0;
+  let apps = 0, withOffer = 0, noOffer = 0;
   for (const [p, s] of html(before.files)) {
     // Competitor pages cite competitors' App Store pages; no page may link to a store for our own app.
     assert.ok(!/play\.google\.com|apps\.apple\.com\/[^"]*keepmyproof|class="btn" href="https:\/\/apps\.apple/.test(s), p);
@@ -77,6 +77,10 @@ test('before launch: "coming soon to Google Play", no store link, no install lin
       assert.ok(!app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
       if (app['@type'] !== 'SoftwareApplication') { assert.ok(!app.offers, `${p} tool schema has no offers`); continue; }
       apps++;
+      // Search-readiness c5: an Offer price only where the visible page prints it; anywhere else the app node has no offers.
+      const shown = listPrices.slice(1).every((pr) => visible(s).includes(`$${pr}`));
+      if (!shown) { assert.ok(!app.offers, `${p} shows no price, so its app schema carries no Offer`); noOffer++; continue; }
+      withOffer++;
       // Search-readiness c3: a priced Offer, never an invented price, never a claim it can be bought today.
       assert.deepEqual(app.offers.map((o: any) => o.price), listPrices, `${p} offers are the approved list prices`);
       for (const o of app.offers) {
@@ -87,6 +91,7 @@ test('before launch: "coming soon to Google Play", no store link, no install lin
     }
   }
   assert.ok(apps > 100, `every kind of page carries the app node (${apps})`);
+  assert.ok(withOffer >= 2 && noOffer > 100, `offers only on the pages that print the prices (${withOffer} with, ${noOffer} without)`);
   const home = before.files['index.html'];
   assert.ok(home.includes('<h2 id="price">'), 'home has the price section the offers point at');
   for (const pr of listPrices.slice(1)) assert.ok(visible(home).includes(`$${pr}`), `home shows $${pr}`);
