@@ -36,7 +36,9 @@ jobs:
           KMP_BLOGGER_BLOG_ID: ${{ secrets.KMP_BLOGGER_BLOG_ID }}
           KMP_WPCOM_ACCESS_TOKEN: ${{ secrets.KMP_WPCOM_ACCESS_TOKEN }}
           BOSS_OPEN_LOOPS_TOKEN: ${{ secrets.BOSS_OPEN_LOOPS_TOKEN }}
-        run: node scripts/syndicate.mjs
+        # Blogger is off by the owner's call (8 Nov 2026: "i dont care about blogger"). WordPress only.
+        # Turn it back on by removing --lane wordpress.
+        run: node scripts/syndicate.mjs --lane wordpress
       - name: Commit the ledger
         if: always()
         run: |
