@@ -1,0 +1,106 @@
+// Kindle book companion pages: one per KeepMyProof book, at /amazon/<slug>/ (English only).
+// Each URL is printed inside its book (with ?utm_source=kindle&utm_medium=book&utm_campaign=<slug>),
+// so a path here never changes once the book ships. Each page greets the reader, gives the free next
+// step on this site, then the app with its real prices (SITE.prices) and real status (SITE.stores):
+// it never says the app is in a store before it is, and never says a folder holds more than topics.json lists.
+
+export const AMAZON_INDEX = {
+  path: '/amazon/',
+  title: 'KeepMyProof Kindle book companions',
+  h1: 'KeepMyProof book companions',
+  desc: 'Companion pages for the KeepMyProof Kindle books: the free printable or tool that goes with each book, and what the KeepMyProof app does and costs.',
+  answer: 'Each KeepMyProof Kindle book links to one page here. The page names the free printable or tool on this site that goes with the book, and then the KeepMyProof phone app, which keeps your papers, photos and dated notes for that subject encrypted on your phone. Pick your book below.',
+};
+
+export const AMAZON_BOOKS = [
+  {
+    slug: 'parallel-parenting',
+    book: 'Parallel Parenting',
+    folder: 'divorce-prep',
+    title: 'Parallel Parenting book companion: free co-parenting log',
+    desc: 'You are reading Parallel Parenting. Here is the free printable co-parenting log that goes with it, and the KeepMyProof app for keeping handoff notes and messages.',
+    answer: 'Parallel parenting is a co-parenting arrangement for high-conflict separations where each parent runs their own household and the parents talk as little as possible, usually in writing and only about the children. A dated record of handoffs, schedule changes and messages keeps that limited contact clear for both of you.',
+    free: { href: '/tools/co-parenting-log-printable', label: 'Open the free printable co-parenting log',
+      body: 'Fill in the date, the handoff time, who was there and what happened, then print it or save it as a PDF. It runs in your browser: nothing is uploaded and nothing is saved after you close the page.' },
+    more: [['/custody-log', 'How to keep a custody log'], ['/checklists/divorce-checklist.pdf', 'Free one-page divorce papers checklist (PDF)'], ['/keep-custody-screenshots-private', 'Keep custody screenshots private on your phone']],
+    appUse: 'In the app, the Divorce prep folder has a Co-parenting log item for dated handoff and visit notes, next to messages sent to you and the papers you already have. Each item shows the date it happened, which you enter, and the date it was saved on your phone.',
+    faq: [
+      ['Is parallel parenting the same as co-parenting?', 'No. Co-parenting usually means the parents plan together and talk often. Parallel parenting is for when that keeps leading to conflict: each parent decides day-to-day matters in their own home, and contact is kept short, written and about the children.'],
+      ['What should a co-parenting log record?', 'The date and time of each handoff, who was present, any change to the schedule and who asked for it, and a short factual note of what happened. Write what you saw and heard, not what you think it means, and write it the same day.'],
+      ['Does KeepMyProof send my log to the other parent or a court?', 'No. KeepMyProof never sends anything. Your notes stay encrypted on your phone. A PDF leaves the phone only when you share it yourself, for example with your lawyer.'],
+    ],
+    sources: [],
+  },
+  {
+    slug: 'hostile-work-environment',
+    book: 'Hostile Work Environment',
+    folder: 'workplace-evidence',
+    title: 'Hostile Work Environment book companion: free incident log',
+    desc: 'You are reading Hostile Work Environment. Here is the free printable workplace incident log that goes with it, and the KeepMyProof app for keeping your record private.',
+    answer: 'A hostile work environment, in the legal sense the EEOC uses, is harassment at work based on a protected trait such as race, sex, religion, age or disability that is severe or frequent enough to change the conditions of the job. A clear, dated record of what happened, when and who saw it is what you keep while you decide what to do.',
+    free: { href: '/tools/workplace-incident-log-printable', label: 'Open the free printable workplace incident log',
+      body: 'Write down each incident with its date, time, place, who was involved, who saw it and what you did next, then print it or save it as a PDF. It runs in your browser: nothing is uploaded and nothing is saved after you close the page.' },
+    more: [['/workplace-evidence', 'What workplace evidence to keep'], ['/tools/discrimination-filing-deadline-calculator', 'Free discrimination filing deadline calculator'], ['/checklists/workplace-evidence-checklist.pdf', 'Free one-page workplace evidence checklist (PDF)']],
+    appUse: 'In the app, the Workplace evidence folder suggests the handbook and policies, pay stubs and schedules, messages sent to you, dated notes of what happened, complaints you made and the replies, and job reviews. It stays on your own phone, not a work device or work account.',
+    faq: [
+      ['How long do I have to file a charge with the EEOC?', 'Usually 180 calendar days from the incident, or 300 days where a state or local agency enforces a similar law. The deadline has exceptions, so check the EEOC page or the free deadline calculator on this site, and confirm it with the agency or a lawyer.'],
+      ['Should I keep my notes on my work computer?', 'Keep your own copy on your own device. Work accounts and devices belong to the employer and can be locked when you leave. Only keep copies you are allowed to keep under your employer\'s policies.'],
+      ['Does KeepMyProof decide whether I have a case?', 'No. KeepMyProof keeps copies and dated notes. It does not judge them, gives no legal advice and is not a law firm. Talk to the EEOC, your state agency or an employment lawyer about your situation.'],
+    ],
+    sources: [['EEOC: Harassment', 'https://www.eeoc.gov/harassment'], ['EEOC: How to file a charge of employment discrimination', 'https://www.eeoc.gov/how-file-charge-employment-discrimination']],
+  },
+  {
+    slug: 'va-disability-rating',
+    book: 'Your VA Disability Rating',
+    folder: 'va-disability-papers',
+    title: 'VA Disability Rating book companion: free claim papers tools',
+    desc: 'You are reading Your VA Disability Rating. Here are the free VA claim papers checklist, state pages and intent-to-file date tool, and the KeepMyProof app for your papers.',
+    answer: 'A VA disability rating is the percentage, from 0 to 100 in steps of 10, that the Department of Veterans Affairs assigns to a service-connected condition based on how severe it is. The rating sets your monthly compensation, so the papers you gather, such as service records, medical records and statements, matter.',
+    free: { href: '/va-claim-papers', label: 'Open the free VA claim papers checklist',
+      body: 'See the papers people usually gather for a claim, with a free one-page PDF to print. Then use the intent-to-file date tool to see the date official sources point to. Nothing is uploaded and there is no sign-up.' },
+    more: [['/va/', 'VA claim papers by state: regional offices and free help'], ['/tools/va-intent-to-file-date-calculator', 'Free VA intent-to-file date calculator'], ['/checklists/va-claim-papers-checklist.pdf', 'Free one-page VA claim papers checklist (PDF)']],
+    appUse: 'In the app, the VA disability claim papers folder suggests the DD-214 and service papers, medical records you have, statements from people who know, copies of what you sent the VA, letters and decisions from the VA, and dated notes from appointments and exams.',
+    faq: [
+      ['Who can help me with a VA claim for free?', 'VA-accredited representatives, such as Veterans Service Organization officers and county veterans service officers, help with claims at no charge. Find one through the VA link below. KeepMyProof does not prepare, file or judge a claim.'],
+      ['What is an intent to file?', 'An intent to file tells the VA you plan to file a claim. If you then file within one year, your benefits may start from the intent-to-file date. The free calculator on this site shows the date the VA\'s own pages point to.'],
+      ['Is KeepMyProof part of the VA?', 'No. KeepMyProof is not affiliated with the VA and gives no VA claim advice. It keeps copies of the papers you already have, encrypted on your phone, and makes a PDF with an index when you choose to share it.'],
+    ],
+    sources: [['VA: About disability ratings', 'https://www.va.gov/disability/about-disability-ratings/'], ['VA: Evidence needed for your disability claim', 'https://www.va.gov/disability/how-to-file-claim/evidence-needed/'], ['VA: Get help from an accredited representative', 'https://www.va.gov/get-help-from-accredited-representative/']],
+  },
+  {
+    slug: '504-plan-iep-meeting',
+    book: 'The 504 Plan & IEP Meeting Binder',
+    folder: 'iep-binder',
+    title: '504 Plan & IEP Meeting book companion: free meeting notes',
+    desc: 'You are reading The 504 Plan & IEP Meeting Binder. Here are the free printable IEP meeting notes and checklist, and the KeepMyProof app for your binder papers.',
+    answer: 'An IEP is the written special education plan a public school makes for a child who qualifies under IDEA. A 504 plan is a written plan of accommodations for a student with a disability under Section 504. For either meeting, a binder of the current plan, evaluations, progress reports, school messages and your dated notes keeps everything in one place.',
+    free: { href: '/tools/iep-meeting-notes-printable', label: 'Open the free printable IEP meeting notes',
+      body: 'Write down who attended, what was proposed, what was agreed and what happens next, then print it or save it as a PDF. It works for a 504 meeting too. It runs in your browser: nothing is uploaded and nothing is saved after you close the page.' },
+    more: [['/iep-meeting-checklist', 'IEP meeting checklist: what to bring'], ['/iep-binder', 'How to build an IEP binder'], ['/tools/iep-evaluation-due-date-calculator', 'Free special education evaluation due date calculator'], ['/checklists/iep-binder-checklist.pdf', 'Free one-page IEP binder checklist (PDF)']],
+    appUse: 'In the app, the IEP (special education plan) folder suggests the current IEP, evaluations and test reports, progress reports and report cards, messages from school, dated meeting notes and discipline records. There is no separate 504 folder: keep 504 plan papers in the IEP folder.',
+    faq: [
+      ['What is the difference between a 504 plan and an IEP?', 'An IEP, under IDEA, gives specially designed instruction and related services to a child who qualifies for special education. A 504 plan, under Section 504, gives accommodations so a student with a disability can access school. Some children qualify for one and not the other.'],
+      ['Can I bring someone to the IEP meeting?', 'Yes. Under IDEA, parents may bring other people who know the child or have special expertise, such as a relative, an advocate or a private therapist. Tell the school ahead of time who is coming.'],
+      ['Does KeepMyProof share anything with the school?', 'No. KeepMyProof never sends anything to anyone. Your child\'s papers stay encrypted on your phone. A PDF leaves the phone only when you share it yourself.'],
+    ],
+    sources: [['IDEA regulations, 34 CFR 300.320: definition of an IEP', 'https://sites.ed.gov/idea/regs/b/d/300.320'], ['IDEA regulations, 34 CFR 300.321: the IEP team', 'https://sites.ed.gov/idea/regs/b/d/300.321']],
+  },
+  {
+    slug: 'what-to-do-when-someone-dies',
+    book: 'What to Do When Someone Dies',
+    folder: 'executor-papers',
+    title: 'What to Do When Someone Dies book companion: free task list',
+    desc: 'You are reading What to Do When Someone Dies. Here is the free printable executor task list that goes with it, and the KeepMyProof app for keeping the estate papers.',
+    answer: 'When someone dies, the person handling their affairs, often the executor named in the will, gets death certificates, finds the will, notifies Social Security, banks and other offices, pays valid bills and closes accounts. A written task list with dates done and a folder of the papers keeps track of a job that takes months.',
+    free: { href: '/tools/executor-task-list-printable', label: 'Open the free printable executor task list',
+      body: 'List each task, who you called or wrote to, the date, and what is still open, then print it or save it as a PDF. It runs in your browser: nothing is uploaded and nothing is saved after you close the page.' },
+    more: [['/executor-checklist', 'Executor checklist: the papers to gather'], ['/tools/creditor-claim-period-calculator', 'Free creditor claim period calculator by state'], ['/checklists/executor-checklist.pdf', 'Free one-page executor checklist (PDF)']],
+    appUse: 'In the app, the After a parent dies folder suggests copies of the will or trust, death certificates, court papers naming the executor, accounts and property papers, bills and letters to close out, and family land papers (heirs\' property).',
+    faq: [
+      ['How many death certificates do I need?', 'Many offices want a certified copy, so families often order several. Banks, insurers, the motor vehicle office and the probate court may each ask for one. Ask each office whether a copy will do before you order more.'],
+      ['Does the executor pay the bills with their own money?', 'No. Valid debts are paid from the estate, not from the executor\'s or the family\'s own money. Each state sets a period for creditors to make claims; the free calculator on this site shows the periods official sources state.'],
+      ['Does KeepMyProof handle probate?', 'No. KeepMyProof keeps copies of the papers you already have and your dated notes, encrypted on your phone. It gives no legal or tax advice and is not a law firm. A probate lawyer or the probate court clerk can explain your state\'s steps.'],
+    ],
+    sources: [['IRS: File the final income tax returns of a deceased person', 'https://www.irs.gov/individuals/file-the-final-income-tax-returns-of-a-deceased-person']],
+  },
+];

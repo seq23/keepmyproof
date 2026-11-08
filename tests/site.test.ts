@@ -214,3 +214,22 @@ test('no state page repeats an 8-word phrase more than three times, in English o
   }
   assert.equal(guarded, 2, 'the repeating fixture page was checked in English and Spanish');
 });
+
+test('each Kindle book companion is at the exact path printed in its book, and every link on it resolves to a built page or file', () => {
+  const files = render();
+  const printed = ['parallel-parenting', 'hostile-work-environment', 'va-disability-rating', '504-plan-iep-meeting', 'what-to-do-when-someone-dies'];
+  assert.ok(files['amazon/index.html'], '/amazon/ index is built');
+  for (const slug of printed) {
+    const page = files[fileOf(`/amazon/${slug}/`)];
+    assert.ok(page, `/amazon/${slug}/ is built`);
+    assert.match(visible(page), /You're reading /);
+    assert.ok(visible(page).includes(`$${SITE.prices.yearlyUSD}`), `${slug} shows the approved yearly price`);
+    if (!SITE.stores.appStore && !SITE.stores.googlePlay) assert.doesNotMatch(page, /apps\.apple\.com|play\.google\.com/, `${slug} has no store link before launch`);
+    const hrefs = [...page.matchAll(/href="(\/[^"#?]*)"/g)].map((m) => m[1]).filter((h) => !/\.(png|ico|svg|webmanifest|woff2)$/.test(h));
+    assert.ok(hrefs.length > 5, `${slug} has internal links`);
+    for (const h of hrefs) {
+      const f = h.endsWith('.pdf') ? h.slice(1) : fileOf(h === '/' ? '/' : h);
+      assert.ok(files[f] || (h.endsWith('/') && files[h.slice(1, -1) + '.html']), `${slug}: ${h} resolves`);
+    }
+  }
+});
