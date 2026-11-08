@@ -20,6 +20,7 @@ import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
 import { CJK_COPY } from './landings-cjk.mjs';
+import { AMAZON_BOOKS, AMAZON_INDEX } from './amazon.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -857,6 +858,38 @@ function questionPages(add, files, stops) {
   }
 }
 
+
+// ---------- Kindle book companions (site/amazon.mjs): /amazon/<slug>/, printed inside each book ----------
+
+function amazonPages(add, topics) {
+  const l = 'en', idx = AMAZON_INDEX, p = SITE.prices;
+  const crumb0 = { name: 'Book companions', path: idx.path };
+  const priceLine = `Free for your first ${SITE.freeItems} items. KeepMyProof Plus is US $${p.yearlyUSD} a year or $${p.lifetimeUSD} once for life, for unlimited items, your own folders and tags, and PDFs of chosen items or dates.`;
+  for (const b of AMAZON_BOOKS) {
+    const folder = topics.topics.find((t) => t.id === b.folder);
+    if (!folder) throw Error(`NAMED STOP [AMAZON_FOLDER] ${b.slug}: folder ${b.folder} is not in topics.json`);
+    const path = `/amazon/${b.slug}/`;
+    const free = `<p><a class="btn" href="${esc(b.free.href)}">${esc(b.free.label)}</a></p><p>${esc(b.free.body)}</p>${linkList(b.more.map(([h, t]) => [t, h]))}`;
+    const table = `<div style="overflow-x:auto"><table class="pr"><thead><tr><th>What you use</th><th>What it costs</th><th>What it does</th></tr></thead><tbody>
+<tr><td>${esc(b.book)}, the book</td><td>Already yours</td><td>Explains what to gather and why</td></tr>
+<tr><td><a href="${esc(b.free.href)}">The free printable or tool</a></td><td>Free, no sign-up</td><td>Fill in, print or save as a PDF; nothing is saved online</td></tr>
+<tr><td>KeepMyProof app</td><td>Free for ${SITE.freeItems} items; Plus $${p.yearlyUSD}/year or $${p.lifetimeUSD} once</td><td>Keeps papers, photos and dated notes encrypted on your phone; one PDF of a folder when you choose</td></tr></tbody></table></div>`;
+    const body = `<p class="lbl">Kindle book companion</p><h1>You're reading ${esc(b.book)}</h1>
+<p class="definition answer">${esc(b.answer)}</p><p class="sub">${esc(CC[l].notAdvice)} Thank you for reading.</p>
+<h2>What is the free next step?</h2>${free}
+<h2>How do the book, the free tools and the app fit together?</h2>${table}
+<h2>What does the KeepMyProof app do for this?</h2><p>${esc(b.appUse)}</p><p>${esc(priceLine)}</p>${storeBlock(l)}
+${faqHtml(l, b.faq)}
+${b.sources.length ? `<h2>Sources</h2><ul>${b.sources.map(([t, u]) => `<li><a href="${esc(u)}" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>` : ''}
+<p><a href="${idx.path}">All KeepMyProof book companions</a> · <a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>`;
+    add({ path, alt: null, group: 'core', html: shell({ lang: l, path, title: [b.title], desc: b.desc, body, speakable: true, crumbs: [crumb0, { name: b.book, path }],
+      schema: [{ '@type': 'Book', name: b.book, bookFormat: 'https://schema.org/EBook', publisher: { '@type': 'Organization', name: SITE.parentOrg.name } }, faqSchema(l, b.faq), appSchema(l)] }) });
+  }
+  const body = `<p class="lbl">Kindle book companions</p><h1>${esc(idx.h1)}</h1><p class="definition answer">${esc(idx.answer)}</p>
+${linkList(AMAZON_BOOKS.map((b) => [`${b.book}: ${b.free.label.replace(/^Open the /, 'the ')}`, `/amazon/${b.slug}/`]))}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
+  add({ path: idx.path, alt: null, group: 'core', html: shell({ lang: l, path: idx.path, title: [idx.title], desc: idx.desc, body, crumbs: [crumb0] }) });
+}
+
 // ---------- the whole site ----------
 
 /** Every file of the site plus the page list: { files, pages, stops }. */
@@ -883,6 +916,7 @@ export function renderAll(input = loadFacts()) {
   landingPages(add, topics, hubs);
   stops.push(...alternativePages(add));
   questionPages(add, files, stops);
+  amazonPages(add, topics);
 
   // Our own copy may never carry a banned claim word (state and question pages were gated above).
   for (const pg of pages.filter((x) => !x.external)) {
