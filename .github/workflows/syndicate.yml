@@ -3,7 +3,8 @@ name: Blogger and WordPress.com posts
 # linking back to the guide (scripts/syndicate.mjs). Caps: 1 a day per platform; the ledger
 # data/syndication-ledger.json means a page never posts twice. Missing secrets are the named stops
 # KMP_BLOGGER_NOT_SET_UP / KMP_WORDPRESS_NOT_SET_UP: one Open Loops row each, exit 0, the next day
-# retries. A lane that is set up and posts nothing it could have posted turns the run red.
+# retries. WordPress.com answering 401/403 to the stored KMP_WPCOM_ACCESS_TOKEN is WPCOM_TOKEN_REFUSED
+# (fix: rerun ~/bin/wpcom-connect.mjs kmp). A lane that is set up and posts nothing it could have posted turns the run red.
 # Set SYNDICATION_DRY_RUN=true (repository variable) to see what would post without posting.
 on:
   schedule:
@@ -33,10 +34,7 @@ jobs:
           KMP_BLOGGER_CLIENT_SECRET: ${{ secrets.KMP_BLOGGER_CLIENT_SECRET }}
           KMP_BLOGGER_REFRESH_TOKEN: ${{ secrets.KMP_BLOGGER_REFRESH_TOKEN }}
           KMP_BLOGGER_BLOG_ID: ${{ secrets.KMP_BLOGGER_BLOG_ID }}
-          KMP_WPCOM_CLIENT_ID: ${{ secrets.KMP_WPCOM_CLIENT_ID }}
-          KMP_WPCOM_CLIENT_SECRET: ${{ secrets.KMP_WPCOM_CLIENT_SECRET }}
-          KMP_WPCOM_USERNAME: ${{ secrets.KMP_WPCOM_USERNAME }}
-          KMP_WPCOM_APP_PASSWORD: ${{ secrets.KMP_WPCOM_APP_PASSWORD }}
+          KMP_WPCOM_ACCESS_TOKEN: ${{ secrets.KMP_WPCOM_ACCESS_TOKEN }}
           BOSS_OPEN_LOOPS_TOKEN: ${{ secrets.BOSS_OPEN_LOOPS_TOKEN }}
         run: node scripts/syndicate.mjs
       - name: Commit the ledger
