@@ -6,7 +6,9 @@
   "logo": "https://keepmyproof.com/icon-512.png",
   "description": "KeepMyProof is a private phone app for keeping copies of divorce, custody, workplace, VA claim, executor and IEP papers, photos and notes in folders with checklists, encrypted on the phone.",
   "sameAs": [
-    "https://github.com/seq23/keepmyproof"
+    "https://github.com/seq23/keepmyproof",
+    "https://keepmyproof.blogspot.com/",
+    "https://keepmyproof.wordpress.com/"
   ],
   "parentOrganization": {
     "@id": "https://billionairehighperformancecoach.com/spry-labs#organization",
