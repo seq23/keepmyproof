@@ -137,7 +137,8 @@
       "extra_queries": [
         "how to prove a hostile work environment claim",
         "what is considered a hostile work environment"
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "va-disability-what-to-claim",
@@ -172,7 +173,8 @@
         "b5 FAQ answer is 34 words (aim 40-60): \"Do I need a separate claim for each condition?\"",
         "b5 FAQ answer is 39 words (aim 40-60): \"Can a VSO charge me for helping with the initial c\"",
         "b5 FAQ answer is 39 words (aim 40-60): \"What if my condition is not on the presumptive lis\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "what-documentation-is-needed-for-a-divorce",
@@ -206,7 +208,8 @@
         "b5 FAQ answer is 30 words (aim 40-60): \"What if my spouse hides financial documents?\"",
         "b5 FAQ answer is 31 words (aim 40-60): \"How long should I keep divorce documents after the\"",
         "b5 FAQ answer is 32 words (aim 40-60): \"Can I use photos of documents instead of originals\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "what-are-discovery-documents-in-a-divorce",
@@ -239,7 +242,8 @@
         "b5 FAQ answer is 38 words (aim 40-60): \"Can I use my own records instead of formal discove\"",
         "b5 FAQ answer is 37 words (aim 40-60): \"How long does discovery take?\"",
         "b5 FAQ answer is 39 words (aim 40-60): \"Are discovery documents public record?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "what-to-do-before-asking-for-a-divorce",
@@ -270,7 +274,8 @@
       "checks": {},
       "gate_notes": [
         "b5 FAQ answer is 62 words (aim 40-60): \"Do I need a lawyer before I file for divorce?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "how-to-prepare-divorce-documents-yourself",
@@ -304,7 +309,8 @@
           "after_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334"
         }
       ],
-      "checks": {}
+      "checks": {},
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "can-you-get-a-consent-order-before-divorce",
@@ -336,7 +342,8 @@
         "b5 FAQ answer is 34 words (aim 40-60): \"Can we file the consent order at the same time as \"",
         "b5 FAQ answer is 38 words (aim 40-60): \"What if we reconcile before the judge signs?\"",
         "b5 FAQ answer is 37 words (aim 40-60): \"Do I need a lawyer to get a consent order?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "does-it-matter-who-asks-for-a-divorce-first",
@@ -369,7 +376,8 @@
         "b5 FAQ answer is 32 words (aim 40-60): \"Can I stop the divorce after I file?\"",
         "b5 FAQ answer is 31 words (aim 40-60): \"Does filing first affect temporary orders?\"",
         "b5 FAQ answer is 32 words (aim 40-60): \"What if my spouse files in another state first?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "how-to-prepare-for-divorce-in-texas",
@@ -406,7 +414,8 @@
       "checks": {},
       "gate_notes": [
         "b4 direct answer under the H1 is 31 words (aim 40-60)"
-      ]
+      ],
+      "indexnow_at": "2026-11-08"
     },
     {
       "slug": "how-to-prepare-for-divorce-in-florida",
@@ -442,6 +451,124 @@
       "checks": {},
       "gate_notes": [
         "b4 direct answer under the H1 is 32 words (aim 40-60)"
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-missouri",
+      "query": "how to prepare for divorce in missouri",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-missouri/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-missouri/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-missouri/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "e6897320ce095d514c70f5af1ec05035a9e77290096ce848b38038c66df6577e",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+          "route": "/site/questions/how-to-prepare-divorce-documents-yourself/",
+          "before_hash": "f0e412815f35787b38c31cc028a52e11b717796919a8c96338dcc3a6c5780348",
+          "after_hash": "48a8f04afaddf42b7dd6c9d00f6d36a35c44c526cd5024db12f3eb344553e17c"
+        },
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-florida/",
+          "before_hash": "413640ac41f38e709ac9f112b74dc99af45db426f317b9702d2c842614b1b6e0",
+          "after_hash": "1e207441ca21b80b9d3d0f6ad7963fc2365542882ec652e55619ea3c8dbe3299"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 118 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 32 words (aim 40-60)"
+      ]
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-massachusetts",
+      "query": "how to prepare for divorce in massachusetts",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-massachusetts/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-massachusetts/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-massachusetts/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "c99567912fca7e56d1f265c5180b67286f50d03a146aba6aacbb2ce077d38c21",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.mass.gov/divorce"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+          "route": "/site/questions/how-to-prepare-divorce-documents-yourself/",
+          "before_hash": "48a8f04afaddf42b7dd6c9d00f6d36a35c44c526cd5024db12f3eb344553e17c",
+          "after_hash": "f18bcad2482c6600fbad873301ada3eca2cc9ee4216dca10ddaf7d47858d9b62"
+        },
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-florida/",
+          "before_hash": "1e207441ca21b80b9d3d0f6ad7963fc2365542882ec652e55619ea3c8dbe3299",
+          "after_hash": "bd41b116bcbfe49d5d027536a9bc5e09847bb72e668f1e26e4eb1c8113b7e03d"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 30 words (aim 40-60)",
+        "b5 FAQ answer is 36 words (aim 40-60): \"Do I need a lawyer to file for divorce in Massachu\""
+      ]
+    },
+    {
+      "slug": "how-to-write-a-workplace-harassment-complaint-letter",
+      "query": "how to write a workplace harassment complaint letter",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-write-a-workplace-harassment-complaint-letter/index.html",
+      "route": "/questions/how-to-write-a-workplace-harassment-complaint-letter/",
+      "url": "https://keepmyproof.com/questions/how-to-write-a-workplace-harassment-complaint-letter/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "3aa8f46642a04278cee6f80f86ed09a05d936d89ff9477c01294b473589e130c",
+      "model": "free-route",
+      "facts": [
+        "https://www.eeoc.gov/harassment",
+        "https://www.eeoc.gov/time-limits-filing-charge"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 113 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 35 words (aim 40-60)",
+        "b5 FAQ answer is 32 words (aim 40-60): \"How long should the letter be?\""
       ]
     }
   ],
@@ -854,6 +981,166 @@
       "gate": 2,
       "reason": [
         "b4 direct answer under the H1 is 27 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in illinois",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 29 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in michigan",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in georgia",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "co parenting journal",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b5 FAQ answer is 17 words (aim 40-60): \"What if I delete a photo from my phone?\""
+      ]
+    },
+    {
+      "query": "how to document missed visitation",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "what happens if a parent misses visitation",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"How many missed visits before the court gets invol\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in divorce case",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prove adultery in court",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Does adultery affect child custody?\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime?\"",
+        "b5 FAQ answer is 28 words (aim 40-60): \"What if I only have suspicion?\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Can I use recordings of conversations?\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in south carolina",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in virginia",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 21 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in Virginia?\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in louisiana",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Does emotional cheating count as adultery in Louis\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Can text messages be used as proof of adultery?\"",
+        "b5 FAQ answer is 25 words (aim 40-60): \"Does adultery affect child custody in Louisiana?\"",
+        "shape: the body needs at least one list or table (give one section \"bullets\")"
+      ]
+    },
+    {
+      "query": "how to prove adultery in nc",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 23 words (aim 40-60): \"What if my spouse admits adultery?\"",
+        "b5 FAQ answer is 28 words (aim 40-60): \"Does adultery affect child custody?\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in North Carolina?\""
+      ]
+    },
+    {
+      "query": "how to document workplace bullying",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 83 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to document workplace abuse",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to document workplace violence",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 88 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 18 words (aim 40-60): \"Can I record a violent meeting at work?\"",
+        "b5 FAQ answer is 21 words (aim 40-60): \"What if HR ignores my report?\"",
+        "b5 FAQ answer is 23 words (aim 40-60): \"Is workplace violence a crime?\""
+      ]
+    },
+    {
+      "query": "how to properly document workplace harassment",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 80 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I use a recording as proof?\"",
+        "b5 FAQ answer is 26 words (aim 40-60): \"Is it better to write notes by hand or type them?\""
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment complaint",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 82 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "shape: the body needs at least one list or table (give one section \"bullets\")"
       ]
     }
   ],

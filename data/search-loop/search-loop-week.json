@@ -2,13 +2,13 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W45",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-07T14:13:13.921Z",
+  "generated_at": "2026-11-08T14:12:48.995Z",
   "state": "running",
-  "published": 13,
+  "published": 16,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 62,
+  "ai_bot_hits": 203,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
@@ -30,14 +30,12 @@
   ],
   "cap": {
     "max_live_pages": 20,
-    "live": 11,
-    "room": 9,
+    "live": 14,
+    "room": 6,
     "why": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
   },
   "notes": [
-    "BUILD distinct gate: 2 search(es) had the same intent as an existing page and became strengthen briefs, not new pages (pages.json \"redirected\")",
-    "BUILD gate notes (not blocking): 9 published page(s) are outside a length or style aim; each is listed under gate_notes in pages.json",
-    "IndexNow: 10 new page(s) not live yet; submitted when they answer 200"
+    "BUILD gate notes (not blocking): 3 published page(s) are outside a length or style aim; each is listed under gate_notes in pages.json"
   ],
   "lanes": {
     "ratio": {
@@ -51,7 +49,7 @@
       "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
     },
     "striking": {
-      "pages": 13,
+      "pages": 16,
       "measured": 0,
       "top3": 0,
       "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
@@ -65,5 +63,5 @@
     "weight_changes": [],
     "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42380561869"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42488683023"
 }

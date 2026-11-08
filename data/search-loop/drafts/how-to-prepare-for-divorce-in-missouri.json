@@ -1,0 +1,92 @@
+{
+  "h1": "How to prepare for divorce in Missouri",
+  "title_lead": "How to prepare for divorce in Missouri",
+  "meta_description": "Gather your papers and records before filing for divorce in Missouri. KeepMyProof helps you organize documents safely.",
+  "direct_answer": "Divorce in Missouri is a legal process that ends a marriage. You must gather your personal papers, financial records, and any documents that show your side of the story before you file.",
+  "sections": [
+    {
+      "heading": "What papers do I need to collect?",
+      "paragraphs": [
+        "Start by listing every document you own that relates to your marriage, money, or children. This includes bank statements, tax returns, pay stubs, and any property deeds. If you share children, gather school records, medical records, and any communication about their care. Keep only papers you are legally allowed to have. Do not copy an employer's private systems or a spouse's private accounts, as that can cause legal trouble.",
+        "Make two copies of every paper. Keep one set at home in a safe place and store the other set somewhere safe, like with a trusted friend or in a locked drawer. If you fear abuse, consider safe storage options through local domestic violence programs.",
+        "Write down dates, amounts, and what each paper shows. A simple notebook can help you remember why a paper matters if you need to talk to a lawyer or the court later."
+      ],
+      "bullets": [
+        "Bank and investment account statements",
+        "Tax returns for the last three years",
+        "Pay stubs and employment records",
+        "Deeds, titles, or mortgage papers",
+        "Insurance policies (health, life, auto)"
+      ]
+    },
+    {
+      "heading": "How do I start the divorce case in Missouri?",
+      "paragraphs": [
+        "Missouri requires that at least one spouse has lived in the state for at least 90 days before filing. The person who starts the case files a Petition for Dissolution of Marriage in the circuit court of the county where they live. There is a filing fee, but you may ask the court to waive it if you cannot afford it.",
+        "After filing, you must serve the other spouse with the papers. This can be done by a sheriff, a process server, or by certified mail with return receipt requested. The other spouse then has a set time to file an answer.",
+        "If you and your spouse agree on everything, you can file an agreed divorce. If you disagree, the case may go to court for a judge to decide things like who keeps the house or how time is split with the children."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What about the kids? Custody and support in Missouri",
+      "paragraphs": [
+        "Missouri courts decide custody based on the best interest of the child. They look at which parent has been the main caregiver, the child's needs, and any history of abuse or neglect. Parents can make their own parenting plan, but if they cannot agree, a judge will make a plan after a hearing.",
+        "Child support is calculated using state guidelines that look at both parents' incomes, the number of children, and the time each parent spends with the children. Keep records of what you spend on the children each month, including school fees, extracurricular activities, and medical costs.",
+        "If you need to change a custody or support order later, you must show a major change in circumstances and file a motion with the court."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "How does property get divided?",
+      "paragraphs": [
+        "Missouri is a \"dual property\" state. Marital property includes everything you and your spouse got during the marriage, and it is divided fairly, though not always equally. Non-marital property includes things you owned before the marriage, or gifts or inheritances you received just for you.",
+        "To divide property, you need to know what you own and what it is worth. Gather papers that show the value of your home, cars, retirement accounts, and any debts. If you cannot agree on the value, you may need a professional appraiser or a judge to decide.",
+        "Keep records of any separate property you claim is not marital. If you mix separate property with marital property (called \"commingling\"), it may become marital property."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Can KeepMyProof help me?",
+      "paragraphs": [
+        "KeepMyProof is a private vault where you can store photos and documents you have gathered. The vault lives as a normal locked app on your phone's home screen. iPhone users are asked to confirm if they want to \"Remove the original from Photos?\" Android users see the original deleted from Google Photos. The vault is not hidden or disguised; it is an app you open like any other. You can use it to keep your papers safe and organized while you work through your divorce.",
+        "KeepMyProof is not affiliated with the VA, the court, or any lawyer. It is not legal advice and does not prepare or file court forms. For free help with a divorce, look for your local legal aid office or a Missouri bar-certified lawyer referral service."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I have to go to court for a divorce in Missouri?",
+      "a": "Not always. If you and your spouse agree on all terms, you can file an agreed divorce and may not need a court hearing. If you disagree on things like money, property, or children, the case will go to court and a judge will make the final decisions."
+    },
+    {
+      "q": "How long does a divorce take in Missouri?",
+      "a": "There is a 30-day waiting period after the other spouse is served before the court can grant the divorce. Uncontested divorces can finish in a few months, but contested cases can take a year or more, depending on the court's schedule and how complex the issues are."
+    },
+    {
+      "q": "What is the difference between legal separation and divorce in Missouri?",
+      "a": "Legal separation lets you live apart and divide property and support without ending the marriage. Divorce ends the marriage so both people are free to remarry. The process for dividing assets and deciding about children is similar in both, but only a divorce ends the marital status."
+    },
+    {
+      "q": "Can I get help paying for a divorce lawyer in Missouri?",
+      "a": "Yes. If you cannot afford a lawyer, you may qualify for legal aid. The Missouri Bar also offers a lawyer referral service. Some lawyers offer free initial consultations. You can also ask the court to waive the filing fee if you meet income guidelines."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Missouri requires at least 90 days of state residency before filing for divorce.",
+      "source_url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "source_name": "CDC National Center for Health Statistics",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Missouri courts divide marital property fairly, but not always equally, following equitable distribution rules.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

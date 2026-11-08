@@ -1,0 +1,88 @@
+{
+  "h1": "How to write a workplace harassment complaint letter",
+  "title_lead": "How to write a workplace harassment complaint letter",
+  "meta_description": "Write a workplace harassment complaint letter to document the incident, date, and impact for your records and HR.",
+  "direct_answer": "A workplace harassment complaint letter is a written record you create to document unwelcome conduct at work, including dates, what happened, and how it affected you, to protect your rights and create a paper trail.",
+  "sections": [
+    {
+      "heading": "What should the letter include?",
+      "paragraphs": [
+        "Start with your contact information and the date at the top. Then add the recipient's name, title, and company address. This format ensures the letter reaches the right person and creates a clear timestamp for your records.",
+        "In the body, clearly state the issue. Describe one specific incident by including the date, time, location, what was said or done, and who was present. Keep the tone factual and avoid emotional language or opinions about intent.",
+        "Explain how the incident affected your work or environment. Describe any impact on your ability to do your job, your stress levels, or your safety. This helps connect the conduct to your working conditions.",
+        "State what you want to happen. Be specific about your request, such as an investigation, a change in workspace, or disciplinary action. End by asking for a written response and keep a copy for your own files."
+      ],
+      "bullets": [
+        "Your contact info and the date",
+        "Recipient's name, title, and company address",
+        "One specific incident: date, time, location, what happened, who was there",
+        "How it affected your work or environment",
+        "What you want to happen and a request for a written response"
+      ]
+    },
+    {
+      "heading": "What tone and language should I use?",
+      "paragraphs": [
+        "Write in a calm, professional tone. Use facts, not insults or accusations. Stick to what you saw or heard, not what you think the person meant. This makes the letter more credible and harder to dismiss.",
+        "Avoid words like \"harassment\" in the first paragraph if you want to stay factual. Instead, describe the behavior: \"On date X, person Y said Z.\" Let the reader decide the label. This protects your letter from being challenged on definitions.",
+        "Keep sentences short. Each sentence should cover one fact. If a sentence is long, split it. This helps the reader follow your story quickly, especially if they are reading on a phone.",
+        "Do not include speculation about your boss's mood, company policy, or legal rights. The letter is for documenting what happened, not arguing the law."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Where should I send the letter?",
+      "paragraphs": [
+        "Send the letter to your HR department first. If your harasser is your boss, or if HR has not acted, send a copy to a higher manager or your union representative if you have one. Always keep a copy for yourself.",
+        "If you are not comfortable going to HR, you can send the letter to the company's ethics hotline, if one exists. Many companies have anonymous reporting lines. Check your employee handbook for the correct path.",
+        "After you send it, note the date you sent it and how you sent it (email, certified mail, or in person). This date is important for any future claims or charges.",
+        "Remember that your employer is required to protect you from retaliation. If you face negative changes after sending the letter, document those changes immediately and consider contacting an external agency."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What after I send the letter?",
+      "paragraphs": [
+        "Keep your own file of everything. Save a copy of the letter, any emails about it, and any responses you get. Write down any follow-up conversations, including who was there and what was said.",
+        "If the company does not respond or does not fix the problem, you can file a charge with the Equal Employment Opportunity Commission (EEOC). This is a government agency that handles workplace discrimination and harassment claims.",
+        "You must file an EEOC charge within a certain time limit, usually 180 days from the incident, but this can extend to 300 days if a state agency also handles the claim. Check the EEOC website for the exact deadline for your state.",
+        "KeepMyProof can help you store a copy of your letter and any related documents in a private vault. This keeps your records safe and organized, separate from your work email or computer, where they could be deleted or accessed by others."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a lawyer to write this letter?",
+      "a": "No, you do not need a lawyer to write a basic complaint letter. You can write it yourself using the steps above. If you are unsure about your rights, you can look at the EEOC website or talk to a free VA-accredited representative if you are a veteran, but KeepMyProof is not affiliated with the VA."
+    },
+    {
+      "q": "Can I send the letter anonymously?",
+      "a": "Some companies allow anonymous reports through hotlines, but an anonymous letter may not start an investigation because the company cannot follow up with you. If you want a response, include your name and contact info. If you fear retaliation, talk to an external agency about your options."
+    },
+    {
+      "q": "What if my boss retaliates after I send the letter?",
+      "a": "Retaliation is illegal. If you face negative changes, demotions, or firing after sending the letter, document everything immediately. You can file a retaliation charge with the EEOC. Keep copies of all performance reviews or changes in your schedule after the letter."
+    },
+    {
+      "q": "How long should the letter be?",
+      "a": "Keep the letter to one page. Use short paragraphs and bullet points if needed. A short, clear letter is more likely to be read and taken seriously than a long, emotional one."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The EEOC handles workplace harassment and discrimination claims and provides guidance on how to file a charge.",
+      "source_url": "https://www.eeoc.gov/harassment",
+      "source_name": "EEOC",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "You must file an EEOC charge within 180 days of the incident, or 300 days if a state agency also processes the claim.",
+      "source_url": "https://www.eeoc.gov/time-limits-filing-charge",
+      "source_name": "EEOC",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

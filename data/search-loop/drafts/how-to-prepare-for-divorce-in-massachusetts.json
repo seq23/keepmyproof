@@ -1,0 +1,83 @@
+{
+  "h1": "How to prepare for divorce in Massachusetts",
+  "title_lead": "How to prepare for divorce in Massachusetts",
+  "meta_description": "Gather financial and personal records to start your Massachusetts divorce case. KeepMyProof helps organize documents safely.",
+  "direct_answer": "Divorce in Massachusetts is a legal process that ends a marriage. You must file a complaint and serve your spouse. KeepMyProof helps you collect and store the records you need.",
+  "sections": [
+    {
+      "heading": "What documents should I collect first?",
+      "paragraphs": [
+        "Gathering the right papers early makes the divorce process smoother. Start with records that show your financial picture and personal history. You need items that prove income, expenses, and assets. Old tax returns, pay stubs, and bank statements are essential. Also collect records of real estate, vehicles, and retirement accounts. Do not forget insurance policies and loan documents."
+      ],
+      "bullets": [
+        "Tax returns for the last three years",
+        "Recent pay stubs and W-2 forms",
+        "Bank and investment account statements",
+        "Deeds and mortgage statements",
+        "Insurance policies and beneficiary forms"
+      ]
+    },
+    {
+      "heading": "How do I organize records for a Massachusetts divorce?",
+      "paragraphs": [
+        "If you are using KeepMyProof, upload your documents to the private vault. The app lets you store photos of papers and files in one place. You can access your records from your phone or computer. Remember to keep only papers you are legally allowed to have. Never copy records from your employer's private systems or a spouse's private accounts."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What if I cannot afford a lawyer in Massachusetts?",
+      "paragraphs": [
+        "Massachusetts offers resources for people representing themselves. The Massachusetts Court System website has self-help guides and forms. You can find information about fee waivers if you qualify financially. Legal aid organizations may provide free assistance based on income. KeepMyProof is not a law firm and cannot give legal advice. We help you gather and store your documents safely."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Can I record conversations or copy files secretly?",
+      "paragraphs": [
+        "Massachusetts is a \"two-party consent\" state for recording conversations. It is illegal to record a private conversation without the other person's permission. Do not secretly record calls or meetings. Similarly, do not copy files from an employer's computer or a spouse's private accounts. These actions can hurt your case and create legal problems for you. Focus on gathering papers you already have access to."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What is the first step to filing for divorce?",
+      "paragraphs": [
+        "The first step is filing a Complaint for Divorce with the Massachusetts Probate and Family Court. You must state the grounds for divorce, such as irretrievable breakdown. After filing, you must serve the papers on your spouse according to court rules. KeepMyProof can help you keep track of the filing date and a copy of the complaint. We are a document vault, not a legal filing service."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a lawyer to file for divorce in Massachusetts?",
+      "a": "You can file without a lawyer, but the court process can be complex. Self-help centers at the courthouse can assist with forms. KeepMyProof helps you organize your documents but does not provide legal representation or advice."
+    },
+    {
+      "q": "How long does a divorce take in Massachusetts?",
+      "a": "The timeline varies depending on whether the divorce is contested or uncontested. An uncontested divorce may be finalized in a few months if all paperwork is complete. A contested divorce can take much longer. KeepMyProof cannot speed up the court process, but organized records help avoid delays."
+    },
+    {
+      "q": "What is separate property in a Massachusetts divorce?",
+      "a": "Separate property is usually what you owned before marriage or received as a gift or inheritance. However, commingling separate assets with marital funds can change their status. KeepMyProof helps you track the origin of your assets with dates and records."
+    },
+    {
+      "q": "Can I use KeepMyProof to hide documents from my spouse?",
+      "a": "No. KeepMyProof is a private vault for your own records. It is not designed to hide papers from a spouse or court. You must only keep documents you are legally allowed to possess. Using the vault to conceal records can create problems in your case."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Massachusetts is a \"no-fault\" divorce state where irretrievable breakdown of the marriage is grounds for divorce.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The Massachusetts Probate and Family Court handles all divorce and family law cases in the state.",
+      "source_url": "https://www.mass.gov/divorce",
+      "source_name": "Massachusetts government",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}
