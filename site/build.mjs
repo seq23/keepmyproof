@@ -861,6 +861,19 @@ function questionPages(add, files, stops) {
 
 // ---------- Kindle book companions (site/amazon.mjs): /amazon/<slug>/, printed inside each book ----------
 
+/**
+ * The companion pages' primary button, driven by the one store switch (SITE.stores): empty until a
+ * store URL is set, then "Download KeepMyProof — free" first on the page and again at the end, with
+ * the book's utm tags carried to the store. Nothing else changes on launch day.
+ */
+export function storeCta(slug, pos) {
+  const s = SITE.stores, urls = [s.googlePlay, s.appStore].filter(Boolean);
+  if (!urls.length) return '';
+  const tag = (u) => `${u}${u.includes('?') ? '&' : '?'}utm_source=kindle&utm_medium=book&utm_campaign=${encodeURIComponent(slug)}&utm_content=companion-${pos}`;
+  const second = urls[1] ? ` <a class="btn" href="${esc(tag(urls[1]))}">${esc(urls[1] === s.appStore ? COPY.en.appStore : COPY.en.googlePlay)}</a>` : '';
+  return `<p data-book-cta="${pos}"><a class="btn primary" href="${esc(tag(urls[0]))}">Download KeepMyProof — free ›</a>${second}</p>`;
+}
+
 function amazonPages(add, topics) {
   const l = 'en', idx = AMAZON_INDEX, p = SITE.prices;
   const crumb0 = { name: 'Book companions', path: idx.path };
@@ -869,17 +882,19 @@ function amazonPages(add, topics) {
     const folder = topics.topics.find((t) => t.id === b.folder);
     if (!folder) throw Error(`NAMED STOP [AMAZON_FOLDER] ${b.slug}: folder ${b.folder} is not in topics.json`);
     const path = `/amazon/${b.slug}/`;
+    const cta = (pos) => storeCta(b.slug, pos);
     const free = `<p><a class="btn" href="${esc(b.free.href)}">${esc(b.free.label)}</a></p><p>${esc(b.free.body)}</p>${linkList(b.more.map(([h, t]) => [t, h]))}`;
     const table = `<div style="overflow-x:auto"><table class="pr"><thead><tr><th>What you use</th><th>What it costs</th><th>What it does</th></tr></thead><tbody>
 <tr><td>${esc(b.book)}, the book</td><td>Already yours</td><td>Explains what to gather and why</td></tr>
 <tr><td><a href="${esc(b.free.href)}">The free printable or tool</a></td><td>Free, no sign-up</td><td>Fill in, print or save as a PDF; nothing is saved online</td></tr>
 <tr><td>KeepMyProof app</td><td>Free for ${SITE.freeItems} items; Plus $${p.yearlyUSD}/year or $${p.lifetimeUSD} once</td><td>Keeps papers, photos and dated notes encrypted on your phone; one PDF of a folder when you choose</td></tr></tbody></table></div>`;
     const body = `<p class="lbl">Kindle book companion</p><h1>You're reading ${esc(b.book)}</h1>
-<p class="definition answer">${esc(b.answer)}</p><p class="sub">${esc(CC[l].notAdvice)} Thank you for reading.</p>
+<p class="definition answer">${esc(b.answer)}</p>${cta('top')}<p class="sub">${esc(CC[l].notAdvice)} Thank you for reading.</p>
 <h2>What is the free next step?</h2>${free}
 <h2>How do the book, the free tools and the app fit together?</h2>${table}
 <h2>What does the KeepMyProof app do for this?</h2><p>${esc(b.appUse)}</p><p>${esc(priceLine)}</p>${storeBlock(l)}
 ${faqHtml(l, b.faq)}
+${cta('end')}
 ${b.sources.length ? `<h2>Sources</h2><ul>${b.sources.map(([t, u]) => `<li><a href="${esc(u)}" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>` : ''}
 <p><a href="${idx.path}">All KeepMyProof book companions</a> · <a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>`;
     add({ path, alt: null, group: 'core', html: shell({ lang: l, path, title: [b.title], desc: b.desc, body, speakable: true, crumbs: [crumb0, { name: b.book, path }],

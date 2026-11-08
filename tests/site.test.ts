@@ -233,3 +233,22 @@ test('each Kindle book companion is at the exact path printed in its book, and e
     }
   }
 });
+
+test('the companion pages switch to "Download KeepMyProof — free" first and last the day a store URL is set, and show no download button before', () => {
+  const page = (files: Record<string, string>) => files[fileOf('/amazon/parallel-parenting/')];
+  const saved = { ...SITE.stores };
+  try {
+    (SITE.stores as any).googlePlay = null; (SITE.stores as any).appStore = null;
+    const before = page(render());
+    assert.doesNotMatch(before, /Download KeepMyProof/);
+    assert.doesNotMatch(before, /data-book-cta=/);
+    (SITE.stores as any).googlePlay = 'https://play.google.com/store/apps/details?id=com.keepmyproof.app';
+    const after = page(render());
+    const ctas = [...after.matchAll(/<p data-book-cta="(top|end)"><a class="btn primary" href="([^"]+)">Download KeepMyProof — free ›<\/a>/g)];
+    assert.deepEqual(ctas.map((m) => m[1]), ['top', 'end']);
+    for (const m of ctas) assert.match(decode(m[2]), /^https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.keepmyproof\.app&utm_source=kindle&utm_medium=book&utm_campaign=parallel-parenting&utm_content=companion-(top|end)$/);
+    assert.ok(after.indexOf('data-book-cta="top"') < after.indexOf('What is the free next step?'), 'the download button comes before the free step');
+  } finally {
+    Object.assign(SITE.stores, saved);
+  }
+});
