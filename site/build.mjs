@@ -881,8 +881,7 @@ function amazonPages(add, topics) {
 <h2>What does the KeepMyProof app do for this?</h2><p>${esc(b.appUse)}</p><p>${esc(priceLine)}</p>${storeBlock(l)}
 ${faqHtml(l, b.faq)}
 ${b.sources.length ? `<h2>Sources</h2><ul>${b.sources.map(([t, u]) => `<li><a href="${esc(u)}" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>` : ''}
-<p><a href="${idx.path}">All KeepMyProof book companions</a> · <a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>
-<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
+<p><a href="${idx.path}">All KeepMyProof book companions</a> · <a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>`;
     add({ path, alt: null, group: 'core', html: shell({ lang: l, path, title: [b.title], desc: b.desc, body, speakable: true, crumbs: [crumb0, { name: b.book, path }],
       schema: [{ '@type': 'Book', name: b.book, bookFormat: 'https://schema.org/EBook', publisher: { '@type': 'Organization', name: SITE.parentOrg.name } }, faqSchema(l, b.faq), appSchema(l)] }) });
   }
