@@ -6,9 +6,11 @@
 //   blogger    Blogger API v3 posts.insert. Every run trades the stored Google refresh token
 //              (KMP_BLOGGER_REFRESH_TOKEN, from a consent screen set to "In production", so it does
 //              not expire after 7 days) for a one-hour access token held in memory only.
-//   wordpress  WordPress.com REST v1.1 posts/new on keepmyproof.wordpress.com. Every run mints a
-//              token with the OAuth2 password grant (the account's own developer app + a
-//              WordPress.com application password), so no stored token can expire.
+//   wordpress  WordPress.com REST v1.1 posts/new on keepmyproof.wordpress.com, sent with ONE stored
+//              bearer token (KMP_WPCOM_ACCESS_TOKEN) from WordPress.com's authorization-code flow,
+//              made by ~/bin/wpcom-connect.mjs kmp. WordPress.com tokens from that flow do not expire.
+//              (The password grant is gone: application passwords need two-step login, which the
+//              account does not have.) The app's client id and secret stay in the vault only.
 //
 // What a post says (never a copy of the page: that would be duplicate content):
 //   the page's H1 as title, its answer-first paragraph (already through the site's fact and
@@ -27,7 +29,7 @@
 //
 // Rule 0: one `OUTPUT syndicate …` census line every run. Missing secrets = NAMED STOP
 // KMP_BLOGGER_NOT_SET_UP / KMP_WORDPRESS_NOT_SET_UP; a refused sign-in = KMP_BLOGGER_AUTH_FAILED /
-// KMP_WORDPRESS_AUTH_FAILED. Each is one Open Loops row (BOSS_OPEN_LOOPS_TOKEN intake, never an
+// WPCOM_TOKEN_REFUSED (WordPress.com answered 401/403 to the stored token). Each is one Open Loops row (BOSS_OPEN_LOOPS_TOKEN intake, never an
 // email), closed the first run it clears; exit 0, the next day's run retries. A lane that is set
 // up, has pages and room, and posts nothing exits 1. No pages found at all exits 1.
 //
@@ -45,14 +47,16 @@ export const DAILY_CAP = 1;
 export const FOLDERS = ['divorce', 'workplace', 'va', 'executor', 'iep'];
 export const SECRETS = {
   blogger: ['KMP_BLOGGER_CLIENT_ID', 'KMP_BLOGGER_CLIENT_SECRET', 'KMP_BLOGGER_REFRESH_TOKEN', 'KMP_BLOGGER_BLOG_ID'],
-  wordpress: ['KMP_WPCOM_CLIENT_ID', 'KMP_WPCOM_CLIENT_SECRET', 'KMP_WPCOM_USERNAME', 'KMP_WPCOM_APP_PASSWORD'],
+  wordpress: ['KMP_WPCOM_ACCESS_TOKEN'],
 };
 const SETUP = 'cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/GitHub/keepmyproof/scripts/syndication-setup.mjs';
+const MIRROR = 'cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/GitHub/keepmyproof/scripts/mirror-syndication-secrets.mjs';
+const WPCOM_CONNECT = `rerun ~/bin/wpcom-connect.mjs kmp (cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/bin/wpcom-connect.mjs kmp), then copy the token to GitHub: ${MIRROR}`;
 export const STOP_WORDS = {
   KMP_BLOGGER_NOT_SET_UP: { title: 'KeepMyProof: Blogger auto-posting is not set up', next_step: `Enable the Blogger API and publish the consent screen in the rclone client's Google Cloud project, then run: ${SETUP} blogger` },
   KMP_BLOGGER_AUTH_FAILED: { title: 'KeepMyProof: Google refused the Blogger sign-in', next_step: `The saved Blogger sign-in was refused (revoked, or the consent screen is back in Testing). Run again: ${SETUP} blogger` },
-  KMP_WORDPRESS_NOT_SET_UP: { title: 'KeepMyProof: WordPress.com auto-posting is not set up', next_step: `Make a WordPress.com developer app and an application password on the KeepMyProof account, then run: ${SETUP} wordpress` },
-  KMP_WORDPRESS_AUTH_FAILED: { title: 'KeepMyProof: WordPress.com refused the sign-in', next_step: `Make a new WordPress.com application password, then run: ${SETUP} wordpress` },
+  KMP_WORDPRESS_NOT_SET_UP: { title: 'KeepMyProof: WordPress.com auto-posting is not set up', next_step: `No KMP_WPCOM_ACCESS_TOKEN secret yet: ${WPCOM_CONNECT}` },
+  WPCOM_TOKEN_REFUSED: { title: 'KeepMyProof: WordPress.com refused the saved posting token', next_step: `The stored KMP_WPCOM_ACCESS_TOKEN was refused (revoked or for the wrong account): ${WPCOM_CONNECT}` },
 };
 export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof guides post to its Blogger and WordPress.com blogs by themselves, 1 a day each' };
 
@@ -149,6 +153,8 @@ async function call(http, method, url, { json, form, token } = {}) {
 const LANES = {
   blogger: {
     stopPrefix: 'KMP_BLOGGER',
+    stops: ['KMP_BLOGGER_NOT_SET_UP', 'KMP_BLOGGER_AUTH_FAILED'],
+    authFailed: 'KMP_BLOGGER_AUTH_FAILED',
     async token(env, http) {
       return (await call(http, 'POST', 'https://oauth2.googleapis.com/token', { form: {
         client_id: env.KMP_BLOGGER_CLIENT_ID, client_secret: env.KMP_BLOGGER_CLIENT_SECRET,
@@ -162,11 +168,11 @@ const LANES = {
   },
   wordpress: {
     stopPrefix: 'KMP_WORDPRESS',
-    async token(env, http) {
-      return (await call(http, 'POST', 'https://public-api.wordpress.com/oauth2/token', { form: {
-        client_id: env.KMP_WPCOM_CLIENT_ID, client_secret: env.KMP_WPCOM_CLIENT_SECRET, grant_type: 'password',
-        username: env.KMP_WPCOM_USERNAME, password: env.KMP_WPCOM_APP_PASSWORD } })).access_token;
-    },
+    stops: ['KMP_WORDPRESS_NOT_SET_UP', 'WPCOM_TOKEN_REFUSED'],
+    authFailed: 'WPCOM_TOKEN_REFUSED',
+    // The stored token is the sign-in: no token call. A 401/403 on the post is WPCOM_TOKEN_REFUSED.
+    refusedOnPost: true,
+    async token(env) { return String(env.KMP_WPCOM_ACCESS_TOKEN).trim(); },
     async post(env, http, token, p) {
       const res = await call(http, 'POST', `https://public-api.wordpress.com/rest/v1.1/sites/${WPCOM_SITE}/posts/new`, {
         token, json: { title: p.title, content: postHtml(p), excerpt: p.answer, status: 'publish', tags: `KeepMyProof,${p.folder ?? 'checklists'}` } });
@@ -197,14 +203,17 @@ export async function runLane(lane, { pages, ledger, env, http, now, dry }) {
   if (!next.length) return { ...row, state: 'posting' };
   let token;
   try { token = await L.token(env, http); if (!token) throw new HttpError(0, 'no access_token'); }
-  catch (e) { return { ...row, state: 'auth_failed', stop: { code: `${L.stopPrefix}_AUTH_FAILED`, why: String(e.message) } }; }
+  catch (e) { return { ...row, state: 'auth_failed', stop: { code: L.authFailed, why: String(e.message) } }; }
   row.state = 'posting';
   for (const p of next) {
     try {
       const id = await L.post(env, http, token, p);
       ledger.push({ lane, url: p.url, day, at: now.toISOString(), id: String(id ?? '') });
       row.posted++;
-    } catch (e) { return { ...row, state: 'post_refused', error: String(e.message) }; }
+    } catch (e) {
+      if (L.refusedOnPost && (e.status === 401 || e.status === 403)) return { ...row, state: 'auth_failed', stop: { code: L.authFailed, why: String(e.message) } };
+      return { ...row, state: 'post_refused', error: String(e.message) };
+    }
   }
   return row;
 }
@@ -226,7 +235,7 @@ export async function main({ argv = process.argv.slice(2), env = process.env, ht
   const stops = rows.filter(r => r.stop).map(r => r.stop);
   if (!dry) {
     writeFileSync(ledgerPath, JSON.stringify(ledger, null, 2) + '\n');
-    const known = Object.keys(STOP_WORDS).filter(c => lanes.some(l => c.startsWith(LANES[l].stopPrefix)));
+    const known = lanes.flatMap(l => LANES[l].stops);
     await reportToOpenLoops({ ...OPEN_LOOPS, known, stops, words: STOP_WORDS },
       { token: env.BOSS_OPEN_LOOPS_TOKEN, fetchImpl: http, log });
   }

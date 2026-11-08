@@ -8,20 +8,19 @@
 //              Mac-backup client RCLONE_MAC_BACKUP_OAUTH_CLIENT_ID, never a West Peek client), opens
 //              Google's consent page in the browser, catches the answer on 127.0.0.1, proves the
 //              token can read keepmyproof.blogspot.com, then saves the four KMP_BLOGGER_* values.
-//   wordpress  asks for the four values in macOS pop-ups (secrets hidden and asked twice), proves
-//              them with one password-grant sign-in that finds keepmyproof.wordpress.com, then saves
-//              the four KMP_WPCOM_* values.
+//   wordpress  only points at ~/bin/wpcom-connect.mjs kmp, which makes the one stored posting token
+//              KMP_WPCOM_ACCESS_TOKEN (WordPress.com authorization-code flow; application passwords
+//              need two-step login, which the account does not have).
 // Saving = piped on stdin into `npm run -s vault:set NAME` (Boss OS vault) and `gh secret set NAME`
 // (this repo). No value is ever an argument, printed or written to a file.
 import { createServer } from 'node:http';
-import { spawnSync, execFileSync } from 'node:child_process';
+import { spawnSync } from 'node:child_process';
 import { randomBytes, createHash } from 'node:crypto';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 
 const REPO = 'seq23/keepmyproof';
 const BLOG_URL = 'https://keepmyproof.blogspot.com/';
-const WPCOM_SITE = 'keepmyproof.wordpress.com';
 const BOSS = join(homedir(), 'GitHub/boss-os');
 
 const fail = (msg) => { console.log(`Not saved: ${msg}`); process.exit(1); };
@@ -31,19 +30,6 @@ function save(name, value) {
   if (v.status !== 0) fail(`the vault refused ${name}.`);
   const g = spawnSync('gh', ['secret', 'set', name, '--repo', REPO], { input: value, encoding: 'utf8', stdio: ['pipe', 'ignore', 'pipe'] });
   if (g.status !== 0) fail(`${name} is in the vault, but GitHub refused it (gh auth status?). Re-run: cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/GitHub/keepmyproof/scripts/mirror-syndication-secrets.mjs`);
-}
-
-function dialog(prompt, hidden) {
-  const script = `text returned of (display dialog ${JSON.stringify(prompt)} default answer "" ${hidden ? 'with hidden answer ' : ''}with title "KeepMyProof setup (saved privately, never shown)")`;
-  try { return execFileSync('osascript', ['-e', script], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).replace(/\n$/, ''); }
-  catch { fail('the pop-up was cancelled.'); }
-}
-
-function ask(prompt, hidden) {
-  const a = dialog(prompt, hidden).trim();
-  if (!a) fail(`"${prompt}" was empty.`);
-  if (hidden && dialog(`${prompt} (paste it again)`, true).trim() !== a) fail(`the two "${prompt}" entries did not match.`);
-  return a;
 }
 
 async function json(url, init) {
@@ -94,23 +80,18 @@ async function blogger() {
   console.log('Saved: KeepMyProof Blogger is connected. It posts by itself from tomorrow morning.');
 }
 
-async function wordpress() {
-  const v = {
-    KMP_WPCOM_CLIENT_ID: ask('WordPress.com app: Client ID', false),
-    KMP_WPCOM_CLIENT_SECRET: ask('WordPress.com app: Client Secret', true),
-    KMP_WPCOM_USERNAME: ask('WordPress.com username (or email) of the KeepMyProof account', false),
-    KMP_WPCOM_APP_PASSWORD: ask('WordPress.com application password', true),
-  };
-  const tok = await json('https://public-api.wordpress.com/oauth2/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ client_id: v.KMP_WPCOM_CLIENT_ID, client_secret: v.KMP_WPCOM_CLIENT_SECRET, grant_type: 'password', username: v.KMP_WPCOM_USERNAME, password: v.KMP_WPCOM_APP_PASSWORD }) });
-  if (!tok.ok || !tok.data.access_token) fail(`WordPress.com refused the sign-in (${tok.status} ${tok.data.error ?? ''}). Check the four values and run this again.`);
-  const site = await json(`https://public-api.wordpress.com/rest/v1.1/sites/${WPCOM_SITE}?fields=ID,capabilities`, { headers: { authorization: `Bearer ${tok.data.access_token}` } });
-  if (!site.ok || site.data.capabilities?.publish_posts === false) fail(`this account cannot post on ${WPCOM_SITE} (${site.status}). Use the account that owns that site.`);
-  for (const [k, val] of Object.entries(v)) save(k, val);
-  console.log('Saved: KeepMyProof WordPress is connected. It posts by itself from tomorrow morning.');
+function wordpress() {
+  // WordPress.com application passwords need two-step login, which the KeepMyProof account does not
+  // have, so the password grant is gone. The one-click authorization-code sign-in lives in ~/bin.
+  console.log([
+    'WordPress.com is connected with ~/bin/wpcom-connect.mjs, not here. Run:',
+    '  cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/bin/wpcom-connect.mjs kmp',
+    'It saves KMP_WPCOM_ACCESS_TOKEN (and the app client id and secret) to the vault. Then copy the token to GitHub:',
+    '  cd ~/GitHub/boss-os && npm run -s vault:run -- node ~/GitHub/keepmyproof/scripts/mirror-syndication-secrets.mjs',
+  ].join('\n'));
 }
 
 const mode = process.argv[2];
 if (mode === 'blogger') await blogger();
-else if (mode === 'wordpress') await wordpress();
+else if (mode === 'wordpress') wordpress();
 else fail('say which: blogger or wordpress.');
