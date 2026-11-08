@@ -175,27 +175,42 @@ test('state pages name each source once and point facts to it by number; neighbo
   assert.equal((index.match(/Fixture rules/g) ?? []).length, 1, 'the state index names the subtopic once');
 });
 
-test('a state page answer stops copying its facts when the copy would repeat a phrase more than three times, and every fact stays listed with its source', async () => {
+test('no state page repeats an 8-word phrase more than three times, in English or Spanish, and every fact stays listed with its source', async () => {
   const { repeatsPhrase } = await import('../site/build.mjs');
   assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(4)), true);
   assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(3)), false);
+  // Accented words are whole words, as the Monday sample reads them (an ASCII splitter missed these).
+  assert.equal(repeatsPhrase('el centro de capacitación e información para padres. '.repeat(4)), true);
   const fx = fixture();
-  // Every California executor fact names the same long office, as real PTI and VA-office facts do.
+  // Every California executor fact names the same long office, as real PTI and VA-office facts do,
+  // and every Spanish fact opens with the same agency attribution, as the DOL facts did.
   const office = 'The Fixture County Probate Court Self Help Center of California';
-  for (const f of ((fx.facts.executor[0] as any).states.CA.facts as any[])) f.claim_en = `${office} says ${f.claim_en}`;
+  const ca = (fx.facts.executor[0] as any).states.CA.facts as any[];
+  for (const f of ca) {
+    f.claim_en = `${office} says ${f.claim_en}`;
+    f.claim_es = `El Departamento de Trabajo de EE. UU. indica que ${f.claim_es}`;
+  }
+  // A fact that quotes the office's name, as a VA-office fact does (the name the generator shortens).
+  ca.unshift({ claim_en: `${office} is the probate help office for California.`, claim_es: `El Departamento de Trabajo de EE. UU. indica que la oficina de ayuda es ${office}.`,
+    source_url: 'https://courts.example.gov/ca/office', source_name: 'California Fixture Court', quote: office.replace(/^The /, ''), checked: '2026-11-02' });
+  const { factKey } = require('../site/lib/gate.mjs');
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) fx.verified.executor[factKey(f)] = '2026-11-02';
   const { files, pages } = renderAll(fx);
   const states = pages.filter((p) => p.state);
   assert.ok(states.length > 0, 'the fixture builds state pages');
   let guarded = 0;
   for (const p of states) {
     const main = /<main\b[\s\S]*?<\/main>/.exec(files[p.file])?.[0] ?? files[p.file];
-    const answer = visible(/<p class="definition answer">([\s\S]*?)<\/p>/.exec(main)![1]).trim();
     const items = [...(/<ul class="facts">([\s\S]*?)<\/ul>/.exec(main)?.[1] ?? '').matchAll(/<li>([\s\S]*?) <a href="([^"]+)"/g)].map((m) => ({ claim: visible(m[1]).trim(), href: m[2] }));
     assert.equal(items.length, p.state?.facts, `${p.file}: every fact is listed`);
     assert.ok(items.every((m) => /^https:\/\//.test(m.href)), `${p.file}: each listed fact links its source`);
-    const copied = items.filter((m) => answer.includes(m.claim)).length;
-    if (copied > 1) assert.equal(repeatsPhrase([answer, ...items.map((m) => m.claim)].join(' ')), false, `${p.file}: a multi-fact answer only where it does not repeat`);
-    if (p.file === 'executor/fixture-topic/california.html') { guarded++; assert.ok(copied <= 1, 'the repeating page keeps one fact in its answer'); }
+    assert.equal(repeatsPhrase(visible(main)), false, `${p.file}: no 8-word phrase more than three times`);
+    if (p.state?.folder === 'executor' && p.state?.code === 'CA') {
+      guarded++;
+      const list = items.map((m) => m.claim).join(' ');
+      if (p.state?.lang === 'es') assert.equal((list.match(/Departamento de Trabajo de EE\. UU\. \(DOL\)/g) ?? []).length, 1, 'the agency is named in full once in the list, then by its acronym');
+      else assert.equal((list.match(/Fixture County Probate Court Self Help Center of California/g) ?? []).length, 1, 'the office is named in full once in the list, then as "the center"');
+    }
   }
-  assert.equal(guarded, 1, 'the repeating fixture page was checked');
+  assert.equal(guarded, 2, 'the repeating fixture page was checked in English and Spanish');
 });

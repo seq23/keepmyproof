@@ -15,6 +15,7 @@ import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './c
 import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
 import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
+import { repeatsPhrase, shortenNames, leansBack } from './lib/names.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
@@ -335,12 +336,30 @@ function subtopicLabel(t, lang) {
 const folderName = (topic, l) => topic.display_name[l];
 const checklistItems = (topic, l) => topic.checklist_items.map((i) => i.name[l]);
 
-/** True when some 8-word phrase appears more than three times (the weekly sample's filler line). */
-// Tokenised the way the Monday sample reads words (boss-os page-quality-sample.mjs wordsOf).
-export function repeatsPhrase(text, n = 8, max = 3) {
-  const w = String(text).toLowerCase().match(/[a-z0-9][\w'’-]*/g) || [], seen = new Map();
-  for (let i = 0; i + n <= w.length; i++) { const k = w.slice(i, i + n).join(' '); const c = (seen.get(k) || 0) + 1; if (c > max) return true; seen.set(k, c); }
-  return false;
+// The sample's filler test and the name shortener live in lib/names.mjs (Unicode words, as the sample reads them).
+export { repeatsPhrase };
+
+/**
+ * A 40–60 word answer from only the facts that keep the page clean: facts in order, each kept when
+ * `ok(answer)` still holds with it; a fact that leans on the one before it ("The same table…") only
+ * follows that fact. Then the fixed true tails, as quotableAnswer. null when no clean answer fits.
+ */
+export function answerFrom(claims, tails, lang, ok, shorten = (xs) => xs) {
+  const [lo, hi] = RANGE[lang], sep = lang === 'zh' ? '' : ' ', m = (xs) => measure(lang, xs.join(sep));
+  const text = (idx, ts = []) => [...shorten(idx.map((i) => claims[i])), ...ts].join(sep);
+  const idx = [];
+  for (let i = 0; i < claims.length; i++) {
+    if (leansBack(claims[i]) && !idx.includes(i - 1)) continue;
+    const next = [...idx, i];
+    if (m(shorten(next.map((j) => claims[j]))) <= hi && ok(text(next))) idx.push(i);
+  }
+  const ts = [];
+  for (const t of [...tails].sort((a, b) => measure(lang, b) - measure(lang, a))) {
+    if (m([text(idx), ...ts].filter(Boolean)) >= lo) break;
+    if (m([text(idx), ...ts, t].filter(Boolean)) <= hi) ts.push(t);
+  }
+  const out = text(idx, ts), n = measure(lang, out);
+  return n >= lo && n <= hi && ok(out) ? out : null;
 }
 
 /** A 40–60 word answer: the page's own facts first, then fixed true sentences to reach 40. */
@@ -516,15 +535,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
         for (const l of langs) {
           const facts = st.byLang[l], dates = facts.map((f) => f.verifiedOn).sort(), first = dates[0], last = dates[dates.length - 1];
           const c = CC[l], S = stateName(code, l), path = P.state(s, code, l), claims = facts.map((f) => f.claim);
-          // The answer is built from the page's own facts, which the sourced list then states
-          // again. When that copy makes an 8-word phrase (usually the organisation's name in each
-          // fact) appear more than three times, the answer keeps only the first fact and fills to
-          // 40 words with the fixed true tails: the weekly sample's template-filler test failed
-          // iep/parent-training-center/new-mexico on it (7 Nov 2026). Pages without the repeat
-          // keep their fuller answer.
           const tl = [...c.tails(S), ...(va ? [c.vaTail] : [])];
-          const full = quotableAnswer(claims, tl, l);
-          const answer = full && repeatsPhrase([full, ...claims].join(' ')) ? (quotableAnswer(claims.slice(0, 1), tl, l) ?? full) : full;
           const h1 = fill(s.titles[l], code, l), title = [h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
@@ -534,18 +545,59 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           // numbered sources list (four "U.S. Department of Education, IDEA regulations, 34 CFR"
           // titles in both places was the template-filler repeat on iep/dispute-resolution).
           const publishers = [...new Set(names.map((n) => n.split(/,\s|:\s/)[0].trim()))];
-          const faq = c.faq({ state: S, names: publishers.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
+          const hosts = [...new Set(srcs.map((g) => new URL(g.url).hostname.replace(/^www\./, '')))];
+          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
-          const body = `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>
+          // Each source's checked date is shown once: on its line only when the sources were checked
+          // on different days (the same "Checked <date>" after every source was a repeated phrase).
+          const oneDate = srcs.every((g) => g.verifiedOn === srcs[0].verifiedOn);
+          // An official link that is already a numbered source is not listed twice.
+          const extra = st.links.filter((x) => !srcs.some((g) => g.url === x.url));
+          const subShort = s.label[l].split(/[:：]/)[0].trim();
+          const render = (answer, shown, faq, links = extra) => `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>
 <p class="definition answer">${esc(answer)}</p><p class="sub">${esc(c.notAdvice)} ${esc(c.sourcesChecked(fmtDate(l, last)))}</p>
-<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(f.claim)} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
-<p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span></li>`).join('')}</ol>
-${st.links.length ? `<h2>${esc(c.linksH)}</h2><ul>${st.links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
+<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f, i) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(shown[i])} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
+<p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>${oneDate ? '' : `. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span>`}</li>`).join('')}</ol>
+${links.length ? `<h2>${esc(c.linksH)}</h2><ul>${links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
 ${keep(l)}
-<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(s.label[l])}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
+<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
 ${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
+          // What the Monday sample reads: the breadcrumb trail inside <main>, then the body.
+          const crumbText = `${COPY[l].nav.home} ${hub(l).h1} ${s.label[l]}`;
+          const repeats = (body) => repeatsPhrase(`${crumbText} ${htmlText(body)}`);
+          // The answer is built from the page's own facts, which the sourced list then states again,
+          // so a long name in several facts can become template filler (an 8-word phrase more than
+          // three times, the weekly sample's test). Remedies, gentlest first, stopping at the first
+          // page that does not repeat; pages without the repeat keep their full answer:
+          //   1. the full answer;  2. each long name in full once per block, then a short form (in the
+          //   answer, an agency the H1 already names in full takes its acronym at once);
+          //   3. the answer takes only the facts that keep the page clean;  4. the FAQ names the
+          //   sources by their web address;  5. an agency home-page link the sources already give is not
+          //   repeated;  6. a fact's closing "in <state>" after the first says "in the state".
+          //   Every fact stays listed with its official source.
+          const quotes = facts.map((f) => f.quote);
+          const shortList = shortenNames(claims, l, quotes);
+          const greedy = (shown, faq, links) => answerFrom(claims, tl, l, (pick) => !repeats(render(pick, shown, faq, links)), (xs) => shortenNames(xs, l, quotes));
+          // An official link to the home page of an agency the sources list already names and links.
+          const host = (u) => new URL(u).hostname.replace(/^www\./, '');
+          const fewer = extra.filter((x) => !srcs.some((g) => host(g.url) === host(x.url) && String(x[`label_${l}`] || x.label_en || '').startsWith(g.name)));
+          const stateList = shortenNames(claims, l, quotes, S);
+          const full = quotableAnswer(claims, tl, l);
+          const ladder = [
+            () => [full, claims, faqOf(publishers)],
+            () => [quotableAnswer(shortenNames(claims, l, quotes), tl, l), shortList, faqOf(publishers)],
+            () => [quotableAnswer(shortenNames(claims, l, quotes, '', h1), tl, l), shortList, faqOf(publishers)],
+            () => [greedy(shortList, faqOf(publishers)), shortList, faqOf(publishers)],
+            () => [greedy(shortList, faqOf(hosts)), shortList, faqOf(hosts)],
+            () => [greedy(shortList, faqOf(hosts), fewer), shortList, faqOf(hosts), fewer],
+            () => [greedy(stateList, faqOf(hosts), fewer), stateList, faqOf(hosts), fewer],
+          ];
+          let parts, body;
+          for (const step of ladder) { const p = step(); if (!p[0]) continue; parts = p; body = render(...p); if (!repeats(body)) break; }
+          if (repeats(body)) stops.push(`NAMED NOTE [REPEATED_PHRASE] ${k}/${s.data.subtopic}/${code} ${l}: an 8-word phrase still repeats 4+ times`);
+          const faq = parts[2];
           add({ path, alt, group: k, state: { folder: k, subtopic: s.data.subtopic, code, lang: l, facts: facts.length }, html: shell({ lang: l, path, alt, title, desc, body, speakable: true,
             crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path: P.sub(s, l) }, { name: S, path }],
             schema: [article(l, path, h1, desc, first, last, facts.map((f) => ({ name: f.source_name, url: f.source_url }))), faqSchema(l, faq), appSchema(l)] }) });
@@ -608,7 +660,7 @@ function alternativePages(add) {
       add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
         schema: [article(l, path, a.h1(app), a.desc(app), app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
     }
-    const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc(a.h1(app))}</a></li>`).join('')}</ul>`;
+    const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc((a.link ?? a.h1)(app))}</a></li>`).join('')}</ul>`;
     add({ path: idx, alt: { en: pathOf('alternatives', 'en'), es: pathOf('alternatives', 'es') }, group: 'core', html: page({ lang: l, id: 'alternatives', title: c.altIndexTitle, desc: c.altIndexDesc, body }) });
   }
   return [];
