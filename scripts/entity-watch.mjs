@@ -3,6 +3,7 @@
 // (404/410 or no answer) is NAMED STOP [SAMEAS_DEAD]: remove it from entity.json (the only place sameAs
 // is written) and land. Read-only, no credentials.
 import { readFileSync } from 'node:fs';
+import { sameAsVerdict } from './lib/sameas-status.mjs';
 const entity = JSON.parse(readFileSync(new URL('../site/data/entity.json', import.meta.url), 'utf8'));
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 const stops = [];
@@ -10,7 +11,9 @@ if (!entity.sameAs?.length) stops.push('NAMED STOP [SAMEAS_EMPTY] entity.json li
 for (const u of entity.sameAs || []) {
   const r = await fetch(u, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) }).catch((e) => ({ status: 0, statusText: e.message }));
   console.log(`sameAs ${u} -> ${r.status}`);
-  if (!(r.status >= 200 && r.status < 400)) stops.push(`NAMED STOP [SAMEAS_DEAD] ${u} answers ${r.status || r.statusText}: remove it from site/data/entity.json`);
+  const v = sameAsVerdict(r.status);
+  if (v === 'dead') stops.push(`NAMED STOP [SAMEAS_DEAD] ${u} answers ${r.status || r.statusText}: remove it from site/data/entity.json`);
+  else if (v === 'unverified') console.log(`note: ${u} answered ${r.status}; not proof it is gone, next week's run checks again`);
 }
 const html = await (await fetch(entity.url, { signal: AbortSignal.timeout(20000) })).text();
 const graph = JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html)?.[1] || '{"@graph":[]}')['@graph'];

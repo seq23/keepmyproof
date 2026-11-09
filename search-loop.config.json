@@ -228,5 +228,15 @@
         "https://support.google.com/files/answer/9935264?hl=en"
       ]
     }
+  },
+  "gate": {
+    "banned_patterns": [
+      "\\bcourt[\\s-]*ready\\b",
+      "\\badmissible\\b",
+      "\\bproves\\b",
+      "\\bbest\\b(?!\\s+interests?\\b)",
+      "\\bwin\\s+your\\s+case\\b"
+    ],
+    "why": "9 Nov 2026: three pages with 'proves'/'best' were committed, refused by site/build.mjs and turned main red. The same English words as site/lib/gate.mjs BANNED; the engine (v1.9.1) now drops such a page before committing it."
   }
 }
