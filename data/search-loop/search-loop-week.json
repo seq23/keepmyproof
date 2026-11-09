@@ -1,14 +1,14 @@
 {
   "schema": "search-loop-week-v1",
-  "week": "2026-W45",
+  "week": "2026-W46",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-08T14:12:48.995Z",
+  "generated_at": "2026-11-09T14:16:43.894Z",
   "state": "running",
-  "published": 16,
+  "published": 21,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 203,
+  "ai_bot_hits": 1029,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
@@ -26,16 +26,30 @@
       "strengthen": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
       "matched_by": "high token overlap (0.60 >= 0.6)",
       "at": "2026-11-07"
+    },
+    {
+      "query": "donde sacar acta de divorcio",
+      "strengthen": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-09"
     }
   ],
   "cap": {
     "max_live_pages": 20,
-    "live": 14,
-    "room": 6,
-    "why": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
+    "live": 19,
+    "room": 1,
+    "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "BUILD gate notes (not blocking): 3 published page(s) are outside a length or style aim; each is listed under gate_notes in pages.json"
+    "FIND bing_webmaster: not read: BING_WEBMASTER_API_KEY is not set",
+    "NAMED NOTE [CAP_HELD_NO_DATA] cap held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data",
+    "BUILD distinct gate: 1 search(es) had the same intent as an existing page and became strengthen briefs, not new pages (pages.json \"redirected\")",
+    "BUILD gate notes (not blocking): 5 published page(s) are outside a length or style aim; each is listed under gate_notes in pages.json",
+    "reshape of /questions/how-to-prepare-for-divorce-in-virginia/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)",
+    "reshape of /questions/how-to-prepare-divorce-documents-yourself/ left as it was: near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)",
+    "reshape of /questions/how-to-prepare-for-divorce-in-texas/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)",
+    "reshape of /questions/how-to-prepare-for-divorce-in-florida/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)",
+    "reshape of /questions/how-to-get-a-certified-copy-of-my-divorce-decree/ left as it was: near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.99); d2: a how-to page has no numbered steps"
   ],
   "lanes": {
     "ratio": {
@@ -43,7 +57,7 @@
       "striking": 1
     },
     "can_be_one": {
-      "pages": 0,
+      "pages": 5,
       "measured": 0,
       "top3": 0,
       "hit_rate": "not read: no page in this lane has reached its 2-week check yet"
@@ -61,7 +75,7 @@
       "demand": 10
     },
     "weight_changes": [],
-    "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+    "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42488683023"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42633090347"
 }

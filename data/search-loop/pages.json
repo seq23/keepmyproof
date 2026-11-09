@@ -30,7 +30,15 @@
         "b4 direct answer under the H1 is 30 words (aim 40-60)",
         "b9 504 words of visible text (aim 600+)"
       ],
-      "indexnow_at": "2026-11-06"
+      "indexnow_at": "2026-11-06",
+      "reshaped": {
+        "v": 1,
+        "at": "2026-11-09",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)"
+        ]
+      }
     },
     {
       "slug": "how-to-prove-adultery-in-the-military",
@@ -310,7 +318,15 @@
         }
       ],
       "checks": {},
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 1,
+        "at": "2026-11-09",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)"
+        ]
+      }
     },
     {
       "slug": "can-you-get-a-consent-order-before-divorce",
@@ -415,7 +431,15 @@
       "gate_notes": [
         "b4 direct answer under the H1 is 31 words (aim 40-60)"
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 1,
+        "at": "2026-11-09",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)"
+        ]
+      }
     },
     {
       "slug": "how-to-prepare-for-divorce-in-florida",
@@ -452,7 +476,15 @@
       "gate_notes": [
         "b4 direct answer under the H1 is 32 words (aim 40-60)"
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 1,
+        "at": "2026-11-09",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)"
+        ]
+      }
     },
     {
       "slug": "how-to-prepare-for-divorce-in-missouri",
@@ -495,7 +527,8 @@
       "gate_notes": [
         "b2 meta description is 118 chars (aim 120-160)",
         "b4 direct answer under the H1 is 32 words (aim 40-60)"
-      ]
+      ],
+      "indexnow_at": "2026-11-09"
     },
     {
       "slug": "how-to-prepare-for-divorce-in-massachusetts",
@@ -538,7 +571,8 @@
       "gate_notes": [
         "b4 direct answer under the H1 is 30 words (aim 40-60)",
         "b5 FAQ answer is 36 words (aim 40-60): \"Do I need a lawyer to file for divorce in Massachu\""
-      ]
+      ],
+      "indexnow_at": "2026-11-09"
     },
     {
       "slug": "how-to-write-a-workplace-harassment-complaint-letter",
@@ -569,6 +603,291 @@
         "b2 meta description is 113 chars (aim 120-160)",
         "b4 direct answer under the H1 is 35 words (aim 40-60)",
         "b5 FAQ answer is 32 words (aim 40-60): \"How long should the letter be?\""
+      ],
+      "indexnow_at": "2026-11-09"
+    },
+    {
+      "slug": "how-to-get-a-certified-copy-of-my-divorce-decree",
+      "query": "how to get a certified copy of my divorce decree",
+      "lane": "can_be_one",
+      "score": 46,
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 46
+      },
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/mississippi",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "rel": "site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/index.html",
+      "route": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "url": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "e5a5ba2b259b0a385c6315d8082a52192f8c2d61fe79f54cf54c3fdb277caf15",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/can-you-get-a-consent-order-before-divorce/index.html",
+          "route": "/site/questions/can-you-get-a-consent-order-before-divorce/",
+          "before_hash": "32fd683765e31eafbe74228974dd63bc4c5160260cf16ae6fcfbb2fba6711010",
+          "after_hash": "d7fd4496d55ab37303f0b11ce42edf103b62f7e3c2808fdf39ef753216806ba4"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 32 words (aim 40-60)",
+        "b5 FAQ answer is 38 words (aim 40-60): \"Can I get a certified copy online\"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"How much does a certified copy cost\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can KeepMyProof prepare or file my divorce papers\""
+      ],
+      "extra_queries": [
+        "donde sacar acta de divorcio"
+      ],
+      "reshaped": {
+        "v": 1,
+        "at": "2026-11-09",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.99)",
+          "d2: a how-to page has no numbered steps"
+        ]
+      }
+    },
+    {
+      "slug": "how-much-does-a-death-certificate-cost",
+      "query": "how much does a death certificate cost",
+      "lane": "can_be_one",
+      "score": 43.2,
+      "scores": {
+        "striking": 55.9,
+        "can_be_one": 43.2
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 3
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
+          ]
+        }
+      },
+      "rel": "site/questions/how-much-does-a-death-certificate-cost/index.html",
+      "route": "/questions/how-much-does-a-death-certificate-cost/",
+      "url": "https://keepmyproof.com/questions/how-much-does-a-death-certificate-cost/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "0bf4b0d078d39c68d7972e1b2a42a692f1ed034de5d620003cc1fd4e8580c8e3",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.va.gov/burials-memorials/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"Can I get a death certificate the same day?\""
+      ]
+    },
+    {
+      "slug": "can-a-16-year-old-work-night-shifts",
+      "query": "can a 16 year old work night shifts",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 8,
+          "parts_rows": 6
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/can-a-16-year-old-work-night-shifts/index.html",
+      "route": "/questions/can-a-16-year-old-work-night-shifts/",
+      "url": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "f1aa22d87875f4e0f7dd6814aa613c861550952beff2ad4087127635a4ce32b3",
+      "model": "free-route",
+      "facts": [
+        "https://www.dol.gov/agencies/whd/overtime",
+        "https://www.dol.gov/agencies/whd/state/contacts"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 108 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 30 words (aim 40-60)",
+        "b4 direct answer does not define: \"X is ...\"",
+        "b5 FAQ answer is 61 words (aim 40-60): \"can a 16 year old work past 10 pm on a school nigh\"",
+        "b9 581 words of visible text (aim 600+)"
+      ]
+    },
+    {
+      "slug": "certified-copy-of-death-certificate",
+      "query": "certified copy of death certificate",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 23.1,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/virginia",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/certified-copy-of-death-certificate/index.html",
+      "route": "/questions/certified-copy-of-death-certificate/",
+      "url": "https://keepmyproof.com/questions/certified-copy-of-death-certificate/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "bef919f920a939b3257f5c6b2ee982c575888c5009c269dce3f4e82149c3edca",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.irs.gov/individuals/deceased-taxpayers-filing-the-estate-income-tax-return-form-1041"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 106 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 36 words (aim 40-60)",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Can I get a certified copy online?\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"What if I need a copy for a VA disability claim?\""
+      ]
+    },
+    {
+      "slug": "how-do-i-get-my-moms-death-certificate",
+      "query": "how do i get my moms death certificate",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/how-do-i-get-my-moms-death-certificate/index.html",
+      "route": "/questions/how-do-i-get-my-moms-death-certificate/",
+      "url": "https://keepmyproof.com/questions/how-do-i-get-my-moms-death-certificate/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "2a96b7a3cffd6e0a352f321c5a7a403304dde199ed70329d96e1d93de53a006d",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 112 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 36 words (aim 40-60)",
+        "b5 FAQ answer is 65 words (aim 40-60): \"Can i get a death certificate for my mother if i l\"",
+        "b5 FAQ answer is 70 words (aim 40-60): \"What if the death happened many years ago\"",
+        "b5 FAQ answer is 65 words (aim 40-60): \"Do i need a reason to request a death certificate\"",
+        "b5 FAQ answer is 64 words (aim 40-60): \"Can i request a death certificate by phone\""
       ]
     }
   ],
@@ -1142,6 +1461,82 @@
         "b4 direct answer under the H1 is 25 words (aim 40-60)",
         "shape: the body needs at least one list or table (give one section \"bullets\")"
       ]
+    },
+    {
+      "query": "colorado small estate limit 2021",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 20 words (aim 40-60)",
+        "b5 FAQ has 2 questions (aim 3-6)",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I use the small estate procedure if there is a\"",
+        "b5 FAQ answer is 24 words (aim 40-60): \"What happens if the estate value exceeds the limit\""
+      ]
+    },
+    {
+      "query": "how long does a school have to complete an iep evaluation",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "arizona child labor laws 2026",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 25 words (aim 40-60): \"Can a 14-year-old work full-time in summer?\"",
+        "b5 FAQ answer is 20 words (aim 40-60): \"Do I need a work permit to start a job at 15?\"",
+        "b5 FAQ answer is 15 words (aim 40-60): \"What jobs are illegal for a 16-year-old?\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Do hour limits change when school is out?\""
+      ]
+    },
+    {
+      "query": "can i get a death certificate for anyone",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "child labor law hours",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "colorado disabled veteran property tax exemption",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 18 words (aim 40-60)",
+        "shape: the body needs at least one list or table (give one section \"bullets\")",
+        "invented: unsourced statistic \"Veterans with a 10% disability rating may qualify for a partial exemption, while\""
+      ]
+    },
+    {
+      "query": "colorado va regional office",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 20 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "death certificate massachusetts example",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)",
+        "invented: unsourced statistic \"You can also request one from the Massachusetts Registry of Vital Records and St\""
+      ]
     }
   ],
   "redirected": [
@@ -1164,6 +1559,16 @@
       "matched_by": "high token overlap (0.60 >= 0.6)",
       "matched_text": "how can you prove a hostile work environment",
       "stage": "search"
+    },
+    {
+      "query": "donde sacar acta de divorcio",
+      "at": "2026-11-09",
+      "url": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "route": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "how to get a certified copy of my divorce decree",
+      "stage": "draft"
     }
   ]
 }

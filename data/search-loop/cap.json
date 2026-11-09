@@ -2,8 +2,8 @@
   "schema": "search-loop-cap-v1",
   "max_live_pages": 20,
   "config_value": null,
-  "reason": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data",
-  "last_eval_week": "2026-W45",
+  "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data",
+  "last_eval_week": "2026-W46",
   "history": [
     {
       "at": "2026-11-03T14:54:50.955Z",
@@ -17,6 +17,13 @@
       "from": 20,
       "to": 20,
       "reason": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
+    },
+    {
+      "at": "2026-11-09T14:16:43.894Z",
+      "week": "2026-W46",
+      "from": 20,
+      "to": 20,
+      "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
     }
   ],
   "held": {}

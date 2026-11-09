@@ -1,0 +1,87 @@
+{
+  "h1": "How do I get a certified copy of my divorce decree",
+  "title_lead": "get a certified copy of my divorce decree",
+  "meta_description": "A certified copy is an official court document with a seal. It proves the legal end of your marriage for courts and agencies.",
+  "direct_answer": "A certified copy is a legal document issued by the court clerk that has the court's raised seal and the judge's signature. It is different from a plain copy you print yourself.",
+  "sections": [
+    {
+      "heading": "Where do I request a certified copy",
+      "paragraphs": [
+        "You get a certified copy from the court clerk in the county where your divorce was finalized. Most courts have an online request form on their website. If you do not know the county, check the original divorce papers the court mailed you.",
+        "Some courts let you walk in and request the document at the public counter. Others require you to mail a request form and a check or money order for the fee. Fees vary by county but are usually between twenty and fifty dollars.",
+        "If your divorce was very recent, the court may still be processing the final judgment. Wait at least thirty days after the judge signed the decree before requesting a copy.",
+        "KeepMyProof can store a copy of your decree in your private vault once you have the certified document. The vault is a locked app on your phone that keeps your papers safe and organized."
+      ],
+      "bullets": [
+        "Online request form on the court website",
+        "In-person at the court clerk's office",
+        "Mail request with fee and check or money order",
+        "Wait at least 30 days after the judge signs the decree"
+      ]
+    },
+    {
+      "heading": "What is the difference between a certified copy and a plain copy",
+      "paragraphs": [
+        "A plain copy is a photocopy or printout of the decree. It has no court seal and no official signature. Courts and government agencies will not accept a plain copy as proof of your divorce.",
+        "A certified copy has the court's raised seal and the clerk's signature. It proves the document is an exact copy of the original court file. You need a certified copy to change your name, to prove marital status for benefits, or to remarry.",
+        "If you only have a plain copy, you can usually request a certified copy later. The court will charge a fee for the certification.",
+        "KeepMyProof accepts both types of documents in your vault, but only a certified copy will satisfy a court or agency request for proof."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What if I lost my divorce decree",
+      "paragraphs": [
+        "If you cannot find your copy, start by checking with the court clerk in the county where the divorce was granted. They can search their records and issue a new certified copy.",
+        "Some courts have an online case search tool where you can look up your case by name or case number. If you find the case, you can request a copy from that page.",
+        "If the court closed its file years ago, you may need to contact the state vital records office. They often keep divorce records, but a certified copy from vital records is not the same as a court-certified decree.",
+        "KeepMyProof helps you keep a digital copy of your decree in your vault so you do not lose it again. You can upload the certified copy you receive from the court."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "How long does it take to get a certified copy",
+      "paragraphs": [
+        "If you request the copy in person, the court can often give it to you the same day or within a few business days.",
+        "If you mail your request, allow two to four weeks for the court to process it and send the document to you.",
+        "Some courts offer an expedited service for an extra fee. Check the court website to see if this option is available.",
+        "KeepMyProof cannot speed up the court process, but once you have the certified copy, you can upload it to your vault instantly."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I get a certified copy online",
+      "a": "Many courts have an online request form on their website. You fill out the form, pay the fee with a credit card, and the court mails the certified copy to you. Not all courts offer this service yet."
+    },
+    {
+      "q": "How much does a certified copy cost",
+      "a": "Fees vary by county but usually range from twenty to fifty dollars. The exact amount is listed on the court's website or you can call the clerk's office to ask."
+    },
+    {
+      "q": "What if I need a certified copy for a VA disability claim",
+      "a": "KeepMyProof is not affiliated with the VA. For VA claims, go to VA.gov to find free, VA-accredited representatives who can help you gather your divorce documents. They will tell you if a certified copy is needed for your specific claim."
+    },
+    {
+      "q": "Can KeepMyProof prepare or file my divorce papers",
+      "a": "No. KeepMyProof is a private vault for storing photos and documents. It does not prepare, file, or judge any legal documents. You must contact the court or a lawyer to handle filing."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "A certified copy of a divorce decree has the court's raised seal and the clerk's signature to prove it is an official document.",
+      "source_url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "source_name": "CDC National Center for Health Statistics",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Court fees for a certified copy of a divorce decree typically range from twenty to fifty dollars, but the exact amount depends on the county.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}
