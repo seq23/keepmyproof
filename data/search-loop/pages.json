@@ -32,8 +32,8 @@
       ],
       "indexnow_at": "2026-11-06",
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)"
@@ -320,8 +320,8 @@
       "checks": {},
       "indexnow_at": "2026-11-08",
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)"
@@ -433,8 +433,8 @@
       ],
       "indexnow_at": "2026-11-08",
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)"
@@ -478,8 +478,8 @@
       ],
       "indexnow_at": "2026-11-08",
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)"
@@ -678,14 +678,16 @@
         "donde sacar acta de divorcio"
       ],
       "reshaped": {
-        "v": 1,
-        "at": "2026-11-09",
+        "v": 2,
+        "at": "2026-11-10",
         "fixed": [],
         "left": [
-          "near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.99)",
+          "banned word for this site: \"proves\"",
+          "near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.97)",
           "d2: a how-to page has no numbered steps"
         ]
-      }
+      },
+      "indexnow_at": "2026-11-10"
     },
     {
       "slug": "how-much-does-a-death-certificate-cost",
@@ -744,7 +746,8 @@
       "checks": {},
       "gate_notes": [
         "b5 FAQ answer is 37 words (aim 40-60): \"Can I get a death certificate the same day?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-10"
     },
     {
       "slug": "can-a-16-year-old-work-night-shifts",
@@ -792,7 +795,17 @@
         "b4 direct answer does not define: \"X is ...\"",
         "b5 FAQ answer is 61 words (aim 40-60): \"can a 16 year old work past 10 pm on a school nigh\"",
         "b9 581 words of visible text (aim 600+)"
-      ]
+      ],
+      "indexnow_at": "2026-11-10",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "b4: the answer under the H1 defines nothing (\"X is ...\")",
+          "the writer cannot rewrite this lead in place; it changes when the page is strengthened"
+        ]
+      }
     },
     {
       "slug": "certified-copy-of-death-certificate",
@@ -839,7 +852,8 @@
         "b4 direct answer under the H1 is 36 words (aim 40-60)",
         "b5 FAQ answer is 39 words (aim 40-60): \"Can I get a certified copy online?\"",
         "b5 FAQ answer is 34 words (aim 40-60): \"What if I need a copy for a VA disability claim?\""
-      ]
+      ],
+      "indexnow_at": "2026-11-10"
     },
     {
       "slug": "how-do-i-get-my-moms-death-certificate",
@@ -888,7 +902,69 @@
         "b5 FAQ answer is 70 words (aim 40-60): \"What if the death happened many years ago\"",
         "b5 FAQ answer is 65 words (aim 40-60): \"Do i need a reason to request a death certificate\"",
         "b5 FAQ answer is 64 words (aim 40-60): \"Can i request a death certificate by phone\""
-      ]
+      ],
+      "indexnow_at": "2026-11-10"
+    },
+    {
+      "slug": "how-late-can-a-minor-work-on-a-school-night",
+      "query": "how late can a minor work on a school night",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 9",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 9,
+          "parts_rows": 7
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/how-late-can-a-minor-work-on-a-school-night/index.html",
+      "route": "/questions/how-late-can-a-minor-work-on-a-school-night/",
+      "url": "https://keepmyproof.com/questions/how-late-can-a-minor-work-on-a-school-night/",
+      "published_at": "2026-11-10",
+      "status": "live",
+      "hash": "4e3e8355d77f24db9ce9863558df29951f1b46d11b9a039734e58bba3b8c55b1",
+      "model": "free-route",
+      "facts": [
+        "https://www.dol.gov/agencies/whd/overtime",
+        "https://www.dol.gov/agencies/whd/state/contacts"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/can-a-16-year-old-work-night-shifts/index.html",
+          "route": "/site/questions/can-a-16-year-old-work-night-shifts/",
+          "before_hash": "f1aa22d87875f4e0f7dd6814aa613c861550952beff2ad4087127635a4ce32b3",
+          "after_hash": "53abf3e8face259d5cbfd5f01601fb5b55203dc021a5fc9c307d631646e0a824"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 31 words (aim 40-60)",
+        "b4 direct answer does not define: \"X is ...\""
+      ],
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "b4: the answer under the H1 defines nothing (\"X is ...\")",
+          "the writer cannot rewrite this lead in place; it changes when the page is strengthened"
+        ]
+      }
     }
   ],
   "dropped": [
