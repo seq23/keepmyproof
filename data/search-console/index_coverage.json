@@ -3601,15 +3601,915 @@
    "state": "Submitted and indexed",
    "last_crawl": "2026-11-04T01:52:02Z",
    "inspected_at": "2026-11-09T11:25:21.441Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:13:09Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:32:05Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:06:04Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:52:48Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:56:45Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:37:32Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:23:48Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:11:06Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:11:06Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:30:49Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:17:38Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:25:16Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:27:05Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/misuri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:28:01Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:12:38Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:15:10Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:19:55Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T20:58:08Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T15:06:36Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:19:43Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:41:48Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:08:36Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:31:46Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:09:52Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nuevo-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T15:24:04Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:03:19Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:27:58Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nuevo-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:55:19Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:19:34Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:18:02Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nueva-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:05:01Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:13:57Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:12:57Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/carolina-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T20:06:37Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:00:45Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:30:13Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:02:58Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:37:45Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:52:47Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:09:56Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:07:13Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:44:34Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:03:09Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:04:40Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T03:48:39Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-09T23:38:44Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:09:44Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T21:37:11Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:51:26Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:29:34Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:50:56Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T17:38:44Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:06:50Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:09:13Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:52:26Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:22:24Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:45:17Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:53:47Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T09:52:51Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T03:23:36Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:40:37Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:51:37Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:24:03Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/virginia-occidental": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:01:37Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T02:50:28Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/divorce/residency-and-where-to-file/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:06:51Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:50:18Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/divorce/residency-and-where-to-file/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:59:14Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/custody-log": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T02:08:32Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/registro-de-custodia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T02:21:01Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/custody-log": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T02:14:42Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/ko/custody-log": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T16:08:57Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/how-to-prepare-for-divorce": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:12:51Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/como-prepararse-para-el-divorcio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T05:12:40Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/how-to-prepare-for-divorce": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:33:18Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/preguntas/las-capturas-cuentan-como-prueba": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T03:00:17Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/questions/do-screenshots-count-as-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T05:29:56Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/ko/how-to-prepare-for-divorce": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T10:09:23Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/questions/do-screenshots-count-as-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T05:21:10Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/ko/questions/do-screenshots-count-as-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:38:57Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:18:27Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/pruebas-del-trabajo": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:36:49Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/zh/workplace-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:24:33Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/ko/workplace-evidence": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:30:12Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:10:54Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:40:47Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:00:33Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:29:49Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T10:06:13Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T19:38:24Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:58:59Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:15:09Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T13:03:06Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T21:29:16Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T07:38:22Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T11:36:32Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:08:11Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T09:23:07Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:19:35Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:07:47Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/maine": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/maine": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:36:05Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T05:41:41Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-09T21:28:30Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T22:53:15Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:09:40Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/nuevo-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-10T08:24:42Z",
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
+  },
+  "https://keepmyproof.com/es/trabajo/plazos-para-presentar-una-queja-por-discriminacion/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-10T11:25:24.690Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-09T11:25:21.441Z",
- "sitemap_urls": 2681,
- "inspected": 600,
+ "generated_at": "2026-11-10T11:25:24.690Z",
+ "sitemap_urls": 2686,
+ "inspected": 750,
  "states": {
-  "URL is unknown to Google": 12,
-  "Submitted and indexed": 564,
-  "Discovered - currently not indexed": 24
+  "URL is unknown to Google": 31,
+  "Submitted and indexed": 670,
+  "Discovered - currently not indexed": 49
  }
 }
