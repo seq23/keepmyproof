@@ -3,25 +3,25 @@
  "site": "https://keepmyproof.com",
  "property": "https://keepmyproof.com/",
  "window": {
-  "start": "2026-10-11",
-  "end": "2026-11-07"
+  "start": "2026-10-12",
+  "end": "2026-11-08"
  },
- "generated_at": "2026-11-10T11:25:24.690Z",
+ "generated_at": "2026-11-11T11:24:58.887Z",
  "totals": {
-  "rows": 1030,
-  "clicks": 1,
-  "impressions": 1994,
-  "queries": 751,
-  "pages": 317
+  "rows": 1234,
+  "clicks": 2,
+  "impressions": 2542,
+  "queries": 924,
+  "pages": 364
  },
  "rows": [
   {
    "query": "veterans affairs office",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
-   "clicks": 1,
-   "impressions": 3,
-   "ctr": 0.3333,
-   "position": 16.7
+   "clicks": 2,
+   "impressions": 4,
+   "ctr": 0.5,
+   "position": 15
   },
   {
    "query": "100 percent disabled veterans benefits california",
@@ -40,12 +40,20 @@
    "position": 26
   },
   {
+   "query": "1722 i street nw washington dc",
+   "page": "https://keepmyproof.com/va/va-regional-office/district-of-columbia",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 53
+  },
+  {
    "query": "40 disabled veteran benefits colorado",
    "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/colorado",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 12
+   "position": 20.5
   },
   {
    "query": "a copy of divorce papers",
@@ -54,6 +62,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "aarp executor checklist",
+   "page": "https://keepmyproof.com/executor-checklist",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 58
   },
   {
    "query": "address for va",
@@ -139,9 +155,9 @@
    "query": "arizona parenting plan",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/arizona",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 97
+   "position": 88
   },
   {
    "query": "arizona veterans",
@@ -155,9 +171,41 @@
    "query": "arkansas death certificates",
    "page": "https://keepmyproof.com/executor/death-certificates/arkansas",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 48
+   "position": 45.7
+  },
+  {
+   "query": "arkansas work laws",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arkansas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 50
+  },
+  {
+   "query": "ask resource center",
+   "page": "https://keepmyproof.com/iep/parent-training-center/iowa",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 45
+  },
+  {
+   "query": "ayuda pago impuesto a la propiedad en carolina del norte",
+   "page": "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/carolina-del-norte",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 40
+  },
+  {
+   "query": "benefit administration houston",
+   "page": "https://keepmyproof.com/va/va-regional-office/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 37
   },
   {
    "query": "blank california death certificate",
@@ -192,6 +240,14 @@
    "position": 19
   },
   {
+   "query": "california child labor law notice",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
+  },
+  {
    "query": "california death certificates",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
@@ -208,12 +264,36 @@
    "position": 74
   },
   {
+   "query": "california living trust executor responsibilities",
+   "page": "https://keepmyproof.com/executor/executor-duties/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 72
+  },
+  {
+   "query": "california probate self help",
+   "page": "https://keepmyproof.com/executor/probate-process/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 98
+  },
+  {
    "query": "california small estate affidavit",
    "page": "https://keepmyproof.com/executor/small-estate/california",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 72
+  },
+  {
+   "query": "california va regional office",
+   "page": "https://keepmyproof.com/va/va-regional-office/california",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 20
   },
   {
    "query": "can a 16 year old work full time in texas",
@@ -238,6 +318,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 48
+  },
+  {
+   "query": "can anyone get a death certificate copy",
+   "page": "https://keepmyproof.com/executor/death-certificates/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
   },
   {
    "query": "can i get a copy of my divorce decree online",
@@ -270,6 +358,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "can you get a copy of your divorce papers online",
+   "page": "https://keepmyproof.com/divorce/divorce-records/maine",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
   },
   {
    "query": "can you get a job at 15 in texas",
@@ -483,9 +579,9 @@
    "query": "child custody and criminal records in arizona",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/arizona",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 6,
    "ctr": 0,
-   "position": 12
+   "position": 11.3
   },
   {
    "query": "child custody checklist",
@@ -531,9 +627,9 @@
    "query": "child custody hawaii forms",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/hawaii",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 99
+   "position": 98.5
   },
   {
    "query": "child custody in missouri",
@@ -563,9 +659,9 @@
    "query": "child custody madison wv",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/west-virginia",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 48
+   "position": 48.4
   },
   {
    "query": "child custody parenting plan maryland",
@@ -720,12 +816,28 @@
    "position": 100
   },
   {
+   "query": "child support in hawaii",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 94.5
+  },
+  {
    "query": "child support in massachusetts",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/massachusetts",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 62
+  },
+  {
+   "query": "child support in oregon",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/oregon",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 51
   },
   {
    "query": "child support laws in north carolina",
@@ -755,9 +867,17 @@
    "query": "child support maui",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 6,
    "ctr": 0,
-   "position": 92.3
+   "position": 88.7
+  },
+  {
+   "query": "child support md",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/maryland",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 75
   },
   {
    "query": "child support monroe la",
@@ -776,12 +896,20 @@
    "position": 98.5
   },
   {
+   "query": "child support questions hawaii",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
    "query": "child support utah",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/utah",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 90
+   "position": 89.5
   },
   {
    "query": "child visitation mansfield ct",
@@ -827,9 +955,9 @@
    "query": "co minimum wage",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 92.8
+   "position": 83
   },
   {
    "query": "colorado civil protection order",
@@ -843,9 +971,9 @@
    "query": "colorado civil protection orders in domestic relations matters",
    "page": "https://keepmyproof.com/divorce/protective-orders/colorado",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 65.5
+   "position": 65
   },
   {
    "query": "colorado disabled veteran property tax exemption",
@@ -872,28 +1000,36 @@
    "position": 81.8
   },
   {
+   "query": "colorado minimum wage withholding",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 21
+  },
+  {
    "query": "colorado protection order",
    "page": "https://keepmyproof.com/divorce/protective-orders/colorado",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 81.3
+   "position": 81.5
   },
   {
    "query": "colorado restraining order",
    "page": "https://keepmyproof.com/divorce/protective-orders/colorado",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 77
+   "position": 84.7
   },
   {
    "query": "colorado small estate limit 2021",
    "page": "https://keepmyproof.com/executor/small-estate/colorado",
    "clicks": 0,
-   "impressions": 18,
+   "impressions": 22,
    "ctr": 0,
-   "position": 13.4
+   "position": 13.5
   },
   {
    "query": "colorado va regional office",
@@ -902,6 +1038,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "colorado va unemployability claim",
+   "page": "https://keepmyproof.com/va/free-claim-help/colorado",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 28
   },
   {
    "query": "colorado waiter minimum wage",
@@ -918,6 +1062,22 @@
    "impressions": 1,
    "ctr": 0,
    "position": 51
+  },
+  {
+   "query": "como divorciarse en texas",
+   "page": "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 80
+  },
+  {
+   "query": "connecticut probate process",
+   "page": "https://keepmyproof.com/executor/probate-process/connecticut",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
   },
   {
    "query": "connecticut restraining orders",
@@ -1008,6 +1168,14 @@
    "position": 89
   },
   {
+   "query": "cual es el minimo en texas",
+   "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 32
+  },
+  {
    "query": "cuantos breaks en el trabajo en california",
    "page": "https://keepmyproof.com/es/trabajo/reglas-sobre-descansos-y-periodos-de-comida/california",
    "clicks": 0,
@@ -1043,9 +1211,9 @@
    "query": "custody new mexico",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/new-mexico",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 96
+   "position": 97.5
   },
   {
    "query": "custody relocation laws in maine",
@@ -1056,28 +1224,44 @@
    "position": 91
   },
   {
+   "query": "cuánto es el salario mínimo en texas",
+   "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/texas",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 33.5
+  },
+  {
+   "query": "cómo divorciarse en nueva york",
+   "page": "https://keepmyproof.com/es/divorcio/requisitos-de-residencia-para-el-divorcio/nueva-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 42
+  },
+  {
    "query": "cómo obtener una orden de protección en nueva york",
    "page": "https://keepmyproof.com/es/divorcio/ordenes-de-proteccion-por-violencia-domestica/nueva-york",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 6,
    "ctr": 0,
-   "position": 71.8
+   "position": 66.8
   },
   {
    "query": "cómo se decide la custodia en nueva york",
    "page": "https://keepmyproof.com/es/divorcio/como-funciona-la-manutencion-de-los-hijos/nueva-york",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 6,
    "ctr": 0,
-   "position": 61.3
+   "position": 64
   },
   {
    "query": "cómo se decide la custodia en nueva york",
    "page": "https://keepmyproof.com/es/divorcio/custodia-de-los-hijos-y-planes/nueva-york",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 7,
    "ctr": 0,
-   "position": 39.2
+   "position": 41.1
   },
   {
    "query": "dc custody court",
@@ -1094,6 +1278,22 @@
    "impressions": 1,
    "ctr": 0,
    "position": 72
+  },
+  {
+   "query": "dcfs.louisiana.gov child support",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/louisiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 63
+  },
+  {
+   "query": "death cert price",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
   },
   {
    "query": "death certifcate",
@@ -1163,25 +1363,25 @@
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
-   "impressions": 21,
+   "impressions": 24,
    "ctr": 0,
-   "position": 52
+   "position": 52.6
   },
   {
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/colorado",
    "clicks": 0,
-   "impressions": 22,
+   "impressions": 23,
    "ctr": 0,
-   "position": 51.7
+   "position": 51.8
   },
   {
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/georgia",
    "clicks": 0,
-   "impressions": 19,
+   "impressions": 23,
    "ctr": 0,
-   "position": 52.8
+   "position": 52.4
   },
   {
    "query": "death certificate",
@@ -1195,33 +1395,33 @@
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/indiana",
    "clicks": 0,
-   "impressions": 28,
+   "impressions": 33,
    "ctr": 0,
-   "position": 41.8
+   "position": 43.4
   },
   {
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
    "clicks": 0,
-   "impressions": 24,
+   "impressions": 27,
    "ctr": 0,
-   "position": 44.8
+   "position": 44.6
   },
   {
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/louisiana",
    "clicks": 0,
-   "impressions": 27,
+   "impressions": 30,
    "ctr": 0,
-   "position": 49.2
+   "position": 49.5
   },
   {
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 26,
+   "impressions": 30,
    "ctr": 0,
-   "position": 42.4
+   "position": 42.1
   },
   {
    "query": "death certificate",
@@ -1235,9 +1435,25 @@
    "query": "death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
-   "impressions": 28,
+   "impressions": 32,
    "ctr": 0,
-   "position": 41.5
+   "position": 41.3
+  },
+  {
+   "query": "death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/south-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 51
+  },
+  {
+   "query": "death certificate bethesda",
+   "page": "https://keepmyproof.com/executor/death-certificates/maryland",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 31
   },
   {
    "query": "death certificate boston ma",
@@ -1256,12 +1472,36 @@
    "position": 19
   },
   {
+   "query": "death certificate delaware",
+   "page": "https://keepmyproof.com/executor/death-certificates/delaware",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 73
+  },
+  {
    "query": "death certificate download",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
    "impressions": 2,
    "ctr": 0,
    "position": 10
+  },
+  {
+   "query": "death certificate in nj",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 76
+  },
+  {
+   "query": "death certificate in pa",
+   "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 74
   },
   {
    "query": "death certificate massachusetts example",
@@ -1280,6 +1520,14 @@
    "position": 70
   },
   {
+   "query": "death certificate nj",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 71
+  },
+  {
    "query": "death certificate ocr",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
@@ -1296,6 +1544,14 @@
    "position": 33
   },
   {
+   "query": "death certificate oklahoma",
+   "page": "https://keepmyproof.com/executor/death-certificates/oklahoma",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
    "query": "death certificate online",
    "page": "https://keepmyproof.com/executor/death-certificates/new-york",
    "clicks": 0,
@@ -1304,12 +1560,20 @@
    "position": 28
   },
   {
+   "query": "death certificate philadelphia pa",
+   "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 66
+  },
+  {
    "query": "death certificate rockville",
    "page": "https://keepmyproof.com/executor/death-certificates/delaware",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 87.5
+   "position": 87.7
   },
   {
    "query": "death certificate virginia",
@@ -1355,9 +1619,9 @@
    "query": "death certificates",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 43
+   "position": 53
   },
   {
    "query": "death certificates",
@@ -1392,12 +1656,44 @@
    "position": 46
   },
   {
+   "query": "death certificates pa",
+   "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 78
+  },
+  {
+   "query": "death certificates pennsylvania",
+   "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 87
+  },
+  {
    "query": "death certificates texas",
    "page": "https://keepmyproof.com/executor/death-certificates/texas",
    "clicks": 0,
    "impressions": 2,
    "ctr": 0,
    "position": 63
+  },
+  {
+   "query": "death certificates:",
+   "page": "https://keepmyproof.com/executor/death-certificates/missouri",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
+   "query": "death record michigan",
+   "page": "https://keepmyproof.com/executor/death-certificates/michigan",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
   },
   {
    "query": "death records massachusetts",
@@ -1419,9 +1715,9 @@
    "query": "denver small estate affidavit attorney",
    "page": "https://keepmyproof.com/executor/small-estate/colorado",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 54
+   "position": 55.7
   },
   {
    "query": "department of child support",
@@ -1576,6 +1872,14 @@
    "position": 52
   },
   {
+   "query": "detroit veterans affairs",
+   "page": "https://keepmyproof.com/va/va-regional-office/michigan",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 49
+  },
+  {
    "query": "disability homestead exemption",
    "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/georgia",
    "clicks": 0,
@@ -1608,12 +1912,28 @@
    "position": 87
   },
   {
+   "query": "district of columbia divorce records",
+   "page": "https://keepmyproof.com/divorce/divorce-records/district-of-columbia",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5
+  },
+  {
    "query": "divorce certificate illinois",
    "page": "https://keepmyproof.com/divorce/divorce-records/illinois",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 89
+  },
+  {
+   "query": "divorce checklist",
+   "page": "https://keepmyproof.com/divorce-document-checklist",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
   },
   {
    "query": "divorce checklist new york",
@@ -1656,6 +1976,14 @@
    "position": 76
   },
   {
+   "query": "divorce in ohio",
+   "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/ohio",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
+  },
+  {
    "query": "divorce in utah records",
    "page": "https://keepmyproof.com/divorce/divorce-records/utah",
    "clicks": 0,
@@ -1683,9 +2011,17 @@
    "query": "divorce records las vegas",
    "page": "https://keepmyproof.com/divorce/divorce-records/nevada",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 23.5
+   "position": 24
+  },
+  {
+   "query": "divorce records mn",
+   "page": "https://keepmyproof.com/divorce/divorce-records/minnesota",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 35
   },
   {
    "query": "divorce records nebraska",
@@ -1747,17 +2083,17 @@
    "query": "documents needed for probate connecticut",
    "page": "https://keepmyproof.com/executor/probate-process/connecticut",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 12,
    "ctr": 0,
-   "position": 93.8
+   "position": 94.8
   },
   {
    "query": "documents needed for probate connecticut",
    "page": "https://keepmyproof.com/executor/small-estate/connecticut",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 6,
    "ctr": 0,
-   "position": 93
+   "position": 95.3
   },
   {
    "query": "doe evaluation",
@@ -1766,6 +2102,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "does a employer have to pay overtime",
+   "page": "https://keepmyproof.com/workplace/overtime-rules/illinois",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 67
   },
   {
    "query": "does it cost money to get a death certificate",
@@ -1795,9 +2139,9 @@
    "query": "dss child support",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/nevada",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 3,
    "ctr": 0,
-   "position": 11
+   "position": 8.3
   },
   {
    "query": "duplicate death certificate",
@@ -1827,9 +2171,9 @@
    "query": "employee benefits administration houston",
    "page": "https://keepmyproof.com/va/va-regional-office/texas",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 63
+   "position": 71
   },
   {
    "query": "employee break laws mn",
@@ -1899,9 +2243,9 @@
    "query": "executor of estate maryland",
    "page": "https://keepmyproof.com/executor/executor-duties/maryland",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 80
+   "position": 82
   },
   {
    "query": "executor of estate south carolina",
@@ -1923,15 +2267,15 @@
    "query": "family training columbia sc",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 14.5
+   "position": 14.3
   },
   {
    "query": "family training lee sc",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
    "position": 13
   },
@@ -1939,7 +2283,7 @@
    "query": "family training sc",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
    "position": 23
   },
@@ -1947,17 +2291,25 @@
    "query": "family training south carolina",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 21.3
+   "position": 22
   },
   {
    "query": "family training union sc",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 18
+  },
+  {
+   "query": "federal tax benefits disabled veterans",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/texas",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 20
+   "position": 81
   },
   {
    "query": "filing for divorce in ri",
@@ -1971,9 +2323,17 @@
    "query": "final paycheck laws colorado",
    "page": "https://keepmyproof.com/workplace/unpaid-wages-and-final-paycheck/colorado",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 90
+  },
+  {
+   "query": "fl dept of veterans affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/florida",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 89
+   "position": 27
   },
   {
    "query": "florida death certificates",
@@ -1982,6 +2342,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 63
+  },
+  {
+   "query": "florida minimum wage for tipped employees",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/florida",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 84
   },
   {
    "query": "forsyth county death certificates",
@@ -2152,6 +2520,14 @@
    "position": 91
   },
   {
+   "query": "free va claims assistance for veterans",
+   "page": "https://keepmyproof.com/va/free-claim-help/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 77
+  },
+  {
    "query": "full custody nh",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/new-hampshire",
    "clicks": 0,
@@ -2176,12 +2552,20 @@
    "position": 94
   },
   {
-   "query": "georgia last paycheck laws",
-   "page": "https://keepmyproof.com/workplace/unpaid-wages-and-final-paycheck/georgia",
+   "query": "georgia labor laws for minors",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 90
+   "position": 25
+  },
+  {
+   "query": "georgia last paycheck laws",
+   "page": "https://keepmyproof.com/workplace/unpaid-wages-and-final-paycheck/georgia",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 89
   },
   {
    "query": "georgia small estate affidavit",
@@ -2190,6 +2574,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 101
+  },
+  {
+   "query": "georgia va regional office",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/georgia",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 22
   },
   {
    "query": "georgia veteran homestead exemption 1964",
@@ -2227,9 +2619,17 @@
    "query": "hawaii child support guidelines",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 85
+   "position": 79
+  },
+  {
+   "query": "hawaii child support laws",
+   "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 77
   },
   {
    "query": "hawaii overtime law",
@@ -2259,9 +2659,17 @@
    "query": "help for parents sc",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 24
+  },
+  {
+   "query": "help with claim in south carolina",
+   "page": "https://keepmyproof.com/va/free-claim-help/south-carolina",
+   "clicks": 0,
    "impressions": 2,
    "ctr": 0,
-   "position": 23
+   "position": 56.5
   },
   {
    "query": "help with va claims",
@@ -2275,9 +2683,9 @@
    "query": "help with veterans claims",
    "page": "https://keepmyproof.com/va/free-claim-help/colorado",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 7,
    "ctr": 0,
-   "position": 73
+   "position": 73.3
   },
   {
    "query": "help with veterans claims",
@@ -2294,6 +2702,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 77.5
+  },
+  {
+   "query": "horas extras no pagadas en miami",
+   "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/florida",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 52.5
   },
   {
    "query": "how can i get a copy of my divorce papers",
@@ -2366,6 +2782,78 @@
    "impressions": 1,
    "ctr": 0,
    "position": 94
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 95
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 93
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/indiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 87
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 86
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/louisiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 91
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/missouri",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 88
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 85
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/tennessee",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 92
+  },
+  {
+   "query": "how do i get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 83
   },
   {
    "query": "how do i get a copy of my divorce papers",
@@ -2504,12 +2992,20 @@
    "position": 97
   },
   {
+   "query": "how do you get a death certificate in nj",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 77
+  },
+  {
    "query": "how do you get a restraining order in georgia",
    "page": "https://keepmyproof.com/divorce/protective-orders/georgia",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 47.5
+   "position": 48
   },
   {
    "query": "how does child support work in ohio",
@@ -2534,6 +3030,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 9
+  },
+  {
+   "query": "how late can 16 year olds work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/nebraska",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6
   },
   {
    "query": "how late can 16 year olds work",
@@ -2584,6 +3088,14 @@
    "position": 11
   },
   {
+   "query": "how long can a 17 year old work a day",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
    "query": "how long can a teen work per week",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/minnesota",
    "clicks": 0,
@@ -2608,6 +3120,14 @@
    "position": 8
   },
   {
+   "query": "how long does a tro last in hawaii",
+   "page": "https://keepmyproof.com/divorce/protective-orders/hawaii",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 98
+  },
+  {
    "query": "how long does it take to get a death certificate in nc",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
@@ -2624,12 +3144,52 @@
    "position": 64
   },
   {
+   "query": "how long should you keep divorce papers",
+   "page": "https://keepmyproof.com/how-to-prepare-for-divorce",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
+  },
+  {
+   "query": "how many copies of death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
    "query": "how many copies of death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 88
+  },
+  {
+   "query": "how many copies of death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/missouri",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 98
+  },
+  {
+   "query": "how many copies of death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/south-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 100
+  },
+  {
+   "query": "how many copies of death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
   },
   {
    "query": "how many days a week can a minor work",
@@ -2643,9 +3203,9 @@
    "query": "how many death certificates are needed",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 7,
+   "impressions": 9,
    "ctr": 0,
-   "position": 67.9
+   "position": 68.1
   },
   {
    "query": "how many death certificates do i need",
@@ -2723,9 +3283,9 @@
    "query": "how many death certificates do i need",
    "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 75.6
+   "position": 78.8
   },
   {
    "query": "how many death certificates do i need",
@@ -2739,9 +3299,9 @@
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/alabama",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 5,
    "ctr": 0,
-   "position": 63
+   "position": 62.6
   },
   {
    "query": "how many death certificates will i need",
@@ -2750,6 +3310,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 64.5
+  },
+  {
+   "query": "how many death certificates will i need",
+   "page": "https://keepmyproof.com/executor/death-certificates/california",
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 66.3
   },
   {
    "query": "how many death certificates will i need",
@@ -2763,9 +3331,9 @@
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/georgia",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 6,
    "ctr": 0,
-   "position": 68
+   "position": 65.8
   },
   {
    "query": "how many death certificates will i need",
@@ -2779,25 +3347,25 @@
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 6,
    "ctr": 0,
-   "position": 57.5
+   "position": 59.2
   },
   {
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 5,
    "ctr": 0,
-   "position": 63
+   "position": 60.4
   },
   {
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 7,
    "ctr": 0,
-   "position": 63.7
+   "position": 61
   },
   {
    "query": "how many death certificates will i need",
@@ -2811,17 +3379,41 @@
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 7,
    "ctr": 0,
-   "position": 84.8
+   "position": 66.1
+  },
+  {
+   "query": "how many death certificates will i need",
+   "page": "https://keepmyproof.com/executor/death-certificates/south-carolina",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 61
   },
   {
    "query": "how many death certificates will i need",
    "page": "https://keepmyproof.com/executor/death-certificates/virginia",
    "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 44
+  },
+  {
+   "query": "how many hours a day can a 17 year old work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 46
+   "position": 11
+  },
+  {
+   "query": "how many hours a week can a 15 year old work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
   },
   {
    "query": "how many hours a week can a minor work during school",
@@ -2851,9 +3443,17 @@
    "query": "how many hours can 16 year olds work a week",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 37.5
+  },
+  {
+   "query": "how many hours can 16 year olds work a week",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/washington",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 11
+   "position": 65
   },
   {
    "query": "how many hours can 17 year old work",
@@ -2878,6 +3478,22 @@
    "impressions": 1,
    "ctr": 0,
    "position": 10
+  },
+  {
+   "query": "how many hours can a 16 year old work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "how many hours can a 17 year old work in massachusetts",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11
   },
   {
    "query": "how many hours can a 18 year old work while in school",
@@ -2939,9 +3555,9 @@
    "query": "how many hours can a teen work a week",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 10.3
+   "position": 10.4
   },
   {
    "query": "how many hours can a teen work a week",
@@ -2961,11 +3577,35 @@
   },
   {
    "query": "how many hours can a teen work a week",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "how many hours can a teen work a week",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "how many hours can a teen work a week",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/vermont",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "query": "how many hours can a teenager work per week",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
   },
   {
    "query": "how many hours can an 18 year old work",
@@ -2974,6 +3614,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 10
+  },
+  {
+   "query": "how many hours can i work at 15",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
   },
   {
    "query": "how many hours can i work at 17 during school",
@@ -3000,6 +3648,14 @@
    "position": 9
   },
   {
+   "query": "how many hours should a 17 year old work a week",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
    "query": "how much do death certificates cost",
    "page": "https://keepmyproof.com/executor/death-certificates/idaho",
    "clicks": 0,
@@ -3019,9 +3675,17 @@
    "query": "how much does a death certificate cost in florida",
    "page": "https://keepmyproof.com/executor/death-certificates/florida",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "how much does death certificates cost",
+   "page": "https://keepmyproof.com/executor/death-certificates/south-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 73
   },
   {
    "query": "how much does it cost for death certificate",
@@ -3080,6 +3744,14 @@
    "position": 10
   },
   {
+   "query": "how much is a death certificate in indiana",
+   "page": "https://keepmyproof.com/executor/death-certificates/indiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
    "query": "how much is child support in hawaii",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
    "clicks": 0,
@@ -3115,17 +3787,17 @@
    "query": "how to file for divorce in ohio",
    "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 97
+   "position": 97.5
   },
   {
    "query": "how to file for divorce in west virginia",
    "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/west-virginia",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 8,
    "ctr": 0,
-   "position": 113.5
+   "position": 118.9
   },
   {
    "query": "how to file harassment charges in arkansas",
@@ -3171,17 +3843,17 @@
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/colorado",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 89
+   "position": 92
   },
   {
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/georgia",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 94
+   "position": 97
   },
   {
    "query": "how to get a copy of a death certificate",
@@ -3195,25 +3867,25 @@
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/indiana",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 83
+   "position": 86
   },
   {
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 85
+   "position": 88.5
   },
   {
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/louisiana",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 95
+   "position": 95.5
   },
   {
    "query": "how to get a copy of a death certificate",
@@ -3227,25 +3899,33 @@
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 90
+  },
+  {
+   "query": "how to get a copy of a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/ohio",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 86
+   "position": 7
   },
   {
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/virginia",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 80
+   "position": 83
   },
   {
    "query": "how to get a copy of a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/washington",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 97
+   "position": 95
   },
   {
    "query": "how to get a copy of divorce decree in ohio",
@@ -3254,6 +3934,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 34
+  },
+  {
+   "query": "how to get a copy of divorce papers",
+   "page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
   },
   {
    "query": "how to get a copy of divorce papers in illinois",
@@ -3275,9 +3963,9 @@
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
-   "impressions": 8,
+   "impressions": 9,
    "ctr": 0,
-   "position": 65.6
+   "position": 69.3
   },
   {
    "query": "how to get a death certificate",
@@ -3307,33 +3995,33 @@
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/kentucky",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 10,
    "ctr": 0,
-   "position": 67.9
+   "position": 65.8
   },
   {
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/louisiana",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 94.5
+   "position": 77
   },
   {
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 52
+   "position": 50.8
   },
   {
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
-   "impressions": 10,
+   "impressions": 11,
    "ctr": 0,
-   "position": 67.7
+   "position": 66.1
   },
   {
    "query": "how to get a death certificate",
@@ -3342,6 +4030,14 @@
    "impressions": 4,
    "ctr": 0,
    "position": 53.8
+  },
+  {
+   "query": "how to get a death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/south-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 49
   },
   {
    "query": "how to get a death certificate",
@@ -3355,9 +4051,9 @@
    "query": "how to get a death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/virginia",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 48.8
+   "position": 48.3
   },
   {
    "query": "how to get a death certificate",
@@ -3366,6 +4062,14 @@
    "impressions": 3,
    "ctr": 0,
    "position": 57.7
+  },
+  {
+   "query": "how to get a death certificate in nc",
+   "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 75
   },
   {
    "query": "how to get a protective order in georgia",
@@ -3387,17 +4091,17 @@
    "query": "how to get a restraining order in hawaii",
    "page": "https://keepmyproof.com/divorce/protective-orders/hawaii",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 5,
    "ctr": 0,
-   "position": 79.3
+   "position": 78.6
   },
   {
    "query": "how to get a restraining order in reno nevada",
    "page": "https://keepmyproof.com/divorce/protective-orders/nevada",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 12,
    "ctr": 0,
-   "position": 88.6
+   "position": 87.5
   },
   {
    "query": "how to get a restraining order utah",
@@ -3408,12 +4112,36 @@
    "position": 88
   },
   {
+   "query": "how to get a work permit as a minor",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "how to get a work permit for minors",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arkansas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 16
+  },
+  {
    "query": "how to get a work permit in maryland",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
    "clicks": 0,
-   "impressions": 8,
+   "impressions": 13,
    "ctr": 0,
-   "position": 49.8
+   "position": 53.2
+  },
+  {
+   "query": "how to get a work permit in texas",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
   },
   {
    "query": "how to get a workers permit at 14",
@@ -3531,9 +4259,17 @@
    "query": "how to hide photos in camera roll",
    "page": "https://keepmyproof.com/hide-pictures-from-camera-roll",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 10.7
+   "position": 10.5
+  },
+  {
+   "query": "how to hide pictures in camera roll",
+   "page": "https://keepmyproof.com/hide-pictures-from-camera-roll",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
   },
   {
    "query": "how to look up divorce records in utah",
@@ -3550,6 +4286,22 @@
    "impressions": 1,
    "ctr": 0,
    "position": 69
+  },
+  {
+   "query": "how to obtain copy of divorce decree",
+   "page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 88
+  },
+  {
+   "query": "how to open an estate in maryland",
+   "page": "https://keepmyproof.com/executor/small-estate/maryland",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 78
   },
   {
    "query": "how to order a death certificate",
@@ -3632,6 +4384,22 @@
    "position": 11
   },
   {
+   "query": "how to retrieve divorce papers",
+   "page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 54
+  },
+  {
+   "query": "how to transfer a mobile home title after death",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/texas",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 98.5
+  },
+  {
    "query": "iep binder for parents",
    "page": "https://keepmyproof.com/iep-binder",
    "clicks": 0,
@@ -3648,12 +4416,36 @@
    "position": 7
   },
   {
+   "query": "iep meeting checklist",
+   "page": "https://keepmyproof.com/iep-meeting-checklist",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 86.5
+  },
+  {
+   "query": "iep meeting checklist for parents",
+   "page": "https://keepmyproof.com/iep-meeting-checklist",
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 86.6
+  },
+  {
    "query": "iep resources",
    "page": "https://keepmyproof.com/iep/parent-training-center/california",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 74
+  },
+  {
+   "query": "iep resources",
+   "page": "https://keepmyproof.com/iep/parent-training-center/texas",
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 98.3
   },
   {
    "query": "iep testing murray",
@@ -3720,6 +4512,22 @@
    "position": 47
   },
   {
+   "query": "impuesto vivienda carolina del norte",
+   "page": "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/carolina-del-norte",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 45.5
+  },
+  {
+   "query": "indiana death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/indiana",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 76.5
+  },
+  {
    "query": "indiana property tax for 100 disabled veterans",
    "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/indiana",
    "clicks": 0,
@@ -3747,25 +4555,25 @@
    "query": "intervention in wyoming",
    "page": "https://keepmyproof.com/iep/early-intervention-to-iep/wyoming",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 75.5
+   "position": 80
   },
   {
    "query": "iowa death records",
    "page": "https://keepmyproof.com/executor/death-certificates/iowa",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 23.5
+   "position": 25
   },
   {
    "query": "is overtime mandatory in nj",
    "page": "https://keepmyproof.com/workplace/overtime-rules/new-jersey",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 46
+   "position": 56
   },
   {
    "query": "joint custody kansas",
@@ -3776,12 +4584,20 @@
    "position": 90
   },
   {
+   "query": "kansas divorce",
+   "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/kansas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
    "query": "kansas parenting plan",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/kansas",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 93
+   "position": 94
   },
   {
    "query": "kansas parenting time guidelines",
@@ -3811,9 +4627,9 @@
    "query": "kansas transfer on death deed",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/kansas",
    "clicks": 0,
-   "impressions": 7,
+   "impressions": 8,
    "ctr": 0,
-   "position": 44.1
+   "position": 43.4
   },
   {
    "query": "kansas transfer on death deed form",
@@ -3851,9 +4667,25 @@
    "query": "labor board laws in louisiana",
    "page": "https://keepmyproof.com/workplace/minimum-wage/louisiana",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
    "position": 51
+  },
+  {
+   "query": "labor laws in louisiana",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/louisiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 56
+  },
+  {
+   "query": "labor laws mississippi",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/mississippi",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 55
   },
   {
    "query": "labor laws mn breaks",
@@ -3872,6 +4704,22 @@
    "position": 97
   },
   {
+   "query": "labor laws nevada breaks",
+   "page": "https://keepmyproof.com/workplace/meal-and-rest-breaks/nevada",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 76
+  },
+  {
+   "query": "latest a minor can work on school night",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
    "query": "little rock va regional office",
    "page": "https://keepmyproof.com/va/va-regional-office/arkansas",
    "clicks": 0,
@@ -3888,12 +4736,20 @@
    "position": 48
   },
   {
+   "query": "louisiana labor laws for salaried employees",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/louisiana",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 90
+  },
+  {
    "query": "louisiana minimum wage",
    "page": "https://keepmyproof.com/workplace/minimum-wage/louisiana",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 86
+   "position": 84.3
   },
   {
    "query": "lunch break laws minnesota",
@@ -3902,6 +4758,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 61
+  },
+  {
+   "query": "ma break laws",
+   "page": "https://keepmyproof.com/workplace/meal-and-rest-breaks/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 87
   },
   {
    "query": "ma estate",
@@ -3936,6 +4800,14 @@
    "position": 70.3
   },
   {
+   "query": "manutención de hijos en california",
+   "page": "https://keepmyproof.com/es/divorcio/como-funciona-la-manutencion-de-los-hijos/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 15
+  },
+  {
    "query": "manutención de los hijos",
    "page": "https://keepmyproof.com/es/divorcio/como-funciona-la-manutencion-de-los-hijos/california",
    "clicks": 0,
@@ -3947,9 +4819,9 @@
    "query": "maryland child support",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/maryland",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 88
+   "position": 91.7
   },
   {
    "query": "maryland overtime law",
@@ -4035,9 +4907,17 @@
    "query": "maui child support",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/hawaii",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 94.3
+   "position": 94
+  },
+  {
+   "query": "maximum amount of hours a 16 year old can work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
   },
   {
    "query": "maximum hours allowed to work in a day under 18",
@@ -4046,6 +4926,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 10
+  },
+  {
+   "query": "maximum hours allowed to work in a day under 18",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
   },
   {
    "query": "maximum weekly hours for 16 year olds",
@@ -4078,6 +4966,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 81
+  },
+  {
+   "query": "michigan death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/michigan",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 26
   },
   {
    "query": "michigan disabled veteran property tax exemption",
@@ -4155,7 +5051,7 @@
    "query": "minimum wage colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
    "position": 95.8
   },
@@ -4200,6 +5096,14 @@
    "position": 76
   },
   {
+   "query": "minimum wage in alabama",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/alabama",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 91.3
+  },
+  {
    "query": "minimum wage in co",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
@@ -4211,9 +5115,9 @@
    "query": "minimum wage in colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 94.6
+   "position": 94.5
   },
   {
    "query": "minimum wage in florida tipped",
@@ -4222,6 +5126,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 10
+  },
+  {
+   "query": "minimum wage in georgia for minors",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 39
   },
   {
    "query": "minimum wage in houston texas",
@@ -4315,9 +5227,9 @@
    "query": "minimum wage south carolina",
    "page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 97.3
+   "position": 88.3
   },
   {
    "query": "minnesota child labor laws",
@@ -4331,9 +5243,9 @@
    "query": "minnesota divorce records",
    "page": "https://keepmyproof.com/divorce/divorce-records/minnesota",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 3,
    "ctr": 0,
-   "position": 22
+   "position": 26.3
   },
   {
    "query": "minnesota law for breaks at work",
@@ -4379,7 +5291,7 @@
    "query": "mississippi final paycheck laws",
    "page": "https://keepmyproof.com/workplace/minimum-wage/mississippi",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
    "position": 89
   },
@@ -4395,17 +5307,17 @@
    "query": "mississippi work laws",
    "page": "https://keepmyproof.com/workplace/minimum-wage/mississippi",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 44.5
+   "position": 47
   },
   {
    "query": "missouri child support",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/missouri",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 4,
    "ctr": 0,
-   "position": 62
+   "position": 63
   },
   {
    "query": "missouri child support guidelines",
@@ -4419,25 +5331,25 @@
    "query": "missouri divorce records",
    "page": "https://keepmyproof.com/divorce/divorce-records/missouri",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 47
+   "position": 44
   },
   {
    "query": "missouri fair labor laws",
    "page": "https://keepmyproof.com/workplace/overtime-rules/missouri",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 58
+   "position": 58.5
   },
   {
    "query": "missouri payroll laws",
    "page": "https://keepmyproof.com/workplace/overtime-rules/missouri",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 3,
    "ctr": 0,
-   "position": 38
+   "position": 40.7
   },
   {
    "query": "missouri transfer on death deed",
@@ -4459,9 +5371,9 @@
    "query": "missouri wage and hour",
    "page": "https://keepmyproof.com/workplace/overtime-rules/missouri",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 62
+   "position": 63.5
   },
   {
    "query": "mn break laws",
@@ -4475,9 +5387,9 @@
    "query": "mn child labor law",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/minnesota",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 95
+   "position": 96.7
   },
   {
    "query": "mn child labor laws",
@@ -4496,12 +5408,20 @@
    "position": 69
   },
   {
-   "query": "montana labor laws for minors",
+   "query": "montana labor laws breaks",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/montana",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 17
+   "position": 81
+  },
+  {
+   "query": "montana labor laws for minors",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/montana",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 17.5
   },
   {
    "query": "montana order of protection",
@@ -4587,9 +5507,17 @@
    "query": "nevada protective order",
    "page": "https://keepmyproof.com/divorce/protective-orders/nevada",
    "clicks": 0,
-   "impressions": 12,
+   "impressions": 16,
    "ctr": 0,
-   "position": 77.8
+   "position": 77.9
+  },
+  {
+   "query": "new hampshire custody law",
+   "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/new-hampshire",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 70
   },
   {
    "query": "new mexico death records",
@@ -4603,9 +5531,17 @@
    "query": "new mexico small estate affidavit",
    "page": "https://keepmyproof.com/executor/small-estate/new-mexico",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 80.5
+  },
+  {
+   "query": "new york child labor law notice",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 81
+   "position": 23
   },
   {
    "query": "new york overtime",
@@ -4616,12 +5552,20 @@
    "position": 96.5
   },
   {
+   "query": "new york state veterans property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 51
+  },
+  {
    "query": "nh child support guidelines",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/new-hampshire",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 77
+   "position": 76.7
   },
   {
    "query": "nh protective order",
@@ -4648,6 +5592,22 @@
    "position": 72
   },
   {
+   "query": "nj death certificate request",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 69
+  },
+  {
+   "query": "nj iep",
+   "page": "https://keepmyproof.com/iep/early-intervention-to-iep/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 89
+  },
+  {
    "query": "nj state overtime laws",
    "page": "https://keepmyproof.com/workplace/overtime-rules/new-jersey",
    "clicks": 0,
@@ -4667,9 +5627,17 @@
    "query": "no contact order nebraska",
    "page": "https://keepmyproof.com/divorce/protective-orders/nebraska",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 7,
    "ctr": 0,
-   "position": 69.7
+   "position": 71.4
+  },
+  {
+   "query": "north carolina department of veteran affairs - garner office",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/north-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 34
   },
   {
    "query": "north carolina minimum wage",
@@ -4699,9 +5667,9 @@
    "query": "north carolina small estate affidavit",
    "page": "https://keepmyproof.com/executor/small-estate/north-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 78
+   "position": 78.3
   },
   {
    "query": "north dakota transfer on death deed",
@@ -4712,12 +5680,52 @@
    "position": 50
   },
   {
+   "query": "ny split shift law",
+   "page": "https://keepmyproof.com/workplace/meal-and-rest-breaks/new-york",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 84.5
+  },
+  {
+   "query": "ny state veteran property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 70
+  },
+  {
+   "query": "ny state veterans property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 56
+  },
+  {
+   "query": "ny working papers",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 84
+  },
+  {
    "query": "nyc death certificate application",
    "page": "https://keepmyproof.com/executor/death-certificates/new-york",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 77
+  },
+  {
+   "query": "nyc overtime pay",
+   "page": "https://keepmyproof.com/workplace/overtime-rules/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 90
   },
   {
    "query": "nys 100 veteran property tax exemption",
@@ -4768,6 +5776,14 @@
    "position": 73
   },
   {
+   "query": "ohio death certificates",
+   "page": "https://keepmyproof.com/executor/death-certificates/ohio",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 50
+  },
+  {
    "query": "ohio death records",
    "page": "https://keepmyproof.com/executor/death-certificates/ohio",
    "clicks": 0,
@@ -4779,9 +5795,9 @@
    "query": "ohio department of veteran services",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 100
+   "position": 87.5
   },
   {
    "query": "ohio department of veterans services",
@@ -4803,17 +5819,17 @@
    "query": "ohio shared parenting plan",
    "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 69
+   "position": 82
   },
   {
    "query": "ohio transfer on death affidavit",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 84.3
+   "position": 83.8
   },
   {
    "query": "ohio transfer on death deed",
@@ -4835,17 +5851,17 @@
    "query": "ohio transfer on death designation affidavit",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 64.4
+   "position": 65.8
   },
   {
    "query": "ohio transfer on death form",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 74
+   "position": 73
   },
   {
    "query": "oklahoma department of veterans affairs",
@@ -4872,12 +5888,28 @@
    "position": 39
   },
   {
+   "query": "orden de alejamiento en florida",
+   "page": "https://keepmyproof.com/es/divorcio/ordenes-de-proteccion-por-violencia-domestica/florida",
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 45.1
+  },
+  {
    "query": "order of protection colorado",
    "page": "https://keepmyproof.com/divorce/protective-orders/colorado",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 69
+  },
+  {
+   "query": "order of protection in maine",
+   "page": "https://keepmyproof.com/divorce/protective-orders/maine",
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 73.7
   },
   {
    "query": "ordering a death certificate",
@@ -4891,9 +5923,9 @@
    "query": "oregon child support",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/oregon",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 47.7
+   "position": 47.5
   },
   {
    "query": "oregon divorce",
@@ -4915,7 +5947,7 @@
    "query": "oregon estates",
    "page": "https://keepmyproof.com/executor/small-estate/oregon",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
    "position": 92
   },
@@ -4926,6 +5958,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 75
+  },
+  {
+   "query": "overtime in massachusetts",
+   "page": "https://keepmyproof.com/workplace/overtime-rules/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
   },
   {
    "query": "overtime law",
@@ -4939,9 +5979,9 @@
    "query": "overtime laws colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 96
+   "position": 97.5
   },
   {
    "query": "overtime laws in colorado",
@@ -4955,9 +5995,9 @@
    "query": "overtime laws in maryland",
    "page": "https://keepmyproof.com/workplace/overtime-rules/maryland",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 44
+   "position": 43.5
   },
   {
    "query": "overtime laws maryland",
@@ -4987,7 +6027,7 @@
    "query": "overtime pay laws in maryland",
    "page": "https://keepmyproof.com/workplace/overtime-rules/maryland",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
    "position": 41
   },
@@ -5003,6 +6043,14 @@
    "query": "overtime pay regulations",
    "page": "https://keepmyproof.com/workplace/overtime-rules/illinois",
    "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 74
+  },
+  {
+   "query": "p&c support",
+   "page": "https://keepmyproof.com/iep/parent-training-center/connecticut",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 68
@@ -5016,28 +6064,52 @@
    "position": 89
   },
   {
+   "query": "pa dept of military and veterans affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/pennsylvania",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 34
+  },
+  {
+   "query": "pa vital records death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 60.2
+  },
+  {
    "query": "parent connection sioux falls",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 5,
    "ctr": 0,
-   "position": 26
+   "position": 26.2
   },
   {
    "query": "parent resources utah",
    "page": "https://keepmyproof.com/iep/parent-training-center/utah",
    "clicks": 0,
-   "impressions": 13,
+   "impressions": 18,
    "ctr": 0,
-   "position": 40.4
+   "position": 39.4
+  },
+  {
+   "query": "parent training and information centers",
+   "page": "https://keepmyproof.com/iep/parent-training-center/florida",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
   },
   {
    "query": "parent training utah",
    "page": "https://keepmyproof.com/iep/parent-training-center/utah",
    "clicks": 0,
-   "impressions": 14,
+   "impressions": 18,
    "ctr": 0,
-   "position": 27.1
+   "position": 27.7
   },
   {
    "query": "parent training va",
@@ -5051,9 +6123,9 @@
    "query": "parenting information in south carolina",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 28.5
+   "position": 26.7
   },
   {
    "query": "parenting plan arizona",
@@ -5099,9 +6171,9 @@
    "query": "parenting resources in south carolina",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 6,
    "ctr": 0,
-   "position": 28
+   "position": 28.5
   },
   {
    "query": "parenting resources sc",
@@ -5123,17 +6195,17 @@
    "query": "payroll laws colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 93
+   "position": 93.3
   },
   {
    "query": "payroll laws in colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 45.7
+   "position": 46.5
   },
   {
    "query": "pc 212",
@@ -5155,9 +6227,9 @@
    "query": "pennsylvania small estate affidavit",
    "page": "https://keepmyproof.com/executor/small-estate/pennsylvania",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 96
+   "position": 98.5
   },
   {
    "query": "phoenix department of veterans affairs",
@@ -5166,6 +6238,22 @@
    "impressions": 1,
    "ctr": 0,
    "position": 48
+  },
+  {
+   "query": "phone number for veteran affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/illinois",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
+   "query": "phone number for veteran affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 37
   },
   {
    "query": "pre trial protective order utah",
@@ -5179,9 +6267,9 @@
    "query": "print your own death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/california",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 14,
    "ctr": 0,
-   "position": 16.2
+   "position": 15.6
   },
   {
    "query": "print your own death certificate",
@@ -5195,15 +6283,15 @@
    "query": "print your own death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/missouri",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 14,
    "ctr": 0,
-   "position": 15.1
+   "position": 14.7
   },
   {
    "query": "probate kansas",
    "page": "https://keepmyproof.com/executor/probate-process/kansas",
    "clicks": 0,
-   "impressions": 6,
+   "impressions": 7,
    "ctr": 0,
    "position": 80.7
   },
@@ -5211,9 +6299,9 @@
    "query": "problems with transfer on death deeds ohio",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 73
+   "position": 76.7
   },
   {
    "query": "property tax exemption for veterans",
@@ -5264,12 +6352,20 @@
    "position": 46
   },
   {
+   "query": "protection from abuse maine",
+   "page": "https://keepmyproof.com/divorce/protective-orders/maine",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 73.3
+  },
+  {
    "query": "protection order colorado",
    "page": "https://keepmyproof.com/divorce/protective-orders/colorado",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 68.2
+   "position": 69
   },
   {
    "query": "protection order colorado springs",
@@ -5280,28 +6376,36 @@
    "position": 73
   },
   {
+   "query": "protection order idaho",
+   "page": "https://keepmyproof.com/divorce/protective-orders/idaho",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 75
+  },
+  {
    "query": "protection order maine",
    "page": "https://keepmyproof.com/divorce/protective-orders/maine",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 6,
    "ctr": 0,
-   "position": 79
+   "position": 77.7
   },
   {
    "query": "protection orders boise",
    "page": "https://keepmyproof.com/divorce/protective-orders/idaho",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 96.5
+   "position": 95.7
   },
   {
    "query": "protection orders idaho",
    "page": "https://keepmyproof.com/divorce/protective-orders/idaho",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 72.7
+   "position": 74
   },
   {
    "query": "protective order colorado",
@@ -5323,9 +6427,17 @@
    "query": "protective order lawyer nh",
    "page": "https://keepmyproof.com/divorce/protective-orders/new-hampshire",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 82.3
+   "position": 83.3
+  },
+  {
+   "query": "protective order reno",
+   "page": "https://keepmyproof.com/divorce/protective-orders/nevada",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 66
   },
   {
    "query": "protective order utah",
@@ -5507,9 +6619,17 @@
    "query": "resources for parents in south carolina",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
    "position": 26
+  },
+  {
+   "query": "restraining order charlottesville va",
+   "page": "https://keepmyproof.com/divorce/protective-orders/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 40
   },
   {
    "query": "restraining order ct",
@@ -5547,9 +6667,9 @@
    "query": "restraining order hawaii",
    "page": "https://keepmyproof.com/divorce/protective-orders/hawaii",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 98
+   "position": 97
   },
   {
    "query": "restraining order in ga",
@@ -5624,12 +6744,20 @@
    "position": 63.1
   },
   {
-   "query": "salario minimo en carolina del norte",
+   "query": "salario digno carolina del norte",
    "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-norte",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 11
+   "position": 59
+  },
+  {
+   "query": "salario minimo en carolina del norte",
+   "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-norte",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 27.7
   },
   {
    "query": "salario minimo en nuevo mexico",
@@ -5643,9 +6771,9 @@
    "query": "salario minimo en oklahoma",
    "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 9
+   "position": 8.5
   },
   {
    "query": "salario minimo en pensilvania",
@@ -5664,6 +6792,14 @@
    "position": 9
   },
   {
+   "query": "salario mínimo en carolina del norte",
+   "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-norte",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 31
+  },
+  {
    "query": "salario mínimo en oklahoma",
    "page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
    "clicks": 0,
@@ -5672,12 +6808,28 @@
    "position": 11
   },
   {
+   "query": "same day death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8
+  },
+  {
+   "query": "sc labor laws",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 73
+  },
+  {
    "query": "sc parents resources network",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 7,
    "ctr": 0,
-   "position": 22
+   "position": 23.6
   },
   {
    "query": "sc probate checklist",
@@ -5691,9 +6843,9 @@
    "query": "sd parent connection",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 5,
    "ctr": 0,
-   "position": 29.5
+   "position": 30.2
   },
   {
    "query": "seattle va office",
@@ -5710,6 +6862,22 @@
    "impressions": 3,
    "ctr": 0,
    "position": 17
+  },
+  {
+   "query": "shared parenting ohio",
+   "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/ohio",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 95
+  },
+  {
+   "query": "site:loopnet.com/listing/ \"va\" office",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5
   },
   {
    "query": "small estate",
@@ -5771,9 +6939,9 @@
    "query": "small estate affidavit arizona pima county",
    "page": "https://keepmyproof.com/executor/small-estate/arizona",
    "clicks": 0,
-   "impressions": 10,
+   "impressions": 12,
    "ctr": 0,
-   "position": 99
+   "position": 99.1
   },
   {
    "query": "small estate affidavit idaho",
@@ -5819,9 +6987,9 @@
    "query": "small estate probate connecticut",
    "page": "https://keepmyproof.com/executor/small-estate/connecticut",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 77
+   "position": 80.5
   },
   {
    "query": "south carolina flsa notice",
@@ -5835,9 +7003,9 @@
    "query": "south carolina labor laws",
    "page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 65
+   "position": 65.8
   },
   {
    "query": "south carolina minimum wage",
@@ -5883,9 +7051,9 @@
    "query": "south dakota parent connection",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 6,
    "ctr": 0,
-   "position": 37
+   "position": 37.3
   },
   {
    "query": "south dakota parenting guidelines 2026",
@@ -5894,6 +7062,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 11
+  },
+  {
+   "query": "split shift pay new york",
+   "page": "https://keepmyproof.com/workplace/meal-and-rest-breaks/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 81
   },
   {
    "query": "st petersburg va regional office",
@@ -5920,6 +7096,14 @@
    "position": 83.3
   },
   {
+   "query": "state of georgia death records",
+   "page": "https://keepmyproof.com/executor/death-certificates/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 77
+  },
+  {
    "query": "state of maryland overtime laws",
    "page": "https://keepmyproof.com/workplace/overtime-rules/maryland",
    "clicks": 0,
@@ -5936,6 +7120,22 @@
    "position": 75
   },
   {
+   "query": "state of new york divorce records",
+   "page": "https://keepmyproof.com/divorce/divorce-records/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 57
+  },
+  {
+   "query": "state of nj death certificate",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 81
+  },
+  {
    "query": "state of ohio death records",
    "page": "https://keepmyproof.com/executor/death-certificates/ohio",
    "clicks": 0,
@@ -5950,6 +7150,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 72
+  },
+  {
+   "query": "stone soup group anchorage",
+   "page": "https://keepmyproof.com/iep/parent-training-center/alaska",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 67
   },
   {
    "query": "sueldo minimo en pensilvania",
@@ -6016,12 +7224,20 @@
    "position": 73
   },
   {
-   "query": "texas minimum wage 2025",
-   "page": "https://keepmyproof.com/workplace/minimum-wage/texas",
+   "query": "texas labor laws for minors",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 39
+   "position": 37
+  },
+  {
+   "query": "texas minimum wage 2025",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/texas",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 68
   },
   {
    "query": "texas state veteran affairs",
@@ -6040,6 +7256,14 @@
    "position": 47
   },
   {
+   "query": "texas va regional office",
+   "page": "https://keepmyproof.com/va/va-regional-office/texas",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 23.7
+  },
+  {
    "query": "texas veteran property tax exemption",
    "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/texas",
    "clicks": 0,
@@ -6051,9 +7275,9 @@
    "query": "texas workplace harassment deadline",
    "page": "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/texas",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 22
+   "position": 22.5
   },
   {
    "query": "the law sets limits on how late students may work on a school night if under what age? a 14 b 16 c 18 d 21",
@@ -6083,9 +7307,17 @@
    "query": "tipped minimum wage florida",
    "page": "https://keepmyproof.com/workplace/minimum-wage/florida",
    "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 9.3
+  },
+  {
+   "query": "transfer of deed on death minnesota",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/minnesota",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 10
+   "position": 94
   },
   {
    "query": "transfer on death affidavit ohio",
@@ -6099,9 +7331,9 @@
    "query": "transfer on death affidavit ohio form",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 86
+   "position": 75.5
   },
   {
    "query": "transfer on death deed arizona",
@@ -6128,12 +7360,28 @@
    "position": 72
   },
   {
-   "query": "transfer on death deed kansas",
-   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/kansas",
+   "query": "transfer on death deed in minnesota",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/minnesota",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 92
+  },
+  {
+   "query": "transfer on death deed in ohio",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
    "impressions": 2,
    "ctr": 0,
-   "position": 36.5
+   "position": 91
+  },
+  {
+   "query": "transfer on death deed kansas",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/kansas",
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 33.5
   },
   {
    "query": "transfer on death deed minnesota",
@@ -6163,9 +7411,9 @@
    "query": "transfer on death deed north dakota",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/north-dakota",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 50
+   "position": 51.5
   },
   {
    "query": "transfer on death deed ohio",
@@ -6187,9 +7435,9 @@
    "query": "transfer on death deed ohio pdf",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 72.7
+   "position": 67
   },
   {
    "query": "transfer on death deed oregon",
@@ -6198,6 +7446,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 70
+  },
+  {
+   "query": "transfer on death deed washington",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 89
   },
   {
    "query": "transfer on death designation affidavit ohio form",
@@ -6219,9 +7475,9 @@
    "query": "transfer on death ohio",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 77
+   "position": 80.5
   },
   {
    "query": "transfer upon death deed ohio",
@@ -6256,12 +7512,28 @@
    "position": 96
   },
   {
+   "query": "txstate veterans affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 66
+  },
+  {
    "query": "u.s. department of veterans affairs regional office",
    "page": "https://keepmyproof.com/va/va-regional-office/south-carolina",
    "clicks": 0,
    "impressions": 2,
    "ctr": 0,
    "position": 11.5
+  },
+  {
+   "query": "under 18 how many hours can work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
   },
   {
    "query": "understanding small and intestate estates in michigan in new baltimore mi",
@@ -6307,9 +7579,9 @@
    "query": "utah protective orders",
    "page": "https://keepmyproof.com/divorce/protective-orders/utah",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 79
+   "position": 78.5
   },
   {
    "query": "utah public records divorce",
@@ -6366,6 +7638,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 14
+  },
+  {
+   "query": "va claim help",
+   "page": "https://keepmyproof.com/va/free-claim-help/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 40
   },
   {
    "query": "va claim office",
@@ -6608,12 +7888,28 @@
    "position": 11.5
   },
   {
+   "query": "va in illinois",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/illinois",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 84.5
+  },
+  {
    "query": "va in roanoke",
    "page": "https://keepmyproof.com/va/va-regional-office/virginia",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 37
+  },
+  {
+   "query": "va kentucky",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/kentucky",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 85
   },
   {
    "query": "va maryland",
@@ -6728,6 +8024,30 @@
    "position": 10.8
   },
   {
+   "query": "va property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 89
+  },
+  {
+   "query": "va property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 86
+  },
+  {
+   "query": "va property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 87
+  },
+  {
    "query": "va providence ri",
    "page": "https://keepmyproof.com/va/va-regional-office/rhode-island",
    "clicks": 0,
@@ -6795,9 +8115,9 @@
    "query": "va regional office",
    "page": "https://keepmyproof.com/va/va-regional-office/california",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 13
+   "position": 11.5
   },
   {
    "query": "va regional office",
@@ -6814,6 +8134,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 9
+  },
+  {
+   "query": "va regional office",
+   "page": "https://keepmyproof.com/va/va-regional-office/north-carolina",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
   },
   {
    "query": "va regional office",
@@ -6859,9 +8187,17 @@
    "query": "va regional office connecticut",
    "page": "https://keepmyproof.com/va/va-regional-office/connecticut",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10.5
+  },
+  {
+   "query": "va regional office delaware",
+   "page": "https://keepmyproof.com/va/va-regional-office/delaware",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 8
+   "position": 11
   },
   {
    "query": "va regional office denver",
@@ -6910,6 +8246,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 14
+  },
+  {
+   "query": "va rep",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 69
   },
   {
    "query": "va service",
@@ -6990,6 +8334,30 @@
    "impressions": 1,
    "ctr": 0,
    "position": 69
+  },
+  {
+   "query": "vermont va",
+   "page": "https://keepmyproof.com/va/free-claim-help/vermont",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 41
+  },
+  {
+   "query": "vermont va",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/vermont",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 36
+  },
+  {
+   "query": "vermont va",
+   "page": "https://keepmyproof.com/va/va-regional-office/vermont",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 34
   },
   {
    "query": "veteran administration office",
@@ -7160,6 +8528,14 @@
    "position": 25
   },
   {
+   "query": "veteran tax relief program",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 62
+  },
+  {
    "query": "veterans administration address",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
    "clicks": 0,
@@ -7174,6 +8550,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 53
+  },
+  {
+   "query": "veterans administration denver",
+   "page": "https://keepmyproof.com/va/va-regional-office/colorado",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 30
   },
   {
    "query": "veterans administration greensboro nc",
@@ -7264,6 +8648,14 @@
    "position": 28.5
   },
   {
+   "query": "veterans benefits administration indianapolis",
+   "page": "https://keepmyproof.com/va/va-regional-office/indiana",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 43.5
+  },
+  {
    "query": "veterans benefits administration regional office",
    "page": "https://keepmyproof.com/va/va-regional-office/arizona",
    "clicks": 0,
@@ -7288,20 +8680,28 @@
    "position": 9
   },
   {
+   "query": "veterans benefits administration san diego",
+   "page": "https://keepmyproof.com/va/va-regional-office/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 39
+  },
+  {
    "query": "veterans disability charlotte, nc",
    "page": "https://keepmyproof.com/va/va-regional-office/north-carolina",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 89.3
+   "position": 89.8
   },
   {
    "query": "veterans disability decatur, ga",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/georgia",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 47
+   "position": 51.3
   },
   {
    "query": "veterans florida",
@@ -7312,12 +8712,44 @@
    "position": 34
   },
   {
+   "query": "veterans main office",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 27
+  },
+  {
    "query": "veterans office",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/missouri",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 77
+  },
+  {
+   "query": "veterans property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 78
+  },
+  {
+   "query": "veterans property tax exemption",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 87
+  },
+  {
+   "query": "veterans regional office",
+   "page": "https://keepmyproof.com/va/va-regional-office/idaho",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
   },
   {
    "query": "veterans tax exemption",
@@ -7339,9 +8771,9 @@
    "query": "virginia divorce residency requirements",
    "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/virginia",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 95.7
+   "position": 96
   },
   {
    "query": "virginia office",
@@ -7360,20 +8792,60 @@
    "position": 32
   },
   {
+   "query": "wage and hour board mississippi",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/mississippi",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 33
+  },
+  {
    "query": "wage and hour colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 43
+   "position": 44.5
+  },
+  {
+   "query": "wage and hour missouri",
+   "page": "https://keepmyproof.com/workplace/overtime-rules/missouri",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 63
+  },
+  {
+   "query": "washington death certificates",
+   "page": "https://keepmyproof.com/executor/death-certificates/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 76
+  },
+  {
+   "query": "washington death records",
+   "page": "https://keepmyproof.com/executor/death-certificates/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 53
   },
   {
    "query": "washington divorce records",
    "page": "https://keepmyproof.com/divorce/divorce-records/washington",
    "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 41.7
+  },
+  {
+   "query": "washington probate checklist",
+   "page": "https://keepmyproof.com/executor/probate-process/washington",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 48
+   "position": 96
   },
   {
    "query": "washington state department of veterans affairs",
@@ -7384,6 +8856,14 @@
    "position": 29
   },
   {
+   "query": "washington state divorce records",
+   "page": "https://keepmyproof.com/divorce/divorce-records/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 26
+  },
+  {
    "query": "washington state veterans administration",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/washington",
    "clicks": 0,
@@ -7392,12 +8872,28 @@
    "position": 28
   },
   {
-   "query": "west virginia divorce laws",
-   "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/west-virginia",
+   "query": "washington state veterans affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/washington",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
+   "position": 22
+  },
+  {
+   "query": "west virginia divorce laws",
+   "page": "https://keepmyproof.com/divorce/residency-and-where-to-file/west-virginia",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
    "position": 133
+  },
+  {
+   "query": "what are the working hours for a 17 year old",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8
   },
   {
    "query": "what assets are not subject to probate in ohio",
@@ -7435,9 +8931,9 @@
    "query": "what is minimum wage in colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 92.7
+   "position": 94
   },
   {
    "query": "what is minimum wage in kentucky",
@@ -7483,9 +8979,9 @@
    "query": "what is minimum wage in south carolina",
    "page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
    "clicks": 0,
-   "impressions": 2,
+   "impressions": 3,
    "ctr": 0,
-   "position": 74
+   "position": 73
   },
   {
    "query": "what is minimum wage in west virginia",
@@ -7528,6 +9024,22 @@
    "position": 35
   },
   {
+   "query": "what is the legal age to work in massachusetts",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 38
+  },
+  {
+   "query": "what is the legal amount of hours a 16 year old can work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
    "query": "what is the maximum amount of hours a 15 year old can work",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
    "clicks": 0,
@@ -7547,17 +9059,25 @@
    "query": "what is the minimum wage in colorado",
    "page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 94.8
+   "position": 94.6
   },
   {
    "query": "what is the minimum wage in kentucky",
    "page": "https://keepmyproof.com/workplace/minimum-wage/kentucky",
    "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 66.5
+  },
+  {
+   "query": "what is the minimum wage in new mexico",
+   "page": "https://keepmyproof.com/workplace/minimum-wage/new-mexico",
+   "clicks": 0,
    "impressions": 1,
    "ctr": 0,
-   "position": 39
+   "position": 95
   },
   {
    "query": "what is the minimum wage in sd",
@@ -7616,6 +9136,22 @@
    "position": 10
   },
   {
+   "query": "what's the legal working age in texas",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 36
+  },
+  {
+   "query": "whats the latest a minor can work on a school night",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8
+  },
+  {
    "query": "whats the max hours a 16 year old can work",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
    "clicks": 0,
@@ -7624,12 +9160,28 @@
    "position": 11
   },
   {
+   "query": "whats the max hours a 16 year old can work",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
    "query": "whats the minimum wage in sc",
    "page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 76
+  },
+  {
+   "query": "when a person dies how quick do i find out if i am in the will in ohio",
+   "page": "https://keepmyproof.com/executor/probate-process/ohio",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 91.5
   },
   {
    "query": "when does child support end in mn",
@@ -8040,6 +9592,14 @@
    "position": 100
   },
   {
+   "query": "where to get a death certificate copy",
+   "page": "https://keepmyproof.com/executor/death-certificates/new-hampshire",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
    "query": "where to get death certificate",
    "page": "https://keepmyproof.com/executor/death-certificates/north-carolina",
    "clicks": 0,
@@ -8192,6 +9752,46 @@
    "position": 97
   },
   {
+   "query": "work hours for 16 year olds",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 89.5
+  },
+  {
+   "query": "work permit ca",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 38
+  },
+  {
+   "query": "work permit colorado",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 24
+  },
+  {
+   "query": "work permit in california",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
+  },
+  {
+   "query": "work permit maryland",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 80
+  },
+  {
    "query": "work permits for minors",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
    "clicks": 0,
@@ -8224,6 +9824,22 @@
    "position": 41.5
   },
   {
+   "query": "working papers new york",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 72.5
+  },
+  {
+   "query": "working papers new york state",
+   "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 86
+  },
+  {
    "query": "working time directive under 18",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
    "clicks": 0,
@@ -8232,12 +9848,28 @@
    "position": 42
   },
   {
+   "query": "wv dave system",
+   "page": "https://keepmyproof.com/executor/death-certificates/west-virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 36
+  },
+  {
    "query": "www.childsupportillinois.com",
    "page": "https://keepmyproof.com/divorce/child-support-guidelines/illinois",
    "clicks": 0,
    "impressions": 1,
    "ctr": 0,
    "position": 50
+  },
+  {
+   "query": "加利福尼亚州赡养费计算器",
+   "page": "https://keepmyproof.com/zh/divorce/child-support-guidelines/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
   },
   {
    "query": "弗吉尼亚收养成本",
