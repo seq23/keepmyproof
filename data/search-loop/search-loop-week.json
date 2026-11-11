@@ -2,18 +2,18 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W46",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-10T14:15:12.800Z",
+  "generated_at": "2026-11-11T14:15:03.478Z",
   "state": "running",
   "published": 22,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 2276,
+  "ai_bot_hits": 2934,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
   "merged": 2,
-  "held_by_cap": 9,
+  "held_by_cap": 19,
   "redirected": [
     {
       "query": "how to prove a hostile work environment claim",
@@ -41,15 +41,7 @@
     "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data); 9 more page(s) today would have gone over it, those searches stay queued",
-    "BUILD gate notes (not blocking): 1 published page(s) are outside a length or style aim; each is listed under gate_notes in pages.json",
-    "reshape of /questions/how-to-prepare-for-divorce-in-virginia/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)",
-    "reshape of /questions/how-to-prepare-divorce-documents-yourself/ left as it was: near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)",
-    "reshape of /questions/how-to-prepare-for-divorce-in-texas/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)",
-    "reshape of /questions/how-to-prepare-for-divorce-in-florida/ left as it was: near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)",
-    "reshape of /questions/how-to-get-a-certified-copy-of-my-divorce-decree/ left as it was: banned word for this site: \"proves\"; near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.97)",
-    "reshape of /questions/can-a-16-year-old-work-night-shifts/ left as it was: b4: the answer under the H1 defines nothing (\"X is ...\"); the writer cannot rewrite this lead in place; it changes when the page is strengthened",
-    "reshape of /questions/how-late-can-a-minor-work-on-a-school-night/ left as it was: b4: the answer under the H1 defines nothing (\"X is ...\"); the writer cannot rewrite this lead in place; it changes when the page is strengthened"
+    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued"
   ],
   "lanes": {
     "ratio": {
@@ -77,5 +69,5 @@
     "weight_changes": [],
     "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/42832182877"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/43036641856"
 }
