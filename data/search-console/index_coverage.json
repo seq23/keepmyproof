@@ -5401,15 +5401,916 @@
    "state": "Discovered - currently not indexed",
    "last_crawl": null,
    "inspected_at": "2026-11-11T11:24:58.887Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T23:28:53Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:02:56Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/oklahoma": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:42:25Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T09:15:40Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/pensilvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:27:06Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/pennsylvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T03:41:33Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/south-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:58:17Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-sur": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T22:15:24Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/south-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T08:28:35Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/dakota-del-sur": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-10T01:58:35Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:15:51Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/utah": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T19:08:07Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/utah": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T08:33:09Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/virginia-occidental": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:44:21Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T11:10:25Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:48:30Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T03:09:58Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/california": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/california": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T08:10:26Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T11:19:59Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:47:29Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/hawaii": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:44:48Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T05:23:53Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:54:10Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/hawai": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T10:00:51Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:05:50Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:43:17Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:52:04Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T11:54:33Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T22:01:30Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:10:03Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T19:57:13Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T21:29:14Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T12:32:05Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:40:10Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T21:51:55Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T04:08:40Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T16:52:18Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T21:20:54Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/montana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T01:33:01Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:13:41Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/new-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T10:26:43Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/nueva-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T20:31:17Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/nuevo-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:07:03Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:27:48Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T21:19:52Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-11T19:02:53Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:07:04Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T17:40:18Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T09:50:22Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/pennsylvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:03:23Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/pensilvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:43:16Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:20:24Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:16:45Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/virginia-occidental": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/west-virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/overtime-rules/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:38:03Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:05:11Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/reglas-de-pago-de-horas-extra/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:37:22Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:33:45Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T12:01:58Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T18:16:35Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:46:13Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T21:58:17Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T19:04:57Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T12:09:01Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T14:23:05Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:36:05Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:37:26Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:22:44Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:51:51Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T22:00:23Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T01:27:59Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T20:08:11Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:43:17Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T21:40:26Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T19:29:35Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T19:23:24Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:11:41Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T16:48:57Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T10:18:32Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:42:16Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T10:07:51Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/workplace/teen-work-hours-and-permits/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T18:28:30Z",
+   "inspected_at": "2026-11-12T11:25:30.691Z"
+  },
+  "https://keepmyproof.com/es/trabajo/horas-de-trabajo-limites-nocturnos-y-permisos/montana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-12T11:25:30.691Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-11T11:24:58.887Z",
+ "generated_at": "2026-11-12T11:25:30.691Z",
  "sitemap_urls": 2687,
- "inspected": 900,
+ "inspected": 1050,
  "states": {
-  "URL is unknown to Google": 56,
-  "Submitted and indexed": 731,
-  "Discovered - currently not indexed": 113
+  "URL is unknown to Google": 73,
+  "Submitted and indexed": 810,
+  "Discovered - currently not indexed": 165,
+  "Crawled - currently not indexed": 2
  }
 }
