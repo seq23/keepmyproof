@@ -186,7 +186,8 @@ export default function App() {
   else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))))}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
-    {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P></>;
+    {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
+    {PREVIEW_BUILD && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
   else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field label={t('newCode')} value={code} onChange={setCode} secret numeric />
     <Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
