@@ -99,5 +99,10 @@ const checks={
   },
 };
 const seen=new Set();
-for(const row of registry){if(seen.has(row.name)||!checks[row.name])throw Error('UNKNOWN_VALIDATOR');seen.add(row.name);await checks[row.name]();console.log(`PASS ${row.name}`);}
+// A row with "blocking": false is a warning: skipped by the gate, run alone with VALIDATE_WARN=1
+// (CI's own "warn:" step, continue-on-error).
+const warnOnly=process.env.VALIDATE_WARN==='1';
+let ran=0;
+for(const row of registry){if(seen.has(row.name)||!checks[row.name])throw Error('UNKNOWN_VALIDATOR');seen.add(row.name);if((row.blocking===false)!==warnOnly)continue;await checks[row.name]();ran++;console.log(`PASS ${row.name}`);}
+if(!ran)throw Error('NO_VALIDATOR_RAN');
 if(Object.keys(checks).some(name=>!seen.has(name)))throw Error('UNREGISTERED_VALIDATOR');
