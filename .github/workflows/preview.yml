@@ -16,7 +16,9 @@ on:
     paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
       '.maestro/**', 'scripts/preview/**', 'scripts/lib/preview-flow.mjs', '.github/workflows/preview.yml']
   pull_request:
-    paths: ['.maestro/**', 'scripts/preview/**', 'scripts/lib/preview-flow.mjs', '.github/workflows/preview.yml']
+    # modules/**: a PR that adds or changes native code is compiled before it can land (13 Nov 2026:
+    # fast-kdf's native sources were gitignored and only the JS tests ran).
+    paths: ['.maestro/**', 'scripts/preview/**', 'scripts/lib/preview-flow.mjs', '.github/workflows/preview.yml', 'modules/**']
 permissions:
   contents: read
 concurrency:
@@ -76,6 +78,9 @@ jobs:
           path: KeepMyProof-simulator.zip
           retention-days: 30
       - name: Put the build on Appetize
+        # The Appetize link is shared and stays the same on every run, so it shows main; a PR's
+        # build stays an artifact and never replaces what she sees there.
+        if: github.event_name != 'pull_request'
         env:
           APPETIZE_API_TOKEN: ${{ secrets.APPETIZE_API_TOKEN }}
           APPETIZE_PUBLIC_KEY: ${{ vars.APPETIZE_PUBLIC_KEY }}
@@ -129,3 +134,28 @@ jobs:
             maestro.log
             ~/.maestro/tests/
           retention-days: 7
+
+  android-compile:
+    # Nothing else in CI builds Android. A native module's Kotlin is compiled here, so a break
+    # shows on the PR instead of as a crash at start-up (requireNativeModule throws).
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: npm ci --no-audit --no-fund
+      - name: Generate the Android project
+        run: npx expo prebuild --platform android --no-install > prebuild.log 2>&1 || { tail -40 prebuild.log; exit 1; }
+      - name: Compile the app and its native modules
+        run: |
+          cd android && ./gradlew :app:compileDebugKotlin --no-daemon > ../gradle.log 2>&1 \
+            || { grep -E '^e: |error:|FAILED|What went wrong' -A3 ../gradle.log | head -60; tail -30 ../gradle.log; exit 1; }
+          find ../modules/kmp-kdf/android/build -name 'KmpKdfModule*.class' | grep -q . \
+            || { echo 'NAMED STOP [ANDROID_MODULE_NOT_BUILT] KmpKdfModule was not compiled into the app build'; exit 1; }
