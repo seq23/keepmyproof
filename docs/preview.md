@@ -31,7 +31,7 @@ signing, nothing paid) in the **Simulator preview** workflow (`.github/workflows
 
 ## Tap through it in a browser
 
-The build is put on Appetize, at one link that stays the same on every run. The link is printed in
+The build is put on Appetize only when the workflow is started by hand with `appetize` ticked, at one link that stays the same on every run. The link is printed in
 the run's summary (Actions → Simulator preview → newest run). If the summary says
 `NAMED STOP [APPETIZE_TOKEN_MISSING]`, the repo secret `APPETIZE_API_TOKEN` is not set; add it and
 rerun. Set the repo variable `APPETIZE_PUBLIC_KEY` to pin the app (the summary shows the value);
