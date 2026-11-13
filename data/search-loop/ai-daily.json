@@ -84,6 +84,60 @@
           "GPTBot (OpenAI training)": 1
         }
       }
+    },
+    "2026-11-11": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 658,
+        "by_bot": {
+          "Amazonbot": 631,
+          "Meta-ExternalAgent": 11,
+          "OAI-SearchBot (ChatGPT search)": 10,
+          "PerplexityBot": 3,
+          "DuckAssistBot": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-12": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 48,
+        "by_bot": {
+          "Amazonbot": 2,
+          "Meta-ExternalAgent": 19,
+          "OAI-SearchBot (ChatGPT search)": 25,
+          "GPTBot (OpenAI training)": 1,
+          "ChatGPT-User (ChatGPT fetch)": 1
+        }
+      }
+    },
+    "2026-11-13": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 9,
+        "by_bot": {
+          "Amazonbot": 1,
+          "Meta-ExternalAgent": 5,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }

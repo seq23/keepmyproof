@@ -1,5 +1,6 @@
 # THE SIMULATOR PREVIEW (docs/preview.md): builds the iOS app for the simulator (no Apple account; ad-hoc
-# signed) and puts the build on Appetize. The Maestro screen walk runs only on a manual run with
+# signed). The build goes on Appetize only on a manual run with appetize=true (owner, 6 Nov 2026: Appetize
+# only for her final look before a store submission; the free web preview is the everyday look). The Maestro screen walk runs only on a manual run with
 # screens=true (owner, 2 Nov 2026: "we don't need them", the Appetize link is the look). GitHub-hosted runners only (free for this public
 # repo). Not a merge gate: it runs after app changes reach main, on demand, and on PRs that change
 # the preview itself.
@@ -9,6 +10,10 @@ on:
     inputs:
       screens:
         description: Also walk every screen with Maestro and keep one PNG per screen
+        type: boolean
+        default: false
+      appetize:
+        description: Also put the build on Appetize (her final look before a store submission only)
         type: boolean
         default: false
   push:
@@ -76,6 +81,7 @@ jobs:
           path: KeepMyProof-simulator.zip
           retention-days: 30
       - name: Put the build on Appetize
+        if: github.event_name == 'workflow_dispatch' && inputs.appetize
         env:
           APPETIZE_API_TOKEN: ${{ secrets.APPETIZE_API_TOKEN }}
           APPETIZE_PUBLIC_KEY: ${{ vars.APPETIZE_PUBLIC_KEY }}
