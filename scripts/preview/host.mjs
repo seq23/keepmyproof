@@ -32,7 +32,8 @@ export function exportedBundles(directory) {
 }
 
 /** The published address must answer with this build's first page and its app bundle. */
-export async function served(url, bundles, { get = globalThis.fetch, tries = 12, wait = 5000 } = {}) {
+// A brand-new pages.dev name can take a couple of minutes to resolve (first run: 80s was not enough).
+export async function served(url, bundles, { get = globalThis.fetch, tries = 36, wait = 5000 } = {}) {
   let seen = 'no answer';
   for (let n = 0; n < tries; n++) {
     try {
