@@ -8,8 +8,8 @@ coverage/
 *.p8
 *.p12
 *.mobileprovision
-ios/
-android/
+/ios/
+/android/
 *.kmp
 *.db
 *.sqlite

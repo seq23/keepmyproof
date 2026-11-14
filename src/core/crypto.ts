@@ -28,9 +28,20 @@ export function open(data: string, key: Uint8Array, purpose: string): Uint8Array
   if (nonce.length !== 12) throw Error('FORMAT_INVALID');
   return gcm(key, nonce, utf8(purpose)).decrypt(unb64(box.c));
 }
-export async function passcodeHash(code: string, salt: string): Promise<string> {
+// PBKDF2-HMAC-SHA256 work factor. OWASP Password Storage Cheat Sheet (2023+): 600,000 iterations
+// for PBKDF2-HMAC-SHA256. Records made before 6 Nov 2026 carry no count and used 210,000; they still
+// verify and are re-hashed at the current count on the next correct unlock. Nothing below the old floor.
+export const PASSCODE_ITERATIONS = 600_000;
+export const LEGACY_ITERATIONS = 210_000;
+/** Derives the 32-byte passcode verifier (base64). The app swaps in the phone's native PBKDF2 at start-up. */
+export type Pbkdf2 = (code: string, salt: string, iterations: number) => Promise<string>;
+export const jsPbkdf2: Pbkdf2 = async (code, salt, c) => b64(await pbkdf2Async(sha256, utf8(code), unb64(salt), { c, dkLen: 32 }));
+let derive: Pbkdf2 = jsPbkdf2;
+export function setPbkdf2(next: Pbkdf2) { derive = next; }
+export async function passcodeHash(code: string, salt: string, iterations: number = PASSCODE_ITERATIONS): Promise<string> {
   if (!/^\d{6}$/.test(code)) throw Error('PASSCODE_INVALID');
-  return b64(await pbkdf2Async(sha256, utf8(code), unb64(salt), { c: 210_000, dkLen: 32 }));
+  if (!Number.isInteger(iterations) || iterations < LEGACY_ITERATIONS) throw Error('KDF_TOO_WEAK');
+  return derive(code, salt, iterations);
 }
 export function equal(a: string, b: string): boolean {
   let diff = a.length ^ b.length;
