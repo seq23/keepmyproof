@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { SITE, PAGES } from '../site/config.mjs';
-import { render, renderAll, legalSections } from '../site/build.mjs';
+import { render, renderAll, legalSections, questionGate } from '../site/build.mjs';
 import { fixture } from './site-fixture';
 import { approvedListPrice } from '../src/billing/provider';
 import { FREE_LIMIT } from '../src/core/vault';
@@ -251,4 +251,27 @@ test('the companion pages switch to "Download KeepMyProof — free" first and la
   } finally {
     Object.assign(SITE.stores, saved);
   }
+});
+
+test('every page, the search-loop question pages included, links the disclaimer from its footer; the disclaimer opens with its answer and Terms links it', () => {
+  const { files, pages } = renderAll(fixture());
+  const all = html(files);
+  assert.ok(pages.some((p) => p.external), 'question pages rendered');
+  for (const [p, s] of all) {
+    const foot = /<footer>[\s\S]*<\/footer>/.exec(s)?.[0] ?? '';
+    assert.match(foot, /href="\/disclaimer"|href="\/es\/aviso-legal"/, `${p} footer links the disclaimer`);
+  }
+  for (const [lang, path, terms] of [['en', 'disclaimer.html', 'terms.html'], ['es', 'es/aviso-legal.html', 'es/terminos.html']] as const) {
+    const answer = /<p class="definition answer">([\s\S]*?)<\/p>/.exec(files[path])?.[1] ?? '';
+    assert.match(answer, lang === 'en' ? /not a lawyer, a VA-accredited representative or an advocate/ : /No es abogado, ni representante acreditado por el VA/, `${lang} answer first`);
+    assert.ok(files[terms].includes(`href="/${lang === 'en' ? 'disclaimer' : 'es/aviso-legal'}"`), `${lang} terms links the disclaimer`);
+  }
+});
+
+test('a question page claiming papers sync, open on another device or sit in iCloud, or that Android deletes the original, never publishes', () => {
+  const page = (s: string) => `<main><p>${s}</p><p>Educational only. Not legal advice.</p></main>`;
+  for (const bad of ['You can open your records from any device.', 'Works offline once data is synced.', 'The vault stores everything locally and in your iCloud or Google Drive backup.', 'On Android, the original in Google Photos is deleted.', 'Android users see the original deleted from Google Photos.'])
+    assert.ok(questionGate(page(bad)).some((x) => x.startsWith('untrue privacy claim')), bad);
+  for (const ok of ['Works offline; nothing is synced to a server.', 'On Android, you delete the original in Google Photos yourself.', 'A backup is an encrypted file you choose to save, for example to iCloud Drive or Google Drive.'])
+    assert.deepEqual(questionGate(page(ok)), [], ok);
 });

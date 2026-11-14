@@ -21,6 +21,7 @@ import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
 import { CJK_COPY } from './landings-cjk.mjs';
 import { AMAZON_BOOKS, AMAZON_INDEX } from './amazon.mjs';
+import { DISCLAIMER } from './disclaimer.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -217,7 +218,7 @@ function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], b
   ];
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
-  const foot = ['home', 'about', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}"${p === 'about' ? ' rel="author"' : ''}>${c.nav[p]}</a>`).join('');
+  const foot = ['home', 'about', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'disclaimer', 'support'].map((p) => `<a href="${pathOf(p, lang)}"${p === 'about' ? ' rel="author"' : ''}>${c.nav[p]}</a>`).join('');
   const vaultFoot = c.vault ? `<a href="${VAULT_HUB.path[lang]}">${esc(c.vault.nav)}</a>` : '';
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
@@ -296,9 +297,22 @@ function legal(lang, id, paras) {
   const c = COPY[lang], key = id === 'terms' ? 'terms' : 'privacy';
   const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time></p>
 ${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}${key === 'privacy' && c.heardLine ? `\n<p>${esc(c.heardLine)}</p>` : ''}
+${key === 'terms' ? `\n<p><a href="${pathOf('disclaimer', lang)}">${esc(c.nav.disclaimer)} ›</a></p>` : ''}
 <p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
   return page({ lang, id, title: c[`${key}Title`], desc: c[`${key}Desc`], body });
 }
+
+/** The disclaimer (site/disclaimer.mjs): the answer first, then one section per trip wire, then where to get real help. */
+function disclaimer(lang) {
+  const c = COPY[lang], d = DISCLAIMER[lang];
+  const links = (xs) => `<ul class="more">${xs.map(([t, href]) => `<li><a href="${esc(href)}"${href.startsWith('http') ? ' rel="noopener"' : ''}>${esc(t)} ›</a></li>`).join('')}</ul>`;
+  const body = `<h1>${esc(d.h1)}</h1><p class="definition answer">${esc(d.answer)}</p><p class="sub">${esc(c.updated)} <time datetime="${DISCLAIMER_UPDATED}">${fmtDate(lang, DISCLAIMER_UPDATED)}</time></p>
+${d.sections.map(([h, t, yes, no, xs]) => `<h2>${esc(h)}</h2><p>${esc(t)}</p>${yes ? `<div class="grid two"><div class="box"><h3>${esc(d.doH)}</h3>${list(yes)}</div><div class="box"><h3>${esc(d.neverH)}</h3>${list(no)}</div></div>` : ''}${xs?.length ? links(xs) : ''}`).join('\n')}
+<h2>${esc(d.helpH)}</h2>${links(d.help)}
+<p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
+  return page({ lang, id: 'disclaimer', title: [d.title], desc: d.desc, body });
+}
+const DISCLAIMER_UPDATED = '2026-11-13';
 
 function support(lang) {
   const c = COPY[lang];
@@ -832,12 +846,16 @@ ${keep}
 // Pages the engine writes under questions/ are published only if they pass this gate; a failing page
 // stays out of dist and the sitemap and is a NAMED STOP in the build log (validate.mjs fails main on it).
 const LEGAL_ADVICE = /\byou should (?:sue|file (?:a )?(?:lawsuit|motion|appeal|claim))\b|\bour (?:lawyers|attorneys)\b|\bwe (?:represent|will file|can file|file claims)\b|\b(?:top|expert|specialist|recommended|rated) (?:lawyers?|attorneys?)\b|\bguarantee(?:d|s)?\b/i;
+// Privacy claims must be literally true: papers live encrypted on this one phone (no sync, no other
+// device, no automatic cloud copy), and on Android the app never deletes the original photo.
+const PRIVACY_CLAIM = /\b(?:from|on) any device\b|\bacross (?:all )?(?:your )?devices\b|\bonce (?:data|it|everything) is synced\b|\bsyncs? (?:across|between|to (?:all )?your)\b|\b(?:stores|keeps|saves) (?:everything|your [a-z]+) [^.]{0,30}\bin your iCloud or Google Drive\b|\bAndroid\b[^.]{0,50}\boriginal\b[^.]{0,40}\b(?:is|gets) deleted\b|\bAndroid users see the original deleted\b/i;
 const VA_HELP = /\b(?:we|keepmyproof)\b[^.]{0,40}\b(?:prepare|file|submit|rate|judge|win|increase)\b[^.]{0,30}\bclaims?\b|\bincrease your (?:va )?rating\b|\bget (?:a )?higher (?:va )?rating\b/i;
 export function questionGate(html) {
   const text = htmlText(html), p = [];
   const b = bannedWord(text); if (b) p.push(`banned word "${b}"`);
   const la = LEGAL_ADVICE.exec(text); if (la) p.push(`legal advice or outcome "${la[0]}"`);
   if (!/not legal advice/i.test(text)) p.push('no "Not legal advice" line');
+  const pc = PRIVACY_CLAIM.exec(text); if (pc) p.push(`untrue privacy claim "${pc[0]}"`);
   if (/\b(?:VA|veterans?)\b/.test(text)) {
     const v = VA_HELP.exec(text); if (v) p.push(`VA claim help "${v[0]}"`);
     if (!/not affiliated with the VA/i.test(text)) p.push('VA page without "not affiliated with the VA"');
@@ -853,7 +871,9 @@ function questionPages(add, files, stops) {
     const path = '/' + rel.replace(/index\.html$/, '').replace(/\.html$/, '');
     const own = LANDINGS.flatMap((x) => Object.values(x.path)).find((p) => p.replace(/\/$/, '') === path.replace(/\/$/, ''));
     if (own) { stops.push(`NAMED SKIP [QUESTION_DUPLICATE] ${rel}: ${own} is a landing page (site/landings.mjs); the engine's copy is not published`); continue; }
-    add({ path, alt: null, group: 'questions', html, external: true });
+    // The engine's footer carries no links; every page links the disclaimer, terms and privacy.
+    const legalLinks = `<p><a href="${pathOf('disclaimer', 'en')}">${COPY.en.nav.disclaimer}</a> · <a href="${pathOf('terms', 'en')}">${COPY.en.nav.terms}</a> · <a href="${pathOf('privacy', 'en')}">${COPY.en.nav.privacy}</a></p></footer>`;
+    add({ path, alt: null, group: 'questions', html: html.includes(`href="${pathOf('disclaimer', 'en')}"`) ? html : html.replace('</footer>', legalLinks), external: true });
   }
 }
 
@@ -919,6 +939,7 @@ export function renderAll(input = loadFacts()) {
     add({ path: pathOf('terms', lang), alt: { en: pathOf('terms', 'en'), es: pathOf('terms', 'es') }, group: 'core', html: legal(lang, 'terms', terms) });
     add({ path: pathOf('privacy', lang), alt: { en: pathOf('privacy', 'en'), es: pathOf('privacy', 'es') }, group: 'core', html: legal(lang, 'privacy', privacy) });
     add({ path: pathOf('support', lang), alt: { en: pathOf('support', 'en'), es: pathOf('support', 'es') }, group: 'core', html: support(lang) });
+    add({ path: pathOf('disclaimer', lang), alt: { en: pathOf('disclaimer', 'en'), es: pathOf('disclaimer', 'es') }, group: 'core', html: disclaimer(lang) });
     add({ path: pathOf('about', lang), alt: { en: pathOf('about', 'en'), es: pathOf('about', 'es') }, group: 'core', html: about(lang) });
   }
   const { model, stops } = clusterModel(input);
@@ -950,7 +971,7 @@ export function renderAll(input = loadFacts()) {
 
   const fl = folders.map((f) => `- [${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))}): ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
   const census = Object.keys(FOLDERS).map((k) => `- ${hubs[FOLDERS[k].topic].en.h1}: ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'en').length} state pages in English, ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'es').length} in Spanish${STATE_LANGS[k] ? `, ${pages.filter((p) => p.state?.folder === k && p.state.lang === STATE_LANGS[k][0]).length} in ${LANG_NAME[STATE_LANGS[k][0]]}` : ''}${(model[k] || []).length ? ` ([by state](${url(FOLDERS[k].path.en)}))` : ''}`).join('\n');
-  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Private vault for photos and documents](${url(VAULT_HUB.path.en)}): ${VAULT_HUB.en.answer}\n${LANDINGS.map((x) => `- [${x.en.h1}](${url(x.path.en)})`).join('\n')}\n- [About](${url('/about')}): who makes KeepMyProof and how the pages are checked\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
+  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Private vault for photos and documents](${url(VAULT_HUB.path.en)}): ${VAULT_HUB.en.answer}\n${LANDINGS.map((x) => `- [${x.en.h1}](${url(x.path.en)})`).join('\n')}\n- [About](${url('/about')}): who makes KeepMyProof and how the pages are checked\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Disclaimer](${url('/disclaimer')}): ${DISCLAIMER.en.answer}\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
   files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: "#F3F4F1", theme_color: "#0B6E4F",
     icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2);
   // The IndexNow key file is committed (assets/site/<key>.txt, search-readiness e3/i8) and copied with the assets.

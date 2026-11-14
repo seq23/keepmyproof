@@ -1101,6 +1101,12 @@ export const strings = {
     "隐私 ›",
     "개인정보 ›"
   ],
+  "disclaimer": [
+    "Disclaimer: not a lawyer or VA representative ›",
+    "Aviso legal: no es abogado ni representante del VA ›",
+    "免责声明：不是律师，也不是 VA 代表（英文） ›",
+    "면책 고지: 변호사나 VA 대리인이 아닙니다(영어) ›"
+  ],
   "mock": [
     "Purchases are not available in this preview. No payment will be taken.",
     "Las compras no están disponibles en esta versión de prueba. No se cobrará nada.",
