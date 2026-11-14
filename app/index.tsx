@@ -326,7 +326,7 @@ export default function App() {
     <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
       onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>
     {heard && heard !== 'skip' && btn('heardSend', doRun(async () => {
-      if (!(await sendHeard(heard, { canOpen: Linking.canOpenURL, open: Linking.openURL }))) setNotice(t('heardNoMail'));
+      if (!(await sendHeard(heard, Linking))) setNotice(t('heardNoMail'));
     }))}
     {heard && heard !== 'skip' ? btn('heardDone', () => navigate(heardFrom), true)
       : btn('heardSkip', doRun(async () => { await saveHeard(device.heardStore, 'skip'); setHeard('skip'); navigate(heardFrom); }), true)}</>;

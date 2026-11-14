@@ -20,12 +20,21 @@ test('choosing or skipping only saves on the phone: no mail opened, no fetch', a
   } finally { net.restore(); }
 });
 
+// Shaped like react-native's Linking: its methods read `this`, so a detached method throws, as the real
+// one does (14 Nov 2026: the app passed Linking.openURL detached and Send showed "That did not finish").
+class LinkingLike {
+  constructor(private readonly hasMail: boolean, private readonly opened: string[]) {}
+  private check(url: string) { if (!url) throw Error('Invalid URL'); }
+  async canOpenURL(url: string) { this.check(url); return this.hasMail; }
+  async openURL(url: string) { this.check(url); this.opened.push(url); }
+}
+
 test('"Send my answer" hands the mail app one email to support whose body is the choice only; still no fetch', async () => {
   const net = noFetch();
   try {
     for (const h of HEARD) {
       const opened: string[] = [];
-      assert.equal(await sendHeard(h, { canOpen: async () => true, open: async u => { opened.push(u); } }), true);
+      assert.equal(await sendHeard(h, new LinkingLike(true, opened)), true);
       assert.equal(opened.length, 1);
       const u = new URL(opened[0]!);
       assert.equal(u.protocol, 'mailto:'); assert.equal(u.pathname, SUPPORT_EMAIL);
@@ -34,7 +43,7 @@ test('"Send my answer" hands the mail app one email to support whose body is the
       assert.equal(u.searchParams.get('body'), HEARD_WORDS[h]);
     }
     const none: string[] = [];
-    assert.equal(await sendHeard('google', { canOpen: async () => false, open: async u => { none.push(u); } }), false);
+    assert.equal(await sendHeard('google', new LinkingLike(false, none)), false);
     assert.deepEqual(none, []); assert.deepEqual(net.calls, []);
     assert.throws(() => heardMail('skip' as never), /HEARD_INVALID/);
   } finally { net.restore(); }

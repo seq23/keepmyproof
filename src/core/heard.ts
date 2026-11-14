@@ -27,9 +27,12 @@ export function heardMail(choice: Heard): string {
   if (!(HEARD as readonly string[]).includes(choice)) throw Error('HEARD_INVALID');
   return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(HEARD_SUBJECT)}&body=${encodeURIComponent(HEARD_WORDS[choice])}`;
 }
+/** The part of react-native's Linking this needs. Pass Linking itself: its methods read `this`
+ * (`this._validateURL`), so a detached `Linking.openURL` throws before any mail app opens. */
+export interface MailOpener { canOpenURL(url: string): Promise<boolean>; openURL(url: string): Promise<unknown> }
 /** "Send my answer": hands a ready email to the phone's mail app. Returns false when no mail app is set up. */
-export async function sendHeard(choice: Heard, mail: { canOpen(url: string): Promise<boolean>; open(url: string): Promise<unknown> }) {
+export async function sendHeard(choice: Heard, mail: MailOpener) {
   const url = heardMail(choice);
-  if (!(await mail.canOpen(url))) return false;
-  await mail.open(url); return true;
+  if (!(await mail.canOpenURL(url))) return false;
+  await mail.openURL(url); return true;
 }
