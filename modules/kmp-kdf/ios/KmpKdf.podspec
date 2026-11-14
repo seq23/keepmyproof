@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name           = 'KmpKdf'
   s.version        = '1.0.0'
-  s.summary        = 'PBKDF2-HMAC-SHA256 for the KeepMyProof passcode, in CommonCrypto'
-  s.description    = 'PBKDF2-HMAC-SHA256 for the KeepMyProof passcode, in CommonCrypto, off the JS thread'
+  s.summary        = 'PBKDF2 (CommonCrypto) and AES-256-GCM (CryptoKit) for KeepMyProof'
+  s.description    = 'PBKDF2-HMAC-SHA256 for the passcode and AES-256-GCM for sealed records, in the OS crypto libraries'
   s.license        = 'UNLICENSED'
   s.author         = 'KeepMyProof'
   s.homepage       = 'https://keepmyproof.com'

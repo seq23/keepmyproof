@@ -6,8 +6,8 @@ import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { LANGS, LANG_NAME, LOCALE, checked, contentDigest, folderLines, homeButtons, launchFolders, phoneLang, tickedBy, validate, type Item, type Labels, type Lang } from '../src/core/model';
-import { userDate, editableDate, dateBoundary } from '../src/core/dates';
-import { FREE_LIMIT, Vault, mayAdd, type Draft } from '../src/core/vault';
+import { userDate, editableDate, dateBoundary, showDay } from '../src/core/dates';
+import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft } from '../src/core/vault';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
@@ -24,7 +24,7 @@ const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi'
 
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
-const parseDate = (v: string) => userDate(v).toISOString();
+const parseDate = (v: string) => { userDate(v); return v; };
 // First-launch picker: each choice in its own language.
 const CONTINUE: Labels = { en: 'Continue in English ›', es: 'Continuar en español ›', zh: '继续使用简体中文 ›', ko: '한국어로 계속하기 ›' };
 export default function App() {
@@ -130,9 +130,10 @@ export default function App() {
   };
   const title = folderName(folder);
   const lines = state ? folderLines(state, folder, lang) : [];
-  const folderItems = state?.items.filter(i => i.folder === folder).sort((a,b) => b.savedOn.localeCompare(a.savedOn)) ?? [];
+  const folderItems = state?.items.filter(i => i.folder === folder).sort(newestFirst) ?? [];
   const item = state?.items.find(i => i.id === itemId);
   const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(LOCALE[lang]) : t('unknown');
+  const displayDay = (d: string | null) => d ? showDay(d, LOCALE[lang]) : t('unknown');
   const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={setDateInput} />
     <Button quiet title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => setUnknown(v => !v)} /></>;
   const backupStale = state && state.backup?.digest !== contentDigest(state);
@@ -259,7 +260,7 @@ export default function App() {
       {btn('cancel', () => { setNewLine(''); setLineOpen(false); }, true)}</Card>}
     <P muted>{t('autoTick')}</P>
     {stateRulesUrl(folder, lang) && <Button title={t('stateRules')} disabled={busy} onPress={() => void Linking.openURL(stateRulesUrl(folder, lang)!)} />}
-    <P heading>{t('newest')}</P>{folderItems.length ? folderItems.map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDate(i.happenedOn)}</P>
+    <P heading>{t('newest')}</P>{folderItems.length ? folderItems.map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
       {btn('open', () => { setItemId(i.id); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
     {btn('folderPdf', () => { setSelection(false); setCover(''); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
@@ -280,16 +281,16 @@ export default function App() {
       <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft)} />}
     {btn('cancel', () => { setDraft(blankDraft(folder)); navigate('folder'); },true)}</>;
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
-    <P>{t('happened')}: {displayDate(item.happenedOn)} {item.happenedOn ? t('yourDate'):''}</P><P>{t('saved')}: {displayDate(item.savedOn)}</P>
+    <P>{t('happened')}: {displayDay(item.happenedOn)} {item.happenedOn ? t('yourDate'):''}</P><P>{t('saved')}: {displayDate(item.savedOn)}</P>
     <P>{t('changed')}: {item.changedOn ? displayDate(item.changedOn):t('never')}</P></Card>
     {item.kind === 'photo' && item.bytes && <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" accessibilityLabel={item.title} />}
     <P heading>{t('yourNote')}</P><Card><P>{item.note}</P></Card><P muted>{t('dateHonesty')}</P>
-    {item.history.map((r,n) => <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDate(r.happenedOn)}</P></Card>)}
+    {item.history.map((r,n) => <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDay(r.happenedOn)}</P></Card>)}
     {btn('edit', () => startEdit(item))}{btn('folderPdf', () => {setSelection(false);navigate('pdf');})}
     {item.bytes && btn('saveOriginals', doRun(async () => share(() => files.shareOriginals([item]))))}
     {confirm === 'remove' ? <Card><P>{t('confirmRemove')}</P>{btn('yesRemove', doRun(async () => { await vault.remove(item.id,true); if(vaultRef.current === vault)navigate('folder'); }))}{btn('keep', () => setConfirm(null),true)}</Card> : btn('remove', () => setConfirm('remove'),true)}</>;
   else if (screen === 'pdf') body = <><P heading>{t('pdfTitle',{folder:title})}</P><P>{t('pdfIntro',{n:folderItems.length})}</P>
-    <Card>{folderItems.map((i,n) => <View key={i.id}><P>{n+1}. {i.title}</P><P muted>{t('happened')}: {displayDate(i.happenedOn)} · {t('saved')}: {displayDate(i.savedOn)}</P></View>)}</Card>
+    <Card>{folderItems.map((i,n) => <View key={i.id}><P>{n+1}. {i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)} · {t('saved')}: {displayDate(i.savedOn)}</P></View>)}</Card>
     <P muted>{t('pdfWarning')}</P><P muted>{t('unsupportedPdf')}</P>
     {ent.plus && <><Button title={`${selection?'✓':'○'} ${t('chosen')}`} onPress={() => {setSelection(!selection);setSelected(folderItems.map(i=>i.id));}} />
       {selection && <>{folderItems.map(i => <Button quiet key={i.id} title={`${selected.includes(i.id)?'✓':'○'} ${i.title}`} onPress={() => setSelected(v => v.includes(i.id)?v.filter(id=>id!==i.id):[...v,i.id])} />)}

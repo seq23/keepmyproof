@@ -13,6 +13,13 @@ manual ticks, custom folders, custom checklist lines, hidden state and note revi
 ciphertext. Keys and passcode state are in the platform secure store with
 WHEN_UNLOCKED_THIS_DEVICE_ONLY accessibility. Android automatic backup is disabled.
 
+On iOS and Android the AES-256-GCM itself is the OS's (`modules/kmp-kdf`: CryptoKit / javax.crypto,
+through `src/core/aead.native.ts`, checked against a fixed known answer before first use); the
+`@noble` version in `src/core/aead.ts` is only for the web preview and tests. Same v1 box either way
+(12-byte nonce, ciphertext || 16-byte tag, purpose as AAD), so every older record opens. That is why
+`ITSAppUsesNonExemptEncryption` is `false`: only OS-provided encryption runs on the phone (14 Nov 2026).
+"Happened" dates are calendar days (`YYYY-MM-DD`), the same day in every time zone, shown without a time.
+
 A six-digit app passcode gates access to the device key. It does not derive the
 vault key. PBKDF2-SHA256 with a random salt and 600,000 iterations (OWASP Password Storage
 Cheat Sheet) checks the code; records made before 6 Nov 2026 used 210,000 and are re-made at
