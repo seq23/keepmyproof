@@ -23,4 +23,6 @@ const e = (b: Uint8Array) => base64.encode(b), d = (s: string) => base64.decode(
 export const aead: Aead = {
   encrypt: (key, nonce, aad, data) => { prove(); return d(native.aesGcmSeal(e(key), e(nonce), e(aad), e(data))); },
   decrypt: (key, nonce, aad, box) => { prove(); return d(native.aesGcmOpen(e(key), e(nonce), e(aad), e(box))); },
+  encryptB64: (key, nonce, aad, data) => { prove(); return native.aesGcmSeal(e(key), e(nonce), e(aad), e(data)); },
+  decryptB64: (key, nonce, aad, box) => { prove(); return d(native.aesGcmOpen(e(key), e(nonce), e(aad), box)); },
 };

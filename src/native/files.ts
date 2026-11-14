@@ -4,7 +4,6 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import * as Print from 'expo-print';
 import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
-import { b64, unb64 } from '../core/crypto';
 import { assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
@@ -16,7 +15,8 @@ async function read(uri: string, filename: string, mime: string, size?: number):
   const file = new File(uri);
   try {
     if ((size ?? file.size) > MAX_FILE) throw Error('FILE_TOO_LARGE');
-    return { filename, mime, bytes: b64(await file.bytes()) };
+    // The phone encodes base64 natively; in JS a 3 MB photo took seconds on an iPhone.
+    return { filename, mime, bytes: await file.base64() };
   } finally { if (file.exists) file.delete(); }
 }
 /** Photos: several at once when `multiple` (finding 5). Files: one. null = cancelled. */
@@ -39,7 +39,7 @@ export async function pickAttachment(photo: boolean, multiple = false): Promise<
  *  The temporary folder is emptied on every lock and every start. */
 export async function viewFile(item: Item): Promise<string> {
   const f = tempFile(`view-${item.id.slice(0, 12)}-${item.filename ?? 'file'}`);
-  f.write(unb64(item.bytes!)); return f.uri;
+  await f.write(item.bytes!, { encoding: 'base64' }); return f.uri;
 }
 export async function pickBackup(): Promise<string | null> {
   const r = await DocumentPicker.getDocumentAsync({ type: '*/*', copyToCacheDirectory: true });
@@ -49,14 +49,14 @@ export async function pickBackup(): Promise<string | null> {
 }
 export async function shareBytes(bytes: Uint8Array | string, filename: string, mimeType: string) {
   const f = tempFile(filename);
-  try { f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType }); }
+  try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType }); }
   finally { if (f.exists) f.delete(); }
 }
 export async function sharePdf(items: Item[], options: ExportOptions) {
   const metadata = new File((await Print.printToFileAsync({ html: exportHtml(items, options) })).uri);
   try {
     const pdf = await assemblePdf(await metadata.bytes(), items, async item => {
-      const source = tempFile(`image-${item.id}`); source.write(unb64(item.bytes!));
+      const source = tempFile(`image-${item.id}`); await source.write(item.bytes!, { encoding: 'base64' });
       let converted: File | undefined;
       try {
         converted = new File((await manipulateAsync(source.uri, [], { format: SaveFormat.PNG })).uri);

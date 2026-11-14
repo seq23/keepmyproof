@@ -38,6 +38,9 @@ export interface Item {
   title: string; note: string; happenedOn: string | null; savedOn: string; changedOn: string | null;
   filename: string | null; mime: string | null; bytes: string | null; sha256: string | null;
   tags: string[]; history: Revision[];
+  /** A photo's own "taken" time from the phone (EXIF), used only to order items with no "happened"
+   *  date; absent on items saved before 14 Nov 2026. */
+  takenOn?: string | null;
 }
 export interface Snapshot {
   version: 1; items: Item[]; folders: CustomFolder[]; ticks: Record<string, boolean>;
@@ -49,9 +52,18 @@ const str = (v: unknown): v is string => typeof v === 'string';
 const strings = (v: unknown): v is string[] => Array.isArray(v) && v.every(str);
 const nullable = (v: unknown) => v === null || str(v);
 const date = (v: unknown) => str(v) && Number.isFinite(Date.parse(v));
-export function validate(input: unknown): Snapshot {
+/** A deep copy of plain data that shares strings instead of copying them. Strings are immutable, so a
+ *  vault's photo bytes (base64, megabytes each) are never copied on a render or a save. */
+export function clone<T>(v: T): T {
+  if (Array.isArray(v)) return v.map(clone) as T;
+  if (v && typeof v === 'object') { const out: Record<string, unknown> = {}; for (const [k, x] of Object.entries(v)) out[k] = clone(x); return out as T; }
+  return v;
+}
+/** trusted: items whose bytes are already known to match their sha256 (the authenticated vault just
+ *  opened, or bytes unchanged since the last save), so megabytes of photos are not hashed again. */
+export function validate(input: unknown, trusted: (i: Item) => boolean = () => false): Snapshot {
   if (!input || typeof input !== 'object') throw Error('FORMAT_INVALID');
-  const s = structuredClone(input) as Snapshot;
+  const s = clone(input) as Snapshot;
   // The first portable format had no history/tags; migrate before validating.
   if ((s as unknown as { version: number }).version === 0) {
     s.version = 1;
@@ -90,7 +102,8 @@ export function validate(input: unknown): Snapshot {
     ids.add(i.id);
     if (i.kind === 'note') {
       if (i.bytes !== null || i.sha256 !== null || i.filename !== null || i.mime !== null) throw Error('FORMAT_INVALID');
-    } else if (!str(i.bytes) || !str(i.sha256) || !str(i.filename) || !str(i.mime) || hash(unb64(i.bytes)) !== i.sha256) throw Error('FILE_CORRUPT');
+    } else if (!str(i.bytes) || !str(i.sha256) || !str(i.filename) || !str(i.mime) || (!trusted(i) && hash(unb64(i.bytes)) !== i.sha256)) throw Error('FILE_CORRUPT');
+    if (i.takenOn !== undefined && !(i.takenOn === null || date(i.takenOn))) throw Error('FORMAT_INVALID');
   }
   return s;
 }

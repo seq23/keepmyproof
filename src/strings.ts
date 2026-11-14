@@ -250,10 +250,10 @@ export const strings = {
     "처음 25개 항목은 무료"
   ],
   "five": [
-    "All five folders included.",
-    "Incluye las cinco carpetas.",
-    "包含全部五个文件夹。",
-    "다섯 개 폴더가 모두 포함돼요."
+    "All {n} folders included.",
+    "Incluye las {n} carpetas.",
+    "包含全部 {n} 个文件夹。",
+    "{n}개 폴더가 모두 포함돼요."
   ],
   "lawFirm": [
     "KeepMyProof keeps your papers in order. It is not a law firm and does not give legal advice.",
@@ -364,10 +364,10 @@ export const strings = {
     "암호도 계속 사용할 수 있어요."
   ],
   "wrongGuesses": [
-    "Wrong guesses make the app wait longer each time. It never erases your papers. Forgot the passcode? You can set a new one with {bio} or your recovery phrase.",
-    "Cada intento incorrecto hace que la app espere más. Nunca borra sus documentos. ¿Olvidó el código? Puede crear uno nuevo con {bio} o con su frase de recuperación.",
-    "每次输错，应用都会让您等更久，但绝不会删除您的文件。忘记密码？可以用{bio}或恢复短语设置新密码。",
-    "잘못 입력할 때마다 기다리는 시간이 길어지지만, 서류는 절대 지워지지 않아요. 암호를 잊으셨나요? {bio} 또는 복구 문구로 새 암호를 만들 수 있어요."
+    "After a few wrong guesses the app makes you wait, longer each time. It never erases your papers. Forgot the passcode? You can set a new one with {bio} or your recovery phrase.",
+    "Después de algunos intentos incorrectos, la app le hace esperar, cada vez más. Nunca borra sus documentos. ¿Olvidó el código? Puede crear uno nuevo con {bio} o con su frase de recuperación.",
+    "输错几次后，应用会让您等待，而且一次比一次久，但绝不会删除您的文件。忘记密码？可以用{bio}或恢复短语设置新密码。",
+    "몇 번 잘못 입력하면 기다려야 하고, 그 시간은 점점 길어지지만 서류는 절대 지워지지 않아요. 암호를 잊으셨나요? {bio} 또는 복구 문구로 새 암호를 만들 수 있어요."
   ],
   "saveCode": [
     "Save passcode ›",
@@ -1186,10 +1186,10 @@ export const strings = {
     "잠시 후 다시 시도하세요. 잘못 입력해도 서류는 절대 지워지지 않아요."
   ],
   "PASSCODE_WRONG": [
-    "That passcode did not match. Please wait, then try again.",
-    "Ese código no coincide. Espere y vuelva a intentarlo.",
-    "密码不正确。请稍等后再试。",
-    "암호가 맞지 않아요. 잠시 후 다시 시도하세요."
+    "That passcode did not match. Try again.",
+    "Ese código no coincide. Vuelva a intentarlo.",
+    "密码不正确。请再试一次。",
+    "암호가 맞지 않아요. 다시 시도하세요."
   ],
   "PASSCODE_INVALID": [
     "Use six numbers and enter the same code twice.",
@@ -1419,12 +1419,6 @@ export const strings = {
     "您输入了日期，同时又勾选了“我不确定日期”。取消勾选即可保留您的日期，或清空日期。",
     "날짜를 입력하고 '날짜를 잘 모르겠어요'도 골랐어요. 날짜를 남기려면 선택을 해제하고, 아니면 날짜를 지우세요."
   ],
-  "dateMissing": [
-    "Type the day it happened, or tick “I'm not sure of the date”.",
-    "Escriba el día en que pasó, o marque “No estoy seguro de la fecha”.",
-    "请输入发生的日期，或勾选“我不确定日期”。",
-    "일이 있었던 날짜를 입력하거나 '날짜를 잘 모르겠어요'를 고르세요."
-  ],
   "timeNoDate": [
     "Add the day for that time, or clear the time.",
     "Añada el día de esa hora, o borre la hora.",
@@ -1634,6 +1628,96 @@ export const strings = {
     "Este tipo de archivo no se puede mostrar aquí. “Guardar también los originales” le da el archivo.",
     "这类文件无法在这里显示。“同时保存原始文件”可以取得文件本身。",
     "이런 종류의 파일은 여기서 보여 줄 수 없어요. '원본 파일도 저장'으로 파일을 받을 수 있어요."
+  ],
+  "waitSeconds": [
+    "Too many wrong tries. You can try again in {n} seconds. Wrong guesses never erase your papers.",
+    "Demasiados intentos incorrectos. Puede volver a intentarlo en {n} segundos. Los intentos incorrectos nunca borran sus documentos.",
+    "输错次数过多。{n} 秒后可以再试。输错密码绝不会删除您的文件。",
+    "잘못 입력한 횟수가 많아요. {n}초 뒤에 다시 시도할 수 있어요. 잘못 입력해도 서류는 절대 지워지지 않아요."
+  ],
+  "waitMinutes": [
+    "Too many wrong tries. You can try again in {n} minutes. Wrong guesses never erase your papers.",
+    "Demasiados intentos incorrectos. Puede volver a intentarlo en {n} minutos. Los intentos incorrectos nunca borran sus documentos.",
+    "输错次数过多。{n} 分钟后可以再试。输错密码绝不会删除您的文件。",
+    "잘못 입력한 횟수가 많아요. {n}분 뒤에 다시 시도할 수 있어요. 잘못 입력해도 서류는 절대 지워지지 않아요."
+  ],
+  "storeLoading": [
+    "Getting the prices from {store}…",
+    "Obteniendo los precios de {store}…",
+    "正在从 {store} 获取价格…",
+    "{store}에서 가격을 불러오는 중이에요…"
+  ],
+  "storeFailed": [
+    "Couldn't reach {store}. Check your connection and try again. Nothing was charged.",
+    "No se pudo conectar con {store}. Revise su conexión y vuelva a intentarlo. No se cobró nada.",
+    "无法连接 {store}。请检查网络连接后再试。没有扣任何费用。",
+    "{store}에 연결할 수 없어요. 인터넷 연결을 확인하고 다시 시도하세요. 요금은 청구되지 않았어요."
+  ],
+  "retry": [
+    "Try again ↻",
+    "Intentar de nuevo ↻",
+    "再试一次 ↻",
+    "다시 시도 ↻"
+  ],
+  "copyWords": [
+    "Copy or share the words ›",
+    "Copiar o compartir las palabras ›",
+    "复制或分享这些单词 ›",
+    "단어 복사 또는 공유 ›"
+  ],
+  "copyWordsHint": [
+    "Other apps can read what you copy. Writing the words on paper is the safest.",
+    "Otras apps pueden leer lo que copia. Escribir las palabras en papel es lo más seguro.",
+    "其他应用可以读取您复制的内容。把单词写在纸上最安全。",
+    "복사한 내용은 다른 앱이 읽을 수 있어요. 종이에 적어 두는 것이 가장 안전해요."
+  ],
+  "addNote": [
+    "+ Add a note",
+    "+ Agregar una nota",
+    "+ 添加备注",
+    "+ 메모 추가"
+  ],
+  "closeView": [
+    "✕ Close",
+    "✕ Cerrar",
+    "✕ 关闭",
+    "✕ 닫기"
+  ],
+  "photoZoom": [
+    "Tap the photo to see it full screen. Pinch to zoom.",
+    "Toque la foto para verla en pantalla completa. Pellizque para ampliar.",
+    "点按照片可全屏查看，双指可缩放。",
+    "사진을 누르면 전체 화면으로 보여요. 두 손가락으로 확대할 수 있어요."
+  ],
+  "workingCheck": [
+    "Checking your passcode and opening your papers…",
+    "Comprobando su código y abriendo sus documentos…",
+    "正在核对密码并打开您的文件…",
+    "암호를 확인하고 서류를 여는 중이에요…"
+  ],
+  "workingPhotos": [
+    "Reading your photos…",
+    "Leyendo sus fotos…",
+    "正在读取您的照片…",
+    "사진을 읽는 중이에요…"
+  ],
+  "workingSave": [
+    "Locking and saving on this phone…",
+    "Protegiendo y guardando en este teléfono…",
+    "正在加密并保存到这部手机…",
+    "암호화해서 이 휴대폰에 저장하는 중이에요…"
+  ],
+  "workingFile": [
+    "Opening the file…",
+    "Abriendo el archivo…",
+    "正在打开文件…",
+    "파일을 여는 중이에요…"
+  ],
+  "workingPdf": [
+    "Making the PDF…",
+    "Creando el PDF…",
+    "正在生成 PDF…",
+    "PDF를 만드는 중이에요…"
   ]
 } as const satisfies Record<string, readonly [en: string, es: string, zh: string, ko: string]>;
 export type StringKey = keyof typeof strings;

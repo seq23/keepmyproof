@@ -26,10 +26,19 @@ export function showDay(value: string, locale: string): string {
 /** A day typed by the person: 11/03/2026 or 11/3/2026 (US order, the app's locales are all US), or
  *  2026-11-03. Returns YYYY-MM-DD; anything else, or a day that does not exist, throws invalidDate. */
 export function parseUserDate(input: string): string {
-  const v = input.trim();
+  const raw = input.trim(), digits = /^(\d{2})(\d{2})(\d{4})$/.exec(raw);
+  // Eight digits with no slashes (03152026), as typed on the number pad, read as MM DD YYYY.
+  const v = digits ? `${digits[1]}/${digits[2]}/${digits[3]}` : raw;
   const us = /^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$/.exec(v);
   const day = us ? `${us[3]}-${us[1].padStart(2, '0')}-${us[2].padStart(2, '0')}` : v;
   userDate(day); return day;
+}
+/** The date box as the person types on the number pad: digits, with the slashes put in for them
+ *  (0315 → 03/15, 03152026 → 03/15/2026). Anything else (a pasted 3/5/2026 or 2026-03-05) is left as typed. */
+export function typingDate(input: string): string {
+  if (![...input].every((c, i) => c === '/' ? i === 2 || i === 5 : /\d/.test(c))) return input;
+  const d = input.replace(/\D/g, '').slice(0, 8);
+  return d.slice(0, 2) + (d.length > 2 ? '/' + d.slice(2, 4) : '') + (d.length > 4 ? '/' + d.slice(4) : '');
 }
 /** An optional time of day: 6pm, 6:30 pm, 18:00, 6:30. Returns HH:MM (24 h), null when empty. */
 export function parseTime(input: string): string | null {
@@ -48,13 +57,14 @@ const WALL = /^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})$/;
 export const timeOf = (value: string): string | null => WALL.exec(value)?.[2] ?? null;
 /**
  * What the Add screen saves as "happened". A typed date is never dropped: typing one while
- * "I'm not sure of the date" is ticked is refused (dateConflict), and leaving both empty asks for one.
+ * "I'm not sure of the date" is ticked is refused (dateConflict). Nothing typed means "not sure",
+ * silently: the box starts unticked and no one is made to tick it.
  */
 export function resolveHappened(o: { date: string; time: string; unknown: boolean }): string | null {
   const typed = o.date.trim() !== '' || o.time.trim() !== '';
   if (o.unknown && typed) throw Error('dateConflict');
-  if (o.unknown) return null;
-  if (!o.date.trim()) throw Error(o.time.trim() ? 'timeNoDate' : 'dateMissing');
+  if (o.unknown || !typed) return null;
+  if (!o.date.trim()) throw Error('timeNoDate');
   const day = parseUserDate(o.date), time = parseTime(o.time);
   return time ? `${day}T${time}` : day;
 }

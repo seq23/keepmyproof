@@ -1,19 +1,26 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { PDFDocument } from 'pdf-lib';
-import { AppLock, createLock, type LockRecord, type LockStore } from '../src/core/lock';
+import { AppLock, FREE_TRIES, LockError, createLock, waitAfter, type LockRecord, type LockStore } from '../src/core/lock';
 import { phrase, recoveryKey, equal, unb64 } from '../src/core/crypto';
 import { activeLaunch, acceptedKey, MockPurchases, purchaseId, renewalDue, withLaunch, type Product } from '../src/billing/provider';
 import { assemblePdf, exportHtml } from '../src/core/export';
 import { draft, fixture, fileDraft, random } from './helpers';
 
-test('passcode gate persists increasing delay across sessions; never deletes vault; correct code works after wait',async()=>{
+test('one wrong passcode never blocks the right one; after the free tries the wait grows, persists, says its seconds; never deletes the vault',async()=>{
   const words=phrase(random);let r=await createLock('182736',words,false,random),now=100;
   const store:LockStore={read:async()=>structuredClone(r),write:async next=>{r=next;}};
-  const lock=new AppLock(store,()=>now);await assert.rejects(lock.unlock('000000'),/PASSCODE_WRONG/);assert.equal(r.attempts,1);assert.equal(r.nextTry,1100);
-  await assert.rejects(new AppLock(store,()=>now).unlock('182736'),/WAIT/);now=1100;
-  await assert.rejects(lock.unlock('000000'),/PASSCODE_WRONG/);assert.equal(r.nextTry,3100);now=3100;
-  await lock.unlock('182736');assert.equal(r.attempts,0);assert.equal(r.nextTry,0);
+  const lock=new AppLock(store,()=>now);
+  // Sim review finding 10: a slip, then the right code straight away, opens.
+  await assert.rejects(lock.unlock('000000'),(e:LockError)=>e.message==='PASSCODE_WRONG'&&e.seconds===0);assert.equal(r.attempts,1);assert.equal(r.nextTry,0);
+  await lock.unlock('182736');assert.equal(r.attempts,0);
+  for(let n=1;n<=FREE_TRIES;n++)await assert.rejects(lock.unlock('000000'),(e:LockError)=>e.seconds===0,`try ${n} is free`);
+  await assert.rejects(lock.unlock('000000'),(e:LockError)=>e.message==='PASSCODE_WRONG'&&e.seconds===30);assert.equal(r.nextTry,30_100);
+  // A new session (a fresh AppLock) still waits, and the refusal says how long is left; the right code is not even checked.
+  now=10_100;await assert.rejects(new AppLock(store,()=>now).unlock('182736'),(e:LockError)=>e.message==='WAIT'&&e.seconds===20);
+  now=30_100;await assert.rejects(lock.unlock('000000'),(e:LockError)=>e.seconds===60);assert.equal(r.nextTry,90_100);
+  now=90_100;await lock.unlock('182736');assert.equal(r.attempts,0);assert.equal(r.nextTry,0);
+  assert.equal(waitAfter(FREE_TRIES+50),3_600_000);
 });
 
 test('forgotten passcode resets with phrase or enabled verified biometrics, never a false biometric result',async()=>{

@@ -39,17 +39,19 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
   const c = useContext(Theme);
   return <View style={{ padding:12, gap:8, borderRadius:12, borderWidth:1, borderColor:c.line, backgroundColor: tone === 'gold' ? c.goldbg : tone === 'red' ? c.redbg : tone === 'ok' ? c.okbg : c.card }}>{children}</View>;
 }
-export function Field({ label, value, onChange, secret, multiline, numeric, placeholder }: {
-  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string;
+/** numeric: a 6-digit passcode. keyboard="date": the number pad, for a date typed as digits (the app adds the slashes). */
+export function Field({ label, value, onChange, secret, multiline, numeric, placeholder, keyboard }: {
+  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string; keyboard?: 'date';
 }) {
   const c = useContext(Theme), lang = useContext(LangContext);
   return <View style={{ gap:4 }}><P muted>{label}</P><TextInput accessibilityLabel={label} testID={label} value={value} onChangeText={onChange}
-    secureTextEntry={secret} multiline={multiline} keyboardType={numeric ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
-    placeholder={placeholder} placeholderTextColor={c.muted} maxLength={numeric ? 6 : undefined}
+    secureTextEntry={secret} multiline={multiline} keyboardType={numeric || keyboard === 'date' ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
+    placeholder={placeholder} placeholderTextColor={c.muted} maxLength={numeric ? 6 : keyboard === 'date' ? 10 : undefined}
     style={{ minHeight:48, padding:12, borderRadius:6, borderWidth:1, borderColor:c.muted, color:c.fg, backgroundColor:c.card, fontSize:15, fontFamily: bodyFont(lang),
       ...(multiline ? { minHeight:100, textAlignVertical:'top' as const } : {}) }} /></View>;
 }
-export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 }, flex:{ flex:1 },
+export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 },
+  footer:{ paddingHorizontal:16, paddingTop:10, paddingBottom:12, gap:8, borderTopWidth:1, width:'100%', maxWidth:560, alignSelf:'center' }, flex:{ flex:1 },
   tiles:{ flexDirection:'row', flexWrap:'wrap', gap:8 }, tile:{ width:'31%', flexGrow:1, borderRadius:12, paddingVertical:10, paddingHorizontal:6, alignItems:'center', gap:4 },
   big:{ flexDirection:'row', alignItems:'center', gap:12, borderWidth:1.5, borderRadius:16, paddingVertical:12, paddingHorizontal:14, minHeight:76 },
   list:{ borderWidth:1, borderRadius:14, overflow:'hidden' },
