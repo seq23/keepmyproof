@@ -85,3 +85,17 @@ walkthrough must test every permission, background/foreground transition, share
 cancellation, full disk, interrupted restore, biometric enrollment change, loss
 of secure-store state, large vault memory and a fresh-install cloud round-trip.
 The simulated disk/interruption tests establish core atomicity, not OS certification.
+
+## User review fixes (14 Nov 2026)
+
+- **Private folder**: `PRIVATE_FOLDER` in `src/core/model.ts`, free on every plan, app-only (not a search
+  topic, so not in `topics.json`). Adds that start outside a folder (Home, the tiles) go there until the person
+  picks another on the Add screen's "Which folder?" list.
+- **Happened**: a day (`YYYY-MM-DD`) or, when a time is typed, wall-clock `YYYY-MM-DDTHH:MM` with no zone
+  (`src/core/dates.ts`). A typed date is never dropped (`resolveHappened`).
+- **Moves and replaced files** keep the earlier folder, file name and fingerprint in the item's history
+  (`Revision.folder/filename/sha256`, optional, additive).
+- **Erase everything** (`device.eraseAll`) runs only after the passcode; **new recovery words**
+  (`renewRecovery`) clear the backup check, since older backups open only with the old words.
+- **Viewer**: saved documents open in `src/viewer.tsx` (iPhone web view, local file only; Android PDFs in
+  the system print preview).

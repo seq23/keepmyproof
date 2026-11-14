@@ -34,7 +34,10 @@ test('viewing, full folder PDF inputs, originals and backup remain available abo
   assert.equal(vault.items('divorce-prep').length,27);assert.deepEqual(vault.original(id),bytes);
   assert.equal(vault.snapshot().items.length,27);assert.ok(vault.backup(random(32)));
   await assert.rejects(vault.add(draft(),false),/ITEM_LIMIT/);
-  assert.throws(()=>vault.items('divorce-prep',{ids:[id]},false),/PLUS_REQUIRED/);
+  // Leaving items out of a PDF is free (user review finding 6); a date range stays Plus.
+  assert.deepEqual(vault.items('divorce-prep',{ids:[id]},false).map(i=>i.id),[id]);
+  assert.throws(()=>vault.items('divorce-prep',{from:'2026-01-01'},false),/PLUS_REQUIRED/);
+  assert.throws(()=>vault.items('divorce-prep',{ids:[id],to:'2026-01-01'},false),/PLUS_REQUIRED/);
   assert.deepEqual(vault.items('divorce-prep',{ids:[id]},true).map(i=>i.id),[id]);
 });
 
@@ -131,9 +134,10 @@ test('Home lists every shown launch folder, own folders, then Make your own; a c
   const {store,key,vault}=await fixture();
   const ids=(b:ReturnType<typeof homeButtons>)=>b.map(x=>x.kind==='folder'?x.id:'makeOwn');
   assert.ok(launchFolders.length>=5);
-  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.map(f=>f.id),'makeOwn']);
+  // Every launch folder, then the neutral Private folder (free on every plan), then Make your own.
+  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.map(f=>f.id),'private','makeOwn']);
   const own=await vault.addFolder('Invented folder',true); await vault.hide(launchFolders[1].id,true);
-  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.filter((_,n)=>n!==1).map(f=>f.id),own,'makeOwn']);
+  assert.deepEqual(ids(homeButtons(vault.snapshot())),[...launchFolders.filter((_,n)=>n!==1).map(f=>f.id),'private',own,'makeOwn']);
   const before=store.value;
   await assert.rejects(vault.addLine('divorce-prep','Invented line',false),/PLUS_REQUIRED/);
   assert.equal(store.value,before); assert.equal(vault.snapshot().lines,undefined);

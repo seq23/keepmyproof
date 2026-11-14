@@ -45,10 +45,10 @@
         "ko": "이혼 준비와 공동 양육 기록"
       },
       "short_name": {
-        "en": "Divorce prep",
-        "es": "Divorcio",
-        "zh": "离婚准备",
-        "ko": "이혼 준비"
+        "en": "Divorce or custody",
+        "es": "Divorcio o custodia",
+        "zh": "离婚或监护权",
+        "ko": "이혼 또는 양육권"
       },
       "checklist_items": [
         {
@@ -106,6 +106,15 @@
           }
         },
         {
+          "id": "messages-sent",
+          "name": {
+            "en": "Messages you sent",
+            "es": "Mensajes que usted envió",
+            "zh": "您发出的信息",
+            "ko": "보낸 메시지"
+          }
+        },
+        {
           "id": "parenting-log",
           "name": {
             "en": "Co-parenting log: dated handoff and visit notes",
@@ -147,10 +156,10 @@
       },
       "scope_note": "Keeps copies and notes the user already has. No legal advice, no snooping on a spouse's phone or accounts, nothing about hiding money.",
       "display_name": {
-        "en": "Divorce prep",
-        "es": "Preparación para el divorcio",
-        "zh": "离婚准备",
-        "ko": "이혼 준비"
+        "en": "Divorce or custody",
+        "es": "Divorcio o custodia",
+        "zh": "离婚或监护权",
+        "ko": "이혼 또는 양육권"
       }
     },
     {

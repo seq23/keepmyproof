@@ -1,25 +1,26 @@
 import { zipSync } from 'fflate';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import { unb64 } from './crypto';
-import { showDay } from './dates';
+import { showHappened } from './dates';
 import { LOCALE, type Item, type Lang } from './model';
 import { copy } from '../strings';
 const escape = (s: string) => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 // Georgia and Arial have no Chinese or Korean glyphs: name the system CJK faces so the PDF never
 // depends on the print engine's own fallback.
 const CJK_FONTS = '"PingFang SC","Apple SD Gothic Neo","Noto Sans CJK SC","Noto Sans CJK KR"';
-export interface ExportOptions { title: string; madeOn: string; lang: Lang; cover?: string }
+/** history: include every earlier version of each item (off unless the person switches it on, finding 6). */
+export interface ExportOptions { title: string; madeOn: string; lang: Lang; cover?: string; history?: boolean }
 export function exportHtml(items: Item[], options: ExportOptions): string {
   const t = copy(options.lang);
   const date = (s: string | null) => s === null ? t('unknown') : new Date(s).toLocaleString(LOCALE[options.lang]);
-  const day = (s: string | null) => s === null ? t('unknown') : showDay(s, LOCALE[options.lang]);
+  const day = (s: string | null) => s === null ? t('unknown') : showHappened(s, LOCALE[options.lang]);
   const dates = (i: Item) => `<p>${escape(t('happened'))}: ${escape(day(i.happenedOn))}<br>${escape(t('saved'))}: ${escape(date(i.savedOn))}<br>${escape(t('changed'))}: ${escape(i.changedOn ? date(i.changedOn) : t('never'))}</p>`;
   return `<!doctype html><html lang="${LOCALE[options.lang].replace(/-US$/, '')}"><head><meta charset="utf-8"><style>@page{margin:42px}body{font:15px -apple-system,Arial,${CJK_FONTS},sans-serif;color:#2a251f}h1{font:28px Georgia,${CJK_FONTS},serif}h2{font:21px Georgia,${CJK_FONTS},serif}${options.lang === 'ko' ? 'body{word-break:keep-all}' : ''}p{white-space:pre-wrap;overflow-wrap:anywhere}section{break-before:page}li{margin:12px 0}</style></head><body>
     <h1>${escape(options.title)}</h1><p>${escape(date(options.madeOn))} · ${items.length} ${escape(t('items'))}</p>
     ${options.cover ? `<p>${escape(options.cover)}</p>` : ''}<p>${escape(t('dateHonesty'))}</p><p>${escape(t('educational'))}</p>
     <h2>${escape(t('contents'))}</h2><ol>${items.map(i => `<li>${escape(i.title)}${dates(i)}</li>`).join('')}</ol>
-    ${items.map(i => `<section><h2>${escape(i.title)}</h2>${dates(i)}<p>${escape(i.note)}</p>${i.filename ? `<p>${escape(i.filename)}</p>` : ''}
-      ${i.history.map(r => `<h3>${escape(t('earlier'))} · ${escape(date(r.changedOn))}</h3><p>${escape(r.title)}<br>${escape(r.note)}<br>${escape(t('happened'))}: ${escape(day(r.happenedOn))}</p>`).join('')}</section>`).join('')}</body></html>`;
+    ${items.map(i => `<section><h2>${escape(i.title)}</h2>${dates(i)}<p>${escape(i.note)}</p>${i.filename ? `<p>${escape(i.filename)}</p>` : ''}${i.tags.length ? `<p>${escape(t('tagsShown'))}: ${escape(i.tags.join(', '))}</p>` : ''}
+      ${(options.history ? i.history : []).map(r => `<h3>${escape(t('earlier'))} · ${escape(date(r.changedOn))}</h3><p>${escape(r.title)}<br>${escape(r.note)}<br>${escape(t('happened'))}: ${escape(day(r.happenedOn))}</p>`).join('')}</section>`).join('')}</body></html>`;
 }
 export async function assemblePdf(metadataPdf: Uint8Array, items: Item[], convertPhoto?: (item: Item) => Promise<Uint8Array>): Promise<Uint8Array> {
   const out = await PDFDocument.load(metadataPdf);

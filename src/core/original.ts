@@ -16,16 +16,21 @@ export async function readRemovePref(store: PrefStore): Promise<RemovePref> {
 export function shouldOffer(o: { pref: RemovePref; kind: string; assetId: string | null | undefined; editing: boolean; systemConfirm: boolean }) {
   return o.pref === 'ask' && o.kind === 'photo' && !o.editing && o.systemConfirm && typeof o.assetId === 'string' && o.assetId.length > 0;
 }
-/** The platform delete. It must show the phone's own confirmation and reject when that is declined. */
-export type SystemDelete = (assetId: string) => Promise<void>;
+/** The platform delete. It must show the phone's own confirmation (once for all of them) and reject when that is declined. */
+export type SystemDelete = (assetIds: string[]) => Promise<void>;
 export type RemoveResult = 'removed' | 'kept';
 /**
  * Runs only after the item is saved in the vault (`saved` is the vault's copy). Any refusal or failure
  * (permission, the system dialog declined, photo not found) keeps the original and reports 'kept'.
  */
 export async function removeOriginal(assetId: string, saved: { bytes: string | null } | undefined, systemDelete: SystemDelete): Promise<RemoveResult> {
-  if (!saved?.bytes) return 'kept';
-  try { await systemDelete(assetId); return 'removed'; } catch { return 'kept'; }
+  return removeOriginals([assetId], [saved], systemDelete);
+}
+/** Several photos added at once: one system dialog for all of them, and only when every one of them is
+ *  saved in the vault; otherwise nothing is touched. */
+export async function removeOriginals(assetIds: string[], saved: ({ bytes: string | null } | undefined)[], systemDelete: SystemDelete): Promise<RemoveResult> {
+  if (!assetIds.length || assetIds.length !== saved.length || !saved.every(i => i?.bytes)) return 'kept';
+  try { await systemDelete(assetIds); return 'removed'; } catch { return 'kept'; }
 }
 /**
  * Which vault lines a phone shows (owner ruling 6 Nov 2026: make the vault obvious, honestly). Only a phone

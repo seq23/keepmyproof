@@ -22,6 +22,20 @@ export class AppLock {
     // A legacy (210,000) verifier is re-made at the current count while the correct code is in hand.
     await this.store.write({ ...r, verifier: await passcodeHash(code, r.salt), iterations: PASSCODE_ITERATIONS, attempts: 0, nextTry: 0 });
   }
+  /** Change the passcode: the current one is checked first, with the same waits as unlocking. */
+  async change(current: string, next: string, random: Random) {
+    if (!/^\d{6}$/.test(next)) throw Error('PASSCODE_INVALID');
+    await this.unlock(current);
+    const r = await this.store.read(), salt = b64(random(16));
+    await this.store.write({ ...r, salt, verifier: await passcodeHash(next, salt), iterations: PASSCODE_ITERATIONS, attempts: 0, nextTry: 0 });
+  }
+  /** New recovery words, behind the passcode (checked with the same waits as unlocking). */
+  async renewRecovery(code: string, words: string) {
+    await this.unlock(code);
+    const r = await this.store.read(); await this.store.write({ ...r, recovery: b64(recoveryKey(words)) });
+  }
+  /** Erase everything: only after the passcode is checked (same waits as unlocking); then wipe runs. */
+  async erase(code: string, wipe: () => Promise<void>) { await this.unlock(code); await wipe(); }
   async reset(code: string, proof: { words: string } | { biometric: true }, biometricCheck: () => Promise<boolean>, random: Random) {
     const r = await this.store.read();
     if ('words' in proof) {

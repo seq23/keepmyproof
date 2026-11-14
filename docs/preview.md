@@ -13,7 +13,7 @@ What is different in a browser (stand-ins, in `src/native/*.web.ts` and `src/bil
 the phone builds never load them):
 
 - **Nothing is kept.** The vault lives in the page's memory; a reload starts again at the first screen.
-- **Choose a photo / file** adds a sample picture instead of opening the photo library or files.
+- **Choose a photo / file** adds sample pictures (two for photos, to show adding several) instead of opening the photo library or files.
 - **Save the PDF, save originals, back up** say what the phone does; no file is made or downloaded.
 - **Check / restore a backup** uses the backup made in the same visit.
 - **Face ID** always says yes. **Purchases** are off and the Plus page says so, so the Plus-only

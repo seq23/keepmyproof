@@ -154,10 +154,10 @@ export const strings = {
     "사진과 서류를 위한 나만의 비공개 금고"
   ],
   "vaultLock": [
-    "Locked with your passcode or Face ID. Nothing you keep here shows up in your camera roll.",
-    "Protegida con su código o Face ID. Nada de lo que guarde aquí aparece en el carrete de fotos.",
-    "用密码或 Face ID 上锁。保存在这里的内容不会出现在相册中。",
-    "암호나 Face ID로 잠겨요. 여기에 보관한 것은 사진 앱의 앨범에 나타나지 않아요."
+    "Locked with your passcode or {bio}. Nothing you keep here shows up in your camera roll.",
+    "Protegida con su código o {bio}. Nada de lo que guarde aquí aparece en el carrete de fotos.",
+    "用密码或{bio}上锁。保存在这里的内容不会出现在相册中。",
+    "암호나 {bio}(으)로 잠겨요. 여기에 보관한 것은 사진 앱의 앨범에 나타나지 않아요."
   ],
   "vaultLockAndroid": [
     "Locked with your passcode or fingerprint. Nothing you keep here shows up in your photo gallery.",
@@ -262,16 +262,16 @@ export const strings = {
     "KeepMyProof는 서류 정리를 돕습니다. 법률 사무소가 아니며 법률 자문을 제공하지 않습니다."
   ],
   "step1": [
-    "Step 1 of 2",
-    "Paso 1 de 2",
-    "第 1 步，共 2 步",
-    "2단계 중 1단계"
+    "Step 1 of 4",
+    "Paso 1 de 4",
+    "第 1 步，共 4 步",
+    "4단계 중 1단계"
   ],
   "step2": [
-    "Step 2 of 2",
-    "Paso 2 de 2",
-    "第 2 步，共 2 步",
-    "2단계 중 2단계"
+    "Step 2 of 4",
+    "Paso 2 de 4",
+    "第 2 步，共 4 步",
+    "4단계 중 2단계"
   ],
   "back": [
     "← Back",
@@ -352,10 +352,10 @@ export const strings = {
     "'삭제'를 누르고 iPhone에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
   ],
   "biometrics": [
-    "Also open with Face ID",
-    "Abrir también con Face ID",
-    "也可以用 Face ID 打开",
-    "Face ID로도 열기"
+    "Also open with {bio}",
+    "Abrir también con {bio}",
+    "也可以用{bio}打开",
+    "{bio}(으)로도 열기"
   ],
   "codeWorks": [
     "Your passcode still works.",
@@ -364,10 +364,10 @@ export const strings = {
     "암호도 계속 사용할 수 있어요."
   ],
   "wrongGuesses": [
-    "Wrong guesses make the app wait longer each time. It never erases your papers. Forgot the passcode? Face ID or your recovery phrase lets you set a new one.",
-    "Cada intento incorrecto hace que la app espere más. Nunca borra sus documentos. ¿Olvidó el código? Face ID o su frase de recuperación le permite crear uno nuevo.",
-    "每次输错，应用都会让您等更久，但绝不会删除您的文件。忘记密码？可以用 Face ID 或恢复短语设置新密码。",
-    "잘못 입력할 때마다 기다리는 시간이 길어지지만, 서류는 절대 지워지지 않아요. 암호를 잊으셨나요? Face ID나 복구 문구로 새 암호를 만들 수 있어요."
+    "Wrong guesses make the app wait longer each time. It never erases your papers. Forgot the passcode? You can set a new one with {bio} or your recovery phrase.",
+    "Cada intento incorrecto hace que la app espere más. Nunca borra sus documentos. ¿Olvidó el código? Puede crear uno nuevo con {bio} o con su frase de recuperación.",
+    "每次输错，应用都会让您等更久，但绝不会删除您的文件。忘记密码？可以用{bio}或恢复短语设置新密码。",
+    "잘못 입력할 때마다 기다리는 시간이 길어지지만, 서류는 절대 지워지지 않아요. 암호를 잊으셨나요? {bio} 또는 복구 문구로 새 암호를 만들 수 있어요."
   ],
   "saveCode": [
     "Save passcode ›",
@@ -400,10 +400,10 @@ export const strings = {
     "서류가 잠겨 있어요"
   ],
   "useBio": [
-    "Open with Face ID ›",
-    "Abrir con Face ID ›",
-    "用 Face ID 打开 ›",
-    "Face ID로 열기 ›"
+    "Open with {bio} ›",
+    "Abrir con {bio} ›",
+    "用{bio}打开 ›",
+    "{bio}(으)로 열기 ›"
   ],
   "forgot": [
     "Forgot the passcode? ›",
@@ -676,10 +676,10 @@ export const strings = {
     "날짜 불확실"
   ],
   "dateFormat": [
-    "Date (YYYY-MM-DD)",
-    "Fecha (AAAA-MM-DD)",
-    "日期（YYYY-MM-DD）",
-    "날짜 (YYYY-MM-DD)"
+    "MM/DD/YYYY",
+    "MM/DD/AAAA",
+    "MM/DD/YYYY（月/日/年）",
+    "MM/DD/YYYY (월/일/연도)"
   ],
   "line": [
     "Checklist line",
@@ -844,10 +844,10 @@ export const strings = {
     "원본 파일도 저장 ›"
   ],
   "plusPdf": [
-    "With Plus you can also pick certain items or dates and add a cover page.",
-    "Con Plus también puede elegir documentos o fechas y añadir una portada.",
-    "使用 Plus，您还可以只选部分项目或日期，并添加封面。",
-    "Plus를 쓰면 특정 항목이나 날짜만 고르고 표지도 넣을 수 있어요."
+    "With Plus you can also choose a date range and add a cover page.",
+    "Con Plus también puede elegir un rango de fechas y añadir una portada.",
+    "使用 Plus，您还可以选择日期范围并添加封面。",
+    "Plus를 쓰면 기간을 고르고 표지도 넣을 수 있어요."
   ],
   "seePlus": [
     "See Plus ›",
@@ -862,16 +862,16 @@ export const strings = {
     "목차"
   ],
   "chosen": [
-    "Choose items or dates ›",
-    "Elegir documentos o fechas ›",
-    "选择项目或日期 ›",
-    "항목이나 날짜 선택 ›"
+    "Choose dates and a cover page ›",
+    "Elegir fechas y portada ›",
+    "选择日期和封面 ›",
+    "기간과 표지 고르기 ›"
   ],
   "allItems": [
-    "All items",
-    "Todos los documentos",
-    "所有项目",
-    "모든 항목"
+    "All",
+    "Todos",
+    "全部",
+    "전체"
   ],
   "from": [
     "From (YYYY-MM-DD, optional)",
@@ -1024,10 +1024,10 @@ export const strings = {
     "나만의 폴더와 태그"
   ],
   "selectedPdf": [
-    "PDF of chosen items or dates, with a cover page",
-    "PDF de documentos o fechas que elija, con portada",
-    "只包含所选项目或日期的 PDF，带封面",
-    "고른 항목이나 날짜만 담은 PDF, 표지 포함"
+    "PDF of a date range, with a cover page",
+    "PDF de un rango de fechas, con portada",
+    "按日期范围生成 PDF，带封面",
+    "기간을 골라 만드는 PDF, 표지 포함"
   ],
   "lifetimePrice": [
     "{price} once",
@@ -1204,10 +1204,10 @@ export const strings = {
     "단어가 맞지 않아요. 12단어 모두와 순서를 확인하세요."
   ],
   "BIOMETRIC_FAILED": [
-    "Face ID or biometrics could not open your papers. Use your passcode or recovery phrase.",
-    "Face ID o la biometría no pudo abrir sus documentos. Use su código o frase de recuperación.",
-    "Face ID 或生物识别无法打开您的文件。请使用密码或恢复短语。",
-    "Face ID나 생체 인증으로 서류를 열지 못했어요. 암호나 복구 문구를 사용하세요."
+    "Opening with {bio} didn't work. Use your passcode or recovery phrase.",
+    "No se pudo abrir con {bio}. Use su código o su frase de recuperación.",
+    "用{bio}没能打开。请使用密码或恢复短语。",
+    "{bio}(으)로 열지 못했어요. 암호나 복구 문구를 사용하세요."
   ],
   "BACKUP_OUTDATED": [
     "That backup does not contain your latest changes. Save a new backup and check it.",
@@ -1240,10 +1240,10 @@ export const strings = {
     "저장하기 전에 파일이나 사진을 고르고 이름을 정하세요."
   ],
   "invalidDate": [
-    "Enter a valid date as YYYY-MM-DD, or choose that you are not sure.",
-    "Escriba una fecha válida como AAAA-MM-DD o indique que no está seguro.",
-    "请按 YYYY-MM-DD 输入有效日期，或选择“我不确定日期”。",
-    "YYYY-MM-DD 형식으로 올바른 날짜를 입력하거나 '날짜를 잘 모르겠어요'를 고르세요."
+    "Type the date as MM/DD/YYYY, for example 11/03/2026.",
+    "Escriba la fecha como MM/DD/AAAA, por ejemplo 11/03/2026.",
+    "请按 月/日/年 输入日期，例如 11/03/2026。",
+    "날짜를 월/일/연도 순서로 입력하세요. 예: 11/03/2026"
   ],
   "working": [
     "Working…",
@@ -1370,6 +1370,270 @@ export const strings = {
     "No hay una app de correo en este teléfono. Su respuesta quedó guardada aquí.",
     "这部手机上没有设置邮件应用。您的回答已保存在这里。",
     "이 휴대폰에 설정된 이메일 앱이 없어요. 답변은 여기에 저장됐어요."
+  ],
+  "step3": [
+    "Step 3 of 4",
+    "Paso 3 de 4",
+    "第 3 步，共 4 步",
+    "4단계 중 3단계"
+  ],
+  "step4": [
+    "Step 4 of 4",
+    "Paso 4 de 4",
+    "第 4 步，共 4 步",
+    "4단계 중 4단계"
+  ],
+  "bioFaceId": [
+    "Face ID",
+    "Face ID",
+    "Face ID",
+    "Face ID"
+  ],
+  "bioTouchId": [
+    "Touch ID",
+    "Touch ID",
+    "Touch ID",
+    "Touch ID"
+  ],
+  "bioFingerprint": [
+    "fingerprint",
+    "huella digital",
+    "指纹",
+    "지문"
+  ],
+  "bioFace": [
+    "face unlock",
+    "desbloqueo facial",
+    "面部解锁",
+    "얼굴 인식"
+  ],
+  "invalidTime": [
+    "Type the time like 6:30 PM, or leave it empty.",
+    "Escriba la hora como 6:30 PM, o déjela vacía.",
+    "请按 6:30 PM 这样的格式输入时间，或留空。",
+    "시간은 6:30 PM처럼 입력하거나 비워 두세요."
+  ],
+  "dateConflict": [
+    "You typed a date and also ticked “I'm not sure of the date”. Untick it to keep your date, or clear the date.",
+    "Escribió una fecha y también marcó “No estoy seguro de la fecha”. Desmárquelo para conservar su fecha, o borre la fecha.",
+    "您输入了日期，同时又勾选了“我不确定日期”。取消勾选即可保留您的日期，或清空日期。",
+    "날짜를 입력하고 '날짜를 잘 모르겠어요'도 골랐어요. 날짜를 남기려면 선택을 해제하고, 아니면 날짜를 지우세요."
+  ],
+  "dateMissing": [
+    "Type the day it happened, or tick “I'm not sure of the date”.",
+    "Escriba el día en que pasó, o marque “No estoy seguro de la fecha”.",
+    "请输入发生的日期，或勾选“我不确定日期”。",
+    "일이 있었던 날짜를 입력하거나 '날짜를 잘 모르겠어요'를 고르세요."
+  ],
+  "timeNoDate": [
+    "Add the day for that time, or clear the time.",
+    "Añada el día de esa hora, o borre la hora.",
+    "请补上这个时间对应的日期，或清空时间。",
+    "그 시간의 날짜를 넣거나 시간을 지우세요."
+  ],
+  "timeLabel": [
+    "Time (optional)",
+    "Hora (opcional)",
+    "时间（可选）",
+    "시간 (선택)"
+  ],
+  "timeFormat": [
+    "e.g. 6:30 PM",
+    "p. ej. 6:30 PM",
+    "例如 6:30 PM",
+    "예: 6:30 PM"
+  ],
+  "today": [
+    "Today",
+    "Hoy",
+    "今天",
+    "오늘"
+  ],
+  "whichFolder": [
+    "Which folder?",
+    "¿En qué carpeta?",
+    "放在哪个文件夹？",
+    "어느 폴더에 둘까요?"
+  ],
+  "photosChosen": [
+    "{n} photos chosen. Each is saved as its own item, named by the day it was taken.",
+    "{n} fotos elegidas. Cada una se guarda por separado, con el nombre del día en que se tomó.",
+    "已选择 {n} 张照片。每张都单独保存，并以拍摄日期命名。",
+    "사진 {n}장을 골랐어요. 한 장씩 따로 저장되고, 찍은 날짜로 이름이 붙어요."
+  ],
+  "photoTaken": [
+    "Photo {date}",
+    "Foto {date}",
+    "照片 {date}",
+    "사진 {date}"
+  ],
+  "namesFromPhotos": [
+    "Name (optional for several photos)",
+    "Nombre (opcional si son varias fotos)",
+    "名称（多张照片时可不填）",
+    "이름 (사진이 여러 장이면 선택)"
+  ],
+  "replaceFile": [
+    "Replace the file ›",
+    "Reemplazar el archivo ›",
+    "替换文件 ›",
+    "파일 바꾸기 ›"
+  ],
+  "replaceKept": [
+    "The earlier file's name stays in this item's history.",
+    "El nombre del archivo anterior queda en el historial de este documento.",
+    "之前文件的名称会保留在此项目的记录中。",
+    "이전 파일 이름은 이 항목의 기록에 남아요."
+  ],
+  "wasIn": [
+    "Was in: {folder}",
+    "Estaba en: {folder}",
+    "原来在：{folder}",
+    "원래 폴더: {folder}"
+  ],
+  "wasFile": [
+    "File was: {name}",
+    "El archivo era: {name}",
+    "原文件：{name}",
+    "원래 파일: {name}"
+  ],
+  "includeHistory": [
+    "Include earlier versions of each item",
+    "Incluir versiones anteriores de cada documento",
+    "包含每个项目的早期版本",
+    "항목마다 이전 버전도 넣기"
+  ],
+  "pdfPick": [
+    "Untick anything you don't want in this PDF.",
+    "Desmarque lo que no quiera en este PDF.",
+    "取消勾选不想放进这个 PDF 的内容。",
+    "이 PDF에 넣고 싶지 않은 것은 선택을 해제하세요."
+  ],
+  "NOTHING_CHOSEN": [
+    "Tick at least one item for the PDF.",
+    "Marque al menos un documento para el PDF.",
+    "请至少勾选一个项目放进 PDF。",
+    "PDF에 넣을 항목을 하나 이상 고르세요."
+  ],
+  "search": [
+    "Search your papers",
+    "Buscar en sus documentos",
+    "搜索您的文件",
+    "서류 검색"
+  ],
+  "searchNone": [
+    "Nothing matches.",
+    "No hay coincidencias.",
+    "没有匹配的内容。",
+    "맞는 항목이 없어요."
+  ],
+  "tagsShown": [
+    "Tags",
+    "Etiquetas",
+    "标签",
+    "태그"
+  ],
+  "tagFilter": [
+    "Show only a tag",
+    "Mostrar solo una etiqueta",
+    "只看某个标签",
+    "태그 하나만 보기"
+  ],
+  "eraseOpen": [
+    "Erase everything on this phone…",
+    "Borrar todo en este teléfono…",
+    "清除这部手机上的所有内容…",
+    "이 휴대폰의 모든 것 지우기…"
+  ],
+  "eraseTitle": [
+    "Erase everything on this phone",
+    "Borrar todo en este teléfono",
+    "清除这部手机上的所有内容",
+    "이 휴대폰의 모든 것 지우기"
+  ],
+  "eraseWarn": [
+    "This deletes every paper, photo and note in KeepMyProof on this phone, with the passcode and settings. A backup file you saved yourself is not touched. Anything not in a backup is gone for good.",
+    "Esto elimina todos los documentos, fotos y notas de KeepMyProof en este teléfono, junto con el código y los ajustes. Una copia de seguridad que usted guardó no se toca. Lo que no esté en una copia de seguridad se pierde para siempre.",
+    "这会删除这部手机上 KeepMyProof 里的所有文件、照片和笔记，以及密码和设置。您自己保存的备份文件不受影响。不在备份里的内容将永久删除。",
+    "이 휴대폰의 KeepMyProof에 있는 모든 서류, 사진, 메모와 암호, 설정이 지워져요. 직접 저장한 백업 파일은 그대로 남아요. 백업에 없는 것은 영구히 지워져요."
+  ],
+  "eraseCode": [
+    "Type your passcode to erase",
+    "Escriba su código para borrar",
+    "输入密码以清除",
+    "지우려면 암호를 입력하세요"
+  ],
+  "eraseNow": [
+    "Erase everything",
+    "Borrar todo",
+    "全部清除",
+    "모두 지우기"
+  ],
+  "erased": [
+    "Everything on this phone was erased.",
+    "Se borró todo en este teléfono.",
+    "这部手机上的所有内容都已清除。",
+    "이 휴대폰의 모든 것을 지웠어요."
+  ],
+  "changeCode": [
+    "Change passcode ›",
+    "Cambiar el código ›",
+    "更改密码 ›",
+    "암호 바꾸기 ›"
+  ],
+  "currentCode": [
+    "Current passcode",
+    "Código actual",
+    "当前密码",
+    "현재 암호"
+  ],
+  "codeChanged": [
+    "Your new passcode is set.",
+    "Su nuevo código está listo.",
+    "新密码已设置。",
+    "새 암호를 설정했어요."
+  ],
+  "renewWords": [
+    "Make new recovery words ›",
+    "Crear nuevas palabras de recuperación ›",
+    "生成新的恢复短语 ›",
+    "새 복구 문구 만들기 ›"
+  ],
+  "renewWhy": [
+    "Lost the paper with your 12 words? Make new ones here. Backups made before still open only with the old words, so make a new backup afterwards.",
+    "¿Perdió el papel con sus 12 palabras? Cree otras aquí. Las copias de seguridad anteriores solo se abren con las palabras viejas, así que haga una copia nueva después.",
+    "写有 12 个词的纸丢了？可以在这里生成新的。之前的备份仍然只能用旧短语打开，所以之后请重新备份。",
+    "12개 단어를 적은 종이를 잃어버렸나요? 여기서 새로 만드세요. 이전 백업은 예전 단어로만 열리니, 그다음 새로 백업하세요."
+  ],
+  "renewCode": [
+    "Your passcode, to make new words",
+    "Su código, para crear palabras nuevas",
+    "输入密码以生成新短语",
+    "새 문구를 만들려면 암호를 입력하세요"
+  ],
+  "continue": [
+    "Continue ›",
+    "Continuar ›",
+    "继续 ›",
+    "계속 ›"
+  ],
+  "wordsRenewed": [
+    "New words saved. Now make a new backup with them.",
+    "Palabras nuevas guardadas. Ahora haga una copia de seguridad nueva con ellas.",
+    "新短语已保存。现在请用它重新备份。",
+    "새 문구를 저장했어요. 이제 새 문구로 다시 백업하세요."
+  ],
+  "checkNow": [
+    "Saved it? Now check it: choose the backup file you just saved.",
+    "¿La guardó? Ahora compruébela: elija el archivo de copia que acaba de guardar.",
+    "保存好了吗？现在检查一下：选择刚才保存的备份文件。",
+    "저장했나요? 이제 확인하세요: 방금 저장한 백업 파일을 고르세요."
+  ],
+  "cannotShow": [
+    "This kind of file can't be shown here. “Also save the original files” gives you the file itself.",
+    "Este tipo de archivo no se puede mostrar aquí. “Guardar también los originales” le da el archivo.",
+    "这类文件无法在这里显示。“同时保存原始文件”可以取得文件本身。",
+    "이런 종류의 파일은 여기서 보여 줄 수 없어요. '원본 파일도 저장'으로 파일을 받을 수 있어요."
   ]
 } as const satisfies Record<string, readonly [en: string, es: string, zh: string, ko: string]>;
 export type StringKey = keyof typeof strings;

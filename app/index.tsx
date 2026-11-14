@@ -5,15 +5,18 @@ import { getLocales } from 'expo-localization';
 import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
-import { LANGS, LANG_NAME, LOCALE, checked, contentDigest, folderLines, homeButtons, launchFolders, phoneLang, tickedBy, validate, type Item, type Labels, type Lang } from '../src/core/model';
-import { userDate, editableDate, dateBoundary, showDay } from '../src/core/dates';
-import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft } from '../src/core/vault';
+import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
+import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened } from '../src/core/dates';
+import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft, type Replacement } from '../src/core/vault';
+import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
+import { FileView } from '../src/viewer';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
+import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
-import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
+import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, styles, textProps, usePalette } from '../src/ui';
@@ -22,15 +25,16 @@ import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
 
-type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard';
+type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard'|'changeCode'|'renew'|'erase';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
-const parseDate = (v: string) => { userDate(v); return v; };
 // First-launch picker: each choice in its own language.
 const CONTINUE: Labels = { en: 'Continue in English ›', es: 'Continuar en español ›', zh: '继续使用简体中文 ›', ko: '한국어로 계속하기 ›' };
 export default function App() {
   const palette = usePalette();
   const [lang, setLang] = useState<Lang>(phoneLang(getLocales()[0]));
-  const t = copy(lang);
+  // The phone's own word for its biometric unlock fills {bio} in every line (finding 15).
+  const [bio, setBio] = useState<BioKind>(bioKind(Platform.OS, []));
+  const tl = copy(lang), t = (key: StringKey, values: Record<string, string|number> = {}) => tl(key, { bio: tl(BIO_NAME[bio]), ...values });
   const [screen, setScreen] = useState<Screen>('first');
   const [ready, setReady] = useState(false), [busy, setBusy] = useState(false);
   const [error, setError] = useState(''), [notice, setNotice] = useState(''), [backupFailed, setBackupFailed] = useState(false);
@@ -38,20 +42,28 @@ export default function App() {
   const [, refresh] = useState(0);
   const [code, setCode] = useState(''), [codeAgain, setCodeAgain] = useState(''), [biometric, setBiometric] = useState(false);
   const [words, setWords] = useState(''), [wordInput, setWordInput] = useState('');
-  const [folder, setFolder] = useState(launchFolders[0].id), [itemId, setItemId] = useState('');
-  const [draft, setDraft] = useState<Draft>(blankDraft(launchFolders[0].id));
-  const [dateInput, setDateInput] = useState(''), [unknown, setUnknown] = useState(true), [editing, setEditing] = useState(false);
+  const [folder, setFolder] = useState(DEFAULT_ADD_FOLDER), [itemId, setItemId] = useState('');
+  const [draft, setDraft] = useState<Draft>(blankDraft(DEFAULT_ADD_FOLDER));
+  const [dateInput, setDateInput] = useState(''), [timeInput, setTimeInput] = useState(''), [unknown, setUnknown] = useState(true), [editing, setEditing] = useState(false);
+  const [dateError, setDateError] = useState(''), [tagInput, setTagInput] = useState('');
+  // Several photos picked at once (finding 5); a replacement file while changing an item (finding 7).
+  const [picked, setPicked] = useState<Picked[]>([]), [replacement, setReplacement] = useState<Replacement|null>(null);
+  const [query, setQuery] = useState(''), [tagPick, setTagPick] = useState<string|null>(null);
+  const [withHistory, setWithHistory] = useState(false), [backupShared, setBackupShared] = useState(false);
+  const [wordsMode, setWordsMode] = useState<'setup'|'renew'>('setup'), [currentCode, setCurrentCode] = useState('');
+  const [viewUri, setViewUri] = useState<string|null>(null);
+  const autoBio = useRef(false), biometricRef = useRef(false); biometricRef.current = biometric;
   const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
   const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
   // After a photo import: offer to remove the original from Photos (src/core/original.ts).
-  const [removePref, setRemovePref] = useState<RemovePref>(DEFAULT_REMOVE_PREF), [pickedAsset, setPickedAsset] = useState<string|null>(null);
-  const [offer, setOffer] = useState<{ assetId: string; itemId: string }|null>(null);
+  const [removePref, setRemovePref] = useState<RemovePref>(DEFAULT_REMOVE_PREF);
+  const [offer, setOffer] = useState<{ assetIds: string[]; itemIds: string[] }|null>(null);
   const [restoreData, setRestoreData] = useState<string|null>(null);
   // Preview only: the 123456 hint shows only while the sample vault is the one on screen, never after her own passcode.
   const [sample, setSample] = useState(false);
   const [checkData, setCheckData] = useState<string|null>(null);
   // "How did you hear about us?": kept on this phone (src/core/heard.ts); heardFrom = where Skip/Done returns.
-  const [heard, setHeard] = useState<HeardAnswer|null>(null), [heardFrom, setHeardFrom] = useState<'home'|'settings'>('home');
+  const [heard, setHeard] = useState<HeardAnswer|null>(null), [heardFrom, setHeardFrom] = useState<'home'|'settings'|'folder'>('home');
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
@@ -60,12 +72,13 @@ export default function App() {
   const billing = purchases();
   const acceptVault = (v: Vault) => {
     if (!mounted.current || AppState.currentState !== 'active') { v.lock(); return; }
-    vaultRef.current = v; setVault(v); setCode(''); setCodeAgain(''); setWordInput(''); setWords(''); setScreen(resume.current);
+    vaultRef.current = v; setVault(v); setCode(''); setCodeAgain(''); setCurrentCode(''); setWordInput(''); setWords(''); autoBio.current = false; setScreen(resume.current);
   };
   function lock() {
     resume.current = ['home','folder','add','detail','pdf','backup','restore','settings','plus','custom','heard'].includes(screenRef.current) ? screenRef.current : 'home';
+    setViewUri(null);
     vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setScreen('lock');
-    setCode(''); setCodeAgain(''); setWordInput(''); setError(''); setNotice(''); setConfirm(null); setOffer(null); setPickedAsset(null);
+    setCode(''); setCodeAgain(''); setCurrentCode(''); setWordInput(''); setWords(''); setError(''); setNotice(''); setConfirm(null); setOffer(null); setPicked([]); setReplacement(null);
     if (!sharing.current) void device.cleanTemps().catch(() => {});
   }
   useEffect(() => {
@@ -73,6 +86,7 @@ export default function App() {
     void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
     void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
     void readHeard(device.heardStore).then(h => { if (mounted.current) setHeard(h); }).catch(() => {});
+    void device.bioTypes().then(types => { if (mounted.current) setBio(bioKind(Platform.OS, types)); });
     void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
@@ -83,9 +97,19 @@ export default function App() {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
       // app switcher (whose preview is hidden); locking there would throw people out mid-task.
       if (state === 'background' && vaultRef.current) lock();
+      if (state === 'active') tryBioRef.current();
     });
     return () => { mounted.current = false; listener.remove(); vaultRef.current?.lock(); };
   }, []);
+  // Face ID / Touch ID / fingerprint starts by itself when the lock screen shows (finding 20), once per
+  // lock; cancelling it leaves the passcode and the button.
+  function tryBio() {
+    if (screenRef.current !== 'lock' || !biometricRef.current || autoBio.current || busyRef.current || AppState.currentState !== 'active') return;
+    autoBio.current = true;
+    void device.unlockBiometric(t('useBio')).then(acceptVault).catch(() => {});
+  }
+  const tryBioRef = useRef(tryBio); tryBioRef.current = tryBio;
+  useEffect(() => { tryBio(); }, [screen, biometric]);
   useEffect(() => {
     const listener = AppState.addEventListener('change', state => {
       if (state === 'active') {
@@ -112,7 +136,8 @@ export default function App() {
 
   }
   function back() {
-    if (screen === 'phrase' || screen === 'confirmPhrase') { setWords(''); setWordInput(''); navigate('setup'); }
+    if (screen === 'phrase' || screen === 'confirmPhrase') { setWords(''); setWordInput(''); navigate(wordsMode === 'renew' ? 'settings' : 'setup'); }
+    else if (screen === 'changeCode' || screen === 'renew' || screen === 'erase') navigate('settings');
     else if (screen === 'setup') navigate('first');
     else if (screen === 'reset') navigate('lock');
     else if (screen === 'add' || screen === 'detail' || screen === 'pdf') navigate('folder');
@@ -125,36 +150,67 @@ export default function App() {
   }); return () => sub.remove(); }, [screen, vault]);
   const state = vault?.snapshot();
   const folderName = (id: string) => {
-    const f = launchFolders.find(x => x.id === id);
-    return f ? (f.display_name as Labels)[lang] : state?.folders.find(x => x.id === id)?.title ?? '';
+    const f = appFolders.find(x => x.id === id);
+    return f ? f.display_name[lang] : state?.folders.find(x => x.id === id)?.title ?? '';
   };
   const title = folderName(folder);
   const lines = state ? folderLines(state, folder, lang) : [];
   const folderItems = state?.items.filter(i => i.folder === folder).sort(newestFirst) ?? [];
   const item = state?.items.find(i => i.id === itemId);
   const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(LOCALE[lang]) : t('unknown');
-  const displayDay = (d: string | null) => d ? showDay(d, LOCALE[lang]) : t('unknown');
-  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={setDateInput} />
-    <Button quiet title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => setUnknown(v => !v)} /></>;
-  const backupStale = state && state.backup?.digest !== contentDigest(state);
+  const displayDay = (d: string | null) => d ? showHappened(d, LOCALE[lang]) : t('unknown');
+  // Typing a date or time unticks "I'm not sure of the date" (finding 3); a clash is refused inline, never dropped.
+  const typedDate = (set: (v: string) => void) => (v: string) => { set(v); setDateError(''); if (v.trim()) setUnknown(false); };
+  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={typedDate(setDateInput)} />
+    <Button quiet title={t('today')} onPress={() => { const d = new Date(); typedDate(setDateInput)(`${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}/${d.getFullYear()}`); }} />
+    <Field label={t('timeLabel')} placeholder={t('timeFormat')} value={timeInput} onChange={typedDate(setTimeInput)} />
+    <Button quiet checked={unknown} title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => { setUnknown(v => !v); setDateError(''); }} />
+    {!!dateError && <Card tone="gold"><P>{dateError}</P></Card>}</>;
+  const nudge = state ? backupNudge(state, backupShared) : 'none';
+  // Lists show only folders that are not hidden (finding 16); the one being added to always shows.
+  const shownFolders = state ? [...appFolders.map(f => ({ id:f.id })), ...state.folders].filter(f => !state.hidden.includes(f.id) || f.id === draft.folder) : [];
   function addTo(id: string, kind: Draft['kind'] = 'note') {
     if (!state || !mayAdd(state.items.length, ent.plus)) { navigate('plus'); return; }
-    setFolder(id); setDraft({ ...blankDraft(id), kind }); setPickedAsset(null); setDateInput(''); setUnknown(true); setEditing(false); navigate('add');
+    setFolder(id); setDraft({ ...blankDraft(id), kind }); setPicked([]); setReplacement(null); setDateInput(''); setTimeInput(''); setDateError(''); setTagInput('');
+    setUnknown(true); setEditing(false); navigate('add');
   }
   function startEdit(i: Item) {
     setDraft({ folder:i.folder, checklist:i.checklist, kind:i.kind, title:i.title, note:i.note, happenedOn:i.happenedOn,
       filename:i.filename, mime:i.mime, bytes:i.bytes, tags:i.tags });
-    setDateInput(i.happenedOn ? editableDate(i.happenedOn) : '');
+    setDateInput(i.happenedOn ? inputDate(i.happenedOn) : ''); setTimeInput(i.happenedOn ? inputTime(i.happenedOn) : ''); setDateError('');
+    setTagInput(i.tags.join(', ')); setPicked([]); setReplacement(null);
     setUnknown(i.happenedOn === null); setEditing(true); navigate('add');
   }
   async function saveDraft() {
-    if (!vault || !draft.title.trim() || (draft.kind !== 'note' && !draft.bytes)) throw Error('fileRequired');
-    const happenedOn = unknown ? null : parseDate(dateInput);
-    if (editing) { await vault.edit(itemId, { title:draft.title.trim(), note:draft.note, happenedOn, checklist:draft.checklist, tags:draft.tags.filter(Boolean) }, true, ent.plus); }
-    const savedId = editing ? null : await vault.add({ ...draft, title:draft.title.trim(), happenedOn, tags:draft.tags.filter(Boolean) }, ent.plus);
-    const assetId = pickedAsset; setPickedAsset(null);
-    const ask = savedId !== null && assetId !== null && shouldOffer({ pref:removePref, kind:draft.kind, assetId, editing, systemConfirm:photos.systemConfirm });
-    if (vaultRef.current === vault) { setDraft(blankDraft(folder)); navigate('folder'); if (ask) setOffer({ assetId:assetId!, itemId:savedId! }); }
+    if (!vault) return;
+    const several = !editing && picked.length > 1;
+    if ((!several && !draft.title.trim()) || (draft.kind !== 'note' && !draft.bytes)) throw Error('fileRequired');
+    let happenedOn: string | null;
+    try { happenedOn = resolveHappened({ date:dateInput, time:timeInput, unknown }); }
+    catch (e) { setDateError(t((e as Error).message as StringKey)); return; }
+    const tags = parseTags(tagInput), first = vault.snapshot().items.length === 0;
+    let savedIds: string[] = [];
+    if (editing) await vault.edit(itemId, { title:draft.title.trim(), note:draft.note, happenedOn, checklist:draft.checklist, tags,
+      folder:draft.folder, file:replacement ?? undefined }, true, ent.plus);
+    else {
+      const base = { ...draft, title:draft.title.trim(), happenedOn, tags };
+      const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes,
+        title: base.title ? `${base.title} (${n+1})` : p.takenOn ? t('photoTaken', { date:showHappened(p.takenOn, LOCALE[lang]) }) : p.filename })) : [base];
+      savedIds = await vault.addMany(drafts, ent.plus);
+    }
+    const assetIds = picked.map(p => p.assetId).filter((a): a is string => !!a); setPicked([]); setReplacement(null);
+    const ask = savedIds.length > 0 && assetIds.length === savedIds.length && assetIds.every(assetId => shouldOffer({ pref:removePref, kind:draft.kind, assetId, editing, systemConfirm:photos.systemConfirm }));
+    if (vaultRef.current !== vault) return;
+    setFolder(draft.folder); setDraft(blankDraft(draft.folder)); navigate('folder');
+    if (ask) setOffer({ assetIds, itemIds:savedIds });
+    // "How did you hear about KeepMyProof?" comes after the first save, not before it (finding 18).
+    else if (first && heard === null) { setHeardFrom('folder'); navigate('heard'); }
+  }
+  async function pick(replace: boolean) {
+    const got = await files.pickAttachment(draft.kind === 'photo', draft.kind === 'photo' && !replace); if (!got?.length) return;
+    if (replace) { const { filename, mime, bytes } = got[0]; setReplacement({ filename, mime, bytes }); setDraft(d => ({ ...d, filename, mime, bytes })); return; }
+    setPicked(got); const { filename, mime, bytes } = got[0];
+    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || filename }));
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
   const btn = (key: StringKey, action: () => void, quiet = false, primary = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} disabled={busy} />;
@@ -186,14 +242,20 @@ export default function App() {
     <P muted>{t('wrongGuesses')}</P>{btn('saveCode', doRun(async () => {
       if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
       if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
-      setWords(phrase(device.random)); navigate('phrase');
+      setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
     }), false, true)}</>;
-  else if (screen === 'phrase') body = <><P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P><Card><P>{words}</P></Card>
+  else if (screen === 'phrase') body = <>{wordsMode === 'setup' && <P muted>{t('step3')}</P>}<P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P><Card><P>{words}</P></Card>
     {btn('wroteWords', () => navigate('confirmPhrase'), false, true)}</>;
-  else if (screen === 'confirmPhrase') body = <><P heading>{t('confirmWords')}</P><Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
+  else if (screen === 'confirmPhrase') body = <>{wordsMode === 'setup' && <P muted>{t('step4')}</P>}<P heading>{t('confirmWords')}</P><Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('finish', doRun(async () => {
       if (!equal(b64(recoveryKey(words)), b64(recoveryKey(wordInput)))) throw Error('RECOVERY_INVALID');
-      resume.current = 'heard'; setHeardFrom('home'); acceptVault(await device.setup(code, words, biometric));
+      if (wordsMode === 'renew') {
+        // New recovery words (finding 9): saved only after they are typed back; older backups need the old words.
+        if (!vault) throw Error('LOCKED');
+        await device.renewRecovery(currentCode, words); await vault.forgetBackup();
+        setWords(''); setWordInput(''); setCurrentCode(''); setWordsMode('setup'); navigate('backup'); setNotice(t('wordsRenewed')); return;
+      }
+      resume.current = 'home'; setHeardFrom('home'); acceptVault(await device.setup(code, words, biometric));
     }), false, true)}</>;
   else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))), false, true)}
@@ -223,12 +285,18 @@ export default function App() {
   else if (!state || !vault) body = <P>{t('locked')}</P>;
   else if (screen === 'home') body = <>
     <P heading>KeepMyProof</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
-    {backupStale && <Card tone="gold"><P>{t('newBackup', { n:state.items.length })}</P>{btn('backUp', () => navigate('backup'))}</Card>}
+    {nudge !== 'none' && <Card tone="gold"><P>{t(nudge === 'check' ? 'checkNow' : 'newBackup', { n:state.items.length })}</P>{btn(nudge === 'check' ? 'backupCheck' : 'backUp', () => navigate('backup'))}</Card>}
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
-    <BigButton glyph="camera" title={t('addPhotos')} sub={t('addPhotosSub')} go={t('addGo')} disabled={busy} onPress={() => addTo(folder, 'photo')} />
+    {state.items.length > 0 && <><Field label={t('search')} value={query} onChange={setQuery} />
+      {!!query.trim() && (() => { const found = searchItems(state.items, query).sort(newestFirst);
+        return found.length ? found.map(i => <Card key={i.id}><P>{i.title}</P><P muted>{folderName(i.folder)} · {t('happened')}: {displayDay(i.happenedOn)}</P>
+          {btn('open', () => { setFolder(i.folder); setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('searchNone')}</P>; })()}</>}
+    <BigButton glyph="camera" title={t('addPhotos')} sub={t('addPhotosSub')} go={t('addGo')} disabled={busy} onPress={() => addTo(DEFAULT_ADD_FOLDER, 'photo')} />
     <P section>{t('canKeep')}</P>
-    <View style={styles.tiles}>{([['page','keepLetters'],['phone','keepTexts'],['receipt','keepBills'],['camera','keepPhotos'],['calendar','keepNotes'],['medical','keepSchool']] as [GlyphName, StringKey][])
-      .map(([g,key]) => <View key={key} style={[styles.tile,{ backgroundColor:palette.tile }]}><Glyph name={g} bg={palette.tile} /><Text {...textProps(lang)} style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center', fontFamily:bodyFont(lang) }}>{t(key)}</Text></View>)}</View>
+    {/* Each tile starts an add of that kind, asking which folder (finding 12). */}
+    <View style={styles.tiles}>{([['page','keepLetters','file'],['phone','keepTexts','photo'],['receipt','keepBills','photo'],['camera','keepPhotos','photo'],['calendar','keepNotes','note'],['medical','keepSchool','file']] as [GlyphName, StringKey, Draft['kind']][])
+      .map(([g,key,kind]) => <Pressable key={key} accessibilityRole="button" accessibilityLabel={t(key)} disabled={busy} onPress={() => addTo(DEFAULT_ADD_FOLDER, kind)}
+        style={({ pressed }) => [styles.tile,{ backgroundColor:palette.tile, opacity: pressed ? .7 : 1 }]}><Glyph name={g} bg={palette.tile} /><Text {...textProps(lang)} style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center', fontFamily:bodyFont(lang) }}>{t(key)}</Text></Pressable>)}</View>
     <P section>{t('home')}</P>
     {homeButtons(state).map(b => b.kind === 'folder'
       ? <BigButton key={b.id} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
@@ -236,13 +304,14 @@ export default function App() {
           onPress={() => { setFolder(b.id); navigate('folder'); }} />
       : <BigButton key="makeOwn" glyph="plus" dashed title={t('makeOwn')} tag={t('plusTag')} sub={t('makeOwnSub')} go={t('open')} disabled={busy}
           onPress={() => navigate(ent.plus ? 'custom' : 'plus')} />)}
-    {btn('add', () => addTo(folder), false, true)}
+    {btn('add', () => addTo(DEFAULT_ADD_FOLDER), false, true)}
     <P muted>{state.backup ? t('lastBackup',{ date:displayDate(state.backup.checkedOn) }):t('noBackup')}</P><P muted>{t('hideHint')}</P></>;
   else if (screen === 'folder') body = <>{offer && <Card><P heading>{t('removeAsk')}</P><P muted>{t('removeWhy')}</P>
       {btn('keepInPhotos', () => { setOffer(null); setNotice(t('keptNotice')); })}
       {btn('removeFromPhotos', doRun(async () => {
         const o = offer; setOffer(null);
-        const result = await removeOriginal(o.assetId, vault.snapshot().items.find(i => i.id === o.itemId), photos.deleteFromPhotos);
+        const items = vault.snapshot().items;
+        const result = await removeOriginals(o.assetIds, o.itemIds.map(id => items.find(i => i.id === id)), photos.deleteFromPhotos);
         setNotice(t(result === 'removed' ? 'removedNotice' : 'keptNotice'));
       }), true)}</Card>}<P heading>{title}</P><P muted>{t('suggested')}</P>
     {folder === 'va-disability-papers' && <Card><P>{t('vaScope')}</P><P>{t('vaHelp')}</P><Button title={t('vaLink')} onPress={() => void Linking.openURL('https://www.va.gov/get-help-from-accredited-representative/')} /></Card>}
@@ -260,69 +329,109 @@ export default function App() {
       {btn('cancel', () => { setNewLine(''); setLineOpen(false); }, true)}</Card>}
     <P muted>{t('autoTick')}</P>
     {stateRulesUrl(folder, lang) && <Button title={t('stateRules')} disabled={busy} onPress={() => void Linking.openURL(stateRulesUrl(folder, lang)!)} />}
-    <P heading>{t('newest')}</P>{folderItems.length ? folderItems.map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
-      {btn('open', () => { setItemId(i.id); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
-    {btn('folderPdf', () => { setSelection(false); setCover(''); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
+    <P heading>{t('newest')}</P>
+    {allTags(folderItems).length > 0 && <><P muted>{t('tagFilter')}</P><View style={[styles.row,{ flexWrap:'wrap' }]}>{[null, ...allTags(folderItems)].map(g =>
+      <Button quiet key={g ?? ''} checked={tagPick === g} title={`${tagPick === g ? '✓ ':''}${g ?? t('allItems')}`} onPress={() => setTagPick(g)} />)}</View></>}
+    {folderItems.length ? searchItems(folderItems, '', folderItems.some(i => tagPick !== null && i.tags.includes(tagPick)) ? tagPick : null).map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
+      {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}
+      {btn('open', () => { setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
+    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
-    {!editing && <>{[...launchFolders.map(f => ({id:f.id})), ...state.folders].map(f => <Button quiet key={f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
-      <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPickedAsset(null); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>
-      {draft.kind !== 'note' && <>{btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(async () => {
-        const picked = await files.pickAttachment(draft.kind === 'photo'); if (!picked) return;
-        const { assetId, ...file } = picked; setPickedAsset(assetId ?? null); setDraft(d => ({...d,...file,title:d.title || file.filename}));
-      }))}{draft.kind === 'photo' && <P muted>{t(vaultCopy.photo)}</P>}{draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
-    </>}
-    <Field label={t('name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
+    {/* Which folder: asked on every add and change, starting from the neutral one (findings 1, 7). */}
+    <P section>{t('whichFolder')}</P>
+    {shownFolders.map(f => <Button quiet key={f.id} checked={draft.folder === f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
+    {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
+    {draft.kind !== 'note' && <>{!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false)))}
+      {editing && btn('replaceFile', doRun(() => pick(true)))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
+      {draft.kind === 'photo' && !editing && <P muted>{t(vaultCopy.photo)}</P>}
+      {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
+    <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
     {lines.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
-    {ent.plus && <Field label={t('tags')} value={draft.tags.join(',')} onChange={v => setDraft(d => ({...d,tags:v.split(',').map(s=>s.trim())}))} />}
+    {ent.plus && <Field label={t('tags')} value={tagInput} onChange={setTagInput} />}
     <P muted>{t('addingDate')}</P>
     {confirm === 'edit' ? <Card><P>{t('confirmEdit')}</P>{btn('yesSave', doRun(saveDraft))}{btn('keep', () => setConfirm(null),true)}</Card> :
       <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft)} />}
-    {btn('cancel', () => { setDraft(blankDraft(folder)); navigate('folder'); },true)}</>;
+    {btn('cancel', () => { setDraft(blankDraft(folder)); setPicked([]); setReplacement(null); navigate(editing ? 'detail' : 'folder'); },true)}</>;
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
     <P>{t('happened')}: {displayDay(item.happenedOn)} {item.happenedOn ? t('yourDate'):''}</P><P>{t('saved')}: {displayDate(item.savedOn)}</P>
     <P>{t('changed')}: {item.changedOn ? displayDate(item.changedOn):t('never')}</P></Card>
-    {item.kind === 'photo' && item.bytes && <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" accessibilityLabel={item.title} />}
+    {item.bytes && (item.kind === 'photo' || item.mime?.startsWith('image/')) && <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" accessibilityLabel={item.title} />}
+    {/* Saved documents open inside the app (finding 14). */}
+    {item.bytes && item.kind === 'file' && !item.mime?.startsWith('image/') && (viewUri
+      ? <FileView uri={viewUri} mime={item.mime} filename={item.filename} labels={{ openPdf:t('open'), cannotShow:t('cannotShow') }} />
+      : <Button title={`${t('open')} ${item.filename ?? ''}`} onPress={doRun(async () => setViewUri(await files.viewFile(item)))} disabled={busy} />)}
+    {item.tags.length > 0 && <P muted>{t('tagsShown')}: {item.tags.join(', ')}</P>}
     <P heading>{t('yourNote')}</P><Card><P>{item.note}</P></Card><P muted>{t('dateHonesty')}</P>
-    {item.history.map((r,n) => <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDay(r.happenedOn)}</P></Card>)}
-    {btn('edit', () => startEdit(item))}{btn('folderPdf', () => {setSelection(false);navigate('pdf');})}
+    {item.history.map((r,n) => { const next = item.history[n+1] ?? item;
+      return <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDay(r.happenedOn)}</P>
+        {r.folder !== undefined && r.folder !== next.folder && <P muted>{t('wasIn', { folder:folderName(r.folder) })}</P>}
+        {r.sha256 !== undefined && r.sha256 !== next.sha256 && r.filename && <P muted>{t('wasFile', { name:r.filename })}</P>}</Card>; })}
+    {btn('edit', () => startEdit(item))}{btn('folderPdf', () => {setSelection(false);setSelected(folderItems.map(i => i.id));setWithHistory(false);navigate('pdf');})}
     {item.bytes && btn('saveOriginals', doRun(async () => share(() => files.shareOriginals([item]))))}
     {confirm === 'remove' ? <Card><P>{t('confirmRemove')}</P>{btn('yesRemove', doRun(async () => { await vault.remove(item.id,true); if(vaultRef.current === vault)navigate('folder'); }))}{btn('keep', () => setConfirm(null),true)}</Card> : btn('remove', () => setConfirm('remove'),true)}</>;
   else if (screen === 'pdf') body = <><P heading>{t('pdfTitle',{folder:title})}</P><P>{t('pdfIntro',{n:folderItems.length})}</P>
-    <Card>{folderItems.map((i,n) => <View key={i.id}><P>{n+1}. {i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)} · {t('saved')}: {displayDate(i.savedOn)}</P></View>)}</Card>
+    {/* Anyone can leave items out; earlier versions stay out unless switched on (finding 6). */}
+    <P muted>{t('pdfPick')}</P>
+    <Card>{folderItems.map(i => <Pressable key={i.id} accessibilityRole="checkbox" accessibilityState={{ checked:selected.includes(i.id) }} accessibilityLabel={i.title}
+      onPress={() => setSelected(v => v.includes(i.id)?v.filter(id=>id!==i.id):[...v,i.id])}>
+      <P>{selected.includes(i.id) ? '✓':'○'} {i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)} · {t('saved')}: {displayDate(i.savedOn)}</P></Pressable>)}</Card>
+    <Card><P>{t('includeHistory')}</P><Switch accessibilityLabel={t('includeHistory')} value={withHistory} onValueChange={setWithHistory} /></Card>
     <P muted>{t('pdfWarning')}</P><P muted>{t('unsupportedPdf')}</P>
-    {ent.plus && <><Button title={`${selection?'✓':'○'} ${t('chosen')}`} onPress={() => {setSelection(!selection);setSelected(folderItems.map(i=>i.id));}} />
-      {selection && <>{folderItems.map(i => <Button quiet key={i.id} title={`${selected.includes(i.id)?'✓':'○'} ${i.title}`} onPress={() => setSelected(v => v.includes(i.id)?v.filter(id=>id!==i.id):[...v,i.id])} />)}
-        <Field label={t('from')} value={from} onChange={setFrom} /><Field label={t('to')} value={to} onChange={setTo} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
+    {ent.plus && <><Button title={`${selection?'✓':'○'} ${t('chosen')}`} onPress={() => setSelection(!selection)} />
+      {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} onChange={setFrom} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} onChange={setTo} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
     {btn('savePdf', doRun(async () => {
-      const selectionOptions = selection ? { ids:selected, from:from ? dateBoundary(from,false):undefined, to:to ? dateBoundary(to,true):undefined }:undefined;
-      const items = vault.items(folder, selectionOptions, ent.plus);
-      await share(() => files.sharePdf(items,{title,madeOn:new Date().toISOString(),lang,cover:selection ? cover:undefined}));
-    }), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder)))))}
+      if (!selected.length) throw Error('NOTHING_CHOSEN');
+      const items = vault.items(folder, { ids:selected, from:selection && from ? dateBoundary(from,false):undefined, to:selection && to ? dateBoundary(to,true):undefined }, ent.plus);
+      await share(() => files.sharePdf(items,{title,madeOn:new Date().toISOString(),lang,cover:selection ? cover:undefined,history:withHistory}));
+    }), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder, { ids:selected }, ent.plus)))))}
     <P muted>{t('plusPdf')}</P>{btn('seePlus', () => navigate('plus'),true)}</>;
   else if (screen === 'backup') body = <><P heading>{t('backup')}</P>
     <Card tone={state.backup ? 'ok':undefined}><P>{state.backup ? t('lastBackup',{date:displayDate(state.backup.checkedOn)}):t('noBackup')}</P></Card>
-    {backupStale && <Card tone="gold"><P>{t('newBackup',{n:state.items.length})}</P></Card>}<P>{t('backupDestination')}</P>
-    {btn('backUp', doRun(async () => { const data = vault.backup(await device.backupKey()); await share(() => files.shareBytes(data,`KeepMyProof-${Date.now()}.kmp`,'application/octet-stream')); }), false, true)}
+    {nudge !== 'none' && <Card tone="gold"><P>{t(nudge === 'check' ? 'checkNow' : 'newBackup',{n:state.items.length})}</P></Card>}<P>{t('backupDestination')}</P>
+    {btn('backUp', doRun(async () => { const data = vault.backup(await device.backupKey());
+      await share(() => files.shareBytes(data, backupName(new Date()), 'application/octet-stream')); setBackupShared(true); }), false, nudge !== 'check')}
     <P muted>{t('backupCheckHint')}</P>{btn('backupCheck', doRun(async () => {
-      try { if (checkData) { await vault.checkBackup(checkData,await device.backupKey());setCheckData(null);setBackupFailed(false);setNotice(t('backupDone')); } else setCheckData(await files.pickBackup()); }
+      try { if (checkData) { await vault.checkBackup(checkData,await device.backupKey());setCheckData(null);setBackupFailed(false);setBackupShared(false);setNotice(t('backupDone')); } else setCheckData(await files.pickBackup()); }
       catch(e) { setBackupFailed(true);throw e; }
-    }))}
-    <Card><P>{t('recovery')}</P><P muted>{t('confirmed')}</P></Card><P heading>{t('newPhone')}</P><P>{t('restoreHint')}</P><P muted>{t('loss')}</P>
+    }), false, nudge === 'check')}
+    <Card><P>{t('recovery')}</P><P muted>{t('confirmed')}</P>{btn('renewWords', () => { setCurrentCode(''); navigate('renew'); })}</Card><P heading>{t('newPhone')}</P><P>{t('restoreHint')}</P><P muted>{t('loss')}</P>
     {btn('restore', () => {setRestoreData(null);setWordInput('');navigate('restore');})}<P muted>{t('restoreSafety')}</P></>;
   else if (screen === 'settings') body = <><P heading>{t('settings')}</P><P muted>{t('noAnalytics')}</P>
     <Card><P>{t('language')}</P>{LANGS.map(l => <Button quiet key={l} checked={lang === l} title={`${lang === l ? '✓':'○'} ${LANG_NAME[l]}`} onPress={() => chooseLang(l)} />)}</Card>
     <P section>{t('vaultSection')}</P>
     {photos.systemConfirm ? removeSwitch : <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
-    {[...launchFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
+    {btn('changeCode', () => { setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('changeCode'); })}
+    {btn('renewWords', () => { setCurrentCode(''); navigate('renew'); })}
+    {[...appFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
     <Card><P>{t('heardSettings')}</P><P muted>{heard && heard !== 'skip' ? t(HEARD_KEY[heard]) : t('heardNone')}</P>
       <Button quiet title={t('heardChange')} onPress={() => { setHeardFrom('settings'); navigate('heard'); }} disabled={busy} /></Card>
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
     {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}
-    <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}</>;
+    <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}
+    {btn('eraseOpen', () => { setCurrentCode(''); navigate('erase'); }, true)}</>;
+  else if (screen === 'changeCode') body = <><P heading>{t('changeCode').replace(/\s*›$/, '')}</P>
+    <Field label={t('currentCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
+    <Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
+    {btn('saveCode', doRun(async () => {
+      if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
+      await device.changePasscode(currentCode, code); setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('settings'); setNotice(t('codeChanged'));
+    }), false, true)}<P muted>{t('wrongGuesses')}</P></>;
+  else if (screen === 'renew') body = <><P heading>{t('renewWords').replace(/\s*›$/, '')}</P><P>{t('renewWhy')}</P>
+    <Field label={t('renewCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
+    {btn('continue', doRun(async () => {
+      await device.appLock.unlock(currentCode); setWordsMode('renew'); setWordInput(''); setWords(phrase(device.random)); navigate('phrase');
+    }), false, true)}</>;
+  else if (screen === 'erase') body = <><P heading>{t('eraseTitle')}</P><Card tone="red"><P>{t('eraseWarn')}</P></Card>
+    <Field label={t('eraseCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
+    {btn('eraseNow', doRun(async () => {
+      await device.eraseAll(currentCode);
+      vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setCurrentCode(''); setBiometric(false); setHeard(null); setSample(false);
+      setRemovePref(DEFAULT_REMOVE_PREF); setBackupShared(false); resume.current = 'home'; navigate('first'); setNotice(t('erased'));
+    }))}{btn('cancel', () => navigate('settings'), true)}</>;
   else if (screen === 'heard') body = <><P heading>{t('heardTitle')}</P><P muted>{t('heardOptional')}</P>
     <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
       onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>

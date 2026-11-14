@@ -44,5 +44,9 @@ export async function unlockBiometric(_prompt: string) {
 export async function setBiometrics(enabled: boolean, _prompt: string) { await locks.write({ ...(await locks.read()), biometrics: enabled }); }
 export async function backupKey() { return unb64((await locks.read()).recovery); }
 export async function adoptRecovery(words: string) { await locks.write({ ...(await locks.read()), recovery: b64(recoveryKey(words)) }); }
+export async function bioTypes(): Promise<number[]> { return [2]; }
+export async function changePasscode(current: string, next: string) { await appLock.change(current, next, random); }
+export async function renewRecovery(code: string, words: string) { await appLock.renewRecovery(code, words); }
+export async function eraseAll(code: string) { await appLock.erase(code, async () => { kept.clear(); ciphertext = null; }); }
 export async function cleanTemps() {}
 export async function cleanStartupTemps() {}

@@ -31,7 +31,7 @@ export const heardStore: HeardStore = {
   write: async v => { await SecureStore.setItemAsync(HEARD, v, options); },
 };
 let db: SQLite.SQLiteDatabase | undefined;
-export async function database(): Promise<InstallStore> {
+export async function database(): Promise<InstallStore & { erase(): Promise<void> }> {
   if (!db) {
     const directory = new Directory(Paths.document, 'vault'); directory.create({ intermediates: true, idempotent: true });
     db = await SQLite.openDatabaseAsync('vault.sqlite', {}, directory.uri);
@@ -43,6 +43,12 @@ export async function database(): Promise<InstallStore> {
     write: async ciphertext => { await connection.withExclusiveTransactionAsync(async tx => {
       await tx.runAsync('INSERT INTO vault(id,ciphertext) VALUES(1,?) ON CONFLICT(id) DO UPDATE SET ciphertext=excluded.ciphertext', ciphertext);
     }); },
+    // Erase everything (Settings): the vault and any set-aside copy, then the file is rewritten so the
+    // deleted pages are not left in it.
+    erase: async () => {
+      await connection.execAsync('DELETE FROM vault; DELETE FROM orphaned;');
+      await connection.execAsync('VACUUM; PRAGMA wal_checkpoint(TRUNCATE);');
+    },
     archive: async () => { await connection.withExclusiveTransactionAsync(async tx => {
       await tx.runAsync("INSERT INTO orphaned(archivedOn,ciphertext) SELECT ?, ciphertext FROM vault WHERE id=1", new Date().toISOString());
       await tx.runAsync('DELETE FROM vault WHERE id=1');
@@ -95,6 +101,21 @@ export async function setBiometrics(enabled: boolean, prompt: string) {
 export async function backupKey() { return unb64((await locks.read()).recovery); }
 export async function adoptRecovery(words: string) {
   const r = await locks.read(); await locks.write({ ...r, recovery: b64(recoveryKey(words)) });
+}
+/** Which biometric unlock this phone has (src/core/bio.ts): Face ID, Touch ID, fingerprint or face. */
+export async function bioTypes(): Promise<number[]> {
+  try { return (await LocalAuth.supportedAuthenticationTypesAsync()).map(Number); } catch { return []; }
+}
+export async function changePasscode(current: string, next: string) { await appLock.change(current, next, random); }
+export async function renewRecovery(code: string, words: string) { await appLock.renewRecovery(code, words); }
+/** Settings → Erase everything on this phone: after the passcode, the vault, its keys and this app's
+ *  settings are deleted. Nothing is kept anywhere by us; a backup the person saved is theirs and stays. */
+export async function eraseAll(code: string) {
+  await appLock.erase(code, async () => {
+    const store = await database(); await store.erase();
+    for (const k of [BIO, KEY, AUTH, HEARD, REMOVE, LANG]) await SecureStore.deleteItemAsync(k, options);
+    await cleanTemps();
+  });
 }
 export const tempDirectory = () => new Directory(Paths.cache, 'outgoing');
 export async function cleanTemps() {

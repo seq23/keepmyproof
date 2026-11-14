@@ -1,4 +1,4 @@
-# Adds one invented note to the folder that is open. Env: TITLE, NOTE. Used by preview.yaml.
+# Adds one invented note to the folder that is open. Env: TITLE, NOTE. After the very first save the app asks how you heard about it; that counts as done too. Used by preview.yaml.
 # The note (multiline) is typed first; Enter on the one-line title then closes the keyboard, so
 # it never covers the save button.
 appId: com.keepmyproof.app
@@ -27,5 +27,5 @@ appId: com.keepmyproof.app
     direction: DOWN
 - tapOn: "Save to .*"
 - extendedWaitUntil:
-    visible: "Checklist"
+    visible: "Checklist|How did you hear about KeepMyProof\\?"
     timeout: 15000
