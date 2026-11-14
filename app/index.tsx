@@ -151,6 +151,8 @@ export default function App() {
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
   const btn = (key: StringKey, action: () => void, quiet = false, primary = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} disabled={busy} />;
+  // The disclaimer opens the site page (Spanish has its own; Chinese and Korean read the English page).
+  const disclaimerUrl = lang === 'es' ? 'https://keepmyproof.com/es/aviso-legal' : 'https://keepmyproof.com/disclaimer';
   const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
     <Button quiet title={t('privacy')} onPress={() => void Linking.openURL('https://keepmyproof.com/privacy')} /></>;
   const removeSwitch = <Card><P>{t('removeSetting')}</P><P muted>{t('removeSettingHint')}</P><Switch accessibilityLabel={t('removeSetting')} value={removePref === 'ask'}
@@ -310,7 +312,8 @@ export default function App() {
     {[...launchFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
-    {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}{btn('lockNow', lock,true)}</>;
+    {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}
+    <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}</>;
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolder.trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
