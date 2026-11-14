@@ -8,7 +8,7 @@ const day = (v: string | null) => v === null ? null : calendarDay(v);
 /** Newest first by the day it happened (the user's date), or the day it was saved when that is unknown;
  *  same day: the later save first. */
 const shownDay = (i: Item) => calendarDay(i.happenedOn ?? i.savedOn);
-const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
+export const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
 export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'>;
 export class Vault {
   private state: Snapshot = empty();

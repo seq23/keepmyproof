@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { b64, decode, hash, open, phrase, recoveryKey, seal, unb64, utf8 } from '../src/core/crypto';
 import { checked, empty, homeButtons, launchFolders, tickedBy, validate } from '../src/core/model';
 import { Vault, FREE_LIMIT } from '../src/core/vault';
@@ -159,4 +160,7 @@ test('items list newest first by the happened date, falling back to the saved da
   const undated = await vault.add(draft({ title: 'undated' }), true);
   const middle = await vault.add(draft({ title: 'middle', happenedOn: '2026-06-01' }), true);
   assert.deepEqual(vault.items('divorce-prep').map(i => i.id), [undated, recent, middle, old]);
+  // The folder screen sorts its own copy of the items: it must use the same order, never save time alone.
+  const screen = readFileSync('app/index.tsx', 'utf8');
+  assert.ok(/folderItems = [^\n]*\.sort\(newestFirst\)/.test(screen) && !/\.sort\(\(a, ?b\) => b\.savedOn/.test(screen));
 });

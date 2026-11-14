@@ -7,7 +7,7 @@ import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { LANGS, LANG_NAME, LOCALE, checked, contentDigest, folderLines, homeButtons, launchFolders, phoneLang, tickedBy, validate, type Item, type Labels, type Lang } from '../src/core/model';
 import { userDate, editableDate, dateBoundary, showDay } from '../src/core/dates';
-import { FREE_LIMIT, Vault, mayAdd, type Draft } from '../src/core/vault';
+import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft } from '../src/core/vault';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
@@ -130,7 +130,7 @@ export default function App() {
   };
   const title = folderName(folder);
   const lines = state ? folderLines(state, folder, lang) : [];
-  const folderItems = state?.items.filter(i => i.folder === folder).sort((a,b) => b.savedOn.localeCompare(a.savedOn)) ?? [];
+  const folderItems = state?.items.filter(i => i.folder === folder).sort(newestFirst) ?? [];
   const item = state?.items.find(i => i.id === itemId);
   const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(LOCALE[lang]) : t('unknown');
   const displayDay = (d: string | null) => d ? showDay(d, LOCALE[lang]) : t('unknown');
