@@ -19,8 +19,10 @@ import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, styles, textProps, usePalette } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
+import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
+const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
 
-type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom';
+type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
 const parseDate = (v: string) => userDate(v).toISOString();
 // First-launch picker: each choice in its own language.
@@ -48,6 +50,8 @@ export default function App() {
   // Preview only: the 123456 hint shows only while the sample vault is the one on screen, never after her own passcode.
   const [sample, setSample] = useState(false);
   const [checkData, setCheckData] = useState<string|null>(null);
+  // "How did you hear about us?": kept on this phone (src/core/heard.ts); heardFrom = where Skip/Done returns.
+  const [heard, setHeard] = useState<HeardAnswer|null>(null), [heardFrom, setHeardFrom] = useState<'home'|'settings'>('home');
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
@@ -59,7 +63,7 @@ export default function App() {
     vaultRef.current = v; setVault(v); setCode(''); setCodeAgain(''); setWordInput(''); setWords(''); setScreen(resume.current);
   };
   function lock() {
-    resume.current = ['home','folder','add','detail','pdf','backup','restore','settings','plus','custom'].includes(screenRef.current) ? screenRef.current : 'home';
+    resume.current = ['home','folder','add','detail','pdf','backup','restore','settings','plus','custom','heard'].includes(screenRef.current) ? screenRef.current : 'home';
     vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setScreen('lock');
     setCode(''); setCodeAgain(''); setWordInput(''); setError(''); setNotice(''); setConfirm(null); setOffer(null); setPickedAsset(null);
     if (!sharing.current) void device.cleanTemps().catch(() => {});
@@ -68,6 +72,7 @@ export default function App() {
     mounted.current = true;
     void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
     void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
+    void readHeard(device.heardStore).then(h => { if (mounted.current) setHeard(h); }).catch(() => {});
     void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
@@ -112,6 +117,7 @@ export default function App() {
     else if (screen === 'reset') navigate('lock');
     else if (screen === 'add' || screen === 'detail' || screen === 'pdf') navigate('folder');
     else if (screen === 'restore') navigate(vault ? 'backup' : 'first');
+    else if (screen === 'heard') navigate(heardFrom);
     else navigate('home');
   }
   useEffect(() => { const sub = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -186,7 +192,7 @@ export default function App() {
   else if (screen === 'confirmPhrase') body = <><P heading>{t('confirmWords')}</P><Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('finish', doRun(async () => {
       if (!equal(b64(recoveryKey(words)), b64(recoveryKey(wordInput)))) throw Error('RECOVERY_INVALID');
-      resume.current = 'home'; acceptVault(await device.setup(code, words, biometric));
+      resume.current = 'heard'; setHeardFrom('home'); acceptVault(await device.setup(code, words, biometric));
     }), false, true)}</>;
   else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))), false, true)}
@@ -310,10 +316,20 @@ export default function App() {
     {photos.systemConfirm ? removeSwitch : <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
     {[...launchFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
+    <Card><P>{t('heardSettings')}</P><P muted>{heard && heard !== 'skip' ? t(HEARD_KEY[heard]) : t('heardNone')}</P>
+      <Button quiet title={t('heardChange')} onPress={() => { setHeardFrom('settings'); navigate('heard'); }} disabled={busy} /></Card>
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
     {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}
     <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}</>;
+  else if (screen === 'heard') body = <><P heading>{t('heardTitle')}</P><P muted>{t('heardOptional')}</P>
+    <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
+      onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>
+    {heard && heard !== 'skip' && btn('heardSend', doRun(async () => {
+      if (!(await sendHeard(heard, { canOpen: Linking.canOpenURL, open: Linking.openURL }))) setNotice(t('heardNoMail'));
+    }))}
+    {heard && heard !== 'skip' ? btn('heardDone', () => navigate(heardFrom), true)
+      : btn('heardSkip', doRun(async () => { await saveHeard(device.heardStore, 'skip'); setHeard('skip'); navigate(heardFrom); }), true)}</>;
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolder.trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
@@ -328,7 +344,7 @@ export default function App() {
   else body = <P>{t('empty')}</P>;
   return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-      {ready && !['first','home','lock'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
+      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
       {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && <P muted>{t('working')}</P>}{body}
     </ScrollView>

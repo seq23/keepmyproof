@@ -41,7 +41,7 @@ without it the script finds the Appetize app whose note is `keepmyproof-preview`
 
 The run walks every screen in English on an iPhone simulator with invented sample papers
 (`.maestro/preview.yaml`, manual runs with screens=true only) and attaches **keepmyproof-preview-screens**: one PNG per screen,
-numbered in order (`01-first.png` … `15-reset.png`). The summary lists them. The run fails if any
+numbered in order (`01-first.png` … `16-reset.png`). The summary lists them. The run fails if any
 screenshot is missing or blank (`scripts/preview/shots.mjs`). The zipped simulator build is
 attached as **keepmyproof-simulator-build** (drag the unzipped `.app` onto a simulator to run it).
 
