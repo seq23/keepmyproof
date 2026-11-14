@@ -1,1 +1,44 @@
-{"cli":{"version":">= 16.0.0","appVersionSource":"remote"},"build":{"development":{"developmentClient":true,"distribution":"internal","channel":"development"},"preview":{"distribution":"internal","channel":"preview","android":{"buildType":"apk"}},"production":{"autoIncrement":true,"channel":"production"}}}
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production",
+      "environment": "production"
+    },
+    "testflight": {
+      "extends": "production",
+      "distribution": "store",
+      "environment": "production"
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6834891698",
+        "appleTeamId": "34LUUUDT4H"
+      }
+    },
+    "testflight": {
+      "ios": {
+        "ascAppId": "6834891698",
+        "appleTeamId": "34LUUUDT4H"
+      }
+    }
+  }
+}

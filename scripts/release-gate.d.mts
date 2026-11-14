@@ -9,3 +9,4 @@ export declare function stops(input: {
 export declare const STOP_WORDS: Record<string, { title: string; next_step: string }>;
 export declare const OPEN_LOOPS: { repo: string; business: string; finish: string };
 export declare function knownHere(eas: boolean): string[];
+export declare function betaStops(input: { env: Record<string, string | undefined> }): { code: string; why: string }[];

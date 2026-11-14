@@ -62,9 +62,27 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   return out;
 }
 
+/** A TestFlight beta (eas.json profile "testflight", iOS only, never sent for review): the device test runs ON
+ *  this build, so only what the build itself carries must be right: a real App Store key and no preview switch.
+ *  The full gate above still guards the "production" build that goes to App Store review. */
+export function betaStops({ env }) {
+  const out = [];
+  if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_'))
+    out.push({ code: 'REVENUECAT_KEY_MISSING', why: 'the App Store (appl_) RevenueCat key is not set in the EAS production environment, so TestFlight could not test buying Plus.' });
+  if (env.EXPO_PUBLIC_KMP_PREVIEW)
+    out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.' });
+  return out;
+}
+
 async function main() {
   const production = process.env.EAS_BUILD_PROFILE === 'production';
   const report = process.argv.includes('--report');
+  if (process.argv.includes('--if-production') && process.env.EAS_BUILD_PROFILE === 'testflight') {
+    const found = betaStops({ env: process.env });
+    for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
+    if (found.length) process.exitCode = 2; else console.log('release gate: clear for a TestFlight beta (not for App Store review).');
+    return;
+  }
   if (process.argv.includes('--if-production') && !production) {
     console.log(`release gate: not a store build (${process.env.EAS_BUILD_PROFILE ?? 'local'}); stops apply to production only.`);
     return;

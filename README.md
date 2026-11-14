@@ -185,4 +185,10 @@ prints each `NAMED STOP [CODE]` and exits 2.
   support@keepmyproof.com forwards through Cloudflare Email Routing (set up 2 Nov 2026).
 
 Without a key the app runs on the mock, which throws `REVENUECAT_KEY_MISSING` on
-any purchase. Nothing here creates accounts, builds binaries or submits to a store.
+any purchase. Nothing here creates accounts or submits to App Store review.
+
+TestFlight beta (the build the device test runs on): EAS project `seq23/keepmyproof`,
+`eas build -p ios --profile testflight --auto-submit` uploads to App Store Connect
+app 6834891698 for TestFlight only. Its gate (`betaStops`) needs only the `appl_` key
+(`EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY`, EAS production environment) and no preview
+switch; the full list above still guards the `production` profile sent for review.
