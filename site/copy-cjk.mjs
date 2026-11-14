@@ -9,8 +9,8 @@ export const COPY_CJK = {
   zh: {
     lang: 'zh-Hans', locale: 'zh_CN', dateLocale: 'zh-CN',
     comingSoon: '即将登陆 App Store（iPhone）和 Google Play（Android）。',
-    vaultBar: { badge: '🔒 照片和文件的私密保险箱', line: '您的照片和文件私密保险箱：用 Face ID 锁住，不留在相册里。',
-      see: '查看私密保险箱 ›', nav: '私密保险箱', chips: ['Face ID 锁定', '不留在相册里', '按日期整理文件、截图和短信的文件夹'],
+    vaultBar: { badge: '照片和文件的私密保险箱', line: '您的照片和文件私密保险箱：用密码或 Face ID 锁住。您的副本不会出现在相册里；在 iPhone 上会提出删除原件，在 Android 上请您自己删除原件。',
+      see: '查看私密保险箱 ›', nav: '私密保险箱', chips: ['密码或 Face ID 锁定', '副本不出现在相册里', '按日期整理文件、截图和短信的文件夹'],
       stores: ['App Store（iPhone）', 'Google Play（Android）'], soonTag: '即将推出' },
     getIt: '下载 KeepMyProof', appStore: '在 App Store 打开 ›', googlePlay: '在 Google Play 打开 ›',
     factSentence: (n) => `KeepMyProof 是一款私密手机应用，用来把离婚、子女监护、职场、VA 索赔、遗产执行和 IEP 文件的副本保存在带清单的文件夹里。文件加密保存在手机上，无需账户，没有广告。前 ${n} 项免费。应用界面有英文、西班牙文、中文和韩文。`,
@@ -22,8 +22,8 @@ export const COPY_CJK = {
   ko: {
     lang: 'ko', locale: 'ko_KR', dateLocale: 'ko-KR',
     comingSoon: 'App Store(iPhone)와 Google Play(Android) 출시 예정입니다.',
-    vaultBar: { badge: '🔒 사진과 문서를 위한 비공개 보관함', line: '사진과 서류를 위한 비공개 보관함: Face ID로 잠그고 카메라 롤 밖에 보관합니다.',
-      see: '비공개 보관함 보기 ›', nav: '비공개 보관함', chips: ['Face ID 잠금', '카메라 롤 밖에 보관', '서류, 스크린샷, 문자를 날짜별 폴더에'],
+    vaultBar: { badge: '사진과 문서를 위한 비공개 보관함', line: '사진과 서류를 위한 비공개 보관함: 암호나 Face ID로 잠급니다. 보관한 사본은 카메라 롤에 보이지 않으며, iPhone에서는 원본 삭제를 제안하고 Android에서는 직접 원본을 지웁니다.',
+      see: '비공개 보관함 보기 ›', nav: '비공개 보관함', chips: ['암호 또는 Face ID 잠금', '사본은 카메라 롤에 보이지 않음', '서류, 스크린샷, 문자를 날짜별 폴더에'],
       stores: ['App Store(iPhone)', 'Google Play(Android)'], soonTag: '출시 예정' },
     getIt: 'KeepMyProof 받기', appStore: 'App Store에서 열기 ›', googlePlay: 'Google Play에서 열기 ›',
     factSentence: (n) => `KeepMyProof는 이혼, 양육권, 직장, VA 보상 청구, 유언 집행, IEP 서류의 사본을 체크리스트가 있는 폴더에 보관하는 비공개 휴대폰 앱입니다. 서류는 휴대폰에 암호화되어 저장되며 계정도 광고도 없습니다. ${n}개 항목까지 무료입니다. 앱은 영어, 스페인어, 중국어, 한국어로 제공됩니다.`,

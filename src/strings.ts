@@ -466,10 +466,10 @@ export const strings = {
     "12단어, 띄어쓰기로 구분"
   ],
   "folders": [
-    "Home",
-    "Inicio",
-    "主页",
-    "홈"
+    "Folders",
+    "Carpetas",
+    "文件夹",
+    "폴더"
   ],
   "home": [
     "Your folders",

@@ -45,6 +45,8 @@ export default function App() {
   const [removePref, setRemovePref] = useState<RemovePref>(DEFAULT_REMOVE_PREF), [pickedAsset, setPickedAsset] = useState<string|null>(null);
   const [offer, setOffer] = useState<{ assetId: string; itemId: string }|null>(null);
   const [restoreData, setRestoreData] = useState<string|null>(null);
+  // Preview only: the 123456 hint shows only while the sample vault is the one on screen, never after her own passcode.
+  const [sample, setSample] = useState(false);
   const [checkData, setCheckData] = useState<string|null>(null);
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
@@ -164,7 +166,7 @@ export default function App() {
       setLang('en'); resume.current = 'home';
       const v = await device.setup('123456', phrase(device.random), false);
       for (const d of sampleVault()) await v.add(d, false);
-      acceptVault(v);
+      setSample(true); acceptVault(v);
     })} />}
     {LANGS.map(l => <Button key={l} title={CONTINUE[l]} onPress={() => { chooseLang(l); navigate('setup'); }} />)}
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
@@ -188,14 +190,14 @@ export default function App() {
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))), false, true)}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
-    {PREVIEW_BUILD && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
+    {PREVIEW_BUILD && sample && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
   else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field label={t('newCode')} value={code} onChange={setCode} secret numeric />
     <Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('reset', doRun(async () => { if (code !== codeAgain) throw Error('PASSCODE_INVALID');
-      await device.appLock.reset(code, { words:wordInput }, () => device.biometricCheck(t('useBio')), device.random); acceptVault(await device.loadVault()); }), false, true)}
+      await device.appLock.reset(code, { words:wordInput }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }), false, true)}
     {biometric && btn('useBio', doRun(async () => { if (code !== codeAgain) throw Error('PASSCODE_INVALID');
-      await device.appLock.reset(code, { biometric:true }, () => device.biometricCheck(t('useBio')), device.random); acceptVault(await device.loadVault()); }))}<P muted>{t('wrongGuesses')}</P></>;
+      await device.appLock.reset(code, { biometric:true }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }))}<P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'restore') body = <><P heading>{t('restore').replace(/\s*›$/, '')}</P><P>{t('restoreSafety')}</P>
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {!vault && <><Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret /></>}

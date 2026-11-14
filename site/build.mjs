@@ -107,7 +107,7 @@ const CSS_EXTRA = `.crumbs{display:flex;flex-wrap:wrap;align-items:center;column
 .fact{font-size:15px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 input,select,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;min-height:44px;padding:6px 8px;max-width:100%}
 label{display:inline-block;margin:0 8px 8px 0}
-.pill{display:inline-flex;align-items:center;min-height:36px;padding:4px 14px;margin:14px 0 0;border-radius:999px;border:1.5px solid var(--ok);background:var(--okbg);color:var(--ok);font-weight:600;font-size:15px;text-decoration:none}
+.pill img{border-radius:5px;margin-right:8px;flex:none}.pill{display:inline-flex;align-items:center;min-height:36px;padding:4px 14px;margin:14px 0 0;border-radius:999px;border:1.5px solid var(--ok);background:var(--okbg);color:var(--ok);font-weight:600;font-size:15px;text-decoration:none}
 .vline{font-weight:600}.hero{margin:4px 0 8px}.hero .btn{margin-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:4px 0 12px}.chips li{margin:0}
 .chips a{display:inline-flex;align-items:center;min-height:44px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font-size:14px;text-decoration:none}
@@ -257,7 +257,8 @@ function vaultHero(lang, primary) {
   return `<p class="vline">${esc(v.line)}</p><p class="hero">${primary ? `<a class="btn primary" href="${primary[1]}">${esc(primary[0])}</a>` : ''}<a class="btn" href="${VAULT_HREF[lang]}">${esc(v.see)}</a></p>
 <ul class="chips">${v.chips.map((t, i) => `<li><a href="${chips[i]}">${esc(t)}</a></li>`).join('')}</ul>`;
 }
-const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}">${esc(v.badge)}</a>` : ''; };
+// The badge carries the brand's own mark (the app tile: brass seal ring on lockbox green), never an emoji.
+const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}"><img src="/icon-192.png" alt="" width="20" height="20">${esc(v.badge)}</a>` : ''; };
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
@@ -449,12 +450,10 @@ export function bySource(facts) {
   return [...out.values()];
 }
 
+/** Only real land neighbours that have a page in this language (never padded with other states). */
 function neighbours(code, published) {
-  const set = new Set(published), out = STATES[code].neighbours.filter((n) => set.has(n));
-  const order = published.filter((c) => c !== code), i = STATE_CODES.indexOf(code);
-  const near = order.sort((a, b) => Math.abs(STATE_CODES.indexOf(a) - i) - Math.abs(STATE_CODES.indexOf(b) - i));
-  for (const n of near) { if (out.length >= 4) break; if (!out.includes(n)) out.push(n); }
-  return out.slice(0, 6);
+  const set = new Set(published);
+  return STATES[code].neighbours.filter((n) => set.has(n));
 }
 
 function clusterPages(topics, hubs, cm, add, stops) {
