@@ -176,7 +176,7 @@ test('13: no backup warning before anything is saved; after sharing, the same sp
 });
 
 test('15: each phone is told its own biometric word, and no line says Face ID on its own', () => {
-  assert.equal(bioKind('ios', [2]), 'faceId'); assert.equal(bioKind('ios', [1]), 'touchId'); assert.equal(bioKind('ios', []), 'faceId');
+  assert.equal(bioKind('ios', [2]), 'faceId'); assert.equal(bioKind('web', [2]), 'faceId'); assert.equal(bioKind('ios', [1]), 'touchId'); assert.equal(bioKind('ios', []), 'faceId');
   assert.equal(bioKind('android', [1]), 'fingerprint'); assert.equal(bioKind('android', [1, 2]), 'fingerprint'); assert.equal(bioKind('android', [2]), 'face');
   const bad: string[] = [];
   for (const [k, row] of Object.entries(strings)) if (k !== BIO_NAME.faceId) (row as readonly string[]).forEach((s, i) => { if (/Face ID/.test(s)) bad.push(`${k}.${LANGS[i]}`); });

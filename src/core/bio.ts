@@ -3,8 +3,9 @@
 // types: expo-local-authentication's supportedAuthenticationTypesAsync (1 fingerprint, 2 face, 3 iris).
 export type BioKind = 'faceId' | 'touchId' | 'fingerprint' | 'face';
 export function bioKind(os: string, types: number[]): BioKind {
-  if (os === 'ios') return types.includes(1) && !types.includes(2) ? 'touchId' : 'faceId';
-  return !types.includes(1) && types.includes(2) ? 'face' : 'fingerprint';
+  if (os === 'android') return !types.includes(1) && types.includes(2) ? 'face' : 'fingerprint';
+  // iPhone (and the web preview, which stands in for the iPhone build).
+  return types.includes(1) && !types.includes(2) ? 'touchId' : 'faceId';
 }
 /** The strings key naming each kind. */
 export const BIO_NAME = { faceId: 'bioFaceId', touchId: 'bioTouchId', fingerprint: 'bioFingerprint', face: 'bioFace' } as const;

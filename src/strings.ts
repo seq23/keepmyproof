@@ -634,8 +634,8 @@ export const strings = {
     "파일 선택 ›"
   ],
   "pickPhoto": [
-    "Choose a photo ›",
-    "Elegir una foto ›",
+    "Choose photos ›",
+    "Elegir fotos ›",
     "选择照片 ›",
     "사진 선택 ›"
   ],
