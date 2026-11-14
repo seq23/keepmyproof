@@ -7201,16 +7201,916 @@
    "state": "Submitted and indexed",
    "last_crawl": "2026-11-04T05:05:05Z",
    "inspected_at": "2026-11-13T11:25:28.414Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:18:35Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/aviso-legal": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:17:01Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:29:32Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:19:33Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:52:45Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/disclaimer": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:11:09Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:37:32Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:28:28Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:12:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:00:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:08:48Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:30:49Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T23:44:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T18:19:32Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:16:25Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:20:33Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:00:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/hawai": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:05:37Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:54:36Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/idaho": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:34:57Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:41:36Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:43:23Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-13T22:49:34Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:13:53Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:37:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:50:13Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/louisiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:51:54Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/luisiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:45:06Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:40:16Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:11:45Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:15:39Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:59:45Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T08:02:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:29:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:29:01Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:09:00Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/mississippi": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T10:26:44Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:43:04Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T12:56:21Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:24:23Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:05:29Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:08:21Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:37:39Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:55:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/new-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:49:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:11:30Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:48:16Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/nuevo-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:05:29Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/new-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T01:15:58Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:05:05Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/nueva-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:20:11Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/carolina-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:32:10Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T22:05:33Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:49:38Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:36:59Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:12:43Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/pennsylvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:02:40Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T11:48:45Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:23:18Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/pensilvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:01:53Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T21:23:02Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:13:19Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/south-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:33:29Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:26:41Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/dakota-del-sur": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:57:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:20:58Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:27:55Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:14:35Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:36:32Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:26:33Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:47:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:20:01Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:36:50Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/virginia-occidental": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:06:54Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:41:28Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T14:00:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/dd214-and-military-records/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T16:40:19Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/como-obtener-su-dd-214-y-registros/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:42:19Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T12:18:16Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:19:25Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:01:21Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:56:20Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:31:05Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:15:55Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:16:32Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:02:30Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:35:24Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:57:50Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:14:20Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:28:31Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:04:36Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:35:27Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:15:44Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:58:52Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:39:39Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:45:09Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:28:05Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:08:43Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:02:29Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:37:00Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:40:43Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:02:15Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T18:23:06Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T07:19:27Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/south-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:08:04Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:30:11Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:12:41Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:52:40Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:31:30Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:12:59Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:58:24Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:07:06Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:41:15Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:50:43Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/virginia-occidental": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:11:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T16:41:08Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:29:35Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/disabled-veteran-property-tax/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T11:23:57Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T05:42:36Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T17:14:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/alaska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T03:04:43Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:26:53Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:13:03Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:31:11Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:13:44Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:47:02Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T17:16:18Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:43:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:30:13Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:37:56Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:20:46Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T08:39:01Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:27:33Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T08:55:17Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:42:50Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:25:10Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T03:15:14Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:07:29Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:33:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:08:07Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/hawaii": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T00:32:57Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T18:17:04Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:51:03Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:28:16Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:29:20Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:08:18Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:42:01Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:11:24Z",
+   "inspected_at": "2026-11-14T11:24:44.616Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-13T11:25:28.414Z",
- "sitemap_urls": 2687,
- "inspected": 1200,
+ "generated_at": "2026-11-14T11:24:44.616Z",
+ "sitemap_urls": 2689,
+ "inspected": 1350,
  "states": {
-  "URL is unknown to Google": 95,
-  "Submitted and indexed": 866,
+  "URL is unknown to Google": 97,
+  "Submitted and indexed": 957,
   "Discovered - currently not indexed": 233,
-  "Crawled - currently not indexed": 6
+  "Crawled - currently not indexed": 63
  }
 }
