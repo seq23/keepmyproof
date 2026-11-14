@@ -1,4 +1,5 @@
 import CommonCrypto
+import CryptoKit
 import ExpoModulesCore
 
 // PBKDF2-HMAC-SHA256 for the passcode verifier (src/native/kdf.ts). In Hermes JS the 210,000
@@ -33,5 +34,36 @@ public class KmpKdfModule: Module {
       }
       return Data(out).base64EncodedString()
     }
+
+    // AES-256-GCM for every sealed record (src/core/aead.native.ts), in CryptoKit, so nothing outside
+    // the OS encrypts on iOS. v1 box: 12-byte nonce, ciphertext || 16-byte tag, purpose as AAD.
+    // Synchronous (JSI) because seal/open in src/core/crypto.ts are synchronous.
+    Function("aesGcmSeal") { (key: String, nonce: String, aad: String, data: String) throws -> String in
+      let (k, n, a) = try aeadInputs(key, nonce, aad)
+      guard let plain = Data(base64Encoded: data) else { throw Exception(name: "AEAD_INPUT_INVALID", description: "data must be base64") }
+      let box = try AES.GCM.seal(plain, using: k, nonce: n, authenticating: a)
+      return (box.ciphertext + box.tag).base64EncodedString()
+    }
+
+    Function("aesGcmOpen") { (key: String, nonce: String, aad: String, box: String) throws -> String in
+      let (k, n, a) = try aeadInputs(key, nonce, aad)
+      guard let sealed = Data(base64Encoded: box), sealed.count >= 16 else {
+        throw Exception(name: "AEAD_INPUT_INVALID", description: "box must be base64 ciphertext and a 16-byte tag")
+      }
+      do {
+        let parts = try AES.GCM.SealedBox(nonce: n, ciphertext: sealed.prefix(sealed.count - 16), tag: sealed.suffix(16))
+        return try AES.GCM.open(parts, using: k, authenticating: a).base64EncodedString()
+      } catch {
+        throw Exception(name: "AEAD_OPEN_FAILED", description: "wrong key, wrong purpose or changed data")
+      }
+    }
   }
+}
+
+private func aeadInputs(_ key: String, _ nonce: String, _ aad: String) throws -> (SymmetricKey, AES.GCM.Nonce, Data) {
+  guard let k = Data(base64Encoded: key), k.count == 32, let n = Data(base64Encoded: nonce), n.count == 12,
+        let a = Data(base64Encoded: aad) else {
+    throw Exception(name: "AEAD_INPUT_INVALID", description: "key must be 32 bytes, nonce 12 bytes, all base64")
+  }
+  return (SymmetricKey(data: k), try AES.GCM.Nonce(data: n), a)
 }

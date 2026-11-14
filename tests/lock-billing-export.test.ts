@@ -145,3 +145,18 @@ test('a TestFlight beta build needs a real App Store key and no preview switch, 
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}),['REVENUECAT_KEY_MISSING']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_PREVIEW:'1'}),['PREVIEW_BUILD']);
 });
+
+test('a picked "happened" date stays that calendar day in every time zone and shows no time (TZ=America/Chicago)',async()=>{
+  const before=process.env.TZ;process.env.TZ='America/Chicago';
+  try{
+    assert.equal(new Date('2026-10-20').getDate(),19,'TZ did not apply: the test would prove nothing');
+    const {showDay,editableDate}=await import('../src/core/dates');
+    const {vault}=await fixture();const id=await vault.add(draft({happenedOn:'2026-10-20'}),true);
+    const item=vault.items('divorce-prep').find(i=>i.id===id)!;assert.equal(item.happenedOn,'2026-10-20');
+    assert.equal(showDay(item.happenedOn!,'en-US'),'10/20/2026');assert.equal(editableDate(item.happenedOn!),'2026-10-20');
+    const html=exportHtml([item],{title:'t',madeOn:'2026-11-01T00:00:00Z',lang:'en'});assert.ok(html.includes('10/20/2026')&&!html.includes('10/19/2026'));
+    // An older record (the picked day at local noon, as an ISO instant) is stored as its day when saved.
+    const old=await vault.add(draft({happenedOn:'2026-10-20T17:00:00.000Z'}),true);assert.equal(vault.items('divorce-prep').find(i=>i.id===old)!.happenedOn,'2026-10-20');
+    process.env.TZ='Asia/Tokyo';assert.equal(showDay(item.happenedOn!,'en-US'),'10/20/2026');
+  }finally{if(before===undefined)delete process.env.TZ;else process.env.TZ=before;}
+});

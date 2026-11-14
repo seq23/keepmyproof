@@ -3,7 +3,7 @@ const config: ExpoConfig = {
   name: 'KeepMyProof', slug: 'keepmyproof', version: '1.0', scheme: 'keepmyproof', owner: 'seq23',
   orientation: 'portrait', userInterfaceStyle: 'automatic',
   ios: { bundleIdentifier: 'com.keepmyproof.app', supportsTablet: true,
-    infoPlist: { ITSAppUsesNonExemptEncryption: true, UIFileSharingEnabled: false,
+    infoPlist: { ITSAppUsesNonExemptEncryption: false, UIFileSharingEnabled: false,
       LSSupportsOpeningDocumentsInPlace: true, CFBundleLocalizations: ['en', 'es'] } },
   android: { package: 'com.keepmyproof.app', allowBackup: false,
     blockedPermissions: ['android.permission.RECORD_AUDIO', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_CONTACTS'] },

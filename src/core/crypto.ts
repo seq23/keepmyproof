@@ -1,4 +1,4 @@
-import { gcm } from '@noble/ciphers/aes.js';
+import { aead } from './aead';
 import { sha256 } from '@noble/hashes/sha2.js';
 import { hkdf } from '@noble/hashes/hkdf.js';
 import { pbkdf2Async } from '@noble/hashes/pbkdf2.js';
@@ -19,14 +19,14 @@ export function recoveryKey(words: string): Uint8Array {
 }
 export function seal(data: Uint8Array, key: Uint8Array, purpose: string, random: Random): string {
   const nonce = random(12);
-  return JSON.stringify({ v: 1, n: b64(nonce), c: b64(gcm(key, nonce, utf8(purpose)).encrypt(data)) });
+  return JSON.stringify({ v: 1, n: b64(nonce), c: b64(aead.encrypt(key, nonce, utf8(purpose), data)) });
 }
 export function open(data: string, key: Uint8Array, purpose: string): Uint8Array {
   const box = JSON.parse(data);
   if (box.v !== 1 || typeof box.n !== 'string' || typeof box.c !== 'string') throw Error('FORMAT_INVALID');
   const nonce = unb64(box.n);
   if (nonce.length !== 12) throw Error('FORMAT_INVALID');
-  return gcm(key, nonce, utf8(purpose)).decrypt(unb64(box.c));
+  return aead.decrypt(key, nonce, utf8(purpose), unb64(box.c));
 }
 // PBKDF2-HMAC-SHA256 work factor. OWASP Password Storage Cheat Sheet (2023+): 600,000 iterations
 // for PBKDF2-HMAC-SHA256. Records made before 6 Nov 2026 carry no count and used 210,000; they still

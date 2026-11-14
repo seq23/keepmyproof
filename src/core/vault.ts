@@ -1,8 +1,10 @@
 import { b64, decode, hash, open, recoveryKey, seal, unb64, utf8, type Random } from './crypto';
+import { calendarDay } from './dates';
 import { contentDigest, empty, validate, type Item, type Snapshot } from './model';
 export interface AtomicStore { read(): Promise<string | null>; write(ciphertext: string): Promise<void> }
 export const FREE_LIMIT = 25;
 export function mayAdd(count: number, plus: boolean): boolean { return plus || count < FREE_LIMIT; }
+const day = (v: string | null) => v === null ? null : calendarDay(v);
 export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'>;
 export class Vault {
   private state: Snapshot = empty();
@@ -30,7 +32,7 @@ export class Vault {
     await this.mutate(s => {
       if (!mayAdd(s.items.length, plus)) throw Error('ITEM_LIMIT');
       if (draft.tags.length && !plus) throw Error('PLUS_REQUIRED');
-      s.items.push({ ...draft, id, savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
+      s.items.push({ ...draft, happenedOn: day(draft.happenedOn), id, savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
       if (draft.checklist) delete s.ticks[`${draft.folder}/${draft.checklist}`];
     }); return id;
   }
@@ -41,7 +43,7 @@ export class Vault {
       if (!plus && JSON.stringify(change.tags) !== JSON.stringify(item.tags)) throw Error('PLUS_REQUIRED');
       const changedOn = this.now();
       item.history.push({ title: item.title, note: item.note, happenedOn: item.happenedOn, checklist: item.checklist, tags: item.tags, changedOn });
-      Object.assign(item, change, { changedOn });
+      Object.assign(item, change, { happenedOn: day(change.happenedOn), changedOn });
       if (item.checklist) delete s.ticks[`${item.folder}/${item.checklist}`];
     });
   }
@@ -65,8 +67,8 @@ export class Vault {
   items(folder: string, selection?: { ids?: string[]; from?: string; to?: string }, plus = false): Item[] {
     if (selection && !plus) throw Error('PLUS_REQUIRED');
     return this.snapshot().items.filter(i => i.folder === folder && (!selection ||
-      ((!selection.ids || selection.ids.includes(i.id)) && (!selection.from || (i.happenedOn !== null && i.happenedOn >= selection.from)) &&
-      (!selection.to || (i.happenedOn !== null && i.happenedOn <= selection.to))))).sort((a,b) => b.savedOn.localeCompare(a.savedOn));
+      ((!selection.ids || selection.ids.includes(i.id)) && (!selection.from || (i.happenedOn !== null && calendarDay(i.happenedOn) >= calendarDay(selection.from))) &&
+      (!selection.to || (i.happenedOn !== null && calendarDay(i.happenedOn) <= calendarDay(selection.to)))))).sort((a,b) => b.savedOn.localeCompare(a.savedOn));
   }
   original(id: string): Uint8Array {
     const item = this.snapshot().items.find(i => i.id === id);
