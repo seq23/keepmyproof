@@ -137,3 +137,11 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.deepEqual([...new Set(all)].sort(),['DEVICE_RELEASE_GATE_PENDING','LEGAL_URLS_UNREACHABLE','PRICE_RECHECK_PENDING','REVENUECAT_KEY_MISSING','SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
   assert.equal(all.length,6);
 });
+
+test('a TestFlight beta build needs a real App Store key and no preview switch, and nothing else',async()=>{
+  const {betaStops}=await import('../scripts/release-gate.mjs');const codes=(env:Record<string,string>)=>betaStops({env}).map(s=>s.code);
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x'}),[]);
+  assert.deepEqual(codes({}),['REVENUECAT_KEY_MISSING']);
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}),['REVENUECAT_KEY_MISSING']);
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_PREVIEW:'1'}),['PREVIEW_BUILD']);
+});
