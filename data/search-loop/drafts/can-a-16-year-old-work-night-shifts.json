@@ -1,0 +1,81 @@
+{
+  "h1": "Can a 16 year old work night shifts",
+  "title_lead": "can a 16 year old work night shifts",
+  "meta_description": "Rules for 16 year olds working night shifts in the United States. Federal limits and state variations apply.",
+  "direct_answer": "In most U.S. states, a 16 year old may work night shifts but federal law limits hours during school sessions. Specific restrictions depend on the state and school enrollment status.",
+  "sections": [
+    {
+      "heading": "federal rules for 16 year old workers",
+      "paragraphs": [
+        "The Fair Labor Standards Act sets the baseline for youth employment across the United States. For 16 and 17 year olds, there are no federal limits on the hours worked or the times of day a shift may occur. This means a 16 year old can legally work night shifts under federal law alone."
+      ],
+      "bullets": [
+        "No federal hour limits for 16 and 17 year olds",
+        "No federal restrictions on night shift times",
+        "overtime pay required after 40 hours in a workweek"
+      ]
+    },
+    {
+      "heading": "state law variations that apply",
+      "paragraphs": [
+        "Parents or guardians should verify local regulations before allowing a 16 year old to work late evening hours."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "school session restrictions",
+      "paragraphs": [
+        "A 16 year old working during the school year may find their shift end time regulated by state education or labor codes."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "industry and job type rules",
+      "paragraphs": [
+        "Retail, food service and office work are typically permitted for 16 year olds during night hours, provided the employer follows all other youth labor rules."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "how to check local requirements",
+      "paragraphs": [
+        "Checking these resources ensures compliance with both state and federal law before starting a night shift job."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "can a 16 year old work past 10 pm on a school night",
+      "a": "Many states restrict night work for 16 year olds during the school year. Some allow shifts to end as late as 11 pm or midnight, while others set the limit at 10 pm. Federal law does not set a curfew, so the state rule is what matters. Check the specific state labor department guide for the exact curfew time that applies."
+    },
+    {
+      "q": "do 16 year olds need a work permit for night shifts",
+      "a": "Work permit requirements vary by state. Some states require a minor work permit or employment certificate for any worker under 18, regardless of shift time. Other states do not require a permit for 16 year olds. Even where a permit is not required, the employer must still follow all youth labor hour and time restrictions."
+    },
+    {
+      "q": "can a 16 year old work overnight shifts in retail",
+      "a": "Retail stores often stay open late, and 16 year olds may be scheduled for closing shifts in states where the law permits it. However, the total hours worked must not exceed daily or weekly limits set during school sessions. Employers are responsible for ensuring the minor's schedule complies with applicable youth labor laws."
+    },
+    {
+      "q": "what jobs are barred for 16 year olds at any hour",
+      "a": "Federal law bars 16 year olds from hazardous occupations. This includes jobs in mining, roofing, excavation, and operating power-driven machinery such as saws or hoists. These bans apply at all times of day, not just night shifts. Other restrictions may apply based on state law or the specific work environment."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Fair Labor Standards Act sets no federal hour limits for 16 and 17 year olds, allowing them to work night shifts under federal law alone.",
+      "source_url": "https://www.dol.gov/agencies/whd/overtime",
+      "source_name": "U.S. Department of Labor",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Many states impose their own restrictions on the times a 16 year old may work, especially during school sessions, which can limit night shift availability.",
+      "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+      "source_name": "U.S. Department of Labor",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

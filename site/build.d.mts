@@ -8,5 +8,6 @@ export declare function render(input?: SiteInput): Record<string, string>;
 export declare function renderAll(input?: SiteInput): { files: Record<string, string>; pages: SitePage[]; stops: string[]; model: Record<string, any[]> };
 export declare function build(dist: string): { files: number; pages: SitePage[]; stops: string[] };
 export declare function legalSections(markdown: string): { privacy: string[]; terms: string[] };
+export declare function repeatsPhrase(text: string, n?: number, max?: number): boolean;
 export declare function quotableAnswer(claims: string[], tails: string[], lang?: string): string | null;
 export declare function questionGate(html: string): string[];

@@ -1,0 +1,107 @@
+{
+  "h1": "How much does a death certificate cost",
+  "title_lead": "How much does a death certificate cost",
+  "meta_description": "Death certificate fees vary by state and county. Most cost between $10 and $30 per copy. Some offices offer discounts for multiple copies.",
+  "direct_answer": "A death certificate is a government-issued document that records the death. Costs range from $10 to $30 per copy depending on the state and county. Some offices charge less for the first copy and more for additional copies ordered at the same time.",
+  "sections": [
+    {
+      "heading": "What affects the price of a death certificate",
+      "paragraphs": [
+        "The cost of a death certificate depends on where the death occurred. Each state sets its own fee schedule. County health departments or vital records offices handle the requests. Fees often range from $10 to $30 per certified copy. Some offices charge a lower fee for the first copy and a reduced rate for additional copies requested at the same time. Rush processing or expedited service may cost more. Payment methods accepted vary by office, with some taking cash, check, credit card, or money order only."
+      ],
+      "bullets": [
+        "State fee schedule varies",
+        "County office handles requests",
+        "First copy may cost less",
+        "Additional copies often discounted",
+        "Rush processing costs extra"
+      ]
+    },
+    {
+      "heading": "Where to request a death certificate",
+      "paragraphs": [
+        "You can request a death certificate from the vital records office in the state where the death occurred. Many states now allow online requests through their health department website. Some counties also have local health departments that issue certificates. The request usually requires the full name of the deceased, date of death, and your relationship to the person. Some offices require a government-issued ID. Processing times vary from a few days to several weeks depending on the method used."
+      ],
+      "bullets": [
+        "State vital records office",
+        "Online request options",
+        "County health department",
+        "ID may be required",
+        "Processing times vary"
+      ]
+    },
+    {
+      "heading": "How many copies should you order",
+      "paragraphs": [
+        "It is common to order multiple certified copies at once because many institutions require an original document. Banks, insurance companies, and government agencies often will not accept photocopies. Ordering several copies at the same time is usually cheaper than ordering them one by one later. A good rule of thumb is to order at least five to ten copies if you are handling an estate, settling insurance claims, or transferring property. KeepMyProof is a private vault where you can store digital copies of documents you gather, but it does not replace the need for certified copies from the government."
+      ],
+      "bullets": [
+        "Multiple copies often needed",
+        "Banks and insurance want originals",
+        "Ordering together is cheaper",
+        "5 to 10 copies recommended",
+        "KeepMyProof stores digital copies"
+      ]
+    },
+    {
+      "heading": "Fee waivers and discounts",
+      "paragraphs": [
+        "Some states offer reduced fees or free copies for specific situations. Survivors receiving certain benefits may qualify for a waiver. Funeral homes often include a few certified copies in their service package. Veterans may be eligible for free death certificates through the Department of Veterans Affairs. Check with the vital records office about available discounts or waivers based on your circumstances."
+      ],
+      "bullets": [
+        "Reduced fees for benefits recipients",
+        "Funeral homes may include copies",
+        "Veterans may qualify for free copies",
+        "Ask about waivers",
+        "Circumstance-based discounts"
+      ]
+    },
+    {
+      "heading": "Typical processing time",
+      "paragraphs": [
+        "Standard processing times for death certificates range from two to six weeks by mail. In-person requests at a vital records office may be faster, sometimes providing a same-day or next-day pickup option. Online requests fall somewhere in between, often taking two to four weeks. If you need the certificate quickly for a legal matter, ask the office about expedited service for an additional fee. Keep in mind that holidays and office closures can add time to the wait."
+      ],
+      "bullets": [
+        "Mail: 2 to 6 weeks",
+        "In-person may be faster",
+        "Online: 2 to 4 weeks",
+        "Expedited service available",
+        "Holidays add time"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I get a death certificate the same day?",
+      "a": "Same-day service is rare and usually only available at local county offices. Most requests take several days to weeks by mail. In-person visits may offer faster pickup, but you should call ahead to confirm availability and hours."
+    },
+    {
+      "q": "Do I need a death certificate to claim life insurance?",
+      "a": "Yes, life insurance companies typically require a certified copy of the death certificate to process a claim. The insurance company will specify how many copies they need. Keep a few extra copies on hand for other matters like transferring titles or closing accounts."
+    },
+    {
+      "q": "Can I order a death certificate online?",
+      "a": "Many states offer online ordering through their vital records website. The process usually involves filling out a form, paying the fee with a credit card, and mailing a copy of your ID. Online ordering is often faster than sending a request by postal mail."
+    },
+    {
+      "q": "What is the difference between a certified copy and a informational copy?",
+      "a": "A certified copy has a raised seal or stamp and is the only version accepted for legal purposes like estates or insurance. An informational copy is often cheaper but cannot be used to prove identity or claim benefits. Always ask for a certified copy if you need it for official matters."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Death certificate fees are set by individual states and typically range from $10 to $30 per certified copy.",
+      "source_url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "source_name": "CDC National Center for Health Statistics",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Some states offer reduced fees or free death certificates for veterans and survivors receiving benefits.",
+      "source_url": "https://www.va.gov/burials-memorials/",
+      "source_name": "VA Burials and Memorials",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

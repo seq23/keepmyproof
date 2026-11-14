@@ -1,0 +1,102 @@
+{
+  "h1": "Does It Matter Who Asks for a Divorce First?",
+  "title_lead": "Who Files for Divorce First",
+  "meta_description": "Filing first gives some procedural control but does not change property division, support, or custody rules in most states. Learn what actually shifts.",
+  "direct_answer": "Filing first means you are the petitioner and your spouse is the respondent. That role gives you control over timing and venue in many states, but it does not change how courts divide property, calculate support, or decide custody.",
+  "sections": [
+    {
+      "heading": "What changes when you file first?",
+      "paragraphs": [
+        "You choose the county or state where the case starts, as long as you meet residency rules. You set the initial schedule for hearings and deadlines. You present your evidence first at trial, which can help frame the narrative. You also decide when to serve the other party, giving you a head start on gathering documents and lining up witnesses."
+      ],
+      "bullets": [
+        "Pick the venue that meets residency requirements",
+        "Set the first court dates and deadlines",
+        "Present your case first at trial",
+        "Control the timing of service"
+      ]
+    },
+    {
+      "heading": "What stays the same no matter who files?",
+      "paragraphs": [
+        "Courts apply the same legal standards for property division, spousal support, and child custody regardless of who started the case. Judges look at financial disclosures, parenting history, and the best interests of the child. The label petitioner or respondent does not give either side a legal advantage on the merits. Both parties must still meet the same burden of proof for every claim."
+      ],
+      "bullets": [
+        "Property division follows state law, not filing order",
+        "Support calculations use the same formulas",
+        "Custody decisions center on the child's best interests",
+        "Both sides must disclose finances fully"
+      ]
+    },
+    {
+      "heading": "When filing first can backfire",
+      "paragraphs": [
+        "If you file before you have gathered key records, you may lock yourself into a timeline that pressures you to produce documents quickly. Rushing can lead to incomplete disclosures, which courts penalize. Filing in a county that is technically proper but inconvenient for you can increase travel costs and time off work. Some spouses react aggressively when served, escalating conflict and legal fees."
+      ],
+      "bullets": [
+        "Rushed filings risk incomplete financial disclosures",
+        "Inconvenient venue adds travel and time costs",
+        "Service can trigger hostile responses",
+        "Early deadlines may limit preparation time"
+      ]
+    },
+    {
+      "heading": "Practical steps before you file",
+      "paragraphs": [
+        "Collect tax returns, pay stubs, bank statements, retirement account statements, mortgage documents, and insurance policies. Make a list of marital assets and debts with approximate values. If children are involved, document the current parenting schedule, school records, and medical providers. Keep everything organized in a secure place so you can respond to discovery requests and meet court deadlines without scrambling."
+      ],
+      "bullets": [
+        "Gather three years of tax returns and recent pay stubs",
+        "List all accounts, debts, and real property",
+        "Document the current parenting schedule",
+        "Store records in a private, searchable vault"
+      ]
+    },
+    {
+      "heading": "How KeepMyProof helps you prepare",
+      "paragraphs": [
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or upload financial records, school letters, medical bills, and communication logs. On iPhone, the app offers to remove the original from Photos after import; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault keeps your evidence organized and timestamped for easy retrieval when you need it. Learn more at the vault hub."
+      ],
+      "bullets": [
+        "Import photos and PDFs directly into the vault",
+        "Automatic timestamps on every entry",
+        "Search by date, tag, or keyword",
+        "Works offline once data is synced"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does the petitioner pay more in court fees?",
+      "a": "The petitioner pays the initial filing fee. The respondent may pay a response fee. Some courts allow fee waivers for low-income parties. The total cost depends on your county, not on who filed first."
+    },
+    {
+      "q": "Can I stop the divorce after I file?",
+      "a": "You can ask the court to dismiss your petition before the other party responds. After a response is filed, both parties must agree to dismiss. Dismissal does not erase the case record."
+    },
+    {
+      "q": "Does filing first affect temporary orders?",
+      "a": "The petitioner can request temporary orders for support, custody, or property use at the start. The respondent can also request them. The court decides based on the same standards either way."
+    },
+    {
+      "q": "What if my spouse files in another state first?",
+      "a": "The first valid filing usually controls venue if that state has proper jurisdiction. You may need to respond there or ask the court to transfer the case. Consult a local attorney quickly."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Residency requirements determine which state can hear a divorce case.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Courts divide property and decide custody based on statutory factors, not on which spouse filed first.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+name: Blogger and WordPress.com posts
+# One KeepMyProof guide a day to its own Blogger blog and its own WordPress.com blog: a short summary
+# linking back to the guide (scripts/syndicate.mjs). Caps: 1 a day per platform; the ledger
+# data/syndication-ledger.json means a page never posts twice. Missing secrets are the named stops
+# KMP_BLOGGER_NOT_SET_UP / KMP_WORDPRESS_NOT_SET_UP: one Open Loops row each, exit 0, the next day
+# retries. WordPress.com answering 401/403 to the stored KMP_WPCOM_ACCESS_TOKEN is WPCOM_TOKEN_REFUSED
+# (fix: rerun ~/bin/wpcom-connect.mjs kmp). A lane that is set up and posts nothing it could have posted turns the run red.
+# Set SYNDICATION_DRY_RUN=true (repository variable) to see what would post without posting.
+on:
+  schedule:
+    - cron: '41 9 * * *'  # America/Chicago, all year
+      timezone: America/Chicago
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build the site (plain Node, no install)
+        run: cd site && node build.mjs | tail -1
+      - name: Post the next guide to each blog
+        env:
+          SYNDICATION_DRY_RUN: ${{ vars.SYNDICATION_DRY_RUN || 'false' }}
+          KMP_BLOGGER_CLIENT_ID: ${{ secrets.KMP_BLOGGER_CLIENT_ID }}
+          KMP_BLOGGER_CLIENT_SECRET: ${{ secrets.KMP_BLOGGER_CLIENT_SECRET }}
+          KMP_BLOGGER_REFRESH_TOKEN: ${{ secrets.KMP_BLOGGER_REFRESH_TOKEN }}
+          KMP_BLOGGER_BLOG_ID: ${{ secrets.KMP_BLOGGER_BLOG_ID }}
+          KMP_WPCOM_ACCESS_TOKEN: ${{ secrets.KMP_WPCOM_ACCESS_TOKEN }}
+          BOSS_OPEN_LOOPS_TOKEN: ${{ secrets.BOSS_OPEN_LOOPS_TOKEN }}
+        run: node scripts/syndicate.mjs
+      - name: Commit the ledger
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/syndication-ledger.json
+          git diff --cached --quiet && { echo "NAMED NOTE [NO_CHANGE] nothing posted, ledger unchanged"; exit 0; }
+          git commit -q -m "syndication: Blogger and WordPress.com ledger"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 10; done
+          echo "NAMED STOP [PUSH_FAILED] could not push data/syndication-ledger.json after 3 tries"; exit 1

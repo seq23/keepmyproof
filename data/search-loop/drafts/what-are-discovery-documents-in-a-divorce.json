@@ -1,0 +1,102 @@
+{
+  "h1": "What Are Discovery Documents in a Divorce?",
+  "title_lead": "What Are Discovery Documents in a Divorce?",
+  "meta_description": "Discovery documents are formal requests and responses used to gather financial and personal information during a divorce.",
+  "direct_answer": "Discovery documents are formal written requests and responses that spouses exchange to obtain financial records, property details, and other facts relevant to the divorce case. They are a standard part of the legal process.",
+  "sections": [
+    {
+      "heading": "What is the purpose of discovery?",
+      "paragraphs": [
+        "Discovery lets each spouse see the full financial picture before negotiating a settlement or going to trial. It reduces surprises by requiring both sides to share income, assets, debts, and expenses. The process is governed by court rules that set deadlines and require honest, complete answers. You use the information to prepare for mediation, settlement talks, or a hearing."
+      ],
+      "bullets": [
+        "Identifies all marital and separate property",
+        "Confirms income for support calculations",
+        "Reveals hidden assets or debts",
+        "Creates a record for the court"
+      ]
+    },
+    {
+      "heading": "What are the most common types?",
+      "paragraphs": [
+        "Interrogatories are written questions you answer under oath. Requests for production ask for documents like bank statements, tax returns, and retirement account summaries. Requests for admission ask you to admit or deny specific facts. A deposition is an in-person, sworn interview recorded by a court reporter. Each tool serves a different purpose in building the case record."
+      ],
+      "bullets": [
+        "Interrogatories: written questions answered under oath",
+        "Requests for production: documents and records",
+        "Requests for admission: admit or deny facts",
+        "Depositions: sworn oral testimony"
+      ]
+    },
+    {
+      "heading": "What financial records are usually requested?",
+      "paragraphs": [
+        "Expect to provide recent pay stubs, W-2s, and tax returns for the past three to five years. Bank and credit card statements, mortgage documents, and vehicle titles are standard. Retirement account statements, life insurance policies, and business records may also be requested. The goal is to document every source of income and every asset or debt acquired during the marriage."
+      ],
+      "bullets": [
+        "Pay stubs and tax returns",
+        "Bank and credit card statements",
+        "Retirement and investment accounts",
+        "Real estate and vehicle documents"
+      ]
+    },
+    {
+      "heading": "How do you organize and protect your records?",
+      "paragraphs": [
+        "Keep a master folder for each category: income, assets, debts, and expenses. Use clear file names with dates so you can find documents quickly. Store originals in a secure place and keep digital copies in a private, password-protected vault. KeepMyProof is a private vault for photos and documents, a normal locked app on your home screen. You can save scans, add notes, and share specific files with your attorney without exposing everything else."
+      ],
+      "bullets": [
+        "Sort by category and date",
+        "Use consistent file naming",
+        "Store originals securely",
+        "Keep digital copies in a private vault"
+      ]
+    },
+    {
+      "heading": "What happens if you do not respond?",
+      "paragraphs": [
+        "Failing to respond on time can lead to court sanctions. The judge may order you to pay the other side's attorney fees, limit the evidence you can present, or decide issues against you by default. Courts expect good-faith compliance. If you need more time, ask your attorney to request an extension before the deadline passes."
+      ],
+      "bullets": [
+        "Possible monetary sanctions",
+        "Limits on your evidence",
+        "Default judgments on issues",
+        "Attorney fee awards"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I have to answer every question?",
+      "a": "You must answer each request unless a valid legal objection applies. Your attorney can object to questions that are irrelevant, overly broad, or privileged. Unanswered requests without objections may be treated as admissions."
+    },
+    {
+      "q": "Can I use my own records instead of formal discovery?",
+      "a": "You can share records informally to save time and cost. Many couples exchange financial disclosures voluntarily. Informal exchange does not replace formal discovery if the case goes to court, but it often narrows what formal requests are needed."
+    },
+    {
+      "q": "How long does discovery take?",
+      "a": "Timelines vary by state and case complexity. Simple cases may finish in a few months. Complex cases with businesses or hidden assets can take a year or more. Court scheduling orders set the deadlines for each phase."
+    },
+    {
+      "q": "Are discovery documents public record?",
+      "a": "Discovery responses are not automatically filed with the court. They become part of the public record only if filed as exhibits or entered into evidence at a hearing. Many courts allow protective orders to keep sensitive financial data private."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Discovery in divorce includes interrogatories, requests for production, requests for admission, and depositions.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help Guide",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Federal tax returns are commonly requested in divorce discovery to verify income and assets.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

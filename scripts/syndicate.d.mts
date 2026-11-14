@@ -1,0 +1,15 @@
+export declare const ORIGIN: string;
+export declare const WPCOM_SITE: string;
+export declare const DAILY_CAP: number;
+export declare const FOLDERS: string[];
+export declare const SECRETS: Record<'blogger' | 'wordpress', string[]>;
+export declare const STOP_WORDS: Record<string, { title: string; next_step: string }>;
+export declare const OPEN_LOOPS: { repo: string; business: string; finish: string };
+export type Page = { url: string; path: string; title: string; answer: string; bullets: string[]; sources: string[]; checked: string | null; kind: 'state' | 'checklist' | null; folder: string | null };
+export declare function readPage(html: string): Page | null;
+export declare function queue(dist: string, hubs: any): Page[];
+export declare function postHtml(p: Page): string;
+export declare function centralDay(now: Date): string;
+type Http = (url: string, init: { method: string; headers: Record<string, string>; body?: string }) => Promise<{ ok: boolean; status: number; text(): Promise<string> }>;
+export declare function runLane(lane: 'blogger' | 'wordpress', o: { pages: Page[]; ledger: any[]; env: Record<string, string | undefined>; http: Http; now: Date; dry: boolean }): Promise<any>;
+export declare function main(o?: { argv?: string[]; env?: Record<string, string | undefined>; http?: Http; now?: Date; dist?: string; ledgerPath?: string; log?: (s: string) => void }): Promise<number>;

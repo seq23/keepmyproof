@@ -1,0 +1,101 @@
+{
+  "h1": "VA Disability: What Conditions Can You Claim?",
+  "title_lead": "VA Disability: What to Claim",
+  "meta_description": "Learn what medical conditions qualify for VA disability benefits and how to organize the evidence you already have.",
+  "direct_answer": "A VA disability claim is a formal request for monthly compensation because an injury or illness began or got worse during military service. You must show a current diagnosis, an in-service event, and a medical link between the two.",
+  "sections": [
+    {
+      "heading": "What kinds of conditions count?",
+      "paragraphs": [
+        "The VA pays for both physical and mental health conditions that are connected to your service. Common examples include hearing loss, back or joint injuries, PTSD, depression, anxiety, and illnesses linked to toxic exposure. A condition does not need to be combat-related. It only needs to have started or been aggravated while you were on active duty, active duty for training, or inactive duty training.",
+        "You can also claim secondary conditions. These are new problems caused by a service-connected disability you already have. For example, knee arthritis that leads to a hip injury from changed gait may qualify. Each condition requires its own medical evidence showing the link to service or to an already service-connected disability."
+      ],
+      "bullets": [
+        "Current diagnosis from a qualified provider",
+        "In-service event, injury, or exposure",
+        "Medical nexus linking the two",
+        "Secondary conditions tied to a rated disability",
+        "Presumptive conditions for specific eras or exposures"
+      ]
+    },
+    {
+      "heading": "How do you decide what to include on one claim?",
+      "paragraphs": [
+        "You file one claim that can list multiple conditions at the same time. List every diagnosed issue you believe is related to service. The VA will review each condition separately and assign an individual rating percentage. You do not need to file a separate claim for each condition unless you are adding new issues after the original claim is decided.",
+        "If you already have a rating and develop a new problem, you file a supplemental claim for increase or a new claim for the new condition. Keep a running list of diagnoses, treatment dates, and providers. This makes it easier to add conditions later without starting over."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What evidence supports each condition?",
+      "paragraphs": [
+        "The VA needs three things for every condition: a current diagnosis, proof of an in-service event or exposure, and a medical opinion linking them. Service treatment records, personnel records showing location or duties, and buddy statements can prove the in-service part. Private or VA medical records and a nexus letter from a clinician can prove the link.",
+        "For presumptive conditions, the VA accepts the link automatically if you meet the service criteria. Examples include certain cancers for Vietnam veterans exposed to Agent Orange or respiratory conditions for Gulf War and post-9/11 veterans exposed to burn pits. You still must provide the diagnosis and proof you served in the qualifying time and place."
+      ],
+      "bullets": [
+        "Service treatment records",
+        "DD Form 214 or personnel records",
+        "Private and VA medical records",
+        "Nexus letter from a clinician",
+        "Buddy or lay statements"
+      ]
+    },
+    {
+      "heading": "How can you keep your paperwork organized?",
+      "paragraphs": [
+        "Gather every document into one place before you start the application. Use folders labeled by condition or by evidence type. Save PDFs of records, photos of injuries, and notes from appointments. A private vault on your phone lets you store these files securely and find them quickly when the VA requests more information.",
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. On iPhone, you can move a photo into the vault and choose \"Remove the original from Photos?\" The phone asks to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos after importing. Visit the vault hub to learn more."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Where can you get free help with the claim?",
+      "paragraphs": [
+        "You do not have to do this alone. VA-accredited representatives, including Veterans Service Officers (VSOs), attorneys, and claims agents, can help you prepare and submit your claim at no cost for the initial filing. They know the forms, deadlines, and evidence standards. You can search for an accredited representative on VA.gov.",
+        "KeepMyProof is not affiliated with the VA. We provide a secure place to store your own records. For free, accredited help, visit the VA accredited representative search page. A representative can review your evidence, suggest what to claim, and handle correspondence with the VA on your behalf."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a separate claim for each condition?",
+      "a": "No. You list every condition on one initial claim. The VA rates each one separately. If a new condition appears later, you file a supplemental claim or a new claim for that specific issue."
+    },
+    {
+      "q": "Can a VSO charge me for helping with the initial claim?",
+      "a": "Accredited VSOs do not charge fees for preparing or filing an initial claim. Attorneys or claims agents may charge only after a decision is issued and you appeal. Always confirm fee terms in writing before signing a representation agreement."
+    },
+    {
+      "q": "What if my condition is not on the presumptive list?",
+      "a": "You can still claim it. You must provide a current diagnosis, evidence of an in-service event or exposure, and a medical nexus opinion linking the two. The VA will evaluate the evidence under the standard direct service connection rules."
+    },
+    {
+      "q": "How do I add a secondary condition to an existing rating?",
+      "a": "File a new claim or a supplemental claim for the secondary condition. Include a medical opinion showing the new condition is caused or aggravated by your already service-connected disability. The VA will assign a separate rating for the secondary issue."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The VA requires a current diagnosis, an in-service event, and a medical nexus for direct service connection.",
+      "source_url": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+      "source_name": "U.S. Department of Veterans Affairs",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Presumptive conditions are granted automatically if service criteria are met, such as Agent Orange exposure for Vietnam veterans.",
+      "source_url": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+      "source_name": "U.S. Department of Veterans Affairs",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "VA-accredited representatives can be searched for free on VA.gov and do not charge for initial claim assistance.",
+      "source_url": "https://www.va.gov/resources/va-accredited-representative-faqs/",
+      "source_name": "U.S. Department of Veterans Affairs",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

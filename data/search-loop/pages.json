@@ -30,7 +30,15 @@
         "b4 direct answer under the H1 is 30 words (aim 40-60)",
         "b9 504 words of visible text (aim 600+)"
       ],
-      "indexnow_at": "2026-11-06"
+      "indexnow_at": "2026-11-06",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)"
+        ]
+      }
     },
     {
       "slug": "how-to-prove-adultery-in-the-military",
@@ -104,6 +112,860 @@
         "into": "/divorce/",
         "reason": "off-audience: not a US search (site serves US residents)"
       }
+    },
+    {
+      "slug": "how-can-you-prove-a-hostile-work-environment",
+      "query": "how can you prove a hostile work environment",
+      "lane": "striking",
+      "score": 45,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "bing_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-can-you-prove-a-hostile-work-environment/index.html",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "4e65811954c7a503252f4819bb871f59b1cd48e9dee3abe3815a9fa2d98126f7",
+      "model": "free-route",
+      "facts": [
+        "https://www.eeoc.gov/harassment",
+        "https://www.eeoc.gov/time-limits-filing-charge"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 30 words (aim 40-60)"
+      ],
+      "extra_queries": [
+        "how to prove a hostile work environment claim",
+        "what is considered a hostile work environment"
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "va-disability-what-to-claim",
+      "query": "va disability what to claim",
+      "lane": "striking",
+      "score": 40,
+      "reasons": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/va-disability-what-to-claim/index.html",
+      "route": "/questions/va-disability-what-to-claim/",
+      "url": "https://keepmyproof.com/questions/va-disability-what-to-claim/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "e335fe67abfb0a407f2a094c009069c558d6d5aca9788c035c4e87383b8793f7",
+      "model": "free-route",
+      "facts": [
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "https://www.va.gov/resources/va-accredited-representative-faqs/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 115 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 39 words (aim 40-60)",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Do I need a separate claim for each condition?\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Can a VSO charge me for helping with the initial c\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"What if my condition is not on the presumptive lis\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "what-documentation-is-needed-for-a-divorce",
+      "query": "what documentation is needed for a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-documentation-is-needed-for-a-divorce/index.html",
+      "route": "/questions/what-documentation-is-needed-for-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-documentation-is-needed-for-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "b44530bd11c305f0fb17ef3a8620de7ec90ebbb4551d23e3cd50bda3d86339fb",
+      "model": "free-route",
+      "facts": [
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 34 words (aim 40-60)",
+        "b5 FAQ answer is 31 words (aim 40-60): \"Do I need a lawyer to tell me which documents to g\"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"What if my spouse hides financial documents?\"",
+        "b5 FAQ answer is 31 words (aim 40-60): \"How long should I keep divorce documents after the\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can I use photos of documents instead of originals\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "what-are-discovery-documents-in-a-divorce",
+      "query": "what are discovery documents in a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-are-discovery-documents-in-a-divorce/index.html",
+      "route": "/questions/what-are-discovery-documents-in-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-are-discovery-documents-in-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "b5e68770350802a1949e6a015bcd5da0e500579838f7307a90db776b1d27aa35",
+      "model": "free-route",
+      "facts": [
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 34 words (aim 40-60)",
+        "b5 FAQ answer is 33 words (aim 40-60): \"Do I have to answer every question?\"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"Can I use my own records instead of formal discove\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"How long does discovery take?\"",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Are discovery documents public record?\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "what-to-do-before-asking-for-a-divorce",
+      "query": "what to do before asking for a divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/what-to-do-before-asking-for-a-divorce/index.html",
+      "route": "/questions/what-to-do-before-asking-for-a-divorce/",
+      "url": "https://keepmyproof.com/questions/what-to-do-before-asking-for-a-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "ec4611ef87ce6fee897328f8dece285f169c1d8ac191ca07707befbea7cdf9b6",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://support.apple.com/en-us/118558"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 62 words (aim 40-60): \"Do I need a lawyer before I file for divorce?\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "how-to-prepare-divorce-documents-yourself",
+      "query": "how to prepare divorce documents yourself",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+      "route": "/questions/how-to-prepare-divorce-documents-yourself/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-divorce-documents-yourself/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "f0e412815f35787b38c31cc028a52e11b717796919a8c96338dcc3a6c5780348",
+      "model": "free-route",
+      "facts": [
+        "https://selfhelp.courts.ca.gov/divorce-california",
+        "https://www.irs.gov/taxtopics/tc452",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "343ad80631946dbd07c4abcd687b5ce2ec956b9a6a0e9a0a4ae4d4e896ad68fb",
+          "after_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334"
+        }
+      ],
+      "checks": {},
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)"
+        ]
+      }
+    },
+    {
+      "slug": "can-you-get-a-consent-order-before-divorce",
+      "query": "can you get a consent order before divorce",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/can-you-get-a-consent-order-before-divorce/index.html",
+      "route": "/questions/can-you-get-a-consent-order-before-divorce/",
+      "url": "https://keepmyproof.com/questions/can-you-get-a-consent-order-before-divorce/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "32fd683765e31eafbe74228974dd63bc4c5160260cf16ae6fcfbb2fba6711010",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"Is a separation agreement the same as a consent or\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Can we file the consent order at the same time as \"",
+        "b5 FAQ answer is 38 words (aim 40-60): \"What if we reconcile before the judge signs?\"",
+        "b5 FAQ answer is 37 words (aim 40-60): \"Do I need a lawyer to get a consent order?\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "does-it-matter-who-asks-for-a-divorce-first",
+      "query": "does it matter who asks for a divorce first",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/does-it-matter-who-asks-for-a-divorce-first/index.html",
+      "route": "/questions/does-it-matter-who-asks-for-a-divorce-first/",
+      "url": "https://keepmyproof.com/questions/does-it-matter-who-asks-for-a-divorce-first/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "fb7c5c2d5bdb369f91c9b78fb031cf0252a1e3b683d8f90d4a0c0a290283db15",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 39 words (aim 40-60)",
+        "b5 FAQ answer is 34 words (aim 40-60): \"Does the petitioner pay more in court fees?\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can I stop the divorce after I file?\"",
+        "b5 FAQ answer is 31 words (aim 40-60): \"Does filing first affect temporary orders?\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"What if my spouse files in another state first?\""
+      ],
+      "indexnow_at": "2026-11-08"
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-texas",
+      "query": "how to prepare for divorce in texas",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-texas/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-texas/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-texas/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "ee1785c5d1cc182596080e654503ea7a962168aabc26581eeb0de73459f82871",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334",
+          "after_hash": "083b4f23386686b6310dc63763ee912feb2831ed3dc4890b8ef2e7e927595591"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 31 words (aim 40-60)"
+      ],
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)"
+        ]
+      }
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-florida",
+      "query": "how to prepare for divorce in florida",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-florida/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-florida/",
+      "published_at": "2026-11-07",
+      "status": "live",
+      "hash": "413640ac41f38e709ac9f112b74dc99af45db426f317b9702d2c842614b1b6e0",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.irs.gov/taxtopics/tc452"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-virginia/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-virginia/",
+          "before_hash": "083b4f23386686b6310dc63763ee912feb2831ed3dc4890b8ef2e7e927595591",
+          "after_hash": "dcd5897cab3168fa5ed2441890ebaf0abd44588e2b3c51de16735816c256f038"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 32 words (aim 40-60)"
+      ],
+      "indexnow_at": "2026-11-08",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)"
+        ]
+      }
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-missouri",
+      "query": "how to prepare for divorce in missouri",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-missouri/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-missouri/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-missouri/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "e6897320ce095d514c70f5af1ec05035a9e77290096ce848b38038c66df6577e",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+          "route": "/site/questions/how-to-prepare-divorce-documents-yourself/",
+          "before_hash": "f0e412815f35787b38c31cc028a52e11b717796919a8c96338dcc3a6c5780348",
+          "after_hash": "48a8f04afaddf42b7dd6c9d00f6d36a35c44c526cd5024db12f3eb344553e17c"
+        },
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-florida/",
+          "before_hash": "413640ac41f38e709ac9f112b74dc99af45db426f317b9702d2c842614b1b6e0",
+          "after_hash": "1e207441ca21b80b9d3d0f6ad7963fc2365542882ec652e55619ea3c8dbe3299"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 118 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 32 words (aim 40-60)"
+      ],
+      "indexnow_at": "2026-11-09"
+    },
+    {
+      "slug": "how-to-prepare-for-divorce-in-massachusetts",
+      "query": "how to prepare for divorce in massachusetts",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-prepare-for-divorce-in-massachusetts/index.html",
+      "route": "/questions/how-to-prepare-for-divorce-in-massachusetts/",
+      "url": "https://keepmyproof.com/questions/how-to-prepare-for-divorce-in-massachusetts/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "c99567912fca7e56d1f265c5180b67286f50d03a146aba6aacbb2ce077d38c21",
+      "model": "free-route",
+      "facts": [
+        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+        "https://www.mass.gov/divorce"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/how-to-prepare-divorce-documents-yourself/index.html",
+          "route": "/site/questions/how-to-prepare-divorce-documents-yourself/",
+          "before_hash": "48a8f04afaddf42b7dd6c9d00f6d36a35c44c526cd5024db12f3eb344553e17c",
+          "after_hash": "f18bcad2482c6600fbad873301ada3eca2cc9ee4216dca10ddaf7d47858d9b62"
+        },
+        {
+          "rel": "site/questions/how-to-prepare-for-divorce-in-florida/index.html",
+          "route": "/site/questions/how-to-prepare-for-divorce-in-florida/",
+          "before_hash": "1e207441ca21b80b9d3d0f6ad7963fc2365542882ec652e55619ea3c8dbe3299",
+          "after_hash": "bd41b116bcbfe49d5d027536a9bc5e09847bb72e668f1e26e4eb1c8113b7e03d"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 30 words (aim 40-60)",
+        "b5 FAQ answer is 36 words (aim 40-60): \"Do I need a lawyer to file for divorce in Massachu\""
+      ],
+      "indexnow_at": "2026-11-09"
+    },
+    {
+      "slug": "how-to-write-a-workplace-harassment-complaint-letter",
+      "query": "how to write a workplace harassment complaint letter",
+      "lane": "striking",
+      "score": 30,
+      "reasons": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "google_suggest": true,
+        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+      },
+      "rel": "site/questions/how-to-write-a-workplace-harassment-complaint-letter/index.html",
+      "route": "/questions/how-to-write-a-workplace-harassment-complaint-letter/",
+      "url": "https://keepmyproof.com/questions/how-to-write-a-workplace-harassment-complaint-letter/",
+      "published_at": "2026-11-08",
+      "status": "live",
+      "hash": "3aa8f46642a04278cee6f80f86ed09a05d936d89ff9477c01294b473589e130c",
+      "model": "free-route",
+      "facts": [
+        "https://www.eeoc.gov/harassment",
+        "https://www.eeoc.gov/time-limits-filing-charge"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 113 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 35 words (aim 40-60)",
+        "b5 FAQ answer is 32 words (aim 40-60): \"How long should the letter be?\""
+      ],
+      "indexnow_at": "2026-11-09"
+    },
+    {
+      "slug": "how-to-get-a-certified-copy-of-my-divorce-decree",
+      "query": "how to get a certified copy of my divorce decree",
+      "lane": "can_be_one",
+      "score": 46,
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 46
+      },
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/mississippi",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "rel": "site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/index.html",
+      "route": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "url": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "e5a5ba2b259b0a385c6315d8082a52192f8c2d61fe79f54cf54c3fdb277caf15",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://selfhelp.courts.ca.gov/divorce-california"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/can-you-get-a-consent-order-before-divorce/index.html",
+          "route": "/site/questions/can-you-get-a-consent-order-before-divorce/",
+          "before_hash": "32fd683765e31eafbe74228974dd63bc4c5160260cf16ae6fcfbb2fba6711010",
+          "after_hash": "d7fd4496d55ab37303f0b11ce42edf103b62f7e3c2808fdf39ef753216806ba4"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 32 words (aim 40-60)",
+        "b5 FAQ answer is 38 words (aim 40-60): \"Can I get a certified copy online\"",
+        "b5 FAQ answer is 30 words (aim 40-60): \"How much does a certified copy cost\"",
+        "b5 FAQ answer is 32 words (aim 40-60): \"Can KeepMyProof prepare or file my divorce papers\""
+      ],
+      "extra_queries": [
+        "donde sacar acta de divorcio"
+      ],
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "banned word for this site: \"proves\"",
+          "near-duplicate of /site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/ (similarity 0.97)",
+          "d2: a how-to page has no numbered steps"
+        ]
+      },
+      "indexnow_at": "2026-11-10"
+    },
+    {
+      "slug": "how-much-does-a-death-certificate-cost",
+      "query": "how much does a death certificate cost",
+      "lane": "can_be_one",
+      "score": 43.2,
+      "scores": {
+        "striking": 55.9,
+        "can_be_one": 43.2
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 3
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
+          ]
+        }
+      },
+      "rel": "site/questions/how-much-does-a-death-certificate-cost/index.html",
+      "route": "/questions/how-much-does-a-death-certificate-cost/",
+      "url": "https://keepmyproof.com/questions/how-much-does-a-death-certificate-cost/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "0bf4b0d078d39c68d7972e1b2a42a692f1ed034de5d620003cc1fd4e8580c8e3",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.va.gov/burials-memorials/"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b5 FAQ answer is 37 words (aim 40-60): \"Can I get a death certificate the same day?\""
+      ],
+      "indexnow_at": "2026-11-10"
+    },
+    {
+      "slug": "can-a-16-year-old-work-night-shifts",
+      "query": "can a 16 year old work night shifts",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 8,
+          "parts_rows": 6
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/can-a-16-year-old-work-night-shifts/index.html",
+      "route": "/questions/can-a-16-year-old-work-night-shifts/",
+      "url": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "f1aa22d87875f4e0f7dd6814aa613c861550952beff2ad4087127635a4ce32b3",
+      "model": "free-route",
+      "facts": [
+        "https://www.dol.gov/agencies/whd/overtime",
+        "https://www.dol.gov/agencies/whd/state/contacts"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 108 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 30 words (aim 40-60)",
+        "b4 direct answer does not define: \"X is ...\"",
+        "b5 FAQ answer is 61 words (aim 40-60): \"can a 16 year old work past 10 pm on a school nigh\"",
+        "b9 581 words of visible text (aim 600+)"
+      ],
+      "indexnow_at": "2026-11-10",
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "b4: the answer under the H1 defines nothing (\"X is ...\")",
+          "the writer cannot rewrite this lead in place; it changes when the page is strengthened"
+        ]
+      }
+    },
+    {
+      "slug": "certified-copy-of-death-certificate",
+      "query": "certified copy of death certificate",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 23.1,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/virginia",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/certified-copy-of-death-certificate/index.html",
+      "route": "/questions/certified-copy-of-death-certificate/",
+      "url": "https://keepmyproof.com/questions/certified-copy-of-death-certificate/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "bef919f920a939b3257f5c6b2ee982c575888c5009c269dce3f4e82149c3edca",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.irs.gov/individuals/deceased-taxpayers-filing-the-estate-income-tax-return-form-1041"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 106 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 36 words (aim 40-60)",
+        "b5 FAQ answer is 39 words (aim 40-60): \"Can I get a certified copy online?\"",
+        "b5 FAQ answer is 34 words (aim 40-60): \"What if I need a copy for a VA disability claim?\""
+      ],
+      "indexnow_at": "2026-11-10"
+    },
+    {
+      "slug": "how-do-i-get-my-moms-death-certificate",
+      "query": "how do i get my moms death certificate",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/how-do-i-get-my-moms-death-certificate/index.html",
+      "route": "/questions/how-do-i-get-my-moms-death-certificate/",
+      "url": "https://keepmyproof.com/questions/how-do-i-get-my-moms-death-certificate/",
+      "published_at": "2026-11-09",
+      "status": "live",
+      "hash": "2a96b7a3cffd6e0a352f321c5a7a403304dde199ed70329d96e1d93de53a006d",
+      "model": "free-route",
+      "facts": [
+        "https://www.cdc.gov/nchs/w2w/index.htm",
+        "https://www.acf.hhs.gov/css/parents"
+      ],
+      "linked_from": [],
+      "checks": {},
+      "gate_notes": [
+        "b2 meta description is 112 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 36 words (aim 40-60)",
+        "b5 FAQ answer is 65 words (aim 40-60): \"Can i get a death certificate for my mother if i l\"",
+        "b5 FAQ answer is 70 words (aim 40-60): \"What if the death happened many years ago\"",
+        "b5 FAQ answer is 65 words (aim 40-60): \"Do i need a reason to request a death certificate\"",
+        "b5 FAQ answer is 64 words (aim 40-60): \"Can i request a death certificate by phone\""
+      ],
+      "indexnow_at": "2026-11-10"
+    },
+    {
+      "slug": "how-late-can-a-minor-work-on-a-school-night",
+      "query": "how late can a minor work on a school night",
+      "lane": "can_be_one",
+      "score": 40,
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 9",
+        "people search it (autocomplete or impressions)"
+      ],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 9,
+          "parts_rows": 7
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "rel": "site/questions/how-late-can-a-minor-work-on-a-school-night/index.html",
+      "route": "/questions/how-late-can-a-minor-work-on-a-school-night/",
+      "url": "https://keepmyproof.com/questions/how-late-can-a-minor-work-on-a-school-night/",
+      "published_at": "2026-11-10",
+      "status": "live",
+      "hash": "4e3e8355d77f24db9ce9863558df29951f1b46d11b9a039734e58bba3b8c55b1",
+      "model": "free-route",
+      "facts": [
+        "https://www.dol.gov/agencies/whd/overtime",
+        "https://www.dol.gov/agencies/whd/state/contacts"
+      ],
+      "linked_from": [
+        {
+          "rel": "site/questions/can-a-16-year-old-work-night-shifts/index.html",
+          "route": "/site/questions/can-a-16-year-old-work-night-shifts/",
+          "before_hash": "f1aa22d87875f4e0f7dd6814aa613c861550952beff2ad4087127635a4ce32b3",
+          "after_hash": "53abf3e8face259d5cbfd5f01601fb5b55203dc021a5fc9c307d631646e0a824"
+        }
+      ],
+      "checks": {},
+      "gate_notes": [
+        "b4 direct answer under the H1 is 31 words (aim 40-60)",
+        "b4 direct answer does not define: \"X is ...\""
+      ],
+      "reshaped": {
+        "v": 2,
+        "at": "2026-11-10",
+        "fixed": [],
+        "left": [
+          "b4: the answer under the H1 defines nothing (\"X is ...\")",
+          "the writer cannot rewrite this lead in place; it changes when the page is strengthened"
+        ]
+      },
+      "indexnow_at": "2026-11-11"
     }
   ],
   "dropped": [
@@ -461,7 +1323,329 @@
         "b5 FAQ has 1 questions (aim 3-6)",
         "b5 FAQ answer is 26 words (aim 40-60): \"how long do i have to file a complaint\""
       ]
+    },
+    {
+      "query": "how to document workplace harassment",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment statement",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how much to save before quitting your job",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 22 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"Should I quit without another job lined up?\"",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "va disability claim checklist",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "va disability claim list",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 87 chars (aim 120-160)",
+        "b5 FAQ answer is 2 words (aim 40-60): \"Can I file a VA claim without a list of evidence?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"What if my medical records are private?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"How often should I update my claim list?\"",
+        "b5 FAQ answer is 2 words (aim 40-60): \"Does KeepMyProof store my VA claim documents?\""
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in california",
+      "at": "2026-11-07",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 27 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in illinois",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 29 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in michigan",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prepare for divorce in georgia",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "co parenting journal",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b5 FAQ answer is 17 words (aim 40-60): \"What if I delete a photo from my phone?\""
+      ]
+    },
+    {
+      "query": "how to document missed visitation",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "what happens if a parent misses visitation",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "b5 FAQ answer is 26 words (aim 40-60): \"How many missed visits before the court gets invol\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in divorce case",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to prove adultery in court",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Does adultery affect child custody?\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime?\"",
+        "b5 FAQ answer is 28 words (aim 40-60): \"What if I only have suspicion?\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Can I use recordings of conversations?\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in south carolina",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to prove adultery in virginia",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 21 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in Virginia?\""
+      ]
+    },
+    {
+      "query": "how to prove adultery in louisiana",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 26 words (aim 40-60)",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Does emotional cheating count as adultery in Louis\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Can text messages be used as proof of adultery?\"",
+        "b5 FAQ answer is 25 words (aim 40-60): \"Does adultery affect child custody in Louisiana?\"",
+        "shape: the body needs at least one list or table (give one section \"bullets\")"
+      ]
+    },
+    {
+      "query": "how to prove adultery in nc",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 23 words (aim 40-60): \"What if my spouse admits adultery?\"",
+        "b5 FAQ answer is 28 words (aim 40-60): \"Does adultery affect child custody?\"",
+        "b5 FAQ answer is 29 words (aim 40-60): \"Is adultery a crime in North Carolina?\""
+      ]
+    },
+    {
+      "query": "how to document workplace bullying",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 83 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 23 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "how to document workplace abuse",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "how to document workplace violence",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 88 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 18 words (aim 40-60): \"Can I record a violent meeting at work?\"",
+        "b5 FAQ answer is 21 words (aim 40-60): \"What if HR ignores my report?\"",
+        "b5 FAQ answer is 23 words (aim 40-60): \"Is workplace violence a crime?\""
+      ]
+    },
+    {
+      "query": "how to properly document workplace harassment",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 80 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 24 words (aim 40-60)",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I use a recording as proof?\"",
+        "b5 FAQ answer is 26 words (aim 40-60): \"Is it better to write notes by hand or type them?\""
+      ]
+    },
+    {
+      "query": "how to write a workplace harassment complaint",
+      "at": "2026-11-08",
+      "gate": 2,
+      "reason": [
+        "b2 meta description is 82 chars (aim 120-160)",
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "shape: the body needs at least one list or table (give one section \"bullets\")"
+      ]
+    },
+    {
+      "query": "colorado small estate limit 2021",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 20 words (aim 40-60)",
+        "b5 FAQ has 2 questions (aim 3-6)",
+        "b5 FAQ answer is 24 words (aim 40-60): \"Can I use the small estate procedure if there is a\"",
+        "b5 FAQ answer is 24 words (aim 40-60): \"What happens if the estate value exceeds the limit\""
+      ]
+    },
+    {
+      "query": "how long does a school have to complete an iep evaluation",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)"
+      ]
+    },
+    {
+      "query": "arizona child labor laws 2026",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 25 words (aim 40-60)",
+        "b5 FAQ answer is 25 words (aim 40-60): \"Can a 14-year-old work full-time in summer?\"",
+        "b5 FAQ answer is 20 words (aim 40-60): \"Do I need a work permit to start a job at 15?\"",
+        "b5 FAQ answer is 15 words (aim 40-60): \"What jobs are illegal for a 16-year-old?\"",
+        "b5 FAQ answer is 27 words (aim 40-60): \"Do hour limits change when school is out?\""
+      ]
+    },
+    {
+      "query": "can i get a death certificate for anyone",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "child labor law hours",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "the answer was not the JSON object asked for, with every key filled"
+      ]
+    },
+    {
+      "query": "colorado disabled veteran property tax exemption",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 18 words (aim 40-60)",
+        "shape: the body needs at least one list or table (give one section \"bullets\")",
+        "invented: unsourced statistic \"Veterans with a 10% disability rating may qualify for a partial exemption, while\""
+      ]
+    },
+    {
+      "query": "colorado va regional office",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "b4 direct answer under the H1 is 20 words (aim 40-60)",
+        "b5 FAQ has 1 questions (aim 3-6)",
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 1)"
+      ]
+    },
+    {
+      "query": "death certificate massachusetts example",
+      "at": "2026-11-09",
+      "gate": 2,
+      "reason": [
+        "facts: needs at least 2 distinct sources whose URLs answered 200 (found 0)",
+        "invented: unsourced statistic \"You can also request one from the Massachusetts Registry of Vital Records and St\""
+      ]
     }
   ],
-  "redirected": []
+  "redirected": [
+    {
+      "query": "how to prove a hostile work environment claim",
+      "at": "2026-11-07",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.80 >= 0.6)",
+      "matched_text": "how can you prove a hostile work environment",
+      "stage": "search"
+    },
+    {
+      "query": "what is considered a hostile work environment",
+      "at": "2026-11-07",
+      "url": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
+      "route": "/questions/how-can-you-prove-a-hostile-work-environment/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "how can you prove a hostile work environment",
+      "stage": "search"
+    },
+    {
+      "query": "donde sacar acta de divorcio",
+      "at": "2026-11-09",
+      "url": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "route": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "kind": "engine",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "matched_text": "how to get a certified copy of my divorce decree",
+      "stage": "draft"
+    }
+  ]
 }

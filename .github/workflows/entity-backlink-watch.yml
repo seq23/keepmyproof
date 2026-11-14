@@ -2,7 +2,7 @@ name: Entity backlink watch
 
 # Weekly (search-readiness k6): every sameAs profile in site/data/entity.json still resolves, and the
 # live homepage carries the same sameAs and the Spry Labs parent (scripts/entity-watch.mjs). A dead
-# profile is NAMED STOP [SAMEAS_DEAD] and turns this run red so it is seen. Read-only.
+# profile (404/410 or no answer; a 429/403/5xx is only a note) is NAMED STOP [SAMEAS_DEAD] and turns this run red so it is seen. Read-only.
 on:
   schedule:
     - cron: '17 13 * * 1'  # Mondays 13:17 UTC
