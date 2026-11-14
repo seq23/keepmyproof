@@ -584,36 +584,36 @@
     "IN": {
       "facts": [
         {
-          "claim_en": "In Indiana, a permanent protective order granted after a hearing stays in effect for two years from the date the judge signs it.",
-          "claim_es": "En Indiana, una orden de protección permanente concedida tras una audiencia sigue vigente dos años desde la fecha en que el juez la firma.",
-          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
-          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
-          "quote": "that order will remain in effect for two (2) years from the date the judge signs the order",
-          "checked": "2026-11-02"
+          "claim_en": "In Indiana, a protective order is in effect for two years unless the judge specifies another date.",
+          "claim_es": "En Indiana, una orden de protección está vigente dos años, salvo que el juez fije otra fecha.",
+          "source_url": "https://henrycounty.in.gov/DocumentCenter/View/793",
+          "source_name": "Henry County, Indiana: Protective Order Information",
+          "quote": "The order will be in effect for two years, or until such",
+          "checked": "2026-11-13"
         },
         {
-          "claim_en": "An Indiana temporary protective order stays in effect until the permanent protective order hearing.",
-          "claim_es": "En Indiana, una orden de protección temporal sigue vigente hasta la audiencia de la orden de protección permanente.",
-          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
-          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
-          "quote": "The temporary order will remain in effect until the time of a permanent Protective Order Hearing.",
-          "checked": "2026-11-02"
+          "claim_en": "No fee is required to file an Indiana protective order petition.",
+          "claim_es": "En Indiana no se cobra tarifa por presentar la petición de una orden de protección.",
+          "source_url": "https://henrycounty.in.gov/DocumentCenter/View/793",
+          "source_name": "Henry County, Indiana: Protective Order Information",
+          "quote": "the petition, and no fee is required",
+          "checked": "2026-11-13"
         },
         {
-          "claim_en": "Indiana charges no fee to file for a protective order.",
-          "claim_es": "Indiana no cobra tarifa por presentar una solicitud de orden de protección.",
-          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
-          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
-          "quote": "There is no fee for the filing of a protective order.",
-          "checked": "2026-11-02"
+          "claim_en": "After an Indiana judge issues an ex parte protective order, a hearing must be held within 30 days if either side requests one.",
+          "claim_es": "Después de que un juez de Indiana emite una orden de protección ex parte, debe celebrarse una audiencia en un plazo de 30 días si cualquiera de las partes la solicita.",
+          "source_url": "https://henrycounty.in.gov/DocumentCenter/View/793",
+          "source_name": "Henry County, Indiana: Protective Order Information",
+          "quote": "a hearing must be held within 30 days if requested by you or the Respondent",
+          "checked": "2026-11-13"
         },
         {
-          "claim_en": "In Indiana, a protective order is a civil case not connected to a criminal case.",
-          "claim_es": "En Indiana, una orden de protección es un caso civil no vinculado a un caso penal.",
-          "source_url": "https://morgancounty.in.gov/topic/subtopic.php?topicid=184&structureid=60",
-          "source_name": "Morgan County, Indiana Prosecutor: Protection Orders",
-          "quote": "A protective order is a civil suit not connected to a criminal case.",
-          "checked": "2026-11-02"
+          "claim_en": "Indiana charges no fee to register a protective order.",
+          "claim_es": "Indiana no cobra tarifa por registrar una orden de protección.",
+          "source_url": "https://henrycounty.in.gov/DocumentCenter/View/793",
+          "source_name": "Henry County, Indiana: Protective Order Information",
+          "quote": "You will not be charged any fee to register your protective order",
+          "checked": "2026-11-13"
         }
       ],
       "official_links": [

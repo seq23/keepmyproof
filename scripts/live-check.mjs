@@ -25,6 +25,11 @@ const graph = (() => { try { return JSON.parse(/<script type="application\/ld\+j
 const org = graph.find((n) => n['@type'] === 'Organization');
 check('home JSON-LD', ['Organization', 'WebSite', 'WebPage', 'FAQPage', 'SoftwareApplication'].every((t) => graph.some((n) => n['@type'] === t)), `types: ${graph.map((n) => n['@type']).join(', ')}`);
 check('Organization sameAs and parent', org?.sameAs?.length && org?.parentOrganization?.name, 'sameAs or parentOrganization missing');
+// No analytics (owner ruling 6 Nov 2026; the privacy page says so): the edge must not inject a third-party
+// script such as Cloudflare Web Analytics. Fetched as a browser would, since injection only targets browsers.
+const asBrowser = await (await get('/', { headers: { accept: 'text/html', 'user-agent': 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/130 Safari/537.36' } })).text();
+const thirdParty = [...asBrowser.matchAll(/<script[^>]+src="(https?:[^"]+)"/g)].map((m) => m[1]);
+check('no third-party script (no analytics)', asBrowser.length > 1000 && !thirdParty.length && !/cloudflareinsights/.test(asBrowser), `served ${thirdParty.join(', ') || 'a beacon'}`);
 check('home links About', /href="\/about"/.test(html), 'no /about link');
 for (const p of ['/about', '/vault', '/es/boveda', '/custody-log']) { const r = await get(p); check(p, r.status === 200, `status ${r.status}`); }
 const nf = await get(`/no-such-page-${Date.now()}`);
