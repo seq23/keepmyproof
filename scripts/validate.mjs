@@ -55,9 +55,10 @@ const checks={
     const site=texts.filter(([f])=>f.startsWith('site/')&&f.endsWith('.mjs'));
     if(!site.length)throw Error('NO_SITE_CONTENT');
     // EN and ES: prohibited evidence/security claims (R-ADV-01/02) and race-labelled branding, in the
-    // app, store and website copy. Competitor names (R-REPO-06): never in app or store copy; the
+    // app, store and website copy; also "kept out of your camera roll" about the app, which is untrue on
+    // Android (the original stays until the person deletes it; only the app's copy is kept out). Competitor names (R-REPO-06): never in app or store copy; the
     // website may compare.
-    const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?/iu;
+    const claims=/court.admissible|admisibles? (?:en|ante) (?:el |la |un )?(?:tribunal|corte|juicio)|unhackable|imposible de hackear|inhackeable|military.grade|grado militar|proof that wins|pruebas? que gana|guaranteed (?:win|outcome)|black.owned|(?<!copy )kept out of (?:your|the) camera roll|fuera de su carrete|(?:de |con )?due(?:ñ|n)[oa]s? negr[oa]s?/iu;
     // App and store copy in all four languages (ZH and KO added 2 Nov 2026): the same claims in Chinese and
     // Korean, plus "court-ready". The website has its own gate for these words (site/lib/gate.mjs), whose
     // source quotes them, so this list reads app and store copy only.

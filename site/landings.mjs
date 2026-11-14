@@ -52,8 +52,8 @@ export const VAULT_HUB = {
   path: { en: '/vault', es: '/es/boveda', zh: '/zh/vault', ko: '/ko/vault' },
   en: {
     title: 'Private vault for photos and documents | KeepMyProof', h1: 'A private vault for photos and documents',
-    desc: 'A private vault for photos, screenshots, texts, letters and scans, locked behind a passcode or Face ID, in dated folders and out of your camera roll.',
-    answer: 'KeepMyProof is a private vault for papers, not just pictures: photos, screenshots, texts, letters and scans, locked behind a passcode or Face ID and kept out of your camera roll. Photo vaults hide pictures. KeepMyProof keeps the photos and the papers you need to keep, in dated folders, so you can find them and share one PDF later.',
+    desc: 'A private vault for photos, screenshots, texts, letters and scans, locked behind a passcode or Face ID, in dated folders, with your copy kept out of your camera roll.',
+    answer: 'KeepMyProof is a private vault for papers, not just pictures: photos, screenshots, texts, letters and scans, locked behind a passcode or Face ID, your copy out of your camera roll. Photo vaults hide pictures. KeepMyProof keeps the photos and the papers you need to keep, in dated folders, so you can find them and share one PDF later.',
     howH: 'How does the vault work?', how: ['Add a photo, screenshot, file or note to a folder (divorce, workplace, VA, executor or IEP, or your own).', 'Write the date it happened; the app adds the date you saved it, side by side.', 'On iPhone, choose whether to remove the original from Photos. On Android, delete it in Google Photos yourself.', 'Open the vault with your passcode, Face ID or fingerprint. It locks again when you leave.', 'When someone asks, turn a folder into one PDF with an index, or export the originals.'],
     diffH: 'How is it different from a photo vault?', diff: 'A photo vault hides pictures; this vault keeps records in order.',
     table: { head: ['', 'Photo vault app', 'KeepMyProof'], rows: [['Photos and screenshots', 'Yes', 'Yes'], ['Files, letters, scans and notes', 'Varies by app', 'Yes'], ['Folders with a checklist for one life event', 'No', 'Yes, five folders'], ['Date it happened next to date saved', 'No', 'Yes'], ['One PDF of a folder', 'No', 'Yes'], ['Disguised as another app', 'Often', 'No: a normal, locked app']] },
@@ -66,8 +66,8 @@ export const VAULT_HUB = {
   },
   es: {
     title: 'Bóveda privada para fotos y documentos | KeepMyProof', h1: 'Una bóveda privada para fotos y documentos',
-    desc: 'Una bóveda privada para fotos, capturas, mensajes, cartas y escaneos, protegida con código o Face ID, en carpetas con fecha y fuera de su carrete.',
-    answer: 'KeepMyProof es una bóveda privada para papeles, no solo para fotos: fotos, capturas, mensajes, cartas y escaneos, protegidos con un código o Face ID y fuera de su carrete. Las bóvedas de fotos ocultan fotos. KeepMyProof guarda las fotos y los papeles que necesita conservar, en carpetas con fecha, para encontrarlos y compartir un PDF después.',
+    desc: 'Una bóveda privada para fotos, capturas, mensajes, cartas y escaneos, protegida con código o Face ID, en carpetas con fecha, con su copia fuera del carrete.',
+    answer: 'KeepMyProof es una bóveda privada para papeles, no solo para fotos: fotos, capturas, mensajes, cartas y escaneos, protegidos con un código o Face ID, con su copia fuera del carrete. Las bóvedas de fotos ocultan fotos. KeepMyProof guarda las fotos y los papeles que necesita conservar, en carpetas con fecha, para encontrarlos y compartir un PDF después.',
     howH: '¿Cómo funciona la bóveda?', how: ['Agregue una foto, captura, archivo o nota a una carpeta (divorcio, trabajo, VA, albacea o IEP, o una suya).', 'Escriba la fecha en que pasó; la app agrega la fecha en que lo guardó, una junto a la otra.', 'En iPhone, elija si quita el original de Fotos. En Android, bórrelo usted en Google Fotos.', 'Abra la bóveda con su código, Face ID o huella. Se vuelve a bloquear cuando sale.', 'Cuando alguien se lo pida, convierta una carpeta en un PDF con índice, o exporte los originales.'],
     diffH: '¿En qué se diferencia de una bóveda de fotos?', diff: 'Una bóveda de fotos oculta fotos; esta bóveda mantiene los registros en orden.',
     table: { head: ['', 'App de bóveda de fotos', 'KeepMyProof'], rows: [['Fotos y capturas', 'Sí', 'Sí'], ['Archivos, cartas, escaneos y notas', 'Depende de la app', 'Sí'], ['Carpetas con lista para un momento de la vida', 'No', 'Sí, cinco carpetas'], ['Fecha en que pasó junto a la fecha de guardado', 'No', 'Sí'], ['Un PDF de una carpeta', 'No', 'Sí'], ['Disfrazada como otra app', 'A menudo', 'No: una app normal y bloqueada']] },
@@ -80,8 +80,8 @@ export const VAULT_HUB = {
   },
   zh: {
     title: '照片和文件的私密保险箱 | KeepMyProof 私密文件手机应用', h1: '照片和文件的私密保险箱',
-    desc: 'KeepMyProof 是照片和文件的私密保险箱：照片、截图、短信、信件和扫描件用密码或 Face ID 锁住，按日期放进文件夹，不留在相册里。即将登陆 App Store 和 Google Play。',
-    answer: 'KeepMyProof 是保存文件而不只是照片的私密保险箱：照片、截图、短信、信件和扫描件都用密码或 Face ID 锁住，不留在相册里。普通的照片保险箱只是把照片藏起来；KeepMyProof 把您需要保留的照片和文件按日期放进文件夹，方便以后查找，并可导出成一个 PDF。',
+    desc: 'KeepMyProof 是照片和文件的私密保险箱：照片、截图、短信、信件和扫描件用密码或 Face ID 锁住，按日期放进文件夹，您的副本不会出现在相册里。即将登陆 App Store 和 Google Play。',
+    answer: 'KeepMyProof 是保存文件而不只是照片的私密保险箱：照片、截图、短信、信件和扫描件都用密码或 Face ID 锁住，您的副本不会出现在相册里。普通的照片保险箱只是把照片藏起来；KeepMyProof 把您需要保留的照片和文件按日期放进文件夹，方便以后查找，并可导出成一个 PDF。',
     howH: '保险箱怎么用？', how: ['把照片、截图、文件或笔记加入一个文件夹（离婚、职场、VA、遗产执行或 IEP，或您自己的文件夹）。', '写下事情发生的日期；应用会在旁边记下您保存的日期。', '在 iPhone 上，可以选择是否从“照片”中删除原件。在 Android 上，请您自己在 Google 相册中删除原件。', '用密码、Face ID 或指纹打开保险箱。离开应用后会再次锁住。', '有人需要时，把一个文件夹做成带目录的 PDF，或导出原件。'],
     diffH: '它和照片保险箱有什么不同？', diff: '照片保险箱只藏照片；这个保险箱把记录整理好。',
     table: { head: ['', '照片保险箱应用', 'KeepMyProof'], rows: [['照片和截图', '是', '是'], ['文件、信件、扫描件和笔记', '因应用而异', '是'], ['为某件人生大事准备的带清单文件夹', '否', '是，五个文件夹'], ['发生日期和保存日期并列', '否', '是'], ['一个文件夹导出成一个 PDF', '否', '是'], ['伪装成其他应用', '常见', '否：普通的、上锁的应用']] },
@@ -96,8 +96,8 @@ export const VAULT_HUB = {
   },
   ko: {
     title: '사진과 문서를 위한 비공개 보관함 | KeepMyProof 비공개 서류 앱', h1: '사진과 문서를 위한 비공개 보관함',
-    desc: 'KeepMyProof는 사진과 문서를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고 날짜별 폴더에 보관하며 카메라 롤 밖에 둡니다. App Store와 Google Play 출시 예정입니다.',
-    answer: 'KeepMyProof는 사진만이 아니라 서류를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고 카메라 롤 밖에 보관합니다. 사진 보관함은 사진을 숨길 뿐입니다. KeepMyProof는 보관해야 할 사진과 서류를 날짜별 폴더에 정리해 나중에 찾고 PDF 하나로 공유할 수 있게 합니다.',
+    desc: 'KeepMyProof는 사진과 문서를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고 날짜별 폴더에 보관하며 보관한 사본은 카메라 롤에 보이지 않습니다. App Store와 Google Play 출시 예정입니다.',
+    answer: 'KeepMyProof는 사진만이 아니라 서류를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고, 보관한 사본은 카메라 롤에 보이지 않습니다. 사진 보관함은 사진을 숨길 뿐입니다. KeepMyProof는 보관해야 할 사진과 서류를 날짜별 폴더에 정리해 나중에 찾고 PDF 하나로 공유할 수 있게 합니다.',
     howH: '보관함은 어떻게 작동하나요?', how: ['사진, 스크린샷, 파일 또는 메모를 폴더(이혼, 직장, VA, 유언 집행, IEP 또는 직접 만든 폴더)에 추가합니다.', '일이 일어난 날짜를 적으면 앱이 저장한 날짜를 옆에 기록합니다.', 'iPhone에서는 사진 앱의 원본을 지울지 선택합니다. Android에서는 Google 포토에서 직접 원본을 지웁니다.', '암호, Face ID 또는 지문으로 보관함을 엽니다. 앱을 나가면 다시 잠깁니다.', '누군가 요청하면 폴더를 목차가 있는 PDF 하나로 만들거나 원본을 내보냅니다.'],
     diffH: '사진 보관함과 무엇이 다른가요?', diff: '사진 보관함은 사진을 숨기고, 이 보관함은 기록을 정리합니다.',
     table: { head: ['', '사진 보관함 앱', 'KeepMyProof'], rows: [['사진과 스크린샷', '예', '예'], ['파일, 편지, 스캔본, 메모', '앱마다 다름', '예'], ['인생의 한 사건을 위한 체크리스트 폴더', '아니요', '예, 다섯 개 폴더'], ['일어난 날짜와 저장한 날짜를 나란히', '아니요', '예'], ['폴더 하나를 PDF 하나로', '아니요', '예'], ['다른 앱으로 위장', '흔함', '아니요: 평범한 잠금 앱']] },
