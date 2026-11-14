@@ -138,6 +138,23 @@
           "GPTBot (OpenAI training)": 1
         }
       }
+    },
+    "2026-11-14": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 156,
+        "by_bot": {
+          "Amazonbot": 26,
+          "Meta-ExternalAgent": 127,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }

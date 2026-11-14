@@ -2,31 +2,19 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W46",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-13T14:15:46.843Z",
+  "generated_at": "2026-11-14T14:12:52.944Z",
   "state": "running",
-  "published": 19,
+  "published": 9,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 2991,
+  "ai_bot_hits": 3085,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
   "merged": 0,
-  "held_by_cap": 39,
+  "held_by_cap": 49,
   "redirected": [
-    {
-      "query": "how to prove a hostile work environment claim",
-      "strengthen": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
-      "matched_by": "high token overlap (0.80 >= 0.6)",
-      "at": "2026-11-07"
-    },
-    {
-      "query": "what is considered a hostile work environment",
-      "strengthen": "https://keepmyproof.com/questions/how-can-you-prove-a-hostile-work-environment/",
-      "matched_by": "high token overlap (0.60 >= 0.6)",
-      "at": "2026-11-07"
-    },
     {
       "query": "donde sacar acta de divorcio",
       "strengthen": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
@@ -69,5 +57,5 @@
     "weight_changes": [],
     "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/43441036765"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/43603679771"
 }
