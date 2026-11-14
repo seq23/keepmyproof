@@ -149,3 +149,14 @@ test('Home lists every shown launch folder, own folders, then Make your own; a c
   // A line id that belongs to another folder is not a line here.
   assert.throws(()=>validate({...vault.snapshot(),items:[{...vault.snapshot().items[0],folder:'workplace-evidence'}]}),/FORMAT_INVALID/);
 });
+
+test('items list newest first by the happened date, falling back to the saved date when it is unknown', async () => {
+  let t = 0; const store = new MemoryStore(), key = random(32);
+  const vault = new Vault(store, key, random, () => ['2026-11-01T10:00:00.000Z', '2026-11-02T10:00:00.000Z', '2026-11-03T10:00:00.000Z', '2026-11-04T10:00:00.000Z'][t++]);
+  await vault.load();
+  const old = await vault.add(draft({ title: 'old', happenedOn: '2026-01-05' }), true);
+  const recent = await vault.add(draft({ title: 'recent', happenedOn: '2026-10-20' }), true);
+  const undated = await vault.add(draft({ title: 'undated' }), true);
+  const middle = await vault.add(draft({ title: 'middle', happenedOn: '2026-06-01' }), true);
+  assert.deepEqual(vault.items('divorce-prep').map(i => i.id), [undated, recent, middle, old]);
+});

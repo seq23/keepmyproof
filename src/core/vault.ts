@@ -5,6 +5,10 @@ export interface AtomicStore { read(): Promise<string | null>; write(ciphertext:
 export const FREE_LIMIT = 25;
 export function mayAdd(count: number, plus: boolean): boolean { return plus || count < FREE_LIMIT; }
 const day = (v: string | null) => v === null ? null : calendarDay(v);
+/** Newest first by the day it happened (the user's date), or the day it was saved when that is unknown;
+ *  same day: the later save first. */
+const shownDay = (i: Item) => calendarDay(i.happenedOn ?? i.savedOn);
+const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
 export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'>;
 export class Vault {
   private state: Snapshot = empty();
@@ -68,7 +72,7 @@ export class Vault {
     if (selection && !plus) throw Error('PLUS_REQUIRED');
     return this.snapshot().items.filter(i => i.folder === folder && (!selection ||
       ((!selection.ids || selection.ids.includes(i.id)) && (!selection.from || (i.happenedOn !== null && calendarDay(i.happenedOn) >= calendarDay(selection.from))) &&
-      (!selection.to || (i.happenedOn !== null && calendarDay(i.happenedOn) <= calendarDay(selection.to)))))).sort((a,b) => b.savedOn.localeCompare(a.savedOn));
+      (!selection.to || (i.happenedOn !== null && calendarDay(i.happenedOn) <= calendarDay(selection.to)))))).sort(newestFirst);
   }
   original(id: string): Uint8Array {
     const item = this.snapshot().items.find(i => i.id === id);
