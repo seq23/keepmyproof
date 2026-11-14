@@ -6,6 +6,7 @@ import { b64, unb64, recoveryKey, type Random } from '../core/crypto';
 import { Vault, type AtomicStore } from '../core/vault';
 import { isLang, type Lang } from '../core/model';
 import type { PrefStore } from '../core/original';
+import type { HeardStore } from '../core/heard';
 export const random: Random = n => globalThis.crypto.getRandomValues(new Uint8Array(n));
 const kept = new Map<string, string>();
 let ciphertext: string | null = null;
@@ -15,6 +16,7 @@ export const langChoice = {
   write: async (lang: Lang) => { kept.set('lang', lang); },
 };
 export const removePrefStore: PrefStore = { read: async () => kept.get('remove') ?? null, write: async v => { kept.set('remove', v); } };
+export const heardStore: HeardStore = { read: async () => kept.get('heard') ?? null, write: async v => { kept.set('heard', v); } };
 export const locks: LockStore = {
   read: async () => { const raw = kept.get('lock'); if (!raw) throw Error('LOCK_MISSING'); return JSON.parse(raw) as LockRecord; },
   write: async value => { kept.set('lock', JSON.stringify(value)); },
