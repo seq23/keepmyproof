@@ -60,6 +60,11 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd
 - takeScreenshot: 05-confirmPhrase
 - tapOn: "Go to Home ›"
+- extendedWaitUntil:
+    visible: "How did you hear about KeepMyProof?"
+    timeout: 30000
+- takeScreenshot: 06-heard
+- tapOn: "Skip ›"
 - waitForAnimationToEnd
 - extendedWaitUntil:
     visible: "What you can keep here"
@@ -100,7 +105,7 @@ appId: com.keepmyproof.app
 - tapOn: "Bank, retirement and debt statements"
 - tapOn: "← Back to Home"
 - waitForAnimationToEnd
-- takeScreenshot: 06-home
+- takeScreenshot: 07-home
 
 # A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
@@ -111,7 +116,7 @@ appId: com.keepmyproof.app
     visible: "Checklist"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 07-folder
+- takeScreenshot: 08-folder
 - scrollUntilVisible:
     element: "\\+ Add something"
     direction: DOWN
@@ -121,7 +126,7 @@ appId: com.keepmyproof.app
 - inputText: "Car title and loan papers"
 - pressKey: Enter
 - waitForAnimationToEnd
-- takeScreenshot: 08-add
+- takeScreenshot: 09-add
 - scrollUntilVisible:
     element: "Cancel"
     direction: DOWN
@@ -139,23 +144,23 @@ appId: com.keepmyproof.app
     visible: "Your note"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 09-detail
+- takeScreenshot: 10-detail
 - scrollUntilVisible:
     element: "Make a PDF of this folder ›"
     direction: DOWN
 - tapOn: "Make a PDF of this folder ›"
 - waitForAnimationToEnd
-- takeScreenshot: 10-pdf
+- takeScreenshot: 11-pdf
 - tapOn: "← Back to .*"
 - tapOn: "← Back to Home"
 
 # Backup, Settings, Plus.
 - tapOn: "Backup"
 - waitForAnimationToEnd
-- takeScreenshot: 11-backup
+- takeScreenshot: 12-backup
 - tapOn: "Settings"
 - waitForAnimationToEnd
-- takeScreenshot: 12-settings
+- takeScreenshot: 13-settings
 - scrollUntilVisible:
     element: "See Plus ›"
     direction: DOWN
@@ -164,7 +169,7 @@ appId: com.keepmyproof.app
     visible: "KeepMyProof Plus"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 13-plus
+- takeScreenshot: 14-plus
 - scrollUntilVisible:
     element: "Not now"
     direction: DOWN
@@ -180,7 +185,7 @@ appId: com.keepmyproof.app
     visible: "Your papers are locked"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 14-lock
+- takeScreenshot: 15-lock
 - tapOn: "Forgot the passcode\\? ›"
 - waitForAnimationToEnd
-- takeScreenshot: 15-reset
+- takeScreenshot: 16-reset
