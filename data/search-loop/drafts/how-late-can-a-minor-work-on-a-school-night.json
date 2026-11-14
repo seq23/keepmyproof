@@ -1,0 +1,107 @@
+{
+  "h1": "How late can a minor work on a school night",
+  "title_lead": "How late can a minor work on a school night",
+  "meta_description": "Rules for how late a minor can work on a school night vary by state and age. Federal limits exist but states set stricter hours.",
+  "direct_answer": "Federal law sets a 7 p.m. limit for minors on school nights, but state laws may set earlier or later cutoffs depending on the minor's age. Check your specific state rules.",
+  "sections": [
+    {
+      "heading": "What does federal law say about school night hours",
+      "paragraphs": [
+        "The Fair Labor Standards Act sets basic rules for teen workers across the United States. For 14 and 15 year olds, federal law limits work on school nights to 3 hours total. The work day cannot start before 7 a.m. or end after 7 p.m. during the school year. These hours change to 8 p.m. during summer months when school is out. Sixteen and seventeen year olds face fewer federal restrictions on hours, but hazardous job rules still apply. The federal rules act as a floor, meaning states can set shorter hours but not longer ones than the federal limits allow."
+      ],
+      "bullets": [
+        "3 hour limit for 14-15 year olds on school nights",
+        "7 p.m. cutoff for 14-15 year olds during school year",
+        "8 p.m. cutoff applies during summer for 14-15 year olds",
+        "16-17 year olds have no federal hour limits on school nights",
+        "Hazardous occupation rules still apply for all minors"
+      ]
+    },
+    {
+      "heading": "How state laws change the federal baseline",
+      "paragraphs": [
+        "While federal law provides a baseline, each state can set its own stricter rules for minor employment. Some states set earlier cutoff times than the federal 7 p.m. limit for younger teens. Other states may allow later hours for 16-17 year olds, especially if school is not in session the next day. Parents should check their state labor department website for the exact rules that apply in their area. State laws often include requirements for work permits and hour limits that differ from federal guidelines."
+      ],
+      "bullets": [
+        "States can set earlier cutoff times than federal law",
+        "Some states allow later hours for 16-17 year olds",
+        "State rules often include work permit requirements",
+        "Check state labor department for exact local rules",
+        "State laws may differ if school is not in session next day"
+      ]
+    },
+    {
+      "heading": "Age-based differences in work restrictions",
+      "paragraphs": [
+        "The rules change significantly based on the minor's age. Fourteen and fifteen year olds have the strictest federal hour limits, including the 7 p.m. school night cutoff. Sixteen and seventeen year olds face fewer hour restrictions under federal law, but state laws may still impose limits. Some states treat 16-17 year olds differently than younger teens, allowing later hours or different conditions. The type of job also matters, as hazardous occupations have separate restrictions regardless of age. Always check both federal and state rules for the specific age group."
+      ],
+      "bullets": [
+        "14-15 year olds have strictest federal hour limits",
+        "16-17 year olds face fewer federal hour restrictions",
+        "State laws may still limit 16-17 year old hours",
+        "Hazardous job rules apply regardless of age",
+        "Check rules for specific age group"
+      ]
+    },
+    {
+      "heading": "Special conditions and exceptions",
+      "paragraphs": [
+        "Some situations change how the rules apply. During summer vacation, the 7 p.m. cutoff for 14-15 year olds moves to 9 p.m. under federal law. If a minor is not attending school the next day, some states allow later hours. Certain industries like agriculture or entertainment have different rule sets. Weather emergencies or school closures may also affect allowed work hours. Parents and employers should verify the current rules for their specific situation, as exceptions can change the standard limits."
+      ],
+      "bullets": [
+        "Summer hours move 7 p.m. cutoff to 9 p.m. for 14-15 year olds",
+        "No school next day may allow later hours in some states",
+        "Agriculture and entertainment have different rule sets",
+        "Weather emergencies or closures may affect allowed hours",
+        "Verify current rules for specific situation"
+      ]
+    },
+    {
+      "heading": "How to find the rules that apply to you",
+      "paragraphs": [
+        "To find the exact rules for your situation, start with the U.S. Department of Labor website. The site has state-by-state guides for minor employment laws. You can also contact your local state labor department directly. If you have a work permit, check the limits printed on that document. School counselors often know the local rules too. When in doubt, err on the side of fewer hours to stay on the safe side of the law."
+      ],
+      "bullets": [
+        "DOL website has state-by-state minor employment guides",
+        "Contact state labor department for local rules",
+        "Work permits print hour limits directly on the document",
+        "School counselors often know local employment rules",
+        "When in doubt, choose fewer hours to stay safe"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can a 14 year old work past 7 p.m. on a school night",
+      "a": "Federal law prohibits 14 and 15 year olds from working past 7 p.m. on school nights during the school year. This is a strict limit that applies regardless of job type or parental permission. Some states may have even earlier cutoffs, so always check local rules."
+    },
+    {
+      "q": "Do 16 year olds have different school night hour limits than 14 year olds",
+      "a": "Sixteen and seventeen year olds face fewer federal hour restrictions than 14 and 15 year olds. Federal law does not set a specific cutoff time for older teens on school nights. However, state laws may still impose limits, so check your specific state rules for 16-17 year olds."
+    },
+    {
+      "q": "What happens to work hour limits during summer vacation",
+      "a": "During summer months when school is not in session, federal law allows 14 and 15 year olds to work until 9 p.m. The 7 p.m. school night cutoff only applies when school is scheduled the next day. Sixteen and seventeen year olds face no federal summer hour changes since they already have fewer restrictions."
+    },
+    {
+      "q": "Can states set earlier cutoff times than the federal 7 p.m. limit",
+      "a": "Yes, states can set earlier cutoff times than the federal 7 p.m. limit for younger teens. Some states have cutoffs as early as 6 p.m. or 6:30 p.m. for 14 and 15 year olds on school nights. These state rules are legal as long as they do not allow longer hours than federal law permits."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Fair Labor Standards Act sets a 7 p.m. cutoff for 14 and 15 year olds on school nights during the school year",
+      "source_url": "https://www.dol.gov/agencies/whd/overtime",
+      "source_name": "Department of Labor",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Sixteen and seventeen year olds have no federal hour limits on school nights, but state laws may impose restrictions",
+      "source_url": "https://www.dol.gov/agencies/whd/state/contacts",
+      "source_name": "Department of Labor",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

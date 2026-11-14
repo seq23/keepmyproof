@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { SITE, PAGES } from '../site/config.mjs';
-import { render, renderAll, legalSections } from '../site/build.mjs';
+import { render, renderAll, legalSections, questionGate } from '../site/build.mjs';
 import { fixture } from './site-fixture';
 import { approvedListPrice } from '../src/billing/provider';
 import { FREE_LIMIT } from '../src/core/vault';
@@ -66,13 +66,36 @@ test('every page has a self canonical and hreflang twins that exist and link bac
   assert.equal(files[`${SITE.indexNowKey}.txt`], SITE.indexNowKey);
 });
 
-test('before launch: "coming soon to Google Play", no store link, no offers and never a rating; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
+test('before launch: "coming soon to Google Play", no store link, no install link, never a rating, and only the approved list prices as coming-soon Offers; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
   const before = renderAll(fixture());
+  const listPrices = ['0', SITE.prices.yearlyUSD, SITE.prices.lifetimeUSD];
+  let apps = 0, withOffer = 0, noOffer = 0;
   for (const [p, s] of html(before.files)) {
     // Competitor pages cite competitors' App Store pages; no page may link to a store for our own app.
     assert.ok(!/play\.google\.com|apps\.apple\.com\/[^"]*keepmyproof|class="btn" href="https:\/\/apps\.apple/.test(s), p);
-    for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) assert.ok(!app.offers && !app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
+    for (const app of graph(s).filter((n) => /Application$/.test(n['@type']))) {
+      assert.ok(!app.installUrl && !app.aggregateRating && !app.review, `${p} app schema`);
+      if (app['@type'] !== 'SoftwareApplication') { assert.ok(!app.offers, `${p} tool schema has no offers`); continue; }
+      apps++;
+      // Search-readiness c5: an Offer price only where the visible page prints it; anywhere else the app node has no offers.
+      const shown = listPrices.slice(1).every((pr) => visible(s).includes(`$${pr}`));
+      if (!shown) { assert.ok(!app.offers, `${p} shows no price, so its app schema carries no Offer`); noOffer++; continue; }
+      withOffer++;
+      // Search-readiness c3: a priced Offer, never an invented price, never a claim it can be bought today.
+      assert.deepEqual(app.offers.map((o: any) => o.price), listPrices, `${p} offers are the approved list prices`);
+      for (const o of app.offers) {
+        assert.ok(o.priceCurrency === 'USD' && !o.availability, `${p} offer currency, no availability claim`);
+        assert.equal(o.url, `${SITE.origin}/#price`, `${p} offer points at the price section`);
+        assert.ok(o.description, `${p} offer says coming soon`);
+      }
+    }
   }
+  assert.ok(apps > 100, `every kind of page carries the app node (${apps})`);
+  assert.ok(withOffer >= 2 && noOffer > 100, `offers only on the pages that print the prices (${withOffer} with, ${noOffer} without)`);
+  const home = before.files['index.html'];
+  assert.ok(home.includes('<h2 id="price">'), 'home has the price section the offers point at');
+  for (const pr of listPrices.slice(1)) assert.ok(visible(home).includes(`$${pr}`), `home shows $${pr}`);
+  for (const o of graph(home).find((n) => n['@type'] === 'SoftwareApplication').offers) assert.ok(visible(home).includes(o.description), 'offer description is what the page says');
   assert.ok(visible(before.files['index.html']).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
   const statePage = before.pages.find((p) => p.state && p.state.lang === 'en')!;
   assert.ok(visible(before.files[statePage.file]).includes('Coming soon to the App Store (iPhone) and Google Play (Android).'));
@@ -88,6 +111,8 @@ test('before launch: "coming soon to Google Play", no store link, no offers and 
     for (const lang of ['en', 'es'] as const) {
       const s = after.files[fileOf(PAGES[0][lang])], app = graph(s).find((n) => n['@type'] === 'SoftwareApplication');
       assert.ok(!app.aggregateRating);
+      assert.deepEqual(app.installUrl, [SITE.stores.googlePlay]);
+      for (const o of app.offers) assert.ok(o.url === SITE.stores.googlePlay && !o.description, `${lang} offer points at the store, no coming soon`);
       for (const o of app.offers.filter((o: any) => o.price !== '0')) assert.ok(visible(s).includes(`$${o.price}`), `${lang} ${o.price}`);
     }
   } finally { Object.assign(SITE.stores, saved); }
@@ -105,4 +130,148 @@ test('site prices and free limit are the app\'s approved ones, and the published
   const files = render();
   for (const [p, s] of html(files)) for (const q of graph(s).filter(n => n['@type'] === 'FAQPage').flatMap(n => n.mainEntity))
     assert.ok(visible(s).includes(q.name) && visible(s).includes(q.acceptedAnswer.text), `${p} FAQ visible`);
+});
+
+test('every hreflang, in the head or on a language link, points at an emitted page in that language', () => {
+  const { files } = renderAll(fixture());
+  const langOf = (s: string) => /<html lang="([^"]+)"/.exec(s)?.[1];
+  const fileFor = (href: string) => { const p = href.replace(SITE.origin, ''); return files[fileOf(p)] ?? files[`${p.replace(/^\//, '')}/index.html`]; };
+  let n = 0;
+  for (const [p, s] of html(files)) {
+    if (/<script type="application\/ld\+json">/.test(s) === false) continue;
+    const refs = [...s.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g), ...s.matchAll(/<a class="lang" href="([^"]+)" hreflang="([^"]+)"/g)]
+      .map((m) => (m[0].startsWith('<link') ? { lang: m[1], href: m[2] } : { lang: m[2], href: m[1] }));
+    for (const { lang, href } of refs) {
+      const target = fileFor(href);
+      assert.ok(target, `${p}: hreflang ${lang} -> ${href} is not an emitted page`);
+      if (lang !== 'x-default') assert.equal(langOf(target!), lang, `${p}: hreflang ${lang} -> ${href} is a ${langOf(target!)} page`);
+      n++;
+    }
+  }
+  assert.ok(n > 100, `only ${n} hreflang references read`);
+});
+
+test('state pages name each source once and point facts to it by number; neighbour links and the state index never repeat a page title per state (template filler)', () => {
+  const fx = fixture();
+  // All three facts on a state page share one source, as most real executor and IEP pages do.
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) f.source_url = e.facts[0].source_url;
+  const verified: Record<string, string> = {};
+  const { factKey } = require('../site/lib/gate.mjs');
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) verified[factKey(f)] = '2026-11-02';
+  fx.verified.executor = verified;
+  const { files } = renderAll(fx);
+  const ca = files['executor/fixture-topic/california.html'];
+  assert.ok(ca, 'California state page emitted');
+  const factsUl = /<ul class="facts">([\s\S]*?)<\/ul>/.exec(ca)![1], sources = /<ol class="sources">([\s\S]*?)<\/ol>/.exec(ca)![1];
+  assert.equal((factsUl.match(/<li>/g) ?? []).length, 3, 'one list item per fact');
+  assert.equal((factsUl.match(/href="https:\/\/courts\.example\.gov\/ca\/rule-1"/g) ?? []).length, 3, 'each fact links its source');
+  assert.equal((sources.match(/<li>/g) ?? []).length, 1, 'the shared source is listed once');
+  assert.equal((visible(factsUl).match(/California Fixture Court/g) ?? []).length, 0, 'the source name is not repeated after each fact');
+  const near = /<h2>Neighbouring states<\/h2><ul class="links">([\s\S]*?)<\/ul>/.exec(ca)![1];
+  assert.ok(/>Oregon<\/a>/.test(near) || />Nevada<\/a>/.test(near), 'neighbour links name the state');
+  assert.ok(!/Fixture rules in/.test(near), 'neighbour links do not repeat the page title');
+  const index = visible(files['executor/index.html']);
+  assert.equal((index.match(/Fixture rules in/g) ?? []).length, 0, 'the state index does not repeat the subtopic title once per state');
+  assert.equal((index.match(/Fixture rules/g) ?? []).length, 1, 'the state index names the subtopic once');
+});
+
+test('no state page repeats an 8-word phrase more than three times, in English or Spanish, and every fact stays listed with its source', async () => {
+  const { repeatsPhrase } = await import('../site/build.mjs');
+  assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(4)), true);
+  assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(3)), false);
+  // Accented words are whole words, as the Monday sample reads them (an ASCII splitter missed these).
+  assert.equal(repeatsPhrase('el centro de capacitación e información para padres. '.repeat(4)), true);
+  const fx = fixture();
+  // Every California executor fact names the same long office, as real PTI and VA-office facts do,
+  // and every Spanish fact opens with the same agency attribution, as the DOL facts did.
+  const office = 'The Fixture County Probate Court Self Help Center of California';
+  const ca = (fx.facts.executor[0] as any).states.CA.facts as any[];
+  for (const f of ca) {
+    f.claim_en = `${office} says ${f.claim_en}`;
+    f.claim_es = `El Departamento de Trabajo de EE. UU. indica que ${f.claim_es}`;
+  }
+  // A fact that quotes the office's name, as a VA-office fact does (the name the generator shortens).
+  ca.unshift({ claim_en: `${office} is the probate help office for California.`, claim_es: `El Departamento de Trabajo de EE. UU. indica que la oficina de ayuda es ${office}.`,
+    source_url: 'https://courts.example.gov/ca/office', source_name: 'California Fixture Court', quote: office.replace(/^The /, ''), checked: '2026-11-02' });
+  const { factKey } = require('../site/lib/gate.mjs');
+  for (const e of Object.values((fx.facts.executor[0] as any).states) as any[]) for (const f of e.facts) fx.verified.executor[factKey(f)] = '2026-11-02';
+  const { files, pages } = renderAll(fx);
+  const states = pages.filter((p) => p.state);
+  assert.ok(states.length > 0, 'the fixture builds state pages');
+  let guarded = 0;
+  for (const p of states) {
+    const main = /<main\b[\s\S]*?<\/main>/.exec(files[p.file])?.[0] ?? files[p.file];
+    const items = [...(/<ul class="facts">([\s\S]*?)<\/ul>/.exec(main)?.[1] ?? '').matchAll(/<li>([\s\S]*?) <a href="([^"]+)"/g)].map((m) => ({ claim: visible(m[1]).trim(), href: m[2] }));
+    assert.equal(items.length, p.state?.facts, `${p.file}: every fact is listed`);
+    assert.ok(items.every((m) => /^https:\/\//.test(m.href)), `${p.file}: each listed fact links its source`);
+    assert.equal(repeatsPhrase(visible(main)), false, `${p.file}: no 8-word phrase more than three times`);
+    if (p.state?.folder === 'executor' && p.state?.code === 'CA') {
+      guarded++;
+      const list = items.map((m) => m.claim).join(' ');
+      if (p.state?.lang === 'es') assert.equal((list.match(/Departamento de Trabajo de EE\. UU\. \(DOL\)/g) ?? []).length, 1, 'the agency is named in full once in the list, then by its acronym');
+      else assert.equal((list.match(/Fixture County Probate Court Self Help Center of California/g) ?? []).length, 1, 'the office is named in full once in the list, then as "the center"');
+    }
+  }
+  assert.equal(guarded, 2, 'the repeating fixture page was checked in English and Spanish');
+});
+
+test('each Kindle book companion is at the exact path printed in its book, and every link on it resolves to a built page or file', () => {
+  const files = render();
+  const printed = ['parallel-parenting', 'hostile-work-environment', 'va-disability-rating', '504-plan-iep-meeting', 'what-to-do-when-someone-dies'];
+  assert.ok(files['amazon/index.html'], '/amazon/ index is built');
+  for (const slug of printed) {
+    const page = files[fileOf(`/amazon/${slug}/`)];
+    assert.ok(page, `/amazon/${slug}/ is built`);
+    assert.match(visible(page), /You're reading /);
+    assert.ok(visible(page).includes(`$${SITE.prices.yearlyUSD}`), `${slug} shows the approved yearly price`);
+    if (!SITE.stores.appStore && !SITE.stores.googlePlay) assert.doesNotMatch(page, /apps\.apple\.com|play\.google\.com/, `${slug} has no store link before launch`);
+    const hrefs = [...page.matchAll(/href="(\/[^"#?]*)"/g)].map((m) => m[1]).filter((h) => !/\.(png|ico|svg|webmanifest|woff2)$/.test(h));
+    assert.ok(hrefs.length > 5, `${slug} has internal links`);
+    for (const h of hrefs) {
+      const f = h.endsWith('.pdf') ? h.slice(1) : fileOf(h === '/' ? '/' : h);
+      assert.ok(files[f] || (h.endsWith('/') && files[h.slice(1, -1) + '.html']), `${slug}: ${h} resolves`);
+    }
+  }
+});
+
+test('the companion pages switch to "Download KeepMyProof — free" first and last the day a store URL is set, and show no download button before', () => {
+  const page = (files: Record<string, string>) => files[fileOf('/amazon/parallel-parenting/')];
+  const saved = { ...SITE.stores };
+  try {
+    (SITE.stores as any).googlePlay = null; (SITE.stores as any).appStore = null;
+    const before = page(render());
+    assert.doesNotMatch(before, /Download KeepMyProof/);
+    assert.doesNotMatch(before, /data-book-cta=/);
+    (SITE.stores as any).googlePlay = 'https://play.google.com/store/apps/details?id=com.keepmyproof.app';
+    const after = page(render());
+    const ctas = [...after.matchAll(/<p data-book-cta="(top|end)"><a class="btn primary" href="([^"]+)">Download KeepMyProof — free ›<\/a>/g)];
+    assert.deepEqual(ctas.map((m) => m[1]), ['top', 'end']);
+    for (const m of ctas) assert.match(decode(m[2]), /^https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.keepmyproof\.app&utm_source=kindle&utm_medium=book&utm_campaign=parallel-parenting&utm_content=companion-(top|end)$/);
+    assert.ok(after.indexOf('data-book-cta="top"') < after.indexOf('What is the free next step?'), 'the download button comes before the free step');
+  } finally {
+    Object.assign(SITE.stores, saved);
+  }
+});
+
+test('every page, the search-loop question pages included, links the disclaimer from its footer; the disclaimer opens with its answer and Terms links it', () => {
+  const { files, pages } = renderAll(fixture());
+  const all = html(files);
+  assert.ok(pages.some((p) => p.external), 'question pages rendered');
+  for (const [p, s] of all) {
+    const foot = /<footer>[\s\S]*<\/footer>/.exec(s)?.[0] ?? '';
+    assert.match(foot, /href="\/disclaimer"|href="\/es\/aviso-legal"/, `${p} footer links the disclaimer`);
+  }
+  for (const [lang, path, terms] of [['en', 'disclaimer.html', 'terms.html'], ['es', 'es/aviso-legal.html', 'es/terminos.html']] as const) {
+    const answer = /<p class="definition answer">([\s\S]*?)<\/p>/.exec(files[path])?.[1] ?? '';
+    assert.match(answer, lang === 'en' ? /not a lawyer, a VA-accredited representative or an advocate/ : /No es abogado, ni representante acreditado por el VA/, `${lang} answer first`);
+    assert.ok(files[terms].includes(`href="/${lang === 'en' ? 'disclaimer' : 'es/aviso-legal'}"`), `${lang} terms links the disclaimer`);
+  }
+});
+
+test('a question page claiming papers sync, open on another device or sit in iCloud, or that Android deletes the original, never publishes', () => {
+  const page = (s: string) => `<main><p>${s}</p><p>Educational only. Not legal advice.</p></main>`;
+  for (const bad of ['You can open your records from any device.', 'Works offline once data is synced.', 'The vault stores everything locally and in your iCloud or Google Drive backup.', 'On Android, the original in Google Photos is deleted.', 'Android users see the original deleted from Google Photos.'])
+    assert.ok(questionGate(page(bad)).some((x) => x.startsWith('untrue privacy claim')), bad);
+  for (const ok of ['Works offline; nothing is synced to a server.', 'On Android, you delete the original in Google Photos yourself.', 'A backup is an encrypted file you choose to save, for example to iCloud Drive or Google Drive.'])
+    assert.deepEqual(questionGate(page(ok)), [], ok);
 });

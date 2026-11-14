@@ -1,9 +1,9 @@
 // The 50 states and DC: English and US Spanish names, URL slugs and land neighbours (for the
-// "neighbouring states" links on every state page). Alaska and Hawaii have none; the generator
-// pads every page with the alphabetically nearest published states instead.
+// "neighbouring states" links on every state page): states that share a land border, not a corner point
+// (so not Arizona–Colorado or Utah–New Mexico). Alaska and Hawaii have none and show no such list.
 const ROWS = [
-  ['AL', 'Alabama', 'Alabama', 'FL GA MS TN'], ['AK', 'Alaska', 'Alaska', ''], ['AZ', 'Arizona', 'Arizona', 'CA CO NM NV UT'],
-  ['AR', 'Arkansas', 'Arkansas', 'LA MO MS OK TN TX'], ['CA', 'California', 'California', 'AZ NV OR'], ['CO', 'Colorado', 'Colorado', 'AZ KS NE NM OK UT WY'],
+  ['AL', 'Alabama', 'Alabama', 'FL GA MS TN'], ['AK', 'Alaska', 'Alaska', ''], ['AZ', 'Arizona', 'Arizona', 'CA NM NV UT'],
+  ['AR', 'Arkansas', 'Arkansas', 'LA MO MS OK TN TX'], ['CA', 'California', 'California', 'AZ NV OR'], ['CO', 'Colorado', 'Colorado', 'KS NE NM OK UT WY'],
   ['CT', 'Connecticut', 'Connecticut', 'MA NY RI'], ['DE', 'Delaware', 'Delaware', 'MD NJ PA'], ['DC', 'District of Columbia', 'Distrito de Columbia', 'MD VA'],
   ['FL', 'Florida', 'Florida', 'AL GA'], ['GA', 'Georgia', 'Georgia', 'AL FL NC SC TN'], ['HI', 'Hawaii', 'Hawái', ''],
   ['ID', 'Idaho', 'Idaho', 'MT NV OR UT WA WY'], ['IL', 'Illinois', 'Illinois', 'IN IA KY MO WI'], ['IN', 'Indiana', 'Indiana', 'IL KY MI OH'],

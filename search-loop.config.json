@@ -8,7 +8,7 @@
     "url": "https://billionairehighperformancecoach.com/spry-labs"
   },
   "audience": "people in the United States gathering their own papers for a divorce or custody matter, a problem at work, a VA disability claim, a parent's estate or a child's IEP; many are stressed and reading on a phone",
-  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts. Vault and photo pages: KeepMyProof is a private vault for photos and documents, a normal locked app on the home screen; never say it is hidden from the phone, disguised, undetectable, or that deleted photos cannot be recovered; the iPhone-only offer is \"Remove the original from Photos?\" (the phone asks to confirm; Recently Deleted keeps it 30 days); on Android the reader deletes the original in Google Photos. Link the vault hub https://keepmyproof.com/vault.",
+  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts. Vault and photo pages: KeepMyProof is a private vault for photos and documents, a normal locked app on the home screen; never say it is hidden from the phone, disguised, undetectable, or that deleted photos cannot be recovered; the iPhone-only offer is \"Remove the original from Photos?\" (the phone asks to confirm; Recently Deleted keeps it 30 days); on Android the reader deletes the original in Google Photos (the app never deletes it). Papers stay encrypted on this one phone: never say they sync, open on any other device or are kept in iCloud or Google Drive; the only copy elsewhere is an encrypted backup file the reader chooses to save. Recording law: never say a state bans recording a conversation you are part of unless that state requires everyone's consent; say recording a conversation you are not part of, or getting into someone else's phone or accounts, can be a crime, and to ask a lawyer before relying on a recording. VA: never tell the reader which conditions or which claim type to file; point to a free VA-accredited representative. Link the vault hub https://keepmyproof.com/vault and the disclaimer https://keepmyproof.com/disclaimer.",
   "topics": [
     "documents to gather before divorce",
     "how to prepare for divorce in",
@@ -228,5 +228,15 @@
         "https://support.google.com/files/answer/9935264?hl=en"
       ]
     }
+  },
+  "gate": {
+    "banned_patterns": [
+      "\\bcourt[\\s-]*ready\\b",
+      "\\badmissible\\b",
+      "\\bproves\\b",
+      "\\bbest\\b(?!\\s+interests?\\b)",
+      "\\bwin\\s+your\\s+case\\b"
+    ],
+    "why": "9 Nov 2026: three pages with 'proves'/'best' were committed, refused by site/build.mjs and turned main red. The same English words as site/lib/gate.mjs BANNED; the engine (v1.9.1) now drops such a page before committing it."
   }
 }

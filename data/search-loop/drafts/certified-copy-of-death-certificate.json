@@ -1,0 +1,98 @@
+{
+  "h1": "How do I get a certified copy of a death certificate?",
+  "title_lead": "Certified copy of death certificate",
+  "meta_description": "A certified copy is an official government-issued document with a seal. It proves death for legal matters.",
+  "direct_answer": "A certified copy of a death certificate is an official government document that bears the registrar's seal and signature. It proves the death occurred and is required for legal processes like estate settlement or benefits claims.",
+  "sections": [
+    {
+      "heading": "Who issues certified death certificates?",
+      "paragraphs": [
+        "Each state vital records office issues certified copies of death certificates. The office may be called the Department of Health or Office of Vital Records. You cannot get this document from a hospital or funeral home directly. These government offices maintain the permanent legal record."
+      ],
+      "bullets": [
+        "State vital records office issues the document",
+        "Hospitals and funeral homes cannot issue certified copies",
+        "Each state has its own rules and fees"
+      ]
+    },
+    {
+      "heading": "What information is needed to request one?",
+      "paragraphs": [
+        "You typically need the full name of the deceased, the date of death, and the place where the death occurred. Some offices also ask for your relationship to the deceased and your reason for the request. Having this information ready speeds up the process."
+      ],
+      "bullets": [
+        "Full name of the deceased",
+        "Date of death",
+        "Place of death"
+      ]
+    },
+    {
+      "heading": "How can I request a certified copy?",
+      "paragraphs": [
+        "Most states offer online, mail, or in-person request options. Online requests are often the fastest method. You will need to fill out an application form and provide identification. Fees vary by state and the number of copies ordered."
+      ],
+      "bullets": [
+        "Online requests are often fastest",
+        "Fill out application form",
+        "Provide identification",
+        "Fees vary by state"
+      ]
+    },
+    {
+      "heading": "How long does it take to receive the document?",
+      "paragraphs": [
+        "Processing times vary by state and method of request. Online requests typically take a few weeks. Mail requests can take longer, sometimes one to three months. Some states offer expedited service for an additional fee."
+      ],
+      "bullets": [
+        "Online requests: few weeks",
+        "Mail requests: one to three months",
+        "Expedited service available for extra fee"
+      ]
+    },
+    {
+      "heading": "What is the difference between a certified copy and a photocopy?",
+      "paragraphs": [
+        "A certified copy is an official document printed on security paper with a raised seal. A photocopy is a simple reproduction without official markings. Only certified copies are accepted for legal purposes such as probate court, life insurance claims, or government benefits."
+      ],
+      "bullets": [
+        "Certified copy: security paper with raised seal",
+        "Photocopy: simple reproduction",
+        "Only certified copies accepted for legal purposes"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I get a certified copy online?",
+      "a": "Yes, many state vital records offices accept online requests through their official website or approved third-party vendors. You will need to create an account, fill out the request form, and pay the fee online. Delivery is usually by mail."
+    },
+    {
+      "q": "How much does a certified copy cost?",
+      "a": "The cost varies by state but typically ranges from $15 to $30 for the first copy. Additional copies ordered at the same time usually cost less, often $10 to $15 each. Some states have different pricing for walk-in versus mail requests."
+    },
+    {
+      "q": "What if I need a copy for a VA disability claim?",
+      "a": "KeepMyProof is not affiliated with the VA. For VA claims, visit VA.gov to find free accredited representatives who can help you gather evidence. KeepMyProof offers a private vault to store documents you already have."
+    },
+    {
+      "q": "Can a funeral home provide a certified copy?",
+      "a": "Funeral homes can help you request a certified copy from the vital records office, but they cannot issue one themselves. They may offer to obtain copies as a service for an additional fee. You can also request copies directly from the state office."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The CDC's WONDER system provides access to death records for public health statistics.",
+      "source_url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "source_name": "CDC NCHS",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "State vital records offices are the official issuers of certified death certificates for legal use.",
+      "source_url": "https://www.irs.gov/individuals/deceased-taxpayers-filing-the-estate-income-tax-return-form-1041",
+      "source_name": "IRS",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

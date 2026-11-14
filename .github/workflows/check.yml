@@ -23,3 +23,6 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run check
+      - name: "warn: every app screen has a preview step"
+        continue-on-error: true
+        run: VALIDATE_WARN=1 node scripts/validate.mjs

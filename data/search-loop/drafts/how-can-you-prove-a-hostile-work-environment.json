@@ -1,0 +1,83 @@
+{
+  "h1": "How can you prove a hostile work environment",
+  "title_lead": "Proving a hostile work environment",
+  "meta_description": "A hostile work environment involves unwelcome conduct based on protected traits that is severe or pervasive. KeepMyProof helps you gather and organize records.",
+  "direct_answer": "A hostile work environment is unwelcome conduct based on protected traits that is severe or pervasive enough to alter working conditions. KeepMyProof helps you gather and organize records of incidents.",
+  "sections": [
+    {
+      "heading": "What counts as severe or pervasive conduct",
+      "paragraphs": [
+        "Conduct must be more than annoying or isolated. It must be severe, like a physical threat, or pervasive, meaning it happens repeatedly over time. A single incident can qualify if it is extremely serious, such as a sexual assault or severe slur. Courts look at the totality of the circumstances, including the frequency and severity of the conduct."
+      ],
+      "bullets": [
+        "Conduct based on race, color, religion, sex, national origin, age, disability, or genetic information",
+        "Conduct that is unwelcome and offensive to a reasonable person",
+        "Conduct that unreasonably interferes with work performance",
+        "Conduct that creates an intimidating, hostile, or offensive work environment"
+      ]
+    },
+    {
+      "heading": "How to document incidents for your records",
+      "paragraphs": [
+        "Start a log as soon as you notice a pattern. Write down what happened, when, where, and who was present. Include what was said or done. Save emails, text messages, or screenshots of posts. Note how the conduct affected your ability to do your job. Keep these records in a safe place, such as a personal vault app, not on a work device.",
+        "Be factual and stick to what you observed. Do not exaggerate or add opinions. Consistent, detailed records strengthen a claim if you decide to file a complaint."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Who to tell and how to report",
+      "paragraphs": [
+        "Tell your employer. Many companies have a harassment policy or an HR department. Follow the steps in your employee handbook. If there is no HR, tell your manager or someone in authority. Reporting the conduct puts the employer on notice. If the employer does not fix the problem, you may have stronger grounds for a legal claim."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "Filing a charge with the EEOC",
+      "paragraphs": [
+        "If internal reporting does not stop the conduct, you can file a charge with the Equal Employment Opportunity Commission (EEOC). You must file within 180 days of the incident, or 300 days if a state or local agency enforces a law. The EEOC will investigate and may mediate or sue on your behalf. Keep records of your filing date and any communications from the EEOC."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "How KeepMyProof can help you stay organized",
+      "paragraphs": [
+        "KeepMyProof is a private vault where you can store photos of documents, screenshots, and your incident log. The app is a normal locked app on your home screen. On iPhone, you can choose to remove the original from Photos; the Recently Deleted folder keeps items for 30 days. On Android, the original in Google Photos is deleted. You can link your vault hub at keepmyproof.com/vault to access your records from any device. This helps you keep your evidence safe and ready if you need it later."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I be fired for reporting harassment?",
+      "a": "It is illegal to retaliate against you for reporting harassment in good faith. Retaliation includes firing, demotion, or harassment. If you face retaliation, document every incident and file a charge with the EEOC. KeepMyProof can help you store records of retaliation."
+    },
+    {
+      "q": "Do I need a lawyer to file an EEOC charge?",
+      "a": "You do not need a lawyer to file an EEOC charge. The process is designed for individuals to file on their own. However, a lawyer can help you prepare your claim and navigate the investigation. KeepMyProof is not a law firm and does not provide legal advice."
+    },
+    {
+      "q": "What if the harassment happened outside the office",
+      "a": "Harassment that occurs outside the office can still be illegal if it affects your work environment. This includes work-related trips, company events, or electronic communications that impact your job. Keep a record of when and how the conduct affected your work. Report it to your employer and consider filing an EEOC charge."
+    },
+    {
+      "q": "Can a one-time incident be a hostile environment?",
+      "a": "A single incident can qualify if it is extremely severe, such as a physical assault or a severe slur. However, most claims require a pattern of conduct that is pervasive. Courts look at the severity and frequency of the conduct. If the incident is serious enough, one event may be enough to support a claim."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The EEOC enforces federal laws that make it illegal to harass a job applicant or employee because of race, color, religion, sex, national origin, age, disability, or genetic information.",
+      "source_url": "https://www.eeoc.gov/harassment",
+      "source_name": "EEOC",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "You must file an EEOC charge within 180 days of the alleged harassment, or 300 days if a state or local agency enforces a law prohibiting the practice.",
+      "source_url": "https://www.eeoc.gov/time-limits-filing-charge",
+      "source_name": "EEOC",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

@@ -1,11 +1,17 @@
 {
   "schema": "search-loop-discovery-v1",
   "site": "keepmyproof.com",
-  "week": "2026-W45",
-  "generated_at": "2026-11-02T16:37:28.891Z",
+  "week": "2026-W46",
+  "generated_at": "2026-11-09T14:16:43.894Z",
   "paid_calls": 0,
   "cost_usd": 0,
   "hosts": {
+    "searchconsole.googleapis.com": {
+      "calls": 1,
+      "ok": 1,
+      "failed": 0,
+      "cost_usd": 0
+    },
     "suggestqueries.google.com": {
       "calls": 40,
       "ok": 40,
@@ -17,22 +23,44 @@
       "ok": 40,
       "failed": 0,
       "cost_usd": 0
+    },
+    "api.search.brave.com": {
+      "calls": 15,
+      "ok": 15,
+      "failed": 0,
+      "cost_usd": 0
     }
   },
   "sources": {
-    "search_console": "not read: GSC_SERVICE_ACCOUNT_JSON is not set",
+    "search_console": "ok: 711 rows",
     "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "easy_wins": "ok: 0 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+    "relevance_screen": "ok: kept 141 of 150 (free model)",
+    "top10": "ok: 15 top-10 read(s) via brave"
   },
-  "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)",
   "notes": [
     "autocomplete stopped at its budget of 80 calls"
   ],
+  "competition": "ok: 15 top-10 read(s) via brave",
+  "lanes": {
+    "ratio": {
+      "can_be_one": 2,
+      "striking": 1
+    },
+    "can_be_one": 52,
+    "striking": 89,
+    "weights": {
+      "neighbour": 35,
+      "unanswered": 30,
+      "weak_top10": 40,
+      "demand": 10
+    }
+  },
   "counts": {
-    "candidates": 274,
-    "targets": 274,
+    "candidates": 163,
+    "targets": 141,
     "strengthen_candidates": 0,
     "dropped_shared_audience": 0
   }

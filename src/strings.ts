@@ -466,10 +466,10 @@ export const strings = {
     "12단어, 띄어쓰기로 구분"
   ],
   "folders": [
-    "Home",
-    "Inicio",
-    "主页",
-    "홈"
+    "Folders",
+    "Carpetas",
+    "文件夹",
+    "폴더"
   ],
   "home": [
     "Your folders",
@@ -542,6 +542,12 @@ export const strings = {
     "Una línea se marca cuando le añade un documento.",
     "给某一行添加内容后，它会自动勾选。",
     "줄에 항목을 추가하면 자동으로 체크돼요."
+  ],
+  "stateRules": [
+    "Your state's rules ›",
+    "Las reglas de su estado ›",
+    "您所在州的规定 ›",
+    "거주하는 주의 규정 ›"
   ],
   "newest": [
     "Items, newest first",
@@ -1094,6 +1100,12 @@ export const strings = {
     "Privacidad ›",
     "隐私 ›",
     "개인정보 ›"
+  ],
+  "disclaimer": [
+    "Disclaimer: not a lawyer or VA representative ›",
+    "Aviso legal: no es abogado ni representante del VA ›",
+    "免责声明：不是律师，也不是 VA 代表（英文） ›",
+    "면책 고지: 변호사나 VA 대리인이 아닙니다(영어) ›"
   ],
   "mock": [
     "Purchases are not available in this preview. No payment will be taken.",

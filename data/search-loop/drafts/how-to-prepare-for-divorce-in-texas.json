@@ -1,0 +1,111 @@
+{
+  "h1": "How to prepare for divorce in Texas",
+  "title_lead": "How to prepare for divorce in Texas",
+  "meta_description": "Learn the first steps to organize finances, gather documents, and understand Texas residency rules before you file for divorce.",
+  "direct_answer": "Preparing for divorce in Texas is the process of meeting residency requirements, collecting financial records, listing property and debts, and organizing parenting information before you file a petition in district court.",
+  "sections": [
+    {
+      "heading": "What are the residency rules for filing in Texas?",
+      "paragraphs": [
+        "You or your spouse must have lived in Texas for at least six months before filing. You also must have lived in the county where you plan to file for at least 90 days. These rules apply to both contested and uncontested cases. If you do not meet them yet, you can gather documents while you wait. The court cannot accept your petition until both time periods are satisfied."
+      ],
+      "bullets": [
+        "Six months living in Texas",
+        "90 days living in the filing county",
+        "Applies to both spouses",
+        "No exception for military moves"
+      ]
+    },
+    {
+      "heading": "Which financial documents should you collect first?",
+      "paragraphs": [
+        "Start with the last three years of tax returns, W-2s, and 1099 forms. Add recent pay stubs, bank statements, retirement account statements, and mortgage or lease documents. Include credit card statements, vehicle titles, and any business ownership records. Keep everything in date order so you can find items quickly when your attorney or mediator asks for them."
+      ],
+      "bullets": [
+        "Tax returns (3 years)",
+        "Pay stubs (last 3 months)",
+        "Bank and investment statements",
+        "Retirement account summaries",
+        "Property deeds and vehicle titles",
+        "Debt statements"
+      ]
+    },
+    {
+      "heading": "How does community property affect what you list?",
+      "paragraphs": [
+        "Texas treats most assets and debts acquired during marriage as community property. That means both spouses own them equally, regardless of whose name is on the title. Separate property includes gifts, inheritances, and assets owned before marriage. You should label each item as community or separate when you build your inventory. Clear labels help the court divide the estate fairly."
+      ],
+      "bullets": [
+        "Community property: earned or bought during marriage",
+        "Separate property: owned before marriage, gifts, inheritances",
+        "Label every asset and debt",
+        "Keep receipts for separate property claims"
+      ]
+    },
+    {
+      "heading": "What parenting information do you need if children are involved?",
+      "paragraphs": [
+        "Gather each child's birth certificate, Social Security card, school records, and medical insurance cards. Write down the current schedule for school, activities, and overnights. Note any special needs, therapy appointments, or medication instructions. Texas courts focus on the best interest of the child, so a clear picture of daily life helps you propose a realistic parenting plan."
+      ],
+      "bullets": [
+        "Birth certificates and Social Security cards",
+        "School and medical records",
+        "Current weekly schedule",
+        "Special needs documentation"
+      ]
+    },
+    {
+      "heading": "How can KeepMyProof help you stay organized?",
+      "paragraphs": [
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can scan or import papers, add tags like \"community\" or \"separate,\" and sort by date. On iPhone, the app offers \"Remove the original from Photos?\" and the system confirms before moving the file to Recently Deleted, where it stays for 30 days. On Android, you delete the original in Google Photos. This keeps your phone tidy while your records stay safe in the vault. Visit the vault hub to learn more."
+      ],
+      "bullets": [
+        "Locked app on home screen",
+        "Tag and sort by category",
+        "iPhone: confirm before removing from Photos",
+        "Android: delete original in Google Photos"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Texas a community property state?",
+      "a": "Yes. Texas law presumes that most property and debt acquired during the marriage belongs to both spouses equally. Separate property includes assets owned before marriage, gifts, and inheritances. You should identify each item as community or separate when you build your inventory."
+    },
+    {
+      "q": "Do I need a lawyer to organize my documents?",
+      "a": "You can gather and sort your own records without a lawyer. Many people start this way to save time and money. A lawyer can later review your collection and advise on what else may be needed for your specific case."
+    },
+    {
+      "q": "What if my spouse hides financial records?",
+      "a": "You can request documents through formal discovery after a case is filed. Before filing, collect everything you can access legally. Keep copies of statements that come to your address or email. Do not access accounts or devices you are not authorized to use."
+    },
+    {
+      "q": "How long does the divorce process take in Texas?",
+      "a": "Texas has a mandatory 60-day waiting period after the petition is filed before a court can grant the divorce. Contested cases often take several months to over a year depending on court schedules and the complexity of property or custody issues."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Texas requires at least six months of state residency and 90 days of county residency before filing for divorce.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Texas is a community property state where most assets and debts acquired during marriage are owned equally by both spouses.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The IRS provides guidance on tax filing status and dependency exemptions after divorce.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

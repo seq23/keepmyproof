@@ -1,0 +1,104 @@
+{
+  "h1": "What to Do Before Asking for a Divorce",
+  "title_lead": "What to Do Before Asking for a Divorce",
+  "meta_description": "Learn the practical steps to organize finances, protect documents, and plan for custody before you file for divorce. Free printable checklists included.",
+  "direct_answer": "Divorce preparation is the process of gathering financial records, securing personal documents, and planning living arrangements before you file a petition or tell your spouse. It helps you enter the legal process with organized evidence and a clearer picture of your assets, debts, and parenting goals.",
+  "sections": [
+    {
+      "heading": "Why should I organize documents before I file?",
+      "paragraphs": [
+        "Courts require full financial disclosure from both spouses. If you wait until after filing, your spouse may move, hide, or destroy records you need. Collecting statements now lets you verify account balances, trace separate property, and spot unusual transfers. You also avoid the stress of hunting for paperwork while deadlines loom. KeepMyProof gives you a private vault on your phone to store photos of statements, tax returns, and property deeds so they stay organized and accessible only to you."
+      ],
+      "bullets": [
+        "Last three years of tax returns (federal and state)",
+        "Bank, brokerage, and retirement statements for 12 months",
+        "Mortgage statements, deeds, and vehicle titles",
+        "Insurance policies and beneficiary designations",
+        "Pay stubs and employment contracts for both spouses",
+        "Credit reports from all three bureaus"
+      ]
+    },
+    {
+      "heading": "How do I protect my financial accounts?",
+      "paragraphs": [
+        "Open a new individual checking account at a different bank. Route your direct deposit there so your paycheck is not commingled. Remove your name from joint credit cards or ask the issuer to freeze new charges. Monitor your credit report for accounts opened without your knowledge. Do not drain joint accounts; courts view that as dissipation of marital assets. Instead, document every balance and transaction so you can show the court a clear snapshot on the date of separation."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "What parenting records should I start keeping?",
+      "paragraphs": [
+        "If you have children, courts decide custody based on the child's best interests. A daily log shows your involvement in school drop-offs, medical appointments, homework help, and extracurricular activities. Save emails and texts about scheduling, discipline, and health decisions. Photograph the child's bedroom, play areas, and any safety concerns in the other home. Store these notes and photos in KeepMyProof so they are date-stamped and searchable when you need them for mediation or a custody evaluation."
+      ],
+      "bullets": [
+        "Daily parenting time log with dates and activities",
+        "School and medical appointment confirmations",
+        "Screenshots of co-parenting communications",
+        "Photos of the child's living space in each home",
+        "Records of expenses you pay for the child"
+      ]
+    },
+    {
+      "heading": "Where will I live and how do I budget for it?",
+      "paragraphs": [
+        "Identify a temporary place to stay if you cannot remain in the marital home. Calculate rent, utilities, food, transportation, and childcare costs for a single-income household. List every marital debt and decide which payments you can cover alone. Pull your credit report to see joint liabilities you may have forgotten. A realistic budget prevents surprise motions for temporary support and shows the court you are acting in good faith."
+      ],
+      "bullets": []
+    },
+    {
+      "heading": "How can KeepMyProof help me stay organized?",
+      "paragraphs": [
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You import pictures of statements, letters, and logs; the app stores them with the date you captured them. On iPhone, after import you can choose \"Remove the original from Photos?\" and the system asks you to confirm; the file stays in Recently Deleted for 30 days. On Android, you delete the original in Google Photos. The vault keeps everything in one searchable place so you can find a document instantly when your attorney or mediator asks for it."
+      ],
+      "bullets": []
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need a lawyer before I file for divorce?",
+      "a": "You are not required to hire a lawyer before filing, but many people consult one early to understand state residency rules, property division standards, and custody factors. A brief consultation can clarify which documents matter most in your jurisdiction. KeepMyProof helps you bring organized records to that first meeting so the attorney spends less time sorting paper and more time advising you."
+    },
+    {
+      "q": "Can I take the house keys and leave the marital home?",
+      "a": "Leaving the home does not abandon your property rights, but it can affect temporary custody and possession orders. Document the condition of the home with photos before you go. Keep paying your share of the mortgage and utilities if possible. Talk to a lawyer about whether a temporary exclusive-use motion fits your situation before you move out."
+    },
+    {
+      "q": "Should I tell my spouse I am preparing for divorce?",
+      "a": "There is no legal duty to warn your spouse before filing. Many people wait until documents are secured and a safety plan is in place. If you fear retaliation, hiding assets, or interference with children, keep your preparation private. Use KeepMyProof to store records discreetly on your phone. Once you file, the court will require formal service of the petition."
+    },
+    {
+      "q": "How long does divorce preparation usually take?",
+      "a": "Timelines vary by complexity and cooperation. Simple cases with organized records may take a few weeks to gather everything. High-asset or contested custody matters can take months. Starting early lets you pace the work and avoid last-minute gaps. KeepMyProof lets you add documents as you find them so nothing gets lost while you wait for statements or appointments."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The CDC National Center for Health Statistics publishes national marriage and divorce rates collected from state vital records.",
+      "source_url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "source_name": "Centers for Disease Control and Prevention",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "The IRS explains how divorce affects filing status, alimony, child support, and property transfers in Publication 504.",
+      "source_url": "https://www.irs.gov/taxtopics/tc452",
+      "source_name": "Internal Revenue Service",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "California Courts Self-Help Guide outlines the residency requirement, forms, and financial disclosure duties for a divorce in California.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Apple Support describes how iPhone users can delete photos from the library while keeping them in a third-party app, with a 30-day Recently Deleted recovery window.",
+      "source_url": "https://support.apple.com/en-us/118558",
+      "source_name": "Apple Support",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

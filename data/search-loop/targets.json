@@ -1,2429 +1,3827 @@
 {
   "schema": "search-loop-targets-v1",
   "site": "keepmyproof.com",
-  "week": "2026-W45",
-  "generated_at": "2026-11-02T16:37:28.891Z",
+  "week": "2026-W46",
+  "generated_at": "2026-11-09T14:16:43.894Z",
   "sources": {
-    "search_console": "not read: GSC_SERVICE_ACCOUNT_JSON is not set",
+    "search_console": "ok: 711 rows",
     "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "easy_wins": "ok: 0 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
-    "relevance_screen": "not read: no free model lane has a credential (GEMINI_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_*) (lexical floor only)"
+    "relevance_screen": "ok: kept 141 of 150 (free model)",
+    "top10": "ok: 15 top-10 read(s) via brave"
   },
   "targets": [
     {
-      "query": "how to document workplace harassment",
+      "query": "colorado small estate limit 2021",
       "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "how to write a workplace harassment statement",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "how can you prove a hostile work environment",
-      "variants": [
-        "how to prove a hostile work environment",
-        "how to prove hostile work environment"
-      ],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove a hostile work environment claim",
-      "variants": [
-        "how to prove hostile work environment claim"
-      ],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "what is considered a hostile work environment",
-      "variants": [
-        "what is considered hostile work environment"
-      ],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "how much to save before quitting your job",
-      "variants": [
-        "how much should i save before quitting my job"
-      ],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 45,
-      "kind": "new"
-    },
-    {
-      "query": "va disability claim checklist",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 40,
-      "kind": "new"
-    },
-    {
-      "query": "va disability claim list",
-      "variants": [
-        "claims for va disability list",
-        "va disability list of claims",
-        "va claim disability list"
-      ],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 40,
-      "kind": "new"
-    },
-    {
-      "query": "va disability what to claim",
-      "variants": [
-        "va disability claim guide",
-        "how to do a va disability claim",
-        "what should you claim for va disability",
-        "va disability claim examples",
-        "when should i start my va disability claim",
-        "claims for va disability",
-        "va disability what can be claimed"
-      ],
       "signals": {
         "words": 5,
         "question": false,
-        "bing_suggest": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 12.8,
+        "gsc_impressions": 15,
+        "gsc_page": "https://keepmyproof.com/executor/small-estate/colorado",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 1
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.23,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 2,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 40,
-      "kind": "new"
+      "scores": {
+        "striking": 57.3,
+        "can_be_one": 49.2
+      },
+      "score": 49.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "weak top 10 (0.23): 0 directories, 0 forums, 0 off-target national, 2 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "what documentation is needed for a divorce",
+      "query": "how to get copies of divorce papers",
       "variants": [],
       "signals": {
         "words": 7,
         "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 8,
+        "gsc_impressions": 3,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/mississippi",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.33,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 1,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 2
+          },
+          "reasons": [
+            "top 10: 1 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question"
+          ]
+        }
       },
-      "score": 30,
-      "kind": "new"
+      "scores": {
+        "striking": 63,
+        "can_be_one": 46
+      },
+      "score": 63,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (3 impressions)",
+        "can-be-#1 score 46 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "what are discovery documents in a divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what to do before asking for a divorce",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare divorce documents yourself",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "can you get a consent order before divorce",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "does it matter who asks for a divorce first",
-      "variants": [],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in texas",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in california",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in florida",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in illinois",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in michigan",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in missouri",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in virginia",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in massachusetts",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce in georgia",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "co parenting journal",
-      "variants": [],
-      "signals": {
-        "words": 3,
-        "question": false,
-        "google_suggest": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to document missed visitation",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what happens if a parent misses visitation",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in divorce case",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in court",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in south carolina",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in virginia",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in louisiana",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in the military",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery in nc",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to document workplace bullying",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to document workplace abuse",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to document workplace violence",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to properly document workplace harassment",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to write a workplace harassment complaint",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to write a workplace harassment complaint letter",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to document sexual harassment at work",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how do you prove hostile workplace",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how hard is it to prove hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what evidence is needed to prove a hostile work environment",
+      "query": "how to get a certified copy of my divorce decree",
       "variants": [],
       "signals": {
         "words": 10,
         "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/mississippi",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 30,
-      "kind": "new"
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 46
+      },
+      "score": 46,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "what is an example of hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what is an example of hostile environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "does hostile work environment require discrimination",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "is a hostile work environment illegal",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to get unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how much can you get for unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "how long does it take to get unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what to do before quitting a job you hate",
-      "variants": [],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what to know before quitting your job",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what do i need to file a va disability claim",
-      "variants": [],
-      "signals": {
-        "words": 10,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "what documents do i need to file a va disability claim",
+      "query": "how long does a school have to complete an iep evaluation",
       "variants": [],
       "signals": {
         "words": 11,
         "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 8,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/evaluation-timeline/illinois",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 1
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 30,
-      "kind": "new"
+      "scores": {
+        "striking": 61.3,
+        "can_be_one": 43.2
+      },
+      "score": 43.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "can i add to my va disability claim",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 30,
-      "kind": "new"
-    },
-    {
-      "query": "does the va investigate disability claims",
+      "query": "how much do death certificates cost",
       "variants": [],
       "signals": {
         "words": 6,
         "question": true,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/idaho",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 30,
-      "kind": "new"
+      "scores": {
+        "striking": 59,
+        "can_be_one": 40
+      },
+      "score": 59,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "documents to gather before divorce",
+      "query": "how much does a death certificate cost",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.08,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 3
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 55.9,
+        "can_be_one": 43.2
+      },
+      "score": 43.2,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 3 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "arizona child labor laws 2026",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "what documents to present for a divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what documents do i need for divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to get divorce documents",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what paperwork is needed for a divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what divorce papers do i need",
+      "query": "where can i get a copy of my divorce papers",
       "variants": [
-        "i need divorce papers"
+        "where can i get copy of divorce papers",
+        "where do you get a copy of your divorce papers"
       ],
       "signals": {
-        "words": 6,
+        "words": 10,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 59,
+        "can_be_one": 40
+      },
+      "score": 59,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "what to know before filing for divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to get divorce paperwork",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to get divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare divorce papers yourself",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to write divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what to do when served divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is included in divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what to know before a divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to handle your own divorce paperwork",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare divorce proof",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how do divorce papers work",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to serve divorce documents",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "are you required to sign divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "do i have to sign divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce court",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce men",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce mediation",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce as a woman",
+      "query": "can a 16 year old work night shifts",
       "variants": [],
       "signals": {
         "words": 8,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 8,
+          "parts_rows": 6
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "how to prepare for divorce as a man",
+      "query": "can i get a death certificate for anyone",
       "variants": [],
       "signals": {
         "words": 8,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/north-dakota",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "how to prepare for divorce hearing",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce pretrial",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce trial",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce deposition",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prepare for divorce 6 12 month plan",
+      "query": "how many hours can a teen work a day",
       "variants": [],
       "signals": {
         "words": 9,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 7
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 57.7,
+        "can_be_one": 40
+      },
+      "score": 57.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (2 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "can text messages be subpoenaed for divorce",
+      "query": "certified copy of death certificate",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/virginia",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 23.1,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "child labor law hours",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how late can 16 year olds work",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kentucky",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 6
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 57.2,
+        "can_be_one": 40
+      },
+      "score": 57.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "colorado disabled veteran property tax exemption",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/colorado",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "colorado va regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/colorado",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can minors work overnight",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 57.2,
+        "can_be_one": 0
+      },
+      "score": 57.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "death certificate massachusetts example",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 21,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/massachusetts",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "donde sacar acta de divorcio",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/es/divorcio/como-obtener-una-copia-de-su-registro/nebraska",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 9,
+          "parts_rows": 1
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 9",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how much for death certificate",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/new-jersey",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 57.2,
+        "can_be_one": 0
+      },
+      "score": 57.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "how do i get my moms death certificate",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/indiana",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how late can a minor work on a school night",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 9,
+          "parts_rows": 7
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 9",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how many days a week can a minor work",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "how many hours can 17 year olds work a week",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 7,
+          "covered": 0.14,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 7-word question, and the site holds its parts at position 8",
+        "weak top 10 (0): 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how many hours can a minor work in kansas",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 10
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how much hours can a minor work a week",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 10
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "how many hours can a teen work a week",
       "variants": [
-        "subpoena text messages divorce"
+        "how many hours can teens work a week"
       ],
       "signals": {
-        "words": 7,
+        "words": 9,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 7
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "how to save my text messages",
+      "query": "how much does a death certificate cost in florida",
       "variants": [],
       "signals": {
-        "words": 6,
+        "words": 9,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/florida",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "how to save a text message conversation",
+      "query": "how much is a copy of divorce papers",
       "variants": [],
       "signals": {
-        "words": 7,
+        "words": 8,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/wisconsin",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "how to save text messages to file",
+      "query": "how to get a copy of divorce papers in illinois",
       "variants": [],
       "signals": {
-        "words": 7,
+        "words": 10,
         "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "how to permanently save text messages",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "are text messages admissible in divorce court",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to download and save text messages",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "can a divorce lawyer subpoena text messages",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to save a voice text message",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to save an entire text conversation",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to save messages",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to document text messages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to receive your spouse text messages",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "can you divert text messages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "co parenting journal template",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "co parenting journal for kids",
+      "query": "little rock va regional office",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arkansas",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 46.7,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "co parenting journal app",
+      "query": "what is the maximum amount of hours a 15 year old can work",
       "variants": [],
       "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "words": 13,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "unanswered": {
+          "words": 7,
+          "covered": 0.14,
+          "parts_best_position": 8,
+          "parts_rows": 7
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
     },
     {
-      "query": "co parenting journal template free",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "co parenting diary app",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "high conflict co parenting journal",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "home sweet home co parenting journal",
+      "query": "michigan disabled veteran property tax exemption",
       "variants": [],
       "signals": {
         "words": 6,
         "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/michigan",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "co parenting with different rules",
+      "query": "montgomery va regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 13,
+        "gsc_impressions": 4,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alabama",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.2,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "what is the maximum hours a 17 year old can work",
+      "variants": [],
+      "signals": {
+        "words": 11,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 8,
+          "parts_rows": 7
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 0,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "muskogee ok va regional office",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 25,
-      "kind": "new"
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "what is co parenting",
+      "query": "print your own death certificate",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 15.9,
+        "gsc_impressions": 7,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/missouri",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 47.6,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "what time can minors work until",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 9,
+          "parts_rows": 5
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 40
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "property tax exemption for veterans",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "property taxes disabled veteran",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 26,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/illinois",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 21.3,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va phoenix regional benefits office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 10.8,
+        "gsc_impressions": 4,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54.2,
+        "can_be_one": 40
+      },
+      "score": 54.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10.8 in Search Console (4 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "salario minimo en carolina del norte",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/carolina-del-norte",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 5
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "salario minimo en oklahoma",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 5
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 52.2,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va regional office connecticut",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/connecticut",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54,
+        "can_be_one": 40
+      },
+      "score": 54,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "salario minimo nuevo mexico",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/nuevo-mexico",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 52.2,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "salario m nimo en oklahoma",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "where to get death certificate near me",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 6
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 40
+      },
+      "score": 53.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "st petersburg va regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/va/oficina-regional-de-beneficios-del-va-direccion/florida",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "sueldo minimo en pensilvania",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/pensilvania",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 4
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "can minors work overtime",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kentucky",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 0
+      },
+      "score": 53.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "u s department of veterans affairs regional office",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": false,
+        "gsc_position": 11.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/south-carolina",
+        "unanswered": {
+          "words": 7,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 7-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va anchorage regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 27,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alaska",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 19.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how to order a death certificate",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/ohio",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 0
+      },
+      "score": 53.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "va buffalo regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 14,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/new-york",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 43.1,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va cleveland regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/ohio",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.9,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how to replace a death certificate",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/connecticut",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 0
+      },
+      "score": 53.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "va denver regional office",
       "variants": [
-        "definition of co parenting",
-        "co parenting definition and examples",
-        "meaning of co parenting",
-        "co parenting definition and tips",
-        "tips on co parenting"
-      ],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "why is co parenting important for children",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "does co parenting work",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "when co parenting is not working",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "is it co parenting or coparenting",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is a co parenting family",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file court papers for visitation",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to get court ordered visitation",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to fill out child visitation papers",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what if a parent refuses visitation",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove adultery for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to not commit adultery",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file workplace harassment",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to report harassment in the workplace",
-      "variants": [
-        "reporting harassment in the workplace"
-      ],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file harassment at work",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to handle workplace harassment",
-      "variants": [
-        "how to deal with workplace harassment"
-      ],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove harassment in the workplace",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to identify harassment in the workplace",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to report harassment at work",
-      "variants": [
-        "reporting harassment at work"
-      ],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove harassment at work",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "hostile work environment evidence",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to identify a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to determine a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to investigate a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to document a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what determines a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what hostile work environment means",
-      "variants": [
-        "hostile work environment means"
-      ],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is a hostile environment workplace",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what makes a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "laws against hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what is a hostile work environment legally",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "when does a hostile work environment exist",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to address hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file a hostile work environment",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "proof of payment of wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "proof of online payment of wages",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "proof of lost wages",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to claim unpaid wages",
-      "variants": [
-        "claiming for unpaid wages",
-        "claim for unpaid wages"
-      ],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to report unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file for unpaid wages",
-      "variants": [
-        "file for unpaid wages"
-      ],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to claim unpaid wages from employer",
-      "variants": [
-        "claiming unpaid wages from employer"
-      ],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to collect unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to file unpaid wages claim",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to recover unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to report wages not paid",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what works as proof of income",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what counts as unpaid work",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "where to report unpaid wages",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to prove loss of wages",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "how to recover unpaid wages uk",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what to do before quitting your job",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "what to do before leaving a job",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": true,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "va disability benefits percentage checklist",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "va disability claimable conditions",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "va disability claim rating",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "google_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 25,
-      "kind": "new"
-    },
-    {
-      "query": "documents to gather for divorce",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents needed to file for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents needed for a divorce",
-      "variants": [
-        "what documents needed for divorce"
-      ],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents required for divorce",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "things to know before filing for divorce",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "list of documents needed for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents for filing for divorce",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "paperwork needed to file for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "various types of documents for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents required for divorce application",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "legal documents for divorce",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "papers to file for divorce",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "court documents for divorce",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "information needed to file for divorce",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "documents needed for divorce attorney",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "need divorce papers to print out",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "preparing divorce papers yourself",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "financial documents needed for divorce",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "free printable divorce documents",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "whats included in divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "help writing divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "need help filling out divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "divorce on paper for financial reasons",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "texting app for divorced parents",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
-      },
-      "score": 20,
-      "kind": "new"
-    },
-    {
-      "query": "journaling prompts for parenting",
-      "variants": [
-        "journal prompts for parenting",
-        "journal prompts for parents"
+        "va regional office denver"
       ],
       "signals": {
         "words": 4,
         "question": false,
-        "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "gsc_position": 13,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/colorado",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 20,
-      "kind": "new"
+      "scores": {
+        "striking": 44.9,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "parenting science and practice journal",
+      "query": "va hartford regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/connecticut",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 52.2,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va regional office phoenix",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 12.5,
+        "gsc_impressions": 6,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53,
+        "can_be_one": 40
+      },
+      "score": 53,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12.5 in Search Console (6 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "va honolulu regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/hawaii",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va national capital regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/district-of-columbia",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 46.7,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "veterans benefits administration regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 52.2,
+        "can_be_one": 40
+      },
+      "score": 52.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "va office phone number",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 24,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 11
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 24.9,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va regional benefit office near me",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 23.1,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "where can i get a divorce decree copy",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/vermont",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 51.7,
+        "can_be_one": 40
+      },
+      "score": 51.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "va regional benefits office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/utah",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va regional office near me",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arkansas",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 46.7,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "where to get death certificate",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/ohio",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 6
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 51.7,
+        "can_be_one": 40
+      },
+      "score": 51.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12 in Search Console (1 impressions)",
+        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "va regional office sioux falls",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 14,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/south-dakota",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 45.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "va togus regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/maine",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 7,
+          "parts_rows": 14
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "a copy of divorce papers",
+      "variants": [
+        "how do i get a copy of my divorce papers"
+      ],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 0
+      },
+      "score": 50.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "whats the max hours a 16 year old can work",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+        "unanswered": {
+          "words": 7,
+          "covered": 0.14,
+          "parts_best_position": 8,
+          "parts_rows": 8
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 7-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how to get a persons death certificate",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 3
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "certificate of death",
+      "variants": [
+        "death certificate",
+        "how to get death certificate"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/new-mexico",
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 0
+      },
+      "score": 50.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "ct child custody laws",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "child custody laws in connecticut",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
         "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 20,
-      "kind": "new"
+      "scores": {
+        "striking": 20,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "books on co parenting",
+      "query": "work permits for minors",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.4,
+        "can_be_one": 0
+      },
+      "score": 50.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "massachusetts child custody laws",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
         "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
       },
-      "score": 20,
-      "kind": "new"
+      "scores": {
+        "striking": 20,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
     },
     {
-      "query": "co parenting tips pdf",
+      "query": "department of child support",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/child-support-guidelines/south-dakota",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 0
+      },
+      "score": 48.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "south dakota parenting guidelines 2026",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/south-dakota",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 0
+      },
+      "score": 48.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "family training lee sc",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 13,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 47.2,
+        "can_be_one": 0
+      },
+      "score": 47.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 13 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "department of veterans affairs address",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 46.7,
+        "can_be_one": 0
+      },
+      "score": 46.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "family training columbia sc",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 14,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 43.1,
+        "can_be_one": 0
+      },
+      "score": 43.1,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 14 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "ohio public death records",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 14,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/ohio",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 43.1,
+        "can_be_one": 0
+      },
+      "score": 43.1,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 14 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "va regional office",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/new-hampshire",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 42.2,
+        "can_be_one": 0
+      },
+      "score": 42.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "va service",
+      "variants": [],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/free-claim-help/south-dakota",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 42.2,
+        "can_be_one": 0
+      },
+      "score": 42.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "illinois divorce records",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40.9,
+        "can_be_one": 0
+      },
+      "score": 40.9,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "regional office",
+      "variants": [],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/south-dakota",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 40.4,
+        "can_be_one": 0
+      },
+      "score": 40.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "south carolina payday notice notice",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 16,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 39.5,
+        "can_be_one": 0
+      },
+      "score": 39.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 16 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "divorce decree copy",
+      "variants": [
+        "how do i get copy of divorce decree",
+        "how to get a copy of my divorce decree",
+        "how to get copy of divorce decree"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.5,
+        "can_be_one": 0
+      },
+      "score": 38.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "doe evaluation",
+      "variants": [],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/iep/evaluation-timeline/hawaii",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.5,
+        "can_be_one": 0
+      },
+      "score": 38.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "dss child support",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/child-support-guidelines/nevada",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.5,
+        "can_be_one": 0
+      },
+      "score": 38.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "duplicate death certificate",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/new-york",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.5,
+        "can_be_one": 0
+      },
+      "score": 38.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "vba regional office",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alabama",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.5,
+        "can_be_one": 0
+      },
+      "score": 38.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "iep testing murray",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 12.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/utah",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 38.2,
+        "can_be_one": 0
+      },
+      "score": 38.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "south carolina flsa notice",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 17,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/minimum-wage/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 37.6,
+        "can_be_one": 0
+      },
+      "score": 37.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 17 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "veteran affairs address",
+      "variants": [
+        "veterans affairs address"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 36.7,
+        "can_be_one": 0
+      },
+      "score": 36.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "veteran regional office",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 12,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 36.7,
+        "can_be_one": 0
+      },
+      "score": 36.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 12 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "seattle va office",
+      "variants": [
+        "va office seattle"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 14,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/washington",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35.4,
+        "can_be_one": 0
+      },
+      "score": 35.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 14 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "what is a status quo order in missouri",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 22.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/divorce/protective-orders/missouri",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 35,
+        "can_be_one": 0
+      },
+      "score": 35,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 22.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "rhode island part c",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/early-intervention-to-iep/rhode-island",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 34.5,
+        "can_be_one": 0
+      },
+      "score": 34.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "oklahoma department of veterans affairs",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 19,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/oklahoma",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 34,
+        "can_be_one": 0
+      },
+      "score": 34,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 19 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "state of ohio death records",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 19,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/ohio",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 34,
+        "can_be_one": 0
+      },
+      "score": 34,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 19 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "sc parents resources network",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 21,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 32.7,
+        "can_be_one": 0
+      },
+      "score": 32.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 21 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "family training union sc",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 32.2,
+        "can_be_one": 0
+      },
+      "score": 32.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "family training south carolina",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 22.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 22.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "why death certificate is important",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "google_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 30,
+        "can_be_one": 0
+      },
+      "score": 30,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "veterans affairs maryland",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 16,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/maryland",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 29.5,
+        "can_be_one": 0
+      },
+      "score": 29.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 16 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "illinois divorce records online",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 22,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 28.5,
+        "can_be_one": 0
+      },
+      "score": 28.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 22 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "texas workplace harassment deadline",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 22,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/texas",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 28.5,
+        "can_be_one": 0
+      },
+      "score": 28.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 22 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "what is a death certificate needed for",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "how to close an estate in colorado",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "family training sc",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 24.5,
+        "can_be_one": 0
+      },
+      "score": 24.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "death certificate california",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 19,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/california",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 24,
+        "can_be_one": 0
+      },
+      "score": 24,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 19 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "parent connection sioux falls",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 26,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 23.6,
+        "can_be_one": 0
+      },
+      "score": 23.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 26 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "veterans affairs office",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 20.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 23.6,
+        "can_be_one": 0
+      },
+      "score": 23.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "divorce records las vegas",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/nevada",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 23.1,
+        "can_be_one": 0
+      },
+      "score": 23.1,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 25 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "certificate of remembrance",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/california",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 22.2,
+        "can_be_one": 0
+      },
+      "score": 22.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "oregon divorce records",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/oregon",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 22.2,
+        "can_be_one": 0
+      },
+      "score": 22.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "vat relief",
+      "variants": [],
+      "signals": {
+        "words": 2,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/california",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 22.2,
+        "can_be_one": 0
+      },
+      "score": 22.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 20 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "1201 n muldoon rd anchorage ak",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 26,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alaska",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 21.3,
+        "can_be_one": 0
+      },
+      "score": 21.3,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 26 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "transfer on death deed form kansas",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 26,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/transfer-on-death-deed/kansas",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 21.3,
+        "can_be_one": 0
+      },
+      "score": 21.3,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 26 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "ordering a death certificate",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 27.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20.9,
+        "can_be_one": 0
+      },
+      "score": 20.9,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 27.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "child custody in ct",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
         "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
       },
       "score": 20,
-      "kind": "new"
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
     },
     {
-      "query": "parent and child journal",
+      "query": "full custody of child massachusetts",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "child custody springfield ma",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
         "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
       },
       "score": 20,
-      "kind": "new"
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
     },
     {
-      "query": "co parenting resources pdf",
+      "query": "child custody in massachusetts",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
         "bing_suggest": true,
-        "competition": "not read: no free, ToS-safe competition signal (SERP scraping is not used)"
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
       },
       "score": 20,
-      "kind": "new"
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "ct child custody forms",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "divorce and parenting courses utah state",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "utah divorce parenting classes",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "parent child visitation center",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "chesterfield county va child visitation court",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "autocomplete demand (google/bing)"
+      ]
+    },
+    {
+      "query": "death certificate online",
+      "variants": [
+        "how to get death certificate online"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 28,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/new-york",
+        "bing_suggest": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 17.6,
+        "can_be_one": 0
+      },
+      "score": 17.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 28 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "help for parents sc",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 28,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 17.6,
+        "can_be_one": 0
+      },
+      "score": 17.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 28 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "parenting resources in south carolina",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 28,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 17.6,
+        "can_be_one": 0
+      },
+      "score": 17.6,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 28 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "department of veterans affairs phone number",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 29.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/virginia",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 17.2,
+        "can_be_one": 0
+      },
+      "score": 17.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 29.5 in Search Console (2 impressions)"
+      ]
+    },
+    {
+      "query": "parent training utah",
+      "variants": [],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 28.2,
+        "gsc_impressions": 10,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/utah",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 17.1,
+        "can_be_one": 0
+      },
+      "score": 17.1,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 28.2 in Search Console (10 impressions)"
+      ]
+    },
+    {
+      "query": "colorado waiter minimum wage",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 29,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/minimum-wage/colorado",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 15.8,
+        "can_be_one": 0
+      },
+      "score": 15.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 29 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "executor guidance sterling heights mi",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 29,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/executor-duties/michigan",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 15.8,
+        "can_be_one": 0
+      },
+      "score": 15.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 29 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "veterans appeals columbus oh",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 29,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/ohio",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 15.8,
+        "can_be_one": 0
+      },
+      "score": 15.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 29 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "washington state department of veterans affairs",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 29,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/washington",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 15.8,
+        "can_be_one": 0
+      },
+      "score": 15.8,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 29 in Search Console (1 impressions)"
+      ]
     }
   ],
-  "strengthen": []
+  "strengthen": [
+    {
+      "query": "donde sacar acta de divorcio",
+      "page": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "url": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
+      "score": 40,
+      "from": "distinct-gate",
+      "matched_by": "high token overlap (0.60 >= 0.6)",
+      "at": "2026-11-09"
+    }
+  ]
 }

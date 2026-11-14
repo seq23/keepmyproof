@@ -1,0 +1,102 @@
+{
+  "h1": "Can You Get a Consent Order Before Divorce?",
+  "title_lead": "Can You Get a Consent Order Before Divorce?",
+  "meta_description": "A consent order usually requires a pending court case. You can draft a settlement agreement now, but a judge signs the order after you file for divorce.",
+  "direct_answer": "A consent order is a written agreement that a judge approves and turns into a court order. In most states you must have an open divorce case before a judge can sign it, so the order itself comes after filing, not before.",
+  "sections": [
+    {
+      "heading": "What is a consent order?",
+      "paragraphs": [
+        "A consent order is a legal document that records the terms you and your spouse agree on. It covers topics such as property division, debt allocation, spousal support, child custody, and child support. Once a judge signs it, the terms become enforceable by the court. You cannot get a consent order without a judge's signature, and a judge typically will not sign unless a case is already open."
+      ],
+      "bullets": [
+        "Records agreed terms in writing",
+        "Covers property, support, and custody",
+        "Becomes enforceable after judge signs",
+        "Requires an open court case in most states"
+      ]
+    },
+    {
+      "heading": "Can you prepare the agreement before filing?",
+      "paragraphs": [
+        "Yes. You and your spouse can negotiate and write a settlement agreement at any time. Many couples use mediation or collaborative lawyers to reach terms before either person files for divorce. That written agreement is a contract between you. It is not a court order until a judge reviews and approves it in an active case. Keep a dated copy of every draft and the final signed version."
+      ],
+      "bullets": [
+        "Negotiate terms before filing",
+        "Use mediation or lawyers if needed",
+        "Signed agreement is a private contract",
+        "Judge approval turns it into an order"
+      ]
+    },
+    {
+      "heading": "How the process works in a typical state",
+      "paragraphs": [
+        "First, one spouse files a petition or complaint for divorce. The court assigns a case number. Next, you submit your signed settlement agreement to the court. A judge reviews it for fairness and legal compliance. If the judge approves, the judge signs a consent order or incorporates the agreement into the final divorce decree. The timeline varies by county and court workload."
+      ],
+      "bullets": [
+        "File petition to open case",
+        "Submit signed agreement to court",
+        "Judge reviews for fairness",
+        "Judge signs consent order or decree"
+      ]
+    },
+    {
+      "heading": "Why the distinction matters for your records",
+      "paragraphs": [
+        "A private agreement binds you and your spouse, but enforcement options are limited if one person stops following it. A court order gives you access to contempt proceedings, wage garnishment, and other enforcement tools. Keeping clear, organized records of every version of the agreement, correspondence, and financial disclosures helps you show the court the full history if questions arise later."
+      ],
+      "bullets": [
+        "Private agreement has limited enforcement",
+        "Court order enables contempt and garnishment",
+        "Save every draft and final version",
+        "Organize financial disclosures and messages"
+      ]
+    },
+    {
+      "heading": "Using KeepMyProof to store your drafts and final papers",
+      "paragraphs": [
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or upload each draft of your settlement agreement, the final signed copy, financial worksheets, and any court filings. On iPhone, the app can remove the original from Photos after import; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. This keeps your phone's camera roll clean while preserving a secure, time-stamped copy in the vault."
+      ],
+      "bullets": [
+        "Locked app on your home screen",
+        "Import drafts, final agreement, and filings",
+        "iPhone: option to remove from Photos after import",
+        "Android: delete original in Google Photos"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is a separation agreement the same as a consent order?",
+      "a": "A separation agreement is a private contract between spouses. A consent order is that agreement after a judge signs it in an open court case. The order can be enforced by the court; the private contract cannot."
+    },
+    {
+      "q": "Can we file the consent order at the same time as the divorce petition?",
+      "a": "In many jurisdictions you can submit a signed settlement agreement with the initial filing or shortly after. The judge still must review and sign it. The order does not exist until the judge signs."
+    },
+    {
+      "q": "What if we reconcile before the judge signs?",
+      "a": "If you reconcile before the judge signs, you can ask the court to dismiss the case. The unsigned agreement remains a private contract. You may want to write a new agreement or revoke the old one in writing."
+    },
+    {
+      "q": "Do I need a lawyer to get a consent order?",
+      "a": "You are not required to have a lawyer, but the agreement must meet legal standards. Many people use a mediator or consult a lawyer for review before filing. Court self-help centers often provide forms and procedural guidance."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "A consent order requires a judge's signature in an open court case to become enforceable.",
+      "source_url": "https://en.wikipedia.org/wiki/Divorce_in_the_United_States",
+      "source_name": "Wikipedia",
+      "verified": true,
+      "checked_status": 200
+    },
+    {
+      "claim": "Court self-help centers provide forms and procedural guidance for divorce and consent orders.",
+      "source_url": "https://selfhelp.courts.ca.gov/divorce-california",
+      "source_name": "California Courts Self-Help",
+      "verified": true,
+      "checked_status": 200
+    }
+  ]
+}

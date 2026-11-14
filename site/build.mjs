@@ -15,9 +15,13 @@ import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './c
 import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
 import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
+import { repeatsPhrase, shortenNames, leansBack } from './lib/names.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
+import { CJK_COPY } from './landings-cjk.mjs';
+import { AMAZON_BOOKS, AMAZON_INDEX } from './amazon.mjs';
+import { DISCLAIMER } from './disclaimer.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
@@ -104,7 +108,7 @@ const CSS_EXTRA = `.crumbs{display:flex;flex-wrap:wrap;align-items:center;column
 .fact{font-size:15px;color:var(--mut)}.cmp{width:100%;border-collapse:collapse;font-size:15px}.cmp th,.cmp td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 input,select,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:6px;min-height:44px;padding:6px 8px;max-width:100%}
 label{display:inline-block;margin:0 8px 8px 0}
-.pill{display:inline-flex;align-items:center;min-height:36px;padding:4px 14px;margin:14px 0 0;border-radius:999px;border:1.5px solid var(--ok);background:var(--okbg);color:var(--ok);font-weight:600;font-size:15px;text-decoration:none}
+.pill img{border-radius:5px;margin-right:8px;flex:none}.pill{display:inline-flex;align-items:center;min-height:36px;padding:4px 14px;margin:14px 0 0;border-radius:999px;border:1.5px solid var(--ok);background:var(--okbg);color:var(--ok);font-weight:600;font-size:15px;text-decoration:none}
 .vline{font-weight:600}.hero{margin:4px 0 8px}.hero .btn{margin-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:4px 0 12px}.chips li{margin:0}
 .chips a{display:inline-flex;align-items:center;min-height:44px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font-size:14px;text-decoration:none}
@@ -126,14 +130,23 @@ function storeBlock(lang) {
     : `<div class="soon"><p style="margin:0">${esc(c.comingSoon)}</p>${c.vaultBar ? `<p class="stores">${c.vaultBar.stores.map((x) => `<span class="store">${esc(x)}<small>${esc(c.vaultBar.soonTag)}</small></span>`).join('')}</p>` : ''}</div>`;
 }
 
-/** SoftwareApplication with no rating ever; offers and install links only once it is in a store. */
+/**
+ * SoftwareApplication with no rating ever. Offers carry the approved list prices from config.mjs (never typed here),
+ * the same prices the home page shows under "What it costs" (search-readiness c3). Before launch each Offer says it is
+ * coming soon and points at that price section, with no install link and no availability claim; install links and the
+ * store as the Offer url arrive only with the one store switch.
+ */
 function appSchema(lang) {
   const c = COPY[lang], s = SITE.stores;
   const os = [s.googlePlay && 'Android', s.appStore && 'iOS'].filter(Boolean);
   const node = { '@type': 'SoftwareApplication', '@id': `${SITE.origin}/#app`, name: SITE.name, applicationCategory: 'UtilitiesApplication', operatingSystem: os.length ? os.join(', ') : 'Android',
     description: c.factSentence(SITE.freeItems), inLanguage: LANGS, publisher: { '@id': `${SITE.origin}/#organization` }, url: `${SITE.origin}/` };
-  if (os.length) Object.assign(node, { installUrl: [s.googlePlay, s.appStore].filter(Boolean), offers: [{ '@type': 'Offer', name: c.free, price: '0', priceCurrency: 'USD' },
-    { '@type': 'Offer', name: `${c.plus} (yearly)`, price: SITE.prices.yearlyUSD, priceCurrency: 'USD' }, { '@type': 'Offer', name: `${c.plus} (lifetime)`, price: SITE.prices.lifetimeUSD, priceCurrency: 'USD' }] });
+  const store = s.googlePlay || s.appStore;
+  const terms = os.length ? { url: store } : { url: `${SITE.origin}/#price`, description: c.comingSoon ?? COPY.en.comingSoon };
+  node.offers = [{ '@type': 'Offer', name: c.free, price: '0', priceCurrency: 'USD', ...terms },
+    { '@type': 'Offer', name: `${c.plus} (yearly)`, price: SITE.prices.yearlyUSD, priceCurrency: 'USD', ...terms },
+    { '@type': 'Offer', name: `${c.plus} (lifetime)`, price: SITE.prices.lifetimeUSD, priceCurrency: 'USD', ...terms }];
+  if (os.length) node.installUrl = [s.googlePlay, s.appStore].filter(Boolean);
   return node;
 }
 const faqSchema = (lang, faq) => ({ '@type': 'FAQPage', inLanguage: lang, mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
@@ -175,6 +188,20 @@ export function fitDesc(desc, extras = []) {
  * crumbs = [{ name, path }] after Home. Every page carries the disclaimer and the one fact sentence.
  */
 const TITLE_PADS = { en: [' | Private papers app'], es: [' | App privada de papeles'], zh: [' | 私密文件手机应用', ' | 私密文件应用'], ko: [' | 비공개 서류 휴대폰 앱', ' | 비공개 서류 앱'] };
+/**
+ * Search-readiness c5: no Offer price in the JSON-LD that the visible page does not show. A node keeps its offers only
+ * when every paid price is in the page's visible text (today the home and facts pages, which carry "What it costs");
+ * everywhere else the app node stays, without offers, so no page claims a price it does not print.
+ */
+const visibleText = (h) => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, ' ');
+export function offersShown(node, body) {
+  if (!node?.offers) return node;
+  const text = visibleText(body);
+  if (node.offers.every((o) => Number(o.price) === 0 || text.includes(o.price))) return node;
+  const { offers, ...rest } = node;
+  return rest;
+}
+
 function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false }) {
   const c = COPY[lang];
   const title = fitTitle(titles, TITLE_PADS[lang]), desc = fitDesc(rawDesc, [...descMore, c.factSentence(SITE.freeItems)]);
@@ -187,11 +214,11 @@ function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], b
     { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: SITE.updated,
       isPartOf: { '@id': `${SITE.origin}/#website` }, publisher: { '@id': `${SITE.origin}/#organization` },
       ...(speakable ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.definition', '.answer', '.faq'] } } : {}) },
-    ...schema,
+    ...schema.map((n) => offersShown(n, body)),
   ];
   if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: [{ name: c.nav.home, path: pathOf('home', lang) }, ...crumbs].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: url(x.path) })) });
   const crumbHtml = crumbs.length > 1 ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${pathOf('home', lang)}">${esc(c.nav.home)}</a>${crumbs.slice(0, -1).map((x) => ` › <a href="${x.path}">${esc(x.name)}</a>`).join('')}</nav>` : '';
-  const foot = ['home', 'about', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'support'].map((p) => `<a href="${pathOf(p, lang)}"${p === 'about' ? ' rel="author"' : ''}>${c.nav[p]}</a>`).join('');
+  const foot = ['home', 'about', 'checklists', 'tools', 'guides', 'facts', 'alternatives', 'terms', 'privacy', 'disclaimer', 'support'].map((p) => `<a href="${pathOf(p, lang)}"${p === 'about' ? ' rel="author"' : ''}>${c.nav[p]}</a>`).join('');
   const vaultFoot = c.vault ? `<a href="${VAULT_HUB.path[lang]}">${esc(c.vault.nav)}</a>` : '';
   return `<!doctype html><html lang="${HREFLANG[lang]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url(path)}">${altLinks}
@@ -223,7 +250,7 @@ function page({ lang, id, title, desc, body, schema = [] }) {
 // Where the vault links point. /vault (the vault hub) replaces these when it is built; zh/ko read the English page.
 const VAULT_HREF = VAULT_HUB.path;
 const VAULT_CHIPS = { en: ['/vault', '/hide-pictures-from-camera-roll', '/keep-custody-screenshots-private'],
-  es: ['/es/boveda', '/es/ocultar-fotos-del-carrete', '/es/capturas-de-custodia-privadas'], zh: ['/zh/vault', '/zh/vault', '/zh/vault'], ko: ['/ko/vault', '/ko/vault', '/ko/vault'] };
+  es: ['/es/boveda', '/es/ocultar-fotos-del-carrete', '/es/capturas-de-custodia-privadas'], zh: ['/zh/vault', '/zh/hide-pictures-from-camera-roll', '/zh/keep-custody-screenshots-private'], ko: ['/ko/vault', '/ko/hide-pictures-from-camera-roll', '/ko/keep-custody-screenshots-private'] };
 /** The vault badge, line, buttons and chips at the top of a home page (owner, 6 Nov 2026). primary = the main button [label, href] or null. */
 function vaultHero(lang, primary) {
   const v = COPY[lang].vaultBar; if (!v) return '';
@@ -231,7 +258,8 @@ function vaultHero(lang, primary) {
   return `<p class="vline">${esc(v.line)}</p><p class="hero">${primary ? `<a class="btn primary" href="${primary[1]}">${esc(primary[0])}</a>` : ''}<a class="btn" href="${VAULT_HREF[lang]}">${esc(v.see)}</a></p>
 <ul class="chips">${v.chips.map((t, i) => `<li><a href="${chips[i]}">${esc(t)}</a></li>`).join('')}</ul>`;
 }
-const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}">${esc(v.badge)}</a>` : ''; };
+// The badge carries the brand's own mark (the app tile: brass seal ring on lockbox green), never an emoji.
+const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}"><img src="/icon-192.png" alt="" width="20" height="20">${esc(v.badge)}</a>` : ''; };
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
@@ -255,7 +283,7 @@ function home(lang, folders, hubs) {
 ${vaultSection(lang)}
 <h2>${esc(c.datesH)}</h2>${list(c.datesList)}
 <h2>${esc(c.backupH)}</h2>${list(c.backupList)}
-<h2>${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
+<h2 id="price">${esc(c.priceH)}</h2><div class="grid two"><div class="box"><h3>${esc(c.free)}</h3>${list(c.freeList(n))}</div>
 <div class="box"><h3>${esc(c.plus)}</h3>${list(c.plusList)}<p class="price">${esc(c.plusPrice(SITE.prices))}</p></div></div>${c.priceNotes(n).map((p) => `<p class="sub">${esc(p)}</p>`).join('')}
 <h2>${esc(c.faqH)}</h2><div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>`;
   const schema = [
@@ -268,10 +296,23 @@ ${vaultSection(lang)}
 function legal(lang, id, paras) {
   const c = COPY[lang], key = id === 'terms' ? 'terms' : 'privacy';
   const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time></p>
-${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}
+${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}${key === 'privacy' && c.heardLine ? `\n<p>${esc(c.heardLine)}</p>` : ''}
+${key === 'terms' ? `\n<p><a href="${pathOf('disclaimer', lang)}">${esc(c.nav.disclaimer)} ›</a></p>` : ''}
 <p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
   return page({ lang, id, title: c[`${key}Title`], desc: c[`${key}Desc`], body });
 }
+
+/** The disclaimer (site/disclaimer.mjs): the answer first, then one section per trip wire, then where to get real help. */
+function disclaimer(lang) {
+  const c = COPY[lang], d = DISCLAIMER[lang];
+  const links = (xs) => `<ul class="more">${xs.map(([t, href]) => `<li><a href="${esc(href)}"${href.startsWith('http') ? ' rel="noopener"' : ''}>${esc(t)} ›</a></li>`).join('')}</ul>`;
+  const body = `<h1>${esc(d.h1)}</h1><p class="definition answer">${esc(d.answer)}</p><p class="sub">${esc(c.updated)} <time datetime="${DISCLAIMER_UPDATED}">${fmtDate(lang, DISCLAIMER_UPDATED)}</time></p>
+${d.sections.map(([h, t, yes, no, xs]) => `<h2>${esc(h)}</h2><p>${esc(t)}</p>${yes ? `<div class="grid two"><div class="box"><h3>${esc(d.doH)}</h3>${list(yes)}</div><div class="box"><h3>${esc(d.neverH)}</h3>${list(no)}</div></div>` : ''}${xs?.length ? links(xs) : ''}`).join('\n')}
+<h2>${esc(d.helpH)}</h2>${links(d.help)}
+<p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
+  return page({ lang, id: 'disclaimer', title: [d.title], desc: d.desc, body });
+}
+const DISCLAIMER_UPDATED = '2026-11-13';
 
 function support(lang) {
   const c = COPY[lang];
@@ -304,12 +345,38 @@ const hubPath = (hubs, topicId, lang) => (lang === 'en' ? '/' : `/${lang}/`) + h
 const hubFor = (hubs, topicId, lang) => hubs[topicId][lang] ?? HUBS_CJK[topicId][lang];
 const fill = (s, code, l = 'en') => String(s).replace(/\{state_es\}/g, stateName(code, l === 'en' ? 'es' : l)).replace(/\{state\}/g, stateName(code, l === 'es' ? 'es' : l));
 function subtopicLabel(t, lang) {
-  const s = String(t).replace(/^\{state(?:_es)?\}(?:'s)?\s*/, '').replace(/\s+(?:in|en|de|for|para|del)\s+\{state(?:_es)?\}/g, '')
+  const s = String(t).replace(/^\{state(?:_es)?\}(?:'s)?\s*(?:的|에서|의|에)?\s*/, '').replace(/\s+(?:in|en|de|for|para|del)\s+\{state(?:_es)?\}/g, '')
     .replace(/\{state(?:_es)?\}\s*(?:的|의)?/g, lang === 'es' ? 'cada estado' : lang === 'en' ? 'each state' : '').replace(/\s*[(（]\s*[)）]/g, '').replace(/\s*[:,：]\s*$/, '').trim();
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 const folderName = (topic, l) => topic.display_name[l];
 const checklistItems = (topic, l) => topic.checklist_items.map((i) => i.name[l]);
+
+// The sample's filler test and the name shortener live in lib/names.mjs (Unicode words, as the sample reads them).
+export { repeatsPhrase };
+
+/**
+ * A 40–60 word answer from only the facts that keep the page clean: facts in order, each kept when
+ * `ok(answer)` still holds with it; a fact that leans on the one before it ("The same table…") only
+ * follows that fact. Then the fixed true tails, as quotableAnswer. null when no clean answer fits.
+ */
+export function answerFrom(claims, tails, lang, ok, shorten = (xs) => xs) {
+  const [lo, hi] = RANGE[lang], sep = lang === 'zh' ? '' : ' ', m = (xs) => measure(lang, xs.join(sep));
+  const text = (idx, ts = []) => [...shorten(idx.map((i) => claims[i])), ...ts].join(sep);
+  const idx = [];
+  for (let i = 0; i < claims.length; i++) {
+    if (leansBack(claims[i]) && !idx.includes(i - 1)) continue;
+    const next = [...idx, i];
+    if (m(shorten(next.map((j) => claims[j]))) <= hi && ok(text(next))) idx.push(i);
+  }
+  const ts = [];
+  for (const t of [...tails].sort((a, b) => measure(lang, b) - measure(lang, a))) {
+    if (m([text(idx), ...ts].filter(Boolean)) >= lo) break;
+    if (m([text(idx), ...ts, t].filter(Boolean)) <= hi) ts.push(t);
+  }
+  const out = text(idx, ts), n = measure(lang, out);
+  return n >= lo && n <= hi && ok(out) ? out : null;
+}
 
 /** A 40–60 word answer: the page's own facts first, then fixed true sentences to reach 40. */
 export function quotableAnswer(claims, tails, lang = 'en') {
@@ -386,12 +453,21 @@ export function clusterModel({ facts, verified, translations = {} }) {
   return { model, stops };
 }
 
+/** Facts grouped by source, in first-seen order, so each source is named once under the facts, which point to it by number (naming it after every fact was template filler). */
+export function bySource(facts) {
+  const out = new Map();
+  for (const f of facts) {
+    if (!out.has(f.source_url)) out.set(f.source_url, { name: f.source_name, url: f.source_url, claims: [], verifiedOn: f.verifiedOn });
+    const g = out.get(f.source_url);
+    g.claims.push(f.claim); if (String(f.verifiedOn) > String(g.verifiedOn)) g.verifiedOn = f.verifiedOn;
+  }
+  return [...out.values()];
+}
+
+/** Only real land neighbours that have a page in this language (never padded with other states). */
 function neighbours(code, published) {
-  const set = new Set(published), out = STATES[code].neighbours.filter((n) => set.has(n));
-  const order = published.filter((c) => c !== code), i = STATE_CODES.indexOf(code);
-  const near = order.sort((a, b) => Math.abs(STATE_CODES.indexOf(a) - i) - Math.abs(STATE_CODES.indexOf(b) - i));
-  for (const n of near) { if (out.length >= 4) break; if (!out.includes(n)) out.push(n); }
-  return out.slice(0, 6);
+  const set = new Set(published);
+  return STATES[code].neighbours.filter((n) => set.has(n));
 }
 
 function clusterPages(topics, hubs, cm, add, stops) {
@@ -441,7 +517,9 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
     const idxAlt = altOf(folderLangs, P.index);
     for (const l of folderLangs) {
       const c = CC[l], path = P.index(l), codes = [...new Set(subs.flatMap((s) => s.states.filter((x) => x.byLang[l]).map((x) => x.code)))];
-      const rows = codes.map((code) => `<div class="box"><h3>${esc(stateName(code, l))}</h3><ul>${subs.filter((s) => s.states.some((x) => x.code === code && x.byLang[l])).map((s) => `<li><a href="${P.state(s, code, l)}">${esc(fill(s.titles[l], code, l))}</a></li>`).join('')}</ul></div>`).join('');
+      // One box per subtopic linking to its own page, where every state is listed. A box per state repeated each
+      // subtopic title once per state, and a state list per subtopic repeated the same 51 names (template filler).
+      const rows = subs.map((s) => [s, s.states.filter((x) => x.byLang[l]).length]).filter(([, n]) => n).map(([s, n]) => `<div class="box"><h3><a href="${P.sub(s, l)}">${esc(s.label[l])}</a></h3><p><a href="${P.sub(s, l)}">${esc(c.allStates)} (${n}) ›</a></p></div>`).join('');
       const desc = c.byStateDesc(folderName(topic, l), codes.length - (codes.includes('DC') ? 1 : 0));
       const body = `<p class="lbl">${esc(folderName(topic, l))}</p><h1>${esc(c.byState(folderName(topic, l)))}</h1><p class="definition answer">${esc(desc)}</p><p>${esc(c.statesIntro)}</p>
 <p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><div class="grid two">${rows}</div>`;
@@ -471,23 +549,69 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
         for (const l of langs) {
           const facts = st.byLang[l], dates = facts.map((f) => f.verifiedOn).sort(), first = dates[0], last = dates[dates.length - 1];
           const c = CC[l], S = stateName(code, l), path = P.state(s, code, l), claims = facts.map((f) => f.claim);
-          const answer = quotableAnswer(claims, [...c.tails(S), ...(va ? [c.vaTail] : [])], l);
+          const tl = [...c.tails(S), ...(va ? [c.vaTail] : [])];
           const h1 = fill(s.titles[l], code, l), title = [h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
           if (desc.length > 160) desc = `${claims[0].slice(0, 155 - tailDesc.length).replace(l === 'zh' ? /$/ : /\s+\S*$/, '')}…${tailDesc}`;
-          const names = [...new Set(facts.map((f) => f.source_name))];
-          const faq = c.faq({ state: S, names: names.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
+          const names = [...new Set(facts.map((f) => f.source_name))]; const srcs = bySource(facts);
+          // The FAQ names each publisher once; the full source titles are already in the
+          // numbered sources list (four "U.S. Department of Education, IDEA regulations, 34 CFR"
+          // titles in both places was the template-filler repeat on iep/dispute-resolution).
+          const publishers = [...new Set(names.map((n) => n.split(/,\s|:\s/)[0].trim()))];
+          const hosts = [...new Set(srcs.map((g) => new URL(g.url).hostname.replace(/^www\./, '')))];
+          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
-          const body = `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>
+          // Each source's checked date is shown once: on its line only when the sources were checked
+          // on different days (the same "Checked <date>" after every source was a repeated phrase).
+          const oneDate = srcs.every((g) => g.verifiedOn === srcs[0].verifiedOn);
+          // An official link that is already a numbered source is not listed twice.
+          const extra = st.links.filter((x) => !srcs.some((g) => g.url === x.url));
+          const subShort = s.label[l].split(/[:：]/)[0].trim();
+          const render = (answer, shown, faq, links = extra) => `<p class="lbl">${esc(c.stateLabel(folderName(topic, l), S))}</p><h1>${esc(h1)}</h1>
 <p class="definition answer">${esc(answer)}</p><p class="sub">${esc(c.notAdvice)} ${esc(c.sourcesChecked(fmtDate(l, last)))}</p>
-<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f) => `<li>${esc(f.claim)} <a href="${esc(f.source_url)}" rel="noopener">${esc(f.source_name)}</a>. <span class="sub">${esc(c.checked(fmtDate(l, f.verifiedOn)))}</span></li>`).join('')}</ul>
-${st.links.length ? `<h2>${esc(c.linksH)}</h2><ul>${st.links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
+<h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f, i) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(shown[i])} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
+<p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>${oneDate ? '' : `. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span>`}</li>`).join('')}</ol>
+${links.length ? `<h2>${esc(c.linksH)}</h2><ul>${links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
 ${keep(l)}
-<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(s.label[l])}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
-${near.length ? `<h2>${esc(c.nearby)}</h2><ul>${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(fill(s.titles[l], n, l))}</a></li>`).join('')}</ul>` : ''}
+<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
+${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
+          // What the Monday sample reads: the breadcrumb trail inside <main>, then the body.
+          const crumbText = `${COPY[l].nav.home} ${hub(l).h1} ${s.label[l]}`;
+          const repeats = (body) => repeatsPhrase(`${crumbText} ${htmlText(body)}`);
+          // The answer is built from the page's own facts, which the sourced list then states again,
+          // so a long name in several facts can become template filler (an 8-word phrase more than
+          // three times, the weekly sample's test). Remedies, gentlest first, stopping at the first
+          // page that does not repeat; pages without the repeat keep their full answer:
+          //   1. the full answer;  2. each long name in full once per block, then a short form (in the
+          //   answer, an agency the H1 already names in full takes its acronym at once);
+          //   3. the answer takes only the facts that keep the page clean;  4. the FAQ names the
+          //   sources by their web address;  5. an agency home-page link the sources already give is not
+          //   repeated;  6. a fact's closing "in <state>" after the first says "in the state".
+          //   Every fact stays listed with its official source.
+          const quotes = facts.map((f) => f.quote);
+          const shortList = shortenNames(claims, l, quotes);
+          const greedy = (shown, faq, links) => answerFrom(claims, tl, l, (pick) => !repeats(render(pick, shown, faq, links)), (xs) => shortenNames(xs, l, quotes));
+          // An official link to the home page of an agency the sources list already names and links.
+          const host = (u) => new URL(u).hostname.replace(/^www\./, '');
+          const fewer = extra.filter((x) => !srcs.some((g) => host(g.url) === host(x.url) && String(x[`label_${l}`] || x.label_en || '').startsWith(g.name)));
+          const stateList = shortenNames(claims, l, quotes, S);
+          const full = quotableAnswer(claims, tl, l);
+          const ladder = [
+            () => [full, claims, faqOf(publishers)],
+            () => [quotableAnswer(shortenNames(claims, l, quotes), tl, l), shortList, faqOf(publishers)],
+            () => [quotableAnswer(shortenNames(claims, l, quotes, '', h1), tl, l), shortList, faqOf(publishers)],
+            () => [greedy(shortList, faqOf(publishers)), shortList, faqOf(publishers)],
+            () => [greedy(shortList, faqOf(hosts)), shortList, faqOf(hosts)],
+            () => [greedy(shortList, faqOf(hosts), fewer), shortList, faqOf(hosts), fewer],
+            () => [greedy(stateList, faqOf(hosts), fewer), stateList, faqOf(hosts), fewer],
+          ];
+          let parts, body;
+          for (const step of ladder) { const p = step(); if (!p[0]) continue; parts = p; body = render(...p); if (!repeats(body)) break; }
+          if (repeats(body)) stops.push(`NAMED NOTE [REPEATED_PHRASE] ${k}/${s.data.subtopic}/${code} ${l}: an 8-word phrase still repeats 4+ times`);
+          const faq = parts[2];
           add({ path, alt, group: k, state: { folder: k, subtopic: s.data.subtopic, code, lang: l, facts: facts.length }, html: shell({ lang: l, path, alt, title, desc, body, speakable: true,
             crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path: P.sub(s, l) }, { name: S, path }],
             schema: [article(l, path, h1, desc, first, last, facts.map((f) => ({ name: f.source_name, url: f.source_url }))), faqSchema(l, faq), appSchema(l)] }) });
@@ -550,7 +674,7 @@ function alternativePages(add) {
       add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
         schema: [article(l, path, a.h1(app), a.desc(app), app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
     }
-    const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc(a.h1(app))}</a></li>`).join('')}</ul>`;
+    const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc((a.link ?? a.h1)(app))}</a></li>`).join('')}</ul>`;
     add({ path: idx, alt: { en: pathOf('alternatives', 'en'), es: pathOf('alternatives', 'es') }, group: 'core', html: page({ lang: l, id: 'alternatives', title: c.altIndexTitle, desc: c.altIndexDesc, body }) });
   }
   return [];
@@ -660,6 +784,8 @@ const lpPath = (x, l) => x.path[l];
 /** The vault pages, in the order the hub lists them. */
 function vaultLinks(l) {
   const own = LANDINGS.filter((x) => x.kind === 'vault').map((x) => [x[l].h1, lpPath(x, l)]);
+  // Chinese and Korean: their own vault pages, then the English guides (labelled in English).
+  if (l === 'zh' || l === 'ko') return [...own, ...vaultLinks('en').slice(own.length).map(([t, href]) => [`${t} (English)`, href])];
   const guides = VAULT_GUIDE_IDS.map((id) => GUIDES.find((g) => g.id === id)).filter(Boolean).map((g) => [g[l].h1, guidePath(g, l)]);
   return [...own, [VAULT_GUIDE[l].h1, guidePath(VAULT_GUIDE, l)], ...guides, [LP_COPY[l].compare, `${l === 'en' ? '/alternatives/' : '/es/alternativas/'}private-photo-vault`]];
 }
@@ -673,7 +799,7 @@ function landingPages(add, topics, hubs) {
     const h = VAULT_HUB[l], path = VAULT_HUB.path[l], [lo, hi] = RANGE[l];
     if (measure(l, h.answer) < lo || measure(l, h.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] vault hub ${l}: ${measure(l, h.answer)} (allowed ${lo}-${hi})`);
     const limits = h.limits || LIMITS[l];
-    const pages = vaultLinks(l === 'zh' || l === 'ko' ? 'en' : l);
+    const pages = vaultLinks(l);
     const body = `${vaultBadge(l)}<h1>${esc(h.h1)}</h1><p class="definition answer">${esc(h.answer)}</p><p>${esc(h.iphone)}</p>
 <h2>${esc(h.howH)}</h2><ol>${h.how.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
 ${guideSection({ h: h.diffH, a: h.diff, table: h.table })}
@@ -685,10 +811,11 @@ ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p
   }
   // The landing pages, EN + ES.
   for (const x of LANDINGS) {
-    const alt = { en: x.path.en, es: x.path.es };
-    for (const l of LANGS) {
-      const p = x[l], path = x.path[l], G = GUIDE_COPY[l], L = LP_COPY[l], [lo, hi] = RANGE[l];
-      if (words(p.answer) < lo || words(p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${words(p.answer)} words`);
+    const alt = { ...x.path };
+    for (const l of ALL_LANGS) {
+      const cjk = l === 'zh' || l === 'ko', p = x[l], path = x.path[l], [lo, hi] = RANGE[l];
+      const G = cjk ? CJK_COPY[l] : GUIDE_COPY[l], L = cjk ? CJK_COPY[l] : LP_COPY[l];
+      if (measure(l, p.answer) < lo || measure(l, p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${measure(l, p.answer)} (allowed ${lo}-${hi})`);
       if (!x.sources.length) throw Error(`NAMED STOP [LANDING_UNSOURCED] ${x.id}`);
       const vault = x.kind === 'vault';
       const F = vault ? null : FOLDERS[x.kind], topic = F && folders.find((t) => t.id === F.topic);
@@ -696,20 +823,20 @@ ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p
       const lbl = vault ? L.lbl : folderName(topic, l);
       const keep = vault
         ? `<h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}`
-        : `<h2>${esc(L.keepH)}</h2><p>${esc(CC[l].keepBody)}</p>${list(checklistItems(topic, l))}<p><a class="btn primary" href="${F.pdf[l]}">${esc(L.pdf)}</a>${x.printable ? `<a class="btn" href="${x.printable[l]}">${esc(L.printable)}</a>` : ''}</p>${storeBlock(l)}`;
+        : `<h2>${esc(cjk ? L.folderKeepH : L.keepH)}</h2><p>${esc(CC[l].keepBody)}</p>${list(checklistItems(topic, l))}<p><a class="btn primary" href="${F.pdf[l]}">${esc(L.pdf)}</a>${x.printable ? `<a class="btn" href="${x.printable[l] ?? x.printable.en}">${esc(L.printable)}</a>` : ''}</p>${storeBlock(l)}`;
       const related = vault
         ? [[L.hub, VAULT_HUB.path[l]], ...vaultLinks(l).filter(([, href]) => href !== path)]
-        : [[hubFor(hubs, F.topic, l).h1, hubPath(hubs, F.topic, l)], ...LANDINGS.filter((o) => o.kind === x.kind && o !== x).map((o) => [o[l].h1, o.path[l]]), ...(x.printable ? [[L.printable, x.printable[l]]] : []), [VAULT_HUB[l].h1, VAULT_HUB.path[l]]];
+        : [[hubFor(hubs, F.topic, l).h1, hubPath(hubs, F.topic, l)], ...LANDINGS.filter((o) => o.kind === x.kind && o !== x).map((o) => [o[l].h1, o.path[l]]), ...(x.printable ? [[L.printable, x.printable[l] ?? x.printable.en]] : []), [VAULT_HUB[l].h1, VAULT_HUB.path[l]]];
       const body = `${vault ? vaultBadge(l) : ''}<p class="lbl">${esc(lbl)}</p><h1>${esc(p.h1)}</h1><p class="definition answer">${esc(p.answer)}</p><p class="sub">${esc(G.bestFor)} ${esc(p.bestFor)}</p>
 ${p.sections.map(guideSection).join('\n')}
 ${faqHtml(l, p.faq)}
 ${keep}
-<h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
+<h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l] ?? s.url.en)}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
 <h2>${esc(L.more)}</h2>${linkList(related)}
 <p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
       const crumbs = vault ? [{ name: VAULT_HUB[l].h1, path: VAULT_HUB.path[l] }, { name: p.h1, path }] : [{ name: hubFor(hubs, F.topic, l).h1, path: hubPath(hubs, F.topic, l) }, { name: p.h1, path }];
       add({ path, alt, group: vault ? 'vault' : x.kind, html: shell({ lang: l, path, alt, title: p.title, desc: p.desc, body, speakable: true, crumbs,
-        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, p.faq), appSchema(l)] }) });
+        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
     }
   }
 }
@@ -719,12 +846,16 @@ ${keep}
 // Pages the engine writes under questions/ are published only if they pass this gate; a failing page
 // stays out of dist and the sitemap and is a NAMED STOP in the build log (validate.mjs fails main on it).
 const LEGAL_ADVICE = /\byou should (?:sue|file (?:a )?(?:lawsuit|motion|appeal|claim))\b|\bour (?:lawyers|attorneys)\b|\bwe (?:represent|will file|can file|file claims)\b|\b(?:top|expert|specialist|recommended|rated) (?:lawyers?|attorneys?)\b|\bguarantee(?:d|s)?\b/i;
+// Privacy claims must be literally true: papers live encrypted on this one phone (no sync, no other
+// device, no automatic cloud copy), and on Android the app never deletes the original photo.
+const PRIVACY_CLAIM = /\b(?:from|on) any device\b|\bacross (?:all )?(?:your )?devices\b|\bonce (?:data|it|everything) is synced\b|\bsyncs? (?:across|between|to (?:all )?your)\b|\b(?:stores|keeps|saves) (?:everything|your [a-z]+) [^.]{0,30}\bin your iCloud or Google Drive\b|\bAndroid\b[^.]{0,50}\boriginal\b[^.]{0,40}\b(?:is|gets) deleted\b|\bAndroid users see the original deleted\b/i;
 const VA_HELP = /\b(?:we|keepmyproof)\b[^.]{0,40}\b(?:prepare|file|submit|rate|judge|win|increase)\b[^.]{0,30}\bclaims?\b|\bincrease your (?:va )?rating\b|\bget (?:a )?higher (?:va )?rating\b/i;
 export function questionGate(html) {
   const text = htmlText(html), p = [];
   const b = bannedWord(text); if (b) p.push(`banned word "${b}"`);
   const la = LEGAL_ADVICE.exec(text); if (la) p.push(`legal advice or outcome "${la[0]}"`);
   if (!/not legal advice/i.test(text)) p.push('no "Not legal advice" line');
+  const pc = PRIVACY_CLAIM.exec(text); if (pc) p.push(`untrue privacy claim "${pc[0]}"`);
   if (/\b(?:VA|veterans?)\b/.test(text)) {
     const v = VA_HELP.exec(text); if (v) p.push(`VA claim help "${v[0]}"`);
     if (!/not affiliated with the VA/i.test(text)) p.push('VA page without "not affiliated with the VA"');
@@ -740,8 +871,57 @@ function questionPages(add, files, stops) {
     const path = '/' + rel.replace(/index\.html$/, '').replace(/\.html$/, '');
     const own = LANDINGS.flatMap((x) => Object.values(x.path)).find((p) => p.replace(/\/$/, '') === path.replace(/\/$/, ''));
     if (own) { stops.push(`NAMED SKIP [QUESTION_DUPLICATE] ${rel}: ${own} is a landing page (site/landings.mjs); the engine's copy is not published`); continue; }
-    add({ path, alt: null, group: 'questions', html, external: true });
+    // The engine's footer carries no links; every page links the disclaimer, terms and privacy.
+    const legalLinks = `<p><a href="${pathOf('disclaimer', 'en')}">${COPY.en.nav.disclaimer}</a> · <a href="${pathOf('terms', 'en')}">${COPY.en.nav.terms}</a> · <a href="${pathOf('privacy', 'en')}">${COPY.en.nav.privacy}</a></p></footer>`;
+    add({ path, alt: null, group: 'questions', html: html.includes(`href="${pathOf('disclaimer', 'en')}"`) ? html : html.replace('</footer>', legalLinks), external: true });
   }
+}
+
+
+// ---------- Kindle book companions (site/amazon.mjs): /amazon/<slug>/, printed inside each book ----------
+
+/**
+ * The companion pages' primary button, driven by the one store switch (SITE.stores): empty until a
+ * store URL is set, then "Download KeepMyProof — free" first on the page and again at the end, with
+ * the book's utm tags carried to the store. Nothing else changes on launch day.
+ */
+export function storeCta(slug, pos) {
+  const s = SITE.stores, urls = [s.googlePlay, s.appStore].filter(Boolean);
+  if (!urls.length) return '';
+  const tag = (u) => `${u}${u.includes('?') ? '&' : '?'}utm_source=kindle&utm_medium=book&utm_campaign=${encodeURIComponent(slug)}&utm_content=companion-${pos}`;
+  const second = urls[1] ? ` <a class="btn" href="${esc(tag(urls[1]))}">${esc(urls[1] === s.appStore ? COPY.en.appStore : COPY.en.googlePlay)}</a>` : '';
+  return `<p data-book-cta="${pos}"><a class="btn primary" href="${esc(tag(urls[0]))}">Download KeepMyProof — free ›</a>${second}</p>`;
+}
+
+function amazonPages(add, topics) {
+  const l = 'en', idx = AMAZON_INDEX, p = SITE.prices;
+  const crumb0 = { name: 'Book companions', path: idx.path };
+  const priceLine = `Free for your first ${SITE.freeItems} items. KeepMyProof Plus is US $${p.yearlyUSD} a year or $${p.lifetimeUSD} once for life, for unlimited items, your own folders and tags, and PDFs of chosen items or dates.`;
+  for (const b of AMAZON_BOOKS) {
+    const folder = topics.topics.find((t) => t.id === b.folder);
+    if (!folder) throw Error(`NAMED STOP [AMAZON_FOLDER] ${b.slug}: folder ${b.folder} is not in topics.json`);
+    const path = `/amazon/${b.slug}/`;
+    const cta = (pos) => storeCta(b.slug, pos);
+    const free = `<p><a class="btn" href="${esc(b.free.href)}">${esc(b.free.label)}</a></p><p>${esc(b.free.body)}</p>${linkList(b.more.map(([h, t]) => [t, h]))}`;
+    const table = `<div style="overflow-x:auto"><table class="pr"><thead><tr><th>What you use</th><th>What it costs</th><th>What it does</th></tr></thead><tbody>
+<tr><td>${esc(b.book)}, the book</td><td>Already yours</td><td>Explains what to gather and why</td></tr>
+<tr><td><a href="${esc(b.free.href)}">The free printable or tool</a></td><td>Free, no sign-up</td><td>Fill in, print or save as a PDF; nothing is saved online</td></tr>
+<tr><td>KeepMyProof app</td><td>Free for ${SITE.freeItems} items; Plus $${p.yearlyUSD}/year or $${p.lifetimeUSD} once</td><td>Keeps papers, photos and dated notes encrypted on your phone; one PDF of a folder when you choose</td></tr></tbody></table></div>`;
+    const body = `<p class="lbl">Kindle book companion</p><h1>You're reading ${esc(b.book)}</h1>
+<p class="definition answer">${esc(b.answer)}</p>${cta('top')}<p class="sub">${esc(CC[l].notAdvice)} Thank you for reading.</p>
+<h2>What is the free next step?</h2>${free}
+<h2>How do the book, the free tools and the app fit together?</h2>${table}
+<h2>What does the KeepMyProof app do for this?</h2><p>${esc(b.appUse)}</p><p>${esc(priceLine)}</p>${storeBlock(l)}
+${faqHtml(l, b.faq)}
+${cta('end')}
+${b.sources.length ? `<h2>Sources</h2><ul>${b.sources.map(([t, u]) => `<li><a href="${esc(u)}" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>` : ''}
+<p><a href="${idx.path}">All KeepMyProof book companions</a> · <a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>`;
+    add({ path, alt: null, group: 'core', html: shell({ lang: l, path, title: [b.title], desc: b.desc, body, speakable: true, crumbs: [crumb0, { name: b.book, path }],
+      schema: [{ '@type': 'Book', name: b.book, bookFormat: 'https://schema.org/EBook', publisher: { '@type': 'Organization', name: SITE.parentOrg.name } }, faqSchema(l, b.faq), appSchema(l)] }) });
+  }
+  const body = `<p class="lbl">Kindle book companions</p><h1>${esc(idx.h1)}</h1><p class="definition answer">${esc(idx.answer)}</p>
+${linkList(AMAZON_BOOKS.map((b) => [`${b.book}: ${b.free.label.replace(/^Open the /, 'the ')}`, `/amazon/${b.slug}/`]))}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
+  add({ path: idx.path, alt: null, group: 'core', html: shell({ lang: l, path: idx.path, title: [idx.title], desc: idx.desc, body, crumbs: [crumb0] }) });
 }
 
 // ---------- the whole site ----------
@@ -759,6 +939,7 @@ export function renderAll(input = loadFacts()) {
     add({ path: pathOf('terms', lang), alt: { en: pathOf('terms', 'en'), es: pathOf('terms', 'es') }, group: 'core', html: legal(lang, 'terms', terms) });
     add({ path: pathOf('privacy', lang), alt: { en: pathOf('privacy', 'en'), es: pathOf('privacy', 'es') }, group: 'core', html: legal(lang, 'privacy', privacy) });
     add({ path: pathOf('support', lang), alt: { en: pathOf('support', 'en'), es: pathOf('support', 'es') }, group: 'core', html: support(lang) });
+    add({ path: pathOf('disclaimer', lang), alt: { en: pathOf('disclaimer', 'en'), es: pathOf('disclaimer', 'es') }, group: 'core', html: disclaimer(lang) });
     add({ path: pathOf('about', lang), alt: { en: pathOf('about', 'en'), es: pathOf('about', 'es') }, group: 'core', html: about(lang) });
   }
   const { model, stops } = clusterModel(input);
@@ -770,6 +951,7 @@ export function renderAll(input = loadFacts()) {
   landingPages(add, topics, hubs);
   stops.push(...alternativePages(add));
   questionPages(add, files, stops);
+  amazonPages(add, topics);
 
   // Our own copy may never carry a banned claim word (state and question pages were gated above).
   for (const pg of pages.filter((x) => !x.external)) {
@@ -789,7 +971,7 @@ export function renderAll(input = loadFacts()) {
 
   const fl = folders.map((f) => `- [${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))}): ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
   const census = Object.keys(FOLDERS).map((k) => `- ${hubs[FOLDERS[k].topic].en.h1}: ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'en').length} state pages in English, ${pages.filter((p) => p.state?.folder === k && p.state.lang === 'es').length} in Spanish${STATE_LANGS[k] ? `, ${pages.filter((p) => p.state?.folder === k && p.state.lang === STATE_LANGS[k][0]).length} in ${LANG_NAME[STATE_LANGS[k][0]]}` : ''}${(model[k] || []).length ? ` ([by state](${url(FOLDERS[k].path.en)}))` : ''}`).join('\n');
-  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Private vault for photos and documents](${url(VAULT_HUB.path.en)}): ${VAULT_HUB.en.answer}\n${LANDINGS.map((x) => `- [${x.en.h1}](${url(x.path.en)})`).join('\n')}\n- [About](${url('/about')}): who makes KeepMyProof and how the pages are checked\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
+  files['llms.txt'] = `# KeepMyProof\n\n> ${COPY.en.factSentence(SITE.freeItems)}\n\n${COPY.en.llms}\n\nStatus: ${COPY.en.comingSoon}\nPrice: free for the first ${SITE.freeItems} items (adding stops at the limit; viewing, PDFs, export, backup and restore never lock). KeepMyProof Plus: US $${SITE.prices.yearlyUSD} a year or $${SITE.prices.lifetimeUSD} once for life; unlimited items, own folders and tags, PDFs of chosen items or dates.\nEducational only. Not legal advice. Not a law firm. Not affiliated with the VA.\nMade by ${SITE.parentOrg.name} (${SITE.parentOrg.url}).\n\n## Folders and suggested checklists\n\n${fl}\n\n## State-by-state pages (facts copied from official sources, each linked and dated)\n\n${census}\n\n## Pages\n\n- [Home](${url('/')}): what the app does, folders, privacy, price, questions\n- [KeepMyProof facts](${url(pathOf('facts', 'en'))}): one page of plain facts about the app\n- [Free printable checklists](${url(pathOf('checklists', 'en'))}): five one-page PDFs in English, Spanish, Chinese and Korean, no email\n- [Alternatives](${url(pathOf('alternatives', 'en'))}): compared on counted, dated review complaints\n- [Guides](${url(pathOf('guides', 'en'))}): hide screenshots and documents on iPhone and Android (steps from Apple and Google help pages), and a vault for papers, not just pictures\n- [Private vault for photos and documents](${url(VAULT_HUB.path.en)}): ${VAULT_HUB.en.answer}\n${LANDINGS.map((x) => `- [${x.en.h1}](${url(x.path.en)})`).join('\n')}\n- [About](${url('/about')}): who makes KeepMyProof and how the pages are checked\n- [Inicio en español](${url('/es/')})\n- [中文](${url(pathOf('home', 'zh'))}): folder guides, checklists and divorce state pages in Simplified Chinese\n- [한국어](${url(pathOf('home', 'ko'))}): folder guides, checklists and executor state pages in Korean\n- [Terms](${url('/terms')})\n- [Privacy](${url('/privacy')})\n- [Disclaimer](${url('/disclaimer')}): ${DISCLAIMER.en.answer}\n- [Support](${url('/support')}): ${SITE.supportEmail}\n- [Sitemap](${url('/sitemap.xml')})\n`;
   files['site.webmanifest'] = JSON.stringify({ name: SITE.name, short_name: SITE.name, start_url: '/', display: 'browser', background_color: "#F3F4F1", theme_color: "#0B6E4F",
     icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }, null, 2);
   // The IndexNow key file is committed (assets/site/<key>.txt, search-readiness e3/i8) and copied with the assets.
@@ -800,7 +982,7 @@ export function renderAll(input = loadFacts()) {
   // KMP_PREVIEW=1 (a branch preview, never production): every response says noindex, and robots.txt asks crawlers to stay out.
   const preview = process.env.KMP_PREVIEW === '1';
   if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
-  files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
+  files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  Cache-Control: public, max-age=0, must-revalidate, no-transform\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
   if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
   return { files, pages, stops, model };
 }

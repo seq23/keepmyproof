@@ -2937,12 +2937,12 @@
     "WI": {
       "facts": [
         {
-          "claim_en": "Wisconsin's Equal Rights Division says the time limit to file an employment complaint is 300 days from the date the action was taken or the person learned of it.",
-          "claim_es": "La División de Igualdad de Derechos de Wisconsin indica que el plazo para presentar una queja laboral es de 300 días desde la fecha de la acción o desde que la persona se enteró de ella.",
-          "source_url": "https://dwd.wisconsin.gov/er/civilrights/discrimination/socialmedia.htm",
-          "source_name": "Wisconsin Equal Rights Division",
-          "quote": "The statute of limitations for filing a complaint related to employment or education is 300 days from the date the action was taken, or you were made aware the action was taken.",
-          "checked": "2026-11-02"
+          "claim_en": "Wisconsin's Equal Rights Division says the time limit to file an employment discrimination complaint is 300 days from the date the action was taken or when the person became aware of it.",
+          "claim_es": "La División de Igualdad de Derechos de Wisconsin indica que el plazo para presentar una queja por discriminación laboral es de 300 días desde la fecha de la acción o desde que la persona se enteró de ella.",
+          "source_url": "https://www.dwd.wisconsin.gov/er/civilrights/discrimination/",
+          "source_name": "Wisconsin DWD Equal Rights Division: Employment Discrimination",
+          "quote": "The statute of limitations for filling a complaint is 300 days from the date the action was taken or when you became aware the action was taken",
+          "checked": "2026-11-13"
         },
         {
           "claim_en": "The EEOC's Milwaukee Area Office timeliness page says a person in Wisconsin has 300 days from the date of alleged harm to file a charge with the EEOC against an employer with 15 or more employees, for discrimination based on race, color, national origin, sex, religion or disability.",
