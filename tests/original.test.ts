@@ -10,7 +10,9 @@ import { draft, fixture } from './helpers';
 const base = { pref: 'ask' as RemovePref, kind: 'photo', assetId: 'ABC-123/L0/001', editing: false, systemConfirm: true };
 
 test('the offer appears only for a new photo with a library id, when the setting asks and the phone confirms itself', () => {
-  assert.equal(DEFAULT_REMOVE_PREF, 'ask');
+  // Sim review finding 4: nothing is pre-picked; the offer is off until the person turns it on.
+  assert.equal(DEFAULT_REMOVE_PREF, 'never');
+  assert.equal(shouldOffer({ ...base, pref: DEFAULT_REMOVE_PREF }), false, 'off by default: never asked');
   assert.equal(shouldOffer(base), true);
   assert.equal(shouldOffer({ ...base, pref: 'never' }), false, 'setting off: never asked');
   assert.equal(shouldOffer({ ...base, kind: 'file' }), false);
@@ -21,13 +23,14 @@ test('the offer appears only for a new photo with a library id, when the setting
   assert.equal(shouldOffer({ ...base, systemConfirm: false }), false, 'no system confirmation dialog: never offered');
 });
 
-test('the setting reads back what was saved; anything unreadable falls back to asking (which removes nothing)', async () => {
+test('the setting reads back what was saved; nothing saved or anything unreadable reads as off', async () => {
   let stored: string | null = null;
   const store = { read: async () => stored, write: async (v: RemovePref) => { stored = v; } };
-  assert.equal(await readRemovePref(store), 'ask');
+  assert.equal(await readRemovePref(store), 'never');
+  await store.write('ask'); assert.equal(await readRemovePref(store), 'ask');
   await store.write('never'); assert.equal(await readRemovePref(store), 'never');
-  stored = 'garbage'; assert.equal(await readRemovePref(store), 'ask');
-  assert.equal(await readRemovePref({ read: async () => { throw Error('keychain'); }, write: async () => {} }), 'ask');
+  stored = 'garbage'; assert.equal(await readRemovePref(store), 'never');
+  assert.equal(await readRemovePref({ read: async () => { throw Error('keychain'); }, write: async () => {} }), 'never');
 });
 
 test('removal runs the system delete once, only after the vault holds the copy; any refusal keeps the original', async () => {

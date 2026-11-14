@@ -2,8 +2,9 @@
 // The safe choice is the default everywhere: nothing leaves Photos unless the person taps Remove AND then
 // confirms the phone's own delete dialog. Declining either step changes nothing.
 export type RemovePref = 'ask' | 'never';
-/** The setting's default: offer the choice after each photo import (the offer itself removes nothing). */
-export const DEFAULT_REMOVE_PREF: RemovePref = 'ask';
+/** The setting's default: off. Nothing is pre-picked for the person (sim review 14 Nov 2026); they can
+ *  turn the offer on at setup or in Settings (the offer itself still removes nothing). */
+export const DEFAULT_REMOVE_PREF: RemovePref = 'never';
 export const isRemovePref = (v: unknown): v is RemovePref => v === 'ask' || v === 'never';
 export interface PrefStore { read(): Promise<string | null>; write(v: RemovePref): Promise<void> }
 export async function readRemovePref(store: PrefStore): Promise<RemovePref> {

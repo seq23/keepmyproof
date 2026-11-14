@@ -26,10 +26,12 @@ test('1-2: adds that start outside a folder go to the neutral Private folder, wh
   assert.doesNotThrow(() => validate(s));
 });
 
-test('3: a typed date is never dropped; typing with "not sure" ticked is refused, and an empty date asks', () => {
+test('3: a typed date is never dropped; typing with "not sure" ticked is refused, and an empty date is "not sure"', () => {
   assert.throws(() => resolveHappened({ date: '11/03/2026', time: '', unknown: true }), /dateConflict/);
   assert.throws(() => resolveHappened({ date: '', time: '6pm', unknown: true }), /dateConflict/);
-  assert.throws(() => resolveHappened({ date: '', time: '', unknown: false }), /dateMissing/);
+  // Sim review finding 4: the box starts unticked; nothing typed saves as "not sure", silently.
+  assert.equal(resolveHappened({ date: '', time: '', unknown: false }), null);
+  assert.equal(resolveHappened({ date: '  ', time: '', unknown: false }), null);
   assert.throws(() => resolveHappened({ date: '', time: '6pm', unknown: false }), /timeNoDate/);
   assert.equal(resolveHappened({ date: '', time: '', unknown: true }), null);
   assert.equal(resolveHappened({ date: '11/03/2026', time: '', unknown: false }), '2026-11-03');

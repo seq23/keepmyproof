@@ -7,7 +7,7 @@ import { AppLock, createLock, type LockRecord, type LockStore } from '../core/lo
 import { b64, unb64, recoveryKey, setPbkdf2, type Random } from '../core/crypto';
 import { phonePbkdf2 } from './kdf';
 import { clearTemporary } from '../core/cleanup';
-import { Vault, prepareInstall, type InstallStore } from '../core/vault';
+import { Vault, startInstall, type InstallStore } from '../core/vault';
 import { isLang, type Lang } from '../core/model';
 import type { PrefStore } from '../core/original';
 import type { HeardStore } from '../core/heard';
@@ -60,8 +60,14 @@ export const locks: LockStore = {
   write: async value => { await SecureStore.setItemAsync(AUTH, JSON.stringify(value), options); },
 };
 export const appLock = new AppLock(locks);
+const KEYS = [BIO, KEY, AUTH, HEARD, REMOVE, LANG];
+async function forgetKeychain() { for (const k of KEYS) await SecureStore.deleteItemAsync(k, options); }
+/** iOS keeps Keychain entries after the app is deleted, but deletes the app's own files. The vault file
+ *  not being there yet means this is a new install: any passcode, key or setting left in the Keychain
+ *  by an earlier install of the app is cleared and setup starts fresh (sim review 14 Nov 2026). */
 export async function hasSetup() {
-  return prepareInstall(await database(), !!(await SecureStore.getItemAsync(AUTH, options)));
+  const installed = new File(new Directory(Paths.document, 'vault'), 'vault.sqlite').exists;
+  return startInstall({ installed, store: await database(), hasLock: async () => !!(await SecureStore.getItemAsync(AUTH, options)), forget: forgetKeychain });
 }
 export async function biometricCheck(prompt: string): Promise<boolean> {
   if (!(await LocalAuth.hasHardwareAsync()) || !(await LocalAuth.isEnrolledAsync())) return false;
@@ -113,8 +119,7 @@ export async function renewRecovery(code: string, words: string) { await appLock
 export async function eraseAll(code: string) {
   await appLock.erase(code, async () => {
     const store = await database(); await store.erase();
-    for (const k of [BIO, KEY, AUTH, HEARD, REMOVE, LANG]) await SecureStore.deleteItemAsync(k, options);
-    await cleanTemps();
+    await forgetKeychain(); await cleanTemps();
   });
 }
 export const tempDirectory = () => new Directory(Paths.cache, 'outgoing');

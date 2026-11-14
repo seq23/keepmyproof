@@ -19,14 +19,15 @@ export function recoveryKey(words: string): Uint8Array {
 }
 export function seal(data: Uint8Array, key: Uint8Array, purpose: string, random: Random): string {
   const nonce = random(12);
-  return JSON.stringify({ v: 1, n: b64(nonce), c: b64(aead.encrypt(key, nonce, utf8(purpose), data)) });
+  const c = aead.encryptB64 ? aead.encryptB64(key, nonce, utf8(purpose), data) : b64(aead.encrypt(key, nonce, utf8(purpose), data));
+  return JSON.stringify({ v: 1, n: b64(nonce), c });
 }
 export function open(data: string, key: Uint8Array, purpose: string): Uint8Array {
   const box = JSON.parse(data);
   if (box.v !== 1 || typeof box.n !== 'string' || typeof box.c !== 'string') throw Error('FORMAT_INVALID');
   const nonce = unb64(box.n);
   if (nonce.length !== 12) throw Error('FORMAT_INVALID');
-  return aead.decrypt(key, nonce, utf8(purpose), unb64(box.c));
+  return aead.decryptB64 ? aead.decryptB64(key, nonce, utf8(purpose), box.c) : aead.decrypt(key, nonce, utf8(purpose), unb64(box.c));
 }
 // PBKDF2-HMAC-SHA256 work factor. OWASP Password Storage Cheat Sheet (2023+): 600,000 iterations
 // for PBKDF2-HMAC-SHA256. Records made before 6 Nov 2026 carry no count and used 210,000; they still

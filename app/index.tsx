@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AppState, BackHandler, Image, Linking, Platform, Pressable, ScrollView, Switch, Text, View } from 'react-native';
+import { AppState, BackHandler, Image, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, Share, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getLocales } from 'expo-localization';
 import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
-import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened } from '../src/core/dates';
+import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened, typingDate } from '../src/core/dates';
+import { LockError } from '../src/core/lock';
 import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft, type Replacement } from '../src/core/vault';
 import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
 import { FileView } from '../src/viewer';
@@ -44,14 +45,17 @@ export default function App() {
   const [words, setWords] = useState(''), [wordInput, setWordInput] = useState('');
   const [folder, setFolder] = useState(DEFAULT_ADD_FOLDER), [itemId, setItemId] = useState('');
   const [draft, setDraft] = useState<Draft>(blankDraft(DEFAULT_ADD_FOLDER));
-  const [dateInput, setDateInput] = useState(''), [timeInput, setTimeInput] = useState(''), [unknown, setUnknown] = useState(true), [editing, setEditing] = useState(false);
+  const [dateInput, setDateInput] = useState(''), [timeInput, setTimeInput] = useState(''), [unknown, setUnknown] = useState(false), [editing, setEditing] = useState(false);
   const [dateError, setDateError] = useState(''), [tagInput, setTagInput] = useState('');
   // Several photos picked at once (finding 5); a replacement file while changing an item (finding 7).
   const [picked, setPicked] = useState<Picked[]>([]), [replacement, setReplacement] = useState<Replacement|null>(null);
   const [query, setQuery] = useState(''), [tagPick, setTagPick] = useState<string|null>(null);
   const [withHistory, setWithHistory] = useState(false), [backupShared, setBackupShared] = useState(false);
   const [wordsMode, setWordsMode] = useState<'setup'|'renew'>('setup'), [currentCode, setCurrentCode] = useState('');
-  const [viewUri, setViewUri] = useState<string|null>(null);
+  const [viewUri, setViewUri] = useState<string|null>(null), [zoom, setZoom] = useState(false);
+  // What the app is doing while busy, said in words (sim review finding 9), and the Plus prices' state.
+  const [busyLabel, setBusyLabel] = useState<StringKey>('working');
+  const [productsState, setProductsState] = useState<'loading'|'ready'|'failed'>('loading');
   const autoBio = useRef(false), biometricRef = useRef(false); biometricRef.current = biometric;
   const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
   const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
@@ -83,11 +87,13 @@ export default function App() {
   }
   useEffect(() => {
     mounted.current = true;
-    void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
-    void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
-    void readHeard(device.heardStore).then(h => { if (mounted.current) setHeard(h); }).catch(() => {});
     void device.bioTypes().then(types => { if (mounted.current) setBio(bioKind(Platform.OS, types)); });
+    // hasSetup first: on a new install it clears what an earlier install left in the Keychain, so the
+    // language, the Photos setting and the "how did you hear" answer are read only after that.
     void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
+      void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
+      void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
+      void readHeard(device.heardStore).then(h => { if (mounted.current) setHeard(h); }).catch(() => {});
       setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
@@ -119,19 +125,28 @@ export default function App() {
     }); return () => listener.remove();
   }, [billing]);
   useEffect(() => { void billing.entitlement().then(setEnt).catch(() => {}); }, [billing]);
-  async function run(job: () => Promise<void>) {
+  async function run(job: () => Promise<void>, label: StringKey = 'working') {
     if (busyRef.current) return;
-    busyRef.current = true; setBusy(true); setError(''); setNotice('');
+    busyRef.current = true; setBusyLabel(label); setBusy(true); setError(''); setNotice('');
     try { await job(); refresh(n => n+1); }
     catch (e) {
       const key = (e as Error).message;
       if (key === 'ITEM_LIMIT' || key === 'PLUS_REQUIRED') navigate('plus');
+      // A refused passcode or recovery phrase says how long to wait, in seconds or minutes (finding 10).
+      else if (e instanceof LockError && e.seconds > 0) setError(`${e.seconds > 120 ? t('waitMinutes', { n: Math.ceil(e.seconds / 60) }) : t('waitSeconds', { n: e.seconds })}`);
       else if (!(e as { userCancelled?: boolean }).userCancelled) setError(t(key in strings ? key as StringKey : key === 'REVENUECAT_KEY_MISSING' ? 'mock' : 'error'));
     } finally { busyRef.current = false; setBusy(false); }
   }
-  const doRun = (job: () => Promise<void>) => () => { void run(job); };
+  const doRun = (job: () => Promise<void>, label?: StringKey) => () => { void run(job, label); };
   function chooseLang(l: Lang) { setLang(l); void device.langChoice.write(l).catch(() => setError(copy(l)('error'))); }
-  useEffect(() => { if (screen === 'plus') void billing.products().then(setProducts).catch(() => setError(t('error'))); }, [screen, billing]);
+  // Plus prices: "Getting the prices…" while they load; when the store cannot be reached, say so with
+  // a Try again button instead of a general error (sim review finding 1).
+  function loadProducts() {
+    setProductsState('loading');
+    void billing.products().then(p => { setProducts(p); setProductsState('ready'); }).catch(() => { setProducts([]); setProductsState('failed'); });
+  }
+  useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
+  const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
   }
@@ -161,25 +176,28 @@ export default function App() {
   const displayDay = (d: string | null) => d ? showHappened(d, LOCALE[lang]) : t('unknown');
   // Typing a date or time unticks "I'm not sure of the date" (finding 3); a clash is refused inline, never dropped.
   const typedDate = (set: (v: string) => void) => (v: string) => { set(v); setDateError(''); if (v.trim()) setUnknown(false); };
-  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} onChange={typedDate(setDateInput)} />
+  // The date opens the number pad and the slashes go in by themselves (finding 3); an empty date is "not sure".
+  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} keyboard="date" onChange={v => typedDate(setDateInput)(typingDate(v))} />
     <Button quiet title={t('today')} onPress={() => { const d = new Date(); typedDate(setDateInput)(`${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}/${d.getFullYear()}`); }} />
     <Field label={t('timeLabel')} placeholder={t('timeFormat')} value={timeInput} onChange={typedDate(setTimeInput)} />
     <Button quiet checked={unknown} title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => { setUnknown(v => !v); setDateError(''); }} />
     {!!dateError && <Card tone="gold"><P>{dateError}</P></Card>}</>;
+  // Shown again right above Save, so a refused date is never 750pt away from the button that was tapped.
+  const dateErrorBySave = !!dateError && <Card tone="gold"><P>{dateError}</P></Card>;
   const nudge = state ? backupNudge(state, backupShared) : 'none';
   // Lists show only folders that are not hidden (finding 16); the one being added to always shows.
   const shownFolders = state ? [...appFolders.map(f => ({ id:f.id })), ...state.folders].filter(f => !state.hidden.includes(f.id) || f.id === draft.folder) : [];
   function addTo(id: string, kind: Draft['kind'] = 'note') {
     if (!state || !mayAdd(state.items.length, ent.plus)) { navigate('plus'); return; }
     setFolder(id); setDraft({ ...blankDraft(id), kind }); setPicked([]); setReplacement(null); setDateInput(''); setTimeInput(''); setDateError(''); setTagInput('');
-    setUnknown(true); setEditing(false); navigate('add');
+    setUnknown(false); setEditing(false); navigate('add');
   }
   function startEdit(i: Item) {
     setDraft({ folder:i.folder, checklist:i.checklist, kind:i.kind, title:i.title, note:i.note, happenedOn:i.happenedOn,
       filename:i.filename, mime:i.mime, bytes:i.bytes, tags:i.tags });
     setDateInput(i.happenedOn ? inputDate(i.happenedOn) : ''); setTimeInput(i.happenedOn ? inputTime(i.happenedOn) : ''); setDateError('');
     setTagInput(i.tags.join(', ')); setPicked([]); setReplacement(null);
-    setUnknown(i.happenedOn === null); setEditing(true); navigate('add');
+    setUnknown(false); setEditing(true); navigate('add');
   }
   async function saveDraft() {
     if (!vault) return;
@@ -193,8 +211,8 @@ export default function App() {
     if (editing) await vault.edit(itemId, { title:draft.title.trim(), note:draft.note, happenedOn, checklist:draft.checklist, tags,
       folder:draft.folder, file:replacement ?? undefined }, true, ent.plus);
     else {
-      const base = { ...draft, title:draft.title.trim(), happenedOn, tags };
-      const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes,
+      const base = { ...draft, title:draft.title.trim(), happenedOn, tags, takenOn: picked[0]?.takenOn ?? null };
+      const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes, takenOn:p.takenOn ?? null,
         title: base.title ? `${base.title} (${n+1})` : p.takenOn ? t('photoTaken', { date:showHappened(p.takenOn, LOCALE[lang]) }) : p.filename })) : [base];
       savedIds = await vault.addMany(drafts, ent.plus);
     }
@@ -224,7 +242,7 @@ export default function App() {
   if (!ready) body = <P>{t('loading')}</P>;
   else if (screen === 'first') body = <><P muted>{t('step1')}</P><P muted>KeepMyProof</P><P heading>{t('vaultTitle')}</P><P muted>{t(vaultCopy.lock)}</P><P section>{t('firstTitle')}</P>
     <Card><P>{t('noAccount')}</P><P muted>{t('start')}</P></Card><Card><P>{t('stays')}</P><P muted>{t('local')}</P></Card>
-    <Card><P>{t('firstFree')}</P><P muted>{t('five')}</P></Card>
+    <Card><P>{t('firstFree')}</P><P muted>{t('five', { n: appFolders.length })}</P></Card>
     {PREVIEW_BUILD && <Button title="Preview only: skip to a sample vault ›" onPress={doRun(async () => {
       // Appetize's free sessions last 3 minutes, too short to set up a vault by hand. Preview builds only:
       // the release gate refuses a store build with PREVIEW_BUILD set (NAMED STOP PREVIEW_BUILD).
@@ -239,12 +257,14 @@ export default function App() {
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     {photos.systemConfirm && removeSwitch}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
-    <P muted>{t('wrongGuesses')}</P>{btn('saveCode', doRun(async () => {
-      if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
-      if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
-      setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
-    }), false, true)}</>;
-  else if (screen === 'phrase') body = <>{wordsMode === 'setup' && <P muted>{t('step3')}</P>}<P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P><Card><P>{words}</P></Card>
+    <P muted>{t('wrongGuesses')}</P></>;
+  else if (screen === 'phrase') body = <>{wordsMode === 'setup' && <P muted>{t('step3')}</P>}<P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P>
+    {/* Numbered 1 to 12 in two columns, read down then across like a list on paper (finding 5). */}
+    <Card><View style={[styles.row,{ gap:16 }]}>{[0, 6].map(start => <View key={start} style={[styles.flex,{ gap:6 }]}>
+      {words.split(' ').slice(start, start + 6).map((w, n) => <Text key={n} {...textProps(lang)} style={{ color:palette.fg, fontSize:17, lineHeight:24, fontFamily:bodyFont(lang, true) }}>
+        <Text style={{ color:palette.muted, fontSize:13, fontFamily:bodyFont(lang) }}>{start + n + 1}.  </Text>{w}</Text>)}</View>)}</View></Card>
+    <Button quiet title={t('copyWords')} onPress={() => void Share.share({ message: words.split(' ').map((w, n) => `${n + 1}. ${w}`).join('\n') }).catch(() => {})} />
+    <P muted>{t('copyWordsHint')}</P>
     {btn('wroteWords', () => navigate('confirmPhrase'), false, true)}</>;
   else if (screen === 'confirmPhrase') body = <>{wordsMode === 'setup' && <P muted>{t('step4')}</P>}<P heading>{t('confirmWords')}</P><Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('finish', doRun(async () => {
@@ -258,7 +278,7 @@ export default function App() {
       resume.current = 'home'; setHeardFrom('home'); acceptVault(await device.setup(code, words, biometric));
     }), false, true)}</>;
   else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
-    {btn('unlock', doRun(async () => acceptVault(await device.unlock(code))), false, true)}
+    {btn('unlock', doRun(async () => acceptVault(await device.unlock(code)), 'workingCheck'), false, true)}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
     {PREVIEW_BUILD && sample && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
@@ -301,7 +321,7 @@ export default function App() {
     {homeButtons(state).map(b => b.kind === 'folder'
       ? <BigButton key={b.id} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
           sub={b.done || b.items ? [b.done && t(b.done === 1 ? 'ticked1':'tickedN', { n:b.done }), b.items && t(b.items === 1 ? 'items1':'itemsN', { n:b.items })].filter(Boolean).join(' · ') : t('nothingYet')}
-          onPress={() => { setFolder(b.id); navigate('folder'); }} />
+          onPress={() => { setFolder(b.id); setTagPick(null); navigate('folder'); }} />
       : <BigButton key="makeOwn" glyph="plus" dashed title={t('makeOwn')} tag={t('plusTag')} sub={t('makeOwnSub')} go={t('open')} disabled={busy}
           onPress={() => navigate(ent.plus ? 'custom' : 'plus')} />)}
     {btn('add', () => addTo(DEFAULT_ADD_FOLDER), false, true)}
@@ -332,8 +352,10 @@ export default function App() {
     <P heading>{t('newest')}</P>
     {allTags(folderItems).length > 0 && <><P muted>{t('tagFilter')}</P><View style={[styles.row,{ flexWrap:'wrap' }]}>{[null, ...allTags(folderItems)].map(g =>
       <Button quiet key={g ?? ''} checked={tagPick === g} title={`${tagPick === g ? '✓ ':''}${g ?? t('allItems')}`} onPress={() => setTagPick(g)} />)}</View></>}
-    {folderItems.length ? searchItems(folderItems, '', folderItems.some(i => tagPick !== null && i.tags.includes(tagPick)) ? tagPick : null).map(i => <Card key={i.id}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
-      {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}
+    {folderItems.length ? searchItems(folderItems, '', folderItems.some(i => tagPick !== null && i.tags.includes(tagPick)) ? tagPick : null).map(i => <Card key={i.id}>
+      <View style={[styles.row,{ alignItems:'center', gap:12 }]}>{isPicture(i) && <Image source={{ uri:`data:${i.mime};base64,${i.bytes}` }} style={{ width:56, height:56, borderRadius:8 }} resizeMode="cover" accessibilityIgnoresInvertColors />}
+        <View style={[styles.flex,{ gap:4 }]}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
+          {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}</View></View>
       {btn('open', () => { setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
     {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
@@ -341,8 +363,8 @@ export default function App() {
     <P section>{t('whichFolder')}</P>
     {shownFolders.map(f => <Button quiet key={f.id} checked={draft.folder === f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
     {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
-    {draft.kind !== 'note' && <>{!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false)))}
-      {editing && btn('replaceFile', doRun(() => pick(true)))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
+    {draft.kind !== 'note' && <>{!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
+      {editing && btn('replaceFile', doRun(() => pick(true), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
       {draft.kind === 'photo' && !editing && <P muted>{t(vaultCopy.photo)}</P>}
       {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
@@ -351,19 +373,25 @@ export default function App() {
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
     {ent.plus && <Field label={t('tags')} value={tagInput} onChange={setTagInput} />}
     <P muted>{t('addingDate')}</P>
-    {confirm === 'edit' ? <Card><P>{t('confirmEdit')}</P>{btn('yesSave', doRun(saveDraft))}{btn('keep', () => setConfirm(null),true)}</Card> :
-      <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft)} />}
     {btn('cancel', () => { setDraft(blankDraft(folder)); setPicked([]); setReplacement(null); navigate(editing ? 'detail' : 'folder'); },true)}</>;
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
     <P>{t('happened')}: {displayDay(item.happenedOn)} {item.happenedOn ? t('yourDate'):''}</P><P>{t('saved')}: {displayDate(item.savedOn)}</P>
     <P>{t('changed')}: {item.changedOn ? displayDate(item.changedOn):t('never')}</P></Card>
-    {item.bytes && (item.kind === 'photo' || item.mime?.startsWith('image/')) && <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" accessibilityLabel={item.title} />}
+    {isPicture(item) && <><Pressable accessibilityRole="imagebutton" accessibilityLabel={`${item.title}. ${t('photoZoom')}`} onPress={() => setZoom(true)}>
+      <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" /></Pressable><P muted>{t('photoZoom')}</P>
+      {/* Full screen, pinch to zoom (iOS scroll view zoom), ✕ Close (finding 8). */}
+      <Modal visible={zoom} animationType="fade" onRequestClose={() => setZoom(false)} supportedOrientations={['portrait','landscape']}>
+        <SafeAreaView style={{ flex:1, backgroundColor:'#000' }}>
+          <ScrollView maximumZoomScale={5} minimumZoomScale={1} centerContent bouncesZoom contentContainerStyle={{ flexGrow:1, justifyContent:'center' }}>
+            <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{ width:'100%', aspectRatio:1, flexGrow:1 }} resizeMode="contain" accessibilityLabel={item.title} /></ScrollView>
+          <View style={{ padding:16 }}><Button title={t('closeView')} onPress={() => setZoom(false)} /></View>
+        </SafeAreaView></Modal></>}
     {/* Saved documents open inside the app (finding 14). */}
     {item.bytes && item.kind === 'file' && !item.mime?.startsWith('image/') && (viewUri
       ? <FileView uri={viewUri} mime={item.mime} filename={item.filename} labels={{ openPdf:t('open'), cannotShow:t('cannotShow') }} />
-      : <Button title={`${t('open')} ${item.filename ?? ''}`} onPress={doRun(async () => setViewUri(await files.viewFile(item)))} disabled={busy} />)}
+      : <Button title={`${t('open')} ${item.filename ?? ''}`} onPress={doRun(async () => setViewUri(await files.viewFile(item)), 'workingFile')} disabled={busy} />)}
     {item.tags.length > 0 && <P muted>{t('tagsShown')}: {item.tags.join(', ')}</P>}
-    <P heading>{t('yourNote')}</P><Card><P>{item.note}</P></Card><P muted>{t('dateHonesty')}</P>
+    {item.note.trim() ? <><P heading>{t('yourNote')}</P><Card><P>{item.note}</P></Card></> : <Button quiet title={t('addNote')} onPress={() => startEdit(item)} disabled={busy} />}<P muted>{t('dateHonesty')}</P>
     {item.history.map((r,n) => { const next = item.history[n+1] ?? item;
       return <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDay(r.happenedOn)}</P>
         {r.folder !== undefined && r.folder !== next.folder && <P muted>{t('wasIn', { folder:folderName(r.folder) })}</P>}
@@ -380,12 +408,12 @@ export default function App() {
     <Card><P>{t('includeHistory')}</P><Switch accessibilityLabel={t('includeHistory')} value={withHistory} onValueChange={setWithHistory} /></Card>
     <P muted>{t('pdfWarning')}</P><P muted>{t('unsupportedPdf')}</P>
     {ent.plus && <><Button title={`${selection?'✓':'○'} ${t('chosen')}`} onPress={() => setSelection(!selection)} />
-      {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} onChange={setFrom} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} onChange={setTo} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
+      {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} keyboard="date" onChange={v => setFrom(typingDate(v))} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} keyboard="date" onChange={v => setTo(typingDate(v))} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
     {btn('savePdf', doRun(async () => {
       if (!selected.length) throw Error('NOTHING_CHOSEN');
       const items = vault.items(folder, { ids:selected, from:selection && from ? dateBoundary(from,false):undefined, to:selection && to ? dateBoundary(to,true):undefined }, ent.plus);
       await share(() => files.sharePdf(items,{title,madeOn:new Date().toISOString(),lang,cover:selection ? cover:undefined,history:withHistory}));
-    }), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder, { ids:selected }, ent.plus)))))}
+    }, 'workingPdf'), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder, { ids:selected }, ent.plus)))))}
     <P muted>{t('plusPdf')}</P>{btn('seePlus', () => navigate('plus'),true)}</>;
   else if (screen === 'backup') body = <><P heading>{t('backup')}</P>
     <Card tone={state.backup ? 'ok':undefined}><P>{state.backup ? t('lastBackup',{date:displayDate(state.backup.checkedOn)}):t('noBackup')}</P></Card>
@@ -445,6 +473,8 @@ export default function App() {
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
+    {productsState === 'loading' && <P muted>{t('storeLoading', { store: storeName })}</P>}
+    {productsState === 'failed' && <Card tone="gold"><P>{t('storeFailed', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {products.map(p => { const launch=activeLaunch(p);const price=launch?.price ?? p.price;
       return <Card key={p.id}><P heading>{launch ? t('launch',{price,normal:launch.normalPrice}):t(p.plan==='lifetime'?'lifetimePrice':'annualPrice',{price})}</P>
         <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':'annualTerms')}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
@@ -452,18 +482,34 @@ export default function App() {
     })}{btn('notNow', () => navigate('home'),true)}<P muted>{t('storeConfirm')}</P>
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
   else body = <P>{t('empty')}</P>;
+  // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
+  // finding 3: a refused date showed far above Save).
+  let footer: React.ReactNode = null;
+  if (ready && screen === 'setup') footer = btn('saveCode', doRun(async () => {
+    if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
+    if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
+    setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
+  }), false, true);
+  else if (ready && screen === 'add' && vault) footer = <>{!!error && <Card tone="gold"><P>{error}</P></Card>}{dateErrorBySave}{busy && <P muted>{t(busyLabel)}</P>}
+    {confirm === 'edit' ? <Card><P>{t('confirmEdit')}</P>{btn('yesSave', doRun(saveDraft, 'workingSave'))}{btn('keep', () => setConfirm(null),true)}</Card> :
+      <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft, 'workingSave')} />}</>;
   return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
+    <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
     <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
       {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
-      {!!error && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
-      {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && <P muted>{t('working')}</P>}{body}
+      {!!error && screen !== 'add' && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
+      {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && screen !== 'add' && <P muted>{t(busyLabel)}</P>}{body}
     </ScrollView>
+    {footer && <View style={[styles.footer,{ backgroundColor:palette.bg, borderTopColor:palette.line }]}>{footer}</View>}
+    </KeyboardAvoidingView>
     {vault && ['home','backup','settings'].includes(screen) && <View style={[styles.tabs,{backgroundColor:palette.card}]}>
       {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
     </View>}
   </SafeAreaView></LangContext.Provider></Theme.Provider>;
 }
 
+/** A saved photo or picture file that can be drawn in place. */
+const isPicture = (i: Item) => !!i.bytes && (i.kind === 'photo' || !!i.mime?.startsWith('image/'));
 // One big tappable folder door on Home: drawing, name, one grey sub line, "Open ›" on the right.
 function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
   glyph: GlyphName; title: string; sub: string; go: string; tag?: string; dashed?: boolean; disabled?: boolean; onPress: () => void;

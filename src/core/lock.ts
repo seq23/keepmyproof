@@ -6,17 +6,26 @@ export async function createLock(code: string, words: string, biometrics: boolea
   const salt = b64(random(16));
   return { salt, verifier: await passcodeHash(code, salt), iterations: PASSCODE_ITERATIONS, attempts: 0, nextTry: 0, recovery: b64(recoveryKey(words)), biometrics };
 }
+/** Wrong guesses allowed before any wait (a slip of the finger never locks anyone out); after them the
+ *  wait doubles from 30 seconds to at most an hour. 10^6 codes at that pace take decades. */
+export const FREE_TRIES = 4;
+export function waitAfter(attempts: number): number {
+  return attempts <= FREE_TRIES ? 0 : Math.min(3_600_000, 30_000 * 2 ** Math.min(attempts - FREE_TRIES - 1, 7));
+}
+/** A refused try. seconds: how long until the next try is allowed (0 = straight away). */
+export class LockError extends Error { constructor(code: 'WAIT' | 'PASSCODE_WRONG' | 'RECOVERY_INVALID', readonly seconds: number) { super(code); } }
+const secondsLeft = (nextTry: number, now: number) => Math.max(0, Math.ceil((nextTry - now) / 1000));
 export class AppLock {
   constructor(private store: LockStore, private now = () => Date.now()) {}
   async unlock(code: string) {
     const r = await this.store.read();
-    if (this.now() < r.nextTry) throw Error('WAIT');
+    if (this.now() < r.nextTry) throw new LockError('WAIT', secondsLeft(r.nextTry, this.now()));
     let ok = false;
     const iterations = r.iterations ?? LEGACY_ITERATIONS;
     if (/^\d{6}$/.test(code)) ok = equal(await passcodeHash(code, r.salt, iterations), r.verifier);
     if (!ok) {
-      r.attempts += 1; r.nextTry = this.now() + Math.min(3_600_000, 1000 * 2 ** Math.min(r.attempts - 1, 12));
-      await this.store.write(r); throw Error('PASSCODE_WRONG');
+      r.attempts += 1; const wait = waitAfter(r.attempts); r.nextTry = wait ? this.now() + wait : 0;
+      await this.store.write(r); throw new LockError('PASSCODE_WRONG', wait / 1000);
     }
     if (iterations >= PASSCODE_ITERATIONS) { await this.store.write({ ...r, attempts: 0, nextTry: 0 }); return; }
     // A legacy (210,000) verifier is re-made at the current count while the correct code is in hand.
@@ -39,12 +48,12 @@ export class AppLock {
   async reset(code: string, proof: { words: string } | { biometric: true }, biometricCheck: () => Promise<boolean>, random: Random) {
     const r = await this.store.read();
     if ('words' in proof) {
-      if (this.now() < r.nextTry) throw Error('WAIT');
+      if (this.now() < r.nextTry) throw new LockError('WAIT', secondsLeft(r.nextTry, this.now()));
       let valid = false;
       try { valid = equal(b64(recoveryKey(proof.words)), r.recovery); } catch { /* invalid phrase is a failed guess */ }
       if (!valid) {
-        r.attempts++; r.nextTry = this.now() + Math.min(3_600_000, 1000 * 2 ** Math.min(r.attempts - 1, 12));
-        await this.store.write(r); throw Error('RECOVERY_INVALID');
+        r.attempts++; const wait = waitAfter(r.attempts); r.nextTry = wait ? this.now() + wait : 0;
+        await this.store.write(r); throw new LockError('RECOVERY_INVALID', wait / 1000);
       }
     } else if (!r.biometrics || !(await biometricCheck())) throw Error('BIOMETRIC_FAILED');
     const salt = b64(random(16));

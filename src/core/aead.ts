@@ -5,6 +5,10 @@ import { gcm } from '@noble/ciphers/aes.js';
 export type Aead = {
   encrypt(key: Uint8Array, nonce: Uint8Array, aad: Uint8Array, data: Uint8Array): Uint8Array;
   decrypt(key: Uint8Array, nonce: Uint8Array, aad: Uint8Array, box: Uint8Array): Uint8Array;
+  /** Optional base64-in/base64-out forms: the phone's module already speaks base64, so a whole vault's
+   *  ciphertext is not decoded and re-encoded in JS on every save and unlock. */
+  encryptB64?(key: Uint8Array, nonce: Uint8Array, aad: Uint8Array, data: Uint8Array): string;
+  decryptB64?(key: Uint8Array, nonce: Uint8Array, aad: Uint8Array, box: string): Uint8Array;
 };
 export const aead: Aead = {
   encrypt: (key, nonce, aad, data) => gcm(key, nonce, aad).encrypt(data),

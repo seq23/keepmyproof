@@ -1,32 +1,39 @@
 import { b64, decode, hash, open, recoveryKey, seal, unb64, utf8, type Random } from './crypto';
 import { calendarDay, happenedKey, happenedValue } from './dates';
-import { contentDigest, empty, validate, type Item, type Snapshot } from './model';
+import { clone, contentDigest, empty, validate, type Item, type Snapshot } from './model';
 export interface AtomicStore { read(): Promise<string | null>; write(ciphertext: string): Promise<void> }
 export const FREE_LIMIT = 25;
 export function mayAdd(count: number, plus: boolean): boolean { return plus || count < FREE_LIMIT; }
 const day = happenedValue;
-/** Newest first by the day it happened (the user's date, then the time if one was typed), or the day it
- *  was saved when that is unknown; same day and time: the later save first. */
-const shownDay = (i: Item) => i.happenedOn === null ? calendarDay(i.savedOn) : happenedKey(i.happenedOn);
+/** Sort key: the day it happened (the user's date, then the time if one was typed); with no date, the
+ *  photo's own "taken" time; else the day it was saved. Same key: the later save first. */
+const shownDay = (i: Item) => i.happenedOn !== null ? happenedKey(i.happenedOn) : i.takenOn ? happenedKey(i.takenOn) : calendarDay(i.savedOn);
+/** Newest first: the day it happened, else the photo's own date, else the day it was saved. */
 export const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
 /** A replacement file for an item (Change it → Replace the file). */
 export interface Replacement { filename: string; mime: string; bytes: string }
-export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'>;
+export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'> & Pick<Partial<Item>, 'takenOn'>;
 export class Vault {
   private state: Snapshot = empty();
   private queue: Promise<unknown> = Promise.resolve();
   private active = true;
+  /** Ids whose bytes were hashed inside the change being saved (addMany), so they are not hashed twice. */
+  private hashed = new Set<string>();
   constructor(private store: AtomicStore, private key: Uint8Array, private random: Random, private now = () => new Date().toISOString()) {}
   async load() {
     const data = await this.store.read();
-    if (data) this.state = validate(JSON.parse(decode(open(data, this.key, 'vault-v1'))));
+    // AES-GCM has just authenticated every byte, and each file was hashed when it was saved.
+    if (data) this.state = validate(JSON.parse(decode(open(data, this.key, 'vault-v1'))), () => true);
   }
-  snapshot(): Snapshot { if (!this.active) throw Error('LOCKED'); return structuredClone(this.state); }
+  /** A copy to read or change; file bytes are shared, not copied (they are immutable strings). */
+  snapshot(): Snapshot { if (!this.active) throw Error('LOCKED'); return clone(this.state); }
   lock() { this.active = false; this.key.fill(0); this.state = empty(); }
   private mutate(change: (s: Snapshot) => void): Promise<void> {
     const run = async () => {
       if (!this.active) throw Error('LOCKED');
-      const next = this.snapshot(); change(next); validate(next);
+      const before = new Map(this.state.items.map(i => [i.id, i.bytes]));
+      const next = this.snapshot(); change(next); const fresh = this.hashed; this.hashed = new Set();
+      validate(next, i => i.bytes !== null && (before.get(i.id) === i.bytes || fresh.has(i.id)));
       const cipher = seal(utf8(JSON.stringify(next)), this.key, 'vault-v1', this.random);
       await this.store.write(cipher);
       if (this.active) this.state = next;
@@ -42,7 +49,8 @@ export class Vault {
       if (!plus && s.items.length + drafts.length > FREE_LIMIT) throw Error('ITEM_LIMIT');
       drafts.forEach((draft, n) => {
         if (draft.tags.length && !plus) throw Error('PLUS_REQUIRED');
-        s.items.push({ ...draft, happenedOn: day(draft.happenedOn), id: ids[n], savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
+        const { takenOn, ...rest } = draft; if (draft.bytes !== null) this.hashed.add(ids[n]);
+        s.items.push({ ...rest, ...(takenOn ? { takenOn } : {}), happenedOn: day(draft.happenedOn), id: ids[n], savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
         if (draft.checklist) delete s.ticks[`${draft.folder}/${draft.checklist}`];
       });
     }); return ids;
@@ -136,4 +144,12 @@ export async function prepareInstall(store: InstallStore, hasLock: boolean): Pro
   if (hasLock) return true;
   if (await store.read()) await store.archive();
   return false;
+}
+/** First launch of this install. installed: the app's own vault file was already on disk before this
+ *  launch opened it. When it was not, this is a new install (or a reinstall), and whatever an earlier
+ *  install left in the Keychain (which iOS keeps after the app is deleted) is forgotten, so setup starts
+ *  fresh instead of asking for a passcode that guards nothing. */
+export async function startInstall(o: { installed: boolean; store: InstallStore; hasLock: () => Promise<boolean>; forget: () => Promise<void> }): Promise<boolean> {
+  if (!o.installed) { await o.forget(); return prepareInstall(o.store, false); }
+  return prepareInstall(o.store, await o.hasLock());
 }
