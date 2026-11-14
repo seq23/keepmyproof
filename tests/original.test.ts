@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
+import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginal, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
 import { copy, strings } from '../src/strings';
 import { LANGS } from '../src/core/model';
 import { utf8, b64 } from '../src/core/crypto';
@@ -35,29 +35,40 @@ test('removal runs the system delete once, only after the vault holds the copy; 
   const id = await vault.add(draft({ kind: 'photo', filename: 'fictional.jpg', mime: 'image/jpeg', bytes: b64(utf8('invented photo bytes')) }), false);
   const before = JSON.stringify(vault.snapshot());
   const saved = () => vault.snapshot().items.find(i => i.id === id);
-  const calls: string[] = [];
-  const accept = async (a: string) => { calls.push(a); };
-  const decline = async (a: string) => { calls.push(a); throw Error('user declined the system dialog'); };
+  const calls: string[][] = [];
+  const accept = async (a: string[]) => { calls.push(a); };
+  const decline = async (a: string[]) => { calls.push(a); throw Error('user declined the system dialog'); };
 
   assert.equal(await removeOriginal('ABC-123', saved(), accept), 'removed');
-  assert.deepEqual(calls, ['ABC-123']);
+  assert.deepEqual(calls, [['ABC-123']]);
   calls.length = 0;
   assert.equal(await removeOriginal('ABC-123', saved(), decline), 'kept', 'declined system dialog keeps it');
-  assert.deepEqual(calls, ['ABC-123']);
+  assert.deepEqual(calls, [['ABC-123']]);
   calls.length = 0;
   // Not saved in the vault (missing, or a note without bytes): the photo is never touched.
   assert.equal(await removeOriginal('ABC-123', undefined, accept), 'kept');
   assert.equal(await removeOriginal('ABC-123', { bytes: null }, accept), 'kept');
   assert.deepEqual(calls, []);
-  // Neither outcome changes anything in the vault.
-  assert.equal(JSON.stringify(vault.snapshot()), before);
+  // Several photos added at once: ONE system dialog for all, and only when every one is in the vault.
+  const second = await vault.add(draft({ kind: 'photo', filename: 'fictional-2.jpg', mime: 'image/jpeg', bytes: b64(utf8('more invented bytes')) }), false);
+  const both = () => [saved(), vault.snapshot().items.find(i => i.id === second)];
+  assert.equal(await removeOriginals(['A', 'B'], both(), accept), 'removed');
+  assert.deepEqual(calls, [['A', 'B']]);
+  calls.length = 0;
+  assert.equal(await removeOriginals(['A', 'B'], [saved(), undefined], accept), 'kept', 'one not saved: none touched');
+  assert.equal(await removeOriginals(['A', 'B'], [saved()], accept), 'kept', 'ids and items must pair up');
+  assert.equal(await removeOriginals([], [], accept), 'kept');
+  assert.deepEqual(calls, []);
+  assert.equal(await removeOriginals(['A', 'B'], both(), decline), 'kept');
 });
 
 test('the app offers only after the save, keeps the library id out of the vault, and Keep is the default button', () => {
   const app = readFileSync('app/index.tsx', 'utf8');
   const save = app.slice(app.indexOf('async function saveDraft'), app.indexOf('async function share'));
-  assert.ok(save.indexOf('await vault.add') > -1 && save.indexOf('await vault.add') < save.indexOf('setOffer('), 'offer is set after the vault save');
-  assert.match(app, /const \{ assetId, \.\.\.file \} = picked/, 'assetId is split off before the draft');
+  assert.ok(save.indexOf('await vault.addMany') > -1 && save.indexOf('await vault.addMany') < save.indexOf('setOffer('), 'offer is set after the vault save');
+  // The library id never goes into a draft: drafts copy only filename, mime and bytes from a picked photo.
+  assert.match(app, /const \{ filename, mime, bytes \} = got\[0\]/, 'assetId is left out of the draft');
+  assert.doesNotMatch(app, /\.\.\.got\[|\.\.\.p\b|\.\.\.picked/, 'a picked photo is never spread into a draft');
   const card = app.slice(app.indexOf("t('removeAsk')"), app.indexOf("t('removeAsk')") + 700);
   assert.ok(card.indexOf("'keepInPhotos'") < card.indexOf("'removeFromPhotos'"), 'Keep comes first');
   assert.match(card, /btn\('keepInPhotos', \(\) => \{ setOffer\(null\);[^}]*\}\)\}/, 'Keep only closes the offer');
@@ -73,10 +84,11 @@ test('only a phone that can remove the original is told it can; Android is told 
   }
   const en = copy('en');
   assert.match(en(ios.photo), /remove the original from Photos/);
-  assert.match(en(ios.lock), /Face ID/);
+  assert.match(en(ios.lock, { bio: en('bioFaceId') }), /Face ID/);
+  assert.match(en(ios.lock), /\{bio\}/, 'the lock line names the phone\'s own unlock (Face ID or Touch ID)');
   assert.doesNotMatch(en(android.photo), /remove the original/i);
   assert.match(en(android.photo), /stays in your Photos or Gallery app/);
-  assert.doesNotMatch(en(android.lock), /Face ID/);
+  assert.doesNotMatch(en(android.lock, { bio: en('bioFingerprint') }), /Face ID/);
   // Android never gets the offer itself, whatever the setting.
   assert.equal(shouldOffer({ ...base, systemConfirm: false }), false);
 });

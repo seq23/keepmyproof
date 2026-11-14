@@ -15,11 +15,24 @@ export function phoneLang(locale: { languageCode?: string | null } | undefined):
 }
 export const isLang = (v: unknown): v is Lang => (LANGS as readonly unknown[]).includes(v);
 export const launchFolders = topics.topics.filter(t => t.release === 'launch').sort((a,b) => a.folder_order! - b.folder_order!);
+/** The one neutral folder, free on every plan, for anything that is not a topic: private photos and
+ *  papers (user review 14 Nov 2026, finding 2). App-only: it is not a search topic, so it is not in
+ *  topics.json (which also drives the website and the search loop). */
+export const PRIVATE_FOLDER = { id: 'private', display_name: { en: 'Private', es: 'Privado', zh: '私人', ko: '개인 보관' } as Labels,
+  checklist_items: [] as { id: string; name: Labels }[] };
+/** Every built-in folder, in Home order: the topic folders, then Private. */
+export const appFolders: { id: string; display_name: Labels; checklist_items?: { id: string; name: Labels }[] }[] =
+  [...launchFolders.map(f => ({ id: f.id, display_name: f.display_name as Labels, checklist_items: f.checklist_items as { id: string; name: Labels }[] | undefined })), PRIVATE_FOLDER];
+/** Where an add that did not start inside a folder goes until the person picks one: the neutral folder. */
+export const DEFAULT_ADD_FOLDER = PRIVATE_FOLDER.id;
 export interface CustomFolder { id: string; title: string }
 // A checklist line a Plus user added to a folder. Stored under Snapshot.lines, which older vaults
 // simply do not have (additive: no existing record changes shape).
 export interface CustomLine { id: string; title: string }
-export interface Revision { title: string; note: string; happenedOn: string | null; changedOn: string; checklist: string | null; tags: string[] }
+/** An earlier version of an item. folder / filename / sha256: what it was before a move or a replaced
+ *  file (absent on revisions made before 14 Nov 2026). */
+export interface Revision { title: string; note: string; happenedOn: string | null; changedOn: string; checklist: string | null; tags: string[];
+  folder?: string; filename?: string | null; sha256?: string | null }
 export interface Item {
   id: string; folder: string; checklist: string | null; kind: 'photo' | 'file' | 'note';
   title: string; note: string; happenedOn: string | null; savedOn: string; changedOn: string | null;
@@ -47,7 +60,7 @@ export function validate(input: unknown): Snapshot {
   if (s.version !== 1 || !Array.isArray(s.items) || !Array.isArray(s.folders) || !strings(s.hidden) ||
       !s.ticks || typeof s.ticks !== 'object' || Array.isArray(s.ticks) || !Object.values(s.ticks).every(v => typeof v === 'boolean') ||
       !(s.backup === null || (date(s.backup?.checkedOn) && str(s.backup?.digest)))) throw Error('FORMAT_INVALID');
-  const folders = new Set(launchFolders.map(f => f.id));
+  const folders = new Set(appFolders.map(f => f.id));
   for (const f of s.folders) {
     if (!str(f.id) || !f.id || !str(f.title) || !f.title.trim() || folders.has(f.id)) throw Error('FORMAT_INVALID');
     folders.add(f.id);
@@ -56,7 +69,7 @@ export function validate(input: unknown): Snapshot {
   if (s.lines !== undefined) {
     if (!s.lines || typeof s.lines !== 'object' || Array.isArray(s.lines)) throw Error('FORMAT_INVALID');
     for (const [folder, lines] of Object.entries(s.lines)) {
-      const taken = new Set(launchFolders.find(f => f.id === folder)?.checklist_items?.map(c => c.id) ?? []);
+      const taken = new Set(appFolders.find(f => f.id === folder)?.checklist_items?.map(c => c.id) ?? []);
       if (!folders.has(folder) || !Array.isArray(lines)) throw Error('FORMAT_INVALID');
       for (const l of lines) {
         if (!str(l?.id) || !l.id || taken.has(l.id) || !str(l.title) || !l.title.trim()) throw Error('FORMAT_INVALID');
@@ -66,13 +79,14 @@ export function validate(input: unknown): Snapshot {
   }
   const ids = new Set<string>();
   for (const i of s.items) {
-    const topic = launchFolders.find(f => f.id === i.folder);
+    const topic = appFolders.find(f => f.id === i.folder);
     if (!str(i.id) || !i.id || ids.has(i.id) || !folders.has(i.folder) || !str(i.title) || !i.title.trim() || !str(i.note) ||
       !['photo','file','note'].includes(i.kind) || !nullable(i.checklist) ||
       (i.checklist !== null && !topic?.checklist_items?.some(c => c.id === i.checklist) && !s.lines?.[i.folder]?.some(l => l.id === i.checklist)) ||
       !(i.happenedOn === null || date(i.happenedOn)) || !date(i.savedOn) || !(i.changedOn === null || date(i.changedOn)) ||
       !strings(i.tags) || !Array.isArray(i.history) || !i.history.every(r => str(r.title) && str(r.note) && date(r.changedOn) &&
-      (r.happenedOn === null || date(r.happenedOn)) && nullable(r.checklist) && strings(r.tags))) throw Error('FORMAT_INVALID');
+      (r.happenedOn === null || date(r.happenedOn)) && nullable(r.checklist) && strings(r.tags) &&
+      (r.folder === undefined || folders.has(r.folder)) && (r.filename === undefined || nullable(r.filename)) && (r.sha256 === undefined || nullable(r.sha256)))) throw Error('FORMAT_INVALID');
     ids.add(i.id);
     if (i.kind === 'note') {
       if (i.bytes !== null || i.sha256 !== null || i.filename !== null || i.mime !== null) throw Error('FORMAT_INVALID');
@@ -87,8 +101,8 @@ export function checked(s: Snapshot, folder: string, line: string): boolean {
 
 /** Every checklist line of a folder: the suggested ones from topics.json, then the user's own (Plus). */
 export function folderLines(s: Snapshot, folder: string, lang: Lang): { id: string; name: string; own: boolean }[] {
-  const topic = launchFolders.find(f => f.id === folder);
-  return [...(topic?.checklist_items ?? []).map(c => ({ id: c.id, name: (c.name as Labels)[lang], own: false })),
+  const topic = appFolders.find(f => f.id === folder);
+  return [...(topic?.checklist_items ?? []).map(c => ({ id: c.id, name: c.name[lang], own: false })),
     ...(s.lines?.[folder] ?? []).map(l => ({ id: l.id, name: l.title, own: true }))];
 }
 /** How a ticked line got its tick: filed papers ('paper'), or the user's own tap ('hand'). null = not ticked. */
@@ -103,6 +117,26 @@ export type HomeButton = { kind: 'folder'; id: string; own: boolean; done: numbe
 export function homeButtons(s: Snapshot): HomeButton[] {
   const folder = (id: string, own: boolean): HomeButton => ({ kind: 'folder', id, own,
     done: folderLines(s, id, 'en').filter(l => checked(s, id, l.id)).length, items: s.items.filter(i => i.folder === id).length });
-  return [...launchFolders.map(f => folder(f.id, false)), ...s.folders.map(f => folder(f.id, true))]
+  return [...appFolders.map(f => folder(f.id, false)), ...s.folders.map(f => folder(f.id, true))]
     .filter(b => b.kind === 'folder' && !s.hidden.includes(b.id)).concat({ kind: 'makeOwn', plus: true });
+}
+
+/** Tags as typed: split on commas, trimmed only here (on save), empty ones dropped, each once. */
+export function parseTags(input: string): string[] {
+  return [...new Set(input.split(',').map(t => t.trim()).filter(Boolean))];
+}
+/** Every tag in use, A to Z, for the tag filter. */
+export const allTags = (items: Item[]) => [...new Set(items.flatMap(i => i.tags))].sort((a, b) => a.localeCompare(b));
+/** Search: every word must appear in the name, note, file name or a tag (any case). tag: only items with that tag. */
+export function searchItems(items: Item[], query: string, tag: string | null = null): Item[] {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  return items.filter(i => (tag === null || i.tags.includes(tag)) &&
+    words.every(w => [i.title, i.note, i.filename ?? '', ...i.tags].some(f => f.toLowerCase().includes(w))));
+}
+/** The backup nudge on Home and Backup. none: nothing to back up yet, or the newest backup was checked.
+ *  check: a backup was just shared and still needs its check (pick it again). backup: back up now. */
+export function backupNudge(s: Snapshot, shared: boolean): 'none' | 'backup' | 'check' {
+  if (!s.items.length && s.backup === null) return 'none';
+  if (s.backup?.digest === contentDigest(s)) return 'none';
+  return shared ? 'check' : 'backup';
 }

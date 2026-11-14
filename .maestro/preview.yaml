@@ -60,17 +60,13 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd
 - takeScreenshot: 05-confirmPhrase
 - tapOn: "Go to Home ›"
-- extendedWaitUntil:
-    visible: "How did you hear about KeepMyProof?"
-    timeout: 30000
-- takeScreenshot: 06-heard
-- tapOn: "Skip ›"
 - waitForAnimationToEnd
 - extendedWaitUntil:
     visible: "What you can keep here"
     timeout: 30000
 
-# Sample papers: two in Divorce prep (one checklist line ticked), one in Workplace evidence.
+# Sample papers: two in Divorce or custody (one checklist line ticked), one in Workplace evidence.
+# "How did you hear about KeepMyProof?" comes after the first save.
 - scrollUntilVisible:
     element: "Workplace evidence"
     direction: DOWN
@@ -83,11 +79,19 @@ appId: com.keepmyproof.app
     env:
       TITLE: "Notes from the first lawyer call"
       NOTE: "Ask about the house appraisal and the school calendar."
+- extendedWaitUntil:
+    visible: "How did you hear about KeepMyProof\\?"
+    timeout: 15000
+- takeScreenshot: 06-heard
+- tapOn: "Skip ›"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
 - tapOn: "← Back to Home"
 - scrollUntilVisible:
-    element: "Divorce prep"
+    element: "Divorce or custody"
     direction: DOWN
-- tapOn: "Divorce prep.*"
+- tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -109,9 +113,9 @@ appId: com.keepmyproof.app
 
 # A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
-    element: "Divorce prep"
+    element: "Divorce or custody"
     direction: DOWN
-- tapOn: "Divorce prep.*"
+- tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -175,6 +179,30 @@ appId: com.keepmyproof.app
     direction: DOWN
 - tapOn: "Not now"
 
+# Change passcode, new recovery words, erase everything (each opened, then back).
+- tapOn: "Settings"
+- scrollUntilVisible:
+    element: "Change passcode ›"
+    direction: DOWN
+- tapOn: "Change passcode ›"
+- waitForAnimationToEnd
+- takeScreenshot: 15-changeCode
+- tapOn: "← Back"
+- scrollUntilVisible:
+    element: "Make new recovery words ›"
+    direction: DOWN
+- tapOn: "Make new recovery words ›"
+- waitForAnimationToEnd
+- takeScreenshot: 16-renew
+- tapOn: "← Back"
+- scrollUntilVisible:
+    element: "Erase everything on this phone…"
+    direction: DOWN
+- tapOn: "Erase everything on this phone…"
+- waitForAnimationToEnd
+- takeScreenshot: 17-erase
+- tapOn: "Cancel"
+
 # Lock, and the forgotten-passcode reset.
 - tapOn: "Settings"
 - scrollUntilVisible:
@@ -185,7 +213,7 @@ appId: com.keepmyproof.app
     visible: "Your papers are locked"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 15-lock
+- takeScreenshot: 18-lock
 - tapOn: "Forgot the passcode\\? ›"
 - waitForAnimationToEnd
-- takeScreenshot: 16-reset
+- takeScreenshot: 19-reset

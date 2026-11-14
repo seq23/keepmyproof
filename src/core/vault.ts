@@ -1,14 +1,16 @@
 import { b64, decode, hash, open, recoveryKey, seal, unb64, utf8, type Random } from './crypto';
-import { calendarDay } from './dates';
+import { calendarDay, happenedKey, happenedValue } from './dates';
 import { contentDigest, empty, validate, type Item, type Snapshot } from './model';
 export interface AtomicStore { read(): Promise<string | null>; write(ciphertext: string): Promise<void> }
 export const FREE_LIMIT = 25;
 export function mayAdd(count: number, plus: boolean): boolean { return plus || count < FREE_LIMIT; }
-const day = (v: string | null) => v === null ? null : calendarDay(v);
-/** Newest first by the day it happened (the user's date), or the day it was saved when that is unknown;
- *  same day: the later save first. */
-const shownDay = (i: Item) => calendarDay(i.happenedOn ?? i.savedOn);
+const day = happenedValue;
+/** Newest first by the day it happened (the user's date, then the time if one was typed), or the day it
+ *  was saved when that is unknown; same day and time: the later save first. */
+const shownDay = (i: Item) => i.happenedOn === null ? calendarDay(i.savedOn) : happenedKey(i.happenedOn);
 export const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
+/** A replacement file for an item (Change it → Replace the file). */
+export interface Replacement { filename: string; mime: string; bytes: string }
 export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'>;
 export class Vault {
   private state: Snapshot = empty();
@@ -31,26 +33,40 @@ export class Vault {
     };
     const result = this.queue.then(run); this.queue = result.catch(() => {}); return result;
   }
-  async add(draft: Draft, plus: boolean) {
-    const id = hash(this.random(32));
+  async add(draft: Draft, plus: boolean) { return (await this.addMany([draft], plus))[0]; }
+  /** Several items in one save (several photos picked at once). All or nothing: past the free limit,
+   *  none is added and ITEM_LIMIT is thrown. */
+  async addMany(drafts: Draft[], plus: boolean): Promise<string[]> {
+    const ids = drafts.map(() => hash(this.random(32)));
     await this.mutate(s => {
-      if (!mayAdd(s.items.length, plus)) throw Error('ITEM_LIMIT');
-      if (draft.tags.length && !plus) throw Error('PLUS_REQUIRED');
-      s.items.push({ ...draft, happenedOn: day(draft.happenedOn), id, savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
-      if (draft.checklist) delete s.ticks[`${draft.folder}/${draft.checklist}`];
-    }); return id;
+      if (!plus && s.items.length + drafts.length > FREE_LIMIT) throw Error('ITEM_LIMIT');
+      drafts.forEach((draft, n) => {
+        if (draft.tags.length && !plus) throw Error('PLUS_REQUIRED');
+        s.items.push({ ...draft, happenedOn: day(draft.happenedOn), id: ids[n], savedOn: this.now(), changedOn: null, history: [], sha256: draft.bytes === null ? null : hash(unb64(draft.bytes)) });
+        if (draft.checklist) delete s.ticks[`${draft.folder}/${draft.checklist}`];
+      });
+    }); return ids;
   }
-  async edit(id: string, change: Pick<Item,'title'|'note'|'happenedOn'|'checklist'|'tags'>, confirmed: boolean, plus: boolean) {
+  /** Change an item. The earlier version is kept in its history, including the folder it was in and the
+   *  file it held when the change moves it (folder) or replaces its file (file). "Saved on" never changes. */
+  async edit(id: string, change: Pick<Item,'title'|'note'|'happenedOn'|'checklist'|'tags'> & { folder?: string; file?: Replacement }, confirmed: boolean, plus: boolean) {
     if (!confirmed) throw Error('CONFIRM_REQUIRED');
     await this.mutate(s => {
       const item = s.items.find(i => i.id === id); if (!item) throw Error('ITEM_MISSING');
       if (!plus && JSON.stringify(change.tags) !== JSON.stringify(item.tags)) throw Error('PLUS_REQUIRED');
-      const changedOn = this.now();
-      item.history.push({ title: item.title, note: item.note, happenedOn: item.happenedOn, checklist: item.checklist, tags: item.tags, changedOn });
-      Object.assign(item, change, { happenedOn: day(change.happenedOn), changedOn });
+      if (change.file && item.kind === 'note') throw Error('fileRequired');
+      const changedOn = this.now(), { folder, file, ...rest } = change;
+      item.history.push({ title: item.title, note: item.note, happenedOn: item.happenedOn, checklist: item.checklist, tags: item.tags, changedOn,
+        folder: item.folder, filename: item.filename, sha256: item.sha256 });
+      Object.assign(item, rest, { happenedOn: day(change.happenedOn), changedOn });
+      if (folder !== undefined) item.folder = folder;
+      if (file) Object.assign(item, { filename: file.filename, mime: file.mime, bytes: file.bytes, sha256: hash(unb64(file.bytes)) });
       if (item.checklist) delete s.ticks[`${item.folder}/${item.checklist}`];
     });
   }
+  /** New recovery words make every earlier backup the old words' backup: the check is cleared so the
+   *  app asks for a new backup. */
+  async forgetBackup() { await this.mutate(s => { s.backup = null; }); }
   async remove(id: string, confirmed: boolean) {
     if (!confirmed) throw Error('CONFIRM_REQUIRED');
     await this.mutate(s => { if (!s.items.some(i => i.id === id)) throw Error('ITEM_MISSING'); s.items = s.items.filter(i => i.id !== id); });
@@ -68,8 +84,9 @@ export class Vault {
     await this.mutate(s => { s.lines = { ...s.lines, [folder]: [...(s.lines?.[folder] ?? []), { id, title: title.trim() }] }; });
     return id;
   }
+  /** A folder's items, newest first. Leaving items out (ids) is free; a date range is Plus. */
   items(folder: string, selection?: { ids?: string[]; from?: string; to?: string }, plus = false): Item[] {
-    if (selection && !plus) throw Error('PLUS_REQUIRED');
+    if ((selection?.from || selection?.to) && !plus) throw Error('PLUS_REQUIRED');
     return this.snapshot().items.filter(i => i.folder === folder && (!selection ||
       ((!selection.ids || selection.ids.includes(i.id)) && (!selection.from || (i.happenedOn !== null && calendarDay(i.happenedOn) >= calendarDay(selection.from))) &&
       (!selection.to || (i.happenedOn !== null && calendarDay(i.happenedOn) <= calendarDay(selection.to)))))).sort(newestFirst);
