@@ -543,6 +543,12 @@ export const strings = {
     "给某一行添加内容后，它会自动勾选。",
     "줄에 항목을 추가하면 자동으로 체크돼요."
   ],
+  "stateRules": [
+    "Your state's rules ›",
+    "Las reglas de su estado ›",
+    "您所在州的规定 ›",
+    "거주하는 주의 규정 ›"
+  ],
   "newest": [
     "Items, newest first",
     "Documentos, el más reciente primero",

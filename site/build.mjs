@@ -330,7 +330,7 @@ const hubPath = (hubs, topicId, lang) => (lang === 'en' ? '/' : `/${lang}/`) + h
 const hubFor = (hubs, topicId, lang) => hubs[topicId][lang] ?? HUBS_CJK[topicId][lang];
 const fill = (s, code, l = 'en') => String(s).replace(/\{state_es\}/g, stateName(code, l === 'en' ? 'es' : l)).replace(/\{state\}/g, stateName(code, l === 'es' ? 'es' : l));
 function subtopicLabel(t, lang) {
-  const s = String(t).replace(/^\{state(?:_es)?\}(?:'s)?\s*/, '').replace(/\s+(?:in|en|de|for|para|del)\s+\{state(?:_es)?\}/g, '')
+  const s = String(t).replace(/^\{state(?:_es)?\}(?:'s)?\s*(?:的|에서|의|에)?\s*/, '').replace(/\s+(?:in|en|de|for|para|del)\s+\{state(?:_es)?\}/g, '')
     .replace(/\{state(?:_es)?\}\s*(?:的|의)?/g, lang === 'es' ? 'cada estado' : lang === 'en' ? 'each state' : '').replace(/\s*[(（]\s*[)）]/g, '').replace(/\s*[:,：]\s*$/, '').trim();
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -962,7 +962,7 @@ export function renderAll(input = loadFacts()) {
   // KMP_PREVIEW=1 (a branch preview, never production): every response says noindex, and robots.txt asks crawlers to stay out.
   const preview = process.env.KMP_PREVIEW === '1';
   if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
-  files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
+  files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  Cache-Control: public, max-age=0, must-revalidate, no-transform\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
   if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
   return { files, pages, stops, model };
 }
