@@ -8,8 +8,11 @@ const day = happenedValue;
 /** Sort key: the day it happened (the user's date, then the time if one was typed); with no date, the
  *  photo's own "taken" time; else the day it was saved. Same key: the later save first. */
 const shownDay = (i: Item) => i.happenedOn !== null ? happenedKey(i.happenedOn) : i.takenOn ? happenedKey(i.takenOn) : calendarDay(i.savedOn);
-/** Newest first: the day it happened, else the photo's own date, else the day it was saved. */
-export const newestFirst = (a: Item, b: Item) => shownDay(b).localeCompare(shownDay(a)) || b.savedOn.localeCompare(a.savedOn);
+/** Larger first, by plain code-unit order (ISO dates sort as text; localeCompare collation is not used). */
+const desc = (x: string, y: string) => x < y ? 1 : x > y ? -1 : 0;
+/** Newest first: the day it happened, else the photo's own date, else the day it was saved. Same day (photos
+ *  saved together with one typed date): the photo's own taken time, newest first, then the later save. */
+export const newestFirst = (a: Item, b: Item) => desc(shownDay(a), shownDay(b)) || desc(a.takenOn ?? '', b.takenOn ?? '') || desc(a.savedOn, b.savedOn);
 /** A replacement file for an item (Change it → Replace the file). */
 export interface Replacement { filename: string; mime: string; bytes: string }
 export type Draft = Pick<Item, 'folder'|'checklist'|'kind'|'title'|'note'|'happenedOn'|'filename'|'mime'|'bytes'|'tags'> & Pick<Partial<Item>, 'takenOn'>;

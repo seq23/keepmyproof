@@ -11,7 +11,7 @@ export const HEARD_SUBJECT = 'How I found KeepMyProof';
 /** The email body: the choice only, in English so support can read every answer. */
 export const HEARD_WORDS: Record<Heard, string> = {
   google: 'Google search', ai: 'ChatGPT or another AI tool', store: 'App Store or Google Play search',
-  advocate: 'A lawyer, advocate or counsellor', friend: 'A friend or family member', social: 'Social media', other: 'Other',
+  advocate: 'A lawyer, advocate or counselor', friend: 'A friend or family member', social: 'Social media', other: 'Other',
 };
 export const isHeardAnswer = (v: unknown): v is HeardAnswer => v === 'skip' || (HEARD as readonly unknown[]).includes(v);
 export interface HeardStore { read(): Promise<string | null>; write(value: HeardAnswer): Promise<void> }

@@ -1239,6 +1239,18 @@ export const strings = {
     "保存前，请选择一个文件或照片并起个名称。",
     "저장하기 전에 파일이나 사진을 고르고 이름을 정하세요."
   ],
+  "noteNameRequired": [
+    "Give your note a name before saving.",
+    "Póngale un nombre a su nota antes de guardar.",
+    "保存前，请给您的笔记起个名称。",
+    "저장하기 전에 메모에 이름을 정하세요."
+  ],
+  "tagsLocked": [
+    "Tags (Plus) ›",
+    "Etiquetas (Plus) ›",
+    "标签（Plus）›",
+    "태그 (Plus) ›"
+  ],
   "invalidDate": [
     "Type the date as MM/DD/YYYY, for example 11/03/2026.",
     "Escriba la fecha como MM/DD/AAAA, por ejemplo 11/03/2026.",
@@ -1306,7 +1318,7 @@ export const strings = {
     "App Store 또는 Google Play 검색"
   ],
   "heardAdvocate": [
-    "A lawyer, advocate or counsellor",
+    "A lawyer, advocate or counselor",
     "Un abogado, defensor o consejero",
     "律师、维权人员或咨询师",
     "변호사, 옹호 활동가 또는 상담사"
@@ -1646,6 +1658,12 @@ export const strings = {
     "Obteniendo los precios de {store}…",
     "正在从 {store} 获取价格…",
     "{store}에서 가격을 불러오는 중이에요…"
+  ],
+  "storeMissing": [
+    "{store} didn't send the Plus prices this time. Try again in a moment. Nothing was charged.",
+    "{store} no envió los precios de Plus esta vez. Vuelva a intentarlo en un momento. No se cobró nada.",
+    "{store} 这次没有返回 Plus 的价格。请稍后再试。没有扣任何费用。",
+    "{store}에서 이번에는 Plus 가격을 보내지 않았어요. 잠시 후 다시 시도하세요. 요금은 청구되지 않았어요."
   ],
   "storeFailed": [
     "Couldn't reach {store}. Check your connection and try again. Nothing was charged.",

@@ -14,21 +14,25 @@ import type { HeardStore } from '../core/heard';
 setPbkdf2(phonePbkdf2);
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
+// The launch clean-up (startup): a new install forgets what an earlier install left in the Keychain. Every
+// Keychain write waits for it, so a language picked on the first screen is never wiped by it.
+let launchDone: Promise<unknown> = Promise.resolve();
+const write = async (key: string, value: string, opts = options) => { await launchDone; await SecureStore.setItemAsync(key, value, opts); };
 const AUTH = 'kmp-lock-v1', KEY = 'kmp-key-v1', BIO = 'kmp-bio-v1', LANG = 'kmp-lang-v1', REMOVE = 'kmp-remove-original-v1', HEARD = 'kmp-heard-v1';
 /** The language picked on the first screen or in Settings. null = follow the phone's language. */
 export const langChoice = {
   read: async (): Promise<Lang | null> => { const v = await SecureStore.getItemAsync(LANG, options); return isLang(v) ? v : null; },
-  write: async (lang: Lang) => { await SecureStore.setItemAsync(LANG, lang, options); },
+  write: async (lang: Lang) => { await write(LANG, lang); },
 };
 /** Settings: offer to remove the original from Photos after a photo import ('ask', the default, or 'never'). */
 export const removePrefStore: PrefStore = {
   read: () => SecureStore.getItemAsync(REMOVE, options),
-  write: async v => { await SecureStore.setItemAsync(REMOVE, v, options); },
+  write: async v => { await write(REMOVE, v); },
 };
 /** How the person found the app (src/core/heard.ts). Kept on this phone only. */
 export const heardStore: HeardStore = {
   read: () => SecureStore.getItemAsync(HEARD, options),
-  write: async v => { await SecureStore.setItemAsync(HEARD, v, options); },
+  write: async v => { await write(HEARD, v); },
 };
 let db: SQLite.SQLiteDatabase | undefined;
 export async function database(): Promise<InstallStore & { erase(): Promise<void> }> {
@@ -69,13 +73,21 @@ export async function hasSetup() {
   const installed = new File(new Directory(Paths.document, 'vault'), 'vault.sqlite').exists;
   return startInstall({ installed, store: await database(), hasLock: async () => !!(await SecureStore.getItemAsync(AUTH, options)), forget: forgetKeychain });
 }
+/** Launch: fresh = no vault file on this phone, so there is nothing to open and the first screen can show at
+ *  once; done = the clean-up and the install check (true when a vault is set up). Keychain writes wait for it. */
+export function startup(): { fresh: boolean; done: Promise<boolean> } {
+  const fresh = !new File(new Directory(Paths.document, 'vault'), 'vault.sqlite').exists;
+  const done = cleanStartupTemps().then(hasSetup);
+  launchDone = done.catch(() => {});
+  return { fresh, done };
+}
 export async function biometricCheck(prompt: string): Promise<boolean> {
   if (!(await LocalAuth.hasHardwareAsync()) || !(await LocalAuth.isEnrolledAsync())) return false;
   const r = await LocalAuth.authenticateAsync({ promptMessage: prompt, disableDeviceFallback: true, biometricsSecurityLevel: 'strong' });
   return r.success;
 }
 export async function setup(code: string, words: string, biometrics: boolean) {
-  const store = await database();
+  await launchDone; const store = await database();
   if (await store.read() || await SecureStore.getItemAsync(AUTH, options)) throw Error('SETUP_EXISTS');
   const key = random(32); const lock = await createLock(code, words, biometrics, random);
   await SecureStore.setItemAsync(KEY, b64(key), options);
