@@ -3,7 +3,7 @@
 Keep the papers you already have, private on this phone.
 
 Organize photos, files and notes in five folders with suggested checklists.
-Keep your own happened-on date and the date saved on this phone. Make a PDF,
+Write down the date something happened, next to the date you saved it. Make a PDF,
 save original files, and back up an encrypted copy to your own cloud drive.
 
 No account. No ads. No analytics. Free for your first 25 items. Opening your
