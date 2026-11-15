@@ -1,6 +1,7 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View, useColorScheme, type TextProps } from 'react-native';
 import type { Lang } from './core/model';
+import { typingDate } from './core/dates';
 // The approved brand (design-keepmyproof, 6 Nov 2026): archive ground, graphite text, lockbox green for what
 // you act on, brass-soft for nudges, deadline red only for a real failure. Light and dark follow the phone.
 const palettes = {
@@ -39,14 +40,42 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
   const c = useContext(Theme);
   return <View style={{ padding:12, gap:8, borderRadius:12, borderWidth:1, borderColor:c.line, backgroundColor: tone === 'gold' ? c.goldbg : tone === 'red' ? c.redbg : tone === 'ok' ? c.okbg : c.card }}>{children}</View>;
 }
-/** numeric: a 6-digit passcode. keyboard="date": the number pad, for a date typed as digits (the app adds the slashes). */
+/** numeric: a 6-digit passcode. keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
+ *  Every text box in the app is this one. The phone's box owns the text (uncontrolled, `defaultValue`): the app never
+ *  writes text back into it while she types. A controlled `value` on a screen that re-renders on each key fights the
+ *  native box on React Native's new architecture, and the phone then drops change events (ApprovalPrep lost letters,
+ *  14 Nov 2026). The parent hears every change, and again on blur / end of editing with the box's own text, so a
+ *  change the phone never reported is still saved. The mask (digits only for a passcode, slashes for a date) is applied
+ *  to what the parent hears on every key, but written into the box only when she leaves it, so it never fights her
+ *  keys or moves the cursor. Only a genuinely new value from the parent (a cleared box, a loaded item) replaces the
+ *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one. */
 export function Field({ label, value, onChange, secret, multiline, numeric, placeholder, keyboard }: {
   label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string; keyboard?: 'date';
 }) {
   const c = useContext(Theme), lang = useContext(LangContext);
-  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput accessibilityLabel={label} testID={label} value={value} onChangeText={onChange}
+  // What the box holds now, as last reported by the phone (after the mask).
+  const typed = useRef(value);
+  // Values handed up since the parent last caught up: an echo of one of these is not a new value.
+  const handed = useRef(new Set<string>());
+  // The text a re-created box starts with, and its key.
+  const [box, setBox] = useState({ text: value, n: 0 });
+  useEffect(() => {
+    if (value === typed.current) { handed.current.clear(); return; }
+    if (handed.current.has(value)) return;
+    typed.current = value; handed.current.clear(); setBox(b => ({ text: value, n: b.n + 1 }));
+  }, [value]);
+  const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, 6) : keyboard === 'date' ? typingDate(raw) : raw;
+  const hand = (next: string) => { if (next === typed.current) return; typed.current = next; handed.current.add(next); onChange(next); };
+  const settle = (raw: unknown) => {
+    if (typeof raw !== 'string') return;
+    const next = masked(raw); hand(next);
+    if (next !== raw) setBox(b => ({ text: next, n: b.n + 1 }));
+  };
+  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput key={box.n} accessibilityLabel={label} testID={label} defaultValue={box.text}
+    onChangeText={raw => hand(masked(raw))} onEndEditing={e => settle(e?.nativeEvent?.text)}
+    onBlur={e => settle((e?.nativeEvent as { text?: unknown } | undefined)?.text)}
     secureTextEntry={secret} multiline={multiline} keyboardType={numeric || keyboard === 'date' ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
-    placeholder={placeholder} placeholderTextColor={c.muted} maxLength={numeric ? 6 : keyboard === 'date' ? 10 : undefined}
+    placeholder={placeholder} placeholderTextColor={c.muted}
     style={{ minHeight:48, padding:12, borderRadius:6, borderWidth:1, borderColor:c.muted, color:c.fg, backgroundColor:c.card, fontSize:15, fontFamily: bodyFont(lang),
       ...(multiline ? { minHeight:100, textAlignVertical:'top' as const } : {}) }} /></View>;
 }

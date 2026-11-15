@@ -23,6 +23,7 @@ export const locks: LockStore = {
 };
 export const appLock = new AppLock(locks);
 export async function hasSetup() { return kept.has('lock'); }
+export function startup() { return { fresh: !kept.has('lock'), done: hasSetup() }; }
 // A browser has no Face ID: the preview answers yes so the screens after it can be seen.
 export async function biometricCheck(_prompt: string): Promise<boolean> { return true; }
 export async function setup(code: string, words: string, biometrics: boolean) {

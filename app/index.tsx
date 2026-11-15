@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AppState, BackHandler, Image, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, Share, Switch, Text, View } from 'react-native';
+import { AppState, BackHandler, Image, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, Share, Switch, Text, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getLocales } from 'expo-localization';
 import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
-import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened, typingDate } from '../src/core/dates';
+import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened } from '../src/core/dates';
 import { LockError } from '../src/core/lock';
 import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft, type Replacement } from '../src/core/vault';
 import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
@@ -55,7 +55,7 @@ export default function App() {
   const [viewUri, setViewUri] = useState<string|null>(null), [zoom, setZoom] = useState(false);
   // What the app is doing while busy, said in words (sim review finding 9), and the Plus prices' state.
   const [busyLabel, setBusyLabel] = useState<StringKey>('working');
-  const [productsState, setProductsState] = useState<'loading'|'ready'|'failed'>('loading');
+  const [productsState, setProductsState] = useState<'loading'|'ready'|'failed'|'missing'>('loading');
   const autoBio = useRef(false), biometricRef = useRef(false); biometricRef.current = biometric;
   const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
   const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
@@ -70,6 +70,8 @@ export default function App() {
   const [heard, setHeard] = useState<HeardAnswer|null>(null), [heardFrom, setHeardFrom] = useState<'home'|'settings'|'folder'>('home');
   const resume = useRef<Screen>('home'); const screenRef = useRef<Screen>(screen); screenRef.current = screen;
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
+  // Where Plus's Back / Not now returns: Home, or the half-filled add screen its locked Tags row opened it from.
+  const [plusBack, setPlusBack] = useState<'home'|'add'>('home');
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
   const [from, setFrom] = useState(''), [to, setTo] = useState(''), [cover, setCover] = useState('');
   const busyRef = useRef(false), sharing = useRef(false), mounted = useRef(true);
@@ -88,13 +90,17 @@ export default function App() {
   useEffect(() => {
     mounted.current = true;
     void device.bioTypes().then(types => { if (mounted.current) setBio(bioKind(Platform.OS, types)); });
-    // hasSetup first: on a new install it clears what an earlier install left in the Keychain, so the
+    // The install check first: on a new install it clears what an earlier install left in the Keychain, so the
     // language, the Photos setting and the "how did you hear" answer are read only after that.
-    void device.cleanStartupTemps().then(device.hasSetup).then(async exists => {
+    // A new install has nothing to open: the first screen shows at once and the clean-up runs behind it
+    // (device.startup; anything it would clear is written only after it finishes). Sim retest: 8s of "Opening your papers…".
+    const start = device.startup();
+    if (start.fresh) { setScreen('first'); setReady(true); }
+    void start.done.then(async exists => {
       void device.langChoice.read().then(l => { if (l && mounted.current) setLang(l); }).catch(() => {});
       void readRemovePref(device.removePrefStore).then(p => { if (mounted.current) setRemovePref(p); });
       void readHeard(device.heardStore).then(h => { if (mounted.current) setHeard(h); }).catch(() => {});
-      setScreen(exists ? 'lock':'first');
+      if (!start.fresh) setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
     if (!PREVIEW_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
@@ -143,7 +149,9 @@ export default function App() {
   // a Try again button instead of a general error (sim review finding 1).
   function loadProducts() {
     setProductsState('loading');
-    void billing.products().then(p => { setProducts(p); setProductsState('ready'); }).catch(() => { setProducts([]); setProductsState('failed'); });
+    // "Couldn't reach" only for a real network or StoreKit error; prices that came back but did not match say so.
+    void billing.products().then(p => { setProducts(p); setProductsState('ready'); })
+      .catch(e => { setProducts([]); setProductsState((e as Error).message === 'STORE_PRODUCTS_MISSING' ? 'missing' : 'failed'); });
   }
   useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
   const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
@@ -158,6 +166,7 @@ export default function App() {
     else if (screen === 'add' || screen === 'detail' || screen === 'pdf') navigate('folder');
     else if (screen === 'restore') navigate(vault ? 'backup' : 'first');
     else if (screen === 'heard') navigate(heardFrom);
+    else if (screen === 'plus' && plusBack === 'add') { setPlusBack('home'); navigate('add'); }
     else navigate('home');
   }
   useEffect(() => { const sub = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -176,8 +185,9 @@ export default function App() {
   const displayDay = (d: string | null) => d ? showHappened(d, LOCALE[lang]) : t('unknown');
   // Typing a date or time unticks "I'm not sure of the date" (finding 3); a clash is refused inline, never dropped.
   const typedDate = (set: (v: string) => void) => (v: string) => { set(v); setDateError(''); if (v.trim()) setUnknown(false); };
-  // The date opens the number pad and the slashes go in by themselves (finding 3); an empty date is "not sure".
-  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} keyboard="date" onChange={v => typedDate(setDateInput)(typingDate(v))} />
+  // The date opens the number pad and the slashes go in by themselves (finding 3; Field puts them in the box when she
+  // leaves it, so fast typing never loses a digit); an empty date is "not sure".
+  const dateFields = <><Field label={t('when')} placeholder={t('dateFormat')} value={dateInput} keyboard="date" onChange={typedDate(setDateInput)} />
     <Button quiet title={t('today')} onPress={() => { const d = new Date(); typedDate(setDateInput)(`${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}/${d.getFullYear()}`); }} />
     <Field label={t('timeLabel')} placeholder={t('timeFormat')} value={timeInput} onChange={typedDate(setTimeInput)} />
     <Button quiet checked={unknown} title={`${unknown ? '✓':'○'} ${t('unknownCheck')}`} onPress={() => { setUnknown(v => !v); setDateError(''); }} />
@@ -202,6 +212,7 @@ export default function App() {
   async function saveDraft() {
     if (!vault) return;
     const several = !editing && picked.length > 1;
+    if (draft.kind === 'note' && !draft.title.trim()) throw Error('noteNameRequired');
     if ((!several && !draft.title.trim()) || (draft.kind !== 'note' && !draft.bytes)) throw Error('fileRequired');
     let happenedOn: string | null;
     try { happenedOn = resolveHappened({ date:dateInput, time:timeInput, unknown }); }
@@ -371,7 +382,8 @@ export default function App() {
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
     {lines.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
-    {ent.plus && <Field label={t('tags')} value={tagInput} onChange={setTagInput} />}
+    {ent.plus ? <Field label={t('tags')} value={tagInput} onChange={setTagInput} />
+      : <Button quiet title={t('tagsLocked')} onPress={() => { setPlusBack('add'); navigate('plus'); }} disabled={busy} />}
     <P muted>{t('addingDate')}</P>
     {btn('cancel', () => { setDraft(blankDraft(folder)); setPicked([]); setReplacement(null); navigate(editing ? 'detail' : 'folder'); },true)}</>;
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
@@ -382,8 +394,7 @@ export default function App() {
       {/* Full screen, pinch to zoom (iOS scroll view zoom), ✕ Close (finding 8). */}
       <Modal visible={zoom} animationType="fade" onRequestClose={() => setZoom(false)} supportedOrientations={['portrait','landscape']}>
         <SafeAreaView style={{ flex:1, backgroundColor:'#000' }}>
-          <ScrollView maximumZoomScale={5} minimumZoomScale={1} centerContent bouncesZoom contentContainerStyle={{ flexGrow:1, justifyContent:'center' }}>
-            <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{ width:'100%', aspectRatio:1, flexGrow:1 }} resizeMode="contain" accessibilityLabel={item.title} /></ScrollView>
+          <ZoomPhoto uri={`data:${item.mime};base64,${item.bytes}`} label={item.title} />
           <View style={{ padding:16 }}><Button title={t('closeView')} onPress={() => setZoom(false)} /></View>
         </SafeAreaView></Modal></>}
     {/* Saved documents open inside the app (finding 14). */}
@@ -408,7 +419,7 @@ export default function App() {
     <Card><P>{t('includeHistory')}</P><Switch accessibilityLabel={t('includeHistory')} value={withHistory} onValueChange={setWithHistory} /></Card>
     <P muted>{t('pdfWarning')}</P><P muted>{t('unsupportedPdf')}</P>
     {ent.plus && <><Button title={`${selection?'✓':'○'} ${t('chosen')}`} onPress={() => setSelection(!selection)} />
-      {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} keyboard="date" onChange={v => setFrom(typingDate(v))} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} keyboard="date" onChange={v => setTo(typingDate(v))} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
+      {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} keyboard="date" onChange={setFrom} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} keyboard="date" onChange={setTo} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
     {btn('savePdf', doRun(async () => {
       if (!selected.length) throw Error('NOTHING_CHOSEN');
       const items = vault.items(folder, { ids:selected, from:selection && from ? dateBoundary(from,false):undefined, to:selection && to ? dateBoundary(to,true):undefined }, ent.plus);
@@ -467,19 +478,21 @@ export default function App() {
       if (!(await sendHeard(heard, Linking))) setNotice(t('heardNoMail'));
     }))}
     {heard && heard !== 'skip' ? btn('heardDone', () => navigate(heardFrom), true)
-      : btn('heardSkip', doRun(async () => { await saveHeard(device.heardStore, 'skip'); setHeard('skip'); navigate(heardFrom); }), true)}</>;
+      // Skip is instant: the answer is written to the Keychain after the screen has moved on.
+      : btn('heardSkip', () => { setHeard('skip'); navigate(heardFrom); void saveHeard(device.heardStore, 'skip').catch(() => {}); }, true)}</>;
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolder.trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
     {productsState === 'loading' && <P muted>{t('storeLoading', { store: storeName })}</P>}
+    {productsState === 'missing' && <Card tone="gold"><P>{t('storeMissing', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {productsState === 'failed' && <Card tone="gold"><P>{t('storeFailed', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {products.map(p => { const launch=activeLaunch(p);const price=launch?.price ?? p.price;
       return <Card key={p.id}><P heading>{launch ? t('launch',{price,normal:launch.normalPrice}):t(p.plan==='lifetime'?'lifetimePrice':'annualPrice',{price})}</P>
         <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':'annualTerms')}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
-          onPress={doRun(async () => {setEnt(await billing.purchase(p.id));navigate('home');})} />{legal}</Card>;
-    })}{btn('notNow', () => navigate('home'),true)}<P muted>{t('storeConfirm')}</P>
+          onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
+    })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
   else body = <P>{t('empty')}</P>;
   // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
@@ -496,7 +509,7 @@ export default function App() {
   return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
     <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','plus','custom'].includes(screen)?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
+      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','custom'].includes(screen) || (screen === 'plus' && plusBack !== 'add')?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
       {!!error && screen !== 'add' && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
       {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && screen !== 'add' && <P muted>{t(busyLabel)}</P>}{body}
     </ScrollView>
@@ -508,6 +521,18 @@ export default function App() {
   </SafeAreaView></LangContext.Provider></Theme.Provider>;
 }
 
+/** Full-screen photo: exactly the space left on screen, the picture contain-fit and centred in it, pinch to
+ *  zoom (iOS scroll view zoom). A '100%' width with aspectRatio 1 made a 794pt square on a 402pt phone (sim retest). */
+function ZoomPhoto({ uri, label }: { uri: string; label: string }) {
+  const win = useWindowDimensions();
+  const [area, setArea] = useState<{ width: number; height: number } | null>(null);
+  const size = area ?? { width: win.width, height: win.height * .7 };
+  return <View style={{ flex:1 }} onLayout={e => { const { width, height } = e.nativeEvent.layout; if (width > 0 && height > 0) setArea({ width, height }); }}>
+    <ScrollView style={{ flex:1 }} maximumZoomScale={5} minimumZoomScale={1} centerContent bouncesZoom
+      showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false} contentContainerStyle={{ width:size.width, height:size.height, alignItems:'center', justifyContent:'center' }}>
+      <Image source={{ uri }} style={{ width:size.width, height:size.height }} resizeMode="contain" accessibilityLabel={label} />
+    </ScrollView></View>;
+}
 /** A saved photo or picture file that can be drawn in place. */
 const isPicture = (i: Item) => !!i.bytes && (i.kind === 'photo' || !!i.mime?.startsWith('image/'));
 // One big tappable folder door on Home: drawing, name, one grey sub line, "Open ›" on the right.
