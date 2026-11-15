@@ -3,7 +3,7 @@
 Guarde los documentos que ya tiene, privados en este teléfono.
 
 Organice fotos, archivos y notas en cinco carpetas con listas sugeridas.
-Guarde la fecha que usted indique y la fecha en que lo guardó en este teléfono.
+Anote la fecha en que pasó algo, junto a la fecha en que lo guardó.
 Haga un PDF, guarde los originales y copie sus documentos cifrados a su nube.
 
 Sin cuenta. Sin anuncios. Sin análisis de uso. Gratis para sus primeros 25
