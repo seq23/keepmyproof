@@ -8101,16 +8101,916 @@
    "state": "Crawled - currently not indexed",
    "last_crawl": "2026-11-04T05:11:24Z",
    "inspected_at": "2026-11-14T11:24:44.616Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:04:00Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:28:48Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:09:49Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:19:28Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T02:26:54Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:36:33Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:52:58Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:26:34Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:15:48Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:57:51Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:18:22Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:39:25Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:38:06Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:46:34Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T06:02:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T03:36:57Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:07:45Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:16:50Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T09:22:06Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/misuri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:18:28Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T01:35:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T23:44:35Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:14:11Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T00:19:57Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:11:11Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/nuevo-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:10:28Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/new-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T07:09:43Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T12:33:45Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/new-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-12T12:45:45Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/nueva-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:44:43Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:34:02Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T21:59:26Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T09:48:55Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:21:59Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:11:15Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:05:48Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:25:39Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:35:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T07:17:27Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T07:24:36Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/pensilvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:07:31Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/south-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:25:24Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/south-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:29:42Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:56:06Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/pennsylvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T10:37:47Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/tennessee": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:40:36Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/dakota-del-sur": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:17:11Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:40:13Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:26:23Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:18:26Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:53:05Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:06:45Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T11:28:46Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:54:34Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:16:18Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T21:55:03Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T00:56:58Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/west-virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:07:43Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:56:41Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/virginia-occidental": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T10:23:00Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:12:46Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/free-claim-help/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T23:02:54Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:50:03Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/ayuda-gratuita-con-reclamos-del-va-oficiales/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:05:13Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:55:35Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T05:56:53Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:48:13Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:48:54Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:46:55Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:49:34Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:05:54Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:06:48Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T13:02:23Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:55:32Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T20:23:07Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:17:46Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:55:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T12:14:10Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:19:07Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:00:01Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:13:38Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-10T13:15:35Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/distrito-de-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:01:49Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:08:43Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:46:14Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:32:09Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:21:29Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/hawaii": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:44:32Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/hawai": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:49:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/idaho": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:10:28Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:55:59Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:57:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:49:51Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T20:22:20Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T20:28:19Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:34:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T16:45:24Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:46:01Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T23:51:10Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:55:03Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:49:06Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/louisiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:28:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:10:43Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T22:34:47Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:59:05Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:55:51Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:09:50Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:34:50Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:41:32Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T06:46:41Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T08:14:57Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:52:17Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:35:22Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/mississippi": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:15:01Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:07:56Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:00:06Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/misuri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:31:09Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:18:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/nebraska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:49:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:43:33Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:46:52Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:23:48Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:55:57Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/new-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:41:44Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:53:22Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:32:19Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:02:12Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:21:20Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:13:29Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:26:51Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:27:50Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/oklahoma": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:40:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T21:17:28Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:25:40Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:45:03Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/pennsylvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:23:27Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:22:37Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/pensilvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:55:04Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-10T05:03:32Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/south-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T21:02:40Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:27:46Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/south-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T06:22:14Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/dakota-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:09:19Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:04:30Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:51:03Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:33:20Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:13:18Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/va/state-veterans-affairs-office/utah": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:59:49Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
+  },
+  "https://keepmyproof.com/es/va/oficina-de-asuntos-de-veteranos-como-comunicarse/utah": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:36:22Z",
+   "inspected_at": "2026-11-15T11:25:15.433Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-14T11:24:44.616Z",
+ "generated_at": "2026-11-15T11:25:15.433Z",
  "sitemap_urls": 2689,
- "inspected": 1350,
+ "inspected": 1500,
  "states": {
-  "URL is unknown to Google": 97,
-  "Submitted and indexed": 957,
+  "URL is unknown to Google": 98,
+  "Submitted and indexed": 1022,
   "Discovered - currently not indexed": 233,
-  "Crawled - currently not indexed": 63
+  "Crawled - currently not indexed": 147
  }
 }
