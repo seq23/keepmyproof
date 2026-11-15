@@ -20,7 +20,7 @@ import * as photos from '../src/native/photos';
 import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
-import { Button, Card, Field, LangContext, P, Theme, bodyFont, styles, textProps, usePalette } from '../src/ui';
+import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styles, textProps, usePalette, useTyped } from '../src/ui';
 import { PREVIEW_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
@@ -41,24 +41,25 @@ export default function App() {
   const [error, setError] = useState(''), [notice, setNotice] = useState(''), [backupFailed, setBackupFailed] = useState(false);
   const [vault, setVault] = useState<Vault>(); const vaultRef = useRef<Vault | undefined>(undefined);
   const [, refresh] = useState(0);
-  const [code, setCode] = useState(''), [codeAgain, setCodeAgain] = useState(''), [biometric, setBiometric] = useState(false);
-  const [words, setWords] = useState(''), [wordInput, setWordInput] = useState('');
+  // Typed values: `…Now()` reads what she typed after flushFields(), before the screen redraws (see run()).
+  const [code, setCode, codeNow] = useTyped(''), [codeAgain, setCodeAgain, codeAgainNow] = useTyped(''), [biometric, setBiometric] = useState(false);
+  const [words, setWords] = useState(''), [wordInput, setWordInput, wordInputNow] = useTyped('');
   const [folder, setFolder] = useState(DEFAULT_ADD_FOLDER), [itemId, setItemId] = useState('');
-  const [draft, setDraft] = useState<Draft>(blankDraft(DEFAULT_ADD_FOLDER));
-  const [dateInput, setDateInput] = useState(''), [timeInput, setTimeInput] = useState(''), [unknown, setUnknown] = useState(false), [editing, setEditing] = useState(false);
-  const [dateError, setDateError] = useState(''), [tagInput, setTagInput] = useState('');
+  const [draft, setDraft, draftNow] = useTyped<Draft>(blankDraft(DEFAULT_ADD_FOLDER));
+  const [dateInput, setDateInput, dateInputNow] = useTyped(''), [timeInput, setTimeInput, timeInputNow] = useTyped(''), [unknown, setUnknown] = useState(false), [editing, setEditing] = useState(false);
+  const [dateError, setDateError] = useState(''), [tagInput, setTagInput, tagInputNow] = useTyped('');
   // Several photos picked at once (finding 5); a replacement file while changing an item (finding 7).
   const [picked, setPicked] = useState<Picked[]>([]), [replacement, setReplacement] = useState<Replacement|null>(null);
   const [query, setQuery] = useState(''), [tagPick, setTagPick] = useState<string|null>(null);
   const [withHistory, setWithHistory] = useState(false), [backupShared, setBackupShared] = useState(false);
-  const [wordsMode, setWordsMode] = useState<'setup'|'renew'>('setup'), [currentCode, setCurrentCode] = useState('');
+  const [wordsMode, setWordsMode] = useState<'setup'|'renew'>('setup'), [currentCode, setCurrentCode, currentCodeNow] = useTyped('');
   const [viewUri, setViewUri] = useState<string|null>(null), [zoom, setZoom] = useState(false);
   // What the app is doing while busy, said in words (sim review finding 9), and the Plus prices' state.
   const [busyLabel, setBusyLabel] = useState<StringKey>('working');
   const [productsState, setProductsState] = useState<'loading'|'ready'|'failed'|'missing'>('loading');
   const autoBio = useRef(false), biometricRef = useRef(false); biometricRef.current = biometric;
-  const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder] = useState('');
-  const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine] = useState('');
+  const [confirm, setConfirm] = useState<'edit'|'remove'|null>(null), [newFolder, setNewFolder, newFolderNow] = useTyped('');
+  const [lineOpen, setLineOpen] = useState(false), [newLine, setNewLine, newLineNow] = useTyped('');
   // After a photo import: offer to remove the original from Photos (src/core/original.ts).
   const [removePref, setRemovePref] = useState<RemovePref>(DEFAULT_REMOVE_PREF);
   const [offer, setOffer] = useState<{ assetIds: string[]; itemIds: string[] }|null>(null);
@@ -73,7 +74,7 @@ export default function App() {
   // Where Plus's Back / Not now returns: Home, or the half-filled add screen its locked Tags row opened it from.
   const [plusBack, setPlusBack] = useState<'home'|'add'>('home');
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
-  const [from, setFrom] = useState(''), [to, setTo] = useState(''), [cover, setCover] = useState('');
+  const [from, setFrom, fromNow] = useTyped(''), [to, setTo, toNow] = useTyped(''), [cover, setCover, coverNow] = useTyped('');
   const busyRef = useRef(false), sharing = useRef(false), mounted = useRef(true);
   const billing = purchases();
   const acceptVault = (v: Vault) => {
@@ -134,7 +135,9 @@ export default function App() {
   async function run(job: () => Promise<void>, label: StringKey = 'working') {
     if (busyRef.current) return;
     busyRef.current = true; setBusyLabel(label); setBusy(true); setError(''); setNotice('');
-    try { await job(); refresh(n => n+1); }
+    // Every Save / Next / Unlock / Confirm runs here: the open box finishes editing first, so a long note typed fast
+    // on a slow phone is saved whole (ApprovalPrep sim retest 2). Jobs read typed values with `…Now()` after this.
+    try { await flushFields(); await job(); refresh(n => n+1); }
     catch (e) {
       const key = (e as Error).message;
       if (key === 'ITEM_LIMIT' || key === 'PLUS_REQUIRED') navigate('plus');
@@ -211,6 +214,7 @@ export default function App() {
   }
   async function saveDraft() {
     if (!vault) return;
+    const draft = draftNow(), dateInput = dateInputNow(), timeInput = timeInputNow(), tagInput = tagInputNow();
     const several = !editing && picked.length > 1;
     if (draft.kind === 'note' && !draft.title.trim()) throw Error('noteNameRequired');
     if ((!several && !draft.title.trim()) || (draft.kind !== 'note' && !draft.bytes)) throw Error('fileRequired');
@@ -279,32 +283,33 @@ export default function App() {
     {btn('wroteWords', () => navigate('confirmPhrase'), false, true)}</>;
   else if (screen === 'confirmPhrase') body = <>{wordsMode === 'setup' && <P muted>{t('step4')}</P>}<P heading>{t('confirmWords')}</P><Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('finish', doRun(async () => {
-      if (!equal(b64(recoveryKey(words)), b64(recoveryKey(wordInput)))) throw Error('RECOVERY_INVALID');
+      if (!equal(b64(recoveryKey(words)), b64(recoveryKey(wordInputNow())))) throw Error('RECOVERY_INVALID');
       if (wordsMode === 'renew') {
         // New recovery words (finding 9): saved only after they are typed back; older backups need the old words.
         if (!vault) throw Error('LOCKED');
-        await device.renewRecovery(currentCode, words); await vault.forgetBackup();
+        await device.renewRecovery(currentCodeNow(), words); await vault.forgetBackup();
         setWords(''); setWordInput(''); setCurrentCode(''); setWordsMode('setup'); navigate('backup'); setNotice(t('wordsRenewed')); return;
       }
-      resume.current = 'home'; setHeardFrom('home'); acceptVault(await device.setup(code, words, biometric));
+      resume.current = 'home'; setHeardFrom('home'); acceptVault(await device.setup(codeNow(), words, biometric));
     }), false, true)}</>;
   else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
-    {btn('unlock', doRun(async () => acceptVault(await device.unlock(code)), 'workingCheck'), false, true)}
+    {btn('unlock', doRun(async () => acceptVault(await device.unlock(codeNow())), 'workingCheck'), false, true)}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
     {PREVIEW_BUILD && sample && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
   else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field label={t('newCode')} value={code} onChange={setCode} secret numeric />
     <Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
-    {btn('reset', doRun(async () => { if (code !== codeAgain) throw Error('PASSCODE_INVALID');
-      await device.appLock.reset(code, { words:wordInput }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }), false, true)}
-    {biometric && btn('useBio', doRun(async () => { if (code !== codeAgain) throw Error('PASSCODE_INVALID');
+    {btn('reset', doRun(async () => { const code = codeNow(); if (code !== codeAgainNow()) throw Error('PASSCODE_INVALID');
+      await device.appLock.reset(code, { words:wordInputNow() }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }), false, true)}
+    {biometric && btn('useBio', doRun(async () => { const code = codeNow(); if (code !== codeAgainNow()) throw Error('PASSCODE_INVALID');
       await device.appLock.reset(code, { biometric:true }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }))}<P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'restore') body = <><P heading>{t('restore').replace(/\s*›$/, '')}</P><P>{t('restoreSafety')}</P>
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {!vault && <><Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret /></>}
     {btn('restoreChoose', doRun(async () => { setRestoreData(await files.pickBackup()); }))}
     {restoreData && btn('restore', doRun(async () => {
+      const wordInput = wordInputNow(), code = codeNow(), codeAgain = codeAgainNow();
       validate(JSON.parse(decode(open(restoreData, recoveryKey(wordInput), 'backup-v1'))));
       if (!vault && (!/^\d{6}$/.test(code) || code !== codeAgain)) throw Error('PASSCODE_INVALID');
       resume.current = 'home';
@@ -356,7 +361,7 @@ export default function App() {
         onPress={() => ent.plus ? setLineOpen(true) : navigate('plus')} />
     </View>
     {lineOpen && ent.plus && <Card><Field label={t('lineName')} value={newLine} onChange={setNewLine} />
-      {btn('saveLine', doRun(async () => { await vault.addLine(folder, newLine, ent.plus); setNewLine(''); setLineOpen(false); }))}
+      {btn('saveLine', doRun(async () => { await vault.addLine(folder, newLineNow(), ent.plus); setNewLine(''); setLineOpen(false); }))}
       {btn('cancel', () => { setNewLine(''); setLineOpen(false); }, true)}</Card>}
     <P muted>{t('autoTick')}</P>
     {stateRulesUrl(folder, lang) && <Button title={t('stateRules')} disabled={busy} onPress={() => void Linking.openURL(stateRulesUrl(folder, lang)!)} />}
@@ -383,7 +388,7 @@ export default function App() {
     {lines.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
     {ent.plus ? <Field label={t('tags')} value={tagInput} onChange={setTagInput} />
-      : <Button quiet title={t('tagsLocked')} onPress={() => { setPlusBack('add'); navigate('plus'); }} disabled={busy} />}
+      : <Button quiet title={t('tagsLocked')} onPress={() => { void flushFields().then(() => { setPlusBack('add'); navigate('plus'); }); }} disabled={busy} />}
     <P muted>{t('addingDate')}</P>
     {btn('cancel', () => { setDraft(blankDraft(folder)); setPicked([]); setReplacement(null); navigate(editing ? 'detail' : 'folder'); },true)}</>;
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
@@ -422,6 +427,7 @@ export default function App() {
       {selection && <><Field label={t('from')} placeholder={t('dateFormat')} value={from} keyboard="date" onChange={setFrom} /><Field label={t('to')} placeholder={t('dateFormat')} value={to} keyboard="date" onChange={setTo} /><Field label={t('cover')} value={cover} onChange={setCover} multiline /></>}</>}
     {btn('savePdf', doRun(async () => {
       if (!selected.length) throw Error('NOTHING_CHOSEN');
+      const from = fromNow(), to = toNow(), cover = coverNow();
       const items = vault.items(folder, { ids:selected, from:selection && from ? dateBoundary(from,false):undefined, to:selection && to ? dateBoundary(to,true):undefined }, ent.plus);
       await share(() => files.sharePdf(items,{title,madeOn:new Date().toISOString(),lang,cover:selection ? cover:undefined,history:withHistory}));
     }, 'workingPdf'), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder, { ids:selected }, ent.plus)))))}
@@ -456,18 +462,19 @@ export default function App() {
     <Field label={t('currentCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
     <Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     {btn('saveCode', doRun(async () => {
-      if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
-      await device.changePasscode(currentCode, code); setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('settings'); setNotice(t('codeChanged'));
+      const code = codeNow();
+      if (!/^\d{6}$/.test(code) || code !== codeAgainNow()) throw Error('PASSCODE_INVALID');
+      await device.changePasscode(currentCodeNow(), code); setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('settings'); setNotice(t('codeChanged'));
     }), false, true)}<P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'renew') body = <><P heading>{t('renewWords').replace(/\s*›$/, '')}</P><P>{t('renewWhy')}</P>
     <Field label={t('renewCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
     {btn('continue', doRun(async () => {
-      await device.appLock.unlock(currentCode); setWordsMode('renew'); setWordInput(''); setWords(phrase(device.random)); navigate('phrase');
+      await device.appLock.unlock(currentCodeNow()); setWordsMode('renew'); setWordInput(''); setWords(phrase(device.random)); navigate('phrase');
     }), false, true)}</>;
   else if (screen === 'erase') body = <><P heading>{t('eraseTitle')}</P><Card tone="red"><P>{t('eraseWarn')}</P></Card>
     <Field label={t('eraseCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
     {btn('eraseNow', doRun(async () => {
-      await device.eraseAll(currentCode);
+      await device.eraseAll(currentCodeNow());
       vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setCurrentCode(''); setBiometric(false); setHeard(null); setSample(false);
       setRemovePref(DEFAULT_REMOVE_PREF); setBackupShared(false); resume.current = 'home'; navigate('first'); setNotice(t('erased'));
     }))}{btn('cancel', () => navigate('settings'), true)}</>;
@@ -481,7 +488,7 @@ export default function App() {
       // Skip is instant: the answer is written to the Keychain after the screen has moved on.
       : btn('heardSkip', () => { setHeard('skip'); navigate(heardFrom); void saveHeard(device.heardStore, 'skip').catch(() => {}); }, true)}</>;
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
-    {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolder.trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
+    {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolderNow().trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
@@ -499,7 +506,7 @@ export default function App() {
   // finding 3: a refused date showed far above Save).
   let footer: React.ReactNode = null;
   if (ready && screen === 'setup') footer = btn('saveCode', doRun(async () => {
-    if (!/^\d{6}$/.test(code) || code !== codeAgain) throw Error('PASSCODE_INVALID');
+    if (!/^\d{6}$/.test(codeNow()) || codeNow() !== codeAgainNow()) throw Error('PASSCODE_INVALID');
     if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
     setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
   }), false, true);

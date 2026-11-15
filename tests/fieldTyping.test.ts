@@ -40,8 +40,18 @@ function mountField() {
     throw new Error(`unexpected import ${id}`);
   }, output, output.exports);
   const find = (node: any): any => !node || typeof node !== 'object' ? null : node.type === TextInput ? node : [node.props?.children].flat(9).map(find).find(Boolean) ?? null;
-  // The phone's box: its own text, re-created (cursor reset) when the app gives it a new key.
-  const phone = { text: '', key: undefined as unknown, props: {} as any, recreated: 0 };
+  // The phone's box: its own text, re-created (cursor reset) when the app gives it a new key. Ending editing (blur)
+  // sends end-of-editing and then blur, each carrying the box's whole text, `endLag` ms later (a busy JS thread);
+  // `endLag: null` models a box whose end-of-editing never arrives.
+  const phone = { text: '', key: undefined as unknown, props: {} as any, recreated: 0, focused: false, endLag: 30 as number | null, instance: {} as any };
+  phone.instance = {
+    isFocused: () => phone.focused,
+    blur: () => {
+      if (!phone.focused) return; phone.focused = false;
+      if (phone.endLag === null) return;
+      setTimeout(() => { const text = phone.text; phone.props.onEndEditing?.({ nativeEvent: { text } }); phone.props.onBlur?.({ nativeEvent: { text } }); }, phone.endLag);
+    },
+  };
   const render = (props: any) => {
     do {
       at = 0; dirty = false; effects = [];
@@ -49,19 +59,21 @@ function mountField() {
       if (input.key !== phone.key) { if (phone.key !== undefined) phone.recreated++; phone.key = input.key; phone.text = input.props.defaultValue ?? input.props.value ?? ''; }
       if (input.props.value !== undefined) phone.text = input.props.value;
       phone.props = input.props;
+      if (input.props.ref && typeof input.props.ref === 'object') input.props.ref.current = phone.instance;
       for (const run of effects) run();
     } while (dirty);
   };
-  return { render, phone };
+  return { render, phone, flushFields: (wait?: number): Promise<void> => output.exports.flushFields(wait) };
 }
 
 /** A parent that saves each change and redraws its box `lag` keys late, then taps Save. */
 function typeFast(words: string, opts: { lag?: number; dropAfter?: number; field?: Record<string, unknown> } = {}) {
-  const { render, phone } = mountField();
+  const { render, phone, flushFields } = mountField();
   let heard = '';
   const history: string[] = [''];
   const props = (value: string) => ({ label: 'Answer', ...opts.field, value, onChange: (v: string) => { heard = v; history.push(v); } });
   render(props(''));
+  phone.focused = true; phone.props.onFocus?.({ nativeEvent: {} });
   let typingRecreates = 0;
   [...words].forEach((ch, n) => {
     phone.text += ch;
@@ -70,7 +82,7 @@ function typeFast(words: string, opts: { lag?: number; dropAfter?: number; field
     render(props(history[Math.max(0, history.length - 1 - (opts.lag ?? 0))]));
     typingRecreates += phone.recreated - before;
   });
-  return { get heard() { return heard; }, history, phone, render, props, typingRecreates,
+  return { get heard() { return heard; }, history, phone, render, props, typingRecreates, flushFields,
     blur: () => { phone.props.onEndEditing?.({ nativeEvent: { text: phone.text } }); phone.props.onBlur?.({ nativeEvent: { text: phone.text } }); render(props(heard)); } };
 }
 
@@ -144,4 +156,30 @@ test('no screen uses a bare TextInput, and Field never writes `value` into the p
   render({ label: 'x', value: 'y', onChange: () => {} });
   assert.equal(phone.props.value, undefined);
   assert.equal(phone.props.defaultValue, 'y');
+});
+
+// ApprovalPrep sim retest 2 (14 Nov 2026, a heavily loaded Mac): a long answer typed fast with Next tapped at once was
+// saved as "…shows the payment cle". The box held the rest; its change events had not reached the app when Next read
+// the answer. Every Save / Next / Unlock / Confirm here now runs flushFields() first (app/index.tsx run()).
+test('letters still in flight when she taps Save are saved from the end-of-editing text (long note)', async () => {
+  const words = 'Landlord texted on March 2 that the leak under the sink would be fixed by Friday; it was not, and the cabinet floor is now soft';
+  for (const lag of [0, 2]) {
+    const typed = typeFast(words, { lag, field: { multiline: true }, dropAfter: words.indexOf('cabinet') + 3 });
+    assert.equal(typed.heard, words.slice(0, words.indexOf('cabinet') + 3), 'the app is behind the box when Save is tapped');
+    await typed.flushFields();
+    assert.equal(typed.heard, words, `Save keeps the whole note (lag ${lag})`);
+    assert.equal(typed.phone.focused, false, 'the box has finished editing');
+  }
+});
+
+test('Save still goes on when the box never sends its end-of-editing text, later Saves do not wait, and no open box means no wait', async () => {
+  const typed = typeFast('Water damage photos', { dropAfter: 5 });
+  typed.phone.endLag = null;
+  const started = Date.now();
+  await typed.flushFields(40);
+  assert.ok(Date.now() - started < 1000, 'the wait is bounded');
+  assert.equal(typed.heard, 'Water', 'it goes on with what it heard');
+  const idle = Date.now();
+  await typed.flushFields(5000);
+  assert.ok(Date.now() - idle < 1000, 'the silent box is closed: the next Save does not wait for it');
 });

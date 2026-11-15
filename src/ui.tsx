@@ -48,7 +48,8 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
  *  change the phone never reported is still saved. The mask (digits only for a passcode, slashes for a date) is applied
  *  to what the parent hears on every key, but written into the box only when she leaves it, so it never fights her
  *  keys or moves the cursor. Only a genuinely new value from the parent (a cleared box, a loaded item) replaces the
- *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one. */
+ *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one.
+ *  Every Save / Next / Unlock / Confirm calls `flushFields()` first and reads the typed value after it (see below). */
 export function Field({ label, value, onChange, secret, multiline, numeric, placeholder, keyboard }: {
   label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string; keyboard?: 'date';
 }) {
@@ -67,17 +68,58 @@ export function Field({ label, value, onChange, secret, multiline, numeric, plac
   const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, 6) : keyboard === 'date' ? typingDate(raw) : raw;
   const hand = (next: string) => { if (next === typed.current) return; typed.current = next; handed.current.add(next); onChange(next); };
   const settle = (raw: unknown) => {
-    if (typeof raw !== 'string') return;
-    const next = masked(raw); hand(next);
-    if (next !== raw) setBox(b => ({ text: next, n: b.n + 1 }));
+    focused.current = false;
+    if (typeof raw === 'string') {
+      const next = masked(raw); hand(next);
+      if (next !== raw) setBox(b => ({ text: next, n: b.n + 1 }));
+    }
+    // End of editing comes before blur, so the box's whole text is handed up before anyone waiting on it reads.
+    for (const done of waiting.current.splice(0)) done();
   };
-  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput key={box.n} accessibilityLabel={label} testID={label} defaultValue={box.text}
+  const input = useRef<{ blur?(): void; isFocused?(): boolean } | null>(null);
+  const focused = useRef(false);
+  const waiting = useRef<(() => void)[]>([]);
+  useEffect(() => {
+    const me: OpenField = {
+      focused: () => focused.current || !!input.current?.isFocused?.(),
+      finish: wait => new Promise<void>(done => {
+        // No end of editing in time: go on with what was heard. The box was told to blur, so it is closed, and a
+        // box that never answers does not make every later Save wait.
+        const timer = setTimeout(() => { focused.current = false; waiting.current = waiting.current.filter(w => w !== finished); done(); }, wait);
+        const finished = () => { clearTimeout(timer); done(); };
+        waiting.current.push(finished);
+        input.current?.blur?.();
+      }),
+    };
+    openFields.add(me);
+    return () => { openFields.delete(me); };
+  }, []);
+  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput key={box.n} ref={input as never} onFocus={() => { focused.current = true; }} accessibilityLabel={label} testID={label} defaultValue={box.text}
     onChangeText={raw => hand(masked(raw))} onEndEditing={e => settle(e?.nativeEvent?.text)}
     onBlur={e => settle((e?.nativeEvent as { text?: unknown } | undefined)?.text)}
     secureTextEntry={secret} multiline={multiline} keyboardType={numeric || keyboard === 'date' ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
     placeholder={placeholder} placeholderTextColor={c.muted}
     style={{ minHeight:48, padding:12, borderRadius:6, borderWidth:1, borderColor:c.muted, color:c.fg, backgroundColor:c.card, fontSize:15, fontFamily: bodyFont(lang),
       ...(multiline ? { minHeight:100, textAlignVertical:'top' as const } : {}) }} /></View>;
+}
+/** A Field on screen that a Save / Next / Unlock can make finish editing. */
+interface OpenField { focused(): boolean; finish(wait: number): Promise<void> }
+const openFields = new Set<OpenField>();
+/** How long a Save waits for the box's end-of-editing text before going on with what it has. */
+export const FLUSH_WAIT_MS = 500;
+/** Call before reading any typed value on Save, Next, Unlock or Confirm. On a busy phone the box can hold letters
+ *  whose change events have not reached the app yet (ApprovalPrep sim retest 2, 14 Nov 2026: "…shows the payment cle"
+ *  saved for "…cleared March 2"). This ends editing in the focused box and waits for its end-of-editing event, which
+ *  carries the box's whole text, so the screen has heard every letter when it resolves (or after `wait` ms at most). */
+export function flushFields(wait = FLUSH_WAIT_MS): Promise<void> {
+  return Promise.all([...openFields].filter(f => f.focused()).map(f => f.finish(wait))).then(() => {});
+}
+/** useState plus `now()`, which reads the newest value at once (after flushFields(), before the screen redraws). */
+export function useTyped<T>(initial: T): [T, (next: T | ((prev: T) => T)) => void, () => T] {
+  const [value, setValue] = useState(initial);
+  const latest = useRef(initial);
+  const set = (next: T | ((prev: T) => T)) => { latest.current = typeof next === 'function' ? (next as (prev: T) => T)(latest.current) : next; setValue(latest.current); };
+  return [value, set, () => latest.current];
 }
 export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 },
   footer:{ paddingHorizontal:16, paddingTop:10, paddingBottom:12, gap:8, borderTopWidth:1, width:'100%', maxWidth:560, alignSelf:'center' }, flex:{ flex:1 },
