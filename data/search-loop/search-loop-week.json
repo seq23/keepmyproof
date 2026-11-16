@@ -1,35 +1,31 @@
 {
   "schema": "search-loop-week-v1",
-  "week": "2026-W46",
+  "week": "2026-W47",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-15T14:13:15.621Z",
+  "generated_at": "2026-11-16T14:32:56.975Z",
   "state": "running",
-  "published": 6,
+  "published": 1,
   "indexed": "not read: no page old enough to inspect yet (14 days)",
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 3230,
+  "ai_bot_hits": 3051,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 0,
   "undone": 0,
   "merged": 0,
-  "held_by_cap": 59,
-  "redirected": [
-    {
-      "query": "donde sacar acta de divorcio",
-      "strengthen": "https://keepmyproof.com/questions/how-to-get-a-certified-copy-of-my-divorce-decree/",
-      "matched_by": "high token overlap (0.60 >= 0.6)",
-      "at": "2026-11-09"
-    }
-  ],
+  "held_by_cap": 69,
+  "redirected": [],
   "cap": {
     "max_live_pages": 20,
     "live": 20,
     "room": 0,
-    "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
+    "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-19..2026-10-16, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued"
+    "FIND bing_webmaster: not read: BING_WEBMASTER_API_KEY is not set",
+    "FIND api.bing.com: not read: unavailable after 3 failures (last http 204)",
+    "NAMED NOTE [CAP_HELD_NO_DATA] cap held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-19..2026-10-16, so there is nothing to compare the last 28 days with); the cap never grows without data",
+    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-19..2026-10-16, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued"
   ],
   "lanes": {
     "ratio": {
@@ -57,5 +53,5 @@
     "weight_changes": [],
     "competition": "ok: 15 top-10 read(s) via brave"
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/43723136180"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/43886840753"
 }
