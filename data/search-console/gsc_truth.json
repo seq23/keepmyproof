@@ -3,16 +3,16 @@
  "site": "https://keepmyproof.com",
  "property": "https://keepmyproof.com/",
  "window": {
-  "start": "2026-10-16",
-  "end": "2026-11-12"
+  "start": "2026-10-17",
+  "end": "2026-11-13"
  },
- "generated_at": "2026-11-15T11:25:15.433Z",
+ "generated_at": "2026-11-16T11:30:11.401Z",
  "totals": {
-  "rows": 1822,
+  "rows": 1827,
   "clicks": 3,
-  "impressions": 4091,
-  "queries": 1416,
-  "pages": 482
+  "impressions": 4105,
+  "queries": 1421,
+  "pages": 484
  },
  "rows": [
   {
@@ -326,6 +326,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 27
+  },
+  {
+   "query": "avoid probate in colorado",
+   "page": "https://keepmyproof.com/executor/small-estate/colorado",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 3
   },
   {
    "query": "ayuda pago impuesto a la propiedad en carolina del norte",
@@ -2187,9 +2195,9 @@
    "query": "death certificate cost",
    "page": "https://keepmyproof.com/questions/how-much-does-a-death-certificate-cost/",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 10,
    "ctr": 0,
-   "position": 31
+   "position": 41.9
   },
   {
    "query": "death certificate delaware",
@@ -3408,6 +3416,14 @@
    "position": 63
   },
   {
+   "query": "executor of estate texas",
+   "page": "https://keepmyproof.com/executor/executor-duties/texas",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 100
+  },
+  {
    "query": "expungimiento para veteranos raleigh",
    "page": "https://keepmyproof.com/es/va/alivio-del-impuesto-a-la-propiedad/carolina-del-norte",
    "clicks": 0,
@@ -3542,6 +3558,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 84
+  },
+  {
+   "query": "florida parenting plan template",
+   "page": "https://keepmyproof.com/divorce/custody-and-parenting-plans/florida",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 92
   },
   {
    "query": "forsyth county death certificates",
@@ -4019,9 +4043,9 @@
    "query": "help with va claims",
    "page": "https://keepmyproof.com/va/free-claim-help/washington",
    "clicks": 0,
-   "impressions": 3,
+   "impressions": 4,
    "ctr": 0,
-   "position": 71.7
+   "position": 77
   },
   {
    "query": "help with veterans claims",
@@ -9440,6 +9464,14 @@
    "position": 44
   },
   {
+   "query": "pennsylvania department of military affairs",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/pennsylvania",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
+  },
+  {
    "query": "pennsylvania minimum wage",
    "page": "https://keepmyproof.com/workplace/minimum-wage/pennsylvania",
    "clicks": 0,
@@ -10595,9 +10627,9 @@
    "query": "south dakota parent connection",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
    "clicks": 0,
-   "impressions": 10,
+   "impressions": 11,
    "ctr": 0,
-   "position": 37.3
+   "position": 41.8
   },
   {
    "query": "south dakota parenting guidelines 2026",
@@ -11478,6 +11510,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 42
+  },
+  {
+   "query": "va claim resources",
+   "page": "https://keepmyproof.com/va/free-claim-help/washington",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
   },
   {
    "query": "va claims contact number",
