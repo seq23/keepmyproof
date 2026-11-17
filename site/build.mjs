@@ -259,7 +259,7 @@ function vaultHero(lang, primary) {
 <ul class="chips">${v.chips.map((t, i) => `<li><a href="${chips[i]}">${esc(t)}</a></li>`).join('')}</ul>`;
 }
 // The badge carries the brand's own mark (the app tile: brass seal ring on lockbox green), never an emoji.
-const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}"><img src="/icon-192.png" alt="" width="20" height="20">${esc(v.badge)}</a>` : ''; };
+const vaultBadge = (lang) => { const v = COPY[lang].vaultBar; return v ? `<a class="pill" href="${VAULT_HREF[lang]}"><img src="/icon-192.png" alt="" role="presentation" width="20" height="20">${esc(v.badge)}</a>` : ''; };
 
 const list = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
 
