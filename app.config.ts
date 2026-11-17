@@ -1,7 +1,7 @@
 import type { ExpoConfig } from 'expo/config';
 const config: ExpoConfig = {
   name: 'KeepMyProof', slug: 'keepmyproof', version: '1.0', scheme: 'keepmyproof', owner: 'seq23',
-  orientation: 'portrait', userInterfaceStyle: 'automatic',
+  orientation: 'portrait', userInterfaceStyle: 'automatic', icon: './assets/app/icon.png',
   ios: { bundleIdentifier: 'com.keepmyproof.app', supportsTablet: true,
     infoPlist: { ITSAppUsesNonExemptEncryption: false, UIFileSharingEnabled: false,
       LSSupportsOpeningDocumentsInPlace: true, CFBundleLocalizations: ['en', 'es'] } },
