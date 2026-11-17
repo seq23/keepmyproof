@@ -204,6 +204,24 @@
           "CCBot (Common Crawl)": 18
         }
       }
+    },
+    "2026-11-17": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 2718,
+        "by_bot": {
+          "Amazonbot": 191,
+          "Meta-ExternalAgent": 2522,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "PerplexityBot": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }
