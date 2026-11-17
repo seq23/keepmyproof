@@ -3,6 +3,9 @@ import type { Draft } from './core/vault';
 // EXPO_PUBLIC_KMP_PREVIEW=1 so its screenshots are not blanked by screenshot protection.
 // A store build with it set is refused by the release gate (NAMED STOP PREVIEW_BUILD).
 export const PREVIEW_BUILD = process.env.EXPO_PUBLIC_KMP_PREVIEW === '1';
+// Only the simulator profile (eas.json) sets this, so the App Review screen recording is not
+// blanked. Simulator builds cannot be installed from the App Store; store builds keep protection.
+export const REVIEW_RECORDING_BUILD = process.env.EXPO_PUBLIC_KMP_REVIEW_RECORDING === '1';
 
 // Invented sample papers for the preview build's "skip to a sample vault" (AGENTS.md: sample data is
 // invented). Notes only, so no file bytes are needed.

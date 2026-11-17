@@ -32,6 +32,9 @@
       "environment": "production",
       "ios": {
         "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_KMP_REVIEW_RECORDING": "1"
       }
     }
   },
