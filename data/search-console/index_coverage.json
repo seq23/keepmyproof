@@ -9883,16 +9883,916 @@
    "state": "Crawled - currently not indexed",
    "last_crawl": "2026-11-04T13:28:24Z",
    "inspected_at": "2026-11-16T11:30:11.401Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/misuri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:05:38Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:57:22Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T21:42:07Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T08:18:19Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:46:43Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:11:20Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:17:55Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:19:26Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T03:13:22Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:17:27Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/carolina-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:27:20Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T22:49:07Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:16:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:24:29Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T01:44:21Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:09:27Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:26:46Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:16:09Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T15:29:31Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:03:23Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:59:23Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T18:11:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T11:53:41Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:00:25Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/south-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:32:34Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T19:10:56Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:13:59Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:13:14Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:22:06Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:36:44Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:35:32Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:44:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T13:05:29Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/creditor-claims-deadlines/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-15T18:05:33Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/creditor-claims-deadlines/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T20:37:28Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T16:57:10Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:06:40Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/plazos-para-que-los-acreedores-reclamen-contra/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:18:59Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:11:05Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T02:17:20Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:34:53Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T21:32:32Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T19:12:58Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T19:46:37Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/alaska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:13:50Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:43:51Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:07:40Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T08:31:42Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:00:43Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:20:41Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:36:11Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:39:00Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:38:45Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T06:27:11Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:31:07Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:09:35Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:45:14Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:03:45Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:03:37Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:35:05Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:16:32Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:30:40Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:25:43Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/distrito-de-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:49:13Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/district-of-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-10T02:28:38Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:09:24Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:18:09Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T19:26:33Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:15:14Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:17:33Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-15T04:57:23Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T19:11:35Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:50:36Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:52:25Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:27:53Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/idaho": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:21:35Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T19:39:30Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:19:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T10:57:53Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:12:30Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:56:50Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:33:22Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T10:15:21Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T01:45:19Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:10:41Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:16:07Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:34:23Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T08:07:16Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:27:04Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:35:01Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/louisiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:34:58Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T18:41:24Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:13:12Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T11:09:25Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T20:44:36Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T21:39:29Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/maryland": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:47:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T01:10:50Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T22:17:44Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:40:14Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:27:07Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T07:00:44Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:21:53Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:10:51Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:57:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:20:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:41:46Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T00:06:57Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T05:00:34Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:20:16Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:31:37Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:55:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:51:42Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:26:09Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:45:38Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:30:56Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T11:23:19Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:26:12Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:16:01Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:39:28Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:16:01Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nuevo-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:33:34Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T22:35:45Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:39:48Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:09:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:35:49Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/new-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:14:37Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:12:21Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nuevo-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:25:27Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/new-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T07:54:13Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T12:19:20Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/nueva-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T14:42:17Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/new-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-14T23:57:23Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/north-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:03:44Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:53:48Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T20:48:21Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:53:29Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:38:45Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:43:43Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T01:42:52Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T05:52:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:50:11Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:40:47Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T20:33:14Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T23:13:46Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:13:51Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:03:32Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/ko/executor/death-certificates/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T10:14:25Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/executor/death-certificates/pennsylvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:46:54Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
+  },
+  "https://keepmyproof.com/es/albacea/como-pedir-un-acta-de-defuncion/pensilvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:12:42Z",
+   "inspected_at": "2026-11-17T11:25:30.593Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-16T11:30:11.401Z",
+ "generated_at": "2026-11-17T11:25:30.593Z",
  "sitemap_urls": 2675,
- "inspected": 1647,
+ "inspected": 1797,
  "states": {
   "URL is unknown to Google": 98,
-  "Submitted and indexed": 1087,
+  "Submitted and indexed": 1135,
   "Discovered - currently not indexed": 235,
-  "Crawled - currently not indexed": 227
+  "Crawled - currently not indexed": 329
  }
 }
