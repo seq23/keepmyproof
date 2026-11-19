@@ -80,4 +80,7 @@ Choose **"All or some functionality is restricted"** and paste:
 
 ## Android permissions in the built manifest
 
-Checked from the EAS Android build of `main` (see the PR that added this file for the build id and the list read from the APK).
+Read from the APK of the free EAS Android build of `main` 96bc011 (build 2c2fcde4, 19 Nov 2026), binary manifest parsed:
+`INTERNET`, `USE_BIOMETRIC`, `USE_FINGERPRINT`, `VIBRATE`, `DETECT_SCREEN_CAPTURE`, `ACCESS_NETWORK_STATE`,
+`com.android.vending.BILLING`, and the app's own `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`. None needs a Play
+declaration form. Every permission in `blockedPermissions` (`app.config.ts:13-16`) is absent.
