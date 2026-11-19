@@ -32,3 +32,11 @@ test('the Play listing fits Play limits and its description is the approved stor
     assert.doesNotMatch(l.full, /Apple|iPhone|App Store|Face ID/, `${lang}: no iPhone wording in the Play listing`);
   }
 });
+
+// Google Play's photo and video permission policy: an app that only picks photos uses the system picker
+// and must not declare photo-library access. Found in the first Android build's manifest (19 Nov 2026).
+test('the Android build blocks photo-library, storage and draw-over-apps permissions', () => {
+  const blocked = config.android?.blockedPermissions ?? [];
+  for (const p of ['READ_MEDIA_IMAGES', 'READ_MEDIA_VIDEO', 'READ_MEDIA_VISUAL_USER_SELECTED', 'READ_MEDIA_AUDIO', 'READ_EXTERNAL_STORAGE', 'WRITE_EXTERNAL_STORAGE', 'SYSTEM_ALERT_WINDOW'])
+    assert.ok(blocked.includes(`android.permission.${p}`), p);
+});
