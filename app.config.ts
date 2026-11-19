@@ -6,7 +6,14 @@ const config: ExpoConfig = {
     infoPlist: { ITSAppUsesNonExemptEncryption: false, UIFileSharingEnabled: false,
       LSSupportsOpeningDocumentsInPlace: true, CFBundleLocalizations: ['en', 'es'] } },
   android: { package: 'com.keepmyproof.app', allowBackup: false,
-    blockedPermissions: ['android.permission.RECORD_AUDIO', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_CONTACTS'] },
+    // The brass seal on the lockbox green; the same foreground doubles as the Android 13+ themed icon.
+    adaptiveIcon: { foregroundImage: './assets/app/adaptive-icon.png', monochromeImage: './assets/app/adaptive-icon.png', backgroundColor: '#0B6E4F' },
+    // The first Android build (19 Nov 2026) still carried library permissions: photo/storage access (Play's photo
+    // permission form) and draw-over-apps. The system photo picker and share sheet need none of them.
+    blockedPermissions: ['android.permission.RECORD_AUDIO', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_CONTACTS',
+      'android.permission.READ_MEDIA_IMAGES', 'android.permission.READ_MEDIA_VIDEO', 'android.permission.READ_MEDIA_VISUAL_USER_SELECTED',
+      'android.permission.READ_MEDIA_AUDIO', 'android.permission.READ_EXTERNAL_STORAGE',
+      'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.SYSTEM_ALERT_WINDOW'] },
   updates: { enabled: false },
   extra: { eas: { projectId: 'f58e7186-4f0e-4d7e-b7e1-d530ab54029e' } },
   plugins: ['expo-router', 'expo-localization', 'expo-sqlite',

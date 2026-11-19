@@ -73,3 +73,13 @@ is too short to set a passcode and confirm 12 words by hand. The preview build's
 **"Preview only: skip to a sample vault ›"**: it sets up a vault (passcode 123456) with a few invented
 papers and opens on My folders. It exists only when `EXPO_PUBLIC_KMP_PREVIEW=1`; the release gate
 refuses a store build with that set (NAMED STOP `PREVIEW_BUILD`). Guard: `tests/preview-sample.test.ts`.
+
+## Google Play art and listing
+
+`store/google-play.json` holds the Play title, short description (80) and full description (4000) in
+en, es, zh and ko: the App Store listing in `store/<lang>.md`, word for word, plus the Play renewal line
+and the terms and privacy links (`tests/play-listing.test.ts` holds it to that). `store/play/` holds the
+512 icon, the 1024 x 500 feature graphic and three 1080 x 1920 phone screenshots; the Android adaptive
+icon is `assets/app/adaptive-icon.png` on the brand green. Re-make them all on a Mac with
+`node scripts/store/play-assets.mjs <dir with the App Store iPhone screenshots 01.png 02.png 03.png>`.
+Nothing is sent to Google: the Play account (Redwood Reserve Holdings LLC) is not open yet.
