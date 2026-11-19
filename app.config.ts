@@ -6,6 +6,8 @@ const config: ExpoConfig = {
     infoPlist: { ITSAppUsesNonExemptEncryption: false, UIFileSharingEnabled: false,
       LSSupportsOpeningDocumentsInPlace: true, CFBundleLocalizations: ['en', 'es'] } },
   android: { package: 'com.keepmyproof.app', allowBackup: false,
+    // The brass seal on the lockbox green; the same foreground doubles as the Android 13+ themed icon.
+    adaptiveIcon: { foregroundImage: './assets/app/adaptive-icon.png', monochromeImage: './assets/app/adaptive-icon.png', backgroundColor: '#0B6E4F' },
     blockedPermissions: ['android.permission.RECORD_AUDIO', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_CONTACTS'] },
   updates: { enabled: false },
   extra: { eas: { projectId: 'f58e7186-4f0e-4d7e-b7e1-d530ab54029e' } },
