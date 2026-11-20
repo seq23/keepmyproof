@@ -12493,16 +12493,916 @@
    "state": "Submitted and indexed",
    "last_crawl": "2026-11-03T17:39:38Z",
    "inspected_at": "2026-11-19T19:30:42.467Z"
+  },
+  "https://keepmyproof.com/executor/probate-process/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T22:02:34Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-09T11:26:28Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T12:39:08Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T05:10:55Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T01:53:10Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/herencias-pequenas-como-cobrar-los-bienes/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:31:57Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:44:48Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/small-estate/california": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:33:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T09:01:23Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/herencias-pequenas-como-cobrar-los-bienes/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:56:41Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/herencias-pequenas-como-cobrar-los-bienes/nuevo-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:10:16Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/small-estate/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:18:28Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/small-estate/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T10:52:32Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T06:31:04Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/small-estate/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:53:13Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/small-estate/pennsylvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T22:27:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/herencias-pequenas-como-cobrar-los-bienes/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:04:52Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T14:43:09Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:41:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:17:01Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:46:34Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T10:22:51Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T15:19:10Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/district-of-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:12:22Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:40:36Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T20:53:24Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T09:27:31Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:24:07Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:59:34Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:57:45Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T16:16:18Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:04:32Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T11:30:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:45:08Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:00:12Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:50:36Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:43:18Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:46:38Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T09:11:56Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:19:57Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T15:04:19Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T07:14:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:17:12Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:17:02Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T09:37:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:42:55Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T10:37:51Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/south-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:14:44Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/dakota-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:16:02Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:49:08Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:08:03Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:16:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:56:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:50:29Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/executor/transfer-on-death-deed/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T20:34:44Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:13:27Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/west-virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:24:37Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/executor/transfer-on-death-deed/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:23:48Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/albacea/escrituras-de-transferencia-al-fallecer-tod/virginia-occidental": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:18:06Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/questions/what-to-do-when-a-parent-dies": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:10:45Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/preguntas/que-hacer-cuando-muere-un-padre": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:55:39Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/questions/what-to-do-when-a-parent-dies": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T22:38:28Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/zh/questions/what-to-do-when-a-parent-dies": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:50:39Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep-binder": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-14T16:16:30Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/zh/iep-binder": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:12:41Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/ko/iep-binder": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-14T18:32:23Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/carpeta-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-13T22:06:04Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:14:55Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:50:42Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/alaska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T23:28:58Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T09:05:25Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T16:57:37Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:38:28Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:41:19Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/alaska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:31:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:28:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:54:44Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:10:44Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T05:23:29Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:06:28Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:50:13Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T19:10:03Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/district-of-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:14:39Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/distrito-de-columbia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T05:01:31Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:21:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T16:51:46Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:07:08Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:21:23Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:14:57Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T20:57:45Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T09:36:56Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T17:30:39Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:13:09Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T09:18:35Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:55:54Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T07:58:33Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:19:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/kansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T00:28:25Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T22:32:49Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:38:56Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:30:26Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:40:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T23:17:54Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:52:04Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/massachusetts": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:26:07Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T11:38:05Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T09:48:21Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:35:03Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:42:24Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:40:30Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:47:48Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:25:49Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T03:12:36Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T01:47:58Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T00:58:58Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:38:16Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:40:04Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:40:54Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:15:47Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/new-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T21:22:12Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T01:28:58Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T23:48:56Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:56:17Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/new-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T14:57:34Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nueva-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:51:55Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nuevo-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:52:35Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:39:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:46:20Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T00:41:57Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:00:13Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:22:36Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/dakota-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:58:30Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:25:48Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/ohio": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:26:23Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:56:43Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/south-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:54:46Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T10:45:08Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/es/iep/desacuerdos-sobre-el-iep-mediacion-reuniones/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:58:51Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
+  },
+  "https://keepmyproof.com/iep/dispute-resolution/south-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:38:00Z",
+   "inspected_at": "2026-11-20T19:09:13.281Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-19T19:30:42.467Z",
+ "generated_at": "2026-11-20T19:09:13.281Z",
  "sitemap_urls": 2675,
- "inspected": 2082,
+ "inspected": 2232,
  "states": {
-  "URL is unknown to Google": 100,
-  "Submitted and indexed": 1220,
+  "URL is unknown to Google": 111,
+  "Submitted and indexed": 1259,
   "Discovered - currently not indexed": 235,
-  "Crawled - currently not indexed": 527
+  "Crawled - currently not indexed": 627
  }
 }
