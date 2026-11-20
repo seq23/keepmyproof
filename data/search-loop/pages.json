@@ -25,7 +25,20 @@
         "https://www.acf.hhs.gov/css/parents"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-20",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": 0,
+          "indexed": true,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 30 words (aim 40-60)",
         "b9 504 words of visible text (aim 600+)"
@@ -38,7 +51,10 @@
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-virginia/ (similarity 0.93)"
         ]
-      }
+      },
+      "inspected_at": "2026-11-20",
+      "indexed": true,
+      "indexed_at": "2026-11-20"
     },
     {
       "slug": "how-to-prove-adultery-in-the-military",
