@@ -3,6 +3,7 @@
 // launched without a native reader like every zh/ko page. Same rules as EN/ES: answer first, never a
 // legal outcome, never "court-ready" or its zh/ko forms, never a claim that the app is hidden from the
 // phone or that deleted photos cannot be recovered. Paths: /zh/<English path>, /ko/<English path>.
+import { folderCount, folderNames } from './lib/folders.mjs';
 
 const APP = {
   zh: 'KeepMyProof 把照片、截图、文件和笔记放进文件夹，加密保存在您的手机上，用六位数密码打开；如果您开启，也可以用 Face ID 或指纹。离开应用时它会自动锁住，在切换应用的界面里也不显示内容。它是主屏幕上一个普通的应用，不会伪装成别的应用。',
@@ -36,7 +37,7 @@ export const LANDINGS_CJK = {
       bestFor: '想找照片保险箱，同时也有截图、信件或扫描件需要整理的人。',
       sections: [
         { h: '私密照片保险箱应用能做什么？', a: '它把照片放到锁后面，不再出现在相册的主画面里。', list: ['用密码、Face ID 或指纹上锁。', '在应用内保存每张照片的副本。', '通常会提供从相册删除原件的选项。'] },
-        { h: 'KeepMyProof 多了什么？', a: '文件夹、日期和一个 PDF，适合以后还要用到的照片和文件。', list: [APP.zh, '五个带建议清单的文件夹：离婚准备、职场、VA 索赔文件、父母去世后、IEP 资料夹。', '每项都并列记录事情发生的日期和保存的日期。'] },
+        { h: 'KeepMyProof 多了什么？', a: '文件夹、日期和一个 PDF，适合以后还要用到的照片和文件。', list: [APP.zh, `${folderCount('zh')}个带建议清单的文件夹：${folderNames('zh')}。`, '每项都并列记录事情发生的日期和保存的日期。'] },
         { h: '它能把照片从相册里拿走吗？', a: '在 iPhone 上会提出；在 Android 上需要您自己删除原件。', list: [IPHONE.zh] },
         { h: '它不做什么？', a: '它是一个上锁的应用，不是隐形的应用。', list: LIMITS.zh },
       ],
@@ -53,7 +54,7 @@ export const LANDINGS_CJK = {
       bestFor: '사진 보관함을 찾으면서 정리해야 할 스크린샷, 편지, 스캔본도 있는 분.',
       sections: [
         { h: '비공개 사진 보관함 앱은 무엇을 하나요?', a: '사진을 잠금 뒤로 옮겨 사진 앱의 기본 화면에 보이지 않게 합니다.', list: ['암호, Face ID 또는 지문으로 잠급니다.', '앱 안에 사진마다 사본을 보관합니다.', '대개 카메라 롤의 원본을 지우는 방법을 제공합니다.'] },
-        { h: 'KeepMyProof는 무엇을 더하나요?', a: '나중에 필요한 사진과 서류를 위한 폴더, 날짜, PDF 하나입니다.', list: [APP.ko, '추천 체크리스트가 있는 다섯 폴더: 이혼 준비, 직장, VA 청구 서류, 부모님이 돌아가신 뒤, IEP 바인더.', '일이 일어난 날과 저장한 날을 나란히 기록합니다.'] },
+        { h: 'KeepMyProof는 무엇을 더하나요?', a: '나중에 필요한 사진과 서류를 위한 폴더, 날짜, PDF 하나입니다.', list: [APP.ko, `추천 체크리스트가 있는 ${folderCount('ko')} 개 폴더: ${folderNames('ko')}.`, '일이 일어난 날과 저장한 날을 나란히 기록합니다.'] },
         { h: '카메라 롤에서 사진을 빼 주나요?', a: 'iPhone에서는 제안하고, Android에서는 직접 원본을 지웁니다.', list: [IPHONE.ko] },
         { h: '하지 않는 일은 무엇인가요?', a: '잠긴 앱이지, 보이지 않는 앱이 아닙니다.', list: LIMITS.ko },
       ],
