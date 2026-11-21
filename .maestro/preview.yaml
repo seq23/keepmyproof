@@ -185,10 +185,9 @@ appId: com.keepmyproof.app
     element: "Save the PDF ›"
     direction: DOWN
 - tapOn: "Save the PDF ›"
-- extendedWaitUntil:
-    visible: "(Copy|Save to Files|Print|Markup)"
-    timeout: 30000
-- waitForAnimationToEnd
+# The share sheet is system UI, outside the app's view tree, so wait it out rather than assert on it.
+- waitForAnimationToEnd:
+    timeout: 10000
 - takeScreenshot: 12-pdf--shared
 - tapOn:
     point: "50%,6%"
