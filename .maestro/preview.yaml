@@ -51,11 +51,35 @@ appId: com.keepmyproof.app
     timeout: 15000
 - waitForAnimationToEnd
 - takeScreenshot: 04-phrase
-- copyTextFrom: "([a-z]+ ){11}[a-z]+"
+# The words show numbered in two columns ("1.  pond"), one text each: copy all 12, then type them back.
+- copyTextFrom: "1\\.\\s+[a-z]+"
+- evalScript: ${output.w1 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "2\\.\\s+[a-z]+"
+- evalScript: ${output.w2 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "3\\.\\s+[a-z]+"
+- evalScript: ${output.w3 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "4\\.\\s+[a-z]+"
+- evalScript: ${output.w4 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "5\\.\\s+[a-z]+"
+- evalScript: ${output.w5 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "6\\.\\s+[a-z]+"
+- evalScript: ${output.w6 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "7\\.\\s+[a-z]+"
+- evalScript: ${output.w7 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "8\\.\\s+[a-z]+"
+- evalScript: ${output.w8 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "9\\.\\s+[a-z]+"
+- evalScript: ${output.w9 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "10\\.\\s+[a-z]+"
+- evalScript: ${output.w10 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "11\\.\\s+[a-z]+"
+- evalScript: ${output.w11 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "12\\.\\s+[a-z]+"
+- evalScript: ${output.w12 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
 - tapOn: "I.ve written them down ›"
 - tapOn:
     id: "12 words, separated by spaces"
-- inputText: ${maestro.copiedText}
+- inputText: ${[output.w1, output.w2, output.w3, output.w4, output.w5, output.w6, output.w7, output.w8, output.w9, output.w10, output.w11, output.w12].join(' ')}
 - tapOn: "Type your 12 words to confirm"
 - waitForAnimationToEnd
 - takeScreenshot: 05-confirmPhrase

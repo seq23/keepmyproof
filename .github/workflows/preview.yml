@@ -126,9 +126,9 @@ jobs:
           mkdir -p preview-shots run && touch run/.start
           # The made PDF lives in the app's cache only while the share sheet is open: copy it out then.
           data=$(xcrun simctl get_app_container "${{ steps.sim.outputs.udid }}" com.keepmyproof.app data)
-          ( while true; do find "$data" -name 'KeepMyProof.pdf' -size +1k -exec cp {} preview-shots/folder.pdf \; 2>/dev/null; sleep 0.5; done ) & grab=$!
+          ( set +e; while true; do find "$data" -name 'KeepMyProof.pdf' -size +1k -exec cp {} preview-shots/folder.pdf \; 2>/dev/null; sleep 0.5; done ) & grab=$!
           status=0; cd run && { maestro --device "${{ steps.sim.outputs.udid }}" test ../.maestro/preview.yaml > ../maestro.log 2>&1 || status=$?; }
-          cd .. && kill $grab; tail -40 maestro.log
+          cd .. && { kill $grab 2>/dev/null || true; }; tail -40 maestro.log
           if [ -f preview-shots/folder.pdf ]; then sips -s format png preview-shots/folder.pdf --out preview-shots/folder-pdf-page1.png > /dev/null; else echo "NAMED STOP [PREVIEW_NO_PDF] the folder PDF was not made"; status=1; fi
           # Collect the PNGs wherever this Maestro version wrote them.
           find run .maestro "$HOME/.maestro" -name '[0-9][0-9]-*.png' -newer run/.start -exec cp {} preview-shots/ \; 2>/dev/null || true
