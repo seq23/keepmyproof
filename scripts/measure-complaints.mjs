@@ -18,15 +18,45 @@ export const COMPETITORS = [
   { slug: 'ourfamilywizard', name: 'OurFamilyWizard', app: 'OurFamilyWizard Co-Parent App', id: 497405393, kind: 'co-parenting app' },
   { slug: 'talkingparents', name: 'TalkingParents', app: 'TalkingParents: Co-Parent App', id: 1092220726, kind: 'co-parenting app' },
 ];
+// What was lost, named next to the loss word (review of #66, 21 Nov 2026: a bare "lost|gone" counted
+// "BUGS ARE GONE" and "the price has gone up"). A review counts as data loss only when a loss word and a
+// thing a person keeps in the app sit in the same clause, at most four words apart, in either order.
+const LOSS = String.raw`(?:lost|lose|losing|loses|gone|disappeared|disappear|vanished|deleted|erased|wiped(?: out)?|missing)`;
+const GAP = String.raw`(?:[^\s.!?;]+\s+){0,4}?`;
+export const KEPT = {
+  files: String.raw`(?:photos?|pictures?|pics|videos?|files?|documents?|images?|media|memories|everything|data|vault)`,
+  messages: String.raw`(?:messages?|texts?|threads?|conversations?|chats?|records?|transcripts?|journal|entries)`,
+};
+const near = (noun) => new RegExp(String.raw`\b${LOSS}\s+${GAP}${noun}\b|\b${noun}\s+${GAP}${LOSS}\b`, 'gi');
+// Not a loss: relief ("I thought I lost everything"), a negation or a worry ("can't be deleted", "from being
+// deleted", "make sure my videos are not lost", "end up losing"), the person's own act ("I erased some videos
+// by accident", "I deleted the app"), or an imperative ("Lose the videos when you load the app").
+const RELIEF = /\bthought (?:i|we) (?:had )?(?:lost|lose)\b/i;
+const NOT_A_LOSS = /\b(?:not|never|n't|cannot|can't|won't|wouldn't|from being|end up|afraid of|worried about|concerned about)\s+(?:\S+\s+){0,2}$|\b(?:i|we)\s+(?:\S+\s+)?$/i;
+const IMPERATIVE = /(?:^|[.!?]\s+)$/;
+const lostKind = (kind) => ({ test: (raw) => { const t = raw.replace(/[\u2018\u2019]/g, "'"); return !RELIEF.test(t) && [...t.matchAll(near(KEPT[kind]))].some((m) => {
+  const before = t.slice(Math.max(0, m.index - 40), m.index), loss = new RegExp(String.raw`^${LOSS}\b`, 'i').test(m[0]);
+  const at = loss ? before : t.slice(Math.max(0, m.index + m[0].search(new RegExp(String.raw`\b${LOSS}\b`, 'i')) - 40), m.index + m[0].search(new RegExp(String.raw`\b${LOSS}\b`, 'i')));
+  if (NOT_A_LOSS.test(at)) return false;
+  if (loss && IMPERATIVE.test(before) && /^lose\b/i.test(m[0])) return false;
+  return true;
+}); } });
 export const THEMES = {
-  lost: /\b(?:lost|lose|losing|gone|disappeared|vanished|deleted my|wiped)\b/i,
+  lost_files: lostKind('files'),
+  lost_messages: lostKind('messages'),
   price: /\b(?:subscription|subscribe|subscribed|expensive|overpriced|price|pricing|charged|charging|refund|paywall)\b/i,
 };
 export const MIN_SAMPLE = 20;
 
+/** lost = a review that names lost photos/files OR lost messages (counted once). */
 export function countThemes(reviews) {
-  const counts = Object.fromEntries(Object.keys(THEMES).map((k) => [k, 0]));
-  for (const r of reviews) for (const [k, re] of Object.entries(THEMES)) if (re.test(`${r.title} ${r.body}`)) counts[k]++;
+  const counts = Object.fromEntries([...Object.keys(THEMES), 'lost'].map((k) => [k, 0]));
+  for (const r of reviews) {
+    const t = `${r.title}. ${r.body}`.replace(/\s+/g, ' ');
+    let anyLost = false;
+    for (const [k, re] of Object.entries(THEMES)) if (re.test(t)) { counts[k]++; if (k.startsWith('lost_')) anyLost = true; }
+    if (anyLost) counts.lost++;
+  }
   return counts;
 }
 
@@ -56,8 +86,8 @@ async function main() {
   if (!rows.length) { console.error('NAMED STOP [NO_REVIEWS_READ] no competitor feed could be read'); process.exit(2); }
   const file = join(ROOT, 'site', 'data', 'alternatives.json');
   const prev = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
-  writeFileSync(file, JSON.stringify({ schema: 'kmp-alternatives-v1', method: 'Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts once per theme if its title or text matches the theme words in scripts/measure-complaints.mjs.', apps: rows, stops }, null, 1) + '\n');
-  for (const r of rows) console.log(`${r.name}: ${r.sample} reviews, lost ${r.counts.lost}, price ${r.counts.price}`);
+  writeFileSync(file, JSON.stringify({ schema: 'kmp-alternatives-v1', method: 'Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts as lost data only when it names what was lost (photos, videos or files; or messages and records) within four words of a loss word such as lost, gone or deleted, so \"bugs are gone\" or \"the price has gone up\" do not count; a price complaint names the subscription, price, charges or a refund. Rules: scripts/measure-complaints.mjs.', apps: rows, stops }, null, 1) + '\n');
+  for (const r of rows) console.log(`${r.name}: ${r.sample} reviews, lost ${r.counts.lost} (files ${r.counts.lost_files}, messages ${r.counts.lost_messages}), price ${r.counts.price}`);
   if (prev) console.log(`previous run: ${prev.apps.map((a) => a.measured).join(',')}`);
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((e) => { console.error(e.message); process.exit(1); });

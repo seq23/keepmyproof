@@ -1,6 +1,6 @@
 {
  "schema": "kmp-alternatives-v1",
- "method": "Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts once per theme if its title or text matches the theme words in scripts/measure-complaints.mjs.",
+ "method": "Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts as lost data only when it names what was lost (photos, videos or files; or messages and records) within four words of a loss word such as lost, gone or deleted, so \"bugs are gone\" or \"the price has gone up\" do not count; a price complaint names the subscription, price, charges or a refund. Rules: scripts/measure-complaints.mjs.",
  "apps": [
   {
    "slug": "keepsafe",
@@ -11,8 +11,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 18,
-    "price": 7
+    "lost_files": 18,
+    "lost_messages": 0,
+    "price": 7,
+    "lost": 18
    },
    "store_url": "https://apps.apple.com/us/app/id510873505",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=510873505/sortby=mostrecent/json"
@@ -26,8 +28,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 2,
-    "price": 3
+    "lost_files": 1,
+    "lost_messages": 0,
+    "price": 3,
+    "lost": 1
    },
    "store_url": "https://apps.apple.com/us/app/id417571834",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=417571834/sortby=mostrecent/json"
@@ -41,8 +45,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 1,
-    "price": 6
+    "lost_files": 0,
+    "lost_messages": 0,
+    "price": 6,
+    "lost": 0
    },
    "store_url": "https://apps.apple.com/us/app/id327756085",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=327756085/sortby=mostrecent/json"
@@ -56,8 +62,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 3,
-    "price": 51
+    "lost_files": 0,
+    "lost_messages": 2,
+    "price": 51,
+    "lost": 2
    },
    "store_url": "https://apps.apple.com/us/app/id1019290876",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1019290876/sortby=mostrecent/json"
@@ -71,8 +79,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 3,
-    "price": 23
+    "lost_files": 0,
+    "lost_messages": 0,
+    "price": 23,
+    "lost": 0
    },
    "store_url": "https://apps.apple.com/us/app/id497405393",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=497405393/sortby=mostrecent/json"
@@ -86,8 +96,10 @@
    "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 10,
-    "price": 50
+    "lost_files": 1,
+    "lost_messages": 3,
+    "price": 50,
+    "lost": 4
    },
    "store_url": "https://apps.apple.com/us/app/id1092220726",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1092220726/sortby=mostrecent/json"
