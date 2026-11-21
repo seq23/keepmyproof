@@ -3,16 +3,16 @@
  "site": "https://keepmyproof.com",
  "property": "https://keepmyproof.com/",
  "window": {
-  "start": "2026-10-21",
-  "end": "2026-11-17"
+  "start": "2026-10-22",
+  "end": "2026-11-18"
  },
- "generated_at": "2026-11-20T19:09:13.281Z",
+ "generated_at": "2026-11-21T18:03:24.133Z",
  "totals": {
-  "rows": 1834,
+  "rows": 1835,
   "clicks": 3,
-  "impressions": 4116,
-  "queries": 1427,
-  "pages": 486
+  "impressions": 4117,
+  "queries": 1428,
+  "pages": 487
  },
  "rows": [
   {
@@ -3310,6 +3310,14 @@
    "impressions": 2,
    "ctr": 0,
    "position": 50
+  },
+  {
+   "query": "eeoc las vegas",
+   "page": "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/nevada",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 69
   },
   {
    "query": "eeoc utah",
