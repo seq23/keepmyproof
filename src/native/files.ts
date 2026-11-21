@@ -4,7 +4,7 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import * as Print from 'expo-print';
 import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
-import { assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
+import { PDF_MARGINS, assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
 import { exifTime } from '../core/dates';
@@ -53,7 +53,7 @@ export async function shareBytes(bytes: Uint8Array | string, filename: string, m
   finally { if (f.exists) f.delete(); }
 }
 export async function sharePdf(items: Item[], options: ExportOptions) {
-  const metadata = new File((await Print.printToFileAsync({ html: exportHtml(items, options) })).uri);
+  const metadata = new File((await Print.printToFileAsync({ html: exportHtml(items, options), margins: PDF_MARGINS })).uri);
   try {
     const pdf = await assemblePdf(await metadata.bytes(), items, async item => {
       const source = tempFile(`image-${item.id}`); await source.write(item.bytes!, { encoding: 'base64' });
