@@ -249,10 +249,14 @@ appId: com.keepmyproof.app
 
 # Lock, and the forgotten-passcode reset.
 - tapOn: "Settings"
-- scrollUntilVisible:
-    element: "Lock my papers ›"
-    direction: DOWN
-# Let the scroll settle first: on iPad a tap during the last of the scroll landed on the Backup tab.
+# Swipe from mid-screen, not with scrollUntilVisible: its swipes start low enough on iPad to land on
+# the centred Backup tab once the list is at its end, which opened Backup instead of locking.
+- repeat:
+    times: 3
+    commands:
+      - swipe:
+          start: "50%,65%"
+          end: "50%,15%"
 - waitForAnimationToEnd
 - tapOn: "Lock my papers ›"
 - extendedWaitUntil:
