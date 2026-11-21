@@ -19,6 +19,6 @@ const config: ExpoConfig = {
   plugins: ['expo-router', 'expo-localization', 'expo-sqlite',
     ['expo-secure-store', { configureAndroidBackup: true, faceIDPermission: 'Open your papers with Face ID. / Abra sus documentos con Face ID.' }],
     ['expo-local-authentication', { faceIDPermission: 'Open your papers with Face ID. / Abra sus documentos con Face ID.' }],
-    ['expo-image-picker', { photosPermission: 'Choose a photo to keep in KeepMyProof on this device, and remove the original from Photos only if you ask. / Elija una foto para guardar en KeepMyProof en este dispositivo; el original solo se quita de Fotos si usted lo pide.', cameraPermission: false, microphonePermission: false }]],
+    ['expo-image-picker', { photosPermission: 'Choose a photo to keep in KeepMyProof on this device, and remove the original from Photos only if you ask. / Elija una foto para guardar en KeepMyProof en este dispositivo; el original solo se quita de Fotos si usted lo pide.', cameraPermission: 'Take a photo straight into KeepMyProof on this device. It is not saved to Photos or uploaded. / Tome una foto directamente en KeepMyProof en este dispositivo. No se guarda en Fotos ni se sube.', microphonePermission: false }]],
 };
 export default config;

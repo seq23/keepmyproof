@@ -61,7 +61,7 @@ Expected rating: Everyone / PEGI 3 / USK 0.
 
 Choose **"All or some functionality is restricted"** and paste:
 
-> No account or login. On first launch, choose any 6-digit passcode (for example 135790) and write down the 12-word recovery phrase the app shows, then type the 12 words back to confirm. Everything free is then open: five folders, adding up to 25 items, PDFs of a whole folder, originals, encrypted backup and restore. KeepMyProof Plus (unlimited items, custom folders and tags, PDFs of chosen items or dates) opens from Settings › "See Plus ›", or when adding a 26th item, and is bought with Google Play Billing; please use a license-testing account. If a reviewer account is needed it is provided here in Play Console, never in the app.
+> No account or login. On first launch, choose any 6-digit passcode (for example 135790) and write down the 12-word recovery phrase the app shows, then type the 12 words back to confirm. Everything free is then open: seven folders, adding up to 25 items, PDFs of a whole folder, originals, encrypted backup and restore. KeepMyProof Plus (unlimited items, custom folders and tags, PDFs of chosen items or dates) opens from Settings › "See Plus ›", or when adding a 26th item, and is bought with Google Play Billing; please use a license-testing account. If a reviewer account is needed it is provided here in Play Console, never in the app.
 
 (No credentials exist or are needed; nothing goes in the repo. The passcode and phrase flow: `app/index.tsx:29`, screens `setup`, `phrase`, `confirmPhrase`.)
 
@@ -83,4 +83,5 @@ Choose **"All or some functionality is restricted"** and paste:
 Read from the APK of the free EAS Android build of `main` 96bc011 (build 2c2fcde4, 19 Nov 2026), binary manifest parsed:
 `INTERNET`, `USE_BIOMETRIC`, `USE_FINGERPRINT`, `VIBRATE`, `DETECT_SCREEN_CAPTURE`, `ACCESS_NETWORK_STATE`,
 `com.android.vending.BILLING`, and the app's own `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`. None needs a Play
-declaration form. Every permission in `blockedPermissions` (`app.config.ts:13-16`) is absent.
+declaration form. From 21 Nov 2026 the build also carries `CAMERA` for "Take a photo" (asked only when tapped; the photo goes
+straight into the app, never to the gallery; re-read from the next APK). Camera needs no Play declaration form. Every permission in `blockedPermissions` (`app.config.ts:13-16`) is absent.

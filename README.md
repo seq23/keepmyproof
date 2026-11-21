@@ -3,12 +3,17 @@
 Private papers, photos and notes, organized on your phone. No account, ads,
 analytics, AI processing, inbox access or automatic sharing. English, US Spanish,
 Simplified Chinese and Korean (all written for US residents) follow the phone until
-a language is picked on the first screen or in Settings; the pick is kept. All five
+a language is picked on the first screen or in Settings; the pick is kept. All seven
 launch folders and suggested checklists come from **topics.json**, the single topic
 catalog. Spanish, Chinese and Korean launch as written, without a native reader
 (owner ruling 2 Nov 2026; `language_status` in topics.json); `tests/strings.test.ts` fails if any string, folder
 name or checklist line is missing in any language, or would overflow a 390pt phone.
 Chinese and Korean use the system fonts (no serif headings); Korean wraps by word.
+
+**Take a photo** (on the Add screen, any folder) opens the camera straight into the vault. The camera
+permission is asked only on that tap; the photo is never saved to Photos and nothing is uploaded. Its dates
+are recorded exactly as an imported photo's (`src/core/camera.ts`): "saved" by the vault, "taken" from the
+photo's own EXIF time. Camera turned off or missing: the app says so and opens the photo library instead.
 
 Free includes 25 items, app lock, both dates, checklist ticks, full-folder PDF,
 original-file export, encrypted backup and restore. The limit stops **adding**.

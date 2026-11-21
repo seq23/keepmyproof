@@ -2,7 +2,7 @@
 
 Keep the papers you already have, private on this device.
 
-Organize photos, files and notes in five folders with suggested checklists.
+Organize photos, files and notes in seven folders with suggested checklists.
 Write down the date something happened, next to the date you saved it. Make a PDF,
 save original files, and back up an encrypted copy to your own cloud drive.
 
