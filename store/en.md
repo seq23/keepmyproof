@@ -1,20 +1,21 @@
 # KeepMyProof
 
-<!-- App Store listing (en-US), as set in App Store Connect. -->
-
 Keep the papers you already have, private on this device.
 
-Organize photos, files and notes in five folders with suggested checklists. Keep your own happened-on date and the date saved on this device. Make a PDF, save original files, and back up an encrypted copy to your own cloud drive.
+Organize photos, files and notes in five folders with suggested checklists.
+Write down the date something happened, next to the date you saved it. Make a PDF,
+save original files, and back up an encrypted copy to your own cloud drive.
 
-No account. No ads. No analytics. Free for your first 25 items. Opening your papers, full-folder PDFs, originals, backup and restore stay free. Plus adds unlimited items, custom folders and tags, and PDFs of chosen items or dates.
+No account. No ads. No analytics. Free for your first 25 items. Opening your
+papers, full-folder PDFs, originals, backup and restore stay free. Plus adds
+unlimited items, custom folders and tags, and PDFs of chosen items or dates.
 
-Educational only. Not legal advice. KeepMyProof is not a law firm and is not affiliated with the VA. It does not prepare, file or judge a claim.
+Educational only. Not legal advice. KeepMyProof is not a law firm and is not
+affiliated with the VA. It does not prepare, file or judge a claim.
 
-KeepMyProof Plus annual renews automatically each year until you cancel in your Apple account settings.
-Terms of Use: https://keepmyproof.com/terms/
-Privacy Policy: https://keepmyproof.com/privacy/
+## App Store promotional text
 
-**Promotional text:** Keep the texts, photos and papers, dated, on your device.
+Keep the texts, photos and papers, dated, on your device.
 
 ## Privacy draft — for publication before release
 
