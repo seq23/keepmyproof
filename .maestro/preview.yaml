@@ -248,6 +248,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Lock my papers ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Lock my papers ›"
 - extendedWaitUntil:
     visible: "Your papers are locked"
