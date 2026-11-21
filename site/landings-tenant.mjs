@@ -27,7 +27,7 @@ export const CHECKED = '2026-11-21';
 
 export const TENANT_LANDINGS = [
   {
-    id: 'move-out-checklist', kind: 'tenant', path: { en: '/tenant/move-out-checklist', es: '/es/inquilinos/lista-para-mudarse' },
+    id: 'move-out-checklist', published: '2026-11-21', checked: CHECKED, kind: 'tenant', path: { en: '/tenant/move-out-checklist', es: '/es/inquilinos/lista-para-mudarse' },
     sources: [S.sf, S.wa, S.hud],
     en: {
       title: 'Move-out checklist for tenants: photos, cleaning and papers | KeepMyProof',
@@ -67,7 +67,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'move-in-checklist', kind: 'tenant', path: { en: '/tenant/move-in-checklist', es: '/es/inquilinos/lista-de-entrada' },
+    id: 'move-in-checklist', published: '2026-11-21', checked: CHECKED, kind: 'tenant', path: { en: '/tenant/move-in-checklist', es: '/es/inquilinos/lista-de-entrada' },
     sources: [S.sf, S.wa, S.hud],
     en: {
       title: 'Move-in checklist and inspection for renters, room by room | KeepMyProof',
@@ -107,7 +107,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'wear-and-tear', kind: 'tenant', path: { en: '/tenant/normal-wear-and-tear-vs-damage', es: '/es/inquilinos/desgaste-normal-o-dano' },
+    id: 'wear-and-tear', published: '2026-11-21', checked: CHECKED, kind: 'tenant', path: { en: '/tenant/normal-wear-and-tear-vs-damage', es: '/es/inquilinos/desgaste-normal-o-dano' },
     sources: [S.wa, S.ny, S.hud],
     en: {
       title: 'Normal wear and tear vs damage: examples for renters | KeepMyProof',
@@ -145,7 +145,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'renters-insurance-inventory', kind: 'inventory', path: { en: '/home-inventory/renters-insurance', es: '/es/inventario-del-hogar/seguro-de-inquilino' },
+    id: 'renters-insurance-inventory', published: '2026-11-21', checked: CHECKED, kind: 'inventory', path: { en: '/home-inventory/renters-insurance', es: '/es/inventario-del-hogar/seguro-de-inquilino' },
     sources: [S.naic, S.ready],
     en: {
       title: 'Home inventory for renters insurance: what to list and keep | KeepMyProof',
@@ -183,7 +183,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'home-inventory-checklist', kind: 'inventory', path: { en: '/home-inventory/checklist', es: '/es/inventario-del-hogar/lista' },
+    id: 'home-inventory-checklist', published: '2026-11-21', checked: CHECKED, kind: 'inventory', path: { en: '/home-inventory/checklist', es: '/es/inventario-del-hogar/lista' },
     sources: [S.naic, S.ready],
     en: {
       title: 'Home inventory checklist, room by room (free printable) | KeepMyProof',
@@ -221,7 +221,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'home-inventory-app', kind: 'inventory', path: { en: '/home-inventory/app', es: '/es/inventario-del-hogar/app' },
+    id: 'home-inventory-app', published: '2026-11-21', checked: CHECKED, kind: 'inventory', path: { en: '/home-inventory/app', es: '/es/inventario-del-hogar/app' },
     sources: [S.sortly, S.umr, S.nestegg, S.homecontents, S.encircle, S.naic],
     en: {
       title: 'Home inventory apps compared: price, limits, where data lives | KeepMyProof',
@@ -259,7 +259,7 @@ export const TENANT_LANDINGS = [
     },
   },
   {
-    id: 'free-co-parenting-log', kind: 'divorce', path: { en: '/co-parenting/free-co-parenting-log', es: '/es/crianza/registro-de-crianza-gratis' }, printable: { en: '/tools/co-parenting-log-printable', es: '/es/herramientas/registro-de-crianza-para-imprimir' },
+    id: 'free-co-parenting-log', published: '2026-11-21', checked: CHECKED, kind: 'divorce', path: { en: '/co-parenting/free-co-parenting-log', es: '/es/crianza/registro-de-crianza-gratis' }, printable: { en: '/tools/co-parenting-log-printable', es: '/es/herramientas/registro-de-crianza-para-imprimir' },
     sources: [S.css, S.tp, S.ofw],
     en: {
       title: 'Free co-parenting log: a printable and a private app | KeepMyProof',

@@ -3,6 +3,10 @@
 export const SITE = {
   origin: 'https://keepmyproof.com',
   name: 'KeepMyProof',
+  // The core pages (home, legal, tools, checklists, facts) have no source dates of their own: this is the
+  // day they last changed, set with that change. Every other page dates itself from its own data
+  // (published + checked fields, official-source check dates, review measurement dates).
+  updated: '2026-11-21',
   // US list prices (spec, her ruling 1 Nov 2026). The launch-week offer is never written here:
   // the store shows it at checkout when it is live.
   prices: { yearlyUSD: '19.99', lifetimeUSD: '39.99' },

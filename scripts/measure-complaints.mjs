@@ -73,6 +73,16 @@ async function reviewsOf(id) {
   return out;
 }
 
+/**
+ * Each app's first_measured is written once, the first time it is measured (the day its page first goes
+ * live), and carried over on every later run; measured is the newest run. The page's published date is
+ * first_measured and its updated date is measured.
+ */
+export function carryFirstMeasured(rows, prevApps = [], today) {
+  const first = Object.fromEntries(prevApps.map((a) => [a.slug, a.first_measured ?? a.measured]));
+  return rows.map((r) => ({ ...r, first_measured: first[r.slug] ?? today }));
+}
+
 async function main() {
   const today = new Date().toISOString().slice(0, 10), rows = [], stops = [];
   for (const c of COMPETITORS) {
@@ -86,6 +96,7 @@ async function main() {
   if (!rows.length) { console.error('NAMED STOP [NO_REVIEWS_READ] no competitor feed could be read'); process.exit(2); }
   const file = join(ROOT, 'site', 'data', 'alternatives.json');
   const prev = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
+  rows.splice(0, rows.length, ...carryFirstMeasured(rows, prev?.apps, today));
   writeFileSync(file, JSON.stringify({ schema: 'kmp-alternatives-v1', method: 'Apple public reviews feed, US store, up to the 150 most recent reviews per app; a review counts as lost data only when it names what was lost (photos, videos or files; or messages and records) within four words of a loss word such as lost, gone or deleted, so \"bugs are gone\" or \"the price has gone up\" do not count; a price complaint names the subscription, price, charges or a refund. Rules: scripts/measure-complaints.mjs.', apps: rows, stops }, null, 1) + '\n');
   for (const r of rows) console.log(`${r.name}: ${r.sample} reviews, lost ${r.counts.lost} (files ${r.counts.lost_files}, messages ${r.counts.lost_messages}), price ${r.counts.price}`);
   if (prev) console.log(`previous run: ${prev.apps.map((a) => a.measured).join(',')}`);

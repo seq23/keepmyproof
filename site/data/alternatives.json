@@ -17,7 +17,8 @@
     "lost": 18
    },
    "store_url": "https://apps.apple.com/us/app/id510873505",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=510873505/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=510873505/sortby=mostrecent/json",
+   "first_measured": "2026-11-02"
   },
   {
    "slug": "private-photo-vault",
@@ -34,7 +35,8 @@
     "lost": 1
    },
    "store_url": "https://apps.apple.com/us/app/id417571834",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=417571834/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=417571834/sortby=mostrecent/json",
+   "first_measured": "2026-11-02"
   },
   {
    "slug": "timestamp-it",
@@ -51,7 +53,8 @@
     "lost": 0
    },
    "store_url": "https://apps.apple.com/us/app/id327756085",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=327756085/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=327756085/sortby=mostrecent/json",
+   "first_measured": "2026-11-02"
   },
   {
    "slug": "appclose",
@@ -68,7 +71,8 @@
     "lost": 2
    },
    "store_url": "https://apps.apple.com/us/app/id1019290876",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1019290876/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1019290876/sortby=mostrecent/json",
+   "first_measured": "2026-11-02"
   },
   {
    "slug": "ourfamilywizard",
@@ -85,7 +89,8 @@
     "lost": 0
    },
    "store_url": "https://apps.apple.com/us/app/id497405393",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=497405393/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=497405393/sortby=mostrecent/json",
+   "first_measured": "2026-11-02"
   },
   {
    "slug": "talkingparents",
@@ -102,7 +107,8 @@
     "lost": 4
    },
    "store_url": "https://apps.apple.com/us/app/id1092220726",
-   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1092220726/sortby=mostrecent/json"
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1092220726/sortby=mostrecent/json",
+   "first_measured": "2026-11-21"
   }
  ],
  "stops": [

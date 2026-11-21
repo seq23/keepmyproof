@@ -25,7 +25,7 @@ export const GUIDE_COPY = {
     hubH1: 'Guides: keep screenshots and papers private on your phone',
     hubAnswer: 'These guides show how to hide screenshots, photos of papers and documents with the tools already on an iPhone or Android phone, step by step from Apple and Google help pages, and when a separate private folder for papers makes more sense than a hidden album. Each guide links the official help page it follows.',
     hubDesc: 'Step-by-step guides to hide screenshots and documents on iPhone and Android, from Apple and Google help pages, plus a private folder for papers.',
-    nav: 'Guides', bestFor: 'Who this guide is for:', sourcesH: 'Sources', checked: 'Steps checked against these pages on 6 November 2026. Menu names can change with a phone update.',
+    nav: 'Guides', bestFor: 'Who this guide is for:', sourcesH: 'Sources', checked: (d) => `Steps checked against these pages on ${d}. Menu names can change with a phone update.`,
     keepH: 'Keep the papers out of your photos',
     keepBody: 'A hidden album still mixes the screenshot of a pickup text or an HR email with your pictures. KeepMyProof is a private phone app for papers: folders with checklists, the day it happened next to the day you saved it, and one PDF of a folder when someone asks. On iPhone, after you add a photo, it offers to remove the original from Photos; nothing is removed unless you tap Remove and confirm on your iPhone.',
     notAdvice: 'Educational only. Not legal advice.', by: 'By KeepMyProof, made by Spry Labs', published: 'Published', updated: 'Updated', related: 'More guides',
@@ -35,7 +35,7 @@ export const GUIDE_COPY = {
     hubH1: 'Guías: mantenga privadas sus capturas y papeles en el teléfono',
     hubAnswer: 'Estas guías explican cómo ocultar capturas de pantalla, fotos de papeles y documentos con las herramientas que ya trae un iPhone o un teléfono Android, paso a paso según las páginas de ayuda de Apple y Google, y cuándo conviene más una carpeta privada para papeles que un álbum oculto. Cada guía enlaza la página oficial que sigue.',
     hubDesc: 'Guías paso a paso para ocultar capturas y documentos en iPhone y Android, según la ayuda de Apple y Google, y una carpeta privada para papeles.',
-    nav: 'Guías', bestFor: 'Para quién es esta guía:', sourcesH: 'Fuentes', checked: 'Pasos revisados con estas páginas el 6 de noviembre de 2026. Los nombres de los menús pueden cambiar con una actualización del teléfono.',
+    nav: 'Guías', bestFor: 'Para quién es esta guía:', sourcesH: 'Fuentes', checked: (d) => `Pasos revisados con estas páginas el ${d}. Los nombres de los menús pueden cambiar con una actualización del teléfono.`,
     keepH: 'Saque los papeles de sus fotos',
     keepBody: 'Un álbum oculto sigue mezclando la captura de un mensaje sobre la entrega de los niños o un correo de recursos humanos con sus fotos. KeepMyProof es una app privada para papeles: carpetas con listas, el día en que pasó junto al día en que lo guardó, y un solo PDF de una carpeta cuando alguien se lo pide. En iPhone, después de agregar una foto, le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y lo confirme en su iPhone.',
     notAdvice: 'Solo informativo. No es asesoría legal.', by: 'Por KeepMyProof, hecho por Spry Labs', published: 'Publicado', updated: 'Actualizado', related: 'Más guías',
@@ -48,7 +48,7 @@ export const GUIDE_COPY = {
  */
 export const GUIDES = [
   {
-    id: 'hide-screenshots-iphone', slug: { en: 'hide-screenshots-on-iphone', es: 'ocultar-capturas-en-iphone' },
+    id: 'hide-screenshots-iphone', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'hide-screenshots-on-iphone', es: 'ocultar-capturas-en-iphone' },
     sources: [src('Apple: Hide photos with the Hidden album', APPLE_HIDE), src('Apple: If you are missing photos or videos in the Photos app', APPLE_MISSING)],
     en: {
       title: 'How to hide screenshots on iPhone (Hidden album) | KeepMyProof',
@@ -88,7 +88,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'hide-documents-iphone', slug: { en: 'hide-documents-on-iphone', es: 'ocultar-documentos-en-iphone' },
+    id: 'hide-documents-iphone', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'hide-documents-on-iphone', es: 'ocultar-documentos-en-iphone' },
     sources: [src('Apple: Lock or hide an app on iPhone', APPLE_LOCK_APP), src('Apple: Lock your notes on iPhone', APPLE_LOCK_NOTES), src('Apple: Scan text and documents in Notes', APPLE_SCAN)],
     en: {
       title: 'How to hide documents on iPhone: lock the app or the note | KeepMyProof',
@@ -128,7 +128,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'hide-screenshots-android', slug: { en: 'hide-screenshots-on-android', es: 'ocultar-capturas-en-android' },
+    id: 'hide-screenshots-android', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'hide-screenshots-on-android', es: 'ocultar-capturas-en-android' },
     sources: [src('Google Photos Help: Hide sensitive photos and videos in Locked Folders (Android)', G_LOCKED), src('Google Photos Help: Move photos to archive (Android)', G_ARCHIVE)],
     en: {
       title: 'How to hide screenshots on Android (Google Photos Locked Folder) | KeepMyProof',
@@ -168,7 +168,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'hide-documents-android', slug: { en: 'hide-documents-on-android', es: 'ocultar-documentos-en-android' },
+    id: 'hide-documents-android', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'hide-documents-on-android', es: 'ocultar-documentos-en-android' },
     sources: [src('Files by Google Help: Protect your files with Safe folder', G_SAFE)],
     en: {
       title: 'How to hide documents on Android (Files by Google Safe folder) | KeepMyProof',
@@ -206,7 +206,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'delete-after-saving', slug: { en: 'remove-screenshots-from-camera-roll', es: 'quitar-capturas-del-carrete' },
+    id: 'delete-after-saving', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'remove-screenshots-from-camera-roll', es: 'quitar-capturas-del-carrete' },
     sources: [src('Apple: If you are missing photos or videos in the Photos app', APPLE_MISSING), src('Google Photos Help: Delete photos and videos (Android)', G_DELETE)],
     en: {
       title: 'Remove screenshots from camera roll after saving | KeepMyProof',
@@ -246,7 +246,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'keep-texts-private', slug: { en: 'keep-screenshots-of-texts-private', es: 'mantener-privadas-capturas-de-mensajes' },
+    id: 'keep-texts-private', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'keep-screenshots-of-texts-private', es: 'mantener-privadas-capturas-de-mensajes' },
     sources: [src('Apple: Hide photos with the Hidden album', APPLE_HIDE), src('Google Photos Help: Hide sensitive photos and videos in Locked Folders (Android)', G_LOCKED)],
     en: {
       title: 'How to keep screenshots of texts private (iPhone and Android) | KeepMyProof',
@@ -286,7 +286,7 @@ export const GUIDES = [
     },
   },
   {
-    id: 'vault-for-papers', slug: { en: 'private-document-vault', es: 'boveda-privada-de-documentos' }, root: true,
+    id: 'vault-for-papers', published: '2026-11-06', checked: '2026-11-06', slug: { en: 'private-document-vault', es: 'boveda-privada-de-documentos' }, root: true,
     sources: [src('Apple: Hide photos with the Hidden album', APPLE_HIDE), src('Google Photos Help: Hide sensitive photos and videos in Locked Folders (Android)', G_LOCKED), src('Files by Google Help: Protect your files with Safe folder', G_SAFE)],
     en: {
       title: 'Private document vault: papers, not just pictures | KeepMyProof',

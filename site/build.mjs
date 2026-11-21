@@ -19,7 +19,6 @@ import { checklistPdf } from './pdf.mjs';
 import { repeatsPhrase, shortenNames, leansBack } from './lib/names.mjs';
 import { TOOLS, calcData } from './tools.mjs';
 import { GUIDES, GUIDE_COPY } from './guides.mjs';
-import { PUB, MOD, pubOn, modOn, stampDates, readLedger, writeLedger, todayCentral } from './lib/page-dates.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
 import { CJK_COPY } from './landings-cjk.mjs';
 import { AMAZON_BOOKS, AMAZON_INDEX } from './amazon.mjs';
@@ -120,7 +119,7 @@ const STYLE = CSS + CSS_EXTRA;
 /** The approved logo (light and dark files, byte-identical to the design system); its alt keeps the header link's text "KeepMyProof". */
 const LOGO = '<picture><source srcset="/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/logo.svg" alt="KeepMyProof" width="199" height="32"></picture>';
 
-function fmtDate(lang, iso) {
+function fmtDate(lang, iso = SITE.updated) {
   return new Date(`${iso}T12:00:00Z`).toLocaleDateString({ es: 'es-US', zh: 'zh-CN', ko: 'ko-KR' }[lang] || 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
@@ -204,7 +203,7 @@ export function offersShown(node, body) {
   return rest;
 }
 
-function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false }) {
+function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false, updated = SITE.updated }) {
   const c = COPY[lang];
   const title = fitTitle(titles, TITLE_PADS[lang]), desc = fitDesc(rawDesc, [...descMore, c.factSentence(SITE.freeItems)]);
   const altLinks = alt ? ALL_LANGS.filter((l) => alt[l]).map((l) => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(alt[l])}">`).join('') + (alt.en ? `<link rel="alternate" hreflang="x-default" href="${url(alt.en)}">` : '') : '';
@@ -213,7 +212,7 @@ function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], b
   const graph = [
     { '@type': 'Organization', '@id': `${SITE.origin}/#organization`, name: SITE.name, url: `${SITE.origin}/`, logo: `${SITE.origin}/icon-512.png`, email: SITE.supportEmail, sameAs: ENTITY.sameAs,
       parentOrganization: { '@type': 'Organization', '@id': SITE.parentOrg.id, name: SITE.parentOrg.name, url: SITE.parentOrg.url } },
-    { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: MOD,
+    { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: updated,
       isPartOf: { '@id': `${SITE.origin}/#website` }, publisher: { '@id': `${SITE.origin}/#organization` },
       ...(speakable ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.definition', '.answer', '.faq'] } } : {}) },
     ...schema.map((n) => offersShown(n, body)),
@@ -237,7 +236,7 @@ ${index ? '' : '<meta name="robots" content="noindex,follow">'}
 ${c.vaultBar ? `<nav class="mainnav" aria-label="${esc(c.vaultBar.nav)}"><a href="${VAULT_HREF[lang]}">${esc(c.vaultBar.nav)}</a></nav>` : ''}<nav aria-label="Language">${langLinks}</nav></header>
 <main>${crumbHtml}${body}</main>
 <footer><nav aria-label="${esc(c.nav.home)}">${foot}${vaultFoot}${langLinks}</nav>
-<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}${live() ? '' : ` ${esc(c.comingSoon)}`}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${MOD}">${modOn(lang)}</time>.</p></footer>
+<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}${live() ? '' : ` ${esc(c.comingSoon)}`}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${updated}">${fmtDate(lang, updated)}</time>.</p></footer>
 </body></html>
 `;
 }
@@ -297,7 +296,7 @@ ${vaultSection(lang)}
 
 function legal(lang, id, paras) {
   const c = COPY[lang], key = id === 'terms' ? 'terms' : 'privacy';
-  const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${MOD}">${modOn(lang)}</time></p>
+  const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time></p>
 ${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}${key === 'privacy' && c.heardLine ? `\n<p>${esc(c.heardLine)}</p>` : ''}
 ${key === 'terms' ? `\n<p><a href="${pathOf('disclaimer', lang)}">${esc(c.nav.disclaimer)} ›</a></p>` : ''}
 <p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
@@ -498,7 +497,9 @@ function clusterPages(topics, hubs, cm, add, stops) {
     const keep = (l) => { const c = CC[l]; return `<h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}
 <p><a class="btn primary" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>${storeBlock(l)}${vaBlock(l)}`; };
 
-    // Hub in all four languages.
+    // Hub in all four languages. Published: the folder's own first day; updated: the newest official-source check behind it.
+    if (!F.published) throw Error(`NAMED STOP [NO_PUBLISHED_DATE] folder ${k}`);
+    const hubUpdated = [F.published, ...subs.flatMap((s) => s.states.flatMap((x) => Object.values(x.byLang).flat().map((f) => f.verifiedOn)))].filter(Boolean).sort().at(-1);
     const hubAlt = altOf(ALL_LANGS, P.hub);
     for (const l of ALL_LANGS) {
       const h = hub(l), c = CC[l], path = P.hub(l), n = measure(l, h.answer), [lo, hi] = RANGE[l];
@@ -510,8 +511,8 @@ ${list(checklistItems(topic, l))}
 ${own.length ? `<h2>${esc(h.statesH)}</h2><ul>${own.map((s) => `<li><a href="${P.sub(s, l)}">${esc(s.label[l])}</a></li>`).join('')}</ul><p><a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>` : ''}
 <h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${storeBlock(l)}${vaBlock(l)}
 ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
-      add({ path, alt: hubAlt, group: k, html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true,
-        crumbs: [{ name: h.h1, path }], schema: [article(l, path, h.title, h.desc, PUB, MOD, h.faq.filter((f) => f[2]).map((f) => ({ name: f[2].label, url: f[2].url }))), faqSchema(l, h.faq), appSchema(l)] }) });
+      add({ path, alt: hubAlt, group: k, updated: hubUpdated, html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true, updated: hubUpdated,
+        crumbs: [{ name: h.h1, path }], schema: [article(l, path, h.title, h.desc, F.published, hubUpdated, h.faq.filter((f) => f[2]).map((f) => ({ name: f[2].label, url: f[2].url }))), faqSchema(l, h.faq), appSchema(l)] }) });
     }
     if (!subs.length) continue;
 
@@ -542,8 +543,9 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
 <ul class="links">${pub.map((code) => `<li><a href="${P.state(s, code, l)}">${esc(stateName(code, l))}</a></li>`).join('')}</ul>
 <p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>${keep(l)}`;
         const desc = answer.length > 160 ? answer.slice(0, 157).replace(/\s+\S*$/, '') + '…' : answer;
-        add({ path, alt: subAlt, group: k, html: shell({ lang: l, path, alt: subAlt, title, desc, body,
-          crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path }], schema: [article(l, path, title, desc, PUB, MOD)] }) });
+        const checks = s.states.flatMap((x) => (x.byLang[l] || []).map((f) => f.verifiedOn)).filter(Boolean).sort(), subPub = [F.published, checks[0]].filter(Boolean).sort().at(-1), subUpd = [subPub, checks.at(-1)].filter(Boolean).sort().at(-1);
+        add({ path, alt: subAlt, group: k, updated: subUpd, html: shell({ lang: l, path, alt: subAlt, title, desc, body, updated: subUpd,
+          crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path }], schema: [article(l, path, title, desc, subPub, subUpd)] }) });
       }
       // State pages.
       for (const st of s.states) {
@@ -614,7 +616,7 @@ ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           for (const step of ladder) { const p = step(); if (!p[0]) continue; parts = p; body = render(...p); if (!repeats(body)) break; }
           if (repeats(body)) stops.push(`NAMED NOTE [REPEATED_PHRASE] ${k}/${s.data.subtopic}/${code} ${l}: an 8-word phrase still repeats 4+ times`);
           const faq = parts[2];
-          add({ path, alt, group: k, state: { folder: k, subtopic: s.data.subtopic, code, lang: l, facts: facts.length }, html: shell({ lang: l, path, alt, title, desc, body, speakable: true,
+          add({ path, alt, group: k, updated: last, state: { folder: k, subtopic: s.data.subtopic, code, lang: l, facts: facts.length }, html: shell({ lang: l, path, alt, updated: last, title, desc, body, speakable: true,
             crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path: P.sub(s, l) }, { name: S, path }],
             schema: [article(l, path, h1, desc, first, last, facts.map((f) => ({ name: f.source_name, url: f.source_url }))), faqSchema(l, faq), appSchema(l)] }) });
         }
@@ -675,8 +677,8 @@ ${plans[app.slug] ? `<h2>${esc(a.planH(app))}</h2>${list(plans[app.slug][l])}<p 
 <h2>${esc(a.suitsH(app))}</h2><p>${esc(a.suits[app.kind])}</p>${storeBlock(l)}
 <p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('facts', l)}">${esc(COPY[l].nav.facts)}</a> · <a href="${guidePath(VAULT_GUIDE, l)}">${esc(VAULT_GUIDE[l].h1)}</a></p>
 <p class="sub">${esc(a.tm(app))}</p>`;
-      add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
-        schema: [article(l, path, a.h1(app), a.desc(app), PUB, MOD, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
+      add({ path, alt, group: 'core', updated: app.measured, html: shell({ lang: l, path, alt, updated: app.measured, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
+        schema: [article(l, path, a.h1(app), a.desc(app), app.first_measured ?? app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
     }
     const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc((a.link ?? a.h1)(app))}</a></li>`).join('')}</ul>`;
     add({ path: idx, alt: { en: pathOf('alternatives', 'en'), es: pathOf('alternatives', 'es') }, group: 'core', html: page({ lang: l, id: 'alternatives', title: c.altIndexTitle, desc: c.altIndexDesc, body }) });
@@ -765,12 +767,12 @@ function guidePages(add) {
 ${x.sections.map(guideSection).join('\n')}
 ${faqHtml(l, x.faq)}
 <h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}<p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>
-<h2>${esc(G.sourcesH)}</h2><ul>${g.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul><p class="sub">${esc(G.checked)}</p>
+<h2>${esc(G.sourcesH)}</h2><ul>${g.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul><p class="sub">${esc(G.checked(fmtDate(l, g.checked)))}</p>
 <h2>${esc(G.related)}</h2><ul>${others.map((o) => `<li><a href="${guidePath(o, l)}">${esc(o[l].h1)}</a></li>`).join('')}</ul>
-<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${PUB}">${pubOn(l)}</time> · ${esc(G.updated)} <time datetime="${MOD}">${modOn(l)}</time></p>`;
-      add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: x.title, desc: x.desc, body, speakable: true,
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${g.published}">${fmtDate(l, g.published)}</time> · ${esc(G.updated)} <time datetime="${g.checked}">${fmtDate(l, g.checked)}</time></p>`;
+      add({ path, alt, group: 'core', updated: g.checked, html: shell({ lang: l, path, alt, title: x.title, desc: x.desc, body, speakable: true, updated: g.checked,
         crumbs: [{ name: G.nav, path: hub }, { name: x.h1, path }],
-        schema: [article(l, path, x.h1, x.desc, PUB, MOD, g.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, x.faq), appSchema(l)] }) });
+        schema: [article(l, path, x.h1, x.desc, g.published, g.checked, g.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, x.faq), appSchema(l)] }) });
     }
     const body = `<h1>${esc(G.hubH1)}</h1><p class="definition answer">${esc(G.hubAnswer)}</p><p class="sub">${esc(G.notAdvice)}</p><ul>${GUIDES.map((g) => `<li><a href="${guidePath(g, l)}">${esc(g[l].h1)}</a></li>`).join('')}</ul>${storeBlock(l)}`;
     add({ path: hub, alt: hubAlt, group: 'core', html: page({ lang: l, id: 'guides', title: G.hubTitle, desc: G.hubDesc, body }) });
@@ -810,8 +812,8 @@ ${guideSection({ h: h.diffH, a: h.diff, table: h.table })}
 <h2>${esc(h.limitsH)}</h2>${list(limits)}
 <h2>${esc(h.pagesH)}</h2>${linkList(pages)}
 ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
-    add({ path, alt: hubAlt, group: 'vault', html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true, crumbs: [{ name: h.h1, path }],
-      schema: [article(l, path, h.h1, h.desc, PUB, MOD), faqSchema(l, h.faq), appSchema(l)] }) });
+    add({ path, alt: hubAlt, group: 'vault', updated: VAULT_HUB.checked, html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true, updated: VAULT_HUB.checked, crumbs: [{ name: h.h1, path }],
+      schema: [article(l, path, h.h1, h.desc, VAULT_HUB.published, VAULT_HUB.checked), faqSchema(l, h.faq), appSchema(l)] }) });
   }
   // The landing pages, EN + ES.
   for (const x of LANDINGS) {
@@ -821,6 +823,7 @@ ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p
       const G = cjk ? CJK_COPY[l] : GUIDE_COPY[l], L = cjk ? CJK_COPY[l] : LP_COPY[l];
       if (measure(l, p.answer) < lo || measure(l, p.answer) > hi) throw Error(`NAMED STOP [ANSWER_LENGTH] landing ${x.id} ${l}: ${measure(l, p.answer)} (allowed ${lo}-${hi})`);
       if (!x.sources.length) throw Error(`NAMED STOP [LANDING_UNSOURCED] ${x.id}`);
+      if (!x.published || !x.checked) throw Error(`NAMED STOP [NO_PUBLISHED_DATE] landing ${x.id}: give it published and checked dates`);
       const vault = x.kind === 'vault';
       const F = vault ? null : FOLDERS[x.kind], topic = F && folders.find((t) => t.id === F.topic);
       if (!vault && !topic) throw Error(`NAMED STOP [FOLDER_UNMAPPED] landing ${x.id}: no folder ${x.kind}`);
@@ -837,10 +840,10 @@ ${faqHtml(l, p.faq)}
 ${keep}
 <h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l] ?? s.url.en)}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
 <h2>${esc(L.more)}</h2>${linkList(related)}
-<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${PUB}">${pubOn(l)}</time> · ${esc(G.updated)} <time datetime="${MOD}">${modOn(l)}</time></p>`;
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${x.published}">${fmtDate(l, x.published)}</time> · ${esc(G.updated)} <time datetime="${x.checked}">${fmtDate(l, x.checked)}</time></p>`;
       const crumbs = vault ? [{ name: VAULT_HUB[l].h1, path: VAULT_HUB.path[l] }, { name: p.h1, path }] : [{ name: hubFor(hubs, F.topic, l).h1, path: hubPath(hubs, F.topic, l) }, { name: p.h1, path }];
-      add({ path, alt, group: vault ? 'vault' : x.kind, html: shell({ lang: l, path, alt, title: p.title, desc: p.desc, body, speakable: true, crumbs,
-        schema: [article(l, path, p.h1, p.desc, PUB, MOD, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
+      add({ path, alt, group: vault ? 'vault' : x.kind, updated: x.checked, html: shell({ lang: l, path, alt, updated: x.checked, title: p.title, desc: p.desc, body, speakable: true, crumbs,
+        schema: [article(l, path, p.h1, p.desc, x.published, x.checked, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
     }
   }
 }
@@ -931,7 +934,7 @@ ${linkList(AMAZON_BOOKS.map((b) => [`${b.book}: ${b.free.label.replace(/^Open th
 // ---------- the whole site ----------
 
 /** Every file of the site plus the page list: { files, pages, stops }. */
-export function renderAll(input = loadFacts(), { ledger = readLedger(), today = todayCentral() } = {}) {
+export function renderAll(input = loadFacts()) {
   const topics = readJson(join(ROOT, 'topics.json')), hubs = readJson(join(HERE, 'data', 'hubs.json')).hubs;
   const folders = launchFolders(topics);
   const files = {}, pages = [];
@@ -963,16 +966,14 @@ export function renderAll(input = loadFacts(), { ledger = readLedger(), today = 
     if (b) throw Error(`NAMED STOP [BANNED_WORD_IN_COPY] ${pg.path}: "${b}"`);
   }
   files['404.html'] = notFound();
-  const dates = stampDates(files, { ledger, today, format: fmtDate });
-  const lastmod = (p) => dates.ledger[p.file]?.modified ?? today;
   files['site.css'] = STYLE;
   files['tools.js'] = readFileSync(join(HERE, 'tools-client.js'), 'utf8');
 
   // Sitemaps split by folder; sitemap.xml is the index.
   const groups = [...new Set(pages.filter((p) => p.index).map((p) => p.group))];
-  const loc = (p) => `<url><loc>${url(p.path)}</loc><lastmod>${lastmod(p)}</lastmod>${p.alt ? ALL_LANGS.filter((l) => p.alt[l]).map((l) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(p.alt[l])}"/>`).join('') : ''}</url>`;
+  const loc = (p) => `<url><loc>${url(p.path)}</loc><lastmod>${p.updated ?? SITE.updated}</lastmod>${p.alt ? ALL_LANGS.filter((l) => p.alt[l]).map((l) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(p.alt[l])}"/>`).join('') : ''}</url>`;
   for (const g of groups) files[`sitemap-${g}.xml`] = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${pages.filter((p) => p.index && p.group === g).map(loc).join('\n')}\n</urlset>\n`;
-  files['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${groups.map((g) => `<sitemap><loc>${SITE.origin}/sitemap-${g}.xml</loc><lastmod>${pages.filter((p) => p.index && p.group === g).map(lastmod).sort().at(-1)}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`;
+  files['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${groups.map((g) => `<sitemap><loc>${SITE.origin}/sitemap-${g}.xml</loc><lastmod>${SITE.updated}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`;
   files['robots.txt'] = `User-agent: *\nAllow: /\n\n# AI answer engines are welcome to read and cite this site.\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\n\nSitemap: ${SITE.origin}/sitemap.xml\n`;
 
   const fl = folders.map((f) => `- ${hubs[f.id] ? `[${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))})` : f.display_name.en}: ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
@@ -990,7 +991,7 @@ export function renderAll(input = loadFacts(), { ledger = readLedger(), today = 
   if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
   files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  Cache-Control: public, max-age=0, must-revalidate, no-transform\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
   if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
-  return { files, pages, stops, model, dates };
+  return { files, pages, stops, model };
 }
 
 /** Every file of the site, as { path: contents }. */
@@ -998,8 +999,7 @@ export const render = (input) => renderAll(input).files;
 
 export function build(dist) {
   rmSync(dist, { recursive: true, force: true });
-  const { files, pages, stops, dates } = renderAll();
-  if (dates.changed) writeLedger(dates.ledger);
+  const { files, pages, stops } = renderAll();
   for (const [p, s] of Object.entries(files)) { mkdirSync(dirname(join(dist, p)), { recursive: true }); writeFileSync(join(dist, p), s); }
   const assets = join(ROOT, 'assets', 'site');
   for (const f of readdirSync(assets)) copyFileSync(join(assets, f), join(dist, f));
