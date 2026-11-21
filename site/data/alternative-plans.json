@@ -1,0 +1,33 @@
+{
+  "_about": "What a co-parenting app costs, from its own pricing page, with the date it was read. Plain facts only: no review quotes, no reviewer names, nominative names. Rendered on /alternatives/<slug>. Re-read when alternatives.json is re-measured.",
+  "plans": {
+    "talkingparents": {
+      "checked": "2026-11-21",
+      "url": "https://talkingparents.com/pricing",
+      "en": [
+        "Its pricing page says \"You need a paid subscription to use the TalkingParents app\", with a 30-day free trial.",
+        "It lists three plans: Essentials at $7, Enhanced at $16 and Ultimate at $32 a month, with a lower price if paid yearly.",
+        "It says parents facing financial hardship and survivors of domestic violence may qualify for a fee waiver."
+      ],
+      "es": [
+        "Su página de precios dice \"You need a paid subscription to use the TalkingParents app\" (se necesita una suscripción de pago), con una prueba gratis de 30 días.",
+        "Muestra tres planes: Essentials a $7, Enhanced a $16 y Ultimate a $32 al mes, con un precio menor si se paga al año.",
+        "Dice que los padres con dificultades económicas y los sobrevivientes de violencia doméstica pueden recibir una exención de pago."
+      ]
+    },
+    "ourfamilywizard": {
+      "checked": "2026-11-21",
+      "url": "https://www.ourfamilywizard.com/pricing",
+      "en": [
+        "Its pricing page lists four plans billed yearly: $110, Essentials at $149.99, Premium at $216 and Max at $299.88, with lower prices for two years.",
+        "It says each parent needs their own subscription, and that one parent may pay for the other.",
+        "It says it offers fee waivers to parents in financial need."
+      ],
+      "es": [
+        "Su página de precios muestra cuatro planes anuales: $110, Essentials a $149.99, Premium a $216 y Max a $299.88, con precios menores por dos años.",
+        "Dice que cada padre necesita su propia suscripción y que un padre puede pagar la del otro.",
+        "Dice que ofrece exenciones de pago a padres con necesidad económica."
+      ]
+    }
+  }
+}

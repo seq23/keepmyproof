@@ -50,6 +50,7 @@ export const LIMITS = {
 
 /** The /vault hub: the page every vault page links up to. */
 export const VAULT_HUB = {
+  published: '2026-11-06', checked: '2026-11-06',
   path: { en: '/vault', es: '/es/boveda', zh: '/zh/vault', ko: '/ko/vault' },
   en: {
     title: 'Private vault for photos and documents | KeepMyProof', h1: 'A private vault for photos and documents',
@@ -120,7 +121,7 @@ export const VAULT_HUB = {
 export const LANDINGS_BASE = [
   // ---------- photo-vault landing pages (section 7) ----------
   {
-    id: 'private-photo-vault-app', kind: 'vault', path: { en: '/private-photo-vault-app', es: '/es/app-boveda-privada-de-fotos' },
+    id: 'private-photo-vault-app', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/private-photo-vault-app', es: '/es/app-boveda-privada-de-fotos' },
     sources: [S.appleHide, S.gLocked, S.appleDeleted],
     en: {
       title: 'Private photo vault app for photos and documents | KeepMyProof',
@@ -160,7 +161,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'hide-photos-iphone', kind: 'vault', path: { en: '/hide-photos-on-iphone', es: '/es/ocultar-fotos-en-iphone' },
+    id: 'hide-photos-iphone', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/hide-photos-on-iphone', es: '/es/ocultar-fotos-en-iphone' },
     sources: [S.appleHide, S.appleDeleted, S.appleLock],
     en: {
       title: 'How to hide photos on iPhone (and documents) | KeepMyProof',
@@ -200,7 +201,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'hide-photos-android', kind: 'vault', path: { en: '/hide-photos-on-android', es: '/es/ocultar-fotos-en-android' },
+    id: 'hide-photos-android', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/hide-photos-on-android', es: '/es/ocultar-fotos-en-android' },
     sources: [S.gLocked, S.gSafe, S.gDelete],
     en: {
       title: 'How to hide photos on Android (and documents) | KeepMyProof',
@@ -240,7 +241,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'secret-photo-vault', kind: 'vault', path: { en: '/secret-photo-vault', es: '/es/boveda-secreta-de-fotos' },
+    id: 'secret-photo-vault', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/secret-photo-vault', es: '/es/boveda-secreta-de-fotos' },
     sources: [S.appleHide, S.gLocked, S.appleLock],
     en: {
       title: 'Secret photo vault or photo locker: what to know | KeepMyProof',
@@ -280,7 +281,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'hide-pictures-camera-roll', kind: 'vault', path: { en: '/hide-pictures-from-camera-roll', es: '/es/ocultar-fotos-del-carrete' },
+    id: 'hide-pictures-camera-roll', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/hide-pictures-from-camera-roll', es: '/es/ocultar-fotos-del-carrete' },
     sources: [S.appleHide, S.appleDeleted, S.gLocked, S.gDelete],
     en: {
       title: 'How to hide pictures from your camera roll | KeepMyProof',
@@ -320,7 +321,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'custody-screenshots-private', kind: 'vault', path: { en: '/keep-custody-screenshots-private', es: '/es/capturas-de-custodia-privadas' },
+    id: 'custody-screenshots-private', published: '2026-11-06', checked: '2026-11-06', kind: 'vault', path: { en: '/keep-custody-screenshots-private', es: '/es/capturas-de-custodia-privadas' },
     sources: [S.appleHide, S.gLocked, S.caCustody],
     en: {
       title: 'Keep screenshots private for a custody case | KeepMyProof',
@@ -362,7 +363,7 @@ export const LANDINGS_BASE = [
 
   // ---------- the six pages the search decision lists (section 4) ----------
   {
-    id: 'custody-log', kind: 'divorce', path: { en: '/custody-log', es: '/es/registro-de-custodia' }, printable: { en: '/tools/co-parenting-log-printable', es: '/es/herramientas/registro-de-crianza-para-imprimir' },
+    id: 'custody-log', published: '2026-11-06', checked: '2026-11-06', kind: 'divorce', path: { en: '/custody-log', es: '/es/registro-de-custodia' }, printable: { en: '/tools/co-parenting-log-printable', es: '/es/herramientas/registro-de-crianza-para-imprimir' },
     sources: [S.caCustody, S.css],
     en: {
       title: 'Custody log: what to write down and how | KeepMyProof',
@@ -402,7 +403,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'prepare-for-divorce', kind: 'divorce', path: { en: '/how-to-prepare-for-divorce', es: '/es/como-prepararse-para-el-divorcio' },
+    id: 'prepare-for-divorce', published: '2026-11-06', checked: '2026-11-06', kind: 'divorce', path: { en: '/how-to-prepare-for-divorce', es: '/es/como-prepararse-para-el-divorcio' },
     sources: [S.css, S.irs452, S.caCustody],
     en: {
       title: 'How to prepare for divorce: a checklist | KeepMyProof',
@@ -442,7 +443,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'what-is-an-iep', kind: 'iep', path: { en: '/questions/what-is-an-iep', es: '/es/preguntas/que-es-un-iep' },
+    id: 'what-is-an-iep', published: '2026-11-06', checked: '2026-11-06', kind: 'iep', path: { en: '/questions/what-is-an-iep', es: '/es/preguntas/que-es-un-iep' },
     sources: [S.iepDef, S.iepReview, S.iepReeval, S.iepParents, S.ptic],
     en: {
       title: 'What is an IEP? A plain answer for parents | KeepMyProof',
@@ -482,7 +483,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'iep-meeting-checklist', kind: 'iep', path: { en: '/iep-meeting-checklist', es: '/es/lista-para-la-reunion-del-iep' }, printable: { en: '/tools/iep-meeting-notes-printable', es: '/es/herramientas/notas-de-reunion-iep-para-imprimir' },
+    id: 'iep-meeting-checklist', published: '2026-11-06', checked: '2026-11-06', kind: 'iep', path: { en: '/iep-meeting-checklist', es: '/es/lista-para-la-reunion-del-iep' }, printable: { en: '/tools/iep-meeting-notes-printable', es: '/es/herramientas/notas-de-reunion-iep-para-imprimir' },
     sources: [S.iepParents, S.iepReview, S.iepEval, S.iepMeet, S.ptic],
     en: {
       title: 'IEP meeting checklist for parents | KeepMyProof',
@@ -522,7 +523,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'parent-dies', kind: 'executor', path: { en: '/questions/what-to-do-when-a-parent-dies', es: '/es/preguntas/que-hacer-cuando-muere-un-padre' },
+    id: 'parent-dies', published: '2026-11-06', checked: '2026-11-06', kind: 'executor', path: { en: '/questions/what-to-do-when-a-parent-dies', es: '/es/preguntas/que-hacer-cuando-muere-un-padre' },
     sources: [S.w2w, S.irs1041, S.cfpbDebt],
     en: {
       title: 'What to do when a parent dies: a checklist | KeepMyProof',
@@ -562,7 +563,7 @@ export const LANDINGS_BASE = [
     },
   },
   {
-    id: 'screenshots-evidence', kind: 'divorce', path: { en: '/questions/do-screenshots-count-as-evidence', es: '/es/preguntas/las-capturas-cuentan-como-prueba' },
+    id: 'screenshots-evidence', published: '2026-11-06', checked: '2026-11-06', kind: 'divorce', path: { en: '/questions/do-screenshots-count-as-evidence', es: '/es/preguntas/las-capturas-cuentan-como-prueba' },
     sources: [S.fre901, S.fre1002],
     en: {
       title: 'Do screenshots count as evidence? It depends | KeepMyProof',
@@ -604,8 +605,10 @@ export const LANDINGS_BASE = [
 ];
 
 // Chinese and Korean versions (site/landings-cjk.mjs): the same page at /zh/<path> and /ko/<path>.
-import { LANDINGS_CJK } from './landings-cjk.mjs';
-export const LANDINGS = LANDINGS_BASE.map((x) => {
+import { LANDINGS_CJK as BASE_CJK } from './landings-cjk.mjs';
+import { TENANT_LANDINGS, TENANT_LANDINGS_CJK } from './landings-tenant.mjs';
+const LANDINGS_CJK = { ...BASE_CJK, ...TENANT_LANDINGS_CJK };
+export const LANDINGS = [...LANDINGS_BASE, ...TENANT_LANDINGS].map((x) => {
   const t = LANDINGS_CJK[x.id];
   if (!t?.zh || !t?.ko) throw Error(`NAMED STOP [NOT_TRANSLATED] landing ${x.id}: no zh/ko in site/landings-cjk.mjs`);
   return { ...x, zh: t.zh, ko: t.ko, path: { ...x.path, zh: `/zh${x.path.en}`, ko: `/ko${x.path.en}` } };

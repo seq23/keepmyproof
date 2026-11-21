@@ -132,7 +132,7 @@ www redirects to the apex. Never a bare `wrangler deploy`.
 
 What it publishes, and from where:
 - Home, Terms, Privacy, Support (EN `/`, ES `/es/`): `topics.json`, `store/*.md`.
-- Five folder hubs with printable checklist PDFs in English, Spanish, Chinese
+- Seven folder hubs (one per launch folder in `topics.json`) with printable checklist PDFs in English, Spanish, Chinese
   (`/zh/`) and Korean (`/ko/`): `site/data/hubs.json`, `site/copy-cjk.mjs`,
   `site/pdf.mjs` (no email gate). Free checklists page: `/checklists`.
 - State pages, one per state and subtopic: `site/data/facts/<folder>/*.json`

@@ -1,0 +1,1169 @@
+{
+  "folder": "tenant",
+  "subtopic": "security-deposit-return-deadline",
+  "title_en": "Security deposit return deadline in {state}",
+  "title_es": "Plazo para devolver el depósito de seguridad en {state_es}",
+  "search_intent_en": [
+    "how long does a landlord have to return a security deposit in {state}",
+    "{state} security deposit law",
+    "{state} security deposit return deadline"
+  ],
+  "search_intent_es": [
+    "plazo para devolver el depósito de seguridad en {state_es}",
+    "ley del depósito de seguridad {state_es}"
+  ],
+  "states": {
+    "AZ": {
+      "facts": [
+        {
+          "claim_en": "Arizona law gives the landlord fourteen days, not counting weekends or legal holidays, after the tenancy ends, possession is returned and the tenant asks, to provide an itemized list of deductions.",
+          "claim_es": "La ley de Arizona da al arrendador catorce días, sin contar fines de semana ni feriados, después de terminar el contrato, entregar la vivienda y la solicitud del inquilino, para dar una lista detallada de descuentos.",
+          "source_url": "https://www.azleg.gov/ars/33/01321.htm",
+          "source_name": "Arizona Revised Statutes 33-1321, Security deposits",
+          "quote": "Within fourteen days, excluding Saturdays, Sundays or other legal holidays, after termination of the tenancy and delivery of possession and demand by the tenant the landlord shall provide the tenant an itemi",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Arizona law limits a security deposit, including prepaid rent, to one and one-half month's rent.",
+          "claim_es": "La ley de Arizona limita el depósito, incluida la renta pagada por adelantado, a un mes y medio de renta.",
+          "source_url": "https://www.azleg.gov/ars/33/01321.htm",
+          "source_name": "Arizona Revised Statutes 33-1321, Security deposits",
+          "quote": "A landlord shall not demand or receive security, however denominated, including prepaid rent in an amount or value of more than one and one-half month's rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "CT": {
+      "facts": [
+        {
+          "claim_en": "Connecticut law says the landlord must return the deposit, or the balance with a written list of damages, within twenty-one days after the tenancy ends or fifteen days after getting the tenant's forwarding address, whichever is later.",
+          "claim_es": "La ley de Connecticut dice que el arrendador debe devolver el depósito, o el saldo con una lista escrita de daños, dentro de veintiún días después de terminar el contrato o quince días después de recibir la dirección nueva del inquilino, lo que sea más tarde.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_831.htm",
+          "source_name": "Connecticut General Statutes, Chapter 831 (Section 47a-21)",
+          "quote": "Not later than twenty-one days after termination of a tenancy or fifteen days after receiving written notification of such tenant's forwarding address, whichever is later",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Connecticut law limits the deposit for a tenant under sixty-two to two months' rent.",
+          "claim_es": "La ley de Connecticut limita el depósito de un inquilino menor de sesenta y dos años a dos meses de renta.",
+          "source_url": "https://www.cga.ct.gov/current/pub/chap_831.htm",
+          "source_name": "Connecticut General Statutes, Chapter 831 (Section 47a-21)",
+          "quote": "In the case of a tenant under sixty-two years of age, a landlord shall not demand a security deposit in an amount that exceeds two months' rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "DC": {
+      "facts": [
+        {
+          "claim_en": "D.C. law says that within 45 days after the tenancy ends, the housing provider must tell the tenant in writing of any amounts it claims.",
+          "claim_es": "La ley de D.C. dice que dentro de 45 días después de terminar el contrato, el arrendador debe avisar por escrito al inquilino de cualquier monto que reclame.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17",
+          "source_name": "D.C. Code 42-3502.17, Security deposits",
+          "quote": "Within 45 days after termination of the tenancy, the housing provider shall notify the tenant in writing",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "D.C. law says the notice must include photographs or other documentation supporting the housing provider's claim.",
+          "claim_es": "La ley de D.C. dice que el aviso debe incluir fotografías u otros documentos que respalden el reclamo del arrendador.",
+          "source_url": "https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17",
+          "source_name": "D.C. Code 42-3502.17, Security deposits",
+          "quote": "Photographs or other documentation supporting the housing provider's claim for alleged unpaid amounts",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "DE": {
+      "facts": [
+        {
+          "claim_en": "Delaware law says that within 20 days after the rental agreement ends, the landlord must give the tenant an itemized list of damages and pay the difference.",
+          "claim_es": "La ley de Delaware dice que dentro de 20 días después de terminar el contrato, el arrendador debe dar al inquilino una lista detallada de daños y pagar la diferencia.",
+          "source_url": "https://delcode.delaware.gov/title25/c055/index.html",
+          "source_name": "Delaware Code, Title 25, Chapter 55 (Section 5514)",
+          "quote": "Within 20 days after the termination or expiration of any rental agreement, the landlord shall provide the tenant with an itemized list of damages",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Delaware law says a landlord who does not return the deposit or the difference within 20 days owes the tenant double the amount wrongfully withheld.",
+          "claim_es": "La ley de Delaware dice que el arrendador que no devuelve el depósito o la diferencia dentro de 20 días debe al inquilino el doble de lo retenido sin derecho.",
+          "source_url": "https://delcode.delaware.gov/title25/c055/index.html",
+          "source_name": "Delaware Code, Title 25, Chapter 55 (Section 5514)",
+          "quote": "within 20 days from the expiration or termination of the rental agreement shall entitle the tenant to double the amount wrongfully withheld",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "FL": {
+      "facts": [
+        {
+          "claim_en": "Florida law says that if the landlord does not intend to claim against the deposit, it must be returned within 15 days after the rental agreement ends.",
+          "claim_es": "La ley de Florida dice que si el arrendador no piensa reclamar contra el depósito, debe devolverlo dentro de 15 días después de terminar el contrato.",
+          "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+          "source_name": "Florida Statutes 83.49, Deposit money or advance rent",
+          "quote": "the landlord must return the security deposit, together with interest if otherwise required, within 15 days after the termination of the rental agreement",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Florida law says a landlord who intends to claim against the deposit must send written notice within 30 days after the rental agreement ends.",
+          "claim_es": "La ley de Florida dice que el arrendador que piensa reclamar contra el depósito debe enviar un aviso escrito dentro de 30 días después de terminar el contrato.",
+          "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+          "source_name": "Florida Statutes 83.49, Deposit money or advance rent",
+          "quote": "If the landlord intends to impose a claim on the deposit, the landlord must, within 30 days after the termination of the rental agreement, provide the tenant written notice",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "IA": {
+      "facts": [
+        {
+          "claim_en": "Iowa law says the landlord must return the deposit, or give a written statement of the reasons for keeping any of it, within thirty days after the tenancy ends and the tenant gives a mailing address.",
+          "claim_es": "La ley de Iowa dice que el arrendador debe devolver el depósito, o dar por escrito las razones para quedarse con una parte, dentro de treinta días después de terminar el contrato y de recibir la dirección del inquilino.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/562A.12.pdf",
+          "source_name": "Iowa Code 562A.12, Rental deposits",
+          "quote": "A landlord shall, within thirty days from the date of termination of the tenancy and receipt of the tenant’s mailing address or delivery instructions, return the rental deposit to the tenant",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Iowa law limits a security deposit to two months' rent.",
+          "claim_es": "La ley de Iowa limita el depósito a dos meses de renta.",
+          "source_url": "https://www.legis.iowa.gov/docs/code/562A.12.pdf",
+          "source_name": "Iowa Code 562A.12, Rental deposits",
+          "quote": "A landlord shall not demand or receive as a security deposit an amount or value in excess of two months’ rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "ID": {
+      "facts": [
+        {
+          "claim_en": "Idaho law says refunds are due within twenty-one days if the agreement sets no time, and in any event within thirty days after the tenant gives up the premises.",
+          "claim_es": "La ley de Idaho dice que los reembolsos se deben dentro de veintiún días si el contrato no fija un plazo, y en todo caso dentro de treinta días después de que el inquilino entrega la vivienda.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title6/T6CH3/SECT6-321/",
+          "source_name": "Idaho Code 6-321, Security deposits",
+          "quote": "Refunds shall be made within twenty-one (21) days if no time is fixed by agreement and, in any event, within thirty (30) days after surrender of the premises by the tenant.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Idaho law describes ordinary wear as use without negligence, carelessness, accident, misuse or abuse.",
+          "claim_es": "La ley de Idaho describe el desgaste normal como el uso sin negligencia, descuido, accidente, mal uso ni abuso.",
+          "source_url": "https://legislature.idaho.gov/statutesrules/idstat/Title6/T6CH3/SECT6-321/",
+          "source_name": "Idaho Code 6-321, Security deposits",
+          "quote": "without negligence, carelessness, accident, or misuse or abuse of the premises or contents by the tenant",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "KS": {
+      "facts": [
+        {
+          "claim_en": "Kansas law says the landlord must return the balance within 14 days after deciding on deductions, and in no event more than 30 days after the tenancy ends, possession is returned and the tenant asks.",
+          "claim_es": "La ley de Kansas dice que el arrendador debe devolver el saldo dentro de 14 días después de decidir los descuentos, y nunca más de 30 días después de terminar el contrato, entregar la vivienda y la solicitud del inquilino.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch58/058_025_0050.html",
+          "source_name": "Kansas Statutes 58-2550, Security deposits",
+          "quote": "the landlord shall return the balance of the security deposit to the tenant within 14 days after the determination of the amount of such expenses, damages or other charges, but in no event to exceed 30 days after termination of the tenancy, delivery of possession and demand by the tenant",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Kansas law limits the deposit for an unfurnished home to one month's rent.",
+          "claim_es": "La ley de Kansas limita el depósito de una vivienda sin muebles a un mes de renta.",
+          "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch58/058_025_0050.html",
+          "source_name": "Kansas Statutes 58-2550, Security deposits",
+          "quote": "A landlord may not demand or receive a security deposit for an unfurnished dwelling unit in an amount or value in excess of one month's periodic rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MA": {
+      "facts": [
+        {
+          "claim_en": "Massachusetts law says the landlord must return the deposit, or the balance, within thirty days after the tenancy ends.",
+          "claim_es": "La ley de Massachusetts dice que el arrendador debe devolver el depósito, o el saldo, dentro de treinta días después de terminar el contrato.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "source_name": "Massachusetts General Laws, Chapter 186, Section 15B",
+          "quote": "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will or the end of the tenancy as specified in a valid written lease agreement, return to the tenant the security deposit or any balance thereof",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Massachusetts law says a landlord who takes a deposit must give the tenant a written statement of the condition of the home within ten days after the tenancy starts.",
+          "claim_es": "La ley de Massachusetts dice que el arrendador que recibe un depósito debe dar al inquilino una declaración escrita del estado de la vivienda dentro de diez días después de empezar el contrato.",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "source_name": "Massachusetts General Laws, Chapter 186, Section 15B",
+          "quote": "within ten days after commencement of the tenancy, whichever is later, furnish to such tenant or prospective tenant a separate written statement of the present condition of the premises",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MD": {
+      "facts": [
+        {
+          "claim_en": "Maryland law says the landlord must return the deposit with interest within 45 days after the tenancy ends.",
+          "claim_es": "La ley de Maryland dice que el arrendador debe devolver el depósito con intereses dentro de 45 días después de terminar el contrato.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-203&enactments=false",
+          "source_name": "Maryland Code, Real Property 8-203, Security deposits",
+          "quote": "Within 45 days after the end of the tenancy, the landlord shall return the security deposit to the tenant together with simple interest",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Maryland law says a tenant whose deposit is withheld without a reasonable basis may sue for up to three times the amount withheld, plus attorney's fees.",
+          "claim_es": "La ley de Maryland dice que el inquilino cuyo depósito se retiene sin una base razonable puede demandar hasta el triple de lo retenido, más honorarios de abogado.",
+          "source_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-203&enactments=false",
+          "source_name": "Maryland Code, Real Property 8-203, Security deposits",
+          "quote": "the tenant has an action of up to threefold of the withheld amount, plus reasonable attorney's fees",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "ME": {
+      "facts": [
+        {
+          "claim_en": "Maine law says that for a tenancy at will, the landlord must return the deposit or give an itemized statement within 21 days after the tenancy ends or the premises are surrendered, whichever is later.",
+          "claim_es": "La ley de Maine dice que en un contrato a voluntad, el arrendador debe devolver el depósito o dar una declaración detallada dentro de 21 días después de terminar el contrato o entregar la vivienda, lo que sea más tarde.",
+          "source_url": "https://legislature.maine.gov/statutes/14/title14sec6033.html",
+          "source_name": "Maine Revised Statutes, Title 14, Section 6033",
+          "quote": "In the case of a tenancy at will, within 21 days after the termination of the tenancy or the surrender and acceptance of the premises, whichever occurs later.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Maine law says a deposit may not be kept to pay for normal wear and tear.",
+          "claim_es": "La ley de Maine dice que el depósito no se puede retener para pagar el desgaste normal.",
+          "source_url": "https://legislature.maine.gov/statutes/14/title14sec6033.html",
+          "source_name": "Maine Revised Statutes, Title 14, Section 6033",
+          "quote": "A security deposit or any portion of a security deposit shall not be retained for the purpose of paying for normal wear and tear.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MI": {
+      "facts": [
+        {
+          "claim_en": "Michigan law says that if the landlord claims damages, it must mail the tenant an itemized list within 30 days after the occupancy ends.",
+          "claim_es": "La ley de Michigan dice que si el arrendador reclama daños, debe enviar por correo al inquilino una lista detallada dentro de 30 días después de terminar la ocupación.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-554-609",
+          "source_name": "Michigan Compiled Laws 554.609",
+          "quote": "the landlord shall mail to the tenant, within 30 days after the termination of occupancy, a notice of damages that contains an itemized list of damages claimed",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Michigan law says the itemized list must include the estimated cost of repair of each damaged item.",
+          "claim_es": "La ley de Michigan dice que la lista detallada debe incluir el costo estimado de reparar cada cosa dañada.",
+          "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-554-609",
+          "source_name": "Michigan Compiled Laws 554.609",
+          "quote": "including the estimated cost of repair of each damaged property item",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MN": {
+      "facts": [
+        {
+          "claim_en": "Minnesota law says the landlord must return the deposit, or give a written statement of the reasons for keeping it, within three weeks after the tenancy ends.",
+          "claim_es": "La ley de Minnesota dice que el arrendador debe devolver el depósito, o dar por escrito las razones para retenerlo, dentro de tres semanas después de terminar el contrato.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/504B.178",
+          "source_name": "Minnesota Statutes 504B.178, Interest on damage deposits",
+          "quote": "Every landlord shall: (1) within three weeks after termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Minnesota law sets damages for a landlord who fails to provide the written statement within three weeks.",
+          "claim_es": "La ley de Minnesota fija daños para el arrendador que no da la declaración escrita dentro de tres semanas.",
+          "source_url": "https://www.revisor.mn.gov/statutes/cite/504B.178",
+          "source_name": "Minnesota Statutes 504B.178, Interest on damage deposits",
+          "quote": "Any landlord who fails to: (1) provide a written statement within three weeks of termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MO": {
+      "facts": [
+        {
+          "claim_en": "Missouri law says that within thirty days after the tenancy ends, the landlord must return the full deposit or give an itemized list of damages.",
+          "claim_es": "La ley de Misuri dice que dentro de treinta días después de terminar el contrato, el arrendador debe devolver todo el depósito o dar una lista detallada de daños.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=535.300",
+          "source_name": "Missouri Revised Statutes 535.300, Security deposits",
+          "quote": "Within thirty days after the date of termination of the tenancy, the landlord shall: (1) Return the full amount of the security deposit",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Missouri law limits a security deposit to two months' rent.",
+          "claim_es": "La ley de Misuri limita el depósito a dos meses de renta.",
+          "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=535.300",
+          "source_name": "Missouri Revised Statutes 535.300, Security deposits",
+          "quote": "A landlord may not demand or receive a security deposit in excess of two months' rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "MT": {
+      "facts": [
+        {
+          "claim_en": "Montana law says the landlord must give the departing tenant a written list of rent due and damage within 30 days after the tenancy ends.",
+          "claim_es": "La ley de Montana dice que el arrendador debe dar al inquilino que se va una lista escrita de la renta debida y los daños dentro de 30 días después de terminar el contrato.",
+          "source_url": "https://archive.legmt.gov/bills/mca/title_0700/chapter_0250/part_0020/section_0020/0700-0250-0020-0020.html",
+          "source_name": "Montana Code 70-25-202, List of damages and refund",
+          "quote": "Each landlord, within 30 days subsequent to the termination of a tenancy or within 30 days subsequent to a surrender and acceptance of the leasehold premises, whichever occurs first",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Montana law says that if there is no damage, cleaning or unpaid rent and the tenant shows utilities are paid, the deposit is due within 10 days.",
+          "claim_es": "La ley de Montana dice que si no hay daños, limpieza ni renta pendiente y el inquilino muestra que pagó los servicios, el depósito se debe dentro de 10 días.",
+          "source_url": "https://archive.legmt.gov/bills/mca/title_0700/chapter_0250/part_0020/section_0020/0700-0250-0020-0020.html",
+          "source_name": "Montana Code 70-25-202, List of damages and refund",
+          "quote": "the landlord shall return the security deposit within 10 days",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "NC": {
+      "facts": [
+        {
+          "claim_en": "North Carolina law says the landlord must mail or deliver an itemized list of damage with the balance no later than 30 days after the tenancy ends and possession is returned.",
+          "claim_es": "La ley de Carolina del Norte dice que el arrendador debe enviar o entregar una lista detallada de daños con el saldo a más tardar 30 días después de terminar el contrato y entregar la vivienda.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-52.html",
+          "source_name": "North Carolina General Statutes 42-52, Landlord's obligations",
+          "quote": "the landlord in writing shall itemize any damage and mail or deliver same to the tenant, together with the balance of the security deposit, no later than 30 days after termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "North Carolina law says that if the landlord's claim cannot be settled sooner, a final accounting is due within 60 days after the tenancy ends.",
+          "claim_es": "La ley de Carolina del Norte dice que si el reclamo del arrendador no se puede definir antes, la cuenta final se debe dentro de 60 días después de terminar el contrato.",
+          "source_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-52.html",
+          "source_name": "North Carolina General Statutes 42-52, Landlord's obligations",
+          "quote": "shall provide a final accounting within 60 days after termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "ND": {
+      "facts": [
+        {
+          "claim_en": "North Dakota law says an itemized list with the amount due must be delivered or mailed to the tenant within thirty days after the lease ends and possession is returned.",
+          "claim_es": "La ley de Dakota del Norte dice que una lista detallada con el monto debido se debe entregar o enviar al inquilino dentro de treinta días después de terminar el contrato y entregar la vivienda.",
+          "source_url": "https://ndlegis.gov/cencode/t47c16.pdf",
+          "source_name": "North Dakota Century Code, Chapter 47-16 (Section 47-16-07.1)",
+          "quote": "along with a written notice within thirty days after termination of the lease and delivery of possession by the lessee",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "North Dakota law generally limits a security deposit to one month's rent.",
+          "claim_es": "La ley de Dakota del Norte limita en general el depósito a un mes de renta.",
+          "source_url": "https://ndlegis.gov/cencode/t47c16.pdf",
+          "source_name": "North Dakota Century Code, Chapter 47-16 (Section 47-16-07.1)",
+          "quote": "A lessor may not demand or receive security, however denominated, in an amount or value in excess of one month's rent",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "NE": {
+      "facts": [
+        {
+          "claim_en": "Nebraska law says the balance and a written itemization must be delivered or mailed to the tenant within fourteen days after the tenancy ends.",
+          "claim_es": "La ley de Nebraska dice que el saldo y una lista escrita detallada se deben entregar o enviar al inquilino dentro de catorce días después de terminar el contrato.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=76-1416",
+          "source_name": "Nebraska Revised Statutes 76-1416, Security deposits",
+          "quote": "The balance, if any, and a written itemization shall be delivered or mailed to the tenant within fourteen days after the date of termination of the tenancy.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Nebraska law limits a security deposit to one month's rent, plus a pet deposit of up to one-fourth of a month's rent.",
+          "claim_es": "La ley de Nebraska limita el depósito a un mes de renta, más un depósito por mascota de hasta un cuarto de mes de renta.",
+          "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=76-1416",
+          "source_name": "Nebraska Revised Statutes 76-1416, Security deposits",
+          "quote": "A landlord may not demand or receive security, however denominated, in an amount or value in excess of one month's periodic rent, except that a pet deposit not in excess of one-fourth of one month's periodic rent may be demanded",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "NH": {
+      "facts": [
+        {
+          "claim_en": "New Hampshire law says the landlord must return the deposit, with any interest due, within 30 days after the tenancy ends.",
+          "claim_es": "La ley de New Hampshire dice que el arrendador debe devolver el depósito, con los intereses que correspondan, dentro de 30 días después de terminar el contrato.",
+          "source_url": "https://gc.nh.gov/rsa/html/LV/540-A/540-A-7.htm",
+          "source_name": "New Hampshire RSA 540-A:7, Return of security deposits",
+          "quote": "a landlord shall return a security deposit to a tenant and pay the interest due, if any, within 30 days from the termination of the tenancy.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "New Hampshire law says the landlord must give a written, itemized list of any damages claimed, and that reasonable wear and tear is excluded.",
+          "claim_es": "La ley de New Hampshire dice que el arrendador debe dar una lista escrita y detallada de los daños que reclama, y que se excluye el desgaste razonable.",
+          "source_url": "https://gc.nh.gov/rsa/html/LV/540-A/540-A-7.htm",
+          "source_name": "New Hampshire RSA 540-A:7, Return of security deposits",
+          "quote": "If there are any damages to the premises, excluding reasonable wear and tear, the landlord may deduct the costs of repair from the security deposit. The landlord shall provide the tenant with a written, itemized list of any damages",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "NV": {
+      "facts": [
+        {
+          "claim_en": "Nevada law says the landlord must give an itemized, written accounting and return any remaining deposit no later than 30 days after the tenancy ends.",
+          "claim_es": "La ley de Nevada dice que el arrendador debe dar una cuenta escrita y detallada y devolver el resto del depósito a más tardar 30 días después de terminar el contrato.",
+          "source_url": "https://www.leg.state.nv.us/nrs/nrs-118a.html",
+          "source_name": "Nevada Revised Statutes, Chapter 118A (NRS 118A.242)",
+          "quote": "return any remaining portion of the security deposit to the tenant no later than 30 days after the termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Nevada law says a landlord who fails or refuses to return the remaining deposit within 30 days is liable to the tenant for damages.",
+          "claim_es": "La ley de Nevada dice que el arrendador que no devuelve o se niega a devolver el resto del depósito dentro de 30 días responde ante el inquilino por daños.",
+          "source_url": "https://www.leg.state.nv.us/nrs/nrs-118a.html",
+          "source_name": "Nevada Revised Statutes, Chapter 118A (NRS 118A.242)",
+          "quote": "If the landlord fails or refuses to return the remainder of a security deposit within 30 days after the end of a tenancy, the landlord is liable to the tenant for damages",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "NY": {
+      "facts": [
+        {
+          "claim_en": "New York law says that within fourteen days after the tenant moves out, the landlord must give an itemized statement of anything kept and return the rest.",
+          "claim_es": "La ley de Nueva York dice que dentro de catorce días después de que el inquilino se va, el arrendador debe dar una declaración detallada de lo que retiene y devolver el resto.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/GOB/7-108",
+          "source_name": "New York General Obligations Law 7-108",
+          "quote": "Within fourteen days after the tenant has vacated the premises, the landlord shall provide the tenant with an itemized statement indicating the basis for the amount of the deposit retained",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "New York law says a landlord who misses the fourteen-day deadline forfeits any right to keep part of the deposit.",
+          "claim_es": "La ley de Nueva York dice que el arrendador que no cumple el plazo de catorce días pierde el derecho a quedarse con parte del depósito.",
+          "source_url": "https://www.nysenate.gov/legislation/laws/GOB/7-108",
+          "source_name": "New York General Obligations Law 7-108",
+          "quote": "If a landlord fails to provide the tenant with the statement and deposit within fourteen days, the landlord shall forfeit any right to retain any portion of the deposit.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "OH": {
+      "facts": [
+        {
+          "claim_en": "Ohio law says any deduction must be itemized in a written notice delivered with the amount due within thirty days after the rental agreement ends and possession is returned.",
+          "claim_es": "La ley de Ohio dice que cada descuento se debe detallar en un aviso escrito entregado con el monto debido dentro de treinta días después de terminar el contrato y entregar la vivienda.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5321.16",
+          "source_name": "Ohio Revised Code 5321.16, Procedures for security deposits",
+          "quote": "Any deduction from the security deposit shall be itemized and identified by the landlord in a written notice delivered to the tenant together with the amount due, within thirty days after termination of the rental agreement",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Ohio law lets a tenant recover damages equal to the amount wrongfully withheld, plus reasonable attorney's fees.",
+          "claim_es": "La ley de Ohio permite al inquilino recuperar daños iguales al monto retenido sin derecho, más honorarios razonables de abogado.",
+          "source_url": "https://codes.ohio.gov/ohio-revised-code/section-5321.16",
+          "source_name": "Ohio Revised Code 5321.16, Procedures for security deposits",
+          "quote": "with damages in an amount equal to the amount wrongfully withheld, and reasonable attorneys fees",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "OR": {
+      "facts": [
+        {
+          "claim_en": "Oregon law says that to claim any of the deposit, the landlord must give a written accounting within 31 days after the tenancy ends and the tenant returns possession.",
+          "claim_es": "La ley de Oregón dice que para reclamar parte del depósito, el arrendador debe dar una cuenta escrita dentro de 31 días después de terminar el contrato y entregar la vivienda.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors090.html",
+          "source_name": "Oregon Revised Statutes, Chapter 90 (ORS 90.300)",
+          "quote": "within 31 days after the tenancy terminates and the tenant delivers possession the landlord shall give to the tenant a written accounting",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Oregon law says any part of the deposit not claimed must be returned no later than 31 days after the tenancy ends.",
+          "claim_es": "La ley de Oregón dice que la parte del depósito que no se reclama se debe devolver a más tardar 31 días después de terminar el contrato.",
+          "source_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors090.html",
+          "source_name": "Oregon Revised Statutes, Chapter 90 (ORS 90.300)",
+          "quote": "not later than 31 days after the tenancy terminates and the tenant delivers possession to the landlord",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "RI": {
+      "facts": [
+        {
+          "claim_en": "Rhode Island law says the landlord must deliver the notice and the amount due within twenty (20) days after the tenancy ends, possession is returned or the tenant gives a forwarding address, whichever is later.",
+          "claim_es": "La ley de Rhode Island dice que el arrendador debe entregar el aviso y el monto debido dentro de veinte (20) días después de terminar el contrato, entregar la vivienda o dar la dirección nueva, lo que sea más tarde.",
+          "source_url": "http://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-19.htm",
+          "source_name": "Rhode Island General Laws 34-18-19, Security deposits",
+          "quote": "within twenty (20) days after the later of either termination of the tenancy, delivery of possession, or the tenant’s providing the landlord with a forwarding address for the purpose of receiving the security deposit",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Rhode Island law limits a security deposit to one month's rent.",
+          "claim_es": "La ley de Rhode Island limita el depósito a un mes de renta.",
+          "source_url": "http://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-19.htm",
+          "source_name": "Rhode Island General Laws 34-18-19, Security deposits",
+          "quote": "A landlord may not demand or receive a security deposit, however denominated, in an amount or value in excess of one month’s periodic rent.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "SC": {
+      "facts": [
+        {
+          "claim_en": "South Carolina law says deductions must be itemized in a written notice with the amount due within thirty days after the tenancy ends, possession is returned and the tenant asks.",
+          "claim_es": "La ley de Carolina del Sur dice que los descuentos se deben detallar en un aviso escrito con el monto debido dentro de treinta días después de terminar el contrato, entregar la vivienda y la solicitud del inquilino.",
+          "source_url": "https://www.scstatehouse.gov/code/t27c040.php",
+          "source_name": "South Carolina Code, Title 27, Chapter 40 (Section 27-40-410)",
+          "quote": "Any deduction from the security/rental deposit must be itemized by the landlord in a written notice to the tenant together with the amount due, if any, within thirty days after termination of the tenancy",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "South Carolina law says a tenant may recover three times the amount wrongfully withheld, plus reasonable attorney's fees, if the landlord fails to return it with the notice.",
+          "claim_es": "La ley de Carolina del Sur dice que el inquilino puede recuperar tres veces el monto retenido sin derecho, más honorarios razonables de abogado, si el arrendador no lo devuelve con el aviso.",
+          "source_url": "https://www.scstatehouse.gov/code/t27c040.php",
+          "source_name": "South Carolina Code, Title 27, Chapter 40 (Section 27-40-410)",
+          "quote": "the tenant may recover the property and money in an amount equal to three times the amount wrongfully withheld and reasonable attorney's fees",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "SD": {
+      "facts": [
+        {
+          "claim_en": "South Dakota law says the landlord must return the deposit, or give a written statement of the specific reasons for keeping any of it, within twenty-one days after the tenancy ends and the tenant gives a mailing address.",
+          "claim_es": "La ley de Dakota del Sur dice que el arrendador debe devolver el depósito, o dar por escrito las razones específicas para retener una parte, dentro de veintiún días después de terminar el contrato y de recibir la dirección del inquilino.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/43-32-24.html",
+          "source_name": "South Dakota Codified Laws 43-32-24",
+          "quote": "Every lessor of residential premises shall, within twenty-one days after the termination of the tenancy and receipt of the tenant's mailing address or delivery instructions, return the security deposit",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "South Dakota law says that within forty-five days after the tenancy ends, if the tenant asks, the landlord must give an itemized accounting of any deposit withheld.",
+          "claim_es": "La ley de Dakota del Sur dice que dentro de cuarenta y cinco días después de terminar el contrato, si el inquilino lo pide, el arrendador debe dar una cuenta detallada del depósito retenido.",
+          "source_url": "https://sdlegislature.gov/api/Statutes/43-32-24.html",
+          "source_name": "South Dakota Codified Laws 43-32-24",
+          "quote": "Within forty-five days after termination of the tenancy, upon request of the lessee, the lessor must provide the lessee with an itemized accounting of any deposit withheld.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "TX": {
+      "facts": [
+        {
+          "claim_en": "The Texas Attorney General says the landlord must return the deposit, less any deductions for damages, within 30 days.",
+          "claim_es": "El Fiscal General de Texas dice que el arrendador debe devolver el depósito, menos los descuentos por daños, dentro de 30 días.",
+          "source_url": "https://www.texasattorneygeneral.gov/consumer-protection/home-real-estate-and-travel/renters-rights",
+          "source_name": "Texas Attorney General: Renters' rights",
+          "quote": "The landlord must return your deposit — less any amount deducted for damages — within 30 days.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "The Texas Attorney General says to give the landlord your new address in writing, and to contact the landlord if no deposit or explanation arrives within 30 days.",
+          "claim_es": "El Fiscal General de Texas dice que dé al arrendador su dirección nueva por escrito, y que lo contacte si no recibe el depósito ni una explicación dentro de 30 días.",
+          "source_url": "https://www.texasattorneygeneral.gov/consumer-protection/home-real-estate-and-travel/renters-rights",
+          "source_name": "Texas Attorney General: Renters' rights",
+          "quote": "If you give your landlord your new address in writing and you do not receive your deposit or an explanation within 30 days of your departure, contact the landlord.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "VA": {
+      "facts": [
+        {
+          "claim_en": "Virginia law says the deposit and any deductions must be itemized in a written notice within 45 days after the tenancy ends or the tenant moves out, whichever is last.",
+          "claim_es": "La ley de Virginia dice que el depósito y los descuentos se deben detallar en un aviso escrito dentro de 45 días después de terminar el contrato o de que el inquilino se vaya, lo que ocurra último.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226/",
+          "source_name": "Code of Virginia 55.1-1226, Security deposits",
+          "quote": "within 45 days after the termination date of the tenancy or the date the tenant vacates the dwelling unit, whichever occurs last",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Virginia law says deductions, damages and charges must be itemized by the landlord in a written notice to the tenant.",
+          "claim_es": "La ley de Virginia dice que los descuentos, daños y cargos se deben detallar por el arrendador en un aviso escrito al inquilino.",
+          "source_url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226/",
+          "source_name": "Code of Virginia 55.1-1226, Security deposits",
+          "quote": "The security deposit and any deductions, damages, and charges shall be itemized by the landlord in a written notice given to the tenant",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "VT": {
+      "facts": [
+        {
+          "claim_en": "Vermont law says the landlord must return the deposit with a written statement itemizing any deductions within 14 days of learning the tenant moved out.",
+          "claim_es": "La ley de Vermont dice que el arrendador debe devolver el depósito con una declaración escrita de los descuentos dentro de 14 días después de saber que el inquilino se fue.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/09/137/04461",
+          "source_name": "Vermont Statutes, Title 9, Section 4461, Security deposits",
+          "quote": "A landlord shall return the security deposit along with a written statement itemizing any deductions to a tenant within 14 days",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Vermont law says a landlord who misses the 14-day deadline forfeits the right to keep any of the deposit.",
+          "claim_es": "La ley de Vermont dice que el arrendador que no cumple el plazo de 14 días pierde el derecho a quedarse con parte del depósito.",
+          "source_url": "https://legislature.vermont.gov/statutes/section/09/137/04461",
+          "source_name": "Vermont Statutes, Title 9, Section 4461, Security deposits",
+          "quote": "If a landlord fails to return the security deposit with a statement within 14 days, the landlord forfeits the right to withhold any portion of the security deposit.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "WA": {
+      "facts": [
+        {
+          "claim_en": "Washington law gives the landlord 30 days after the rental agreement ends and the tenant moves out to give a full and specific statement of any amount kept, with any refund due.",
+          "claim_es": "La ley de Washington da al arrendador 30 días después de terminar el contrato y de que el inquilino se vaya para dar una declaración completa y específica de lo retenido, con el reembolso debido.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.280",
+          "source_name": "Revised Code of Washington 59.18.280",
+          "quote": "Within 30 days after the termination of the rental agreement and vacation of the premises",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Washington law says a landlord who misses the deadline is liable to the tenant for the full amount of the deposit.",
+          "claim_es": "La ley de Washington dice que el arrendador que no cumple el plazo responde ante el inquilino por el monto completo del depósito.",
+          "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.280",
+          "source_name": "Revised Code of Washington 59.18.280",
+          "quote": "he or she shall be liable to the tenant for the full amount of the deposit",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "WI": {
+      "facts": [
+        {
+          "claim_en": "Wisconsin's rule says the landlord must deliver or mail the deposit, less allowed deductions, within 21 days after the tenancy ends.",
+          "claim_es": "La regla de Wisconsin dice que el arrendador debe entregar o enviar el depósito, menos los descuentos permitidos, dentro de 21 días después de terminar el contrato.",
+          "source_url": "https://docs.legis.wisconsin.gov/code/admin_code/atcp/090/134/06",
+          "source_name": "Wisconsin Administrative Code ATCP 134.06, Security deposits",
+          "quote": "less any amounts that may be withheld under sub. (3), within 21 days after any of the following",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Wisconsin's rule says a landlord may not withhold any amount from a deposit for normal wear and tear.",
+          "claim_es": "La regla de Wisconsin dice que el arrendador no puede retener nada del depósito por desgaste normal.",
+          "source_url": "https://docs.legis.wisconsin.gov/code/admin_code/atcp/090/134/06",
+          "source_name": "Wisconsin Administrative Code ATCP 134.06, Security deposits",
+          "quote": "This subsection does not authorize a landlord to withhold any amount from a security deposit for normal wear and tear",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    },
+    "WY": {
+      "facts": [
+        {
+          "claim_en": "Wyoming law says the balance and a written itemization of deductions must be delivered or mailed within thirty (30) days after the rental agreement ends, or fifteen (15) days after receiving the renter's new address, whichever is later.",
+          "claim_es": "La ley de Wyoming dice que el saldo y una lista escrita de descuentos se deben entregar o enviar dentro de treinta (30) días después de terminar el contrato, o quince (15) días después de recibir la dirección nueva, lo que sea más tarde.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+          "source_name": "Wyoming Statutes, Title 1 (Section 1-21-1208)",
+          "quote": "shall be delivered or mailed without interest to the renter within thirty (30) days after termination of the rental agreement or within fifteen (15) days after receipt of the renter's new mailing address, whichever is later",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "Wyoming law says a utilities deposit must be refunded within ten (10) days of a satisfactory showing that utility charges were paid.",
+          "claim_es": "La ley de Wyoming dice que un depósito de servicios se debe reembolsar dentro de diez (10) días después de mostrar que se pagaron los servicios.",
+          "source_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+          "source_name": "Wyoming Statutes, Title 1 (Section 1-21-1208)",
+          "quote": "shall be refunded by the owner to the renter within ten (10) days of a satisfactory showing that all utility charges incurred by the renter have been paid",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says to read your lease carefully before getting outside help with a dispute with your landlord.",
+          "claim_es": "USAGov dice que lea su contrato con cuidado antes de buscar ayuda externa para una disputa con su arrendador.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "Before getting outside help, read your lease carefully.",
+          "checked": "2026-11-21"
+        },
+        {
+          "claim_en": "USAGov says you may decide you need help from a lawyer to settle a dispute with your landlord, and points to legal aid.",
+          "claim_es": "USAGov dice que usted puede decidir que necesita la ayuda de un abogado para resolver una disputa con su arrendador, e indica dónde buscar ayuda legal.",
+          "source_url": "https://www.usa.gov/tenant-rights",
+          "source_name": "USAGov: How to file a complaint against a landlord",
+          "quote": "You may decide that you need help from a lawyer to settle the dispute with your landlord.",
+          "checked": "2026-11-21"
+        }
+      ]
+    }
+  }
+}

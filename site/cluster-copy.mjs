@@ -1,14 +1,19 @@
 // Wording for the folder hubs, state pages, checklists, facts and alternative pages (EN and US
 // Spanish, usted). Facts themselves come from site/data/facts; checklists from ../topics.json.
 // Never "best", "court-ready", "admissible", "proves" or "win your case" (site/lib/gate.mjs).
+import { folderCount, folderList } from './lib/folders.mjs';
+import { storeLine } from './lib/stores.mjs';
 
 // Where each research folder lives on the site, and which topics.json folder it is.
+/** published: the day each folder's hub first went live (written once, never recomputed). */
 export const FOLDERS = {
-  divorce: { topic: 'divorce-prep', path: { en: '/divorce/', es: '/es/divorcio/' }, pdf: { en: '/checklists/divorce-checklist.pdf', es: '/checklists/lista-divorcio.pdf' } },
-  workplace: { topic: 'workplace-evidence', path: { en: '/workplace/', es: '/es/trabajo/' }, pdf: { en: '/checklists/workplace-evidence-checklist.pdf', es: '/checklists/lista-pruebas-del-trabajo.pdf' } },
-  va: { topic: 'va-disability-papers', path: { en: '/va/', es: '/es/va/' }, pdf: { en: '/checklists/va-claim-papers-checklist.pdf', es: '/checklists/lista-papeles-reclamo-va.pdf' } },
-  executor: { topic: 'executor-papers', path: { en: '/executor/', es: '/es/albacea/' }, pdf: { en: '/checklists/executor-checklist.pdf', es: '/checklists/lista-del-albacea.pdf' } },
-  iep: { topic: 'iep-binder', path: { en: '/iep/', es: '/es/iep/' }, pdf: { en: '/checklists/iep-binder-checklist.pdf', es: '/checklists/lista-carpeta-iep.pdf' } },
+  divorce: { published: '2026-11-02', topic: 'divorce-prep', path: { en: '/divorce/', es: '/es/divorcio/' }, pdf: { en: '/checklists/divorce-checklist.pdf', es: '/checklists/lista-divorcio.pdf' } },
+  workplace: { published: '2026-11-02', topic: 'workplace-evidence', path: { en: '/workplace/', es: '/es/trabajo/' }, pdf: { en: '/checklists/workplace-evidence-checklist.pdf', es: '/checklists/lista-pruebas-del-trabajo.pdf' } },
+  va: { published: '2026-11-02', topic: 'va-disability-papers', path: { en: '/va/', es: '/es/va/' }, pdf: { en: '/checklists/va-claim-papers-checklist.pdf', es: '/checklists/lista-papeles-reclamo-va.pdf' } },
+  executor: { published: '2026-11-02', topic: 'executor-papers', path: { en: '/executor/', es: '/es/albacea/' }, pdf: { en: '/checklists/executor-checklist.pdf', es: '/checklists/lista-del-albacea.pdf' } },
+  iep: { published: '2026-11-02', topic: 'iep-binder', path: { en: '/iep/', es: '/es/iep/' }, pdf: { en: '/checklists/iep-binder-checklist.pdf', es: '/checklists/lista-carpeta-iep.pdf' } },
+  tenant: { published: '2026-11-21', topic: 'tenant-repairs-deposit', path: { en: '/tenant/', es: '/es/inquilinos/' }, pdf: { en: '/checklists/tenant-move-in-move-out-checklist.pdf', es: '/checklists/lista-inquilino-entrada-salida.pdf' } },
+  inventory: { published: '2026-11-21', topic: 'home-inventory', path: { en: '/home-inventory/', es: '/es/inventario-del-hogar/' }, pdf: { en: '/checklists/home-inventory-checklist.pdf', es: '/checklists/lista-inventario-del-hogar.pdf' } },
 };
 
 export const CC = {
@@ -46,11 +51,11 @@ export const CC = {
       [`Which papers should I keep for ${folder.toLowerCase()}?`, `A good start: ${items.join('; ')}. Keep only papers you are allowed to have, write the date on each note, and keep originals somewhere safe.`],
       ['How can I keep these papers private on my phone?', `KeepMyProof keeps copies of the papers you already have in folders with checklists, encrypted on your phone, with no account and no ads. It is free for the first items you save. ${store}`],
     ],
-    storeLine: (live) => (live ? 'It is on Google Play now.' : 'It is coming soon to Google Play.'),
-    checklistsTitle: 'Free printable checklists: divorce, work, VA, executor, IEP | KeepMyProof',
+    storeLine: () => storeLine('en'),
+    checklistsTitle: 'Free printable checklists: divorce, work, VA, executor, IEP, tenant, home inventory | KeepMyProof',
     checklistsH1: 'Free printable checklists',
-    checklistsDesc: 'Five free one-page checklists to print: divorce papers, workplace evidence, VA claim papers, executor papers and an IEP binder. English, Spanish, Chinese and Korean, no email needed.',
-    checklistsAnswer: 'These five one-page checklists list the papers people usually gather for a divorce, a problem at work, a VA disability claim, a parent\'s estate and a child\'s IEP. Print one, tick what you already have, and write the date you got each paper. They are free, with no email or account needed.',
+    checklistsDesc: `${folderCount('en', true)} free one-page checklists to print: divorce papers, workplace evidence, VA claim papers, executor papers, an IEP binder, a tenant move-in and move-out list and a home inventory. English, Spanish, Chinese and Korean, no email needed.`,
+    checklistsAnswer: `These ${folderCount('en')} one-page checklists list the papers people usually gather for a divorce, a problem at work, a VA disability claim, a parent's estate, a child's IEP, a rental home and a home inventory. Print one, tick what you already have, and write the date you got each paper. They are free.`,
     pdfLink: 'Printable checklist (PDF)',
     pdfIntro: 'Tick what you already have and write the date you got it. Keep copies only of papers you are allowed to have.',
     pdfDate: 'Date I got it',
@@ -95,11 +100,11 @@ export const CC = {
       [`¿Qué papeles conviene guardar para ${folder.toLowerCase()}?`, `Para empezar: ${items.join('; ')}. Guarde solo papeles que tiene derecho a tener, anote la fecha en cada nota y guarde los originales en un lugar seguro.`],
       ['¿Cómo guardo estos papeles en privado en mi teléfono?', `KeepMyProof guarda copias de los papeles que ya tiene en carpetas con listas, cifradas en su teléfono, sin cuenta y sin anuncios. Es gratis para los primeros documentos que guarde. ${store}`],
     ],
-    storeLine: (live) => (live ? 'Ya está en Google Play.' : 'Llegará muy pronto a Google Play.'),
-    checklistsTitle: 'Listas gratis para imprimir: divorcio, trabajo, VA, albacea, IEP | KeepMyProof',
+    storeLine: () => storeLine('es'),
+    checklistsTitle: 'Listas gratis para imprimir: divorcio, trabajo, VA, albacea, IEP, inquilinos, inventario | KeepMyProof',
     checklistsH1: 'Listas gratis para imprimir',
-    checklistsDesc: 'Cinco listas gratis de una página para imprimir en Estados Unidos: divorcio, pruebas del trabajo, reclamo del VA, albacea y carpeta del IEP. Sin pedir su correo.',
-    checklistsAnswer: 'Estas cinco listas de una página muestran los papeles que se suelen reunir en Estados Unidos para un divorcio, un problema en el trabajo, un reclamo de discapacidad del VA, la herencia de un padre o madre y el IEP de un hijo. Imprima una, marque lo que ya tiene y anote la fecha. Son gratis, sin correo ni cuenta.',
+    checklistsDesc: `${folderCount('es', true)} listas gratis de una página para imprimir en Estados Unidos: divorcio, pruebas del trabajo, reclamo del VA, albacea, carpeta del IEP, inquilinos e inventario del hogar. Sin pedir su correo.`,
+    checklistsAnswer: `Estas ${folderCount('es')} listas de una página muestran los papeles que se suelen reunir en Estados Unidos para un divorcio, el trabajo, un reclamo del VA, la herencia de un padre o madre, el IEP de un hijo, una vivienda rentada y el inventario del hogar. Imprima una, marque lo que tiene y anote la fecha. Son gratis.`,
     pdfLink: 'Lista para imprimir (PDF)',
     pdfIntro: 'Marque lo que ya tiene y anote la fecha en que lo recibió. Guarde copias solo de papeles que tiene derecho a tener.',
     pdfDate: 'Fecha en que lo recibí',
@@ -116,23 +121,23 @@ export const CC = {
 export const FACTS_PAGE = {
   en: (n, p, live) => [
     ['What it is', [`KeepMyProof is a private phone app for keeping copies of papers, photos and notes you already have, in folders with suggested checklists.`, 'Made by Spry Labs.']],
-    ['Folders', ['Divorce prep and co-parenting log', 'Workplace evidence', 'VA disability claim papers', 'Executor papers after a parent dies', 'IEP (special education) binder', 'With Plus: your own folders']],
+    ['Folders', [...folderList('en'), 'With Plus: your own folders']],
     ['What it does', ['Saves photos, files and notes into folders on your phone.', 'Keeps two dates on every item: the day it happened (yours to fill in) and the day you saved it on this phone.', 'Turns a folder into one PDF you can send to a lawyer, mediator, school or VA representative.', 'Backs up an encrypted copy to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase.']],
     ['What it does not do', ['It does not give legal, tax or medical advice, and it is not a law firm.', 'It does not prepare, file or judge a VA claim, and it is not affiliated with the VA.', 'It does not send your papers to us, to analytics or to AI.', 'The saved date shows when you saved something on this phone. It does not show when an event happened.']],
     ['Price', [`Free for your first ${n} items. Viewing, full-folder PDFs, export, backup and restore never lock.`, `KeepMyProof Plus: US $${p.yearlyUSD} a year, or $${p.lifetimeUSD} once for life.`]],
     ['Privacy', ['No account, no ads, no analytics.', 'Papers are encrypted on the phone with an app passcode and optional Face ID.']],
     ['Languages', ['App and folder checklists: English, Spanish, Simplified Chinese and Korean.', 'Website: English and Spanish (US), with folder guides in Chinese and Korean.']],
-    ['Status', [live ? 'On Google Play.' : 'Coming soon to Google Play. iPhone after that.']],
+    ['Status', [storeLine('en')]],
   ],
   es: (n, p, live) => [
     ['¿Qué es?', ['KeepMyProof es una app privada para el teléfono que guarda copias de papeles, fotos y notas que usted ya tiene, en carpetas con listas sugeridas.', 'Hecha por Spry Labs.']],
-    ['Carpetas', ['Preparación para el divorcio y registro de crianza', 'Pruebas del trabajo', 'Papeles del reclamo de discapacidad del VA', 'Papeles del albacea cuando muere un padre o madre', 'Carpeta del IEP (educación especial)', 'Con Plus: sus propias carpetas']],
+    ['Carpetas', [...folderList('es'), 'Con Plus: sus propias carpetas']],
     ['¿Qué hace?', ['Guarda fotos, archivos y notas en carpetas en su teléfono.', 'Guarda dos fechas en cada documento: el día en que pasó (usted la escribe) y el día en que lo guardó en este teléfono.', 'Convierte una carpeta en un solo PDF para enviar a un abogado, un mediador, la escuela o un representante del VA.', 'Hace una copia cifrada en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras.']],
     ['¿Qué no hace?', ['No da asesoría legal, de impuestos ni médica, y no es un bufete de abogados.', 'No prepara, presenta ni evalúa reclamos del VA, y no está afiliada al VA.', 'No nos envía sus papeles, ni a analíticas ni a IA.', 'La fecha de guardado muestra cuándo guardó algo en este teléfono. No muestra cuándo pasó un hecho.']],
     ['¿Cuánto cuesta?', [`Gratis para sus primeros ${n} documentos. Ver, los PDF de carpetas completas, exportar, la copia y la restauración nunca se bloquean.`, `KeepMyProof Plus: US $${p.yearlyUSD} al año, o $${p.lifetimeUSD} una sola vez para siempre.`]],
     ['Privacidad', ['Sin cuenta, sin anuncios, sin analíticas.', 'Los papeles quedan cifrados en el teléfono, con un código de la app y Face ID si quiere.']],
     ['Idiomas', ['App y listas de cada carpeta: inglés, español, chino simplificado y coreano.', 'Sitio web: inglés y español (Estados Unidos), con guías de cada carpeta en chino y coreano.']],
-    ['Estado', [live ? 'En Google Play.' : 'Muy pronto en Google Play. Después, en iPhone.']],
+    ['Estado', [storeLine('es')]],
   ],
 };
 
@@ -146,7 +151,7 @@ export const ALT = {
     answer: (a, kind, n) => `${a.name} is ${kind}. KeepMyProof is a private phone app for keeping copies of papers, photos and dated notes in folders with checklists, encrypted on the phone, with no account and no ads. It backs up to your own cloud drive, and it is free for ${n} items.`,
     desc: (a) => `Looking for a ${a.name} alternative? What recent App Store reviews of ${a.name} raise, counted and dated, and how KeepMyProof handles backups and price.`,
     reviewsH: 'What recent reviews raise',
-    reviews: (a, d) => `In the ${a.sample} most recent US App Store reviews of ${a.app} that we read on ${d}, ${a.counts.lost} mention losing photos or files, and ${a.counts.price} mention a subscription, a charge or the price.`,
+    reviews: (a, d) => `In the ${a.sample} most recent US App Store reviews of ${a.app} that we read on ${d}, ${a.counts.lost_files} ${a.counts.lost_files === 1 ? 'describes' : 'describe'} photos, videos or files lost or deleted, ${a.counts.lost_messages} ${a.counts.lost_messages === 1 ? 'describes' : 'describe'} messages or records lost or deleted, and ${a.counts.price} ${a.counts.price === 1 ? 'mentions' : 'mention'} a subscription, a charge or the price.`,
     method: 'How we counted',
     handlesH: 'How KeepMyProof handles it',
     handles: (n, p) => [`Backup to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase, so a new phone does not mean losing your papers. Every file is checked before it is restored.`, `Free for ${n} items, with viewing, PDFs, export, backup and restore never locked. Plus is $${p.yearlyUSD} a year or $${p.lifetimeUSD} once for life.`, 'Folders with checklists for divorce, work, VA claim, executor and IEP papers, and two dates on every item.'],
@@ -154,6 +159,7 @@ export const ALT = {
     suits: { 'photo vault': 'If you mainly want to hide photos, a photo vault does that. KeepMyProof is built for papers, with checklists and dates.', 'timestamp camera': 'If you need the date printed on the photo itself, a timestamp camera does that. KeepMyProof keeps the day you saved an item next to the day you say it happened.', 'co-parenting app': 'If you need to message the other parent through a shared app, or a court order names a specific app, use that app. KeepMyProof is a private log and papers folder that only you hold.' },
     tm: (a) => `${a.name} is a trademark of its owner. KeepMyProof is not affiliated with or endorsed by ${a.name}.`,
     source: 'App Store page',
+    planH: (a) => `What ${a.name} costs`, planChecked: (a, d) => `From ${a.name}'s own pricing page, read on ${d}. Prices change; check the page.`, planSource: 'Pricing page',
   },
   es: {
     title: (a) => `Alternativa a ${a.name} para guardar papeles y notas con fecha | KeepMyProof`,
@@ -163,7 +169,7 @@ export const ALT = {
     answer: (a, kind, n) => `${a.name} es ${kind}. KeepMyProof es una app privada para el teléfono que guarda copias de papeles, fotos y notas con fecha en carpetas con listas, cifradas en el teléfono, sin cuenta y sin anuncios. Hace copias en su propia nube y es gratis hasta ${n} documentos, en Estados Unidos.`,
     desc: (a) => `¿Busca una alternativa a ${a.name} en Estados Unidos? Lo que dicen las reseñas recientes de ${a.name}, contadas y con fecha, y cómo KeepMyProof maneja copias y precio.`,
     reviewsH: '¿Qué dicen las reseñas recientes?',
-    reviews: (a, d) => `De las ${a.sample} reseñas más recientes de ${a.app} en el App Store de Estados Unidos que leímos el ${d}, ${a.counts.lost} hablan de perder fotos o archivos y ${a.counts.price} hablan de una suscripción, un cobro o el precio.`,
+    reviews: (a, d) => `De las ${a.sample} reseñas más recientes de ${a.app} en el App Store de Estados Unidos que leímos el ${d}, ${a.counts.lost_files} ${a.counts.lost_files === 1 ? 'describe' : 'describen'} fotos, videos o archivos perdidos o borrados, ${a.counts.lost_messages} ${a.counts.lost_messages === 1 ? 'describe' : 'describen'} mensajes o registros perdidos o borrados y ${a.counts.price} ${a.counts.price === 1 ? 'habla' : 'hablan'} de una suscripción, un cobro o el precio.`,
     method: 'Cómo contamos',
     handlesH: '¿Cómo lo maneja KeepMyProof?',
     handles: (n, p) => ['Copia en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras, así que cambiar de teléfono no significa perder sus papeles. Cada archivo se revisa antes de restaurarlo.', `Gratis hasta ${n} documentos; ver, los PDF, exportar, la copia y la restauración nunca se bloquean. Plus cuesta $${p.yearlyUSD} al año o $${p.lifetimeUSD} una sola vez para siempre.`, 'Carpetas con listas para papeles de divorcio, trabajo, reclamo del VA, albacea e IEP, y dos fechas en cada documento.'],
@@ -171,5 +177,6 @@ export const ALT = {
     suits: { 'photo vault': 'Si sobre todo quiere esconder fotos, una bóveda de fotos hace eso. KeepMyProof está hecha para papeles, con listas y fechas.', 'timestamp camera': 'Si necesita la fecha impresa en la foto, una cámara con fecha hace eso. KeepMyProof guarda el día en que guardó algo junto al día en que usted dice que pasó.', 'co-parenting app': 'Si necesita escribirle al otro padre o madre en una app compartida, o una orden de la corte pide una app concreta, use esa app. KeepMyProof es un registro y una carpeta privada que solo usted tiene.' },
     tm: (a) => `${a.name} es una marca de su dueño. KeepMyProof no está afiliada a ${a.name} ni tiene su respaldo.`,
     source: 'Página del App Store',
+    planH: (a) => `Cuánto cuesta ${a.name}`, planChecked: (a, d) => `Según la página de precios de ${a.name}, leída el ${d}. Los precios cambian; revise la página.`, planSource: 'Página de precios',
   },
 };

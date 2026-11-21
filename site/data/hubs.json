@@ -150,6 +150,66 @@
           ["¿Debe ir el nombre de mi hijo en la carpeta?", "Mantenga la carpeta privada. Cuando comparta copias fuera de la escuela, comparta solo lo que la otra persona necesita. En los ejemplos de KeepMyProof el estudiante siempre se llama Estudiante de ejemplo.", null]
         ]
       }
+    },
+    "tenant-repairs-deposit": {
+      "en": {
+        "slug": "tenant-move-in-move-out-checklist",
+        "title": "Tenant move-in and move-out checklist: the photos and papers to keep",
+        "desc": "A free printable tenant checklist for move-in and move-out: room-by-room photos, the lease, deposit receipts, repair requests and the deposit letter, plus each state's deposit return deadline.",
+        "h1": "Tenant move-in and move-out checklist",
+        "answer": "On move-in day and again on move-out day, photograph every room: floors, walls, appliances, doors, windows and meters. Keep the lease, the landlord's checklist, deposit and rent receipts, repair requests and replies, and any letter about your deposit. Write the date on each one, and keep your own copy apart from any landlord app.",
+        "statesH": "Security deposit return deadlines by state",
+        "faq": [
+          ["What should I photograph when I move in?", "Every room, first from the doorway and then up close: floors, walls, ceilings, windows, doors, cabinets, appliances inside and out, fixtures and the meters. Photograph anything already worn or damaged, and keep the landlord's move-in checklist with your own notes on it.", null],
+          ["How long does a landlord have to return a security deposit?", "It depends on the state. Each state page here quotes that state's own law, links to it and shows the date we checked it. Laws change, so read the current text, or ask a tenant help office or legal aid, before you act.", null],
+          ["Where can I find tenant help in my state?", "HUD lists tenant rights, laws and protections for each state, with links to state agencies and legal help.", {"url": "https://www.hud.gov/states", "label": "HUD: tenant rights by state"}],
+          ["Is this legal advice?", "No. This page is educational only and is not legal advice. KeepMyProof keeps your own photos and papers; it does not judge a deposit dispute. For advice, ask a tenant rights office, legal aid or a lawyer licensed in your state.", null]
+        ]
+      },
+      "es": {
+        "slug": "lista-inquilino-entrada-salida",
+        "title": "Lista para inquilinos al mudarse y al irse: fotos y papeles que guardar",
+        "desc": "Una lista gratis para imprimir para inquilinos en Estados Unidos: fotos de cada cuarto al entrar y al salir, el contrato, recibos del depósito, solicitudes de reparación y la carta del depósito.",
+        "h1": "Lista para inquilinos: entrada y salida",
+        "answer": "El día que se muda y otra vez el día que se va, tome fotos de cada cuarto: pisos, paredes, aparatos, puertas, ventanas y medidores. Guarde el contrato, la lista del arrendador, los recibos del depósito y la renta, las solicitudes de reparación con sus respuestas y cualquier carta sobre su depósito. Ponga la fecha en cada cosa.",
+        "statesH": "Plazos para devolver el depósito, por estado",
+        "faq": [
+          ["¿Qué debo fotografiar al mudarme?", "Cada cuarto, primero desde la puerta y luego de cerca: pisos, paredes, techos, ventanas, puertas, gabinetes, aparatos por dentro y por fuera, accesorios y los medidores. Fotografíe lo que ya esté gastado o dañado, y guarde la lista de entrada del arrendador con sus notas.", null],
+          ["¿Cuánto tiempo tiene el arrendador para devolver el depósito?", "Depende del estado. Cada página estatal cita la ley de ese estado, la enlaza y muestra la fecha en que la revisamos. Las leyes cambian: lea el texto vigente, o pregunte a una oficina de ayuda para inquilinos o de ayuda legal, antes de actuar.", null],
+          ["¿Dónde encuentro ayuda para inquilinos en mi estado?", "HUD indica los derechos, leyes y protecciones de los inquilinos en cada estado, con enlaces a agencias estatales y ayuda legal (en inglés).", {"url": "https://www.hud.gov/states", "label": "HUD: derechos de inquilinos por estado"}],
+          ["¿Esto es asesoría legal?", "No. Esta página es solo informativa y no es asesoría legal. KeepMyProof guarda sus propias fotos y papeles; no evalúa una disputa por el depósito. Para recibir consejo, pregunte a una oficina de derechos de inquilinos, de ayuda legal o a un abogado de su estado.", null]
+        ]
+      }
+    },
+    "home-inventory": {
+      "en": {
+        "slug": "home-inventory",
+        "title": "Home inventory for insurance: what to list, room by room",
+        "desc": "A free printable home inventory checklist, room by room: what to photograph, the purchase dates, receipts and serial numbers to keep, and where to keep the copy so it survives a fire or flood.",
+        "h1": "Home inventory for insurance",
+        "answer": "A home inventory is a list of what you own, room by room: a photo of each thing, what it is, when you bought it, the receipt if you have one, and serial numbers for electronics. Make it before you need it, add big purchases, and keep a copy that a fire or flood cannot reach.",
+        "statesH": "Home inventory by state",
+        "faq": [
+          ["Why make a home inventory?", "After a fire, flood or theft, an insurer usually asks for a list of what was lost. The NAIC, the group of state insurance regulators, suggests making an inventory ahead of time to help you buy the right coverage and file a claim.", {"url": "https://content.naic.org/consumer/home-inventory", "label": "NAIC: home inventory"}],
+          ["What should a home inventory include?", "For each thing: a photo, a short description, the brand and model, the serial number for electronics and appliances, roughly when you bought it and what you paid, and the receipt if you kept it. Start with the most expensive things in each room.", null],
+          ["Where should I keep it?", "Somewhere a fire, flood or break-in at home cannot reach: an encrypted copy you save to your own cloud drive, a copy with someone you trust, or both. A list kept only in a drawer at home can be lost with the house.", null],
+          ["Is this insurance advice?", "No. This page is educational only and is not insurance or legal advice. What your policy covers and what your insurer asks for are set by your policy and your state. Ask your agent or your state insurance department.", null]
+        ]
+      },
+      "es": {
+        "slug": "inventario-del-hogar",
+        "title": "Inventario del hogar para el seguro: qué anotar, cuarto por cuarto",
+        "desc": "Una lista gratis para imprimir para el inventario del hogar en Estados Unidos, cuarto por cuarto: qué fotografiar, fechas de compra, recibos y números de serie, y dónde guardar la copia.",
+        "h1": "Inventario del hogar para el seguro",
+        "answer": "Un inventario del hogar es una lista de lo que tiene, cuarto por cuarto: una foto de cada cosa, qué es, cuándo la compró, el recibo si lo tiene y el número de serie de los electrónicos. Hágalo antes de necesitarlo, agregue lo que compre de valor y guarde una copia que un incendio o una inundación no alcancen.",
+        "statesH": "Inventario del hogar por estado",
+        "faq": [
+          ["¿Para qué sirve un inventario del hogar?", "Después de un incendio, una inundación o un robo, la aseguradora suele pedir una lista de lo que se perdió. La NAIC, que reúne a los reguladores estatales de seguros, sugiere hacer un inventario con tiempo para elegir la cobertura y presentar un reclamo (en inglés).", {"url": "https://content.naic.org/consumer/home-inventory", "label": "NAIC: inventario del hogar"}],
+          ["¿Qué debe incluir el inventario?", "Para cada cosa: una foto, una descripción corta, la marca y el modelo, el número de serie de electrónicos y aparatos, más o menos cuándo la compró y cuánto pagó, y el recibo si lo guardó. Empiece por lo de más valor en cada cuarto.", null],
+          ["¿Dónde lo guardo?", "Donde no llegue un incendio, una inundación o un robo en casa: una copia cifrada en su propia nube, una copia con alguien de confianza, o las dos. Una lista guardada solo en un cajón de la casa se puede perder con la casa.", null],
+          ["¿Esto es asesoría de seguros?", "No. Esta página es solo informativa y no es asesoría de seguros ni legal. Lo que cubre su póliza y lo que pide su aseguradora dependen de su póliza y de su estado. Pregunte a su agente o al departamento de seguros de su estado.", null]
+        ]
+      }
     }
   }
 }

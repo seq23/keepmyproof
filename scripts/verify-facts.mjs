@@ -17,7 +17,7 @@ import { factProblems, factKey, quoteOnPage, sourceText, gateState, claimCounts 
 import { STATES } from '../site/lib/states.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-export const FOLDERS = ['divorce', 'workplace', 'va', 'executor', 'iep'];
+export const FOLDERS = ['divorce', 'workplace', 'va', 'executor', 'iep', 'tenant'];
 // KMP_FACTS_DIR / KMP_VERIFIED_DIR: preview a research branch's files without touching the repo's.
 const FACTS_DIR = process.env.KMP_FACTS_DIR || join(ROOT, 'site', 'data', 'facts'), OUT_DIR = process.env.KMP_VERIFIED_DIR || join(ROOT, 'site', 'data', 'verified');
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 KeepMyProof-fact-check';
