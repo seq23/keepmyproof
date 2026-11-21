@@ -121,7 +121,7 @@ export function useTyped<T>(initial: T): [T, (next: T | ((prev: T) => T)) => voi
   const set = (next: T | ((prev: T) => T)) => { latest.current = typeof next === 'function' ? (next as (prev: T) => T)(latest.current) : next; setValue(latest.current); };
   return [value, set, () => latest.current];
 }
-export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 },
+export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10, width:'100%', maxWidth:560, alignSelf:'center' },
   footer:{ paddingHorizontal:16, paddingTop:10, paddingBottom:12, gap:8, borderTopWidth:1, width:'100%', maxWidth:560, alignSelf:'center' }, flex:{ flex:1 },
   tiles:{ flexDirection:'row', flexWrap:'wrap', gap:8 }, tile:{ width:'31%', flexGrow:1, borderRadius:12, paddingVertical:10, paddingHorizontal:6, alignItems:'center', gap:4 },
   big:{ flexDirection:'row', alignItems:'center', gap:12, borderWidth:1.5, borderRadius:16, paddingVertical:12, paddingHorizontal:14, minHeight:76 },

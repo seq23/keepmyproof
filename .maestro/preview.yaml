@@ -92,7 +92,7 @@ appId: com.keepmyproof.app
 # Sample papers: two in Divorce or custody (one checklist line ticked), one in Workplace evidence.
 # "How did you hear about KeepMyProof?" comes after the first save.
 - scrollUntilVisible:
-    element: "Workplace evidence"
+    element: "Workplace evidence.*"
     direction: DOWN
 - tapOn: "Workplace evidence.*"
 - extendedWaitUntil:
@@ -113,7 +113,7 @@ appId: com.keepmyproof.app
     timeout: 15000
 - tapOn: "← Back to Home"
 - scrollUntilVisible:
-    element: "Divorce or custody"
+    element: "Divorce or custody.*"
     direction: DOWN
 - tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
@@ -137,7 +137,7 @@ appId: com.keepmyproof.app
 
 # A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
-    element: "Divorce or custody"
+    element: "Divorce or custody.*"
     direction: DOWN
 - tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
