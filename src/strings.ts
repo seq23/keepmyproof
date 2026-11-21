@@ -1713,6 +1713,12 @@ export const strings = {
     "正在核对密码并打开您的文件…",
     "암호를 확인하고 서류를 여는 중이에요…"
   ],
+  "photoCamera": [
+    "Taken with the camera and kept only in KeepMyProof. It is not in your Photos or Gallery app.",
+    "Tomada con la cámara y guardada solo en KeepMyProof. No está en su app Fotos ni en la Galería.",
+    "用相机拍摄，只保存在 KeepMyProof 中，不在您的“照片”或图库应用里。",
+    "카메라로 찍어 KeepMyProof에만 보관돼요. 사진 앱이나 갤러리에는 없어요."
+  ],
   "takePhoto": [
     "Take a photo ›",
     "Tomar una foto ›",

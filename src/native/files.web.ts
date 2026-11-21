@@ -17,7 +17,7 @@ export async function pickAttachment(photo: boolean, multiple = false): Promise<
 }
 export async function takePhoto(): Promise<Picked[] | null | 'denied' | 'unavailable'> {
   say('on a phone this asks once to use the camera, then opens it. The photo goes straight into KeepMyProof, never into Photos. Here it adds a sample picture.');
-  return [{ filename: 'camera-photo.svg', mime: 'image/svg+xml', bytes: b64(utf8(SAMPLE)), assetId: null, takenOn: '2026-11-21T10:30' }];
+  return [{ filename: 'camera-photo.svg', mime: 'image/svg+xml', bytes: b64(utf8(SAMPLE)), assetId: null, takenOn: '2026-11-21T10:30', camera: true }];
 }
 /** The browser shows the saved file from memory (a data: address); nothing is written anywhere. */
 export async function viewFile(item: Item): Promise<string> { return `data:${item.mime};base64,${item.bytes}`; }
