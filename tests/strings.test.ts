@@ -84,3 +84,20 @@ test('nothing overflows on a 390pt-wide phone in any language', () => {
   }
   assert.deepEqual(bad, []);
 });
+
+test('release gate: no string an iPad shows says phone (app strings and App Store listing); Android-only keys allowed', async () => {
+  const { phoneWording, stops, IOS_STORE_FILES, ANDROID_ONLY_KEYS } = await import('../scripts/release-gate.mjs');
+  const { readFileSync } = await import('node:fs');
+  const read = (f: string) => readFileSync(new URL(`../${f}`, import.meta.url), 'utf8');
+  const src = read('src/strings.ts');
+  assert.deepEqual(phoneWording(src, Object.fromEntries(IOS_STORE_FILES.map((f: string) => [f, read(f)]))), []);
+  for (const k of ANDROID_ONLY_KEYS) assert.ok(k in strings, `${k} is not a string key`);
+  // Negative proof: each language's word is caught in a string and in a listing; "iPhone" is not.
+  const planted = src.replace('"Lost or new device?"', '"Lost or new phone?"').replace('"¿Dispositivo perdido o nuevo?"', '"¿Teléfono perdido o nuevo?"')
+    .replace('"设备丢了或换了新设备？"', '"手机丢了？"').replace('"기기를 잃어버렸거나 새로 바꾸셨나요?"', '"휴대폰?"');
+  assert.equal(phoneWording(planted).length, 4);
+  assert.deepEqual(phoneWording(src, { 'store/en.md': 'Works on iPhone and iPad.\nPrivate on this phone.' }), ['store/en.md:2: Private on this phone.']);
+  const found = await stops({ env: {}, version: '1.0.0', readJson: () => null, probe: async () => 200, supportEmail: 'help@keepmyproof.com', mx: async () => 1,
+    readText: (f: string) => f === 'src/strings.ts' ? planted : read(f) });
+  assert.ok(found.some((s: { code: string }) => s.code === 'PHONE_WORDING'));
+});

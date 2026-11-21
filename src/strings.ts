@@ -240,7 +240,7 @@ export const strings = {
   "local": [
     "Locked and scrambled. Nothing leaves unless you send it or back it up.",
     "Bajo llave y cifrado. Nada sale a menos que usted lo envíe o haga una copia.",
-    "已上锁并加密。除非您自己发送或备份，否则任何内容都不会离开手机。",
+    "已上锁并加密。除非您自己发送或备份，否则任何内容都不会离开这台设备。",
     "잠금과 암호화로 보호돼요. 직접 보내거나 백업하지 않는 한 아무것도 밖으로 나가지 않아요."
   ],
   "firstFree": [
@@ -298,10 +298,10 @@ export const strings = {
     "이 앱의 암호를 정하세요"
   ],
   "six": [
-    "Six numbers. Use a different one from your phone's, so someone who knows your phone code can't open your papers.",
-    "Seis números. Use uno distinto al del teléfono, para que quien conozca ese código no pueda abrir sus documentos.",
-    "六位数字。请使用和手机解锁密码不同的数字，这样知道您手机密码的人也打不开您的文件。",
-    "숫자 여섯 자리예요. 휴대폰 암호와 다른 숫자를 쓰세요. 그래야 휴대폰 암호를 아는 사람도 서류를 열 수 없어요."
+    "Six numbers. Use a different one from your device's, so someone who knows your device code can't open your papers.",
+    "Seis números. Use uno distinto al del dispositivo, para que quien conozca ese código no pueda abrir sus documentos.",
+    "六位数字。请使用和设备解锁密码不同的数字，这样知道您设备密码的人也打不开您的文件。",
+    "숫자 여섯 자리예요. 기기 암호와 다른 숫자를 쓰세요. 그래야 기기 암호를 아는 사람도 서류를 열 수 없어요."
   ],
   "removeAsk": [
     "Remove the original from Photos?",
@@ -934,10 +934,10 @@ export const strings = {
     "저장한 백업을 골라 모든 파일을 확인하세요. 공유만으로는 저장됐는지 확인되지 않아요."
   ],
   "backupDestination": [
-    "Save the encrypted file to your own iCloud Drive or Google Drive using your phone’s share sheet.",
-    "Guarde el archivo cifrado en su iCloud Drive o Google Drive con la hoja para compartir del teléfono.",
-    "用手机的分享菜单，把加密文件保存到您自己的 iCloud 云盘或 Google 云端硬盘。",
-    "휴대폰의 공유 메뉴로 암호화된 파일을 내 iCloud Drive나 Google Drive에 저장하세요."
+    "Save the encrypted file to your own iCloud Drive or Google Drive using your device’s share sheet.",
+    "Guarde el archivo cifrado en su iCloud Drive o Google Drive con la hoja para compartir del dispositivo.",
+    "用设备的分享菜单，把加密文件保存到您自己的 iCloud 云盘或 Google 云端硬盘。",
+    "기기의 공유 메뉴로 암호화된 파일을 내 iCloud Drive나 Google Drive에 저장하세요."
   ],
   "confirmed": [
     "✓ Written down and confirmed",
@@ -946,10 +946,10 @@ export const strings = {
     "✓ 적어 두고 확인함"
   ],
   "newPhone": [
-    "Lost or new phone?",
-    "¿Teléfono perdido o nuevo?",
-    "手机丢了或换了新手机？",
-    "휴대폰을 잃어버렸거나 새로 바꾸셨나요?"
+    "Lost or new device?",
+    "¿Dispositivo perdido o nuevo?",
+    "设备丢了或换了新设备？",
+    "기기를 잃어버렸거나 새로 바꾸셨나요?"
   ],
   "restoreHint": [
     "Install KeepMyProof, choose \"Restore a backup\" and type your 12 words. Everything comes back.",
@@ -1120,10 +1120,10 @@ export const strings = {
     "구독 관리 또는 취소 ›"
   ],
   "renewal": [
-    "Your yearly plan renews on {date}. You can cancel in your phone’s subscription settings.",
-    "Su plan anual se renueva el {date}. Puede cancelarlo en los ajustes de suscripciones del teléfono.",
-    "您的年度方案将于 {date} 续订。您可以在手机的订阅设置中取消。",
-    "연간 플랜이 {date}에 갱신돼요. 휴대폰의 구독 설정에서 취소할 수 있어요."
+    "Your yearly plan renews on {date}. You can cancel in your device’s subscription settings.",
+    "Su plan anual se renueva el {date}. Puede cancelarlo en los ajustes de suscripciones del dispositivo.",
+    "您的年度方案将于 {date} 续订。您可以在设备的订阅设置中取消。",
+    "연간 플랜이 {date}에 갱신돼요. 기기의 구독 설정에서 취소할 수 있어요."
   ],
   "hide": [
     "Hide folder",
@@ -1218,8 +1218,8 @@ export const strings = {
   "RESTORE_CONFLICT": [
     "This backup has a different version of an item already here. Nothing was changed. Keep both backups.",
     "Esta copia tiene una versión distinta de un documento que ya está aquí. No se cambió nada. Conserve ambas copias.",
-    "这个备份中有一项和手机上已有的项目版本不同。什么都没有更改。请保留两个备份。",
-    "이 백업에는 휴대폰에 이미 있는 항목과 다른 버전이 있어요. 아무것도 바뀌지 않았어요. 두 백업을 모두 보관하세요."
+    "这个备份中有一项和设备上已有的项目版本不同。什么都没有更改。请保留两个备份。",
+    "이 백업에는 기기에 이미 있는 항목과 다른 버전이 있어요. 아무것도 바뀌지 않았어요. 두 백업을 모두 보관하세요."
   ],
   "DEVICE_KEY_MISSING": [
     "This device cannot open the vault. Restore your encrypted backup with your 12 words on a fresh install.",
