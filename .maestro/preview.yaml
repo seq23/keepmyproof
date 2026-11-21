@@ -240,9 +240,9 @@ appId: com.keepmyproof.app
 - takeScreenshot: 17-renew
 - tapOn: "← Back"
 - scrollUntilVisible:
-    element: "Erase everything on this phone…"
+    element: "Erase everything on this device…"
     direction: DOWN
-- tapOn: "Erase everything on this phone…"
+- tapOn: "Erase everything on this device…"
 - waitForAnimationToEnd
 - takeScreenshot: 18-erase
 - tapOn: "Cancel"
