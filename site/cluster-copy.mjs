@@ -9,6 +9,8 @@ export const FOLDERS = {
   va: { topic: 'va-disability-papers', path: { en: '/va/', es: '/es/va/' }, pdf: { en: '/checklists/va-claim-papers-checklist.pdf', es: '/checklists/lista-papeles-reclamo-va.pdf' } },
   executor: { topic: 'executor-papers', path: { en: '/executor/', es: '/es/albacea/' }, pdf: { en: '/checklists/executor-checklist.pdf', es: '/checklists/lista-del-albacea.pdf' } },
   iep: { topic: 'iep-binder', path: { en: '/iep/', es: '/es/iep/' }, pdf: { en: '/checklists/iep-binder-checklist.pdf', es: '/checklists/lista-carpeta-iep.pdf' } },
+  tenant: { topic: 'tenant-repairs-deposit', path: { en: '/tenant/', es: '/es/inquilinos/' }, pdf: { en: '/checklists/tenant-move-in-move-out-checklist.pdf', es: '/checklists/lista-inquilino-entrada-salida.pdf' } },
+  inventory: { topic: 'home-inventory', path: { en: '/home-inventory/', es: '/es/inventario-del-hogar/' }, pdf: { en: '/checklists/home-inventory-checklist.pdf', es: '/checklists/lista-inventario-del-hogar.pdf' } },
 };
 
 export const CC = {
