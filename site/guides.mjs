@@ -3,6 +3,7 @@
 // documents" searches in the papers frame and end in the site's one action (the store block).
 // Every phone step is taken from Apple's or Google's own help page, linked in `sources` and read on 6 Nov 2026.
 // Never a claim of proof or legal validity (the build's banned-word check reads every page).
+import { folderCount } from './lib/folders.mjs';
 
 const APPLE_HIDE = { en: 'https://support.apple.com/en-us/104987', es: 'https://support.apple.com/es-us/104987' };
 const APPLE_MISSING = { en: 'https://support.apple.com/en-us/118558', es: 'https://support.apple.com/es-us/118558' };
@@ -297,7 +298,7 @@ export const GUIDES = [
       sections: [
         { h: 'What is the difference between a photo vault and a vault for papers?', a: 'A photo vault hides pictures; a vault for papers keeps records in order.', table: { head: ['', 'Hidden album or Locked Folder', 'Photo vault app', 'Vault for papers (KeepMyProof)'], rows: [
           ['Locks the item', 'Yes, with Face ID, Touch ID or screen lock', 'Yes', 'Yes, with a passcode, Face ID or fingerprint'],
-          ['Folders for a life event', 'No', 'Varies by app', 'Five folders, each with a suggested checklist'],
+          ['Folders for a life event', 'No', 'Varies by app', `${folderCount('en', true)} folders, each with a suggested checklist`],
           ['Date it happened and date saved', 'Photo date only', 'Varies by app', 'Both, side by side'],
           ['One PDF to hand to a lawyer or school', 'No', 'Varies by app', 'Yes, a whole folder with an index'],
           ['Files and notes, not just photos', 'Photos only', 'Varies by app', 'Photos, files and notes'],
@@ -321,7 +322,7 @@ export const GUIDES = [
       sections: [
         { h: '¿Qué diferencia hay entre una bóveda de fotos y una para papeles?', a: 'Una bóveda de fotos oculta fotos; una para papeles mantiene los registros en orden.', table: { head: ['', 'Álbum Oculto o Carpeta bloqueada', 'App de bóveda de fotos', 'Bóveda para papeles (KeepMyProof)'], rows: [
           ['Bloquea lo guardado', 'Sí, con Face ID, Touch ID o bloqueo de pantalla', 'Sí', 'Sí, con código, Face ID o huella'],
-          ['Carpetas para un momento de la vida', 'No', 'Depende de la app', 'Cinco carpetas, cada una con una lista sugerida'],
+          ['Carpetas para un momento de la vida', 'No', 'Depende de la app', `${folderCount('es', true)} carpetas, cada una con una lista sugerida`],
           ['Fecha en que pasó y fecha en que se guardó', 'Solo la fecha de la foto', 'Depende de la app', 'Las dos, una junto a la otra'],
           ['Un PDF para dar a un abogado o a la escuela', 'No', 'Depende de la app', 'Sí, una carpeta entera con índice'],
           ['Archivos y notas, no solo fotos', 'Solo fotos', 'Depende de la app', 'Fotos, archivos y notas'],

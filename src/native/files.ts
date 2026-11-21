@@ -7,11 +7,10 @@ import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
 import { PDF_MARGINS, assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
-import { exifTime } from '../core/dates';
+import { fromAsset, takePhoto as take, type Picked } from '../core/camera';
 import { pressedAnchor } from '../anchor';
+export type { Picked } from '../core/camera';
 const MAX_FILE = 25 * 1024 * 1024;
-/** takenOn: the photo's own EXIF time, used only to name it when several are added at once. */
-export interface Picked { filename: string; mime: string; bytes: string; assetId?: string | null; takenOn?: string | null }
 async function read(uri: string, filename: string, mime: string, size?: number): Promise<Picked> {
   const file = new File(uri);
   try {
@@ -29,13 +28,17 @@ export async function pickAttachment(photo: boolean, multiple = false): Promise<
     if (r.canceled || !r.assets.length) return null;
     const out: Picked[] = [];
     // assetId: the library id, used only if the person later asks to remove the original from Photos.
-    for (const a of r.assets) out.push({ ...(await read(a.uri, a.fileName ?? 'photo.jpg', a.mimeType ?? 'image/jpeg', a.fileSize)),
-      assetId: a.assetId ?? null, takenOn: exifTime(a.exif?.DateTimeOriginal) });
+    for (const a of r.assets) out.push(await fromAsset(a, read));
     return out;
   }
   const r = await DocumentPicker.getDocumentAsync({ copyToCacheDirectory: true }); if (r.canceled) return null;
   const a = r.assets[0]; return [await read(a.uri, a.name, a.mimeType ?? 'application/octet-stream', a.size)];
 }
+/** The camera, straight into the vault: asked for only on the tap, never saved to Photos (see core/camera.ts). */
+export const takePhoto = () => take({
+  request: () => ImagePicker.requestCameraPermissionsAsync(),
+  launch: () => ImagePicker.launchCameraAsync({ mediaTypes: ['images'], allowsEditing: false, quality: 1, exif: true }),
+}, read);
 /** A saved file written to this app's temporary folder so it can be shown inside the app (finding 14).
  *  The temporary folder is emptied on every lock and every start. */
 export async function viewFile(item: Item): Promise<string> {

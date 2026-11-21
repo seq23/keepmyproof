@@ -1713,6 +1713,60 @@ export const strings = {
     "正在核对密码并打开您的文件…",
     "암호를 확인하고 서류를 여는 중이에요…"
   ],
+  "photoCamera": [
+    "Taken with the camera and kept only in KeepMyProof. It is not in your Photos or Gallery app.",
+    "Tomada con la cámara y guardada solo en KeepMyProof. No está en su app Fotos ni en la Galería.",
+    "用相机拍摄，只保存在 KeepMyProof 中，不在您的“照片”或图库应用里。",
+    "카메라로 찍어 KeepMyProof에만 보관돼요. 사진 앱이나 갤러리에는 없어요."
+  ],
+  "takePhoto": [
+    "Take a photo ›",
+    "Tomar una foto ›",
+    "拍照 ›",
+    "사진 찍기 ›"
+  ],
+  "workingCamera": [
+    "Opening the camera…",
+    "Abriendo la cámara…",
+    "正在打开相机…",
+    "카메라를 여는 중이에요…"
+  ],
+  "cameraOff": [
+    "The camera is off for KeepMyProof, so your photos opened instead. To take photos here, turn on Camera for KeepMyProof in Settings.",
+    "La cámara está desactivada para KeepMyProof, así que se abrieron sus fotos. Para tomar fotos aquí, active la Cámara para KeepMyProof en Configuración.",
+    "KeepMyProof 的相机权限已关闭，所以为您打开了照片。若要在这里拍照，请在“设置”中为 KeepMyProof 打开“相机”。",
+    "KeepMyProof의 카메라 권한이 꺼져 있어 사진 보관함을 대신 열었어요. 여기서 사진을 찍으려면 설정에서 KeepMyProof의 카메라를 켜 주세요."
+  ],
+  "cameraNone": [
+    "The camera did not open, so your photos opened instead.",
+    "La cámara no se abrió, así que se abrieron sus fotos.",
+    "相机没有打开，所以为您打开了照片。",
+    "카메라가 열리지 않아 사진 보관함을 대신 열었어요."
+  ],
+  "tenantHow": [
+    "Take photos of every room the day you move in and again the day you move out, and pick that room's line when you save. Keep the lease, receipts, repair requests and any letter about your deposit here too.",
+    "Tome fotos de cada cuarto el día que se muda y otra vez el día que se va, y elija la línea de ese cuarto al guardar. Guarde aquí también el contrato, los recibos, las solicitudes de reparación y cualquier carta sobre su depósito.",
+    "搬入当天和搬出当天都给每个房间拍照，保存时选择该房间那一行。租约、收据、维修请求和有关押金的信件也放在这里。",
+    "입주하는 날과 퇴거하는 날에 방마다 사진을 찍고, 저장할 때 그 방의 줄을 고르세요. 임대 계약서, 영수증, 수리 요청, 보증금에 관한 편지도 여기에 보관하세요."
+  ],
+  "tenantFoot": [
+    "Dated and organized, ready to share if you need to. Educational only. Not legal advice.",
+    "Con fecha y en orden, listo para compartir si lo necesita. Solo para información. No es asesoría legal.",
+    "注明日期、整理有序，需要时方便分享。仅供参考，不构成法律建议。",
+    "날짜가 적혀 있고 정리되어 있어 필요할 때 공유하기 쉬워요. 정보 제공용입니다. 법률 자문이 아닙니다."
+  ],
+  "inventoryHow": [
+    "One item per entry: a photo of the thing, its name, the room's line, and the purchase date as the date. Add the receipt as a second item on the same line, and write the price or serial number in the note.",
+    "Una cosa por entrada: una foto del objeto, su nombre, la línea del cuarto y la fecha de compra como fecha. Agregue el recibo como otra entrada en la misma línea y escriba el precio o el número de serie en la nota.",
+    "每件物品记一条：物品照片、名称、所在房间那一行，日期填购买日期。把收据作为同一行的另一条加入，在备注里写上价格或序列号。",
+    "물건 하나에 항목 하나: 물건 사진, 이름, 방의 줄, 날짜에는 구입한 날을 넣으세요. 영수증은 같은 줄에 항목을 하나 더 만들어 넣고, 가격이나 일련번호는 메모에 적으세요."
+  ],
+  "inventoryFoot": [
+    "Dated and organized, ready to share with your insurer if you need to. Educational only. Not insurance or legal advice.",
+    "Con fecha y en orden, listo para compartir con su aseguradora si lo necesita. Solo para información. No es asesoría de seguros ni legal.",
+    "注明日期、整理有序，需要时方便与保险公司分享。仅供参考，不构成保险或法律建议。",
+    "날짜가 적혀 있고 정리되어 있어 필요할 때 보험사와 공유하기 쉬워요. 정보 제공용입니다. 보험 또는 법률 자문이 아닙니다."
+  ],
   "workingPhotos": [
     "Reading your photos…",
     "Leyendo sus fotos…",

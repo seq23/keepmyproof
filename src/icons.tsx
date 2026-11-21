@@ -4,9 +4,10 @@ import { Theme } from './ui';
 // Simple line drawings made from plain Views (no image files, no icon font, nothing licensed).
 // Every glyph sits in a square box of `size` points and is drawn in the theme's ink colour.
 export type GlyphName = 'page'|'phone'|'receipt'|'camera'|'calendar'|'medical'|
-  'rings'|'briefcase'|'medal'|'house'|'school'|'folder'|'plus';
+  'rings'|'briefcase'|'medal'|'house'|'school'|'folder'|'plus'|'key'|'box';
 export const folderGlyph: Record<string, GlyphName> = {
   'divorce-prep':'rings', 'workplace-evidence':'briefcase', 'va-disability-papers':'medal', 'executor-papers':'house', 'iep-binder':'school',
+  'tenant-repairs-deposit':'key', 'home-inventory':'box',
 };
 export function Glyph({ name, size = 40, bg }: { name: GlyphName; size?: number; bg?: string }) {
   const c = useContext(Theme), ink = c.fg, k = size / 40;
@@ -29,6 +30,8 @@ export function Glyph({ name, size = 40, bg }: { name: GlyphName; size?: number;
     school: <>{frame(9,4,22,22,1,{ transform:[{ scaleY:.5 },{ rotate:'45deg' }] })}{frame(12,17,16,10,2,{ borderTopWidth:0 })}{bar(31,14,2,10)}</>,
     folder: <>{frame(5,9,14,7,2)}{frame(5,13,30,21,3,{ backgroundColor:bg ?? c.card })}</>,
     plus: <>{bar(19,8,2,24)}{bar(8,19,24)}</>,
+    key: <>{frame(5,13,14,14,7)}{bar(18,19,17)}{bar(27,19,2,7)}{bar(32,19,2,6)}</>,
+    box: <>{frame(7,14,26,20,2)}{frame(5,9,30,7,2,{ backgroundColor:bg ?? c.card })}{bar(16,20,8)}</>,
   };
   return <View accessible={false} importantForAccessibility="no-hide-descendants" style={{ width:size, height:size }}>{parts[name]}</View>;
 }

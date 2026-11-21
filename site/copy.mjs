@@ -1,6 +1,7 @@
 // Website wording, English and US Spanish (usted). Same voice as the app (src/strings.ts).
 // The honest-claims check in scripts/validate.mjs scans this file for banned evidence and security
 // claims (R-ADV-01/02). Prices are filled from config.mjs, never typed here.
+import { folderCount, folderNames } from './lib/folders.mjs';
 export const COPY = {
   en: {
     lang: 'en', locale: 'en_US',
@@ -35,7 +36,7 @@ export const COPY = {
       iphone: 'On iPhone only: after you add a photo from your library, the app asks "Remove the original from Photos?". Keep it in Photos is the first choice. If you tap Remove, your iPhone asks you to confirm, and the photo stays in Recently Deleted for 30 days. On Android, delete the original in Google Photos yourself.' },
     useAs: 'Use it as a divorce checklist and custody log, an IEP binder, an executor checklist or a workplace incident log.',
     folderMore: { 'divorce-prep': [['Custody log ›', '/custody-log'], ['How to prepare for divorce ›', '/how-to-prepare-for-divorce']], 'iep-binder': [['IEP meeting checklist ›', '/iep-meeting-checklist'], ['What is an IEP? ›', '/questions/what-is-an-iep']], 'executor-papers': [['What to do when a parent dies ›', '/questions/what-to-do-when-a-parent-dies']] },
-    foldersH: 'Five folders, each with a suggested checklist',
+    foldersH: `${folderCount('en', true)} folders, each with a suggested checklist`,
     foldersSub: 'Checklists are suggestions to help you remember, never a list of what is required.',
     vaNote: 'KeepMyProof keeps your papers only. It does not prepare, file or judge a claim and is not affiliated with the VA.',
     vaLink: 'Find free help from a VA-accredited representative ›',
@@ -60,7 +61,7 @@ export const COPY = {
     ],
     priceH: 'What it costs',
     free: 'Free', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`All five folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
+    freeList: (n) => [`All ${folderCount('en')} folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
     plusList: ['Unlimited items', 'Your own folders and tags', 'A PDF of the items or dates you choose, with a cover page'],
     plusPrice: (p) => `$${p.yearlyUSD} a year, renews yearly until you cancel in your phone's subscription settings. Or $${p.lifetimeUSD} once for life, with no renewal.`,
     priceNotes: (n) => [`The ${n}-item limit only stops adding. Viewing, PDFs, export, backup and restore never lock, paid or not.`, 'No trial and no plan picked for you. Your store shows the price in your currency before you pay.'],
@@ -96,7 +97,7 @@ export const COPY = {
       ['Move to a new phone', 'Install the app, choose your backup file and enter your 12-word recovery phrase. We cannot recover a lost phrase.'],
     ],
     notFoundTitle: 'Page not found | KeepMyProof', notFoundH1: 'This page is not here.', notFoundBody: 'The link may be old or mistyped.',
-    llms: 'KeepMyProof is a private phone app (iPhone and Android, coming soon) that keeps the papers, photos and notes a person already has, encrypted on the phone, in five folders with suggested checklists: divorce prep and co-parenting log, VA disability claim papers, executor papers after a parent dies, special-education (IEP) binder, and workplace evidence. Each item has two dates: the date it happened (entered by the person) and the date saved on the phone. A folder becomes one PDF with an index. No account, ads, analytics or AI processing. Encrypted backup to the person\'s own iCloud Drive or Google Drive with a 12-word recovery phrase. The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.',
+    llms: `KeepMyProof is a private phone app (iPhone and Android, coming soon) that keeps the papers, photos and notes a person already has, encrypted on the phone, in ${folderCount('en')} folders with suggested checklists: ${folderNames('en')}. Each item has two dates: the date it happened (entered by the person) and the date saved on the phone. A folder becomes one PDF with an index. No account, ads, analytics or AI processing. Encrypted backup to the person's own iCloud Drive or Google Drive with a 12-word recovery phrase. The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.`,
   },
   es: {
     lang: 'es', locale: 'es_US',
@@ -130,7 +131,7 @@ export const COPY = {
       iphone: 'Solo en iPhone: después de añadir una foto de su biblioteca, la app pregunta "¿Quitar el original de Fotos?". Dejarla en Fotos es la primera opción. Si toca Quitar, su iPhone le pide confirmarlo, y la foto queda en Eliminado recientemente durante 30 días. En Android, borre el original en Google Fotos usted mismo.' },
     useAs: 'Úsela como lista para el divorcio y registro de custodia, carpeta del IEP, lista del albacea o registro de incidentes en el trabajo.',
     folderMore: { 'divorce-prep': [['Registro de custodia ›', '/es/registro-de-custodia'], ['Cómo prepararse para el divorcio ›', '/es/como-prepararse-para-el-divorcio']], 'iep-binder': [['Lista para la reunión del IEP ›', '/es/lista-para-la-reunion-del-iep'], ['¿Qué es un IEP? ›', '/es/preguntas/que-es-un-iep']], 'executor-papers': [['Qué hacer cuando muere un padre o una madre ›', '/es/preguntas/que-hacer-cuando-muere-un-padre']] },
-    foldersH: 'Cinco carpetas, cada una con una lista sugerida',
+    foldersH: `${folderCount('es', true)} carpetas, cada una con una lista sugerida`,
     foldersSub: 'Las listas son sugerencias para ayudarle a recordar, nunca una lista de lo que se exige.',
     vaNote: 'KeepMyProof solo guarda sus papeles. No prepara, presenta ni evalúa un reclamo y no está afiliado al VA.',
     vaLink: 'Busque ayuda gratis de un representante acreditado por el VA ›',
@@ -155,7 +156,7 @@ export const COPY = {
     ],
     priceH: '¿Cuánto cuesta?',
     free: 'Gratis', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`Las cinco carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
+    freeList: (n) => [`Las ${folderCount('es')} carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
     plusList: ['Documentos sin límite', 'Sus propias carpetas y etiquetas', 'Un PDF de los documentos o fechas que elija, con portada'],
     plusPrice: (p) => `$${p.yearlyUSD} al año, con renovación anual hasta que lo cancele en los ajustes de suscripción de su teléfono. O $${p.lifetimeUSD} una sola vez de por vida, sin renovación.`,
     priceNotes: (n) => [`El límite de ${n} documentos solo impide añadir. Ver, hacer PDF, exportar, copiar y restaurar nunca se bloquean, pague o no.`, 'No hay prueba gratis ni plan elegido por usted. Su tienda muestra el precio en su moneda antes de pagar.'],

@@ -15,6 +15,7 @@ import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
+import { cameraStep, photoTitle } from '../src/core/camera';
 import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
 import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
@@ -26,6 +27,9 @@ import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
 
+// Folder-specific help above the checklist, and the folder's own footer line (default: folderFoot).
+const FOLDER_HOW: Record<string, StringKey> = { 'tenant-repairs-deposit':'tenantHow', 'home-inventory':'inventoryHow' };
+const FOLDER_FOOT: Record<string, StringKey> = { 'va-disability-papers':'vaDisclaimer', 'tenant-repairs-deposit':'tenantFoot', 'home-inventory':'inventoryFoot' };
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard'|'changeCode'|'renew'|'erase';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
 // First-launch picker: each choice in its own language.
@@ -228,7 +232,7 @@ export default function App() {
     else {
       const base = { ...draft, title:draft.title.trim(), happenedOn, tags, takenOn: picked[0]?.takenOn ?? null };
       const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes, takenOn:p.takenOn ?? null,
-        title: base.title ? `${base.title} (${n+1})` : p.takenOn ? t('photoTaken', { date:showHappened(p.takenOn, LOCALE[lang]) }) : p.filename })) : [base];
+        title: base.title ? `${base.title} (${n+1})` : photoTitle(p, date => t('photoTaken', { date }), LOCALE[lang]) })) : [base];
       savedIds = await vault.addMany(drafts, ent.plus);
     }
     const assetIds = picked.map(p => p.assetId).filter((a): a is string => !!a); setPicked([]); setReplacement(null);
@@ -241,9 +245,21 @@ export default function App() {
   }
   async function pick(replace: boolean) {
     const got = await files.pickAttachment(draft.kind === 'photo', draft.kind === 'photo' && !replace); if (!got?.length) return;
+    accept(got, replace);
+  }
+  /** A picked or taken file becomes the draft's file; one photo nobody named is titled by photoTitle. */
+  function accept(got: files.Picked[], replace: boolean) {
     if (replace) { const { filename, mime, bytes } = got[0]; setReplacement({ filename, mime, bytes }); setDraft(d => ({ ...d, filename, mime, bytes })); return; }
     setPicked(got); const { filename, mime, bytes } = got[0];
-    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || filename }));
+    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || photoTitle(got[0], date => t('photoTaken', { date }), LOCALE[lang]) }));
+  }
+  // Camera straight into the vault (permission asked on this tap only). Turned off or no camera: the person
+  // is told why and the photo library opens instead, so the add carries on.
+  async function snap() {
+    const step = cameraStep(await files.takePhoto());
+    if (!step) return;
+    if ('fallback' in step) { setNotice(t(step.fallback)); return pick(false); }
+    accept(step.picked, false);
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
   const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
@@ -351,6 +367,7 @@ export default function App() {
         setNotice(t(result === 'removed' ? 'removedNotice' : 'keptNotice'));
       }), true)}</Card>}<P heading>{title}</P><P muted>{t('suggested')}</P>
     {folder === 'va-disability-papers' && <Card><P>{t('vaScope')}</P><P>{t('vaHelp')}</P><Button title={t('vaLink')} onPress={() => void Linking.openURL('https://www.va.gov/get-help-from-accredited-representative/')} /></Card>}
+    {FOLDER_HOW[folder] && <Card><P>{t(FOLDER_HOW[folder])}</P></Card>}
     <P section>{t('checklist')}</P>
     <View style={[styles.list,{ borderColor:palette.line, backgroundColor:palette.card }]}>
       {lines.map((l, n) => { const how = tickedBy(state, folder, l.id);
@@ -373,15 +390,16 @@ export default function App() {
         <View style={[styles.flex,{ gap:4 }]}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
           {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}</View></View>
       {btn('open', () => { setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
-    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
+    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(FOLDER_FOOT[folder] ?? 'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
     {/* Which folder: asked on every add and change, starting from the neutral one (findings 1, 7). */}
     <P section>{t('whichFolder')}</P>
     {shownFolders.map(f => <Button quiet key={f.id} checked={draft.folder === f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
     {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
-    {draft.kind !== 'note' && <>{!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
+    {draft.kind !== 'note' && <>{!editing && draft.kind === 'photo' && btn('takePhoto', doRun(snap, 'workingCamera'))}
+      {!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
       {editing && btn('replaceFile', doRun(() => pick(true), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
-      {draft.kind === 'photo' && !editing && <P muted>{t(vaultCopy.photo)}</P>}
+      {draft.kind === 'photo' && !editing && <P muted>{t(picked[0]?.camera ? 'photoCamera' : vaultCopy.photo)}</P>}
       {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />

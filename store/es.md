@@ -2,7 +2,7 @@
 
 Guarde los documentos que ya tiene, privados en este dispositivo.
 
-Organice fotos, archivos y notas en cinco carpetas con listas sugeridas.
+Organice fotos, archivos y notas en siete carpetas con listas sugeridas.
 Anote la fecha en que pasó algo, junto a la fecha en que lo guardó.
 Haga un PDF, guarde los originales y copie sus documentos cifrados a su nube.
 
