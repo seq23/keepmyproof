@@ -16,6 +16,13 @@ on:
         description: Also put the build on Appetize (her final look before a store submission only)
         type: boolean
         default: false
+      device:
+        # supportsTablet is on (app.config.ts), so every screen is also walked at iPad size before a
+        # store submission (ship-ready app-review.md row 6).
+        description: Simulator for the screen walk
+        type: choice
+        options: [iphone, ipad]
+        default: iphone
   push:
     branches: [main]
     paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
@@ -98,13 +105,15 @@ jobs:
         run: |
           curl -fsSL https://get.maestro.mobile.dev | bash > maestro-install.log 2>&1 || { tail -20 maestro-install.log; exit 1; }
           echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
-      - name: Boot an iPhone simulator and install the build
+      - name: Boot the simulator and install the build
         if: inputs.screens
         id: sim
+        env:
+          DEVICE_RE: ${{ inputs.device == 'ipad' && '^iPad Pro 13-inch' || '^iPhone [0-9]+( Pro)?$' }}
         run: |
-          udid=$(xcrun simctl list devices available -j | jq -r '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[]
-            | select(.name | test("^iPhone [0-9]+( Pro)?$"))] | last | .udid // empty')
-          [ -n "$udid" ] || { echo "NAMED STOP [PREVIEW_NO_SIMULATOR] no iPhone simulator on this runner"; xcrun simctl list devices available | head -40; exit 1; }
+          udid=$(xcrun simctl list devices available -j | jq -r --arg re "$DEVICE_RE" '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[]
+            | select(.name | test($re))] | last | .udid // empty')
+          [ -n "$udid" ] || { echo "NAMED STOP [PREVIEW_NO_SIMULATOR] no ${{ inputs.device }} simulator matching $DEVICE_RE on this runner"; xcrun simctl list devices available | head -60; exit 1; }
           xcrun simctl list devices available | grep "$udid"
           xcrun simctl boot "$udid"; xcrun simctl bootstatus "$udid" -b > /dev/null
           xcrun simctl ui "$udid" appearance light
@@ -115,8 +124,12 @@ jobs:
         if: inputs.screens
         run: |
           mkdir -p preview-shots run && touch run/.start
+          # The made PDF lives in the app's cache only while the share sheet is open: copy it out then.
+          data=$(xcrun simctl get_app_container "${{ steps.sim.outputs.udid }}" com.keepmyproof.app data)
+          ( while true; do find "$data" -name 'KeepMyProof.pdf' -size +1k -exec cp {} preview-shots/folder.pdf \; 2>/dev/null; sleep 0.5; done ) & grab=$!
           status=0; cd run && { maestro --device "${{ steps.sim.outputs.udid }}" test ../.maestro/preview.yaml > ../maestro.log 2>&1 || status=$?; }
-          cd .. && tail -40 maestro.log
+          cd .. && kill $grab; tail -40 maestro.log
+          if [ -f preview-shots/folder.pdf ]; then sips -s format png preview-shots/folder.pdf --out preview-shots/folder-pdf-page1.png > /dev/null; else echo "NAMED STOP [PREVIEW_NO_PDF] the folder PDF was not made"; status=1; fi
           # Collect the PNGs wherever this Maestro version wrote them.
           find run .maestro "$HOME/.maestro" -name '[0-9][0-9]-*.png' -newer run/.start -exec cp {} preview-shots/ \; 2>/dev/null || true
           exit $status
@@ -126,8 +139,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: inputs.screens && (always() && steps.sim.outcome == 'success')
         with:
-          name: keepmyproof-preview-screens
-          path: preview-shots/*.png
+          name: keepmyproof-preview-screens-${{ inputs.device }}
+          path: |
+            preview-shots/*.png
+            preview-shots/folder.pdf
           retention-days: 30
       - uses: actions/upload-artifact@v4
         if: inputs.screens && (failure() && steps.sim.outcome == 'success')
