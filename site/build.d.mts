@@ -5,7 +5,8 @@ export interface SitePage {
 }
 export interface SiteInput { facts: Record<string, any[]>; verified: Record<string, Record<string, string>>; translations?: Record<string, any>; toolFacts?: any[] }
 export declare function render(input?: SiteInput): Record<string, string>;
-export declare function renderAll(input?: SiteInput): { files: Record<string, string>; pages: SitePage[]; stops: string[]; model: Record<string, any[]> };
+export type PageDate = { published: string; modified: string; hash: string };
+export declare function renderAll(input?: SiteInput, opts?: { ledger?: Record<string, PageDate>; today?: string }): { files: Record<string, string>; pages: SitePage[]; stops: string[]; model: Record<string, any[]>; dates: { ledger: Record<string, PageDate>; changed: boolean } };
 export declare function build(dist: string): { files: number; pages: SitePage[]; stops: string[] };
 export declare function legalSections(markdown: string): { privacy: string[]; terms: string[] };
 export declare function repeatsPhrase(text: string, n?: number, max?: number): boolean;

@@ -3,7 +3,6 @@
 export const SITE = {
   origin: 'https://keepmyproof.com',
   name: 'KeepMyProof',
-  updated: '2026-11-02',
   // US list prices (spec, her ruling 1 Nov 2026). The launch-week offer is never written here:
   // the store shows it at checkout when it is live.
   prices: { yearlyUSD: '19.99', lifetimeUSD: '39.99' },

@@ -17,7 +17,6 @@ const G_SAFE = { en: 'https://support.google.com/files/answer/9935264?hl=en', es
 export const src = (name, urls) => ({ name, url: urls });
 export const SRC = { APPLE_HIDE, APPLE_MISSING, APPLE_LOCK_APP, G_LOCKED, G_DELETE, G_SAFE };
 
-export const GUIDE_DATES = { published: '2026-11-06', modified: '2026-11-06' };
 
 /** Shared copy for every guide and the guides hub. */
 export const GUIDE_COPY = {

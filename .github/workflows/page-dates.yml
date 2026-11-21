@@ -1,0 +1,40 @@
+name: Page dates
+
+# Keeps each page's first-publish and last-change dates true (site/lib/page-dates.mjs). Cloudflare Pages
+# builds every push to main and stamps a new or changed page with that day; this job runs the same build
+# and commits site/data/page-dates.json so a later build never moves the date. It also runs after the
+# bot jobs that commit content (their pushes start no workflow) and once a day as a fallback.
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'topics.json', 'store/**', '!site/data/page-dates.json']
+  workflow_run:
+    workflows: ['Facts refresh', 'Search Loop']
+    types: [completed]
+  schedule:
+    - cron: "40 4 * * *"  # 22:40 / 23:40 Central, before the Central day ends
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: facts-commit
+  cancel-in-progress: false
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node site/build.mjs | tail -1
+      - name: Commit page dates
+        run: |
+          git config user.name "keepmyproof-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/page-dates.json
+          if git diff --cached --quiet; then echo "OUTPUT page dates unchanged"; exit 0; fi
+          git commit -q -m "Page dates: stamp new and changed pages $(TZ=America/Chicago date +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && echo "OUTPUT page dates committed" && exit 0; sleep $((i * 7)); done
+          echo "NAMED STOP [PUSH_FAILED] page dates not pushed"; exit 9

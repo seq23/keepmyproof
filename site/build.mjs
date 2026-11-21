@@ -9,6 +9,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync, copyFileSy
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE, PAGES } from './config.mjs';
+import { OPERATING_SYSTEMS } from './lib/stores.mjs';
 import { COPY } from './copy.mjs';
 import { CC, FOLDERS, FACTS_PAGE, ALT } from './cluster-copy.mjs';
 import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './copy-cjk.mjs';
@@ -17,7 +18,8 @@ import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, 
 import { checklistPdf } from './pdf.mjs';
 import { repeatsPhrase, shortenNames, leansBack } from './lib/names.mjs';
 import { TOOLS, calcData } from './tools.mjs';
-import { GUIDES, GUIDE_COPY, GUIDE_DATES } from './guides.mjs';
+import { GUIDES, GUIDE_COPY } from './guides.mjs';
+import { PUB, MOD, pubOn, modOn, stampDates, readLedger, writeLedger, todayCentral } from './lib/page-dates.mjs';
 import { VAULT_HUB, LANDINGS, LIMITS } from './landings.mjs';
 import { CJK_COPY } from './landings-cjk.mjs';
 import { AMAZON_BOOKS, AMAZON_INDEX } from './amazon.mjs';
@@ -118,7 +120,7 @@ const STYLE = CSS + CSS_EXTRA;
 /** The approved logo (light and dark files, byte-identical to the design system); its alt keeps the header link's text "KeepMyProof". */
 const LOGO = '<picture><source srcset="/logo-dark.svg" media="(prefers-color-scheme: dark)"><img src="/logo.svg" alt="KeepMyProof" width="199" height="32"></picture>';
 
-function fmtDate(lang, iso = SITE.updated) {
+function fmtDate(lang, iso) {
   return new Date(`${iso}T12:00:00Z`).toLocaleDateString({ es: 'es-US', zh: 'zh-CN', ko: 'ko-KR' }[lang] || 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
 
@@ -139,7 +141,7 @@ function storeBlock(lang) {
 function appSchema(lang) {
   const c = COPY[lang], s = SITE.stores;
   const os = [s.googlePlay && 'Android', s.appStore && 'iOS'].filter(Boolean);
-  const node = { '@type': 'SoftwareApplication', '@id': `${SITE.origin}/#app`, name: SITE.name, applicationCategory: 'UtilitiesApplication', operatingSystem: os.length ? os.join(', ') : 'Android',
+  const node = { '@type': 'SoftwareApplication', '@id': `${SITE.origin}/#app`, name: SITE.name, applicationCategory: 'UtilitiesApplication', operatingSystem: OPERATING_SYSTEMS,
     description: c.factSentence(SITE.freeItems), inLanguage: LANGS, publisher: { '@id': `${SITE.origin}/#organization` }, url: `${SITE.origin}/` };
   const store = s.googlePlay || s.appStore;
   const terms = os.length ? { url: store } : { url: `${SITE.origin}/#price`, description: c.comingSoon ?? COPY.en.comingSoon };
@@ -211,7 +213,7 @@ function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], b
   const graph = [
     { '@type': 'Organization', '@id': `${SITE.origin}/#organization`, name: SITE.name, url: `${SITE.origin}/`, logo: `${SITE.origin}/icon-512.png`, email: SITE.supportEmail, sameAs: ENTITY.sameAs,
       parentOrganization: { '@type': 'Organization', '@id': SITE.parentOrg.id, name: SITE.parentOrg.name, url: SITE.parentOrg.url } },
-    { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: SITE.updated,
+    { '@type': 'WebPage', '@id': `${url(path)}#webpage`, url: url(path), name: title, description: desc, inLanguage: lang, dateModified: MOD,
       isPartOf: { '@id': `${SITE.origin}/#website` }, publisher: { '@id': `${SITE.origin}/#organization` },
       ...(speakable ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['.definition', '.answer', '.faq'] } } : {}) },
     ...schema.map((n) => offersShown(n, body)),
@@ -235,7 +237,7 @@ ${index ? '' : '<meta name="robots" content="noindex,follow">'}
 ${c.vaultBar ? `<nav class="mainnav" aria-label="${esc(c.vaultBar.nav)}"><a href="${VAULT_HREF[lang]}">${esc(c.vaultBar.nav)}</a></nav>` : ''}<nav aria-label="Language">${langLinks}</nav></header>
 <main>${crumbHtml}${body}</main>
 <footer><nav aria-label="${esc(c.nav.home)}">${foot}${vaultFoot}${langLinks}</nav>
-<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}${live() ? '' : ` ${esc(c.comingSoon)}`}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time>.</p></footer>
+<p>${esc(c.disclaimer)}</p><p class="fact">${esc(c.factSentence(SITE.freeItems))}${live() ? '' : ` ${esc(c.comingSoon)}`}</p><p>${esc(c.madeBy)} <a href="${SITE.parentOrg.url}">${SITE.parentOrg.name}</a>. ${esc(c.updated)} <time datetime="${MOD}">${modOn(lang)}</time>.</p></footer>
 </body></html>
 `;
 }
@@ -295,7 +297,7 @@ ${vaultSection(lang)}
 
 function legal(lang, id, paras) {
   const c = COPY[lang], key = id === 'terms' ? 'terms' : 'privacy';
-  const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${SITE.updated}">${fmtDate(lang)}</time></p>
+  const body = `<p><a href="${pathOf('home', lang)}">${esc(c.back)}</a></p><h1>${esc(c[`${key}H1`])}</h1><p class="sub">${esc(c.updated)} <time datetime="${MOD}">${modOn(lang)}</time></p>
 ${paras.map((p) => `<p>${esc(p)}</p>`).join('\n')}${key === 'privacy' && c.heardLine ? `\n<p>${esc(c.heardLine)}</p>` : ''}
 ${key === 'terms' ? `\n<p><a href="${pathOf('disclaimer', lang)}">${esc(c.nav.disclaimer)} ›</a></p>` : ''}
 <p>${esc(c.contactLine)} <a href="mailto:${SITE.supportEmail}">${SITE.supportEmail}</a>.</p>`;
@@ -509,7 +511,7 @@ ${own.length ? `<h2>${esc(h.statesH)}</h2><ul>${own.map((s) => `<li><a href="${P
 <h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${storeBlock(l)}${vaBlock(l)}
 ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
       add({ path, alt: hubAlt, group: k, html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true,
-        crumbs: [{ name: h.h1, path }], schema: [article(l, path, h.title, h.desc, SITE.updated, SITE.updated, h.faq.filter((f) => f[2]).map((f) => ({ name: f[2].label, url: f[2].url }))), faqSchema(l, h.faq), appSchema(l)] }) });
+        crumbs: [{ name: h.h1, path }], schema: [article(l, path, h.title, h.desc, PUB, MOD, h.faq.filter((f) => f[2]).map((f) => ({ name: f[2].label, url: f[2].url }))), faqSchema(l, h.faq), appSchema(l)] }) });
     }
     if (!subs.length) continue;
 
@@ -541,7 +543,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
 <p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>${keep(l)}`;
         const desc = answer.length > 160 ? answer.slice(0, 157).replace(/\s+\S*$/, '') + '…' : answer;
         add({ path, alt: subAlt, group: k, html: shell({ lang: l, path, alt: subAlt, title, desc, body,
-          crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path }], schema: [article(l, path, title, desc, SITE.updated, SITE.updated)] }) });
+          crumbs: [{ name: hub(l).h1, path: P.hub(l) }, { name: s.label[l], path }], schema: [article(l, path, title, desc, PUB, MOD)] }) });
       }
       // State pages.
       for (const st of s.states) {
@@ -560,7 +562,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           // titles in both places was the template-filler repeat on iep/dispute-resolution).
           const publishers = [...new Set(names.map((n) => n.split(/,\s|:\s/)[0].trim()))];
           const hosts = [...new Set(srcs.map((g) => new URL(g.url).hostname.replace(/^www\./, '')))];
-          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine(live()) });
+          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine() });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
           // Each source's checked date is shown once: on its line only when the sources were checked
@@ -674,7 +676,7 @@ ${plans[app.slug] ? `<h2>${esc(a.planH(app))}</h2>${list(plans[app.slug][l])}<p 
 <p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('facts', l)}">${esc(COPY[l].nav.facts)}</a> · <a href="${guidePath(VAULT_GUIDE, l)}">${esc(VAULT_GUIDE[l].h1)}</a></p>
 <p class="sub">${esc(a.tm(app))}</p>`;
       add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: [a.title(app), l === 'en' ? `${app.name} alternative for papers and dated notes` : `Alternativa a ${app.name} para papeles con fecha`, l === 'en' ? `${app.name} alternative for papers` : `Alternativa a ${app.name} para papeles`], desc: a.desc(app), body, crumbs: [{ name: COPY[l].nav.alternatives, path: idx }, { name: app.name, path }],
-        schema: [article(l, path, a.h1(app), a.desc(app), app.measured, app.measured, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
+        schema: [article(l, path, a.h1(app), a.desc(app), PUB, MOD, [{ name: `${app.app} (App Store)`, url: app.store_url }]), appSchema(l)] }) });
     }
     const body = `<h1>${esc(c.altIndexH1)}</h1><p>${esc(c.altIndexDesc)}</p><ul>${apps.map((app) => `<li><a href="${pre}${app.slug}">${esc((a.link ?? a.h1)(app))}</a></li>`).join('')}</ul>`;
     add({ path: idx, alt: { en: pathOf('alternatives', 'en'), es: pathOf('alternatives', 'es') }, group: 'core', html: page({ lang: l, id: 'alternatives', title: c.altIndexTitle, desc: c.altIndexDesc, body }) });
@@ -765,10 +767,10 @@ ${faqHtml(l, x.faq)}
 <h2>${esc(G.keepH)}</h2><p>${esc(G.keepBody)}</p>${storeBlock(l)}<p><a href="${pathOf('checklists', l)}">${esc(COPY[l].nav.checklists)}</a> · <a href="${pathOf('tools', l)}">${esc(COPY[l].nav.tools)}</a></p>
 <h2>${esc(G.sourcesH)}</h2><ul>${g.sources.map((s) => `<li><a href="${esc(s.url[l])}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul><p class="sub">${esc(G.checked)}</p>
 <h2>${esc(G.related)}</h2><ul>${others.map((o) => `<li><a href="${guidePath(o, l)}">${esc(o[l].h1)}</a></li>`).join('')}</ul>
-<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${PUB}">${pubOn(l)}</time> · ${esc(G.updated)} <time datetime="${MOD}">${modOn(l)}</time></p>`;
       add({ path, alt, group: 'core', html: shell({ lang: l, path, alt, title: x.title, desc: x.desc, body, speakable: true,
         crumbs: [{ name: G.nav, path: hub }, { name: x.h1, path }],
-        schema: [article(l, path, x.h1, x.desc, GUIDE_DATES.published, GUIDE_DATES.modified, g.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, x.faq), appSchema(l)] }) });
+        schema: [article(l, path, x.h1, x.desc, PUB, MOD, g.sources.map((s) => ({ name: s.name, url: s.url[l] }))), faqSchema(l, x.faq), appSchema(l)] }) });
     }
     const body = `<h1>${esc(G.hubH1)}</h1><p class="definition answer">${esc(G.hubAnswer)}</p><p class="sub">${esc(G.notAdvice)}</p><ul>${GUIDES.map((g) => `<li><a href="${guidePath(g, l)}">${esc(g[l].h1)}</a></li>`).join('')}</ul>${storeBlock(l)}`;
     add({ path: hub, alt: hubAlt, group: 'core', html: page({ lang: l, id: 'guides', title: G.hubTitle, desc: G.hubDesc, body }) });
@@ -809,7 +811,7 @@ ${guideSection({ h: h.diffH, a: h.diff, table: h.table })}
 <h2>${esc(h.pagesH)}</h2>${linkList(pages)}
 ${faqHtml(l, h.faq)}${storeBlock(l)}<p class="sub">${esc(COPY[l].disclaimer)}</p>`;
     add({ path, alt: hubAlt, group: 'vault', html: shell({ lang: l, path, alt: hubAlt, title: h.title, desc: h.desc, body, speakable: true, crumbs: [{ name: h.h1, path }],
-      schema: [article(l, path, h.h1, h.desc, GUIDE_DATES.published, GUIDE_DATES.modified), faqSchema(l, h.faq), appSchema(l)] }) });
+      schema: [article(l, path, h.h1, h.desc, PUB, MOD), faqSchema(l, h.faq), appSchema(l)] }) });
   }
   // The landing pages, EN + ES.
   for (const x of LANDINGS) {
@@ -835,10 +837,10 @@ ${faqHtml(l, p.faq)}
 ${keep}
 <h2>${esc(G.sourcesH)}</h2><ul>${x.sources.map((s) => `<li><a href="${esc(s.url[l] ?? s.url.en)}" rel="noopener">${esc(s.name)}</a></li>`).join('')}</ul>
 <h2>${esc(L.more)}</h2>${linkList(related)}
-<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${GUIDE_DATES.published}">${fmtDate(l, GUIDE_DATES.published)}</time> · ${esc(G.updated)} <time datetime="${GUIDE_DATES.modified}">${fmtDate(l, GUIDE_DATES.modified)}</time></p>`;
+<p class="sub">${esc(G.notAdvice)}</p><p class="sub">${esc(G.by)} · ${esc(G.published)} <time datetime="${PUB}">${pubOn(l)}</time> · ${esc(G.updated)} <time datetime="${MOD}">${modOn(l)}</time></p>`;
       const crumbs = vault ? [{ name: VAULT_HUB[l].h1, path: VAULT_HUB.path[l] }, { name: p.h1, path }] : [{ name: hubFor(hubs, F.topic, l).h1, path: hubPath(hubs, F.topic, l) }, { name: p.h1, path }];
       add({ path, alt, group: vault ? 'vault' : x.kind, html: shell({ lang: l, path, alt, title: p.title, desc: p.desc, body, speakable: true, crumbs,
-        schema: [article(l, path, p.h1, p.desc, GUIDE_DATES.published, GUIDE_DATES.modified, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
+        schema: [article(l, path, p.h1, p.desc, PUB, MOD, x.sources.map((s) => ({ name: s.name, url: s.url[l] ?? s.url.en }))), faqSchema(l, p.faq), appSchema(l)] }) });
     }
   }
 }
@@ -929,7 +931,7 @@ ${linkList(AMAZON_BOOKS.map((b) => [`${b.book}: ${b.free.label.replace(/^Open th
 // ---------- the whole site ----------
 
 /** Every file of the site plus the page list: { files, pages, stops }. */
-export function renderAll(input = loadFacts()) {
+export function renderAll(input = loadFacts(), { ledger = readLedger(), today = todayCentral() } = {}) {
   const topics = readJson(join(ROOT, 'topics.json')), hubs = readJson(join(HERE, 'data', 'hubs.json')).hubs;
   const folders = launchFolders(topics);
   const files = {}, pages = [];
@@ -961,14 +963,16 @@ export function renderAll(input = loadFacts()) {
     if (b) throw Error(`NAMED STOP [BANNED_WORD_IN_COPY] ${pg.path}: "${b}"`);
   }
   files['404.html'] = notFound();
+  const dates = stampDates(files, { ledger, today, format: fmtDate });
+  const lastmod = (p) => dates.ledger[p.file]?.modified ?? today;
   files['site.css'] = STYLE;
   files['tools.js'] = readFileSync(join(HERE, 'tools-client.js'), 'utf8');
 
   // Sitemaps split by folder; sitemap.xml is the index.
   const groups = [...new Set(pages.filter((p) => p.index).map((p) => p.group))];
-  const loc = (p) => `<url><loc>${url(p.path)}</loc><lastmod>${SITE.updated}</lastmod>${p.alt ? ALL_LANGS.filter((l) => p.alt[l]).map((l) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(p.alt[l])}"/>`).join('') : ''}</url>`;
+  const loc = (p) => `<url><loc>${url(p.path)}</loc><lastmod>${lastmod(p)}</lastmod>${p.alt ? ALL_LANGS.filter((l) => p.alt[l]).map((l) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(p.alt[l])}"/>`).join('') : ''}</url>`;
   for (const g of groups) files[`sitemap-${g}.xml`] = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${pages.filter((p) => p.index && p.group === g).map(loc).join('\n')}\n</urlset>\n`;
-  files['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${groups.map((g) => `<sitemap><loc>${SITE.origin}/sitemap-${g}.xml</loc><lastmod>${SITE.updated}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`;
+  files['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${groups.map((g) => `<sitemap><loc>${SITE.origin}/sitemap-${g}.xml</loc><lastmod>${pages.filter((p) => p.index && p.group === g).map(lastmod).sort().at(-1)}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`;
   files['robots.txt'] = `User-agent: *\nAllow: /\n\n# AI answer engines are welcome to read and cite this site.\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\n\nSitemap: ${SITE.origin}/sitemap.xml\n`;
 
   const fl = folders.map((f) => `- ${hubs[f.id] ? `[${f.display_name.en}](${url(hubPath(hubs, f.id, 'en'))})` : f.display_name.en}: ${f.checklist_items.map((i) => i.name.en).join('; ')}`).join('\n');
@@ -986,7 +990,7 @@ export function renderAll(input = loadFacts()) {
   if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
   files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  Cache-Control: public, max-age=0, must-revalidate, no-transform\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
   if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
-  return { files, pages, stops, model };
+  return { files, pages, stops, model, dates };
 }
 
 /** Every file of the site, as { path: contents }. */
@@ -994,7 +998,8 @@ export const render = (input) => renderAll(input).files;
 
 export function build(dist) {
   rmSync(dist, { recursive: true, force: true });
-  const { files, pages, stops } = renderAll();
+  const { files, pages, stops, dates } = renderAll();
+  if (dates.changed) writeLedger(dates.ledger);
   for (const [p, s] of Object.entries(files)) { mkdirSync(dirname(join(dist, p)), { recursive: true }); writeFileSync(join(dist, p), s); }
   const assets = join(ROOT, 'assets', 'site');
   for (const f of readdirSync(assets)) copyFileSync(join(assets, f), join(dist, f));
