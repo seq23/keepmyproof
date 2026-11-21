@@ -248,7 +248,8 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Lock my papers ›"
     direction: DOWN
-    centerElement: true
+# Let the scroll settle first: on iPad a tap during the last of the scroll landed on the Backup tab.
+- waitForAnimationToEnd
 - tapOn: "Lock my papers ›"
 - extendedWaitUntil:
     visible: "Your papers are locked"
