@@ -189,15 +189,16 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd:
     timeout: 10000
 - takeScreenshot: 12-pdf--shared
-# Close it by tapping outside it (above the iPhone sheet, beside the iPad popover); "Making the PDF…"
-# stays on screen until the sheet is gone, so retry until it clears.
+# Close it by tapping outside it (above the iPhone sheet, beside the iPad popover). While the sheet is
+# up the app's own buttons are hidden from Maestro, so retry until the Back button can be seen again.
 - retry:
-    maxRetries: 3
+    maxRetries: 4
     commands:
+      - waitForAnimationToEnd
       - tapOn:
           point: "5%,20%"
       - waitForAnimationToEnd
-      - assertNotVisible: "Making the PDF.*"
+      - assertVisible: "← Back to .*"
 - tapOn: "← Back to .*"
 - tapOn: "← Back to Home"
 
