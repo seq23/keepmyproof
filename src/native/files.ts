@@ -4,10 +4,11 @@ import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import * as Print from 'expo-print';
 import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
-import { assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
+import { PDF_MARGINS, assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
 import { exifTime } from '../core/dates';
+import { pressedAnchor } from '../anchor';
 const MAX_FILE = 25 * 1024 * 1024;
 /** takenOn: the photo's own EXIF time, used only to name it when several are added at once. */
 export interface Picked { filename: string; mime: string; bytes: string; assetId?: string | null; takenOn?: string | null }
@@ -49,11 +50,11 @@ export async function pickBackup(): Promise<string | null> {
 }
 export async function shareBytes(bytes: Uint8Array | string, filename: string, mimeType: string) {
   const f = tempFile(filename);
-  try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType }); }
+  try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType, anchor: pressedAnchor() }); }
   finally { if (f.exists) f.delete(); }
 }
 export async function sharePdf(items: Item[], options: ExportOptions) {
-  const metadata = new File((await Print.printToFileAsync({ html: exportHtml(items, options) })).uri);
+  const metadata = new File((await Print.printToFileAsync({ html: exportHtml(items, options), margins: PDF_MARGINS })).uri);
   try {
     const pdf = await assemblePdf(await metadata.bytes(), items, async item => {
       const source = tempFile(`image-${item.id}`); await source.write(item.bytes!, { encoding: 'base64' });

@@ -27,16 +27,40 @@ export const STOP_WORDS = {
   PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
   LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
   PREVIEW_BUILD: { title: 'KeepMyProof: a store build had the simulator preview switch on', next_step: 'Remove EXPO_PUBLIC_KMP_PREVIEW from the store build; it turns screenshot protection off.' },
+  PHONE_WORDING: { title: 'KeepMyProof: app and App Store copy says phone', next_step: 'Reword the listed strings to device-neutral words (device, dispositivo, 设备, 기기): iPad users read them too.' },
   SUPPORT_ADDRESS_NOT_ON_DOMAIN: { title: 'KeepMyProof: support mailbox on keepmyproof.com', next_step: 'Set up free email forwarding on keepmyproof.com and point the support address at it.' },
 };
 export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof: live in both stores, selling' };
 // The store keys are EAS secrets, so a run outside an EAS build cannot see them: it neither raises nor clears that stop.
 export const knownHere = (eas) => Object.keys(STOP_WORDS).filter(c => eas || c !== 'REVENUECAT_KEY_MISSING');
 
+// supportsTablet is on, so every string iOS can show is read on an iPad too: none may say "phone"
+// (App Review re-review, 21 Nov 2026). "iPhone" is a product name and stays allowed. Strings only Android
+// shows are listed by key here; the Play listing (store/google-play.json, store/play/) is Android-only.
+export const PHONE_WORDS = /\bphones?\b|teléfono|手机|휴대폰/i;
+export const ANDROID_ONLY_KEYS = ['vaultLockAndroid', 'photoCopyAndroid'];
+// App Store listing files, plus app.config.ts: its plugin permission prompts (photosPermission) show on iPad too.
+export const IOS_STORE_FILES = ['store/en.md', 'store/es.md', 'store/zh.md', 'store/ko.md', 'app.config.ts'];
+/** Every iOS-visible string (src/strings.ts entries, App Store listing files) that names a phone. */
+export function phoneWording(stringsSource, storeFiles = {}) {
+  const out = [];
+  const entries = [...stringsSource.matchAll(/\n  "(\w+)": \[([\s\S]*?)\n  \]/g)];
+  if (entries.length < 100) out.push(`src/strings.ts: only ${entries.length} entries read`);
+  for (const [, key, body] of entries) {
+    if (ANDROID_ONLY_KEYS.includes(key)) continue;
+    for (const line of body.split('\n')) if (PHONE_WORDS.test(line)) out.push(`src/strings.ts ${key}: ${line.trim().slice(0, 80)}`);
+  }
+  for (const [file, text] of Object.entries(storeFiles))
+    text.split('\n').forEach((line, i) => { if (PHONE_WORDS.test(line)) out.push(`${file}:${i + 1}: ${line.trim().slice(0, 80)}`); });
+  return out;
+}
+
 /** Every stop that still applies, in order. `[]` = ready to build for the stores. */
-export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now() }) {
+export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now(), readText = (f) => readFileSync(new URL(`../${f}`, import.meta.url), 'utf8') }) {
   const out = [];
   const stop = (code, why) => out.push({ code, why });
+  const wording = phoneWording(readText('src/strings.ts'), Object.fromEntries(IOS_STORE_FILES.map(f => [f, readText(f)])));
+  if (wording.length) stop('PHONE_WORDING', `copy an iPad shows says phone: ${wording.slice(0, 5).join(' | ')}${wording.length > 5 ? ` (+${wording.length - 5} more)` : ''}.`);
   if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_') || !env.EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY?.startsWith('goog_'))
     stop('REVENUECAT_KEY_MISSING', 'the App Store (appl_) and Play (goog_) RevenueCat keys are not set as EAS secrets, so the build could not sell Plus.');
   // The simulator preview switch turns screenshot protection off; it never ships to a store.

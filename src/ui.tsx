@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View, useColorScheme, type TextProps } from 'react-native';
+import { Pressable, StyleSheet, Text, TextInput, View, useColorScheme, type HostInstance, type TextProps } from 'react-native';
 import type { Lang } from './core/model';
 import { typingDate } from './core/dates';
+import { setPressedAnchor } from './anchor';
 // The approved brand (design-keepmyproof, 6 Nov 2026): archive ground, graphite text, lockbox green for what
 // you act on, brass-soft for nudges, deadline red only for a real failure. Light and dark follow the phone.
 const palettes = {
@@ -28,12 +29,14 @@ export function P({ children, muted = false, heading = false, section = false }:
     fontWeight: head ? (cjk(lang) ? '600' : '700') : '400', fontFamily: head ? headingFont(lang) : bodyFont(lang), marginTop: section ? 8 : 0 }}>{children}</Text>;
 }
 // One filled lockbox button per screen (primary): the thing the screen is for. Every other button is an outline.
-export function Button({ title, onPress, quiet, disabled, checked, primary }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean }) {
-  const c = useContext(Theme), lang = useContext(LangContext);
-  return <Pressable accessibilityRole="button" accessibilityState={{ disabled, selected: checked }} disabled={disabled} onPress={onPress}
-    style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
+// danger: anything that destroys papers (Erase everything) is drawn in the warning red, never the go-ahead green.
+export function Button({ title, onPress, quiet, disabled, checked, primary, danger }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean; danger?: boolean }) {
+  const c = useContext(Theme), lang = useContext(LangContext), ref = useRef<HostInstance>(null);
+  return <Pressable ref={ref} accessibilityRole="button" accessibilityState={{ disabled, selected: checked }} disabled={disabled} onPress={onPress}
+    onPressIn={() => ref.current?.measureInWindow((x, y, width, height) => setPressedAnchor({ x, y, width, height }))}
+    style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: danger ? c.red : quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
       padding:12, justifyContent:'center', opacity: disabled ? .5 : pressed ? .7 : 1 })}>
-    <Text {...textProps(lang)} style={{ color: primary ? c.onOk : quiet ? c.muted : c.ok, fontSize:16, lineHeight:20, fontWeight:quiet ? '400':'600', fontFamily: bodyFont(lang, !quiet), textAlign:'center' }}>{title}</Text>
+    <Text {...textProps(lang)} style={{ color: danger ? c.red : primary ? c.onOk : quiet ? c.muted : c.ok, fontSize:16, lineHeight:20, fontWeight:quiet ? '400':'600', fontFamily: bodyFont(lang, !quiet), textAlign:'center' }}>{title}</Text>
   </Pressable>;
 }
 export function Card({ children, tone }: { children: React.ReactNode; tone?: 'gold' | 'red' | 'ok' }) {
@@ -121,7 +124,7 @@ export function useTyped<T>(initial: T): [T, (next: T | ((prev: T) => T)) => voi
   const set = (next: T | ((prev: T) => T)) => { latest.current = typeof next === 'function' ? (next as (prev: T) => T)(latest.current) : next; setValue(latest.current); };
   return [value, set, () => latest.current];
 }
-export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 },
+export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10, width:'100%', maxWidth:560, alignSelf:'center' },
   footer:{ paddingHorizontal:16, paddingTop:10, paddingBottom:12, gap:8, borderTopWidth:1, width:'100%', maxWidth:560, alignSelf:'center' }, flex:{ flex:1 },
   tiles:{ flexDirection:'row', flexWrap:'wrap', gap:8 }, tile:{ width:'31%', flexGrow:1, borderRadius:12, paddingVertical:10, paddingHorizontal:6, alignItems:'center', gap:4 },
   big:{ flexDirection:'row', alignItems:'center', gap:12, borderWidth:1.5, borderRadius:16, paddingVertical:12, paddingHorizontal:14, minHeight:76 },

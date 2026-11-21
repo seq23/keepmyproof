@@ -37,6 +37,7 @@ function mountField() {
     if (id === 'react/jsx-runtime') return { jsx: el, jsxs: el };
     if (id === 'react-native') return { TextInput, View, Text: View, Pressable: View, StyleSheet: { create: (s: unknown) => s }, useColorScheme: () => 'light' };
     if (id === './core/dates') return dates;
+    if (id === './anchor') return { setPressedAnchor: () => {} };
     throw new Error(`unexpected import ${id}`);
   }, output, output.exports);
   const find = (node: any): any => !node || typeof node !== 'object' ? null : node.type === TextInput ? node : [node.props?.children].flat(9).map(find).find(Boolean) ?? null;

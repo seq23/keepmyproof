@@ -10,6 +10,9 @@ const escape = (s: string) => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;
 const CJK_FONTS = '"PingFang SC","Apple SD Gothic Neo","Noto Sans CJK SC","Noto Sans CJK KR"';
 /** history: include every earlier version of each item (off unless the person switches it on, finding 6). */
 export interface ExportOptions { title: string; madeOn: string; lang: Lang; cover?: string; history?: boolean }
+/** Page margins in points. iOS printing ignores CSS @page margins, so they are passed to the printer
+ *  too (expo-print); without them the folder PDF ran ~14 pt from the paper's edge (iPad pass, 20 Nov 2026). */
+export const PDF_MARGINS = { top: 42, right: 42, bottom: 42, left: 42 };
 export function exportHtml(items: Item[], options: ExportOptions): string {
   const t = copy(options.lang);
   const date = (s: string | null) => s === null ? t('unknown') : new Date(s).toLocaleString(LOCALE[options.lang]);

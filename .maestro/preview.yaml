@@ -51,11 +51,35 @@ appId: com.keepmyproof.app
     timeout: 15000
 - waitForAnimationToEnd
 - takeScreenshot: 04-phrase
-- copyTextFrom: "([a-z]+ ){11}[a-z]+"
+# The words show numbered in two columns ("1.  pond"), one text each: copy all 12, then type them back.
+- copyTextFrom: "1\\.\\s+[a-z]+"
+- evalScript: ${output.w1 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "2\\.\\s+[a-z]+"
+- evalScript: ${output.w2 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "3\\.\\s+[a-z]+"
+- evalScript: ${output.w3 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "4\\.\\s+[a-z]+"
+- evalScript: ${output.w4 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "5\\.\\s+[a-z]+"
+- evalScript: ${output.w5 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "6\\.\\s+[a-z]+"
+- evalScript: ${output.w6 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "7\\.\\s+[a-z]+"
+- evalScript: ${output.w7 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "8\\.\\s+[a-z]+"
+- evalScript: ${output.w8 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "9\\.\\s+[a-z]+"
+- evalScript: ${output.w9 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "10\\.\\s+[a-z]+"
+- evalScript: ${output.w10 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "11\\.\\s+[a-z]+"
+- evalScript: ${output.w11 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
+- copyTextFrom: "12\\.\\s+[a-z]+"
+- evalScript: ${output.w12 = maestro.copiedText.replace(/^\d+\.\s+/, '')}
 - tapOn: "I.ve written them down ›"
 - tapOn:
     id: "12 words, separated by spaces"
-- inputText: ${maestro.copiedText}
+- inputText: ${[output.w1, output.w2, output.w3, output.w4, output.w5, output.w6, output.w7, output.w8, output.w9, output.w10, output.w11, output.w12].join(' ')}
 - tapOn: "Type your 12 words to confirm"
 - waitForAnimationToEnd
 - takeScreenshot: 05-confirmPhrase
@@ -68,7 +92,7 @@ appId: com.keepmyproof.app
 # Sample papers: two in Divorce or custody (one checklist line ticked), one in Workplace evidence.
 # "How did you hear about KeepMyProof?" comes after the first save.
 - scrollUntilVisible:
-    element: "Workplace evidence"
+    element: "Workplace evidence.*"
     direction: DOWN
 - tapOn: "Workplace evidence.*"
 - extendedWaitUntil:
@@ -89,7 +113,7 @@ appId: com.keepmyproof.app
     timeout: 15000
 - tapOn: "← Back to Home"
 - scrollUntilVisible:
-    element: "Divorce or custody"
+    element: "Divorce or custody.*"
     direction: DOWN
 - tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
@@ -113,7 +137,7 @@ appId: com.keepmyproof.app
 
 # A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
-    element: "Divorce or custody"
+    element: "Divorce or custody.*"
     direction: DOWN
 - tapOn: "Divorce or custody.*"
 - extendedWaitUntil:
@@ -155,16 +179,44 @@ appId: com.keepmyproof.app
 - tapOn: "Make a PDF of this folder ›"
 - waitForAnimationToEnd
 - takeScreenshot: 11-pdf
+# Make the PDF itself: the share sheet opens with it (the CI walk also copies the file out while the
+# sheet is open, so the PDF can be checked and shown). Tapping outside closes the sheet on iPhone and iPad.
+- scrollUntilVisible:
+    element: "Save the PDF ›"
+    direction: DOWN
+- tapOn: "Save the PDF ›"
+# The share sheet is system UI, outside the app's view tree: once it is up, the app's own labels drop out
+# of what Maestro sees. So wait for "Making the PDF…" and then the Back button to leave the tree (the sheet
+# is on screen), let it finish sliding in, and only then take the shot.
+- extendedWaitUntil:
+    notVisible: "Making the PDF.*"
+    timeout: 30000
+- extendedWaitUntil:
+    notVisible: "← Back to .*"
+    timeout: 30000
+- waitForAnimationToEnd:
+    timeout: 10000
+- takeScreenshot: 12-pdf--shared
+# Close it by tapping outside it (above the iPhone sheet, beside the iPad popover). While the sheet is
+# up the app's own buttons are hidden from Maestro, so retry until the Back button can be seen again.
+- retry:
+    maxRetries: 4
+    commands:
+      - waitForAnimationToEnd
+      - tapOn:
+          point: "5%,20%"
+      - waitForAnimationToEnd
+      - assertVisible: "← Back to .*"
 - tapOn: "← Back to .*"
 - tapOn: "← Back to Home"
 
 # Backup, Settings, Plus.
 - tapOn: "Backup"
 - waitForAnimationToEnd
-- takeScreenshot: 12-backup
+- takeScreenshot: 13-backup
 - tapOn: "Settings"
 - waitForAnimationToEnd
-- takeScreenshot: 13-settings
+- takeScreenshot: 14-settings
 - scrollUntilVisible:
     element: "See Plus ›"
     direction: DOWN
@@ -173,7 +225,7 @@ appId: com.keepmyproof.app
     visible: "KeepMyProof Plus"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 14-plus
+- takeScreenshot: 15-plus
 - scrollUntilVisible:
     element: "Not now"
     direction: DOWN
@@ -186,34 +238,40 @@ appId: com.keepmyproof.app
     direction: DOWN
 - tapOn: "Change passcode ›"
 - waitForAnimationToEnd
-- takeScreenshot: 15-changeCode
+- takeScreenshot: 16-changeCode
 - tapOn: "← Back"
 - scrollUntilVisible:
     element: "Make new recovery words ›"
     direction: DOWN
 - tapOn: "Make new recovery words ›"
 - waitForAnimationToEnd
-- takeScreenshot: 16-renew
+- takeScreenshot: 17-renew
 - tapOn: "← Back"
 - scrollUntilVisible:
-    element: "Erase everything on this phone…"
+    element: "Erase everything on this device…"
     direction: DOWN
-- tapOn: "Erase everything on this phone…"
+- tapOn: "Erase everything on this device…"
 - waitForAnimationToEnd
-- takeScreenshot: 17-erase
+- takeScreenshot: 18-erase
 - tapOn: "Cancel"
 
 # Lock, and the forgotten-passcode reset.
 - tapOn: "Settings"
-- scrollUntilVisible:
-    element: "Lock my papers ›"
-    direction: DOWN
+# Swipe from mid-screen, not with scrollUntilVisible: its swipes start low enough on iPad to land on
+# the centred Backup tab once the list is at its end, which opened Backup instead of locking.
+- repeat:
+    times: 3
+    commands:
+      - swipe:
+          start: "50%,65%"
+          end: "50%,15%"
+- waitForAnimationToEnd
 - tapOn: "Lock my papers ›"
 - extendedWaitUntil:
     visible: "Your papers are locked"
     timeout: 15000
 - waitForAnimationToEnd
-- takeScreenshot: 18-lock
+- takeScreenshot: 19-lock
 - tapOn: "Forgot the passcode\\? ›"
 - waitForAnimationToEnd
-- takeScreenshot: 19-reset
+- takeScreenshot: 20-reset

@@ -1,6 +1,6 @@
 # KeepMyProof
 
-Keep the papers you already have, private on this phone.
+Keep the papers you already have, private on this device.
 
 Organize photos, files and notes in five folders with suggested checklists.
 Write down the date something happened, next to the date you saved it. Make a PDF,
@@ -13,15 +13,19 @@ unlimited items, custom folders and tags, and PDFs of chosen items or dates.
 Educational only. Not legal advice. KeepMyProof is not a law firm and is not
 affiliated with the VA. It does not prepare, file or judge a claim.
 
+## App Store promotional text
+
+Keep the texts, photos and papers, dated, on your device.
+
 ## Privacy draft — for publication before release
 
-Papers, photos, notes, dates and checklists stay encrypted on your phone. We do
+Papers, photos, notes, dates and checklists stay encrypted on your device. We do
 not receive them. There is no analytics or advertising SDK. We never send your
 papers to a model. You choose whether to send a PDF or originals to another app,
 and where to save your encrypted backup. Those destinations have their own
 privacy practices. A recipient can read an exported PDF or original file.
 
-If purchases are enabled, RevenueCat and the phone's store process purchase
+If purchases are enabled, RevenueCat and the device's app store process purchase
 history and an anonymous app purchase identifier to provide Plus and restore
 purchases. They never receive your papers. SDK diagnostics and automatic device
 identifier collection are disabled. The current preview cannot make purchases.
@@ -30,14 +34,14 @@ Deleting an item removes it from the current vault, including earlier note
 versions. It does not delete copies you already exported or backed up. Delete
 those copies at their destinations. There is no account to delete. Uninstalling
 the app removes its local vault; preserve and check a backup first. The recovery
-phrase is shown once. Losing your phone and phrase prevents backup recovery.
+phrase is shown once. Losing your device and phrase prevents backup recovery.
 
 ## Terms draft — for publication before release
 
 KeepMyProof organizes copies and notes you already have. Keep only material you
 are allowed to possess. It provides no legal, medical, tax or VA claim advice,
 no calculated deadlines, and no prediction about the value of a record. Your
-phone's save date is a record of saving, not proof that an event happened.
+device's save date is a record of saving, not proof that an event happened.
 
 Free supports 25 items. Adding stops at the limit; existing records, full-folder
 PDFs, originals, backup and restore remain available. Plus is intended to cost
