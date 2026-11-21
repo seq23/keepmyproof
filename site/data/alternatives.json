@@ -8,10 +8,10 @@
    "app": "Secret Photo Vault: Keepsafe",
    "id": 510873505,
    "kind": "photo vault",
-   "measured": "2026-11-02",
+   "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 19,
+    "lost": 18,
     "price": 7
    },
    "store_url": "https://apps.apple.com/us/app/id510873505",
@@ -23,11 +23,11 @@
    "app": "Private Photo Vault - Pic Safe",
    "id": 417571834,
    "kind": "photo vault",
-   "measured": "2026-11-02",
+   "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 3,
-    "price": 4
+    "lost": 2,
+    "price": 3
    },
    "store_url": "https://apps.apple.com/us/app/id417571834",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=417571834/sortby=mostrecent/json"
@@ -38,7 +38,7 @@
    "app": "Timestamp It - Proof Camera",
    "id": 327756085,
    "kind": "timestamp camera",
-   "measured": "2026-11-02",
+   "measured": "2026-11-21",
    "sample": 150,
    "counts": {
     "lost": 1,
@@ -53,11 +53,11 @@
    "app": "AppClose",
    "id": 1019290876,
    "kind": "co-parenting app",
-   "measured": "2026-11-02",
+   "measured": "2026-11-21",
    "sample": 150,
    "counts": {
     "lost": 3,
-    "price": 52
+    "price": 51
    },
    "store_url": "https://apps.apple.com/us/app/id1019290876",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1019290876/sortby=mostrecent/json"
@@ -68,17 +68,32 @@
    "app": "OurFamilyWizard Co-Parent App",
    "id": 497405393,
    "kind": "co-parenting app",
-   "measured": "2026-11-02",
+   "measured": "2026-11-21",
    "sample": 150,
    "counts": {
-    "lost": 2,
+    "lost": 3,
     "price": 23
    },
    "store_url": "https://apps.apple.com/us/app/id497405393",
    "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=497405393/sortby=mostrecent/json"
+  },
+  {
+   "slug": "talkingparents",
+   "name": "TalkingParents",
+   "app": "TalkingParents: Co-Parent App",
+   "id": 1092220726,
+   "kind": "co-parenting app",
+   "measured": "2026-11-21",
+   "sample": 150,
+   "counts": {
+    "lost": 10,
+    "price": 50
+   },
+   "store_url": "https://apps.apple.com/us/app/id1092220726",
+   "feed_url": "https://itunes.apple.com/us/rss/customerreviews/id=1092220726/sortby=mostrecent/json"
   }
  ],
  "stops": [
-  "NAMED STOP [SAMPLE_TOO_SMALL] Vaultaire: 11 recent reviews (< 20); no page"
+  "NAMED STOP [SAMPLE_TOO_SMALL] Vaultaire: 13 recent reviews (< 20); no page"
  ]
 }

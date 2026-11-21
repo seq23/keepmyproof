@@ -2,6 +2,7 @@
 // folder hubs and checklist PDFs in both, state pages in Chinese for divorce and in Korean for
 // executor (the topics with US-specific search signal). Launched without a native reader, as Spanish
 // is (owner ruling 2 Nov 2026). Same gate and banned words as every language (site/lib/gate.mjs).
+import { folderCount } from './lib/folders.mjs';
 export const LANG_NAME = { en: 'English', es: 'Español', zh: '中文', ko: '한국어' };
 export const HREFLANG = { en: 'en', es: 'es', zh: 'zh-Hans', ko: 'ko' };
 
@@ -58,9 +59,9 @@ export const CC_CJK = {
       ['怎样在手机上私密地保存这些文件？', `KeepMyProof 把您已有文件的副本保存在带清单的文件夹里，加密存放在手机上，无需账户，没有广告。前几项免费。${store}`],
     ],
     storeLine: (live) => (live ? '现已登陆 Google Play。' : '即将登陆 Google Play。'),
-    checklistsTitle: '免费可打印清单：离婚、职场、VA、遗产执行、IEP（美国）| KeepMyProof', checklistsH1: '免费可打印清单（美国）',
-    checklistsDesc: '五份免费的一页清单，适用于在美国生活的人：离婚文件、职场证据、VA 索赔文件、遗产执行人文件和 IEP 文件夹。中文版，无需邮箱。',
-    checklistsAnswer: '这五份一页清单列出在美国办理离婚、处理职场问题、申请 VA 伤残索赔、处理父母遗产以及孩子的 IEP 时通常需要整理的文件。打印一份，勾出您已有的文件，并写下拿到每份文件的日期。完全免费，无需邮箱或账户。',
+    checklistsTitle: '免费可打印清单：离婚、职场、VA、遗产执行、IEP、租房、家庭物品（美国）| KeepMyProof', checklistsH1: '免费可打印清单（美国）',
+    checklistsDesc: `${folderCount('zh')}份免费的一页清单，适用于在美国生活的人：离婚文件、职场证据、VA 索赔文件、遗产执行人文件、IEP 文件夹、租客搬入搬出和家庭物品清单。中文版，无需邮箱。`,
+    checklistsAnswer: `这${folderCount('zh')}份一页清单列出在美国办理离婚、处理职场问题、申请 VA 伤残索赔、处理父母遗产、孩子的 IEP、租房以及整理家庭物品时通常需要的文件。打印一份，勾出您已有的文件，并写下拿到每份文件的日期。完全免费，无需邮箱或账户。`,
     pdfLink: '可打印清单（PDF）', pdfIntro: '勾出您已有的文件，并写下拿到的日期。只保存您有权持有的文件副本。', pdfDate: '拿到日期',
   },
   ko: {
@@ -86,9 +87,9 @@ export const CC_CJK = {
       ['휴대폰에 이 서류를 비공개로 보관하려면?', `KeepMyProof는 가지고 있는 서류의 사본을 체크리스트가 있는 폴더에 보관하며, 휴대폰에 암호화되어 저장되고 계정도 광고도 없습니다. 처음 몇 개 항목은 무료입니다. ${store}`],
     ],
     storeLine: (live) => (live ? '지금 Google Play에서 받을 수 있습니다.' : 'Google Play 출시 예정입니다.'),
-    checklistsTitle: '무료 인쇄용 체크리스트: 이혼, 직장, VA, 유언 집행, IEP(미국) | KeepMyProof', checklistsH1: '무료 인쇄용 체크리스트(미국)',
-    checklistsDesc: '미국에 사는 분을 위한 무료 한 페이지 체크리스트 다섯 가지: 이혼 서류, 직장 내 증거, VA 청구 서류, 유언 집행인 서류, IEP 바인더. 한국어, 이메일 불필요.',
-    checklistsAnswer: '이 다섯 가지 한 페이지 체크리스트는 미국에서 이혼, 직장 문제, VA 장애 보상 청구, 부모님의 유산 정리, 자녀의 IEP를 준비할 때 흔히 모으는 서류를 정리한 것입니다. 인쇄해서 이미 가진 서류에 표시하고 받은 날짜를 적으세요. 이메일이나 계정 없이 무료입니다.',
+    checklistsTitle: '무료 인쇄용 체크리스트: 이혼, 직장, VA, 유언 집행, IEP, 임대, 집 물품(미국) | KeepMyProof', checklistsH1: '무료 인쇄용 체크리스트(미국)',
+    checklistsDesc: `미국에 사는 분을 위한 무료 한 페이지 체크리스트 ${folderCount('ko')} 가지: 이혼 서류, 직장 내 증거, VA 청구 서류, 유언 집행인 서류, IEP 바인더, 세입자 입주·퇴거, 집 물품 목록. 한국어, 이메일 불필요.`,
+    checklistsAnswer: `이 ${folderCount('ko')} 가지 한 페이지 체크리스트는 미국에서 이혼, 직장 문제, VA 장애 보상 청구, 부모님의 유산 정리, 자녀의 IEP, 집 임대, 집 물품 목록을 준비할 때 흔히 모으는 서류를 정리한 것입니다. 인쇄해서 이미 가진 서류에 표시하고 받은 날짜를 적으세요. 이메일이나 계정 없이 무료입니다.`,
     pdfLink: '인쇄용 체크리스트(PDF)', pdfIntro: '이미 가진 서류에 표시하고 받은 날짜를 적으세요. 가질 권리가 있는 서류의 사본만 보관하세요.', pdfDate: '받은 날짜',
   },
 };

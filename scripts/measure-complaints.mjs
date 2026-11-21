@@ -16,6 +16,7 @@ export const COMPETITORS = [
   { slug: 'timestamp-it', name: 'Timestamp It', app: 'Timestamp It - Proof Camera', id: 327756085, kind: 'timestamp camera' },
   { slug: 'appclose', name: 'AppClose', app: 'AppClose', id: 1019290876, kind: 'co-parenting app' },
   { slug: 'ourfamilywizard', name: 'OurFamilyWizard', app: 'OurFamilyWizard Co-Parent App', id: 497405393, kind: 'co-parenting app' },
+  { slug: 'talkingparents', name: 'TalkingParents', app: 'TalkingParents: Co-Parent App', id: 1092220726, kind: 'co-parenting app' },
 ];
 export const THEMES = {
   lost: /\b(?:lost|lose|losing|gone|disappeared|vanished|deleted my|wiped)\b/i,

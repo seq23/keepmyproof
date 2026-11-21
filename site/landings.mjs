@@ -604,8 +604,10 @@ export const LANDINGS_BASE = [
 ];
 
 // Chinese and Korean versions (site/landings-cjk.mjs): the same page at /zh/<path> and /ko/<path>.
-import { LANDINGS_CJK } from './landings-cjk.mjs';
-export const LANDINGS = LANDINGS_BASE.map((x) => {
+import { LANDINGS_CJK as BASE_CJK } from './landings-cjk.mjs';
+import { TENANT_LANDINGS, TENANT_LANDINGS_CJK } from './landings-tenant.mjs';
+const LANDINGS_CJK = { ...BASE_CJK, ...TENANT_LANDINGS_CJK };
+export const LANDINGS = [...LANDINGS_BASE, ...TENANT_LANDINGS].map((x) => {
   const t = LANDINGS_CJK[x.id];
   if (!t?.zh || !t?.ko) throw Error(`NAMED STOP [NOT_TRANSLATED] landing ${x.id}: no zh/ko in site/landings-cjk.mjs`);
   return { ...x, zh: t.zh, ko: t.ko, path: { ...x.path, zh: `/zh${x.path.en}`, ko: `/ko${x.path.en}` } };
