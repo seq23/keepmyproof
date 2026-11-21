@@ -97,6 +97,9 @@ test('release gate: no string an iPad shows says phone (app strings and App Stor
     .replace('"设备丢了或换了新设备？"', '"手机丢了？"').replace('"기기를 잃어버렸거나 새로 바꾸셨나요?"', '"휴대폰?"');
   assert.equal(phoneWording(planted).length, 4);
   assert.deepEqual(phoneWording(src, { 'store/en.md': 'Works on iPhone and iPad.\nPrivate on this phone.' }), ['store/en.md:2: Private on this phone.']);
+  // The iOS permission prompts in app.config.ts are checked too (fresh review, 21 Nov: photosPermission said "phone").
+  assert.ok(IOS_STORE_FILES.includes('app.config.ts'));
+  assert.equal(phoneWording(src, { 'app.config.ts': read('app.config.ts').replace('on this device', 'on this phone') }).length, 1);
   const found = await stops({ env: {}, version: '1.0.0', readJson: () => null, probe: async () => 200, supportEmail: 'help@keepmyproof.com', mx: async () => 1,
     readText: (f: string) => f === 'src/strings.ts' ? planted : read(f) });
   assert.ok(found.some((s: { code: string }) => s.code === 'PHONE_WORDING'));

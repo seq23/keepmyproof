@@ -39,7 +39,8 @@ export const knownHere = (eas) => Object.keys(STOP_WORDS).filter(c => eas || c !
 // shows are listed by key here; the Play listing (store/google-play.json, store/play/) is Android-only.
 export const PHONE_WORDS = /\bphones?\b|teléfono|手机|휴대폰/i;
 export const ANDROID_ONLY_KEYS = ['vaultLockAndroid', 'photoCopyAndroid'];
-export const IOS_STORE_FILES = ['store/en.md', 'store/es.md', 'store/zh.md', 'store/ko.md'];
+// App Store listing files, plus app.config.ts: its plugin permission prompts (photosPermission) show on iPad too.
+export const IOS_STORE_FILES = ['store/en.md', 'store/es.md', 'store/zh.md', 'store/ko.md', 'app.config.ts'];
 /** Every iOS-visible string (src/strings.ts entries, App Store listing files) that names a phone. */
 export function phoneWording(stringsSource, storeFiles = {}) {
   const out = [];
