@@ -15,6 +15,7 @@ import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '
 import { purchases } from '../src/billing/revenuecat';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
+import { cameraStep, photoTitle } from '../src/core/camera';
 import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
 import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
@@ -231,7 +232,7 @@ export default function App() {
     else {
       const base = { ...draft, title:draft.title.trim(), happenedOn, tags, takenOn: picked[0]?.takenOn ?? null };
       const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes, takenOn:p.takenOn ?? null,
-        title: base.title ? `${base.title} (${n+1})` : p.takenOn ? t('photoTaken', { date:showHappened(p.takenOn, LOCALE[lang]) }) : p.filename })) : [base];
+        title: base.title ? `${base.title} (${n+1})` : photoTitle(p, date => t('photoTaken', { date }), LOCALE[lang]) })) : [base];
       savedIds = await vault.addMany(drafts, ent.plus);
     }
     const assetIds = picked.map(p => p.assetId).filter((a): a is string => !!a); setPicked([]); setReplacement(null);
@@ -244,18 +245,21 @@ export default function App() {
   }
   async function pick(replace: boolean) {
     const got = await files.pickAttachment(draft.kind === 'photo', draft.kind === 'photo' && !replace); if (!got?.length) return;
+    accept(got, replace);
+  }
+  /** A picked or taken file becomes the draft's file; one photo nobody named is titled by photoTitle. */
+  function accept(got: files.Picked[], replace: boolean) {
     if (replace) { const { filename, mime, bytes } = got[0]; setReplacement({ filename, mime, bytes }); setDraft(d => ({ ...d, filename, mime, bytes })); return; }
     setPicked(got); const { filename, mime, bytes } = got[0];
-    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || filename }));
+    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || photoTitle(got[0], date => t('photoTaken', { date }), LOCALE[lang]) }));
   }
   // Camera straight into the vault (permission asked on this tap only). Turned off or no camera: the person
   // is told why and the photo library opens instead, so the add carries on.
   async function snap() {
-    const got = await files.takePhoto();
-    if (got === 'denied' || got === 'unavailable') { setNotice(t(got === 'denied' ? 'cameraOff' : 'cameraNone')); return pick(false); }
-    if (!got?.length) return;
-    setPicked(got); const { filename, mime, bytes } = got[0];
-    setDraft(d => ({ ...d, filename, mime, bytes, title: d.title || filename }));
+    const step = cameraStep(await files.takePhoto());
+    if (!step) return;
+    if ('fallback' in step) { setNotice(t(step.fallback)); return pick(false); }
+    accept(step.picked, false);
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
   const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
@@ -395,7 +399,7 @@ export default function App() {
     {draft.kind !== 'note' && <>{!editing && draft.kind === 'photo' && btn('takePhoto', doRun(snap, 'workingCamera'))}
       {!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
       {editing && btn('replaceFile', doRun(() => pick(true), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
-      {draft.kind === 'photo' && !editing && <P muted>{t(vaultCopy.photo)}</P>}
+      {draft.kind === 'photo' && !editing && <P muted>{t(picked[0]?.camera ? 'photoCamera' : vaultCopy.photo)}</P>}
       {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />

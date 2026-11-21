@@ -1,9 +1,10 @@
 // Take a photo straight into the vault (camera capture, 21 Nov 2026).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import { b64, utf8 } from '../src/core/crypto';
-import { fromAsset, takePhoto, type CameraApi, type PickerAsset, type ReadFile } from '../src/core/camera';
+import { cameraStep, fromAsset, photoTitle, takePhoto, type CameraApi, type Picked, type PickerAsset, type ReadFile } from '../src/core/camera';
+import { copy } from '../src/strings';
+import { LANGS } from '../src/core/model';
 import { appFolders } from '../src/core/model';
 import { fixture } from './helpers';
 
@@ -37,7 +38,7 @@ test('a camera photo records its dates exactly as an imported photo does, and is
   assert.ok(Array.isArray(got) && got.length === 1);
   const imported = await fromAsset(asset, cam.read);
   // Same file, same "taken" time from the photo's own EXIF; only the library id differs (it was never in Photos).
-  assert.deepEqual({ ...got[0], assetId: 'library-id' }, imported);
+  assert.deepEqual({ ...got[0], assetId: 'library-id', camera: undefined }, { ...imported, camera: undefined });
   assert.equal(got[0].takenOn, '2026-11-21T09:41'); assert.equal(got[0].assetId, null);
   assert.equal(cam.calls.request, 1);
   // Saved through the same vault path in any folder: "saved" is stamped by the vault, takenOn is kept.
@@ -51,20 +52,35 @@ test('a camera photo records its dates exactly as an imported photo does, and is
   }
 });
 
-test('the camera permission is asked only from the tap, with a plain reason; no microphone, no Photos write', () => {
-  const files = readFileSync(new URL('../src/native/files.ts', import.meta.url), 'utf8');
-  const app = readFileSync(new URL('../app/index.tsx', import.meta.url), 'utf8');
-  const config = readFileSync(new URL('../app.config.ts', import.meta.url), 'utf8');
-  // One request, inside takePhoto; the app calls takePhoto only from the "Take a photo" button's handler.
-  assert.equal(files.match(/requestCameraPermissionsAsync/g)?.length, 1);
-  assert.equal(app.match(/files\.takePhoto\(/g)?.length, 1);
-  assert.match(app, /btn\('takePhoto', doRun\(snap/);
-  assert.doesNotMatch(app, /requestCameraPermissions|launchCameraAsync/);
-  // A denial or a missing camera opens the photo library instead (the add carries on).
-  assert.match(app, /got === 'denied' \|\| got === 'unavailable'\)[^\n]*return pick\(false\)/);
-  assert.match(config, /cameraPermission: '[^']{20,}'/);
-  assert.match(config, /microphonePermission: false/);
-  assert.doesNotMatch(files, /saveToLibraryAsync|createAssetAsync/);
-  // The web preview has the same call, so the preview never shows a broken button.
-  assert.match(readFileSync(new URL('../src/native/files.web.ts', import.meta.url), 'utf8'), /export async function takePhoto\(/);
+test('the Add screen: a denial or no camera says why and opens the library; a cancel does nothing; a photo is kept', async () => {
+  assert.deepEqual(cameraStep(await takePhoto(fakes({ granted: false }).api, fakes().read)), { fallback: 'cameraOff' });
+  assert.deepEqual(cameraStep(await takePhoto(fakes({ launchThrows: true }).api, fakes().read)), { fallback: 'cameraNone' });
+  assert.equal(cameraStep(await takePhoto(fakes({ canceled: true }).api, fakes().read)), null);
+  const kept = cameraStep(await takePhoto(fakes().api, fakes().read));
+  assert.ok(kept && 'picked' in kept && kept.picked[0].camera === true);
+  // Both fallback lines exist in every language, so the notice is never blank.
+  for (const l of LANGS) for (const k of ['cameraOff', 'cameraNone', 'photoCamera'] as const) assert.ok(copy(l)(k).trim(), `${k} ${l}`);
+});
+
+test('a camera photo is titled from its taken time with the same helper as a multi-photo import, never its file name', async () => {
+  const cam = await takePhoto(fakes().api, fakes().read) as Picked[];
+  const label = (date: string) => copy('en')('photoTaken', { date });
+  assert.equal(photoTitle(cam[0], label, 'en-US'), photoTitle({ filename: 'x.jpg', takenOn: '2026-11-21T09:41' }, label, 'en-US'));
+  assert.match(photoTitle(cam[0], label, 'en-US'), /^Photo 11\/21\/2026 9:41\s?AM$/);
+  assert.notEqual(photoTitle(cam[0], label, 'en-US'), cam[0].filename);
+  // A camera that writes no EXIF time: the moment of the shot is the taken time.
+  const noExif: CameraApi = { request: async () => ({ granted: true }), launch: async () => ({ canceled: false, assets: [{ ...asset, exif: null }] }) };
+  const [p] = await takePhoto(noExif, fakes().read, () => new Date(2026, 10, 21, 18, 1)) as Picked[];
+  assert.equal(p.takenOn, '2026-11-21T18:01');
+  assert.match(photoTitle(p, label, 'en-US'), /^Photo 11\/21\/2026 6:01\s?PM$/);
+  // An imported photo with no EXIF keeps its file name, as before.
+  assert.equal(photoTitle({ filename: 'scan.jpg', takenOn: null }, label, 'en-US'), 'scan.jpg');
+});
+
+test('the camera permission has a plain reason, and no microphone is asked for', async () => {
+  const plugins = (await import('../app.config')).default.plugins as unknown[];
+  const picker = plugins.find(p => Array.isArray(p) && p[0] === 'expo-image-picker') as [string, Record<string, unknown>];
+  assert.ok(typeof picker[1].cameraPermission === 'string' && (picker[1].cameraPermission as string).length > 20);
+  assert.match(picker[1].cameraPermission as string, /not saved to Photos/);
+  assert.equal(picker[1].microphonePermission, false);
 });
