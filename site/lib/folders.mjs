@@ -20,6 +20,8 @@ export function folderCount(lang, capital = false, n = FOLDER_COUNT) {
 }
 const JOIN = { en: [', ', ' and '], es: [', ', ' y '], zh: ['、', '和'], ko: [', ', ', '] };
 /** Every launch folder's name in that language, in Home order, as one list ("A, B and C"). */
+/** The launch folders' names, in folder order. */
+export const folderList = (lang) => LAUNCH.map((t) => t.name[lang] ?? t.name.en);
 export function folderNames(lang) {
   const names = LAUNCH.map((t) => t.name[lang] ?? t.name.en), [sep, last] = JOIN[lang] ?? JOIN.en;
   return names.length < 2 ? names.join('') : `${names.slice(0, -1).join(sep)}${last}${names.at(-1)}`;
