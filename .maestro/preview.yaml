@@ -189,12 +189,15 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd:
     timeout: 10000
 - takeScreenshot: 12-pdf--shared
-- tapOn:
-    point: "50%,6%"
-- tapOn:
-    text: "Close"
-    optional: true
-- waitForAnimationToEnd
+# Close it by tapping outside it (above the iPhone sheet, beside the iPad popover); "Making the PDF…"
+# stays on screen until the sheet is gone, so retry until it clears.
+- retry:
+    maxRetries: 3
+    commands:
+      - tapOn:
+          point: "5%,20%"
+      - waitForAnimationToEnd
+      - assertNotVisible: "Making the PDF.*"
 - tapOn: "← Back to .*"
 - tapOn: "← Back to Home"
 
