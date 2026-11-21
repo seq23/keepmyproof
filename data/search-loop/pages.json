@@ -154,7 +154,20 @@
         "https://www.eeoc.gov/time-limits-filing-charge"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 30 words (aim 40-60)"
       ],
@@ -162,7 +175,9 @@
         "how to prove a hostile work environment claim",
         "what is considered a hostile work environment"
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "va-disability-what-to-claim",
@@ -190,7 +205,20 @@
         "https://www.va.gov/resources/va-accredited-representative-faqs/"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b2 meta description is 115 chars (aim 120-160)",
         "b4 direct answer under the H1 is 39 words (aim 40-60)",
@@ -198,7 +226,9 @@
         "b5 FAQ answer is 39 words (aim 40-60): \"Can a VSO charge me for helping with the initial c\"",
         "b5 FAQ answer is 39 words (aim 40-60): \"What if my condition is not on the presumptive lis\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "what-documentation-is-needed-for-a-divorce",
@@ -225,7 +255,20 @@
         "https://www.acf.hhs.gov/css/parents"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 34 words (aim 40-60)",
         "b5 FAQ answer is 31 words (aim 40-60): \"Do I need a lawyer to tell me which documents to g\"",
@@ -233,7 +276,9 @@
         "b5 FAQ answer is 31 words (aim 40-60): \"How long should I keep divorce documents after the\"",
         "b5 FAQ answer is 32 words (aim 40-60): \"Can I use photos of documents instead of originals\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "what-are-discovery-documents-in-a-divorce",
@@ -259,7 +304,20 @@
         "https://www.irs.gov/taxtopics/tc452"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 34 words (aim 40-60)",
         "b5 FAQ answer is 33 words (aim 40-60): \"Do I have to answer every question?\"",
@@ -267,7 +325,9 @@
         "b5 FAQ answer is 37 words (aim 40-60): \"How long does discovery take?\"",
         "b5 FAQ answer is 39 words (aim 40-60): \"Are discovery documents public record?\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "what-to-do-before-asking-for-a-divorce",
@@ -295,11 +355,26 @@
         "https://support.apple.com/en-us/118558"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b5 FAQ answer is 62 words (aim 40-60): \"Do I need a lawyer before I file for divorce?\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "how-to-prepare-divorce-documents-yourself",
@@ -333,7 +408,20 @@
           "after_hash": "7688f94554817c239c3a80f81c054ffa299e4e6dc5f97a45b76eca202dbf9334"
         }
       ],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "indexnow_at": "2026-11-08",
       "reshaped": {
         "v": 2,
@@ -342,7 +430,9 @@
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)"
         ]
-      }
+      },
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "can-you-get-a-consent-order-before-divorce",
@@ -368,14 +458,29 @@
         "https://selfhelp.courts.ca.gov/divorce-california"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b5 FAQ answer is 37 words (aim 40-60): \"Is a separation agreement the same as a consent or\"",
         "b5 FAQ answer is 34 words (aim 40-60): \"Can we file the consent order at the same time as \"",
         "b5 FAQ answer is 38 words (aim 40-60): \"What if we reconcile before the judge signs?\"",
         "b5 FAQ answer is 37 words (aim 40-60): \"Do I need a lawyer to get a consent order?\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "does-it-matter-who-asks-for-a-divorce-first",
@@ -401,7 +506,20 @@
         "https://selfhelp.courts.ca.gov/divorce-california"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 78,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 39 words (aim 40-60)",
         "b5 FAQ answer is 34 words (aim 40-60): \"Does the petitioner pay more in court fees?\"",
@@ -409,7 +527,9 @@
         "b5 FAQ answer is 31 words (aim 40-60): \"Does filing first affect temporary orders?\"",
         "b5 FAQ answer is 32 words (aim 40-60): \"What if my spouse files in another state first?\""
       ],
-      "indexnow_at": "2026-11-08"
+      "indexnow_at": "2026-11-08",
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "how-to-prepare-for-divorce-in-texas",
@@ -443,7 +563,20 @@
           "after_hash": "083b4f23386686b6310dc63763ee912feb2831ed3dc4890b8ef2e7e927595591"
         }
       ],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 31 words (aim 40-60)"
       ],
@@ -455,7 +588,9 @@
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)"
         ]
-      }
+      },
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "how-to-prepare-for-divorce-in-florida",
@@ -488,7 +623,20 @@
           "after_hash": "dcd5897cab3168fa5ed2441890ebaf0abd44588e2b3c51de16735816c256f038"
         }
       ],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-21",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 32 words (aim 40-60)"
       ],
@@ -500,7 +648,9 @@
         "left": [
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)"
         ]
-      }
+      },
+      "inspected_at": "2026-11-21",
+      "indexed": false
     },
     {
       "slug": "how-to-prepare-for-divorce-in-missouri",
