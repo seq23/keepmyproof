@@ -8,6 +8,7 @@ import { PDF_MARGINS, assemblePdf, exportHtml, originalArchive, type ExportOptio
 import type { Item } from '../core/model';
 import { tempFile } from './storage';
 import { exifTime } from '../core/dates';
+import { pressedAnchor } from '../anchor';
 const MAX_FILE = 25 * 1024 * 1024;
 /** takenOn: the photo's own EXIF time, used only to name it when several are added at once. */
 export interface Picked { filename: string; mime: string; bytes: string; assetId?: string | null; takenOn?: string | null }
@@ -49,7 +50,7 @@ export async function pickBackup(): Promise<string | null> {
 }
 export async function shareBytes(bytes: Uint8Array | string, filename: string, mimeType: string) {
   const f = tempFile(filename);
-  try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType }); }
+  try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType, anchor: pressedAnchor() }); }
   finally { if (f.exists) f.delete(); }
 }
 export async function sharePdf(items: Item[], options: ExportOptions) {

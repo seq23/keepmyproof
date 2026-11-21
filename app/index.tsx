@@ -246,7 +246,7 @@ export default function App() {
     setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || filename }));
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
-  const btn = (key: StringKey, action: () => void, quiet = false, primary = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} disabled={busy} />;
+  const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
   // The disclaimer opens the site page (Spanish has its own; Chinese and Korean read the English page).
   const disclaimerUrl = lang === 'es' ? 'https://keepmyproof.com/es/aviso-legal' : 'https://keepmyproof.com/disclaimer';
   const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
@@ -457,7 +457,7 @@ export default function App() {
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
     {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}
     <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}
-    {btn('eraseOpen', () => { setCurrentCode(''); navigate('erase'); }, true)}</>;
+    {btn('eraseOpen', () => { setCurrentCode(''); navigate('erase'); }, true, false, true)}</>;
   else if (screen === 'changeCode') body = <><P heading>{t('changeCode').replace(/\s*›$/, '')}</P>
     <Field label={t('currentCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
     <Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
@@ -477,7 +477,7 @@ export default function App() {
       await device.eraseAll(currentCodeNow());
       vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setCurrentCode(''); setBiometric(false); setHeard(null); setSample(false);
       setRemovePref(DEFAULT_REMOVE_PREF); setBackupShared(false); resume.current = 'home'; navigate('first'); setNotice(t('erased'));
-    }))}{btn('cancel', () => navigate('settings'), true)}</>;
+    }), false, false, true)}{btn('cancel', () => navigate('settings'), true)}</>;
   else if (screen === 'heard') body = <><P heading>{t('heardTitle')}</P><P muted>{t('heardOptional')}</P>
     <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
       onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>

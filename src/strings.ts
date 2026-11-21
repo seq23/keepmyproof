@@ -196,10 +196,10 @@ export const strings = {
     "추가 ›"
   ],
   "photoCopy": [
-    "Keeps a private copy here. On iPhone you can then remove the original from Photos.",
-    "Guarda una copia privada aquí. En iPhone, después puede quitar el original de Fotos.",
-    "在这里保存一份私密副本。在 iPhone 上，之后可以从“照片”中移除原图。",
-    "여기에 비공개 사본을 보관해요. iPhone에서는 그다음 사진 앱의 원본을 삭제할 수 있어요."
+    "Keeps a private copy here. On iPhone and iPad you can then remove the original from Photos.",
+    "Guarda una copia privada aquí. En iPhone y iPad, después puede quitar el original de Fotos.",
+    "在这里保存一份私密副本。在 iPhone 和 iPad 上，之后可以从“照片”中移除原图。",
+    "여기에 비공개 사본을 보관해요. iPhone과 iPad에서는 그다음 사진 앱의 원본을 삭제할 수 있어요."
   ],
   "photoCopyAndroid": [
     "Keeps a private copy here. The original stays in your Photos or Gallery app. Delete it there if you want it gone.",
@@ -310,10 +310,10 @@ export const strings = {
     "사진 앱에서 원본을 삭제할까요?"
   ],
   "removeWhy": [
-    "Your copy is saved here. The original is still in Photos, where anyone who opens Photos can see it. If you remove it, your iPhone asks you to confirm, and it stays in Recently Deleted for 30 days.",
-    "Su copia está guardada aquí. El original sigue en Fotos, donde cualquiera que abra Fotos puede verlo. Si lo quita, su iPhone le pedirá que lo confirme y quedará en el álbum Eliminado durante 30 días.",
-    "您的副本已保存在这里。原图仍在“照片”中，任何打开“照片”的人都能看到。如果您移除它，iPhone 会请您确认，照片会在“最近删除”中保留 30 天。",
-    "사본은 여기에 저장되었습니다. 원본은 아직 사진 앱에 있어 사진 앱을 여는 누구나 볼 수 있습니다. 삭제하면 iPhone이 확인을 요청하며, 사진은 30일 동안 '최근 삭제된 항목'에 남습니다."
+    "Your copy is saved here. The original is still in Photos, where anyone who opens Photos can see it. If you remove it, your device asks you to confirm, and it stays in Recently Deleted for 30 days.",
+    "Su copia está guardada aquí. El original sigue en Fotos, donde cualquiera que abra Fotos puede verlo. Si lo quita, su dispositivo le pedirá que lo confirme y quedará en el álbum Eliminado durante 30 días.",
+    "您的副本已保存在这里。原图仍在“照片”中，任何打开“照片”的人都能看到。如果您移除它，设备会请您确认，照片会在“最近删除”中保留 30 天。",
+    "사본은 여기에 저장되었습니다. 원본은 아직 사진 앱에 있어 사진 앱을 여는 누구나 볼 수 있습니다. 삭제하면 기기가 확인을 요청하며, 사진은 30일 동안 '최근 삭제된 항목'에 남습니다."
   ],
   "keepInPhotos": [
     "Keep it in Photos",
@@ -340,16 +340,16 @@ export const strings = {
     "사진 앱에 그대로 있습니다. 아무것도 바뀌지 않았습니다."
   ],
   "removeSetting": [
-    "After adding a photo, offer to remove it from Photos (iPhone)",
-    "Después de agregar una foto, ofrecer quitarla de Fotos (iPhone)",
-    "添加照片后，提供从“照片”中移除原图的选项（iPhone）",
-    "사진을 추가한 뒤 사진 앱에서 삭제할지 묻기 (iPhone)"
+    "After adding a photo, offer to remove it from Photos",
+    "Después de agregar una foto, ofrecer quitarla de Fotos",
+    "添加照片后，提供从“照片”中移除原图的选项",
+    "사진을 추가한 뒤 사진 앱에서 삭제할지 묻기"
   ],
   "removeSettingHint": [
-    "Nothing leaves Photos unless you tap Remove and confirm on your iPhone.",
-    "Nada sale de Fotos a menos que toque Quitar y lo confirme en su iPhone.",
-    "除非您点按“移除”并在 iPhone 上确认，否则不会从“照片”中移除任何内容。",
-    "'삭제'를 누르고 iPhone에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
+    "Nothing leaves Photos unless you tap Remove and confirm on this device.",
+    "Nada sale de Fotos a menos que toque Quitar y lo confirme en este dispositivo.",
+    "除非您点按“移除”并在此设备上确认，否则不会从“照片”中移除任何内容。",
+    "'삭제'를 누르고 이 기기에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
   ],
   "biometrics": [
     "Also open with {bio}",
@@ -1048,10 +1048,10 @@ export const strings = {
     "평생 이용. 한 번 결제하고 갱신되지 않아요. Plus를 평생 쓸 수 있어요."
   ],
   "annualTerms": [
-    "Renews every year on the same date until you cancel. Cancel any time: iPhone Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
-    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes del iPhone › su nombre › Suscripciones (Android: Play Store › Pagos y suscripciones). Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
-    "每年在同一日期自动续订，直到您取消为止。随时可以取消：iPhone“设置”› 您的姓名 ›“订阅”（Android：Play 商店 › 付款和订阅）。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
-    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: iPhone 설정 › 내 이름 › 구독 (Android: Play 스토어 › 결제 및 정기 결제). 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
+    "Renews every year on the same date until you cancel. Cancel any time: Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
+    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes › su nombre › Suscripciones (Android: Play Store › Pagos y suscripciones). Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
+    "每年在同一日期自动续订，直到您取消为止。随时可以取消：“设置”› 您的姓名 ›“订阅”（Android：Play 商店 › 付款和订阅）。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
+    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: 설정 › 내 이름 › 구독 (Android: Play 스토어 › 결제 및 정기 결제). 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
   ],
   "buyLifetime": [
     "Buy lifetime for {price} ›",
