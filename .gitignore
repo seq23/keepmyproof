@@ -16,3 +16,6 @@ coverage/
 .DS_Store
 .search-loop-engine/
 .search-loop-run.log
+play-sa.json
+*.aab
+*.apk
