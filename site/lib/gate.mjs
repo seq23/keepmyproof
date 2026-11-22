@@ -180,4 +180,8 @@ const rankFacts = (facts) => { const rank = (f) => (f.stateSpecific ? (isContact
 
 /** A Chinese or Korean translation that left English words untranslated (lowercase words; names of
  * agencies, courts and forms are capitalised and allowed) is not natural writing and never publishes. */
-export const untranslated = (t) => /\b[a-z]{3,}\b/.test(String(t).replace(/https?:\S+/g, '').replace(/\{state(?:_es)?\}/g, ''));
+export const untranslated = (t, lang) => /\b[a-z]{3,}\b/.test(String(t).replace(/https?:\S+/g, '').replace(/\{state(?:_es)?\}/g, '')) || wrongScript(t, lang);
+/** Text in the other language's script: 25 Korean small-estate facts came back from a free model in
+ * Chinese and published on Korean pages (found 21 Nov 2026). Korean is mostly Hangul; Chinese has none. */
+const count = (t, re) => (String(t).match(re) || []).length;
+export const wrongScript = (t, lang) => (lang === 'ko' ? count(t, /\p{Script=Hangul}/gu) <= count(t, /\p{Script=Han}/gu) : lang === 'zh' ? count(t, /\p{Script=Hangul}/gu) > 0 : false);

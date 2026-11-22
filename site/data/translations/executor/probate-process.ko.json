@@ -4,12 +4,12 @@
  "subtopic": "probate-process",
  "lang": "ko",
  "review": "launched without a native reader (owner ruling 2 Nov 2026)",
- "translated_on": "2026-11-02",
+ "translated_on": "2026-11-22",
  "models": [
   "nvidia/nemotron-3.5-lightning:free",
   "nvidia/nemotron-3-ultra-550b-a55b:free"
  ],
- "title": "{state}에서 부모 사망 후 상속 절차(Probate) 진행 방식",
+ "title": "{state} 프로베이트(유언검인) 절차: 부모님 사망 후 진행 방식",
  "facts": {
   "3ce3b13a2f5cfbe70fb9": "알래스카, 비공식 유언검인 절차는 최소한의 법원 감독 하에 개인 대리인이 재산을 적법한 상속인에게 이전하게 합니다.",
   "628708b9b07fd279fc90": "알래스카 비공식 유언검인 절차에는 채권자와 상속인/후원자에게 통지하는 과정이 포함됩니다.",

@@ -4,13 +4,13 @@
  "subtopic": "executor-duties",
  "lang": "ko",
  "review": "launched without a native reader (owner ruling 2 Nov 2026)",
- "translated_on": "2026-11-02",
+ "translated_on": "2026-11-22",
  "models": [
   "nvidia/nemotron-3-ultra-550b-a55b:free",
   "google/gemma-4-31b-it:free",
   "nvidia/nemotron-3.5-lightning:free"
  ],
- "title": "{state}에서 집행자의 의무와 기한",
+ "title": "{state} 유언 집행인의 의무와 기한",
  "facts": {
   "003308aa65473f0883be": "몬타나주에서는 재산 목록에 해당 항목에 대한 시가 가치를 기재해야 합니다.",
   "5745deff4bb87bdb6ba1": "몬타나주에서 개인 대리인은 몬타나 법률에 따라 수탁자에게 적용되는 주의 의무를 지는 신탁인입니다.",
