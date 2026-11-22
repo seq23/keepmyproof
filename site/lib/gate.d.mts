@@ -12,3 +12,4 @@ export declare function rateProblems(f: any): [string, string][];
 export declare function datedRates(facts: any[], today: string): { facts: any[]; dropped: [string, any][] };
 export declare function untranslated(text: string, lang?: string): boolean;
 export declare function wrongScript(text: string, lang?: string): boolean;
+export declare function zhSpacing(text: string): string;

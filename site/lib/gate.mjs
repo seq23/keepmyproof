@@ -185,3 +185,12 @@ export const untranslated = (t, lang) => /\b[a-z]{3,}\b/.test(String(t).replace(
  * Chinese and published on Korean pages (found 21 Nov 2026). Korean is mostly Hangul; Chinese has none. */
 const count = (t, re) => (String(t).match(re) || []).length;
 export const wrongScript = (t, lang) => (lang === 'ko' ? count(t, /\p{Script=Hangul}/gu) <= count(t, /\p{Script=Han}/gu) : lang === 'zh' ? count(t, /\p{Script=Hangul}/gu) > 0 : false);
+
+/** Chinese never puts a space between two Chinese characters (or a {state} name and one): the model
+ * translations wrote "{state} 的…" English-style, a seam that reads machine-made ("弗吉尼亚州 的…").
+ * Spaces next to Latin letters and digits stay (VA 伤残, 2026 年 is a style choice, not a seam). */
+const HAN = '[\\p{Script=Han}，。：；、！？（）《》“”]';
+// Inline tags between the two characters do not hide the space ("。 <a href…>查找"), so it steps over them.
+const TAG = '(?:</?(?:a|span|strong|em|b|i|abbr|time)\\b[^>]*>)*';
+const ZH_SEAM = new RegExp(`(?<=(?:${HAN}|\\{state\\})${TAG})\\s+(?=${TAG}(?:${HAN}|\\{state\\}))`, 'gu');
+export const zhSpacing = (t) => String(t).replace(ZH_SEAM, '');
