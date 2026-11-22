@@ -12266,12 +12266,6 @@
    "last_crawl": "2026-11-04T22:17:01Z",
    "inspected_at": "2026-11-19T19:30:42.467Z"
   },
-  "https://keepmyproof.com/ko/executor/small-estate/ohio": {
-   "verdict": "NEUTRAL",
-   "state": "Crawled - currently not indexed",
-   "last_crawl": "2026-11-05T05:51:23Z",
-   "inspected_at": "2026-11-19T19:30:42.467Z"
-  },
   "https://keepmyproof.com/executor/small-estate/oklahoma": {
    "verdict": "NEUTRAL",
    "state": "Crawled - currently not indexed",
@@ -12324,12 +12318,6 @@
    "verdict": "NEUTRAL",
    "state": "Crawled - currently not indexed",
    "last_crawl": "2026-11-04T04:54:27Z",
-   "inspected_at": "2026-11-19T19:30:42.467Z"
-  },
-  "https://keepmyproof.com/ko/executor/small-estate/rhode-island": {
-   "verdict": "NEUTRAL",
-   "state": "Crawled - currently not indexed",
-   "last_crawl": "2026-11-05T21:35:54Z",
    "inspected_at": "2026-11-19T19:30:42.467Z"
   },
   "https://keepmyproof.com/executor/small-estate/south-carolina": {
@@ -12396,12 +12384,6 @@
    "verdict": "NEUTRAL",
    "state": "Crawled - currently not indexed",
    "last_crawl": "2026-11-03T15:24:59Z",
-   "inspected_at": "2026-11-19T19:30:42.467Z"
-  },
-  "https://keepmyproof.com/ko/executor/small-estate/texas": {
-   "verdict": "NEUTRAL",
-   "state": "Crawled - currently not indexed",
-   "last_crawl": "2026-11-06T21:56:39Z",
    "inspected_at": "2026-11-19T19:30:42.467Z"
   },
   "https://keepmyproof.com/executor/small-estate/utah": {
@@ -14293,16 +14275,916 @@
    "state": "Crawled - currently not indexed",
    "last_crawl": "2026-11-04T02:37:53Z",
    "inspected_at": "2026-11-21T18:03:24.133Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-09T13:54:28Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/workplace/minimum-wage/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T10:36:05Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:52:21Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T09:32:47Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:22:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:50:30Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T03:33:39Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/minnesota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T02:59:26Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/mississippi": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:38:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:43:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:39:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:22:57Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T01:41:57Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/misisipi": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:32:53Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/montana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T00:07:54Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:31:58Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T02:12:04Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:50:45Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:25:07Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/new-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T13:33:05Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T08:15:16Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:35:28Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/nueva-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:14:00Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T10:01:15Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/nuevo-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:52:51Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/carolina-del-norte": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:24:45Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/nueva-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:08:17Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T11:08:51Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T09:27:31Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T11:54:35Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-06T20:09:23Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:57:52Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/tennessee": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:44:21Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/south-carolina": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:34:50Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/dakota-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:55:52Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/south-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T09:57:22Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/tennessee": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:42:52Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T23:00:06Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T20:23:14Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:28:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T21:44:14Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T09:56:54Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:38:07Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T09:55:38Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:08:13Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:08:46Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/virginia-occidental": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T16:25:42Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T05:06:53Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/evaluation-timeline/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T10:04:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:05:19Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/plazo-de-la-evaluacion-de-educacion-especial/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T08:38:31Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T08:49:43Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T21:56:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:14:11Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/alabama": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T18:05:01Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:58:45Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/alaska": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:52:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:56:50Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T12:10:52Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:19:26Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:39:53Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:48:47Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T08:37:56Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T09:28:26Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:10:03Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/delaware": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T06:25:14Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:11:23Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:21:47Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:35:42Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/district-of-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:38:11Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T23:53:51Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/distrito-de-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:44:47Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:00:05Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T19:04:46Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/georgia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:34:13Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/idaho": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:38:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T22:33:17Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:56:24Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-13T21:34:32Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:03:10Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:54:08Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/iowa": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T00:17:16Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:09:13Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:18:17Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T06:16:00Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T02:19:49Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:57:21Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/kentucky": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:32:50Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:06:56Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:54:54Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T20:13:29Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:40:54Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:33:11Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:12:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T05:25:44Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T03:23:07Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:04:58Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-13T10:00:45Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T20:45:02Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/mississippi": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:41:32Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:05:52Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T21:55:01Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:05:28Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:38:29Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:07:41Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:01:25Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:42:59Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/new-hampshire": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:34:24Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:32:45Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/new-jersey": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-06T08:19:29Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T09:59:57Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nuevo-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T11:00:23Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/new-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:13:23Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:01:48Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:37:38Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/north-dakota": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:19:27Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T14:51:04Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T12:54:07Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:44:20Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:18:24Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/oklahoma": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T00:37:58Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/ohio": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:40:14Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T23:12:56Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T03:58:12Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/pennsylvania": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-09T23:27:36Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/rhode-island": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T23:15:56Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/oklahoma": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:06:19Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/rhode-island": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:21:55Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/pensilvania": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:11:34Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/south-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T11:43:02Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/south-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:39:48Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/dakota-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:15:33Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:35:14Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/tennessee": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T20:40:01Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:20:38Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/texas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T23:19:11Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:56:50Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T02:33:30Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/utah": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T03:53:22Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T14:17:10Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/vermont": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T18:15:47Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T13:22:31Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/virginia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T13:32:03Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T19:09:35Z",
+   "inspected_at": "2026-11-22T18:35:48.687Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-21T18:03:24.133Z",
- "sitemap_urls": 2781,
- "inspected": 2382,
+ "generated_at": "2026-11-22T18:35:48.687Z",
+ "sitemap_urls": 2780,
+ "inspected": 2529,
  "states": {
-  "URL is unknown to Google": 119,
-  "Submitted and indexed": 1313,
+  "URL is unknown to Google": 125,
+  "Submitted and indexed": 1373,
   "Discovered - currently not indexed": 235,
-  "Crawled - currently not indexed": 715
+  "Crawled - currently not indexed": 796
  }
 }

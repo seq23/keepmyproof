@@ -3,16 +3,16 @@
  "site": "https://keepmyproof.com",
  "property": "https://keepmyproof.com/",
  "window": {
-  "start": "2026-10-22",
-  "end": "2026-11-18"
+  "start": "2026-10-23",
+  "end": "2026-11-19"
  },
- "generated_at": "2026-11-21T18:03:24.133Z",
+ "generated_at": "2026-11-22T18:35:48.687Z",
  "totals": {
-  "rows": 1835,
+  "rows": 1836,
   "clicks": 3,
-  "impressions": 4117,
+  "impressions": 4118,
   "queries": 1428,
-  "pages": 487
+  "pages": 488
  },
  "rows": [
   {
@@ -6742,6 +6742,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 7
+  },
+  {
+   "query": "iep mediation for parents",
+   "page": "https://keepmyproof.com/iep/dispute-resolution/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 77
   },
   {
    "query": "iep mediation for parents",
