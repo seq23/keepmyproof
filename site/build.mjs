@@ -410,7 +410,10 @@ export function loadFacts() {
 }
 
 /** Which state pages publish, per language: verified facts only, ≥3 with ≥2 state-specific, no banned word. */
-export function clusterModel({ facts, verified, translations = {} }) {
+// The build day: which dated pay rates a page shows (lib/gate.mjs datedRates). The weekly facts refresh
+// rebuilds the site, so a rate that takes effect is shown as in force within a week of its start day.
+const buildDay = () => new Date().toISOString().slice(0, 10);
+export function clusterModel({ facts, verified, translations = {}, today = buildDay() }) {
   const model = {}, stops = [];
   for (const [k, files] of Object.entries(facts)) {
     const subs = [], usedEs = new Set();
@@ -432,7 +435,7 @@ export function clusterModel({ facts, verified, translations = {} }) {
       for (const code of STATE_CODES) {
         const entry = data.states?.[code];
         if (!entry) continue;
-        const g = gateState(entry, verified[k] || {}, counts);
+        const g = gateState(entry, verified[k] || {}, counts, { today: data.dated_rates ? today : null });
         if (g.stop) { stops.push(`NAMED STOP [${g.stop[0]}] ${k}/${data.subtopic}/${code}: ${g.stop[1]}; not published`); continue; }
         const b = bannedWord([fill(data.title_en, code), fill(data.title_es, code, 'es'), ...g.facts.flatMap((f) => [f.claim_en, f.claim_es])].join(' '));
         if (b) { stops.push(`NAMED STOP [BANNED_WORD] ${k}/${data.subtopic}/${code}: "${b}"; not published`); continue; }
@@ -451,7 +454,7 @@ export function clusterModel({ facts, verified, translations = {} }) {
     if (!subs.length && files.length) stops.push(`NAMED STOP [FOLDER_NO_STATE_PAGES] ${k}: no state page passes the gate yet`);
     model[k] = subs;
   }
-  return { model, stops };
+  return { model, stops, today };
 }
 
 /** Facts grouped by source, in first-seen order, so each source is named once under the facts, which point to it by number (naming it after every fact was template filler). */
@@ -465,13 +468,26 @@ export function bySource(facts) {
   return [...out.values()];
 }
 
+/** The search title of a page with dated rates ("California minimum wage 2027: $17.40 an hour"): the next
+ * basic rate when it starts within 90 days (people search the new rate from late autumn), else the one in
+ * force, with the last year that rate is dated for when that is this year or later. */
+export function rateTitle(data, facts, code, l, today) {
+  const t = data[`title_rate_${l}`], basic = facts.filter((f) => [].concat(f.rate?.kind || [])[0] === 'basic');
+  if (!t || !basic.length) return [];
+  const soon = new Date(Date.parse(today) + 90 * 864e5).toISOString().slice(0, 10);
+  const next = basic.filter((f) => f.rate.from > today && f.rate.from <= soon).sort((a, b) => a.rate.from.localeCompare(b.rate.from))[0];
+  const r = (next || basic[0]).rate, year = (r.until || r.from || '').slice(0, 4);
+  const yearOk = year && year >= today.slice(0, 4);
+  return [fill(t, code, l).replace(/\{usd\}/g, r.usd).replace(/ ?\{year\}/g, yearOk ? ` ${year}` : '')];
+}
+
 /** Only real land neighbours that have a page in this language (never padded with other states). */
 function neighbours(code, published) {
   const set = new Set(published);
   return STATES[code].neighbours.filter((n) => set.has(n));
 }
 
-function clusterPages(topics, hubs, cm, add, stops) {
+function clusterPages(topics, hubs, cm, add, stops, today = buildDay()) {
   const folders = launchFolders(topics);
   for (const [k, F] of Object.entries(FOLDERS)) {
     const topic = folders.find((t) => t.id === F.topic), subs = cm[k] || [];
@@ -494,7 +510,8 @@ function clusterPages(topics, hubs, cm, add, stops) {
         delete st.byLang[l]; stops.push(`NAMED STOP [ANSWER_LENGTH] ${k}/${s.data.subtopic}/${st.code} ${l}: facts cannot make a quotable answer; not published`);
       }
     }
-    const keep = (l) => { const c = CC[l]; return `<h2>${esc(c.keepH)}</h2><p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}
+    // A subtopic may say which of the folder's papers matter for it (keep_<lang> in its facts file).
+    const keep = (l, s) => { const c = CC[l], own = s?.data?.[`keep_${l}`]; return `<h2>${esc(c.keepH)}</h2>${own ? `<p>${esc(own)}</p>` : ''}<p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}
 <p><a class="btn primary" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>${storeBlock(l)}${vaBlock(l)}`; };
 
     // Hub in all four languages. Published: the folder's own first day; updated: the newest official-source check behind it.
@@ -541,7 +558,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
         const title = [`${l === 'en' ? `${s.label[l]}, state by state` : h1}`, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => t.replace('{state}', l === 'en' ? 'every state' : 'Estados Unidos'))];
         const body = `<p class="lbl">${esc(folderName(topic, l))}${esc(usTag(l))}</p><h1>${esc(h1)}</h1><p class="definition answer">${esc(answer)}</p><p class="sub">${esc(c.notAdvice)}</p>
 <ul class="links">${pub.map((code) => `<li><a href="${P.state(s, code, l)}">${esc(stateName(code, l))}</a></li>`).join('')}</ul>
-<p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>${keep(l)}`;
+<p><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a> · <a href="${P.index(l)}">${esc(c.byState(folderName(topic, l)))}</a></p>${keep(l, s)}`;
         const desc = answer.length > 160 ? answer.slice(0, 157).replace(/\s+\S*$/, '') + '…' : answer;
         const checks = s.states.flatMap((x) => (x.byLang[l] || []).map((f) => f.verifiedOn)).filter(Boolean).sort(), subPub = [F.published, checks[0]].filter(Boolean).sort().at(-1), subUpd = [subPub, checks.at(-1)].filter(Boolean).sort().at(-1);
         add({ path, alt: subAlt, group: k, updated: subUpd, html: shell({ lang: l, path, alt: subAlt, title, desc, body, updated: subUpd,
@@ -554,7 +571,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           const facts = st.byLang[l], dates = facts.map((f) => f.verifiedOn).sort(), first = dates[0], last = dates[dates.length - 1];
           const c = CC[l], S = stateName(code, l), path = P.state(s, code, l), claims = facts.map((f) => f.claim);
           const tl = [...c.tails(S), ...(va ? [c.vaTail] : [])];
-          const h1 = fill(s.titles[l], code, l), title = [h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
+          const h1 = fill(s.titles[l], code, l), title = [...rateTitle(s.data, facts, code, l, today), h1, ...((SHORT_TITLES[`${k}/${s.data.subtopic}`] || {})[l] || []).map((t) => fill(t, code, l))];
           const tailDesc = { en: ` From official ${S} sources.`, es: ` Fuentes oficiales de ${S}, Estados Unidos.`, zh: `（美国${S}官方来源）`, ko: ` (미국 ${S} 공식 출처)` }[l];
           let desc = `${claims[0]}${tailDesc}`;
           if (desc.length > 160) desc = `${claims[0].slice(0, 155 - tailDesc.length).replace(l === 'zh' ? /$/ : /\s+\S*$/, '')}…${tailDesc}`;
@@ -578,7 +595,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
 <h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f, i) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(shown[i])} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
 <p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>${oneDate ? '' : `. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span>`}</li>`).join('')}</ol>
 ${links.length ? `<h2>${esc(c.linksH)}</h2><ul>${links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
-${keep(l)}
+${keep(l, s)}
 <h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
 ${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
@@ -949,8 +966,8 @@ export function renderAll(input = loadFacts()) {
     add({ path: pathOf('disclaimer', lang), alt: { en: pathOf('disclaimer', 'en'), es: pathOf('disclaimer', 'es') }, group: 'core', html: disclaimer(lang) });
     add({ path: pathOf('about', lang), alt: { en: pathOf('about', 'en'), es: pathOf('about', 'es') }, group: 'core', html: about(lang) });
   }
-  const { model, stops } = clusterModel(input);
-  clusterPages(topics, hubs, model, add, stops);
+  const { model, stops, today } = clusterModel(input);
+  clusterPages(topics, hubs, model, add, stops, today);
   checklistFiles(topics, hubs, add, files);
   toolPages(add, model, stops, input.toolFacts);
   factsPage(add);

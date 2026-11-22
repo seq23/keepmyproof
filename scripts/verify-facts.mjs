@@ -96,7 +96,7 @@ export async function verifyFacts(files, { fetchText = fetchSourceText, today = 
         if (!quoteOnPage(f.quote, page.t)) { r.stops.push(`NAMED STOP [QUOTE_NOT_ON_PAGE] ${where}#${n + 1}: ${f.source_url}`); continue; }
         r.facts[key] = today; ok++;
       }
-      const g = gateState(entry, r.facts, counts);
+      const g = gateState(entry, r.facts, counts, { today: data.dated_rates ? today : null });
       if (g.facts) r.pages++;
       else r.stops.push(`NAMED STOP [${g.stop[0]}] ${where}: ${g.stop[1]}, state page not published`);
     }

@@ -1,9 +1,11 @@
 export interface SitePage {
-  path: string; file: string; group: string; index: boolean; external?: boolean;
+  path: string; file: string; group: string; index: boolean; external?: boolean; updated?: string;
   alt: Record<string, string> | null;
   state?: { folder: string; subtopic: string; code: string; lang: string; facts: number };
 }
-export interface SiteInput { facts: Record<string, any[]>; verified: Record<string, Record<string, string>>; translations?: Record<string, any>; toolFacts?: any[] }
+export interface SiteInput { facts: Record<string, any[]>; verified: Record<string, Record<string, string>>; translations?: Record<string, any>; toolFacts?: any[]; today?: string }
+export declare function loadFacts(): SiteInput & { facts: Record<string, any[]> };
+export declare function rateTitle(data: any, facts: any[], code: string, l: string, today: string): string[];
 export declare function render(input?: SiteInput): Record<string, string>;
 export declare function renderAll(input?: SiteInput): { files: Record<string, string>; pages: SitePage[]; stops: string[]; model: Record<string, any[]> };
 export declare function build(dist: string): { files: number; pages: SitePage[]; stops: string[] };

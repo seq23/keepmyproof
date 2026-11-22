@@ -7,5 +7,7 @@ export declare function sourceText(html: string): string;
 export declare function quoteOnPage(quote: string, pageText: string): boolean;
 export declare function factKey(f: { source_url: string; quote: string }): string;
 export declare function factProblems(f: any): [string, string][];
-export declare function gateState(entry: any, verified: Record<string, string>, counts: Map<string, number>): { facts?: any[]; stop?: [string, string] };
+export declare function gateState(entry: any, verified: Record<string, string>, counts: Map<string, number>, opts?: { today?: string | null }): { facts?: any[]; stop?: [string, string] };
+export declare function rateProblems(f: any): [string, string][];
+export declare function datedRates(facts: any[], today: string): { facts: any[]; dropped: [string, any][] };
 export declare function untranslated(text: string): boolean;
