@@ -8,10 +8,10 @@ on:
   push:
     branches: [main]
     paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
-      'scripts/preview/host.mjs', '.github/workflows/app-preview.yml']
+      'scripts/preview/host.mjs', 'tap-through.json', '.github/workflows/app-preview.yml']
   pull_request:
     paths: ['app/**', 'src/**', 'assets/**', 'app.config.ts', 'package.json', 'package-lock.json', 'topics.json',
-      'scripts/preview/host.mjs', '.github/workflows/app-preview.yml']
+      'scripts/preview/host.mjs', 'tap-through.json', '.github/workflows/app-preview.yml']
 permissions:
   contents: read
   pull-requests: write
@@ -22,6 +22,8 @@ jobs:
   preview:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
+    outputs:
+      url: ${{ steps.hosted.outputs.url }}
     env:
       CI: '1'
       EXPO_NO_TELEMETRY: '1'
@@ -52,3 +54,12 @@ jobs:
           script: |
             const body = `Open the phone app preview: ${process.env.PREVIEW_URL}\n\nCommit: ${context.sha}. Free web preview with sample papers; no Appetize minutes.`;
             await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
+  # THE TAP-THROUGH (ship-ready app-review.md, required for any PR that changes a screen): a robot taps
+  # through this preview like a person, at 390 px light and dark, from tap-through.json. Red on a dead
+  # button, a console error, an error screen, an unreachable step or a Plus promise with no screen
+  # behind it. Free (public repo); every write is blocked, nothing real is touched.
+  tap-through:
+    needs: preview
+    uses: seq23/boss-os/.github/workflows/tap-through.yml@feat/tap-through
+    with:
+      target: ${{ needs.preview.outputs.url }}

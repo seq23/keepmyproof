@@ -1,0 +1,240 @@
+{
+  "app": "KeepMyProof",
+  "brand": "keepmyproof",
+  "about": "The app's own robot walk for every PR that changes a screen (boss-os scripts/ops/tap-through.mjs, ship-ready app-review.md). Sample papers and test values only; the web preview keeps nothing, so nothing real is touched.",
+  "journeys": [
+    {
+      "name": "first-open",
+      "start": "/",
+      "steps": [
+        {
+          "see": "Preview only: skip to a sample vault ›",
+          "id": "first"
+        },
+        {
+          "sweep": true
+        }
+      ]
+    },
+    {
+      "name": "restore-backup",
+      "start": "/",
+      "steps": [
+        {
+          "tap": "Restore a backup ›",
+          "id": "restore"
+        },
+        {
+          "sweep": true
+        }
+      ]
+    },
+    {
+      "name": "main-task",
+      "start": "/",
+      "steps": [
+        {
+          "tap": "Preview only: skip to a sample vault ›",
+          "then": "/Divorce or custody/"
+        },
+        {
+          "tap": "/Divorce or custody/",
+          "then": "Joint checking statements, Jan to Jun",
+          "id": "folder"
+        },
+        {
+          "tap": "+ Add something",
+          "id": "add"
+        },
+        {
+          "tap": "Cancel"
+        },
+        {
+          "tap": {
+            "role": "button",
+            "name": "Open ›"
+          },
+          "id": "detail"
+        },
+        {
+          "tap": "/^← Back to /"
+        },
+        {
+          "tap": "Make a PDF of this folder ›",
+          "id": "pdf"
+        },
+        {
+          "tap": "Save the PDF ›"
+        }
+      ]
+    },
+    {
+      "name": "paywall",
+      "start": "/",
+      "steps": [
+        {
+          "tap": "Preview only: skip to a sample vault ›",
+          "then": "/Divorce or custody/"
+        },
+        {
+          "tap": "Settings",
+          "id": "settings"
+        },
+        {
+          "sweep": true
+        },
+        {
+          "tap": "See Plus ›",
+          "then": "KeepMyProof Plus",
+          "id": "plans"
+        },
+        {
+          "see": "Purchases are not available in this preview. No payment will be taken."
+        },
+        {
+          "tap": "Restore purchases ›",
+          "then": "No active Plus purchase was found. Your papers remain available.",
+          "id": "restore-purchase"
+        },
+        {
+          "tap": "Not now"
+        }
+      ]
+    },
+    {
+      "name": "plus-member",
+      "start": "/?plus=1",
+      "steps": [
+        {
+          "tap": "Preview only: skip to a sample vault ›",
+          "then": "/Divorce or custody/"
+        },
+        {
+          "tap": "Settings"
+        },
+        {
+          "tap": "See Plus ›",
+          "then": "✓ Plus is on.",
+          "id": "plus-on"
+        },
+        {
+          "tap": "Not now"
+        },
+        {
+          "tap": "/Divorce or custody/",
+          "then": "Joint checking statements, Jan to Jun"
+        },
+        {
+          "tap": "+ Add something",
+          "id": "unlimited"
+        },
+        {
+          "tap": "Cancel"
+        },
+        {
+          "tap": "Make a PDF of this folder ›"
+        },
+        {
+          "tap": "Choose dates and a cover page ›",
+          "id": "range-pdf"
+        },
+        {
+          "sweep": true
+        }
+      ]
+    },
+    {
+      "name": "own-folder",
+      "start": "/?plus=1",
+      "steps": [
+        {
+          "tap": "Preview only: skip to a sample vault ›",
+          "then": "/Divorce or custody/"
+        },
+        {
+          "tap": "+ Create your own folder ›",
+          "id": "own-folder"
+        },
+        {
+          "fill": "/folder name/i",
+          "value": "Test folder"
+        },
+        {
+          "tap": "/^Create/",
+          "then": "Test folder"
+        }
+      ]
+    },
+    {
+      "name": "delete-my-data",
+      "start": "/",
+      "steps": [
+        {
+          "tap": "Preview only: skip to a sample vault ›",
+          "then": "/Divorce or custody/"
+        },
+        {
+          "tap": "Settings"
+        },
+        {
+          "tap": "Erase everything on this device…",
+          "then": "Erase everything on this device",
+          "id": "erase"
+        },
+        {
+          "fill": "Type your passcode to erase",
+          "value": "123456"
+        },
+        {
+          "tap": "Erase everything",
+          "then": "Everything on this device was erased.",
+          "id": "erased"
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "text": "Unlimited items",
+      "on": "paywall:plans",
+      "built": "plus-member:unlimited"
+    },
+    {
+      "text": "Your own folders and tags",
+      "on": "paywall:plans",
+      "built": "own-folder:own-folder"
+    },
+    {
+      "text": "PDF of a date range, with a cover page",
+      "on": "paywall:plans",
+      "built": "plus-member:range-pdf"
+    },
+    {
+      "text": "Restore purchases ›",
+      "on": "paywall:plans",
+      "built": "paywall:restore-purchase"
+    }
+  ],
+  "native_only": [
+    {
+      "feature": "in-app purchase",
+      "why": "the web preview has no App Store or Play Billing; Buy buttons are off and say so. ?plus=1 shows the paid screens instead.",
+      "simulator": "the Simulator preview workflow (preview.yml, Maestro walk) on a free macOS runner, with a sandbox account for the purchase itself"
+    },
+    {
+      "feature": "camera and photo library",
+      "why": "Choose a photo adds two sample pictures in a browser",
+      "simulator": "preview.yml Maestro walk"
+    },
+    {
+      "feature": "Face ID",
+      "why": "the browser stand-in always says yes",
+      "simulator": "preview.yml Maestro walk"
+    },
+    {
+      "feature": "screenshot protection",
+      "why": "no such thing in a browser",
+      "simulator": "a store build on a device"
+    }
+  ]
+}
