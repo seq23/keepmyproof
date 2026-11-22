@@ -10,6 +10,7 @@ const probes=[
  ['review file: fetch to another URL','src/billing/review.ts',"\nexport const probe = () => fetch('https://keepmyproof.com/records');",'NETWORK_CALL'],
  ['review file: fetch through a variable','src/billing/review.ts',"\nconst other = REVIEW_URL + '/x'; export const probe = () => fetch(other);",'NETWORK_CALL'],
  ['review file: a second URL','src/billing/review.ts',"\nexport const probe = 'https://example.invalid/collect';",'NETWORK_ENDPOINT'],
+ ['review file: REVIEW_URL shadowed','src/billing/review.ts',"\nexport const probe = (REVIEW_URL: string) => fetch(REVIEW_URL);",'NETWORK_CALL'],
  ['review file: fetch passed along','src/billing/review.ts',"\nexport const probe = [fetch];",'NETWORK_CALL'],
  // preview-screens is a warning row ("blocking": false), so it runs only under VALIDATE_WARN=1, as in check.yml.
  ['preview drift','app/index.tsx',s=>s.replace("type Screen = '","type Screen = 'probe'|'"),'PREVIEW_SCREEN_MISSING',{VALIDATE_WARN:'1'}],

@@ -53,6 +53,9 @@ const checks={
           if(name==='react-native-purchases'&&f!=='src/billing/revenuecat.ts')throw Error(`BILLING_BOUNDARY ${f}`);
         }
         if(ts.isIdentifier(node)&&['fetch','XMLHttpRequest','WebSocket','EventSource','sendBeacon'].includes(node.text)&&!reviewFetch(f,node))throw Error(`NETWORK_CALL ${f}`);
+        // REVIEW_URL is declared once, at the top of REVIEW_FILE: a parameter or inner const of that name would let
+        // fetch(REVIEW_URL) reach any URL.
+        if(f===REVIEW_FILE&&ts.isIdentifier(node)&&node.text==='REVIEW_URL'&&node.parent?.name===node&&!(ts.isVariableDeclaration(node.parent)&&node.parent.parent?.parent?.parent===ast))throw Error(`NETWORK_CALL ${f}: REVIEW_URL declared again`);
         if(f===REVIEW_FILE&&ts.isStringLiteralLike(node)&&/^https?:\/\//.test(node.text)&&!(node.text===REVIEW_URL&&ts.isVariableDeclaration(node.parent)&&node.parent.name.getText()==='REVIEW_URL'))throw Error(`NETWORK_ENDPOINT ${f}`);
         if(ts.isStringLiteralLike(node)&&/^https?:\/\//.test(node.text)){
           const u=new URL(node.text);
