@@ -40,3 +40,22 @@ test('the Android build blocks photo-library, storage and draw-over-apps permiss
   for (const p of ['READ_MEDIA_IMAGES', 'READ_MEDIA_VIDEO', 'READ_MEDIA_VISUAL_USER_SELECTED', 'READ_MEDIA_AUDIO', 'READ_EXTERNAL_STORAGE', 'WRITE_EXTERNAL_STORAGE', 'SYSTEM_ALERT_WINDOW'])
     assert.ok(blocked.includes(`android.permission.${p}`), p);
 });
+
+// Chinese and Korean App Store fields (21 Nov 2026): written around what people search in those languages,
+// ready to paste at the next submission. Apple refuses a field over its limit, and the name and subtitle
+// are the strongest search fields, so each must be present, in limit, and in its own language.
+test('the Chinese and Korean App Store fields are filled, in Apple limits, in the listing language', () => {
+  const limits: Record<string, number> = { Name: 30, Subtitle: 30, Keywords: 100, 'Promotional text': 170 };
+  const script: Record<string, RegExp> = { zh: /\p{Script=Han}/u, ko: /\p{Script=Hangul}/u };
+  for (const lang of ['zh', 'ko']) {
+    const md = readFileSync(new URL(`../store/${lang}.md`, import.meta.url), 'utf8');
+    for (const [field, max] of Object.entries(limits)) {
+      const m = new RegExp(`[(（]${field}[,，][^)）]*[)）][:：]\\s*(.+)`).exec(md);
+      assert.ok(m, `${lang}: ${field} missing`);
+      const v = m[1].trim();
+      assert.ok([...v].length <= max, `${lang} ${field}: ${[...v].length} > ${max}`);
+      assert.match(v, script[lang], `${lang} ${field} is not in the listing language`);
+      if (field === 'Keywords') assert.ok(v.split(',').length >= 8 && !/[，、\s]/.test(v), `${lang}: keywords are comma-separated with no spaces`);
+    }
+  }
+});
