@@ -8,6 +8,10 @@ export interface PurchasesProvider {
   entitlement(): Promise<Entitlement>;
   purchase(id: string): Promise<Entitlement>;
   restore(): Promise<Entitlement>;
+  /** RevenueCat's anonymous app user ID ($RCAnonymousID:…), or null where there is no store (mock, web preview). */
+  appUserId(): Promise<string | null>;
+  /** Plus as RevenueCat says right now, skipping the SDK's cached answer (after a review-code grant). */
+  refresh(): Promise<Entitlement>;
 }
 export const free: Entitlement = { plus: false, renewsOn: null, managementURL: null };
 export class MockPurchases implements PurchasesProvider {
@@ -19,6 +23,8 @@ export class MockPurchases implements PurchasesProvider {
   async entitlement() { return { ...free }; }
   async purchase(_id: string): Promise<Entitlement> { throw Error('REVENUECAT_KEY_MISSING'); }
   async restore() { return { ...free }; }
+  async appUserId(): Promise<string | null> { return null; }
+  async refresh() { return { ...free }; }
 }
 export function activeLaunch(p: Product, now = Date.now()): LaunchOffer | null {
   const o = p.launch;

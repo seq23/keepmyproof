@@ -14,11 +14,11 @@ Privacy policy URL: `https://keepmyproof.com/privacy` (opened from the app, `app
 | Play data type | Collected | Shared | Purpose | Required? | Source |
 |---|---|---|---|---|---|
 | Financial info → Purchase history | Yes, by RevenueCat (our service provider) and Google Play Billing | No | App functionality (unlock and restore Plus), Analytics (purchase counts) | Required to buy or restore Plus | `src/billing/revenuecat.ts:12,19-25`; policy `store/en.md:24-27` |
-| Device or other IDs | Yes: RevenueCat's anonymous app user ID only (no advertising ID; automatic device identifier collection is off) | No | App functionality | Required while the store key is set | `src/billing/revenuecat.ts:12` (`automaticDeviceIdentifierCollectionEnabled: false`, `diagnosticsEnabled: false`) |
+| Device or other IDs | Yes: RevenueCat's anonymous app user ID only (no advertising ID; automatic device identifier collection is off). On Android, when a Google Play review code is typed, the same ID and the code go to keepmyproof.com/api/review, which stores only a keyed hash of the ID, deleted 7 days after the grant ends | No | App functionality | Required while the store key is set | `src/billing/revenuecat.ts:12` (`automaticDeviceIdentifierCollectionEnabled: false`, `diagnosticsEnabled: false`); `src/billing/review.ts`, `site/server/review.mjs` |
 
 **Not collected (answer "No" for every other type), and why:**
 
-- **Photos, files and docs, notes, dates, checklists:** encrypted on the phone and never sent to us. There is no `fetch`, XMLHttpRequest or WebSocket in `app/` or `src/` (searched with `grep -rn "fetch(\|XMLHttpRequest\|WebSocket" app src`, no hits). The viewer loads only local `file://` content with JavaScript off (`src/viewer.tsx:16`).
+- **Photos, files and docs, notes, dates, checklists:** encrypted on the phone and never sent to us. The app's only network calls are RevenueCat and, on Android when a review code is typed, the review-code check, which sends the code and the anonymous purchase ID, never papers (`src/billing/review.ts`; `scripts/validate.mjs` refuses `fetch`, XMLHttpRequest or WebSocket in every other file of `app/` and `src/`, proved by `scripts/prove-safety.mjs`). The viewer loads only local `file://` content with JavaScript off (`src/viewer.tsx:16`).
 - **Exports and encrypted backups** leave the phone only when the user sends them through the system share sheet to an app or drive they choose (`app/index.tsx`, `Share`). Play does not count a user-initiated transfer to another app as collection by us.
 - **"How did you hear about us"** stays on the phone unless the user emails it from their own mail app (`src/core/heard.ts:28`, a `mailto:` link).
 - **App activity, app info and performance, crash logs, diagnostics, location, contacts, messages, audio, health, personal info:** none. No analytics, crash, ad or attribution SDK in `package.json:22-53`. Location, contacts, microphone and media permissions are blocked (`app.config.ts:13-16`).
@@ -40,7 +40,7 @@ Category: **Utility, Productivity, Communication or other** (a private vault for
 |---|---|---|
 | Violence, blood, sexual content, nudity, profanity, crude humour | No | No content of our own beyond folder names and checklists (`src/strings.ts`) |
 | Drugs, alcohol, tobacco, gambling, simulated gambling | No | None in the app |
-| Users can interact or exchange content with each other | No | No accounts, no server, no chat; sharing is the system share sheet to the user's own apps |
+| Users can interact or exchange content with each other | No | No accounts, no chat (the only server route is the Play review-code check); sharing is the system share sheet to the user's own apps |
 | Shares the user's current physical location with other users | No | Location permission blocked (`app.config.ts:13`) |
 | Allows purchases of digital goods | Yes | KeepMyProof Plus, annual or lifetime (`src/billing/provider.ts:45`) |
 | Unrestricted internet access (e.g. a browser) | No | The viewer is local-files-only with JavaScript off (`src/viewer.tsx:16`); fixed links (terms, privacy, va.gov, state rules) open the phone's own browser (`app/index.tsx:252-253,353,367`) |
@@ -59,11 +59,11 @@ Expected rating: Everyone / PEGI 3 / USK 0.
 
 ## App access (notes for the reviewer)
 
-Choose **"All or some functionality is restricted"** and paste:
+Choose **"All or some functionality is restricted"**, then Sign in details: Username `No account needed`, Password = the review code (vault `KMP_PLAY_REVIEW_CODE`; the owner pastes it, agents never type it), tick full access including paid content, and paste in "Any other instructions" (must stay at most 500 characters; `tests/review-unlock.test.ts` checks it):
 
-> No account or login. On first launch, choose any 6-digit passcode (for example 135790) and write down the 12-word recovery phrase the app shows, then type the 12 words back to confirm. Everything free is then open: seven folders, adding up to 25 items, PDFs of a whole folder, originals, encrypted backup and restore. KeepMyProof Plus (unlimited items, custom folders and tags, PDFs of chosen items or dates) opens from Settings › "See Plus ›", or when adding a 26th item, and is bought with Google Play Billing; please use a license-testing account. If a reviewer account is needed it is provided here in Play Console, never in the app.
+> No account. On first launch choose any 6-digit passcode (e.g. 135790), write down the 12-word recovery phrase, type it back. Free: seven folders, 25 items, PDFs, backup. To open Plus free: Settings > See Plus > Have a review code? (foot of the screen), type the 10-digit code from the password field, tap Use this code. Plus opens for 7 days. The code check sends only the code and an anonymous purchase ID; your papers never leave the phone.
 
-(No credentials exist or are needed; nothing goes in the repo. The passcode and phrase flow: `app/index.tsx:29`, screens `setup`, `phrase`, `confirmPhrase`.)
+(The code is checked on keepmyproof.com, `site/server/review.mjs`: Android only, 7 days of Plus per phone, at most 10 phones per code version, switched off by unsetting `REVIEW_UNTIL` on the Pages project. The passcode and phrase flow: `app/index.tsx`, screens `setup`, `phrase`, `confirmPhrase`.)
 
 ## Other declarations
 
@@ -75,7 +75,7 @@ Choose **"All or some functionality is restricted"** and paste:
 | News apps | No | No news content |
 | COVID-19 contact tracing or status | No | |
 | Data safety: advertising ID | Does not use the advertising ID | No ad or attribution SDK; RevenueCat device identifier collection off (`src/billing/revenuecat.ts:12`) |
-| AI-generated content | No generative AI in the app | No model call exists (no network calls in `app/` or `src/`); `store/en.md:20` "We never send your papers to a model" |
+| AI-generated content | No generative AI in the app | No model call exists (the app's only network calls are RevenueCat and the Android review-code check, `src/billing/review.ts`); `store/en.md:20` "We never send your papers to a model" |
 | Photo and video permissions declaration | Not needed | `READ_MEDIA_IMAGES` / `READ_MEDIA_VIDEO` blocked (`app.config.ts:14`); the system photo picker needs no permission |
 
 ## Android permissions in the built manifest

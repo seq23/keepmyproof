@@ -43,7 +43,7 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
   const c = useContext(Theme);
   return <View style={{ padding:12, gap:8, borderRadius:12, borderWidth:1, borderColor:c.line, backgroundColor: tone === 'gold' ? c.goldbg : tone === 'red' ? c.redbg : tone === 'ok' ? c.okbg : c.card }}>{children}</View>;
 }
-/** numeric: a 6-digit passcode. keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
+/** numeric: a 6-digit passcode (digits: another length, e.g. the 10-digit review code). keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
  *  Every text box in the app is this one. The phone's box owns the text (uncontrolled, `defaultValue`): the app never
  *  writes text back into it while she types. A controlled `value` on a screen that re-renders on each key fights the
  *  native box on React Native's new architecture, and the phone then drops change events (ApprovalPrep lost letters,
@@ -53,8 +53,8 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
  *  keys or moves the cursor. Only a genuinely new value from the parent (a cleared box, a loaded item) replaces the
  *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one.
  *  Every Save / Next / Unlock / Confirm calls `flushFields()` first and reads the typed value after it (see below). */
-export function Field({ label, value, onChange, secret, multiline, numeric, placeholder, keyboard }: {
-  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string; keyboard?: 'date';
+export function Field({ label, value, onChange, secret, multiline, numeric, digits = 6, placeholder, keyboard }: {
+  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; digits?: number; placeholder?: string; keyboard?: 'date';
 }) {
   const c = useContext(Theme), lang = useContext(LangContext);
   // What the box holds now, as last reported by the phone (after the mask).
@@ -68,7 +68,7 @@ export function Field({ label, value, onChange, secret, multiline, numeric, plac
     if (handed.current.has(value)) return;
     typed.current = value; handed.current.clear(); setBox(b => ({ text: value, n: b.n + 1 }));
   }, [value]);
-  const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, 6) : keyboard === 'date' ? typingDate(raw) : raw;
+  const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, digits) : keyboard === 'date' ? typingDate(raw) : raw;
   const hand = (next: string) => { if (next === typed.current) return; typed.current = next; handed.current.add(next); onChange(next); };
   const settle = (raw: unknown) => {
     focused.current = false;

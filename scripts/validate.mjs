@@ -13,6 +13,14 @@ const app=texts.filter(([f])=>/^(src|app)\//.test(f));
 const PUBLIC_ADDRESS=e=>/@keepmyproof\.com$/i.test(e)||e.toLowerCase()==='hello@theindustryguides.com';
 const sha=s=>createHash('sha256').update(s.toLowerCase()).digest('hex');
 const privateHashes=JSON.parse(readFileSync('scripts/private-hashes.json','utf8'));
+const REVIEW_FILE='src/billing/review.ts',REVIEW_URL='https://keepmyproof.com/api/review';
+const reviewFetch=(f,node)=>{
+  if(f!==REVIEW_FILE||node.text!=='fetch')return false;
+  const call=node.parent;
+  if(!ts.isCallExpression(call)||call.expression!==node||!call.arguments.length)return false;
+  const url=call.arguments[0].getText();
+  return url==='REVIEW_URL'||url==='`${REVIEW_URL}/unlock`';
+};
 const checks={
   'public-data':()=>{
     const bad=[];
@@ -30,6 +38,10 @@ const checks={
     if(bad.length)throw Error(`PRIVATE_DATA: ${[...new Set(bad)].join(', ')}`);
   },
   'local-only':()=>{
+    // The one network call besides RevenueCat (Google Play's review code, REVIEW-UNLOCK-DESIGN.md): fetch is allowed
+    // only in REVIEW_FILE, only as a direct call whose URL is its REVIEW_URL constant (or REVIEW_URL + "/unlock"), and
+    // that file may hold no other URL. Any other fetch, in any file, is still NETWORK_CALL (scripts/prove-safety.mjs).
+    if(!app.some(([f,s])=>f===REVIEW_FILE&&s.includes(`const REVIEW_URL = '${REVIEW_URL}'`)))throw Error(`REVIEW_URL_MISSING ${REVIEW_FILE}`);
     const allowed=new Set(Object.keys(JSON.parse(readFileSync('package.json','utf8')).dependencies));
     for(const [f,s] of app){
       const ast=ts.createSourceFile(f,s,ts.ScriptTarget.Latest,true,f.endsWith('tsx')?ts.ScriptKind.TSX:ts.ScriptKind.TS);
@@ -40,7 +52,8 @@ const checks={
           if(/analytics|sentry|bugsnag|firebase|supabase|axios|amplitude|segment|mixpanel/i.test(name))throw Error(`REMOTE_SDK ${f}`);
           if(name==='react-native-purchases'&&f!=='src/billing/revenuecat.ts')throw Error(`BILLING_BOUNDARY ${f}`);
         }
-        if(ts.isIdentifier(node)&&['fetch','XMLHttpRequest','WebSocket','EventSource','sendBeacon'].includes(node.text))throw Error(`NETWORK_CALL ${f}`);
+        if(ts.isIdentifier(node)&&['fetch','XMLHttpRequest','WebSocket','EventSource','sendBeacon'].includes(node.text)&&!reviewFetch(f,node))throw Error(`NETWORK_CALL ${f}`);
+        if(f===REVIEW_FILE&&ts.isStringLiteralLike(node)&&/^https?:\/\//.test(node.text)&&!(node.text===REVIEW_URL&&ts.isVariableDeclaration(node.parent)&&node.parent.name.getText()==='REVIEW_URL'))throw Error(`NETWORK_ENDPOINT ${f}`);
         if(ts.isStringLiteralLike(node)&&/^https?:\/\//.test(node.text)){
           const u=new URL(node.text);
           if(!['keepmyproof.com','www.va.gov'].includes(u.hostname))throw Error(`NETWORK_ENDPOINT ${f}`);

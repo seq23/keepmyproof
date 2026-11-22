@@ -37,7 +37,7 @@ npm start         # offline Metro, after the development build is installed
 
 This is a native app; use a development build rather than a browser or Expo Go.
 To see every screen without a Mac or store account, see [preview](docs/preview.md).
-The app has no service backend or database migrations. Its SQLite database holds
+The app's only server code is the Google Play review-code route (`site/functions/api/review`). Its SQLite database holds
 only authenticated ciphertext; file bytes and metadata are encrypted together.
 The device key lives in the platform secure store. See [architecture](docs/architecture.md).
 

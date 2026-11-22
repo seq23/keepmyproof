@@ -23,6 +23,8 @@ class RevenueCat implements PurchasesProvider {
     return entitlement((await Purchases.purchasePackage(pkg)).customerInfo);
   }
   async restore() { return entitlement(await Purchases.restorePurchases()); }
+  async appUserId() { return Purchases.getAppUserID(); }
+  async refresh() { await Purchases.invalidateCustomerInfoCache(); return entitlement(await Purchases.getCustomerInfo()); }
 }
 let provider: PurchasesProvider | undefined;
 export function purchases(): PurchasesProvider {
