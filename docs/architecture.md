@@ -1,7 +1,9 @@
 # Data and trust boundaries
 
 The app is native Expo + TypeScript. Topic IDs, names and checklists in all four languages
-come from topics.json. UI copy is in src/strings.ts. No backend exists.
+come from topics.json. UI copy is in src/strings.ts. The only server code is the Google Play
+review-code route (`site/functions/api/review`, logic in `site/server/review.mjs`, D1 tables in
+`site/migrations`), which never sees papers.
 
 ## Vault
 

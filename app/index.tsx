@@ -13,6 +13,7 @@ import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
 import { FileView } from '../src/viewer';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
+import { redeemReviewCode, reviewWindowOpen, type ReviewResult } from '../src/billing/review';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import { cameraStep, photoTitle } from '../src/core/camera';
@@ -77,6 +78,10 @@ export default function App() {
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
   // Where Plus's Back / Not now returns: Home, or the half-filled add screen its locked Tags row opened it from.
   const [plusBack, setPlusBack] = useState<'home'|'add'>('home');
+  // Google Play's reviewer only: the collapsed "Have a review code?" link (Android, store billing, not on Plus, and only
+  // while keepmyproof.com says a review window is open). src/billing/review.ts is the one network call it makes.
+  const [reviewOpen, setReviewOpen] = useState(false), [reviewShown, setReviewShown] = useState(false);
+  const [reviewCode, setReviewCode, reviewCodeNow] = useTyped('');
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
   const [from, setFrom, fromNow] = useTyped(''), [to, setTo, toNow] = useTyped(''), [cover, setCover, coverNow] = useTyped('');
   const busyRef = useRef(false), sharing = useRef(false), mounted = useRef(true);
@@ -161,6 +166,12 @@ export default function App() {
       .catch(e => { setProducts([]); setProductsState((e as Error).message === 'STORE_PRODUCTS_MISSING' ? 'missing' : 'failed'); });
   }
   useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
+  const reviewable = Platform.OS === 'android' && billing.mode === 'sandbox' && !ent.plus;
+  useEffect(() => {
+    if (screen !== 'plus' || !reviewable) { setReviewOpen(false); setReviewShown(false); setReviewCode(''); return; }
+    let live = true; void reviewWindowOpen().then(open => { if (live) setReviewOpen(open); }); return () => { live = false; };
+  }, [screen, reviewable]);
+  const REVIEW_SAYS: Record<Exclude<ReviewResult, 'unlocked'>, StringKey> = { wrong:'reviewWrong', usedUp:'reviewUsedUp', slow:'reviewSlow', tryAgain:'reviewTryAgain' };
   const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
@@ -508,6 +519,7 @@ export default function App() {
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolderNow().trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
+    {ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
     {productsState === 'loading' && <P muted>{t('storeLoading', { store: storeName })}</P>}
@@ -518,7 +530,16 @@ export default function App() {
         <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':'annualTerms')}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
           onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
     })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
-    {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
+    {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}
+    {reviewable && reviewOpen && (reviewShown ? <Card><P>{t('reviewCode')}</P><P muted>{t('reviewWhy')}</P>
+      <Field label={t('reviewCode')} value={reviewCode} onChange={setReviewCode} numeric digits={10} />
+      {btn('reviewUse', doRun(async () => {
+        // Plus comes only from RevenueCat's own answer after the server's grant, never from the 200 itself.
+        const result = await redeemReviewCode(reviewCodeNow(), await billing.appUserId());
+        if (result !== 'unlocked') { setError(t(REVIEW_SAYS[result])); return; }
+        const next = await billing.refresh(); setEnt(next); setReviewCode('');
+        if (!next.plus) setError(t('reviewTryAgain'));
+      }))}</Card> : <Button quiet title={t('reviewLink')} onPress={() => setReviewShown(true)} disabled={busy} />)}</>;
   else body = <P>{t('empty')}</P>;
   // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
   // finding 3: a refused date showed far above Save).

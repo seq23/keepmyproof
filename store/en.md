@@ -30,6 +30,11 @@ history and an anonymous app purchase identifier to provide Plus and restore
 purchases. They never receive your papers. SDK diagnostics and automatic device
 identifier collection are disabled. The current preview cannot make purchases.
 
+The app's only network calls are RevenueCat and, on Android when a Google Play
+review code is typed, the review-code check on keepmyproof.com. That check sends
+the code and the anonymous purchase identifier, never papers, and keeps only a
+scrambled form of the identifier until 7 days after the review access ends.
+
 Deleting an item removes it from the current vault, including earlier note
 versions. It does not delete copies you already exported or backed up. Delete
 those copies at their destinations. There is no account to delete. Uninstalling

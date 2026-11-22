@@ -28,6 +28,12 @@ Nunca reciben sus documentos. Los diagnósticos y la recopilación automática
 de identificadores del dispositivo están desactivados. Esta versión de prueba
 no permite hacer compras.
 
+Las únicas conexiones de la app son RevenueCat y, en Android cuando se escribe
+un código de revisión de Google Play, la comprobación de ese código en
+keepmyproof.com. Esa comprobación envía el código y el identificador anónimo de
+compra, nunca sus documentos, y guarda solo una forma codificada del identificador
+hasta 7 días después de que termine el acceso de revisión.
+
 Eliminar un documento lo quita de la carpeta privada actual, incluidas las
 versiones anteriores de sus notas. No borra copias que usted ya exportó o guardó.
 Elimínelas en sus destinos. No hay cuenta que eliminar. Desinstalar la app borra
