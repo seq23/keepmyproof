@@ -14,8 +14,10 @@ export const BANNED = [
 ];
 export const bannedWord = (text) => { for (const re of BANNED) { const m = re.exec(String(text)); if (m) return m[0]; } return null; };
 
-// Official sources only: government domains, plus the federally funded Parent Center network.
-const OFFICIAL_EXTRA = new Set(['parentcenterhub.org', 'pacourts.us']);
+// Official sources only: government domains, plus the federally funded Parent Center network and
+// state agencies whose only site is not on .gov (Florida's Department of Commerce publishes the state
+// minimum wage at floridajobs.org; no .gov host answers for it, checked 21 Nov 2026).
+const OFFICIAL_EXTRA = new Set(['parentcenterhub.org', 'pacourts.us', 'floridajobs.org']);
 export function officialSource(url) {
   let u; try { u = new URL(url); } catch { return false; }
   if (u.protocol !== 'https:' && u.protocol !== 'http:') return false;
@@ -70,8 +72,65 @@ export function factProblems(f) {
   if (b) p.push(['BANNED_WORD', b]);
   const n = numberNotInQuote(f);
   if (n) p.push(['NUMBER_NOT_IN_QUOTE', n]);
+  p.push(...rateProblems(f));
   return p;
 }
+
+// Dated pay rates (files with "dated_rates": true, the minimum-wage file). Every dollar amount a claim
+// states carries `rate: { kind, usd, from?, until? }`: kind is one word or a list ("tipped" rows that also
+// state the combined minimum are ["tipped", "basic"]), usd is the amount as written in the claims and the
+// quote, from/until are ISO days when the source dates the amount (the claims then name from's year, so a
+// dated amount never reads as timeless). A rate is a sourced number like any other: the shape is checked
+// here, and which rates a page may show on a given day is datedRates() below.
+export const DOLLAR = /\$\s?\d/;
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+const kindsOf = (f) => [].concat(f.rate?.kind || []);
+export function rateProblems(f) {
+  const r = f?.rate;
+  if (!r) return [];
+  const p = [];
+  if (!kindsOf(f).length || kindsOf(f).some((k) => !/^[a-z]+(?:-[a-z]+)*$/.test(k))) p.push(['RATE_SHAPE', `kind ${JSON.stringify(r.kind)}`]);
+  if (!/^\d{1,3}(?:,\d{3})*(?:\.\d{2,3})?$/.test(String(r.usd))) p.push(['RATE_SHAPE', `usd ${r.usd}`]);
+  else for (const [k, t] of [['claim_en', f.claim_en], ['claim_es', f.claim_es], ['quote', f.quote]]) if (!new RegExp(`\\$\\s?${String(r.usd).replace(/[.,]/g, '\\$&')}(?!\\d)`).test(t)) p.push(['RATE_NOT_STATED', `$${r.usd} is not in ${k}`]);
+  for (const d of ['from', 'until']) if (r[d] !== undefined && !ISO.test(r[d])) p.push(['RATE_SHAPE', `${d} ${r[d]}`]);
+  if (ISO.test(r.from || '')) for (const k of ['claim_en', 'claim_es']) if (!f[k].includes(r.from.slice(0, 4))) p.push(['RATE_UNDATED_CLAIM', `${k} does not name ${r.from.slice(0, 4)}`]);
+  return p;
+}
+
+/**
+ * Which of a page's facts may show on `today` (an ISO day) when its file has dated rates:
+ *  - a dollar amount with no rate tag never shows (UNTAGGED_RATE);
+ *  - a dated rate shows until a later rate of the same kind takes effect, or until its own `until`;
+ *    one that starts after today shows as the coming rate;
+ *  - an undated rate (read on its `checked` day) stops showing once a dated rate of the same kind takes
+ *    effect after that day, or once a rate of the same kind read on a later day is in force: the older
+ *    table may not have caught up, and an old number beside the new one is the stale-number bug.
+ * Rates come first: the basic rate in force (newest first), then the coming basic rate (soonest first), then
+ * the other rates the same way; then the other facts in their own order.
+ * Returns { facts, dropped: [[code, fact]] }.
+ */
+export function datedRates(facts, today) {
+  const dated = {}, read = {}, max = (o, k, v) => { if (!o[k] || v > o[k]) o[k] = v; };
+  for (const f of facts) {
+    if (!f.rate || (f.rate.from && f.rate.from > today) || (f.rate.until && f.rate.until < today)) continue;
+    for (const k of kindsOf(f)) { if (f.rate.from) max(dated, k, f.rate.from); max(read, k, f.checked || ''); }
+  }
+  const keep = [], dropped = [];
+  for (const f of facts) {
+    const r = f.rate;
+    if (!r) { if (DOLLAR.test(f.claim_en) || DOLLAR.test(f.claim_es)) dropped.push(['UNTAGGED_RATE', f]); else keep.push(f); continue; }
+    if (r.until && r.until < today) { dropped.push(['RATE_ENDED', f]); continue; }
+    if (r.from && r.from > today) { keep.push(f); continue; }
+    const since = r.from || f.checked || '';
+    const stale = kindsOf(f).some((k) => (dated[k] && dated[k] > since) || (!r.from && read[k] && read[k] > since));
+    if (stale) dropped.push(['RATE_SUPERSEDED', f]); else keep.push(f);
+  }
+  const coming = (f) => Boolean(f.rate.from && f.rate.from > today), since = (f) => f.rate.from || f.checked || '';
+  const basic = (f) => (kindsOf(f)[0] === 'basic' ? 0 : 1);
+  const rates = keep.filter((f) => f.rate).sort((a, b) => basic(a) - basic(b) || coming(a) - coming(b) || (coming(a) ? since(a).localeCompare(since(b)) : since(b).localeCompare(since(a))));
+  return { facts: [...rates, ...keep.filter((f) => !f.rate)], dropped };
+}
+
 
 // A fact is state-specific when its CLAIM is about that state alone (coordinator's final rule, 2 Nov
 // 2026): a rule, number, deadline, procedure, or the state's own named office, including a state's row
@@ -106,15 +165,18 @@ export function enoughFacts(facts) {
   return null;
 }
 
-export function gateState(entry, verified, counts) {
-  const facts = (entry?.facts || []).filter((f) => !factProblems(f).length && verified[factKey(f)])
+export function gateState(entry, verified, counts, { today = null } = {}) {
+  let facts = (entry?.facts || []).filter((f) => !factProblems(f).length && verified[factKey(f)])
     .map((f) => ({ ...f, verifiedOn: verified[factKey(f)], stateSpecific: stateSpecificFact(f, counts) }));
+  // today is set for files with dated rates: amounts that are no longer (or not yet) the rate are dropped first.
+  if (today) facts = datedRates(facts, today).facts;
   const stop = enoughFacts(facts);
   if (stop) return { stop };
-  // State-specific facts first, office and contact details after them, national facts below.
-  const rank = (f) => (f.stateSpecific ? (isContact(f) ? 1 : 0) : 2);
-  return { facts: facts.map((f, i) => [f, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([f]) => f) };
+  if (today) return { facts: [...facts.filter((f) => f.rate), ...rankFacts(facts.filter((f) => !f.rate))] };
+  return { facts: rankFacts(facts) };
 }
+// State-specific facts first, office and contact details after them, national facts below.
+const rankFacts = (facts) => { const rank = (f) => (f.stateSpecific ? (isContact(f) ? 1 : 0) : 2); return facts.map((f, i) => [f, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([f]) => f); };
 
 /** A Chinese or Korean translation that left English words untranslated (lowercase words; names of
  * agencies, courts and forms are capitalised and allowed) is not natural writing and never publishes. */
