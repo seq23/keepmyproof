@@ -285,6 +285,18 @@
           "GPTBot (OpenAI training)": 1
         }
       }
+    },
+    "2026-11-22": {
+      "ai_visitors_not_read": "this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+      "ai_bot_hits": {
+        "total": 273,
+        "by_bot": {
+          "Amazonbot": 150,
+          "Meta-ExternalAgent": 120,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }

@@ -176,7 +176,7 @@
         "what is considered a hostile work environment"
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -227,7 +227,7 @@
         "b5 FAQ answer is 39 words (aim 40-60): \"What if my condition is not on the presumptive lis\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -277,7 +277,7 @@
         "b5 FAQ answer is 32 words (aim 40-60): \"Can I use photos of documents instead of originals\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -326,7 +326,7 @@
         "b5 FAQ answer is 39 words (aim 40-60): \"Are discovery documents public record?\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -373,7 +373,7 @@
         "b5 FAQ answer is 62 words (aim 40-60): \"Do I need a lawyer before I file for divorce?\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -431,7 +431,7 @@
           "near-duplicate of /site/questions/how-to-prepare-divorce-documents-yourself/ (similarity 0.97)"
         ]
       },
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -479,7 +479,7 @@
         "b5 FAQ answer is 37 words (aim 40-60): \"Do I need a lawyer to get a consent order?\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -528,7 +528,7 @@
         "b5 FAQ answer is 32 words (aim 40-60): \"What if my spouse files in another state first?\""
       ],
       "indexnow_at": "2026-11-08",
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -589,7 +589,7 @@
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-texas/ (similarity 0.98)"
         ]
       },
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -649,7 +649,7 @@
           "near-duplicate of /site/questions/how-to-prepare-for-divorce-in-florida/ (similarity 0.97)"
         ]
       },
-      "inspected_at": "2026-11-21",
+      "inspected_at": "2026-11-22",
       "indexed": false
     },
     {
@@ -689,12 +689,27 @@
           "after_hash": "1e207441ca21b80b9d3d0f6ad7963fc2365542882ec652e55619ea3c8dbe3299"
         }
       ],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-22",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b2 meta description is 118 chars (aim 120-160)",
         "b4 direct answer under the H1 is 32 words (aim 40-60)"
       ],
-      "indexnow_at": "2026-11-09"
+      "indexnow_at": "2026-11-09",
+      "inspected_at": "2026-11-22",
+      "indexed": false
     },
     {
       "slug": "how-to-prepare-for-divorce-in-massachusetts",
@@ -733,12 +748,27 @@
           "after_hash": "bd41b116bcbfe49d5d027536a9bc5e09847bb72e668f1e26e4eb1c8113b7e03d"
         }
       ],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-22",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 0,
+          "position": null,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b4 direct answer under the H1 is 30 words (aim 40-60)",
         "b5 FAQ answer is 36 words (aim 40-60): \"Do I need a lawyer to file for divorce in Massachu\""
       ],
-      "indexnow_at": "2026-11-09"
+      "indexnow_at": "2026-11-09",
+      "inspected_at": "2026-11-22",
+      "indexed": false
     },
     {
       "slug": "how-to-write-a-workplace-harassment-complaint-letter",
@@ -764,13 +794,28 @@
         "https://www.eeoc.gov/time-limits-filing-charge"
       ],
       "linked_from": [],
-      "checks": {},
+      "checks": {
+        "w2": {
+          "at": "2026-11-22",
+          "source": "search_console",
+          "clicks": 0,
+          "impressions": 20,
+          "position": 84.3,
+          "ai_visits_today": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+          "indexed": false,
+          "checkpoint": "w2",
+          "lane": "striking",
+          "top3": false
+        }
+      },
       "gate_notes": [
         "b2 meta description is 113 chars (aim 120-160)",
         "b4 direct answer under the H1 is 35 words (aim 40-60)",
         "b5 FAQ answer is 32 words (aim 40-60): \"How long should the letter be?\""
       ],
-      "indexnow_at": "2026-11-09"
+      "indexnow_at": "2026-11-09",
+      "inspected_at": "2026-11-22",
+      "indexed": false
     },
     {
       "slug": "how-to-get-a-certified-copy-of-my-divorce-decree",
