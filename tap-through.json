@@ -35,10 +35,10 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce or custody/"
+          "then": "/Divorce, custody or co-parenting log/"
         },
         {
-          "tap": "/Divorce or custody/",
+          "tap": "/Divorce, custody or co-parenting log/",
           "then": "Joint checking statements, Jan to Jun",
           "id": "folder"
         },
@@ -74,7 +74,7 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce or custody/"
+          "then": "/Divorce, custody or co-parenting log/"
         },
         {
           "tap": "Settings",
@@ -107,7 +107,7 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce or custody/"
+          "then": "/Divorce, custody or co-parenting log/"
         },
         {
           "tap": "Settings"
@@ -121,7 +121,7 @@
           "tap": "Not now"
         },
         {
-          "tap": "/Divorce or custody/",
+          "tap": "/Divorce, custody or co-parenting log/",
           "then": "Joint checking statements, Jan to Jun"
         },
         {
@@ -149,7 +149,7 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce or custody/"
+          "then": "/Divorce, custody or co-parenting log/"
         },
         {
           "tap": "+ Create your own folder ›",
@@ -171,7 +171,7 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce or custody/"
+          "then": "/Divorce, custody or co-parenting log/"
         },
         {
           "tap": "Settings"
