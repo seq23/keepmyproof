@@ -135,7 +135,7 @@
           "tap": "Make a PDF of this folder ›"
         },
         {
-          "tap": "Choose dates and a cover page ›",
+          "tap": "/Choose dates and a cover page/",
           "id": "range-pdf"
         },
         {
@@ -150,6 +150,9 @@
         {
           "tap": "Preview only: skip to a sample vault ›",
           "then": "/Divorce, custody or co-parenting log/"
+        },
+        {
+          "tap": "Settings"
         },
         {
           "tap": "+ Create your own folder ›",
