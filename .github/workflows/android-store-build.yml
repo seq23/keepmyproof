@@ -1,0 +1,64 @@
+name: Android internal build
+# Manual only. Builds the Play App Bundle (.aab) on a free GitHub Ubuntu runner with `eas build --local`
+# (no EAS cloud minutes), signs it with the upload key EAS already holds (fetched via EXPO_TOKEN), and
+# sends it to the Play INTERNAL testing track as a DRAFT (eas.json submit.internal). Nothing goes to
+# production or review. The .aab is never uploaded as an artifact: the repo is public.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-store-build
+  cancel-in-progress: false
+
+env:
+  PACKAGE: com.keepmyproof.app
+  # The EAS upload key (created 19 Nov 2026). A different signer means a new keystore, which Play
+  # would refuse for every future update: the run stops before upload.
+  UPLOAD_KEY_SHA1: 62:30:67:9B:D7:9B:18:FD:44:A5:78:E5:11:2C:EE:29:2B:3A:4C:5F
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: EAS local build
+        run: npx --yes eas-cli@latest build --platform android --profile internal --local --non-interactive --output app.aab
+      - name: Signed with the existing upload key
+        run: |
+          SHA1=$(keytool -printcert -jarfile app.aab | awk '/SHA1:/{print $2; exit}')
+          echo "signer SHA-1: $SHA1"
+          [ "$SHA1" = "$UPLOAD_KEY_SHA1" ] || { echo "NAMED STOP [NEW_UPLOAD_KEY] app.aab is signed by $SHA1, not the EAS upload key $UPLOAD_KEY_SHA1"; exit 2; }
+      - name: Version code
+        id: version
+        run: |
+          VC=$(npx --yes eas-cli@latest build:version:get --platform android --profile internal --json --non-interactive | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const v=String(JSON.parse(s).versionCode??"");if(!/^\d+$/.test(v)){console.error("NAMED STOP [VERSION_CODE_UNREADABLE] "+s);process.exit(2)}console.log(v)})')
+          echo "versionCode $VC"
+          echo "code=$VC" >> "$GITHUB_OUTPUT"
+      - name: Write Play service account key
+        env:
+          SA: ${{ secrets.GOOGLE_PLAY_UPLOAD_SA_JSON }}
+        run: |
+          [ -n "$SA" ] || { echo "NAMED STOP [SECRET_MISSING] GOOGLE_PLAY_UPLOAD_SA_JSON is not set"; exit 2; }
+          umask 077; printf '%s' "$SA" > play-sa.json
+      - name: Submit to Play internal track (draft)
+        run: npx --yes eas-cli@latest submit --platform android --profile internal --path app.aab --non-interactive
+      - name: Prove the draft is on the internal track
+        run: node scripts/store/play-track-check.mjs play-sa.json "$PACKAGE" "${{ steps.version.outputs.code }}"
+      - name: Remove Play service account key
+        if: always()
+        run: rm -f play-sa.json

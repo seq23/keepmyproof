@@ -9,7 +9,8 @@ export declare function stops(input: {
 export declare const STOP_WORDS: Record<string, { title: string; next_step: string }>;
 export declare const OPEN_LOOPS: { repo: string; business: string; finish: string };
 export declare function knownHere(eas: boolean): string[];
-export declare function betaStops(input: { env: Record<string, string | undefined> }): { code: string; why: string }[];
+export declare const BETA_PROFILES: Record<string, 'ios' | 'android'>;
+export declare function betaStops(input: { env: Record<string, string | undefined>; platform?: 'ios' | 'android' }): { code: string; why: string }[];
 export declare const PHONE_WORDS: RegExp;
 export declare const ANDROID_ONLY_KEYS: string[];
 export declare const IOS_STORE_FILES: string[];

@@ -86,13 +86,20 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   return out;
 }
 
-/** A TestFlight beta (eas.json profile "testflight", iOS only, never sent for review): the device test runs ON
- *  this build, so only what the build itself carries must be right: a real App Store key and no preview switch.
- *  The full gate above still guards the "production" build that goes to App Store review. */
-export function betaStops({ env }) {
+/** A tester build that is never sent for review: eas.json profile "testflight" (iOS, TestFlight) or "internal"
+ *  (Android, Play internal testing track as a draft). The device test runs ON this build, so only what the build
+ *  itself carries must be right: a real key for its own store and no preview switch.
+ *  The full gate above still guards the "production" build that goes to store review. */
+export const BETA_PROFILES = { testflight: 'ios', internal: 'android' };
+const STORE_KEY = {
+  ios: { name: 'EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY', prefix: 'appl_', why: 'the App Store (appl_) RevenueCat key is not set in the EAS production environment, so TestFlight could not test buying Plus.' },
+  android: { name: 'EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY', prefix: 'goog_', why: 'the Play (goog_) RevenueCat key is not set in the EAS production environment, so the internal-track build could not test buying Plus.' },
+};
+export function betaStops({ env, platform = 'ios' }) {
   const out = [];
-  if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_'))
-    out.push({ code: 'REVENUECAT_KEY_MISSING', why: 'the App Store (appl_) RevenueCat key is not set in the EAS production environment, so TestFlight could not test buying Plus.' });
+  const key = STORE_KEY[platform];
+  if (!key) throw Error(`NAMED STOP [UNKNOWN_PLATFORM] no store key is known for ${platform}.`);
+  if (!env[key.name]?.startsWith(key.prefix)) out.push({ code: 'REVENUECAT_KEY_MISSING', why: key.why });
   if (env.EXPO_PUBLIC_KMP_PREVIEW)
     out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.' });
   return out;
@@ -101,10 +108,11 @@ export function betaStops({ env }) {
 async function main() {
   const production = process.env.EAS_BUILD_PROFILE === 'production';
   const report = process.argv.includes('--report');
-  if (process.argv.includes('--if-production') && process.env.EAS_BUILD_PROFILE === 'testflight') {
-    const found = betaStops({ env: process.env });
+  const beta = BETA_PROFILES[process.env.EAS_BUILD_PROFILE];
+  if (process.argv.includes('--if-production') && beta) {
+    const found = betaStops({ env: process.env, platform: beta });
     for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
-    if (found.length) process.exitCode = 2; else console.log('release gate: clear for a TestFlight beta (not for App Store review).');
+    if (found.length) process.exitCode = 2; else console.log(`release gate: clear for the ${process.env.EAS_BUILD_PROFILE} tester build (not for store review).`);
     return;
   }
   if (process.argv.includes('--if-production') && !production) {
