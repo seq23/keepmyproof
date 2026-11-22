@@ -57,5 +57,9 @@ test('the Chinese and Korean App Store fields are filled, in Apple limits, in th
       assert.match(v, script[lang], `${lang} ${field} is not in the listing language`);
       if (field === 'Keywords') assert.ok(v.split(',').length >= 8 && !/[，、\s]/.test(v), `${lang}: keywords are comma-separated with no spaces`);
     }
+    // Apple already indexes the name and subtitle: a keyword repeating them wastes the 100 characters.
+    const field = (f: string) => new RegExp(`[(（]${f}[,，][^)）]*[)）][:：]\\s*(.+)`).exec(md)![1];
+    const indexed = field('Name') + field('Subtitle');
+    for (const k of field('Keywords').split(',')) assert.ok(!indexed.includes(k), `${lang}: keyword ${k} repeats the name or subtitle`);
   }
 });
