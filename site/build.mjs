@@ -12,7 +12,7 @@ import { SITE, PAGES } from './config.mjs';
 import { OPERATING_SYSTEMS } from './lib/stores.mjs';
 import { COPY } from './copy.mjs';
 import { CC, FOLDERS, FACTS_PAGE, ALT } from './cluster-copy.mjs';
-import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG } from './copy-cjk.mjs';
+import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG, koSearchWords, koFormalOnce } from './copy-cjk.mjs';
 import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
 import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
@@ -428,7 +428,7 @@ export function clusterModel({ facts, verified, translations = {}, today = build
       const titles = { en: data.title_en, es: data.title_es }, langs = ['en', 'es'];
       for (const l of STATE_LANGS[k] || []) {
         const tr = translations[k]?.[`${data.subtopic}.${l}`];
-        if (tr?.title && /\{state\}/.test(tr.title) && !untranslated(tr.title)) { titles[l] = tr.title; langs.push(l); }
+        if (tr?.title && /\{state\}/.test(tr.title) && !untranslated(tr.title, l)) { titles[l] = tr.title; langs.push(l); }
         else stops.push(`NAMED STOP [NOT_TRANSLATED] ${k}/${data.subtopic} ${l}: no translation file (scripts/translate-facts.mjs); ${l} pages not published`);
       }
       const states = [], counts = claimCounts(data);
@@ -442,7 +442,8 @@ export function clusterModel({ facts, verified, translations = {}, today = build
         const byLang = { en: g.facts.map((f) => ({ ...f, claim: f.claim_en })), es: g.facts.map((f) => ({ ...f, claim: f.claim_es })) };
         for (const l of langs.slice(2)) {
           const tr = translations[k][`${data.subtopic}.${l}`].facts || {};
-          const fl = g.facts.filter((f) => tr[factKey(f)] && !untranslated(tr[factKey(f)])).map((f) => ({ ...f, claim: tr[factKey(f)] }));
+          let fl = g.facts.filter((f) => tr[factKey(f)] && !untranslated(tr[factKey(f)], l)).map((f) => ({ ...f, claim: l === 'ko' ? koSearchWords(tr[factKey(f)]) : tr[factKey(f)] }));
+          if (l === 'ko') { const cs = koFormalOnce(fl.map((f) => f.claim), titles[l]); fl = fl.map((f, i) => ({ ...f, claim: cs[i] })); }
           const stop = enoughFacts(fl) || (bannedWord(fl.map((f) => f.claim).join(' ') + fill(titles[l], code, l)) ? ['BANNED_WORD', l] : null);
           if (stop) stops.push(`NAMED SKIP [${l.toUpperCase()}_${stop[0]}] ${k}/${data.subtopic}/${code}: ${stop[1]}`);
           else byLang[l] = fl;

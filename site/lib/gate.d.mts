@@ -10,4 +10,5 @@ export declare function factProblems(f: any): [string, string][];
 export declare function gateState(entry: any, verified: Record<string, string>, counts: Map<string, number>, opts?: { today?: string | null }): { facts?: any[]; stop?: [string, string] };
 export declare function rateProblems(f: any): [string, string][];
 export declare function datedRates(facts: any[], today: string): { facts: any[]; dropped: [string, any][] };
-export declare function untranslated(text: string): boolean;
+export declare function untranslated(text: string, lang?: string): boolean;
+export declare function wrongScript(text: string, lang?: string): boolean;

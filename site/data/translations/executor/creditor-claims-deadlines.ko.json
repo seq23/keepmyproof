@@ -4,13 +4,13 @@
  "subtopic": "creditor-claims-deadlines",
  "lang": "ko",
  "review": "launched without a native reader (owner ruling 2 Nov 2026)",
- "translated_on": "2026-11-02",
+ "translated_on": "2026-11-22",
  "models": [
   "nvidia/nemotron-3-ultra-550b-a55b:free",
   "nvidia/nemotron-3.5-lightning:free",
   "google/gemma-4-26b-a4b-it:free"
  ],
- "title": "{state} 유산 채권자 청구 마감일",
+ "title": "{state} 프로베이트(유언검인) 채권자 청구 마감일",
  "facts": {
   "9286485bae70108f1035": "아이오와에서, 개인 대리인은 주간 신문에서 3주 연속으로 공고를 게재할 수 있습니다.",
   "b9e95ad2e666c53d268c": "아이오와에서, 우편 통보는 채권자가 게재된 공고 후 4개월 이내 또는 우편 발송 후 60일 이내에 청구를 제출하도록 안내합니다.",

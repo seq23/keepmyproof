@@ -4,14 +4,14 @@
  "subtopic": "death-certificates",
  "lang": "ko",
  "review": "launched without a native reader (owner ruling 2 Nov 2026)",
- "translated_on": "2026-11-02",
+ "translated_on": "2026-11-22",
  "models": [
   "nvidia/nemotron-3-ultra-550b-a55b:free",
   "nvidia/nemotron-3.5-lightning:free",
   "google/gemma-4-31b-it:free",
   "google/gemma-4-26b-a4b-it:free"
  ],
- "title": "{state}에서 사망 증명서 주문하는 방법",
+ "title": "{state} 사망증명서 발급 방법",
  "facts": {
   "ffcc84de940963e0706c": "인증된 알라바마주 사망증명서(주 보건복지부 기록실)는 $15.00입니다.",
   "cc9b30afc3ccfffd6687": "알라바마주 사망증명서 우편 신청은: 알라바마주 보건통계센터 알라바마주 보건부 P.O. Box 5625 몽고메리, AL 36103-5625로 보내주세요.",
