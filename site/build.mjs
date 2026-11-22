@@ -14,7 +14,7 @@ import { COPY } from './copy.mjs';
 import { CC, FOLDERS, FACTS_PAGE, ALT } from './cluster-copy.mjs';
 import { COPY_CJK, CC_CJK, STATES_CJK, HUBS_CJK, LANG_NAME, HREFLANG, koSearchWords, koFormalOnce } from './copy-cjk.mjs';
 import { STATES, STATE_CODES, slugify } from './lib/states.mjs';
-import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated } from './lib/gate.mjs';
+import { gateState, bannedWord, htmlText, officialSource, claimCounts, factKey, enoughFacts, untranslated, zhSpacing } from './lib/gate.mjs';
 import { checklistPdf } from './pdf.mjs';
 import { repeatsPhrase, shortenNames, leansBack } from './lib/names.mjs';
 import { TOOLS, calcData } from './tools.mjs';
@@ -203,7 +203,10 @@ export function offersShown(node, body) {
   return rest;
 }
 
-function shell({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false, updated = SITE.updated }) {
+// Every Chinese page is tidied as it leaves shell(), the one place all of its text passes: model
+// translations and joined copy left spaces between Chinese characters ("弗吉尼亚州 的…", "。 来源").
+function shell(page) { const html = shellHtml(page); return page.lang === 'zh' ? zhSpacing(html) : html; }
+function shellHtml({ lang, path, alt, title: titles, desc: rawDesc, descMore = [], body, schema = [], crumbs = [], index = true, speakable = false, updated = SITE.updated }) {
   const c = COPY[lang];
   const title = fitTitle(titles, TITLE_PADS[lang]), desc = fitDesc(rawDesc, [...descMore, c.factSentence(SITE.freeItems)]);
   const altLinks = alt ? ALL_LANGS.filter((l) => alt[l]).map((l) => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${url(alt[l])}">`).join('') + (alt.en ? `<link rel="alternate" hreflang="x-default" href="${url(alt.en)}">` : '') : '';
@@ -597,7 +600,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
 <p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>${oneDate ? '' : `. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span>`}</li>`).join('')}</ol>
 ${links.length ? `<h2>${esc(c.linksH)}</h2><ul>${links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
 ${keep(l, s)}
-<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}: ${esc(c.allStates.toLowerCase())}</a></li></ul>
+<h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}${l === 'zh' ? '：' : ': '}${esc(c.allStates.toLowerCase())}</a></li></ul>
 ${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           // What the Monday sample reads: the breadcrumb trail inside <main>, then the body.
