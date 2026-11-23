@@ -15175,16 +15175,916 @@
    "state": "Submitted and indexed",
    "last_crawl": "2026-11-03T19:09:35Z",
    "inspected_at": "2026-11-22T18:35:48.687Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/washington": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:07:48Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/virginia-occidental": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:22:52Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T08:47:28Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/wyoming": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-13T20:57:02Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/ayuda-con-el-iep-el-centro/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T16:54:26Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-10T06:14:31Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/parent-training-center/wisconsin": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T13:38:43Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T08:26:45Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T23:57:57Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/alabama": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:25:39Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:51:33Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/arizona": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T14:56:06Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:18:47Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/alaska": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:23:04Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/arkansas": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T06:40:24Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:24:56Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:09:08Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/arkansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T12:58:22Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/california": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:07:47Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/connecticut": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:25:13Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/colorado": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:11:06Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/colorado": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:48:38Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:37:50Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/district-of-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:05:37Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/florida": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:14:52Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/florida": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:28:34Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T14:36:49Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/distrito-de-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:58:41Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-05T08:54:27Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/georgia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:14:15Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/hawai": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:55:37Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/hawaii": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:02:00Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/idaho": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T07:14:51Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/illinois": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:10:01Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/illinois": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:28:32Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/indiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T00:46:57Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T20:43:44Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T10:41:29Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/indiana": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T15:58:50Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:21:31Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:06:12Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:54:10Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/kentucky": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T01:39:13Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/luisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:27:58Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:46:17Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/maine": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T14:43:40Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/louisiana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T01:36:01Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/maine": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T21:22:24Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:15:12Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:26:56Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/michigan": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T09:18:58Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T14:43:44Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:30:06Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/misisipi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T15:17:49Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/mississippi": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T15:16:46Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/missouri": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T12:15:56Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T00:07:53Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T21:21:20Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/montana": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:25:33Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/new-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T22:36:29Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-05T07:38:02Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T15:10:35Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/nevada": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:23:56Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/new-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T01:28:00Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/new-mexico": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:07:13Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/nueva-jersey": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:41:22Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/nuevo-mexico": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:39:43Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/new-york": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-07T23:27:57Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:33:21Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T02:09:27Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/carolina-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T22:23:44Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/north-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-16T00:07:00Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/dakota-del-norte": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:11:18Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/oregon": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-08T02:56:50Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/oregon": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:24:19Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/south-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T21:24:39Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/carolina-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:51:44Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/south-dakota": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-09T18:56:31Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/dakota-del-sur": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:47:55Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T23:31:58Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/tennessee": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:30:16Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/texas": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:21:42Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/texas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/utah": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T13:02:25Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/utah": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T07:24:14Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T13:44:43Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T03:25:45Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/vermont": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:25:44Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/west-virginia": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T15:08:22Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/washington": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-03T17:55:12Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/virginia-occidental": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T04:57:05Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-08T01:01:59Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/wisconsin": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-04T05:05:27Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep/transition-planning/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-03T17:11:30Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/questions/what-is-an-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:26:32Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/iep/planificacion-de-la-transicion-en-el-iep/wyoming": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "last_crawl": "2026-11-04T04:25:50Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/zh/questions/what-is-an-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T01:13:39Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/preguntas/que-es-un-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T01:00:06Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/ko/questions/what-is-an-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T02:36:20Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/iep-meeting-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T05:09:41Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/lista-para-la-reunion-del-iep": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T05:41:22Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/zh/iep-meeting-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T00:13:58Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/ko/iep-meeting-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "Crawled - currently not indexed",
+   "last_crawl": "2026-11-07T09:29:35Z",
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant-move-in-move-out-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/lista-inquilino-entrada-salida": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/zh/tenant-move-in-move-out-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/ko/tenant-move-in-move-out-checklist": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/arizona": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/connecticut": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/district-of-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/delaware": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/distrito-de-columbia": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/florida": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/florida": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/idaho": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/iowa": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/kansas": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/maine": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/maine": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/michigan": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/maryland": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/massachusetts": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/minnesota": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/missouri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/misuri": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/montana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/montana": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/nebraska": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/nevada": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/new-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/nuevo-hampshire": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/es/inquilinos/plazo-para-devolver-el-deposito-de-seguridad/nueva-york": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/new-york": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
+  },
+  "https://keepmyproof.com/tenant/security-deposit-return-deadline/north-carolina": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "last_crawl": null,
+   "inspected_at": "2026-11-23T22:43:47.454Z"
   }
  },
  "property": "https://keepmyproof.com/",
- "generated_at": "2026-11-22T18:35:48.687Z",
+ "generated_at": "2026-11-23T22:43:47.454Z",
  "sitemap_urls": 2780,
- "inspected": 2529,
+ "inspected": 2679,
  "states": {
-  "URL is unknown to Google": 125,
-  "Submitted and indexed": 1373,
+  "URL is unknown to Google": 173,
+  "Submitted and indexed": 1399,
   "Discovered - currently not indexed": 235,
-  "Crawled - currently not indexed": 796
+  "Crawled - currently not indexed": 872
  }
 }
