@@ -6,7 +6,8 @@ name: Search Console daily
 # A missing secret or property is a NAMED STOP that turns the run red.
 on:
   schedule:
-    - cron: '23 11 * * *'  # 11:23 UTC daily
+    # Weekly since 23 Nov 2026 (owner rule: daily only when something changes daily AND someone acts on it daily).
+    - cron: "23 11 * * 1"
   workflow_dispatch:
 permissions:
   contents: write
