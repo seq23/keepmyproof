@@ -25,7 +25,15 @@ test('every state deposit deadline page quotes an official source with the date 
   const states = Object.keys(files).filter(f => /^tenant\/security-deposit-return-deadline\/[a-z-]+\.html$/.test(f) && !f.endsWith("/index.html"));
   assert.ok(states.length >= 25, `only ${states.length} state pages`);
   const verified = JSON.parse(readFileSync('site/data/verified/tenant.json', 'utf8'));
-  assert.deepEqual(verified.stops, []);
+  // A source the weekly re-check could not reach keeps its last verified read as a NAMED NOTE
+  // (FETCH_FAILED_KEPT, "kept from <day>"). That stays fine for 14 days; an older kept read, or any
+  // other stop, still goes red here.
+  const now = Date.now();
+  const bad = (verified.stops as string[]).filter((s) => {
+    const m = s.match(/^NAMED NOTE \[FETCH_FAILED_KEPT\] .*\(kept from (\d{4}-\d{2}-\d{2})\)$/);
+    return !m || now - Date.parse(m[1] + 'T00:00:00Z') > 14 * 86_400_000;
+  });
+  assert.deepEqual(bad, []);
   for (const f of states) {
     const t = htmlText(files[f] as string);
     assert.match(t, /Sources checked [A-Z][a-z]+ \d{1,2}, 2026/, f);
