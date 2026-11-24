@@ -1,6 +1,8 @@
 // Website wording, English and US Spanish (usted). Same voice as the app (src/strings.ts).
 // The honest-claims check in scripts/validate.mjs scans this file for banned evidence and security
 // claims (R-ADV-01/02). Prices are filled from config.mjs, never typed here.
+import { folderCount, folderNames } from './lib/folders.mjs';
+import { storeLine, storeStatus } from './lib/stores.mjs';
 export const COPY = {
   en: {
     lang: 'en', locale: 'en_US',
@@ -35,7 +37,7 @@ export const COPY = {
       iphone: 'On iPhone only: after you add a photo from your library, the app asks "Remove the original from Photos?". Keep it in Photos is the first choice. If you tap Remove, your iPhone asks you to confirm, and the photo stays in Recently Deleted for 30 days. On Android, delete the original in Google Photos yourself.' },
     useAs: 'Use it as a divorce checklist and custody log, an IEP binder, an executor checklist or a workplace incident log.',
     folderMore: { 'divorce-prep': [['Custody log ›', '/custody-log'], ['How to prepare for divorce ›', '/how-to-prepare-for-divorce']], 'iep-binder': [['IEP meeting checklist ›', '/iep-meeting-checklist'], ['What is an IEP? ›', '/questions/what-is-an-iep']], 'executor-papers': [['What to do when a parent dies ›', '/questions/what-to-do-when-a-parent-dies']] },
-    foldersH: 'Five folders, each with a suggested checklist',
+    foldersH: `${folderCount('en', true)} folders, each with a suggested checklist`,
     foldersSub: 'Checklists are suggestions to help you remember, never a list of what is required.',
     vaNote: 'KeepMyProof keeps your papers only. It does not prepare, file or judge a claim and is not affiliated with the VA.',
     vaLink: 'Find free help from a VA-accredited representative ›',
@@ -60,7 +62,7 @@ export const COPY = {
     ],
     priceH: 'What it costs',
     free: 'Free', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`All five folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
+    freeList: (n) => [`All ${folderCount('en')} folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
     plusList: ['Unlimited items', 'Your own folders and tags', 'A PDF of the items or dates you choose, with a cover page'],
     plusPrice: (p) => `$${p.yearlyUSD} a year, renews yearly until you cancel in your phone's subscription settings. Or $${p.lifetimeUSD} once for life, with no renewal.`,
     priceNotes: (n) => [`The ${n}-item limit only stops adding. Viewing, PDFs, export, backup and restore never lock, paid or not.`, 'No trial and no plan picked for you. Your store shows the price in your currency before you pay.'],
@@ -70,7 +72,7 @@ export const COPY = {
       ['Can anyone at KeepMyProof see my papers?', 'No. Your papers, photos and notes are encrypted on your phone and are never sent to us, to an analytics service or to AI. They leave the phone only when you send a PDF or a file yourself, or save your encrypted backup to your own cloud drive.'],
       [`What happens when I reach ${n} items?`, `Adding stops at ${n} items on the free plan. Everything you already saved stays open: you can still view it, make a PDF of a whole folder, export the originals, back up and restore. Plus removes the limit and adds your own folders and tags.`],
       ['What if I lose my phone?', 'If you made a backup, install KeepMyProof on the new phone, choose the backup file from your iCloud Drive or Google Drive, and enter your 12-word recovery phrase. Every file is checked before it is added. Without the phrase, nobody can open the backup, including us.'],
-      ['When can I download it?', `KeepMyProof is coming soon to Google Play, with the iPhone version after that. It is not in a store yet. On launch day this page will link to the store. The app will be free to download, with your first ${n} items free.`],
+      ['When can I download it?', `${storeLine('en')}${storeStatus().live.length ? '' : ' It is not in a store yet. On launch day this page will link to both stores.'} The app is free to download, with your first ${n} items free.`],
       ['Does it work in Spanish?', 'Yes. The app and the folder checklists are in English, Spanish, Chinese and Korean, this website is in English and Spanish, and the app follows your phone\'s language setting. Your papers stay exactly as you saved them, in whatever language they are written: the app never translates, reads or changes them.'],
       // Added 6 Nov 2026 (search decision https://claude.ai/artifact/9BrXsLTbTThSmzA6zNvSkZ): after the six, never in place of them.
       ['Can I use KeepMyProof as a custody log?', 'Yes. The Divorce prep folder ends with a co-parenting log: note each handoff, visit or missed pickup on the day it happens, with the date it happened next to the date you saved it. Nothing is shared with the other parent or anyone else unless you send it. When a lawyer or mediator asks, make one PDF of the folder. A free co-parenting log you can print is on this site too.'],
@@ -94,9 +96,10 @@ export const COPY = {
       ['Restore purchases', 'In the app, open Plus and tap Restore purchases. It uses your App Store or Google Play account.'],
       ['Cancel a yearly plan', 'iPhone: Settings, your name, Subscriptions. Android: Play Store, Payments and subscriptions. Cancelling never removes your papers.'],
       ['Move to a new phone', 'Install the app, choose your backup file and enter your 12-word recovery phrase. We cannot recover a lost phrase.'],
+      ['Delete your data', 'Your papers are kept encrypted on your phone and we never receive them, so there is no account to close. In the app, open Settings and tap Erase everything on this device, then type your passcode: every folder, item and setting is removed. Uninstalling the app also removes them. A backup you made sits in your own iCloud Drive or Google Drive: delete that file there. To have support emails you sent us deleted, write to support@keepmyproof.com and we delete them.'],
     ],
     notFoundTitle: 'Page not found | KeepMyProof', notFoundH1: 'This page is not here.', notFoundBody: 'The link may be old or mistyped.',
-    llms: 'KeepMyProof is a private phone app (iPhone and Android, coming soon) that keeps the papers, photos and notes a person already has, encrypted on the phone, in five folders with suggested checklists: divorce prep and co-parenting log, VA disability claim papers, executor papers after a parent dies, special-education (IEP) binder, and workplace evidence. Each item has two dates: the date it happened (entered by the person) and the date saved on the phone. A folder becomes one PDF with an index. No account, ads, analytics or AI processing. Encrypted backup to the person\'s own iCloud Drive or Google Drive with a 12-word recovery phrase. The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.',
+    llms: `KeepMyProof is a private phone app (iPhone and Android, coming soon) that keeps the papers, photos and notes a person already has, encrypted on the phone, in ${folderCount('en')} folders with suggested checklists: ${folderNames('en')}. Each item has two dates: the date it happened (entered by the person) and the date saved on the phone. A folder becomes one PDF with an index. No account, ads, analytics or AI processing. Encrypted backup to the person's own iCloud Drive or Google Drive with a 12-word recovery phrase. The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.`,
   },
   es: {
     lang: 'es', locale: 'es_US',
@@ -130,7 +133,7 @@ export const COPY = {
       iphone: 'Solo en iPhone: después de añadir una foto de su biblioteca, la app pregunta "¿Quitar el original de Fotos?". Dejarla en Fotos es la primera opción. Si toca Quitar, su iPhone le pide confirmarlo, y la foto queda en Eliminado recientemente durante 30 días. En Android, borre el original en Google Fotos usted mismo.' },
     useAs: 'Úsela como lista para el divorcio y registro de custodia, carpeta del IEP, lista del albacea o registro de incidentes en el trabajo.',
     folderMore: { 'divorce-prep': [['Registro de custodia ›', '/es/registro-de-custodia'], ['Cómo prepararse para el divorcio ›', '/es/como-prepararse-para-el-divorcio']], 'iep-binder': [['Lista para la reunión del IEP ›', '/es/lista-para-la-reunion-del-iep'], ['¿Qué es un IEP? ›', '/es/preguntas/que-es-un-iep']], 'executor-papers': [['Qué hacer cuando muere un padre o una madre ›', '/es/preguntas/que-hacer-cuando-muere-un-padre']] },
-    foldersH: 'Cinco carpetas, cada una con una lista sugerida',
+    foldersH: `${folderCount('es', true)} carpetas, cada una con una lista sugerida`,
     foldersSub: 'Las listas son sugerencias para ayudarle a recordar, nunca una lista de lo que se exige.',
     vaNote: 'KeepMyProof solo guarda sus papeles. No prepara, presenta ni evalúa un reclamo y no está afiliado al VA.',
     vaLink: 'Busque ayuda gratis de un representante acreditado por el VA ›',
@@ -155,7 +158,7 @@ export const COPY = {
     ],
     priceH: '¿Cuánto cuesta?',
     free: 'Gratis', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`Las cinco carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
+    freeList: (n) => [`Las ${folderCount('es')} carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
     plusList: ['Documentos sin límite', 'Sus propias carpetas y etiquetas', 'Un PDF de los documentos o fechas que elija, con portada'],
     plusPrice: (p) => `$${p.yearlyUSD} al año, con renovación anual hasta que lo cancele en los ajustes de suscripción de su teléfono. O $${p.lifetimeUSD} una sola vez de por vida, sin renovación.`,
     priceNotes: (n) => [`El límite de ${n} documentos solo impide añadir. Ver, hacer PDF, exportar, copiar y restaurar nunca se bloquean, pague o no.`, 'No hay prueba gratis ni plan elegido por usted. Su tienda muestra el precio en su moneda antes de pagar.'],
@@ -165,7 +168,7 @@ export const COPY = {
       ['¿Alguien en KeepMyProof puede ver mis documentos?', 'No. Sus documentos, fotos y notas se guardan cifrados en su teléfono y nunca se nos envían, ni a un servicio de análisis ni a la IA. Solo salen del teléfono cuando usted envía un PDF o un archivo, o guarda su copia cifrada en su propia nube.'],
       [`¿Qué pasa al llegar a ${n} documentos?`, `En el plan gratis, añadir se detiene en ${n} documentos. Todo lo que ya guardó sigue abierto: puede verlo, hacer un PDF de una carpeta completa, exportar los originales, copiar y restaurar. Plus quita el límite y añade sus propias carpetas y etiquetas.`],
       ['¿Y si pierdo mi teléfono?', 'Si hizo una copia, instale KeepMyProof en el teléfono nuevo, elija el archivo de copia en su iCloud Drive o Google Drive y escriba su frase de 12 palabras. Cada archivo se comprueba antes de añadirse. Sin la frase, nadie puede abrir la copia, ni nosotros.'],
-      ['¿Cuándo puedo descargarla?', `KeepMyProof llegará muy pronto a Google Play, y la versión para iPhone vendrá después. Todavía no está en ninguna tienda. El día del lanzamiento esta página enlazará a la tienda. La app se podrá descargar gratis, con sus primeros ${n} documentos gratis.`],
+      ['¿Cuándo puedo descargarla?', `${storeLine('es')}${storeStatus().live.length ? '' : ' Todavía no está en ninguna tienda. El día del lanzamiento esta página enlazará a las dos tiendas.'} La app se descarga gratis, con sus primeros ${n} documentos gratis.`],
       ['¿Funciona en español?', 'Sí. La app y las listas de cada carpeta están en inglés, español, chino y coreano, este sitio está en inglés y español, y la app sigue el idioma de su teléfono. Sus documentos quedan tal como los guardó, en el idioma en que estén escritos: la app nunca los traduce, lee ni cambia.'],
       ['¿Puedo usar KeepMyProof como registro de custodia?', 'Sí. La carpeta de divorcio termina con un registro de crianza: anote cada entrega, visita o recogida que no se cumplió el mismo día, con la fecha en que pasó junto a la fecha en que lo guardó. Nada se comparte con el otro padre ni con nadie si usted no lo envía. Cuando un abogado o mediador lo pida, haga un PDF de la carpeta. En este sitio también hay un registro de crianza gratis para imprimir.'],
       ['¿Hay una app para la carpeta del IEP?', 'KeepMyProof tiene una carpeta del IEP que funciona como su carpeta en el teléfono: el IEP actual, las evaluaciones, los informes de progreso, los mensajes de la escuela y las notas con fecha de las reuniones, con una lista sugerida de lo que conviene guardar. Antes de la próxima reunión, convierta la carpeta en un PDF. En este sitio hay una hoja gratis de notas de la reunión del IEP para imprimir.'],
@@ -188,6 +191,7 @@ heardLine: 'La app puede preguntarle cómo supo de nosotros. Su respuesta se que
       ['Restaurar compras', 'En la app, abra Plus y toque Restaurar compras. Usa su cuenta del App Store o de Google Play.'],
       ['Cancelar el plan anual', 'iPhone: Ajustes, su nombre, Suscripciones. Android: Play Store, Pagos y suscripciones. Cancelar nunca borra sus documentos.'],
       ['Pasar a un teléfono nuevo', 'Instale la app, elija su archivo de copia y escriba su frase de 12 palabras. No podemos recuperar una frase perdida.'],
+      ['Borrar sus datos', 'Sus documentos se guardan cifrados en su teléfono y nunca los recibimos, así que no hay cuenta que cerrar. En la app, abra Ajustes y toque Borrar todo en este dispositivo, luego escriba su código: se eliminan todas las carpetas, documentos y ajustes. Desinstalar la app también los elimina. Una copia que usted hizo está en su propio iCloud Drive o Google Drive: borre ese archivo allí. Para que borremos los correos que nos envió, escriba a support@keepmyproof.com y los borramos.'],
     ],
     notFoundTitle: 'Página no encontrada | KeepMyProof', notFoundH1: 'Esta página no está aquí.', notFoundBody: 'El enlace puede ser antiguo o tener un error.',
   },

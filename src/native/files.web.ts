@@ -4,7 +4,8 @@
 import { b64, utf8 } from '../core/crypto';
 import type { ExportOptions } from '../core/export';
 import type { Item } from '../core/model';
-export interface Picked { filename: string; mime: string; bytes: string; assetId?: string | null; takenOn?: string | null }
+import type { Picked } from '../core/camera';
+export type { Picked } from '../core/camera';
 const say = (text: string) => globalThis.alert(`Preview only: ${text}`);
 const SAMPLE = '<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240"><rect width="320" height="240" fill="#efe7da"/><text x="160" y="126" font-family="sans-serif" font-size="20" fill="#6d6458" text-anchor="middle">Sample picture</text></svg>';
 let lastBackup: string | null = null;
@@ -13,6 +14,10 @@ export async function pickAttachment(photo: boolean, multiple = false): Promise<
   say(`on a phone this opens your ${photo ? 'photos' : 'files'}${n > 1 ? ', where you can choose several' : ''}. Here it adds ${n > 1 ? 'two sample pictures' : 'a sample picture'}.`);
   return Array.from({ length: n }, (_, i) => ({ filename: photo ? `sample-photo-${i + 1}.svg` : 'sample-file.svg', mime: 'image/svg+xml', bytes: b64(utf8(SAMPLE)),
     assetId: null, takenOn: n > 1 ? `2026-11-0${i + 1}T18:0${i}` : null }));
+}
+export async function takePhoto(): Promise<Picked[] | null | 'denied' | 'unavailable'> {
+  say('on a phone this asks once to use the camera, then opens it. The photo goes straight into KeepMyProof, never into Photos. Here it adds a sample picture.');
+  return [{ filename: 'camera-photo.svg', mime: 'image/svg+xml', bytes: b64(utf8(SAMPLE)), assetId: null, takenOn: '2026-11-21T10:30', camera: true }];
 }
 /** The browser shows the saved file from memory (a data: address); nothing is written anywhere. */
 export async function viewFile(item: Item): Promise<string> { return `data:${item.mime};base64,${item.bytes}`; }

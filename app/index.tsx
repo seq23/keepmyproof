@@ -13,8 +13,10 @@ import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
 import { FileView } from '../src/viewer';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
+import { redeemReviewCode, reviewWindowOpen, type ReviewResult } from '../src/billing/review';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
+import { cameraStep, photoTitle } from '../src/core/camera';
 import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
 import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
@@ -26,6 +28,9 @@ import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
 
+// Folder-specific help above the checklist, and the folder's own footer line (default: folderFoot).
+const FOLDER_HOW: Record<string, StringKey> = { 'tenant-repairs-deposit':'tenantHow', 'home-inventory':'inventoryHow' };
+const FOLDER_FOOT: Record<string, StringKey> = { 'va-disability-papers':'vaDisclaimer', 'tenant-repairs-deposit':'tenantFoot', 'home-inventory':'inventoryFoot' };
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard'|'changeCode'|'renew'|'erase';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
 // First-launch picker: each choice in its own language.
@@ -73,6 +78,10 @@ export default function App() {
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
   // Where Plus's Back / Not now returns: Home, or the half-filled add screen its locked Tags row opened it from.
   const [plusBack, setPlusBack] = useState<'home'|'add'>('home');
+  // Google Play's reviewer only: the collapsed "Have a review code?" link (Android, store billing, not on Plus, and only
+  // while keepmyproof.com says a review window is open). src/billing/review.ts is the one network call it makes.
+  const [reviewOpen, setReviewOpen] = useState(false), [reviewShown, setReviewShown] = useState(false);
+  const [reviewCode, setReviewCode, reviewCodeNow] = useTyped('');
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
   const [from, setFrom, fromNow] = useTyped(''), [to, setTo, toNow] = useTyped(''), [cover, setCover, coverNow] = useTyped('');
   const busyRef = useRef(false), sharing = useRef(false), mounted = useRef(true);
@@ -157,6 +166,12 @@ export default function App() {
       .catch(e => { setProducts([]); setProductsState((e as Error).message === 'STORE_PRODUCTS_MISSING' ? 'missing' : 'failed'); });
   }
   useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
+  const reviewable = Platform.OS === 'android' && billing.mode === 'sandbox' && !ent.plus;
+  useEffect(() => {
+    if (screen !== 'plus' || !reviewable) { setReviewOpen(false); setReviewShown(false); setReviewCode(''); return; }
+    let live = true; void reviewWindowOpen().then(open => { if (live) setReviewOpen(open); }); return () => { live = false; };
+  }, [screen, reviewable]);
+  const REVIEW_SAYS: Record<Exclude<ReviewResult, 'unlocked'>, StringKey> = { wrong:'reviewWrong', usedUp:'reviewUsedUp', slow:'reviewSlow', tryAgain:'reviewTryAgain' };
   const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
@@ -228,7 +243,7 @@ export default function App() {
     else {
       const base = { ...draft, title:draft.title.trim(), happenedOn, tags, takenOn: picked[0]?.takenOn ?? null };
       const drafts = several ? picked.map((p, n) => ({ ...base, filename:p.filename, mime:p.mime, bytes:p.bytes, takenOn:p.takenOn ?? null,
-        title: base.title ? `${base.title} (${n+1})` : p.takenOn ? t('photoTaken', { date:showHappened(p.takenOn, LOCALE[lang]) }) : p.filename })) : [base];
+        title: base.title ? `${base.title} (${n+1})` : photoTitle(p, date => t('photoTaken', { date }), LOCALE[lang]) })) : [base];
       savedIds = await vault.addMany(drafts, ent.plus);
     }
     const assetIds = picked.map(p => p.assetId).filter((a): a is string => !!a); setPicked([]); setReplacement(null);
@@ -241,12 +256,24 @@ export default function App() {
   }
   async function pick(replace: boolean) {
     const got = await files.pickAttachment(draft.kind === 'photo', draft.kind === 'photo' && !replace); if (!got?.length) return;
+    accept(got, replace);
+  }
+  /** A picked or taken file becomes the draft's file; one photo nobody named is titled by photoTitle. */
+  function accept(got: files.Picked[], replace: boolean) {
     if (replace) { const { filename, mime, bytes } = got[0]; setReplacement({ filename, mime, bytes }); setDraft(d => ({ ...d, filename, mime, bytes })); return; }
     setPicked(got); const { filename, mime, bytes } = got[0];
-    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || filename }));
+    setDraft(d => ({ ...d, filename, mime, bytes, title: got.length > 1 ? d.title : d.title || photoTitle(got[0], date => t('photoTaken', { date }), LOCALE[lang]) }));
+  }
+  // Camera straight into the vault (permission asked on this tap only). Turned off or no camera: the person
+  // is told why and the photo library opens instead, so the add carries on.
+  async function snap() {
+    const step = cameraStep(await files.takePhoto());
+    if (!step) return;
+    if ('fallback' in step) { setNotice(t(step.fallback)); return pick(false); }
+    accept(step.picked, false);
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
-  const btn = (key: StringKey, action: () => void, quiet = false, primary = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} disabled={busy} />;
+  const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
   // The disclaimer opens the site page (Spanish has its own; Chinese and Korean read the English page).
   const disclaimerUrl = lang === 'es' ? 'https://keepmyproof.com/es/aviso-legal' : 'https://keepmyproof.com/disclaimer';
   const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
@@ -351,6 +378,7 @@ export default function App() {
         setNotice(t(result === 'removed' ? 'removedNotice' : 'keptNotice'));
       }), true)}</Card>}<P heading>{title}</P><P muted>{t('suggested')}</P>
     {folder === 'va-disability-papers' && <Card><P>{t('vaScope')}</P><P>{t('vaHelp')}</P><Button title={t('vaLink')} onPress={() => void Linking.openURL('https://www.va.gov/get-help-from-accredited-representative/')} /></Card>}
+    {FOLDER_HOW[folder] && <Card><P>{t(FOLDER_HOW[folder])}</P></Card>}
     <P section>{t('checklist')}</P>
     <View style={[styles.list,{ borderColor:palette.line, backgroundColor:palette.card }]}>
       {lines.map((l, n) => { const how = tickedBy(state, folder, l.id);
@@ -373,15 +401,16 @@ export default function App() {
         <View style={[styles.flex,{ gap:4 }]}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
           {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}</View></View>
       {btn('open', () => { setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
-    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(folder === 'va-disability-papers' ? 'vaDisclaimer':'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
+    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(FOLDER_FOOT[folder] ?? 'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
     {/* Which folder: asked on every add and change, starting from the neutral one (findings 1, 7). */}
     <P section>{t('whichFolder')}</P>
     {shownFolders.map(f => <Button quiet key={f.id} checked={draft.folder === f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
     {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
-    {draft.kind !== 'note' && <>{!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
+    {draft.kind !== 'note' && <>{!editing && draft.kind === 'photo' && btn('takePhoto', doRun(snap, 'workingCamera'))}
+      {!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
       {editing && btn('replaceFile', doRun(() => pick(true), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
-      {draft.kind === 'photo' && !editing && <P muted>{t(vaultCopy.photo)}</P>}
+      {draft.kind === 'photo' && !editing && <P muted>{t(picked[0]?.camera ? 'photoCamera' : vaultCopy.photo)}</P>}
       {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
     <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
@@ -457,7 +486,7 @@ export default function App() {
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
     {ent.managementURL && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}{legal}
     <Button quiet title={t('disclaimer')} onPress={() => void Linking.openURL(disclaimerUrl)} />{btn('lockNow', lock,true)}
-    {btn('eraseOpen', () => { setCurrentCode(''); navigate('erase'); }, true)}</>;
+    {btn('eraseOpen', () => { setCurrentCode(''); navigate('erase'); }, true, false, true)}</>;
   else if (screen === 'changeCode') body = <><P heading>{t('changeCode').replace(/\s*›$/, '')}</P>
     <Field label={t('currentCode')} value={currentCode} onChange={setCurrentCode} numeric secret />
     <Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
@@ -477,7 +506,7 @@ export default function App() {
       await device.eraseAll(currentCodeNow());
       vaultRef.current?.lock(); vaultRef.current = undefined; setVault(undefined); setCurrentCode(''); setBiometric(false); setHeard(null); setSample(false);
       setRemovePref(DEFAULT_REMOVE_PREF); setBackupShared(false); resume.current = 'home'; navigate('first'); setNotice(t('erased'));
-    }))}{btn('cancel', () => navigate('settings'), true)}</>;
+    }), false, false, true)}{btn('cancel', () => navigate('settings'), true)}</>;
   else if (screen === 'heard') body = <><P heading>{t('heardTitle')}</P><P muted>{t('heardOptional')}</P>
     <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
       onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>
@@ -490,6 +519,7 @@ export default function App() {
   else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolderNow().trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
+    {ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
     {productsState === 'loading' && <P muted>{t('storeLoading', { store: storeName })}</P>}
@@ -500,7 +530,16 @@ export default function App() {
         <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':'annualTerms')}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
           onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
     })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
-    {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}</>;
+    {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}
+    {reviewable && reviewOpen && (reviewShown ? <Card><P>{t('reviewCode')}</P><P muted>{t('reviewWhy')}</P>
+      <Field label={t('reviewCode')} value={reviewCode} onChange={setReviewCode} numeric digits={10} />
+      {btn('reviewUse', doRun(async () => {
+        // Plus comes only from RevenueCat's own answer after the server's grant, never from the 200 itself.
+        const result = await redeemReviewCode(reviewCodeNow(), await billing.appUserId());
+        if (result !== 'unlocked') { setError(t(REVIEW_SAYS[result])); return; }
+        const next = await billing.refresh(); setEnt(next); setReviewCode('');
+        if (!next.plus) setError(t('reviewTryAgain'));
+      }))}</Card> : <Button quiet title={t('reviewLink')} onPress={() => setReviewShown(true)} disabled={busy} />)}</>;
   else body = <P>{t('empty')}</P>;
   // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
   // finding 3: a refused date showed far above Save).

@@ -3,12 +3,17 @@
 Private papers, photos and notes, organized on your phone. No account, ads,
 analytics, AI processing, inbox access or automatic sharing. English, US Spanish,
 Simplified Chinese and Korean (all written for US residents) follow the phone until
-a language is picked on the first screen or in Settings; the pick is kept. All five
+a language is picked on the first screen or in Settings; the pick is kept. All seven
 launch folders and suggested checklists come from **topics.json**, the single topic
 catalog. Spanish, Chinese and Korean launch as written, without a native reader
 (owner ruling 2 Nov 2026; `language_status` in topics.json); `tests/strings.test.ts` fails if any string, folder
 name or checklist line is missing in any language, or would overflow a 390pt phone.
 Chinese and Korean use the system fonts (no serif headings); Korean wraps by word.
+
+**Take a photo** (on the Add screen, any folder) opens the camera straight into the vault. The camera
+permission is asked only on that tap; the photo is never saved to Photos and nothing is uploaded. Its dates
+are recorded exactly as an imported photo's (`src/core/camera.ts`): "saved" by the vault, "taken" from the
+photo's own EXIF time. Camera turned off or missing: the app says so and opens the photo library instead.
 
 Free includes 25 items, app lock, both dates, checklist ticks, full-folder PDF,
 original-file export, encrypted backup and restore. The limit stops **adding**.
@@ -32,7 +37,7 @@ npm start         # offline Metro, after the development build is installed
 
 This is a native app; use a development build rather than a browser or Expo Go.
 To see every screen without a Mac or store account, see [preview](docs/preview.md).
-The app has no service backend or database migrations. Its SQLite database holds
+The app's only server code is the Google Play review-code route (`site/functions/api/review`). Its SQLite database holds
 only authenticated ciphertext; file bytes and metadata are encrypted together.
 The device key lives in the platform secure store. See [architecture](docs/architecture.md).
 
@@ -127,7 +132,7 @@ www redirects to the apex. Never a bare `wrangler deploy`.
 
 What it publishes, and from where:
 - Home, Terms, Privacy, Support (EN `/`, ES `/es/`): `topics.json`, `store/*.md`.
-- Five folder hubs with printable checklist PDFs in English, Spanish, Chinese
+- Seven folder hubs (one per launch folder in `topics.json`) with printable checklist PDFs in English, Spanish, Chinese
   (`/zh/`) and Korean (`/ko/`): `site/data/hubs.json`, `site/copy-cjk.mjs`,
   `site/pdf.mjs` (no email gate). Free checklists page: `/checklists`.
 - State pages, one per state and subtopic: `site/data/facts/<folder>/*.json`

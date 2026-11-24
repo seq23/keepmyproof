@@ -204,6 +204,112 @@
           "CCBot (Common Crawl)": 18
         }
       }
+    },
+    "2026-11-17": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 2718,
+        "by_bot": {
+          "Amazonbot": 191,
+          "Meta-ExternalAgent": 2522,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "PerplexityBot": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-18": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 91,
+        "by_bot": {
+          "Amazonbot": 80,
+          "Meta-ExternalAgent": 7,
+          "OAI-SearchBot (ChatGPT search)": 3,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-19": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 11,
+        "by_bot": {
+          "Amazonbot": 1,
+          "Meta-ExternalAgent": 6,
+          "OAI-SearchBot (ChatGPT search)": 3,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-20": {
+      "ai_visitors": {
+        "total": 0,
+        "by_engine": {},
+        "by_path": {},
+        "source": "web-analytics"
+      },
+      "ai_bot_hits": {
+        "total": 14,
+        "by_bot": {
+          "Amazonbot": 10,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "GPTBot (OpenAI training)": 1,
+          "ChatGPT-User (ChatGPT fetch)": 1
+        }
+      }
+    },
+    "2026-11-21": {
+      "ai_visitors_not_read": "this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+      "ai_bot_hits": {
+        "total": 47,
+        "by_bot": {
+          "Amazonbot": 41,
+          "Meta-ExternalAgent": 2,
+          "OAI-SearchBot (ChatGPT search)": 3,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-22": {
+      "ai_visitors_not_read": "this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+      "ai_bot_hits": {
+        "total": 273,
+        "by_bot": {
+          "Amazonbot": 150,
+          "Meta-ExternalAgent": 120,
+          "OAI-SearchBot (ChatGPT search)": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
+    },
+    "2026-11-23": {
+      "ai_visitors_not_read": "this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+      "ai_bot_hits": {
+        "total": 198,
+        "by_bot": {
+          "Amazonbot": 184,
+          "Meta-ExternalAgent": 8,
+          "OAI-SearchBot (ChatGPT search)": 3,
+          "PerplexityBot": 2,
+          "GPTBot (OpenAI training)": 1
+        }
+      }
     }
   }
 }

@@ -275,3 +275,15 @@ test('a question page claiming papers sync, open on another device or sit in iCl
   for (const ok of ['Works offline; nothing is synced to a server.', 'On Android, you delete the original in Google Photos yourself.', 'A backup is an encrypted file you choose to save, for example to iCloud Drive or Google Drive.'])
     assert.deepEqual(questionGate(page(ok)), [], ok);
 });
+
+test('every image on every built page has real alt text or is marked decorative (search readiness b8)', () => {
+  const files = html(render());
+  let imgs = 0;
+  for (const [path, s] of files) for (const tag of s.match(/<img\b[^>]*>/gi) || []) {
+    imgs++;
+    const alt = /\balt="([^"]*)"/i.exec(tag);
+    const decorative = /\brole="presentation"|\baria-hidden="true"/i.test(tag);
+    assert.ok((alt && alt[1].trim()) || decorative, `${path}: ${tag}`);
+  }
+  assert.ok(imgs > 0, 'no images seen');
+});

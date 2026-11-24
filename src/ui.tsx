@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View, useColorScheme, type TextProps } from 'react-native';
+import { Pressable, StyleSheet, Text, TextInput, View, useColorScheme, type HostInstance, type TextProps } from 'react-native';
 import type { Lang } from './core/model';
 import { typingDate } from './core/dates';
+import { setPressedAnchor } from './anchor';
 // The approved brand (design-keepmyproof, 6 Nov 2026): archive ground, graphite text, lockbox green for what
 // you act on, brass-soft for nudges, deadline red only for a real failure. Light and dark follow the phone.
 const palettes = {
@@ -28,19 +29,24 @@ export function P({ children, muted = false, heading = false, section = false }:
     fontWeight: head ? (cjk(lang) ? '600' : '700') : '400', fontFamily: head ? headingFont(lang) : bodyFont(lang), marginTop: section ? 8 : 0 }}>{children}</Text>;
 }
 // One filled lockbox button per screen (primary): the thing the screen is for. Every other button is an outline.
-export function Button({ title, onPress, quiet, disabled, checked, primary }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean }) {
-  const c = useContext(Theme), lang = useContext(LangContext);
-  return <Pressable accessibilityRole="button" accessibilityState={{ disabled, selected: checked }} disabled={disabled} onPress={onPress}
-    style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
+// danger: anything that destroys papers (Erase everything) is drawn in the warning red, never the go-ahead green.
+// aria-selected, never accessibilityState: react-native-web 0.21 drops accessibilityState, so the chosen
+// language and the current tab were silent to a screen reader on the web build (tap-through, 22 Nov 2026).
+// `disabled` already sets aria-disabled on both builds.
+export function Button({ title, onPress, quiet, disabled, checked, primary, danger }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean; danger?: boolean }) {
+  const c = useContext(Theme), lang = useContext(LangContext), ref = useRef<HostInstance>(null);
+  return <Pressable ref={ref} accessibilityRole="button" aria-selected={checked} disabled={disabled} onPress={onPress}
+    onPressIn={() => ref.current?.measureInWindow((x, y, width, height) => setPressedAnchor({ x, y, width, height }))}
+    style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: danger ? c.red : quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
       padding:12, justifyContent:'center', opacity: disabled ? .5 : pressed ? .7 : 1 })}>
-    <Text {...textProps(lang)} style={{ color: primary ? c.onOk : quiet ? c.muted : c.ok, fontSize:16, lineHeight:20, fontWeight:quiet ? '400':'600', fontFamily: bodyFont(lang, !quiet), textAlign:'center' }}>{title}</Text>
+    <Text {...textProps(lang)} style={{ color: danger ? c.red : primary ? c.onOk : quiet ? c.muted : c.ok, fontSize:16, lineHeight:20, fontWeight:quiet ? '400':'600', fontFamily: bodyFont(lang, !quiet), textAlign:'center' }}>{title}</Text>
   </Pressable>;
 }
 export function Card({ children, tone }: { children: React.ReactNode; tone?: 'gold' | 'red' | 'ok' }) {
   const c = useContext(Theme);
   return <View style={{ padding:12, gap:8, borderRadius:12, borderWidth:1, borderColor:c.line, backgroundColor: tone === 'gold' ? c.goldbg : tone === 'red' ? c.redbg : tone === 'ok' ? c.okbg : c.card }}>{children}</View>;
 }
-/** numeric: a 6-digit passcode. keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
+/** numeric: a 6-digit passcode (digits: another length, e.g. the 10-digit review code). keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
  *  Every text box in the app is this one. The phone's box owns the text (uncontrolled, `defaultValue`): the app never
  *  writes text back into it while she types. A controlled `value` on a screen that re-renders on each key fights the
  *  native box on React Native's new architecture, and the phone then drops change events (ApprovalPrep lost letters,
@@ -50,8 +56,8 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
  *  keys or moves the cursor. Only a genuinely new value from the parent (a cleared box, a loaded item) replaces the
  *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one.
  *  Every Save / Next / Unlock / Confirm calls `flushFields()` first and reads the typed value after it (see below). */
-export function Field({ label, value, onChange, secret, multiline, numeric, placeholder, keyboard }: {
-  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; placeholder?: string; keyboard?: 'date';
+export function Field({ label, value, onChange, secret, multiline, numeric, digits = 6, placeholder, keyboard }: {
+  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; digits?: number; placeholder?: string; keyboard?: 'date';
 }) {
   const c = useContext(Theme), lang = useContext(LangContext);
   // What the box holds now, as last reported by the phone (after the mask).
@@ -65,7 +71,7 @@ export function Field({ label, value, onChange, secret, multiline, numeric, plac
     if (handed.current.has(value)) return;
     typed.current = value; handed.current.clear(); setBox(b => ({ text: value, n: b.n + 1 }));
   }, [value]);
-  const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, 6) : keyboard === 'date' ? typingDate(raw) : raw;
+  const masked = (raw: string) => numeric ? raw.replace(/\D/g, '').slice(0, digits) : keyboard === 'date' ? typingDate(raw) : raw;
   const hand = (next: string) => { if (next === typed.current) return; typed.current = next; handed.current.add(next); onChange(next); };
   const settle = (raw: unknown) => {
     focused.current = false;
@@ -121,7 +127,7 @@ export function useTyped<T>(initial: T): [T, (next: T | ((prev: T) => T)) => voi
   const set = (next: T | ((prev: T) => T)) => { latest.current = typeof next === 'function' ? (next as (prev: T) => T)(latest.current) : next; setValue(latest.current); };
   return [value, set, () => latest.current];
 }
-export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10 },
+export const styles = StyleSheet.create({ container:{ flex:1 }, scroll:{ padding:16, gap:12, paddingBottom:32, width:'100%', maxWidth:560, alignSelf:'center' }, row:{ flexDirection:'row', gap:8 }, tabs:{ flexDirection:'row', gap:6, padding:10, width:'100%', maxWidth:560, alignSelf:'center' },
   footer:{ paddingHorizontal:16, paddingTop:10, paddingBottom:12, gap:8, borderTopWidth:1, width:'100%', maxWidth:560, alignSelf:'center' }, flex:{ flex:1 },
   tiles:{ flexDirection:'row', flexWrap:'wrap', gap:8 }, tile:{ width:'31%', flexGrow:1, borderRadius:12, paddingVertical:10, paddingHorizontal:6, alignItems:'center', gap:4 },
   big:{ flexDirection:'row', alignItems:'center', gap:12, borderWidth:1.5, borderRadius:16, paddingVertical:12, paddingHorizontal:14, minHeight:76 },

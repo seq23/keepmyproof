@@ -4,13 +4,13 @@
  "subtopic": "transfer-on-death-deed",
  "lang": "ko",
  "review": "launched without a native reader (owner ruling 2 Nov 2026)",
- "translated_on": "2026-11-02",
+ "translated_on": "2026-11-22",
  "models": [
   "nvidia/nemotron-3-ultra-550b-a55b:free",
   "nvidia/nemotron-3.5-lightning:free",
   "google/gemma-4-26b-a4b-it:free"
  ],
- "title": "{state} 주택의 사후양도 증서",
+ "title": "{state} 주택 사후양도 증서(TOD)",
  "facts": {
   "82dde2cd5cfffb90d5ee": "아리조나에서 수증자 증서는 여러 명의 수증자를 지정할 수 있으며, 이들은 공동 소유자(공동분묘지분) 방식으로 지분을 취득하거나 그 외의 방식으로 지분을 나눌 수 있습니다.",
   "f54c94b088b810f03e0e": "DC에서 이 증서는 소유자의 사망 시 수증자에게 재산이 이전된다는 내용을 명시해야 합니다.",

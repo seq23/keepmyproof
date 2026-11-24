@@ -142,10 +142,10 @@ export const strings = {
     "서류를 여는 중…"
   ],
   "firstTitle": [
-    "Keep the papers you already have, private on this phone.",
-    "Guarde los documentos que ya tiene, privados en este teléfono.",
-    "把您已有的文件保存在这部手机上，保持私密。",
-    "이미 가지고 있는 서류를 이 휴대폰에 비공개로 보관하세요."
+    "Keep the papers you already have, private on this device.",
+    "Guarde los documentos que ya tiene, privados en este dispositivo.",
+    "把您已有的文件保存在这台设备上，保持私密。",
+    "이미 가지고 있는 서류를 이 기기에 비공개로 보관하세요."
   ],
   "vaultTitle": [
     "Your private vault for photos and documents",
@@ -196,10 +196,10 @@ export const strings = {
     "추가 ›"
   ],
   "photoCopy": [
-    "Keeps a private copy here. On iPhone you can then remove the original from Photos.",
-    "Guarda una copia privada aquí. En iPhone, después puede quitar el original de Fotos.",
-    "在这里保存一份私密副本。在 iPhone 上，之后可以从“照片”中移除原图。",
-    "여기에 비공개 사본을 보관해요. iPhone에서는 그다음 사진 앱의 원본을 삭제할 수 있어요."
+    "Keeps a private copy here. On iPhone and iPad you can then remove the original from Photos.",
+    "Guarda una copia privada aquí. En iPhone y iPad, después puede quitar el original de Fotos.",
+    "在这里保存一份私密副本。在 iPhone 和 iPad 上，之后可以从“照片”中移除原图。",
+    "여기에 비공개 사본을 보관해요. iPhone과 iPad에서는 그다음 사진 앱의 원본을 삭제할 수 있어요."
   ],
   "photoCopyAndroid": [
     "Keeps a private copy here. The original stays in your Photos or Gallery app. Delete it there if you want it gone.",
@@ -232,15 +232,15 @@ export const strings = {
     "앱을 열고 바로 시작하세요."
   ],
   "stays": [
-    "Stays on this phone",
-    "Se queda en este teléfono",
-    "只保存在这部手机上",
-    "이 휴대폰에만 저장"
+    "Stays on this device",
+    "Se queda en este dispositivo",
+    "只保存在这台设备上",
+    "이 기기에만 저장"
   ],
   "local": [
     "Locked and scrambled. Nothing leaves unless you send it or back it up.",
     "Bajo llave y cifrado. Nada sale a menos que usted lo envíe o haga una copia.",
-    "已上锁并加密。除非您自己发送或备份，否则任何内容都不会离开手机。",
+    "已上锁并加密。除非您自己发送或备份，否则任何内容都不会离开这台设备。",
     "잠금과 암호화로 보호돼요. 직접 보내거나 백업하지 않는 한 아무것도 밖으로 나가지 않아요."
   ],
   "firstFree": [
@@ -298,10 +298,10 @@ export const strings = {
     "이 앱의 암호를 정하세요"
   ],
   "six": [
-    "Six numbers. Use a different one from your phone's, so someone who knows your phone code can't open your papers.",
-    "Seis números. Use uno distinto al del teléfono, para que quien conozca ese código no pueda abrir sus documentos.",
-    "六位数字。请使用和手机解锁密码不同的数字，这样知道您手机密码的人也打不开您的文件。",
-    "숫자 여섯 자리예요. 휴대폰 암호와 다른 숫자를 쓰세요. 그래야 휴대폰 암호를 아는 사람도 서류를 열 수 없어요."
+    "Six numbers. Use a different one from your device's, so someone who knows your device code can't open your papers.",
+    "Seis números. Use uno distinto al del dispositivo, para que quien conozca ese código no pueda abrir sus documentos.",
+    "六位数字。请使用和设备解锁密码不同的数字，这样知道您设备密码的人也打不开您的文件。",
+    "숫자 여섯 자리예요. 기기 암호와 다른 숫자를 쓰세요. 그래야 기기 암호를 아는 사람도 서류를 열 수 없어요."
   ],
   "removeAsk": [
     "Remove the original from Photos?",
@@ -310,10 +310,10 @@ export const strings = {
     "사진 앱에서 원본을 삭제할까요?"
   ],
   "removeWhy": [
-    "Your copy is saved here. The original is still in Photos, where anyone who opens Photos can see it. If you remove it, your iPhone asks you to confirm, and it stays in Recently Deleted for 30 days.",
-    "Su copia está guardada aquí. El original sigue en Fotos, donde cualquiera que abra Fotos puede verlo. Si lo quita, su iPhone le pedirá que lo confirme y quedará en el álbum Eliminado durante 30 días.",
-    "您的副本已保存在这里。原图仍在“照片”中，任何打开“照片”的人都能看到。如果您移除它，iPhone 会请您确认，照片会在“最近删除”中保留 30 天。",
-    "사본은 여기에 저장되었습니다. 원본은 아직 사진 앱에 있어 사진 앱을 여는 누구나 볼 수 있습니다. 삭제하면 iPhone이 확인을 요청하며, 사진은 30일 동안 '최근 삭제된 항목'에 남습니다."
+    "Your copy is saved here. The original is still in Photos, where anyone who opens Photos can see it. If you remove it, your device asks you to confirm, and it stays in Recently Deleted for 30 days.",
+    "Su copia está guardada aquí. El original sigue en Fotos, donde cualquiera que abra Fotos puede verlo. Si lo quita, su dispositivo le pedirá que lo confirme y quedará en el álbum Eliminado durante 30 días.",
+    "您的副本已保存在这里。原图仍在“照片”中，任何打开“照片”的人都能看到。如果您移除它，设备会请您确认，照片会在“最近删除”中保留 30 天。",
+    "사본은 여기에 저장되었습니다. 원본은 아직 사진 앱에 있어 사진 앱을 여는 누구나 볼 수 있습니다. 삭제하면 기기가 확인을 요청하며, 사진은 30일 동안 '최근 삭제된 항목'에 남습니다."
   ],
   "keepInPhotos": [
     "Keep it in Photos",
@@ -340,16 +340,16 @@ export const strings = {
     "사진 앱에 그대로 있습니다. 아무것도 바뀌지 않았습니다."
   ],
   "removeSetting": [
-    "After adding a photo, offer to remove it from Photos (iPhone)",
-    "Después de agregar una foto, ofrecer quitarla de Fotos (iPhone)",
-    "添加照片后，提供从“照片”中移除原图的选项（iPhone）",
-    "사진을 추가한 뒤 사진 앱에서 삭제할지 묻기 (iPhone)"
+    "After adding a photo, offer to remove it from Photos",
+    "Después de agregar una foto, ofrecer quitarla de Fotos",
+    "添加照片后，提供从“照片”中移除原图的选项",
+    "사진을 추가한 뒤 사진 앱에서 삭제할지 묻기"
   ],
   "removeSettingHint": [
-    "Nothing leaves Photos unless you tap Remove and confirm on your iPhone.",
-    "Nada sale de Fotos a menos que toque Quitar y lo confirme en su iPhone.",
-    "除非您点按“移除”并在 iPhone 上确认，否则不会从“照片”中移除任何内容。",
-    "'삭제'를 누르고 iPhone에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
+    "Nothing leaves Photos unless you tap Remove and confirm on this device.",
+    "Nada sale de Fotos a menos que toque Quitar y lo confirme en este dispositivo.",
+    "除非您点按“移除”并在此设备上确认，否则不会从“照片”中移除任何内容。",
+    "'삭제'를 누르고 이 기기에서 확인하지 않으면 사진 앱에서 아무것도 삭제되지 않습니다."
   ],
   "biometrics": [
     "Also open with {bio}",
@@ -430,10 +430,10 @@ export const strings = {
     "12단어 복구 문구"
   ],
   "loss": [
-    "Lose the phone and the 12 words, and nobody, us included, can open the backup. Keep the words somewhere safe, away from this phone.",
-    "Si pierde el teléfono y las 12 palabras, nadie, ni nosotros, podrá abrir la copia. Guarde las palabras en un lugar seguro, lejos de este teléfono.",
-    "如果手机和这 12 个单词都丢了，任何人（包括我们）都打不开备份。请把这些单词放在安全的地方，不要和手机放在一起。",
-    "휴대폰과 12단어를 모두 잃어버리면 저희를 포함해 누구도 백업을 열 수 없어요. 단어는 이 휴대폰과 떨어진 안전한 곳에 보관하세요."
+    "Lose the device and the 12 words, and nobody, us included, can open the backup. Keep the words somewhere safe, away from this device.",
+    "Si pierde el dispositivo y las 12 palabras, nadie, ni nosotros, podrá abrir la copia. Guarde las palabras en un lugar seguro, lejos de este dispositivo.",
+    "如果设备和这 12 个单词都丢了，任何人（包括我们）都打不开备份。请把这些单词放在安全的地方，不要和设备放在一起。",
+    "기기와 12단어를 모두 잃어버리면 저희를 포함해 누구도 백업을 열 수 없어요. 단어는 이 기기와 떨어진 안전한 곳에 보관하세요."
   ],
   "writeWords": [
     "Write these words down in this order. This is the only time they are shown.",
@@ -730,10 +730,10 @@ export const strings = {
     "있었던 날"
   ],
   "saved": [
-    "Saved on this phone",
-    "Guardado en este teléfono",
-    "保存在这部手机上",
-    "이 휴대폰에 저장"
+    "Saved on this device",
+    "Guardado en este dispositivo",
+    "保存在这台设备上",
+    "이 기기에 저장"
   ],
   "changed": [
     "Changed",
@@ -754,10 +754,10 @@ export const strings = {
     "(직접 입력한 날짜)"
   ],
   "dateHonesty": [
-    "\"Saved on this phone\" is the phone's clock. It shows when you wrote this down, not proof of when it happened. If you change the note, the earlier version is kept too.",
-    "\"Guardado en este teléfono\" usa el reloj del teléfono. Muestra cuándo lo escribió, no prueba de cuándo pasó. Si cambia la nota, también se guarda la versión anterior.",
-    "“保存在这部手机上”用的是手机的时钟。它表示您是什么时候记录的，不能证明事情是什么时候发生的。如果您修改了笔记，之前的版本也会保留。",
-    "'이 휴대폰에 저장'은 휴대폰 시계를 기준으로 해요. 언제 기록했는지를 보여 줄 뿐, 그 일이 언제 있었는지에 대한 증거는 아니에요. 메모를 고쳐도 이전 버전이 함께 남아요."
+    "\"Saved on this device\" is the device's clock. It shows when you wrote this down, not proof of when it happened. If you change the note, the earlier version is kept too.",
+    "\"Guardado en este dispositivo\" usa el reloj del dispositivo. Muestra cuándo lo escribió, no prueba de cuándo pasó. Si cambia la nota, también se guarda la versión anterior.",
+    "“保存在这台设备上”用的是设备的时钟。它表示您是什么时候记录的，不能证明事情是什么时候发生的。如果您修改了笔记，之前的版本也会保留。",
+    "'이 기기에 저장'은 기기 시계를 기준으로 해요. 언제 기록했는지를 보여 줄 뿐, 그 일이 언제 있었는지에 대한 증거는 아니에요. 메모를 고쳐도 이전 버전이 함께 남아요."
   ],
   "edit": [
     "✎ Change it",
@@ -934,10 +934,10 @@ export const strings = {
     "저장한 백업을 골라 모든 파일을 확인하세요. 공유만으로는 저장됐는지 확인되지 않아요."
   ],
   "backupDestination": [
-    "Save the encrypted file to your own iCloud Drive or Google Drive using your phone’s share sheet.",
-    "Guarde el archivo cifrado en su iCloud Drive o Google Drive con la hoja para compartir del teléfono.",
-    "用手机的分享菜单，把加密文件保存到您自己的 iCloud 云盘或 Google 云端硬盘。",
-    "휴대폰의 공유 메뉴로 암호화된 파일을 내 iCloud Drive나 Google Drive에 저장하세요."
+    "Save the encrypted file to your own iCloud Drive or Google Drive using your device’s share sheet.",
+    "Guarde el archivo cifrado en su iCloud Drive o Google Drive con la hoja para compartir del dispositivo.",
+    "用设备的分享菜单，把加密文件保存到您自己的 iCloud 云盘或 Google 云端硬盘。",
+    "기기의 공유 메뉴로 암호화된 파일을 내 iCloud Drive나 Google Drive에 저장하세요."
   ],
   "confirmed": [
     "✓ Written down and confirmed",
@@ -946,10 +946,10 @@ export const strings = {
     "✓ 적어 두고 확인함"
   ],
   "newPhone": [
-    "Lost or new phone?",
-    "¿Teléfono perdido o nuevo?",
-    "手机丢了或换了新手机？",
-    "휴대폰을 잃어버렸거나 새로 바꾸셨나요?"
+    "Lost or new device?",
+    "¿Dispositivo perdido o nuevo?",
+    "设备丢了或换了新设备？",
+    "기기를 잃어버렸거나 새로 바꾸셨나요?"
   ],
   "restoreHint": [
     "Install KeepMyProof, choose \"Restore a backup\" and type your 12 words. Everything comes back.",
@@ -964,10 +964,10 @@ export const strings = {
     "백업 복원 ›"
   ],
   "restoreSafety": [
-    "Every file is checked before anything is added. If something goes wrong, what's on this phone stays exactly as it is. Backup is free, always.",
-    "Cada archivo se comprueba antes de añadir nada. Si algo sale mal, lo que hay en este teléfono queda exactamente igual. Las copias son gratis, siempre.",
-    "在添加任何内容之前，每个文件都会先经过检查。如果出了问题，这部手机上的内容会保持原样。备份永远免费。",
-    "무엇이든 추가하기 전에 모든 파일을 확인해요. 문제가 생기면 이 휴대폰의 내용은 그대로 유지돼요. 백업은 언제나 무료예요."
+    "Every file is checked before anything is added. If something goes wrong, what's on this device stays exactly as it is. Backup is free, always.",
+    "Cada archivo se comprueba antes de añadir nada. Si algo sale mal, lo que hay en este dispositivo queda exactamente igual. Las copias son gratis, siempre.",
+    "在添加任何内容之前，每个文件都会先经过检查。如果出了问题，这台设备上的内容会保持原样。备份永远免费。",
+    "무엇이든 추가하기 전에 모든 파일을 확인해요. 문제가 생기면 이 기기의 내용은 그대로 유지돼요. 백업은 언제나 무료예요."
   ],
   "restoreChoose": [
     "Choose your encrypted backup ›",
@@ -1048,10 +1048,10 @@ export const strings = {
     "평생 이용. 한 번 결제하고 갱신되지 않아요. Plus를 평생 쓸 수 있어요."
   ],
   "annualTerms": [
-    "Renews every year on the same date until you cancel. Cancel any time: iPhone Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
-    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes del iPhone › su nombre › Suscripciones (Android: Play Store › Pagos y suscripciones). Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
-    "每年在同一日期自动续订，直到您取消为止。随时可以取消：iPhone“设置”› 您的姓名 ›“订阅”（Android：Play 商店 › 付款和订阅）。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
-    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: iPhone 설정 › 내 이름 › 구독 (Android: Play 스토어 › 결제 및 정기 결제). 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
+    "Renews every year on the same date until you cancel. Cancel any time: Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
+    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes › su nombre › Suscripciones (Android: Play Store › Pagos y suscripciones). Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
+    "每年在同一日期自动续订，直到您取消为止。随时可以取消：“设置”› 您的姓名 ›“订阅”（Android：Play 商店 › 付款和订阅）。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
+    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: 설정 › 내 이름 › 구독 (Android: Play 스토어 › 결제 및 정기 결제). 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
   ],
   "buyLifetime": [
     "Buy lifetime for {price} ›",
@@ -1120,10 +1120,10 @@ export const strings = {
     "구독 관리 또는 취소 ›"
   ],
   "renewal": [
-    "Your yearly plan renews on {date}. You can cancel in your phone’s subscription settings.",
-    "Su plan anual se renueva el {date}. Puede cancelarlo en los ajustes de suscripciones del teléfono.",
-    "您的年度方案将于 {date} 续订。您可以在手机的订阅设置中取消。",
-    "연간 플랜이 {date}에 갱신돼요. 휴대폰의 구독 설정에서 취소할 수 있어요."
+    "Your yearly plan renews on {date}. You can cancel in your device’s subscription settings.",
+    "Su plan anual se renueva el {date}. Puede cancelarlo en los ajustes de suscripciones del dispositivo.",
+    "您的年度方案将于 {date} 续订。您可以在设备的订阅设置中取消。",
+    "연간 플랜이 {date}에 갱신돼요. 기기의 구독 설정에서 취소할 수 있어요."
   ],
   "hide": [
     "Hide folder",
@@ -1218,14 +1218,14 @@ export const strings = {
   "RESTORE_CONFLICT": [
     "This backup has a different version of an item already here. Nothing was changed. Keep both backups.",
     "Esta copia tiene una versión distinta de un documento que ya está aquí. No se cambió nada. Conserve ambas copias.",
-    "这个备份中有一项和手机上已有的项目版本不同。什么都没有更改。请保留两个备份。",
-    "이 백업에는 휴대폰에 이미 있는 항목과 다른 버전이 있어요. 아무것도 바뀌지 않았어요. 두 백업을 모두 보관하세요."
+    "这个备份中有一项和设备上已有的项目版本不同。什么都没有更改。请保留两个备份。",
+    "이 백업에는 기기에 이미 있는 항목과 다른 버전이 있어요. 아무것도 바뀌지 않았어요. 두 백업을 모두 보관하세요."
   ],
   "DEVICE_KEY_MISSING": [
-    "This phone cannot open the vault. Restore your encrypted backup with your 12 words on a fresh install.",
-    "Este teléfono no puede abrir la carpeta privada. Restaure su copia cifrada con sus 12 palabras en una instalación nueva.",
-    "这部手机无法打开保险库。请在新安装的应用中，用您的 12 个单词恢复加密备份。",
-    "이 휴대폰에서 보관함을 열 수 없어요. 앱을 새로 설치한 뒤 12단어로 암호화된 백업을 복원하세요."
+    "This device cannot open the vault. Restore your encrypted backup with your 12 words on a fresh install.",
+    "Este dispositivo no puede abrir la carpeta privada. Restaure su copia cifrada con sus 12 palabras en una instalación nueva.",
+    "这台设备无法打开保险库。请在新安装的应用中，用您的 12 个单词恢复加密备份。",
+    "이 기기에서 보관함을 열 수 없어요. 앱을 새로 설치한 뒤 12단어로 암호화된 백업을 복원하세요."
   ],
   "FILE_TOO_LARGE": [
     "Choose a file smaller than 25 MB for this version.",
@@ -1276,10 +1276,10 @@ export const strings = {
     "유효한 Plus 구매 내역이 없어요. 서류는 계속 이용할 수 있어요."
   ],
   "backupFailed": [
-    "The backup check failed. Your papers on this phone have not changed. Try checking the saved copy again.",
-    "Falló la comprobación de la copia. Sus documentos en este teléfono no cambiaron. Intente comprobar la copia guardada otra vez.",
-    "备份检查失败。这部手机上的文件没有任何改变。请再次检查已保存的副本。",
-    "백업 확인에 실패했어요. 이 휴대폰의 서류는 바뀌지 않았어요. 저장한 사본을 다시 확인해 보세요."
+    "The backup check failed. Your papers on this device have not changed. Try checking the saved copy again.",
+    "Falló la comprobación de la copia. Sus documentos en este dispositivo no cambiaron. Intente comprobar la copia guardada otra vez.",
+    "备份检查失败。这台设备上的文件没有任何改变。请再次检查已保存的副本。",
+    "백업 확인에 실패했어요. 이 기기의 서류는 바뀌지 않았어요. 저장한 사본을 다시 확인해 보세요."
   ],
   "language": [
     "Language",
@@ -1294,10 +1294,10 @@ export const strings = {
     "KeepMyProof를 어떻게 알게 되셨나요?"
   ],
   "heardOptional": [
-    "Optional. Your answer stays on this phone. It is sent only if you tap \"Send my answer\", from your own email.",
-    "Opcional. Su respuesta se queda en este teléfono. Solo se envía si toca \"Enviar mi respuesta\", desde su propio correo.",
-    "可选。您的回答只保存在这部手机上。只有您点\"发送我的回答\"，才会从您自己的邮箱发出。",
-    "선택 사항이에요. 답변은 이 휴대폰에만 남아요. \"내 답변 보내기\"를 누를 때만 본인의 이메일로 보내져요."
+    "Optional. Your answer stays on this device. It is sent only if you tap \"Send my answer\", from your own email.",
+    "Opcional. Su respuesta se queda en este dispositivo. Solo se envía si toca \"Enviar mi respuesta\", desde su propio correo.",
+    "可选。您的回答只保存在这台设备上。只有您点\"发送我的回答\"，才会从您自己的邮箱发出。",
+    "선택 사항이에요. 답변은 이 기기에만 남아요. \"내 답변 보내기\"를 누를 때만 본인의 이메일로 보내져요."
   ],
   "heardGoogle": [
     "Google search",
@@ -1378,10 +1378,10 @@ export const strings = {
     "변경 ›"
   ],
   "heardNoMail": [
-    "No email app is set up on this phone. Your answer is saved here.",
-    "No hay una app de correo en este teléfono. Su respuesta quedó guardada aquí.",
-    "这部手机上没有设置邮件应用。您的回答已保存在这里。",
-    "이 휴대폰에 설정된 이메일 앱이 없어요. 답변은 여기에 저장됐어요."
+    "No email app is set up on this device. Your answer is saved here.",
+    "No hay una app de correo en este dispositivo. Su respuesta quedó guardada aquí.",
+    "这台设备上没有设置邮件应用。您的回答已保存在这里。",
+    "이 기기에 설정된 이메일 앱이 없어요. 답변은 여기에 저장됐어요."
   ],
   "step3": [
     "Step 3 of 4",
@@ -1546,22 +1546,22 @@ export const strings = {
     "태그 하나만 보기"
   ],
   "eraseOpen": [
-    "Erase everything on this phone…",
-    "Borrar todo en este teléfono…",
-    "清除这部手机上的所有内容…",
-    "이 휴대폰의 모든 것 지우기…"
+    "Erase everything on this device…",
+    "Borrar todo en este dispositivo…",
+    "清除这台设备上的所有内容…",
+    "이 기기의 모든 것 지우기…"
   ],
   "eraseTitle": [
-    "Erase everything on this phone",
-    "Borrar todo en este teléfono",
-    "清除这部手机上的所有内容",
-    "이 휴대폰의 모든 것 지우기"
+    "Erase everything on this device",
+    "Borrar todo en este dispositivo",
+    "清除这台设备上的所有内容",
+    "이 기기의 모든 것 지우기"
   ],
   "eraseWarn": [
-    "This deletes every paper, photo and note in KeepMyProof on this phone, with the passcode and settings. A backup file you saved yourself is not touched. Anything not in a backup is gone for good.",
-    "Esto elimina todos los documentos, fotos y notas de KeepMyProof en este teléfono, junto con el código y los ajustes. Una copia de seguridad que usted guardó no se toca. Lo que no esté en una copia de seguridad se pierde para siempre.",
-    "这会删除这部手机上 KeepMyProof 里的所有文件、照片和笔记，以及密码和设置。您自己保存的备份文件不受影响。不在备份里的内容将永久删除。",
-    "이 휴대폰의 KeepMyProof에 있는 모든 서류, 사진, 메모와 암호, 설정이 지워져요. 직접 저장한 백업 파일은 그대로 남아요. 백업에 없는 것은 영구히 지워져요."
+    "This deletes every paper, photo and note in KeepMyProof on this device, with the passcode and settings. A backup file you saved yourself is not touched. Anything not in a backup is gone for good.",
+    "Esto elimina todos los documentos, fotos y notas de KeepMyProof en este dispositivo, junto con el código y los ajustes. Una copia de seguridad que usted guardó no se toca. Lo que no esté en una copia de seguridad se pierde para siempre.",
+    "这会删除这台设备上 KeepMyProof 里的所有文件、照片和笔记，以及密码和设置。您自己保存的备份文件不受影响。不在备份里的内容将永久删除。",
+    "이 기기의 KeepMyProof에 있는 모든 서류, 사진, 메모와 암호, 설정이 지워져요. 직접 저장한 백업 파일은 그대로 남아요. 백업에 없는 것은 영구히 지워져요."
   ],
   "eraseCode": [
     "Type your passcode to erase",
@@ -1576,10 +1576,10 @@ export const strings = {
     "모두 지우기"
   ],
   "erased": [
-    "Everything on this phone was erased.",
-    "Se borró todo en este teléfono.",
-    "这部手机上的所有内容都已清除。",
-    "이 휴대폰의 모든 것을 지웠어요."
+    "Everything on this device was erased.",
+    "Se borró todo en este dispositivo.",
+    "这台设备上的所有内容都已清除。",
+    "이 기기의 모든 것을 지웠어요."
   ],
   "changeCode": [
     "Change passcode ›",
@@ -1713,6 +1713,60 @@ export const strings = {
     "正在核对密码并打开您的文件…",
     "암호를 확인하고 서류를 여는 중이에요…"
   ],
+  "photoCamera": [
+    "Taken with the camera and kept only in KeepMyProof. It is not in your Photos or Gallery app.",
+    "Tomada con la cámara y guardada solo en KeepMyProof. No está en su app Fotos ni en la Galería.",
+    "用相机拍摄，只保存在 KeepMyProof 中，不在您的“照片”或图库应用里。",
+    "카메라로 찍어 KeepMyProof에만 보관돼요. 사진 앱이나 갤러리에는 없어요."
+  ],
+  "takePhoto": [
+    "Take a photo ›",
+    "Tomar una foto ›",
+    "拍照 ›",
+    "사진 찍기 ›"
+  ],
+  "workingCamera": [
+    "Opening the camera…",
+    "Abriendo la cámara…",
+    "正在打开相机…",
+    "카메라를 여는 중이에요…"
+  ],
+  "cameraOff": [
+    "The camera is off for KeepMyProof, so your photos opened instead. To take photos here, turn on Camera for KeepMyProof in Settings.",
+    "La cámara está desactivada para KeepMyProof, así que se abrieron sus fotos. Para tomar fotos aquí, active la Cámara para KeepMyProof en Configuración.",
+    "KeepMyProof 的相机权限已关闭，所以为您打开了照片。若要在这里拍照，请在“设置”中为 KeepMyProof 打开“相机”。",
+    "KeepMyProof의 카메라 권한이 꺼져 있어 사진 보관함을 대신 열었어요. 여기서 사진을 찍으려면 설정에서 KeepMyProof의 카메라를 켜 주세요."
+  ],
+  "cameraNone": [
+    "The camera did not open, so your photos opened instead.",
+    "La cámara no se abrió, así que se abrieron sus fotos.",
+    "相机没有打开，所以为您打开了照片。",
+    "카메라가 열리지 않아 사진 보관함을 대신 열었어요."
+  ],
+  "tenantHow": [
+    "Take photos of every room the day you move in and again the day you move out, and pick that room's line when you save. Keep the lease, receipts, repair requests and any letter about your deposit here too.",
+    "Tome fotos de cada cuarto el día que se muda y otra vez el día que se va, y elija la línea de ese cuarto al guardar. Guarde aquí también el contrato, los recibos, las solicitudes de reparación y cualquier carta sobre su depósito.",
+    "搬入当天和搬出当天都给每个房间拍照，保存时选择该房间那一行。租约、收据、维修请求和有关押金的信件也放在这里。",
+    "입주하는 날과 퇴거하는 날에 방마다 사진을 찍고, 저장할 때 그 방의 줄을 고르세요. 임대 계약서, 영수증, 수리 요청, 보증금에 관한 편지도 여기에 보관하세요."
+  ],
+  "tenantFoot": [
+    "Dated and organized, ready to share if you need to. Educational only. Not legal advice.",
+    "Con fecha y en orden, listo para compartir si lo necesita. Solo para información. No es asesoría legal.",
+    "注明日期、整理有序，需要时方便分享。仅供参考，不构成法律建议。",
+    "날짜가 적혀 있고 정리되어 있어 필요할 때 공유하기 쉬워요. 정보 제공용입니다. 법률 자문이 아닙니다."
+  ],
+  "inventoryHow": [
+    "One item per entry: a photo of the thing, its name, the room's line, and the purchase date as the date. Add the receipt as a second item on the same line, and write the price or serial number in the note.",
+    "Una cosa por entrada: una foto del objeto, su nombre, la línea del cuarto y la fecha de compra como fecha. Agregue el recibo como otra entrada en la misma línea y escriba el precio o el número de serie en la nota.",
+    "每件物品记一条：物品照片、名称、所在房间那一行，日期填购买日期。把收据作为同一行的另一条加入，在备注里写上价格或序列号。",
+    "물건 하나에 항목 하나: 물건 사진, 이름, 방의 줄, 날짜에는 구입한 날을 넣으세요. 영수증은 같은 줄에 항목을 하나 더 만들어 넣고, 가격이나 일련번호는 메모에 적으세요."
+  ],
+  "inventoryFoot": [
+    "Dated and organized, ready to share with your insurer if you need to. Educational only. Not insurance or legal advice.",
+    "Con fecha y en orden, listo para compartir con su aseguradora si lo necesita. Solo para información. No es asesoría de seguros ni legal.",
+    "注明日期、整理有序，需要时方便与保险公司分享。仅供参考，不构成保险或法律建议。",
+    "날짜가 적혀 있고 정리되어 있어 필요할 때 보험사와 공유하기 쉬워요. 정보 제공용입니다. 보험 또는 법률 자문이 아닙니다."
+  ],
   "workingPhotos": [
     "Reading your photos…",
     "Leyendo sus fotos…",
@@ -1720,10 +1774,10 @@ export const strings = {
     "사진을 읽는 중이에요…"
   ],
   "workingSave": [
-    "Locking and saving on this phone…",
-    "Protegiendo y guardando en este teléfono…",
-    "正在加密并保存到这部手机…",
-    "암호화해서 이 휴대폰에 저장하는 중이에요…"
+    "Locking and saving on this device…",
+    "Protegiendo y guardando en este dispositivo…",
+    "正在加密并保存到这台设备…",
+    "암호화해서 이 기기에 저장하는 중이에요…"
   ],
   "workingFile": [
     "Opening the file…",
@@ -1736,6 +1790,60 @@ export const strings = {
     "Creando el PDF…",
     "正在生成 PDF…",
     "PDF를 만드는 중이에요…"
+  ],
+  "reviewLink": [
+    "Have a review code?",
+    "¿Tiene un código de revisión?",
+    "有审核代码？",
+    "심사 코드가 있나요?"
+  ],
+  "reviewCode": [
+    "App review code",
+    "Código de revisión de la app",
+    "应用审核代码",
+    "앱 심사 코드"
+  ],
+  "reviewWhy": [
+    "For Google Play's app review. The check sends only the code and an anonymous purchase ID; your papers never leave this device.",
+    "Para la revisión de Google Play. La comprobación envía solo el código y un identificador anónimo de compra; sus papeles nunca salen de este dispositivo.",
+    "供 Google Play 应用审核使用。检查时只发送代码和一个匿名购买标识符，您的文件绝不会离开这台设备。",
+    "Google Play 앱 심사용이에요. 확인할 때 코드와 익명 구매 식별자만 보내고, 서류는 이 기기를 떠나지 않아요."
+  ],
+  "reviewUse": [
+    "Use this code",
+    "Usar este código",
+    "使用此代码",
+    "이 코드 사용"
+  ],
+  "reviewWrong": [
+    "That code didn't work. Check the 10 digits and try again.",
+    "Ese código no funcionó. Revise los 10 dígitos e inténtelo de nuevo.",
+    "这个代码无效。请核对 10 位数字后重试。",
+    "코드가 맞지 않아요. 10자리를 확인하고 다시 시도하세요."
+  ],
+  "reviewUsedUp": [
+    "This review code has been used up.",
+    "Este código de revisión ya se agotó.",
+    "这个审核代码已用完。",
+    "이 심사 코드는 모두 사용되었어요."
+  ],
+  "reviewSlow": [
+    "Too many tries. Please wait and try again later.",
+    "Demasiados intentos. Espere e inténtelo más tarde.",
+    "尝试次数过多。请稍后再试。",
+    "시도가 너무 많아요. 잠시 후 다시 시도하세요."
+  ],
+  "reviewTryAgain": [
+    "Couldn't check the code right now. Please try again.",
+    "No se pudo comprobar el código ahora. Inténtelo de nuevo.",
+    "现在无法检查代码。请重试。",
+    "지금은 코드를 확인할 수 없어요. 다시 시도하세요."
+  ],
+  "plusOn": [
+    "✓ Plus is on.",
+    "✓ Plus está activo.",
+    "✓ Plus 已开启。",
+    "✓ Plus가 켜져 있어요."
   ]
 } as const satisfies Record<string, readonly [en: string, es: string, zh: string, ko: string]>;
 export type StringKey = keyof typeof strings;

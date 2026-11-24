@@ -3,16 +3,16 @@
  "site": "https://keepmyproof.com",
  "property": "https://keepmyproof.com/",
  "window": {
-  "start": "2026-10-17",
-  "end": "2026-11-13"
+  "start": "2026-10-24",
+  "end": "2026-11-20"
  },
- "generated_at": "2026-11-16T11:30:11.401Z",
+ "generated_at": "2026-11-23T22:43:47.454Z",
  "totals": {
-  "rows": 1827,
+  "rows": 1837,
   "clicks": 3,
-  "impressions": 4105,
-  "queries": 1421,
-  "pages": 484
+  "impressions": 4119,
+  "queries": 1429,
+  "pages": 489
  },
  "rows": [
   {
@@ -408,6 +408,14 @@
    "position": 22
   },
   {
+   "query": "cal veterans",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 79
+  },
+  {
    "query": "california child labor law notice",
    "page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
    "clicks": 0,
@@ -427,9 +435,9 @@
    "query": "california department of veterans affairs",
    "page": "https://keepmyproof.com/va/state-veterans-affairs-office/california",
    "clicks": 0,
-   "impressions": 1,
+   "impressions": 2,
    "ctr": 0,
-   "position": 20
+   "position": 35
   },
   {
    "query": "california divorce records",
@@ -2776,6 +2784,14 @@
    "position": 94
   },
   {
+   "query": "disabled veterans property tax exemption ny",
+   "page": "https://keepmyproof.com/va/disabled-veteran-property-tax/new-york",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
+  },
+  {
    "query": "disagree with iep massachusetts",
    "page": "https://keepmyproof.com/iep/dispute-resolution/massachusetts",
    "clicks": 0,
@@ -3184,6 +3200,14 @@
    "position": 32
   },
   {
+   "query": "documentos de divorcio",
+   "page": "https://keepmyproof.com/es/lista-documentos-divorcio",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
    "query": "documents needed for probate connecticut",
    "page": "https://keepmyproof.com/executor/probate-process/connecticut",
    "clicks": 0,
@@ -3288,6 +3312,14 @@
    "position": 50
   },
   {
+   "query": "eeoc las vegas",
+   "page": "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/nevada",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 69
+  },
+  {
    "query": "eeoc utah",
    "page": "https://keepmyproof.com/workplace/discrimination-complaint-deadlines/utah",
    "clicks": 0,
@@ -3334,6 +3366,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 83
+  },
+  {
+   "query": "eovs massachusetts",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/massachusetts",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 64
   },
   {
    "query": "evers death certificate",
@@ -4025,6 +4065,14 @@
   },
   {
    "query": "help with va claim",
+   "page": "https://keepmyproof.com/va/free-claim-help/california",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 98
+  },
+  {
+   "query": "help with va claim",
    "page": "https://keepmyproof.com/va/free-claim-help/virginia",
    "clicks": 0,
    "impressions": 2,
@@ -4043,9 +4091,9 @@
    "query": "help with va claims",
    "page": "https://keepmyproof.com/va/free-claim-help/washington",
    "clicks": 0,
-   "impressions": 4,
+   "impressions": 5,
    "ctr": 0,
-   "position": 77
+   "position": 81
   },
   {
    "query": "help with veterans claims",
@@ -6697,6 +6745,14 @@
   },
   {
    "query": "iep mediation for parents",
+   "page": "https://keepmyproof.com/iep/dispute-resolution/georgia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 77
+  },
+  {
+   "query": "iep mediation for parents",
    "page": "https://keepmyproof.com/iep/dispute-resolution/michigan",
    "clicks": 0,
    "impressions": 2,
@@ -8443,9 +8499,9 @@
    "query": "need help with va claim",
    "page": "https://keepmyproof.com/va/free-claim-help/washington",
    "clicks": 0,
-   "impressions": 5,
+   "impressions": 6,
    "ctr": 0,
-   "position": 75.2
+   "position": 79
   },
   {
    "query": "nevada death certificate",
@@ -9307,9 +9363,9 @@
    "query": "parent connection sioux falls",
    "page": "https://keepmyproof.com/iep/parent-training-center/south-dakota",
    "clicks": 0,
-   "impressions": 9,
+   "impressions": 10,
    "ctr": 0,
-   "position": 26.3
+   "position": 33.1
   },
   {
    "query": "parent resources utah",
@@ -9646,6 +9702,14 @@
    "impressions": 5,
    "ctr": 0,
    "position": 74
+  },
+  {
+   "query": "proof keep",
+   "page": "https://keepmyproof.com/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 60
   },
   {
    "query": "property tax exemption for disabled veterans",
@@ -11120,6 +11184,14 @@
    "position": 89
   },
   {
+   "query": "transfer on death deed wv",
+   "page": "https://keepmyproof.com/executor/transfer-on-death-deed/west-virginia",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97
+  },
+  {
    "query": "transfer on death designation affidavit ohio form",
    "page": "https://keepmyproof.com/executor/transfer-on-death-deed/ohio",
    "clicks": 0,
@@ -12574,6 +12646,14 @@
    "impressions": 1,
    "ctr": 0,
    "position": 33
+  },
+  {
+   "query": "veteran affairs texas",
+   "page": "https://keepmyproof.com/va/state-veterans-affairs-office/texas",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 56
   },
   {
    "query": "veteran exemption property tax",

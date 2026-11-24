@@ -26,6 +26,14 @@
       "distribution": "store",
       "environment": "production"
     },
+    "internal": {
+      "extends": "production",
+      "distribution": "store",
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
     "simulator": {
       "distribution": "internal",
       "channel": "preview",
@@ -49,6 +57,13 @@
       "ios": {
         "ascAppId": "6834891698",
         "appleTeamId": "34LUUUDT4H"
+      }
+    },
+    "internal": {
+      "android": {
+        "serviceAccountKeyPath": "./play-sa.json",
+        "track": "internal",
+        "releaseStatus": "draft"
       }
     }
   }

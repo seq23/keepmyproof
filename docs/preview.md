@@ -24,6 +24,17 @@ published address does not serve this build (`PREVIEW_NOT_SERVED`), if a bundle 
 shaped like a key (`PREVIEW_HAS_SECRET`), or if Cloudflare refuses (`PREVIEW_HOST_FAILED`; the repo
 secrets are `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`).
 
+## The tap-through (every PR that changes the app)
+
+After the preview is up, the **tap-through** job (boss-os `tap-through.yml`, driven by
+`tap-through.json` here) taps through it like a person at 390 px in light and dark: first open,
+restore a backup, the sample vault, a PDF, Settings, the Plus page and Restore purchases, the Plus
+screens (`?plus=1` on the preview's address shows the app as a Plus member; web only) and Erase
+everything. Its artifact `tap-through-<run id>` holds a video per journey and a screenshot per step.
+It goes red on a dead button, a console error, an error screen, a step it cannot reach, or a line on
+the Plus page with no screen behind it. A PR that adds a screen, button or Plus line adds it to
+`tap-through.json`. Every request that is not a read is blocked, so nothing real is touched.
+
 ## The simulator build
 
 Every change to the app on `main` builds the iPhone app for the simulator (no Apple account, no
@@ -73,3 +84,13 @@ is too short to set a passcode and confirm 12 words by hand. The preview build's
 **"Preview only: skip to a sample vault ›"**: it sets up a vault (passcode 123456) with a few invented
 papers and opens on My folders. It exists only when `EXPO_PUBLIC_KMP_PREVIEW=1`; the release gate
 refuses a store build with that set (NAMED STOP `PREVIEW_BUILD`). Guard: `tests/preview-sample.test.ts`.
+
+## Google Play art and listing
+
+`store/google-play.json` holds the Play title, short description (80) and full description (4000) in
+en, es, zh and ko: the App Store listing in `store/<lang>.md`, word for word, plus the Play renewal line
+and the terms and privacy links (`tests/play-listing.test.ts` holds it to that). `store/play/` holds the
+512 icon, the 1024 x 500 feature graphic and three 1080 x 1920 phone screenshots; the Android adaptive
+icon is `assets/app/adaptive-icon.png` on the brand green. Re-make them all on a Mac with
+`node scripts/store/play-assets.mjs <dir with the App Store iPhone screenshots 01.png 02.png 03.png>`.
+Nothing is sent to Google: the Play account (Redwood Reserve Holdings LLC) is not open yet.

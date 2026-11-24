@@ -48,12 +48,12 @@ async function main() {
   for (const { data } of readFactsFiles([folder])) {
     const file = join(outDir, `${data.subtopic}.${lang}.json`);
     const prev = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : { facts: {} };
-    const todo = new Map(), clean = (t) => t && !untranslated(t);
+    const todo = new Map(), clean = (t) => t && !untranslated(t, lang);
     for (const e of Object.values(data.states || {})) for (const f of e.facts || []) { const k = factKey(f); if (verified[k] && !factProblems(f).length && !clean(prev.facts[k])) todo.set(k, f.claim_en); }
-    const facts = Object.fromEntries(Object.entries(prev.facts).filter(([, t]) => !untranslated(t))), models = new Set(prev.models || []);
+    const facts = Object.fromEntries(Object.entries(prev.facts).filter(([, t]) => !untranslated(t, lang))), models = new Set(prev.models || []);
     let title = prev.title;
     const sys = { role: 'system', content: `You translate short factual sentences from US government sources into natural ${LANG[lang]}. Translate every ordinary word: no English word may remain except official names. Keep every number, dollar amount, date, form number and official agency or court name exactly as written (you may add a short ${lang === 'zh' ? 'Chinese' : 'Korean'} gloss in parentheses after an English proper name). Keep the meaning exact: add nothing, give no advice, never use words meaning "best", "proves", "admissible", "court-ready" or "win your case". Return only JSON.` };
-    if (!title || untranslated(title)) {
+    if (!title || untranslated(title, lang)) {
       title = null;
       const r = await ask([sys, { role: 'user', content: `Translate this page title template. Keep the placeholder {state} exactly once. Frame it for US residents. Return {"title":"..."}.\n${data.title_en}` }]);
       if (r?.out?.title && /\{state\}/.test(r.out.title) && !bannedWord(r.out.title)) { title = r.out.title; models.add(r.model); }
@@ -64,7 +64,7 @@ async function main() {
       const r = await ask([sys, { role: 'user', content: `Translate each value. Return {"t":{"<id>":"<translation>",...}} with the same ids.\n${JSON.stringify(Object.fromEntries(batch))}` }]);
       if (!r) { console.log(`NAMED STOP [NO_FREE_MODEL] ${folder}/${data.subtopic}: batch ${i / 25 + 1} untranslated; re-run later`); continue; }
       models.add(r.model);
-      for (const [k, en] of batch) { const t = r.out?.t?.[k]; if (typeof t === 'string' && t.trim() && nums(t) === nums(en) && !bannedWord(t) && !untranslated(t)) facts[k] = t.trim(); }
+      for (const [k, en] of batch) { const t = r.out?.t?.[k]; if (typeof t === 'string' && t.trim() && nums(t) === nums(en) && !bannedWord(t) && !untranslated(t, lang)) facts[k] = t.trim(); }
     }
     total += Object.keys(facts).length - Object.keys(prev.facts).length;
     writeFileSync(file, JSON.stringify({ schema: 'kmp-translation-v1', folder, subtopic: data.subtopic, lang, review: 'launched without a native reader (owner ruling 2 Nov 2026)', translated_on: new Date().toISOString().slice(0, 10), models: [...models], title, facts }, null, 1) + '\n');

@@ -10,6 +10,9 @@ const PATHS: Record<string, Partial<Record<Lang, string>>> = {
   'executor-papers': { en: '/executor/', es: '/es/albacea/', ko: '/ko/executor/' },
   'iep-binder': { en: '/iep/', es: '/es/iep/' },
 };
+/** Launch folders with no state-by-state page: a home inventory has no state rules, and the tenant folder's
+ *  deposit pages come with the site's tenant pages. The folder screen shows no state rules row for these. */
+export const NO_STATE_PAGE = new Set(['tenant-repairs-deposit', 'home-inventory']);
 /** The site page for a launch folder, or null for a person's own folder (no state facts). */
 export function stateRulesPath(folder: string, lang: Lang): string | null {
   const p = PATHS[folder]; return p ? (p[lang] ?? p.en ?? null) : null;

@@ -30,7 +30,7 @@
     "rule": "The App Store keyword field (100 characters max, commas, no spaces, no competitor names). Lead terms first (divorce and custody stay the lead); vault,hide,private added 6 Nov 2026 for the vault feature line (owner yes 6 Nov). Not submitted until the store listing is."
   },
   "review_rule": "Monthly, Search Console decides: topics earning impressions get a folder; ones that don't come down.",
-  "launch_folder_count": 5,
+  "launch_folder_count": 7,
   "topics": [
     {
       "id": "divorce-prep",
@@ -156,10 +156,10 @@
       },
       "scope_note": "Keeps copies and notes the user already has. No legal advice, no snooping on a spouse's phone or accounts, nothing about hiding money.",
       "display_name": {
-        "en": "Divorce or custody",
-        "es": "Divorcio o custodia",
-        "zh": "离婚或监护权",
-        "ko": "이혼 또는 양육권"
+        "en": "Divorce, custody or co-parenting log",
+        "es": "Divorcio, custodia o registro de crianza",
+        "zh": "离婚、监护权或共同育儿记录",
+        "ko": "이혼, 양육권 또는 공동 양육 기록"
       }
     },
     {
@@ -603,22 +603,274 @@
     },
     {
       "id": "home-inventory",
-      "release": "next",
+      "release": "launch",
       "priority": "support",
+      "folder_order": 7,
+      "page_order": 7,
       "name": {
         "en": "Home inventory for insurance",
-        "es": "Inventario del hogar para el seguro"
+        "es": "Inventario del hogar para el seguro",
+        "zh": "用于保险的家庭物品清单",
+        "ko": "보험용 집 물품 목록"
+      },
+      "short_name": {
+        "en": "Home inventory",
+        "es": "Inventario del hogar",
+        "zh": "家庭物品清单",
+        "ko": "집 물품 목록"
+      },
+      "checklist_items": [
+        {
+          "id": "policy",
+          "name": {
+            "en": "Insurance policy and declarations page",
+            "es": "Póliza de seguro y página de declaraciones",
+            "zh": "保险单和保单声明页",
+            "ko": "보험 증권과 보장 내용 페이지"
+          }
+        },
+        {
+          "id": "kitchen",
+          "name": {
+            "en": "Kitchen and dining: items and receipts",
+            "es": "Cocina y comedor: cosas y recibos",
+            "zh": "厨房和餐厅：物品和收据",
+            "ko": "주방과 식당: 물건과 영수증"
+          }
+        },
+        {
+          "id": "living",
+          "name": {
+            "en": "Living room: items and receipts",
+            "es": "Sala: cosas y recibos",
+            "zh": "客厅：物品和收据",
+            "ko": "거실: 물건과 영수증"
+          }
+        },
+        {
+          "id": "bedrooms",
+          "name": {
+            "en": "Bedrooms and closets: items and receipts",
+            "es": "Recámaras y clósets: cosas y recibos",
+            "zh": "卧室和壁橱：物品和收据",
+            "ko": "침실과 옷장: 물건과 영수증"
+          }
+        },
+        {
+          "id": "bathrooms",
+          "name": {
+            "en": "Bathrooms and laundry: items and receipts",
+            "es": "Baños y lavandería: cosas y recibos",
+            "zh": "浴室和洗衣间：物品和收据",
+            "ko": "욕실과 세탁실: 물건과 영수증"
+          }
+        },
+        {
+          "id": "electronics",
+          "name": {
+            "en": "Electronics, with serial numbers",
+            "es": "Electrónicos, con números de serie",
+            "zh": "电子产品及序列号",
+            "ko": "전자제품과 일련번호"
+          }
+        },
+        {
+          "id": "valuables",
+          "name": {
+            "en": "Jewelry, art and other valuables",
+            "es": "Joyas, arte y otros objetos de valor",
+            "zh": "珠宝、艺术品和其他贵重物品",
+            "ko": "보석, 미술품과 기타 귀중품"
+          }
+        },
+        {
+          "id": "garage",
+          "name": {
+            "en": "Garage, tools and outdoor things",
+            "es": "Garaje, herramientas y cosas de afuera",
+            "zh": "车库、工具和户外物品",
+            "ko": "차고, 공구와 실외 물건"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "home inventory for renters insurance",
+          "home inventory checklist",
+          "home inventory app",
+          "home inventory template"
+        ],
+        "es": [
+          "inventario del hogar para el seguro"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "home inventory",
+          "insurance",
+          "renters",
+          "receipts",
+          "belongings"
+        ],
+        "es": [
+          "inventario",
+          "seguro",
+          "recibos"
+        ]
+      },
+      "scope_note": "A list of your own things, on your phone. No advice about coverage, claims or values; nothing is sent to an insurer unless the person shares a PDF.",
+      "display_name": {
+        "en": "Home inventory",
+        "es": "Inventario del hogar",
+        "zh": "家庭物品清单",
+        "ko": "집 물품 목록"
       }
     },
     {
       "id": "tenant-repairs-deposit",
-      "release": "pages",
+      "release": "launch",
       "priority": "support",
+      "folder_order": 6,
+      "page_order": 6,
       "name": {
-        "en": "Tenant repairs and deposit"
+        "en": "Tenant: move-in / move-out",
+        "es": "Inquilino: mudanza de entrada y salida",
+        "zh": "租客：搬入与搬出",
+        "ko": "세입자: 입주와 퇴거"
       },
-      "points_to_folder": null,
-      "graduates_when": "its pages earn search traffic (monthly Search Console check)"
+      "short_name": {
+        "en": "Renting a home",
+        "es": "Alquiler de vivienda",
+        "zh": "租房",
+        "ko": "주택 임대"
+      },
+      "checklist_items": [
+        {
+          "id": "lease",
+          "name": {
+            "en": "Lease, move-in papers and the landlord's checklist",
+            "es": "Contrato, papeles de entrada y la lista del arrendador",
+            "zh": "租约、入住文件和房东的检查表",
+            "ko": "임대 계약서, 입주 서류와 집주인의 점검표"
+          }
+        },
+        {
+          "id": "deposit-rent",
+          "name": {
+            "en": "Deposit and rent receipts",
+            "es": "Recibos del depósito y de la renta",
+            "zh": "押金和房租收据",
+            "ko": "보증금과 월세 영수증"
+          }
+        },
+        {
+          "id": "kitchen",
+          "name": {
+            "en": "Kitchen: move-in and move-out photos",
+            "es": "Cocina: fotos de entrada y de salida",
+            "zh": "厨房：搬入和搬出照片",
+            "ko": "주방: 입주·퇴거 사진"
+          }
+        },
+        {
+          "id": "bathrooms",
+          "name": {
+            "en": "Bathrooms: move-in and move-out photos",
+            "es": "Baños: fotos de entrada y de salida",
+            "zh": "浴室：搬入和搬出照片",
+            "ko": "욕실: 입주·퇴거 사진"
+          }
+        },
+        {
+          "id": "bedrooms",
+          "name": {
+            "en": "Bedrooms and closets: move-in and move-out photos",
+            "es": "Recámaras y clósets: fotos de entrada y de salida",
+            "zh": "卧室和壁橱：搬入和搬出照片",
+            "ko": "침실과 옷장: 입주·퇴거 사진"
+          }
+        },
+        {
+          "id": "living",
+          "name": {
+            "en": "Living areas, floors and walls: move-in and move-out photos",
+            "es": "Sala, pisos y paredes: fotos de entrada y de salida",
+            "zh": "客厅、地板和墙面：搬入和搬出照片",
+            "ko": "거실, 바닥과 벽: 입주·퇴거 사진"
+          }
+        },
+        {
+          "id": "fixtures",
+          "name": {
+            "en": "Appliances, doors, windows and meters: move-in and move-out photos",
+            "es": "Aparatos, puertas, ventanas y medidores: fotos de entrada y de salida",
+            "zh": "电器、门窗和水电表：搬入和搬出照片",
+            "ko": "가전, 문, 창문과 계량기: 입주·퇴거 사진"
+          }
+        },
+        {
+          "id": "repairs",
+          "name": {
+            "en": "Repair requests and replies",
+            "es": "Solicitudes de reparación y respuestas",
+            "zh": "维修请求和回复",
+            "ko": "수리 요청과 답변"
+          }
+        },
+        {
+          "id": "keys-address",
+          "name": {
+            "en": "Keys returned and forwarding address given",
+            "es": "Llaves entregadas y dirección nueva dada",
+            "zh": "已交还钥匙并留下新地址",
+            "ko": "열쇠 반납과 새 주소 전달"
+          }
+        },
+        {
+          "id": "deposit-letter",
+          "name": {
+            "en": "Deposit refund or itemized deductions letter",
+            "es": "Devolución del depósito o carta de descuentos detallados",
+            "zh": "押金退还或扣款明细信",
+            "ko": "보증금 반환 또는 공제 내역서"
+          }
+        }
+      ],
+      "search_phrases": {
+        "en": [
+          "move out checklist",
+          "move in checklist",
+          "move in inspection checklist",
+          "how long do landlords have to return security deposit",
+          "normal wear and tear vs damage"
+        ],
+        "es": [
+          "lista de mudanza para inquilinos",
+          "devolución del depósito de seguridad"
+        ]
+      },
+      "store_keywords": {
+        "en": [
+          "tenant",
+          "move out",
+          "move in",
+          "deposit",
+          "renter"
+        ],
+        "es": [
+          "inquilino",
+          "depósito",
+          "mudanza",
+          "renta"
+        ]
+      },
+      "scope_note": "The tenant's own copy: photos and papers stay on the tenant's phone. No advice about deposits, deductions or disputes; the site's state pages quote each statute with a link and a checked date.",
+      "display_name": {
+        "en": "Tenant: move-in / move-out",
+        "es": "Inquilino: entrada y salida",
+        "zh": "租客：搬入与搬出",
+        "ko": "세입자: 입주와 퇴거"
+      }
     },
     {
       "id": "ssdi-records",

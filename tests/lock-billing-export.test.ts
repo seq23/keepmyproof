@@ -146,13 +146,40 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.equal(all.length,6);
 });
 
-test('a TestFlight beta build needs a real App Store key and no preview switch, and nothing else',async()=>{
-  const {betaStops}=await import('../scripts/release-gate.mjs');const codes=(env:Record<string,string>)=>betaStops({env}).map(s=>s.code);
+test('a tester build (TestFlight or Play internal) needs a real key for its own store and no preview switch, and nothing else',async()=>{
+  const {betaStops,BETA_PROFILES}=await import('../scripts/release-gate.mjs');
+  assert.deepEqual(BETA_PROFILES,{testflight:'ios',internal:'android'});
+  const codes=(env:Record<string,string>,platform?:'ios'|'android')=>betaStops({env,platform}).map(s=>s.code);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x'}),[]);
   assert.deepEqual(codes({}),['REVENUECAT_KEY_MISSING']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}),['REVENUECAT_KEY_MISSING']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_PREVIEW:'1'}),['PREVIEW_BUILD']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVIEW_RECORDING:'1'}),['PREVIEW_BUILD']);
+  // Android: only a goog_ key sells on Play; the App Store key, a test key or none stops the build.
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},'android'),[]);
+  for(const env of [{},{EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'test_x'},{EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'appl_x'},{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x'}] as Record<string,string>[])
+    assert.deepEqual(codes(env,'android'),['REVENUECAT_KEY_MISSING']);
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x',EXPO_PUBLIC_KMP_PREVIEW:'1'},'android'),['PREVIEW_BUILD']);
+  // The real EAS hook (package.json eas-build-pre-install) on the internal profile: exit 2 without the key, 0 with it.
+  const {spawnSync}=await import('node:child_process');
+  const hook=(env:Record<string,string>)=>spawnSync(process.execPath,['scripts/release-gate.mjs','--if-production'],{env:{...process.env,EAS_BUILD_PROFILE:'internal',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:undefined,EXPO_PUBLIC_KMP_PREVIEW:undefined,...env},encoding:'utf8'});
+  const bare=hook({});assert.equal(bare.status,2);assert.match(bare.stdout,/NAMED STOP \[REVENUECAT_KEY_MISSING\]/);
+  assert.equal(hook({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'appl_x'}).status,2);
+  const ok=hook({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'});assert.equal(ok.status,0,ok.stdout+ok.stderr);assert.match(ok.stdout,/clear for the internal tester build/);
+});
+
+test('the Play upload goes to the internal track as a draft only, and the run fails unless Play shows exactly that',async()=>{
+  const {readFileSync}=await import('node:fs');const eas=JSON.parse(readFileSync('eas.json','utf8'));
+  assert.deepEqual(eas.submit.internal.android,{serviceAccountKeyPath:'./play-sa.json',track:'internal',releaseStatus:'draft'});
+  assert.ok(eas.build.internal&&!eas.submit.production?.android,'no Android submit profile may reach production');
+  assert.ok(readFileSync('.gitignore','utf8').split('\n').includes('play-sa.json'));
+  const {trackProblems}=await import('../scripts/store/play-track-check.mjs');
+  const draft={track:'internal',releases:[{status:'draft',versionCodes:['7']}]};
+  assert.deepEqual(trackProblems([draft,{track:'production'}],7),[]);
+  assert.equal(trackProblems([],7).length,1);
+  assert.equal(trackProblems([{track:'internal',releases:[{status:'draft',versionCodes:['6']}]}],7).length,1);
+  assert.equal(trackProblems([{track:'internal',releases:[{status:'completed',versionCodes:['7']}]}],7).length,1);
+  assert.equal(trackProblems([draft,{track:'production',releases:[{status:'draft',versionCodes:['7']}]}],7).length,1);
 });
 
 test('a picked "happened" date stays that calendar day in every time zone and shows no time (TZ=America/Chicago)',async()=>{
