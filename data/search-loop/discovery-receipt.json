@@ -1,8 +1,8 @@
 {
   "schema": "search-loop-discovery-v1",
   "site": "keepmyproof.com",
-  "week": "2026-W47",
-  "generated_at": "2026-11-16T14:32:56.975Z",
+  "week": "2026-W48",
+  "generated_at": "2026-11-24T01:37:14.035Z",
   "paid_calls": 0,
   "cost_usd": 0,
   "hosts": {
@@ -12,16 +12,22 @@
       "failed": 0,
       "cost_usd": 0
     },
+    "ssl.bing.com": {
+      "calls": 1,
+      "ok": 1,
+      "failed": 0,
+      "cost_usd": 0
+    },
     "suggestqueries.google.com": {
-      "calls": 77,
-      "ok": 77,
+      "calls": 40,
+      "ok": 40,
       "failed": 0,
       "cost_usd": 0
     },
     "api.bing.com": {
-      "calls": 3,
-      "ok": 0,
-      "failed": 3,
+      "calls": 40,
+      "ok": 40,
+      "failed": 0,
       "cost_usd": 0
     },
     "api.search.brave.com": {
@@ -32,24 +38,24 @@
     }
   },
   "sources": {
-    "search_console": "ok: 1827 rows",
-    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "search_console": "ok: 1837 rows",
+    "bing_webmaster": "ok: 0 rows",
     "easy_wins": "ok: 1 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
-    "api.bing.com": "not read: unavailable after 3 failures (last http 204)",
+    "api.bing.com": "ok",
     "relevance_screen": "ok: kept 149 of 150 (free model)",
     "top10": "ok: 15 top-10 read(s) via brave"
   },
   "seeds": {
     "planned": 233,
-    "asked": 77,
+    "asked": 40,
     "topics": 35,
     "topics_asked": 35,
     "priority_topics": 0,
     "priority_targets": 0
   },
   "notes": [
-    "autocomplete stopped at its budget of 80 calls (77 of 233 planned questions asked)"
+    "autocomplete stopped at its budget of 80 calls (40 of 233 planned questions asked)"
   ],
   "competition": "ok: 15 top-10 read(s) via brave",
   "lanes": {
@@ -57,8 +63,8 @@
       "can_be_one": 2,
       "striking": 1
     },
-    "can_be_one": 79,
-    "striking": 70,
+    "can_be_one": 80,
+    "striking": 69,
     "weights": {
       "neighbour": 35,
       "unanswered": 30,
@@ -67,9 +73,9 @@
     }
   },
   "counts": {
-    "candidates": 640,
+    "candidates": 841,
     "targets": 149,
-    "strengthen_candidates": 7,
+    "strengthen_candidates": 12,
     "dropped_shared_audience": 0
   }
 }

@@ -1,14 +1,14 @@
 {
   "schema": "search-loop-targets-v1",
   "site": "keepmyproof.com",
-  "week": "2026-W47",
-  "generated_at": "2026-11-16T14:32:56.975Z",
+  "week": "2026-W48",
+  "generated_at": "2026-11-24T01:37:14.035Z",
   "sources": {
-    "search_console": "ok: 1827 rows",
-    "bing_webmaster": "not read: BING_WEBMASTER_API_KEY is not set",
+    "search_console": "ok: 1837 rows",
+    "bing_webmaster": "ok: 0 rows",
     "easy_wins": "ok: 1 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
-    "api.bing.com": "not read: unavailable after 3 failures (last http 204)",
+    "api.bing.com": "ok",
     "relevance_screen": "ok: kept 149 of 150 (free model)",
     "top10": "ok: 15 top-10 read(s) via brave"
   },
@@ -17,8 +17,7 @@
       "query": "how to hide pictures in camera roll",
       "variants": [
         "hide pictures from camera roll",
-        "can you hide pictures from camera roll",
-        "how to hide pictures from camera roll"
+        "can you hide pictures from camera roll"
       ],
       "signals": {
         "words": 7,
@@ -39,13 +38,13 @@
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 1,
+            "forums": 2,
             "off_target_national": 0,
             "thin_or_old": 7,
             "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 7 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 2 forums, 0 off-target national, 7 thin or old, 0 answer the exact question"
           ]
         }
       },
@@ -58,7 +57,7 @@
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 4-word question, and the site holds its parts at position 8.3",
-        "weak top 10 (0.69): 0 directories, 1 forums, 0 off-target national, 7 thin or old, 0 answer the exact question",
+        "weak top 10 (0.69): 0 directories, 2 forums, 0 off-target national, 7 thin or old, 0 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -83,30 +82,30 @@
         },
         "top10": {
           "provider": "brave",
-          "weakness": 0.15,
+          "weakness": 0.23,
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 1,
+            "forums": 3,
             "off_target_national": 0,
-            "thin_or_old": 7,
-            "exact_answer": 5
+            "thin_or_old": 8,
+            "exact_answer": 6
           },
           "reasons": [
-            "top 10: 0 directories, 1 forums, 0 off-target national, 7 thin or old, 5 answer the exact question"
+            "top 10: 0 directories, 3 forums, 0 off-target national, 8 thin or old, 6 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 74.4,
-        "can_be_one": 46
+        "can_be_one": 49.2
       },
       "score": 74.4,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "already ranks 9 in Search Console (6 impressions)",
-        "can-be-#1 score 46 too (taken by the striking lane's turn)"
+        "can-be-#1 score 49.2 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -154,6 +153,50 @@
       ]
     },
     {
+      "query": "where are divorce records kept",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/ohio",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 4
+        },
+        "top10": {
+          "provider": "brave",
+          "weakness": 0.15,
+          "counts": {
+            "results": 10,
+            "directories": 0,
+            "forums": 0,
+            "off_target_national": 0,
+            "thin_or_old": 1,
+            "exact_answer": 0
+          },
+          "reasons": [
+            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+          ]
+        }
+      },
+      "scores": {
+        "striking": 57.7,
+        "can_be_one": 46
+      },
+      "score": 46,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
       "query": "how do i get copies of my divorce papers",
       "variants": [
         "how to get copies of divorce papers"
@@ -190,13 +233,12 @@
         "striking": 63,
         "can_be_one": 43.2
       },
-      "score": 43.2,
+      "score": 63,
       "kind": "new",
-      "lane": "can_be_one",
+      "lane": "striking",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question",
-        "people search it (autocomplete or impressions)"
+        "already ranks 8 in Search Console (3 impressions)",
+        "can-be-#1 score 43.2 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -234,28 +276,31 @@
         "striking": 61.3,
         "can_be_one": 43.2
       },
-      "score": 61.3,
+      "score": 43.2,
       "kind": "new",
-      "lane": "striking",
+      "lane": "can_be_one",
       "reasons": [
-        "already ranks 8 in Search Console (2 impressions)",
-        "can-be-#1 score 43.2 too (taken by the striking lane's turn)"
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "where are divorce records kept",
-      "variants": [],
+      "query": "how many hours can a teen work a week",
+      "variants": [
+        "how many hours can teens work a week"
+      ],
       "signals": {
-        "words": 5,
+        "words": 9,
         "question": true,
-        "gsc_position": 10,
+        "gsc_position": 9,
         "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/ohio",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/tennessee",
         "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 8,
-          "parts_rows": 4
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 6,
+          "parts_rows": 42
         },
         "top10": {
           "provider": "brave",
@@ -263,27 +308,49 @@
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 0,
+            "forums": 1,
             "off_target_national": 0,
             "thin_or_old": 1,
             "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 1 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
           ]
         }
       },
       "scores": {
-        "striking": 57.7,
+        "striking": 59.5,
         "can_be_one": 43.2
       },
       "score": 43.2,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "weak top 10 (0.08): 0 directories, 1 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how late can a 17 year old work on a school night",
+      "variants": [],
+      "signals": {
+        "words": 12,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 59.5,
+        "can_be_one": 0
+      },
+      "score": 59.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (2 impressions)"
       ]
     },
     {
@@ -316,51 +383,6 @@
       ]
     },
     {
-      "query": "how many hours can a teen work a week",
-      "variants": [
-        "how many hours can teens work a week"
-      ],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/tennessee",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 6,
-          "parts_rows": 42
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 59.5,
-        "can_be_one": 40
-      },
-      "score": 59.5,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 9 in Search Console (2 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
       "query": "arizona child labor laws 2026",
       "variants": [],
       "signals": {
@@ -387,6 +409,28 @@
       "reasons": [
         "no site page answers this 5-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how much do death certificates cost",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": true,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/idaho",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 59,
+        "can_be_one": 0
+      },
+      "score": 59,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)"
       ]
     },
     {
@@ -419,28 +463,6 @@
       ]
     },
     {
-      "query": "how late can a 17 year old work on a school night",
-      "variants": [],
-      "signals": {
-        "words": 12,
-        "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 59.5,
-        "can_be_one": 0
-      },
-      "score": 59.5,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 9 in Search Console (2 impressions)"
-      ]
-    },
-    {
       "query": "california child labor law notice",
       "variants": [],
       "signals": {
@@ -470,43 +492,14 @@
       ]
     },
     {
-      "query": "california department of veterans affairs",
+      "query": "what are the working hours for a 17 year old",
       "variants": [],
       "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 20,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/california",
-        "unanswered": {
-          "words": 4,
-          "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 1
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 32.2,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 7",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how much do death certificates cost",
-      "variants": [],
-      "signals": {
-        "words": 6,
+        "words": 10,
         "question": true,
         "gsc_position": 8,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/idaho",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -579,14 +572,17 @@
       ]
     },
     {
-      "query": "what are the working hours for a 17 year old",
-      "variants": [],
+      "query": "where can i get a copy of my divorce papers",
+      "variants": [
+        "where can i get copy of divorce papers",
+        "where do you get a copy of your divorce papers"
+      ],
       "signals": {
         "words": 10,
         "question": true,
         "gsc_position": 8,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -659,28 +655,25 @@
       ]
     },
     {
-      "query": "where can i get a copy of my divorce papers",
-      "variants": [
-        "where can i get copy of divorce papers",
-        "where do you get a copy of your divorce papers"
-      ],
+      "query": "can you work night shift at 17",
+      "variants": [],
       "signals": {
-        "words": 10,
+        "words": 7,
         "question": true,
-        "gsc_position": 8,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "gsc_position": 9.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 59,
+        "striking": 58.6,
         "can_be_one": 0
       },
-      "score": 59,
+      "score": 58.6,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 8 in Search Console (1 impressions)"
+        "already ranks 9.5 in Search Console (2 impressions)"
       ]
     },
     {
@@ -742,25 +735,26 @@
       ]
     },
     {
-      "query": "can you work night shift at 17",
+      "query": "free printable executor checklist",
       "variants": [],
       "signals": {
-        "words": 7,
-        "question": true,
-        "gsc_position": 9.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor-checklist",
+        "bing_suggest": true,
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 58.6,
+        "striking": 58.5,
         "can_be_one": 0
       },
-      "score": 58.6,
+      "score": 58.5,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9.5 in Search Console (2 impressions)"
+        "already ranks 11 in Search Console (1 impressions)"
       ]
     },
     {
@@ -2954,6 +2948,35 @@
       ]
     },
     {
+      "query": "muskogee ok va regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 5,
+          "parts_rows": 17
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 5",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
       "query": "salario minimo en oklahoma",
       "variants": [],
       "signals": {
@@ -2980,6 +3003,28 @@
       "reasons": [
         "no site page answers this 4-word question, and the site holds its parts at position 7",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how much is a certified copy of a death certificate",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/connecticut",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 0
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
       ]
     },
     {
@@ -3012,28 +3057,6 @@
       ]
     },
     {
-      "query": "how much is a certified copy of a death certificate",
-      "variants": [],
-      "signals": {
-        "words": 10,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/connecticut",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 0
-      },
-      "score": 55.4,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (1 impressions)"
-      ]
-    },
-    {
       "query": "what va regional office am i associated with",
       "variants": [],
       "signals": {
@@ -3060,6 +3083,28 @@
       "reasons": [
         "no site page answers this 5-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how much is a copy of divorce papers",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/wisconsin",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 0
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
       ]
     },
     {
@@ -3092,28 +3137,6 @@
       ]
     },
     {
-      "query": "how much is a copy of divorce papers",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/wisconsin",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 0
-      },
-      "score": 55.4,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (1 impressions)"
-      ]
-    },
-    {
       "query": "where do you get a death certificate when someone dies",
       "variants": [],
       "signals": {
@@ -3143,6 +3166,31 @@
       ]
     },
     {
+      "query": "how to get a work permit as a minor",
+      "variants": [
+        "how to get a work permit for minors",
+        "work permits for minors"
+      ],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 0
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
       "query": "va phoenix regional benefits office",
       "variants": [],
       "signals": {
@@ -3169,31 +3217,6 @@
       "reasons": [
         "no site page answers this 5-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how to get a work permit as a minor",
-      "variants": [
-        "how to get a work permit for minors",
-        "work permits for minors"
-      ],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 0
-      },
-      "score": 55.4,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (1 impressions)"
       ]
     },
     {
@@ -3228,6 +3251,28 @@
       ]
     },
     {
+      "query": "what do i need to get a copy of my divorce decree",
+      "variants": [],
+      "signals": {
+        "words": 12,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/nevada",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 0
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
       "query": "va cleveland regional office",
       "variants": [],
       "signals": {
@@ -3254,28 +3299,6 @@
       "reasons": [
         "no site page answers this 4-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "what do i need to get a copy of my divorce decree",
-      "variants": [],
-      "signals": {
-        "words": 12,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/nevada",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 0
-      },
-      "score": 55.4,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (1 impressions)"
       ]
     },
     {
@@ -3308,6 +3331,28 @@
       ]
     },
     {
+      "query": "what is the legal amount of hours a 16 year old can work",
+      "variants": [],
+      "signals": {
+        "words": 13,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 0
+      },
+      "score": 55.4,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
       "query": "salario minimo nuevo mexico",
       "variants": [],
       "signals": {
@@ -3337,28 +3382,6 @@
       ]
     },
     {
-      "query": "what is the legal amount of hours a 16 year old can work",
-      "variants": [],
-      "signals": {
-        "words": 13,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 0
-      },
-      "score": 55.4,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (1 impressions)"
-      ]
-    },
-    {
       "query": "under 18 how many hours can work",
       "variants": [],
       "signals": {
@@ -3372,35 +3395,6 @@
           "covered": 0.2,
           "parts_best_position": 6,
           "parts_rows": 42
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 52.2,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "veterans benefits administration regional office",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 6,
-          "parts_rows": 16
         },
         "top10": "not read: outside this run's top-10 budget"
       },
@@ -3439,6 +3433,35 @@
       ]
     },
     {
+      "query": "veterans benefits administration regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 6,
+          "parts_rows": 16
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 52.2,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
       "query": "va regional office connecticut",
       "variants": [],
       "signals": {
@@ -3447,35 +3470,6 @@
         "gsc_position": 10.5,
         "gsc_impressions": 2,
         "gsc_page": "https://keepmyproof.com/va/va-regional-office/connecticut",
-        "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 51.8,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "va togus regional office",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 10.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/maine",
         "unanswered": {
           "words": 4,
           "covered": 0.25,
@@ -3516,6 +3510,35 @@
       "lane": "striking",
       "reasons": [
         "already ranks 10 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "va togus regional office",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 10.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/maine",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 5,
+          "parts_rows": 17
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 51.8,
+        "can_be_one": 40
+      },
+      "score": 40,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 5",
+        "people search it (autocomplete or impressions)"
       ]
     },
     {
@@ -4157,28 +4180,6 @@
       "reasons": [
         "already ranks 9 in Search Console (1 impressions)"
       ]
-    },
-    {
-      "query": "where can i get a copy of my divorce certificate",
-      "variants": [],
-      "signals": {
-        "words": 10,
-        "question": true,
-        "gsc_position": 12,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/ohio",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 51.7,
-        "can_be_one": 0
-      },
-      "score": 51.7,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 12 in Search Console (1 impressions)"
-      ]
     }
   ],
   "strengthen": [
@@ -4197,28 +4198,7 @@
         "can_be_one": 0
       },
       "score": 57.2,
-      "page": "/site/questions/how-much-does-a-death-certificate-cost/"
-    },
-    {
-      "query": "certificate of death",
-      "variants": [
-        "death certificate",
-        "how to get a death certificate"
-      ],
-      "signals": {
-        "words": 3,
-        "question": false,
-        "gsc_position": 10.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/pennsylvania",
-        "google_suggest": true
-      },
-      "scores": {
-        "striking": 56.8,
-        "can_be_one": 0
-      },
-      "score": 56.8,
-      "page": "/site/questions/certified-copy-of-death-certificate/"
+      "page": "/questions/how-much-does-a-death-certificate-cost/"
     },
     {
       "query": "how can i get a copy of my divorce",
@@ -4235,7 +4215,7 @@
         "can_be_one": 0
       },
       "score": 55.4,
-      "page": "/site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/"
+      "page": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/"
     },
     {
       "query": "can i work night shift at 16",
@@ -4256,7 +4236,7 @@
         "can_be_one": 0
       },
       "score": 53.5,
-      "page": "/site/questions/can-a-16-year-old-work-night-shifts/"
+      "page": "/questions/can-a-16-year-old-work-night-shifts/"
     },
     {
       "query": "copy of death certificate",
@@ -4278,7 +4258,26 @@
         "can_be_one": 0
       },
       "score": 50.4,
-      "page": "/site/questions/certified-copy-of-death-certificate/"
+      "page": "/questions/certified-copy-of-death-certificate/"
+    },
+    {
+      "query": "certificate of death",
+      "variants": [
+        "death certificate"
+      ],
+      "signals": {
+        "words": 3,
+        "question": false,
+        "gsc_position": 10.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/pennsylvania"
+      },
+      "scores": {
+        "striking": 41.8,
+        "can_be_one": 0
+      },
+      "score": 41.8,
+      "page": "/questions/certified-copy-of-death-certificate/"
     },
     {
       "query": "divorce decree copy",
@@ -4303,7 +4302,7 @@
         "can_be_one": 0
       },
       "score": 38.5,
-      "page": "/site/questions/how-to-get-a-certified-copy-of-my-divorce-decree/"
+      "page": "/questions/how-to-get-a-certified-copy-of-my-divorce-decree/"
     },
     {
       "query": "how to write a workplace harassment complaint",
@@ -4318,7 +4317,84 @@
         "can_be_one": 0
       },
       "score": 30,
-      "page": "/site/questions/how-to-write-a-workplace-harassment-complaint-letter/"
+      "page": "/questions/how-to-write-a-workplace-harassment-complaint-letter/"
+    },
+    {
+      "query": "how to get divorce documents",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/how-to-prepare-divorce-documents-yourself/"
+    },
+    {
+      "query": "how to prepare for divorce",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/how-to-prepare-divorce-documents-yourself/"
+    },
+    {
+      "query": "how to handle workplace harassment",
+      "variants": [
+        "how to deal with workplace harassment"
+      ],
+      "signals": {
+        "words": 5,
+        "question": true,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 25,
+        "can_be_one": 0
+      },
+      "score": 25,
+      "page": "/questions/how-to-write-a-workplace-harassment-complaint-letter/"
+    },
+    {
+      "query": "proving hostile work environment",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "page": "/questions/how-can-you-prove-a-hostile-work-environment/"
+    },
+    {
+      "query": "hostile environment at work",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "bing_suggest": true
+      },
+      "scores": {
+        "striking": 20,
+        "can_be_one": 0
+      },
+      "score": 20,
+      "page": "/questions/how-can-you-prove-a-hostile-work-environment/"
     }
   ]
 }

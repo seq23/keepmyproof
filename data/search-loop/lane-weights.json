@@ -1,11 +1,19 @@
 {
   "schema": "search-loop-lane-weights-v1",
-  "week": "2026-W47",
+  "week": "2026-W48",
   "weights": {
     "neighbour": 35,
-    "unanswered": 30,
+    "unanswered": 27,
     "weak_top10": 40,
     "demand": 10
   },
-  "log": []
+  "log": [
+    {
+      "week": "2026-W48",
+      "signal": "unanswered",
+      "from": 30,
+      "to": 27,
+      "why": "0% of 5 can-be-#1 pages picked on it reached the top 3"
+    }
+  ]
 }
