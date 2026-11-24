@@ -23,7 +23,7 @@ import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaul
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styles, textProps, usePalette, useTyped } from '../src/ui';
-import { PREVIEW_BUILD, sampleVault } from '../src/preview';
+import { PREVIEW_BUILD, REVIEW_RECORDING_BUILD, sampleVault } from '../src/preview';
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
@@ -113,7 +113,7 @@ export default function App() {
       if (!start.fresh) setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
-    if (!PREVIEW_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
+    if (!PREVIEW_BUILD && !REVIEW_RECORDING_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
     if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the

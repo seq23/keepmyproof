@@ -66,6 +66,8 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   // The simulator preview switch turns screenshot protection off; it never ships to a store.
   if (env.EXPO_PUBLIC_KMP_PREVIEW)
     stop('PREVIEW_BUILD', 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.');
+  if (env.EXPO_PUBLIC_KMP_REVIEW_RECORDING)
+    stop('PREVIEW_BUILD', 'EXPO_PUBLIC_KMP_REVIEW_RECORDING is set, which turns screenshot protection off; it is for the simulator review recording only.');
   const device = readJson('release/device-gate.json');
   const missing = DEVICE_CHECKS.filter(c => device?.checks?.[c] !== true);
   if (!device || device.version !== version || missing.length)
@@ -102,6 +104,8 @@ export function betaStops({ env, platform = 'ios' }) {
   if (!env[key.name]?.startsWith(key.prefix)) out.push({ code: 'REVENUECAT_KEY_MISSING', why: key.why });
   if (env.EXPO_PUBLIC_KMP_PREVIEW)
     out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.' });
+  if (env.EXPO_PUBLIC_KMP_REVIEW_RECORDING)
+    out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_REVIEW_RECORDING is set, which turns screenshot protection off; it is for the simulator review recording only.' });
   return out;
 }
 
