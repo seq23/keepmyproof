@@ -30,9 +30,12 @@ export function P({ children, muted = false, heading = false, section = false }:
 }
 // One filled lockbox button per screen (primary): the thing the screen is for. Every other button is an outline.
 // danger: anything that destroys papers (Erase everything) is drawn in the warning red, never the go-ahead green.
+// aria-selected, never accessibilityState: react-native-web 0.21 drops accessibilityState, so the chosen
+// language and the current tab were silent to a screen reader on the web build (tap-through, 22 Nov 2026).
+// `disabled` already sets aria-disabled on both builds.
 export function Button({ title, onPress, quiet, disabled, checked, primary, danger }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean; danger?: boolean }) {
   const c = useContext(Theme), lang = useContext(LangContext), ref = useRef<HostInstance>(null);
-  return <Pressable ref={ref} accessibilityRole="button" accessibilityState={{ disabled, selected: checked }} disabled={disabled} onPress={onPress}
+  return <Pressable ref={ref} accessibilityRole="button" aria-selected={checked} disabled={disabled} onPress={onPress}
     onPressIn={() => ref.current?.measureInWindow((x, y, width, height) => setPressedAnchor({ x, y, width, height }))}
     style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: danger ? c.red : quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
       padding:12, justifyContent:'center', opacity: disabled ? .5 : pressed ? .7 : 1 })}>
