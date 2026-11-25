@@ -32,8 +32,10 @@ unlock is opt-in and disables fallback to the phone's passcode. The biometric ke
 copy also requires platform authentication. A verified biometric or the confirmed
 recovery phrase can reset the app code without reencrypting or erasing papers.
 
-AppState inactive/background locks and destroys the active Vault, while native
-screen-capture protection and iOS app-switcher blur hide the preview. The editor
+AppState background locks and destroys the active Vault, and the iOS app-switcher
+blur hides the app's snapshot there. Screenshots and screen recording are not
+blocked: the app behaves the same in every build, including the one App Review sees
+(Apple Guideline 5.6 rejection, 23 Nov 2026; tests/store-build.test.ts). The editor
 and pending picker result resume behind a new unlock. Export operations already
 requested by the user finish through the system share sheet. Plaintext temporary
 PDFs/originals are deleted in finally. Cold startup also clears the SDK Print,

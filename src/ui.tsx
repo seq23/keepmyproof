@@ -46,7 +46,7 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
   const c = useContext(Theme);
   return <View style={{ padding:12, gap:8, borderRadius:12, borderWidth:1, borderColor:c.line, backgroundColor: tone === 'gold' ? c.goldbg : tone === 'red' ? c.redbg : tone === 'ok' ? c.okbg : c.card }}>{children}</View>;
 }
-/** numeric: a 6-digit passcode (digits: another length, e.g. the 10-digit review code). keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
+/** numeric: a 6-digit passcode (digits: another length, e.g. the 10-digit Android review code). keyboard="date": the number pad, for a date typed as digits (the app adds the slashes).
  *  Every text box in the app is this one. The phone's box owns the text (uncontrolled, `defaultValue`): the app never
  *  writes text back into it while she types. A controlled `value` on a screen that re-renders on each key fights the
  *  native box on React Native's new architecture, and the phone then drops change events (ApprovalPrep lost letters,

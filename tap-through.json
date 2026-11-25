@@ -233,11 +233,6 @@
       "feature": "Face ID",
       "why": "the browser stand-in always says yes",
       "simulator": "preview.yml Maestro walk"
-    },
-    {
-      "feature": "screenshot protection",
-      "why": "no such thing in a browser",
-      "simulator": "a store build on a device"
     }
   ]
 }

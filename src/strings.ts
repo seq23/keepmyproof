@@ -1791,54 +1791,6 @@ export const strings = {
     "正在生成 PDF…",
     "PDF를 만드는 중이에요…"
   ],
-  "reviewLink": [
-    "Have a review code?",
-    "¿Tiene un código de revisión?",
-    "有审核代码？",
-    "심사 코드가 있나요?"
-  ],
-  "reviewCode": [
-    "App review code",
-    "Código de revisión de la app",
-    "应用审核代码",
-    "앱 심사 코드"
-  ],
-  "reviewWhy": [
-    "For Google Play's app review. The check sends only the code and an anonymous purchase ID; your papers never leave this device.",
-    "Para la revisión de Google Play. La comprobación envía solo el código y un identificador anónimo de compra; sus papeles nunca salen de este dispositivo.",
-    "供 Google Play 应用审核使用。检查时只发送代码和一个匿名购买标识符，您的文件绝不会离开这台设备。",
-    "Google Play 앱 심사용이에요. 확인할 때 코드와 익명 구매 식별자만 보내고, 서류는 이 기기를 떠나지 않아요."
-  ],
-  "reviewUse": [
-    "Use this code",
-    "Usar este código",
-    "使用此代码",
-    "이 코드 사용"
-  ],
-  "reviewWrong": [
-    "That code didn't work. Check the 10 digits and try again.",
-    "Ese código no funcionó. Revise los 10 dígitos e inténtelo de nuevo.",
-    "这个代码无效。请核对 10 位数字后重试。",
-    "코드가 맞지 않아요. 10자리를 확인하고 다시 시도하세요."
-  ],
-  "reviewUsedUp": [
-    "This review code has been used up.",
-    "Este código de revisión ya se agotó.",
-    "这个审核代码已用完。",
-    "이 심사 코드는 모두 사용되었어요."
-  ],
-  "reviewSlow": [
-    "Too many tries. Please wait and try again later.",
-    "Demasiados intentos. Espere e inténtelo más tarde.",
-    "尝试次数过多。请稍后再试。",
-    "시도가 너무 많아요. 잠시 후 다시 시도하세요."
-  ],
-  "reviewTryAgain": [
-    "Couldn't check the code right now. Please try again.",
-    "No se pudo comprobar el código ahora. Inténtelo de nuevo.",
-    "现在无法检查代码。请重试。",
-    "지금은 코드를 확인할 수 없어요. 다시 시도하세요."
-  ],
   "plusOn": [
     "✓ Plus is on.",
     "✓ Plus está activo.",
