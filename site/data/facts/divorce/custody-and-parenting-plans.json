@@ -1097,20 +1097,20 @@
           "checked": "2026-11-02"
         },
         {
-          "claim_en": "Parents may be required to attend a parenting class and meet with a mediator to resolve disagreements.",
-          "claim_es": "Los padres pueden tener que asistir a una clase de crianza y reunirse con un mediador para resolver desacuerdos.",
-          "source_url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx",
-          "source_name": "Oregon Judicial Department: Mediation",
-          "quote": "The parents may be required to attend a parenting class for separating or divorcing parents and also meet with a mediator to try to resolve any disagreements.",
-          "checked": "2026-11-02"
+          "claim_en": "Most Oregon courts offer free or low-cost mediation for parents in family law cases such as divorce or custody.",
+          "claim_es": "La mayoría de los tribunales de Oregón ofrecen mediación gratuita o de bajo costo a los padres en casos de derecho familiar, como divorcio o custodia.",
+          "source_url": "https://www.courts.oregon.gov/programs/ADR/Pages/CustodyParentingPlanMediation.aspx",
+          "source_name": "Oregon Judicial Department: Custody and Parenting Plan Mediation",
+          "quote": "Most courts in Oregon offer free or low-cost mediation services for parents involved in family law cases like divorce or custody.",
+          "checked": "2026-11-24"
         },
         {
-          "claim_en": "Some Oregon counties require mediation before the court holds a custody or parenting time hearing.",
-          "claim_es": "Algunos condados de Oregón exigen mediación antes de que el tribunal celebre una audiencia de custodia o tiempo de crianza.",
-          "source_url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx",
-          "source_name": "Oregon Judicial Department: Mediation",
-          "quote": "In some counties, the court requires parents to attend mediation before the court will hold a hearing on custody or parenting time.",
-          "checked": "2026-11-02"
+          "claim_en": "If an Oregon court requires mediation and a parent has good reasons not to take part, the parent can ask to be excused from it.",
+          "claim_es": "Si un tribunal de Oregón exige mediación y uno de los padres tiene buenas razones para no participar, puede pedir que lo eximan.",
+          "source_url": "https://www.courts.oregon.gov/programs/ADR/Pages/CustodyParentingPlanMediation.aspx",
+          "source_name": "Oregon Judicial Department: Custody and Parenting Plan Mediation",
+          "quote": "If your court requires mediation, and you have good reasons to not participate, you can ask to be excused from mediation.",
+          "checked": "2026-11-24"
         }
       ],
       "official_links": [
@@ -1120,9 +1120,9 @@
           "url": "https://www.courts.oregon.gov/programs/family/children/Pages/default.aspx"
         },
         {
-          "label_en": "Oregon Judicial Department: Mediation",
-          "label_es": "Oregon Judicial Department: Mediation",
-          "url": "https://www.courts.oregon.gov/programs/family/children/Pages/mediation.aspx"
+          "label_en": "Oregon Judicial Department: Custody and Parenting Plan Mediation",
+          "label_es": "Oregon Judicial Department: Custody and Parenting Plan Mediation",
+          "url": "https://www.courts.oregon.gov/programs/ADR/Pages/CustodyParentingPlanMediation.aspx"
         }
       ]
     },

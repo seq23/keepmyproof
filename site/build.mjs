@@ -417,9 +417,9 @@ export function loadFacts() {
 // rebuilds the site, so a rate that takes effect is shown as in force within a week of its start day.
 const buildDay = () => new Date().toISOString().slice(0, 10);
 export function clusterModel({ facts, verified, translations = {}, today = buildDay() }) {
-  const model = {}, stops = [];
+  const model = {}, stops = [], planned = {};
   for (const [k, files] of Object.entries(facts)) {
-    const subs = [], usedEs = new Set();
+    const subs = [], usedEs = new Set(), plan = (planned[k] = []);
     for (const data of files) {
       if (!data?.subtopic || !data.title_en || !data.title_es) { stops.push(`NAMED STOP [FILE_SHAPE] ${k}/${data?.subtopic}: needs subtopic, title_en and title_es`); continue; }
       const STOP = new Set(['de', 'del', 'la', 'las', 'el', 'los', 'y', 'o', 'en', 'su', 'sus', 'para', 'con', 'a', 'por', 'un', 'una']);
@@ -428,6 +428,7 @@ export function clusterModel({ facts, verified, translations = {}, today = build
       let es = w.join('-') || data.subtopic;
       if (usedEs.has(es)) es = `${es}-${data.subtopic}`;
       usedEs.add(es);
+      plan.push({ slug: { en: data.subtopic, es, zh: data.subtopic, ko: data.subtopic }, codes: Object.keys(data.states || {}).filter((c) => STATES[c]) });
       const titles = { en: data.title_en, es: data.title_es }, langs = ['en', 'es'];
       for (const l of STATE_LANGS[k] || []) {
         const tr = translations[k]?.[`${data.subtopic}.${l}`];
@@ -458,7 +459,31 @@ export function clusterModel({ facts, verified, translations = {}, today = build
     if (!subs.length && files.length) stops.push(`NAMED STOP [FOLDER_NO_STATE_PAGES] ${k}: no state page passes the gate yet`);
     model[k] = subs;
   }
-  return { model, stops, today };
+  return { model, stops, today, planned };
+}
+
+/** A state page the facts files name but the gate holds back (a source reworded, a quote gone, a
+ * translation short) answers 301 to its subtopic's all-states page, or the folder's, never 404: a page
+ * Google has shown keeps its standing (Search Readiness a8; keepmyproof.com/divorce/custody-and-parenting-plans/oregon
+ * 404ed with impressions on 24 Nov 2026 after Oregon's court moved its mediation text). */
+export function withheldRedirects(planned, pages) {
+  const built = new Set(pages.map((p) => p.path)), lines = [];
+  for (const [k, subs] of Object.entries(planned)) {
+    const F = FOLDERS[k];
+    if (!F) continue;
+    for (const s of subs) for (const l of ['en', 'es', ...(STATE_LANGS[k] || [])]) {
+      if (!F.path[l] || !s.slug[l]) continue;
+      const sub = `${F.path[l]}${s.slug[l]}/`, to = built.has(sub) ? sub : built.has(F.path[l]) ? F.path[l] : null;
+      if (!to) continue;
+      for (const code of s.codes) {
+        const from = `${F.path[l]}${s.slug[l]}/${stateSlug(code, l)}`;
+        if (!built.has(from)) lines.push(`${from} ${to} 301`);
+      }
+    }
+  }
+  // Cloudflare Pages reads at most 2,000 static redirects.
+  if (lines.length > 1500) throw Error(`NAMED STOP [WITHHELD_REDIRECTS] ${lines.length} withheld state pages; the facts refresh dropped too much to redirect, look before publishing`);
+  return lines;
 }
 
 /** Facts grouped by source, in first-seen order, so each source is named once under the facts, which point to it by number (naming it after every fact was template filler). */
@@ -973,7 +998,7 @@ export function renderAll(input = loadFacts()) {
     add({ path: pathOf('disclaimer', lang), alt: { en: pathOf('disclaimer', 'en'), es: pathOf('disclaimer', 'es') }, group: 'core', html: disclaimer(lang) });
     add({ path: pathOf('about', lang), alt: { en: pathOf('about', 'en'), es: pathOf('about', 'es') }, group: 'core', html: about(lang) });
   }
-  const { model, stops, today } = clusterModel(input);
+  const { model, stops, today, planned } = clusterModel(input);
   clusterPages(topics, hubs, model, add, stops, today);
   checklistFiles(topics, hubs, add, files);
   toolPages(add, model, stops, input.toolFacts);
@@ -1014,7 +1039,9 @@ export function renderAll(input = loadFacts()) {
   const preview = process.env.KMP_PREVIEW === '1';
   if (preview) files['robots.txt'] = 'User-agent: *\nDisallow: /\n';
   files['_headers'] = `/*\n${preview ? '  X-Robots-Tag: noindex, nofollow\n' : ''}  Cache-Control: public, max-age=0, must-revalidate, no-transform\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Strict-Transport-Security: max-age=31536000\n`;
-  if (existsSync(join(HERE, '_redirects'))) files['_redirects'] = readFileSync(join(HERE, '_redirects'), 'utf8');
+  const held = withheldRedirects(planned, pages);
+  const own = existsSync(join(HERE, '_redirects')) ? readFileSync(join(HERE, '_redirects'), 'utf8') : '';
+  if (own || held.length) files['_redirects'] = `${own}${own && !own.endsWith('\n') ? '\n' : ''}${held.length ? `# State pages held back by the facts gate (site/build.mjs withheldRedirects), written by the build:\n${held.join('\n')}\n` : ''}`;
   return { files, pages, stops, model };
 }
 

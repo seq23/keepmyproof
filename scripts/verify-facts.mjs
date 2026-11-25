@@ -32,16 +32,31 @@ function curl(url, ua) {
   return { code, body: out.subarray(0, cut) };
 }
 const asText = (body) => (body.subarray(0, 5).toString() === '%PDF-' ? pdfText(body) : sourceText(body.toString('utf8')));
+/** Why a response is not the source page itself, or null when it is. A bot wall answers 2xx with a
+ * challenge instead of the page (selfhelp.nvcourts.gov, 24 Nov 2026: 202 and a 198-byte meta refresh to
+ * /.well-known/sgcaptcha/). Reading that as the page dropped every fact on it and would have unpublished a
+ * live state page; it is a failed read, so --keep-on-fetch-error keeps the facts' last check. */
+export function notThePage(code, body) {
+  if (code < 200 || code >= 300) return `HTTP ${code}`;
+  if (code === 202 || code === 204) return `HTTP ${code} (no page yet)`;
+  if (body.length <= 100) return 'empty body';
+  if (body.subarray(0, 5).toString() === '%PDF-') return null;
+  const head = body.subarray(0, 4096).toString('utf8');
+  if (/sgcaptcha|\/cdn-cgi\/challenge-platform|_Incapsula_Resource|awswaf|<title>\s*(?:Just a moment|Attention Required)/i.test(head)) return 'bot challenge page';
+  if (body.length < 2048 && /http-equiv=["']?refresh/i.test(head)) return 'redirect-only page';
+  return null;
+}
 export async function fetchSourceText(url) {
   const tried = [];
   for (const ua of [null, UA]) {
-    try { const r = curl(url, ua); tried.push(`curl${ua ? '+UA' : ''} ${r.code}`); if (r.code >= 200 && r.code < 300 && r.body.length > 100) return asText(r.body); }
+    try { const r = curl(url, ua), why = notThePage(r.code, r.body); tried.push(`curl${ua ? '+UA' : ''} ${r.code}${why && !why.startsWith('HTTP') ? ` ${why}` : ''}`); if (!why) return asText(r.body); }
     catch (e) { tried.push(`curl${ua ? '+UA' : ''} ${String(e.message).slice(0, 40)}`); }
   }
   try {
     const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8' }, redirect: 'follow', signal: AbortSignal.timeout(30000) });
-    tried.push(`fetch ${r.status}`);
-    if (r.ok) return asText(Buffer.from(await r.arrayBuffer()));
+    const body = Buffer.from(await r.arrayBuffer()), why = notThePage(r.status, body);
+    tried.push(`fetch ${r.status}${why && !why.startsWith('HTTP') ? ` ${why}` : ''}`);
+    if (!why) return asText(body);
   } catch (e) { tried.push(`fetch ${e.message}`); }
   throw Error(`FETCH_FAILED ${tried.join(', ')}`);
 }
