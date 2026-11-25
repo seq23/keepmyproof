@@ -1,7 +1,7 @@
 // Website wording, English and US Spanish (usted). Same voice as the app (src/strings.ts).
 // The honest-claims check in scripts/validate.mjs scans this file for banned evidence and security
 // claims (R-ADV-01/02). Prices are filled from config.mjs, never typed here.
-import { folderCount, folderNames } from './lib/folders.mjs';
+import { appFolderCount, folderCount, folderNames } from './lib/folders.mjs';
 import { storeLine, storeStatus } from './lib/stores.mjs';
 export const COPY = {
   en: {
@@ -62,7 +62,7 @@ export const COPY = {
     ],
     priceH: 'What it costs',
     free: 'Free', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`All ${folderCount('en')} folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
+    freeList: (n) => [`All ${appFolderCount('en')} folders, up to ${n} items`, 'App lock and both dates', 'Checklist ticks', 'A PDF of a whole folder', 'Export your original files', 'Backup and restore'],
     plusList: ['Unlimited items', 'Your own folders and tags', 'A PDF of the items or dates you choose, with a cover page'],
     plusPrice: (p) => `$${p.yearlyUSD} a year, renews yearly until you cancel in your phone's subscription settings. Or $${p.lifetimeUSD} once for life, with no renewal.`,
     priceNotes: (n) => [`The ${n}-item limit only stops adding. Viewing, PDFs, export, backup and restore never lock, paid or not.`, 'No trial and no plan picked for you. Your store shows the price in your currency before you pay.'],
@@ -158,7 +158,7 @@ export const COPY = {
     ],
     priceH: '¿Cuánto cuesta?',
     free: 'Gratis', plus: 'KeepMyProof Plus',
-    freeList: (n) => [`Las ${folderCount('es')} carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
+    freeList: (n) => [`Las ${appFolderCount('es')} carpetas, hasta ${n} documentos`, 'Bloqueo de la app y las dos fechas', 'Marcar las listas', 'Un PDF de una carpeta completa', 'Exportar sus archivos originales', 'Copia y restauración'],
     plusList: ['Documentos sin límite', 'Sus propias carpetas y etiquetas', 'Un PDF de los documentos o fechas que elija, con portada'],
     plusPrice: (p) => `$${p.yearlyUSD} al año, con renovación anual hasta que lo cancele en los ajustes de suscripción de su teléfono. O $${p.lifetimeUSD} una sola vez de por vida, sin renovación.`,
     priceNotes: (n) => [`El límite de ${n} documentos solo impide añadir. Ver, hacer PDF, exportar, copiar y restaurar nunca se bloquean, pague o no.`, 'No hay prueba gratis ni plan elegido por usted. Su tienda muestra el precio en su moneda antes de pagar.'],

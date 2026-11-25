@@ -1,9 +1,12 @@
-// Site copy counts the app's folders from topics.json, never by hand (review of #65, 21 Nov 2026: the site
-// still said "All five folders" above seven folder boxes).
+// Site copy counts the app's folders from code, never by hand (review of #65, 21 Nov 2026: the site
+// still said "All five folders" above seven folder boxes). Two true counts: the folders with a suggested
+// checklist (topics.json) and every folder on Home, which adds Private (review of #76, 24 Nov 2026: the
+// site said "All seven folders" free while the app's Home shows eight).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { renderAll } from '../site/build.mjs';
-import { folderCount, folderNames } from '../site/lib/folders.mjs';
+import { APP_FOLDER_COUNT, appFolderCount, folderCount, folderNames, privateName } from '../site/lib/folders.mjs';
+import { LANGS, PRIVATE_FOLDER, appFolders } from '../src/core/model';
 import { htmlText } from '../site/lib/gate.mjs';
 import topics from '../topics.json';
 
@@ -20,7 +23,9 @@ test('every page that counts the app folders says the topics.json count, and the
   const check = (file: string, text: string, re: RegExp, words: string[], lang: 'en' | 'es' | 'zh' | 'ko') => {
     for (const m of text.matchAll(re)) {
       const w = m[1].toLowerCase(); if (!words.includes(w) && !/^\d+$/.test(w)) continue;
-      counted++; if (w !== folderCount(lang) && w !== String(N)) wrong.push(`${file}: "${m[0]}"`);
+      counted++;
+      const ok = [folderCount(lang), appFolderCount(lang), String(N), String(APP_FOLDER_COUNT)];
+      if (!ok.includes(w)) wrong.push(`${file}: "${m[0]}"`);
     }
   };
   for (const [file, body] of Object.entries(files)) {
@@ -40,4 +45,23 @@ test('every page that counts the app folders says the topics.json count, and the
   // Lists of folders name every launch folder.
   for (const t of topics.topics.filter(t => t.release === 'launch')) assert.ok(folderNames('en').includes(t.name.en), t.id);
   assert.match(files['llms.txt'] as string, new RegExp(`in ${folderCount('en')} folders`));
+});
+
+test('lines about every folder on Home say the app\'s own count (checklist folders + Private), and lists name Private', () => {
+  // The site's two counts are the app's: the checklist folders, and every folder Home shows.
+  assert.equal(N, appFolders.length - 1);
+  assert.equal(APP_FOLDER_COUNT, appFolders.length);
+  for (const l of LANGS) assert.equal(privateName(l), PRIVATE_FOLDER.display_name[l], l);
+  const { files } = renderAll();
+  const text = (f: string) => { const b = files[f]; assert.equal(typeof b, 'string', `${f} not rendered`); return htmlText(b as string); };
+  // Free covers every folder on Home, Private included.
+  assert.match(text('index.html'), new RegExp(`All ${appFolderCount('en')} folders, up to \\d+ items`));
+  assert.match(text('es/index.html'), new RegExp(`Las ${appFolderCount('es')} carpetas, hasta \\d+ documentos`));
+  // Adding an item: any folder on Home.
+  assert.match(text('vault.html'), new RegExp(`to one of the ${appFolderCount('en')} folders, or to your own`));
+  assert.match(text('es/boveda.html'), new RegExp(`a una de las ${appFolderCount('es')} carpetas, o a una suya`));
+  assert.match(text('zh/vault.html'), new RegExp(`加入${appFolderCount('zh')}个文件夹之一`));
+  assert.match(text('ko/vault.html'), new RegExp(`${appFolderCount('ko')} 개 폴더 중 하나나`));
+  // The facts page's folder list is the app's Home list.
+  for (const [f, l] of [['facts.html', 'en'], ['es/datos.html', 'es']] as const) assert.ok(text(f).includes(privateName(l)), `${f} lists no ${privateName(l)} folder`);
 });

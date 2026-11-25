@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { HEARD, HEARD_SUBJECT, HEARD_WORDS, SUPPORT_EMAIL, heardMail, readHeard, saveHeard, sendHeard, type HeardAnswer, type HeardStore } from '../src/core/heard';
+import { HEARD, HEARD_SUBJECT, SUPPORT_EMAIL, heardMail, heardWords, readHeard, saveHeard, sendHeard, type HeardAnswer, type HeardStore } from '../src/core/heard';
+import { storeName } from '../src/core/store';
 
 // The app makes no network call of its own here: any fetch during these flows fails the test.
 function noFetch() {
@@ -32,19 +33,20 @@ class LinkingLike {
 test('"Send my answer" hands the mail app one email to support whose body is the choice only; still no fetch', async () => {
   const net = noFetch();
   try {
-    for (const h of HEARD) {
+    for (const os of ['ios', 'android'] as const) for (const h of HEARD) {
       const opened: string[] = [];
-      assert.equal(await sendHeard(h, new LinkingLike(true, opened)), true);
+      assert.equal(await sendHeard(h, new LinkingLike(true, opened), storeName(os)), true);
       assert.equal(opened.length, 1);
       const u = new URL(opened[0]!);
       assert.equal(u.protocol, 'mailto:'); assert.equal(u.pathname, SUPPORT_EMAIL);
       assert.deepEqual([...u.searchParams.keys()].sort(), ['body', 'subject']);
       assert.equal(u.searchParams.get('subject'), HEARD_SUBJECT);
-      assert.equal(u.searchParams.get('body'), HEARD_WORDS[h]);
+      assert.equal(u.searchParams.get('body'), heardWords(h, storeName(os)));
+      assert.doesNotMatch(u.searchParams.get('body')!, /\{|\}/, 'no placeholder left in the email');
     }
     const none: string[] = [];
-    assert.equal(await sendHeard('google', new LinkingLike(false, none)), false);
+    assert.equal(await sendHeard('google', new LinkingLike(false, none), 'App Store'), false);
     assert.deepEqual(none, []); assert.deepEqual(net.calls, []);
-    assert.throws(() => heardMail('skip' as never), /HEARD_INVALID/);
+    assert.throws(() => heardMail('skip' as never, 'App Store'), /HEARD_INVALID/);
   } finally { net.restore(); }
 });
