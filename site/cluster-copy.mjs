@@ -45,11 +45,12 @@ export const CC = {
       `Rules change, so check each official source below, and ask a lawyer licensed in ${state} about your situation.`,
     ],
     vaTail: 'VA.gov lists free accredited representatives who can help with a claim.',
-    faq: ({ state, names, date, folder, items, va, store }) => [
+    // A state page's questions are only the ones its own state answers. The folder's papers and the app
+    // are the hub's and the subtopic page's to explain (the same two answers on 2,501 state pages made
+    // every pair of them more than half identical: the q1 template-filler test).
+    faq: ({ state, names, date, va }) => [
       [`Where do these ${state} facts come from?`, `Each fact on this page is copied from an official source: ${names}. We checked that each source still says it on ${date}. Rules and forms change, so open the official link and read the current version before you rely on it.`],
       ['Is this legal advice?', `No. This page is educational only and is not legal advice. KeepMyProof is not a law firm${va ? ', is not affiliated with the VA, and does not prepare, file or judge a claim' : ''}. For advice about your situation, ask ${va ? 'a free VA-accredited representative; VA.gov lists them by state' : `a lawyer licensed in ${state} or your court's self-help center`}.`],
-      [`Which papers should I keep for ${folder.toLowerCase()}?`, `A good start: ${items.join('; ')}. Keep only papers you are allowed to have, write the date on each note, and keep originals somewhere safe.`],
-      ['How can I keep these papers private on my phone?', `KeepMyProof keeps copies of the papers you already have in folders with checklists, encrypted on your phone, with no account and no ads. It is free for the first items you save. ${store}`],
     ],
     storeLine: () => storeLine('en'),
     checklistsTitle: 'Free printable checklists: divorce, work, VA, executor, IEP, tenant, home inventory | KeepMyProof',
@@ -94,11 +95,9 @@ export const CC = {
       `Las reglas cambian: revise cada fuente oficial de abajo y consulte con un abogado con licencia en ${state} sobre su caso.`,
     ],
     vaTail: 'VA.gov tiene una lista de representantes acreditados gratis que pueden ayudar con un reclamo.',
-    faq: ({ state, names, date, folder, items, va, store }) => [
+    faq: ({ state, names, date, va }) => [
       [`¿De dónde salen estos datos de ${state}?`, `Cada dato de esta página está copiado de una fuente oficial: ${names}. El ${date} revisamos que cada fuente todavía lo dice. Las reglas y los formularios cambian, así que abra el enlace oficial y lea la versión vigente antes de basarse en él.`],
       ['¿Esto es asesoría legal?', `No. Esta página es solo informativa y no es asesoría legal. KeepMyProof no es un bufete de abogados${va ? ', no está afiliado al VA y no prepara, presenta ni evalúa reclamos' : ''}. Para un consejo sobre su caso, consulte ${va ? 'a un representante acreditado por el VA, que es gratis; VA.gov los muestra por estado' : `a un abogado con licencia en ${state} o al centro de ayuda de su corte`}.`],
-      [`¿Qué papeles conviene guardar para ${folder.toLowerCase()}?`, `Para empezar: ${items.join('; ')}. Guarde solo papeles que tiene derecho a tener, anote la fecha en cada nota y guarde los originales en un lugar seguro.`],
-      ['¿Cómo guardo estos papeles en privado en mi teléfono?', `KeepMyProof guarda copias de los papeles que ya tiene en carpetas con listas, cifradas en su teléfono, sin cuenta y sin anuncios. Es gratis para los primeros documentos que guarde. ${store}`],
     ],
     storeLine: () => storeLine('es'),
     checklistsTitle: 'Listas gratis para imprimir: divorcio, trabajo, VA, albacea, IEP, inquilinos, inventario | KeepMyProof',
