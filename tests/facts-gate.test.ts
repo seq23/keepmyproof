@@ -48,6 +48,39 @@ test('verify-facts keeps a fact only if its quote is on the fetched page, and a 
   for (const [code, why] of [['OR', 'UNDER_3_VERIFIED'], ['NV', 'UNDER_2_STATE_SPECIFIC'], ['WA', 'UNDER_2_STATE_SPECIFIC'], ['AZ', 'UNDER_3_VERIFIED'], ['TX', 'UNDER_3_VERIFIED']])
     assert.ok(stops.some((s: string) => s.includes(`[${why}] iep/gate-fixture/${code}`)), `${code} refused as ${why}`);
   for (const p of pages.filter((x: any) => !x.external)) assert.equal(bannedWord(files[p.file].replace(/<head>[\s\S]*?<\/head>/, '').replace(/<[^>]+>/g, ' ')), null, p.path);
+  // Search Readiness a8: every held-back state page answers 301 to its subtopic page, never 404;
+  // published pages get no redirect, and the repo's own redirects are kept above the generated ones.
+  const redirects = files['_redirects'].split('\n');
+  for (const code of ['oregon', 'nevada', 'washington', 'arizona', 'texas']) {
+    assert.ok(redirects.includes(`/iep/gate-fixture/${code} /iep/gate-fixture/ 301`), `${code} en redirected`);
+    assert.ok(redirects.some((x: string) => x.startsWith(`/es/iep/`) && x.includes(`/${code} /es/iep/`) && x.endsWith(' 301')), `${code} es redirected`);
+  }
+  assert.ok(!redirects.some((x: string) => /\/california /.test(x)), 'a published page is never redirected');
+  assert.ok(pages.some((p: any) => p.path === '/iep/gate-fixture/'), 'the redirect target exists');
+  assert.ok(files['_redirects'].indexOf('/amazon /amazon/ 200') < files['_redirects'].indexOf('/iep/gate-fixture/oregon'), 'own redirects first');
+});
+
+test('a bot challenge or an empty 2xx is a failed read, never the source page, so it cannot drop a live page\'s facts', async () => {
+  const { notThePage } = await import('../scripts/verify-facts.mjs');
+  const b = (s: string) => Buffer.from(s);
+  // selfhelp.nvcourts.gov, 24 Nov 2026: 202 with a meta refresh to a SiteGround captcha.
+  const sg = '<html><head><link rel="icon" href="data:;"><meta http-equiv="refresh" content="0;/.well-known/sgcaptcha/?r=%2Fself-help%2Fdivorce%2Foverview"></meta></head></html>';
+  assert.match(String(notThePage(202, b(sg))), /202/);
+  assert.equal(notThePage(200, b(sg)), 'bot challenge page');
+  assert.equal(notThePage(200, b(`<html><head><title>Just a moment...</title></head><body>${'x'.repeat(300)}</body></html>`)), 'bot challenge page');
+  assert.equal(notThePage(200, b(`<html><head><meta http-equiv="refresh" content="0;url=/next"></head><body>${'x'.repeat(200)}</body></html>`)), 'redirect-only page');
+  assert.equal(notThePage(200, b('short')), 'empty body');
+  assert.match(String(notThePage(503, b('x'.repeat(500)))), /503/);
+  // Real pages, including a long one that happens to carry a refresh tag, and a PDF, still read.
+  assert.equal(notThePage(200, b(`<html><head><title>Divorce Overview</title></head><body><p>${'One spouse (or both) must live in Nevada. '.repeat(20)}</p></body></html>`)), null);
+  assert.equal(notThePage(200, b(`<html><head><meta http-equiv="refresh" content="1800"></head><body>${'Court rule text. '.repeat(200)}</body></html>`)), null);
+  assert.equal(notThePage(200, b(`%PDF-1.7 ${'x'.repeat(200)}`)), null);
+  // With --keep-on-fetch-error a failed read keeps the fact at its last check; the state page stays up.
+  const data = { folder: 'iep', subtopic: 'gate-fixture', title_en: 'Fixture in {state}', title_es: 'Prueba en {state_es}', states: { CA: DATA.states.CA } };
+  const keys = (await verifyFacts([{ folder: 'iep', file: 'iep/gate-fixture.json', data }], { fetchText: async (u: string) => { const { sourceText } = await import('../site/lib/gate.mjs'); return sourceText(PAGE[u]); }, today: '2026-11-02' })).iep.facts;
+  const walled = await verifyFacts([{ folder: 'iep', file: 'iep/gate-fixture.json', data }], { fetchText: async () => { throw Error('FETCH_FAILED curl 202 (no page yet), fetch 200 bot challenge page'); }, today: '2026-11-24', previous: { iep: { facts: keys } }, keepOnFetchError: true });
+  assert.equal(walled.iep.pages, 1, 'the page stays published');
+  assert.deepEqual(walled.iep.facts, keys, 'each fact keeps its last real check date');
 });
 
 test('quote matching decodes double-encoded entities, so a dollar amount written as &amp;dollar; still matches its quote', async () => {
