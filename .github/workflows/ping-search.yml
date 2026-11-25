@@ -15,6 +15,8 @@ concurrency:
   cancel-in-progress: true
 jobs:
   ping:
+    if: github.ref == 'refs/heads/main'
+    environment: reviewed-main
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
