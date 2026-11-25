@@ -63,5 +63,9 @@ test('lines about every folder on Home say the app\'s own count (checklist folde
   assert.match(text('zh/vault.html'), new RegExp(`加入${appFolderCount('zh')}个文件夹之一`));
   assert.match(text('ko/vault.html'), new RegExp(`${appFolderCount('ko')} 개 폴더 중 하나나`));
   // The facts page's folder list is the app's Home list.
-  for (const [f, l] of [['facts.html', 'en'], ['es/datos.html', 'es']] as const) assert.ok(text(f).includes(privateName(l)), `${f} lists no ${privateName(l)} folder`);
+  for (const [f, l] of [['facts.html', 'en'], ['es/datos.html', 'es']] as const) {
+    const html = files[f] as string;
+    for (const t of topics.topics.filter(t => t.release === 'launch')) assert.ok(html.includes(`<li>${t.name[l as 'en' | 'es']!.replace(/&/g, '&amp;')}</li>`), `${f}: ${t.id}`);
+    assert.ok(html.includes(`<li>${privateName(l)}</li>`), `${f} lists no ${privateName(l)} folder`);
+  }
 });

@@ -79,6 +79,15 @@ test('an iPhone never shows or emails Google Play; Android never shows the App S
     assert.ok(heardWords('store', store).includes(store));
   }
   assert.equal(storeName('web'), 'App Store');
+  // The screen fills {store} from this phone's platform wherever it shows a survey answer, and picks the
+  // yearly terms by platform (TypeScript already makes sendHeard take the store).
+  const screen = read('app/index.tsx');
+  const surveyLabels = [...screen.matchAll(/t\(HEARD_KEY\[[^\]]+\]([^)]*)\)/g)];
+  assert.ok(surveyLabels.length >= 2, 'the survey labels moved: update this check');
+  for (const m of surveyLabels) assert.match(m[1]!, /^, \{ store: storeName \}$/, `survey label without its store: ${m[0]}`);
+  assert.match(screen, /const storeName = storeFor\(Platform\.OS\);/);
+  assert.doesNotMatch(screen, /'annualTerms'/, 'the yearly terms are picked by annualTermsKey(Platform.OS)');
+  assert.match(screen, /annualTermsKey\(Platform\.OS\)/);
   // Any app string that names Google Play or Android is an Android-only key, picked by platform.
   const keys = Object.keys(strings) as StringKey[];
   const named = keys.filter(k => (strings[k] as readonly string[]).some(s => OTHER_STORE.ios.test(s)));
