@@ -1,8 +1,9 @@
 # App Review notes (App Store Connect › App Review Information › Notes)
 
 Paste the block below as it stands. It describes the build submitted, which is the build everyone gets.
-`tests/store-build.test.ts` checks it exists, stays in the shipped build's terms, and counts Home's folders from
-`src/core/model.ts` (`appFolders`); nothing here is sent by an agent.
+`tests/store-build.test.ts` checks it exists and stays in the shipped build's terms; `tests/store-truth.test.ts`
+counts Home's folders from `src/core/model.ts` (`appFolders`) and checks the products and prices it names.
+Nothing here is sent by an agent.
 
 Before pasting (App Store Connect, done by the owner or coordinator, never an agent):
 - In-app purchases on version 1.0: attach `kmp_plus_annual` and `kmp_plus_lifetime` (the two the block names).
