@@ -155,4 +155,7 @@ test('the live Privacy check says "couldn\'t check" when the site cannot be reac
   const bad = await livePrivacyProblems(async () => ({ status: 200, text: async () => old }), [['/privacy', 'en']]);
   assert.equal(bad.length, 2, bad.join(' | '));
   assert.deepEqual(await livePrivacyProblems(async () => ({ status: 200, text: async () => '<html></html>' }), [['/privacy', 'en']]), ['/privacy en: privacy text is 0 characters, so it was not read']);
+  // Script and style text is not page text, whatever the tag case or end-tag spacing (CodeQL js/bad-tag-filter).
+  const scripted = page('en').replace('<body>', '<body><SCRIPT type="x">"used only by reviewers"</SCRIPT ><Style>.reviewers{}</style\n>');
+  assert.deepEqual(await livePrivacyProblems(async () => ({ status: 200, text: async () => scripted }), [['/privacy', 'en']]), []);
 });

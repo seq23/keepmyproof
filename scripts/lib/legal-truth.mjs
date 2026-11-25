@@ -24,7 +24,7 @@ export function accessCodeProblems(lang, text) {
   return out;
 }
 
-const text = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, ' ')
+const text = (html) => html.replace(/<(script|style)\b[\s\S]*?<\/\1[^>]*>/gi, ' ').replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
 export const LIVE_PRIVACY = [['/privacy', 'en'], ['/es/privacidad', 'es']];
