@@ -26,7 +26,7 @@ export const STOP_WORDS = {
   PRICE_RECHECK_PENDING: { title: "KeepMyProof: recheck the other app's lifetime price", next_step: "Recheck the other vault app's App Store lifetime price in launch week." },
   PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
   LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
-  PREVIEW_BUILD: { title: 'KeepMyProof: a store build had the simulator preview switch on', next_step: 'Remove EXPO_PUBLIC_KMP_PREVIEW from the store build; it turns screenshot protection off.' },
+  PREVIEW_BUILD: { title: 'KeepMyProof: a store build had a preview or review switch on', next_step: 'Remove every EXPO_PUBLIC_KMP_ variable except the two RevenueCat keys from the store build: the app App Review sees must be the app everyone gets.' },
   PHONE_WORDING: { title: 'KeepMyProof: app and App Store copy says phone', next_step: 'Reword the listed strings to device-neutral words (device, dispositivo, 设备, 기기): iPad users read them too.' },
   SUPPORT_ADDRESS_NOT_ON_DOMAIN: { title: 'KeepMyProof: support mailbox on keepmyproof.com', next_step: 'Set up free email forwarding on keepmyproof.com and point the support address at it.' },
 };
@@ -37,6 +37,13 @@ export const knownHere = (eas) => Object.keys(STOP_WORDS).filter(c => eas || c !
 // supportsTablet is on, so every string iOS can show is read on an iPad too: none may say "phone"
 // (App Review re-review, 21 Nov 2026). "iPhone" is a product name and stays allowed. Strings only Android
 // shows are listed by key here; the Play listing (store/google-play.json, store/play/) is Android-only.
+// The only EXPO_PUBLIC_KMP_ variables a store build may carry. Any other one (the simulator preview's
+// EXPO_PUBLIC_KMP_PREVIEW, or any future review or feature switch) would make the store build differ from what
+// App Review sees, so it is refused (Apple Guideline 5.6, rejection of 23 Nov 2026).
+export const STORE_ENV = ['EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY', 'EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY'];
+export const switchesOn = (env) => Object.keys(env).filter(k => k.startsWith('EXPO_PUBLIC_KMP_') && !STORE_ENV.includes(k) && env[k] !== undefined && env[k] !== '').sort();
+const switchWhy = (on) => `${on.join(', ')} ${on.length > 1 ? 'are' : 'is'} set; a store build carries only the RevenueCat keys, so the app App Review sees is the app everyone gets.`;
+
 export const PHONE_WORDS = /\bphones?\b|teléfono|手机|휴대폰/i;
 export const ANDROID_ONLY_KEYS = ['vaultLockAndroid', 'photoCopyAndroid'];
 // App Store listing files, plus app.config.ts: its plugin permission prompts (photosPermission) show on iPad too.
@@ -63,11 +70,9 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   if (wording.length) stop('PHONE_WORDING', `copy an iPad shows says phone: ${wording.slice(0, 5).join(' | ')}${wording.length > 5 ? ` (+${wording.length - 5} more)` : ''}.`);
   if (!env.EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY?.startsWith('appl_') || !env.EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY?.startsWith('goog_'))
     stop('REVENUECAT_KEY_MISSING', 'the App Store (appl_) and Play (goog_) RevenueCat keys are not set as EAS secrets, so the build could not sell Plus.');
-  // The simulator preview switch turns screenshot protection off; it never ships to a store.
-  if (env.EXPO_PUBLIC_KMP_PREVIEW)
-    stop('PREVIEW_BUILD', 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.');
-  if (env.EXPO_PUBLIC_KMP_REVIEW_RECORDING)
-    stop('PREVIEW_BUILD', 'EXPO_PUBLIC_KMP_REVIEW_RECORDING is set, which turns screenshot protection off; it is for the simulator review recording only.');
+  // The simulator preview's switch (sample vault) or any other app switch never ships to a store.
+  const on = switchesOn(env);
+  if (on.length) stop('PREVIEW_BUILD', switchWhy(on));
   const device = readJson('release/device-gate.json');
   const missing = DEVICE_CHECKS.filter(c => device?.checks?.[c] !== true);
   if (!device || device.version !== version || missing.length)
@@ -102,10 +107,8 @@ export function betaStops({ env, platform = 'ios' }) {
   const key = STORE_KEY[platform];
   if (!key) throw Error(`NAMED STOP [UNKNOWN_PLATFORM] no store key is known for ${platform}.`);
   if (!env[key.name]?.startsWith(key.prefix)) out.push({ code: 'REVENUECAT_KEY_MISSING', why: key.why });
-  if (env.EXPO_PUBLIC_KMP_PREVIEW)
-    out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_PREVIEW is set, which turns screenshot protection off; it is for the simulator preview only.' });
-  if (env.EXPO_PUBLIC_KMP_REVIEW_RECORDING)
-    out.push({ code: 'PREVIEW_BUILD', why: 'EXPO_PUBLIC_KMP_REVIEW_RECORDING is set, which turns screenshot protection off; it is for the simulator review recording only.' });
+  const on = switchesOn(env);
+  if (on.length) out.push({ code: 'PREVIEW_BUILD', why: switchWhy(on) });
   return out;
 }
 

@@ -74,16 +74,20 @@ A new value in `type Screen` (`app/index.tsx`) needs a `takeScreenshot: NN-<scre
 `.maestro/preview.yaml`, or a `# not-shown: <screen> — <reason>` line. `npm run check` fails
 otherwise (validator `preview-screens`).
 
-The preview build sets `EXPO_PUBLIC_KMP_PREVIEW=1`, which turns screenshot protection off so the
-screenshots are not black. The release gate refuses a store build with it set (`PREVIEW_BUILD`).
+The preview build sets `EXPO_PUBLIC_KMP_PREVIEW=1`. Its only effect is the sample-vault button below;
+the app never blocks screenshots in any build. The release gate refuses a store build with it (or any
+`EXPO_PUBLIC_KMP_` variable other than the two RevenueCat keys) set (`PREVIEW_BUILD`).
 
 ## Appetize's 3-minute sessions
 
 Appetize's free plan ends each session after about 3 minutes and starts the app fresh every time, which
 is too short to set a passcode and confirm 12 words by hand. The preview build's first screen has
 **"Preview only: skip to a sample vault ›"**: it sets up a vault (passcode 123456) with a few invented
-papers and opens on My folders. It exists only when `EXPO_PUBLIC_KMP_PREVIEW=1`; the release gate
-refuses a store build with that set (NAMED STOP `PREVIEW_BUILD`). Guard: `tests/preview-sample.test.ts`.
+papers and opens on My folders. It exists only when `EXPO_PUBLIC_KMP_PREVIEW=1`: `app/index.tsx`
+requires `src/preview.ts` only then, so no other build bundles its wording or sample data
+(`npm run bundle-scan` checks the exported iOS and Android bundles), and the release gate refuses a store
+build with that set (NAMED STOP `PREVIEW_BUILD`). Guards: `tests/preview-sample.test.ts`,
+`tests/store-build.test.ts`.
 
 ## Google Play art and listing
 

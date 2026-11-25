@@ -9,5 +9,6 @@ For behavior fixes, demonstrate the regression by breaking the fix, seeing the
 relevant test fail, and restoring it. Never pin prose in tests.
 No analytics, accounts, automatic sharing, store submission or paid operations.
 Only RevenueCat may use the app's network, plus the one Android review-code check in
-src/billing/review.ts (Google Play's reviewer); backup uses the system picker/share.
+src/billing/review.android.ts (Google Play's reviewer; Android bundle only); backup uses the system picker/share.
+Every build behaves the same: no screenshot block, no review-only or remote-switched feature on iOS.
 Keep one safety runner; register every check in validators.registry.json.

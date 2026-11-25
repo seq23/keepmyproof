@@ -43,8 +43,8 @@ jobs:
     env:
       EXPO_NO_TELEMETRY: '1'
       CI: '1'
-      # Turns screenshot protection off so the screenshots are not blank (src/preview.ts); the
-      # release gate refuses any store build with it set (NAMED STOP PREVIEW_BUILD).
+      # Shows "skip to a sample vault" on the first screen (src/preview.ts, bundled only with this set);
+      # the release gate refuses any store build with it set (NAMED STOP PREVIEW_BUILD).
       EXPO_PUBLIC_KMP_PREVIEW: '1'
       MAESTRO_DRIVER_STARTUP_TIMEOUT: '240000'
       MAESTRO_CLI_NO_ANALYTICS: '1'

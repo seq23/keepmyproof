@@ -138,6 +138,9 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.deepEqual(await codes({mx:async()=>0}),['SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
   assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_PREVIEW:'1'}}),['PREVIEW_BUILD']);
   assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_REVIEW_RECORDING:'1'}}),['PREVIEW_BUILD']);
+  // Apple 5.6 (23 Nov 2026): any app switch, not only the ones named today, stops a store build; an empty one is unset.
+  assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_SIMULATOR_RECORDING:'true'}}),['PREVIEW_BUILD']);
+  assert.deepEqual(await codes({env:{...ready.env,EXPO_PUBLIC_KMP_PREVIEW:''}}),[]);
   // Owner ruling 2 Nov 2026: translations launch without a native reader, so no language state stops a store build.
   const langs=(topics:unknown)=>codes({readJson:(p:string)=>p==='topics.json'?topics:files[p]});
   for(const t of [{languages:['en','es','zh','ko'],native_review:{es:'pending',zh:'pending',ko:'pending'}},{languages:['en','es','zh','ko']},null]) assert.deepEqual(await langs(t),[]);
@@ -155,6 +158,7 @@ test('a tester build (TestFlight or Play internal) needs a real key for its own 
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}),['REVENUECAT_KEY_MISSING']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_PREVIEW:'1'}),['PREVIEW_BUILD']);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVIEW_RECORDING:'1'}),['PREVIEW_BUILD']);
+  assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_ANY_NEW_FLAG:'0'}),['PREVIEW_BUILD']);
   // Android: only a goog_ key sells on Play; the App Store key, a test key or none stops the build.
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},'android'),[]);
   for(const env of [{},{EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'test_x'},{EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'appl_x'},{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x'}] as Record<string,string>[])

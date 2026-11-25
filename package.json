@@ -14,7 +14,8 @@
     "release-gate": "node scripts/release-gate.mjs",
     "eas-build-pre-install": "node scripts/release-gate.mjs --if-production",
     "bundle": "expo export --platform ios --platform android",
-    "preview:web": "expo export --platform web"
+    "preview:web": "expo export --platform web",
+    "bundle-scan": "tsx scripts/bundle-scan.ts"
   },
   "dependencies": {
     "@expo-google-fonts/noto-sans": "0.4.2",

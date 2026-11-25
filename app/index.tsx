@@ -13,7 +13,7 @@ import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
 import { FileView } from '../src/viewer';
 import { activeLaunch, free, renewalDue, type Entitlement, type Product } from '../src/billing/provider';
 import { purchases } from '../src/billing/revenuecat';
-import { redeemReviewCode, reviewWindowOpen, type ReviewResult } from '../src/billing/review';
+import { ReviewCode } from '../src/billing/ReviewCode';
 import * as device from '../src/native/storage';
 import * as files from '../src/native/files';
 import { cameraStep, photoTitle } from '../src/core/camera';
@@ -23,7 +23,10 @@ import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaul
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styles, textProps, usePalette, useTyped } from '../src/ui';
-import { PREVIEW_BUILD, REVIEW_RECORDING_BUILD, sampleVault } from '../src/preview';
+// The simulator/web preview's sample vault (docs/preview.md). Only a build with EXPO_PUBLIC_KMP_PREVIEW=1 bundles it:
+// in every other build this folds to null at build time and src/preview.ts is not in the bundle at all
+// (scripts/bundle-scan.mjs proves it on the exported iOS bundle; the release gate refuses a store build with it set).
+const preview: typeof import('../src/preview') | null = process.env.EXPO_PUBLIC_KMP_PREVIEW === '1' ? require('../src/preview') : null;
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
@@ -78,10 +81,6 @@ export default function App() {
   const [ent, setEnt] = useState<Entitlement>(free), [products, setProducts] = useState<Product[]>([]);
   // Where Plus's Back / Not now returns: Home, or the half-filled add screen its locked Tags row opened it from.
   const [plusBack, setPlusBack] = useState<'home'|'add'>('home');
-  // Google Play's reviewer only: the collapsed "Have a review code?" link (Android, store billing, not on Plus, and only
-  // while keepmyproof.com says a review window is open). src/billing/review.ts is the one network call it makes.
-  const [reviewOpen, setReviewOpen] = useState(false), [reviewShown, setReviewShown] = useState(false);
-  const [reviewCode, setReviewCode, reviewCodeNow] = useTyped('');
   const [selection, setSelection] = useState(false), [selected, setSelected] = useState<string[]>([]);
   const [from, setFrom, fromNow] = useTyped(''), [to, setTo, toNow] = useTyped(''), [cover, setCover, coverNow] = useTyped('');
   const busyRef = useRef(false), sharing = useRef(false), mounted = useRef(true);
@@ -113,7 +112,6 @@ export default function App() {
       if (!start.fresh) setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
-    if (!PREVIEW_BUILD && !REVIEW_RECORDING_BUILD) void ScreenCapture.preventScreenCaptureAsync().catch(() => setError(t('error')));
     if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
@@ -166,12 +164,6 @@ export default function App() {
       .catch(e => { setProducts([]); setProductsState((e as Error).message === 'STORE_PRODUCTS_MISSING' ? 'missing' : 'failed'); });
   }
   useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
-  const reviewable = Platform.OS === 'android' && billing.mode === 'sandbox' && !ent.plus;
-  useEffect(() => {
-    if (screen !== 'plus' || !reviewable) { setReviewOpen(false); setReviewShown(false); setReviewCode(''); return; }
-    let live = true; void reviewWindowOpen().then(open => { if (live) setReviewOpen(open); }); return () => { live = false; };
-  }, [screen, reviewable]);
-  const REVIEW_SAYS: Record<Exclude<ReviewResult, 'unlocked'>, StringKey> = { wrong:'reviewWrong', usedUp:'reviewUsedUp', slow:'reviewSlow', tryAgain:'reviewTryAgain' };
   const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
@@ -285,12 +277,12 @@ export default function App() {
   else if (screen === 'first') body = <><P muted>{t('step1')}</P><P muted>KeepMyProof</P><P heading>{t('vaultTitle')}</P><P muted>{t(vaultCopy.lock)}</P><P section>{t('firstTitle')}</P>
     <Card><P>{t('noAccount')}</P><P muted>{t('start')}</P></Card><Card><P>{t('stays')}</P><P muted>{t('local')}</P></Card>
     <Card><P>{t('firstFree')}</P><P muted>{t('five', { n: appFolders.length })}</P></Card>
-    {PREVIEW_BUILD && <Button title="Preview only: skip to a sample vault ›" onPress={doRun(async () => {
+    {preview && <Button title={preview.SKIP_LABEL} onPress={doRun(async () => {
       // Appetize's free sessions last 3 minutes, too short to set up a vault by hand. Preview builds only:
-      // the release gate refuses a store build with PREVIEW_BUILD set (NAMED STOP PREVIEW_BUILD).
+      // no other build bundles src/preview.ts, and the release gate refuses a store build with the switch set.
       setLang('en'); resume.current = 'home';
-      const v = await device.setup('123456', phrase(device.random), false);
-      for (const d of sampleVault()) await v.add(d, false);
+      const v = await device.setup(preview.SAMPLE_CODE, phrase(device.random), false);
+      for (const d of preview.sampleVault()) await v.add(d, false);
       setSample(true); acceptVault(v);
     })} />}
     {LANGS.map(l => <Button key={l} title={CONTINUE[l]} onPress={() => { chooseLang(l); navigate('setup'); }} />)}
@@ -323,7 +315,7 @@ export default function App() {
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(codeNow())), 'workingCheck'), false, true)}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
-    {PREVIEW_BUILD && sample && <P muted>Preview only: the sample vault opens with 123456.</P>}</>;
+    {preview && sample && <P muted>{preview.SAMPLE_HINT}</P>}</>;
   else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field label={t('newCode')} value={code} onChange={setCode} secret numeric />
     <Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
@@ -531,15 +523,9 @@ export default function App() {
           onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
     })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}
-    {reviewable && reviewOpen && (reviewShown ? <Card><P>{t('reviewCode')}</P><P muted>{t('reviewWhy')}</P>
-      <Field label={t('reviewCode')} value={reviewCode} onChange={setReviewCode} numeric digits={10} />
-      {btn('reviewUse', doRun(async () => {
-        // Plus comes only from RevenueCat's own answer after the server's grant, never from the 200 itself.
-        const result = await redeemReviewCode(reviewCodeNow(), await billing.appUserId());
-        if (result !== 'unlocked') { setError(t(REVIEW_SAYS[result])); return; }
-        const next = await billing.refresh(); setEnt(next); setReviewCode('');
-        if (!next.plus) setError(t('reviewTryAgain'));
-      }))}</Card> : <Button quiet title={t('reviewLink')} onPress={() => setReviewShown(true)} disabled={busy} />)}</>;
+    {/* Android only (Google Play's reviewer); on iOS and the web ReviewCode renders nothing and has no code in the bundle. */}
+    <ReviewCode eligible={billing.mode === 'sandbox' && !ent.plus} busy={busy} run={job => { void run(job); }} setError={setError}
+      appUserId={() => billing.appUserId()} refresh={() => billing.refresh()} onEntitlement={setEnt} /></>;
   else body = <P>{t('empty')}</P>;
   // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
   // finding 3: a refused date showed far above Save).

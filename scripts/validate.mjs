@@ -13,7 +13,7 @@ const app=texts.filter(([f])=>/^(src|app)\//.test(f));
 const PUBLIC_ADDRESS=e=>/@keepmyproof\.com$/i.test(e)||e.toLowerCase()==='hello@theindustryguides.com';
 const sha=s=>createHash('sha256').update(s.toLowerCase()).digest('hex');
 const privateHashes=JSON.parse(readFileSync('scripts/private-hashes.json','utf8'));
-const REVIEW_FILE='src/billing/review.ts',REVIEW_URL='https://keepmyproof.com/api/review';
+const REVIEW_FILE='src/billing/review.android.ts',REVIEW_URL='https://keepmyproof.com/api/review';
 const reviewFetch=(f,node)=>{
   if(f!==REVIEW_FILE||node.text!=='fetch')return false;
   const call=node.parent;

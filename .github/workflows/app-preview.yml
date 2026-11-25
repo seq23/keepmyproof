@@ -27,7 +27,7 @@ jobs:
     env:
       CI: '1'
       EXPO_NO_TELEMETRY: '1'
-      # Shows "skip to a sample vault" on the first screen (src/preview.ts). The release gate refuses a
+      # Shows "skip to a sample vault" on the first screen (src/preview.ts, bundled only with this set). The release gate refuses a
       # store build with it set (NAMED STOP PREVIEW_BUILD).
       EXPO_PUBLIC_KMP_PREVIEW: '1'
     steps:

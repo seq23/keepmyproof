@@ -14,7 +14,7 @@ etiquetas propias y PDF de documentos o fechas que elija.
 Solo para información. No es asesoría legal. KeepMyProof no es un bufete ni
 está afiliado al VA. No prepara, presenta ni evalúa un reclamo.
 
-## Borrador de privacidad — publicar antes del lanzamiento
+## Privacidad (publicada en keepmyproof.com)
 
 Sus documentos, fotos, notas, fechas y listas se guardan cifrados en su dispositivo.
 No los recibimos. No hay herramientas de publicidad ni análisis de uso. Nunca
@@ -22,17 +22,18 @@ enviamos sus documentos a un modelo. Usted decide si envía un PDF u originales
 a otra app y dónde guarda su copia cifrada. Esos destinos tienen sus propias
 prácticas de privacidad. Quien reciba un PDF o un original podrá leerlo.
 
-Si se habilitan las compras, RevenueCat y la tienda procesan el historial de
-compras y un identificador anónimo para ofrecer Plus y restaurar compras.
-Nunca reciben sus documentos. Los diagnósticos y la recopilación automática
-de identificadores del dispositivo están desactivados. Esta versión de prueba
-no permite hacer compras.
+Plus se compra en App Store o Google Play. RevenueCat y la tienda procesan el
+historial de compras y un identificador anónimo para ofrecer Plus y restaurar
+compras. Nunca reciben sus documentos. Los diagnósticos y la recopilación
+automática de identificadores del dispositivo están desactivados.
 
-Las únicas conexiones de la app son RevenueCat y, en Android cuando se escribe
-un código de revisión de Google Play, la comprobación de ese código en
-keepmyproof.com. Esa comprobación envía el código y el identificador anónimo de
-compra, nunca sus documentos, y guarda solo una forma codificada del identificador
-hasta 7 días después de que termine el acceso de revisión.
+En iPhone y iPad, las únicas conexiones de la app son RevenueCat y App Store,
+para Plus. La app de Android tiene una más, que usan solo los revisores de apps
+de Google Play: cuando escriben el código de acceso que Google Play nos pide
+darles, la app lo comprueba en keepmyproof.com. Esa comprobación envía el código
+y el identificador anónimo de compra, nunca sus documentos, y guarda solo una
+forma codificada del identificador hasta 7 días después de que termine el
+acceso de revisión.
 
 Eliminar un documento lo quita de la carpeta privada actual, incluidas las
 versiones anteriores de sus notas. No borra copias que usted ya exportó o guardó.
@@ -40,7 +41,7 @@ Elimínelas en sus destinos. No hay cuenta que eliminar. Desinstalar la app borr
 su carpeta privada local; antes guarde y compruebe una copia. La frase se muestra
 una sola vez. Sin dispositivo ni frase no podrá recuperar la copia cifrada.
 
-## Borrador de términos — publicar antes del lanzamiento
+## Términos (publicados en keepmyproof.com)
 
 KeepMyProof organiza copias y notas que usted ya tiene. Guarde solo material que
 pueda poseer legalmente. No da asesoría legal, médica, fiscal ni sobre reclamos
@@ -49,12 +50,12 @@ reloj del dispositivo registra cuándo lo guardó, no prueba cuándo pasó algo.
 
 El plan gratis permite 25 documentos. El límite solo impide añadir; sus documentos,
 PDF de carpetas completas, originales, copias y restauración siguen disponibles.
-Plus tendrá un precio de $19.99 al año, con renovación anual hasta que lo cancele,
+Plus cuesta $19.99 al año, con renovación anual hasta que lo cancele,
 o $39.99 una sola vez de por vida, sin renovación. La tienda muestra los precios
 en su moneda antes del pago. No hay prueba gratis ni plan preseleccionado.
 Cancele en Ajustes del iPhone, su nombre, Suscripciones; en Android, Play Store,
 Pagos y suscripciones. Cancelar no elimina sus documentos. La app permite restaurar
-compras. Esta versión no acepta pagos. Una oferta de lanzamiento solo se muestra
-si la tienda la confirma; no cambia el precio normal de lista.
+compras. Una oferta de lanzamiento solo se muestra si la tienda la confirma; no
+cambia el precio normal de lista.
 
 Conserve copias y compruébelas. No podemos recuperar una frase perdida.

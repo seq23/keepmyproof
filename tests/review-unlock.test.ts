@@ -1,11 +1,11 @@
-// Google Play review code (site/server/review.mjs + src/billing/review.ts): how it breaks, each case proven.
+// Google Play review code (site/server/review.mjs + src/billing/review.android.ts): how it breaks, each case proven.
 // The server runs against a real SQLite database built from site/migrations (a D1 stand-in) and a fake RevenueCat.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { LIMITS, reviewStatus, reviewUnlock } from '../site/server/review.mjs';
-import { redeemReviewCode, reviewWindowOpen, REVIEW_URL } from '../src/billing/review';
+import { redeemReviewCode, reviewStrings, reviewWindowOpen, REVIEW_URL } from '../src/billing/review.android';
 
 const CODE = '4815162342', NOW = Date.parse('2026-12-01T12:00:00Z'), DAY = 86_400_000;
 const anon = (n: number) => `$RCAnonymousID:${n.toString(16).padStart(32, '0')}`;
@@ -181,6 +181,12 @@ test('the app: Plus only from RevenueCat, never from the server alone; no networ
     globalThis.fetch = (async () => { throw Error('offline'); }) as typeof fetch;
     assert.equal(await reviewWindowOpen(), false);
     assert.equal(await redeemReviewCode(CODE, anon(1)), 'tryAgain');
+    // The review endpoint down (5xx): "couldn't check", never unlocked.
+    for (const status of [500, 502, 503]) {
+      globalThis.fetch = (async () => new Response('upstream down', { status })) as typeof fetch;
+      assert.equal(await reviewWindowOpen(), false, `window ${status}`);
+      assert.equal(await redeemReviewCode(CODE, anon(1)), 'tryAgain', `redeem ${status}`);
+    }
     globalThis.fetch = (async (url: string, init?: RequestInit) => { seen.push(`${init?.method ?? 'GET'} ${url} ${init?.body ?? ''}`);
       return url === REVIEW_URL ? new Response('{"error":"NOT_FOUND"}', { status: 404 }) : new Response('{"error":"USED_UP"}', { status: 403 }); }) as typeof fetch;
     assert.equal(await reviewWindowOpen(), false);
@@ -193,16 +199,17 @@ test('the app: Plus only from RevenueCat, never from the server alone; no networ
     // What leaves the phone: the code and the anonymous purchase ID, nothing else.
     assert.deepEqual(Object.keys(JSON.parse(seen[1]!.split(' ').slice(2).join(' '))), ['code', 'app_user_id']);
   } finally { globalThis.fetch = real; }
-  // The screen sets Plus from billing.refresh() (RevenueCat), and the link is Android-only.
-  const screen = readFileSync('app/index.tsx', 'utf8');
-  assert.match(screen, /const reviewable = Platform\.OS === 'android' && billing\.mode === 'sandbox' && !ent\.plus;/);
-  assert.match(screen, /const next = await billing\.refresh\(\); setEnt\(next\)/);
+  // The card sets Plus from billing.refresh() (RevenueCat), only for store billing and a user not on Plus.
+  const card = readFileSync('src/billing/ReviewCode.android.tsx', 'utf8'), screen = readFileSync('app/index.tsx', 'utf8');
+  assert.match(card, /const next = await refresh\(\); onEntitlement\(next\)/);
+  assert.match(screen, /<ReviewCode eligible=\{billing\.mode === 'sandbox' && !ent\.plus\}[^\n]*\n[^\n]*refresh=\{\(\) => billing\.refresh\(\)\} onEntitlement=\{setEnt\} \/>/);
 });
 
 test('the Play reviewer note fits 500 characters and every screen name in it is on the Android build', async () => {
   const { strings } = await import('../src/strings');
+  const words = (key: 'seePlus' | 'reviewLink' | 'reviewUse') => key === 'seePlus' ? strings[key][0] : reviewStrings[key][0];
   const note = readFileSync('store/play-console-answers.md', 'utf8').split('## App access')[1]!.match(/^> (.+)$/m)![1]!;
   assert.ok([...note].length <= 500, `${[...note].length} characters`);
-  for (const key of ['seePlus', 'reviewLink', 'reviewUse'] as const) assert.ok(note.includes(strings[key][0].replace(/\s*›$/, '')), key);
+  for (const key of ['seePlus', 'reviewLink', 'reviewUse'] as const) assert.ok(note.includes(words(key).replace(/\s*›$/, '')), key);
   assert.ok(note.includes('Settings'));
 });

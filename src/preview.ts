@@ -1,11 +1,12 @@
 import type { Draft } from './core/vault';
-// The simulator preview build (.github/workflows/preview.yml, docs/preview.md) sets
-// EXPO_PUBLIC_KMP_PREVIEW=1 so its screenshots are not blanked by screenshot protection.
-// A store build with it set is refused by the release gate (NAMED STOP PREVIEW_BUILD).
-export const PREVIEW_BUILD = process.env.EXPO_PUBLIC_KMP_PREVIEW === '1';
-// Only the simulator profile (eas.json) sets this, so the App Review screen recording is not
-// blanked. Simulator builds cannot be installed from the App Store; store builds keep protection.
-export const REVIEW_RECORDING_BUILD = process.env.EXPO_PUBLIC_KMP_REVIEW_RECORDING === '1';
+// The simulator and web preview only (.github/workflows/preview.yml, app-preview.yml, docs/preview.md).
+// app/index.tsx requires this file only when EXPO_PUBLIC_KMP_PREVIEW=1, so no other build bundles it: the
+// App Store and Play builds carry none of this wording or sample data (scripts/bundle-scan.mjs checks the
+// exported iOS and Android bundles). A store build with the switch set is refused by the release gate
+// (NAMED STOP PREVIEW_BUILD). It changes nothing else: the preview app behaves like the store app.
+export const SKIP_LABEL = 'Preview only: skip to a sample vault ›';
+export const SAMPLE_HINT = 'Preview only: the sample vault opens with 123456.';
+export const SAMPLE_CODE = '123456';
 
 // Invented sample papers for the preview build's "skip to a sample vault" (AGENTS.md: sample data is
 // invented). Notes only, so no file bytes are needed.
