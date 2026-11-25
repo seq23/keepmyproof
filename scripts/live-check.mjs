@@ -1,9 +1,10 @@
 // Post-deploy live check (search-readiness h4): what keepmyproof.com really serves after a deploy, read
 // from the edge, not from the build. Crawl files, icons, the share card, the homepage's structured data,
-// the IndexNow key, the About and vault pages, a real 404, and a sample of sitemap URLs answering on the
+// the IndexNow key, the About and vault pages, the Privacy pages' access-code wording, a real 404, and a sample of sitemap URLs answering on the
 // first hop. Read-only, no credentials. Exit 1 with every failure named.
 //   node scripts/live-check.mjs [origin]
 import { SITE } from '../site/config.mjs';
+import { livePrivacyProblems } from './lib/legal-truth.mjs';
 
 const origin = process.argv[2] || SITE.origin, bad = [], ok = [];
 const get = (path, opts = {}) => fetch(path.startsWith('http') ? path : origin + path, { redirect: 'manual', signal: AbortSignal.timeout(20000), ...opts }).catch((e) => ({ status: 0, error: e.message, headers: new Map(), text: async () => '' }));
@@ -32,6 +33,10 @@ const thirdParty = [...asBrowser.matchAll(/<script[^>]+src="(https?:[^"]+)"/g)].
 check('no third-party script (no analytics)', asBrowser.length > 1000 && !thirdParty.length && !/cloudflareinsights/.test(asBrowser), `served ${thirdParty.join(', ') || 'a beacon'}`);
 check('home links About', /href="\/about"/.test(html), 'no /about link');
 for (const p of ['/about', '/vault', '/es/boveda', '/custody-log']) { const r = await get(p); check(p, r.status === 200, `status ${r.status}`); }
+// App Review reads /privacy: the Android access code is described as Android-only, never as a reviewers' feature.
+// A page that cannot be reached is "couldn't check", which fails this run (scripts/lib/legal-truth.mjs).
+const privacy = await livePrivacyProblems((path) => get(path));
+check('privacy pages describe the Android access code truly', !privacy.length, privacy.join(' | '));
 const nf = await get(`/no-such-page-${Date.now()}`);
 check('real 404', nf.status === 404, `status ${nf.status}`);
 const sample = urls.filter((_, i) => i % Math.max(1, Math.floor(urls.length / 25)) === 0).slice(0, 25);

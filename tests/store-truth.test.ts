@@ -14,6 +14,8 @@ import { PRODUCT_IDS } from '../src/billing/provider';
 import { folderCount } from '../site/lib/folders.mjs';
 import { SITE } from '../site/config.mjs';
 import play from '../store/google-play.json';
+import { accessCodeProblems, livePrivacyProblems } from '../scripts/lib/legal-truth.mjs';
+import { legalSections } from '../site/build.mjs';
 
 const read = (f: string) => readFileSync(f, 'utf8');
 /** The part of a store note that is pasted to Apple: everything after the first "---" line. */
@@ -110,5 +112,50 @@ test('Apple-facing notes name no other platform and only the purchases the build
   const prices = [...notes.matchAll(/\$(\d+\.\d\d)/g)].map(m => m[1]!);
   assert.ok(prices.length >= 2, 'the notes name no prices');
   assert.deepEqual([...new Set(prices)].sort(), [SITE.prices.yearlyUSD, SITE.prices.lifetimeUSD].sort());
-  assert.doesNotMatch(notes, /launch (price|week)/i);
+});
+
+// N1 of the #78 review: the build can show a launch-week lifetime price that RevenueCat's offering switches on,
+// so what Apple reads may never say nothing is set from a server; it says which one thing is, and how.
+const SERVER_DENIAL = /no server (turns|switches|sets|controls)|(switched|turned) on or off (from|by) a server|nothing (is )?(set|switched|controlled|changed) (from|by) a server|nothing remote/i;
+test('Apple-facing notes never deny the server-set launch offering the build can show, and name it', () => {
+  const screen = read('app/index.tsx');
+  const canShowLaunch = /\bactiveLaunch\(/.test(screen) && PRODUCT_IDS.launch.length > 0;
+  assert.ok(canShowLaunch, 'the Plus screen no longer shows a launch price: drop the disclosure and this check together');
+  for (const f of ['store/review-notes.md', 'store/resolution-reply.md']) {
+    const sentences = pasted(f).replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
+    const denial = sentences.filter(x => SERVER_DENIAL.test(x));
+    assert.deepEqual(denial, [], `${f} says nothing is set from a server`);
+    const told = sentences.filter(x => /server/i.test(x) && /RevenueCat/.test(x) && /launch/i.test(x) && /only if/i.test(x));
+    assert.equal(told.length, 1, `${f}: no one sentence says the launch price is set by RevenueCat's offering, and only if`);
+  }
+});
+
+// N2 of the #78 review: /privacy, which the reply sends Apple to, describes the Android access code truly.
+test('the Privacy text (EN, ES, ZH, KO) calls the access code Android-only, says iOS has none, and never a reviewers\' feature', () => {
+  for (const lang of LANGS) {
+    const section = read(`store/${lang}.md`).split(/^## /m).find(x => /^[^\n]*(Privacy|Privacidad)/.test(x));
+    assert.ok(section, `store/${lang}.md has no Privacy section`);
+    assert.deepEqual(accessCodeProblems(lang, section), [], `store/${lang}.md`);
+  }
+  // The EN and ES text is what the site publishes (site/build.mjs legalSections), one paragraph per block.
+  for (const lang of ['en', 'es'] as const) assert.deepEqual(accessCodeProblems(lang, legalSections(read(`store/${lang}.md`)).privacy.join(' ')), []);
+  // The wording it guards still names the real thing: an Android-only file holds the code.
+  assert.match(read('src/billing/ReviewCode.tsx'), /there is no review code/);
+});
+
+test('the live Privacy check says "couldn\'t check" when the site cannot be reached, and fails a page that still says reviewers', async () => {
+  const down = await livePrivacyProblems(async () => { throw Error('getaddrinfo ENOTFOUND'); });
+  assert.equal(down.length, 2); for (const d of down) assert.match(d, /couldn't check \(getaddrinfo ENOTFOUND\)/);
+  const zero = await livePrivacyProblems(async () => ({ status: 0, error: 'timeout', text: async () => '' }));
+  for (const d of zero) assert.match(d, /couldn't check \(timeout\)/);
+  assert.match((await livePrivacyProblems(async () => ({ status: 503, text: async () => '' })))[0]!, /answers 503/);
+  const page = (lang: 'en' | 'es') => `<html><body><h1>Privacy</h1>${legalSections(read(`store/${lang}.md`)).privacy.map(p => `<p>${p}</p>`).join('')}</body></html>`;
+  assert.deepEqual(await livePrivacyProblems(async p => ({ status: 200, text: async () => page(p.startsWith('/es') ? 'es' : 'en') })), []);
+  const old = page('en').replace('Android-only access code', 'access code used only by Google Play\'s own app reviewers');
+  const bad = await livePrivacyProblems(async () => ({ status: 200, text: async () => old }), [['/privacy', 'en']]);
+  assert.equal(bad.length, 2, bad.join(' | '));
+  assert.deepEqual(await livePrivacyProblems(async () => ({ status: 200, text: async () => '<html></html>' }), [['/privacy', 'en']]), ['/privacy en: privacy text is 0 characters, so it was not read']);
+  // Script and style text is not page text, whatever the tag case or end-tag spacing (CodeQL js/bad-tag-filter).
+  const scripted = page('en').replace('<body>', '<body><SCRIPT type="x">"used only by reviewers"</SCRIPT ><Style>.reviewers{}</style\n>');
+  assert.deepEqual(await livePrivacyProblems(async () => ({ status: 200, text: async () => scripted }), [['/privacy', 'en']]), []);
 });

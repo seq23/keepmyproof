@@ -173,8 +173,9 @@ switch and prices.
 ## Named stops
 
 Store builds are refused in code until these clear: `npm run release-gate` (also
-run by EAS through `eas-build-pre-install` when the profile is `production`)
-prints each `NAMED STOP [CODE]` and exits 2.
+run by EAS through `eas-build-pre-install` on every build a store can review:
+`testflight` and `production`, and any store profile eas.json adds; `gateFor` in
+`scripts/release-gate.mjs`) prints each `NAMED STOP [CODE]` and exits 2.
 
 - **REVENUECAT_KEY_MISSING**: no `appl_` / `goog_` RevenueCat keys. Needs the
   RevenueCat project and the App Store / Play accounts (the owner's $99 + $25).
@@ -192,8 +193,9 @@ prints each `NAMED STOP [CODE]` and exits 2.
 Without a key the app runs on the mock, which throws `REVENUECAT_KEY_MISSING` on
 any purchase. Nothing here creates accounts or submits to App Store review.
 
-TestFlight beta (the build the device test runs on): EAS project `seq23/keepmyproof`,
-`eas build -p ios --profile testflight --auto-submit` uploads to App Store Connect
-app 6834891698 for TestFlight only. Its gate (`betaStops`) needs only the `appl_` key
-(`EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY`, EAS production environment) and no preview
-switch; the full list above still guards the `production` profile sent for review.
+TestFlight: EAS project `seq23/keepmyproof`, `eas build -p ios --profile testflight`
+(the iOS store build workflow) uploads to App Store Connect app 6834891698. iOS has
+no tester-only binary: that upload is the build App Review gets, so it runs the full
+list above. The only tester build is the Android `internal` profile (a draft on
+Play's internal testing track): its gate (`betaStops`) needs only the `goog_` key and
+no preview switch.

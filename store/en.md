@@ -32,11 +32,12 @@ Plus and restore purchases. They never receive your papers. SDK diagnostics and
 automatic device identifier collection are disabled.
 
 On iPhone and iPad, the app's only network connections are RevenueCat and the
-App Store, for Plus. The Android app has one more, used only by Google Play's own
-app reviewers: when they type the access code Google Play asks us to give them,
-the app checks it on keepmyproof.com. That check sends the code and the anonymous
-purchase identifier, never papers, and keeps only a scrambled form of the
-identifier until 7 days after the review access ends.
+App Store, for Plus; the iPhone and iPad app has no access code. The Android app
+has one more connection, for an Android-only access code that we give Google Play
+for its app review process: when that code is typed, the Android app checks it on
+keepmyproof.com. That check sends the code and the anonymous purchase identifier,
+never papers, and keeps only a scrambled form of the identifier until 7 days after
+that access ends.
 
 Deleting an item removes it from the current vault, including earlier note
 versions. It does not delete copies you already exported or backed up. Delete
