@@ -1048,10 +1048,16 @@ export const strings = {
     "평생 이용. 한 번 결제하고 갱신되지 않아요. Plus를 평생 쓸 수 있어요."
   ],
   "annualTerms": [
-    "Renews every year on the same date until you cancel. Cancel any time: Settings › your name › Subscriptions (Android: Play Store › Payments & subscriptions). We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
-    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes › su nombre › Suscripciones (Android: Play Store › Pagos y suscripciones). Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
-    "每年在同一日期自动续订，直到您取消为止。随时可以取消：“设置”› 您的姓名 ›“订阅”（Android：Play 商店 › 付款和订阅）。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
-    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: 설정 › 내 이름 › 구독 (Android: Play 스토어 › 결제 및 정기 결제). 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
+    "Renews every year on the same date until you cancel. Cancel any time: Settings › your name › Subscriptions. We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
+    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Ajustes › su nombre › Suscripciones. Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
+    "每年在同一日期自动续订，直到您取消为止。随时可以取消：“设置”› 您的姓名 ›“订阅”。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
+    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: 설정 › 내 이름 › 구독. 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
+  ],
+  "annualTermsAndroid": [
+    "Renews every year on the same date until you cancel. Cancel any time: Play Store › Payments & subscriptions. We remind you in the app 7 days before it renews. If you cancel, you keep every item.",
+    "Se renueva cada año en la misma fecha hasta que lo cancele. Cancele cuando quiera: Play Store › Pagos y suscripciones. Le avisamos en la app 7 días antes de renovar. Si cancela, conserva todos sus documentos.",
+    "每年在同一日期自动续订，直到您取消为止。随时可以取消：Play 商店 › 付款和订阅。续订前 7 天，我们会在应用内提醒您。取消后，您的所有项目都会保留。",
+    "취소할 때까지 매년 같은 날짜에 갱신돼요. 언제든 취소할 수 있어요: Play 스토어 › 결제 및 정기 결제. 갱신 7일 전에 앱에서 알려 드려요. 취소해도 모든 항목은 그대로 남아요."
   ],
   "buyLifetime": [
     "Buy lifetime for {price} ›",
@@ -1312,10 +1318,10 @@ export const strings = {
     "ChatGPT 또는 다른 AI 도구"
   ],
   "heardStore": [
-    "App Store or Google Play search",
-    "Búsqueda en App Store o Google Play",
-    "App Store 或 Google Play 搜索",
-    "App Store 또는 Google Play 검색"
+    "{store} search",
+    "Búsqueda en {store}",
+    "{store} 搜索",
+    "{store} 검색"
   ],
   "heardAdvocate": [
     "A lawyer, advocate or counselor",

@@ -29,6 +29,7 @@ import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styl
 const preview: typeof import('../src/preview') | null = process.env.EXPO_PUBLIC_KMP_PREVIEW === '1' ? require('../src/preview') : null;
 import { Glyph, folderGlyph, type GlyphName } from '../src/icons';
 import { HEARD, readHeard, saveHeard, sendHeard, type Heard, type HeardAnswer } from '../src/core/heard';
+import { annualTermsKey, storeName as storeFor } from '../src/core/store';
 const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi', store:'heardStore', advocate:'heardAdvocate', friend:'heardFriend', social:'heardSocial', other:'heardOther' };
 
 // Folder-specific help above the checklist, and the folder's own footer line (default: folderFoot).
@@ -164,7 +165,7 @@ export default function App() {
       .catch(e => { setProducts([]); setProductsState((e as Error).message === 'STORE_PRODUCTS_MISSING' ? 'missing' : 'failed'); });
   }
   useEffect(() => { if (screen === 'plus') loadProducts(); }, [screen, billing]);
-  const storeName = Platform.OS === 'android' ? 'Google Play' : 'App Store';
+  const storeName = storeFor(Platform.OS);
   function navigate(next: Screen) { setError(''); setNotice(''); setConfirm(null); setOffer(null); setLineOpen(false); setNewLine(''); setScreen(next);
 
   }
@@ -472,7 +473,7 @@ export default function App() {
     {btn('changeCode', () => { setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('changeCode'); })}
     {btn('renewWords', () => { setCurrentCode(''); navigate('renew'); })}
     {[...appFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
-    <Card><P>{t('heardSettings')}</P><P muted>{heard && heard !== 'skip' ? t(HEARD_KEY[heard]) : t('heardNone')}</P>
+    <Card><P>{t('heardSettings')}</P><P muted>{heard && heard !== 'skip' ? t(HEARD_KEY[heard], { store: storeName }) : t('heardNone')}</P>
       <Button quiet title={t('heardChange')} onPress={() => { setHeardFrom('settings'); navigate('heard'); }} disabled={busy} /></Card>
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
     {btn('restorePurchases', doRun(async () => { const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase')); }))}
@@ -500,10 +501,10 @@ export default function App() {
       setRemovePref(DEFAULT_REMOVE_PREF); setBackupShared(false); resume.current = 'home'; navigate('first'); setNotice(t('erased'));
     }), false, false, true)}{btn('cancel', () => navigate('settings'), true)}</>;
   else if (screen === 'heard') body = <><P heading>{t('heardTitle')}</P><P muted>{t('heardOptional')}</P>
-    <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h])}`}
+    <Card>{HEARD.map(h => <Button quiet key={h} checked={heard === h} title={`${heard === h ? '✓':'○'} ${t(HEARD_KEY[h], { store: storeName })}`}
       onPress={doRun(async () => { await saveHeard(device.heardStore, h); setHeard(h); })} />)}</Card>
     {heard && heard !== 'skip' && btn('heardSend', doRun(async () => {
-      if (!(await sendHeard(heard, Linking))) setNotice(t('heardNoMail'));
+      if (!(await sendHeard(heard, Linking, storeName))) setNotice(t('heardNoMail'));
     }))}
     {heard && heard !== 'skip' ? btn('heardDone', () => navigate(heardFrom), true)
       // Skip is instant: the answer is written to the Keychain after the screen has moved on.
@@ -519,7 +520,7 @@ export default function App() {
     {productsState === 'failed' && <Card tone="gold"><P>{t('storeFailed', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {products.map(p => { const launch=activeLaunch(p);const price=launch?.price ?? p.price;
       return <Card key={p.id}><P heading>{launch ? t('launch',{price,normal:launch.normalPrice}):t(p.plan==='lifetime'?'lifetimePrice':'annualPrice',{price})}</P>
-        <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':'annualTerms')}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
+        <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':annualTermsKey(Platform.OS))}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
           onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
     })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
     {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}
