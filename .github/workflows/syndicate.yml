@@ -18,6 +18,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   post:
+    if: github.ref == 'refs/heads/main'
+    environment: reviewed-main
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -47,3 +49,10 @@ jobs:
           git commit -q -m "syndication: Blogger and WordPress.com ledger"
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 10; done
           echo "NAMED STOP [PUSH_FAILED] could not push data/syndication-ledger.json after 3 tries"; exit 1
+      - name: Send confirmed receipts to the growth ledger
+        if: ${{ always() && !cancelled() }}
+        uses: seq23/boss-os/.github/actions/ledger-rows@ef7270e2e758acb8dd166db4143e93c3563e228a
+        with:
+          business: keepmyproof
+          file: data/syndication-ledger.json
+          token: ${{ secrets.BOSS_OPEN_LOOPS_TOKEN }}
