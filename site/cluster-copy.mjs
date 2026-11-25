@@ -1,7 +1,7 @@
 // Wording for the folder hubs, state pages, checklists, facts and alternative pages (EN and US
 // Spanish, usted). Facts themselves come from site/data/facts; checklists from ../topics.json.
 // Never "best", "court-ready", "admissible", "proves" or "win your case" (site/lib/gate.mjs).
-import { folderCount, folderList } from './lib/folders.mjs';
+import { folderCount, folderList, privateName } from './lib/folders.mjs';
 import { storeLine } from './lib/stores.mjs';
 
 // Where each research folder lives on the site, and which topics.json folder it is.
@@ -121,7 +121,7 @@ export const CC = {
 export const FACTS_PAGE = {
   en: (n, p, live) => [
     ['What it is', [`KeepMyProof is a private phone app for keeping copies of papers, photos and notes you already have, in folders with suggested checklists.`, 'Made by Spry Labs.']],
-    ['Folders', [...folderList('en'), 'With Plus: your own folders']],
+    ['Folders', [...folderList('en'), privateName('en'), 'With Plus: your own folders']],
     ['What it does', ['Saves photos, files and notes into folders on your phone.', 'Keeps two dates on every item: the day it happened (yours to fill in) and the day you saved it on this phone.', 'Turns a folder into one PDF you can send to a lawyer, mediator, school or VA representative.', 'Backs up an encrypted copy to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase.']],
     ['What it does not do', ['It does not give legal, tax or medical advice, and it is not a law firm.', 'It does not prepare, file or judge a VA claim, and it is not affiliated with the VA.', 'It does not send your papers to us, to analytics or to AI.', 'The saved date shows when you saved something on this phone. It does not show when an event happened.']],
     ['Price', [`Free for your first ${n} items. Viewing, full-folder PDFs, export, backup and restore never lock.`, `KeepMyProof Plus: US $${p.yearlyUSD} a year, or $${p.lifetimeUSD} once for life.`]],
@@ -131,7 +131,7 @@ export const FACTS_PAGE = {
   ],
   es: (n, p, live) => [
     ['¿Qué es?', ['KeepMyProof es una app privada para el teléfono que guarda copias de papeles, fotos y notas que usted ya tiene, en carpetas con listas sugeridas.', 'Hecha por Spry Labs.']],
-    ['Carpetas', [...folderList('es'), 'Con Plus: sus propias carpetas']],
+    ['Carpetas', [...folderList('es'), privateName('es'), 'Con Plus: sus propias carpetas']],
     ['¿Qué hace?', ['Guarda fotos, archivos y notas en carpetas en su teléfono.', 'Guarda dos fechas en cada documento: el día en que pasó (usted la escribe) y el día en que lo guardó en este teléfono.', 'Convierte una carpeta en un solo PDF para enviar a un abogado, un mediador, la escuela o un representante del VA.', 'Hace una copia cifrada en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras.']],
     ['¿Qué no hace?', ['No da asesoría legal, de impuestos ni médica, y no es un bufete de abogados.', 'No prepara, presenta ni evalúa reclamos del VA, y no está afiliada al VA.', 'No nos envía sus papeles, ni a analíticas ni a IA.', 'La fecha de guardado muestra cuándo guardó algo en este teléfono. No muestra cuándo pasó un hecho.']],
     ['¿Cuánto cuesta?', [`Gratis para sus primeros ${n} documentos. Ver, los PDF de carpetas completas, exportar, la copia y la restauración nunca se bloquean.`, `KeepMyProof Plus: US $${p.yearlyUSD} al año, o $${p.lifetimeUSD} una sola vez para siempre.`]],

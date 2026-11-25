@@ -1,4 +1,5 @@
 import topics from '../../topics.json';
+import privateFolder from './private-folder.json';
 import { hash, unb64 } from './crypto';
 /** App languages, in the order of every entry in src/strings.ts. zh = Simplified Chinese (zh-Hans). */
 export const LANGS = ['en', 'es', 'zh', 'ko'] as const;
@@ -17,8 +18,9 @@ export const isLang = (v: unknown): v is Lang => (LANGS as readonly unknown[]).i
 export const launchFolders = topics.topics.filter(t => t.release === 'launch').sort((a,b) => a.folder_order! - b.folder_order!);
 /** The one neutral folder, free on every plan, for anything that is not a topic: private photos and
  *  papers (user review 14 Nov 2026, finding 2). App-only: it is not a search topic, so it is not in
- *  topics.json (which also drives the website and the search loop). */
-export const PRIVATE_FOLDER = { id: 'private', display_name: { en: 'Private', es: 'Privado', zh: '私人', ko: '개인 보관' } as Labels,
+ *  topics.json (which also drives the website and the search loop). Its id and name live in
+ *  ./private-folder.json, which the website also reads, so site and store copy count the same folders. */
+export const PRIVATE_FOLDER = { id: privateFolder.id, display_name: privateFolder.display_name as Labels,
   checklist_items: [] as { id: string; name: Labels }[] };
 /** Every built-in folder, in Home order: the topic folders, then Private. */
 export const appFolders: { id: string; display_name: Labels; checklist_items?: { id: string; name: Labels }[] }[] =
