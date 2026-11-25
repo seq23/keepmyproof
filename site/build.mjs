@@ -515,7 +515,10 @@ function clusterPages(topics, hubs, cm, add, stops, today = buildDay()) {
       }
     }
     // A subtopic may say which of the folder's papers matter for it (keep_<lang> in its facts file).
-    const keep = (l, s) => { const c = CC[l], own = s?.data?.[`keep_${l}`]; return `<h2>${esc(c.keepH)}</h2>${own ? `<p>${esc(own)}</p>` : ''}<p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}
+    // The folder's keep paragraph and checklist are written out on the hub and the subtopic page. A state page
+    // links to them (`brief`) instead of repeating them: 51 copies of the same block in each subtopic made
+    // its state pages more than half identical to each other (q1 template filler).
+    const keep = (l, s, brief = false) => { const c = CC[l], own = s?.data?.[`keep_${l}`]; return `<h2>${esc(c.keepH)}</h2>${own ? `<p>${esc(own)}</p>` : ''}${brief ? '' : `<p>${esc(c.keepBody)}</p>${list(checklistItems(topic, l))}`}
 <p><a class="btn primary" href="${F.pdf[l]}">${esc(c.checklistCta)}</a></p><p class="sub">${esc(c.checklistNote)}</p>${storeBlock(l)}${vaBlock(l)}`; };
 
     // Hub in all four languages. Published: the folder's own first day; updated: the newest official-source check behind it.
@@ -585,7 +588,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
           // titles in both places was the template-filler repeat on iep/dispute-resolution).
           const publishers = [...new Set(names.map((n) => n.split(/,\s|:\s/)[0].trim()))];
           const hosts = [...new Set(srcs.map((g) => new URL(g.url).hostname.replace(/^www\./, '')))];
-          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), folder: folderName(topic, l), items: checklistItems(topic, l), va, store: c.storeLine() });
+          const faqOf = (who) => c.faq({ state: S, names: who.join('; '), date: fmtDate(l, last), va });
           const others = subs.filter((o) => o !== s && o.states.some((x) => x.code === code && x.byLang[l]));
           const near = neighbours(code, s.states.filter((x) => x.byLang[l]).map((x) => x.code));
           // Each source's checked date is shown once: on its line only when the sources were checked
@@ -599,7 +602,7 @@ ${faqHtml(l, h.faq)}<p class="sub">${esc(c.notAdvice)}</p>`;
 <h2>${esc(c.sourcesH)}</h2><ul class="facts">${facts.map((f, i) => { const n = srcs.findIndex((g) => g.url === f.source_url) + 1; return `<li>${esc(shown[i])} <a href="${esc(f.source_url)}" rel="noopener" aria-label="${esc(f.source_name)}">[${n}]</a></li>`; }).join('')}</ul>
 <p class="sub">${esc(c.sourcesList)}</p><ol class="sources">${srcs.map((g) => `<li><a href="${esc(g.url)}" rel="noopener">${esc(g.name)}</a>${oneDate ? '' : `. <span class="sub">${esc(c.checked(fmtDate(l, g.verifiedOn)))}</span>`}</li>`).join('')}</ol>
 ${links.length ? `<h2>${esc(c.linksH)}</h2><ul>${links.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x[`label_${l}`] || x.label_en || x.url)}</a></li>`).join('')}</ul>` : ''}
-${keep(l, s)}
+${keep(l, s, true)}
 <h2>${esc(c.moreHere(S))}</h2><ul>${others.map((o) => `<li><a href="${P.state(o, code, l)}">${esc(fill(o.titles[l], code, l))}</a></li>`).join('')}<li><a href="${P.hub(l)}">${esc(c.hubLink(hub(l).h1))}</a></li><li><a href="${P.sub(s, l)}">${esc(subShort)}${l === 'zh' ? '：' : ': '}${esc(c.allStates.toLowerCase())}</a></li></ul>
 ${near.length ? `<h2>${esc(c.nearby)}</h2><ul class="links">${near.map((n) => `<li><a href="${P.state(s, n, l)}">${esc(stateName(n, l))}</a></li>`).join('')}</ul>` : ''}
 ${faqHtml(l, faq)}<p class="sub">${esc(c.notAdvice)}</p>`;

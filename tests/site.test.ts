@@ -175,6 +175,24 @@ test('state pages name each source once and point facts to it by number; neighbo
   assert.equal((index.match(/Fixture rules/g) ?? []).length, 1, 'the state index names the subtopic once');
 });
 
+test('state pages leave the folder-wide keep paragraph, checklist and app questions to the hub and subtopic page (q1 template filler)', async () => {
+  const { CC } = await import('../site/cluster-copy.mjs');
+  const { files, pages } = renderAll(fixture());
+  const main = (f: string) => /<main\b[\s\S]*?<\/main>/.exec(files[f])![0];
+  const states = pages.filter((p) => p.state && (p.state.lang === 'en' || p.state.lang === 'es'));
+  assert.ok(states.length >= 2, 'the fixture builds state pages');
+  for (const p of states) {
+    const l = p.state!.lang as 'en' | 'es', m = main(p.file);
+    assert.ok(!m.includes(CC[l].keepBody), `${p.file}: no folder keep paragraph`);
+    assert.ok(m.includes(CC[l].checklistCta), `${p.file}: still links the printable checklist`);
+    const faq = graph(files[p.file]).find((n) => n['@type'] === 'FAQPage');
+    assert.equal(faq.mainEntity.length, CC[l].faq({ state: 'X', names: 'Y', date: 'Z', va: false }).length, `${p.file}: only the state's own questions`);
+  }
+  // The subtopic page still carries the folder's keep paragraph, once for all its states.
+  const sub = pages.find((p) => p.path === '/executor/fixture-topic/')!;
+  assert.ok(main(sub.file).includes(CC.en.keepBody), 'the subtopic page keeps the paragraph');
+});
+
 test('no state page repeats an 8-word phrase more than three times, in English or Spanish, and every fact stays listed with its source', async () => {
   const { repeatsPhrase } = await import('../site/build.mjs');
   assert.equal(repeatsPhrase('one two three four five six seven eight '.repeat(4)), true);

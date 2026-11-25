@@ -16,7 +16,7 @@
     "AL": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Alabama death certificate from the state vital records office is listed at $15.00.",
+          "claim_en": "A certified copy of an Alabama death certificate from the state vital records office is listed at $15.00.",
           "claim_es": "En Alabama, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
           "quote": "Event: Death Cost of copy: $15.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/alabama.htm",
@@ -80,7 +80,7 @@
     "AK": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Alaska death certificate from the state vital records office is listed at $30.00.",
+          "claim_en": "A certified copy of an Alaska death certificate from the state vital records office is listed at $30.00.",
           "claim_es": "En Alaska, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $30.00.",
           "quote": "Event: Death Cost of copy: $30.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/alaska.htm",
@@ -136,7 +136,7 @@
     "AZ": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Arizona death certificate from the state vital records office is listed at $20.",
+          "claim_en": "A certified copy of an Arizona death certificate from the state vital records office is listed at $20.",
           "claim_es": "En Arizona, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.",
           "quote": "Event: Death Cost of copy: $20",
           "source_url": "https://www.cdc.gov/nchs/w2w/arizona.htm",
@@ -184,7 +184,7 @@
     "AR": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Arkansas death certificate from the state vital records office is listed at $10.00.",
+          "claim_en": "A certified copy of an Arkansas death certificate from the state vital records office is listed at $10.00.",
           "claim_es": "En Arkansas, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $10.00.",
           "quote": "Event: Death Cost of copy: $10.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/arkansas.htm",
@@ -723,7 +723,7 @@
     "IN": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Indiana death certificate from the state vital records office is listed at $8.00.",
+          "claim_en": "A certified copy of an Indiana death certificate from the state vital records office is listed at $8.00.",
           "claim_es": "En Indiana, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $8.00.",
           "quote": "Event: Death Cost of copy: $8.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/indiana.htm",
@@ -771,7 +771,7 @@
     "IA": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Iowa death certificate from the state vital records office is listed at $20.00.",
+          "claim_en": "A certified copy of an Iowa death certificate from the state vital records office is listed at $20.00.",
           "claim_es": "En Iowa, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $20.00.",
           "quote": "Event: Death Cost of copy: $20.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/iowa.htm",
@@ -1779,7 +1779,7 @@
     "OH": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Ohio death certificate from the state vital records office is listed at $21.50.",
+          "claim_en": "A certified copy of an Ohio death certificate from the state vital records office is listed at $21.50.",
           "claim_es": "En Ohio, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $21.50.",
           "quote": "Event: Death Cost of copy: $21.50",
           "source_url": "https://www.cdc.gov/nchs/w2w/ohio.htm",
@@ -1835,7 +1835,7 @@
     "OK": {
       "facts": [
         {
-          "claim_en": "A certified copy of a Oklahoma death certificate from the state vital records office is listed at $15.00.",
+          "claim_en": "A certified copy of an Oklahoma death certificate from the state vital records office is listed at $15.00.",
           "claim_es": "En Oklahoma, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $15.00.",
           "quote": "Event: Death Cost of copy: $15.00",
           "source_url": "https://www.cdc.gov/nchs/w2w/oklahoma.htm",
@@ -1882,14 +1882,6 @@
     },
     "OR": {
       "facts": [
-        {
-          "claim_en": "A certified copy of a Oregon death certificate from the state vital records office is listed at $25.00.",
-          "claim_es": "En Oregón, una copia certificada del acta de defunción de la oficina estatal de registros vitales cuesta $25.00.",
-          "quote": "Event: Death Cost of copy: $25.00",
-          "source_url": "https://www.cdc.gov/nchs/w2w/oregon.htm",
-          "source_name": "CDC National Center for Health Statistics: Where to Write for Vital Records",
-          "checked": "2026-11-02"
-        },
         {
           "claim_en": "An Oregon death certificate is listed at $25.00, and additional copies of the same record ordered at the same time are also $25.00 each.",
           "claim_es": "En Oregón, el acta de defunción cuesta $25.00, y cada copia adicional del mismo registro pedida al mismo tiempo también cuesta $25.00.",
