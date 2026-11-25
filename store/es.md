@@ -29,12 +29,13 @@ compras. Nunca reciben sus documentos. Los diagnósticos y la recopilación
 automática de identificadores del dispositivo están desactivados.
 
 En iPhone y iPad, las únicas conexiones de la app son RevenueCat y App Store,
-para Plus. La app de Android tiene una más, que usan solo los revisores de apps
-de Google Play: cuando escriben el código de acceso que Google Play nos pide
-darles, la app lo comprueba en keepmyproof.com. Esa comprobación envía el código
-y el identificador anónimo de compra, nunca sus documentos, y guarda solo una
-forma codificada del identificador hasta 7 días después de que termine el
-acceso de revisión.
+para Plus; la app de iPhone y iPad no tiene código de acceso. La app de Android
+tiene una conexión más, para un código de acceso exclusivo de Android que damos
+a Google Play para su proceso de revisión de apps: cuando se escribe ese código,
+la app de Android lo comprueba en keepmyproof.com. Esa comprobación envía el
+código y el identificador anónimo de compra, nunca sus documentos, y guarda solo
+una forma codificada del identificador hasta 7 días después de que termine ese
+acceso.
 
 Eliminar un documento lo quita de la carpeta privada actual, incluidas las
 versiones anteriores de sus notas. No borra copias que usted ya exportó o guardó.

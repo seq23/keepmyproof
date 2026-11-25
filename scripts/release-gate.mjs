@@ -1,6 +1,7 @@
-// RELEASE GATE: the named stops that must clear before a store (production) build.
+// RELEASE GATE: the named stops that must clear before any build a store can review.
 // Runs on the EAS builder through package.json "eas-build-pre-install" (before npm install, so plain
 // Node only) and locally with `npm run release-gate`. Exit 2 + "NAMED STOP [CODE] …" lines = not ready.
+// Which builds get it: gateFor() below, read from eas.json.
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { resolveMx } from 'node:dns/promises';
@@ -85,19 +86,31 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
     stop('PRICED_BELOW_INCUMBENT', `our $${LIST_LIFETIME_USD} lifetime list price is below the incumbent's $${price.incumbentLifetimeUSD}; her ruling is never to undercut it.`);
   // No native-reader stop: the owner launched Spanish, Chinese and Korean without one (2 Nov 2026,
   // "we're gonna skip getting a native Reader and just go ahead and launch it"); topics.json language_status.
-  for (const url of LEGAL_URLS) if ((await probe(url)) !== 200)
-    stop('LEGAL_URLS_UNREACHABLE', `${url} does not answer 200; the app and store link to it.`);
+  for (const url of LEGAL_URLS) { const status = await probe(url); if (status !== 200)
+    stop('LEGAL_URLS_UNREACHABLE', status ? `${url} answers ${status}, not 200; the app and store link to it.` : `${url} couldn't be checked (no connection), so it is not proven to answer; the app and store link to it.`); }
   // The store listing's support address must be the app's own and receive mail (live MX lookup).
   if (!supportEmail?.endsWith(`@${SUPPORT_DOMAIN}`) || (await mx(SUPPORT_DOMAIN)) < 1)
     stop('SUPPORT_ADDRESS_NOT_ON_DOMAIN', `site/config.mjs supportEmail (${supportEmail ?? 'unset'}) is not a mail-receiving @${SUPPORT_DOMAIN} address; set up Email Routing on ${SUPPORT_DOMAIN} (no cost) and point supportEmail at it.`);
   return out;
 }
 
-/** A tester build that is never sent for review: eas.json profile "testflight" (iOS, TestFlight) or "internal"
- *  (Android, Play internal testing track as a draft). The device test runs ON this build, so only what the build
- *  itself carries must be right: a real key for its own store and no preview switch.
- *  The full gate above still guards the "production" build that goes to store review. */
-export const BETA_PROFILES = { testflight: 'ios', internal: 'android' };
+/** Which gate an EAS build gets: 'full' (stops() above), 'tester' (betaStops below) or 'none'.
+ *  iOS has no tester-only binary: every store-distribution build is uploaded to App Store Connect, and the build
+ *  App Review gets is one of them (ios-store-build.yml builds "testflight"; Apple's 5.6 rejection was of such a
+ *  build). So every iOS store build, whatever its profile name, gets the full gate. The one tester build is
+ *  Android "internal": a draft on Play's internal testing track (eas.json submit.internal), never in Play review.
+ *  Builds for internal distribution (development, preview) never reach a store and get none. A profile eas.json
+ *  does not name, or an eas.json that cannot be read, gets the full gate: an unknown build is never let through. */
+export const BETA_PROFILES = { internal: 'android' };
+export function gateFor({ profile, platform, eas }) {
+  const profiles = eas?.build;
+  if (!profile) return 'none';
+  if (!profiles || typeof profiles !== 'object' || !profiles[profile]) return 'full';
+  let distribution, seen = new Set();
+  for (let p = profile; p && profiles[p] && !seen.has(p); p = profiles[p].extends) { seen.add(p); distribution ??= profiles[p].distribution; }
+  if ((distribution ?? 'store') !== 'store') return 'none';
+  return BETA_PROFILES[profile] && BETA_PROFILES[profile] === platform ? 'tester' : 'full';
+}
 const STORE_KEY = {
   ios: { name: 'EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY', prefix: 'appl_', why: 'the App Store (appl_) RevenueCat key is not set in the EAS production environment, so TestFlight could not test buying Plus.' },
   android: { name: 'EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY', prefix: 'goog_', why: 'the Play (goog_) RevenueCat key is not set in the EAS production environment, so the internal-track build could not test buying Plus.' },
@@ -113,23 +126,24 @@ export function betaStops({ env, platform = 'ios' }) {
 }
 
 async function main() {
-  const production = process.env.EAS_BUILD_PROFILE === 'production';
   const report = process.argv.includes('--report');
-  const beta = BETA_PROFILES[process.env.EAS_BUILD_PROFILE];
-  if (process.argv.includes('--if-production') && beta) {
-    const found = betaStops({ env: process.env, platform: beta });
-    for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
-    if (found.length) process.exitCode = 2; else console.log(`release gate: clear for the ${process.env.EAS_BUILD_PROFILE} tester build (not for store review).`);
-    return;
-  }
-  if (process.argv.includes('--if-production') && !production) {
-    console.log(`release gate: not a store build (${process.env.EAS_BUILD_PROFILE ?? 'local'}); stops apply to production only.`);
-    return;
+  if (process.argv.includes('--if-store-build')) {
+    const profile = process.env.EAS_BUILD_PROFILE, platform = process.env.EAS_BUILD_PLATFORM;
+    const eas = (() => { try { return JSON.parse(readFileSync('eas.json', 'utf8')); } catch { return null; } })();
+    const gate = gateFor({ profile, platform, eas });
+    if (gate === 'none') { console.log(`release gate: not a store build (${profile ?? 'local'}); nothing a store can review is built.`); return; }
+    if (gate === 'tester') {
+      const found = betaStops({ env: process.env, platform });
+      for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
+      if (found.length) process.exitCode = 2; else console.log(`release gate: clear for the ${profile} tester build (Play internal track draft, not in review).`);
+      return;
+    }
+    console.log(`release gate: full gate for the ${profile} ${platform ?? ''} store build (a store can review it).`);
   }
   const version = /version:\s*'([^']+)'/.exec(readFileSync('app.config.ts', 'utf8'))?.[1];
   if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
   const readJson = path => existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
-  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow' })).status; } catch { return 0; } };
+  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(20_000) })).status; } catch { return 0; } };
   const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
   const found = await stops({ env: process.env, version, readJson, probe, supportEmail: SITE.supportEmail, mx });
   for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);

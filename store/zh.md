@@ -38,10 +38,10 @@ Plus 通过 App Store 或 Google Play 购买。RevenueCat 和应用商店会处�
 SDK 诊断和自动收集设备标识符的功能都已关闭。
 
 在 iPhone 和 iPad 上，应用唯一的联网操作是为 Plus 连接 RevenueCat 和 App Store。
-Android 版还有一项，只供 Google Play 自己的应用审核人员使用：他们输入 Google Play
-要求我们提供的访问代码时，应用会到 keepmyproof.com 检查这个代码。检查时只发送
-代码和匿名购买标识符，绝不发送您的文件；服务器只保存标识符的加密散列，在审核
-访问结束 7 天后删除。
+iPhone 和 iPad 版没有访问代码。Android 版多一项联网操作，用于一个仅限 Android 的
+访问代码，这个代码是我们为 Google Play 的应用审核流程提供的：输入这个代码时，
+Android 版应用会到 keepmyproof.com 检查它。检查时只发送代码和匿名购买标识符，
+绝不发送您的文件；服务器只保存标识符的加密散列，在该访问结束 7 天后删除。
 
 删除一项会把它从当前保险库中移除，包括笔记之前的版本。已经导出或备份的副本
 不会被删除，请在保存它们的地方删除。没有需要删除的账户。卸载应用会删除设备上

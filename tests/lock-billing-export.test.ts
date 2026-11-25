@@ -149,9 +149,9 @@ test('release gate stops a store build until keys, device test, price recheck an
   assert.equal(all.length,6);
 });
 
-test('a tester build (TestFlight or Play internal) needs a real key for its own store and no preview switch, and nothing else',async()=>{
+test('the Play internal tester build needs a real key for its own store and no preview switch, and nothing else',async()=>{
   const {betaStops,BETA_PROFILES}=await import('../scripts/release-gate.mjs');
-  assert.deepEqual(BETA_PROFILES,{testflight:'ios',internal:'android'});
+  assert.deepEqual(BETA_PROFILES,{internal:'android'});
   const codes=(env:Record<string,string>,platform?:'ios'|'android')=>betaStops({env,platform}).map(s=>s.code);
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x'}),[]);
   assert.deepEqual(codes({}),['REVENUECAT_KEY_MISSING']);
@@ -166,7 +166,7 @@ test('a tester build (TestFlight or Play internal) needs a real key for its own 
   assert.deepEqual(codes({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x',EXPO_PUBLIC_KMP_PREVIEW:'1'},'android'),['PREVIEW_BUILD']);
   // The real EAS hook (package.json eas-build-pre-install) on the internal profile: exit 2 without the key, 0 with it.
   const {spawnSync}=await import('node:child_process');
-  const hook=(env:Record<string,string>)=>spawnSync(process.execPath,['scripts/release-gate.mjs','--if-production'],{env:{...process.env,EAS_BUILD_PROFILE:'internal',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:undefined,EXPO_PUBLIC_KMP_PREVIEW:undefined,...env},encoding:'utf8'});
+  const hook=(env:Record<string,string>)=>spawnSync(process.execPath,['scripts/release-gate.mjs','--if-store-build'],{env:{...process.env,EAS_BUILD_PROFILE:'internal',EAS_BUILD_PLATFORM:'android',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:undefined,EXPO_PUBLIC_KMP_PREVIEW:undefined,...env},encoding:'utf8'});
   const bare=hook({});assert.equal(bare.status,2);assert.match(bare.stdout,/NAMED STOP \[REVENUECAT_KEY_MISSING\]/);
   assert.equal(hook({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'appl_x'}).status,2);
   const ok=hook({EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'});assert.equal(ok.status,0,ok.stdout+ok.stderr);assert.match(ok.stdout,/clear for the internal tester build/);
