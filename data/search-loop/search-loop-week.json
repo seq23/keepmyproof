@@ -2,13 +2,13 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W48",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-25T23:02:21.765Z",
+  "generated_at": "2026-11-26T22:55:47.320Z",
   "state": "running",
   "published": 0,
   "indexed": 1,
   "pace": 10,
   "ai_visitors": 0,
-  "ai_bot_hits": 739,
+  "ai_bot_hits": 728,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 1,
   "undone": 0,
@@ -69,7 +69,7 @@
     "new_candidates": [],
     "skipped": [],
     "rejected": [],
-    "could_not_tell": 3
+    "could_not_tell": 4
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/45718136615"
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/45907816622"
 }
