@@ -19,7 +19,7 @@ import * as files from '../src/native/files';
 import { cameraStep, photoTitle } from '../src/core/camera';
 import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
-import { DEFAULT_REMOVE_PREF, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
+import { DEFAULT_REMOVE_PREF, photoHint, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styles, textProps, usePalette, useTyped } from '../src/ui';
@@ -416,8 +416,8 @@ export default function App() {
   else if (screen === 'detail' && item) body = <><P muted>{title}</P><P heading>{item.title}</P><Card>
     <P>{t('happened')}: {displayDay(item.happenedOn)} {item.happenedOn ? t('yourDate'):''}</P><P>{t('saved')}: {displayDate(item.savedOn)}</P>
     <P>{t('changed')}: {item.changedOn ? displayDate(item.changedOn):t('never')}</P></Card>
-    {isPicture(item) && <><Pressable accessibilityRole="imagebutton" accessibilityLabel={`${item.title}. ${t('photoZoom')}`} onPress={() => setZoom(true)}>
-      <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" /></Pressable><P muted>{t('photoZoom')}</P>
+    {isPicture(item) && <><Pressable accessibilityRole="imagebutton" accessibilityLabel={`${item.title}. ${t(photoHint(Platform.OS))}`} onPress={() => setZoom(true)}>
+      <Image source={{ uri:`data:${item.mime};base64,${item.bytes}` }} style={{width:'100%',height:240}} resizeMode="contain" /></Pressable><P muted>{t(photoHint(Platform.OS))}</P>
       {/* Full screen, pinch to zoom (iOS scroll view zoom), ✕ Close (finding 8). */}
       <Modal visible={zoom} animationType="fade" onRequestClose={() => setZoom(false)} supportedOrientations={['portrait','landscape']}>
         <SafeAreaView style={{ flex:1, backgroundColor:'#000' }}>

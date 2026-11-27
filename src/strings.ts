@@ -1713,6 +1713,12 @@ export const strings = {
     "点按照片可全屏查看，双指可缩放。",
     "사진을 누르면 전체 화면으로 보여요. 두 손가락으로 확대할 수 있어요."
   ],
+  "photoFullScreen": [
+    "Tap the photo to see it full screen.",
+    "Toque la foto para verla en pantalla completa.",
+    "点按照片可全屏查看。",
+    "사진을 누르면 전체 화면으로 보여요."
+  ],
   "workingCheck": [
     "Checking your passcode and opening your papers…",
     "Comprobando su código y abriendo sus documentos…",

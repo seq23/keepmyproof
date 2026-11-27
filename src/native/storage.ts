@@ -11,6 +11,9 @@ import { Vault, startInstall, type InstallStore } from '../core/vault';
 import { isLang, type Lang } from '../core/model';
 import type { PrefStore } from '../core/original';
 import type { HeardStore } from '../core/heard';
+import { Platform } from 'react-native';
+import { keepOutOfBackup } from '../core/backup';
+import { excludeFromBackup } from './backup';
 setPbkdf2(phonePbkdf2);
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
@@ -38,6 +41,10 @@ let db: SQLite.SQLiteDatabase | undefined;
 export async function database(): Promise<InstallStore & { erase(): Promise<void> }> {
   if (!db) {
     const directory = new Directory(Paths.document, 'vault'); directory.create({ intermediates: true, idempotent: true });
+    // Out of iCloud and computer backups before the first write (src/core/backup.ts). A flag that did not stick
+    // is retried at the next launch; the vault still opens, because locking the person out of their own
+    // papers over a backup flag would be worse than the encrypted file sitting in a backup.
+    if (await keepOutOfBackup(Platform.OS, directory.uri, excludeFromBackup) === 'failed') console.warn('NAMED STOP [BACKUP_EXCLUDE_FAILED] vault folder not flagged; retrying at next launch');
     db = await SQLite.openDatabaseAsync('vault.sqlite', {}, directory.uri);
     await db.execAsync('PRAGMA journal_mode = WAL; PRAGMA synchronous = FULL; CREATE TABLE IF NOT EXISTS vault (id INTEGER PRIMARY KEY CHECK(id=1), ciphertext TEXT NOT NULL); CREATE TABLE IF NOT EXISTS orphaned (archivedOn TEXT NOT NULL, ciphertext TEXT NOT NULL)');
   }

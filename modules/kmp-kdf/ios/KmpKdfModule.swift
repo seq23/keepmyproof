@@ -35,6 +35,21 @@ public class KmpKdfModule: Module {
       return Data(out).base64EncodedString()
     }
 
+    // Keeps the vault folder out of iCloud and computer backups of this iPhone (src/core/backup.ts): the
+    // papers leave the phone only when the person sends a file or saves an encrypted backup themselves.
+    // Set on the folder, it covers every file in it (the database and its -wal/-shm files). Returns what
+    // the system reads back, so a flag that did not stick is reported as not excluded, never as done.
+    AsyncFunction("excludeFromBackup") { (uri: String) throws -> Bool in
+      guard var url = URL(string: uri), url.isFileURL else {
+        throw Exception(name: "BACKUP_EXCLUDE_INPUT", description: "uri must be a file:// URL")
+      }
+      var values = URLResourceValues()
+      values.isExcludedFromBackup = true
+      try url.setResourceValues(values)
+      url.removeAllCachedResourceValues()
+      return try url.resourceValues(forKeys: [.isExcludedFromBackupKey]).isExcludedFromBackup == true
+    }
+
     // AES-256-GCM for every sealed record (src/core/aead.native.ts), in CryptoKit, so nothing outside
     // the OS encrypts on iOS. v1 box: 12-byte nonce, ciphertext || 16-byte tag, purpose as AAD.
     // Synchronous (JSI) because seal/open in src/core/crypto.ts are synchronous.

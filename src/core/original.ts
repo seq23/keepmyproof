@@ -43,3 +43,6 @@ export function vaultLines(systemConfirm: boolean) {
     ? { lock: 'vaultLock', photo: 'photoCopy' } as const
     : { lock: 'vaultLockAndroid', photo: 'photoCopyAndroid' } as const;
 }
+/** The hint under a photo. Pinch-to-zoom is the iOS scroll view's own zoom (app/index.tsx), which Android and
+ *  the web preview do not have, so only iOS is told it can pinch (promise audit 27 Nov 2026). */
+export const photoHint = (os: string) => os === 'ios' ? 'photoZoom' as const : 'photoFullScreen' as const;

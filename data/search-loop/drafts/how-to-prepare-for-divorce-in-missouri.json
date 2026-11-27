@@ -49,7 +49,7 @@
     {
       "heading": "Can KeepMyProof help me?",
       "paragraphs": [
-        "KeepMyProof is a private vault where you can store photos and documents you have gathered. The vault lives as a normal locked app on your phone's home screen. iPhone users are asked to confirm if they want to \"Remove the original from Photos?\" Android users see the original deleted from Google Photos. The vault is not hidden or disguised; it is an app you open like any other. You can use it to keep your papers safe and organized while you work through your divorce.",
+        "KeepMyProof is a private vault where you can store photos and documents you have gathered. The vault lives as a normal locked app on your phone's home screen. On iPhone, if you turn on that offer in Settings, the app asks \"Remove the original from Photos?\" after import, and the phone asks you to confirm. Android users see the original deleted from Google Photos. The vault is not hidden or disguised; it is an app you open like any other. You can use it to keep your papers safe and organized while you work through your divorce.",
         "KeepMyProof is not affiliated with the VA, the court, or any lawyer. It is not legal advice and does not prepare or file court forms. For free help with a divorce, look for your local legal aid office or a Missouri bar-certified lawyer referral service."
       ],
       "bullets": []

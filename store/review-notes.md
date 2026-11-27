@@ -20,7 +20,7 @@ Getting in: on first launch choose a language, then any 6-digit passcode (for ex
 
 Free features: open a folder, + Add something (Take a photo, Choose photos, Choose a file, or a note), with the date it happened; Make a PDF of this folder, and Also save the original files; Backup › Back up now, then Check the saved backup; Restore a backup; Settings (Also open with Face ID, Change passcode, Make new recovery words, Hide folder, Erase everything on this device). Free covers 25 items.
 
-Plus (in-app purchase, tested with a Sandbox Apple Account): Settings › See Plus › Subscribe for $19.99 a year, or Buy lifetime for $39.99. Restore purchases is on the same screen and in Settings; after subscribing, Settings also shows Manage or cancel subscription. Plus adds unlimited items, your own folders (Settings › + Create your own folder), Tags on the add screen, and a PDF of chosen items or dates with a cover page (in a folder: Make a PDF of this folder › Choose dates and a cover page).
+Plus (in-app purchase, tested with a Sandbox Apple Account): Settings › See Plus › Subscribe for $19.99 a year, or Buy lifetime for $39.99. Restore purchases is on the same screen and in Settings; after subscribing, Settings also shows Manage or cancel subscription. Plus adds unlimited items, your own folders (Settings › + Create your own folder), Tags on the add screen, and a PDF of a date range with a cover page (in a folder: Make a PDF of this folder › Choose dates and a cover page).
 
 Screenshots and screen recording work on every screen. When the app leaves the foreground it locks, and the App Switcher shows a blurred snapshot instead of the papers; nothing else changes.
 

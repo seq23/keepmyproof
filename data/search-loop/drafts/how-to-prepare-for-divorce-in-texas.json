@@ -57,11 +57,11 @@
     {
       "heading": "How can KeepMyProof help you stay organized?",
       "paragraphs": [
-        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can scan or import papers, add tags like \"community\" or \"separate,\" and sort by date. On iPhone, the app offers \"Remove the original from Photos?\" and the system confirms before moving the file to Recently Deleted, where it stays for 30 days. On Android, you delete the original in Google Photos. This keeps your phone tidy while your records stay safe in the vault. Visit the vault hub to learn more."
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or import papers, keep them in date order and, with Plus, add tags like \"community\" or \"separate.\" On iPhone, if you turn on that offer in Settings, the app asks \"Remove the original from Photos?\" and the system asks you to confirm before moving the file to Recently Deleted, where it stays for 30 days. On Android, you delete the original in Google Photos. This keeps your phone tidy while your records stay safe in the vault. Visit the vault hub to learn more."
       ],
       "bullets": [
         "Locked app on home screen",
-        "Tag and sort by category",
+        "Folders by category; tags with Plus",
         "iPhone: confirm before removing from Photos",
         "Android: delete original in Google Photos"
       ]

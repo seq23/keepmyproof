@@ -10,7 +10,7 @@ Haga un PDF, guarde los originales y copie sus documentos cifrados a su nube.
 Sin cuenta. Sin anuncios. Sin análisis de uso. Gratis para sus primeros 25
 documentos. Abrir, hacer PDF de carpetas completas, guardar originales, copiar
 y restaurar siguen gratis. Plus añade documentos sin límite, carpetas y
-etiquetas propias y PDF de documentos o fechas que elija.
+etiquetas propias y PDF de un rango de fechas con portada.
 
 Solo para información. No es asesoría legal. KeepMyProof no es un bufete ni
 está afiliado al VA. No prepara, presenta ni evalúa un reclamo.

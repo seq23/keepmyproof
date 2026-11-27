@@ -196,7 +196,7 @@
       "route": "/questions/va-disability-what-to-claim/",
       "url": "https://keepmyproof.com/questions/va-disability-what-to-claim/",
       "published_at": "2026-11-07",
-      "status": "live",
+      "status": "merged",
       "hash": "e335fe67abfb0a407f2a094c009069c558d6d5aca9788c035c4e87383b8793f7",
       "model": "free-route",
       "facts": [
@@ -228,7 +228,12 @@
       ],
       "indexnow_at": "2026-11-08",
       "inspected_at": "2026-11-27",
-      "indexed": false
+      "indexed": false,
+      "merged": {
+        "at": "2026-11-27",
+        "into": "/va-claim-papers",
+        "reason": "promise audit 27 Nov 2026: the page told veterans which conditions and claim types to file (VA claim advice), which KeepMyProof never gives"
+      }
     },
     {
       "slug": "what-documentation-is-needed-for-a-divorce",

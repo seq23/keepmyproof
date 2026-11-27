@@ -21,14 +21,14 @@
     {
       "heading": "How do I organize financial records?",
       "paragraphs": [
-        "Create a master list of every asset and liability. Include real estate, vehicles, bank accounts, credit cards, loans, and retirement plans. Note the account numbers, balances, and ownership type. Separate marital property from separate property using dates of acquisition. Scan or photograph each statement and save the files in dated folders. KeepMyProof's vault stores photos and PDFs in one locked app on your home screen. You can add tags like \"marital\" or \"separate\" to filter later."
+        "Create a master list of every asset and liability. Include real estate, vehicles, bank accounts, credit cards, loans, and retirement plans. Note the account numbers, balances, and ownership type. Separate marital property from separate property using dates of acquisition. Scan or photograph each statement and save the files in dated folders. KeepMyProof's vault stores photos and PDFs in one locked app on your home screen. With KeepMyProof Plus, you can add tags like \"marital\" or \"separate\" to filter later."
       ],
       "bullets": [
         "List all assets with values",
         "List all debts with balances",
         "Mark marital vs. separate property",
         "Save statements in dated folders",
-        "Tag items for quick filtering"
+        "Tag items for quick filtering (Plus)"
       ]
     },
     {
@@ -47,14 +47,14 @@
     {
       "heading": "How do I handle disclosure and discovery?",
       "paragraphs": [
-        "Most states require mandatory financial disclosure within a set deadline. You exchange the financial affidavit, supporting documents, and any expert reports. If the other side does not respond, you can send formal discovery requests such as interrogatories or requests for production. Track every deadline on a calendar. KeepMyProof lets you save each disclosure packet and discovery response with a date tag so you can prove what was sent and when."
+        "Most states require mandatory financial disclosure within a set deadline. You exchange the financial affidavit, supporting documents, and any expert reports. If the other side does not respond, you can send formal discovery requests such as interrogatories or requests for production. Track every deadline on a calendar. KeepMyProof lets you save a copy of each disclosure packet and discovery response with the date you sent it, so your copies stay in date order; it does not record what was sent or received."
       ],
       "bullets": [
         "Complete mandatory disclosure forms",
         "Attach supporting documents",
         "Send discovery requests if needed",
         "Track all deadlines",
-        "Save packets with date tags"
+        "Save each packet with the date you sent it"
       ]
     },
     {
@@ -82,11 +82,11 @@
     },
     {
       "q": "What if my spouse hides assets?",
-      "a": "You can use formal discovery tools like subpoenas and depositions to uncover hidden assets. Courts may impose sanctions for non-disclosure. Document every request and response carefully. KeepMyProof lets you save subpoenas, answers, and bank records with date tags so you have a clear timeline."
+      "a": "You can use formal discovery tools like subpoenas and depositions to uncover hidden assets. Courts may impose sanctions for non-disclosure. Document every request and response carefully. KeepMyProof lets you save subpoenas, answers, and bank records with the date each one happened, so they stay in date order."
     },
     {
       "q": "Do I need a lawyer to review my forms?",
-      "a": "You are not required to hire a lawyer. Many people use self-help centers or limited-scope representation for a single review. A lawyer can spot missing signatures or incorrect calculations. KeepMyProof stores every version of your forms so you can share a clean copy with any reviewer."
+      "a": "You are not required to hire a lawyer. Many people use self-help centers or limited-scope representation for a single review. A lawyer can spot missing signatures or incorrect calculations. KeepMyProof keeps each version of your forms that you add, so you can share a clean copy with any reviewer."
     }
   ],
   "facts": [

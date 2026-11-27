@@ -8,7 +8,7 @@
     "url": "https://billionairehighperformancecoach.com/spry-labs"
   },
   "audience": "people in the United States gathering their own papers for a divorce or custody matter, a problem at work, a VA disability claim, a parent's estate or a child's IEP; many are stressed and reading on a phone",
-  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts. Vault and photo pages: KeepMyProof is a private vault for photos and documents, a normal locked app on the home screen; never say it is hidden from the phone, disguised, undetectable, or that deleted photos cannot be recovered; the iPhone-only offer is \"Remove the original from Photos?\" (the phone asks to confirm; Recently Deleted keeps it 30 days); on Android the reader deletes the original in Google Photos (the app never deletes it). Papers stay encrypted on this one phone: never say they sync, open on any other device or are kept in iCloud or Google Drive; the only copy elsewhere is an encrypted backup file the reader chooses to save. Recording law: never say a state bans recording a conversation you are part of unless that state requires everyone's consent; say recording a conversation you are not part of, or getting into someone else's phone or accounts, can be a crime, and to ask a lawyer before relying on a recording. VA: never tell the reader which conditions or which claim type to file; point to a free VA-accredited representative. Link the vault hub https://keepmyproof.com/vault and the disclaimer https://keepmyproof.com/disclaimer.",
+  "voice": "plain, calm and factual; short sentences; second person. Short sentences, not short answers: the answer under the H1 and every FAQ answer each run 40 to 60 words. Educational only and never legal advice: never tell the reader what to file, whether to sue, or how a case will turn out; never say court-ready, admissible, proves, best or win your case; never rank or recommend lawyers. VA: never prepare, file, rate or judge a claim; say KeepMyProof is not affiliated with the VA and point to free VA-accredited representatives on VA.gov. Keep only papers you are allowed to have; never suggest recording people secretly or copying an employer's systems or a spouse's accounts. Vault and photo pages: KeepMyProof is a private vault for photos and documents, a normal locked app on the home screen; never say it is hidden from the phone, disguised, undetectable, or that deleted photos cannot be recovered; the iPhone-only offer \"Remove the original from Photos?\" appears only if the reader turns it on at setup or in Settings (the phone asks to confirm; Recently Deleted keeps it 30 days); on Android the reader deletes the original in Google Photos (the app never deletes it). Papers stay encrypted on this one phone: never say they sync, open on any other device or are kept in iCloud or Google Drive; the only copy elsewhere is an encrypted backup file the reader chooses to save. Recording law: never say a state bans recording a conversation you are part of unless that state requires everyone's consent; say recording a conversation you are not part of, or getting into someone else's phone or accounts, can be a crime, and to ask a lawyer before relying on a recording. VA: never tell the reader which conditions or which claim type to file; point to a free VA-accredited representative. Link the vault hub https://keepmyproof.com/vault and the disclaimer https://keepmyproof.com/disclaimer.",
   "topics": [
     "documents to gather before divorce",
     "how to prepare for divorce in",
@@ -191,8 +191,7 @@
         "https://www.cdc.gov/nchs/w2w/index.htm",
         "https://www.acf.hhs.gov/css/parents",
         "https://www.irs.gov/taxtopics/tc452",
-        "https://selfhelp.courts.ca.gov/divorce-california",
-        "https://en.wikipedia.org/wiki/Divorce_in_the_United_States"
+        "https://selfhelp.courts.ca.gov/divorce-california"
       ],
       "workplace": [
         "https://www.eeoc.gov/harassment",
@@ -211,8 +210,7 @@
         "https://www.cdc.gov/nchs/w2w/index.htm",
         "https://www.irs.gov/individuals/deceased-taxpayers-filing-the-estate-income-tax-return-form-1041",
         "https://www.consumerfinance.gov/ask-cfpb/what-happens-to-my-debts-when-i-die-en-2049/",
-        "https://www.va.gov/burials-memorials/",
-        "https://en.wikipedia.org/wiki/Executor"
+        "https://www.va.gov/burials-memorials/"
       ],
       "iep": [
         "https://www.law.cornell.edu/cfr/text/34/300.320",
@@ -307,20 +305,21 @@
     }
   ],
   "product": {
-    "checked_at": "2026-11-27 from https://keepmyproof.com/llms.txt and site/copy.mjs",
+    "checked_at": "2026-11-27 from https://keepmyproof.com/llms.txt, site/copy.mjs and the app code (promise audit fixes)",
     "facts": [
       "KeepMyProof is a private phone app for iPhone and Android that keeps copies of the papers, photos, screenshots and notes a person already has.",
       "KeepMyProof is not in the App Store or Google Play yet: it is coming soon to both.",
       "Everything you add is encrypted on the phone and locked behind an app passcode, with Face ID or a fingerprint if you want it.",
       "KeepMyProof has no account, no ads and no analytics, and it never sends your papers to AI.",
-      "Your papers leave the phone only when you send a PDF or a file yourself, or save your encrypted backup to your own iCloud Drive or Google Drive.",
+      "Your papers leave the phone only when you send a PDF or a file yourself, or save your encrypted backup file where you choose, such as your own iCloud Drive or Google Drive; the phone's own iCloud or Google backup does not copy them.",
       "A 12-word recovery phrase you write down opens your encrypted backup on a new phone; without the phrase nobody, including KeepMyProof, can open it.",
       "It has seven folders with suggested checklists: divorce prep and co-parenting log, VA disability claim papers, after a parent dies (executor papers), special-ed (IEP) binder, workplace evidence, tenant move-in and move-out, and home inventory for insurance.",
       "Each item has two dates: the date it happened, which you enter, and the date it was saved on the phone.",
       "A folder becomes one PDF with an index.",
-      "Photos you add never show in your camera roll; on iPhone it offers to remove the original from Photos, and on Android you delete the original yourself.",
+      "Search on Home matches item names, typed notes, file names and tags; it does not read the text inside documents or photos.",
+      "Photos you add never show in your camera roll; on iPhone, if you turn on the offer at setup or in Settings, it asks after each import whether to remove the original from Photos, and on Android you delete the original yourself.",
       "It is free for the first 25 items; adding stops at 25, and viewing, PDFs, export, backup and restore never lock.",
-      "KeepMyProof Plus costs US $19.99 a year or $39.99 once for life and adds unlimited items, your own folders and tags, and PDFs of chosen items or dates.",
+      "KeepMyProof Plus costs US $19.99 a year or $39.99 once for life and adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page; choosing which items go in a PDF is free.",
       "The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.",
       "KeepMyProof is educational only: it is not legal advice, not a law firm, and not affiliated with the VA, any court or any school."
     ],
@@ -329,7 +328,11 @@
       "KeepMyProof does not record calls or conversations, read your messages, or pull texts or emails off your phone for you.",
       "KeepMyProof is a normal locked app on the home screen: it is not hidden, disguised, a calculator vault or undetectable.",
       "KeepMyProof does not prepare, file, rate or judge a claim, does not make papers court-ready or admissible, and does not contact a landlord, employer, insurer, school, court or the VA for you.",
-      "KeepMyProof does not value your belongings, file an insurance claim, or write an inspection report for a landlord."
+      "KeepMyProof does not value your belongings, file an insurance claim, or write an inspection report for a landlord.",
+      "KeepMyProof has no document scanner: papers are added as a camera photo, a photo from the library or a file.",
+      "KeepMyProof has no computer or web app and no sync: the records open only in the app on the phone.",
+      "KeepMyProof does not record or confirm what was sent to or received by anyone; the dates are the date you type and the date you saved it.",
+      "Tags and your own checklist lines need KeepMyProof Plus; the free plan has the folders, their suggested checklists and notes."
     ]
   },
   "cap": {
