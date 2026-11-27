@@ -1084,7 +1084,7 @@ export const strings = {
     "나중에"
   ],
   "storeConfirm": [
-    "Your store shows the price in your money and asks you to confirm.",
+    "Your store shows the price in your currency and asks you to confirm.",
     "Su tienda muestra el precio en su moneda y le pide confirmar.",
     "应用商店会以您的货币显示价格，并请您确认。",
     "스토어에서 내 통화로 가격을 보여 주고 확인을 요청해요."
