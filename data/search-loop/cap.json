@@ -1,63 +1,27 @@
 {
   "schema": "search-loop-cap-v1",
-  "max_live_pages": 20,
-  "config_value": null,
-  "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data",
+  "max_live_pages": 28,
+  "config_value": 25,
+  "reason": "up from 25 to 28: Google impressions 6628 in the last 28 days beat 0 in the 28 before (Search Console has no rows for 2026-09-30..2026-10-27: the site had no impressions before 2026-10-28)",
   "last_eval_week": "2026-W48",
   "history": [
     {
-      "at": "2026-11-03T14:54:50.955Z",
+      "at": "2026-11-27T23:18:31.388Z",
       "from": null,
-      "to": 20,
-      "reason": "started at 20: the site's 0 distinct live engine page(s), raised to the starting floor of 20"
+      "to": 25,
+      "reason": "set from the site config (cap.max_live_pages 25)"
     },
     {
-      "at": "2026-11-03T14:15:50.681Z",
-      "week": "2026-W45",
-      "from": 20,
-      "to": 20,
-      "reason": "held at 20: no Search Console numbers to judge results (Search Console: GSC_SERVICE_ACCOUNT_JSON is not set); the cap never grows without data"
-    },
-    {
-      "at": "2026-11-09T14:16:43.894Z",
-      "week": "2026-W46",
-      "from": 20,
-      "to": 20,
-      "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-12..2026-10-09, so there is nothing to compare the last 28 days with); the cap never grows without data"
-    },
-    {
-      "at": "2026-11-16T14:32:56.975Z",
-      "week": "2026-W47",
-      "from": 20,
-      "to": 20,
-      "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-19..2026-10-16, so there is nothing to compare the last 28 days with); the cap never grows without data"
-    },
-    {
-      "at": "2026-11-24T01:37:14.035Z",
+      "at": "2026-11-27T22:39:30.173Z",
       "week": "2026-W48",
-      "from": 20,
-      "to": 20,
-      "reason": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data"
+      "from": 25,
+      "to": 28,
+      "reason": "up from 25 to 28: Google impressions 6628 in the last 28 days beat 0 in the 28 before (Search Console has no rows for 2026-09-30..2026-10-27: the site had no impressions before 2026-10-28)"
     }
   ],
-  "held": {
-    "2026-11-10": 9,
-    "2026-11-11": 10,
-    "2026-11-12": 10,
-    "2026-11-13": 10,
-    "2026-11-14": 10,
-    "2026-11-15": 10,
-    "2026-11-16": 10,
-    "2026-11-17": 10,
-    "2026-11-18": 10,
-    "2026-11-19": 10,
-    "2026-11-20": 10,
-    "2026-11-21": 10,
-    "2026-11-22": 10,
-    "2026-11-23": 10,
-    "2026-11-24": 10,
-    "2026-11-25": 10,
-    "2026-11-26": 10,
-    "2026-11-27": 10
+  "held": {},
+  "impressions": {
+    "last_28": 6628,
+    "prev_28": 0
   }
 }

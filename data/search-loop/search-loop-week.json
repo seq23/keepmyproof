@@ -2,27 +2,31 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W48",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-27T18:08:20.312Z",
+  "generated_at": "2026-11-27T22:39:30.173Z",
   "state": "running",
   "published": 0,
   "indexed": 1,
   "pace": 10,
   "ai_visitors": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
-  "ai_bot_hits": 733,
+  "ai_bot_hits": 732,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 1,
   "undone": 0,
-  "merged": 0,
-  "held_by_cap": 70,
+  "merged": 1,
+  "held_by_cap": 0,
   "redirected": [],
   "cap": {
-    "max_live_pages": 20,
-    "live": 20,
-    "room": 0,
-    "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data"
+    "max_live_pages": 28,
+    "live": 19,
+    "room": 9,
+    "why": "up from 25 to 28: Google impressions 6628 in the last 28 days beat 0 in the 28 before (Search Console has no rows for 2026-09-30..2026-10-27: the site had no impressions before 2026-10-28)"
   },
   "notes": [
-    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued"
+    "cap: up from 25 to 28: Google impressions 6628 in the last 28 days beat 0 in the 28 before (Search Console has no rows for 2026-09-30..2026-10-27: the site had no impressions before 2026-10-28)",
+    "BUILD: \"how to hide pictures in camera roll\" not written: product-claim check: the free model did not return {\"claims\":[{sentence, supported}]}; it stays queued for the next run",
+    "BUILD: \"california va regional office\" not written: product-claim check: the free model did not return {\"claims\":[{sentence, supported}]}; it stays queued for the next run",
+    "BUILD: \"department of veterans affairs address\" not written: product-claim check: the model listed no sentence from the page, but the page names KeepMyProof; it stays queued for the next run",
+    "BUILD published 0 of quota 9: 17 draft(s) failed the gate and were dropped; 3 got no answer from the free model and stay queued"
   ],
   "lanes": {
     "ratio": {
@@ -89,6 +93,46 @@
     "confirmed": 0,
     "queued": []
   },
-  "seeds": "not read: this site has no seeds in its config",
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/46047143693"
+  "seeds": {
+    "configured": 8,
+    "built": [],
+    "strengthened": [],
+    "answered_by": [],
+    "refused": [],
+    "queued": [
+      {
+        "query": "private photo vault app for iphone with no account",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "app to document evidence for a custody case",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "home inventory app for an insurance claim",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "app for move in photos to get your security deposit back",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "app to document a hostile work environment for hr",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "private photo vault app that stores pictures and documents only on my phone",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "how to document apartment move in with dated photos for security deposit",
+        "reason": "FIND has not read this seed yet"
+      },
+      {
+        "query": "organize va disability claim medical records on phone without cloud",
+        "reason": "FIND has not read this seed yet"
+      }
+    ]
+  },
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/46077917932"
 }

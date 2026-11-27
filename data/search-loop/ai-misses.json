@@ -50,6 +50,13 @@
       "week": "2026-W48",
       "misses": 3,
       "rejected": 0
+    },
+    {
+      "at": "2026-11-27T22:39:30.173Z",
+      "status": "read",
+      "week": "2026-W48",
+      "misses": 3,
+      "rejected": 0
     }
   ]
 }
