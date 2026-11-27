@@ -279,6 +279,31 @@
         "dated incident log",
         "export for HR"
       ]
+    },
+    {
+      "query": "private photo vault app that stores pictures and documents only on my phone",
+      "wants": [
+        "no account",
+        "no ads",
+        "offline",
+        "local storage"
+      ]
+    },
+    {
+      "query": "how to document apartment move in with dated photos for security deposit",
+      "wants": [
+        "dated photos",
+        "move-in",
+        "move-out"
+      ]
+    },
+    {
+      "query": "organize va disability claim medical records on phone without cloud",
+      "wants": [
+        "no cloud",
+        "offline",
+        "document scanner"
+      ]
     }
   ],
   "product": {
