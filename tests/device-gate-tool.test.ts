@@ -51,3 +51,16 @@ test('every broken backup the tool makes is refused by the app, and changes noth
   assert.equal(tool('compare', good, good, words).code, 0);
   assert.equal(tool('compare', good, big, words).code, 1);
 });
+
+test('the gate record is written only when every check passed, and the switcher only with a person\'s look', async () => {
+  const { record } = await import('../scripts/device-gate/record.mjs');
+  const { DEVICE_CHECKS } = await import('../scripts/release-gate.mjs');
+  const all = (over: Record<string, string> = {}) => ({ device: 'iPhone 17 Simulator, iOS-26-5', commit: 'abc', checks: Object.fromEntries(DEVICE_CHECKS.map((c: string) => [c, { result: over[c] ?? (c === 'app-switcher-preview-hidden' ? 'look' : 'pass'), evidence: 'e' }])) });
+  const ok = record(all(), { run: 'r', version: '1.0', seen: 'blurred, no title readable' });
+  assert.equal(Object.values(ok.checks).filter(Boolean).length, DEVICE_CHECKS.length);
+  assert.throws(() => record(all(), { run: 'r', version: '1.0' }), /DEVICE_GATE_NOT_PASSED/, 'no look, no switcher pass');
+  assert.throws(() => record(all({ 'full-disk-changes-nothing': 'fail' }), { run: 'r', version: '1.0', seen: 'x' }), /full-disk/);
+  assert.throws(() => record(all({ 'old-data-upgraded': 'not-run' }), { run: 'r', version: '1.0', seen: 'x' }), /old-data/);
+  const noDevice = all(); delete (noDevice as { device?: string }).device;
+  assert.throws(() => record(noDevice, { run: 'r', version: '1.0', seen: 'x' }), /DEVICE_UNNAMED/);
+});
