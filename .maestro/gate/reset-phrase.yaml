@@ -12,7 +12,10 @@ appId: com.keepmyproof.app
 - tapOn:
     id: "12 words, separated by spaces"
 - inputText: ${WORDS}
-- hideKeyboard
+# Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
+- tapOn:
+    text: "New six-number passcode"
+    index: 0
 - scrollUntilVisible:
     element: "Set a new passcode ›"
     direction: DOWN

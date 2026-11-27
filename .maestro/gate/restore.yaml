@@ -43,7 +43,8 @@ appId: com.keepmyproof.app
       - tapOn:
           id: "Enter the same six numbers again"
       - inputText: ${NEWCODE}
-- hideKeyboard
+# Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
+- tapOn: "Restore a backup"
 - scrollUntilVisible:
     element: "Choose your encrypted backup ›"
     direction: DOWN
