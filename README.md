@@ -180,7 +180,11 @@ run by EAS through `eas-build-pre-install` on every build a store can review:
 - **REVENUECAT_KEY_MISSING**: no `appl_` / `goog_` RevenueCat keys. Needs the
   RevenueCat project and the App Store / Play accounts (the owner's $99 + $25).
 - **DEVICE_RELEASE_GATE_PENDING**: `release/device-gate.json` must record every
-  device check in `scripts/release-gate.mjs` as passed for the current version.
+  device check in `scripts/release-gate.mjs` as passed for the current version, and
+  the device it ran on. The Simulator run (`.github/workflows/device-gate.yml`, a push
+  to a `device-gate/*` branch or a manual run on main) writes `result.json`;
+  `node scripts/device-gate/record.mjs <result.json> <run url> --switcher-seen "<note>"`
+  turns a fully passing run into the record.
 - **PRICE_RECHECK_PENDING / PRICED_BELOW_INCUMBENT**: `release/price-check.json`
   must hold the incumbent's App Store lifetime price, checked in the last 7 days;
   our list price may never be below it.

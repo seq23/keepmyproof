@@ -8,7 +8,9 @@ import { resolveMx } from 'node:dns/promises';
 import { SITE } from '../site/config.mjs';
 import { reportToOpenLoops } from './lib/open-loops.mjs';
 
-// Spec "Release gate every version": each must be recorded true on a real device for this version.
+// Spec "Release gate every version": each must be recorded true for this version. release/device-gate.json names
+// the device it ran on: the Simulator run (.github/workflows/device-gate.yml, written by scripts/device-gate/record.mjs)
+// or a real phone; her 13 Nov 2026 ruling asks for a real-phone check before a store submission.
 export const DEVICE_CHECKS = [
   'full-test-vault-backed-up', 'fresh-install-restore-with-phrase-only', 'every-file-hash-matches',
   'restore-twice-no-duplicates', 'old-data-upgraded', 'corrupt-or-missing-file-rejected', 'wrong-phrase-changes-nothing',
