@@ -25,6 +25,7 @@ appId: com.keepmyproof.app
       - scrollUntilVisible:
           element: "Restore a backup ›"
           direction: DOWN
+          centerElement: true
       - tapOn: "Restore a backup ›"
 - extendedWaitUntil:
     visible: "Choose your encrypted backup ›"
@@ -46,6 +47,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Choose your encrypted backup ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Choose your encrypted backup ›"
 - runFlow:
     file: pick.yaml
@@ -54,6 +56,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Restore a backup ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Restore a backup ›"
 - runFlow:
     when:

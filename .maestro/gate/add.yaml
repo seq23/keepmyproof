@@ -4,6 +4,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Divorce, custody.*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"

@@ -16,6 +16,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Set a new passcode ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Set a new passcode ›"
 - extendedWaitUntil:
     visible: "Free plan: .*"

@@ -5,6 +5,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Check the saved backup ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Check the saved backup ›"
 - runFlow:
     file: pick.yaml
@@ -13,6 +14,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Check the saved backup ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Check the saved backup ›"
 - extendedWaitUntil:
     visible: "✓ Backup checked\\.|The backup check failed.*"

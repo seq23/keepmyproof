@@ -5,6 +5,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Also open with Face ID"
     direction: DOWN
+    centerElement: true
 # The card's text and its switch carry the same words; the switch is the second.
 - tapOn:
     text: "Also open with Face ID"

@@ -5,6 +5,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "See Plus ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "See Plus ›"
 - extendedWaitUntil:
     visible: "KeepMyProof Plus"
@@ -13,6 +14,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Subscribe for .*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Subscribe for .*"
 - extendedWaitUntil:
     visible: "(?i).*test.*valid.*|(?i).*successful.*|(?i).*test purchase.*"
@@ -26,6 +28,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Restore purchases ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Restore purchases ›"
 - extendedWaitUntil:
     visible: "✓ Purchases checked\\."

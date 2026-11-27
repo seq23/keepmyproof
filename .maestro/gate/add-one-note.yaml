@@ -4,10 +4,12 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Private.*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Private.*"
 - scrollUntilVisible:
     element: "\\+ Add something"
     direction: DOWN
+    centerElement: true
 - tapOn: "\\+ Add something"
 - tapOn:
     id: "Name it"
@@ -16,6 +18,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Save to .*"
 - extendedWaitUntil:
     visible: "That did not finish.*|Checklist|.*Add something"

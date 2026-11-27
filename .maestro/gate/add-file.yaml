@@ -4,10 +4,12 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "\\+ Add something"
     direction: DOWN
+    centerElement: true
 - tapOn: "\\+ Add something"
 - scrollUntilVisible:
     element: "Choose a file ›"
     direction: DOWN
+    centerElement: true
 - tapOn: "Choose a file ›"
 - runFlow:
     file: pick.yaml
@@ -25,6 +27,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Save to .*"
 - extendedWaitUntil:
     visible: "Checklist"
