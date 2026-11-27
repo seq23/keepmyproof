@@ -7,14 +7,23 @@
 // worker/src/review.ts (the reference) and the other Spry Labs apps:
 // ~/Work/google-play-2026-11-21/REVIEW-UNLOCK-DESIGN.md section 3.
 //
-// Order: window -> body and ID format -> try limits (atomic, BEFORE the compare) -> constant-time compare -> ID known
+// Lockout is per device, not shared (27 Nov 2026, audit row #5): one network (IPv6 by its /64) and one IPv6 site block
+// (/48, what one tunnel-broker account hands out) each have their own small buckets, taken before the shared count, so
+// one caller only ever locks itself out. The shared count refuses everyone only at LIMITS.globalDaily (100,000 a day), a
+// backstop that takes 5,000+ IPv4 addresses or 2,500+ IPv6 /48s in one day to fill (it was 1,000 until 27 Nov 2026,
+// which 50 addresses filled, locking the reviewer out for the day). Guessing is seen long before that: the
+// LIMITS.globalWarnDaily-th try of a day (1,000) files an Open Loops row (REVIEW_GUESSING) and refuses no one; the
+// backstop files REVIEW_DAILY_CAP. Copied from: approvalprep functions/_runtime/review.js @ 540a42a9dcf551844733c9740e276c11fb088edf
+//
+// Order: window -> body and ID format -> try limits (atomic, BEFORE the compare: per network 5 a minute and 20 a day,
+// per IPv6 /48 40 a day, everyone 100,000 a day) -> constant-time compare -> ID known
 // to RevenueCat -> per-IP new-slot limit -> device slot (cap REVIEW_MAX_DEVICES per code version) -> grant. Any
 // RevenueCat failure revokes what this call granted, gives the slot back and answers 503: never half-granted.
 // Stored: HMACs of the ID and the IP (REVIEW_HASH_SECRET), the code version, timestamps. Never a raw ID, IP or code.
 // The papers never reach this route: the app sends only the code and RevenueCat's anonymous purchase ID.
 
 export const RC = 'https://api.revenuecat.com/v2';
-export const LIMITS = { perIpDaily: 20, globalDaily: 1000, burstPerMinute: 5, newSlotsPerIpDaily: 2, maxDevices: 10 };
+export const LIMITS = { perIpDaily: 20, perNet48Daily: 40, globalWarnDaily: 1000, globalDaily: 100_000, burstPerMinute: 5, newSlotsPerIpDaily: 2, maxDevices: 10 };
 const CODE = /^\d{10}$/;
 const ANON_ID = /^\$RCAnonymousID:[0-9a-f]{32}$/;
 const DAY = 86_400_000, WEEK = 7 * DAY, MAX_BODY = 1024;
@@ -23,6 +32,28 @@ const OPEN_LOOPS_INTAKE = 'https://boss.sequoiataylor.com/api/boss/open-loops/in
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json', 'cache-control': 'no-store' } });
 const closed = () => json({ error: 'NOT_FOUND' }, 404);
 const stop = (code) => console.log(`NAMED STOP [${code}]`);
+
+/** The caller's network for limits. IPv4 is kept whole. IPv6 is cut to its /64 (bits 64): one home or phone holds a whole
+ * /64, so the full address would give one person 2^64 "IPs" and make every per-IP limit meaningless. bits 48 gives the
+ * site-sized block one tunnel-broker account hands out (65,536 /64s), for a cap one level up. An IPv4-mapped IPv6
+ * address (::ffff:192.0.2.1 or ::ffff:c000:201) is the IPv4 it carries. Copied from: approvalprep
+ * functions/_runtime/rate-limit.js @ 540a42a9dcf551844733c9740e276c11fb088edf (same rule as peace-be-still iphash.ts). */
+export function ipPrefix(ip, bits = 64) {
+  const text = String(ip || '').trim().toLowerCase();
+  if (!text.includes(':')) return text || 'unknown';
+  const [head, tail = ''] = text.split('::');
+  const hexGroups = (part) => (part ? part.split(':') : []).flatMap((g) => {
+    if (!g.includes('.')) return [g];
+    const o = g.split('.').map(Number); // a dotted IPv4 tail fills the last two groups
+    return [((o[0] << 8) | o[1]).toString(16), ((o[2] << 8) | o[3]).toString(16)];
+  });
+  const left = hexGroups(head), right = hexGroups(tail);
+  const groups = (text.includes('::') ? [...left, ...Array(Math.max(0, 8 - left.length - right.length)).fill('0'), ...right] : left)
+    .map((g) => parseInt(g || '0', 16) || 0);
+  if (groups.length === 8 && groups.slice(0, 5).every((g) => g === 0) && groups[5] === 0xffff)
+    return [groups[6] >> 8, groups[6] & 255, groups[7] >> 8, groups[7] & 255].join('.');
+  return groups.slice(0, bits / 16).map((g) => g.toString(16)).join(':') + `::/${bits}`;
+}
 
 /** Open only when every secret and binding it needs is present, the code is 10 digits and REVIEW_UNTIL is in the future. */
 export function reviewOpen(env, now) {
@@ -46,11 +77,11 @@ async function same(secret, typed, real) {
   return diff === 0;
 }
 
-/** One atomic try against a cap: true when taken, false when the bucket is full. */
+/** One atomic try against a cap: the bucket's count after this try (1 or more) when taken, 0 when the bucket is full. */
 async function take(db, bucket, key, cap, until) {
   const row = await db.prepare('INSERT INTO review_try (bucket, key, tries, until) VALUES (?, ?, 1, ?) ON CONFLICT(bucket, key) DO UPDATE SET tries = tries + 1 WHERE tries < ? RETURNING tries')
     .bind(bucket, key, until, cap).first();
-  return !!row;
+  return Number(row?.tries ?? 0);
 }
 const giveBack = (db, bucket, key) => db.prepare('UPDATE review_try SET tries = tries - 1 WHERE bucket = ? AND key = ? AND tries > 0').bind(bucket, key).run();
 
@@ -74,17 +105,38 @@ export async function reviewUnlock(request, env, { now = Date.now(), fetcher = f
   if (typeof code !== 'string' || typeof id !== 'string' || !ANON_ID.test(id)) return json({ error: 'BAD_REQUEST' }, 400);
 
   const db = env.DB, secret = env.REVIEW_HASH_SECRET, version = env.REVIEW_CODE_VERSION;
+  // Cloudflare's own header (a client cannot set it at the edge), IPv6 as its /64 and its /48.
   const ip = request.headers.get('cf-connecting-ip') ?? 'unknown';
-  const ipHash = hex(await hmac(secret, `ip:${ip}`)), idHash = hex(await hmac(secret, `id:${id}`));
+  const ipHash = hex(await hmac(secret, `ip:${ipPrefix(ip)}`)), net48Hash = hex(await hmac(secret, `net48:${ipPrefix(ip, 48)}`)), idHash = hex(await hmac(secret, `id:${id}`));
   const day = new Date(now).toISOString().slice(0, 10), minute = Math.floor(now / 60_000);
   try {
     // Expired rows first (the design's KMP cleanup): try counters past their day or minute, grants 7 days past expiry.
     await db.prepare('DELETE FROM review_try WHERE until < ?').bind(now).run();
     await db.prepare('DELETE FROM review_grant WHERE expires_at + ? < ?').bind(WEEK, now).run();
-    // Limits, taken before the code is compared, so guessing costs a try whatever the guess.
+    // Limits, taken before the code is compared, so guessing costs a try whatever the guess. The network's own buckets
+    // come first: one caller stops there and never spends the shared daily tries.
+    const dayEnd = now + 2 * DAY;
     if (!(await take(db, `burst:${minute}`, ipHash, LIMITS.burstPerMinute, (minute + 2) * 60_000))) return json({ error: 'SLOW_DOWN' }, 429);
-    if (!(await take(db, `ip:${day}`, ipHash, LIMITS.perIpDaily, now + 2 * DAY))) { stop('REVIEW_IP_DAILY_CAP'); return json({ error: 'SLOW_DOWN' }, 429); }
-    if (!(await take(db, `all:${day}`, 'all', LIMITS.globalDaily, now + 2 * DAY))) { stop('REVIEW_DAILY_CAP'); return json({ error: 'SLOW_DOWN' }, 429); }
+    if (!(await take(db, `ip:${day}`, ipHash, LIMITS.perIpDaily, dayEnd))) { stop('REVIEW_IP_DAILY_CAP'); return json({ error: 'SLOW_DOWN' }, 429); }
+    // One /48 holds 65,536 /64s, so the per-network cap alone lets one tunnel-broker account fill the shared day.
+    if (!(await take(db, `net48:${day}`, net48Hash, LIMITS.perNet48Daily, dayEnd))) { stop('REVIEW_NET48_DAILY_CAP'); return json({ error: 'SLOW_DOWN' }, 429); }
+    const all = await take(db, `all:${day}`, 'all', LIMITS.globalDaily, dayEnd);
+    if (!all) {
+      stop('REVIEW_DAILY_CAP');
+      // Everyone, the reviewer too, is refused until tomorrow: one Open Loops row the first time a day, so it is seen.
+      if (await take(db, `alert:${day}`, 'all', 1, dayEnd)) {
+        waitUntil(fileLoop(env, fetcher, 'REVIEW_DAILY_CAP', 'KeepMyProof: the Play review code hit its daily try cap',
+          `${LIMITS.globalDaily.toLocaleString('en-US')} code tries in one day (UTC ${day}) from thousands of networks: someone is guessing, and the Play reviewer cannot redeem until tomorrow. Check the review_try rows, rotate the code (new KMP_PLAY_REVIEW_CODE in the vault, new REVIEW_CODE + REVIEW_CODE_VERSION on the Pages project) if it may have leaked, and tell her if a review is waiting.`));
+      }
+      return json({ error: 'SLOW_DOWN' }, 429);
+    }
+    // The count is atomic, so exactly one try a day lands on the warning line: one Open Loops row, and this try and every
+    // later one carry on as normal (nobody is refused until the backstop above).
+    if (all === LIMITS.globalWarnDaily) {
+      stop('REVIEW_GUESSING');
+      waitUntil(fileLoop(env, fetcher, 'REVIEW_GUESSING', 'KeepMyProof: someone is guessing the Play review code',
+        `${LIMITS.globalWarnDaily.toLocaleString('en-US')} code tries so far today (UTC ${day}) from many networks: someone is guessing. The Play reviewer can still redeem: every network has its own small limit, and everyone is refused only at ${LIMITS.globalDaily.toLocaleString('en-US')} tries a day. Check the review_try rows, and rotate the code (new KMP_PLAY_REVIEW_CODE in the vault, new REVIEW_CODE + REVIEW_CODE_VERSION on the Pages project) if it may have leaked.`));
+    }
   } catch { stop('REVIEW_DB_UNAVAILABLE'); return json({ error: 'TRY_AGAIN' }, 503); }
 
   if (!CODE.test(code) || !(await same(secret, code, env.REVIEW_CODE))) { stop('REVIEW_CODE_WRONG'); return json({ error: 'WRONG_CODE' }, 403); }
@@ -113,7 +165,8 @@ export async function reviewUnlock(request, env, { now = Date.now(), fetcher = f
       if (!row) {
         await giveBack(db, `slot:${day}`, ipHash);
         stop('REVIEW_DEVICE_CAP');
-        waitUntil(fileCapLoop(env, fetcher));
+        waitUntil(fileLoop(env, fetcher, 'REVIEW_DEVICE_CAP', 'KeepMyProof: the Play review code is used up',
+          `All ${maxDevices(env)} review slots for code version ${env.REVIEW_CODE_VERSION} are taken. Rotate: new KMP_PLAY_REVIEW_CODE in the vault, new REVIEW_CODE + REVIEW_CODE_VERSION on the Pages project, then she pastes the new code in Play Console.`));
         return json({ error: 'USED_UP' }, 403);
       }
       newSlot = true;
@@ -144,13 +197,14 @@ export async function reviewUnlock(request, env, { now = Date.now(), fetcher = f
   return json({ unlocked: true });
 }
 
-/** The cap was hit: a row on Boss OS's Open Loops list (the repo's existing failure path), so it is seen, not only logged. */
-async function fileCapLoop(env, fetcher) {
+/** A cap or the warning line was hit: a row on Boss OS's Open Loops list (the repo's existing failure path), so it is
+ * seen, not only logged. A missing token or a down intake is a named stop in the log and never changes the answer. */
+async function fileLoop(env, fetcher, code, title, nextStep) {
   if (!env.BOSS_OPEN_LOOPS_TOKEN) { stop('OPEN_LOOPS_TOKEN_MISSING'); return; }
   try {
     const r = await fetcher(OPEN_LOOPS_INTAKE, { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${env.BOSS_OPEN_LOOPS_TOKEN}` },
-      body: JSON.stringify({ repo: 'seq23/keepmyproof', stop: 'REVIEW_DEVICE_CAP', business: 'spry', finish_line: 'KeepMyProof: live in both stores, selling', owner: 'claude',
-        title: 'KeepMyProof: the Play review code is used up', next_step: `All ${maxDevices(env)} review slots for code version ${env.REVIEW_CODE_VERSION} are taken. Rotate: new KMP_PLAY_REVIEW_CODE in the vault, new REVIEW_CODE + REVIEW_CODE_VERSION on the Pages project, then she pastes the new code in Play Console.` }),
+      body: JSON.stringify({ repo: 'seq23/keepmyproof', stop: code, business: 'spry', finish_line: 'KeepMyProof: live in both stores, selling', owner: 'claude',
+        title, next_step: nextStep }),
       signal: AbortSignal.timeout(8000) });
     if (!r.ok) stop('OPEN_LOOPS_REFUSED');
   } catch { stop('OPEN_LOOPS_UNREACHABLE'); }

@@ -4,7 +4,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
-import { LIMITS, reviewStatus, reviewUnlock } from '../site/server/review.mjs';
+import { ipPrefix, LIMITS, reviewStatus, reviewUnlock } from '../site/server/review.mjs';
 import { redeemReviewCode, reviewStrings, reviewWindowOpen, REVIEW_URL } from '../src/billing/review.android';
 
 const CODE = '4815162342', NOW = Date.parse('2026-12-01T12:00:00Z'), DAY = 86_400_000;
@@ -34,9 +34,14 @@ function d1() {
 function revenuecat() {
   const known = new Set<string>(), granted = new Map<string, number>(), purchases = new Map<string, string>();
   const calls: string[] = [];
-  let mode: 'ok' | '5xx' | 'timeout' | '403' = 'ok', openLoops = 0;
+  let mode: 'ok' | '5xx' | 'timeout' | '403' = 'ok', intake: 'up' | 'throws' | '500' = 'up';
+  const openLoopStops: string[] = [];
   const fetcher = (async (url: string, init: RequestInit = {}) => {
-    if (url.includes('open-loops/intake')) { openLoops++; return new Response('{}', { status: 201 }); }
+    if (url.includes('open-loops/intake')) {
+      openLoopStops.push(JSON.parse(String(init.body)).stop);
+      if (intake === 'throws') throw Error('boss os down');
+      return new Response('{}', { status: intake === '500' ? 500 : 201 });
+    }
     calls.push(`${init.method ?? 'GET'} ${url.replace(/^.*\/customers\//, '')}`);
     const id = decodeURIComponent(url.split('/customers/')[1]!.split('/')[0]!);
     if (url.endsWith('/actions/revoke_granted_entitlement')) { granted.delete(id); return new Response('{}', { status: 200 }); }
@@ -47,7 +52,7 @@ function revenuecat() {
     const body = JSON.parse(String(init.body)); granted.set(id, body.expires_at);
     return new Response('{}', { status: 201 });
   }) as unknown as typeof fetch;
-  return { known, granted, purchases, calls, fetcher, set(m: typeof mode) { mode = m; }, get openLoops() { return openLoops; } };
+  return { known, granted, purchases, calls, fetcher, openLoopStops, set(m: typeof mode) { mode = m; }, setIntake(m: typeof intake) { intake = m; }, get openLoops() { return openLoopStops.length; } };
 }
 
 function env(db = d1(), over: Record<string, unknown> = {}) {
@@ -112,6 +117,75 @@ test('guessing: wrong code 403 and counted; per-IP 20 a day, burst 5 a minute an
   (g.DB as ReturnType<typeof d1>).raw.prepare('INSERT INTO review_try VALUES (?, ?, ?, ?)').run(`all:2026-12-01`, 'all', LIMITS.globalDaily, NOW + DAY);
   const global = await call(g, rcg, { code: CODE, app_user_id: anon(1) });
   assert.equal(global.status, 429); assert.deepEqual(rcg.calls, []);
+  // The backstop files ONE Open Loops row a day, not one per refused try.
+  assert.equal((await call(g, rcg, { code: CODE, app_user_id: anon(1) }, '198.51.100.10')).status, 429);
+  assert.deepEqual(rcg.openLoopStops, ['REVIEW_DAILY_CAP']);
+});
+
+const dayStart = Date.parse(new Date(NOW).toISOString().slice(0, 10) + 'T00:00:00Z');
+
+test('lockout is per device: a stranger on 60 rotating networks spends every try each one has (1,200, past the old shared 1,000) and a different device still redeems; the 1,000th try files ONE warning and refuses no one', async () => {
+  const e = env(), rc = revenuecat(); rc.known.add(anon(1));
+  const before = LIMITS.globalWarnDaily - 1;
+  let n = 0;
+  // Each network sends its full day (20 tries, 5 a minute), every try the wrong code.
+  for (let ip = 0; ip < 60; ip++) for (let i = 0; i < LIMITS.perIpDaily; i++) {
+    const res = await call(e, rc, { code: '0000000000', app_user_id: anon(5000 + n) }, `198.18.${Math.floor(ip / 250)}.${ip % 250 + 1}`, dayStart + Math.floor(i / LIMITS.burstPerMinute) * 61_000);
+    assert.equal(res.status, 403, `try ${n + 1} from network ${ip + 1} is counted and compared, never refused by the shared count`);
+    assert.equal(res.body.error, 'WRONG_CODE');
+    n++;
+    assert.deepEqual(rc.openLoopStops, n > before ? ['REVIEW_GUESSING'] : [], `after try ${n}`);
+    // Its own 21st try is the only thing a network loses, even with the right code.
+    if (i === LIMITS.perIpDaily - 1 && ip % 20 === 0) assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(1) }, `198.18.0.${ip + 1}`, dayStart + 10 * 61_000)).status, 429);
+  }
+  assert.equal(n, 1200); assert.equal(triesTaken(e), 1200);
+  assert.ok(n > LIMITS.globalWarnDaily && n < LIMITS.globalDaily);
+  // The real reviewer: another phone on another network, the right code, the same day.
+  const reviewer = await call(e, rc, { code: CODE, app_user_id: anon(1) }, '203.0.113.200', dayStart + 11 * 61_000);
+  assert.equal(reviewer.status, 200); assert.equal(reviewer.body.unlocked, true); assert.equal(rc.granted.size, 1);
+  assert.deepEqual(rc.openLoopStops, ['REVIEW_GUESSING']);
+});
+
+test('IPv6: one /64 is one network however many addresses it rotates, one /48 gets 40 a day, and the reviewer on another block still redeems', async () => {
+  assert.equal(ipPrefix('2001:db8:1:2:aaaa::1'), '2001:db8:1:2::/64');
+  assert.equal(ipPrefix('2001:DB8:1:2:ffff:ffff:ffff:ffff'), '2001:db8:1:2::/64');
+  assert.equal(ipPrefix('2001:db8:1:2::9', 48), '2001:db8:1::/48');
+  assert.equal(ipPrefix('::ffff:192.0.2.1'), '192.0.2.1'); assert.equal(ipPrefix('::ffff:c000:201'), '192.0.2.1');
+  assert.equal(ipPrefix('192.0.2.1'), '192.0.2.1'); assert.equal(ipPrefix(''), 'unknown');
+  const e = env(), rc = revenuecat(); rc.known.add(anon(1));
+  // One /64, a new address every try: 20 tries, then refused before the compare, and only 20 shared tries spent.
+  for (let i = 0; i < LIMITS.perIpDaily; i++)
+    assert.equal((await call(e, rc, { code: '0000000000', app_user_id: anon(1) }, `2001:db8:1:1:${(i + 1).toString(16)}::1`, dayStart + Math.floor(i / LIMITS.burstPerMinute) * 61_000)).status, 403);
+  assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(1) }, '2001:db8:1:1:beef::1', dayStart + 10 * 61_000)).status, 429);
+  assert.equal(triesTaken(e), LIMITS.perIpDaily);
+  // The same /48, another /64: 20 more, then the /48 is full for every /64 in it.
+  for (let i = 0; i < LIMITS.perNet48Daily - LIMITS.perIpDaily; i++)
+    assert.equal((await call(e, rc, { code: '0000000000', app_user_id: anon(1) }, `2001:db8:1:2:${(i + 1).toString(16)}::1`, dayStart + Math.floor(i / LIMITS.burstPerMinute) * 61_000)).status, 403);
+  assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(1) }, '2001:db8:1:3::1', dayStart + 10 * 61_000)).status, 429);
+  assert.equal(triesTaken(e), LIMITS.perNet48Daily); assert.equal(rc.granted.size, 0);
+  // The reviewer on another /48 (IPv6) and on IPv4: the right code still unlocks.
+  assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(1) }, '2001:db8:2::1', dayStart + 11 * 61_000)).status, 200);
+  rc.known.add(anon(2));
+  assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(2) }, '203.0.113.9', dayStart + 11 * 61_000)).status, 200);
+});
+
+test('the warning line: the 1,000th try of the day is the reviewer’s own and Boss OS is down: still unlocked, one alert tried, the 1,001st files nothing', async () => {
+  const day = new Date(NOW).toISOString().slice(0, 10);
+  for (const intake of ['up', 'throws', '500'] as const) {
+    const e = env(), rc = revenuecat(); rc.known.add(anon(1)); rc.known.add(anon(2)); rc.setIntake(intake);
+    (e.DB as ReturnType<typeof d1>).raw.prepare('INSERT INTO review_try VALUES (?, ?, ?, ?)').run(`all:${day}`, 'all', LIMITS.globalWarnDaily - 1, NOW + DAY);
+    const at = await call(e, rc, { code: CODE, app_user_id: anon(1) });
+    assert.equal(at.status, 200, intake); assert.equal(at.body.unlocked, true, intake);
+    assert.deepEqual(rc.openLoopStops, ['REVIEW_GUESSING'], intake);
+    const after = await call(e, rc, { code: CODE, app_user_id: anon(2) }, '198.51.100.77');
+    assert.equal(after.status, 200, intake);
+    assert.deepEqual(rc.openLoopStops, ['REVIEW_GUESSING'], `${intake}: one row a day, not one per try`);
+  }
+  // No token for the alert: a named stop in the log, and the unlock is unchanged.
+  const e = env(d1(), { BOSS_OPEN_LOOPS_TOKEN: '' }), rc = revenuecat(); rc.known.add(anon(1));
+  (e.DB as ReturnType<typeof d1>).raw.prepare('INSERT INTO review_try VALUES (?, ?, ?, ?)').run(`all:${day}`, 'all', LIMITS.globalWarnDaily - 1, NOW + DAY);
+  assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(1) })).status, 200);
+  assert.deepEqual(rc.openLoopStops, []);
 });
 
 test('lying client: malformed, custom or oversized IDs and bodies are refused before any count or call', async () => {
@@ -141,7 +215,7 @@ test('leaked code: 10 devices per code version, 2 new per IP a day, the 11th fil
   for (let n = 3; n <= 10; n++) assert.equal((await call(e, rc, { code: CODE, app_user_id: anon(n) }, `198.51.100.${n}`)).status, 200);
   assert.equal(slots(e), 10);
   const eleventh = await call(e, rc, { code: CODE, app_user_id: anon(11) }, '198.51.100.200');
-  assert.equal(eleventh.body.error, 'USED_UP'); assert.equal(slots(e), 10); assert.ok(!rc.granted.has(anon(11))); assert.equal(rc.openLoops, 1);
+  assert.equal(eleventh.body.error, 'USED_UP'); assert.equal(slots(e), 10); assert.ok(!rc.granted.has(anon(11))); assert.deepEqual(rc.openLoopStops, ['REVIEW_DEVICE_CAP']);
   // A new code version is a new window: its own 10 slots.
   const v2 = { ...e, REVIEW_CODE_VERSION: 'v2' };
   assert.equal((await call(v2, rc, { code: CODE, app_user_id: anon(11) }, '198.51.100.201')).status, 200);
@@ -160,7 +234,7 @@ test('outage: RevenueCat 5xx, timeout or read-only key = 503, slot given back, n
   }
   const db = d1(), e = env(db), rc = revenuecat(); rc.known.add(anon(1)); db.fail(true);
   const r = await call(e, rc, { code: CODE, app_user_id: anon(1) });
-  assert.equal(r.status, 503); assert.deepEqual(rc.calls, []);
+  assert.equal(r.status, 503); assert.equal(r.body.error, 'TRY_AGAIN'); assert.deepEqual(rc.calls, []); assert.equal(rc.granted.size, 0);
 });
 
 test('data loss: a buyer who redeems keeps the purchase; a failed grant only ever revokes GRANTED entitlements', async () => {
