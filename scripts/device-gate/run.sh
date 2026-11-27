@@ -11,11 +11,13 @@ CODE1=135790; CODE2=246802
 record() { printf '%s\t%s\t%s\n' "$1" "$2" "$3" >> "$RES"; echo "CHECK $1: $2 — $3"; }
 flow() { # flow <name> [K=V ...] ; sets LAST_LOG; returns maestro's status
   local name="$1"; shift; n=$(( $(cat "$OUT/.n" 2>/dev/null || echo 0) + 1 )); echo $n > "$OUT/.n"; local args=(); for kv in "$@"; do args+=(-e "$kv"); done
-  LAST_LOG="$OUT/logs/$(printf %02d $n)-$name.log"
+  LAST_LOG="$OUT/logs/$(printf %02d $n)-$name.log"; echo "FLOW=$n" >> "$OUT/said.txt"
   ( cd "$OUT/shots" && maestro --device "$U" test "${args[@]}" --debug-output "$OUT/logs/dbg-$n" "$GITHUB_WORKSPACE/.maestro/gate/$name.yaml" ) > "$LAST_LOG" 2>&1
   local s=$?; echo "flow $n $name: exit $s"; [ $s = 0 ] || tail -25 "$LAST_LOG"; return $s
 }
-said() { grep -rhoE "$1=[^\"'[:space:]]*( [a-z]+){0,11}" "$LAST_LOG" "$OUT/logs/dbg-$n" 2>/dev/null | tail -1 | sed "s/^$1=//"; }
+# What the last flow said (scripts/device-gate/said.py): only lines after that flow's own FLOW= marker, so a value
+# from an earlier flow is never read as this one's.
+said() { awk -v k="$1=" '/^FLOW=/{v=""} index($0,k)==1{v=substr($0,length(k)+1)} END{print v}' "$OUT/said.txt"; }
 count() { said GATE_COUNT; }
 tool() { (cd "$GITHUB_WORKSPACE" && npx tsx scripts/device-gate/backup-tool.ts "$@"); }
 data() { xcrun simctl get_app_container "$U" "$BID" data 2>/dev/null; }
@@ -25,6 +27,8 @@ grab() { # grab <dest>: copies the newest backup file the app writes for its sha
   ( while true; do d=$(data); [ -n "$d" ] && f=$(find "$d" -name 'KeepMyProof-backup-*.kmp' -size +0 2>/dev/null | head -1) && [ -n "$f" ] && cp "$f" "$dest.part" && mv "$dest.part" "$dest"; sleep 0.3; done ) & GRAB=$!
 }
 grab_stop() { kill $GRAB 2>/dev/null; wait $GRAB 2>/dev/null; }
+
+: > "$OUT/said.txt"; python3 "$GITHUB_WORKSPACE/scripts/device-gate/said.py" "$OUT/said.txt" & SAID=$!; trap 'kill $SAID 2>/dev/null' EXIT
 
 # Files › On My iPhone: where the person keeps a backup; the document picker reads it from here.
 xcrun simctl launch "$U" com.apple.DocumentsApp >/dev/null 2>&1; sleep 6; xcrun simctl terminate "$U" com.apple.DocumentsApp >/dev/null 2>&1
@@ -86,7 +90,7 @@ if hdiutil create -size ${KB}k -fs HFS+ -volname gatefull -layout NONE "$W/full.
   cp -R "$W/vault-before/." "$V/"
   dd if=/dev/zero of="$V/.filler" bs=4k 2>/dev/null; FREE=$(df -k "$V" | awk 'NR==2{print $4}'); echo "full disk: ${FREE} KB free"
   flow unlock CODE=$CODE1; before=$(count)
-  flow add-one-note TITLE="Gate full disk note" SHOT=full; refused=$(grep -c "That did not finish" "$LAST_LOG" "$OUT/logs/dbg-$n" -r 2>/dev/null | awk -F: '{s+=$NF} END{print s+0}')
+  flow add-one-note TITLE="Gate full disk note" SHOT=full; refused=$(said GATE_SAVE)
   xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; rm -f "$V/.filler"; mkdir -p "$W/vault-after"; cp -R "$V/." "$W/vault-after/"
   hdiutil detach "$V" >/dev/null || hdiutil detach -force "$V" >/dev/null
   rm -rf "$V"; mkdir -p "$V"; cp -R "$W/vault-after/." "$V/"
