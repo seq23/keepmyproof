@@ -2,13 +2,13 @@
   "schema": "search-loop-week-v1",
   "week": "2026-W48",
   "site": "keepmyproof.com",
-  "generated_at": "2026-11-26T22:55:47.320Z",
+  "generated_at": "2026-11-27T18:08:20.312Z",
   "state": "running",
   "published": 0,
   "indexed": 1,
   "pace": 10,
-  "ai_visitors": 0,
-  "ai_bot_hits": 728,
+  "ai_visitors": "not read: this zone's plan has no referrer field, and the Cloudflare Web Analytics beacon is not on the site (not in the home page, no page loads in 7 days): turn on Web Analytics for keepmyproof.com",
+  "ai_bot_hits": 733,
   "conversions": "not read: no conversion source configured for this site (form fills / checkouts)",
   "wins": 1,
   "undone": 0,
@@ -22,10 +22,7 @@
     "why": "held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data"
   },
   "notes": [
-    "not read: AI answer misses (no BOSS_OPEN_LOOPS_TOKEN in this run (pass it in the caller's secrets: block)); could not tell this run",
-    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued",
-    "not read: Search Console page data (no Search Console property configured (gsc.site_url / its env var))",
-    "not read: index status for some pages 14-42 days old (URL Inspection: GSC_SERVICE_ACCOUNT_JSON is not set)"
+    "BUILD held by the cap: 20 live engine page(s), cap 20 (held at 20: no Search Console numbers to judge results (Search Console has no rows for 2026-09-27..2026-10-24, so there is nothing to compare the last 28 days with); the cap never grows without data); 10 more page(s) today would have gone over it, those searches stay queued"
   ],
   "lanes": {
     "ratio": {
@@ -59,17 +56,39 @@
         "why": "0% of 5 can-be-#1 pages picked on it reached the top 3"
       }
     ],
-    "competition": "ok: 15 top-10 read(s) via brave"
+    "competition": "ok: 5 top-10 read(s) via brave"
   },
   "ai_misses": {
-    "read": "not read: no BOSS_OPEN_LOOPS_TOKEN in this run (pass it in the caller's secrets: block)",
-    "week": null,
-    "misses": 0,
+    "read": "ok",
+    "week": "2026-W48",
+    "misses": 3,
     "strengthened": [],
-    "new_candidates": [],
-    "skipped": [],
+    "new_candidates": [
+      {
+        "id": "014dbae3b624ee048de28f25b87cb76deadadbe2",
+        "prompt": "what is the safest way to keep important family documents private on my phone",
+        "at": "2026-11-27"
+      }
+    ],
+    "skipped": [
+      {
+        "id": "8223c02ec09e97355950794e19a7f470890d73fb",
+        "reason": "not an engine page"
+      },
+      {
+        "id": "ea34474537a9bc3b6ec6d71d5338e95508f180a7",
+        "reason": "not an engine page"
+      }
+    ],
     "rejected": [],
     "could_not_tell": 4
   },
-  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/45907816622"
+  "comparison": {
+    "pulled": "ok: 0 row(s)",
+    "candidates": 0,
+    "confirmed": 0,
+    "queued": []
+  },
+  "seeds": "not read: this site has no seeds in its config",
+  "run_url": "https://github.com/seq23/keepmyproof/actions/runs/46047143693"
 }

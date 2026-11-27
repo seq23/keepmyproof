@@ -2,17 +2,42 @@
   "schema": "search-loop-targets-v1",
   "site": "keepmyproof.com",
   "week": "2026-W48",
-  "generated_at": "2026-11-24T01:37:14.035Z",
+  "generated_at": "2026-11-27T18:08:20.312Z",
   "sources": {
     "search_console": "ok: 1837 rows",
+    "comparison_pull": "ok: 0 row(s)",
     "bing_webmaster": "ok: 0 rows",
     "easy_wins": "ok: 1 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
     "relevance_screen": "ok: kept 149 of 150 (free model)",
-    "top10": "ok: 15 top-10 read(s) via brave"
+    "top10": "ok: 5 top-10 read(s) via brave"
   },
   "targets": [
+    {
+      "query": "what is the safest way to keep important family documents private on my phone",
+      "variants": [],
+      "signals": {
+        "words": 14,
+        "question": true,
+        "ai_miss": true,
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "ai_miss_ids": [
+        "014dbae3b624ee048de28f25b87cb76deadadbe2"
+      ],
+      "scores": {
+        "striking": 15,
+        "can_be_one": 0
+      },
+      "score": 15,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "AI answer miss: ChatGPT, Gemini or AI Overviews answer this without the site and no page fits; built first",
+        "autocomplete demand (google/bing)"
+      ]
+    },
     {
       "query": "how to hide pictures in camera roll",
       "variants": [
@@ -38,26 +63,26 @@
           "counts": {
             "results": 10,
             "directories": 0,
-            "forums": 2,
+            "forums": 1,
             "off_target_national": 0,
             "thin_or_old": 7,
             "exact_answer": 0
           },
           "reasons": [
-            "top 10: 0 directories, 2 forums, 0 off-target national, 7 thin or old, 0 answer the exact question"
+            "top 10: 0 directories, 1 forums, 0 off-target national, 7 thin or old, 0 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 77.5,
-        "can_be_one": 67.6
+        "can_be_one": 64.6
       },
-      "score": 67.6,
+      "score": 64.6,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 4-word question, and the site holds its parts at position 8.3",
-        "weak top 10 (0.69): 0 directories, 2 forums, 0 off-target national, 7 thin or old, 0 answer the exact question",
+        "weak top 10 (0.69): 0 directories, 1 forums, 0 off-target national, 7 thin or old, 0 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -88,112 +113,24 @@
             "directories": 0,
             "forums": 3,
             "off_target_national": 0,
-            "thin_or_old": 8,
-            "exact_answer": 6
+            "thin_or_old": 7,
+            "exact_answer": 5
           },
           "reasons": [
-            "top 10: 0 directories, 3 forums, 0 off-target national, 8 thin or old, 6 answer the exact question"
+            "top 10: 0 directories, 3 forums, 0 off-target national, 7 thin or old, 5 answer the exact question"
           ]
         }
       },
       "scores": {
         "striking": 74.4,
-        "can_be_one": 49.2
+        "can_be_one": 46.2
       },
       "score": 74.4,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "already ranks 9 in Search Console (6 impressions)",
-        "can-be-#1 score 49.2 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
-      "query": "colorado small estate limit 2021",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 13.7,
-        "gsc_impressions": 26,
-        "gsc_page": "https://keepmyproof.com/executor/small-estate/colorado",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 1
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.15,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 58.7,
-        "can_be_one": 46
-      },
-      "score": 46,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 7",
-        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "where are divorce records kept",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/ohio",
-        "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 8,
-          "parts_rows": 4
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0.15,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 1,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 57.7,
-        "can_be_one": 46
-      },
-      "score": 46,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "weak top 10 (0.15): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
-        "people search it (autocomplete or impressions)"
+        "can-be-#1 score 46.2 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -231,14 +168,15 @@
       },
       "scores": {
         "striking": 63,
-        "can_be_one": 43.2
+        "can_be_one": 40.2
       },
-      "score": 63,
+      "score": 40.2,
       "kind": "new",
-      "lane": "striking",
+      "lane": "can_be_one",
       "reasons": [
-        "already ranks 8 in Search Console (3 impressions)",
-        "can-be-#1 score 43.2 too (taken by the striking lane's turn)"
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "weak top 10 (0.08): 0 directories, 0 forums, 0 off-target national, 1 thin or old, 2 answer the exact question",
+        "people search it (autocomplete or impressions)"
       ]
     },
     {
@@ -274,9 +212,9 @@
       },
       "scores": {
         "striking": 61.3,
-        "can_be_one": 43.2
+        "can_be_one": 40.2
       },
-      "score": 43.2,
+      "score": 40.2,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -320,37 +258,14 @@
       },
       "scores": {
         "striking": 59.5,
-        "can_be_one": 43.2
-      },
-      "score": 43.2,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
-        "weak top 10 (0.08): 0 directories, 1 forums, 0 off-target national, 1 thin or old, 0 answer the exact question",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how late can a 17 year old work on a school night",
-      "variants": [],
-      "signals": {
-        "words": 12,
-        "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 59.5,
-        "can_be_one": 0
+        "can_be_one": 40.2
       },
       "score": 59.5,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (2 impressions)"
+        "already ranks 9 in Search Console (2 impressions)",
+        "can-be-#1 score 40.2 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -372,9 +287,9 @@
       },
       "scores": {
         "striking": 36.7,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -401,9 +316,9 @@
       },
       "scores": {
         "striking": 48.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -412,25 +327,25 @@
       ]
     },
     {
-      "query": "how much do death certificates cost",
+      "query": "how late can a 17 year old work on a school night",
       "variants": [],
       "signals": {
-        "words": 6,
+        "words": 12,
         "question": true,
-        "gsc_position": 8,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/idaho",
+        "gsc_position": 9,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 59,
+        "striking": 59.5,
         "can_be_one": 0
       },
-      "score": 59,
+      "score": 59.5,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 8 in Search Console (1 impressions)"
+        "already ranks 9 in Search Console (2 impressions)"
       ]
     },
     {
@@ -452,9 +367,9 @@
       },
       "scores": {
         "striking": 48.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -481,9 +396,9 @@
       },
       "scores": {
         "striking": 44.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -492,14 +407,14 @@
       ]
     },
     {
-      "query": "what are the working hours for a 17 year old",
+      "query": "how much do death certificates cost",
       "variants": [],
       "signals": {
-        "words": 10,
+        "words": 6,
         "question": true,
         "gsc_position": 8,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/idaho",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -532,9 +447,9 @@
       },
       "scores": {
         "striking": 34.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -561,9 +476,9 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -572,17 +487,14 @@
       ]
     },
     {
-      "query": "where can i get a copy of my divorce papers",
-      "variants": [
-        "where can i get copy of divorce papers",
-        "where do you get a copy of your divorce papers"
-      ],
+      "query": "what are the working hours for a 17 year old",
+      "variants": [],
       "signals": {
         "words": 10,
         "question": true,
         "gsc_position": 8,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -615,9 +527,9 @@
       },
       "scores": {
         "striking": 50.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -644,9 +556,179 @@
       },
       "scores": {
         "striking": 54,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "where can i get a copy of my divorce papers",
+      "variants": [
+        "where can i get copy of divorce papers",
+        "where do you get a copy of your divorce papers"
+      ],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 59,
+        "can_be_one": 0
+      },
+      "score": 59,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (1 impressions)"
+      ]
+    },
+    {
+      "query": "child labor laws hours per week",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/minnesota",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 17
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 48.5,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "child labor laws in kansas",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 16,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 41.8,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "colorado small estate limit 2021",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 13.7,
+        "gsc_impressions": 26,
+        "gsc_page": "https://keepmyproof.com/executor/small-estate/colorado",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 1
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 58.7,
+        "can_be_one": 37
+      },
+      "score": 58.7,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 13.7 in Search Console (26 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "child labor laws in north dakota",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 17,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/north-dakota",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 37.6,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "child labor laws in vermont",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 20,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/vermont",
+        "unanswered": {
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 32.2,
+        "can_be_one": 37
+      },
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -677,45 +759,16 @@
       ]
     },
     {
-      "query": "child labor laws hours per week",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "gsc_position": 11,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/minnesota",
-        "unanswered": {
-          "words": 6,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 17
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 48.5,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "child labor laws in kansas",
+      "query": "colorado child labor law notice",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
-        "gsc_position": 16,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/kansas",
+        "gsc_position": 25,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
         "unanswered": {
-          "words": 4,
+          "words": 5,
           "covered": 0,
           "parts_best_position": 8,
           "parts_rows": 2
@@ -723,14 +776,43 @@
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 41.8,
-        "can_be_one": 40
+        "striking": 23.1,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "colorado disabled veteran property tax exemption",
+      "variants": [],
+      "signals": {
+        "words": 6,
+        "question": false,
+        "gsc_position": 8,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/colorado",
+        "unanswered": {
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 8,
+          "parts_rows": 2
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 54,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -758,208 +840,6 @@
       ]
     },
     {
-      "query": "child labor laws in north dakota",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "gsc_position": 17,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/north-dakota",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 37.6,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "child labor laws in vermont",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 20,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/vermont",
-        "unanswered": {
-          "words": 4,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 32.2,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how many hours can a teen work a day",
-      "variants": [],
-      "signals": {
-        "words": 9,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 6,
-          "parts_rows": 44
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 57.7,
-        "can_be_one": 40
-      },
-      "score": 57.7,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 10 in Search Console (2 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
-      "query": "colorado child labor law notice",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 25,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 23.1,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "colorado disabled veteran property tax exemption",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "gsc_position": 8,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/colorado",
-        "unanswered": {
-          "words": 6,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 54,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how long can a teen work per week",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 8,
-          "parts_rows": 19
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
-      },
-      "scores": {
-        "striking": 57.2,
-        "can_be_one": 40
-      },
-      "score": 57.2,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 9 in Search Console (1 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
       "query": "colorado minimum wage withholding",
       "variants": [],
       "signals": {
@@ -978,9 +858,9 @@
       },
       "scores": {
         "striking": 30.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1007,9 +887,9 @@
       },
       "scores": {
         "striking": 48.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1018,50 +898,32 @@
       ]
     },
     {
-      "query": "how many hours a week can a 18 year old work",
-      "variants": [
-        "how many hours a week can an 18 year old work",
-        "how many hours can an 18 year old work a week",
-        "how many hours should a 18 year old work a week"
-      ],
+      "query": "how many hours can a teen work a day",
+      "variants": [],
       "signals": {
-        "words": 11,
+        "words": 9,
         "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "unanswered": {
-          "words": 7,
-          "covered": 0.43,
+          "words": 5,
+          "covered": 0.2,
           "parts_best_position": 6,
-          "parts_rows": 55
+          "parts_rows": 44
         },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 57.2,
-        "can_be_one": 40
+        "striking": 57.7,
+        "can_be_one": 37
       },
-      "score": 57.2,
+      "score": 57.7,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "already ranks 10 in Search Console (2 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1083,9 +945,9 @@
       },
       "scores": {
         "striking": 15.8,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1112,9 +974,9 @@
       },
       "scores": {
         "striking": 46.7,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1123,46 +985,32 @@
       ]
     },
     {
-      "query": "how many hours can a teen work per week",
+      "query": "where are divorce records kept",
       "variants": [],
       "signals": {
-        "words": 9,
+        "words": 5,
         "question": true,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/ohio",
         "unanswered": {
-          "words": 6,
-          "covered": 0.17,
-          "parts_best_position": 6,
-          "parts_rows": 42
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 4
         },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 57.2,
-        "can_be_one": 40
+        "striking": 57.7,
+        "can_be_one": 37
       },
-      "score": 57.2,
+      "score": 57.7,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "already ranks 10 in Search Console (2 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1184,9 +1032,9 @@
       },
       "scores": {
         "striking": 17.2,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1213,9 +1061,9 @@
       },
       "scores": {
         "striking": 30.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1224,7 +1072,7 @@
       ]
     },
     {
-      "query": "how many hours can i work at 15",
+      "query": "how long can a teen work per week",
       "variants": [],
       "signals": {
         "words": 8,
@@ -1233,37 +1081,23 @@
         "gsc_impressions": 1,
         "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
         "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 6,
-          "parts_rows": 41
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 8,
+          "parts_rows": 19
         },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 57.2,
-        "can_be_one": 40
+        "can_be_one": 37
       },
       "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "already ranks 9 in Search Console (1 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1285,9 +1119,9 @@
       },
       "scores": {
         "striking": 21.6,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1314,9 +1148,9 @@
       },
       "scores": {
         "striking": 30.6,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1325,27 +1159,36 @@
       ]
     },
     {
-      "query": "can a minor work overnight",
+      "query": "how many hours a week can a 18 year old work",
       "variants": [
-        "can minors work overnight"
+        "how many hours a week can an 18 year old work",
+        "how many hours can an 18 year old work a week",
+        "how many hours should a 18 year old work a week"
       ],
       "signals": {
-        "words": 5,
+        "words": 11,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+        "unanswered": {
+          "words": 7,
+          "covered": 0.43,
+          "parts_best_position": 6,
+          "parts_rows": 55
+        },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 57.2,
-        "can_be_one": 0
+        "can_be_one": 37
       },
       "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)"
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1367,9 +1210,9 @@
       },
       "scores": {
         "striking": 54.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1396,9 +1239,9 @@
       },
       "scores": {
         "striking": 54,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1407,25 +1250,32 @@
       ]
     },
     {
-      "query": "how late can 16 year olds work",
+      "query": "how many hours can a teen work per week",
       "variants": [],
       "signals": {
-        "words": 7,
+        "words": 9,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/north-dakota",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 6,
+          "parts_rows": 42
+        },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 57.2,
-        "can_be_one": 0
+        "can_be_one": 37
       },
       "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)"
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1447,9 +1297,9 @@
       },
       "scores": {
         "striking": 24.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1476,9 +1326,9 @@
       },
       "scores": {
         "striking": 23.1,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1487,25 +1337,32 @@
       ]
     },
     {
-      "query": "how many hours per week should a 16 year old work",
+      "query": "how many hours can i work at 15",
       "variants": [],
       "signals": {
-        "words": 11,
+        "words": 8,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 6,
+          "parts_rows": 41
+        },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 57.2,
-        "can_be_one": 0
+        "can_be_one": 37
       },
       "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)"
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
@@ -1527,9 +1384,9 @@
       },
       "scores": {
         "striking": 30.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1556,9 +1413,9 @@
       },
       "scores": {
         "striking": 48.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1567,14 +1424,16 @@
       ]
     },
     {
-      "query": "how old do you have to be to work night shift",
-      "variants": [],
+      "query": "can a minor work overnight",
+      "variants": [
+        "can minors work overnight"
+      ],
       "signals": {
-        "words": 11,
+        "words": 5,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -1607,9 +1466,9 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1636,9 +1495,9 @@
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1647,14 +1506,14 @@
       ]
     },
     {
-      "query": "how to obtain a copy of your divorce decree",
+      "query": "how late can 16 year olds work",
       "variants": [],
       "signals": {
-        "words": 9,
+        "words": 7,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/north-carolina",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/north-dakota",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
@@ -1683,32 +1542,17 @@
           "parts_best_position": 6,
           "parts_rows": 52
         },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 55.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 7-word question, and the site holds its parts at position 6",
-        "weak top 10 (0): 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -1731,9 +1575,9 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1742,46 +1586,25 @@
       ]
     },
     {
-      "query": "what time can under 18s work till",
+      "query": "how many hours per week should a 16 year old work",
       "variants": [],
       "signals": {
-        "words": 7,
+        "words": 11,
         "question": true,
         "gsc_position": 9,
         "gsc_impressions": 1,
         "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 7,
-          "parts_rows": 17
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 57.2,
-        "can_be_one": 40
+        "can_be_one": 0
       },
       "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 9 in Search Console (1 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "already ranks 9 in Search Console (1 impressions)"
       ]
     },
     {
@@ -1803,9 +1626,9 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1834,9 +1657,9 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1845,25 +1668,25 @@
       ]
     },
     {
-      "query": "family training lee sc",
+      "query": "how old do you have to be to work night shift",
       "variants": [],
       "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 11,
-        "gsc_impressions": 7,
-        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "words": 11,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/questions/can-a-16-year-old-work-night-shifts/",
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 56.5,
+        "striking": 57.2,
         "can_be_one": 0
       },
-      "score": 56.5,
+      "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 11 in Search Console (7 impressions)"
+        "already ranks 9 in Search Console (1 impressions)"
       ]
     },
     {
@@ -1885,9 +1708,9 @@
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1914,9 +1737,9 @@
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -1925,46 +1748,25 @@
       ]
     },
     {
-      "query": "salario minimo en nuevo mexico",
+      "query": "how to obtain a copy of your divorce decree",
       "variants": [],
       "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 8,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/nuevo-mexico",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 8
-        },
-        "top10": {
-          "provider": "brave",
-          "weakness": 0,
-          "counts": {
-            "results": 10,
-            "directories": 0,
-            "forums": 0,
-            "off_target_national": 0,
-            "thin_or_old": 0,
-            "exact_answer": 0
-          },
-          "reasons": [
-            "top 10: 0 directories, 0 forums, 0 off-target national, 0 thin or old, 0 answer the exact question"
-          ]
-        }
+        "words": 9,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/north-carolina",
+        "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 56.3,
-        "can_be_one": 40
+        "striking": 57.2,
+        "can_be_one": 0
       },
-      "score": 56.3,
+      "score": 57.2,
       "kind": "new",
       "lane": "striking",
       "reasons": [
-        "already ranks 8 in Search Console (2 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "already ranks 9 in Search Console (1 impressions)"
       ]
     },
     {
@@ -1986,9 +1788,9 @@
       },
       "scores": {
         "striking": 55.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -2015,13 +1817,71 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 8-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "what time can under 18s work till",
+      "variants": [],
+      "signals": {
+        "words": 7,
+        "question": true,
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 7,
+          "parts_rows": 17
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 57.2,
+        "can_be_one": 37
+      },
+      "score": 57.2,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 9 in Search Console (1 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "how many hours can a highschool student work",
+      "variants": [],
+      "signals": {
+        "words": 8,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 6,
+          "parts_rows": 42
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2044,43 +1904,36 @@
       },
       "scores": {
         "striking": 55.9,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 55.9,
-      "kind": "new",
-      "lane": "striking",
-      "reasons": [
-        "already ranks 11 in Search Console (2 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
-      ]
-    },
-    {
-      "query": "how many hours can a highschool student work",
-      "variants": [],
-      "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 6,
-          "parts_rows": 42
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
-      },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "no site page answers this 6-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "family training lee sc",
+      "variants": [],
+      "signals": {
+        "words": 4,
+        "question": false,
+        "gsc_position": 11,
+        "gsc_impressions": 7,
+        "gsc_page": "https://keepmyproof.com/iep/parent-training-center/south-carolina",
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 56.5,
+        "can_be_one": 0
+      },
+      "score": 56.5,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 11 in Search Console (7 impressions)"
       ]
     },
     {
@@ -2102,13 +1955,129 @@
       },
       "scores": {
         "striking": 53.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
         "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how many hours can a minor work in nebraska",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/nebraska",
+        "unanswered": {
+          "words": 5,
+          "covered": 0.4,
+          "parts_best_position": 6,
+          "parts_rows": 49
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "salario minimo en nuevo mexico",
+      "variants": [],
+      "signals": {
+        "words": 5,
+        "question": false,
+        "gsc_position": 8,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/nuevo-mexico",
+        "unanswered": {
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 8
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 56.3,
+        "can_be_one": 37
+      },
+      "score": 56.3,
+      "kind": "new",
+      "lane": "striking",
+      "reasons": [
+        "already ranks 8 in Search Console (2 impressions)",
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
+      ]
+    },
+    {
+      "query": "how many hours can a part time 17 year old work",
+      "variants": [],
+      "signals": {
+        "words": 11,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+        "unanswered": {
+          "words": 8,
+          "covered": 0.38,
+          "parts_best_position": 6,
+          "parts_rows": 56
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 8-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how many hours can a teenager work per week",
+      "variants": [],
+      "signals": {
+        "words": 9,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.17,
+          "parts_best_position": 6,
+          "parts_rows": 42
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2135,46 +2104,17 @@
       ]
     },
     {
-      "query": "how many hours can a minor work in nebraska",
+      "query": "how many hours can an 18 year old work while in high school",
       "variants": [],
       "signals": {
-        "words": 9,
-        "question": true,
-        "gsc_position": 11,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/nebraska",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.4,
-          "parts_best_position": 6,
-          "parts_rows": 49
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 53.5,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "how many hours can a part time 17 year old work",
-      "variants": [],
-      "signals": {
-        "words": 11,
+        "words": 13,
         "question": true,
         "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/massachusetts",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
         "unanswered": {
-          "words": 8,
-          "covered": 0.38,
+          "words": 9,
+          "covered": 0.33,
           "parts_best_position": 6,
           "parts_rows": 56
         },
@@ -2182,13 +2122,42 @@
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 8-word question, and the site holds its parts at position 6",
+        "no site page answers this 9-word question, and the site holds its parts at position 6",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "how many hours can i work at 17 during school",
+      "variants": [],
+      "signals": {
+        "words": 10,
+        "question": true,
+        "gsc_position": 11,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
+        "unanswered": {
+          "words": 6,
+          "covered": 0.33,
+          "parts_best_position": 6,
+          "parts_rows": 47
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 53.5,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 6-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2215,17 +2184,17 @@
       ]
     },
     {
-      "query": "how many hours can a teenager work per week",
+      "query": "how many hours is a teen allowed to work per week",
       "variants": [],
       "signals": {
-        "words": 9,
+        "words": 11,
         "question": true,
         "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arizona",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
         "unanswered": {
-          "words": 6,
-          "covered": 0.17,
+          "words": 7,
+          "covered": 0.14,
           "parts_best_position": 6,
           "parts_rows": 42
         },
@@ -2233,42 +2202,42 @@
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 6",
+        "no site page answers this 7-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "how many hours can an 18 year old work while in high school",
+      "query": "how much hours can a minor work a week",
       "variants": [],
       "signals": {
-        "words": 13,
+        "words": 9,
         "question": true,
         "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
         "unanswered": {
-          "words": 9,
-          "covered": 0.33,
+          "words": 5,
+          "covered": 0.4,
           "parts_best_position": 6,
-          "parts_rows": 56
+          "parts_rows": 51
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 9-word question, and the site holds its parts at position 6",
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2295,27 +2264,27 @@
       ]
     },
     {
-      "query": "how many hours can i work at 17 during school",
+      "query": "how to get a death certificate new port richey",
       "variants": [],
       "signals": {
-        "words": 10,
+        "words": 9,
         "question": true,
-        "gsc_position": 11,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/colorado",
+        "gsc_position": 19,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/florida",
         "unanswered": {
           "words": 6,
-          "covered": 0.33,
+          "covered": 0.4,
           "parts_best_position": 6,
-          "parts_rows": 47
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 53.5,
-        "can_be_one": 40
+        "striking": 41.3,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -2324,31 +2293,33 @@
       ]
     },
     {
-      "query": "how many hours is a teen allowed to work per week",
-      "variants": [],
+      "query": "how to get a work permit at 15",
+      "variants": [
+        "how to get your work permit at 15"
+      ],
       "signals": {
-        "words": 11,
+        "words": 8,
         "question": true,
-        "gsc_position": 10,
+        "gsc_position": 11,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
         "unanswered": {
-          "words": 7,
-          "covered": 0.14,
-          "parts_best_position": 6,
-          "parts_rows": 42
+          "words": 4,
+          "covered": 0.33,
+          "parts_best_position": 8,
+          "parts_rows": 10
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
+        "striking": 53.5,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 7-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2373,71 +2344,71 @@
       },
       "scores": {
         "striking": 55.6,
-        "can_be_one": 40
+        "can_be_one": 37
       },
       "score": 55.6,
       "kind": "new",
       "lane": "striking",
       "reasons": [
         "already ranks 9.3 in Search Console (3 impressions)",
-        "can-be-#1 score 40 too (taken by the striking lane's turn)"
+        "can-be-#1 score 37 too (taken by the striking lane's turn)"
       ]
     },
     {
-      "query": "how much hours can a minor work a week",
+      "query": "how to get a work permit in texas",
       "variants": [],
       "signals": {
-        "words": 9,
+        "words": 8,
         "question": true,
-        "gsc_position": 10,
+        "gsc_position": 11,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/alabama",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
         "unanswered": {
-          "words": 5,
-          "covered": 0.4,
-          "parts_best_position": 6,
-          "parts_rows": 51
+          "words": 4,
+          "covered": 0.33,
+          "parts_best_position": 8,
+          "parts_rows": 5
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
+        "striking": 53.5,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "how to get a death certificate new port richey",
+      "query": "illinois divorce records online",
       "variants": [],
       "signals": {
-        "words": 9,
-        "question": true,
-        "gsc_position": 19,
+        "words": 4,
+        "question": false,
+        "gsc_position": 25,
         "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/florida",
+        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
         "unanswered": {
-          "words": 6,
-          "covered": 0.4,
-          "parts_best_position": 6,
-          "parts_rows": 17
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 10,
+          "parts_rows": 2
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 41.3,
-        "can_be_one": 40
+        "striking": 25.4,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 10",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2464,62 +2435,60 @@
       ]
     },
     {
-      "query": "how to get a work permit at 15",
-      "variants": [
-        "how to get your work permit at 15"
-      ],
+      "query": "little rock va regional office",
+      "variants": [],
       "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 11,
+        "words": 5,
+        "question": false,
+        "gsc_position": 12,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arkansas",
         "unanswered": {
-          "words": 4,
-          "covered": 0.33,
-          "parts_best_position": 8,
-          "parts_rows": 10
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 5,
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 53.5,
-        "can_be_one": 40
+        "striking": 46.7,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "no site page answers this 5-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "how to get a work permit in texas",
+      "query": "manutenci n de hijos en california",
       "variants": [],
       "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 11,
+        "words": 6,
+        "question": false,
+        "gsc_position": 15,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/texas",
+        "gsc_page": "https://keepmyproof.com/es/divorcio/como-funciona-la-manutencion-de-los-hijos/california",
         "unanswered": {
-          "words": 4,
-          "covered": 0.33,
-          "parts_best_position": 8,
-          "parts_rows": 5
+          "words": 6,
+          "covered": 0,
+          "parts_best_position": 10,
+          "parts_rows": 1
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 53.5,
-        "can_be_one": 40
+        "striking": 41.3,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "no site page answers this 6-word question, and the site holds its parts at position 10",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2546,60 +2515,60 @@
       ]
     },
     {
-      "query": "illinois divorce records online",
+      "query": "maryland child labor law notice",
       "variants": [],
       "signals": {
-        "words": 4,
+        "words": 5,
         "question": false,
-        "gsc_position": 25,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/divorce/divorce-records/illinois",
+        "gsc_position": 18,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
         "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 10,
+          "words": 5,
+          "covered": 0,
+          "parts_best_position": 8,
           "parts_rows": 2
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 25.4,
-        "can_be_one": 40
+        "striking": 35.8,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 10",
+        "no site page answers this 5-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "little rock va regional office",
+      "query": "maryland department of veterans affairs",
       "variants": [],
       "signals": {
         "words": 5,
         "question": false,
-        "gsc_position": 12,
+        "gsc_position": 26,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arkansas",
+        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/maryland",
         "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 5,
-          "parts_rows": 17
+          "words": 4,
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 1
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 46.7,
-        "can_be_one": 40
+        "striking": 21.3,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 5",
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2626,60 +2595,60 @@
       ]
     },
     {
-      "query": "manutenci n de hijos en california",
+      "query": "maximum hours allowed to work in a day under 18",
       "variants": [],
       "signals": {
-        "words": 6,
+        "words": 10,
         "question": false,
-        "gsc_position": 15,
+        "gsc_position": 9,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/es/divorcio/como-funciona-la-manutencion-de-los-hijos/california",
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
         "unanswered": {
-          "words": 6,
-          "covered": 0,
-          "parts_best_position": 10,
-          "parts_rows": 1
+          "words": 7,
+          "covered": 0.14,
+          "parts_best_position": 6,
+          "parts_rows": 46
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 41.3,
-        "can_be_one": 40
+        "striking": 52.2,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 10",
+        "no site page answers this 7-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "maryland child labor law notice",
+      "query": "maximum hours allowed to work in a week under 18",
       "variants": [],
       "signals": {
-        "words": 5,
+        "words": 10,
         "question": false,
-        "gsc_position": 18,
+        "gsc_position": 11,
         "gsc_impressions": 1,
         "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
         "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
+          "words": 7,
+          "covered": 0.14,
+          "parts_best_position": 6,
+          "parts_rows": 46
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 35.8,
-        "can_be_one": 40
+        "striking": 48.5,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 8",
+        "no site page answers this 7-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2706,60 +2675,60 @@
       ]
     },
     {
-      "query": "maryland department of veterans affairs",
+      "query": "michigan disabled veteran property tax exemption",
       "variants": [],
       "signals": {
-        "words": 5,
+        "words": 6,
         "question": false,
-        "gsc_position": 26,
+        "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/state-veterans-affairs-office/maryland",
+        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/michigan",
         "unanswered": {
-          "words": 4,
+          "words": 6,
           "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 1
+          "parts_best_position": 8,
+          "parts_rows": 2
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 21.3,
-        "can_be_one": 40
+        "striking": 50.4,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "no site page answers this 6-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "maximum hours allowed to work in a day under 18",
+      "query": "montana labor laws for minors",
       "variants": [],
       "signals": {
-        "words": 10,
+        "words": 5,
         "question": false,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/new-york",
+        "gsc_position": 17.3,
+        "gsc_impressions": 3,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/montana",
         "unanswered": {
-          "words": 7,
-          "covered": 0.14,
-          "parts_best_position": 6,
-          "parts_rows": 46
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 8,
+          "parts_rows": 2
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 52.2,
-        "can_be_one": 40
+        "striking": 41.1,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 7-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2786,60 +2755,60 @@
       ]
     },
     {
-      "query": "maximum hours allowed to work in a week under 18",
+      "query": "montgomery va regional office",
       "variants": [],
       "signals": {
-        "words": 10,
+        "words": 4,
+        "question": false,
+        "gsc_position": 13.2,
+        "gsc_impressions": 5,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alabama",
+        "unanswered": {
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 5,
+          "parts_rows": 17
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 50.9,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 4-word question, and the site holds its parts at position 5",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "muskogee ok va regional office",
+      "variants": [],
+      "signals": {
+        "words": 5,
         "question": false,
         "gsc_position": 11,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/maryland",
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
         "unanswered": {
-          "words": 7,
-          "covered": 0.14,
-          "parts_best_position": 6,
-          "parts_rows": 46
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 5,
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 48.5,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 7-word question, and the site holds its parts at position 6",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "michigan disabled veteran property tax exemption",
-      "variants": [],
-      "signals": {
-        "words": 6,
-        "question": false,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/disabled-veteran-property-tax/michigan",
-        "unanswered": {
-          "words": 6,
-          "covered": 0,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 50.4,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 8",
+        "no site page answers this 5-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2868,60 +2837,60 @@
       ]
     },
     {
-      "query": "montana labor laws for minors",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 17.3,
-        "gsc_impressions": 3,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/montana",
-        "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 8,
-          "parts_rows": 2
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 41.1,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "montgomery va regional office",
+      "query": "salario minimo en oklahoma",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 13.2,
-        "gsc_impressions": 5,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/alabama",
+        "gsc_position": 8.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
         "unanswered": {
           "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 8
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 50.9,
-        "can_be_one": 40
+        "striking": 55.4,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "people search it (autocomplete or impressions)"
+      ]
+    },
+    {
+      "query": "what is the maximum amount of hours a 15 year old can work",
+      "variants": [],
+      "signals": {
+        "words": 13,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "unanswered": {
+          "words": 7,
+          "covered": 0.43,
+          "parts_best_position": 6,
+          "parts_rows": 50
+        },
+        "top10": "not read: outside this run's top-10 budget"
+      },
+      "scores": {
+        "striking": 55.4,
+        "can_be_one": 37
+      },
+      "score": 37,
+      "kind": "new",
+      "lane": "can_be_one",
+      "reasons": [
+        "no site page answers this 7-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -2948,14 +2917,14 @@
       ]
     },
     {
-      "query": "muskogee ok va regional office",
+      "query": "what va regional office am i associated with",
       "variants": [],
       "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 11,
+        "words": 8,
+        "question": true,
+        "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/california",
         "unanswered": {
           "words": 5,
           "covered": 0.2,
@@ -2965,10 +2934,10 @@
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 48.5,
-        "can_be_one": 40
+        "striking": 55.4,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -2977,31 +2946,31 @@
       ]
     },
     {
-      "query": "salario minimo en oklahoma",
+      "query": "where can you get a workers permit",
       "variants": [],
       "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 8.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/oklahoma",
+        "words": 7,
+        "question": true,
+        "gsc_position": 10,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arkansas",
         "unanswered": {
           "words": 4,
-          "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 8
+          "covered": 0.33,
+          "parts_best_position": 8,
+          "parts_rows": 9
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 7",
+        "no site page answers this 4-word question, and the site holds its parts at position 8",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -3028,43 +2997,43 @@
       ]
     },
     {
-      "query": "what is the maximum amount of hours a 15 year old can work",
+      "query": "where do you get a death certificate when someone dies",
       "variants": [],
       "signals": {
-        "words": 13,
+        "words": 10,
         "question": true,
         "gsc_position": 10,
         "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/georgia",
+        "gsc_page": "https://keepmyproof.com/executor/death-certificates/montana",
         "unanswered": {
-          "words": 7,
-          "covered": 0.43,
+          "words": 6,
+          "covered": 0.4,
           "parts_best_position": 6,
-          "parts_rows": 50
+          "parts_rows": 21
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
         "striking": 55.4,
-        "can_be_one": 40
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 7-word question, and the site holds its parts at position 6",
+        "no site page answers this 6-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "what va regional office am i associated with",
+      "query": "va phoenix regional benefits office",
       "variants": [],
       "signals": {
-        "words": 8,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/california",
+        "words": 5,
+        "question": false,
+        "gsc_position": 10.8,
+        "gsc_impressions": 4,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
         "unanswered": {
           "words": 5,
           "covered": 0.2,
@@ -3074,10 +3043,10 @@
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
+        "striking": 54.2,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
@@ -3108,60 +3077,62 @@
       ]
     },
     {
-      "query": "where can you get a workers permit",
-      "variants": [],
+      "query": "phoenix va regional office",
+      "variants": [
+        "va regional office phoenix"
+      ],
       "signals": {
-        "words": 7,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/arkansas",
+        "words": 4,
+        "question": false,
+        "gsc_position": 12.6,
+        "gsc_impressions": 7,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
         "unanswered": {
           "words": 4,
-          "covered": 0.33,
-          "parts_best_position": 8,
-          "parts_rows": 9
+          "covered": 0.25,
+          "parts_best_position": 5,
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
+        "striking": 53.6,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 8",
+        "no site page answers this 4-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "where do you get a death certificate when someone dies",
+      "query": "va cleveland regional office",
       "variants": [],
       "signals": {
-        "words": 10,
-        "question": true,
-        "gsc_position": 10,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/executor/death-certificates/montana",
+        "words": 4,
+        "question": false,
+        "gsc_position": 10.7,
+        "gsc_impressions": 3,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/ohio",
         "unanswered": {
-          "words": 6,
-          "covered": 0.4,
-          "parts_best_position": 6,
-          "parts_rows": 21
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 5,
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 55.4,
-        "can_be_one": 40
+        "striking": 53.1,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 6-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -3191,62 +3162,60 @@
       ]
     },
     {
-      "query": "va phoenix regional benefits office",
+      "query": "under 18 working hours",
       "variants": [],
       "signals": {
-        "words": 5,
+        "words": 4,
         "question": false,
-        "gsc_position": 10.8,
-        "gsc_impressions": 4,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
+        "gsc_position": 10,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 5,
-          "parts_rows": 17
+          "words": 4,
+          "covered": 0.25,
+          "parts_best_position": 6,
+          "parts_rows": 41
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 54.2,
-        "can_be_one": 40
+        "striking": 52.7,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 5",
+        "no site page answers this 4-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "phoenix va regional office",
-      "variants": [
-        "va regional office phoenix"
-      ],
+      "query": "salario minimo nuevo mexico",
+      "variants": [],
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 12.6,
-        "gsc_impressions": 7,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/arizona",
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/nuevo-mexico",
         "unanswered": {
           "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
+          "covered": 0,
+          "parts_best_position": 7,
+          "parts_rows": 6
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 53.6,
-        "can_be_one": 40
+        "striking": 52.2,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
+        "no site page answers this 4-word question, and the site holds its parts at position 7",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -3273,60 +3242,60 @@
       ]
     },
     {
-      "query": "va cleveland regional office",
+      "query": "under 18 how many hours can work",
       "variants": [],
       "signals": {
-        "words": 4,
+        "words": 7,
         "question": false,
-        "gsc_position": 10.7,
-        "gsc_impressions": 3,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/ohio",
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
         "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
+          "words": 5,
+          "covered": 0.2,
+          "parts_best_position": 6,
+          "parts_rows": 42
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 53.1,
-        "can_be_one": 40
+        "striking": 52.2,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
     {
-      "query": "under 18 working hours",
+      "query": "veterans benefits administration regional office",
       "variants": [],
       "signals": {
-        "words": 4,
+        "words": 5,
         "question": false,
-        "gsc_position": 10,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
+        "gsc_position": 9,
+        "gsc_impressions": 1,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
         "unanswered": {
-          "words": 4,
-          "covered": 0.25,
+          "words": 5,
+          "covered": 0,
           "parts_best_position": 6,
-          "parts_rows": 41
+          "parts_rows": 16
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 52.7,
-        "can_be_one": 40
+        "striking": 52.2,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 6",
+        "no site page answers this 5-word question, and the site holds its parts at position 6",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -3353,60 +3322,31 @@
       ]
     },
     {
-      "query": "salario minimo nuevo mexico",
+      "query": "va regional office connecticut",
       "variants": [],
       "signals": {
         "words": 4,
         "question": false,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/es/trabajo/salario-minimo-horas-extra-y-salario/nuevo-mexico",
+        "gsc_position": 10.5,
+        "gsc_impressions": 2,
+        "gsc_page": "https://keepmyproof.com/va/va-regional-office/connecticut",
         "unanswered": {
           "words": 4,
-          "covered": 0,
-          "parts_best_position": 7,
-          "parts_rows": 6
+          "covered": 0.25,
+          "parts_best_position": 5,
+          "parts_rows": 17
         },
         "top10": "not read: outside this run's top-10 budget"
       },
       "scores": {
-        "striking": 52.2,
-        "can_be_one": 40
+        "striking": 51.8,
+        "can_be_one": 37
       },
-      "score": 40,
+      "score": 37,
       "kind": "new",
       "lane": "can_be_one",
       "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 7",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "under 18 how many hours can work",
-      "variants": [],
-      "signals": {
-        "words": 7,
-        "question": false,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/workplace/teen-work-hours-and-permits/california",
-        "unanswered": {
-          "words": 5,
-          "covered": 0.2,
-          "parts_best_position": 6,
-          "parts_rows": 42
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 52.2,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
+        "no site page answers this 4-word question, and the site holds its parts at position 5",
         "people search it (autocomplete or impressions)"
       ]
     },
@@ -3433,64 +3373,6 @@
       ]
     },
     {
-      "query": "veterans benefits administration regional office",
-      "variants": [],
-      "signals": {
-        "words": 5,
-        "question": false,
-        "gsc_position": 9,
-        "gsc_impressions": 1,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/oklahoma",
-        "unanswered": {
-          "words": 5,
-          "covered": 0,
-          "parts_best_position": 6,
-          "parts_rows": 16
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 52.2,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 5-word question, and the site holds its parts at position 6",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
-      "query": "va regional office connecticut",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 10.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/connecticut",
-        "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 51.8,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
-        "people search it (autocomplete or impressions)"
-      ]
-    },
-    {
       "query": "what time can a minor work till on a school night",
       "variants": [],
       "signals": {
@@ -3510,35 +3392,6 @@
       "lane": "striking",
       "reasons": [
         "already ranks 10 in Search Console (1 impressions)"
-      ]
-    },
-    {
-      "query": "va togus regional office",
-      "variants": [],
-      "signals": {
-        "words": 4,
-        "question": false,
-        "gsc_position": 10.5,
-        "gsc_impressions": 2,
-        "gsc_page": "https://keepmyproof.com/va/va-regional-office/maine",
-        "unanswered": {
-          "words": 4,
-          "covered": 0.25,
-          "parts_best_position": 5,
-          "parts_rows": 17
-        },
-        "top10": "not read: outside this run's top-10 budget"
-      },
-      "scores": {
-        "striking": 51.8,
-        "can_be_one": 40
-      },
-      "score": 40,
-      "kind": "new",
-      "lane": "can_be_one",
-      "reasons": [
-        "no site page answers this 4-word question, and the site holds its parts at position 5",
-        "people search it (autocomplete or impressions)"
       ]
     },
     {

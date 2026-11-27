@@ -1,6 +1,26 @@
 {
   "schema": "search-loop-ai-misses-v1",
-  "weeks": {},
+  "weeks": {
+    "2026-W48": {
+      "014dbae3b624ee048de28f25b87cb76deadadbe2": {
+        "action": "candidate",
+        "prompt": "what is the safest way to keep important family documents private on my phone",
+        "at": "2026-11-27"
+      },
+      "8223c02ec09e97355950794e19a7f470890d73fb": {
+        "action": "skipped",
+        "reason": "not an engine page",
+        "page_url": "https://keepmyproof.com/questions/what-to-do-when-a-parent-dies",
+        "at": "2026-11-27"
+      },
+      "ea34474537a9bc3b6ec6d71d5338e95508f180a7": {
+        "action": "skipped",
+        "reason": "not an engine page",
+        "page_url": "https://keepmyproof.com/questions/do-screenshots-count-as-evidence",
+        "at": "2026-11-27"
+      }
+    }
+  },
   "reads": [
     {
       "at": "2026-11-24T01:37:14.035Z",
@@ -23,6 +43,13 @@
       "at": "2026-11-26T22:55:47.320Z",
       "status": "could_not_tell",
       "reason": "no BOSS_OPEN_LOOPS_TOKEN in this run (pass it in the caller's secrets: block)"
+    },
+    {
+      "at": "2026-11-27T18:08:20.312Z",
+      "status": "read",
+      "week": "2026-W48",
+      "misses": 3,
+      "rejected": 0
     }
   ]
 }

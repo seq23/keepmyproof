@@ -2,13 +2,13 @@
   "schema": "search-loop-discovery-v1",
   "site": "keepmyproof.com",
   "week": "2026-W48",
-  "generated_at": "2026-11-24T01:37:14.035Z",
+  "generated_at": "2026-11-27T18:08:20.312Z",
   "paid_calls": 0,
   "cost_usd": 0,
   "hosts": {
     "searchconsole.googleapis.com": {
-      "calls": 1,
-      "ok": 1,
+      "calls": 2,
+      "ok": 2,
       "failed": 0,
       "cost_usd": 0
     },
@@ -31,23 +31,24 @@
       "cost_usd": 0
     },
     "api.search.brave.com": {
-      "calls": 15,
-      "ok": 15,
+      "calls": 5,
+      "ok": 5,
       "failed": 0,
       "cost_usd": 0
     }
   },
   "sources": {
     "search_console": "ok: 1837 rows",
+    "comparison_pull": "ok: 0 row(s)",
     "bing_webmaster": "ok: 0 rows",
     "easy_wins": "ok: 1 easy win(s) in Search Console",
     "suggestqueries.google.com": "ok",
     "api.bing.com": "ok",
     "relevance_screen": "ok: kept 149 of 150 (free model)",
-    "top10": "ok: 15 top-10 read(s) via brave"
+    "top10": "ok: 5 top-10 read(s) via brave"
   },
   "seeds": {
-    "planned": 233,
+    "planned": 234,
     "asked": 40,
     "topics": 35,
     "topics_asked": 35,
@@ -55,27 +56,39 @@
     "priority_targets": 0
   },
   "notes": [
-    "autocomplete stopped at its budget of 80 calls (40 of 233 planned questions asked)"
+    "autocomplete stopped at its budget of 80 calls (40 of 234 planned questions asked)"
   ],
-  "competition": "ok: 15 top-10 read(s) via brave",
+  "competition": "ok: 5 top-10 read(s) via brave",
+  "comparison": {
+    "pulled": "ok: 0 row(s)",
+    "candidates": 0,
+    "confirmed": 0,
+    "queued": []
+  },
   "lanes": {
     "ratio": {
       "can_be_one": 2,
       "striking": 1
     },
-    "can_be_one": 80,
-    "striking": 69,
+    "can_be_one": 78,
+    "striking": 71,
     "weights": {
       "neighbour": 35,
-      "unanswered": 30,
+      "unanswered": 27,
       "weak_top10": 40,
       "demand": 10
     }
   },
   "counts": {
-    "candidates": 841,
+    "candidates": 843,
     "targets": 149,
     "strengthen_candidates": 12,
     "dropped_shared_audience": 0
+  },
+  "ai_misses": {
+    "014dbae3b624ee048de28f25b87cb76deadadbe2": {
+      "action": "candidate",
+      "prompt": "what is the safest way to keep important family documents private on my phone"
+    }
   }
 }
