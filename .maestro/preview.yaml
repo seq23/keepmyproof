@@ -94,6 +94,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Workplace evidence.*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Workplace evidence.*"
 - extendedWaitUntil:
     visible: "Checklist"
@@ -115,6 +116,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Divorce, custody.*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
@@ -139,6 +141,7 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Divorce, custody.*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
