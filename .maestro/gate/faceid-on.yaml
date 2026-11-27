@@ -1,0 +1,18 @@
+# Settings › Also open with Face ID: switch on. The system asks once to allow Face ID; the host then matches the face.
+appId: com.keepmyproof.app
+---
+- tapOn: "Settings"
+- scrollUntilVisible:
+    element: "Also open with Face ID"
+    direction: DOWN
+# The card's text and its switch carry the same words; the switch is the second.
+- tapOn:
+    text: "Also open with Face ID"
+    index: 1
+- waitForAnimationToEnd:
+    timeout: 5000
+- runFlow:
+    when:
+      visible: "OK|Allow"
+    commands:
+      - tapOn: "OK|Allow"

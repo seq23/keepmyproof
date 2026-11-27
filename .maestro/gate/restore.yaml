@@ -1,0 +1,70 @@
+# Restore a backup. Env: FILE, WORDS, EXPECT (regex for the screen text that must follow), FRESH (1 = from the
+# first screen of a new install, with NEWCODE), SHOT. With FAST=1 it ends right after the tap (interrupted restore).
+appId: com.keepmyproof.app
+---
+- runFlow:
+    when:
+      true: ${FRESH == '1'}
+    commands:
+      - launchApp:
+          stopApp: true
+      - extendedWaitUntil:
+          visible: "Continue in English ›"
+          timeout: 90000
+      - scroll
+      - scroll
+      - extendedWaitUntil:
+          visible: "Restore a backup ›"
+          timeout: 20000
+      - tapOn: "Restore a backup ›"
+- runFlow:
+    when:
+      true: ${FRESH != '1'}
+    commands:
+      - tapOn: "Backup"
+      - scrollUntilVisible:
+          element: "Restore a backup ›"
+          direction: DOWN
+      - tapOn: "Restore a backup ›"
+- extendedWaitUntil:
+    visible: "Choose your encrypted backup ›"
+    timeout: 15000
+- tapOn:
+    id: "12 words, separated by spaces"
+- inputText: ${WORDS}
+- runFlow:
+    when:
+      true: ${FRESH == '1'}
+    commands:
+      - tapOn:
+          id: "New six-number passcode"
+      - inputText: ${NEWCODE}
+      - tapOn:
+          id: "Enter the same six numbers again"
+      - inputText: ${NEWCODE}
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Choose your encrypted backup ›"
+    direction: DOWN
+- tapOn: "Choose your encrypted backup ›"
+- runFlow:
+    file: pick.yaml
+    env:
+      FILE: ${FILE}
+- scrollUntilVisible:
+    element: "Restore a backup ›"
+    direction: DOWN
+- tapOn: "Restore a backup ›"
+- runFlow:
+    when:
+      true: ${FAST != '1'}
+    commands:
+      - extendedWaitUntil:
+          visible: ${EXPECT}
+          timeout: 120000
+      - takeScreenshot: gate-${SHOT}-restore
+      - runFlow:
+          when:
+            visible: "Folders"
+          commands:
+            - runFlow: count.yaml

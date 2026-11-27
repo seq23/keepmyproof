@@ -1,0 +1,23 @@
+# Forgot the passcode › set NEWCODE with the 12 WORDS. Ends on Home.
+appId: com.keepmyproof.app
+---
+- runFlow: lock.yaml
+- tapOn: "Forgot the passcode\\? ›"
+- tapOn:
+    id: "New six-number passcode"
+- inputText: ${NEWCODE}
+- tapOn:
+    id: "Enter the same six numbers again"
+- inputText: ${NEWCODE}
+- tapOn:
+    id: "12 words, separated by spaces"
+- inputText: ${WORDS}
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Set a new passcode ›"
+    direction: DOWN
+- tapOn: "Set a new passcode ›"
+- extendedWaitUntil:
+    visible: "Free plan: .*"
+    timeout: 60000
+- takeScreenshot: gate-${SHOT}-reset-phrase

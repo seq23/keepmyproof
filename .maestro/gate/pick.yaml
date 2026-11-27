@@ -1,0 +1,29 @@
+# The system document picker: opens FILE from Files › On My iPhone (Browse first if it opens on Recents).
+appId: com.keepmyproof.app
+---
+- extendedWaitUntil:
+    visible: "Browse|Recents|On My iPhone|${FILE}.*"
+    timeout: 20000
+- runFlow:
+    when:
+      notVisible: "${FILE}.*"
+    commands:
+      - runFlow:
+          when:
+            visible: "Browse"
+          commands:
+            - tapOn: "Browse"
+      - runFlow:
+          when:
+            visible: "On My iPhone"
+          commands:
+            - tapOn: "On My iPhone"
+- extendedWaitUntil:
+    visible: "${FILE}.*"
+    timeout: 20000
+- tapOn: "${FILE}.*"
+- runFlow:
+    when:
+      visible: "Open"
+    commands:
+      - tapOn: "Open"

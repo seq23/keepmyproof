@@ -1,0 +1,31 @@
+# Adds one file from Files to the open folder. Env: FILE (name in On My iPhone), TITLE.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- tapOn: "\\+ Add something"
+- scrollUntilVisible:
+    element: "Choose a file ›"
+    direction: DOWN
+- tapOn: "Choose a file ›"
+- runFlow:
+    file: pick.yaml
+    env:
+      FILE: ${FILE}
+- extendedWaitUntil:
+    visible:
+      id: "Name it"
+    timeout: 20000
+- tapOn:
+    id: "Name it"
+- eraseText: 60
+- inputText: ${TITLE}
+- pressKey: Enter
+- scrollUntilVisible:
+    element: "Save to .*"
+    direction: DOWN
+- tapOn: "Save to .*"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 20000

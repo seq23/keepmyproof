@@ -1,0 +1,21 @@
+# Backup › Check the saved backup: choose FILE, then check it. Ends on "✓ Backup checked." or the failure card.
+appId: com.keepmyproof.app
+---
+- tapOn: "Backup"
+- scrollUntilVisible:
+    element: "Check the saved backup ›"
+    direction: DOWN
+- tapOn: "Check the saved backup ›"
+- runFlow:
+    file: pick.yaml
+    env:
+      FILE: ${FILE}
+- scrollUntilVisible:
+    element: "Check the saved backup ›"
+    direction: DOWN
+- tapOn: "Check the saved backup ›"
+- extendedWaitUntil:
+    visible: "✓ Backup checked\\.|The backup check failed.*"
+    timeout: 60000
+- takeScreenshot: gate-${SHOT}-backup-check
+- assertVisible: "✓ Backup checked\\."

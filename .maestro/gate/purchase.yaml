@@ -1,0 +1,33 @@
+# Plus through RevenueCat's Test Store (the Simulator build's test_ key): buy yearly, then Restore purchases.
+appId: com.keepmyproof.app
+---
+- tapOn: "Settings"
+- scrollUntilVisible:
+    element: "See Plus ›"
+    direction: DOWN
+- tapOn: "See Plus ›"
+- extendedWaitUntil:
+    visible: "KeepMyProof Plus"
+    timeout: 20000
+- takeScreenshot: gate-${SHOT}-plans
+- scrollUntilVisible:
+    element: "Subscribe for .*"
+    direction: DOWN
+- tapOn: "Subscribe for .*"
+- extendedWaitUntil:
+    visible: "(?i).*test.*valid.*|(?i).*successful.*|(?i).*test purchase.*"
+    timeout: 30000
+- takeScreenshot: gate-${SHOT}-test-store-sheet
+- tapOn: "(?i).*valid purchase.*|(?i).*successful.*"
+- extendedWaitUntil:
+    visible: "✓ Plus is on\\.|.*Plus is on.*"
+    timeout: 60000
+- takeScreenshot: gate-${SHOT}-plus-on
+- scrollUntilVisible:
+    element: "Restore purchases ›"
+    direction: DOWN
+- tapOn: "Restore purchases ›"
+- extendedWaitUntil:
+    visible: "✓ Purchases checked\\."
+    timeout: 60000
+- takeScreenshot: gate-${SHOT}-restored

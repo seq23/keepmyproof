@@ -1,0 +1,16 @@
+# Forgot the passcode › set NEWCODE with Face ID: ends on the tap; the host matches the face, then home.yaml.
+appId: com.keepmyproof.app
+---
+- runFlow: lock.yaml
+- tapOn: "Forgot the passcode\\? ›"
+- tapOn:
+    id: "New six-number passcode"
+- inputText: ${NEWCODE}
+- tapOn:
+    id: "Enter the same six numbers again"
+- inputText: ${NEWCODE}
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Open with Face ID ›"
+    direction: DOWN
+- tapOn: "Open with Face ID ›"

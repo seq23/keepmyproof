@@ -1,0 +1,14 @@
+# Settings › Lock my papers. Ends on the lock screen.
+appId: com.keepmyproof.app
+---
+- tapOn: "Settings"
+- repeat:
+    times: 3
+    commands:
+      - swipe:
+          start: "50%,65%"
+          end: "50%,15%"
+- tapOn: "Lock my papers ›"
+- extendedWaitUntil:
+    visible: "Your papers are locked"
+    timeout: 15000
