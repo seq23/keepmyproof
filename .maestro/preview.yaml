@@ -89,7 +89,7 @@ appId: com.keepmyproof.app
     visible: "What you can keep here"
     timeout: 30000
 
-# Sample papers: two in Divorce or custody (one checklist line ticked), one in Workplace evidence.
+# Sample papers: two in Divorce, custody or co-parenting log (one checklist line ticked), one in Workplace evidence.
 # "How did you hear about KeepMyProof?" comes after the first save.
 - scrollUntilVisible:
     element: "Workplace evidence.*"
@@ -113,9 +113,9 @@ appId: com.keepmyproof.app
     timeout: 15000
 - tapOn: "← Back to Home"
 - scrollUntilVisible:
-    element: "Divorce or custody.*"
+    element: "Divorce, custody.*"
     direction: DOWN
-- tapOn: "Divorce or custody.*"
+- tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -137,9 +137,9 @@ appId: com.keepmyproof.app
 
 # A folder, adding a paper (cancelled, so the folder keeps its two), a paper, the folder PDF.
 - scrollUntilVisible:
-    element: "Divorce or custody.*"
+    element: "Divorce, custody.*"
     direction: DOWN
-- tapOn: "Divorce or custody.*"
+- tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
