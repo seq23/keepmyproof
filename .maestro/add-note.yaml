@@ -1,30 +1,43 @@
-# Adds one invented note to the folder that is open. Env: TITLE, NOTE. After the very first save the app asks how you heard about it; that counts as done too. Used by preview.yaml.
-# The note (multiline) is typed first; Enter on the one-line title then closes the keyboard, so
-# it never covers the save button.
+# Adds one invented note to the folder that is open. Env: TITLE, NOTE. After the very first save the app asks how you heard about it; that counts as done too. Used by preview.yaml and the device gate.
+# The name is typed first and read back before anything else: on the Divorce folder's longer add screen, typing
+# the note first and then scrolling back up to the name (keyboard still open) left the name empty on run
+# 46074471722 (the tap landed while the page was still moving), and Save then refused the note.
 appId: com.keepmyproof.app
 ---
 - scrollUntilVisible:
     element: "\\+ Add something"
     direction: DOWN
+    centerElement: true
 - tapOn: "\\+ Add something"
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: DOWN
+    centerElement: true
+- retry:
+    maxRetries: 3
+    commands:
+      - tapOn:
+          id: "Name it"
+      - eraseText: 80
+      - inputText: ${TITLE}
+      - hideKeyboard
+      - assertVisible:
+          id: "Name it"
+          text: ${TITLE}
 - scrollUntilVisible:
     element:
       id: "Your note \\(optional\\)"
     direction: DOWN
+    centerElement: true
 - tapOn:
     id: "Your note \\(optional\\)"
 - inputText: ${NOTE}
-- scrollUntilVisible:
-    element:
-      id: "Name it"
-    direction: UP
-- tapOn:
-    id: "Name it"
-- inputText: ${TITLE}
-- pressKey: Enter
+- hideKeyboard
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
+    centerElement: true
 - tapOn: "Save to .*"
 - extendedWaitUntil:
     visible: "Checklist|How did you hear about KeepMyProof\\?"
