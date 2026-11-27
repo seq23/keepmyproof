@@ -238,10 +238,10 @@ export const strings = {
     "이 기기에만 저장"
   ],
   "local": [
-    "Locked and scrambled. Nothing leaves unless you send it or back it up.",
-    "Bajo llave y cifrado. Nada sale a menos que usted lo envíe o haga una copia.",
-    "已上锁并加密。除非您自己发送或备份，否则任何内容都不会离开这台设备。",
-    "잠금과 암호화로 보호돼요. 직접 보내거나 백업하지 않는 한 아무것도 밖으로 나가지 않아요."
+    "Locked and scrambled. Your papers leave only when you send them or back them up.",
+    "Bajo llave y cifrado. Sus documentos solo salen si usted los envía o hace una copia.",
+    "已上锁并加密。只有您自己发送或备份时，您的文件才会离开这台设备。",
+    "잠금과 암호화로 보호돼요. 직접 보내거나 백업할 때만 서류가 밖으로 나가요."
   ],
   "firstFree": [
     "Free for your first 25 items",

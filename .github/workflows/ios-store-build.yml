@@ -1,6 +1,9 @@
 name: iOS store build
-# Manual only. Builds the App Store (TestFlight) .ipa on a free GitHub macOS runner
-# with `eas build --local`; signing credentials are fetched from EAS via EXPO_TOKEN.
+# Manual only. Builds the App Store (TestFlight) .ipa on a free GitHub macOS runner with `eas build --local`
+# (signing credentials are fetched from EAS via EXPO_TOKEN), checks it, and uploads it to App Store Connect
+# (TestFlight) with `eas submit --path`. It never creates a store version or sends anything to App Review:
+# that is the owner's step. The .ipa is never kept as a run artifact (the repo is public), and the App Store
+# Connect key file is deleted in every case. Same shape as peace-be-still's ios-store-build.yml.
 on:
   workflow_dispatch:
 
@@ -16,6 +19,14 @@ jobs:
     env:
       EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
     steps:
+      - name: Secrets present
+        env:
+          ASC_P8: ${{ secrets.ASC_API_KEY_P8 }}
+          ASC_KEY_ID: ${{ secrets.ASC_API_KEY_ID }}
+          ASC_ISSUER: ${{ secrets.ASC_API_ISSUER_ID }}
+        run: |
+          [ -n "$EXPO_TOKEN" ] || { echo "NAMED STOP [EXPO_TOKEN_MISSING]"; exit 3; }
+          [ -n "$ASC_P8" ] && [ -n "$ASC_KEY_ID" ] && [ -n "$ASC_ISSUER" ] || { echo "NAMED STOP [ASC_API_KEY_MISSING] set ASC_API_KEY_P8, ASC_API_KEY_ID, ASC_API_ISSUER_ID from the Boss OS vault"; exit 3; }
       - uses: actions/checkout@v4
       - name: Select newest Xcode
         run: |
@@ -32,10 +43,37 @@ jobs:
           command -v fastlane || brew install fastlane
           command -v pod || brew install cocoapods
       - name: EAS local build
-        run: npx --yes eas-cli@latest build --platform ios --profile testflight --local --non-interactive --output app.ipa
-      - uses: actions/upload-artifact@v4
-        with:
-          name: app-ipa
-          path: app.ipa
-          retention-days: 3
-          if-no-files-found: error
+        run: npx --yes eas-cli@latest build --platform ios --profile testflight --local --non-interactive --output "$RUNNER_TEMP/keepmyproof.ipa"
+      - name: Check the .ipa (bundle id, version, signed for the App Store)
+        run: |
+          rm -rf "$RUNNER_TEMP/ipa" && mkdir "$RUNNER_TEMP/ipa" && unzip -q "$RUNNER_TEMP/keepmyproof.ipa" -d "$RUNNER_TEMP/ipa"
+          P=$(ls -d "$RUNNER_TEMP"/ipa/Payload/*.app | head -1)
+          ID=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$P/Info.plist")
+          V=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$P/Info.plist")
+          B=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$P/Info.plist")
+          WANT=$(sed -n "s/.*version: '\([^']*\)'.*/\1/p" app.config.ts | head -1)
+          [ "$ID" = "com.keepmyproof.app" ] || { echo "NAMED STOP [IPA_BUNDLE_ID] $ID"; exit 3; }
+          [ "$V" = "$WANT" ] || { echo "NAMED STOP [IPA_VERSION] $V != $WANT"; exit 3; }
+          security cms -D -i "$P/embedded.mobileprovision" > "$RUNNER_TEMP/profile.plist"
+          [ "$(/usr/libexec/PlistBuddy -c 'Print :ProvisionsAllDevices' "$RUNNER_TEMP/profile.plist" 2>/dev/null)" != "true" ] || { echo "NAMED STOP [IPA_ENTERPRISE_PROFILE]"; exit 3; }
+          ! /usr/libexec/PlistBuddy -c 'Print :ProvisionedDevices' "$RUNNER_TEMP/profile.plist" >/dev/null 2>&1 || { echo "NAMED STOP [IPA_AD_HOC_PROFILE]"; exit 3; }
+          echo "OUTPUT ipa: $ID $V ($B), App Store profile" | tee -a "$GITHUB_STEP_SUMMARY"
+      # The App Store Connect key exists only from here to the cleanup: never during npm ci, the build or its plugins.
+      # eas submit refuses this key from environment variables when non-interactive, so it goes into eas.json for this run.
+      - name: App Store Connect key file
+        env:
+          ASC_P8: ${{ secrets.ASC_API_KEY_P8 }}
+          ASC_KEY_ID: ${{ secrets.ASC_API_KEY_ID }}
+          ASC_ISSUER: ${{ secrets.ASC_API_ISSUER_ID }}
+        run: |
+          umask 077
+          case "$ASC_P8" in *BEGIN*) printf '%s' "$ASC_P8" > asc-key.p8 ;; *) printf '%s' "$ASC_P8" | base64 --decode > asc-key.p8 ;; esac
+          node -e '
+            const fs = require("fs"); const j = JSON.parse(fs.readFileSync("eas.json", "utf8"));
+            Object.assign(j.submit.testflight.ios, { ascApiKeyPath: "./asc-key.p8", ascApiKeyId: process.env.ASC_KEY_ID, ascApiKeyIssuerId: process.env.ASC_ISSUER });
+            fs.writeFileSync("eas.json", JSON.stringify(j, null, 2));'
+      - name: Upload to App Store Connect (eas submit; TestFlight only, no review)
+        run: npx --yes eas-cli@latest submit --platform ios --profile testflight --path "$RUNNER_TEMP/keepmyproof.ipa" --non-interactive --wait
+      - name: Delete the key file and the .ipa
+        if: always()
+        run: rm -rf asc-key.p8 "$RUNNER_TEMP/keepmyproof.ipa" "$RUNNER_TEMP/ipa"
