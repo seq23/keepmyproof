@@ -306,5 +306,8 @@
       "KeepMyProof does not prepare, file, rate or judge a claim, does not make papers court-ready or admissible, and does not contact a landlord, employer, insurer, school, court or the VA for you.",
       "KeepMyProof does not value your belongings, file an insurance claim, or write an inspection report for a landlord."
     ]
+  },
+  "cap": {
+    "max_live_pages": 25
   }
 }
