@@ -36,12 +36,12 @@ const S = {
 
 /** What every vault page says KeepMyProof does, so no page says more than the app does. */
 const APP = {
-  en: 'KeepMyProof keeps photos, screenshots, files and notes in folders, encrypted on your phone and opened with a six-digit passcode, plus Face ID or a fingerprint if you turn it on. It locks when you leave it and hides its preview in the app switcher. It is a normal app on your home screen, not a disguised one.',
-  es: 'KeepMyProof guarda fotos, capturas, archivos y notas en carpetas, cifrados en su teléfono y abiertos con un código de seis dígitos, y con Face ID o huella si lo activa. Se bloquea cuando sale de la app y oculta su vista previa al cambiar de app. Es una app normal en su pantalla de inicio, no una app disfrazada.',
+  en: 'KeepMyProof keeps photos, screenshots, files and notes in folders, encrypted on your phone and opened with a six-digit passcode, plus Face ID or a fingerprint if you turn it on. It locks when you leave it, and on iPhone it hides its preview in the app switcher. It is a normal app on your home screen, not a disguised one.',
+  es: 'KeepMyProof guarda fotos, capturas, archivos y notas en carpetas, cifrados en su teléfono y abiertos con un código de seis dígitos, y con Face ID o huella si lo activa. Se bloquea cuando sale de la app y, en iPhone, oculta su vista previa al cambiar de app. Es una app normal en su pantalla de inicio, no una app disfrazada.',
 };
 const IPHONE = {
-  en: 'On iPhone, after you add a photo from your library, KeepMyProof asks "Remove the original from Photos?". Keep it in Photos is the first choice; if you tap Remove, your iPhone asks you to confirm, and the photo stays in Recently Deleted for 30 days. On Android, delete the original in Google Photos yourself.',
-  es: 'En iPhone, después de agregar una foto de su fototeca, KeepMyProof pregunta "¿Quitar el original de Fotos?". Dejarla en Fotos es la primera opción; si toca Quitar, su iPhone le pide confirmar, y la foto queda en Eliminado recientemente durante 30 días. En Android, borre usted el original en Google Fotos.',
+  en: 'On iPhone, if you turn on the offer at setup or in Settings, then after you add a photo from your library KeepMyProof asks "Remove the original from Photos?". Keep it in Photos is the first choice; if you tap Remove, your iPhone asks you to confirm, and the photo stays in Recently Deleted for 30 days. On Android, delete the original in Google Photos yourself.',
+  es: 'En iPhone, si activa esa opción al configurar la app o en Ajustes, después de agregar una foto de su fototeca KeepMyProof pregunta "¿Quitar el original de Fotos?". Dejarla en Fotos es la primera opción; si toca Quitar, su iPhone le pide confirmar, y la foto queda en Eliminado recientemente durante 30 días. En Android, borre usted el original en Google Fotos.',
 };
 export const LIMITS = {
   en: ['Anyone who knows your passcode can open the app, so use one only you know.', 'The app shows on your home screen like any app; it is not hidden from the phone.', 'Deleting a photo is not a guarantee that no copy is left anywhere: backups, shared albums and other devices can keep copies.'],
@@ -62,8 +62,8 @@ export const VAULT_HUB = {
     limitsH: 'What the vault does not do', pagesH: 'Vault guides and pages', iphone: IPHONE.en,
     faq: [
       ['Is KeepMyProof a photo vault?', 'Yes, and more: it locks photos and screenshots like a photo vault, and it also keeps letters, scans, files and notes in folders with checklists. Each item has the date it happened next to the date you saved it, and a folder becomes one PDF when a lawyer, a school or a VA representative asks for it.'],
-      ['Does it take photos out of my camera roll?', 'On iPhone, after you add a photo, it offers to remove the original from Photos; nothing is removed unless you tap Remove and your iPhone confirms, and the photo stays in Recently Deleted for 30 days. On Android, the app keeps its own copy, and you delete the original in Google Photos yourself.'],
-      ['Is the vault free?', 'Yes, for your first 25 items. Adding stops at 25 on the free plan, but viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of chosen items or dates. The app is coming soon to the App Store and Google Play.'],
+      ['Does it take photos out of my camera roll?', 'On iPhone, if you turn on the offer in Settings, it asks after you add a photo whether to remove the original from Photos; nothing is removed unless you tap Remove and your iPhone confirms, and the photo stays in Recently Deleted for 30 days. On Android, the app keeps its own copy, and you delete the original in Google Photos yourself.'],
+      ['Is the vault free?', 'Yes, for your first 25 items. Adding stops at 25 on the free plan, but viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page. The app is coming soon to the App Store and Google Play.'],
     ],
   },
   es: {
@@ -76,8 +76,8 @@ export const VAULT_HUB = {
     limitsH: 'Lo que la bóveda no hace', pagesH: 'Guías y páginas de la bóveda', iphone: IPHONE.es,
     faq: [
       ['¿KeepMyProof es una bóveda de fotos?', 'Sí, y más: bloquea fotos y capturas como una bóveda de fotos, y además guarda cartas, escaneos, archivos y notas en carpetas con listas. Cada documento tiene la fecha en que pasó junto a la fecha en que lo guardó, y una carpeta se convierte en un PDF cuando un abogado, la escuela o un representante del VA lo pide.'],
-      ['¿Saca las fotos de mi carrete?', 'En iPhone, después de agregar una foto, le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y su iPhone lo confirme, y la foto queda en Eliminado recientemente durante 30 días. En Android, la app guarda su propia copia y usted borra el original en Google Fotos.'],
-      ['¿La bóveda es gratis?', 'Sí, para sus primeros 25 documentos. En el plan gratis ya no puede agregar más al llegar a 25, pero ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de documentos o fechas elegidos. La app llega muy pronto al App Store y Google Play.'],
+      ['¿Saca las fotos de mi carrete?', 'En iPhone, si activa esa opción en Ajustes, después de agregar una foto le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y su iPhone lo confirme, y la foto queda en Eliminado recientemente durante 30 días. En Android, la app guarda su propia copia y usted borra el original en Google Fotos.'],
+      ['¿La bóveda es gratis?', 'Sí, para sus primeros 25 documentos. En el plan gratis ya no puede agregar más al llegar a 25, pero ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de un rango de fechas con portada. La app llega muy pronto al App Store y Google Play.'],
     ],
   },
   zh: {
@@ -88,12 +88,12 @@ export const VAULT_HUB = {
     diffH: '它和照片保险箱有什么不同？', diff: '照片保险箱只藏照片；这个保险箱把记录整理好。',
     table: { head: ['', '照片保险箱应用', 'KeepMyProof'], rows: [['照片和截图', '是', '是'], ['文件、信件、扫描件和笔记', '因应用而异', '是'], ['为某件人生大事准备的带清单文件夹', '否', `是，${folderCount('zh')}个文件夹`], ['发生日期和保存日期并列', '否', '是'], ['一个文件夹导出成一个 PDF', '否', '是'], ['伪装成其他应用', '常见', '否：普通的、上锁的应用']] },
     limitsH: '保险箱不做什么', pagesH: '保险箱指南和页面',
-    iphone: '仅限 iPhone：从图库添加照片后，应用会问“要从照片中删除原件吗？”。默认选项是保留在照片中；如果您点“删除”，iPhone 会要求您确认，照片会在“最近删除”中保留 30 天。在 Android 上，请您自己在 Google 相册中删除原件。',
+    iphone: '仅限 iPhone：如果您在设置时或在“设置”中开启这个选项，从图库添加照片后，应用会问“要从照片中删除原件吗？”。默认选项是保留在照片中；如果您点“删除”，iPhone 会要求您确认，照片会在“最近删除”中保留 30 天。在 Android 上，请您自己在 Google 相册中删除原件。',
     limits: ['知道您密码的人可以打开应用，所以请使用只有您知道的密码。', '应用像普通应用一样显示在主屏幕上，并没有对手机隐藏。', '删除照片并不保证任何地方都没有副本：备份、共享相簿和其他设备可能仍有副本。'],
     faq: [
       ['KeepMyProof 是照片保险箱吗？', '是的，而且不只是照片保险箱。它像照片保险箱一样锁住照片和截图，同时把信件、扫描件、文件和笔记放进带清单的文件夹。每一项都记下事情发生的日期和您保存的日期。律师、学校或 VA 代表需要时，一个文件夹可以导出成一个 PDF。'],
-      ['它会把照片从相册里拿走吗？', '在 iPhone 上，添加照片后应用会提出从“照片”中删除原件；只有您点“删除”并在 iPhone 上确认后才会删除，照片会在“最近删除”中保留 30 天。在 Android 上，应用保存自己的副本，原件需要您自己在 Google 相册中删除。'],
-      ['保险箱免费吗？', '前 25 项免费。免费版到 25 项后不能再添加，但查看、导出 PDF、导出原件、备份和恢复永远不会锁住。KeepMyProof Plus 提供无限项目、自定义文件夹和标签，以及按所选项目或日期导出 PDF。应用即将登陆 App Store 和 Google Play。'],
+      ['它会把照片从相册里拿走吗？', '在 iPhone 上，如果您在“设置”中开启这个选项，添加照片后应用会提出从“照片”中删除原件；只有您点“删除”并在 iPhone 上确认后才会删除，照片会在“最近删除”中保留 30 天。在 Android 上，应用保存自己的副本，原件需要您自己在 Google 相册中删除。'],
+      ['保险箱免费吗？', '前 25 项免费。免费版到 25 项后不能再添加，但查看、导出 PDF、导出原件、备份和恢复永远不会锁住。KeepMyProof Plus 提供无限项目、自定义文件夹和标签，以及按日期范围导出带封面的 PDF。应用即将登陆 App Store 和 Google Play。'],
     ],
   },
   ko: {
@@ -104,12 +104,12 @@ export const VAULT_HUB = {
     diffH: '사진 보관함과 무엇이 다른가요?', diff: '사진 보관함은 사진을 숨기고, 이 보관함은 기록을 정리합니다.',
     table: { head: ['', '사진 보관함 앱', 'KeepMyProof'], rows: [['사진과 스크린샷', '예', '예'], ['파일, 편지, 스캔본, 메모', '앱마다 다름', '예'], ['인생의 한 사건을 위한 체크리스트 폴더', '아니요', `예, ${folderCount('ko')} 개 폴더`], ['일어난 날짜와 저장한 날짜를 나란히', '아니요', '예'], ['폴더 하나를 PDF 하나로', '아니요', '예'], ['다른 앱으로 위장', '흔함', '아니요: 평범한 잠금 앱']] },
     limitsH: '보관함이 하지 않는 일', pagesH: '보관함 가이드와 페이지',
-    iphone: 'iPhone 전용: 사진 보관함에서 사진을 추가하면 앱이 "사진 앱에서 원본을 삭제할까요?"라고 묻습니다. 기본 선택은 사진 앱에 그대로 두기입니다. 삭제를 누르면 iPhone이 확인을 요청하고, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 Google 포토에서 직접 원본을 삭제하세요.',
+    iphone: 'iPhone 전용: 설정할 때나 설정에서 이 옵션을 켜 두면, 사진 보관함에서 사진을 추가할 때 앱이 "사진 앱에서 원본을 삭제할까요?"라고 묻습니다. 기본 선택은 사진 앱에 그대로 두기입니다. 삭제를 누르면 iPhone이 확인을 요청하고, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 Google 포토에서 직접 원본을 삭제하세요.',
     limits: ['암호를 아는 사람은 앱을 열 수 있으니 본인만 아는 암호를 쓰세요.', '앱은 다른 앱처럼 홈 화면에 보이며 휴대폰에서 숨겨지지 않습니다.', '사진을 삭제해도 어디에도 사본이 남지 않는다는 보장은 없습니다. 백업, 공유 앨범, 다른 기기에 사본이 있을 수 있습니다.'],
     faq: [
       ['KeepMyProof는 사진 보관함인가요?', '네, 그 이상입니다. 사진 보관함처럼 사진과 스크린샷을 잠그고, 편지, 스캔본, 파일, 메모도 체크리스트가 있는 폴더에 보관합니다. 항목마다 일어난 날짜와 저장한 날짜가 나란히 있고, 변호사나 학교, VA 대리인이 요청하면 폴더를 PDF 하나로 만들 수 있습니다.'],
-      ['카메라 롤에서 사진을 빼 주나요?', 'iPhone에서는 사진을 추가한 뒤 사진 앱의 원본 삭제를 제안합니다. 삭제를 누르고 iPhone에서 확인해야만 삭제되며, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 앱이 자체 사본을 보관하고, 원본은 Google 포토에서 직접 삭제해야 합니다.'],
-      ['보관함은 무료인가요?', '처음 25개 항목까지 무료입니다. 무료 요금제는 25개에서 추가가 멈추지만 보기, PDF, 내보내기, 백업, 복원은 절대 잠기지 않습니다. KeepMyProof Plus는 무제한 항목, 직접 만드는 폴더와 태그, 선택한 항목이나 날짜의 PDF를 제공합니다. App Store와 Google Play 출시 예정입니다.'],
+      ['카메라 롤에서 사진을 빼 주나요?', 'iPhone에서는 설정에서 이 옵션을 켜 두면 사진을 추가한 뒤 사진 앱의 원본 삭제를 제안합니다. 삭제를 누르고 iPhone에서 확인해야만 삭제되며, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 앱이 자체 사본을 보관하고, 원본은 Google 포토에서 직접 삭제해야 합니다.'],
+      ['보관함은 무료인가요?', '처음 25개 항목까지 무료입니다. 무료 요금제는 25개에서 추가가 멈추지만 보기, PDF, 내보내기, 백업, 복원은 절대 잠기지 않습니다. KeepMyProof Plus는 무제한 항목, 직접 만드는 폴더와 태그, 기간을 정하고 표지를 넣은 PDF를 제공합니다. App Store와 Google Play 출시 예정입니다.'],
     ],
   },
 };
@@ -138,7 +138,7 @@ export const LANDINGS_BASE = [
       faq: [
         ['Is KeepMyProof a photo vault app?', 'Yes. It locks photos and screenshots behind a passcode, Face ID or fingerprint, like a photo vault. It also keeps letters, scans, files and notes, sorted into folders with checklists and two dates on every item, and turns a folder into one PDF. It is coming soon to the App Store and Google Play.'],
         ['Does a photo vault app keep my photos off the cloud?', 'KeepMyProof keeps what you add encrypted on your phone and never uploads it. Its backup is an encrypted file you save to your own cloud drive. The original photo in your library is a separate copy: if iCloud Photos or Google Photos backs it up, delete it there too.'],
-        ['Is a photo vault app free?', 'KeepMyProof is free for your first 25 items, and viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of chosen items or dates, for a yearly price or once for life. There are no ads and no account.'],
+        ['Is a photo vault app free?', 'KeepMyProof is free for your first 25 items, and viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page, for a yearly price or once for life. There are no ads and no account.'],
       ],
     },
     es: {
@@ -156,7 +156,7 @@ export const LANDINGS_BASE = [
       faq: [
         ['¿KeepMyProof es una app de bóveda de fotos?', 'Sí. Bloquea fotos y capturas con un código, Face ID o huella, como una bóveda de fotos. Además guarda cartas, escaneos, archivos y notas en carpetas con listas y dos fechas en cada documento, y convierte una carpeta en un PDF. Llega muy pronto al App Store y Google Play.'],
         ['¿Una bóveda de fotos mantiene mis fotos fuera de la nube?', 'KeepMyProof guarda lo que agrega cifrado en su teléfono y nunca lo sube. Su respaldo es un archivo cifrado que usted guarda en su propia nube. La foto original de su fototeca es otra copia: si Fotos de iCloud o Google Fotos la respaldan, bórrela también ahí.'],
-        ['¿Una app de bóveda de fotos es gratis?', 'KeepMyProof es gratis para sus primeros 25 documentos, y ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de documentos o fechas elegidos, por un precio anual o una sola vez. No hay anuncios ni cuenta.'],
+        ['¿Una app de bóveda de fotos es gratis?', 'KeepMyProof es gratis para sus primeros 25 documentos, y ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de un rango de fechas con portada, por un precio anual o una sola vez. No hay anuncios ni cuenta.'],
       ],
     },
   },
@@ -178,7 +178,7 @@ export const LANDINGS_BASE = [
       faq: [
         ['Is the Hidden album on iPhone locked?', 'Yes. Apple says that on iOS 16 and later the Hidden album is locked by default and opens with Face ID or Touch ID after you tap View Album. If you also turn off Show Hidden Album in Settings, the album does not appear in Photos at all until you turn it back on.'],
         ['Can I hide documents on iPhone too?', 'The Files app has no hidden folder, but Apple lets you lock the Files app with Face ID or hide it in a locked Hidden folder of the App Library. KeepMyProof keeps documents, scans and screenshots together in folders, locked behind its own passcode, Face ID or fingerprint, with the date of each.'],
-        ['Does KeepMyProof delete the original photo?', 'Only if you ask. After you add a photo from your library, it asks whether to remove the original from Photos; Keep it in Photos is the first choice, and your iPhone asks you to confirm a removal. The photo then stays in Recently Deleted for 30 days, where you can still recover it.'],
+        ['Does KeepMyProof delete the original photo?', 'Only if you ask. If you turn on the offer in Settings, then after you add a photo from your library it asks whether to remove the original from Photos; Keep it in Photos is the first choice, and your iPhone asks you to confirm a removal. The photo then stays in Recently Deleted for 30 days, where you can still recover it.'],
       ],
     },
     es: {
@@ -196,7 +196,7 @@ export const LANDINGS_BASE = [
       faq: [
         ['¿El álbum Oculto del iPhone está bloqueado?', 'Sí. Apple dice que desde iOS 16 el álbum Oculto está bloqueado de forma predeterminada y se abre con Face ID o Touch ID después de tocar Ver álbum. Si además desactiva Mostrar álbum Oculto en Ajustes, el álbum no aparece en Fotos hasta que lo vuelva a activar.'],
         ['¿También puedo ocultar documentos en iPhone?', 'La app Archivos no tiene una carpeta oculta, pero Apple permite bloquear Archivos con Face ID u ocultarla en una carpeta Oculto bloqueada de la biblioteca de apps. KeepMyProof guarda documentos, escaneos y capturas juntos en carpetas, con su propio código, Face ID o huella, y la fecha de cada uno.'],
-        ['¿KeepMyProof borra la foto original?', 'Solo si usted lo pide. Después de agregar una foto de su fototeca, pregunta si quita el original de Fotos; Dejarla en Fotos es la primera opción, y su iPhone le pide confirmar. La foto queda en Eliminado recientemente durante 30 días, donde todavía puede recuperarla.'],
+        ['¿KeepMyProof borra la foto original?', 'Solo si usted lo pide. Si activa esa opción en Ajustes, después de agregar una foto de su fototeca pregunta si quita el original de Fotos; Dejarla en Fotos es la primera opción, y su iPhone le pide confirmar. La foto queda en Eliminado recientemente durante 30 días, donde todavía puede recuperarla.'],
       ],
     },
   },
@@ -287,36 +287,36 @@ export const LANDINGS_BASE = [
       title: 'How to hide pictures from your camera roll | KeepMyProof',
       desc: 'Hide pictures from your camera roll on iPhone or Android with the built-in tools, or move photos and documents into a private vault with dated folders.',
       h1: 'How to hide pictures from your camera roll',
-      answer: 'To hide pictures from your camera roll, use the Hidden album on iPhone or Locked Folder in Google Photos on Android. To take photos and documents out of the camera roll and keep them in order, add them to a KeepMyProof folder; on iPhone it then offers to remove the original from Photos.',
+      answer: 'To hide pictures from your camera roll, use the Hidden album on iPhone or Locked Folder in Google Photos on Android. To take photos and documents out of the camera roll and keep them in order, add them to a KeepMyProof folder; on iPhone it can also offer to remove the original, if you turn that on.',
       bestFor: 'someone with screenshots or photos of papers mixed into the camera roll who wants them out of sight and kept.',
       sections: [
         { h: 'How do I hide pictures on iPhone?', a: 'Move them to the Hidden album.', steps: ['In Photos, tap Select and choose the pictures.', 'Tap the More button, then Hide, and confirm.', 'They now show only in the locked Hidden album.'] },
         { h: 'How do I hide pictures on Android?', a: 'Move them to Locked Folder in Google Photos.', steps: ['In Google Photos, select the pictures.', 'Tap More, then Move to Locked Folder.', 'They now show only in Locked Folder, opened with your screen lock.'] },
-        { h: 'How do I take them out of the camera roll for good?', a: 'Keep a copy in a vault, then delete the original.', steps: ['Add the picture to a KeepMyProof folder and write the date it happened.', 'On iPhone, tap Remove when the app asks about the original, then confirm.', 'On Android, delete the original in Google Photos yourself.', 'Empty Recently Deleted or the trash only once you are sure.'] },
+        { h: 'How do I take them out of the camera roll for good?', a: 'Keep a copy in a vault, then delete the original.', steps: ['Add the picture to a KeepMyProof folder and write the date it happened.', 'On iPhone, turn on the offer in Settings, then tap Remove when the app asks about the original, and confirm.', 'On Android, delete the original in Google Photos yourself.', 'Empty Recently Deleted or the trash only once you are sure.'] },
         { h: 'What should I check first?', a: 'That nothing you may need is lost.', list: ['Some records also need the original message or file; ask a lawyer before deleting anything that may matter in a case.', 'Shared albums and other devices can keep their own copies.', IPHONE.en] },
       ],
       faq: [
         ['Does hiding a picture remove it from the camera roll?', 'It removes it from the main view. On iPhone a hidden picture shows only in the locked Hidden album; on Android, a picture in Locked Folder shows only there. Neither is a deleted picture: it stays on the phone, and with iCloud Photos the hidden picture is hidden on your other devices too.'],
-        ['How long do deleted photos stay on iPhone?', 'Apple keeps deleted photos and videos in the Recently Deleted album for 30 days, and you can recover them there until then. After 30 days they are permanently deleted. You can also delete them from Recently Deleted sooner. KeepMyProof says this before you remove an original from Photos.'],
-        ['Can I keep screenshots out of my camera roll from now on?', 'A screenshot always lands in Photos first. Add it to a KeepMyProof folder soon after you take it; on iPhone the app then offers to remove the original. Doing this in one sitting each week keeps your camera roll clear and your records in one place.'],
+        ['How long do deleted photos stay on iPhone?', 'Apple keeps deleted photos and videos in the Recently Deleted album for 30 days, and you can recover them there until then. After 30 days they are permanently deleted. You can also delete them from Recently Deleted sooner. KeepMyProof tells you about the 30 days before you remove an original from Photos.'],
+        ['Can I keep screenshots out of my camera roll from now on?', 'A screenshot always lands in Photos first. Add it to a KeepMyProof folder soon after you take it; on iPhone, with the offer turned on in Settings, the app then asks whether to remove the original. Doing this in one sitting each week keeps your camera roll clear and your records in one place.'],
       ],
     },
     es: {
       title: 'Cómo ocultar fotos de su carrete | KeepMyProof',
       desc: 'Oculte fotos de su carrete en iPhone o Android con las herramientas del teléfono, o pase fotos y documentos a una bóveda privada con carpetas con fecha.',
       h1: 'Cómo ocultar fotos de su carrete',
-      answer: 'Para ocultar fotos de su carrete, use el álbum Oculto en iPhone o la Carpeta bloqueada de Google Fotos en Android. Para sacar fotos y documentos del carrete y tenerlos en orden, agréguelos a una carpeta de KeepMyProof; en iPhone, la app luego le ofrece quitar el original de Fotos.',
+      answer: 'Para ocultar fotos de su carrete, use el álbum Oculto en iPhone o la Carpeta bloqueada de Google Fotos en Android. Para sacar fotos y documentos del carrete y tenerlos en orden, agréguelos a una carpeta de KeepMyProof; en iPhone, con esa opción activada en Ajustes, la app luego le ofrece quitar el original de Fotos.',
       bestFor: 'quien tiene capturas o fotos de papeles mezcladas en el carrete y quiere sacarlas de la vista y conservarlas.',
       sections: [
         { h: '¿Cómo oculto fotos en iPhone?', a: 'Páselas al álbum Oculto.', steps: ['En Fotos, toque Seleccionar y elija las fotos.', 'Toque el botón Más, luego Ocultar, y confirme.', 'Ahora solo se ven en el álbum Oculto bloqueado.'] },
         { h: '¿Cómo oculto fotos en Android?', a: 'Páselas a la Carpeta bloqueada de Google Fotos.', steps: ['En Google Fotos, seleccione las fotos.', 'Toque Más y luego Mover a Carpeta bloqueada.', 'Ahora solo se ven en la Carpeta bloqueada, que se abre con su bloqueo de pantalla.'] },
-        { h: '¿Cómo las saco del carrete para siempre?', a: 'Guarde una copia en una bóveda y luego borre el original.', steps: ['Agregue la foto a una carpeta de KeepMyProof y escriba la fecha en que pasó.', 'En iPhone, toque Quitar cuando la app pregunte por el original y confirme.', 'En Android, borre usted el original en Google Fotos.', 'Vacíe Eliminado recientemente o la papelera solo cuando esté seguro.'] },
+        { h: '¿Cómo las saco del carrete para siempre?', a: 'Guarde una copia en una bóveda y luego borre el original.', steps: ['Agregue la foto a una carpeta de KeepMyProof y escriba la fecha en que pasó.', 'En iPhone, active esa opción en Ajustes y toque Quitar cuando la app pregunte por el original; luego confirme.', 'En Android, borre usted el original en Google Fotos.', 'Vacíe Eliminado recientemente o la papelera solo cuando esté seguro.'] },
         { h: '¿Qué debo revisar primero?', a: 'Que no pierda nada que pueda necesitar.', list: ['Algunos registros también necesitan el mensaje o archivo original; pregunte a un abogado antes de borrar algo que pueda importar en un caso.', 'Los álbumes compartidos y otros dispositivos pueden guardar sus propias copias.', IPHONE.es] },
       ],
       faq: [
         ['¿Ocultar una foto la quita del carrete?', 'La quita de la vista principal. En iPhone, una foto oculta solo se ve en el álbum Oculto bloqueado; en Android, una foto en la Carpeta bloqueada solo se ve ahí. Ninguna está borrada: sigue en el teléfono, y con Fotos de iCloud la foto oculta también queda oculta en sus otros dispositivos.'],
-        ['¿Cuánto tiempo quedan las fotos borradas en iPhone?', 'Apple guarda las fotos y videos borrados en el álbum Eliminado recientemente durante 30 días, y ahí puede recuperarlos hasta entonces. Después de 30 días se borran para siempre. También puede borrarlos antes desde Eliminado recientemente. KeepMyProof lo dice antes de quitar un original de Fotos.'],
-        ['¿Puedo mantener las capturas fuera del carrete de ahora en adelante?', 'Una captura siempre llega primero a Fotos. Agréguela a una carpeta de KeepMyProof poco después de tomarla; en iPhone, la app luego le ofrece quitar el original. Hacerlo de una vez cada semana mantiene su carrete limpio y sus registros en un solo lugar.'],
+        ['¿Cuánto tiempo quedan las fotos borradas en iPhone?', 'Apple guarda las fotos y videos borrados en el álbum Eliminado recientemente durante 30 días, y ahí puede recuperarlos hasta entonces. Después de 30 días se borran para siempre. También puede borrarlos antes desde Eliminado recientemente. KeepMyProof le avisa de los 30 días antes de quitar un original de Fotos.'],
+        ['¿Puedo mantener las capturas fuera del carrete de ahora en adelante?', 'Una captura siempre llega primero a Fotos. Agréguela a una carpeta de KeepMyProof poco después de tomarla; en iPhone, con esa opción activada en Ajustes, la app luego le ofrece quitar el original. Hacerlo de una vez cada semana mantiene su carrete limpio y sus registros en un solo lugar.'],
       ],
     },
   },
@@ -331,13 +331,13 @@ export const LANDINGS_BASE = [
       bestFor: 'a parent saving pickup texts, schedule changes and emails during a divorce or custody matter, on a phone others may see.',
       sections: [
         { h: 'Why keep custody screenshots out of the camera roll?', a: 'Because a camera roll is often seen by children, partners or a shared cloud account.', list: ['Photos can sync to a shared iCloud or Google account or a family tablet.', 'Children scrolling for pictures can see a hard message.', 'A locked folder keeps them together and out of the way.'] },
-        { h: 'How do I keep them private and in order?', a: 'One folder, two dates, and the original kept.', steps: ['Screenshot the whole message, including the name or number and the date shown.', 'Add it to the Divorce prep folder in KeepMyProof and write the date it happened.', 'Note what it shows in a line, such as "missed pickup, 6 pm".', 'Keep the original messages on the phone too; ask your lawyer how to keep them.', 'On iPhone, remove the screenshot from Photos when the app asks, if you want.'] },
+        { h: 'How do I keep them private and in order?', a: 'One folder, two dates, and the original kept.', steps: ['Screenshot the whole message, including the name or number and the date shown.', 'Add it to the Divorce prep folder in KeepMyProof and write the date it happened.', 'Note what it shows in a line, such as "missed pickup, 6 pm".', 'Keep the original messages on the phone too; ask your lawyer how to keep them.', 'On iPhone, if you turned on the offer in Settings, remove the screenshot from Photos when the app asks, if you want.'] },
         { h: 'What else belongs with them?', a: 'The papers a parenting plan is built on.', list: ['A co-parenting log of handoffs, visits and missed visits.', 'School and medical notes about the children.', 'The current parenting plan or order. California Courts says parenting plans must be in the best interest of the children.'] },
         { h: 'What does KeepMyProof not do?', a: 'It keeps copies; it does not judge them.', list: ['The save date records when you saved it, not that something happened.', 'It gives no legal advice and does not say how a custody matter will turn out.', 'Nothing is shared with the other parent: it is a one-person app.'] },
       ],
       faq: [
         ['Should I delete the original texts after taking screenshots?', 'Not without advice. A screenshot can leave out the sender, the time or the rest of the conversation, so many parents keep the original messages too. Ask your lawyer or a legal aid office how to keep them for your matter. This is educational only and not legal advice.'],
-        ['Can the other parent see what I keep in KeepMyProof?', 'Not through the app. KeepMyProof is private to one person: there is no shared account, nothing is sent automatically, and the folder opens only with your passcode, Face ID or fingerprint. Anyone who knows your phone passcode and app passcode could open it, so use codes only you know.'],
+        ['Can the other parent see what I keep in KeepMyProof?', 'Not through the app. KeepMyProof is private to one person: there is no shared account, nothing is sent automatically, and the folder opens only with your passcode, Face ID or fingerprint, or with your 12 recovery words, which can set a new passcode. Anyone who knows your phone passcode and app passcode, or has your 12 words, could open it, so keep the codes and the words to yourself.'],
         ['Is a custody log better than screenshots?', 'They do different jobs, and most parents keep both. Screenshots keep what was said; a custody log keeps what happened at each handoff and visit, written on the day. KeepMyProof keeps both in the Divorce prep folder, with the date each thing happened next to the date you saved it.'],
       ],
     },
@@ -349,13 +349,13 @@ export const LANDINGS_BASE = [
       bestFor: 'quien guarda mensajes de entregas, cambios de horario y correos durante un divorcio o un asunto de custodia, en un teléfono que otros pueden ver.',
       sections: [
         { h: '¿Por qué sacar las capturas de custodia del carrete?', a: 'Porque el carrete muchas veces lo ven los niños, la pareja o una cuenta compartida en la nube.', list: ['Las fotos se pueden sincronizar con una cuenta compartida de iCloud o Google o con una tableta familiar.', 'Los niños que buscan fotos pueden ver un mensaje difícil.', 'Una carpeta bloqueada las mantiene juntas y fuera de la vista.'] },
-        { h: '¿Cómo las mantengo privadas y en orden?', a: 'Una carpeta, dos fechas y el original guardado.', steps: ['Haga la captura del mensaje completo, con el nombre o número y la fecha que se ve.', 'Agréguela a la carpeta de divorcio en KeepMyProof y escriba la fecha en que pasó.', 'Anote en una línea qué muestra, por ejemplo "no recogió a los niños, 6 pm".', 'Conserve también los mensajes originales en el teléfono; pregunte a su abogado cómo guardarlos.', 'En iPhone, quite la captura de Fotos cuando la app lo pregunte, si quiere.'] },
+        { h: '¿Cómo las mantengo privadas y en orden?', a: 'Una carpeta, dos fechas y el original guardado.', steps: ['Haga la captura del mensaje completo, con el nombre o número y la fecha que se ve.', 'Agréguela a la carpeta de divorcio en KeepMyProof y escriba la fecha en que pasó.', 'Anote en una línea qué muestra, por ejemplo "no recogió a los niños, 6 pm".', 'Conserve también los mensajes originales en el teléfono; pregunte a su abogado cómo guardarlos.', 'En iPhone, si activó esa opción en Ajustes, quite la captura de Fotos cuando la app lo pregunte, si quiere.'] },
         { h: '¿Qué más va con ellas?', a: 'Los papeles en los que se basa un plan de crianza.', list: ['Un registro de crianza de entregas, visitas y visitas perdidas.', 'Notas de la escuela y del médico sobre los niños.', 'El plan de crianza o la orden actual. Las Cortes de California dicen que los planes de crianza deben ser en el interés superior de los niños.'] },
         { h: '¿Qué no hace KeepMyProof?', a: 'Guarda copias; no las juzga.', list: ['La fecha de guardado registra cuándo lo guardó, no que algo pasó.', 'No da asesoría legal ni dice cómo terminará un asunto de custodia.', 'No se comparte nada con el otro padre: es una app para una sola persona.'] },
       ],
       faq: [
         ['¿Debo borrar los mensajes originales después de la captura?', 'No sin consejo. Una captura puede dejar fuera a quien envió, la hora o el resto de la conversación, así que muchos padres también conservan los mensajes originales. Pregunte a su abogado o a una oficina de ayuda legal cómo guardarlos para su caso. Es solo informativo, no asesoría legal.'],
-        ['¿El otro padre puede ver lo que guardo en KeepMyProof?', 'No a través de la app. KeepMyProof es privada para una sola persona: no hay cuenta compartida, no se envía nada automáticamente y la carpeta solo se abre con su código, Face ID o huella. Quien sepa el código de su teléfono y el de la app podría abrirla, así que use códigos que solo usted conozca.'],
+        ['¿El otro padre puede ver lo que guardo en KeepMyProof?', 'No a través de la app. KeepMyProof es privada para una sola persona: no hay cuenta compartida, no se envía nada automáticamente y la carpeta solo se abre con su código, Face ID o huella, o con sus 12 palabras de recuperación, que permiten poner un código nuevo. Quien sepa el código de su teléfono y el de la app, o tenga sus 12 palabras, podría abrirla, así que guarde los códigos y las palabras solo para usted.'],
         ['¿Es mejor un registro de custodia que las capturas?', 'Cumplen funciones distintas, y la mayoría de los padres guarda las dos. Las capturas guardan lo que se dijo; un registro de custodia guarda lo que pasó en cada entrega y visita, escrito ese día. KeepMyProof guarda las dos cosas en la carpeta de divorcio, con la fecha en que pasó junto a la fecha de guardado.'],
       ],
     },
@@ -379,7 +379,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['How often should I write in a custody log?', 'On every day something happens that the parenting plan covers: a handoff, a visit, a missed visit, a schedule change or an important message. Write it the same day, while you remember the times. A short entry written on the day is more useful than a long one written weeks later.'],
-        ['Is there a free custody log I can print?', 'Yes. KeepMyProof has a free co-parenting log you fill in and print or save as a PDF in your browser, with columns for the date, time, place and what happened. Nothing you type is saved or sent anywhere. The link is below, next to the phone app that keeps the log with your messages.'],
+        ['Is there a free custody log I can print?', 'Yes. KeepMyProof has a free co-parenting log you fill in and print or save as a PDF in your browser, with columns for the date, the time, what was planned, what happened and notes. Nothing you type is saved or sent anywhere. The link is below, next to the phone app that keeps the log with your messages.'],
         ['Will a custody log help my case?', 'A log is a record you keep; whether and how it is used is for the court and your lawyer. KeepMyProof cannot say how a custody matter will turn out. Ask your lawyer or a legal aid office what to keep and how. This page is educational only and is not legal advice.'],
       ],
     },
@@ -397,7 +397,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['¿Cada cuánto debo escribir en el registro de custodia?', 'Cada día en que pase algo que cubre el plan de crianza: una entrega, una visita, una visita perdida, un cambio de horario o un mensaje importante. Escríbalo el mismo día, mientras recuerda las horas. Una entrada corta escrita ese día sirve más que una larga escrita semanas después.'],
-        ['¿Hay un registro de custodia gratis para imprimir?', 'Sí. KeepMyProof tiene un registro de crianza gratis que se llena e imprime o guarda como PDF en su navegador, con columnas para fecha, hora, lugar y qué pasó. Nada de lo que escribe se guarda ni se envía. El enlace está abajo, junto a la app que guarda el registro con sus mensajes.'],
+        ['¿Hay un registro de custodia gratis para imprimir?', 'Sí. KeepMyProof tiene un registro de crianza gratis que se llena e imprime o guarda como PDF en su navegador, con columnas para fecha, hora, lo previsto, lo que pasó y notas. Nada de lo que escribe se guarda ni se envía. El enlace está abajo, junto a la app que guarda el registro con sus mensajes.'],
         ['¿Un registro de custodia ayudará en mi caso?', 'Un registro es algo que usted lleva; si se usa y cómo lo deciden la corte y su abogado. KeepMyProof no puede decir cómo terminará un asunto de custodia. Pregunte a su abogado o a una oficina de ayuda legal qué guardar y cómo. Esta página es solo informativa y no es asesoría legal.'],
       ],
     },
@@ -419,7 +419,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['What is the first thing to do when preparing for divorce?', 'Make your phone, email and cloud accounts private, then start copying money records: bank, credit card, retirement and loan statements, tax returns and pay stubs. Being organised before you meet a lawyer saves time and fees. Every state has its own rules, so check your court\'s self-help center for yours.'],
-        ['What documents do I need for a divorce?', 'Most people need proof of income, account statements, property and debt papers, and the children\'s school, medical and care records. Your court may also require its own forms and a financial statement. KeepMyProof\'s free divorce document checklist lists them, and its Divorce prep folder keeps copies in one private place.'],
+        ['What documents do I need for a divorce?', 'Most people need proof of income, account statements, property and debt papers, and the children\'s school, medical and care records. Your court may also require its own forms and a financial statement. KeepMyProof\'s free divorce document checklist lists the income, account, debt and property papers, and its Divorce prep folder keeps copies of all of them in one private place.'],
         ['Should I talk to a lawyer before I file?', 'Many people do, and legal aid offices and court self-help centers help those who cannot pay. A lawyer can explain the rules in your state, such as residency and where to file. KeepMyProof is not a law firm and gives no legal advice; this page is educational only.'],
       ],
     },
@@ -437,7 +437,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['¿Qué es lo primero que hay que hacer para prepararse para el divorcio?', 'Haga privados su teléfono, su correo y sus cuentas en la nube, y empiece a copiar registros de dinero: estados de cuenta del banco, tarjetas, jubilación y préstamos, declaraciones de impuestos y talones de pago. Estar organizado antes de ver a un abogado ahorra tiempo y dinero. Cada estado tiene sus reglas; revise el centro de ayuda de su corte.'],
-        ['¿Qué documentos necesito para un divorcio?', 'La mayoría necesita comprobantes de ingresos, estados de cuenta, papeles de propiedades y deudas, y registros de la escuela, el médico y el cuidado de los niños. Su corte puede pedir sus propios formularios y una declaración financiera. La lista gratis de KeepMyProof los enumera, y su carpeta de divorcio guarda copias en un solo lugar privado.'],
+        ['¿Qué documentos necesito para un divorcio?', 'La mayoría necesita comprobantes de ingresos, estados de cuenta, papeles de propiedades y deudas, y registros de la escuela, el médico y el cuidado de los niños. Su corte puede pedir sus propios formularios y una declaración financiera. La lista gratis de KeepMyProof enumera los papeles de ingresos, cuentas, deudas y propiedades, y su carpeta de divorcio guarda copias de todos en un solo lugar privado.'],
         ['¿Debo hablar con un abogado antes de presentar?', 'Mucha gente lo hace, y las oficinas de ayuda legal y los centros de ayuda de las cortes atienden a quien no puede pagar. Un abogado puede explicar las reglas de su estado, como la residencia y dónde presentar. KeepMyProof no es un bufete y no da asesoría legal; esta página es solo informativa.'],
       ],
     },
@@ -499,7 +499,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['Can I bring someone to an IEP meeting?', 'Yes. Federal rules let parents invite people who have knowledge or special expertise about the child, such as a relative, a therapist or an advocate. Many parents bring a friend to take notes. Tell the school who is coming. Your state\'s Parent Training and Information Center can also help you prepare, for free.'],
-        ['How long does a school have to evaluate my child?', 'Under federal rules, within 60 days of receiving your consent for the initial evaluation, unless your state sets its own timeframe. Many states do, so check yours. KeepMyProof has a free evaluation due date calculator that uses each state\'s rule from official sources.'],
+        ['How long does a school have to evaluate my child?', 'Under federal rules, within 60 days of receiving your consent for the initial evaluation, unless your state sets its own timeframe. Many states do, so check yours. KeepMyProof has a free evaluation due date calculator that uses the timeline for each state where an official source we checked states one.'],
         ['What if I disagree with the IEP?', 'Say so in the meeting and in writing afterwards, and keep a copy of your email. You can ask for another meeting. Every state also has mediation and other ways to resolve disagreements; your Parent Center can explain them. This page is educational only and not legal advice.'],
       ],
     },
@@ -517,7 +517,7 @@ export const LANDINGS_BASE = [
       ],
       faq: [
         ['¿Puedo llevar a alguien a una reunión del IEP?', 'Sí. Las reglas federales permiten a los padres invitar a personas que conocen al niño o tienen experiencia especial, como un familiar, un terapeuta o un defensor. Muchos padres llevan a alguien para tomar notas. Avise a la escuela quién va. El Centro de Padres de su estado también le ayuda a prepararse, gratis.'],
-        ['¿Cuánto tiempo tiene la escuela para evaluar a mi hijo?', 'Según las reglas federales, 60 días desde que recibe su consentimiento para la evaluación inicial, salvo que su estado fije su propio plazo. Muchos estados lo hacen, así que revise el suyo. KeepMyProof tiene una calculadora gratis de la fecha de la evaluación que usa la regla de cada estado según fuentes oficiales.'],
+        ['¿Cuánto tiempo tiene la escuela para evaluar a mi hijo?', 'Según las reglas federales, 60 días desde que recibe su consentimiento para la evaluación inicial, salvo que su estado fije su propio plazo. Muchos estados lo hacen, así que revise el suyo. KeepMyProof tiene una calculadora gratis de la fecha de la evaluación que usa el plazo de cada estado donde una fuente oficial que revisamos lo indica.'],
         ['¿Y si no estoy de acuerdo con el IEP?', 'Dígalo en la reunión y por escrito después, y guarde una copia de su correo. Puede pedir otra reunión. Cada estado también tiene mediación y otras formas de resolver desacuerdos; su Centro de Padres puede explicarlas. Esta página es solo informativa y no es asesoría legal.'],
       ],
     },

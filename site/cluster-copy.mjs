@@ -20,8 +20,8 @@ export const CC = {
   en: {
     home: 'KeepMyProof',
     byState: (folder) => `${folder}: rules by state`,
-    byStateDesc: (folder, n) => `${folder}: facts from official state and federal sources for ${n} states and DC, with links to each source. Educational only, not legal advice.`,
-    statesIntro: 'Each page lists facts copied from official sources, with the link to each one and the date we checked it. Pick your state.',
+    byStateDesc: (folder, n, dc) => `${folder}: facts from official sources for ${n} states${dc ? ' and DC' : ''}, with links to each source. Educational only, not legal advice.`,
+    statesIntro: 'Each page lists facts taken from official sources, with the link to each one and the date we checked it. Pick your state.',
     allStates: 'All states',
     stateLabel: (folder, state) => `${folder} · ${state}`,
     sourcesH: 'What the official sources say',
@@ -36,7 +36,7 @@ export const CC = {
     moreHere: (state) => `More for ${state}`,
     nearby: 'Neighbouring states',
     otherStates: 'Other states',
-    subtopicIntro: (label, n) => `${label}: facts from official sources for ${n} states and DC. Each state page links to every source and shows the date we checked it.`,
+    subtopicIntro: (label, n, dc) => `${label}: facts from official sources for ${n} states${dc ? ' and DC' : ''}. Each state page links to every source and shows the date we checked it.`,
     faqH: 'Questions',
     notAdvice: 'Educational only. Not legal advice.',
     tails: (state) => [
@@ -49,7 +49,7 @@ export const CC = {
     // are the hub's and the subtopic page's to explain (the same two answers on 2,501 state pages made
     // every pair of them more than half identical: the q1 template-filler test).
     faq: ({ state, names, date, va }) => [
-      [`Where do these ${state} facts come from?`, `Each fact on this page is copied from an official source: ${names}. We checked that each source still says it on ${date}. Rules and forms change, so open the official link and read the current version before you rely on it.`],
+      [`Where do these ${state} facts come from?`, `Each fact on this page comes from an official source: ${names}. We checked that each source still says it on ${date}. Rules and forms change, so open the official link and read the current version before you rely on it.`],
       ['Is this legal advice?', `No. This page is educational only and is not legal advice. KeepMyProof is not a law firm${va ? ', is not affiliated with the VA, and does not prepare, file or judge a claim' : ''}. For advice about your situation, ask ${va ? 'a free VA-accredited representative; VA.gov lists them by state' : `a lawyer licensed in ${state} or your court's self-help center`}.`],
     ],
     storeLine: () => storeLine('en'),
@@ -70,8 +70,8 @@ export const CC = {
   es: {
     home: 'KeepMyProof',
     byState: (folder) => `${folder}: reglas por estado en Estados Unidos`,
-    byStateDesc: (folder, n) => `${folder}: datos de fuentes oficiales estatales y federales para ${n} estados y DC en Estados Unidos, con el enlace a cada fuente. Solo informativo, no es asesoría legal.`,
-    statesIntro: 'Cada página muestra datos copiados de fuentes oficiales, con el enlace a cada una y la fecha en que los revisamos. Elija su estado.',
+    byStateDesc: (folder, n, dc) => `${folder}: datos de fuentes oficiales para ${n} estados${dc ? ' y DC' : ''} en Estados Unidos, con el enlace a cada fuente. Solo informativo, no es asesoría legal.`,
+    statesIntro: 'Cada página muestra datos tomados de fuentes oficiales, con el enlace a cada una y la fecha en que los revisamos. Elija su estado.',
     allStates: 'Todos los estados',
     stateLabel: (folder, state) => `${folder} · ${state}, Estados Unidos`,
     sourcesH: '¿Qué dicen las fuentes oficiales?',
@@ -86,7 +86,7 @@ export const CC = {
     moreHere: (state) => `Más sobre ${state}`,
     nearby: 'Estados vecinos',
     otherStates: 'Otros estados',
-    subtopicIntro: (label, n) => `${label}: datos de fuentes oficiales para ${n} estados y DC en Estados Unidos. Cada página estatal enlaza a todas sus fuentes y muestra la fecha en que las revisamos.`,
+    subtopicIntro: (label, n, dc) => `${label}: datos de fuentes oficiales para ${n} estados${dc ? ' y DC' : ''} en Estados Unidos. Cada página estatal enlaza a todas sus fuentes y muestra la fecha en que las revisamos.`,
     faqH: 'Preguntas',
     notAdvice: 'Solo informativo. No es asesoría legal.',
     tails: (state) => [
@@ -96,7 +96,7 @@ export const CC = {
     ],
     vaTail: 'VA.gov tiene una lista de representantes acreditados gratis que pueden ayudar con un reclamo.',
     faq: ({ state, names, date, va }) => [
-      [`¿De dónde salen estos datos de ${state}?`, `Cada dato de esta página está copiado de una fuente oficial: ${names}. El ${date} revisamos que cada fuente todavía lo dice. Las reglas y los formularios cambian, así que abra el enlace oficial y lea la versión vigente antes de basarse en él.`],
+      [`¿De dónde salen estos datos de ${state}?`, `Cada dato de esta página sale de una fuente oficial: ${names}. El ${date} revisamos que cada fuente todavía lo dice. Las reglas y los formularios cambian, así que abra el enlace oficial y lea la versión vigente antes de basarse en él.`],
       ['¿Esto es asesoría legal?', `No. Esta página es solo informativa y no es asesoría legal. KeepMyProof no es un bufete de abogados${va ? ', no está afiliado al VA y no prepara, presenta ni evalúa reclamos' : ''}. Para un consejo sobre su caso, consulte ${va ? 'a un representante acreditado por el VA, que es gratis; VA.gov los muestra por estado' : `a un abogado con licencia en ${state} o al centro de ayuda de su corte`}.`],
     ],
     storeLine: () => storeLine('es'),
@@ -121,7 +121,7 @@ export const FACTS_PAGE = {
   en: (n, p, live) => [
     ['What it is', [`KeepMyProof is a private phone app for keeping copies of papers, photos and notes you already have, in folders with suggested checklists.`, 'Made by Spry Labs.']],
     ['Folders', [...folderList('en'), privateName('en'), 'With Plus: your own folders']],
-    ['What it does', ['Saves photos, files and notes into folders on your phone.', 'Keeps two dates on every item: the day it happened (yours to fill in) and the day you saved it on this phone.', 'Turns a folder into one PDF you can send to a lawyer, mediator, school or VA representative.', 'Backs up an encrypted copy to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase.']],
+    ['What it does', ['Saves photos, files and notes into folders on your phone.', 'Keeps two dates on every item: the day it happened (yours to fill in) and the day you saved it on this phone.', 'Turns a folder into one PDF you can send to a lawyer, mediator, school or VA representative.', 'Makes an encrypted backup file you save to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase.']],
     ['What it does not do', ['It does not give legal, tax or medical advice, and it is not a law firm.', 'It does not prepare, file or judge a VA claim, and it is not affiliated with the VA.', 'It does not send your papers to us, to analytics or to AI.', 'The saved date shows when you saved something on this phone. It does not show when an event happened.']],
     ['Price', [`Free for your first ${n} items. Viewing, full-folder PDFs, export, backup and restore never lock.`, `KeepMyProof Plus: US $${p.yearlyUSD} a year, or $${p.lifetimeUSD} once for life.`]],
     ['Privacy', ['No account, no ads, no analytics.', 'Papers are encrypted on the phone with an app passcode and optional Face ID.']],
@@ -131,7 +131,7 @@ export const FACTS_PAGE = {
   es: (n, p, live) => [
     ['¿Qué es?', ['KeepMyProof es una app privada para el teléfono que guarda copias de papeles, fotos y notas que usted ya tiene, en carpetas con listas sugeridas.', 'Hecha por Spry Labs.']],
     ['Carpetas', [...folderList('es'), privateName('es'), 'Con Plus: sus propias carpetas']],
-    ['¿Qué hace?', ['Guarda fotos, archivos y notas en carpetas en su teléfono.', 'Guarda dos fechas en cada documento: el día en que pasó (usted la escribe) y el día en que lo guardó en este teléfono.', 'Convierte una carpeta en un solo PDF para enviar a un abogado, un mediador, la escuela o un representante del VA.', 'Hace una copia cifrada en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras.']],
+    ['¿Qué hace?', ['Guarda fotos, archivos y notas en carpetas en su teléfono.', 'Guarda dos fechas en cada documento: el día en que pasó (usted la escribe) y el día en que lo guardó en este teléfono.', 'Convierte una carpeta en un solo PDF para enviar a un abogado, un mediador, la escuela o un representante del VA.', 'Hace un archivo de copia cifrada que usted guarda en su propio iCloud Drive o Google Drive, y que se abre con una frase de recuperación de 12 palabras.']],
     ['¿Qué no hace?', ['No da asesoría legal, de impuestos ni médica, y no es un bufete de abogados.', 'No prepara, presenta ni evalúa reclamos del VA, y no está afiliada al VA.', 'No nos envía sus papeles, ni a analíticas ni a IA.', 'La fecha de guardado muestra cuándo guardó algo en este teléfono. No muestra cuándo pasó un hecho.']],
     ['¿Cuánto cuesta?', [`Gratis para sus primeros ${n} documentos. Ver, los PDF de carpetas completas, exportar, la copia y la restauración nunca se bloquean.`, `KeepMyProof Plus: US $${p.yearlyUSD} al año, o $${p.lifetimeUSD} una sola vez para siempre.`]],
     ['Privacidad', ['Sin cuenta, sin anuncios, sin analíticas.', 'Los papeles quedan cifrados en el teléfono, con un código de la app y Face ID si quiere.']],
@@ -153,7 +153,7 @@ export const ALT = {
     reviews: (a, d) => `In the ${a.sample} most recent US App Store reviews of ${a.app} that we read on ${d}, ${a.counts.lost_files} ${a.counts.lost_files === 1 ? 'describes' : 'describe'} photos, videos or files lost or deleted, ${a.counts.lost_messages} ${a.counts.lost_messages === 1 ? 'describes' : 'describe'} messages or records lost or deleted, and ${a.counts.price} ${a.counts.price === 1 ? 'mentions' : 'mention'} a subscription, a charge or the price.`,
     method: 'How we counted',
     handlesH: 'How KeepMyProof handles it',
-    handles: (n, p) => [`Backup to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase, so a new phone does not mean losing your papers. Every file is checked before it is restored.`, `Free for ${n} items, with viewing, PDFs, export, backup and restore never locked. Plus is $${p.yearlyUSD} a year or $${p.lifetimeUSD} once for life.`, 'Folders with checklists for divorce, work, VA claim, executor and IEP papers, and two dates on every item.'],
+    handles: (n, p) => [`An encrypted backup file you save to your own iCloud Drive or Google Drive, opened with a 12-word recovery phrase, so a new phone does not mean losing your papers. Every file is checked before it is restored.`, `Free for ${n} items, with viewing, PDFs, export, backup and restore never locked. Plus is $${p.yearlyUSD} a year or $${p.lifetimeUSD} once for life.`, 'Folders with checklists for divorce, work, VA claim, executor and IEP papers, and two dates on every item.'],
     suitsH: (a) => `When ${a.name} may suit you better`,
     suits: { 'photo vault': 'If you mainly want to hide photos, a photo vault does that. KeepMyProof is built for papers, with checklists and dates.', 'timestamp camera': 'If you need the date printed on the photo itself, a timestamp camera does that. KeepMyProof keeps the day you saved an item next to the day you say it happened.', 'co-parenting app': 'If you need to message the other parent through a shared app, or a court order names a specific app, use that app. KeepMyProof is a private log and papers folder that only you hold.' },
     tm: (a) => `${a.name} is a trademark of its owner. KeepMyProof is not affiliated with or endorsed by ${a.name}.`,
@@ -171,7 +171,7 @@ export const ALT = {
     reviews: (a, d) => `De las ${a.sample} reseñas más recientes de ${a.app} en el App Store de Estados Unidos que leímos el ${d}, ${a.counts.lost_files} ${a.counts.lost_files === 1 ? 'describe' : 'describen'} fotos, videos o archivos perdidos o borrados, ${a.counts.lost_messages} ${a.counts.lost_messages === 1 ? 'describe' : 'describen'} mensajes o registros perdidos o borrados y ${a.counts.price} ${a.counts.price === 1 ? 'habla' : 'hablan'} de una suscripción, un cobro o el precio.`,
     method: 'Cómo contamos',
     handlesH: '¿Cómo lo maneja KeepMyProof?',
-    handles: (n, p) => ['Copia en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras, así que cambiar de teléfono no significa perder sus papeles. Cada archivo se revisa antes de restaurarlo.', `Gratis hasta ${n} documentos; ver, los PDF, exportar, la copia y la restauración nunca se bloquean. Plus cuesta $${p.yearlyUSD} al año o $${p.lifetimeUSD} una sola vez para siempre.`, 'Carpetas con listas para papeles de divorcio, trabajo, reclamo del VA, albacea e IEP, y dos fechas en cada documento.'],
+    handles: (n, p) => ['Un archivo de copia cifrada que usted guarda en su propio iCloud Drive o Google Drive, que se abre con una frase de recuperación de 12 palabras, así que cambiar de teléfono no significa perder sus papeles. Cada archivo se revisa antes de restaurarlo.', `Gratis hasta ${n} documentos; ver, los PDF, exportar, la copia y la restauración nunca se bloquean. Plus cuesta $${p.yearlyUSD} al año o $${p.lifetimeUSD} una sola vez para siempre.`, 'Carpetas con listas para papeles de divorcio, trabajo, reclamo del VA, albacea e IEP, y dos fechas en cada documento.'],
     suitsH: (a) => `¿Cuándo le puede servir más ${a.name}?`,
     suits: { 'photo vault': 'Si sobre todo quiere esconder fotos, una bóveda de fotos hace eso. KeepMyProof está hecha para papeles, con listas y fechas.', 'timestamp camera': 'Si necesita la fecha impresa en la foto, una cámara con fecha hace eso. KeepMyProof guarda el día en que guardó algo junto al día en que usted dice que pasó.', 'co-parenting app': 'Si necesita escribirle al otro padre o madre en una app compartida, o una orden de la corte pide una app concreta, use esa app. KeepMyProof es un registro y una carpeta privada que solo usted tiene.' },
     tm: (a) => `${a.name} es una marca de su dueño. KeepMyProof no está afiliada a ${a.name} ni tiene su respaldo.`,

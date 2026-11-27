@@ -57,14 +57,14 @@
     {
       "heading": "How can KeepMyProof help you stay organized during the process?",
       "paragraphs": [
-        "KeepMyProof is a private vault for photos and documents that appears as a normal locked app on your home screen. You can photograph documents, import PDFs, and add notes for each item. On iPhone, the app can remove the original from Photos after import; the phone asks to confirm and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault stores everything locally and in your iCloud or Google Drive backup, so you control access. Visit the vault hub to learn more."
+        "KeepMyProof is a private vault for photos and documents that appears as a normal locked app on your home screen. You can photograph documents, import PDFs, and add notes for each item. On iPhone, if you turn on that offer in Settings, the app asks after import whether to remove the original from Photos; the phone asks to confirm and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault stores everything locally and in your iCloud or Google Drive backup, so you control access. Visit the vault hub to learn more."
       ],
       "bullets": [
         "Locked app on home screen, not hidden or disguised",
         "Import photos, PDFs, and add searchable notes",
         "iPhone: option to remove original from Photos with 30-day recovery",
         "Android: delete original in Google Photos manually",
-        "Data stored locally and in your personal cloud backup"
+        "Data stored on your phone; a backup is an encrypted file you choose to save"
       ]
     }
   ],
@@ -83,7 +83,7 @@
     },
     {
       "q": "Can I change my name during the divorce?",
-      "a": "Yes, you can request a name restoration to a former name in the petition or counter-petition. The court includes the name change in the final judgment. You then update your Social Security record, driver's license, and other accounts. KeepMyProof can hold a copy of the final judgment and a checklist of agencies to notify."
+      "a": "Yes, you can request a name restoration to a former name in the petition or counter-petition. The court includes the name change in the final judgment. You then update your Social Security record, driver's license, and other accounts. KeepMyProof can hold a copy of the final judgment and a note listing the agencies to notify."
     }
   ],
   "facts": [

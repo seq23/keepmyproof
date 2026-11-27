@@ -16,6 +16,14 @@
       "query": "how to prove adultery in the military",
       "reason": "site gate refused it: banned word \"court-ready\"",
       "redirect": "/questions/how-to-prove-adultery-in-the-military/ /divorce/ 301"
+    },
+    {
+      "at": "2026-11-27",
+      "from": "/questions/va-disability-what-to-claim/",
+      "into": "/va-claim-papers",
+      "query": "va disability what to claim",
+      "reason": "promise audit 27 Nov 2026: the page told veterans which conditions and claim types to file (VA claim advice), which KeepMyProof never gives",
+      "redirect": "/questions/va-disability-what-to-claim/ /va-claim-papers 301"
     }
   ]
 }

@@ -27,7 +27,7 @@ export const GUIDE_COPY = {
     hubDesc: 'Step-by-step guides to hide screenshots and documents on iPhone and Android, from Apple and Google help pages, plus a private folder for papers.',
     nav: 'Guides', bestFor: 'Who this guide is for:', sourcesH: 'Sources', checked: (d) => `Steps checked against these pages on ${d}. Menu names can change with a phone update.`,
     keepH: 'Keep the papers out of your photos',
-    keepBody: 'A hidden album still mixes the screenshot of a pickup text or an HR email with your pictures. KeepMyProof is a private phone app for papers: folders with checklists, the day it happened next to the day you saved it, and one PDF of a folder when someone asks. On iPhone, after you add a photo, it offers to remove the original from Photos; nothing is removed unless you tap Remove and confirm on your iPhone.',
+    keepBody: 'A hidden album still mixes the screenshot of a pickup text or an HR email with your pictures. KeepMyProof is a private phone app for papers: folders with checklists, the day it happened next to the day you saved it, and one PDF of a folder when someone asks. On iPhone, if you turn on the offer in Settings, it asks after you add a photo whether to remove the original from Photos; nothing is removed unless you tap Remove and confirm on your iPhone.',
     notAdvice: 'Educational only. Not legal advice.', by: 'By KeepMyProof, made by Spry Labs', published: 'Published', updated: 'Updated', related: 'More guides',
   },
   es: {
@@ -37,7 +37,7 @@ export const GUIDE_COPY = {
     hubDesc: 'Guías paso a paso para ocultar capturas y documentos en iPhone y Android, según la ayuda de Apple y Google, y una carpeta privada para papeles.',
     nav: 'Guías', bestFor: 'Para quién es esta guía:', sourcesH: 'Fuentes', checked: (d) => `Pasos revisados con estas páginas el ${d}. Los nombres de los menús pueden cambiar con una actualización del teléfono.`,
     keepH: 'Saque los papeles de sus fotos',
-    keepBody: 'Un álbum oculto sigue mezclando la captura de un mensaje sobre la entrega de los niños o un correo de recursos humanos con sus fotos. KeepMyProof es una app privada para papeles: carpetas con listas, el día en que pasó junto al día en que lo guardó, y un solo PDF de una carpeta cuando alguien se lo pide. En iPhone, después de agregar una foto, le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y lo confirme en su iPhone.',
+    keepBody: 'Un álbum oculto sigue mezclando la captura de un mensaje sobre la entrega de los niños o un correo de recursos humanos con sus fotos. KeepMyProof es una app privada para papeles: carpetas con listas, el día en que pasó junto al día en que lo guardó, y un solo PDF de una carpeta cuando alguien se lo pide. En iPhone, si activa esa opción en Ajustes, después de agregar una foto le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y lo confirme en su iPhone.',
     notAdvice: 'Solo informativo. No es asesoría legal.', by: 'Por KeepMyProof, hecho por Spry Labs', published: 'Publicado', updated: 'Actualizado', related: 'Más guías',
   },
 };
@@ -222,7 +222,7 @@ export const GUIDES = [
       ],
       faq: [
         ['How long do deleted photos stay on iPhone?', 'Apple says you can recover a deleted photo from the Recently Deleted album for 30 days. After that it is removed for good. If you want it gone sooner, open Recently Deleted under Utilities in Photos and delete it there, after checking that your saved copy opens and is complete.'],
-        ['Does KeepMyProof delete the original for me?', 'Only if you ask. On iPhone, after you add a photo, KeepMyProof offers to remove the original from Photos. Keep it in Photos is the first choice; if you tap Remove, your iPhone asks you to confirm, and the photo goes to Recently Deleted for 30 days. You can turn the question off in Settings.'],
+        ['Does KeepMyProof delete the original for me?', 'Only if you ask. On iPhone, if you turn on the offer at setup or in Settings, KeepMyProof asks after you add a photo whether to remove the original from Photos. Keep it in Photos is the first choice; if you tap Remove, your iPhone asks you to confirm, and the photo goes to Recently Deleted for 30 days. You can turn the question off again in Settings.'],
         ['Will deleting on my phone delete my backup?', 'It can. With iCloud Photos on, Apple says a deletion applies on all your devices. Google says deleting in Google Photos deletes the same item from your device and from backup. A copy you saved in a separate app or file is not touched by deleting the photo.'],
       ],
     },
@@ -240,7 +240,7 @@ export const GUIDES = [
       ],
       faq: [
         ['¿Cuánto tiempo quedan las fotos borradas en iPhone?', 'Apple dice que puede recuperar una foto borrada desde el álbum Eliminado durante 30 días. Después se borra para siempre. Si la quiere fuera antes, abra Eliminado en Utilidades dentro de Fotos y bórrela ahí, después de comprobar que su copia guardada abre y está completa.'],
-        ['¿KeepMyProof borra el original por mí?', 'Solo si usted lo pide. En iPhone, después de agregar una foto, KeepMyProof le ofrece quitar el original de Fotos. Dejarlo en Fotos es la primera opción; si toca Quitar, su iPhone le pide confirmar y la foto pasa al álbum Eliminado durante 30 días. Puede desactivar la pregunta en Ajustes.'],
+        ['¿KeepMyProof borra el original por mí?', 'Solo si usted lo pide. En iPhone, si activa esa opción al configurar la app o en Ajustes, después de agregar una foto KeepMyProof le ofrece quitar el original de Fotos. Dejarlo en Fotos es la primera opción; si toca Quitar, su iPhone le pide confirmar y la foto pasa al álbum Eliminado durante 30 días. Puede volver a desactivar la pregunta en Ajustes.'],
         ['¿Borrar en el teléfono borra mi respaldo?', 'Puede pasar. Con Fotos de iCloud activado, Apple dice que lo que borra se borra en todos sus dispositivos. Google dice que borrar en Google Fotos borra lo mismo del dispositivo y del respaldo. Una copia que guardó en otra app o en un archivo aparte no se toca al borrar la foto.'],
       ],
     },
@@ -263,7 +263,7 @@ export const GUIDES = [
       faq: [
         ['Can someone see my hidden screenshots?', 'Anyone who can unlock them can. On iPhone, the Hidden album opens with Face ID or Touch ID; on Android, Locked Folder opens with your screen lock. If someone else knows your passcode or screen lock, change it first, then hide the screenshots, so the lock only opens for you.'],
         ['Should I delete the original texts after taking screenshots?', 'Not without advice. A screenshot can miss the sender\'s number or part of the thread, so many people keep the original messages too. If the texts may matter in a custody, work or housing dispute, ask a lawyer how to keep them. This is educational only, not legal advice.'],
-        ['How does KeepMyProof help with screenshots of texts?', 'It keeps them in a private folder on your phone with a checklist, the day it happened next to the day you saved it, and one PDF of the folder when someone asks. On iPhone it offers to remove the original from Photos after you add it, only if you confirm.'],
+        ['How does KeepMyProof help with screenshots of texts?', 'It keeps them in a private folder on your phone with a checklist, the day it happened next to the day you saved it, and one PDF of the folder when someone asks. On iPhone, with the offer turned on in Settings, it asks whether to remove the original from Photos after you add it, and removes it only if you confirm.'],
       ],
     },
     es: {
@@ -281,7 +281,7 @@ export const GUIDES = [
       faq: [
         ['¿Alguien puede ver mis capturas ocultas?', 'Quien pueda desbloquearlas, sí. En iPhone, el álbum Oculto se abre con Face ID o Touch ID; en Android, la Carpeta bloqueada se abre con el bloqueo de pantalla. Si otra persona sabe su código o su bloqueo, cámbielo primero y luego oculte las capturas, para que solo se abran para usted.'],
         ['¿Debo borrar los mensajes originales después de la captura?', 'No sin consejo. Una captura puede no mostrar el número de quien envió o parte de la conversación, así que muchas personas conservan también los mensajes. Si pueden importar en un caso de custodia, trabajo o vivienda, pregunte a un abogado cómo guardarlos. Es solo informativo, no asesoría legal.'],
-        ['¿Cómo ayuda KeepMyProof con las capturas de mensajes?', 'Las guarda en una carpeta privada en su teléfono con una lista, el día en que pasó junto al día en que lo guardó, y un solo PDF de la carpeta cuando alguien se lo pide. En iPhone le ofrece quitar el original de Fotos después de agregarlo, solo si usted confirma.'],
+        ['¿Cómo ayuda KeepMyProof con las capturas de mensajes?', 'Las guarda en una carpeta privada en su teléfono con una lista, el día en que pasó junto al día en que lo guardó, y un solo PDF de la carpeta cuando alguien se lo pide. En iPhone, con esa opción activada en Ajustes, le ofrece quitar el original de Fotos después de agregarlo, y solo lo quita si usted confirma.'],
       ],
     },
   },
@@ -309,7 +309,7 @@ export const GUIDES = [
       faq: [
         ['Is KeepMyProof a photo vault?', 'No. It locks what you keep, like a vault, but it is built for papers: letters, screenshots of texts, scans, receipts and notes, sorted into folders with suggested checklists. It records the day something happened next to the day you saved it, and makes one PDF of a folder when someone asks for it.'],
         ['Is a vault for papers secure?', 'KeepMyProof encrypts what you keep on your phone, opens with a passcode, Face ID or fingerprint, has no account, and never sends your papers to us or to AI. Anyone who knows your passcode can open it, so use one only you know, and keep the encrypted backup it makes in your own cloud drive.'],
-        ['Can I take papers out of Photos into the vault?', 'Yes. Add a photo from your library to a folder. On iPhone, KeepMyProof then offers to remove the original from Photos; Keep it in Photos is the first choice, and if you tap Remove your iPhone asks you to confirm. On Android, delete the original in Google Photos yourself.'],
+        ['Can I take papers out of Photos into the vault?', 'Yes. Add a photo from your library to a folder. On iPhone, with the offer turned on in Settings, KeepMyProof then asks whether to remove the original from Photos; Keep it in Photos is the first choice, and if you tap Remove your iPhone asks you to confirm. On Android, delete the original in Google Photos yourself.'],
       ],
     },
     es: {
@@ -333,7 +333,7 @@ export const GUIDES = [
       faq: [
         ['¿KeepMyProof es una bóveda de fotos?', 'No. Bloquea lo que guarda, como una bóveda, pero está hecha para papeles: cartas, capturas de mensajes, escaneos, recibos y notas, en carpetas con listas sugeridas. Registra el día en que pasó algo junto al día en que lo guardó, y hace un solo PDF de una carpeta cuando alguien se lo pide.'],
         ['¿Es segura una bóveda para papeles?', 'KeepMyProof cifra lo que guarda en su teléfono, se abre con un código, Face ID o huella, no tiene cuenta y nunca nos envía sus papeles ni a la IA. Quien sepa su código puede abrirla, así que use uno que solo usted conozca y guarde el respaldo cifrado en su propia nube.'],
-        ['¿Puedo pasar papeles de Fotos a la bóveda?', 'Sí. Agregue una foto de su fototeca a una carpeta. En iPhone, KeepMyProof luego le ofrece quitar el original de Fotos; Dejarlo en Fotos es la primera opción, y si toca Quitar su iPhone le pide confirmar. En Android, borre usted el original en Google Fotos.'],
+        ['¿Puedo pasar papeles de Fotos a la bóveda?', 'Sí. Agregue una foto de su fototeca a una carpeta. En iPhone, con esa opción activada en Ajustes, KeepMyProof luego le ofrece quitar el original de Fotos; Dejarlo en Fotos es la primera opción, y si toca Quitar su iPhone le pide confirmar. En Android, borre usted el original en Google Fotos.'],
       ],
     },
   },

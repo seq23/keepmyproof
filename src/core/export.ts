@@ -13,15 +13,17 @@ export interface ExportOptions { title: string; madeOn: string; lang: Lang; cove
 /** Page margins in points. iOS printing ignores CSS @page margins, so they are passed to the printer
  *  too (expo-print); without them the folder PDF ran ~14 pt from the paper's edge (iPad pass, 20 Nov 2026). */
 export const PDF_MARGINS = { top: 42, right: 42, bottom: 42, left: 42 };
+/** With a cover text (Plus), page 1 is the cover (title, date, cover text, the date and educational lines) and the
+ *  contents list starts on page 2 (promise audit 27 Nov 2026: the cover used to print above the contents). */
 export function exportHtml(items: Item[], options: ExportOptions): string {
   const t = copy(options.lang);
   const date = (s: string | null) => s === null ? t('unknown') : new Date(s).toLocaleString(LOCALE[options.lang]);
   const day = (s: string | null) => s === null ? t('unknown') : showHappened(s, LOCALE[options.lang]);
   const dates = (i: Item) => `<p>${escape(t('happened'))}: ${escape(day(i.happenedOn))}<br>${escape(t('saved'))}: ${escape(date(i.savedOn))}<br>${escape(t('changed'))}: ${escape(i.changedOn ? date(i.changedOn) : t('never'))}</p>`;
-  return `<!doctype html><html lang="${LOCALE[options.lang].replace(/-US$/, '')}"><head><meta charset="utf-8"><style>@page{margin:42px}body{font:15px -apple-system,Arial,${CJK_FONTS},sans-serif;color:#2a251f}h1{font:28px Georgia,${CJK_FONTS},serif}h2{font:21px Georgia,${CJK_FONTS},serif}${options.lang === 'ko' ? 'body{word-break:keep-all}' : ''}p{white-space:pre-wrap;overflow-wrap:anywhere}section{break-before:page}li{margin:12px 0}</style></head><body>
+  return `<!doctype html><html lang="${LOCALE[options.lang].replace(/-US$/, '')}"><head><meta charset="utf-8"><style>@page{margin:42px}body{font:15px -apple-system,Arial,${CJK_FONTS},sans-serif;color:#2a251f}h1{font:28px Georgia,${CJK_FONTS},serif}h2{font:21px Georgia,${CJK_FONTS},serif}${options.lang === 'ko' ? 'body{word-break:keep-all}' : ''}p{white-space:pre-wrap;overflow-wrap:anywhere}section,.cover-end{break-before:page}li{margin:12px 0}</style></head><body>
     <h1>${escape(options.title)}</h1><p>${escape(date(options.madeOn))} · ${items.length} ${escape(t('items'))}</p>
     ${options.cover ? `<p>${escape(options.cover)}</p>` : ''}<p>${escape(t('dateHonesty'))}</p><p>${escape(t('educational'))}</p>
-    <h2>${escape(t('contents'))}</h2><ol>${items.map(i => `<li>${escape(i.title)}${dates(i)}</li>`).join('')}</ol>
+    <h2${options.cover ? ' class="cover-end"' : ''}>${escape(t('contents'))}</h2><ol>${items.map(i => `<li>${escape(i.title)}${dates(i)}</li>`).join('')}</ol>
     ${items.map(i => `<section><h2>${escape(i.title)}</h2>${dates(i)}<p>${escape(i.note)}</p>${i.filename ? `<p>${escape(i.filename)}</p>` : ''}${i.tags.length ? `<p>${escape(t('tagsShown'))}: ${escape(i.tags.join(', '))}</p>` : ''}
       ${(options.history ? i.history : []).map(r => `<h3>${escape(t('earlier'))} · ${escape(date(r.changedOn))}</h3><p>${escape(r.title)}<br>${escape(r.note)}<br>${escape(t('happened'))}: ${escape(day(r.happenedOn))}</p>`).join('')}</section>`).join('')}</body></html>`;
 }

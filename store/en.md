@@ -9,7 +9,7 @@ save original files, and back up an encrypted copy to your own cloud drive.
 
 No account. No ads. No analytics. Free for your first 25 items. Opening your
 papers, full-folder PDFs, originals, backup and restore stay free. Plus adds
-unlimited items, custom folders and tags, and PDFs of chosen items or dates.
+unlimited items, custom folders and tags, and PDFs of a date range with a cover page.
 
 Educational only. Not legal advice. KeepMyProof is not a law firm and is not
 affiliated with the VA. It does not prepare, file or judge a claim.

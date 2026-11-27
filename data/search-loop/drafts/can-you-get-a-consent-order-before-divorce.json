@@ -55,7 +55,7 @@
     {
       "heading": "Using KeepMyProof to store your drafts and final papers",
       "paragraphs": [
-        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or upload each draft of your settlement agreement, the final signed copy, financial worksheets, and any court filings. On iPhone, the app can remove the original from Photos after import; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. This keeps your phone's camera roll clean while preserving a secure, time-stamped copy in the vault."
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or import each draft of your settlement agreement, the final signed copy, financial worksheets, and any court filings. On iPhone, if you turn on that offer in Settings, the app asks after import whether to remove the original from Photos; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. This keeps your phone's camera roll clean while preserving a secure, time-stamped copy in the vault."
       ],
       "bullets": [
         "Locked app on your home screen",

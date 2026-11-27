@@ -55,12 +55,12 @@
     {
       "heading": "How KeepMyProof helps you prepare",
       "paragraphs": [
-        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or upload financial records, school letters, medical bills, and communication logs. On iPhone, the app offers to remove the original from Photos after import; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault keeps your evidence organized and timestamped for easy retrieval when you need it. Learn more at the vault hub."
+        "KeepMyProof is a private vault for photos and documents. It appears as a normal locked app on your home screen. You can photograph or import financial records, school letters, medical bills, and communication logs. On iPhone, if you turn on that offer in Settings, the app asks after import whether to remove the original from Photos; the phone asks you to confirm, and Recently Deleted keeps it for 30 days. On Android, you delete the original in Google Photos. The vault keeps your evidence organized and timestamped for easy retrieval when you need it. Learn more at the vault hub."
       ],
       "bullets": [
         "Import photos and PDFs directly into the vault",
         "Automatic timestamps on every entry",
-        "Search by date, tag, or keyword",
+        "Search item names, notes, file names and tags (tags with Plus)",
         "Works offline once data is synced"
       ]
     }
