@@ -238,5 +238,73 @@
       "\\bwin\\s+your\\s+case\\b"
     ],
     "why": "9 Nov 2026: three pages with 'proves'/'best' were committed, refused by site/build.mjs and turned main red. The same English words as site/lib/gate.mjs BANNED; the engine (v1.9.1) now drops such a page before committing it."
+  },
+  "seeds_from": "ChatGPT's own searches before it recommends an app, captured 27 Nov 2026 (her yes: \"yes turn those searches into pages\"); worded without the site's banned words",
+  "seeds": [
+    {
+      "query": "private photo vault app for iphone with no account",
+      "wants": [
+        "no account",
+        "offline",
+        "encryption"
+      ]
+    },
+    {
+      "query": "app to document evidence for a custody case",
+      "wants": [
+        "private journal",
+        "screenshots",
+        "export"
+      ]
+    },
+    {
+      "query": "home inventory app for an insurance claim",
+      "wants": [
+        "photos of belongings",
+        "export a list",
+        "free"
+      ]
+    },
+    {
+      "query": "app for move-in photos to get your security deposit back",
+      "wants": [
+        "dated photos",
+        "move-out photos",
+        "report"
+      ]
+    },
+    {
+      "query": "app to document a hostile work environment for hr",
+      "wants": [
+        "dated incident log",
+        "export for HR"
+      ]
+    }
+  ],
+  "product": {
+    "checked_at": "2026-11-27 from https://keepmyproof.com/llms.txt and site/copy.mjs",
+    "facts": [
+      "KeepMyProof is a private phone app for iPhone and Android that keeps copies of the papers, photos, screenshots and notes a person already has.",
+      "KeepMyProof is not in the App Store or Google Play yet: it is coming soon to both.",
+      "Everything you add is encrypted on the phone and locked behind an app passcode, with Face ID or a fingerprint if you want it.",
+      "KeepMyProof has no account, no ads and no analytics, and it never sends your papers to AI.",
+      "Your papers leave the phone only when you send a PDF or a file yourself, or save your encrypted backup to your own iCloud Drive or Google Drive.",
+      "A 12-word recovery phrase you write down opens your encrypted backup on a new phone; without the phrase nobody, including KeepMyProof, can open it.",
+      "It has seven folders with suggested checklists: divorce prep and co-parenting log, VA disability claim papers, after a parent dies (executor papers), special-ed (IEP) binder, workplace evidence, tenant move-in and move-out, and home inventory for insurance.",
+      "Each item has two dates: the date it happened, which you enter, and the date it was saved on the phone.",
+      "A folder becomes one PDF with an index.",
+      "Photos you add never show in your camera roll; on iPhone it offers to remove the original from Photos, and on Android you delete the original yourself.",
+      "It is free for the first 25 items; adding stops at 25, and viewing, PDFs, export, backup and restore never lock.",
+      "KeepMyProof Plus costs US $19.99 a year or $39.99 once for life and adds unlimited items, your own folders and tags, and PDFs of chosen items or dates.",
+      "The app and its folder checklists are in English, Spanish, Simplified Chinese and Korean.",
+      "KeepMyProof is educational only: it is not legal advice, not a law firm, and not affiliated with the VA, any court or any school."
+    ],
+    "lacks": [
+      "KeepMyProof does not sync papers or open them on any other device, and it does not keep them in iCloud or Google Drive; the only copy elsewhere is the encrypted backup file you choose to save.",
+      "KeepMyProof does not record calls or conversations, read your messages, or pull texts or emails off your phone for you.",
+      "KeepMyProof is a normal locked app on the home screen: it is not hidden, disguised, a calculator vault or undetectable.",
+      "KeepMyProof does not prepare, file, rate or judge a claim, does not make papers court-ready or admissible, and does not contact a landlord, employer, insurer, school, court or the VA for you.",
+      "KeepMyProof does not value your belongings, file an insurance claim, or write an inspection report for a landlord."
+    ]
   }
 }
