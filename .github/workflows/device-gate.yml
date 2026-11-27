@@ -93,5 +93,8 @@ jobs:
             gate-out/result.json
             gate-out/shots/**/*.png
             gate-out/logs/*.log
+            gate-out/logs/dbg-*/**/screenshots/*.png
+            gate-out/logs/dbg-*/**/screen-hierarchy/*.json
+            gate-out/said.txt
             gate.log
           retention-days: 30
