@@ -7,4 +7,4 @@ appId: com.keepmyproof.app
     commands:
       - tapOn: "Folders"
 - copyTextFrom: "Free plan: \\d+ of 25 items used\\.|\\d+ items · Plus"
-- evalScript: ${http.post('http://127.0.0.1:8765/', { body: 'GATE_COUNT=' + (maestro.copiedText.match(/\d+/) || ['?'])[0] })}
+- evalScript: "${http.post('http://127.0.0.1:8765/', { body: 'GATE_COUNT=' + (maestro.copiedText.match(/[0-9]+/) || ['?'])[0] })}"

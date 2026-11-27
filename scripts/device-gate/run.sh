@@ -88,7 +88,8 @@ xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; V="$(data)/Documents/vault";
 KB=$(( $(du -sk "$V" | cut -f1) + 2048 ))
 if hdiutil create -size ${KB}k -fs HFS+ -volname gatefull -layout NONE "$W/full.dmg" >/dev/null && hdiutil attach -nobrowse -mountpoint "$V" "$W/full.dmg" >/dev/null; then
   cp -R "$W/vault-before/." "$V/"
-  dd if=/dev/zero of="$V/.filler" bs=4k 2>/dev/null; FREE=$(df -k "$V" | awk 'NR==2{print $4}'); echo "full disk: ${FREE} KB free"
+  # Leave 64 KB: enough to open the database, too little to write the vault's next copy.
+  AV=$(df -k "$V" | awk 'NR==2{print $4}'); dd if=/dev/zero of="$V/.filler" bs=1k count=$(( AV > 64 ? AV - 64 : 0 )) 2>/dev/null; FREE=$(df -k "$V" | awk 'NR==2{print $4}'); echo "full disk: ${FREE} KB free"
   flow unlock CODE=$CODE1; before=$(count)
   flow add-one-note TITLE="Gate full disk note" SHOT=full; refused=$(said GATE_SAVE)
   xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; rm -f "$V/.filler"; mkdir -p "$W/vault-after"; cp -R "$V/." "$W/vault-after/"
@@ -130,6 +131,8 @@ xcrun simctl launch "$U" "$BID" >/dev/null; flow unlock CODE=$CODE2
 if flow purchase SHOT=buy; then record store-sandbox-purchase-and-restore pass "RevenueCat Test Store: Subscribe → test purchase → ✓ Plus is on → Restore purchases → ✓ Purchases checked"
 else record store-sandbox-purchase-and-restore fail "see $LAST_LOG"; fi
 
+# Maestro writes takeScreenshot files beside the flow, not in the working directory.
+find "$GITHUB_WORKSPACE/.maestro" "$OUT/shots" -name 'gate-*.png' -newer "$OUT/said.txt" -exec cp {} "$OUT/shots/" \; 2>/dev/null
 node -e '
   const fs = require("fs"); const [res, out, sha] = process.argv.slice(1);
   const DEVICE_CHECKS = JSON.parse(process.env.CHECKS);

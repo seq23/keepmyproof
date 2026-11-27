@@ -25,4 +25,4 @@ appId: com.keepmyproof.app
     when:
       visible: "That did not finish.*"
     commands:
-      - evalScript: ${http.post('http://127.0.0.1:8765/', { body: 'GATE_SAVE=refused' })}
+      - evalScript: "${http.post('http://127.0.0.1:8765/', { body: 'GATE_SAVE=refused' })}"
