@@ -98,3 +98,4 @@ jobs:
             gate-out/said.txt
             gate.log
           retention-days: 30
+          include-hidden-files: true
