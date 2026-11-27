@@ -2,9 +2,9 @@
 appId: com.keepmyproof.app
 ---
 - scrollUntilVisible:
-    element: "Divorce or custody.*"
+    element: "Divorce, custody.*"
     direction: DOWN
-- tapOn: "Divorce or custody.*"
+- tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
