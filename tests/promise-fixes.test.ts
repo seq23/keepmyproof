@@ -91,3 +91,18 @@ test('a state list says "and DC" exactly when it lists DC, in every language', (
   }
   assert.ok(indexes >= 6, `folder state indexes checked: ${indexes}`);
 });
+
+// App readiness, 27 Nov 2026: the app does talk to the network (RevenueCat, for Plus), so no line it shows or the
+// store shows may say that NOTHING leaves the device. Lines about the person's papers ("your papers leave only…")
+// stay true. A claim check, in every language the app ships.
+const NOTHING_LEAVES = [/\bnothing leaves\b/i, /\bnada sale\b/i, /任何内容都不会离开/, /아무것도 밖으로/];
+test('no app or store line says nothing at all leaves the device, while the app contacts RevenueCat', () => {
+  const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
+  assert.ok(pkg.dependencies['react-native-purchases'], 'the claim check rests on the app shipping RevenueCat');
+  const said: string[] = [];
+  for (const [key, langs] of Object.entries(strings as unknown as Record<string, readonly string[]>))
+    for (const line of langs) if (NOTHING_LEAVES.some(r => r.test(line)) && !/Photos|照片|사진|Fotos/.test(line)) said.push(`${key}: ${line}`);
+  for (const f of ['store/en.md', 'store/es.md', 'store/zh.md', 'store/ko.md', 'store/google-play.json', 'store/review-notes.md'])
+    for (const line of readFileSync(f, 'utf8').split('\n')) if (NOTHING_LEAVES.some(r => r.test(line))) said.push(`${f}: ${line.trim()}`);
+  assert.deepEqual(said, []);
+});
