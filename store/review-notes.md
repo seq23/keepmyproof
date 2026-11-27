@@ -14,6 +14,8 @@ Before pasting (App Store Connect, done by the owner or coordinator, never an ag
 
 ---
 
+Build 1.0 (8).
+
 KeepMyProof keeps copies of a person's own papers (photos, files, notes) on the device, encrypted, in folders with suggested checklists. There is no account, no sign-in and no server for papers.
 
 Getting in: on first launch choose a language, then any 6-digit passcode (for example 135790), write down the 12 recovery words, and type them back. Home shows eight folders: seven with suggested checklists, and Private.
