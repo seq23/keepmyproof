@@ -111,12 +111,12 @@ function restore(c: Ctx, o: { text: string; words: string; newCode?: string; arm
   const tag = `cut-${Date.now()}`;
   if (o.arm) writeFileSync(join(c.sim.gateDir(), 'arm'), `vault-write ${o.arm} ${tag}`);
   c.ui.tap('kmp-restore');
-  const at = join(c.sim.gateDir(), `at-${tag}`);
+  const at = join(c.sim.gateDir(), `at-${tag}`), disarm = () => rmSync(join(c.sim.gateDir(), 'arm'), { force: true });
   for (const end = Date.now() + 300_000; Date.now() < end;) {
     if (o.arm && existsSync(at)) return { outcome: 'cut' };
     const els = c.ui.tree();
-    const err = byId(els, 'kmp-error'); if (err) return { outcome: 'refused', text: err.text };
-    if (onScreen(els, 'home') && byId(els, 'kmp-notice')?.text === t('restoreDone')) return { outcome: 'restored' };
+    const err = byId(els, 'kmp-error'); if (err) { disarm(); return { outcome: 'refused', text: err.text }; }
+    if (onScreen(els, 'home') && byId(els, 'kmp-notice')?.text === t('restoreDone')) { disarm(); return { outcome: 'restored' }; }
   }
   throw new TestError('waited 300 s for the restore to end');
 }

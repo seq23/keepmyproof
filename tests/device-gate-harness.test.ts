@@ -3,20 +3,26 @@
 // never did the wrong thing.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { clear, elements, keyboard, parseBounds, type Node } from '../scripts/device-gate/ui';
+import { clear, elements, keyboard, type AxNode } from '../scripts/device-gate/ui';
 import { parseCount } from '../scripts/device-gate/checks';
 import { decide, type Attempt } from '../scripts/device-gate/gate';
 import { copy } from '../src/strings';
 
-const el = (id: string, bounds: string, more: Record<string, string> = {}): Node => ({ attributes: { 'resource-id': id, bounds, ...more } });
+// AXe's describe-ui shape: frames in points, the testID as AXUniqueId.
+const frame = (b: string) => { const [x1, y1, x2, y2] = b.match(/-?\d+/g)!.map(Number) as [number, number, number, number]; return { x: x1, y: y1, width: x2 - x1, height: y2 - y1 }; };
+const el = (id: string, bounds: string, more: Partial<AxNode> = {}): AxNode => ({ AXUniqueId: id, frame: frame(bounds), ...more });
 // A phone 402 x 874 pt: the scroll view from y 60 to 772, the tab bar 782-830 (gate run 46163383574, group B).
-const screen = (...kids: Node[]): Node => ({ attributes: { bounds: '[0,0][402,874]' }, children: [el('kmp-screen-settings', '[0,60][402,772]'), ...kids] });
-const tabs = el('kmp-tabs', '[10,782][392,830]', {});
+const screen = (...kids: AxNode[]): AxNode => ({ type: 'Application', frame: frame('[0,0][402,874]'), children: [el('kmp-screen-settings', '[0,60][402,772]'), ...kids] });
+const tabs = el('kmp-tabs', '[10,782][392,830]');
 
-test('parseBounds reads Maestro\'s bounds and refuses empty or malformed ones', () => {
-  assert.deepEqual(parseBounds('[16,793][386,841]'), { x1: 16, y1: 793, x2: 386, y2: 841 });
-  assert.equal(parseBounds('[0,0][0,0]'), null);
-  assert.equal(parseBounds('16,793,386,841'), null);
+test('AXe\'s tree: ids, words, values and the keyboard are read; zero-size elements are dropped', () => {
+  const els = elements([screen(el('kmp-passcode', '[16,300][386,348]', { type: 'SecureTextField', AXValue: '••••••' }),
+    { type: 'Keyboard', frame: frame('[0,539][402,874]') }, el('kmp-gone', '[0,0][0,0]'),
+    el('kmp-tick', '[16,400][386,440]', { AXLabel: 'Bank statement', AXValue: '1' }))]);
+  assert.equal(els.find(e => e.id === 'kmp-passcode')?.value, '••••••');
+  assert.equal(keyboard(els)?.y1, 539);
+  assert.equal(els.some(e => e.id === 'kmp-gone'), false);
+  const tick = els.find(e => e.id === 'kmp-tick'); assert.equal(tick?.text, 'Bank statement'); assert.equal(tick?.checked, true);
 });
 
 test('a target in plain view is tapped at its centre', () => {
