@@ -27,6 +27,11 @@ appId: com.keepmyproof.app
 - retry:
     maxRetries: 3
     commands:
+      # With the note's keyboard still up, the first tap only closes the keyboard and the name field does not take
+      # focus (run 46083058306: the name went into the note field, and eraseText wiped the note). Tap again to focus.
+      - tapOn:
+          id: "Name it"
+      - waitForAnimationToEnd
       - tapOn:
           id: "Name it"
       - eraseText: 80
@@ -36,6 +41,13 @@ appId: com.keepmyproof.app
       - assertVisible:
           id: "Name it"
           text: ${TITLE}
+# The note is still whole (a wrong focus would have typed into it or erased it).
+- scrollUntilVisible:
+    element:
+      id: "Your note \\(optional\\)"
+      text: ${NOTE}
+    direction: DOWN
+    centerElement: true
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
