@@ -2,11 +2,11 @@
 appId: com.keepmyproof.app
 ---
 - extendedWaitUntil:
-    visible: "Browse|Recents|On My iPhone|${FILE}.*"
+    visible: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
     timeout: 20000
 - runFlow:
     when:
-      notVisible: "${FILE}.*"
+      notVisible: "${FILE.split('.')[0]}.*"
     commands:
       - runFlow:
           when:
@@ -19,12 +19,14 @@ appId: com.keepmyproof.app
           commands:
             - tapOn: "On My iPhone"
 - extendedWaitUntil:
-    visible: "${FILE}.*"
+    visible: "${FILE.split('.')[0]}.*"
     timeout: 20000
 # Tap the file's cell (id "gate-paper, pdf" / "gate-good.kmp, kmp"), not its name label: a tap on the label left the
-# picker open (gate run 46090441187, flows 7 and 9).
+# picker open (gate run 46090441187, flows 7 and 9). Files labels a PDF or PNG without its extension ("gate-paper"),
+# so both lines match on the name before the first dot. No "$" inside ${…}: Maestro evaluates only \$\{([^$]*)}, and
+# an expression holding one is left as plain text (gate run 46098006485, flows 8, 10, 16, 22, 23: no cell matched).
 - tapOn:
-    id: "${FILE.replace(/\\.[a-z]+$/, '')}(\\.[a-z]+)?, .*"
+    id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
 - runFlow:
     when:
       visible: "Open"

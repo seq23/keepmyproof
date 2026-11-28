@@ -1,4 +1,4 @@
-# Forgot the passcode › set NEWCODE with the 12 WORDS. Ends on Home.
+# Forgot the passcode › set NEWCODE with the 12 WORDS. Ends unlocked, on Settings (where lock.yaml locked it).
 appId: com.keepmyproof.app
 ---
 - runFlow: lock.yaml
@@ -20,7 +20,9 @@ appId: com.keepmyproof.app
     element: "Set a new passcode ›"
     direction: DOWN
 - tapOn: "Set a new passcode ›"
+# Unlocked: the app reopens on the screen it was locked from (Settings, by lock.yaml), so wait for the tab bar, which
+# only an open vault shows (gate run 46098006485, flow 4: the reset worked and the app sat on Settings).
 - extendedWaitUntil:
-    visible: "Free plan: .*"
+    visible: "Folders"
     timeout: 60000
 - takeScreenshot: gate-${SHOT}-reset-phrase
