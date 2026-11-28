@@ -10,13 +10,9 @@ appId: com.keepmyproof.app
     element: "Check the saved backup ›"
     direction: DOWN
 - runFlow:
-    file: tap.yaml
-    env:
-      TAP: "Check the saved backup ›"
-      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
-- runFlow:
     file: pick.yaml
     env:
+      OPEN: "Check the saved backup ›"
       FILE: ${FILE}
 - scrollUntilVisible:
     element: "Check the saved backup ›"

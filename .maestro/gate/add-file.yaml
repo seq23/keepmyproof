@@ -27,14 +27,14 @@ appId: com.keepmyproof.app
           direction: DOWN
           centerElement: true
 - runFlow:
-    file: tap.yaml
-    env:
-      TAP: "Choose a file ›"
-      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
-- runFlow:
     file: pick.yaml
     env:
+      OPEN: "Choose a file ›"
       FILE: ${FILE}
+# The add screen shows the file it now holds (its name, under "Choose a file ›"): the pick reached the app.
+- extendedWaitUntil:
+    visible: "${FILE}"
+    timeout: 20000
 - extendedWaitUntil:
     visible:
       id: "Name it"
