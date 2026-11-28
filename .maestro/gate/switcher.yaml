@@ -1,0 +1,12 @@
+# Leaves the app on an open folder (paper titles on screen); the host then sends it to the background.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "Divorce, custody.*"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Divorce, custody.*"
+- extendedWaitUntil:
+    visible: "Gate note one"
+    timeout: 15000
+- takeScreenshot: gate-${SHOT}-folder-open

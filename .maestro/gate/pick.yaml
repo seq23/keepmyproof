@@ -1,0 +1,32 @@
+# The system document picker: opens FILE from Files › On My iPhone (Browse first if it opens on Recents).
+appId: com.keepmyproof.app
+---
+- extendedWaitUntil:
+    visible: "Browse|Recents|On My iPhone|${FILE}.*"
+    timeout: 20000
+- runFlow:
+    when:
+      notVisible: "${FILE}.*"
+    commands:
+      - runFlow:
+          when:
+            visible: "Browse"
+          commands:
+            - tapOn: "Browse"
+      - runFlow:
+          when:
+            visible: "On My iPhone"
+          commands:
+            - tapOn: "On My iPhone"
+- extendedWaitUntil:
+    visible: "${FILE}.*"
+    timeout: 20000
+# Tap the file's cell (id "gate-paper, pdf" / "gate-good.kmp, kmp"), not its name label: a tap on the label left the
+# picker open (gate run 46090441187, flows 7 and 9).
+- tapOn:
+    id: "${FILE.replace(/\\.[a-z]+$/, '')}(\\.[a-z]+)?, .*"
+- runFlow:
+    when:
+      visible: "Open"
+    commands:
+      - tapOn: "Open"

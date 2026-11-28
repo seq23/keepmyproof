@@ -1,0 +1,44 @@
+# Tries to save one note in Private (full-disk check). Env: TITLE, SHOT. Ends wherever the save left it.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "Private.*"
+    direction: DOWN
+- tapOn: "Private.*"
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- tapOn: "\\+ Add something"
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: DOWN
+    centerElement: true
+- retry:
+    maxRetries: 3
+    commands:
+    - tapOn:
+        id: "Name it"
+    - waitForAnimationToEnd
+    - tapOn:
+        id: "Name it"
+    - eraseText: 80
+    - inputText: ${TITLE}
+    - pressKey: Enter
+    - waitForAnimationToEnd
+    - assertVisible:
+        id: "Name it"
+        text: ${TITLE}
+- scrollUntilVisible:
+    element: "Save to .*"
+    direction: DOWN
+- tapOn: "Save to .*"
+- extendedWaitUntil:
+    visible: "That did not finish.*|Checklist|.*Add something"
+    timeout: 30000
+- takeScreenshot: gate-${SHOT}-save-attempt
+- runFlow:
+    when:
+      visible: "That did not finish.*"
+    commands:
+      - evalScript: "${http.post('http://127.0.0.1:8765/', { body: 'GATE_SAVE=refused' })}"

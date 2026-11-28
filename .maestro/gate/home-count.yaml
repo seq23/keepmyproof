@@ -1,0 +1,9 @@
+# Back to Home from wherever the last flow ended, then GATE_COUNT=n.
+appId: com.keepmyproof.app
+---
+- runFlow:
+    when:
+      visible: "← Back.*"
+    commands:
+      - tapOn: "← Back.*"
+- runFlow: count.yaml

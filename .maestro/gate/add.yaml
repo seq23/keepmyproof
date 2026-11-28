@@ -1,0 +1,43 @@
+# The test vault's papers: two notes and two files (invented, put in Files › On My iPhone by the host).
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "Divorce, custody.*"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Divorce, custody.*"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- runFlow:
+    file: ../add-note.yaml
+    env:
+      TITLE: "Gate note one"
+      NOTE: "Invented note for the device gate."
+- runFlow:
+    when:
+      visible: "How did you hear about KeepMyProof\\?"
+    commands:
+      - tapOn: "Skip ›"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 15000
+- runFlow:
+    file: ../add-note.yaml
+    env:
+      TITLE: "Gate note two"
+      NOTE: "Second invented note."
+- runFlow:
+    file: add-file.yaml
+    env:
+      FILE: "gate-paper.pdf"
+      TITLE: "Gate file PDF"
+- runFlow:
+    file: add-file.yaml
+    env:
+      FILE: "gate-photo.png"
+      TITLE: "Gate file picture"
+- tapOn: "← Back to Home"
+- extendedWaitUntil:
+    visible: "Free plan: 4 of 25 items used\\."
+    timeout: 15000
