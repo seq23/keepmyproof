@@ -50,7 +50,10 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
-- tapOn: "Save to .*"
+- runFlow:
+    file: press.yaml
+    env:
+      TAP: "Save to .*"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 20000

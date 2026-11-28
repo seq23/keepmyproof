@@ -9,10 +9,10 @@ appId: com.keepmyproof.app
 - extendedWaitUntil:
     visible: "Back up now ›"
     timeout: 15000
-- tapOn: "Back up now ›"
-- extendedWaitUntil:
-    notVisible: "Back up now ›"
-    timeout: 60000
+- runFlow:
+    file: press.yaml
+    env:
+      TAP: "Back up now ›"
 - waitForAnimationToEnd:
     timeout: 10000
 - takeScreenshot: gate-${SHOT}-backup-sheet
