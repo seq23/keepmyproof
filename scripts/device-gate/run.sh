@@ -89,21 +89,26 @@ home; ok=1
 for k in 1 2; do flow restore FILE=gate-good.kmp WORDS="$WORDS" EXPECT="✓ Your backup was restored.*" SHOT="twice$k" FRESH=0 FAST=0 && [ "$(count)" = 4 ] || ok=0; done
 [ $ok = 1 ] && record restore-twice-no-duplicates pass "the same backup restored twice into the vault that holds it: ✓ restored both times, Home 4 both times" || record restore-twice-no-duplicates fail "count '$(count)' ($LAST_LOG)"
 
-# 7. full-disk-changes-nothing: the vault folder on a nearly full disk image while a save is tried.
+# 7. full-disk-changes-nothing: the vault folder on a disk image that is filled up while the app has the vault open.
 xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; V="$(data)/Documents/vault"; cp -R "$V" "$W/vault-before"
 KB=$(( $(du -sk "$V" | cut -f1) + 2048 ))
 if hdiutil create -size ${KB}k -fs HFS+ -volname gatefull -layout NONE "$W/full.dmg" >/dev/null && hdiutil attach -nobrowse -mountpoint "$V" "$W/full.dmg" >/dev/null; then
   cp -R "$W/vault-before/." "$V/"
-  # Leave 64 KB: enough to open the database, too little to write the vault's next copy.
-  AV=$(df -k "$V" | awk 'NR==2{print $4}'); dd if=/dev/zero of="$V/.filler" bs=1k count=$(( AV > 64 ? AV - 64 : 0 )) 2>/dev/null; FREE=$(df -k "$V" | awk 'NR==2{print $4}'); echo "full disk: ${FREE} KB free"
   flow unlock CODE=$CUR; before=$(count)
+  # Filled only now, with the vault open: the save must grow the database's write-ahead log, and no block is left.
+  # Run 46098006485 left 64 KB before the unlock and the note saved (count 2 to 3); on a disk image filled after the
+  # database was opened, SQLite refuses the same write with "database or disk is full" (tested on HFS+, 27 Nov 2026).
+  dd if=/dev/zero of="$V/.filler" bs=4k 2>/dev/null; FREE=$(df -k "$V" | awk 'NR==2{print $4}'); echo "full disk: ${FREE} KB free"
   flow add-one-note TITLE="Gate full disk note" SHOT=full; refused=$(said GATE_SAVE)
   xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; rm -f "$V/.filler"; mkdir -p "$W/vault-after"; cp -R "$V/." "$W/vault-after/"
   hdiutil detach "$V" >/dev/null || hdiutil detach -force "$V" >/dev/null
   rm -rf "$V"; mkdir -p "$V"; cp -R "$W/vault-after/." "$V/"
-  if flow unlock CODE=$CUR && [ "$(count)" = 4 ] && [ "$before" = 4 ]; then
-    record full-disk-changes-nothing pass "vault folder on a disk image with ${FREE} KB free: saving a note was tried (error shown: $refused), and after the disk was freed the vault opens with the same 4 items"
-  else record full-disk-changes-nothing fail "before '$before', after '$(count)' ($LAST_LOG)"; fi
+  # A pass needs the save to have been tried and refused on screen ("That did not finish…"), not only an unchanged
+  # count: a save that never happened would change nothing too.
+  after=""; flow unlock CODE=$CUR && after=$(count)
+  if [ "$refused" = refused ] && [ "$before" = 4 ] && [ "$after" = 4 ]; then
+    record full-disk-changes-nothing pass "vault folder on a disk image filled to ${FREE} KB free with the vault open: saving a note was refused on screen (That did not finish…), and after the disk was freed the vault opens with the same 4 items"
+  else record full-disk-changes-nothing fail "save refused on screen: '${refused:-no}', before '$before', after '$after' ($LAST_LOG)"; fi
 else record full-disk-changes-nothing fail "could not put the vault folder on a small disk image"; fi
 
 # 8. interrupted-restore-changes-nothing: the app is killed the moment the Restore tap is done, on a 60 MB backup.

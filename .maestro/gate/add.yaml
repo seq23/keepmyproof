@@ -22,6 +22,13 @@ appId: com.keepmyproof.app
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
+# The first note is in the folder (add-note.yaml checks this itself when no "how did you hear" screen came first).
+- scrollUntilVisible:
+    element: "Gate note one"
+    direction: DOWN
+- scrollUntilVisible:
+    element: "← Back to .*"
+    direction: UP
 - runFlow:
     file: ../add-note.yaml
     env:
