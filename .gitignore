@@ -19,3 +19,5 @@ coverage/
 play-sa.json
 *.aab
 *.apk
+# The device gate's old-data fixture: an invented vault (scripts/device-gate/fixtures/, docs/device-gate.md).
+!scripts/device-gate/fixtures/**/vault.sqlite
