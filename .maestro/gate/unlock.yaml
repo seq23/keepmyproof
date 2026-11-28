@@ -1,0 +1,25 @@
+# Opens the app (no reset) and unlocks with the passcode. Env: CODE. Ends on Home; prints GATE_COUNT=….
+appId: com.keepmyproof.app
+---
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible: "Open my papers ›"
+    timeout: 90000
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "Passcode"
+      TEXT: ${CODE}
+      SHOW: "••••••|${CODE}"
+# Retried only while neither the vault nor a refusal shows: a wrong passcode is never guessed again here (the host
+# tries the other one), so the app's wait after wrong guesses is never started by a retry.
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Open my papers ›"
+      THEN: "Free plan: .*|\\d+ items · Plus|Plus: .*|KeepMyProof Plus.*|That passcode did not match\\. Try again\\.|Please wait before trying again\\..*"
+- extendedWaitUntil:
+    visible: "Free plan: .*|\\d+ items · Plus|Plus: .*|KeepMyProof Plus.*"
+    timeout: 60000
+- runFlow: count.yaml

@@ -1,0 +1,8 @@
+{
+  "_why": "The device gate's checks in 5 groups, each on its own Simulator with its own vault (.github/workflows/device-gate.yml matrix), so a lost tap in one group cannot hide the checks of another, and a whole run takes ~30 min, not ~70 (serial runs 46098006485..46158251765 found one failure per 70-minute run). Every Simulator check is in exactly one group (tests/device-gate-groups.test.ts).",
+  "A": ["old-data-upgraded"],
+  "B": ["passcode-reset-face-id-and-phrase"],
+  "C": ["full-test-vault-backed-up", "fresh-install-restore-with-phrase-only", "every-file-hash-matches"],
+  "D": ["corrupt-or-missing-file-rejected", "wrong-phrase-changes-nothing", "restore-twice-no-duplicates"],
+  "E": ["full-disk-changes-nothing", "interrupted-restore-changes-nothing", "app-switcher-preview-hidden"]
+}

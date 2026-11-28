@@ -1,0 +1,109 @@
+# Restore a backup. Env: FILE, WORDS, EXPECT (regex for the screen text that must follow), FRESH (1 = from the
+# first screen of a new install, with NEWCODE), SHOT. With FAST=1 it ends right after the tap (interrupted restore).
+appId: com.keepmyproof.app
+---
+- runFlow:
+    when:
+      true: ${FRESH == '1'}
+    commands:
+      - launchApp:
+          stopApp: true
+      - extendedWaitUntil:
+          visible: "Continue in English ›"
+          timeout: 90000
+      - scroll
+      - scroll
+      - extendedWaitUntil:
+          visible: "Restore a backup ›"
+          timeout: 20000
+      - runFlow:
+          file: tap.yaml
+          env:
+            TAP: "Restore a backup ›"
+            THEN: "Choose your encrypted backup ›"
+- runFlow:
+    when:
+      true: ${FRESH != '1'}
+    commands:
+      - runFlow:
+          file: tab.yaml
+          env:
+            TAB: "Backup"
+            MARK: "Back up now ›"
+      # The link is the page's last button: the scroll view ends at the tab bar, and Maestro counts an element as
+      # visible from its bounds even where the tab bar clips it, so a tap there pressed the Backup tab (gate run
+      # 46112815437: link [16,793][386,841], tab bar [10,782]…[392,830]). Bring the line under it into view first.
+      - scrollUntilVisible:
+          element: "Every file is checked before anything is added.*"
+          direction: DOWN
+      - runFlow:
+          file: tap.yaml
+          env:
+            TAP: "Restore a backup ›"
+            THEN: "Choose your encrypted backup ›"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "12 words, separated by spaces"
+      TEXT: ${WORDS}
+      SHOW: ${WORDS}
+- runFlow:
+    when:
+      true: ${FRESH == '1'}
+    commands:
+      - runFlow:
+          file: type.yaml
+          env:
+            FIELD: "New six-number passcode"
+            TEXT: ${NEWCODE}
+            SHOW: "••••••|${NEWCODE}"
+      - runFlow:
+          file: type.yaml
+          env:
+            FIELD: "Enter the same six numbers again"
+            TEXT: ${NEWCODE}
+            SHOW: "••••••|${NEWCODE}"
+# Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
+- tapOn: "Restore a backup"
+- scrollUntilVisible:
+    element: "Choose your encrypted backup ›"
+    direction: DOWN
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Choose your encrypted backup ›"
+      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
+- runFlow:
+    file: pick.yaml
+    env:
+      FILE: ${FILE}
+- scrollUntilVisible:
+    element: "Restore a backup ›"
+    direction: DOWN
+# The tap must start the restore: "Working…" (the app's busy line) or its result. Retried only while neither shows,
+# so a restore is never started twice.
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Restore a backup ›"
+      THEN: "Working…|${EXPECT}"
+# FAST=1 (interrupted restore): the host kills the app now. GATE_STARTED=1 proves the restore had started, so a
+# kill after a lost tap is never counted as "untouched by the kill".
+- runFlow:
+    when:
+      true: ${FAST == '1'}
+    commands:
+      - evalScript: "${http.post('http://127.0.0.1:8765/', { body: 'GATE_STARTED=1' })}"
+- runFlow:
+    when:
+      true: ${FAST != '1'}
+    commands:
+      - extendedWaitUntil:
+          visible: ${EXPECT}
+          timeout: 120000
+      - takeScreenshot: gate-${SHOT}-restore
+      - runFlow:
+          when:
+            visible: "Folders"
+          commands:
+            - runFlow: count.yaml
