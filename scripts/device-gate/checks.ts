@@ -166,7 +166,7 @@ export const CHECKS: Record<string, (c: Ctx) => string> = {
     // 2. Face ID on (Settings), then a reset with a Face ID match.
     goTab(c, 'settings');
     c.ui.tap('kmp-biometrics');
-    faceId(c, els => !!byId(els, 'kmp-biometrics')?.checked || byId(els, 'kmp-biometrics')?.value === '1', 'the Face ID switch to turn on');
+    faceId(c, els => !!byId(els, 'kmp-biometrics')?.checked || byId(els, 'kmp-biometrics')?.value === '1', 'the Face ID switch to turn on', () => c.ui.tap('kmp-biometrics'));
     c.ui.tap('kmp-lockNow'); c.ui.waitFor(els => onScreen(els, 'lock'), 20_000, 'the lock screen');
     cancelFaceId(c);
     c.ui.tap('kmp-forgot'); c.ui.waitFor(els => onScreen(els, 'reset'), 20_000, 'the reset screen');
@@ -338,10 +338,12 @@ export const CHECKS: Record<string, (c: Ctx) => string> = {
   'store-build-smoke': c => {
     const m = c.cur.m, code2 = '246802';
     newVault(c); c.sim.terminate(); rmSync(join(c.sim.gateDir(), 'status.json'), { force: true });
+    // Files' storage is found before the app opens: finding it launches and closes the Files app, which left the open
+    // app in the background on the springboard (gate run 46185657972, device.log: switch to com.apple.DocumentsApp).
+    const files = filesDir(c);
     c.sim.install(c.storeApp); launch(c, 'lock'); mustUnlock(c, m.code); expectCount(c, 4, 'the store build over the gate build\'s vault');
     if (existsSync(join(c.sim.gateDir(), 'status.json'))) throw new TestError('the "store" build wrote the seam\'s status file: it is not the store build');
     const { pdf } = inventedFiles(), smoke = Buffer.concat([pdf, Buffer.from(`% smoke ${Date.now()}\n`)]);
-    const files = filesDir(c);
     writeFileSync(join(files, 'gate-smoke-paper.pdf'), smoke);
     goTab(c, 'home'); c.ui.tap('kmp-add'); c.ui.waitFor(els => onScreen(els, 'add'), 20_000, 'the add screen');
     c.ui.tap('kmp-kind-file');
@@ -425,11 +427,15 @@ function shareSheetBackup(c: Ctx): string {
 }
 
 /** Face ID: taps the one-time "allow Face ID" alert if it shows and matches the enrolled face until `done`. */
-function faceId(c: Ctx, done: (els: El[]) => boolean, what: string) {
-  for (const end = Date.now() + 60_000; Date.now() < end;) {
+function faceId(c: Ctx, done: (els: El[]) => boolean, what: string, again?: () => void) {
+  let slow = 0;
+  for (let end = Date.now() + 60_000; Date.now() < end;) {
     const els = c.ui.tree();
     if (done(els)) return;
-    const err = byId(els, 'kmp-error'); if (err) throw new AppFail(`${what}: "${err.text}"`);
+    const err = byId(els, 'kmp-error');
+    // A Face ID sheet the Simulator drew too late is retried (at most twice); any other error is the app's answer.
+    if (err && again && slow < 2 && c.sim.faceSheetTimedOut(90)) { slow++; c.log(`${what}: the Face ID sheet timed out on the Simulator; asking again (${slow})`); again(); end = Date.now() + 60_000; continue; }
+    if (err) throw new AppFail(`${what}: "${err.text}"`);
     const ok = named(els, ['OK', 'Allow']); if (ok) { tapEl(c, ok, 'faceid-allow'); continue; }
     c.sim.face(true); wait(2500);
   }

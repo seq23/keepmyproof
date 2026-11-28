@@ -39,6 +39,13 @@ export class Sim {
       { encoding: 'utf8', timeout: 120_000, maxBuffer: 64 * 1024 * 1024 });
     try { writeFileSync(file, (r.stdout || '') + (r.stderr ? `\n[stderr] ${r.stderr}` : '')); } catch { /* evidence only */ }
   }
+  /** iOS gave up showing the Face ID sheet in the last `secs` seconds ("UI activation timed out after 5 seconds",
+   *  LAError -1000): the Simulator was too slow to draw it, not an answer from the app (gate run 46185657972, B). */
+  faceSheetTimedOut(secs: number): boolean {
+    const r = spawnSync('xcrun', ['simctl', 'spawn', this.udid, 'log', 'show', '--style', 'compact', '--last', `${secs}s`, '--predicate',
+      'eventMessage CONTAINS "UI activation timed out"'], { encoding: 'utf8', timeout: 60_000, maxBuffer: 16 * 1024 * 1024 });
+    return /UI activation timed out/.test(r.stdout || '');
+  }
   install(app: string) { if (!existsSync(app)) throw new TestError(`no app at ${app}`); this.simctl(['install', this.udid, app]); }
   container(): string {
     const r = this.simctl(['get_app_container', this.udid, BID, 'data']);
