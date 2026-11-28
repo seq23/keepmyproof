@@ -3,7 +3,8 @@
 # scripts/release-gate.mjs DEVICE_CHECKS, run on the iOS Simulator with Maestro flows (.maestro/gate/) and host
 # steps (install, uninstall, Face ID match, a full disk, a killed restore) that no flow can do. Invented papers only.
 # Usage: run.sh <udid> <new.app> <old.app> <out dir>. Writes <out>/result.json: every check "pass" or "fail" with
-# its evidence. A check this script did not reach stays "not-run", and not-run is never a pass.
+# its evidence ("look" for the switcher, "testflight" for the purchase). A check this script did not reach stays
+# "not-run", and not-run is never a pass.
 set -uo pipefail
 U="$1"; NEW="$2"; OLD="$3"; OUT="$4"; BID=com.keepmyproof.app
 mkdir -p "$OUT/logs" "$OUT/shots" "$OUT/work"; W="$OUT/work"; RES="$OUT/checks.tsv"; : > "$RES"
@@ -134,8 +135,10 @@ record app-switcher-preview-hidden "look" "snapshots kept by iOS: $k (shots/swit
 
 # 12. store-sandbox-purchase-and-restore: not on a Simulator. RevenueCat closes a Release build that carries its
 # Test Store key ("Wrong API Key ... The app will close now", gate run 46083182907), and Apple's sandbox sign-in
-# fails on the iOS 26 Simulator (spry brain, 17 Nov 2026). It needs a real iPhone with a Sandbox Apple Account.
-record store-sandbox-purchase-and-restore not-run "a Simulator cannot buy: RevenueCat refuses its Test Store key in a Release build, and Apple's sandbox sign-in fails on the iOS 26 Simulator; needs a real iPhone"
+# fails on the iOS 26 Simulator (spry brain, 17 Nov 2026). Her yes 27 Nov 2026: it is met by her TestFlight sandbox
+# Buy + Restore on her iPhone, recorded with record.mjs --purchase; "testflight" here is never a pass (record.mjs
+# writes it false, and submit-gate refuses until her record names the build submitted).
+record store-sandbox-purchase-and-restore testflight "a Simulator cannot buy (RevenueCat refuses its Test Store key in a Release build; Apple's sandbox sign-in fails on the iOS 26 Simulator): met by her TestFlight Buy + Restore on a real iPhone"
 
 # Maestro writes takeScreenshot files beside the flow, not in the working directory.
 find "$GITHUB_WORKSPACE/.maestro" "$OUT/shots" -name 'gate-*.png' -newer "$OUT/said.txt" -exec cp {} "$OUT/shots/" \; 2>/dev/null

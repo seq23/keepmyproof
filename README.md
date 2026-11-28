@@ -180,9 +180,10 @@ run by EAS through `eas-build-pre-install` on every build a store can review:
 - **REVENUECAT_KEY_MISSING**: no `appl_` / `goog_` RevenueCat keys. Needs the
   RevenueCat project and the App Store / Play accounts (the owner's $99 + $25).
 - **DEVICE_RELEASE_GATE_PENDING**: `release/device-gate.json` must record every
-  device check in `scripts/release-gate.mjs` as passed for the current version, and
-  the device it ran on. The Simulator run (`.github/workflows/device-gate.yml`, a push
-  to a `device-gate/*` branch or a manual run on main) writes `result.json`;
+  Simulator check in `scripts/release-gate.mjs` (`SIMULATOR_CHECKS`) as passed for the
+  current version, and the device it ran on. The Simulator run
+  (`.github/workflows/device-gate.yml`, its own PR #100; a push to a `device-gate/*`
+  branch or a manual run on main) writes `result.json`;
   `node scripts/device-gate/record.mjs <result.json> <run url> --switcher-seen "<note>"`
   turns a run whose Simulator checks all passed into the record. That is enough for an
   EAS store build (the TestFlight upload); the store purchase check stays pending.
