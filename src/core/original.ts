@@ -34,14 +34,16 @@ export async function removeOriginals(assetIds: string[], saved: ({ bytes: strin
   try { await systemDelete(assetIds); return 'removed'; } catch { return 'kept'; }
 }
 /**
- * Which vault lines a phone shows (owner ruling 6 Nov 2026: make the vault obvious, honestly). Only a phone
- * that can remove the original (iOS, `systemConfirm`) is told it can; Android is told the original stays in
- * Google Photos and how to delete it there, and its lock line says fingerprint, not Face ID.
+ * Which vault lines each platform shows (owner ruling 6 Nov 2026: make the vault obvious, honestly). Only iOS,
+ * which can remove the original (Photos' own dialog), is told it can; only Android is told the original stays in
+ * Google Photos and how to delete it there, with a fingerprint lock line. The web preview stands in for the
+ * iPhone build, so it never shows Android wording (video watch 28 Nov 2026, findings 3 and 9), and it cannot
+ * remove an original, so it is not told it can.
  */
-export function vaultLines(systemConfirm: boolean) {
-  return systemConfirm
-    ? { lock: 'vaultLock', photo: 'photoCopy' } as const
-    : { lock: 'vaultLockAndroid', photo: 'photoCopyAndroid' } as const;
+export function vaultLines(os: string) {
+  if (os === 'ios') return { lock: 'vaultLock', photo: 'photoCopy', settings: 'removeSwitch' } as const;
+  if (os === 'android') return { lock: 'vaultLockAndroid', photo: 'photoCopyAndroid', settings: 'androidNote' } as const;
+  return { lock: 'vaultLock', photo: 'photoCopyPlain', settings: null } as const;
 }
 /** The hint under a photo. Pinch-to-zoom is the iOS scroll view's own zoom (app/index.tsx), which Android and
  *  the web preview do not have, so only iOS is told it can pinch (promise audit 27 Nov 2026). */
