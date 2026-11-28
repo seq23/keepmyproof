@@ -5,7 +5,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { SIMULATOR_CHECKS, PURCHASE_CHECK } from '../scripts/release-gate.mjs';
-import { join, GROUPS } from '../scripts/device-gate/result.mjs';
+import { join, lines, GROUPS } from '../scripts/device-gate/result.mjs';
 
 const groups = Object.entries(GROUPS).filter(([g]) => !g.startsWith('_')) as [string, string[]][];
 
@@ -54,4 +54,22 @@ test('a row for another group\'s check is ignored, so a group cannot pass a chec
   const { checks } = join({ A: 'A' }, () => tsv([['old-data-upgraded', 'fail'], ['restore-twice-no-duplicates', 'pass']]));
   assert.equal(checks['restore-twice-no-duplicates'].result, 'not-run');
   assert.equal(checks['old-data-upgraded'].result, 'fail');
+});
+
+test('one group\'s job prints only its own checks, so a passing group is never red on the others\' not-run', () => {
+  // Gate run 46163383574: group C passed its 3 checks and its job failed on the 8 "not-run" lines of A, B, D and E.
+  const one = { C: 'C' };
+  const printed = lines(join(one, g => allPass[g]), one);
+  const own = GROUPS.C as string[];
+  for (const c of own) assert.ok(printed.some(l => l.startsWith('pass') && l.includes(` ${c}: `)), c);
+  assert.ok(!printed.some(l => /^(fail|not-run|problem) /.test(l)), printed.join('\n'));
+  for (const c of SIMULATOR_CHECKS.filter(c => !own.includes(c))) assert.ok(!printed.some(l => l.includes(` ${c}: `)), c);
+  // Its own check not reached still prints, as not-run.
+  const half = lines(join(one, () => tsv([[own[0], 'pass']])), one);
+  assert.ok(half.some(l => l.startsWith('not-run') && l.includes(` ${own[1]}: `)), half.join('\n'));
+  // The merge job (all five) prints every check, and a group with no file as a problem.
+  const all = files('E');
+  const merged = lines(join(all, g => allPass[g]), all);
+  for (const c of SIMULATOR_CHECKS) assert.ok(merged.some(l => l.includes(` ${c}: `)), c);
+  assert.ok(merged.some(l => l.startsWith('problem group E')));
 });

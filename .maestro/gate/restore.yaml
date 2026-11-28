@@ -69,13 +69,9 @@ appId: com.keepmyproof.app
     element: "Choose your encrypted backup ›"
     direction: DOWN
 - runFlow:
-    file: tap.yaml
-    env:
-      TAP: "Choose your encrypted backup ›"
-      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
-- runFlow:
     file: pick.yaml
     env:
+      OPEN: "Choose your encrypted backup ›"
       FILE: ${FILE}
 - scrollUntilVisible:
     element: "Restore a backup ›"

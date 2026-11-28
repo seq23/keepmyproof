@@ -32,13 +32,20 @@ export function join(files, read = p => fs.readFileSync(p, 'utf8')) {
   return { checks: ordered, problems };
 }
 
+/** The lines a run prints: only the checks of the groups it was given (plus the purchase line), so one group's job
+ *  shows its own checks, never the other groups' "not-run" (gate run 46163383574: group C passed its 3 checks and its
+ *  job still went red on the 8 "not-run" lines of groups it does not run). The merge job gives all five groups. */
+export function lines({ checks, problems }, files) {
+  const shown = Object.entries(checks).filter(([, r]) => !r.group || r.group in files);
+  return [...shown.map(([c, r]) => `${r.result.padEnd(7)} ${c}: ${r.evidence}`), ...problems.map(p => `problem ${p}`)];
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const [out, ...pairs] = process.argv.slice(2);
   const files = Object.fromEntries(pairs.map(s => { const i = s.indexOf('='); return [s.slice(0, i), fs.existsSync(s.slice(i + 1)) ? s.slice(i + 1) : null]; }));
   const { checks, problems } = join(files);
   fs.writeFileSync(out, JSON.stringify({ commit: process.env.GITHUB_SHA ?? 'local', device: process.env.GATE_DEVICE, checks }, null, 2));
-  for (const [c, r] of Object.entries(checks)) console.log(`${r.result.padEnd(7)} ${c}: ${r.evidence}`);
-  for (const p of problems) console.log(`problem ${p}`);
+  for (const l of lines({ checks, problems }, files)) console.log(l);
   const bad = Object.values(checks).some(r => r.group in files && !['pass', 'look', 'testflight'].includes(r.result));
   process.exit(bad || problems.length ? 1 : 0);
 }
