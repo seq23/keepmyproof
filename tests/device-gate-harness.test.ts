@@ -82,3 +82,18 @@ test('a check\'s tries: pass only with no app failure; a failure twice is a susp
   assert.equal(decide([A('fail'), A('not-run'), A('not-run')]).result, 'fail');
   assert.equal(decide([]).result, 'again');
 });
+
+test('a crash report of the app during a try is found and read as one line; an older one or another app\'s is not', async () => {
+  const { mkdtempSync, writeFileSync: w, utimesSync } = await import('node:fs');
+  const { join: j } = await import('node:path'); const { tmpdir } = await import('node:os');
+  const { crashReports, crashSummary } = await import('../scripts/device-gate/gate');
+  const d = mkdtempSync(j(tmpdir(), 'crash-')), now = Date.now();
+  const body = { exception: { type: 'EXC_CRASH', signal: 'SIGABRT' }, faultingThread: 0, threads: [{ frames: [{ symbol: 'abort' }, { symbol: 'RCTFatal' }] }] };
+  w(j(d, 'KeepMyProof-2026-11-28-194100.ips'), `{"app_name":"KeepMyProof"}\n${JSON.stringify(body)}`);
+  w(j(d, 'Safari-2026-11-28-194100.ips'), '{}\n{}');
+  w(j(d, 'KeepMyProof-2026-11-27-100000.ips'), '{}\n{}'); utimesSync(j(d, 'KeepMyProof-2026-11-27-100000.ips'), new Date(now - 86_400_000), new Date(now - 86_400_000));
+  const found = crashReports(now, d);
+  assert.deepEqual(found.map(f => f.split('/').pop()), ['KeepMyProof-2026-11-28-194100.ips']);
+  assert.equal(crashSummary(found[0]!), 'EXC_CRASH | SIGABRT | abort < RCTFatal');
+  assert.deepEqual(crashReports(now, j(d, 'none')), []);
+});

@@ -115,6 +115,19 @@ export class Ui {
     }
     throw new TestError(`${id}: could not be made clear to tap (${seen.trim()})`);
   }
+  /** Scrolls the screen down until an element whose words include one of `texts` lies inside the scroll view; returns
+   *  the words found. For rows with no test id (a folder's papers, app/index.tsx 'newest' list). */
+  showText(texts: string[]): string {
+    const want = texts.map(x => x.toLowerCase());
+    for (let k = 0; k < 6; k++) {
+      const els = this.tree(), view = els.find(e => e.id.startsWith('kmp-screen-'))?.box;
+      const hit = els.find(e => want.some(w => e.text.toLowerCase().includes(w)) && (!view || within(e.box, view)));
+      if (hit) return hit.text;
+      if (!view) throw new TestError(`none of ${texts.join(', ')} on screen, and no scroll view to move`);
+      this.swipe(view, (view.y2 - view.y1) * 0.6);
+    }
+    throw new TestError(`none of ${texts.join(', ')} came into view after 6 scrolls`);
+  }
   tap(id: string) { const p = this.clearPoint(id); this.log(`tap ${id} at ${p.x},${p.y}`); this.tapPoint(p.x, p.y, `tap-${id}`); }
   /** Types into a text box (found and made clear like a tap), then checks the box holds it. */
   type(id: string, text: string, secret = false) {

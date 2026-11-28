@@ -8,7 +8,8 @@
 // A failure is tried again on a clean state: failing twice is a SUSPECTED APP BUG (see decide()).
 // --expect-fail (mutation proof, scripts/device-gate/mutations/): the app was broken on purpose for these checks, and
 // the run exits 0 only if every one of them FAILS (not-run is not a red the mutation caused).
-import { mkdirSync, readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync, appendFileSync, readdirSync, statSync, copyFileSync, existsSync } from 'node:fs';
+import { homedir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { run, Sim } from './sim';
 import { Ui } from './ui';
@@ -64,7 +65,7 @@ function main() {
         const n = tries.length + 1, work = join(out, 'evidence', name, `try-${n}`); mkdirSync(work, { recursive: true });
         log(`── ${name}, try ${n}`);
         const ui = new Ui(sim, join(work, 'flows'), log);
-        const video = sim.record(join(work, 'screen.mp4'));
+        const video = sim.record(join(work, 'screen.mp4')), started = Date.now();
         const ctx: Ctx = { sim, ui, gateApp: resolve(gateApp), storeApp: resolve(storeApp), work, cur, old, log, ocr };
         let a: Attempt;
         try { a = { result: 'pass', why: CHECKS[name]!(ctx) }; }
@@ -74,6 +75,11 @@ function main() {
           if (!err.kind) log(String(err.stack));
         }
         ui.saveTree(join(work, 'final-tree.json')); sim.screenshot(join(work, 'final.png'));
+        // A crash of the app during the try is an app failure, whatever the check was doing (gate run 46181196558: the
+        // store build left Home for the springboard 2 s after unlocking, and the check could only say "no tab bar").
+        const crashes = crashReports(started);
+        crashes.forEach((f, k) => copyFileSync(f, join(work, `crash-${k + 1}.ips`)));
+        if (crashes.length) { const head = crashSummary(crashes[0]!); log(`the app crashed: ${head}`); if (a.result !== 'fail') a = { result: 'fail', why: `the app crashed (crash-1.ips): ${head}; the check had said: ${a.why}` }; }
         await video.stop();
         log(`${name}, try ${n}: ${a.result} — ${a.why}`);
         tries.push(a); d = decide(tries);
@@ -89,5 +95,20 @@ function main() {
     }
     process.exit(Object.values(final).every(r => r.result === 'pass') ? 0 : 1);
   })().catch(e => { console.log(`NAMED STOP [GATE_CRASHED] ${(e as Error).stack}`); process.exit(2); });
+}
+/** KeepMyProof crash reports macOS wrote for the Simulator since `since` (~/Library/Logs/DiagnosticReports). */
+export function crashReports(since: number, dir = join(homedir(), 'Library', 'Logs', 'DiagnosticReports')): string[] {
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir).filter(f => /^KeepMyProof.*\.(ips|crash)$/i.test(f)).map(f => join(dir, f)).filter(f => statSync(f).mtimeMs >= since - 1000);
+}
+/** One line from a crash report: the exception and the first frames of the crashed thread. */
+export function crashSummary(file: string): string {
+  const raw = readFileSync(file, 'utf8'), nl = raw.indexOf('\n');
+  try {
+    const b = JSON.parse(raw.slice(nl + 1)) as { exception?: { type?: string; signal?: string }; asi?: Record<string, string[]>; termination?: { indicator?: string };
+      faultingThread?: number; threads?: { frames?: { symbol?: string; imageIndex?: number }[] }[]; usedImages?: { name?: string }[] };
+    const fr = (b.threads?.[b.faultingThread ?? 0]?.frames ?? []).slice(0, 6).map(f => f.symbol ?? b.usedImages?.[f.imageIndex ?? -1]?.name ?? '?');
+    return [b.exception?.type, b.exception?.signal, b.termination?.indicator, Object.values(b.asi ?? {}).flat().join(' ').slice(0, 300), fr.join(' < ')].filter(Boolean).join(' | ');
+  } catch { return raw.slice(0, 300).replace(/\s+/g, ' '); }
 }
 if (process.argv[1]?.endsWith('gate.ts')) main();

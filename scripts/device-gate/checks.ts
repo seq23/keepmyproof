@@ -311,6 +311,8 @@ export const CHECKS: Record<string, (c: Ctx) => string> = {
   'app-switcher-preview-hidden': c => {
     const m = c.cur.m;
     newVault(c); openFolder(c, m.folder);
+    // The papers are listed under the checklist, below the first screen (gate run 46181196558): scrolled into view.
+    c.ui.showText(m.items.map(i => i.title));
     const shown = join(c.work, 'folder-open.png'); c.sim.screenshot(shown);
     const titles = m.items.map(i => i.title.toLowerCase());
     const read = (f: string) => run(c.ocr, [f], { timeout: 60_000 }).out.toLowerCase().replace(/\s+/g, ' ');
