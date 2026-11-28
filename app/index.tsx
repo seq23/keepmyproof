@@ -270,7 +270,8 @@ export default function App() {
     accept(step.picked, false);
   }
   async function share(job: () => Promise<void>) { sharing.current = true; try { await job(); } finally { sharing.current = false; await device.cleanTemps(); } }
-  const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
+  // Every button made here carries the test id kmp-<its string key> (the device gate finds it by that, never by its words).
+  const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button id={`kmp-${key}`} title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
   // The disclaimer opens the site page (Spanish has its own; Chinese and Korean read the English page).
   const disclaimerUrl = lang === 'es' ? 'https://keepmyproof.com/es/aviso-legal' : 'https://keepmyproof.com/disclaimer';
   const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
@@ -295,7 +296,7 @@ export default function App() {
   else if (screen === 'setup') body = <><P muted>{t('step2')}</P><P heading>{t('lockTitle')}</P><P>{t('six')}</P>
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
     {photos.systemConfirm && removeSwitch}
-    <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
+    <Card><P>{t('biometrics')}</P><Switch testID="kmp-setup-biometrics" accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
     <P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'phrase') body = <>{wordsMode === 'setup' && <P muted>{t('step3')}</P>}<P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P>
     {/* Numbered 1 to 12 in two columns, read down then across like a list on paper (finding 5). */}
@@ -316,21 +317,21 @@ export default function App() {
       }
       resume.current = 'home'; setHeardFrom('home'); acceptVault(await device.setup(codeNow(), words, biometric));
     }), false, true)}</>;
-  else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field label={t('passcode')} value={code} onChange={setCode} numeric secret />
+  else if (screen === 'lock') body = <><P muted>KeepMyProof</P><P heading>{t('lockVault')}</P><P>{t('locked')}</P><Field id="kmp-passcode" label={t('passcode')} value={code} onChange={setCode} numeric secret />
     {btn('unlock', doRun(async () => acceptVault(await device.unlock(codeNow())), 'workingCheck'), false, true)}
     {biometric && btn('useBio', doRun(async () => acceptVault(await device.unlockBiometric(t('useBio')))))}
     {btn('forgot', () => navigate('reset'), true)}<P muted>{t('wrongGuesses')}</P>
     {preview && sample && <P muted>{preview.SAMPLE_HINT}</P>}</>;
-  else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field label={t('newCode')} value={code} onChange={setCode} secret numeric />
-    <Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
-    <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
+  else if (screen === 'reset') body = <><P heading>{t('newCode')}</P><Field id="kmp-new-code" label={t('newCode')} value={code} onChange={setCode} secret numeric />
+    <Field id="kmp-confirm-code" label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
+    <Field id="kmp-words" label={t('words')} value={wordInput} onChange={setWordInput} multiline />
     {btn('reset', doRun(async () => { const code = codeNow(); if (code !== codeAgainNow()) throw Error('PASSCODE_INVALID');
       await device.appLock.reset(code, { words:wordInputNow() }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }), false, true)}
     {biometric && btn('useBio', doRun(async () => { const code = codeNow(); if (code !== codeAgainNow()) throw Error('PASSCODE_INVALID');
       await device.appLock.reset(code, { biometric:true }, () => device.biometricCheck(t('useBio')), device.random); setSample(false); acceptVault(await device.loadVault()); }))}<P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'restore') body = <><P heading>{t('restore').replace(/\s*›$/, '')}</P><P>{t('restoreSafety')}</P>
-    <Field label={t('words')} value={wordInput} onChange={setWordInput} multiline />
-    {!vault && <><Field label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret /></>}
+    <Field id="kmp-words" label={t('words')} value={wordInput} onChange={setWordInput} multiline />
+    {!vault && <><Field id="kmp-new-code" label={t('newCode')} value={code} onChange={setCode} numeric secret /><Field id="kmp-confirm-code" label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret /></>}
     {btn('restoreChoose', doRun(async () => { setRestoreData(await files.pickBackup()); }))}
     {restoreData && btn('restore', doRun(async () => {
       const wordInput = wordInputNow(), code = codeNow(), codeAgain = codeAgainNow();
@@ -344,7 +345,7 @@ export default function App() {
     }), false, true)}<P muted>{t('loss')}</P></>;
   else if (!state || !vault) body = <P>{t('locked')}</P>;
   else if (screen === 'home') body = <>
-    <P heading>KeepMyProof</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
+    <P heading>KeepMyProof</P><P muted id="kmp-count">{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
     {nudge !== 'none' && <Card tone="gold"><P>{t(nudge === 'check' ? 'checkNow' : 'newBackup', { n:state.items.length })}</P>{btn(nudge === 'check' ? 'backupCheck' : 'backUp', () => navigate('backup'))}</Card>}
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
     {state.items.length > 0 && <><Field label={t('search')} value={query} onChange={setQuery} />
@@ -359,7 +360,7 @@ export default function App() {
         style={({ pressed }) => [styles.tile,{ backgroundColor:palette.tile, opacity: pressed ? .7 : 1 }]}><Glyph name={g} bg={palette.tile} /><Text {...textProps(lang)} style={{ color:palette.fg, fontSize:12, lineHeight:16, textAlign:'center', fontFamily:bodyFont(lang) }}>{t(key)}</Text></Pressable>)}</View>
     <P section>{t('home')}</P>
     {homeButtons(state).map(b => b.kind === 'folder'
-      ? <BigButton key={b.id} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
+      ? <BigButton key={b.id} id={`kmp-folder-${b.id}`} glyph={b.own ? 'folder' : folderGlyph[b.id] ?? 'folder'} title={folderName(b.id)} go={t('open')} disabled={busy}
           sub={b.done || b.items ? [b.done && t(b.done === 1 ? 'ticked1':'tickedN', { n:b.done }), b.items && t(b.items === 1 ? 'items1':'itemsN', { n:b.items })].filter(Boolean).join(' · ') : t('nothingYet')}
           onPress={() => { setFolder(b.id); setTagPick(null); navigate('folder'); }} />
       : <BigButton key="makeOwn" glyph="plus" dashed title={t('makeOwn')} tag={t('plusTag')} sub={t('makeOwnSub')} go={t('open')} disabled={busy}
@@ -379,7 +380,7 @@ export default function App() {
     <P section>{t('checklist')}</P>
     <View style={[styles.list,{ borderColor:palette.line, backgroundColor:palette.card }]}>
       {lines.map((l, n) => { const how = tickedBy(state, folder, l.id);
-        return <TickRow key={l.id} first={n === 0} done={checked(state,folder,l.id)} title={l.name} disabled={busy}
+        return <TickRow key={l.id} id={`kmp-tick-${l.id}`} first={n === 0} done={checked(state,folder,l.id)} title={l.name} disabled={busy}
           sub={how === 'paper' ? t('byPaper') : how === 'hand' ? t('byHand') : undefined}
           onPress={doRun(async () => vault.tick(folder,l.id,!checked(state,folder,l.id)))} />; })}
       <TickRow add first={!lines.length} title={t('addLine')} tag={ent.plus ? undefined : t('plusTag')} disabled={busy}
@@ -403,13 +404,13 @@ export default function App() {
     {/* Which folder: asked on every add and change, starting from the neutral one (findings 1, 7). */}
     <P section>{t('whichFolder')}</P>
     {shownFolders.map(f => <Button quiet key={f.id} checked={draft.folder === f.id} title={`${draft.folder === f.id ? '✓':'○'} ${folderName(f.id)}`} onPress={() => { setFolder(f.id); setDraft(d => ({...d,folder:f.id,checklist:null})); }} />)}
-    {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
+    {!editing && <View style={styles.row}>{(['photo','file','note'] as const).map(kind => <View key={kind} style={styles.flex}><Button id={`kmp-kind-${kind}`} title={t(kind)} checked={draft.kind===kind} onPress={() => { setPicked([]); setDraft(d => ({...d,kind,bytes:null,filename:null,mime:null})); }} /></View>)}</View>}
     {draft.kind !== 'note' && <>{!editing && draft.kind === 'photo' && btn('takePhoto', doRun(snap, 'workingCamera'))}
       {!editing && btn(draft.kind === 'photo' ? 'pickPhoto':'pick', doRun(() => pick(false), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}
       {editing && btn('replaceFile', doRun(() => pick(true), draft.kind === 'photo' ? 'workingPhotos' : 'workingFile'))}{editing && replacement && <P muted>{t('replaceKept')}</P>}
       {draft.kind === 'photo' && !editing && <P muted>{t(picked[0]?.camera ? 'photoCamera' : vaultCopy.photo)}</P>}
       {picked.length > 1 ? <Card><P>{t('photosChosen', { n:picked.length })}</P></Card> : draft.filename && <Card><P>{draft.filename}</P><P muted>{t('kept')}</P></Card>}</>}
-    <Field label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
+    <Field id="kmp-name" label={t(picked.length > 1 ? 'namesFromPhotos' : 'name')} value={draft.title} onChange={title => setDraft(d => ({...d,title}))} />{dateFields}
     <P muted>{t('line')}</P><Button quiet title={`${draft.checklist === null ? '✓':'○'} ${t('noLine')}`} onPress={() => setDraft(d => ({...d,checklist:null}))} />
     {lines.map(c => <Button quiet key={c.id} title={`${draft.checklist===c.id ? '✓':'○'} ${c.name}`} onPress={() => setDraft(d => ({...d,checklist:c.id}))} />)}
     <Field label={t('optionalNote')} value={draft.note} onChange={note => setDraft(d => ({...d,note}))} multiline />
@@ -473,7 +474,7 @@ export default function App() {
     <Card><P>{t('language')}</P>{LANGS.map(l => <Button quiet key={l} checked={lang === l} title={`${lang === l ? '✓':'○'} ${LANG_NAME[l]}`} onPress={() => chooseLang(l)} />)}</Card>
     <P section>{t('vaultSection')}</P>
     {photos.systemConfirm ? removeSwitch : <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
-    <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
+    <Card><P>{t('biometrics')}</P><Switch testID="kmp-biometrics" accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
     {btn('changeCode', () => { setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('changeCode'); })}
     {btn('renewWords', () => { setCurrentCode(''); navigate('renew'); })}
     {[...appFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
@@ -540,20 +541,20 @@ export default function App() {
     if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
     setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
   }), false, true);
-  else if (ready && screen === 'add' && vault) footer = <>{!!error && <Card tone="gold"><P>{error}</P></Card>}{dateErrorBySave}{busy && <P muted>{t(busyLabel)}</P>}
+  else if (ready && screen === 'add' && vault) footer = <>{!!error && <Card tone="gold"><P id="kmp-error">{error}</P></Card>}{dateErrorBySave}{busy && <P muted id="kmp-busy">{t(busyLabel)}</P>}
     {confirm === 'edit' ? <Card><P>{t('confirmEdit')}</P>{btn('yesSave', doRun(saveDraft, 'workingSave'))}{btn('keep', () => setConfirm(null),true)}</Card> :
-      <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft, 'workingSave')} />}</>;
+      <Button primary id="kmp-save" title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft, 'workingSave')} />}</>;
   return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-    <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','custom'].includes(screen) || (screen === 'plus' && plusBack !== 'add')?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
-      {!!error && screen !== 'add' && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
-      {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && screen !== 'add' && <P muted>{t(busyLabel)}</P>}{body}
+    <ScrollView key={screen} testID={ready ? `kmp-screen-${screen}` : 'kmp-screen-loading'} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet id="kmp-back" title={['folder','backup','settings','custom'].includes(screen) || (screen === 'plus' && plusBack !== 'add')?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
+      {!!error && screen !== 'add' && <Card tone="gold"><P id="kmp-error">{error}</P></Card>}{backupFailed && <Card tone="red"><P id="kmp-backup-failed">{t('backupFailed')}</P></Card>}
+      {!!notice && <Card tone="ok"><P id="kmp-notice">{notice}</P></Card>}{busy && screen !== 'add' && <P muted id="kmp-busy">{t(busyLabel)}</P>}{body}
     </ScrollView>
-    {footer && <View style={[styles.footer,{ backgroundColor:palette.bg, borderTopColor:palette.line }]}>{footer}</View>}
+    {footer && <View testID="kmp-footer" style={[styles.footer,{ backgroundColor:palette.bg, borderTopColor:palette.line }]}>{footer}</View>}
     </KeyboardAvoidingView>
-    {vault && ['home','backup','settings'].includes(screen) && <View style={[styles.tabs,{backgroundColor:palette.card}]}>
-      {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
+    {vault && ['home','backup','settings'].includes(screen) && <View testID="kmp-tabs" style={[styles.tabs,{backgroundColor:palette.card}]}>
+      {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet id={`kmp-tab-${tab}`} checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
     </View>}
   </SafeAreaView></LangContext.Provider></Theme.Provider>;
 }
@@ -573,11 +574,11 @@ function ZoomPhoto({ uri, label }: { uri: string; label: string }) {
 /** A saved photo or picture file that can be drawn in place. */
 const isPicture = (i: Item) => !!i.bytes && (i.kind === 'photo' || !!i.mime?.startsWith('image/'));
 // One big tappable folder door on Home: drawing, name, one grey sub line, "Open ›" on the right.
-function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
-  glyph: GlyphName; title: string; sub: string; go: string; tag?: string; dashed?: boolean; disabled?: boolean; onPress: () => void;
+function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress, id }: {
+  id?: string; glyph: GlyphName; title: string; sub: string; go: string; tag?: string; dashed?: boolean; disabled?: boolean; onPress: () => void;
 }) {
   const c = React.useContext(Theme), lang = React.useContext(LangContext), tp = textProps(lang);
-  return <Pressable accessibilityRole="button" accessibilityLabel={`${title}. ${sub}`} disabled={disabled} onPress={onPress}
+  return <Pressable testID={id} accessibilityRole="button" accessibilityLabel={`${title}. ${sub}`} disabled={disabled} onPress={onPress}
     style={({ pressed }) => [styles.big, { backgroundColor:c.card, borderColor: dashed ? c.muted : c.ok, borderStyle: dashed ? 'dashed' : 'solid', opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
     <Glyph name={glyph} size={44} />
     <View style={styles.flex}><Text {...tp} style={{ color:c.fg, fontSize:16, lineHeight:22, fontWeight:'600', fontFamily:bodyFont(lang, true) }}>{title}{tag ? '  ' : ''}{tag && <Text style={{ color:c.gold, fontSize:11 }}>{tag}</Text>}</Text>
@@ -586,11 +587,11 @@ function BigButton({ glyph, title, sub, go, tag, dashed, disabled, onPress }: {
   </Pressable>;
 }
 // One compact checklist line: a small tick box and one line of text (a grey sub line says how it got ticked).
-function TickRow({ title, sub, done, add, tag, first, disabled, onPress }: {
-  title: string; first?: boolean; sub?: string; done?: boolean; add?: boolean; tag?: string; disabled?: boolean; onPress: () => void;
+function TickRow({ title, sub, done, add, tag, first, disabled, onPress, id }: {
+  id?: string; title: string; first?: boolean; sub?: string; done?: boolean; add?: boolean; tag?: string; disabled?: boolean; onPress: () => void;
 }) {
   const c = React.useContext(Theme), lang = React.useContext(LangContext), tp = textProps(lang);
-  return <Pressable accessibilityRole={add ? 'button' : 'checkbox'} accessibilityState={{ checked: add ? undefined : !!done, disabled }} accessibilityLabel={title}
+  return <Pressable testID={id} accessibilityRole={add ? 'button' : 'checkbox'} accessibilityState={{ checked: add ? undefined : !!done, disabled }} accessibilityLabel={title}
     disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.tickRow, { borderTopColor:c.line, borderTopWidth: first ? 0 : 1, opacity: disabled ? .5 : pressed ? .7 : 1 }]}>
     <View style={[styles.box, { borderColor: add || done ? c.ok : c.muted, borderStyle: add ? 'dashed' : 'solid', backgroundColor: done ? c.ok : 'transparent' }]}>
       <Text style={{ color: done ? c.card : c.ok, fontSize:15, fontWeight:'700', lineHeight:18 }}>{done ? '✓' : add ? '+' : ''}</Text></View>

@@ -7,6 +7,8 @@
 //     neither has the preview;
 //   - the Android bundle calls preventScreenCaptureAsync (FLAG_SECURE: Recents shows a blank card, as in every
 //     Play build up to versionCode 4) and the iOS bundle never does (Apple 5.6: screenshots work on iOS);
+//   - neither has the device gate's seam (src/gate.ts: its Documents/kmp-gate folder and its stop names), which only
+//     the Simulator gate build bundles (EXPO_PUBLIC_KMP_GATE=1);
 //   - both have the first screen's "Continue in English" in every language (the scan is reading the app, not
 //     an empty or unreadable file).
 // Exit 0 = clean, 1 = a NAMED STOP printed. Run: npm run bundle-scan (CI: .github/workflows/check.yml).
@@ -32,6 +34,8 @@ const REVIEW = [REVIEW_URL.replace(/^https:\/\//, ''), ...Object.values(reviewSt
 const PREVIEW = [SKIP_LABEL, SAMPLE_HINT, ...sampleVault().map(d => d.title)];
 // A call of the block, as Metro leaves it (`e.preventScreenCaptureAsync()`); the module's own definition is not a call.
 const BLOCK_CALL = /[\w$]\.preventScreenCaptureAsync\(/;
+// Strings only src/gate.ts holds: a store bundle with any of them carries the gate's seam.
+export const GATE = ['kmp-gate', 'GATE_PICK_MISSING', 'keychain-done'];
 const ALIVE = ['Continue in English', 'Continuar en español', '继续使用简体中文', '한국어로 계속하기'];
 
 export function scan(bundles: Record<'ios' | 'android', string>): string[] {
@@ -40,6 +44,7 @@ export function scan(bundles: Record<'ios' | 'android', string>): string[] {
     if (text.length < 100_000) out.push(`BUNDLE_EMPTY ${platform}: ${text.length} bytes of JS`);
     for (const s of ALIVE) if (!has(text, s)) out.push(`BUNDLE_UNREADABLE ${platform}: "${s}" is not in the bundle`);
     for (const s of PREVIEW) if (has(text, s)) out.push(`PREVIEW_IN_STORE_BUNDLE ${platform}: "${core(s)}"`);
+    for (const s of GATE) if (text.includes(s)) out.push(`GATE_SEAM_IN_STORE_BUNDLE ${platform}: "${s}"`);
   }
   for (const s of REVIEW) if (has(bundles.ios, s)) out.push(`REVIEW_CODE_ON_IOS: "${core(s)}"`);
   if (BLOCK_CALL.test(bundles.ios)) out.push('CAPTURE_BLOCK_ON_IOS: the iOS bundle calls preventScreenCaptureAsync');
@@ -68,6 +73,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     const out = scan({ ios: read(dir, 'ios'), android: read(dir, 'android') });
     if (out.length) { console.log('NAMED STOP [STORE_BUNDLE_DIFFERS]\n' + out.join('\n')); process.exit(1); }
-    console.log(`bundle-scan: iOS has no review code, preview or capture block; Android has the review code and the capture block and no preview; ${REVIEW.length} review and ${PREVIEW.length} preview lines checked.`);
+    console.log(`bundle-scan: iOS has no review code, preview, gate seam or capture block; Android has the review code and the capture block and no preview or gate seam; ${REVIEW.length} review and ${PREVIEW.length} preview lines checked.`);
   } finally { if (given < 0) rmSync(dir, { recursive: true, force: true }); }
 }

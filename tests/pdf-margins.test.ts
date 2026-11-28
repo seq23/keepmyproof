@@ -19,7 +19,8 @@ test('the folder PDF is printed with at least half-inch margins and its share po
   setPressedAnchor({ x: 236, y: 1180, width: 560, height: 48 });
   class File { exists = true; constructor(public uri: string) {} async bytes() { return new Uint8Array([1]); } delete() { this.exists = false; } async write() {} }
   const exports: any = {};
-  runInNewContext(compiled, { exports, require: (name: string) => {
+  // process.env as a store build has it (no EXPO_PUBLIC_KMP_ switch): files.ts reads the gate switch at load.
+  runInNewContext(compiled, { exports, process: { env: {} }, require: (name: string) => {
     if (name === 'expo-file-system') return { File };
     if (name === 'expo-print') return { printToFileAsync: async (o: any) => { printed.push(o); return { uri: 'file:///meta.pdf' }; } };
     if (name === 'expo-sharing') return { shareAsync: async (uri: string, o: any) => { shared.push(uri); anchors.push(o?.anchor); } };

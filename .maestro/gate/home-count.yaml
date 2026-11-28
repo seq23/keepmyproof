@@ -1,5 +1,0 @@
-# Back to Home from wherever the last flow ended (count.yaml opens the Folders tab, pressing "← Back" first), then
-# GATE_COUNT=n.
-appId: com.keepmyproof.app
----
-- runFlow: count.yaml

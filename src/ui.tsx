@@ -23,9 +23,10 @@ export const headingFont = (lang: Lang) => cjk(lang) ? undefined : 'NotoSerif_70
 export const bodyFont = (lang: Lang, bold = false) => cjk(lang) ? undefined : bold ? 'NotoSans_600SemiBold' : 'NotoSans_400Regular';
 export function usePalette() { return palettes[useColorScheme() === 'dark' ? 'dark' : 'light']; }
 // heading = the screen's own title (21); section = a heading inside the screen (18).
-export function P({ children, muted = false, heading = false, section = false }: { children: React.ReactNode; muted?: boolean; heading?: boolean; section?: boolean }) {
+// id: a stable test id (the device gate finds elements by it, never by their words); a screen title is "kmp-heading".
+export function P({ children, muted = false, heading = false, section = false, id }: { children: React.ReactNode; muted?: boolean; heading?: boolean; section?: boolean; id?: string }) {
   const c = useContext(Theme), lang = useContext(LangContext), head = heading || section;
-  return <Text {...textProps(lang)} style={{ color: muted ? c.muted : c.fg, fontSize: heading ? 21 : section ? 18 : muted ? 13 : 15, lineHeight: heading ? 28 : section ? 24 : 22,
+  return <Text {...textProps(lang)} testID={id ?? (heading ? 'kmp-heading' : undefined)} style={{ color: muted ? c.muted : c.fg, fontSize: heading ? 21 : section ? 18 : muted ? 13 : 15, lineHeight: heading ? 28 : section ? 24 : 22,
     fontWeight: head ? (cjk(lang) ? '600' : '700') : '400', fontFamily: head ? headingFont(lang) : bodyFont(lang), marginTop: section ? 8 : 0 }}>{children}</Text>;
 }
 // One filled lockbox button per screen (primary): the thing the screen is for. Every other button is an outline.
@@ -33,9 +34,9 @@ export function P({ children, muted = false, heading = false, section = false }:
 // aria-selected, never accessibilityState: react-native-web 0.21 drops accessibilityState, so the chosen
 // language and the current tab were silent to a screen reader on the web build (tap-through, 22 Nov 2026).
 // `disabled` already sets aria-disabled on both builds.
-export function Button({ title, onPress, quiet, disabled, checked, primary, danger }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean; danger?: boolean }) {
+export function Button({ title, onPress, quiet, disabled, checked, primary, danger, id }: { title: string; onPress: () => void; quiet?: boolean; disabled?: boolean; checked?: boolean; primary?: boolean; danger?: boolean; id?: string }) {
   const c = useContext(Theme), lang = useContext(LangContext), ref = useRef<HostInstance>(null);
-  return <Pressable ref={ref} accessibilityRole="button" aria-selected={checked} disabled={disabled} onPress={onPress}
+  return <Pressable ref={ref} testID={id} accessibilityRole="button" aria-selected={checked} disabled={disabled} onPress={onPress}
     onPressIn={() => ref.current?.measureInWindow((x, y, width, height) => setPressedAnchor({ x, y, width, height }))}
     style={({ pressed }) => ({ minHeight:48, borderRadius:12, borderWidth:1.5, borderColor: danger ? c.red : quiet ? c.line : c.ok, backgroundColor: primary ? c.ok : checked ? c.okbg : c.card,
       padding:12, justifyContent:'center', opacity: disabled ? .5 : pressed ? .7 : 1 })}>
@@ -56,8 +57,8 @@ export function Card({ children, tone }: { children: React.ReactNode; tone?: 'go
  *  keys or moves the cursor. Only a genuinely new value from the parent (a cleared box, a loaded item) replaces the
  *  box, by re-creating it; the parent echoing something she typed a few keys ago is never mistaken for one.
  *  Every Save / Next / Unlock / Confirm calls `flushFields()` first and reads the typed value after it (see below). */
-export function Field({ label, value, onChange, secret, multiline, numeric, digits = 6, placeholder, keyboard }: {
-  label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; digits?: number; placeholder?: string; keyboard?: 'date';
+export function Field({ label, value, onChange, secret, multiline, numeric, digits = 6, placeholder, keyboard, id }: {
+  id?: string; label: string; value: string; onChange: (value: string) => void; secret?: boolean; multiline?: boolean; numeric?: boolean; digits?: number; placeholder?: string; keyboard?: 'date';
 }) {
   const c = useContext(Theme), lang = useContext(LangContext);
   // What the box holds now, as last reported by the phone (after the mask).
@@ -100,7 +101,7 @@ export function Field({ label, value, onChange, secret, multiline, numeric, digi
     openFields.add(me);
     return () => { openFields.delete(me); };
   }, []);
-  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput key={box.n} ref={input as never} onFocus={() => { focused.current = true; }} accessibilityLabel={label} testID={label} defaultValue={box.text}
+  return <View style={{ gap:4 }}><P muted>{label}</P><TextInput key={box.n} ref={input as never} onFocus={() => { focused.current = true; }} accessibilityLabel={label} testID={id ?? label} defaultValue={box.text}
     onChangeText={raw => hand(masked(raw))} onEndEditing={e => settle(e?.nativeEvent?.text)}
     onBlur={e => settle((e?.nativeEvent as { text?: unknown } | undefined)?.text)}
     secureTextEntry={secret} multiline={multiline} keyboardType={numeric || keyboard === 'date' ? 'number-pad' : 'default'} autoCapitalize="none" autoCorrect={false}
