@@ -7,6 +7,7 @@ import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypt
 import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
 import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened } from '../src/core/dates';
 import { LockError } from '../src/core/lock';
+import { afterPaint } from '../src/core/paint';
 import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft, type Replacement } from '../src/core/vault';
 import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
 import { FileView } from '../src/viewer';
@@ -144,9 +145,11 @@ export default function App() {
   async function run(job: () => Promise<void>, label: StringKey = 'working') {
     if (busyRef.current) return;
     busyRef.current = true; setBusyLabel(label); setBusy(true); setError(''); setNotice('');
-    // Every Save / Next / Unlock / Confirm runs here: the open box finishes editing first, so a long note typed fast
-    // on a slow phone is saved whole (ApprovalPrep sim retest 2). Jobs read typed values with `…Now()` after this.
-    try { await flushFields(); await job(); refresh(n => n+1); }
+    // Every Save / Next / Unlock / Confirm runs here: the busy line is drawn before the job starts (afterPaint: a
+    // large restore's decrypt would otherwise freeze the screen with no "Working…"), then the open box finishes
+    // editing, so a long note typed fast on a slow phone is saved whole (ApprovalPrep sim retest 2). Jobs read typed
+    // values with `…Now()` after this.
+    try { await afterPaint(); await flushFields(); await job(); refresh(n => n+1); }
     catch (e) {
       const key = (e as Error).message;
       if (key === 'ITEM_LIMIT' || key === 'PLUS_REQUIRED') navigate('plus');
