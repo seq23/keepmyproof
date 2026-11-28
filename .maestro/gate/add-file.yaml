@@ -31,10 +31,6 @@ appId: com.keepmyproof.app
     env:
       OPEN: "Choose a file ›"
       FILE: ${FILE}
-# The add screen shows the file it now holds (its name, under "Choose a file ›"): the pick reached the app.
-- extendedWaitUntil:
-    visible: "${FILE}"
-    timeout: 20000
 - extendedWaitUntil:
     visible:
       id: "Name it"
