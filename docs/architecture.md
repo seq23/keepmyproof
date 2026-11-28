@@ -33,9 +33,12 @@ copy also requires platform authentication. A verified biometric or the confirme
 recovery phrase can reset the app code without reencrypting or erasing papers.
 
 AppState background locks and destroys the active Vault, and the iOS app-switcher
-blur hides the app's snapshot there. Screenshots and screen recording are not
+blur hides the app's snapshot there. On iOS, screenshots and screen recording are not
 blocked: the app behaves the same in every build, including the one App Review sees
-(Apple Guideline 5.6 rejection, 23 Nov 2026; tests/store-build.test.ts). The editor
+(Apple Guideline 5.6 rejection, 23 Nov 2026). On Android the window is secure
+(FLAG_SECURE, as in every Play build up to versionCode 4), so Recents shows a blank card
+instead of an open vault, and screenshots of the app are blocked (src/native/screen*.ts;
+tests/store-build.test.ts). The editor
 and pending picker result resume behind a new unlock. Export operations already
 requested by the user finish through the system share sheet. Plaintext temporary
 PDFs/originals are deleted in finally. Cold startup also clears the SDK Print,

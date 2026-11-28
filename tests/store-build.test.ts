@@ -1,5 +1,5 @@
 // The app App Review sees is the app everyone gets (Apple Guideline 5.6 rejection, 23 Nov 2026):
-// no screenshot or screen-recording block in any build, no build profile or workflow that changes the app for
+// no screenshot or screen-recording block in any iOS build (Android keeps FLAG_SECURE, as every Play build had), no build profile or workflow that changes the app for
 // review, the Google Play review code only in Android files, the simulator preview's sample vault only behind
 // its build-time switch, and no store or legal text that describes a build other than the shipped one.
 import { test } from 'node:test';
@@ -14,14 +14,22 @@ const APP_FILES = tracked('app', 'src', 'modules', 'app.config.ts', 'plugins').f
 const read = (f: string) => readFileSync(f, 'utf8');
 const android = (f: string) => /\.android\.(ts|tsx)$/.test(f) || f.includes('/android/');
 
-test('no build blocks screenshots or screen recording; the app-switcher cover stays', () => {
+test('iOS never blocks screenshots or screen recording and keeps the app-switcher cover; Android hides an open vault from Recents', () => {
   assert.ok(APP_FILES.length > 30, `scanned ${APP_FILES.length} files`);
   const BLOCK = /preventScreenCapture|usePreventScreenCapture|addScreenshotListener|FLAG_SECURE|setSecure\(|windowSecure|isCaptured|capturedDidChange/;
-  const found = APP_FILES.filter(f => BLOCK.test(read(f)));
-  assert.deepEqual(found, [], `screen capture is blocked or watched in: ${found.join(', ')}`);
-  // Still there: the iOS app-switcher snapshot is covered (not a capture block; screenshots still work).
-  assert.match(read('app/index.tsx'), /ScreenCapture\.enableAppSwitcherProtectionAsync\(/);
-  // No config plugin turns it on natively either.
+  const found = APP_FILES.filter(f => !android(f) && BLOCK.test(read(f)));
+  assert.deepEqual(found, [], `screen capture is blocked or watched outside Android files in: ${found.join(', ')}`);
+  // iOS: the app-switcher snapshot is covered (not a capture block; screenshots still work).
+  assert.match(read('src/native/screen.ts'), /Platform\.OS === 'ios' \? ScreenCapture\.enableAppSwitcherProtectionAsync\(1\)/);
+  // Android (removed for every platform by #76, 24 Nov 2026; restored for Android only, review of #102): the window
+  // is secure, so Recents shows a blank card, not the papers of an open vault.
+  assert.match(read('src/native/screen.android.ts'), /^\s*return ScreenCapture\.preventScreenCaptureAsync\(\);$/m);
+  // The app calls it once when it starts, through the platform-neutral path (Metro picks screen.android.ts on Android).
+  const app = read('app/index.tsx');
+  assert.match(app, /^import \{ guardScreen \} from '\.\.\/src\/native\/screen';$/m);
+  assert.match(app, /^\s*void guardScreen\(\)\.catch\(/m);
+  assert.doesNotMatch(app, /expo-screen-capture/, 'app/index.tsx calls the capture module directly, past the platform files');
+  // No config plugin turns a block on natively for iOS either.
   assert.doesNotMatch(read('app.config.ts'), /screen-capture|FLAG_SECURE/);
 });
 
@@ -71,7 +79,7 @@ test('the preview sample vault is reachable only through its build-time switch',
 
 test('the bundle scan fails a bundle that carries the review code or the preview, and an empty one', () => {
   const alive = 'Continue in English Continuar en español 继续使用简体中文 한국어로 계속하기 '.padEnd(120_000, 'x');
-  const andro = alive + ' "keepmyproof.com/api/review" "Have a review code?"';
+  const andro = alive + ' "keepmyproof.com/api/review" "Have a review code?" guardScreen=function(){return e.preventScreenCaptureAsync()}';
   assert.deepEqual(scan({ ios: alive, android: andro }), []);
   assert.deepEqual(scan({ ios: alive + '"Have a review code?"', android: andro }), ['REVIEW_CODE_ON_IOS: "Have a review code?"']);
   assert.deepEqual(scan({ ios: alive + 'https://keepmyproof.com/api/review', android: andro }), ['REVIEW_CODE_ON_IOS: "keepmyproof.com/api/review"']);
@@ -79,6 +87,10 @@ test('the bundle scan fails a bundle that carries the review code or the preview
   assert.deepEqual(scan({ ios: alive + 'Preview only: the sample vault opens with 123456.', android: andro }), ['PREVIEW_IN_STORE_BUNDLE ios: "Preview only: the sample vault opens with 123456."']);
   assert.ok(scan({ ios: '', android: andro }).includes('BUNDLE_EMPTY ios: 0 bytes of JS'));
   assert.ok(scan({ ios: alive, android: alive }).some(s => s.startsWith('REVIEW_CODE_MISSING_ON_ANDROID')));
+  // The capture block: on Android only. The module's own definition (`_e.preventScreenCaptureAsync=l`) is no call.
+  assert.deepEqual(scan({ ios: alive + 'guardScreen=function(){return e.preventScreenCaptureAsync()}', android: andro }), ['CAPTURE_BLOCK_ON_IOS: the iOS bundle calls preventScreenCaptureAsync']);
+  assert.deepEqual(scan({ ios: alive + ',_e.preventScreenCaptureAsync=l,', android: andro }), []);
+  assert.deepEqual(scan({ ios: alive, android: andro.replace('e.preventScreenCaptureAsync()', 'Promise.resolve()') }), ['CAPTURE_BLOCK_MISSING_ON_ANDROID: the Android bundle never calls preventScreenCaptureAsync, so Recents shows an open vault']);
 });
 
 test('promise audit: no store, legal or doc line describes a preview, a purchase switch or a screenshot block', () => {

@@ -5,6 +5,8 @@
 //     preview's sample vault, "Preview only" wording or 123456 hint;
 //   - the Android bundle DOES have the review code (so the scan can see that kind of string at all), and
 //     neither has the preview;
+//   - the Android bundle calls preventScreenCaptureAsync (FLAG_SECURE: Recents shows a blank card, as in every
+//     Play build up to versionCode 4) and the iOS bundle never does (Apple 5.6: screenshots work on iOS);
 //   - both have the first screen's "Continue in English" in every language (the scan is reading the app, not
 //     an empty or unreadable file).
 // Exit 0 = clean, 1 = a NAMED STOP printed. Run: npm run bundle-scan (CI: .github/workflows/check.yml).
@@ -28,6 +30,8 @@ const has = (text: string, s: string) => forms(core(s)).some(f => text.includes(
 
 const REVIEW = [REVIEW_URL.replace(/^https:\/\//, ''), ...Object.values(reviewStrings).flat()];
 const PREVIEW = [SKIP_LABEL, SAMPLE_HINT, ...sampleVault().map(d => d.title)];
+// A call of the block, as Metro leaves it (`e.preventScreenCaptureAsync()`); the module's own definition is not a call.
+const BLOCK_CALL = /[\w$]\.preventScreenCaptureAsync\(/;
 const ALIVE = ['Continue in English', 'Continuar en español', '继续使用简体中文', '한국어로 계속하기'];
 
 export function scan(bundles: Record<'ios' | 'android', string>): string[] {
@@ -38,6 +42,8 @@ export function scan(bundles: Record<'ios' | 'android', string>): string[] {
     for (const s of PREVIEW) if (has(text, s)) out.push(`PREVIEW_IN_STORE_BUNDLE ${platform}: "${core(s)}"`);
   }
   for (const s of REVIEW) if (has(bundles.ios, s)) out.push(`REVIEW_CODE_ON_IOS: "${core(s)}"`);
+  if (BLOCK_CALL.test(bundles.ios)) out.push('CAPTURE_BLOCK_ON_IOS: the iOS bundle calls preventScreenCaptureAsync');
+  if (!BLOCK_CALL.test(bundles.android)) out.push('CAPTURE_BLOCK_MISSING_ON_ANDROID: the Android bundle never calls preventScreenCaptureAsync, so Recents shows an open vault');
   for (const s of [REVIEW[0]!, reviewStrings.reviewLink[0]]) if (!has(bundles.android, s)) out.push(`REVIEW_CODE_MISSING_ON_ANDROID: "${core(s)}" (the scan would not see it on iOS either)`);
   return out;
 }
@@ -62,6 +68,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     const out = scan({ ios: read(dir, 'ios'), android: read(dir, 'android') });
     if (out.length) { console.log('NAMED STOP [STORE_BUNDLE_DIFFERS]\n' + out.join('\n')); process.exit(1); }
-    console.log(`bundle-scan: iOS has no review code or preview; Android has the review code and no preview; ${REVIEW.length} review and ${PREVIEW.length} preview lines checked.`);
+    console.log(`bundle-scan: iOS has no review code, preview or capture block; Android has the review code and the capture block and no preview; ${REVIEW.length} review and ${PREVIEW.length} preview lines checked.`);
   } finally { if (given < 0) rmSync(dir, { recursive: true, force: true }); }
 }
