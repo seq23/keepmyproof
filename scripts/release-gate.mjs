@@ -156,6 +156,18 @@ export function betaStops({ env, platform = 'ios' }) {
   return out;
 }
 
+const repo = (f) => new URL(`../${f}`, import.meta.url);
+/** The live inputs every gate run reads, from the repo root whatever the working directory (Play's `send` runs from
+ *  ~/GitHub/boss-os through vault:run): the app version, release/*.json, the legal pages (HEAD) and the support MX. */
+export function gateDeps() {
+  const version = /version:\s*'([^']+)'/.exec(readFileSync(repo('app.config.ts'), 'utf8'))?.[1];
+  if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
+  const readJson = path => existsSync(repo(path)) ? JSON.parse(readFileSync(repo(path), 'utf8')) : null;
+  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(20_000) })).status; } catch { return 0; } };
+  const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
+  return { version, readJson, probe, mx, supportEmail: SITE.supportEmail };
+}
+
 async function main() {
   const report = process.argv.includes('--report');
   // --submit <build>: run before Submit for Review in App Store Connect, naming the TestFlight build being submitted.
@@ -176,14 +188,10 @@ async function main() {
     console.log(`release gate: full gate for the ${profile} ${platform ?? ''} store build (a store can review it); the TestFlight purchase check is judged at submit (npm run submit-gate).`);
     stage = 'upload';
   }
-  const version = /version:\s*'([^']+)'/.exec(readFileSync('app.config.ts', 'utf8'))?.[1];
-  if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
-  const readJson = path => existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
-  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(20_000) })).status; } catch { return 0; } };
-  const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
+  const { version, readJson, probe, mx, supportEmail } = gateDeps();
   // Without --submit (the daily report, a plain local run) the record is judged on the build it names: is it there and whole.
   const build = submitBuild ?? readJson('release/device-gate.json')?.purchase?.build;
-  const found = await stops({ env: process.env, version, readJson, probe, supportEmail: SITE.supportEmail, mx, stage, build });
+  const found = await stops({ env: process.env, version, readJson, probe, supportEmail, mx, stage, build });
   for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
   // Each stop is a row on Open Loops, closed by itself the day it clears (the daily report and every store build).
   const known = knownHere(Boolean(process.env.EAS_BUILD), stage);

@@ -21,3 +21,4 @@ export declare const PHONE_WORDS: RegExp;
 export declare const ANDROID_ONLY_KEYS: string[];
 export declare const IOS_STORE_FILES: string[];
 export declare function phoneWording(stringsSource: string, storeFiles?: Record<string, string>): string[];
+export declare function gateDeps(): { version: string; readJson: (path: string) => any; probe: (url: string) => Promise<number>; mx: (domain: string) => Promise<number>; supportEmail: string };
