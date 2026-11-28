@@ -2,12 +2,9 @@
 appId: com.keepmyproof.app
 ---
 - tapOn: "Settings"
-- repeat:
-    times: 3
-    commands:
-      - swipe:
-          start: "50%,65%"
-          end: "50%,15%"
+- scrollUntilVisible:
+    element: "Lock my papers ›"
+    direction: DOWN
 - tapOn: "Lock my papers ›"
 - extendedWaitUntil:
     visible: "Your papers are locked"

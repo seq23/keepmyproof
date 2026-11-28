@@ -5,6 +5,11 @@ appId: com.keepmyproof.app
     element: "\\+ Add something"
     direction: DOWN
 - tapOn: "\\+ Add something"
+# The add screen opens on Note; the File kind shows "Choose a file ›" (gate run 46090441187, flow 2).
+- scrollUntilVisible:
+    element: "File"
+    direction: DOWN
+- tapOn: "File"
 - scrollUntilVisible:
     element: "Choose a file ›"
     direction: DOWN
@@ -17,11 +22,26 @@ appId: com.keepmyproof.app
     visible:
       id: "Name it"
     timeout: 20000
-- tapOn:
-    id: "Name it"
-- eraseText: 60
-- inputText: ${TITLE}
-- pressKey: Enter
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: DOWN
+    centerElement: true
+- retry:
+    maxRetries: 3
+    commands:
+      - tapOn:
+          id: "Name it"
+      - waitForAnimationToEnd
+      - tapOn:
+          id: "Name it"
+      - eraseText: 80
+      - inputText: ${TITLE}
+      - pressKey: Enter
+      - waitForAnimationToEnd
+      - assertVisible:
+          id: "Name it"
+          text: ${TITLE}
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN

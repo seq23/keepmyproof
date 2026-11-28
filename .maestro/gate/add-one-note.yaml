@@ -9,10 +9,26 @@ appId: com.keepmyproof.app
     element: "\\+ Add something"
     direction: DOWN
 - tapOn: "\\+ Add something"
-- tapOn:
-    id: "Name it"
-- inputText: ${TITLE}
-- pressKey: Enter
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: DOWN
+    centerElement: true
+- retry:
+    maxRetries: 3
+    commands:
+    - tapOn:
+        id: "Name it"
+    - waitForAnimationToEnd
+    - tapOn:
+        id: "Name it"
+    - eraseText: 80
+    - inputText: ${TITLE}
+    - pressKey: Enter
+    - waitForAnimationToEnd
+    - assertVisible:
+        id: "Name it"
+        text: ${TITLE}
 - scrollUntilVisible:
     element: "Save to .*"
     direction: DOWN
