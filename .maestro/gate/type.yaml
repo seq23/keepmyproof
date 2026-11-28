@@ -1,0 +1,19 @@
+# Types TEXT into the field whose id is FIELD, until the field shows SHOW (TEXT itself, or "••••••|${CODE}" for a secret
+# field: iOS reports a filled six-number passcode field as six dots, gate run 46128557523 flow 9 hierarchy).
+# A lost focus tap would type nowhere; the field's own value is the proof, not the tap.
+appId: com.keepmyproof.app
+---
+- retry:
+    maxRetries: 3
+    commands:
+      - waitForAnimationToEnd:
+          timeout: 5000
+      - tapOn:
+          id: ${FIELD}
+      - eraseText: 120
+      - inputText: ${TEXT}
+      - extendedWaitUntil:
+          visible:
+            id: ${FIELD}
+            text: ${SHOW}
+          timeout: 5000

@@ -1,4 +1,5 @@
-# Adds one invented note to the folder that is open. Env: TITLE, NOTE. After the very first save the app asks how you heard about it; that counts as done too. Used by preview.yaml and the device gate.
+# Adds one invented note to the folder that is open. Env: TITLE, NOTE. Ends on the folder, which lists the note, or (after
+# the very first save) on "How did you hear about KeepMyProof?". Used by preview.yaml and the device gate.
 # The note (multiline) is typed first; then the name, and Enter on the one-line name closes the keyboard so it
 # never covers the save button. The name is read back from its field before Save, and typed again if it did not
 # land: on run 46074471722 the tap on the name came while the page was still scrolling and the name stayed empty.
@@ -26,8 +27,10 @@ appId: com.keepmyproof.app
 - retry:
     maxRetries: 3
     commands:
-      # With the note's keyboard still up, the first tap only closes the keyboard and the name field does not take
-      # focus (run 46083058306: the name went into the note field, and eraseText wiped the note). Tap again to focus.
+      # Run 46083058306: the name field sat under the note's keyboard (hierarchy: field y 650-696 pt, the key row
+      # "a s d f g h" at y 644-698), so the tap landed on a key and the name went into the note; the keyboard never
+      # closed. Centering the name field (above) keeps it clear of the keyboard; the second tap and the read-back
+      # below catch a tap that still misses.
       - tapOn:
           id: "Name it"
       - waitForAnimationToEnd
@@ -53,3 +56,15 @@ appId: com.keepmyproof.app
 - extendedWaitUntil:
     visible: "Checklist|How did you hear about KeepMyProof\\?"
     timeout: 15000
+# Saved: the folder lists the note by its name (a refused save stays on the add screen and stops above). After the
+# very first save the app asks how you heard first, a screen that only ever follows a save.
+- runFlow:
+    when:
+      visible: "Checklist"
+    commands:
+      - scrollUntilVisible:
+          element: "${TITLE}"
+          direction: DOWN
+      - scrollUntilVisible:
+          element: "← Back to .*"
+          direction: UP

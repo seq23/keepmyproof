@@ -1,0 +1,78 @@
+# Adds one file from Files to the open folder. Env: FILE (name in On My iPhone), TITLE.
+appId: com.keepmyproof.app
+---
+- scrollUntilVisible:
+    element: "\\+ Add something"
+    direction: DOWN
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "\\+ Add something"
+      THEN: "Save to .*"
+# The add screen opens on Note; the File kind shows "Choose a file ›" (gate run 46090441187, flow 2).
+# Centered, as a person scrolls to it: on an iPhone 17 the Photo / File / Note row sits under the Save bar until the
+# page scrolls, and an uncentered tap on "File" pressed "Save to …" instead (gate run 46098006485, flow 2: an empty
+# note refused with "Give your note a name before saving.", the form still on Note).
+# Retried until "Choose a file ›" can be brought into view: pressing File again keeps File chosen.
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element: "File"
+          direction: DOWN
+          centerElement: true
+      - tapOn: "File"
+      - scrollUntilVisible:
+          element: "Choose a file ›"
+          direction: DOWN
+          centerElement: true
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Choose a file ›"
+      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
+- runFlow:
+    file: pick.yaml
+    env:
+      FILE: ${FILE}
+- extendedWaitUntil:
+    visible:
+      id: "Name it"
+    timeout: 20000
+- scrollUntilVisible:
+    element:
+      id: "Name it"
+    direction: DOWN
+    centerElement: true
+- retry:
+    maxRetries: 3
+    commands:
+      - tapOn:
+          id: "Name it"
+      - waitForAnimationToEnd
+      - tapOn:
+          id: "Name it"
+      - eraseText: 80
+      - inputText: ${TITLE}
+      - pressKey: Enter
+      - waitForAnimationToEnd
+      - assertVisible:
+          id: "Name it"
+          text: ${TITLE}
+- scrollUntilVisible:
+    element: "Save to .*"
+    direction: DOWN
+- runFlow:
+    file: press.yaml
+    env:
+      TAP: "Save to .*"
+- extendedWaitUntil:
+    visible: "Checklist"
+    timeout: 20000
+# Saved: the folder lists the paper by its name. Then back to the top of the folder (its Back button).
+- scrollUntilVisible:
+    element: "${TITLE}"
+    direction: DOWN
+- scrollUntilVisible:
+    element: "← Back to .*"
+    direction: UP

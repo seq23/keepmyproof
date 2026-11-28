@@ -8,22 +8,44 @@ import { resolveMx } from 'node:dns/promises';
 import { SITE } from '../site/config.mjs';
 import { reportToOpenLoops } from './lib/open-loops.mjs';
 
-// Spec "Release gate every version": each must be recorded true on a real device for this version.
+// Spec "Release gate every version": each must be recorded true for this version. release/device-gate.json names
+// the device it ran on: the Simulator run (.github/workflows/device-gate.yml, written by scripts/device-gate/record.mjs)
+// or a real phone; her 13 Nov 2026 ruling asks for a real-phone check before a store submission.
+const DAY = 86_400_000;
 export const DEVICE_CHECKS = [
   'full-test-vault-backed-up', 'fresh-install-restore-with-phrase-only', 'every-file-hash-matches',
   'restore-twice-no-duplicates', 'old-data-upgraded', 'corrupt-or-missing-file-rejected', 'wrong-phrase-changes-nothing',
   'full-disk-changes-nothing', 'interrupted-restore-changes-nothing', 'passcode-reset-face-id-and-phrase',
   'app-switcher-preview-hidden', 'store-sandbox-purchase-and-restore',
 ];
+// A Simulator cannot buy from the App Store (Apple sandbox sign-in fails on the iOS 26 Simulator), so this one check is
+// met by a recorded TestFlight sandbox Buy + Restore on her own iPhone (her yes, 27 Nov 2026), written into
+// release/device-gate.json by `record.mjs --purchase`. Uploading to TestFlight needs the other checks (that is where
+// the buy happens); submitting for review needs all of them, with the purchase made on the very build submitted.
+export const PURCHASE_CHECK = 'store-sandbox-purchase-and-restore';
+export const SIMULATOR_CHECKS = DEVICE_CHECKS.filter(c => c !== PURCHASE_CHECK);
+/** Why a purchase record does not count for submitting `build` ([] = it counts). */
+export function purchaseProblems(purchase, { build, now = Date.now() } = {}) {
+  const out = [];
+  if (!purchase || typeof purchase !== 'object') return ['no TestFlight Buy + Restore is recorded'];
+  if (!/^[1-9]\d*$/.test(String(purchase.build ?? ''))) out.push('the record names no build number');
+  else if (String(purchase.build) !== String(build ?? '')) out.push(`the Buy + Restore was on build ${purchase.build}, not build ${build ?? '(none named)'}`);
+  const day = /^\d{4}-\d{2}-\d{2}$/.test(String(purchase.date ?? '')) ? Date.parse(`${purchase.date}T00:00:00Z`) : NaN;
+  if (!Number.isFinite(day)) out.push('the record has no date (YYYY-MM-DD)');
+  else if (day > now + DAY) out.push(`the record is dated ${purchase.date}, in the future`);
+  if (typeof purchase.tappedBy !== 'string' || !purchase.tappedBy.trim()) out.push('the record does not say who tapped');
+  if (purchase.restored !== true) out.push('Restore bringing Plus back is not recorded');
+  return out;
+}
 export const LIST_LIFETIME_USD = 39.99;
 export const LEGAL_URLS = ['https://keepmyproof.com/terms', 'https://keepmyproof.com/privacy'];
 export const SUPPORT_DOMAIN = 'keepmyproof.com';
-const DAY = 86_400_000;
 
 // Every stop this gate can raise, and its plain words on Boss OS's Open Loops list (boss-os docs/open-loops.md).
 export const STOP_WORDS = {
   REVENUECAT_KEY_MISSING: { title: 'KeepMyProof: store keys and Plus products in RevenueCat', next_step: 'Set the App Store and Play keys and the Plus products in RevenueCat, then the store build can sell Plus.' },
-  DEVICE_RELEASE_GATE_PENDING: { title: 'KeepMyProof: the real-phone test', next_step: 'Run every release check on a real phone for this version and record it.' },
+  DEVICE_RELEASE_GATE_PENDING: { title: 'KeepMyProof: the device test', next_step: 'Run the device gate (Simulator) for this version and record it with scripts/device-gate/record.mjs.' },
+  TESTFLIGHT_PURCHASE_UNRECORDED: { title: 'KeepMyProof: the TestFlight Buy + Restore', next_step: 'Buy Plus in the TestFlight build on her iPhone (sandbox), tap Restore, and record it with record.mjs --purchase before submitting.' },
   PRICE_RECHECK_PENDING: { title: "KeepMyProof: recheck the other app's lifetime price", next_step: "Recheck the other vault app's App Store lifetime price in launch week." },
   PRICED_BELOW_INCUMBENT: { title: 'KeepMyProof: our price is below the other app', next_step: 'Raise our lifetime price to at least theirs; never undercut it.' },
   LEGAL_URLS_UNREACHABLE: { title: 'KeepMyProof: terms and privacy pages answer', next_step: 'Make the terms and privacy pages on keepmyproof.com load again.' },
@@ -33,7 +55,8 @@ export const STOP_WORDS = {
 };
 export const OPEN_LOOPS = { repo: 'seq23/keepmyproof', business: 'spry', finish: 'KeepMyProof: live in both stores, selling' };
 // The store keys are EAS secrets, so a run outside an EAS build cannot see them: it neither raises nor clears that stop.
-export const knownHere = (eas) => Object.keys(STOP_WORDS).filter(c => eas || c !== 'REVENUECAT_KEY_MISSING');
+// The upload stage (an EAS store build) does not judge the TestFlight purchase, so it neither raises nor clears that stop.
+export const knownHere = (eas, stage = 'submit') => Object.keys(STOP_WORDS).filter(c => (eas || c !== 'REVENUECAT_KEY_MISSING') && (stage === 'submit' || c !== 'TESTFLIGHT_PURCHASE_UNRECORDED'));
 
 // supportsTablet is on, so every string iOS can show is read on an iPad too: none may say "phone"
 // (App Review re-review, 21 Nov 2026). "iPhone" is a product name and stays allowed. Strings only Android
@@ -63,8 +86,11 @@ export function phoneWording(stringsSource, storeFiles = {}) {
   return out;
 }
 
-/** Every stop that still applies, in order. `[]` = ready to build for the stores. */
-export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now(), readText = (f) => readFileSync(new URL(`../${f}`, import.meta.url), 'utf8') }) {
+/** Every stop that still applies, in order. `[]` = ready. stage 'upload' (an EAS store build, which goes to TestFlight)
+ *  lets the TestFlight purchase check be pending; stage 'submit' (the default, and what `--submit <build>` runs before
+ *  Submit for Review) needs it recorded on `build`, the build being submitted. */
+export async function stops({ env, version, readJson, probe, supportEmail, mx, now = Date.now(), stage = 'submit', build, readText = (f) => readFileSync(new URL(`../${f}`, import.meta.url), 'utf8') }) {
+  if (stage !== 'submit' && stage !== 'upload') throw Error(`NAMED STOP [UNKNOWN_STAGE] ${stage}`);
   const out = [];
   const stop = (code, why) => out.push({ code, why });
   const wording = phoneWording(readText('src/strings.ts'), Object.fromEntries(IOS_STORE_FILES.map(f => [f, readText(f)])));
@@ -75,9 +101,14 @@ export async function stops({ env, version, readJson, probe, supportEmail, mx, n
   const on = switchesOn(env);
   if (on.length) stop('PREVIEW_BUILD', switchWhy(on));
   const device = readJson('release/device-gate.json');
-  const missing = DEVICE_CHECKS.filter(c => device?.checks?.[c] !== true);
+  const missing = SIMULATOR_CHECKS.filter(c => device?.checks?.[c] !== true);
   if (!device || device.version !== version || missing.length)
     stop('DEVICE_RELEASE_GATE_PENDING', `release/device-gate.json does not record a passing device test for ${version}${missing.length ? ` (missing: ${missing.join(', ')})` : ''}.`);
+  if (stage === 'submit') {
+    const why = purchaseProblems(device?.purchase, { build, now });
+    if (device?.checks?.[PURCHASE_CHECK] !== true && !why.length) why.push(`${PURCHASE_CHECK} is not marked passed`);
+    if (why.length) stop('TESTFLIGHT_PURCHASE_UNRECORDED', `release/device-gate.json: ${why.join('; ')}; submitting waits for her TestFlight Buy + Restore on the build being submitted.`);
+  }
   const price = readJson('release/price-check.json');
   const checkedOn = Date.parse(price?.checkedOn ?? '');
   if (!Number.isFinite(checkedOn) || now - checkedOn > 7 * DAY || typeof price?.incumbentLifetimeUSD !== 'number')
@@ -125,8 +156,24 @@ export function betaStops({ env, platform = 'ios' }) {
   return out;
 }
 
+const repo = (f) => new URL(`../${f}`, import.meta.url);
+/** The live inputs every gate run reads, from the repo root whatever the working directory (Play's `send` runs from
+ *  ~/GitHub/boss-os through vault:run): the app version, release/*.json, the legal pages (HEAD) and the support MX. */
+export function gateDeps() {
+  const version = /version:\s*'([^']+)'/.exec(readFileSync(repo('app.config.ts'), 'utf8'))?.[1];
+  if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
+  const readJson = path => existsSync(repo(path)) ? JSON.parse(readFileSync(repo(path), 'utf8')) : null;
+  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(20_000) })).status; } catch { return 0; } };
+  const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
+  return { version, readJson, probe, mx, supportEmail: SITE.supportEmail };
+}
+
 async function main() {
   const report = process.argv.includes('--report');
+  // --submit <build>: run before Submit for Review in App Store Connect, naming the TestFlight build being submitted.
+  const s = process.argv.indexOf('--submit'), submitBuild = s > 0 ? process.argv[s + 1] : undefined;
+  if (s > 0 && !/^[1-9]\d*$/.test(submitBuild ?? '')) throw Error('NAMED STOP [SUBMIT_BUILD_UNNAMED] usage: npm run submit-gate -- <build number being submitted>');
+  let stage = 'submit';
   if (process.argv.includes('--if-store-build')) {
     const profile = process.env.EAS_BUILD_PROFILE, platform = process.env.EAS_BUILD_PLATFORM;
     const eas = (() => { try { return JSON.parse(readFileSync('eas.json', 'utf8')); } catch { return null; } })();
@@ -138,20 +185,19 @@ async function main() {
       if (found.length) process.exitCode = 2; else console.log(`release gate: clear for the ${profile} tester build (Play internal track draft, not in review).`);
       return;
     }
-    console.log(`release gate: full gate for the ${profile} ${platform ?? ''} store build (a store can review it).`);
+    console.log(`release gate: full gate for the ${profile} ${platform ?? ''} store build (a store can review it); the TestFlight purchase check is judged at submit (npm run submit-gate).`);
+    stage = 'upload';
   }
-  const version = /version:\s*'([^']+)'/.exec(readFileSync('app.config.ts', 'utf8'))?.[1];
-  if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] app.config.ts has no version.');
-  const readJson = path => existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
-  const probe = async url => { try { return (await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(20_000) })).status; } catch { return 0; } };
-  const mx = async domain => { try { return (await resolveMx(domain)).length; } catch { return 0; } };
-  const found = await stops({ env: process.env, version, readJson, probe, supportEmail: SITE.supportEmail, mx });
+  const { version, readJson, probe, mx, supportEmail } = gateDeps();
+  // Without --submit (the daily report, a plain local run) the record is judged on the build it names: is it there and whole.
+  const build = submitBuild ?? readJson('release/device-gate.json')?.purchase?.build;
+  const found = await stops({ env: process.env, version, readJson, probe, supportEmail, mx, stage, build });
   for (const s of found) console.log(`NAMED STOP [${s.code}] ${s.why}`);
   // Each stop is a row on Open Loops, closed by itself the day it clears (the daily report and every store build).
-  const known = knownHere(Boolean(process.env.EAS_BUILD));
+  const known = knownHere(Boolean(process.env.EAS_BUILD), stage);
   await reportToOpenLoops({ ...OPEN_LOOPS, known, stops: found.filter(s => known.includes(s.code)), words: STOP_WORDS });
   // --report (the daily workflow): the stops are the news, not a failure.
   if (found.length) { if (!report) process.exitCode = 2; return; }
-  console.log(`release gate: ${version} is clear for a store build.`);
+  console.log(submitBuild ? `release gate: ${version} (${submitBuild}) is clear to submit for review.` : stage === 'upload' ? `release gate: ${version} is clear for a store build (TestFlight upload).` : `release gate: ${version} is clear for a store build.`);
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((e) => { console.error(e?.message ?? e); process.exitCode = 1; });

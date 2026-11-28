@@ -13,6 +13,7 @@
     "check": "npm run typecheck && npm test && npm run validate",
     "release-gate": "node scripts/release-gate.mjs",
     "eas-build-pre-install": "node scripts/release-gate.mjs --if-store-build",
+    "submit-gate": "node scripts/release-gate.mjs --submit",
     "bundle": "expo export --platform ios --platform android",
     "preview:web": "expo export --platform web",
     "bundle-scan": "tsx scripts/bundle-scan.ts"
