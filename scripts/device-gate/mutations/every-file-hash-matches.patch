@@ -1,0 +1,15 @@
+# check: every-file-hash-matches
+# build: gate
+# breaks: Restore keeps each file's size but not its bytes (zeros, with a matching new hash, so the app's own check passes).
+diff --git a/src/core/vault.ts b/src/core/vault.ts
+index b67c47c..59b9bd7 100644
+--- a/src/core/vault.ts
++++ b/src/core/vault.ts
+@@ -117,6 +117,7 @@ export class Vault {
+   }
+   async restore(data: string, words: string) {
+     const restored = validate(JSON.parse(decode(open(data, recoveryKey(words), 'backup-v1'))));
++    for (const i of restored.items) if (i.bytes) { const z = new Uint8Array(unb64(i.bytes).length); i.bytes = b64(z); i.sha256 = hash(z); }
+     await this.mutate(s => {
+       for (const f of restored.folders) {
+         const existing = s.folders.find(x => x.id === f.id);

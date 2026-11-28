@@ -1,0 +1,16 @@
+# check: restore-twice-no-duplicates
+# build: gate
+# breaks: Restore adds an item that is already in the vault again, under a new id.
+diff --git a/src/core/vault.ts b/src/core/vault.ts
+index b67c47c..7bbde49 100644
+--- a/src/core/vault.ts
++++ b/src/core/vault.ts
+@@ -130,7 +130,7 @@ export class Vault {
+       }
+       for (const item of restored.items) {
+         const existing = s.items.find(i => i.id === item.id);
+-        if (!existing) s.items.push(item);
++        if (!existing || existing) s.items.push(existing ? { ...item, id: hash(this.random(32)) } : item);
+         else if (JSON.stringify(existing) !== JSON.stringify(item)) throw Error('RESTORE_CONFLICT');
+       }
+       s.ticks = { ...restored.ticks, ...s.ticks };

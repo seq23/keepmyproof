@@ -1,8 +1,8 @@
 {
-  "_why": "The device gate's checks in 5 groups, each on its own Simulator with its own vault (.github/workflows/device-gate.yml matrix), so a lost tap in one group cannot hide the checks of another, and a whole run takes ~30 min, not ~70 (serial runs 46098006485..46158251765 found one failure per 70-minute run). Every Simulator check is in exactly one group (tests/device-gate-groups.test.ts).",
-  "A": ["old-data-upgraded"],
-  "B": ["passcode-reset-face-id-and-phrase"],
-  "C": ["full-test-vault-backed-up", "fresh-install-restore-with-phrase-only", "every-file-hash-matches"],
-  "D": ["corrupt-or-missing-file-rejected", "wrong-phrase-changes-nothing", "restore-twice-no-duplicates"],
-  "E": ["full-disk-changes-nothing", "interrupted-restore-changes-nothing", "app-switcher-preview-hidden"]
+  "_why": "The device gate's checks in 5 groups, each group on its own Simulator in its own job (.github/workflows/device-gate.yml matrix; the free plan runs 5 macOS jobs at once). Every check starts from its own clean app state, so a group is only a way to share a booted Simulator: no check leans on another. Every Simulator check and the store-build smoke check is in exactly one group (tests/device-gate-groups.test.ts).",
+  "A": ["old-data-upgraded", "app-switcher-preview-hidden", "store-build-smoke"],
+  "B": ["passcode-reset-face-id-and-phrase", "full-test-vault-backed-up"],
+  "C": ["fresh-install-restore-with-phrase-only", "every-file-hash-matches", "restore-twice-no-duplicates"],
+  "D": ["corrupt-or-missing-file-rejected", "wrong-phrase-changes-nothing"],
+  "E": ["full-disk-changes-nothing", "interrupted-restore-changes-nothing"]
 }

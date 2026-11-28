@@ -1,0 +1,16 @@
+# check: fresh-install-restore-with-phrase-only
+# build: gate
+# breaks: Restore on a new install sets up the passcode and the words but never restores the items.
+diff --git a/app/index.tsx b/app/index.tsx
+index de6a91b..4a8babc 100644
+--- a/app/index.tsx
++++ b/app/index.tsx
+@@ -339,7 +339,7 @@ export default function App() {
+       if (!vault && (!/^\d{6}$/.test(code) || code !== codeAgain)) throw Error('PASSCODE_INVALID');
+       resume.current = 'home';
+       const v = vault ?? await device.setup(code, wordInput, false);
+-      await v.restore(restoreData, wordInput);
++      if (vault) await v.restore(restoreData, wordInput);
+       // Existing vaults keep their confirmed phrase; a new install adopts the backup phrase at setup.
+       setRestoreData(null); setWordInput(''); acceptVault(v); setNotice(t('restoreDone'));
+     }), false, true)}<P muted>{t('loss')}</P></>;

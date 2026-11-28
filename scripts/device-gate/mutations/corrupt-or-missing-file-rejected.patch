@@ -1,0 +1,16 @@
+# check: corrupt-or-missing-file-rejected
+# build: gate
+# breaks: The format check no longer compares a file's bytes with its recorded sha256.
+diff --git a/src/core/model.ts b/src/core/model.ts
+index 521806a..2b617e9 100644
+--- a/src/core/model.ts
++++ b/src/core/model.ts
+@@ -104,7 +104,7 @@ export function validate(input: unknown, trusted: (i: Item) => boolean = () => f
+     ids.add(i.id);
+     if (i.kind === 'note') {
+       if (i.bytes !== null || i.sha256 !== null || i.filename !== null || i.mime !== null) throw Error('FORMAT_INVALID');
+-    } else if (!str(i.bytes) || !str(i.sha256) || !str(i.filename) || !str(i.mime) || (!trusted(i) && hash(unb64(i.bytes)) !== i.sha256)) throw Error('FILE_CORRUPT');
++    } else if (!str(i.bytes) || !str(i.sha256) || !str(i.filename) || !str(i.mime) || false) throw Error('FILE_CORRUPT');
+     if (i.takenOn !== undefined && !(i.takenOn === null || date(i.takenOn))) throw Error('FORMAT_INVALID');
+   }
+   return s;

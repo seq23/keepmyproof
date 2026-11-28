@@ -1,17 +1,18 @@
-// The device gate's host tool (scripts/device-gate/backup-tool.ts) must tell a faithful restore from a bad one,
-// and the broken backups it makes must be ones the app refuses (Vault.restore), or the Simulator run proves nothing.
+// The device gate's host side must tell a faithful backup from a bad one, make broken backups the app really refuses,
+// and start every check from a vault the app's own code opens (scripts/device-gate/backup-tool.ts, vault-fixture.ts),
+// or the Simulator run proves nothing.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { phrase } from '../src/core/crypto';
-import { Vault } from '../src/core/vault';
-import { compare, summary, notFull } from '../scripts/device-gate/backup-tool';
-import { MemoryStore, draft, random } from './helpers';
-import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { b64, recoveryKey, decode, open } from '../src/core/crypto';
-import { validate } from '../src/core/model';
+import { DatabaseSync } from 'node:sqlite';
+import { phrase, recoveryKey, unb64, b64 } from '../src/core/crypto';
+import { AppLock, type LockRecord } from '../src/core/lock';
+import { Vault } from '../src/core/vault';
+import { againstManifest, bigger, compare, CORRUPTIONS, corrupt, readBackup, summary } from '../scripts/device-gate/backup-tool';
+import { KEYCHAIN, SCHEMA, makeFixture, type Manifest } from '../scripts/device-gate/vault-fixture';
+import { MemoryStore, draft, random } from './helpers';
 
 async function vaultWith(n: number) {
   const v = new Vault(new MemoryStore(), random(32), random); await v.load();
@@ -19,7 +20,54 @@ async function vaultWith(n: number) {
   await v.add(draft({ folder: 'private', title: 'a note' }), true);
   return v;
 }
-const tool = (...args: string[]) => { try { return { out: execFileSync('npx', ['tsx', 'scripts/device-gate/backup-tool.ts', ...args], { encoding: 'utf8' }), code: 0 }; } catch (e) { return { out: String((e as { stdout?: string }).stdout ?? ''), code: (e as { status: number }).status }; } };
+
+/** Opens a fixture the way the app does: the Keychain's key and lock record, the vault row in vault.sqlite. */
+async function openFixture(dir: string) {
+  const keychain = JSON.parse(readFileSync(join(dir, 'keychain.json'), 'utf8')) as Record<string, string>;
+  const m = JSON.parse(readFileSync(join(dir, 'manifest.json'), 'utf8')) as Manifest;
+  const db = new DatabaseSync(join(dir, 'vault', 'vault.sqlite'));
+  const row = db.prepare('SELECT ciphertext FROM vault WHERE id=1').get() as { ciphertext: string }; db.close();
+  let lock = JSON.parse(keychain[KEYCHAIN.lock]!) as LockRecord;
+  const appLock = new AppLock({ read: async () => lock, write: async r => { lock = r; } });
+  await assert.rejects(() => appLock.unlock(m.code === '000000' ? '111111' : '000000'), 'a wrong passcode is refused');
+  await appLock.unlock(m.code);
+  assert.equal(lock.recovery, b64(recoveryKey(m.words)), 'the lock record holds the manifest\'s 12 words');
+  const v = new Vault({ read: async () => row.ciphertext, write: async () => {} }, unb64(keychain[KEYCHAIN.key]!), random); await v.load();
+  return { m, v };
+}
+
+test('the fixture is the app\'s own storage: same schema and Keychain names as src/native/storage.ts', () => {
+  const storage = readFileSync('src/native/storage.ts', 'utf8');
+  assert.ok(storage.includes(`'${SCHEMA}'`), 'vault-fixture.ts SCHEMA differs from the app\'s');
+  assert.match(storage, new RegExp(`AUTH = '${KEYCHAIN.lock}', KEY = '${KEYCHAIN.key}'`));
+});
+
+test('a fixture made with this commit\'s core opens with its passcode and holds what its manifest says', async () => {
+  const dir = mkdtempSync(join(tmpdir(), 'gate-fx-'));
+  await makeFixture(dir);
+  const { m, v } = await openFixture(dir);
+  assert.equal(m.items.length, 4); assert.equal(m.items.filter(i => i.sha256).length, 2);
+  assert.deepEqual(againstManifest(v.snapshot(), m), []);
+});
+
+test('the committed old-data fixture (b0531f3) opens with this commit\'s core, its passcode and its words', async () => {
+  const { m, v } = await openFixture('scripts/device-gate/fixtures/old-b0531f3');
+  assert.match(m.core, /^b0531f3/);
+  assert.deepEqual(againstManifest(v.snapshot(), m), []);
+});
+
+test('againstManifest: an extra, missing or duplicated item, changed bytes or an empty manifest are differences', async () => {
+  const dir = mkdtempSync(join(tmpdir(), 'gate-fx2-'));
+  await makeFixture(dir);
+  const { m, v } = await openFixture(dir), s = v.snapshot();
+  assert.deepEqual(againstManifest(s, m), []);
+  const fewer = v.snapshot(); fewer.items.pop(); assert.ok(againstManifest(fewer, m).some(d => d.includes('items, not')));
+  const twice = v.snapshot(); twice.items.push(twice.items[0]!); assert.ok(againstManifest(twice, m).some(d => d.startsWith('2 items titled')));
+  const changed = v.snapshot(); const f = changed.items.find(i => i.bytes)!; const b = unb64(f.bytes!); b[3] ^= 1; f.bytes = b64(b);
+  assert.ok(againstManifest(changed, m).some(d => d.includes('file bytes sha256')), 'the hash is taken from the bytes, not the item\'s own field');
+  assert.ok(againstManifest(s, { items: [] }).includes('empty manifest: nothing was compared'));
+  assert.deepEqual(againstManifest(s, m, 1).length, 1, 'extra counts the items a check added');
+});
 
 test('compare: same items and bytes pass; a missing item, changed bytes or an empty backup fail', async () => {
   const v = await vaultWith(2), s = v.snapshot();
@@ -33,92 +81,33 @@ test('compare: same items and bytes pass; a missing item, changed bytes or an em
   assert.equal(summary(s).files, 2);
 });
 
-test('every broken backup the tool makes is refused by the app, and changes nothing in the vault', async () => {
-  const words = phrase(random), v = await vaultWith(2), dir = mkdtempSync(join(tmpdir(), 'gate-'));
-  const good = join(dir, 'good.kmp'); writeFileSync(good, v.backup(recoveryKey(words)));
-  const target = await vaultWith(0), before = JSON.stringify(target.snapshot().items.map(i => i.id));
-  for (const how of ['missing', 'changed', 'flipped', 'truncated']) {
-    const bad = join(dir, `${how}.kmp`);
-    assert.equal(tool('corrupt', good, bad, how, words).code, 0, how);
-    const { readFileSync } = await import('node:fs');
-    await assert.rejects(() => target.restore(readFileSync(bad, 'utf8'), words), Error, how);
-    assert.equal(JSON.stringify(target.snapshot().items.map(i => i.id)), before, `${how} changed the vault`);
+test('every broken backup the tool makes is refused by the app, on a new vault and an existing one, changing nothing', async () => {
+  const words = phrase(random), v = await vaultWith(2), good = v.backup(recoveryKey(words));
+  for (const how of CORRUPTIONS) {
+    const bad = corrupt(good, how, words);
+    for (const target of [await vaultWith(0), v]) {
+      const before = JSON.stringify(target.snapshot().items.map(i => i.id));
+      await assert.rejects(() => target.restore(bad, words), Error, how);
+      assert.equal(JSON.stringify(target.snapshot().items.map(i => i.id)), before, `${how} changed the vault`);
+    }
+    assert.throws(() => readBackup(bad, words), `${how}: the gate's own reader refuses it too`);
   }
-  const big = join(dir, 'big.kmp'); assert.equal(tool('bigger', good, big, '2', words).code, 0);
-  const { readFileSync } = await import('node:fs');
-  const restored = validate(JSON.parse(decode(open(readFileSync(big, 'utf8'), recoveryKey(words), 'backup-v1'))));
-  assert.equal(restored.items.length, v.snapshot().items.length + 2, 'bigger adds valid, hash-checked files');
-  assert.equal(tool('compare', good, good, words).code, 0);
-  assert.equal(tool('compare', good, big, words).code, 1);
+  const big = bigger(good, 2, words);
+  assert.equal(readBackup(big, words).items.length, v.snapshot().items.length + 2, 'bigger adds valid, hash-checked files');
 });
 
-test('the gate record is written only when every check passed, and the switcher only with a person\'s look', async () => {
+test('the gate record is written only when every Simulator check and the store-build smoke check passed', async () => {
   const { record } = await import('../scripts/device-gate/record.mjs');
   const { DEVICE_CHECKS, SIMULATOR_CHECKS, PURCHASE_CHECK } = await import('../scripts/release-gate.mjs');
-  const all = (over: Record<string, string> = {}) => ({ device: 'iPhone 17 Simulator, iOS-26-5', commit: 'abc', checks: Object.fromEntries(DEVICE_CHECKS.map((c: string) => [c, { result: over[c] ?? (c === 'app-switcher-preview-hidden' ? 'look' : 'pass'), evidence: 'e' }])) });
-  const ok = record(all(), { run: 'r', version: '1.0', seen: 'blurred, no title readable' });
+  const all = (over: Record<string, string> = {}) => ({ device: 'iPhone 17 Simulator, iOS-26-5', commit: 'abc',
+    checks: Object.fromEntries([...DEVICE_CHECKS, 'store-build-smoke'].map((c: string) => [c, { result: over[c] ?? 'pass', evidence: 'e' }])) });
+  const ok = record(all(), { run: 'r', version: '1.0' });
   assert.equal(Object.values(ok.checks).filter(Boolean).length, SIMULATOR_CHECKS.length);
   assert.equal(ok.checks[PURCHASE_CHECK], false, 'a Simulator run never records the store purchase');
-  assert.throws(() => record(all(), { run: 'r', version: '1.0' }), /DEVICE_GATE_NOT_PASSED/, 'no look, no switcher pass');
-  assert.throws(() => record(all({ 'full-disk-changes-nothing': 'fail' }), { run: 'r', version: '1.0', seen: 'x' }), /full-disk/);
-  assert.throws(() => record(all({ 'old-data-upgraded': 'not-run' }), { run: 'r', version: '1.0', seen: 'x' }), /old-data/);
+  assert.throws(() => record(all({ 'app-switcher-preview-hidden': 'look' }), { run: 'r', version: '1.0' }), /DEVICE_GATE_NOT_PASSED/, 'a look is no pass');
+  assert.throws(() => record(all({ 'store-build-smoke': 'not-run' }), { run: 'r', version: '1.0' }), /store-build-smoke/);
+  assert.throws(() => record(all({ 'full-disk-changes-nothing': 'fail' }), { run: 'r', version: '1.0' }), /full-disk/);
+  assert.throws(() => record(all({ 'old-data-upgraded': 'not-run' }), { run: 'r', version: '1.0' }), /old-data/);
   const noDevice = all(); delete (noDevice as { device?: string }).device;
-  assert.throws(() => record(noDevice, { run: 'r', version: '1.0', seen: 'x' }), /DEVICE_UNNAMED/);
-});
-
-test('the backup check needs the whole test vault: an empty or partial backup is not "full-test-vault-backed-up"', async () => {
-  const words = phrase(random), dir = mkdtempSync(join(tmpdir(), 'gate-full-'));
-  // The gate's vault: 2 files and 2 notes.
-  const v = await vaultWith(2); await v.add(draft({ folder: 'private', title: 'second note' }), true);
-  assert.deepEqual(notFull(summary(v.snapshot())), []);
-  const full = join(dir, 'full.kmp'); writeFileSync(full, v.backup(recoveryKey(words)));
-  const ok = tool('full', full, words);
-  assert.equal(ok.code, 0, ok.out); assert.match(ok.out, /^\{"count":4,"files":2/);
-  // Gate run 46112815437: adding papers failed, and an empty vault's backup was recorded as a pass.
-  const empty = join(dir, 'empty.kmp'); writeFileSync(empty, (await vaultWith(0)).backup(recoveryKey(words)));
-  const none = tool('full', empty, words);
-  assert.equal(none.code, 1); assert.match(none.out, /NOT_FULL_TEST_VAULT: 1 items, not 4; 0 files, not 2/);
-  assert.deepEqual(notFull({ count: 0, files: 0 }), ['0 items, not 4', '0 files, not 2']);
-  assert.deepEqual(notFull({ count: 4, files: 1 }), ['1 files, not 2']);
-  // run.sh uses it for the check.
-  assert.match(readFileSync('scripts/device-gate/run.sh', 'utf8'), /S=\$\(tool full "\$W\/good\.kmp" "\$WORDS"\) && flow check-backup/);
-});
-
-// Every tap in a gate flow proves its effect (gate runs 46118560120, 46124321633, 46128557523: on the iOS 26
-// Simulator a tap can be reported done and never reach the app, and the flows after it start on the wrong screen).
-// A tap passes when it sits in a retry that checks a result after it (tap.yaml, tab.yaml, press.yaml and type.yaml
-// are built this way), or when the comment right above it names where its effect is checked or says it only closes
-// the keyboard. Returns "file:line" for each tap that does neither.
-export function unprovenTaps(dir: string): string[] {
-  const bad: string[] = [];
-  const indent = (l: string) => l.length - l.trimStart().length;
-  for (const f of readdirSync(dir).filter(n => n.endsWith('.yaml'))) {
-    const lines = readFileSync(join(dir, f), 'utf8').split('\n');
-    lines.forEach((l, i) => {
-      if (!/^\s*-\s+tapOn:/.test(l)) return;
-      let c = i - 1; const notes: string[] = [];
-      while (c >= 0 && /^\s*#/.test(lines[c])) notes.push(lines[c--]);
-      if (notes.some(n => /Closes the keyboard|Effect checked by|A system alert/.test(n))) return;
-      for (let r = i - 1; r >= 0; r--) {
-        const t = lines[r];
-        if (!t.trim() || /^\s*#/.test(t) || indent(t) >= indent(l)) continue;
-        if (!/^\s*-\s+retry:/.test(t)) continue;
-        let end = r + 1;
-        while (end < lines.length && (!lines[end].trim() || /^\s*#/.test(lines[end]) || indent(lines[end]) > indent(t))) end++;
-        if (lines.slice(i + 1, end).some(x => /^\s*-\s+(extendedWaitUntil|assertVisible|scrollUntilVisible):/.test(x))) return;
-      }
-      bad.push(`${f}:${i + 1}`);
-    });
-  }
-  return bad;
-}
-
-test('every tap in the gate flows is retried until its effect shows, or names where its effect is checked', () => {
-  const dir = join(__dirname, '..', '.maestro', 'gate');
-  assert.deepEqual(unprovenTaps(dir), []);
-  // The check itself sees a bare tap: a copy of the flows with one added must fail.
-  const copy = mkdtempSync(join(tmpdir(), 'gate-flows-'));
-  for (const f of readdirSync(dir)) writeFileSync(join(copy, f), readFileSync(join(dir, f)));
-  writeFileSync(join(copy, 'lock.yaml'), readFileSync(join(dir, 'lock.yaml'), 'utf8') + '- tapOn: "Lock my papers ›"\n');
-  assert.deepEqual(unprovenTaps(copy), [`lock.yaml:${readFileSync(join(copy, 'lock.yaml'), 'utf8').split('\n').length - 1}`]);
+  assert.throws(() => record(noDevice, { run: 'r', version: '1.0' }), /DEVICE_UNNAMED/);
 });

@@ -1,0 +1,232 @@
+# THE DEVICE GATE (docs/device-gate.md, scripts/device-gate/gate.ts): the 11 Simulator release checks of
+# scripts/release-gate.mjs SIMULATOR_CHECKS plus the store-build smoke check, on iOS Simulators on free GitHub macOS
+# runners. Two builds of this commit, Release configuration, no store key:
+#   store  what ships (no EXPO_PUBLIC_KMP_ switch): proven end to end by store-build-smoke, real picker and share sheet;
+#   gate   the same app with the device gate's seam (EXPO_PUBLIC_KMP_GATE=1, src/gate.ts), used by the 11 checks.
+# store-sandbox-purchase-and-restore is not run here (a Simulator cannot buy): it is her TestFlight Buy + Restore on a
+# real iPhone (record.mjs --purchase). This workflow never builds for a store and never writes the record itself.
+#
+# Mutation proof (scripts/device-gate/mutations/*.patch): each patch breaks the app for one check. A manual run with
+# mutate=<name|all>, or a push to device-gate/mutate*, builds one broken app per patch and passes only if every
+# broken app makes its check FAIL. Runs by hand on main, or on a push to a device-gate/* branch.
+name: Device gate (Simulator)
+on:
+  workflow_dispatch:
+    inputs:
+      group:
+        description: 'One group (A-E) of scripts/device-gate/groups.json, or all'
+        default: all
+        type: choice
+        options: [all, A, B, C, D, E]
+      mutate:
+        description: 'Mutation proof: a patch name in scripts/device-gate/mutations/, all, or none (the real gate)'
+        default: none
+        type: string
+  push:
+    branches: ['device-gate/**']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: device-gate-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  MUTATE: ${{ github.event.inputs.mutate || (startsWith(github.ref_name, 'device-gate/mutate') && 'all') || 'none' }}
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 120
+    outputs:
+      mutations: ${{ steps.mut.outputs.list }}
+    env:
+      EXPO_NO_TELEMETRY: '1'
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Which mutations
+        id: mut
+        run: |
+          if [ "$MUTATE" = none ]; then echo 'list=[]' >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$MUTATE" = all ]; then names=$(ls scripts/device-gate/mutations/*.patch | xargs -n1 basename | sed 's/\.patch$//'); else names="$MUTATE"; fi
+          for n in $names; do test -f "scripts/device-gate/mutations/$n.patch" || { echo "NAMED STOP [GATE_NO_SUCH_MUTATION] $n"; exit 2; }; done
+          echo "list=$(printf '%s\n' $names | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
+      # Both apps are a pure function of the app's sources: a run on the same sources reuses them.
+      - name: Cache key
+        id: key
+        run: echo "key=device-gate-apps-v1-${MUTATE}-${{ hashFiles('app/**', 'src/**', 'modules/**', 'assets/**', 'topics.json', 'package-lock.json', 'package.json', 'app.config.ts', 'tsconfig.json', 'scripts/device-gate/mutations/**') }}" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@v4
+        id: apps
+        with:
+          path: apps
+          key: ${{ steps.key.outputs.key }}
+      - run: npm ci --no-audit --no-fund
+        if: steps.apps.outputs.cache-hit != 'true'
+      - name: Generate the iOS project
+        if: steps.apps.outputs.cache-hit != 'true'
+        run: npx expo prebuild --platform ios --no-install > prebuild.log 2>&1 || { tail -40 prebuild.log; exit 1; }
+      - uses: actions/cache@v4
+        if: steps.apps.outputs.cache-hit != 'true'
+        with:
+          path: ios/Pods
+          key: pods-${{ runner.os }}-${{ hashFiles('package-lock.json', 'app.config.ts') }}
+      - name: Install pods
+        if: steps.apps.outputs.cache-hit != 'true'
+        run: cd ios && pod install --repo-update > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
+      - name: Build the store app, then the gate app (and one broken gate app per mutation)
+        if: steps.apps.outputs.cache-hit != 'true'
+        run: |
+          build() { # build <dest dir>: Release for the Simulator, from a clean Metro cache so no switch leaks between builds
+            rm -rf "${TMPDIR:-/tmp}"/metro-* "${TMPDIR:-/tmp}"/haste-map-* node_modules/.cache
+            xcodebuild -workspace ios/KeepMyProof.xcworkspace -scheme KeepMyProof -configuration Release \
+              -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build \
+              ARCHS=arm64 ONLY_ACTIVE_ARCH=NO COMPILER_INDEX_STORE_ENABLE=NO \
+              CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER= build > "xcodebuild-$(basename "$1").log" 2>&1 \
+              || { grep -E 'error:|BUILD FAILED' "xcodebuild-$(basename "$1").log" | head -40; tail -40 "xcodebuild-$(basename "$1").log"; exit 1; }
+            mkdir -p "$1" && rm -rf "$1/KeepMyProof.app" && cp -R build/Build/Products/Release-iphonesimulator/KeepMyProof.app "$1/"
+          }
+          for k in $(env | grep -o '^EXPO_PUBLIC_KMP_[A-Z_]*'); do unset "$k"; done
+          if [ "$MUTATE" = none ]; then build apps/store; fi
+          export EXPO_PUBLIC_KMP_GATE=1
+          if [ "$MUTATE" = none ]; then build apps/gate; fi
+          for n in $(echo '${{ steps.mut.outputs.list }}' | jq -r '.[]'); do
+            p="scripts/device-gate/mutations/$n.patch"
+            git apply "$p" || { echo "NAMED STOP [GATE_MUTATION_STALE] $p no longer applies"; exit 2; }
+            if grep -q '^# build: store' "$p"; then (unset EXPO_PUBLIC_KMP_GATE; build "apps/mut-$n-store"); build "apps/mut-$n"; else build "apps/mut-$n"; fi
+            git apply -R "$p"
+          done
+      # The store app must carry no seam and the gate app must (Hermes keeps string literals readable).
+      - name: The store app has no gate seam; every gate app has it
+        run: |
+          for a in apps/*/KeepMyProof.app; do
+            n=$(grep -a -c 'kmp-gate' "$a/main.jsbundle" || true)
+            case "$a" in apps/store/*|apps/mut-*-store/*) [ "$n" = 0 ] || { echo "NAMED STOP [GATE_SEAM_IN_STORE_APP] $a"; exit 1; } ;;
+              *) [ "$n" -gt 0 ] || { echo "NAMED STOP [GATE_SEAM_MISSING] $a"; exit 1; } ;; esac
+            echo "$a: kmp-gate strings $n"
+          done
+      - uses: actions/cache/save@v4
+        if: steps.apps.outputs.cache-hit != 'true'
+        with:
+          path: apps
+          key: ${{ steps.key.outputs.key }}
+      - name: Pack the apps
+        run: |
+          mkdir -p packed && for d in apps/*/; do n=$(basename "$d"); ditto -c -k --keepParent "$d/KeepMyProof.app" "packed/$n.zip"; done; ls -la packed
+      - uses: actions/upload-artifact@v4
+        with:
+          name: device-gate-apps
+          path: packed/
+          retention-days: 3
+
+  checks:
+    needs: build
+    if: needs.build.outputs.mutations == '[]'
+    runs-on: macos-26
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        group: [A, B, C, D, E]
+    env:
+      CI: '1'
+    steps:
+      - name: Only the asked group
+        id: want
+        run: |
+          w='${{ github.event.inputs.group }}'
+          if [ -z "$w" ] || [ "$w" = all ] || [ "$w" = '${{ matrix.group }}' ]; then echo run=1 >> "$GITHUB_OUTPUT"; else echo run=0 >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.want.outputs.run == '1'
+      - uses: ./.github/actions/device-gate-setup
+        if: steps.want.outputs.run == '1'
+        id: sim
+      - name: Group ${{ matrix.group }} checks
+        if: steps.want.outputs.run == '1'
+        env:
+          GATE_DEVICE: ${{ steps.sim.outputs.device }}
+        run: |
+          set +e
+          npx tsx scripts/device-gate/gate.ts --group ${{ matrix.group }} --udid "${{ steps.sim.outputs.udid }}" \
+            --gate-app "$PWD/apps/gate/KeepMyProof.app" --store-app "$PWD/apps/store/KeepMyProof.app" --out "$PWD/gate-out" | tee gate.log
+          echo "$GATE_DEVICE" > gate-out/device.txt
+          node scripts/device-gate/result.mjs gate-out/result.json "${{ matrix.group }}=gate-out/checks.tsv" | tee result.log; s=${PIPESTATUS[0]}
+          { echo "## Device gate, group ${{ matrix.group }}"; echo; echo "Device: $GATE_DEVICE · commit ${GITHUB_SHA::7}"; echo; echo '```'; cat result.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $s
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.want.outputs.run == '1'
+        with:
+          name: device-gate-${{ matrix.group }}
+          path: |
+            gate-out/checks.tsv
+            gate-out/device.txt
+            gate-out/result.json
+            gate-out/gate.log
+            gate-out/evidence/**
+          retention-days: 30
+
+  mutations:
+    needs: build
+    if: needs.build.outputs.mutations != '[]'
+    runs-on: macos-26
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        mutation: ${{ fromJSON(needs.build.outputs.mutations) }}
+    env:
+      CI: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/device-gate-setup
+        id: sim
+      - name: The broken app makes ${{ matrix.mutation }} fail
+        run: |
+          p="scripts/device-gate/mutations/${{ matrix.mutation }}.patch"
+          check=$(sed -n 's/^# check: //p' "$p"); echo "breaks: $(sed -n 's/^# breaks: //p' "$p")"
+          gate="$PWD/apps/mut-${{ matrix.mutation }}/KeepMyProof.app"; store="$gate"
+          [ -d "$PWD/apps/mut-${{ matrix.mutation }}-store/KeepMyProof.app" ] && store="$PWD/apps/mut-${{ matrix.mutation }}-store/KeepMyProof.app"
+          npx tsx scripts/device-gate/gate.ts --checks "$check" --udid "${{ steps.sim.outputs.udid }}" --gate-app "$gate" --store-app "$store" --out "$PWD/gate-out" --expect-fail | tee gate.log
+          s=${PIPESTATUS[0]}
+          { echo "## Mutation ${{ matrix.mutation }}"; echo; echo '```'; tail -3 gate.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $s
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: device-gate-mutation-${{ matrix.mutation }}
+          path: |
+            gate-out/checks.tsv
+            gate-out/gate.log
+            gate-out/evidence/**
+          retention-days: 30
+
+  merge:
+    needs: checks
+    if: always() && needs.checks.result != 'skipped' && (github.event.inputs.group == '' || github.event.inputs.group == 'all')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: device-gate-[A-E]
+          path: groups
+      - name: One result for all 11 checks and the store-build smoke check
+        run: |
+          export GATE_DEVICE="$(cat groups/device-gate-*/device.txt 2>/dev/null | sort -u | paste -sd';' -)"
+          mkdir -p gate-out
+          set +e; node scripts/device-gate/result.mjs gate-out/result.json $(for g in A B C D E; do echo "$g=groups/device-gate-$g/checks.tsv"; done) | tee merge.log; s=${PIPESTATUS[0]}; set -e
+          { echo '## Device gate (all groups)'; echo; echo "Device: $GATE_DEVICE · commit ${GITHUB_SHA::7}"; echo; echo '```'; cat merge.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $s
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: device-gate-result
+          path: gate-out/result.json
+          retention-days: 30

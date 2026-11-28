@@ -1,0 +1,46 @@
+# The device gate's runner setup (.github/workflows/device-gate.yml): node, the built apps, AXe, one booted iPhone
+# Simulator. Outputs udid and device ("iPhone 17 Simulator, iOS-26-5"). No Simulator = NAMED STOP, never a pass.
+name: Device gate setup
+description: Apps, AXe and a booted iPhone Simulator for scripts/device-gate/gate.ts
+outputs:
+  udid:
+    description: The booted Simulator
+    value: ${{ steps.sim.outputs.udid }}
+  device:
+    description: Its name and runtime
+    value: ${{ steps.sim.outputs.device }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+        cache: npm
+    - run: npm ci --no-audit --no-fund
+      shell: bash
+    - uses: actions/download-artifact@v4
+      with:
+        name: device-gate-apps
+        path: packed
+    - name: Unpack the apps
+      shell: bash
+      run: |
+        for z in packed/*.zip; do n=$(basename "$z" .zip); mkdir -p "apps/$n"; ditto -x -k "$z" "apps/$n"; test -d "apps/$n/KeepMyProof.app"; done; ls apps
+    - name: Install AXe
+      shell: bash
+      run: |
+        # AXe (github.com/cameroncooke/AXe) reads the screen and taps in about a second a call; Maestro restarted its
+        # iPhone driver on every call (3-6 minutes each, gate run 46172617809).
+        brew install cameroncooke/axe/axe > axe-install.log 2>&1 || { tail -20 axe-install.log; exit 1; }
+        axe --version
+    - name: Boot an iPhone Simulator
+      id: sim
+      shell: bash
+      run: |
+        udid=$(xcrun simctl list devices available -j | jq -r '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[] | select(.name | test("^iPhone [0-9]+( Pro)?$"))] | last | .udid // empty')
+        [ -n "$udid" ] || { echo "NAMED STOP [GATE_NO_SIMULATOR] no iPhone Simulator runtime on this runner"; exit 2; }
+        name=$(xcrun simctl list devices available | grep "$udid" | sed 's/ (.*//; s/^ *//'); runtime=$(xcrun simctl list devices available -j | jq -r --arg u "$udid" '.devices | to_entries[] | select(.value[].udid == $u) | .key' | sed 's/.*SimRuntime\.//')
+        xcrun simctl boot "$udid"; xcrun simctl bootstatus "$udid" -b > /dev/null
+        # English (the checks read the app's English lines) and no keyboard tutorial.
+        xcrun simctl spawn "$udid" defaults write -g AppleLanguages -array en; xcrun simctl spawn "$udid" defaults write -g AppleLocale en_US
+        echo "udid=$udid" >> "$GITHUB_OUTPUT"; echo "device=$name Simulator, $runtime" >> "$GITHUB_OUTPUT"

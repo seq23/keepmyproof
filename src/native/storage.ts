@@ -15,6 +15,8 @@ import { Platform } from 'react-native';
 import { keepOutOfBackup } from '../core/backup';
 import { excludeFromBackup } from './backup';
 setPbkdf2(phonePbkdf2);
+// The device gate's seam (src/gate.ts): only the gate build bundles it; in every other build this folds to null.
+const gate: typeof import('../gate') | null = process.env.EXPO_PUBLIC_KMP_GATE === '1' ? require('../gate') : null;
 export const random: Random = n => Crypto.getRandomBytes(n);
 const options: SecureStore.SecureStoreOptions = { keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY };
 // The launch clean-up (startup): a new install forgets what an earlier install left in the Keychain. Every
@@ -53,6 +55,8 @@ export async function database(): Promise<InstallStore & { erase(): Promise<void
     read: async () => (await connection.getFirstAsync<{ ciphertext: string }>('SELECT ciphertext FROM vault WHERE id=1'))?.ciphertext ?? null,
     write: async ciphertext => { await connection.withExclusiveTransactionAsync(async tx => {
       await tx.runAsync('INSERT INTO vault(id,ciphertext) VALUES(1,?) ON CONFLICT(id) DO UPDATE SET ciphertext=excluded.ciphertext', ciphertext);
+      // Gate build only: the place an interrupted save or restore is cut, written but not committed.
+      if (gate) await gate.at('vault-write');
     }); },
     // Erase everything (Settings): the vault and any set-aside copy, then the file is rewritten so the
     // deleted pages are not left in it.
@@ -84,7 +88,7 @@ export async function hasSetup() {
  *  once; done = the clean-up and the install check (true when a vault is set up). Keychain writes wait for it. */
 export function startup(): { fresh: boolean; done: Promise<boolean> } {
   const fresh = !new File(new Directory(Paths.document, 'vault'), 'vault.sqlite').exists;
-  const done = cleanStartupTemps().then(hasSetup);
+  const done = (gate ? gate.beforeStart(options) : Promise.resolve()).then(cleanStartupTemps).then(hasSetup);
   launchDone = done.catch(() => {});
   return { fresh, done };
 }

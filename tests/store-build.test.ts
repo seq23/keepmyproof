@@ -77,6 +77,17 @@ test('the preview sample vault is reachable only through its build-time switch',
   assert.doesNotMatch(app, /from '\.\.\/src\/preview'/);
 });
 
+test('the device gate seam is reachable only through its build-time switch, from storage and files only', () => {
+  const users = APP_FILES.filter(f => f !== 'src/gate.ts' && /['"](\.\.\/src|\.\.|\.)\/gate['"]/.test(read(f))).sort();
+  assert.deepEqual(users, ['src/native/files.ts', 'src/native/storage.ts']);
+  for (const f of users) {
+    const refs = [...read(f).matchAll(/[^\n]*['"]\.\.\/gate['"][^\n]*/g)].map(m => m[0]);
+    assert.equal(refs.length, 1, refs.join('\n'));
+    assert.match(refs[0]!, /^const gate: typeof import\('\.\.\/gate'\) \| null = process\.env\.EXPO_PUBLIC_KMP_GATE === '1' \? require\('\.\.\/gate'\) : null;$/);
+    assert.doesNotMatch(read(f), /from '\.\.\/gate'/);
+  }
+});
+
 test('the bundle scan fails a bundle that carries the review code or the preview, and an empty one', () => {
   const alive = 'Continue in English Continuar en español 继续使用简体中文 한국어로 계속하기 '.padEnd(120_000, 'x');
   const andro = alive + ' "keepmyproof.com/api/review" "Have a review code?" guardScreen=function(){return e.preventScreenCaptureAsync()}';
@@ -86,6 +97,8 @@ test('the bundle scan fails a bundle that carries the review code or the preview
   assert.deepEqual(scan({ ios: alive + '"\\xbfTiene un c\\xf3digo de revisi\\xf3n?"', android: andro }), ['REVIEW_CODE_ON_IOS: "¿Tiene un código de revisión?"']);
   assert.deepEqual(scan({ ios: alive + 'Preview only: the sample vault opens with 123456.', android: andro }), ['PREVIEW_IN_STORE_BUNDLE ios: "Preview only: the sample vault opens with 123456."']);
   assert.ok(scan({ ios: '', android: andro }).includes('BUNDLE_EMPTY ios: 0 bytes of JS'));
+  assert.deepEqual(scan({ ios: alive + 'new o(t.document,"kmp-gate")', android: andro }), ['GATE_SEAM_IN_STORE_BUNDLE ios: "kmp-gate"']);
+  assert.deepEqual(scan({ ios: alive, android: andro + 'Error("GATE_PICK_MISSING")' }), ['GATE_SEAM_IN_STORE_BUNDLE android: "GATE_PICK_MISSING"']);
   assert.ok(scan({ ios: alive, android: alive }).some(s => s.startsWith('REVIEW_CODE_MISSING_ON_ANDROID')));
   // The capture block: on Android only. The module's own definition (`_e.preventScreenCaptureAsync=l`) is no call.
   assert.deepEqual(scan({ ios: alive + 'guardScreen=function(){return e.preventScreenCaptureAsync()}', android: andro }), ['CAPTURE_BLOCK_ON_IOS: the iOS bundle calls preventScreenCaptureAsync']);

@@ -1,0 +1,29 @@
+# check: wrong-phrase-changes-nothing
+# build: gate
+# breaks: A backup the 12 words do not open is taken as an empty backup instead of being refused.
+diff --git a/app/index.tsx b/app/index.tsx
+index de6a91b..29bd5c1 100644
+--- a/app/index.tsx
++++ b/app/index.tsx
+@@ -335,7 +335,7 @@ export default function App() {
+     {btn('restoreChoose', doRun(async () => { setRestoreData(await files.pickBackup()); }))}
+     {restoreData && btn('restore', doRun(async () => {
+       const wordInput = wordInputNow(), code = codeNow(), codeAgain = codeAgainNow();
+-      validate(JSON.parse(decode(open(restoreData, recoveryKey(wordInput), 'backup-v1'))));
++      try { validate(JSON.parse(decode(open(restoreData, recoveryKey(wordInput), 'backup-v1')))); } catch { /* mutation: taken as empty */ }
+       if (!vault && (!/^\d{6}$/.test(code) || code !== codeAgain)) throw Error('PASSCODE_INVALID');
+       resume.current = 'home';
+       const v = vault ?? await device.setup(code, wordInput, false);
+diff --git a/src/core/vault.ts b/src/core/vault.ts
+index b67c47c..8a32ebf 100644
+--- a/src/core/vault.ts
++++ b/src/core/vault.ts
+@@ -116,7 +116,7 @@ export class Vault {
+     });
+   }
+   async restore(data: string, words: string) {
+-    const restored = validate(JSON.parse(decode(open(data, recoveryKey(words), 'backup-v1'))));
++    let restored: Snapshot; try { restored = validate(JSON.parse(decode(open(data, recoveryKey(words), 'backup-v1')))); } catch { restored = empty(); }
+     await this.mutate(s => {
+       for (const f of restored.folders) {
+         const existing = s.folders.find(x => x.id === f.id);

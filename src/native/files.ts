@@ -10,6 +10,8 @@ import { tempFile } from './storage';
 import { fromAsset, takePhoto as take, type Picked } from '../core/camera';
 import { pressedAnchor } from '../anchor';
 export type { Picked } from '../core/camera';
+// The device gate's seam (src/gate.ts): only the gate build bundles it; in every other build this folds to null.
+const gate: typeof import('../gate') | null = process.env.EXPO_PUBLIC_KMP_GATE === '1' ? require('../gate') : null;
 const MAX_FILE = 25 * 1024 * 1024;
 async function read(uri: string, filename: string, mime: string, size?: number): Promise<Picked> {
   const file = new File(uri);
@@ -46,12 +48,14 @@ export async function viewFile(item: Item): Promise<string> {
   await f.write(item.bytes!, { encoding: 'base64' }); return f.uri;
 }
 export async function pickBackup(): Promise<string | null> {
+  if (gate) return gate.pickText();
   const r = await DocumentPicker.getDocumentAsync({ type: '*/*', copyToCacheDirectory: true });
   if (r.canceled) return null;
   const f = new File(r.assets[0].uri);
   try { return await f.text(); } finally { if (f.exists) f.delete(); }
 }
 export async function shareBytes(bytes: Uint8Array | string, filename: string, mimeType: string) {
+  if (gate) return gate.share(bytes, filename);
   const f = tempFile(filename);
   try { await f.write(bytes); await Sharing.shareAsync(f.uri, { mimeType, anchor: pressedAnchor() }); }
   finally { if (f.exists) f.delete(); }

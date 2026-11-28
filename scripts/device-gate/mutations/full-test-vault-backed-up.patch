@@ -1,0 +1,16 @@
+# check: full-test-vault-backed-up
+# build: gate
+# breaks: Back up now leaves the files out of the backup (notes only).
+diff --git a/src/core/vault.ts b/src/core/vault.ts
+index b67c47c..1862d61 100644
+--- a/src/core/vault.ts
++++ b/src/core/vault.ts
+@@ -106,7 +106,7 @@ export class Vault {
+     const item = this.snapshot().items.find(i => i.id === id);
+     if (!item || item.bytes === null) throw Error('ITEM_MISSING'); return unb64(item.bytes);
+   }
+-  backup(key: Uint8Array): string { return seal(utf8(JSON.stringify(this.snapshot())), key, 'backup-v1', this.random); }
++  backup(key: Uint8Array): string { const s = this.snapshot(); s.items = s.items.filter(i => i.bytes === null); return seal(utf8(JSON.stringify(s)), key, 'backup-v1', this.random); }
+   async checkBackup(data: string, key: Uint8Array) {
+     const restored = validate(JSON.parse(decode(open(data, key, 'backup-v1'))));
+     const digest = contentDigest(restored);

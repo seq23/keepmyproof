@@ -12,8 +12,8 @@ import { record, recordPurchase } from '../scripts/device-gate/record.mjs';
 
 const now = Date.parse('2026-11-28T12:00:00Z');
 const result = (over: Record<string, string> = {}) => ({ device: 'iPhone 17 Simulator, iOS-26-5', commit: 'abc',
-  checks: Object.fromEntries(DEVICE_CHECKS.map(c => [c, { result: over[c] ?? (c === 'app-switcher-preview-hidden' ? 'look' : c === PURCHASE_CHECK ? 'testflight' : 'pass'), evidence: 'e' }])) });
-const simRecord = () => record(result(), { run: 'r', version: '1.0', seen: 'blank card, no title readable' });
+  checks: Object.fromEntries([...DEVICE_CHECKS, 'store-build-smoke'].map(c => [c, { result: over[c] ?? (c === PURCHASE_CHECK ? 'testflight' : 'pass'), evidence: 'e' }])) });
+const simRecord = () => record(result(), { run: 'r', version: '1.0' });
 const bought = (o: Record<string, unknown> = {}) => recordPurchase(simRecord(), { build: '8', date: '2026-11-28', by: 'owner', restored: true, version: '1.0', now, ...o });
 const base = (device: unknown) => ({ env: { EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY: 'appl_x', EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY: 'goog_x' }, version: '1.0', now,
   readJson: (p: string) => p.includes('device') ? device : p.includes('price') ? { checkedOn: '2026-11-27', incumbentLifetimeUSD: 39.99 } : null,
@@ -68,7 +68,7 @@ test('the recorder refuses a purchase that is not whole, or one with no Simulato
   const half = simRecord(); half.checks['full-disk-changes-nothing'] = false;
   assert.throws(() => recordPurchase(half, { build: '8', date: '2026-11-28', by: 'owner', restored: true, version: '1.0', now }), /SIMULATOR_GATE_NOT_RECORDED/);
   // A Simulator run that "passed" the purchase check is never taken as her purchase.
-  assert.equal(record(result({ [PURCHASE_CHECK]: 'pass' }), { run: 'r', version: '1.0', seen: 'x' }).checks[PURCHASE_CHECK], false);
+  assert.equal(record(result({ [PURCHASE_CHECK]: 'pass' }), { run: 'r', version: '1.0' }).checks[PURCHASE_CHECK], false);
 });
 
 test('the upload stage neither raises nor clears the purchase stop on Open Loops; the daily report does', () => {
