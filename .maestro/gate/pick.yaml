@@ -39,13 +39,19 @@ appId: com.keepmyproof.app
     commands:
       - waitForAnimationToEnd:
           timeout: 5000
+      # Tap the file's PICTURE, the element right above its name. The cell's own centre is its name line (cell
+      # [140,212][262,401], name [143,305][259,325], picture [159,216][243,300] in gate run 46158994320, group B), so
+      # "tap the cell" was a tap on the name, which leaves the picker open: groups A–D all stopped there that run.
       - runFlow:
           when:
             visible:
               id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
           commands:
             - tapOn:
-                id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
+                above:
+                  text: "${FILE.split('.')[0]}(\\.[a-z]+)?"
+                childOf:
+                  id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
       - extendedWaitUntil:
           notVisible:
             id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
