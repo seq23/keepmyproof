@@ -1,0 +1,97 @@
+# THE DEVICE GATE (scripts/device-gate/run.sh): the release checks of scripts/release-gate.mjs DEVICE_CHECKS on an
+# iOS Simulator, on a free GitHub macOS runner. The app is built from this commit with no store key: RevenueCat
+# closes a Release build that carries its Test Store key ("Wrong API Key", gate run 46083182907) and Apple's sandbox
+# sign-in fails on the iOS 26 Simulator, so store-sandbox-purchase-and-restore is not run here: it is met by her
+# TestFlight sandbox Buy + Restore on a real iPhone (record.mjs --purchase), and the job does not fail on it.
+# The "old data" vault is made by the Simulator build of b0531f3, the build App Review last saw (1.0 build 7,
+# run 44925922547). Runs by hand on main, or on a push to a device-gate/* branch.
+# It never builds for a store and never records the gate itself: scripts/device-gate/record.mjs writes
+# release/device-gate.json from a fully passing result.json, in a PR.
+name: Device gate (Simulator)
+on:
+  workflow_dispatch:
+  push:
+    branches: ['device-gate/**']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: device-gate
+  cancel-in-progress: false
+jobs:
+  gate:
+    runs-on: macos-26
+    timeout-minutes: 150
+    env:
+      EXPO_NO_TELEMETRY: '1'
+      CI: '1'
+      MAESTRO_DRIVER_STARTUP_TIMEOUT: '240000'
+      MAESTRO_CLI_NO_ANALYTICS: '1'
+      OLD_RUN: '44925922547'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: The old build (b0531f3)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "$OLD_RUN" -n keepmyproof-simulator-build -D old || { echo "NAMED STOP [GATE_OLD_BUILD_GONE] run $OLD_RUN's simulator build is no longer kept"; exit 2; }
+          ditto -x -k old/KeepMyProof-simulator.zip old && test -d old/KeepMyProof.app
+      - name: Generate the iOS project
+        run: npx expo prebuild --platform ios --no-install > prebuild.log 2>&1 || { tail -40 prebuild.log; exit 1; }
+      - uses: actions/cache@v4
+        with:
+          path: ios/Pods
+          key: pods-${{ runner.os }}-${{ hashFiles('package-lock.json', 'app.config.ts') }}
+      - name: Install pods
+        run: cd ios && pod install --repo-update > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
+      - name: Build this commit for the Simulator (no preview switch, no store key)
+        run: |
+          xcodebuild -workspace ios/KeepMyProof.xcworkspace -scheme KeepMyProof -configuration Release \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build \
+            ARCHS=arm64 ONLY_ACTIVE_ARCH=NO COMPILER_INDEX_STORE_ENABLE=NO \
+            CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER= build > xcodebuild.log 2>&1 \
+            || { grep -E 'error:|BUILD FAILED' xcodebuild.log | head -40; tail -40 xcodebuild.log; exit 1; }
+          test -d build/Build/Products/Release-iphonesimulator/KeepMyProof.app
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install Maestro
+        run: |
+          curl -fsSL https://get.maestro.mobile.dev | bash > maestro-install.log 2>&1 || { tail -20 maestro-install.log; exit 1; }
+          echo "$HOME/.maestro/bin" >> "$GITHUB_PATH"
+      - name: Boot an iPhone Simulator
+        id: sim
+        run: |
+          udid=$(xcrun simctl list devices available -j | jq -r '[.devices | to_entries | sort_by(.key)[] | select(.key | test("iOS")) | .value[] | select(.name | test("^iPhone [0-9]+( Pro)?$"))] | last | .udid // empty')
+          [ -n "$udid" ] || { echo "NAMED STOP [GATE_NO_SIMULATOR]"; exit 2; }
+          name=$(xcrun simctl list devices available | grep "$udid" | sed 's/ (.*//; s/^ *//'); runtime=$(xcrun simctl list devices available -j | jq -r --arg u "$udid" '.devices | to_entries[] | select(.value[].udid == $u) | .key' | sed 's/.*SimRuntime\.//')
+          xcrun simctl boot "$udid"; xcrun simctl bootstatus "$udid" -b > /dev/null
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"; echo "device=$name Simulator, $runtime" >> "$GITHUB_OUTPUT"
+      - name: The 12 device checks
+        env:
+          GATE_DEVICE: ${{ steps.sim.outputs.device }}
+        run: |
+          export CHECKS=$(node -e 'import("./scripts/release-gate.mjs").then(m => console.log(JSON.stringify(m.DEVICE_CHECKS)))')
+          scripts/device-gate/run.sh "${{ steps.sim.outputs.udid }}" "$PWD/build/Build/Products/Release-iphonesimulator/KeepMyProof.app" "$PWD/old/KeepMyProof.app" "$PWD/gate-out" | tee gate.log
+          { echo '## Device gate'; echo; echo "Device: $GATE_DEVICE · commit ${GITHUB_SHA::7}"; echo; echo '```'; grep -E '^(pass|fail|look|testflight|not-run) ' gate.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          ! grep -qE '^(fail|not-run) ' gate.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: device-gate-result
+          path: |
+            gate-out/result.json
+            gate-out/shots/**/*.png
+            gate-out/logs/*.log
+            gate-out/logs/dbg-*/**/screenshots/*.png
+            gate-out/logs/dbg-*/**/screen-hierarchy/*.json
+            gate-out/said.txt
+            gate.log
+          retention-days: 30
+          include-hidden-files: true
