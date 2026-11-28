@@ -2,11 +2,13 @@
 # THE DEVICE GATE on a Simulator (.github/workflows/device-gate.yml): the 12 release checks of
 # scripts/release-gate.mjs DEVICE_CHECKS, run on the iOS Simulator with Maestro flows (.maestro/gate/) and host
 # steps (install, uninstall, Face ID match, a full disk, a killed restore) that no flow can do. Invented papers only.
-# Usage: run.sh <udid> <new.app> <old.app> <out dir>. Writes <out>/result.json: every check "pass" or "fail" with
+# Usage: [GROUP=A..E] run.sh <udid> <new.app> <old.app> <out dir>. GROUP runs one group of scripts/device-gate/groups.json
+# on this Simulator (each group makes its own vault first; the workflow runs the 5 groups side by side); no GROUP runs
+# them all in a row. Writes <out>/checks.tsv and <out>/result.json: every check "pass" or "fail" with
 # its evidence ("look" for the switcher, "testflight" for the purchase). A check this script did not reach stays
 # "not-run", and not-run is never a pass.
 set -uo pipefail
-U="$1"; NEW="$2"; OLD="$3"; OUT="$4"; BID=com.keepmyproof.app
+U="$1"; NEW="$2"; OLD="$3"; OUT="$4"; BID=com.keepmyproof.app; GROUP="${GROUP:-ALL}"
 mkdir -p "$OUT/logs" "$OUT/shots" "$OUT/work"; W="$OUT/work"; RES="$OUT/checks.tsv"; : > "$RES"
 CODE1=135790; CODE2=246802
 record() { printf '%s\t%s\t%s\n' "$1" "$2" "$3" >> "$RES"; echo "CHECK $1: $2 — $3"; }
@@ -44,6 +46,7 @@ xcrun simctl spawn "$U" notifyutil -s com.apple.BiometricKit.enrollmentChanged 1
 xcrun simctl spawn "$U" notifyutil -p com.apple.BiometricKit.enrollmentChanged
 
 # 1. old-data-upgraded: a vault made by the build App Review last saw (21 Nov, b0531f3), opened by this build.
+c_old() {
 xcrun simctl install "$U" "$OLD"
 if flow setup CODE=$CODE1 && WORDS="$(said GATE_WORDS)" && [ "$(wc -w <<<"$WORDS")" -eq 12 ] && flow add; then
   xcrun simctl install "$U" "$NEW"
@@ -52,8 +55,10 @@ if flow setup CODE=$CODE1 && WORDS="$(said GATE_WORDS)" && [ "$(wc -w <<<"$WORDS
 else record old-data-upgraded fail "setup or adding papers on the old build failed ($LAST_LOG)"; xcrun simctl install "$U" "$NEW"; fi
 xcrun simctl launch "$U" "$BID" >/dev/null 2>&1 || true
 WORDS="${WORDS:-}"
+}
 
 # 2. passcode-reset-face-id-and-phrase
+c_reset() {
 home; ok=1
 flow reset-phrase NEWCODE=$CODE2 WORDS="$WORDS" SHOT=reset1 || ok=0
 [ $ok = 1 ] && { CUR=$CODE2; flow unlock CODE=$CODE2 && [ "$(count)" = 4 ] || ok=0; }
@@ -68,14 +73,19 @@ faceid_on() { local i; for i in 1 2 3; do flow faceid-on || continue; match_face
 [ $ok = 1 ] && { flow unlock CODE=$CODE1 && [ "$(count)" = 4 ] || ok=0; }
 [ $ok = 1 ] && record passcode-reset-face-id-and-phrase pass "new passcode set with the 12 words, then with a Face ID match; each new passcode opens the same 4 items" \
   || record passcode-reset-face-id-and-phrase fail "see $LAST_LOG"
+}
 
 # 3. full-test-vault-backed-up (+ the file the person saved holds every item)
-home; grab "$W/good.kmp"; flow backup SHOT=b1; grab_stop
+make_backup() { home; grab "$W/good.kmp"; flow backup SHOT=b1; grab_stop; }
+c_backup() {
+make_backup
 if [ -s "$W/good.kmp" ] && cp "$W/good.kmp" "$FILES/gate-good.kmp" && S=$(tool full "$W/good.kmp" "$WORDS") && flow check-backup FILE=gate-good.kmp SHOT=b1; then
   record full-test-vault-backed-up pass "Back up now made an encrypted file of the whole test vault (4 items, 2 files) that the 12 words open ($S); Check the saved backup on that file: ✓ Backup checked."
 else record full-test-vault-backed-up fail "no backup file, not the whole test vault (${S:-unread}), or the check did not pass ($LAST_LOG)"; fi
+}
 
 # 4. corrupt-or-missing-file-rejected and 5. wrong-phrase-changes-nothing
+c_bad() {
 home; ok=1; why=""
 for how in missing changed flipped truncated; do
   tool corrupt "$W/good.kmp" "$FILES/gate-bad-$how.kmp" "$how" "$WORDS" || { ok=0; why="$why $how:not-made"; continue; }
@@ -88,13 +98,17 @@ WRONG=$(cd "$GITHUB_WORKSPACE" && npx tsx -e "import { phrase } from './src/core
 if flow restore FILE=gate-good.kmp WORDS="$WRONG" EXPECT="That did not finish.*|Those words did not match.*" SHOT=wrong FRESH=0 FAST=0 && flow home-count && [ "$(count)" = 4 ]; then
   record wrong-phrase-changes-nothing pass "a valid but different 12-word phrase on the real backup: refused, Home still 4"
 else record wrong-phrase-changes-nothing fail "not refused, or count '$(count)' ($LAST_LOG)"; fi
+}
 
 # 6. restore-twice-no-duplicates
+c_twice() {
 home; ok=1
 for k in 1 2; do flow restore FILE=gate-good.kmp WORDS="$WORDS" EXPECT="✓ Your backup was restored.*" SHOT="twice$k" FRESH=0 FAST=0 && [ "$(count)" = 4 ] || ok=0; done
 [ $ok = 1 ] && record restore-twice-no-duplicates pass "the same backup restored twice into the vault that holds it: ✓ restored both times, Home 4 both times" || record restore-twice-no-duplicates fail "count '$(count)' ($LAST_LOG)"
+}
 
 # 7. full-disk-changes-nothing: the vault folder on a disk image that is filled up while the app has the vault open.
+c_full() {
 xcrun simctl terminate "$U" "$BID" >/dev/null 2>&1; V="$(data)/Documents/vault"; cp -R "$V" "$W/vault-before"
 KB=$(( $(du -sk "$V" | cut -f1) + 2048 ))
 if hdiutil create -size ${KB}k -fs HFS+ -volname gatefull -layout NONE "$W/full.dmg" >/dev/null && hdiutil attach -nobrowse -mountpoint "$V" "$W/full.dmg" >/dev/null; then
@@ -115,8 +129,10 @@ if hdiutil create -size ${KB}k -fs HFS+ -volname gatefull -layout NONE "$W/full.
     record full-disk-changes-nothing pass "vault folder on a disk image filled to ${FREE} KB free with the vault open: saving a note was refused on screen (That did not finish…), and after the disk was freed the vault opens with the same 4 items"
   else record full-disk-changes-nothing fail "save refused on screen: '${refused:-no}', before '$before', after '$after' ($LAST_LOG)"; fi
 else record full-disk-changes-nothing fail "could not put the vault folder on a small disk image"; fi
+}
 
 # 8. interrupted-restore-changes-nothing: the app is killed the moment the Restore tap is done, on a 60 MB backup.
+c_cut() {
 home; BIG=30; BIGN=$((4+BIG)); tool bigger "$W/good.kmp" "$FILES/gate-big.kmp" $BIG "$WORDS"; seen=""; cut=0; ok=1
 for d in 0 0.5 1.5; do
   flow restore FILE=gate-big.kmp WORDS="$WORDS" EXPECT="✓ Your backup was restored.*" SHOT=cut FRESH=0 FAST=1 || { ok=0; seen="$seen restore-flow-failed"; break; }
@@ -129,8 +145,10 @@ for d in 0 0.5 1.5; do
 done
 [ $ok = 1 ] && [ $cut -ge 1 ] && record interrupted-restore-changes-nothing pass "killed right after the Restore tap, plus a wait of${seen} (4 = untouched, $BIGN = finished): never a part-restored vault, and at least one kill left it untouched" \
   || record interrupted-restore-changes-nothing fail "counts:$seen (anything but 4 or $BIGN is a part restore; no 4 means no kill landed mid-restore)"
+}
 
 # 9. fresh-install-restore-with-phrase-only and 10. every-file-hash-matches
+c_fresh() {
 xcrun simctl uninstall "$U" "$BID"; xcrun simctl keychain "$U" reset; xcrun simctl install "$U" "$NEW"
 CUR=$CODE2
 if flow restore FILE=gate-good.kmp WORDS="$WORDS" NEWCODE=$CODE2 EXPECT="✓ Your backup was restored.*" SHOT=fresh FRESH=1 FAST=0 && [ "$(count)" = 4 ]; then
@@ -139,27 +157,40 @@ if flow restore FILE=gate-good.kmp WORDS="$WORDS" NEWCODE=$CODE2 EXPECT="✓ You
   if [ -s "$W/after.kmp" ] && R=$(tool compare "$W/good.kmp" "$W/after.kmp" "$WORDS"); then record every-file-hash-matches pass "$R (backup before the reinstall vs a backup made after the restore, both opened with the 12 words)"
   else record every-file-hash-matches fail "${R:-no second backup}"; fi
 else record fresh-install-restore-with-phrase-only fail "count '$(count)' ($LAST_LOG)"; record every-file-hash-matches fail "no restored vault to compare"; fi
+}
 
 # 11. app-switcher-preview-hidden: the snapshot iOS keeps for the app switcher, after leaving the app on a folder.
+c_switch() {
 home; flow switcher SHOT=switch; xcrun simctl launch "$U" com.apple.Preferences >/dev/null; sleep 4
 D="$(data)"; k=0; while IFS= read -r f; do k=$((k+1)); sips -s format png "$f" --out "$OUT/shots/switcher-snapshot-$k.png" >/dev/null 2>&1 || cp "$f" "$OUT/shots/"; done < <(find "$D/Library" -path '*Snapshots*' -type f -newer "$W/good.kmp" 2>/dev/null)
 xcrun simctl io "$U" screenshot "$OUT/shots/gate-switch-home.png" >/dev/null 2>&1
 record app-switcher-preview-hidden "look" "snapshots kept by iOS: $k (shots/switcher-snapshot-*.png); a person must see that no paper title is readable in them"
+}
 
-# 12. store-sandbox-purchase-and-restore: not on a Simulator. RevenueCat closes a Release build that carries its
-# Test Store key ("Wrong API Key ... The app will close now", gate run 46083182907), and Apple's sandbox sign-in
-# fails on the iOS 26 Simulator (spry brain, 17 Nov 2026). Her yes 27 Nov 2026: it is met by her TestFlight sandbox
-# Buy + Restore on her iPhone, recorded with record.mjs --purchase; "testflight" here is never a pass (record.mjs
-# writes it false, and submit-gate refuses until her record names the build submitted).
-record store-sandbox-purchase-and-restore testflight "a Simulator cannot buy (RevenueCat refuses its Test Store key in a Release build; Apple's sandbox sign-in fails on the iOS 26 Simulator): met by her TestFlight Buy + Restore on a real iPhone"
+# Groups B..E start from their own vault, made on this build the way a person makes one (no group leans on
+# another's state); C, D and E also need the backup file of that vault.
+prep() {
+  xcrun simctl install "$U" "$NEW"
+  if flow setup CODE=$CODE1 && WORDS="$(said GATE_WORDS)" && [ "$(wc -w <<<"$WORDS")" -eq 12 ] && flow add; then CUR=$CODE1; return 0; fi
+  return 1
+}
+prep_failed() { local c; for c in $(group_checks "$1"); do record "$c" fail "the group's own vault could not be made ($LAST_LOG)"; done; }
+group_checks() { node -e 'const g=require(process.argv[1]); console.log((g[process.argv[2]]||[]).join(" "))' "$GITHUB_WORKSPACE/scripts/device-gate/groups.json" "$1"; }
+run_group() {
+  case "$1" in
+    A) c_old ;;
+    B) if prep; then c_reset; else prep_failed B; fi ;;
+    C) if prep; then c_backup; c_fresh; else prep_failed C; fi ;;
+    D) if prep; then make_backup; [ -s "$W/good.kmp" ] && cp "$W/good.kmp" "$FILES/gate-good.kmp"; c_bad; c_twice; else prep_failed D; fi ;;
+    E) if prep; then make_backup; [ -s "$W/good.kmp" ] && cp "$W/good.kmp" "$FILES/gate-good.kmp"; c_full; c_cut; c_switch; else prep_failed E; fi ;;
+    *) echo "NAMED STOP [GATE_UNKNOWN_GROUP] '$1'"; exit 2 ;;
+  esac
+}
+if [ "$GROUP" = ALL ]; then c_old; c_reset; c_backup; c_bad; c_twice; c_full; c_cut; c_fresh; c_switch
+else run_group "$GROUP"; fi
 
 # Maestro writes takeScreenshot files beside the flow, not in the working directory.
 find "$GITHUB_WORKSPACE/.maestro" "$OUT/shots" -name 'gate-*.png' -newer "$OUT/said.txt" -exec cp {} "$OUT/shots/" \; 2>/dev/null
-node -e '
-  const fs = require("fs"); const [res, out, sha] = process.argv.slice(1);
-  const DEVICE_CHECKS = JSON.parse(process.env.CHECKS);
-  const rows = Object.fromEntries(fs.readFileSync(res, "utf8").trim().split("\n").filter(Boolean).map(l => { const [c, v, e] = l.split("\t"); return [c, { result: v, evidence: e }]; }));
-  const checks = Object.fromEntries(DEVICE_CHECKS.map(c => [c, rows[c] ?? { result: "not-run", evidence: "the run never reached it" }]));
-  fs.writeFileSync(out, JSON.stringify({ commit: sha, device: process.env.GATE_DEVICE, checks }, null, 2));
-  for (const [c, r] of Object.entries(checks)) console.log(`${r.result.padEnd(7)} ${c}: ${r.evidence}`);
-' "$RES" "$OUT/result.json" "${GITHUB_SHA:-local}"
+if [ "$GROUP" = ALL ]; then set -- A B C D E; else set -- "$GROUP"; fi
+pairs=(); for g in "$@"; do pairs+=("$g=$RES"); done
+node "$GITHUB_WORKSPACE/scripts/device-gate/result.mjs" "$OUT/result.json" "${pairs[@]}"
