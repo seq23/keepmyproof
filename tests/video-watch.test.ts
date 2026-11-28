@@ -167,6 +167,13 @@ test('finding 15: the web page paints the brand background before the app loads,
   assert.match(html, /<div id="root"><\/div>/);
 });
 
+test('finding 15: every screen and the font-loading moment paint the brand background, never the navigator\'s light grey', () => {
+  const layout = readFileSync('app/_layout.tsx', 'utf8');
+  assert.match(layout, /const palette = usePalette\(\)/);
+  assert.match(layout, /<Stack screenOptions=\{\{[^}]*contentStyle:\{ backgroundColor:palette\.bg \}/);
+  assert.doesNotMatch(layout, /return null/, 'a blank first frame shows the system colour');
+});
+
 test('finding 4: the preview shortcut comes after the real start, and only a preview build has it', () => {
   const first = screenOf('first');
   assert.ok(first.indexOf('preview.SKIP_LABEL') > first.indexOf('CONTINUE[l]'), 'Continue in English comes first');
