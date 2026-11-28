@@ -522,8 +522,8 @@ export default function App() {
   else if (screen === 'custom') body = <><P heading>{t('makeOwn')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolderNow().trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
   else if (screen === 'plus') { const page = plusPage(ent.plus, !!ent.managementURL);
-    body = <><P heading>{t(!ent.plus && state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
-    {ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
+    body = <><P heading>{t(!ent.plus && state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P>{ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
+    <P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
     <Card><P>{t('unlimited')}</P></Card><Card><P>{t('plusFolders')}</P></Card><Card><P>{t('plusTags')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
     {/* A member is never asked to pay again (finding 6); plans, Restore, Terms · Privacy once, Not now last (finding 12). */}
     {page.plans && <>{billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
