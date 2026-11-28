@@ -16,5 +16,4 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Open with Face ID ›"
     direction: DOWN
-    centerElement: true
 - tapOn: "Open with Face ID ›"
