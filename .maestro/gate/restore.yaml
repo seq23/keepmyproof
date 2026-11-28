@@ -22,8 +22,11 @@ appId: com.keepmyproof.app
       true: ${FRESH != '1'}
     commands:
       - tapOn: "Backup"
+      # The link is the page's last button: the scroll view ends at the tab bar, and Maestro counts an element as
+      # visible from its bounds even where the tab bar clips it, so a tap there pressed the Backup tab (gate run
+      # 46112815437: link [16,793][386,841], tab bar [10,782]…[392,830]). Bring the line under it into view first.
       - scrollUntilVisible:
-          element: "Restore a backup ›"
+          element: "Every file is checked before anything is added.*"
           direction: DOWN
       - tapOn: "Restore a backup ›"
 - extendedWaitUntil:

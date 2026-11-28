@@ -1,10 +1,11 @@
 # The test vault's papers: two notes and two files (invented, put in Files › On My iPhone by the host).
 appId: com.keepmyproof.app
 ---
+# The first folder card, near the top of Home: not centred (gate run 46112815437, flow 2: centring a card that is
+# already at the top overshot and failed with the card in full view; the same step passed at flow 25).
 - scrollUntilVisible:
     element: "Divorce, custody.*"
     direction: DOWN
-    centerElement: true
 - tapOn: "Divorce, custody.*"
 - extendedWaitUntil:
     visible: "Checklist"

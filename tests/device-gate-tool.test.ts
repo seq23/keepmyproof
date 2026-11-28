@@ -4,10 +4,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { phrase } from '../src/core/crypto';
 import { Vault } from '../src/core/vault';
-import { compare, summary } from '../scripts/device-gate/backup-tool';
+import { compare, summary, notFull } from '../scripts/device-gate/backup-tool';
 import { MemoryStore, draft, random } from './helpers';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { b64, recoveryKey, decode, open } from '../src/core/crypto';
@@ -64,4 +64,22 @@ test('the gate record is written only when every check passed, and the switcher 
   assert.throws(() => record(all({ 'old-data-upgraded': 'not-run' }), { run: 'r', version: '1.0', seen: 'x' }), /old-data/);
   const noDevice = all(); delete (noDevice as { device?: string }).device;
   assert.throws(() => record(noDevice, { run: 'r', version: '1.0', seen: 'x' }), /DEVICE_UNNAMED/);
+});
+
+test('the backup check needs the whole test vault: an empty or partial backup is not "full-test-vault-backed-up"', async () => {
+  const words = phrase(random), dir = mkdtempSync(join(tmpdir(), 'gate-full-'));
+  // The gate's vault: 2 files and 2 notes.
+  const v = await vaultWith(2); await v.add(draft({ folder: 'private', title: 'second note' }), true);
+  assert.deepEqual(notFull(summary(v.snapshot())), []);
+  const full = join(dir, 'full.kmp'); writeFileSync(full, v.backup(recoveryKey(words)));
+  const ok = tool('full', full, words);
+  assert.equal(ok.code, 0, ok.out); assert.match(ok.out, /^\{"count":4,"files":2/);
+  // Gate run 46112815437: adding papers failed, and an empty vault's backup was recorded as a pass.
+  const empty = join(dir, 'empty.kmp'); writeFileSync(empty, (await vaultWith(0)).backup(recoveryKey(words)));
+  const none = tool('full', empty, words);
+  assert.equal(none.code, 1); assert.match(none.out, /NOT_FULL_TEST_VAULT: 1 items, not 4; 0 files, not 2/);
+  assert.deepEqual(notFull({ count: 0, files: 0 }), ['0 items, not 4', '0 files, not 2']);
+  assert.deepEqual(notFull({ count: 4, files: 1 }), ['1 files, not 2']);
+  // run.sh uses it for the check.
+  assert.match(readFileSync('scripts/device-gate/run.sh', 'utf8'), /S=\$\(tool full "\$W\/good\.kmp" "\$WORDS"\) && flow check-backup/);
 });

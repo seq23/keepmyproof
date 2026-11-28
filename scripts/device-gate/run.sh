@@ -66,9 +66,9 @@ flow reset-phrase NEWCODE=$CODE2 WORDS="$WORDS" SHOT=reset1 || ok=0
 
 # 3. full-test-vault-backed-up (+ the file the person saved holds every item)
 home; grab "$W/good.kmp"; flow backup SHOT=b1; grab_stop
-if [ -s "$W/good.kmp" ] && cp "$W/good.kmp" "$FILES/gate-good.kmp" && S=$(tool summary "$W/good.kmp" "$WORDS") && flow check-backup FILE=gate-good.kmp SHOT=b1; then
-  record full-test-vault-backed-up pass "Back up now made an encrypted file the 12 words open ($S); Check the saved backup on that file: ✓ Backup checked."
-else record full-test-vault-backed-up fail "no backup file, or the check did not pass ($LAST_LOG)"; fi
+if [ -s "$W/good.kmp" ] && cp "$W/good.kmp" "$FILES/gate-good.kmp" && S=$(tool full "$W/good.kmp" "$WORDS") && flow check-backup FILE=gate-good.kmp SHOT=b1; then
+  record full-test-vault-backed-up pass "Back up now made an encrypted file of the whole test vault (4 items, 2 files) that the 12 words open ($S); Check the saved backup on that file: ✓ Backup checked."
+else record full-test-vault-backed-up fail "no backup file, not the whole test vault (${S:-unread}), or the check did not pass ($LAST_LOG)"; fi
 
 # 4. corrupt-or-missing-file-rejected and 5. wrong-phrase-changes-nothing
 home; ok=1; why=""

@@ -2,6 +2,7 @@
 // app's own crypto (src/core/crypto.ts, src/core/model.ts), so the Simulator run can prove what a backup holds.
 // Invented test vaults only. Usage (tsx):
 //   summary <backup> <words>            JSON: item count and each item's id, title, kind and sha256 of its bytes
+//   full <backup> <words>               the summary, and exit 0 only if it is the whole test vault (4 items, 2 of them files)
 //   compare <a> <b> <words>             exit 0 only if both hold the same items with byte-identical files
 //   corrupt <in> <out> <how> <words>    how: missing (a file's bytes removed) | changed (a file's bytes altered,
 //                                       its hash kept) | flipped (one ciphertext byte) | truncated (half the file)
@@ -19,6 +20,15 @@ export function summary(s: Snapshot) {
   return { count: s.items.length, files: s.items.filter(i => i.bytes !== null).length,
     items: s.items.map(i => ({ id: i.id, title: i.title, kind: i.kind, sha256: fileHash(i.bytes) })).sort((a, b) => a.id < b.id ? -1 : 1) };
 }
+/** The gate's test vault: 2 notes and 2 files (.maestro/gate/add.yaml). A backup of anything less is not "the full test
+ *  vault backed up": gate run 46112815437 recorded that check passed on an empty vault ({"count":0,"files":0}). */
+export const TEST_VAULT = { count: 4, files: 2 };
+export function notFull(sum: { count: number; files: number }): string[] {
+  const out: string[] = [];
+  if (sum.count !== TEST_VAULT.count) out.push(`${sum.count} items, not ${TEST_VAULT.count}`);
+  if (sum.files !== TEST_VAULT.files) out.push(`${sum.files} files, not ${TEST_VAULT.files}`);
+  return out;
+}
 export function compare(a: Snapshot, b: Snapshot): string[] {
   const diff: string[] = [], bi = new Map(b.items.map(i => [i.id, i]));
   if (a.items.length !== b.items.length) diff.push(`count ${a.items.length} vs ${b.items.length}`);
@@ -35,6 +45,11 @@ export function compare(a: Snapshot, b: Snapshot): string[] {
 function main() {
   const [cmd, ...a] = process.argv.slice(2);
   if (cmd === 'summary') { console.log(JSON.stringify(summary(read(a[0], a[1])))); return; }
+  if (cmd === 'full') {
+    const sum = summary(read(a[0], a[1])), why = notFull(sum);
+    console.log(why.length ? `NOT_FULL_TEST_VAULT: ${why.join('; ')} ${JSON.stringify(sum)}` : JSON.stringify(sum));
+    process.exitCode = why.length ? 1 : 0; return;
+  }
   if (cmd === 'compare') {
     const diff = compare(read(a[0], a[2]), read(a[1], a[2]));
     console.log(diff.length ? `DIFFERENT: ${diff.join('; ')}` : 'SAME: every item and every file byte matches');
