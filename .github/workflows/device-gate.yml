@@ -1,10 +1,11 @@
-# THE DEVICE GATE (scripts/device-gate/run.sh): the 12 release checks of scripts/release-gate.mjs DEVICE_CHECKS on
-# an iOS Simulator, on a free GitHub macOS runner. Manual only, on main. The app is built from this commit with
-# RevenueCat's Test Store key (Apple's sandbox sign-in fails on the iOS 26 Simulator), and the "old data" vault is
-# made by the Simulator build of b0531f3, the build App Review last saw (1.0 build 7, run 44925922547).
-# Runs by hand on main, or on a push to a device-gate/* branch (to rerun it on a branch whose app code is main's).
-# It never builds for a store and never records the gate itself: release/device-gate.json is written from its
-# result.json by a person or agent who has read it, in a PR.
+# THE DEVICE GATE (scripts/device-gate/run.sh): the release checks of scripts/release-gate.mjs DEVICE_CHECKS on an
+# iOS Simulator, on a free GitHub macOS runner. The app is built from this commit with no store key: RevenueCat
+# closes a Release build that carries its Test Store key ("Wrong API Key", gate run 46083182907) and Apple's sandbox
+# sign-in fails on the iOS 26 Simulator, so store-sandbox-purchase-and-restore is not run here (a real iPhone).
+# The "old data" vault is made by the Simulator build of b0531f3, the build App Review last saw (1.0 build 7,
+# run 44925922547). Runs by hand on main, or on a push to a device-gate/* branch.
+# It never builds for a store and never records the gate itself: scripts/device-gate/record.mjs writes
+# release/device-gate.json from a fully passing result.json, in a PR.
 name: Device gate (Simulator)
 on:
   workflow_dispatch:
@@ -28,10 +29,6 @@ jobs:
       OLD_RUN: '44925922547'
     steps:
       - uses: actions/checkout@v4
-      - name: Test Store key present
-        env:
-          RC_TEST: ${{ secrets.REVENUECAT_KMP_TEST_PUBLIC_KEY }}
-        run: '[[ "$RC_TEST" == test_* ]] || { echo "NAMED STOP [GATE_TEST_KEY_MISSING] REVENUECAT_KMP_TEST_PUBLIC_KEY (test_...) is not a repo secret"; exit 2; }'
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -51,9 +48,7 @@ jobs:
           key: pods-${{ runner.os }}-${{ hashFiles('package-lock.json', 'app.config.ts') }}
       - name: Install pods
         run: cd ios && pod install --repo-update > ../pods.log 2>&1 || { tail -60 ../pods.log; exit 1; }
-      - name: Build this commit for the Simulator (Test Store key, no preview switch)
-        env:
-          EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY: ${{ secrets.REVENUECAT_KMP_TEST_PUBLIC_KEY }}
+      - name: Build this commit for the Simulator (no preview switch, no store key)
         run: |
           xcodebuild -workspace ios/KeepMyProof.xcworkspace -scheme KeepMyProof -configuration Release \
             -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build \

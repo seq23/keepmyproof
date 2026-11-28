@@ -132,10 +132,10 @@ D="$(data)"; k=0; while IFS= read -r f; do k=$((k+1)); sips -s format png "$f" -
 xcrun simctl io "$U" screenshot "$OUT/shots/gate-switch-home.png" >/dev/null 2>&1
 record app-switcher-preview-hidden "look" "snapshots kept by iOS: $k (shots/switcher-snapshot-*.png); a person must see that no paper title is readable in them"
 
-# 12. store-sandbox-purchase-and-restore (RevenueCat Test Store on the Simulator)
-home
-if flow purchase SHOT=buy; then record store-sandbox-purchase-and-restore pass "RevenueCat Test Store: Subscribe → test purchase → ✓ Plus is on → Restore purchases → ✓ Purchases checked"
-else record store-sandbox-purchase-and-restore fail "see $LAST_LOG"; fi
+# 12. store-sandbox-purchase-and-restore: not on a Simulator. RevenueCat closes a Release build that carries its
+# Test Store key ("Wrong API Key ... The app will close now", gate run 46083182907), and Apple's sandbox sign-in
+# fails on the iOS 26 Simulator (spry brain, 17 Nov 2026). It needs a real iPhone with a Sandbox Apple Account.
+record store-sandbox-purchase-and-restore not-run "a Simulator cannot buy: RevenueCat refuses its Test Store key in a Release build, and Apple's sandbox sign-in fails on the iOS 26 Simulator; needs a real iPhone"
 
 # Maestro writes takeScreenshot files beside the flow, not in the working directory.
 find "$GITHUB_WORKSPACE/.maestro" "$OUT/shots" -name 'gate-*.png' -newer "$OUT/said.txt" -exec cp {} "$OUT/shots/" \; 2>/dev/null
