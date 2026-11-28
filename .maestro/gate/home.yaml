@@ -5,6 +5,7 @@ appId: com.keepmyproof.app
     when:
       visible: "OK|Allow"
     commands:
+      # A system alert (allow Face ID): effect checked by the wait for Home below.
       - tapOn: "OK|Allow"
 - extendedWaitUntil:
     visible: "Free plan: .*|\\d+ items · Plus|Also open with Face ID"

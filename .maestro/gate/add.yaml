@@ -6,7 +6,11 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Divorce, custody.*"
     direction: DOWN
-- tapOn: "Divorce, custody.*"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Divorce, custody.*"
+      THEN: "Checklist"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -19,7 +23,11 @@ appId: com.keepmyproof.app
     when:
       visible: "How did you hear about KeepMyProof\\?"
     commands:
-      - tapOn: "Skip ›"
+      - runFlow:
+          file: tap.yaml
+          env:
+            TAP: "Skip ›"
+            THEN: "Checklist"
 - extendedWaitUntil:
     visible: "Checklist"
     timeout: 15000
@@ -45,7 +53,11 @@ appId: com.keepmyproof.app
     env:
       FILE: "gate-photo.png"
       TITLE: "Gate file picture"
-- tapOn: "← Back to Home"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "← Back to Home"
+      THEN: "Free plan: 4 of 25 items used\\."
 - extendedWaitUntil:
     visible: "Free plan: 4 of 25 items used\\."
     timeout: 15000

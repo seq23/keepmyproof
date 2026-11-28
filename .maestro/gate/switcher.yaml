@@ -1,19 +1,27 @@
 # Leaves the app on an open folder (paper titles on screen); the host then sends it to the background.
 appId: com.keepmyproof.app
 ---
-# Start on Folders: the unlock before this resumes the last tab (gate run 46118560120, flow 30 began on Backup).
-- runFlow:
-    file: tab.yaml
-    env:
-      TAB: "Folders"
-      MARK: "Your folders"
-# The first folder card, near the top of Home: not centred (gate run 46112815437, flow 2: centring a card that is
-# already at the top overshot and failed with the card in full view; the same step passed at flow 25).
-- scrollUntilVisible:
-    element: "Divorce, custody.*"
-    direction: DOWN
-- tapOn: "Divorce, custody.*"
-- extendedWaitUntil:
-    visible: "Gate note one"
-    timeout: 15000
+# Retried from the Folders tab: a tap on the folder card that lands elsewhere (gate run 46128557523, flow 35: it
+# opened Backup) is undone by tab.yaml's next round instead of failing the check.
+- retry:
+    maxRetries: 3
+    commands:
+      - runFlow:
+          when:
+            notVisible: "Gate note one"
+          commands:
+            - runFlow:
+                file: tab.yaml
+                env:
+                  TAB: "Folders"
+                  MARK: "Free plan: .*|\\d+ items · Plus"
+            - scrollUntilVisible:
+                element: "Divorce, custody.*"
+                direction: DOWN
+            - waitForAnimationToEnd:
+                timeout: 5000
+            - tapOn: "Divorce, custody.*"
+      - extendedWaitUntil:
+          visible: "Gate note one"
+          timeout: 10000
 - takeScreenshot: gate-${SHOT}-folder-open

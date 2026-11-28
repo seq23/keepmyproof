@@ -7,7 +7,7 @@ import { Vault } from '../src/core/vault';
 import { compare, summary, notFull } from '../scripts/device-gate/backup-tool';
 import { MemoryStore, draft, random } from './helpers';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { b64, recoveryKey, decode, open } from '../src/core/crypto';
@@ -82,4 +82,43 @@ test('the backup check needs the whole test vault: an empty or partial backup is
   assert.deepEqual(notFull({ count: 4, files: 1 }), ['1 files, not 2']);
   // run.sh uses it for the check.
   assert.match(readFileSync('scripts/device-gate/run.sh', 'utf8'), /S=\$\(tool full "\$W\/good\.kmp" "\$WORDS"\) && flow check-backup/);
+});
+
+// Every tap in a gate flow proves its effect (gate runs 46118560120, 46124321633, 46128557523: on the iOS 26
+// Simulator a tap can be reported done and never reach the app, and the flows after it start on the wrong screen).
+// A tap passes when it sits in a retry that checks a result after it (tap.yaml, tab.yaml, press.yaml and type.yaml
+// are built this way), or when the comment right above it names where its effect is checked or says it only closes
+// the keyboard. Returns "file:line" for each tap that does neither.
+export function unprovenTaps(dir: string): string[] {
+  const bad: string[] = [];
+  const indent = (l: string) => l.length - l.trimStart().length;
+  for (const f of readdirSync(dir).filter(n => n.endsWith('.yaml'))) {
+    const lines = readFileSync(join(dir, f), 'utf8').split('\n');
+    lines.forEach((l, i) => {
+      if (!/^\s*-\s+tapOn:/.test(l)) return;
+      let c = i - 1; const notes: string[] = [];
+      while (c >= 0 && /^\s*#/.test(lines[c])) notes.push(lines[c--]);
+      if (notes.some(n => /Closes the keyboard|Effect checked by|A system alert/.test(n))) return;
+      for (let r = i - 1; r >= 0; r--) {
+        const t = lines[r];
+        if (!t.trim() || /^\s*#/.test(t) || indent(t) >= indent(l)) continue;
+        if (!/^\s*-\s+retry:/.test(t)) continue;
+        let end = r + 1;
+        while (end < lines.length && (!lines[end].trim() || /^\s*#/.test(lines[end]) || indent(lines[end]) > indent(t))) end++;
+        if (lines.slice(i + 1, end).some(x => /^\s*-\s+(extendedWaitUntil|assertVisible|scrollUntilVisible):/.test(x))) return;
+      }
+      bad.push(`${f}:${i + 1}`);
+    });
+  }
+  return bad;
+}
+
+test('every tap in the gate flows is retried until its effect shows, or names where its effect is checked', () => {
+  const dir = join(__dirname, '..', '.maestro', 'gate');
+  assert.deepEqual(unprovenTaps(dir), []);
+  // The check itself sees a bare tap: a copy of the flows with one added must fail.
+  const copy = mkdtempSync(join(tmpdir(), 'gate-flows-'));
+  for (const f of readdirSync(dir)) writeFileSync(join(copy, f), readFileSync(join(dir, f)));
+  writeFileSync(join(copy, 'lock.yaml'), readFileSync(join(dir, 'lock.yaml'), 'utf8') + '- tapOn: "Lock my papers ›"\n');
+  assert.deepEqual(unprovenTaps(copy), [`lock.yaml:${readFileSync(join(copy, 'lock.yaml'), 'utf8').split('\n').length - 1}`]);
 });

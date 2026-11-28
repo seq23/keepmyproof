@@ -2,13 +2,23 @@
 appId: com.keepmyproof.app
 ---
 - runFlow: lock.yaml
-- tapOn: "Forgot the passcode\\? ›"
-- tapOn:
-    id: "New six-number passcode"
-- inputText: ${NEWCODE}
-- tapOn:
-    id: "Enter the same six numbers again"
-- inputText: ${NEWCODE}
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Forgot the passcode\\? ›"
+      THEN: "Set a new passcode ›"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "New six-number passcode"
+      TEXT: ${NEWCODE}
+      SHOW: "••••••|${NEWCODE}"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "Enter the same six numbers again"
+      TEXT: ${NEWCODE}
+      SHOW: "••••••|${NEWCODE}"
 # Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
 - tapOn:
     text: "New six-number passcode"
@@ -16,4 +26,5 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Open with Face ID ›"
     direction: DOWN
+# Effect checked by the host: it matches the face, then home.yaml must find the vault open with 4 items.
 - tapOn: "Open with Face ID ›"

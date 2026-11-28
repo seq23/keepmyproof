@@ -8,30 +8,54 @@ appId: com.keepmyproof.app
 - extendedWaitUntil:
     visible: "Continue in English ›"
     timeout: 90000
-- tapOn: "Continue in English ›"
-- tapOn:
-    id: "Passcode"
-- inputText: ${CODE}
-- tapOn:
-    id: "Enter the same six numbers again"
-- inputText: ${CODE}
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Continue in English ›"
+      THEN: "Choose a passcode for this app"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "Passcode"
+      TEXT: ${CODE}
+      SHOW: "••••••|${CODE}"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "Enter the same six numbers again"
+      TEXT: ${CODE}
+      SHOW: "••••••|${CODE}"
+# Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
 - tapOn: "Choose a passcode for this app"
 - scrollUntilVisible:
     element: "Save passcode ›"
     direction: DOWN
-- tapOn: "Save passcode ›"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Save passcode ›"
+      THEN: "Working…|Your 12-word recovery phrase"
 - extendedWaitUntil:
     visible: "Your 12-word recovery phrase"
     timeout: 30000
 - runFlow: words.yaml
 - evalScript: "${http.post('http://127.0.0.1:8765/', { body: 'GATE_WORDS=' + output.words })}"
-- tapOn: "I.ve written them down ›"
-- tapOn:
-    id: "12 words, separated by spaces"
-- inputText: ${output.words}
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "I.ve written them down ›"
+      THEN: "Type your 12 words to confirm"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "12 words, separated by spaces"
+      TEXT: ${output.words}
+      SHOW: ${output.words}
+# Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
 - tapOn: "Type your 12 words to confirm"
-- tapOn: "Go to Home ›"
-- extendedWaitUntil:
-    visible: "What you can keep here|Free plan: .*"
-    timeout: 30000
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Go to Home ›"
+      THEN: "What you can keep here|Free plan: .*"
 - takeScreenshot: gate-01-home-new

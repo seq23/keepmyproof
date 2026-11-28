@@ -2,16 +2,29 @@
 appId: com.keepmyproof.app
 ---
 - runFlow: lock.yaml
-- tapOn: "Forgot the passcode\\? ›"
-- tapOn:
-    id: "New six-number passcode"
-- inputText: ${NEWCODE}
-- tapOn:
-    id: "Enter the same six numbers again"
-- inputText: ${NEWCODE}
-- tapOn:
-    id: "12 words, separated by spaces"
-- inputText: ${WORDS}
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Forgot the passcode\\? ›"
+      THEN: "Set a new passcode ›"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "New six-number passcode"
+      TEXT: ${NEWCODE}
+      SHOW: "••••••|${NEWCODE}"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "Enter the same six numbers again"
+      TEXT: ${NEWCODE}
+      SHOW: "••••••|${NEWCODE}"
+- runFlow:
+    file: type.yaml
+    env:
+      FIELD: "12 words, separated by spaces"
+      TEXT: ${WORDS}
+      SHOW: ${WORDS}
 # Closes the keyboard by tapping the screen heading (hideKeyboard fails on the iOS 26 Simulator).
 - tapOn:
     text: "New six-number passcode"
@@ -19,9 +32,11 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Set a new passcode ›"
     direction: DOWN
-- tapOn: "Set a new passcode ›"
-# Unlocked: the app reopens on the screen it was locked from (Settings, by lock.yaml), so wait for the tab bar, which
-# only an open vault shows (gate run 46098006485, flow 4: the reset worked and the app sat on Settings).
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Set a new passcode ›"
+      THEN: "Working…|Folders"
 - extendedWaitUntil:
     visible: "Folders"
     timeout: 60000

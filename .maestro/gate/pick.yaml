@@ -4,23 +4,29 @@ appId: com.keepmyproof.app
 - extendedWaitUntil:
     visible: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
     timeout: 20000
-- runFlow:
-    when:
-      notVisible: "${FILE.split('.')[0]}.*"
+# Retried until the file shows: a lost Browse or On My iPhone tap is pressed again.
+- retry:
+    maxRetries: 3
     commands:
       - runFlow:
           when:
-            visible: "Browse"
+            notVisible: "${FILE.split('.')[0]}.*"
           commands:
-            - tapOn: "Browse"
-      - runFlow:
-          when:
-            visible: "On My iPhone"
-          commands:
-            - tapOn: "On My iPhone"
-- extendedWaitUntil:
-    visible: "${FILE.split('.')[0]}.*"
-    timeout: 20000
+            - runFlow:
+                when:
+                  visible: "Browse"
+                commands:
+                  - tapOn: "Browse"
+                  - waitForAnimationToEnd:
+                      timeout: 5000
+            - runFlow:
+                when:
+                  visible: "On My iPhone"
+                commands:
+                  - tapOn: "On My iPhone"
+      - extendedWaitUntil:
+          visible: "${FILE.split('.')[0]}.*"
+          timeout: 10000
 # Tap the file's cell (id "gate-paper, pdf" / "gate-good.kmp, kmp"), not its name label: a tap on the label left the
 # picker open (gate run 46090441187, flows 7 and 9). Files labels a PDF or PNG without its extension ("gate-paper"),
 # so both lines match on the name before the first dot. No "$" inside ${…}: Maestro evaluates only \$\{([^$]*)}, and
@@ -44,8 +50,14 @@ appId: com.keepmyproof.app
           notVisible:
             id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
           timeout: 10000
-- runFlow:
-    when:
-      visible: "Open"
+- retry:
+    maxRetries: 3
     commands:
-      - tapOn: "Open"
+      - runFlow:
+          when:
+            visible: "Open"
+          commands:
+            - tapOn: "Open"
+      - extendedWaitUntil:
+          notVisible: "Open"
+          timeout: 10000

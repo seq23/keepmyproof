@@ -9,7 +9,11 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Check the saved backup ›"
     direction: DOWN
-- tapOn: "Check the saved backup ›"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Check the saved backup ›"
+      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
 - runFlow:
     file: pick.yaml
     env:
@@ -17,7 +21,11 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Check the saved backup ›"
     direction: DOWN
-- tapOn: "Check the saved backup ›"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Check the saved backup ›"
+      THEN: "Working…|✓ Backup checked\\.|The backup check failed.*"
 - extendedWaitUntil:
     visible: "✓ Backup checked\\.|The backup check failed.*"
     timeout: 60000

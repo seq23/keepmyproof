@@ -9,14 +9,25 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Also open with Face ID"
     direction: DOWN
-# The card's text and its switch carry the same words; the switch is the second.
-- tapOn:
-    text: "Also open with Face ID"
-    index: 1
+# The card's text and its switch carry the same words; only the switch can be checked. The switch turns on only
+# after the Face ID match the host makes once this flow ends, so its effect is proven by faceid-check.yaml (gate run
+# 46128557523: this tap was reported done, the switch stayed off, and the Face ID reset later found no Face ID
+# button). Pressed only while it is off, so a second round never turns it off again.
+- runFlow:
+    when:
+      notVisible:
+        text: "Also open with Face ID"
+        checked: true
+    commands:
+      # Effect checked by faceid-check.yaml after the host's match (run.sh faceid_on tries again if it is off).
+      - tapOn:
+          text: "Also open with Face ID"
+          index: 1
 - waitForAnimationToEnd:
     timeout: 5000
 - runFlow:
     when:
       visible: "OK|Allow"
     commands:
+      # A system alert (allow Face ID): effect checked by faceid-check.yaml after the host's match.
       - tapOn: "OK|Allow"

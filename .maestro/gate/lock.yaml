@@ -9,7 +9,8 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "Lock my papers ›"
     direction: DOWN
-- tapOn: "Lock my papers ›"
-- extendedWaitUntil:
-    visible: "Your papers are locked"
-    timeout: 15000
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Lock my papers ›"
+      THEN: "Your papers are locked"

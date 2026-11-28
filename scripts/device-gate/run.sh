@@ -58,7 +58,12 @@ home; ok=1
 flow reset-phrase NEWCODE=$CODE2 WORDS="$WORDS" SHOT=reset1 || ok=0
 [ $ok = 1 ] && { CUR=$CODE2; flow unlock CODE=$CODE2 && [ "$(count)" = 4 ] || ok=0; }
 # Each Face ID prompt is left open by its flow; the host then matches the enrolled face.
-[ $ok = 1 ] && { flow faceid-on || ok=0; match_face; flow home SHOT=faceid-on || ok=0; }
+# The switch turns on only after the match, and a tap on it can be lost: faceid-check proves it is on (its checked
+# state), and a round that left it off is tried again (gate run 46128557523: switch tap lost, the Face ID reset then
+# found no Face ID button and every later flow began on the reset screen).
+faceid_on() { local i; for i in 1 2 3; do flow faceid-on || continue; match_face; flow faceid-check && return 0
+  [ "$(said GATE_FACEID)" = allowed ] && { match_face; flow faceid-check && return 0; }; done; return 1; }
+[ $ok = 1 ] && { faceid_on || ok=0; }
 [ $ok = 1 ] && { flow reset-faceid NEWCODE=$CODE1 || ok=0; match_face; flow home SHOT=faceid && [ "$(count)" = 4 ] && CUR=$CODE1 || ok=0; }
 [ $ok = 1 ] && { flow unlock CODE=$CODE1 && [ "$(count)" = 4 ] || ok=0; }
 [ $ok = 1 ] && record passcode-reset-face-id-and-phrase pass "new passcode set with the 12 words, then with a Face ID match; each new passcode opens the same 4 items" \
@@ -114,7 +119,10 @@ else record full-disk-changes-nothing fail "could not put the vault folder on a 
 # 8. interrupted-restore-changes-nothing: the app is killed the moment the Restore tap is done, on a 60 MB backup.
 home; BIG=30; BIGN=$((4+BIG)); tool bigger "$W/good.kmp" "$FILES/gate-big.kmp" $BIG "$WORDS"; seen=""; cut=0; ok=1
 for d in 0 0.5 1.5; do
-  flow restore FILE=gate-big.kmp WORDS="$WORDS" EXPECT=x SHOT=cut FRESH=0 FAST=1 || { ok=0; seen="$seen restore-flow-failed"; break; }
+  flow restore FILE=gate-big.kmp WORDS="$WORDS" EXPECT="✓ Your backup was restored.*" SHOT=cut FRESH=0 FAST=1 || { ok=0; seen="$seen restore-flow-failed"; break; }
+  # A kill after a tap that never reached the app would leave 4 and pass as "untouched": the flow must have seen
+  # the restore start (Working… or its result).
+  [ "$(said GATE_STARTED)" = 1 ] || { ok=0; seen="$seen restore-not-started"; break; }
   sleep $d; xcrun simctl terminate "$U" "$BID"
   flow unlock CODE=$CUR || { ok=0; seen="$seen unlock-failed"; break; }; c=$(count); seen="$seen ${d}s→$c"
   if [ "$c" = 4 ]; then cut=$((cut+1)); elif [ "$c" != "$BIGN" ]; then ok=0; fi

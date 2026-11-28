@@ -4,21 +4,33 @@ appId: com.keepmyproof.app
 - scrollUntilVisible:
     element: "\\+ Add something"
     direction: DOWN
-- tapOn: "\\+ Add something"
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "\\+ Add something"
+      THEN: "Save to .*"
 # The add screen opens on Note; the File kind shows "Choose a file ›" (gate run 46090441187, flow 2).
 # Centered, as a person scrolls to it: on an iPhone 17 the Photo / File / Note row sits under the Save bar until the
 # page scrolls, and an uncentered tap on "File" pressed "Save to …" instead (gate run 46098006485, flow 2: an empty
 # note refused with "Give your note a name before saving.", the form still on Note).
-- scrollUntilVisible:
-    element: "File"
-    direction: DOWN
-    centerElement: true
-- tapOn: "File"
-- scrollUntilVisible:
-    element: "Choose a file ›"
-    direction: DOWN
-    centerElement: true
-- tapOn: "Choose a file ›"
+# Retried until "Choose a file ›" can be brought into view: pressing File again keeps File chosen.
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element: "File"
+          direction: DOWN
+          centerElement: true
+      - tapOn: "File"
+      - scrollUntilVisible:
+          element: "Choose a file ›"
+          direction: DOWN
+          centerElement: true
+- runFlow:
+    file: tap.yaml
+    env:
+      TAP: "Choose a file ›"
+      THEN: "Browse|Recents|On My iPhone|${FILE.split('.')[0]}.*"
 - runFlow:
     file: pick.yaml
     env:
