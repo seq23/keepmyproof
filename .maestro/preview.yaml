@@ -46,9 +46,11 @@ appId: com.keepmyproof.app
     element: "Save passcode ›"
     direction: DOWN
 - tapOn: "Save passcode ›"
+# Saving the passcode runs PBKDF2 at 600,000 rounds; on a busy GitHub Simulator that took longer than 15 s
+# (run 46090340479: the phrase screen was up in the failure shot, just after the wait ran out).
 - extendedWaitUntil:
     visible: "Your 12-word recovery phrase"
-    timeout: 15000
+    timeout: 60000
 - waitForAnimationToEnd
 - takeScreenshot: 04-phrase
 # The words show numbered in two columns ("1.  pond"), one text each: copy all 12, then type them back.
