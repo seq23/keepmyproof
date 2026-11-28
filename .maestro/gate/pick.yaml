@@ -7,6 +7,8 @@
 # gate-paper, B and C on gate-photo, tapping the cell) and 46163383574 (group D on gate-photo, tapping its picture;
 # screen-hierarchy step-177..189: the picker on On My iPhone, gate-photo's cell enabled, nothing over it). The same
 # taps picked the same files in other groups of those runs, so neither the tap point nor the file decides it.
+# The picker may stay up while it copies a big file (60 MB gate-big.kmp: 10 s was not enough in run 46163383574,
+# group E), so a close is waited for 30 s before the picker is called stuck.
 appId: com.keepmyproof.app
 ---
 - retry:
@@ -64,7 +66,7 @@ appId: com.keepmyproof.app
       - extendedWaitUntil:
           notVisible:
             id: "${FILE.split('.')[0]}(\\.[a-z]+)?, .*"
-          timeout: 10000
+          timeout: 30000
 - retry:
     maxRetries: 3
     commands:
