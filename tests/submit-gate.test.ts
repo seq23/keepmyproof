@@ -12,7 +12,7 @@ import { record, recordPurchase } from '../scripts/device-gate/record.mjs';
 
 const now = Date.parse('2026-11-28T12:00:00Z');
 const result = (over: Record<string, string> = {}) => ({ device: 'iPhone 17 Simulator, iOS-26-5', commit: 'abc',
-  checks: Object.fromEntries(DEVICE_CHECKS.map(c => [c, { result: over[c] ?? (c === 'app-switcher-preview-hidden' ? 'look' : c === PURCHASE_CHECK ? 'not-run' : 'pass'), evidence: 'e' }])) });
+  checks: Object.fromEntries(DEVICE_CHECKS.map(c => [c, { result: over[c] ?? (c === 'app-switcher-preview-hidden' ? 'look' : c === PURCHASE_CHECK ? 'testflight' : 'pass'), evidence: 'e' }])) });
 const simRecord = () => record(result(), { run: 'r', version: '1.0', seen: 'blank card, no title readable' });
 const bought = (o: Record<string, unknown> = {}) => recordPurchase(simRecord(), { build: '8', date: '2026-11-28', by: 'owner', restored: true, version: '1.0', now, ...o });
 const base = (device: unknown) => ({ env: { EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY: 'appl_x', EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY: 'goog_x' }, version: '1.0', now,
