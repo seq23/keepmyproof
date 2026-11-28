@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { AppState, BackHandler, Image, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, Share, Switch, Text, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getLocales } from 'expo-localization';
-import * as ScreenCapture from 'expo-screen-capture';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
 import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
@@ -19,6 +18,7 @@ import * as files from '../src/native/files';
 import { cameraStep, photoTitle } from '../src/core/camera';
 import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
+import { guardScreen } from '../src/native/screen';
 import { DEFAULT_REMOVE_PREF, photoHint, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
 const vaultCopy = vaultLines(photos.systemConfirm);
 import { stateRulesUrl } from '../src/core/stateRules';
@@ -113,7 +113,8 @@ export default function App() {
       if (!start.fresh) setScreen(exists ? 'lock':'first');
       if (exists) setBiometric((await device.locks.read()).biometrics);
     }).catch(e => setError(t((e as Error).message in strings ? (e as Error).message as StringKey : 'error'))).finally(() => setReady(true));
-    if (Platform.OS === 'ios') void ScreenCapture.enableAppSwitcherProtectionAsync(1).catch(() => setError(t('error')));
+    // iOS: a cover over the app-switcher snapshot. Android: Recents shows a blank card (src/native/screen*.ts).
+    void guardScreen().catch(() => setError(t('error')));
     const listener = AppState.addEventListener('change', state => {
       // Lock when the app leaves the screen. iOS 'inactive' is the Face ID prompt, a file picker or the
       // app switcher (whose preview is hidden); locking there would throw people out mid-task.
