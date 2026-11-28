@@ -52,7 +52,7 @@ opaque(fgr, join(ROOT, 'store/play/feature-graphic.png'));
 if (!shotsDir) { console.log('play-assets: icons and feature graphic written; pass the iPhone screenshot dir for phone shots.'); process.exit(0); }
 // iPhone 1320 wide -> 1080 wide (scale 0.818); keep the top 1920 px (caption and the top of the screen).
 // Shot 2's small print names the iPhone's Face ID; on Android the app says fingerprint, so that line is re-set.
-const FIX = { '02': `<div style="position:absolute;left:86px;top:1294px;width:898px;height:160px;padding-left:9px;padding-top:6px;background:#F3F4F1;font:400 29.5px/1.5 Sans;color:#4A5053">After a few wrong guesses the app makes you wait, longer each time. It never erases your papers. Forgot the passcode? You can set a new one with fingerprint or your recovery phrase.</div>` };
+const FIX = { '02': `<div style="position:absolute;left:110px;top:1377px;width:860px;height:200px;padding-left:9px;padding-top:6px;background:#F3F4F1;font:400 29.5px/1.5 Sans;color:#4A5053">After a few wrong guesses the app makes you wait, longer each time. It never erases your papers. Forgot the passcode? You can set a new one with fingerprint or your recovery phrase.</div>` };
 for (const n of ['01', '02', '03']) {
   const src = join(resolve(shotsDir), `${n}.png`);
   if (!existsSync(src)) throw Error(`NAMED STOP [PLAY_SHOT_SOURCE_MISSING] ${src}`);
