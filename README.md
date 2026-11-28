@@ -182,10 +182,10 @@ run by EAS through `eas-build-pre-install` on every build a store can review:
 - **DEVICE_RELEASE_GATE_PENDING**: `release/device-gate.json` must record every
   Simulator check in `scripts/release-gate.mjs` (`SIMULATOR_CHECKS`) as passed for the
   current version, and the device it ran on. The Simulator run
-  (`.github/workflows/device-gate.yml`, its own PR #100; a push to a `device-gate/*`
+  (`.github/workflows/device-gate.yml`, `docs/device-gate.md`; a push to a `device-gate/*`
   branch or a manual run on main) writes `result.json`;
-  `node scripts/device-gate/record.mjs <result.json> <run url> --switcher-seen "<note>"`
-  turns a run whose Simulator checks all passed into the record. That is enough for an
+  `node scripts/device-gate/record.mjs <result.json> <run url>`
+  turns a run whose Simulator checks and store-build smoke check all passed into the record. That is enough for an
   EAS store build (the TestFlight upload); the store purchase check stays pending.
 - **TESTFLIGHT_PURCHASE_UNRECORDED** (submit only): `store-sandbox-purchase-and-restore`
   is met by the owner's TestFlight sandbox Buy + Restore on a real iPhone, recorded with

@@ -1,0 +1,14 @@
+# check: app-switcher-preview-hidden
+# build: gate
+# breaks: The app-switcher cover is not turned on.
+diff --git a/src/native/screen.ts b/src/native/screen.ts
+index c6aecb9..3ca6196 100644
+--- a/src/native/screen.ts
++++ b/src/native/screen.ts
+@@ -5,5 +5,5 @@ import { Platform } from 'react-native';
+ import * as ScreenCapture from 'expo-screen-capture';
+ 
+ export function guardScreen(): Promise<void> {
+-  return Platform.OS === 'ios' ? ScreenCapture.enableAppSwitcherProtectionAsync(1) : Promise.resolve();
++  return Platform.OS === 'ios' && ScreenCapture && false ? ScreenCapture.enableAppSwitcherProtectionAsync(1) : Promise.resolve();
+ }

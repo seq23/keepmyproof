@@ -1,0 +1,24 @@
+# check: store-build-smoke
+# build: store
+# breaks: A file chosen in the system picker is kept with one byte added.
+diff --git a/src/native/files.ts b/src/native/files.ts
+index 2a29cf8..6280808 100644
+--- a/src/native/files.ts
++++ b/src/native/files.ts
+@@ -7,6 +7,7 @@ import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
+ import { PDF_MARGINS, assemblePdf, exportHtml, originalArchive, type ExportOptions } from '../core/export';
+ import type { Item } from '../core/model';
+ import { tempFile } from './storage';
++import { b64, unb64 } from '../core/crypto';
+ import { fromAsset, takePhoto as take, type Picked } from '../core/camera';
+ import { pressedAnchor } from '../anchor';
+ export type { Picked } from '../core/camera';
+@@ -18,7 +19,7 @@ async function read(uri: string, filename: string, mime: string, size?: number):
+   try {
+     if ((size ?? file.size) > MAX_FILE) throw Error('FILE_TOO_LARGE');
+     // The phone encodes base64 natively; in JS a 3 MB photo took seconds on an iPhone.
+-    return { filename, mime, bytes: await file.base64() };
++    return { filename, mime, bytes: b64(new Uint8Array([...unb64(await file.base64()), 0])) };
+   } finally { if (file.exists) file.delete(); }
+ }
+ /** Photos: several at once when `multiple` (finding 5). Files: one. null = cancelled. */

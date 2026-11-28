@@ -1,0 +1,15 @@
+# check: passcode-reset-face-id-and-phrase
+# build: gate
+# breaks: A passcode reset (12 words or Face ID) clears the wrong-guess count but keeps the old passcode.
+diff --git a/src/core/lock.ts b/src/core/lock.ts
+index 8a7f3b9..79e5f15 100644
+--- a/src/core/lock.ts
++++ b/src/core/lock.ts
+@@ -57,6 +57,6 @@ export class AppLock {
+       }
+     } else if (!r.biometrics || !(await biometricCheck())) throw Error('BIOMETRIC_FAILED');
+     const salt = b64(random(16));
+-    await this.store.write({ ...r, salt, verifier: await passcodeHash(code, salt), iterations: PASSCODE_ITERATIONS, attempts: 0, nextTry: 0 });
++    await this.store.write({ ...r, attempts: 0, nextTry: 0 });
+   }
+ }

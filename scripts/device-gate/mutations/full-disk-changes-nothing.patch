@@ -1,0 +1,16 @@
+# check: full-disk-changes-nothing
+# build: gate
+# breaks: A save the disk refuses is swallowed: the screen shows it saved and no refusal.
+diff --git a/src/core/vault.ts b/src/core/vault.ts
+index b67c47c..9257398 100644
+--- a/src/core/vault.ts
++++ b/src/core/vault.ts
+@@ -38,7 +38,7 @@ export class Vault {
+       const next = this.snapshot(); change(next); const fresh = this.hashed; this.hashed = new Set();
+       validate(next, i => i.bytes !== null && (before.get(i.id) === i.bytes || fresh.has(i.id)));
+       const cipher = seal(utf8(JSON.stringify(next)), this.key, 'vault-v1', this.random);
+-      await this.store.write(cipher);
++      try { await this.store.write(cipher); } catch { /* mutation: swallowed */ }
+       if (this.active) this.state = next;
+     };
+     const result = this.queue.then(run); this.queue = result.catch(() => {}); return result;

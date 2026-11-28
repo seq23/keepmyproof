@@ -1,30 +1,31 @@
 // Writes release/device-gate.json. Two steps, each refusing anything short of a pass:
-// 1. From a device gate run's result.json (scripts/device-gate/run.sh), only when every Simulator check passed.
-//    app-switcher-preview-hidden is the one check a person judges from the run's snapshot images: it is recorded
-//    only with --switcher-seen "<who looked, and what they saw>". The purchase check stays false (a Simulator
-//    cannot buy), which is enough for a TestFlight upload and never for a submission.
-//      node scripts/device-gate/record.mjs <result.json> <run url> --switcher-seen "<note>"
+// 1. From a device gate run's result.json (scripts/device-gate/gate.ts), only when every Simulator check passed and the
+//    store-build smoke check passed (the other checks run on the gate build). The purchase check stays false (a
+//    Simulator cannot buy), which is enough for a TestFlight upload and never for a submission.
+//      node scripts/device-gate/record.mjs <result.json> <run url>
 // 2. Her TestFlight sandbox Buy + Restore on a real iPhone (her yes, 27 Nov 2026), on the build that will be submitted:
 //      node scripts/device-gate/record.mjs --purchase --build <n> --date <YYYY-MM-DD> --by "<who tapped>" --restored
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { DEVICE_CHECKS, SIMULATOR_CHECKS, PURCHASE_CHECK, purchaseProblems } from '../release-gate.mjs';
+import { SMOKE } from './result.mjs';
 
-/** @param {any} result @param {{ run: string, version: string | undefined, seen?: string }} o */
-export function record(result, { run, version, seen }) {
+/** @param {any} result @param {{ run: string, version: string | undefined }} o */
+export function record(result, { run, version }) {
   const missing = [];
   const checks = {}, evidence = {};
   for (const c of SIMULATOR_CHECKS) {
     const r = result.checks?.[c];
-    const ok = r?.result === 'pass' || (c === 'app-switcher-preview-hidden' && r?.result === 'look' && !!seen);
+    const ok = r?.result === 'pass';
     if (!ok) missing.push(`${c}: ${r?.result ?? 'absent'}`);
-    checks[c] = ok; evidence[c] = c === 'app-switcher-preview-hidden' && seen ? `${r?.evidence ?? ''} Seen: ${seen}` : r?.evidence ?? '';
+    checks[c] = ok; evidence[c] = r?.evidence ?? '';
   }
+  if (result.checks?.[SMOKE]?.result !== 'pass') missing.push(`${SMOKE}: ${result.checks?.[SMOKE]?.result ?? 'absent'}`);
   if (missing.length) throw Error(`NAMED STOP [DEVICE_GATE_NOT_PASSED] ${missing.join('; ')}`);
   if (!result.device || !/simulator|iphone|ipad/i.test(result.device)) throw Error('NAMED STOP [DEVICE_UNNAMED] the run does not say which device it ran on');
   if (!version) throw Error('NAMED STOP [VERSION_UNREADABLE] no app version to record against');
   checks[PURCHASE_CHECK] = false;
   evidence[PURCHASE_CHECK] = 'Pending: a TestFlight sandbox Buy + Restore on a real iPhone (record.mjs --purchase).';
-  return { version, device: result.device, run, commit: result.commit, checks, evidence };
+  return { version, device: result.device, run, commit: result.commit, checks, evidence, storeBuild: result.checks[SMOKE].evidence };
 }
 
 /** Adds her TestFlight Buy + Restore to a Simulator record of the same version. @param {any} existing */
@@ -48,7 +49,7 @@ if (process.argv[1] === import.meta.filename) {
     out = recordPurchase(existing, { build: arg('--build'), date: arg('--date'), by: arg('--by'), restored: process.argv.includes('--restored'), version });
   } else {
     const [res, run] = process.argv.slice(2);
-    out = record(JSON.parse(readFileSync(res, 'utf8')), { run, version, seen: arg('--switcher-seen') });
+    out = record(JSON.parse(readFileSync(res, 'utf8')), { run, version });
   }
   writeFileSync(file, JSON.stringify(out, null, 2) + '\n');
   const passed = DEVICE_CHECKS.filter(c => out.checks[c] === true).length;
