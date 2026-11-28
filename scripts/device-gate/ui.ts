@@ -52,9 +52,12 @@ export function clear(els: El[], id: string): Clear {
   const c = center(t.box), kb = keyboard(els);
   for (const [bar, why] of [['kmp-tabs', 'tabs'], ['kmp-footer', 'footer']] as const) {
     const b = byId(els, bar)?.box;
-    // Part of the bar only when the tree says so: a settings switch scrolled behind the tab bar lies inside the bar's
-    // box too (gate run 46181196558, group B: kmp-biometrics tapped at 61,791 pressed the Folders tab).
-    if (b && t.inside.includes(bar)) return kb && overlaps(t.box, kb) ? { ok: false, why: 'keyboard', target: t.box } : { ok: true, ...c };
+    // Part of the bar when the tree nests it there, or when it lies in the bar's box and is not page content. AXe lists
+    // the tab buttons beside kmp-tabs, not under it, while page content is nested under its kmp-screen-* scroll view
+    // (gate run 46183295834: every tab tap refused). A settings switch scrolled behind the bar is page content, so
+    // it is not the bar (gate run 46181196558, group B: kmp-biometrics tapped at 61,791 pressed the Folders tab).
+    const page = t.inside.some(i => i.startsWith('kmp-screen-'));
+    if (b && (t.inside.includes(bar) || (!page && within(t.box, b)))) return kb && overlaps(t.box, kb) ? { ok: false, why: 'keyboard', target: t.box } : { ok: true, ...c };
     if (b && overlaps(t.box, b)) return { ok: false, why, target: t.box };
   }
   if (kb && overlaps(t.box, kb)) return { ok: false, why: 'keyboard', target: t.box };
