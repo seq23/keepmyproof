@@ -1,0 +1,7 @@
+{
+  "_about": "What's new in the Google Play production release (scripts/store/play-release.mjs prepare). Play allows 500 characters per language. Only what changed for Android people since versionCode 4 (8ef7da5, 22 Nov 2026).",
+  "en": "Clearer wording across the app, so every line says exactly what KeepMyProof does. A saved photo now tells you to tap it to see it full screen. With Plus, a PDF with a cover page puts the cover on its own first page, and the list of papers starts on page 2.",
+  "es": "Textos más claros en toda la app, para que cada línea diga exactamente lo que hace KeepMyProof. Una foto guardada ahora le indica que la toque para verla en pantalla completa. Con Plus, un PDF con portada pone la portada en su propia primera página y la lista de documentos empieza en la página 2.",
+  "zh": "全应用的文字更清楚，每一句都准确说明 KeepMyProof 实际做的事。已保存的照片现在会提示您点按即可全屏查看。使用 Plus 时，带封面的 PDF 会把封面单独放在第一页，文件清单从第 2 页开始。",
+  "ko": "앱 전체의 문구를 더 분명하게 다듬어, 모든 문장이 KeepMyProof가 실제로 하는 일을 그대로 말합니다. 저장한 사진은 이제 누르면 전체 화면으로 볼 수 있다고 알려 줍니다. Plus에서 표지가 있는 PDF는 표지를 따로 첫 페이지에 두고, 서류 목록은 2페이지부터 시작합니다."
+}
