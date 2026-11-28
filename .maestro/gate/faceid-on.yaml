@@ -1,7 +1,11 @@
 # Settings › Also open with Face ID: switch on. The system asks once to allow Face ID; the host then matches the face.
 appId: com.keepmyproof.app
 ---
-- tapOn: "Settings"
+- runFlow:
+    file: tab.yaml
+    env:
+      TAB: "Settings"
+      MARK: "No account\\. No ads\\. No analytics\\..*"
 - scrollUntilVisible:
     element: "Also open with Face ID"
     direction: DOWN

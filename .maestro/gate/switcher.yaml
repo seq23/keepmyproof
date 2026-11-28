@@ -1,6 +1,12 @@
 # Leaves the app on an open folder (paper titles on screen); the host then sends it to the background.
 appId: com.keepmyproof.app
 ---
+# Start on Folders: the unlock before this resumes the last tab (gate run 46118560120, flow 30 began on Backup).
+- runFlow:
+    file: tab.yaml
+    env:
+      TAB: "Folders"
+      MARK: "Your folders"
 # The first folder card, near the top of Home: not centred (gate run 46112815437, flow 2: centring a card that is
 # already at the top overshot and failed with the card in full view; the same step passed at flow 25).
 - scrollUntilVisible:

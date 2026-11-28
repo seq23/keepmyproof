@@ -1,0 +1,18 @@
+# Opens a tab and waits until its screen shows. Env: TAB (Folders | Backup | Settings), MARK (text only that screen has).
+# A tab tap right after an unlock can land while the tabs are still disabled (busy) and do nothing: gate run
+# 46118560120, flow 16 tapped "Backup" and stayed on Folders; flow 30 began on Backup after the unlock resumed there.
+appId: com.keepmyproof.app
+---
+- retry:
+    maxRetries: 3
+    commands:
+      - waitForAnimationToEnd:
+          timeout: 5000
+      - runFlow:
+          when:
+            notVisible: ${MARK}
+          commands:
+            - tapOn: ${TAB}
+      - extendedWaitUntil:
+          visible: ${MARK}
+          timeout: 8000

@@ -1,7 +1,11 @@
 # Settings › Lock my papers. Ends on the lock screen.
 appId: com.keepmyproof.app
 ---
-- tapOn: "Settings"
+- runFlow:
+    file: tab.yaml
+    env:
+      TAB: "Settings"
+      MARK: "No account\\. No ads\\. No analytics\\..*"
 - scrollUntilVisible:
     element: "Lock my papers ›"
     direction: DOWN

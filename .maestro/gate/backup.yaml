@@ -1,7 +1,11 @@
 # Backup › Back up now: the share sheet opens with the encrypted file (the host copies it out while the sheet is up).
 appId: com.keepmyproof.app
 ---
-- tapOn: "Backup"
+- runFlow:
+    file: tab.yaml
+    env:
+      TAB: "Backup"
+      MARK: "Back up now ›"
 - extendedWaitUntil:
     visible: "Back up now ›"
     timeout: 15000
