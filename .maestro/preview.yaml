@@ -179,9 +179,9 @@ appId: com.keepmyproof.app
 - waitForAnimationToEnd
 - takeScreenshot: 10-detail
 - scrollUntilVisible:
-    element: "Make a PDF of this folder ›"
+    element: "Make a PDF of this item ›"
     direction: DOWN
-- tapOn: "Make a PDF of this folder ›"
+- tapOn: "Make a PDF of this item ›"
 - waitForAnimationToEnd
 - takeScreenshot: 11-pdf
 # Make the PDF itself: the share sheet opens with it (the CI walk also copies the file out while the

@@ -79,7 +79,7 @@ test('the app offers only after the save, keeps the library id out of the vault,
 });
 
 test('only a phone that can remove the original is told it can; Android is told to delete it in Google Photos', () => {
-  const ios = vaultLines(true), android = vaultLines(false);
+  const ios = vaultLines('ios'), android = vaultLines('android');
   for (const l of LANGS) {
     const t = copy(l);
     assert.notEqual(t(ios.photo), t(android.photo), l);

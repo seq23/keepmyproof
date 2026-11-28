@@ -104,3 +104,11 @@ export function exifTime(value: unknown): string | null {
   try { userDate(`${m[1]}-${m[2]}-${m[3]}`); } catch { return null; }
   return Number(m[4]) < 24 && Number(m[5]) < 60 ? `${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}` : null;
 }
+/** A saved, changed or backed-up moment as the app shows it: weekday, day, month and year in the phone's
+ *  language, then the hour and minute, never seconds (video watch 28 Nov 2026, finding 11: "11/28/2026, 4:56:03 PM"
+ *  read as log output; the brand's stamp is "Fri 6 Nov 2026"). */
+export function stampDate(value: string, locale: string): string {
+  const d = new Date(value);
+  if (!Number.isFinite(d.getTime())) throw Error('invalidDate');
+  return d.toLocaleString(locale, { weekday:'short', day:'numeric', month:'short', year:'numeric', hour:'numeric', minute:'2-digit' });
+}

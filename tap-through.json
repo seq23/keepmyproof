@@ -4,15 +4,43 @@
   "about": "The app's own robot walk for every PR that changes a screen (boss-os scripts/ops/tap-through.mjs, ship-ready app-review.md). Sample papers and test values only; the web preview keeps nothing, so nothing real is touched.",
   "journeys": [
     {
-      "name": "first-open",
+      "name": "first-run",
       "start": "/",
       "steps": [
         {
-          "see": "Preview only: skip to a sample vault ›",
-          "id": "first"
+          "sweep": true
         },
         {
-          "sweep": true
+          "tap": "Continue in English ›",
+          "then": "Choose a passcode for this app",
+          "id": "passcode"
+        },
+        {
+          "fill": "Passcode",
+          "value": "135790"
+        },
+        {
+          "fill": "Enter the same six numbers again",
+          "value": "135790"
+        },
+        {
+          "tap": "Save passcode ›",
+          "then": "Your 12-word recovery phrase",
+          "id": "recovery-words"
+        },
+        {
+          "tap": "I've written them down ›",
+          "then": "Type your 12 words to confirm",
+          "id": "confirm-words"
+        },
+        {
+          "fill": "12 words, separated by spaces",
+          "value": "test words that are not the twelve shown"
+        },
+        {
+          "tap": "Go to Home ›",
+          "then": "Those words did not match. Check all 12 words and their order.",
+          "id": "words-refused"
         }
       ]
     },
@@ -43,28 +71,17 @@
           "id": "folder"
         },
         {
-          "tap": "+ Add something",
-          "id": "add"
-        },
-        {
-          "tap": "Cancel"
-        },
-        {
           "tap": {
             "role": "button",
             "name": "Open ›"
           },
+          "then": "Make a PDF of this item ›",
           "id": "detail"
         },
         {
-          "tap": "/^← Back to /"
-        },
-        {
-          "tap": "Make a PDF of this folder ›",
-          "id": "pdf"
-        },
-        {
-          "tap": "Save the PDF ›"
+          "tap": "Make a PDF of this item ›",
+          "then": "/^1 of \\d+ items ticked/",
+          "id": "item-pdf"
         }
       ]
     },
@@ -77,19 +94,9 @@
           "then": "/Divorce, custody or co-parenting log/"
         },
         {
-          "tap": "Settings",
-          "id": "settings"
-        },
-        {
-          "sweep": true
-        },
-        {
           "tap": "See Plus ›",
           "then": "KeepMyProof Plus",
           "id": "plans"
-        },
-        {
-          "see": "Purchases are not available in this preview. No payment will be taken."
         },
         {
           "tap": "Restore purchases ›",
@@ -97,7 +104,8 @@
           "id": "restore-purchase"
         },
         {
-          "tap": "Not now"
+          "tap": "Not now",
+          "then": "/^Free plan: \\d+ of 25 items used\\./"
         }
       ]
     },
@@ -107,7 +115,8 @@
       "steps": [
         {
           "tap": "Preview only: skip to a sample vault ›",
-          "then": "/Divorce, custody or co-parenting log/"
+          "then": "/^\\d+ items · Plus/",
+          "id": "home-plus"
         },
         {
           "tap": "Settings"
@@ -118,7 +127,7 @@
           "id": "plus-on"
         },
         {
-          "tap": "Not now"
+          "tap": "← Back to Home"
         },
         {
           "tap": "/Divorce, custody or co-parenting log/",
@@ -126,20 +135,30 @@
         },
         {
           "tap": "+ Add something",
+          "then": "Tags (separated by commas)",
           "id": "unlimited"
         },
         {
-          "tap": "Cancel"
+          "fill": "Name it",
+          "value": "TEST note with a tag"
+        },
+        {
+          "fill": "Tags (separated by commas)",
+          "value": "TEST tag",
+          "id": "tags"
+        },
+        {
+          "tap": "/^Save to /",
+          "then": "Show only a tag",
+          "id": "tag-filter"
         },
         {
           "tap": "Make a PDF of this folder ›"
         },
         {
           "tap": "/Choose dates and a cover page/",
+          "then": "From (optional)",
           "id": "range-pdf"
-        },
-        {
-          "sweep": true
         }
       ]
     },
@@ -152,10 +171,8 @@
           "then": "/Divorce, custody or co-parenting log/"
         },
         {
-          "tap": "Settings"
-        },
-        {
-          "tap": "+ Create your own folder ›",
+          "tap": "/^Make your own folder/",
+          "then": "Folder name",
           "id": "own-folder"
         },
         {
@@ -164,7 +181,8 @@
         },
         {
           "tap": "/^Create/",
-          "then": "Test folder"
+          "then": "Dated and organized, ready to share when you need to.",
+          "id": "own-folder-made"
         }
       ]
     },
@@ -177,7 +195,12 @@
           "then": "/Divorce, custody or co-parenting log/"
         },
         {
-          "tap": "Settings"
+          "tap": "Settings",
+          "then": "Folders on Home",
+          "id": "settings"
+        },
+        {
+          "sweep": true
         },
         {
           "tap": "Erase everything on this device…",
@@ -203,9 +226,14 @@
       "built": "plus-member:unlimited"
     },
     {
-      "text": "Your own folders and tags",
+      "text": "Your own folders",
       "on": "paywall:plans",
-      "built": "own-folder:own-folder"
+      "built": "own-folder:own-folder-made"
+    },
+    {
+      "text": "Tags on any item, and a tag filter in each folder",
+      "on": "paywall:plans",
+      "built": "plus-member:tag-filter"
     },
     {
       "text": "PDF of a date range, with a cover page",

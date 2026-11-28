@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AppState, BackHandler, Image, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, Share, Switch, Text, View, useWindowDimensions } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getLocales } from 'expo-localization';
 import { copy, strings, type StringKey } from '../src/strings';
 import { b64, decode, equal, open, phrase, recoveryKey } from '../src/core/crypto';
-import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
-import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened } from '../src/core/dates';
+import { DEFAULT_ADD_FOLDER, LANGS, LANG_NAME, LOCALE, type Labels, allTags, appFolders, backupNudge, checked, folderLines, homeButtons, launchFolders, parseTags, phoneLang, searchItems, tickedBy, validate, type Item, type Lang } from '../src/core/model';
+import { backupName, dateBoundary, inputDate, inputTime, resolveHappened, showHappened, stampDate } from '../src/core/dates';
+import { backName, folderFoot, plusPage, upsell } from '../src/core/screens';
 import { LockError } from '../src/core/lock';
 import { FREE_LIMIT, Vault, mayAdd, newestFirst, type Draft, type Replacement } from '../src/core/vault';
 import { BIO_NAME, bioKind, type BioKind } from '../src/core/bio';
@@ -20,7 +21,7 @@ import type { Picked } from '../src/native/files';
 import * as photos from '../src/native/photos';
 import { guardScreen } from '../src/native/screen';
 import { DEFAULT_REMOVE_PREF, photoHint, readRemovePref, removeOriginals, shouldOffer, vaultLines, type RemovePref } from '../src/core/original';
-const vaultCopy = vaultLines(photos.systemConfirm);
+const vaultCopy = vaultLines(Platform.OS);
 import { stateRulesUrl } from '../src/core/stateRules';
 import { Button, Card, Field, LangContext, P, Theme, bodyFont, flushFields, styles, textProps, usePalette, useTyped } from '../src/ui';
 // The simulator/web preview's sample vault (docs/preview.md). Only a build with EXPO_PUBLIC_KMP_PREVIEW=1 bundles it:
@@ -34,13 +35,12 @@ const HEARD_KEY: Record<Heard, StringKey> = { google:'heardGoogle', ai:'heardAi'
 
 // Folder-specific help above the checklist, and the folder's own footer line (default: folderFoot).
 const FOLDER_HOW: Record<string, StringKey> = { 'tenant-repairs-deposit':'tenantHow', 'home-inventory':'inventoryHow' };
-const FOLDER_FOOT: Record<string, StringKey> = { 'va-disability-papers':'vaDisclaimer', 'tenant-repairs-deposit':'tenantFoot', 'home-inventory':'inventoryFoot' };
 type Screen = 'first'|'setup'|'phrase'|'confirmPhrase'|'lock'|'reset'|'home'|'folder'|'add'|'detail'|'pdf'|'backup'|'restore'|'settings'|'plus'|'custom'|'heard'|'changeCode'|'renew'|'erase';
 const blankDraft = (folder: string): Draft => ({ folder, checklist:null, kind:'note', title:'', note:'', happenedOn:null, filename:null, mime:null, bytes:null, tags:[] });
 // First-launch picker: each choice in its own language.
 const CONTINUE: Labels = { en: 'Continue in English ›', es: 'Continuar en español ›', zh: '继续使用简体中文 ›', ko: '한국어로 계속하기 ›' };
 export default function App() {
-  const palette = usePalette();
+  const palette = usePalette(), insets = useSafeAreaInsets();
   const [lang, setLang] = useState<Lang>(phoneLang(getLocales()[0]));
   // The phone's own word for its biometric unlock fills {bio} in every line (finding 15).
   const [bio, setBio] = useState<BioKind>(bioKind(Platform.OS, []));
@@ -190,10 +190,11 @@ export default function App() {
     return f ? f.display_name[lang] : state?.folders.find(x => x.id === id)?.title ?? '';
   };
   const title = folderName(folder);
+  const backTitle = backName((launchFolders.find(f => f.id === folder)?.short_name as Labels | undefined)?.[lang] ?? title);
   const lines = state ? folderLines(state, folder, lang) : [];
   const folderItems = state?.items.filter(i => i.folder === folder).sort(newestFirst) ?? [];
   const item = state?.items.find(i => i.id === itemId);
-  const displayDate = (d: string | null) => d ? new Date(d).toLocaleString(LOCALE[lang]) : t('unknown');
+  const displayDate = (d: string | null) => d ? stampDate(d, LOCALE[lang]) : t('unknown');
   const displayDay = (d: string | null) => d ? showHappened(d, LOCALE[lang]) : t('unknown');
   // Typing a date or time unticks "I'm not sure of the date" (finding 3); a clash is refused inline, never dropped.
   const typedDate = (set: (v: string) => void) => (v: string) => { set(v); setDateError(''); if (v.trim()) setUnknown(false); };
@@ -270,8 +271,9 @@ export default function App() {
   const btn = (key: StringKey, action: () => void, quiet = false, primary = false, danger = false) => <Button title={t(key)} onPress={action} quiet={quiet} primary={primary} danger={danger} disabled={busy} />;
   // The disclaimer opens the site page (Spanish has its own; Chinese and Korean read the English page).
   const disclaimerUrl = lang === 'es' ? 'https://keepmyproof.com/es/aviso-legal' : 'https://keepmyproof.com/disclaimer';
-  const legal = <><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} />
-    <Button quiet title={t('privacy')} onPress={() => void Linking.openURL('https://keepmyproof.com/privacy')} /></>;
+  // Terms · Privacy: one row of two small links (finding 12: six full-width buttons on the Plus page).
+  const legal = <View style={styles.row}><View style={styles.flex}><Button quiet title={t('terms')} onPress={() => void Linking.openURL('https://keepmyproof.com/terms')} /></View>
+    <View style={styles.flex}><Button quiet title={t('privacy')} onPress={() => void Linking.openURL('https://keepmyproof.com/privacy')} /></View></View>;
   const removeSwitch = <Card><P>{t('removeSetting')}</P><P muted>{t('removeSettingHint')}</P><Switch accessibilityLabel={t('removeSetting')} value={removePref === 'ask'}
     onValueChange={v => void run(async () => { const next: RemovePref = v ? 'ask':'never'; await device.removePrefStore.write(next); setRemovePref(next); })} /></Card>;
   let body: React.ReactNode;
@@ -279,6 +281,8 @@ export default function App() {
   else if (screen === 'first') body = <><P muted>{t('step1')}</P><P muted>KeepMyProof</P><P heading>{t('vaultTitle')}</P><P muted>{t(vaultCopy.lock)}</P><P section>{t('firstTitle')}</P>
     <Card><P>{t('noAccount')}</P><P muted>{t('start')}</P></Card><Card><P>{t('stays')}</P><P muted>{t('local')}</P></Card>
     <Card><P>{t('firstFree')}</P><P muted>{t('five', { n: appFolders.length })}</P></Card>
+    {LANGS.map(l => <Button key={l} title={CONTINUE[l]} onPress={() => { chooseLang(l); navigate('setup'); }} />)}
+    {/* After the real start, never above it (finding 4). */}
     {preview && <Button title={preview.SKIP_LABEL} onPress={doRun(async () => {
       // Appetize's free sessions last 3 minutes, too short to set up a vault by hand. Preview builds only:
       // no other build bundles src/preview.ts, and the release gate refuses a store build with the switch set.
@@ -287,11 +291,10 @@ export default function App() {
       for (const d of preview.sampleVault()) await v.add(d, false);
       setSample(true); acceptVault(v);
     })} />}
-    {LANGS.map(l => <Button key={l} title={CONTINUE[l]} onPress={() => { chooseLang(l); navigate('setup'); }} />)}
     <P muted>{t('lawFirm')}</P><P muted>{t('loss')}</P>{btn('restore', () => { setRestoreData(null); navigate('restore'); }, true)}{legal}</>;
   else if (screen === 'setup') body = <><P muted>{t('step2')}</P><P heading>{t('lockTitle')}</P><P>{t('six')}</P>
     <Field label={t('passcode')} value={code} onChange={setCode} numeric secret /><Field label={t('confirmCode')} value={codeAgain} onChange={setCodeAgain} numeric secret />
-    {photos.systemConfirm && removeSwitch}
+    {vaultCopy.settings === 'removeSwitch' && removeSwitch}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={setBiometric} /><P muted>{t('codeWorks')}</P></Card>
     <P muted>{t('wrongGuesses')}</P></>;
   else if (screen === 'phrase') body = <>{wordsMode === 'setup' && <P muted>{t('step3')}</P>}<P heading>{t('recovery')}</P><P>{t('loss')}</P><P>{t('writeWords')}</P>
@@ -342,6 +345,8 @@ export default function App() {
   else if (!state || !vault) body = <P>{t('locked')}</P>;
   else if (screen === 'home') body = <>
     <P heading>KeepMyProof</P><P muted>{t(ent.plus ? 'plusCount':'homeIntro', { n:state.items.length })}</P>
+    {/* Plus from Home, not only from Settings (finding 1); "Make your own folder" closes the folder list below. */}
+    {upsell(ent.plus) && btn('seePlus', () => navigate('plus'), true)}
     {nudge !== 'none' && <Card tone="gold"><P>{t(nudge === 'check' ? 'checkNow' : 'newBackup', { n:state.items.length })}</P>{btn(nudge === 'check' ? 'backupCheck' : 'backUp', () => navigate('backup'))}</Card>}
     {renewalDue(ent) && <Card tone="gold"><P>{t('renewal', { date:displayDate(ent.renewsOn) })}</P></Card>}
     {state.items.length > 0 && <><Field label={t('search')} value={query} onChange={setQuery} />
@@ -395,7 +400,7 @@ export default function App() {
         <View style={[styles.flex,{ gap:4 }]}><P>{i.title}</P><P muted>{t('happened')}: {displayDay(i.happenedOn)}</P>
           {i.tags.length > 0 && <P muted>{t('tagsShown')}: {i.tags.join(', ')}</P>}</View></View>
       {btn('open', () => { setItemId(i.id); setViewUri(null); navigate('detail'); })}</Card>) : <P muted>{t('empty')}</P>}
-    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(FOLDER_FOOT[folder] ?? 'folderFoot')}</P>{btn('add', () => addTo(folder), false, true)}</>;
+    {btn('folderPdf', () => { setSelection(false); setCover(''); setSelected(folderItems.map(i => i.id)); setWithHistory(false); navigate('pdf'); })}<P muted>{t(folderFoot(folder))}</P>{btn('add', () => addTo(folder), false, true)}</>;
   else if (screen === 'add') body = <><P heading>{editing ? t('edit'):t('addTo',{ folder:title })}</P>
     {/* Which folder: asked on every add and change, starting from the neutral one (findings 1, 7). */}
     <P section>{t('whichFolder')}</P>
@@ -435,10 +440,10 @@ export default function App() {
       return <Card key={n}><P>{t('earlier')} · {displayDate(r.changedOn)}</P><P>{r.title}</P><P>{r.note}</P><P muted>{t('happened')}: {displayDay(r.happenedOn)}</P>
         {r.folder !== undefined && r.folder !== next.folder && <P muted>{t('wasIn', { folder:folderName(r.folder) })}</P>}
         {r.sha256 !== undefined && r.sha256 !== next.sha256 && r.filename && <P muted>{t('wasFile', { name:r.filename })}</P>}</Card>; })}
-    {btn('edit', () => startEdit(item))}{btn('folderPdf', () => {setSelection(false);setSelected(folderItems.map(i => i.id));setWithHistory(false);navigate('pdf');})}
+    {btn('edit', () => startEdit(item))}{btn('itemPdf', () => {setSelection(false);setCover('');setSelected([item.id]);setWithHistory(false);navigate('pdf');})}
     {item.bytes && btn('saveOriginals', doRun(async () => share(() => files.shareOriginals([item]))))}
     {confirm === 'remove' ? <Card><P>{t('confirmRemove')}</P>{btn('yesRemove', doRun(async () => { await vault.remove(item.id,true); if(vaultRef.current === vault)navigate('folder'); }))}{btn('keep', () => setConfirm(null),true)}</Card> : btn('remove', () => setConfirm('remove'),true)}</>;
-  else if (screen === 'pdf') body = <><P heading>{t('pdfTitle',{folder:title})}</P><P>{t('pdfIntro',{n:folderItems.length})}</P>
+  else if (screen === 'pdf') body = <><P heading>{t('pdfTitle',{folder:title})}</P><P>{t('pdfIntro',{n:selected.filter(id => folderItems.some(i => i.id === id)).length,total:folderItems.length})}</P>
     {/* Anyone can leave items out; earlier versions stay out unless switched on (finding 6). */}
     <P muted>{t('pdfPick')}</P>
     <Card>{folderItems.map(i => <Pressable key={i.id} accessibilityRole="checkbox" accessibilityState={{ checked:selected.includes(i.id) }} accessibilityLabel={i.title}
@@ -454,7 +459,7 @@ export default function App() {
       const items = vault.items(folder, { ids:selected, from:selection && from ? dateBoundary(from,false):undefined, to:selection && to ? dateBoundary(to,true):undefined }, ent.plus);
       await share(() => files.sharePdf(items,{title,madeOn:new Date().toISOString(),lang,cover:selection ? cover:undefined,history:withHistory}));
     }, 'workingPdf'), false, true)}{btn('saveOriginals', doRun(async () => share(() => files.shareOriginals(vault.items(folder, { ids:selected }, ent.plus)))))}
-    <P muted>{t('plusPdf')}</P>{btn('seePlus', () => navigate('plus'),true)}</>;
+    {upsell(ent.plus) && <><P muted>{t('plusPdf')}</P>{btn('seePlus', () => navigate('plus'),true)}</>}</>;
   else if (screen === 'backup') body = <><P heading>{t('backup')}</P>
     <Card tone={state.backup ? 'ok':undefined}><P>{state.backup ? t('lastBackup',{date:displayDate(state.backup.checkedOn)}):t('noBackup')}</P></Card>
     {nudge !== 'none' && <Card tone="gold"><P>{t(nudge === 'check' ? 'checkNow' : 'newBackup',{n:state.items.length})}</P></Card>}<P>{t('backupDestination')}</P>
@@ -469,11 +474,15 @@ export default function App() {
   else if (screen === 'settings') body = <><P heading>{t('settings')}</P><P muted>{t('noAnalytics')}</P>
     <Card><P>{t('language')}</P>{LANGS.map(l => <Button quiet key={l} checked={lang === l} title={`${lang === l ? '✓':'○'} ${LANG_NAME[l]}`} onPress={() => chooseLang(l)} />)}</Card>
     <P section>{t('vaultSection')}</P>
-    {photos.systemConfirm ? removeSwitch : <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
+    {/* Android's Google Photos card on Android only, never on iOS or the web preview (finding 3). */}
+    {vaultCopy.settings === 'removeSwitch' ? removeSwitch : vaultCopy.settings === 'androidNote' && <Card><P>{t('androidOriginal')}</P><P muted>{t('androidOriginalHow')}</P></Card>}
     <Card><P>{t('biometrics')}</P><Switch accessibilityLabel={t('biometrics')} value={biometric} onValueChange={v => void run(async () => { await device.setBiometrics(v,t('useBio'));setBiometric(v); })} /></Card>
     {btn('changeCode', () => { setCurrentCode(''); setCode(''); setCodeAgain(''); navigate('changeCode'); })}
     {btn('renewWords', () => { setCurrentCode(''); navigate('renew'); })}
-    {[...appFolders, ...state.folders].map(f => <Card key={f.id}><P>{folderName(f.id)}</P><Button quiet title={t(state.hidden.includes(f.id)?'show':'hide')} onPress={doRun(async () => vault.hide(f.id,!state.hidden.includes(f.id)))} /></Card>)}
+    {/* One switch per folder under one heading, saying where a hidden folder goes (finding 7). */}
+    <P section>{t('foldersOnHome')}</P><P muted>{t('foldersOnHomeHint')}</P>
+    <Card>{[...appFolders, ...state.folders].map(f => <View key={f.id} style={[styles.row,{ alignItems:'center' }]}><View style={styles.flex}><P>{folderName(f.id)}</P></View>
+      <Switch accessibilityLabel={folderName(f.id)} value={!state.hidden.includes(f.id)} disabled={busy} onValueChange={on => void run(async () => vault.hide(f.id, !on))} /></View>)}</Card>
     <Card><P>{t('heardSettings')}</P><P muted>{heard && heard !== 'skip' ? t(HEARD_KEY[heard], { store: storeName }) : t('heardNone')}</P>
       <Button quiet title={t('heardChange')} onPress={() => { setHeardFrom('settings'); navigate('heard'); }} disabled={busy} /></Card>
     {btn('ownFolder', () => ent.plus ? navigate('custom'):navigate('plus'))}{btn('seePlus', () => navigate('plus'))}
@@ -510,24 +519,28 @@ export default function App() {
     {heard && heard !== 'skip' ? btn('heardDone', () => navigate(heardFrom), true)
       // Skip is instant: the answer is written to the Keychain after the screen has moved on.
       : btn('heardSkip', () => { setHeard('skip'); navigate(heardFrom); void saveHeard(device.heardStore, 'skip').catch(() => {}); }, true)}</>;
-  else if (screen === 'custom') body = <><P heading>{t('custom')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
+  else if (screen === 'custom') body = <><P heading>{t('makeOwn')}</P><Field label={t('folderName')} value={newFolder} onChange={setNewFolder} />
     {btn('createFolder',doRun(async () => { const id = await vault.addFolder(newFolderNow().trim(),ent.plus);setFolder(id);setNewFolder('');navigate('folder'); }), false, true)}</>;
-  else if (screen === 'plus') body = <><P heading>{t(state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P><P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
-    {ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
-    <Card><P>{t('unlimited')}</P></Card><Card><P>{t('custom')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
-    {billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
+  else if (screen === 'plus') { const page = plusPage(ent.plus, !!ent.managementURL);
+    body = <><P heading>{t(!ent.plus && state.items.length >= FREE_LIMIT ? 'limitTitle':'plusTitle')}</P>{ent.plus && <Card tone="ok"><P>{t('plusOn')}</P></Card>}
+    <P>{t('keepsFree')}</P><P>{t('plusLets')}</P>
+    <Card><P>{t('unlimited')}</P></Card><Card><P>{t('plusFolders')}</P></Card><Card><P>{t('plusTags')}</P></Card><Card><P>{t('selectedPdf')}</P></Card>
+    {/* A member is never asked to pay again (finding 6); plans, Restore, Terms · Privacy once, Not now last (finding 12). */}
+    {page.plans && <>{billing.mode === 'mock' && <Card tone="gold"><P>{t('mock')}</P></Card>}
     {productsState === 'loading' && <P muted>{t('storeLoading', { store: storeName })}</P>}
     {productsState === 'missing' && <Card tone="gold"><P>{t('storeMissing', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {productsState === 'failed' && <Card tone="gold"><P>{t('storeFailed', { store: storeName })}</P><Button title={t('retry')} onPress={loadProducts} disabled={busy} /></Card>}
     {products.map(p => { const launch=activeLaunch(p);const price=launch?.price ?? p.price;
       return <Card key={p.id}><P heading>{launch ? t('launch',{price,normal:launch.normalPrice}):t(p.plan==='lifetime'?'lifetimePrice':'annualPrice',{price})}</P>
-        <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':annualTermsKey(Platform.OS))}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'||ent.plus}
-          onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} />{legal}</Card>;
-    })}{btn('notNow', back,true)}<P muted>{t('storeConfirm')}</P>
-    {btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}{legal}
+        <P muted>{t(p.plan==='lifetime'?'lifetimeTerms':annualTermsKey(Platform.OS))}</P><Button title={t(p.plan==='lifetime'?'buyLifetime':'buyAnnual',{price})} disabled={busy||billing.mode==='mock'}
+          onPress={doRun(async () => {setEnt(await billing.purchase(p.id));back();})} /></Card>;
+    })}<P muted>{t('storeConfirm')}</P></>}
+    {page.restore && btn('restorePurchases',doRun(async () => {const next=await billing.restore();setEnt(next);setNotice(t(next.plus?'restoredPurchases':'noPurchase'));}))}
+    {page.manage && <Button title={t('manage')} onPress={() => void Linking.openURL(ent.managementURL!)} />}
     {/* Android only (Google Play's reviewer); on iOS and the web ReviewCode renders nothing and has no code in the bundle. */}
     <ReviewCode eligible={billing.mode === 'sandbox' && !ent.plus} busy={busy} run={job => { void run(job); }} setError={setError}
-      appUserId={() => billing.appUserId()} refresh={() => billing.refresh()} onEntitlement={setEnt} /></>;
+      appUserId={() => billing.appUserId()} refresh={() => billing.refresh()} onEntitlement={setEnt} />
+    {legal}{page.notNow && btn('notNow', back,true)}</>; }
   else body = <P>{t('empty')}</P>;
   // The screen's main button stays in view at the bottom (finding 7: "Save passcode" was below the fold;
   // finding 3: a refused date showed far above Save).
@@ -537,18 +550,20 @@ export default function App() {
     if (biometric && !(await device.biometricCheck(t('useBio')))) throw Error('BIOMETRIC_FAILED');
     setWordsMode('setup'); setWords(phrase(device.random)); navigate('phrase');
   }), false, true);
-  else if (ready && screen === 'add' && vault) footer = <>{!!error && <Card tone="gold"><P>{error}</P></Card>}{dateErrorBySave}{busy && <P muted>{t(busyLabel)}</P>}
+  else if (ready && screen === 'add' && vault) footer = <>{!!error && <Card tone="gold"><P>{error}</P></Card>}{dateErrorBySave}
     {confirm === 'edit' ? <Card><P>{t('confirmEdit')}</P>{btn('yesSave', doRun(saveDraft, 'workingSave'))}{btn('keep', () => setConfirm(null),true)}</Card> :
       <Button primary title={editing ? t('saveChanges'):t('saveTo',{folder:title})} disabled={busy} onPress={editing ? () => setConfirm('edit'):doRun(saveDraft, 'workingSave')} />}</>;
   return <Theme.Provider value={palette}><LangContext.Provider value={lang}><SafeAreaView style={[styles.container,{backgroundColor:palette.bg}]}>
     <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
     <ScrollView key={screen} contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','custom'].includes(screen) || (screen === 'plus' && plusBack !== 'add')?t('backHome'):['add','detail','pdf'].includes(screen)&&title?t('backTo',{folder:title}):t('back')} onPress={back} disabled={busy} />}
+      {ready && !['first','home','lock','heard'].includes(screen) && <Button quiet title={['folder','backup','settings','custom'].includes(screen) || (screen === 'plus' && plusBack !== 'add')?t('backHome'):['add','detail','pdf'].includes(screen)&&backTitle?t('backTo',{folder:backTitle}):t('back')} onPress={back} disabled={busy} />}
       {!!error && screen !== 'add' && <Card tone="gold"><P>{error}</P></Card>}{backupFailed && <Card tone="red"><P>{t('backupFailed')}</P></Card>}
-      {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{busy && screen !== 'add' && <P muted>{t(busyLabel)}</P>}{body}
+      {!!notice && <Card tone="ok"><P>{notice}</P></Card>}{body}
     </ScrollView>
     {footer && <View style={[styles.footer,{ backgroundColor:palette.bg, borderTopColor:palette.line }]}>{footer}</View>}
     </KeyboardAvoidingView>
+    {/* "Working…" floats over the top of the screen instead of pushing it down as she taps (finding 16). */}
+    {busy && <View pointerEvents="none" style={[styles.busy,{ top:insets.top + 8 }]}><View style={[styles.busyPill,{ backgroundColor:palette.card, borderColor:palette.line }]}><P muted>{t(busyLabel)}</P></View></View>}
     {vault && ['home','backup','settings'].includes(screen) && <View style={[styles.tabs,{backgroundColor:palette.card}]}>
       {(['home','backup','settings'] as const).map(tab => <View key={tab} style={styles.flex}><Button quiet checked={screen===tab} title={t(tab==='home'?'folders':tab)} onPress={() => navigate(tab)} disabled={busy} /></View>)}
     </View>}

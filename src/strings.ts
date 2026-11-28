@@ -430,10 +430,10 @@ export const strings = {
     "12단어 복구 문구"
   ],
   "loss": [
-    "Lose the device and the 12 words, and nobody, us included, can open the backup. Keep the words somewhere safe, away from this device.",
-    "Si pierde el dispositivo y las 12 palabras, nadie, ni nosotros, podrá abrir la copia. Guarde las palabras en un lugar seguro, lejos de este dispositivo.",
-    "如果设备和这 12 个单词都丢了，任何人（包括我们）都打不开备份。请把这些单词放在安全的地方，不要和设备放在一起。",
-    "기기와 12단어를 모두 잃어버리면 저희를 포함해 누구도 백업을 열 수 없어요. 단어는 이 기기와 떨어진 안전한 곳에 보관하세요."
+    "If you lose this device and your 12 words, no one can open the backup, not even us. Keep the words somewhere safe, away from this device.",
+    "Si pierde este dispositivo y sus 12 palabras, nadie podrá abrir la copia, ni siquiera nosotros. Guarde las palabras en un lugar seguro, lejos de este dispositivo.",
+    "如果您丢了这台设备，也丢了这 12 个单词，任何人都打不开备份，我们也不能。请把这些单词放在安全的地方，不要和设备放在一起。",
+    "이 기기와 12단어를 모두 잃어버리면 누구도 백업을 열 수 없어요. 저희도 열 수 없어요. 단어는 이 기기와 떨어진 안전한 곳에 보관하세요."
   ],
   "writeWords": [
     "Write these words down in this order. This is the only time they are shown.",
@@ -820,10 +820,10 @@ export const strings = {
     "{folder} PDF 만들기"
   ],
   "pdfIntro": [
-    "All {n} items, free. It includes a list of contents, both dates on every item, your notes, and every photo and page.",
-    "Los {n} documentos, gratis. Incluye un índice, ambas fechas en cada documento, sus notas y cada foto y página.",
-    "全部 {n} 项，免费。包括目录、每一项的两个日期、您的笔记，以及每张照片和每一页。",
-    "{n}개 항목 전체, 무료예요. 목차, 항목마다 두 가지 날짜, 메모, 모든 사진과 페이지가 들어가요."
+    "{n} of {total} items ticked, free. The PDF has a list of contents, both dates on every item, your notes, and every photo and page.",
+    "{n} de {total} documentos marcados, gratis. El PDF incluye un índice, ambas fechas en cada documento, sus notas y cada foto y página.",
+    "已勾选 {n}/{total} 项，免费。PDF 包括目录、每一项的两个日期、您的笔记，以及每张照片和每一页。",
+    "{total}개 중 {n}개 선택, 무료예요. PDF에는 목차, 항목마다 두 가지 날짜, 메모, 모든 사진과 페이지가 들어가요."
   ],
   "pdfWarning": [
     "Anyone you send the PDF to can read it. You choose where it goes.",
@@ -874,16 +874,16 @@ export const strings = {
     "전체"
   ],
   "from": [
-    "From (YYYY-MM-DD, optional)",
-    "Desde (AAAA-MM-DD, opcional)",
-    "开始日期（YYYY-MM-DD，可选）",
-    "시작 (YYYY-MM-DD, 선택)"
+    "From (optional)",
+    "Desde (opcional)",
+    "开始日期（可选）",
+    "시작 (선택)"
   ],
   "to": [
-    "Through (YYYY-MM-DD, optional)",
-    "Hasta (AAAA-MM-DD, opcional)",
-    "结束日期（YYYY-MM-DD，可选）",
-    "끝 (YYYY-MM-DD, 선택)"
+    "Through (optional)",
+    "Hasta (opcional)",
+    "结束日期（可选）",
+    "끝 (선택)"
   ],
   "cover": [
     "Cover note (optional)",
@@ -1017,11 +1017,11 @@ export const strings = {
     "不限数量的项目",
     "무제한 항목"
   ],
-  "custom": [
-    "Your own folders and tags",
-    "Sus propias carpetas y etiquetas",
-    "您自己的文件夹和标签",
-    "나만의 폴더와 태그"
+  "plusFolders": [
+    "Your own folders",
+    "Sus propias carpetas",
+    "您自己的文件夹",
+    "나만의 폴더"
   ],
   "selectedPdf": [
     "PDF of a date range, with a cover page",
@@ -1131,17 +1131,17 @@ export const strings = {
     "您的年度方案将于 {date} 续订。您可以在设备的订阅设置中取消。",
     "연간 플랜이 {date}에 갱신돼요. 기기의 구독 설정에서 취소할 수 있어요."
   ],
-  "hide": [
-    "Hide folder",
-    "Ocultar carpeta",
-    "隐藏文件夹",
-    "폴더 숨기기"
+  "foldersOnHome": [
+    "Folders on Home",
+    "Carpetas en Inicio",
+    "主页上的文件夹",
+    "홈에 보이는 폴더"
   ],
-  "show": [
-    "Show folder",
-    "Mostrar carpeta",
-    "显示文件夹",
-    "폴더 보이기"
+  "foldersOnHomeHint": [
+    "Switch a folder off to hide it from Home. Everything in it stays in the app, and you can switch it back on here.",
+    "Apague una carpeta para ocultarla en Inicio. Todo lo que contiene se queda en la app, y puede volver a encenderla aquí.",
+    "关闭某个文件夹即可在主页上隐藏它。里面的内容都会留在应用中，您随时可以在这里重新打开。",
+    "폴더를 끄면 홈에서 숨겨져요. 안에 있는 것은 모두 앱에 그대로 남고, 여기에서 언제든 다시 켤 수 있어요."
   ],
   "ownFolder": [
     "+ Create your own folder ›",
@@ -1174,10 +1174,10 @@ export const strings = {
     "내 서류 잠그기 ›"
   ],
   "noAnalytics": [
-    "No account. No ads. No analytics. Your papers are never sent to a model or our servers.",
-    "Sin cuenta. Sin anuncios. Sin análisis de uso. Sus documentos nunca se envían a un modelo ni a nuestros servidores.",
-    "无需账户。没有广告。没有使用分析。您的文件绝不会发送给任何 AI 模型或我们的服务器。",
-    "계정 없음. 광고 없음. 사용 분석 없음. 서류는 AI 모델이나 저희 서버로 절대 전송되지 않아요."
+    "No account. No ads. No analytics. Your papers are never uploaded to us or to any AI service.",
+    "Sin cuenta. Sin anuncios. Sin análisis de uso. Sus documentos nunca se suben a nuestros servidores ni a ningún servicio de IA.",
+    "无需账户。没有广告。没有使用分析。您的文件绝不会上传给我们，也不会上传到任何 AI 服务。",
+    "계정 없음. 광고 없음. 사용 분석 없음. 서류는 저희에게도, 어떤 AI 서비스에도 절대 업로드되지 않아요."
   ],
   "error": [
     "That did not finish. Your saved papers are still here. Please try again.",
@@ -1808,6 +1808,30 @@ export const strings = {
     "✓ Plus está activo.",
     "✓ Plus 已开启。",
     "✓ Plus가 켜져 있어요."
+  ],
+  "plusTags": [
+    "Tags on any item, and a tag filter in each folder",
+    "Etiquetas en cualquier documento y un filtro por etiqueta en cada carpeta",
+    "给任何项目加标签，每个文件夹都能按标签筛选",
+    "항목마다 태그를 달고, 폴더마다 태그로 골라 보기"
+  ],
+  "photoCopyPlain": [
+    "Keeps a private copy here. The original stays where it was.",
+    "Guarda una copia privada aquí. El original se queda donde estaba.",
+    "在这里保存一份私密副本。原件仍留在原来的位置。",
+    "여기에 비공개 사본을 보관해요. 원본은 원래 있던 곳에 그대로 있어요."
+  ],
+  "itemPdf": [
+    "Make a PDF of this item ›",
+    "Hacer un PDF de este documento ›",
+    "把这一项做成 PDF ›",
+    "이 항목을 PDF로 만들기 ›"
+  ],
+  "ownFoot": [
+    "Dated and organized, ready to share when you need to.",
+    "Con fecha y en orden, listo para compartir cuando lo necesite.",
+    "注明日期、整理有序，需要时随时可以分享。",
+    "날짜가 적혀 있고 정리되어 있어 필요할 때 바로 공유할 수 있어요."
   ]
 } as const satisfies Record<string, readonly [en: string, es: string, zh: string, ko: string]>;
 export type StringKey = keyof typeof strings;
@@ -1816,5 +1840,18 @@ export function copy(lang: Lang) { return (key: StringKey, values: Record<string
   if (at < 0) throw Error(`LANG_UNKNOWN ${lang}`);
   let s: string = strings[key][at];
   for (const [name,value] of Object.entries(values)) s = s.replaceAll(`{${name}}`, String(value));
-  return s;
+  return lang === 'ko' ? koParticles(s) : s;
 }; }
+/**
+ * Korean "(으)로" after a filled-in word becomes the one form that word takes (video watch 28 Nov 2026, finding 10:
+ * "Face ID(으)로도 열기" read as machine text). 으로 after a final consonant other than ㄹ (지문으로, 얼굴 인식으로);
+ * 로 after a vowel or ㄹ, and after a Latin word, read as its last letter's Korean name (Face ID로, Touch ID로),
+ * except M and N, whose names end in a consonant (엠, 엔).
+ */
+export function koParticles(text: string): string {
+  return text.replace(/([^\s{}])\(으\)로/g, (_, last: string) => {
+    const code = last.charCodeAt(0) - 0xAC00;
+    const consonant = code >= 0 && code < 11172 ? code % 28 !== 0 && code % 28 !== 8 : /[mn]/i.test(last);
+    return last + (consonant ? '으로' : '로');
+  });
+}
