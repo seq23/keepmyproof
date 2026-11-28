@@ -77,6 +77,9 @@ function main() {
         ui.saveTree(join(work, 'final-tree.json')); sim.screenshot(join(work, 'final.png'));
         // A crash of the app during the try is an app failure, whatever the check was doing (gate run 46181196558: the
         // store build left Home for the springboard 2 s after unlocking, and the check could only say "no tab bar").
+        // The phone's own log of the app and of who ended it (runningboardd, SpringBoard): a kill with no crash report
+        // (gate run 46183295834: the store build opened Files and then was gone, no .ips) is read here.
+        sim.deviceLog(join(work, 'device.log'), Math.ceil((Date.now() - started) / 1000) + 5);
         const crashes = crashReports(started);
         crashes.forEach((f, k) => copyFileSync(f, join(work, `crash-${k + 1}.ips`)));
         if (crashes.length) { const head = crashSummary(crashes[0]!); log(`the app crashed: ${head}`); if (a.result !== 'fail') a = { result: 'fail', why: `the app crashed (crash-1.ips): ${head}; the check had said: ${a.why}` }; }

@@ -1,6 +1,6 @@
 // THE DEVICE GATE's Simulator hands (scripts/device-gate/gate.ts): install, wipe, the app's container, Face ID, video.
 import { spawn, spawnSync, type ChildProcess } from 'node:child_process';
-import { existsSync, mkdirSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 export const BID = 'com.keepmyproof.app';
@@ -30,6 +30,14 @@ export class Sim {
     this.terminate(); this.simctl(['uninstall', this.udid, BID], false);
     this.simctl(['keychain', this.udid, 'reset']);
     this.install(app);
+  }
+  /** The Simulator's unified log for the last `secs` seconds about the app (its own lines and the system's lines naming
+   *  it: launches, terminations and their reasons), written to `file`; never fails the try. */
+  deviceLog(file: string, secs: number) {
+    const r = spawnSync('xcrun', ['simctl', 'spawn', this.udid, 'log', 'show', '--style', 'compact', '--last', `${secs}s`, '--predicate',
+      `process == "KeepMyProof" OR eventMessage CONTAINS[c] "${BID}" OR eventMessage CONTAINS "KeepMyProof"`],
+      { encoding: 'utf8', timeout: 120_000, maxBuffer: 64 * 1024 * 1024 });
+    try { writeFileSync(file, (r.stdout || '') + (r.stderr ? `\n[stderr] ${r.stderr}` : '')); } catch { /* evidence only */ }
   }
   install(app: string) { if (!existsSync(app)) throw new TestError(`no app at ${app}`); this.simctl(['install', this.udid, app]); }
   container(): string {
