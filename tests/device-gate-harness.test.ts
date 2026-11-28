@@ -32,6 +32,9 @@ test('a target in plain view is tapped at its centre', () => {
 test('a row under the tab bar is not clear (gate run 46112815437: the Restore link at y 793-841 pressed the Backup tab)', () => {
   const r = clear(elements(screen(tabs, el('kmp-restore', '[16,793][386,841]'))), 'kmp-restore');
   assert.equal(r.ok, false); assert.equal(!r.ok && r.why, 'tabs');
+  // A switch scrolled behind the bar lies inside the bar's box but is not part of it (gate run 46181196558, group B).
+  const behind = clear(elements(screen(tabs, el('kmp-biometrics', '[33,786][89,818]'))), 'kmp-biometrics');
+  assert.equal(behind.ok, false); assert.equal(!behind.ok && behind.why, 'tabs');
   // The tab itself is inside the bar: clear.
   assert.equal(clear(elements(screen({ ...tabs, children: [el('kmp-tab-backup', '[140,786][262,826]')] })), 'kmp-tab-backup').ok, true);
 });

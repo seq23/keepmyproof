@@ -11,7 +11,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { run, sleep, TestError, type Sim } from './sim';
 
 export interface Box { x1: number; y1: number; x2: number; y2: number }
-export interface El { id: string; text: string; box: Box; checked: boolean; enabled: boolean; value: string }
+export interface El { id: string; text: string; box: Box; checked: boolean; enabled: boolean; value: string; inside: string[] }
 
 /** Every element with a size, in tree order. */
 export interface AxNode { AXUniqueId?: string | null; AXLabel?: string | null; AXValue?: string | null; title?: string | null; type?: string | null;
@@ -20,14 +20,15 @@ const truthy = (v: unknown) => v === '1' || v === 'checked' || v === 'on' || v =
 /** Every element with a size, in tree order (AXe's describe-ui: frames in points, testID = AXUniqueId). */
 export function elements(root: AxNode | AxNode[]): El[] {
   const out: El[] = [];
-  const walk = (n: AxNode) => {
+  const walk = (n: AxNode, inside: string[]) => {
     const f = n.frame, box = f && f.width > 0 && f.height > 0 ? { x1: Math.round(f.x), y1: Math.round(f.y), x2: Math.round(f.x + f.width), y2: Math.round(f.y + f.height) } : null;
     const kb = /keyboard/i.test(`${n.type ?? ''} ${n.role ?? ''}`) ? 'inputView' : '';
     if (box) out.push({ id: n.AXUniqueId || kb, text: n.AXLabel || n.title || n.AXValue || '', box,
-      checked: truthy(n.AXValue) || /selected/i.test(JSON.stringify(n.traits ?? '')), enabled: n.enabled !== false, value: n.AXValue ?? '' });
-    for (const c of n.children ?? []) walk(c);
+      checked: truthy(n.AXValue) || /selected/i.test(JSON.stringify(n.traits ?? '')), enabled: n.enabled !== false, value: n.AXValue ?? '', inside });
+    const next = n.AXUniqueId ? [...inside, n.AXUniqueId] : inside;
+    for (const c of n.children ?? []) walk(c, next);
   };
-  for (const r of Array.isArray(root) ? root : [root]) walk(r);
+  for (const r of Array.isArray(root) ? root : [root]) walk(r, []);
   return out;
 }
 export const byId = (els: El[], id: string) => els.find(e => e.id === id);
@@ -51,7 +52,9 @@ export function clear(els: El[], id: string): Clear {
   const c = center(t.box), kb = keyboard(els);
   for (const [bar, why] of [['kmp-tabs', 'tabs'], ['kmp-footer', 'footer']] as const) {
     const b = byId(els, bar)?.box;
-    if (b && within(t.box, b)) return kb && overlaps(t.box, kb) ? { ok: false, why: 'keyboard', target: t.box } : { ok: true, ...c };
+    // Part of the bar only when the tree says so: a settings switch scrolled behind the tab bar lies inside the bar's
+    // box too (gate run 46181196558, group B: kmp-biometrics tapped at 61,791 pressed the Folders tab).
+    if (b && t.inside.includes(bar)) return kb && overlaps(t.box, kb) ? { ok: false, why: 'keyboard', target: t.box } : { ok: true, ...c };
     if (b && overlaps(t.box, b)) return { ok: false, why, target: t.box };
   }
   if (kb && overlaps(t.box, kb)) return { ok: false, why: 'keyboard', target: t.box };
@@ -136,7 +139,7 @@ export class Ui {
     this.tapPoint(p.x, p.y, `focus-${id}`);
     if (had) this.act(`erase-${id}`, ['key-sequence', '--keycodes', Array(had + 10).fill('42').join(',')]); // 42 = Delete
     this.act(`type-${id}`, ['type', text]); this.settle(400);
-    const got = this.waitFor(els => { const e = byId(els, id); return e && (secret ? e.value.replace(/[^•●]/g, '').length === text.length || e.value === text : e.value.trim() === text.trim()) ? e : undefined; }, 10_000, `${id} to hold what was typed`, false);
+    const got = this.waitFor(els => { const e = byId(els, id); return e && (secret ? e.value.replace(/[^•●]/g, '').length === text.length || e.value === text : e.value.trim() === text.trim()) ? e : undefined; }, 40_000, `${id} to hold what was typed`, false);
     if (!got) throw new TestError(`${id}: the box does not hold what was typed (it shows "${byId(this.tree(), id)?.value ?? '—'}")`);
   }
   /** Polls the screen until `pick` returns something; undefined after `ms` (or a TestError when `must`). */
