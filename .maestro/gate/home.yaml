@@ -1,0 +1,13 @@
+# Waits for Home (after a Face ID match by the host) and prints the count. Env: SHOT.
+appId: com.keepmyproof.app
+---
+- runFlow:
+    when:
+      visible: "OK|Allow"
+    commands:
+      - tapOn: "OK|Allow"
+- extendedWaitUntil:
+    visible: "Free plan: .*|\\d+ items · Plus|Also open with Face ID"
+    timeout: 60000
+- takeScreenshot: gate-${SHOT}-home
+- runFlow: count.yaml

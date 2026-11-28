@@ -1,0 +1,16 @@
+# Opens the app (no reset) and unlocks with the passcode. Env: CODE. Ends on Home; prints GATE_COUNT=….
+appId: com.keepmyproof.app
+---
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible: "Open my papers ›"
+    timeout: 90000
+- tapOn:
+    id: "Passcode"
+- inputText: ${CODE}
+- tapOn: "Open my papers ›"
+- extendedWaitUntil:
+    visible: "Free plan: .*|Plus: .*|KeepMyProof Plus.*"
+    timeout: 60000
+- runFlow: count.yaml

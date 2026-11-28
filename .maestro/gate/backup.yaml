@@ -1,0 +1,26 @@
+# Backup › Back up now: the share sheet opens with the encrypted file (the host copies it out while the sheet is up).
+appId: com.keepmyproof.app
+---
+- tapOn: "Backup"
+- extendedWaitUntil:
+    visible: "Back up now ›"
+    timeout: 15000
+- tapOn: "Back up now ›"
+- extendedWaitUntil:
+    notVisible: "Back up now ›"
+    timeout: 60000
+- waitForAnimationToEnd:
+    timeout: 10000
+- takeScreenshot: gate-${SHOT}-backup-sheet
+# Hold the sheet open long enough for the host's copy loop (0.5 s), then close it by tapping outside.
+- swipe:
+    start: "50%,10%"
+    end: "50%,11%"
+    duration: 3000
+- retry:
+    maxRetries: 4
+    commands:
+      - tapOn:
+          point: "5%,20%"
+      - waitForAnimationToEnd
+      - assertVisible: "Back up now ›|Check the saved backup ›"

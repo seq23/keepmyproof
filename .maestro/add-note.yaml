@@ -26,8 +26,10 @@ appId: com.keepmyproof.app
 - retry:
     maxRetries: 3
     commands:
-      # With the note's keyboard still up, the first tap only closes the keyboard and the name field does not take
-      # focus (run 46083058306: the name went into the note field, and eraseText wiped the note). Tap again to focus.
+      # Run 46083058306: the name field sat under the note's keyboard (hierarchy: field y 650-696 pt, the key row
+      # "a s d f g h" at y 644-698), so the tap landed on a key and the name went into the note; the keyboard never
+      # closed. Centering the name field (above) keeps it clear of the keyboard; the second tap and the read-back
+      # below catch a tap that still misses.
       - tapOn:
           id: "Name it"
       - waitForAnimationToEnd

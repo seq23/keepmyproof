@@ -122,15 +122,15 @@ test('store keys unlock real purchases only on their own platform; anything else
 
 test('release gate stops a store build until keys, device test, price recheck and legal pages are real; clears when all are',async()=>{
   const {stops,DEVICE_CHECKS}=await import('../scripts/release-gate.mjs');const now=Date.parse('2026-12-01T00:00:00Z');
-  const files:Record<string,unknown>={'release/device-gate.json':{version:'1.0.0',checks:Object.fromEntries(DEVICE_CHECKS.map(c=>[c,true]))},
+  const files:Record<string,unknown>={'release/device-gate.json':{version:'1.0.0',checks:Object.fromEntries(DEVICE_CHECKS.map(c=>[c,true])),purchase:{build:'8',date:'2026-11-28',tappedBy:'owner',restored:true}},
     'release/price-check.json':{checkedOn:'2026-11-28',incumbentLifetimeUSD:39.99},
     'topics.json':{languages:['en','es','zh','ko'],language_status:{es:'launched',zh:'launched',ko:'launched'}}};
-  const ready={env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},version:'1.0.0',readJson:(p:string)=>files[p]??null,probe:async()=>200,supportEmail:'support@keepmyproof.com',mx:async()=>1,now};
+  const ready={env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'appl_x',EXPO_PUBLIC_KMP_REVENUECAT_ANDROID_KEY:'goog_x'},version:'1.0.0',readJson:(p:string)=>files[p]??null,probe:async()=>200,supportEmail:'support@keepmyproof.com',mx:async()=>1,now,build:'8'};
   assert.deepEqual(await stops(ready),[]);
   const codes=async(patch:object)=>(await stops({...ready,...patch})).map(s=>s.code);
   assert.deepEqual(await codes({env:{EXPO_PUBLIC_KMP_REVENUECAT_IOS_KEY:'test_x'}}),['REVENUECAT_KEY_MISSING']);
   assert.deepEqual(await codes({version:'1.0.1'}),['DEVICE_RELEASE_GATE_PENDING']);
-  assert.deepEqual(await codes({readJson:(p:string)=>p.includes('device')?{version:'1.0.0',checks:{}}:files[p]}),['DEVICE_RELEASE_GATE_PENDING']);
+  assert.deepEqual(await codes({readJson:(p:string)=>p.includes('device')?{version:'1.0.0',checks:{}}:files[p]}),['DEVICE_RELEASE_GATE_PENDING','TESTFLIGHT_PURCHASE_UNRECORDED']);
   assert.deepEqual(await codes({now:now+30*86400_000}),['PRICE_RECHECK_PENDING']);
   assert.deepEqual(await codes({readJson:(p:string)=>p.includes('price')?{checkedOn:'2026-11-28',incumbentLifetimeUSD:49.99}:files[p]}),['PRICED_BELOW_INCUMBENT']);
   assert.deepEqual(await codes({probe:async()=>0}),['LEGAL_URLS_UNREACHABLE','LEGAL_URLS_UNREACHABLE']);
@@ -145,8 +145,8 @@ test('release gate stops a store build until keys, device test, price recheck an
   const langs=(topics:unknown)=>codes({readJson:(p:string)=>p==='topics.json'?topics:files[p]});
   for(const t of [{languages:['en','es','zh','ko'],native_review:{es:'pending',zh:'pending',ko:'pending'}},{languages:['en','es','zh','ko']},null]) assert.deepEqual(await langs(t),[]);
   const all=(await stops({...ready,env:{},readJson:()=>null,probe:async()=>404,supportEmail:undefined})).map(s=>s.code);
-  assert.deepEqual([...new Set(all)].sort(),['DEVICE_RELEASE_GATE_PENDING','LEGAL_URLS_UNREACHABLE','PRICE_RECHECK_PENDING','REVENUECAT_KEY_MISSING','SUPPORT_ADDRESS_NOT_ON_DOMAIN']);
-  assert.equal(all.length,6);
+  assert.deepEqual([...new Set(all)].sort(),['DEVICE_RELEASE_GATE_PENDING','LEGAL_URLS_UNREACHABLE','PRICE_RECHECK_PENDING','REVENUECAT_KEY_MISSING','SUPPORT_ADDRESS_NOT_ON_DOMAIN','TESTFLIGHT_PURCHASE_UNRECORDED']);
+  assert.equal(all.length,7);
 });
 
 test('the Play internal tester build needs a real key for its own store and no preview switch, and nothing else',async()=>{
