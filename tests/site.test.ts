@@ -67,6 +67,10 @@ test('every page has a self canonical and hreflang twins that exist and link bac
 });
 
 test('before launch: "coming soon to Google Play", no store link, no install link, never a rating, and only the approved list prices as coming-soon Offers; after the one switch: store links on every kind of page and offers whose prices are on the page', () => {
+  // "Before" is any store still to come: both switches off here, whatever site/config.mjs says today.
+  const real = { ...SITE.stores };
+  SITE.stores.appStore = null; SITE.stores.googlePlay = null;
+  try {
   const before = renderAll(fixture());
   const listPrices = ['0', SITE.prices.yearlyUSD, SITE.prices.lifetimeUSD];
   let apps = 0, withOffer = 0, noOffer = 0;
@@ -116,6 +120,7 @@ test('before launch: "coming soon to Google Play", no store link, no install lin
       for (const o of app.offers.filter((o: any) => o.price !== '0')) assert.ok(visible(s).includes(`$${o.price}`), `${lang} ${o.price}`);
     }
   } finally { Object.assign(SITE.stores, saved); }
+  } finally { Object.assign(SITE.stores, real); }
 });
 
 test('site prices and free limit are the app\'s approved ones, and the published Terms state the same prices', () => {

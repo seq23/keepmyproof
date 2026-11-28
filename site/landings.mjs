@@ -7,6 +7,7 @@
 // hidden from the phone or beats forensic recovery; the build's banned-word check reads every page.
 import { SRC, src } from './guides.mjs';
 import { appFolderCount, folderCount, folderNames } from './lib/folders.mjs';
+import { storeLine } from './lib/stores.mjs';
 
 const CORNELL = (sec) => ({ en: `https://www.law.cornell.edu/cfr/text/34/${sec}`, es: `https://www.law.cornell.edu/cfr/text/34/${sec}` });
 const same = (u) => ({ en: u, es: u });
@@ -63,7 +64,7 @@ export const VAULT_HUB = {
     faq: [
       ['Is KeepMyProof a photo vault?', 'Yes, and more: it locks photos and screenshots like a photo vault, and it also keeps letters, scans, files and notes in folders with checklists. Each item has the date it happened next to the date you saved it, and a folder becomes one PDF when a lawyer, a school or a VA representative asks for it.'],
       ['Does it take photos out of my camera roll?', 'On iPhone, if you turn on the offer in Settings, it asks after you add a photo whether to remove the original from Photos; nothing is removed unless you tap Remove and your iPhone confirms, and the photo stays in Recently Deleted for 30 days. On Android, the app keeps its own copy, and you delete the original in Google Photos yourself.'],
-      ['Is the vault free?', 'Yes, for your first 25 items. Adding stops at 25 on the free plan, but viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page. The app is coming soon to the App Store and Google Play.'],
+      ['Is the vault free?', 'Yes, for your first 25 items. Adding stops at 25 on the free plan, but viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page. ' + storeLine('en') + ''],
     ],
   },
   es: {
@@ -77,12 +78,12 @@ export const VAULT_HUB = {
     faq: [
       ['¿KeepMyProof es una bóveda de fotos?', 'Sí, y más: bloquea fotos y capturas como una bóveda de fotos, y además guarda cartas, escaneos, archivos y notas en carpetas con listas. Cada documento tiene la fecha en que pasó junto a la fecha en que lo guardó, y una carpeta se convierte en un PDF cuando un abogado, la escuela o un representante del VA lo pide.'],
       ['¿Saca las fotos de mi carrete?', 'En iPhone, si activa esa opción en Ajustes, después de agregar una foto le ofrece quitar el original de Fotos; no se quita nada a menos que toque Quitar y su iPhone lo confirme, y la foto queda en Eliminado recientemente durante 30 días. En Android, la app guarda su propia copia y usted borra el original en Google Fotos.'],
-      ['¿La bóveda es gratis?', 'Sí, para sus primeros 25 documentos. En el plan gratis ya no puede agregar más al llegar a 25, pero ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de un rango de fechas con portada. La app llega muy pronto al App Store y Google Play.'],
+      ['¿La bóveda es gratis?', 'Sí, para sus primeros 25 documentos. En el plan gratis ya no puede agregar más al llegar a 25, pero ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de un rango de fechas con portada. ' + storeLine('es') + ''],
     ],
   },
   zh: {
     title: '照片和文件的私密保险箱：私密文件手机应用 | KeepMyProof', h1: '照片和文件的私密保险箱',
-    desc: 'KeepMyProof 是照片和文件的私密保险箱：照片、截图、短信、信件和扫描件用密码或 Face ID 锁住，按日期放进文件夹，您的副本不会出现在相册里。即将登陆 App Store 和 Google Play。',
+    desc: 'KeepMyProof 是照片和文件的私密保险箱：照片、截图、短信、信件和扫描件用密码或 Face ID 锁住，按日期放进文件夹，您的副本不会出现在相册里。' + storeLine('zh') + '',
     answer: 'KeepMyProof 是保存文件而不只是照片的私密保险箱：照片、截图、短信、信件和扫描件都用密码或 Face ID 锁住，您的副本不会出现在相册里。普通的照片保险箱只是把照片藏起来；KeepMyProof 把您需要保留的照片和文件按日期放进文件夹，方便以后查找，并可导出成一个 PDF。',
     howH: '保险箱怎么用？', how: [`把照片、截图、文件或笔记加入${appFolderCount('zh')}个文件夹之一，或您自己的文件夹。`, '写下事情发生的日期；应用会在旁边记下您保存的日期。', '在 iPhone 上，可以选择是否从“照片”中删除原件。在 Android 上，请您自己在 Google 相册中删除原件。', '用密码、Face ID 或指纹打开保险箱。离开应用后会再次锁住。', '有人需要时，把一个文件夹做成带目录的 PDF，或导出原件。'],
     diffH: '它和照片保险箱有什么不同？', diff: '照片保险箱只藏照片；这个保险箱把记录整理好。',
@@ -93,12 +94,12 @@ export const VAULT_HUB = {
     faq: [
       ['KeepMyProof 是照片保险箱吗？', '是的，而且不只是照片保险箱。它像照片保险箱一样锁住照片和截图，同时把信件、扫描件、文件和笔记放进带清单的文件夹。每一项都记下事情发生的日期和您保存的日期。律师、学校或 VA 代表需要时，一个文件夹可以导出成一个 PDF。'],
       ['它会把照片从相册里拿走吗？', '在 iPhone 上，如果您在“设置”中开启这个选项，添加照片后应用会提出从“照片”中删除原件；只有您点“删除”并在 iPhone 上确认后才会删除，照片会在“最近删除”中保留 30 天。在 Android 上，应用保存自己的副本，原件需要您自己在 Google 相册中删除。'],
-      ['保险箱免费吗？', '前 25 项免费。免费版到 25 项后不能再添加，但查看、导出 PDF、导出原件、备份和恢复永远不会锁住。KeepMyProof Plus 提供无限项目、自定义文件夹和标签，以及按日期范围导出带封面的 PDF。应用即将登陆 App Store 和 Google Play。'],
+      ['保险箱免费吗？', '前 25 项免费。免费版到 25 项后不能再添加，但查看、导出 PDF、导出原件、备份和恢复永远不会锁住。KeepMyProof Plus 提供无限项目、自定义文件夹和标签，以及按日期范围导出带封面的 PDF。' + storeLine('zh') + ''],
     ],
   },
   ko: {
     title: '사진과 문서를 위한 비공개 보관함 | KeepMyProof 비공개 서류 앱', h1: '사진과 문서를 위한 비공개 보관함',
-    desc: 'KeepMyProof는 사진과 문서를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고 날짜별 폴더에 보관하며 보관한 사본은 카메라 롤에 보이지 않습니다. App Store와 Google Play 출시 예정입니다.',
+    desc: 'KeepMyProof는 사진과 문서를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고 날짜별 폴더에 보관하며 보관한 사본은 카메라 롤에 보이지 않습니다. ' + storeLine('ko') + '',
     answer: 'KeepMyProof는 사진만이 아니라 서류를 위한 비공개 보관함입니다. 사진, 스크린샷, 문자, 편지, 스캔본을 암호나 Face ID로 잠그고, 보관한 사본은 카메라 롤에 보이지 않습니다. 사진 보관함은 사진을 숨길 뿐입니다. KeepMyProof는 보관해야 할 사진과 서류를 날짜별 폴더에 정리해 나중에 찾고 PDF 하나로 공유할 수 있게 합니다.',
     howH: '보관함은 어떻게 작동하나요?', how: [`사진, 스크린샷, 파일 또는 메모를 ${appFolderCount('ko')} 개 폴더 중 하나나 직접 만든 폴더에 추가합니다.`, '일이 일어난 날짜를 적으면 앱이 저장한 날짜를 옆에 기록합니다.', 'iPhone에서는 사진 앱의 원본을 지울지 선택합니다. Android에서는 Google 포토에서 직접 원본을 지웁니다.', '암호, Face ID 또는 지문으로 보관함을 엽니다. 앱을 나가면 다시 잠깁니다.', '누군가 요청하면 폴더를 목차가 있는 PDF 하나로 만들거나 원본을 내보냅니다.'],
     diffH: '사진 보관함과 무엇이 다른가요?', diff: '사진 보관함은 사진을 숨기고, 이 보관함은 기록을 정리합니다.',
@@ -109,7 +110,7 @@ export const VAULT_HUB = {
     faq: [
       ['KeepMyProof는 사진 보관함인가요?', '네, 그 이상입니다. 사진 보관함처럼 사진과 스크린샷을 잠그고, 편지, 스캔본, 파일, 메모도 체크리스트가 있는 폴더에 보관합니다. 항목마다 일어난 날짜와 저장한 날짜가 나란히 있고, 변호사나 학교, VA 대리인이 요청하면 폴더를 PDF 하나로 만들 수 있습니다.'],
       ['카메라 롤에서 사진을 빼 주나요?', 'iPhone에서는 설정에서 이 옵션을 켜 두면 사진을 추가한 뒤 사진 앱의 원본 삭제를 제안합니다. 삭제를 누르고 iPhone에서 확인해야만 삭제되며, 사진은 최근 삭제된 항목에 30일 동안 남습니다. Android에서는 앱이 자체 사본을 보관하고, 원본은 Google 포토에서 직접 삭제해야 합니다.'],
-      ['보관함은 무료인가요?', '처음 25개 항목까지 무료입니다. 무료 요금제는 25개에서 추가가 멈추지만 보기, PDF, 내보내기, 백업, 복원은 절대 잠기지 않습니다. KeepMyProof Plus는 무제한 항목, 직접 만드는 폴더와 태그, 기간을 정하고 표지를 넣은 PDF를 제공합니다. App Store와 Google Play 출시 예정입니다.'],
+      ['보관함은 무료인가요?', '처음 25개 항목까지 무료입니다. 무료 요금제는 25개에서 추가가 멈추지만 보기, PDF, 내보내기, 백업, 복원은 절대 잠기지 않습니다. KeepMyProof Plus는 무제한 항목, 직접 만드는 폴더와 태그, 기간을 정하고 표지를 넣은 PDF를 제공합니다. ' + storeLine('ko') + ''],
     ],
   },
 };
@@ -136,7 +137,7 @@ export const LANDINGS_BASE = [
         { h: 'What does it not do?', a: 'It is a locked app, not an invisible one.', list: LIMITS.en },
       ],
       faq: [
-        ['Is KeepMyProof a photo vault app?', 'Yes. It locks photos and screenshots behind a passcode, Face ID or fingerprint, like a photo vault. It also keeps letters, scans, files and notes, sorted into folders with checklists and two dates on every item, and turns a folder into one PDF. It is coming soon to the App Store and Google Play.'],
+        ['Is KeepMyProof a photo vault app?', 'Yes. It locks photos and screenshots behind a passcode, Face ID or fingerprint, like a photo vault. It also keeps letters, scans, files and notes, sorted into folders with checklists and two dates on every item, and turns a folder into one PDF. ' + storeLine('en') + ''],
         ['Does a photo vault app keep my photos off the cloud?', 'KeepMyProof keeps what you add encrypted on your phone and never uploads it. Its backup is an encrypted file you save to your own cloud drive. The original photo in your library is a separate copy: if iCloud Photos or Google Photos backs it up, delete it there too.'],
         ['Is a photo vault app free?', 'KeepMyProof is free for your first 25 items, and viewing, PDFs, export, backup and restore never lock. KeepMyProof Plus adds unlimited items, your own folders and tags, and PDFs of a date range with a cover page, for a yearly price or once for life. There are no ads and no account.'],
       ],
@@ -154,7 +155,7 @@ export const LANDINGS_BASE = [
         { h: '¿Qué no hace?', a: 'Es una app bloqueada, no una app invisible.', list: LIMITS.es },
       ],
       faq: [
-        ['¿KeepMyProof es una app de bóveda de fotos?', 'Sí. Bloquea fotos y capturas con un código, Face ID o huella, como una bóveda de fotos. Además guarda cartas, escaneos, archivos y notas en carpetas con listas y dos fechas en cada documento, y convierte una carpeta en un PDF. Llega muy pronto al App Store y Google Play.'],
+        ['¿KeepMyProof es una app de bóveda de fotos?', 'Sí. Bloquea fotos y capturas con un código, Face ID o huella, como una bóveda de fotos. Además guarda cartas, escaneos, archivos y notas en carpetas con listas y dos fechas en cada documento, y convierte una carpeta en un PDF. ' + storeLine('es') + ''],
         ['¿Una bóveda de fotos mantiene mis fotos fuera de la nube?', 'KeepMyProof guarda lo que agrega cifrado en su teléfono y nunca lo sube. Su respaldo es un archivo cifrado que usted guarda en su propia nube. La foto original de su fototeca es otra copia: si Fotos de iCloud o Google Fotos la respaldan, bórrela también ahí.'],
         ['¿Una app de bóveda de fotos es gratis?', 'KeepMyProof es gratis para sus primeros 25 documentos, y ver, hacer PDF, exportar, respaldar y restaurar nunca se bloquean. KeepMyProof Plus agrega documentos ilimitados, carpetas y etiquetas propias, y PDF de un rango de fechas con portada, por un precio anual o una sola vez. No hay anuncios ni cuenta.'],
       ],

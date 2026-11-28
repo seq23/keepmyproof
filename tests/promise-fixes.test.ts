@@ -106,3 +106,18 @@ test('no app or store line says nothing at all leaves the device, while the app 
     for (const line of readFileSync(f, 'utf8').split('\n')) if (NOTHING_LEAVES.some(r => r.test(line))) said.push(`${f}: ${line.trim()}`);
   assert.deepEqual(said, []);
 });
+
+// App readiness, 27 Nov 2026: KeepMyProof is live on Google Play (versionCode 4 completed on the production track,
+// play.google.com listing answers with Install). Every page says so through site/lib/stores.mjs; no page keeps a
+// typed "coming soon to Google Play" in any language.
+const PLAY_SOON = /coming soon to (?:the App Store (?:\(iPhone\) )?and )?Google Play|pronto al? (?:el )?App Store (?:\(iPhone\) )?y Google Play|即将登陆 App Store(?:（iPhone）)? 和 Google Play|Google Play(?:\(Android\))? 출시 예정/i;
+test('a store the app is live in is never called coming soon, on any page or in llms.txt', async () => {
+  const { SITE } = await import('../site/config.mjs');
+  assert.equal(SITE.stores.googlePlay, `https://play.google.com/store/apps/details?id=${config.android?.package}`, 'the Play link is this app\'s own listing');
+  const stale: string[] = [];
+  for (const [p, s] of Object.entries(renderAll().files)) {
+    if (typeof s !== 'string' || !/\.(html|txt)$/.test(p)) continue;
+    if (PLAY_SOON.test(s.replace(/<[^>]+>/g, ' '))) stale.push(p);
+  }
+  assert.deepEqual(stale.slice(0, 5), [], `${stale.length} pages call Google Play coming soon`);
+});

@@ -17,7 +17,7 @@ export const SITE = {
   supportEmail: 'support@keepmyproof.com',
   // Store listing URLs. null = not in that store yet: the site says "coming soon", shows no store
   // badge or link, and publishes no app/offer schema (search-readiness c5). Fill both at launch.
-  stores: { appStore: null, googlePlay: null },
+  stores: { appStore: null, googlePlay: 'https://play.google.com/store/apps/details?id=com.keepmyproof.app' },
   vaHelp: 'https://www.va.gov/get-help-from-accredited-representative/',
   parentOrg: { name: 'Spry Labs', id: 'https://billionairehighperformancecoach.com/spry-labs#organization', url: 'https://billionairehighperformancecoach.com/spry-labs' },
   indexNowKey: '4f1c9a7e2b6d4e8f9a3c5b7d1e2f4a6c',

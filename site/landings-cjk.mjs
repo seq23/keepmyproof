@@ -4,6 +4,7 @@
 // legal outcome, never "court-ready" or its zh/ko forms, never a claim that the app is hidden from the
 // phone or that deleted photos cannot be recovered. Paths: /zh/<English path>, /ko/<English path>.
 import { folderCount, folderNames } from './lib/folders.mjs';
+import { storeLine } from './lib/stores.mjs';
 
 const APP = {
   zh: 'KeepMyProof 把照片、截图、文件和笔记放进文件夹，加密保存在您的手机上，用六位数密码打开；如果您开启，也可以用 Face ID 或指纹。离开应用时它会自动锁住；在 iPhone 上，切换应用的界面里也不显示内容。它是主屏幕上一个普通的应用，不会伪装成别的应用。',
@@ -42,7 +43,7 @@ export const LANDINGS_CJK = {
         { h: '它不做什么？', a: '它是一个上锁的应用，不是隐形的应用。', list: LIMITS.zh },
       ],
       faq: [
-        ['KeepMyProof 是照片保险箱应用吗？', '是的。它像照片保险箱一样，用密码、Face ID 或指纹锁住照片和截图；同时也保存信件、扫描件、文件和笔记，放进带清单的文件夹，每项都有两个日期，还能把一个文件夹做成一个 PDF。应用即将登陆 App Store 和 Google Play。'],
+        ['KeepMyProof 是照片保险箱应用吗？', '是的。它像照片保险箱一样，用密码、Face ID 或指纹锁住照片和截图；同时也保存信件、扫描件、文件和笔记，放进带清单的文件夹，每项都有两个日期，还能把一个文件夹做成一个 PDF。' + storeLine('zh') + ''],
         ['照片保险箱会把照片上传到云端吗？', 'KeepMyProof 把您添加的内容加密保存在手机上，从不上传。它的备份是一个加密文件，由您保存到自己的云盘。图库里的原件是另一份副本：如果 iCloud 照片或 Google 相册备份了它，也要在那里删除。'],
         ['照片保险箱应用免费吗？', 'KeepMyProof 前 25 项免费，查看、导出 PDF、导出原件、备份和恢复永远不会锁住。KeepMyProof Plus 提供无限项目、自定义文件夹和标签，以及按日期范围导出带封面的 PDF，可按年付费或一次买断。没有广告，也不需要账户。'],
       ],
@@ -59,7 +60,7 @@ export const LANDINGS_CJK = {
         { h: '하지 않는 일은 무엇인가요?', a: '잠긴 앱이지, 보이지 않는 앱이 아닙니다.', list: LIMITS.ko },
       ],
       faq: [
-        ['KeepMyProof는 사진 보관함 앱인가요?', '네. 사진 보관함처럼 암호, Face ID, 지문으로 사진과 스크린샷을 잠급니다. 편지, 스캔본, 파일, 메모도 체크리스트 폴더에 정리하고 항목마다 두 날짜를 기록하며, 폴더를 PDF 하나로 만듭니다. App Store와 Google Play 출시 예정입니다.'],
+        ['KeepMyProof는 사진 보관함 앱인가요?', '네. 사진 보관함처럼 암호, Face ID, 지문으로 사진과 스크린샷을 잠급니다. 편지, 스캔본, 파일, 메모도 체크리스트 폴더에 정리하고 항목마다 두 날짜를 기록하며, 폴더를 PDF 하나로 만듭니다. ' + storeLine('ko') + ''],
         ['사진 보관함은 사진을 클라우드에 올리나요?', 'KeepMyProof는 추가한 내용을 휴대폰에 암호화해 보관하고 업로드하지 않습니다. 백업은 직접 본인 클라우드에 저장하는 암호화 파일입니다. 사진 보관함의 원본은 별도 사본이니, iCloud 사진이나 Google 포토에 백업되어 있다면 거기서도 지우세요.'],
         ['사진 보관함 앱은 무료인가요?', 'KeepMyProof는 처음 25개 항목까지 무료이며, 보기, PDF, 내보내기, 백업, 복원은 절대 잠기지 않습니다. KeepMyProof Plus는 무제한 항목, 직접 만드는 폴더와 태그, 기간을 정하고 표지를 넣은 PDF를 연간 또는 평생 요금으로 제공합니다. 광고와 계정은 없습니다.'],
       ],
